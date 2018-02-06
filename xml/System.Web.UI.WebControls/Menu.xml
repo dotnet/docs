@@ -105,7 +105,7 @@
   
  When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), a menu item displays the value returned by the `ToString` method of the data item by default. In the case of an XML element, the menu item displays the element name, which shows the underlying structure of the menu tree but is not very useful otherwise. You can bind a menu item to a specific data item property by using the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection to specify menu item bindings. The <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection contains <xref:System.Web.UI.WebControls.MenuItemBinding> objects that define the relationship between a data item and the menu item it is binding to. You can specify the criteria for binding and the data item property to display in the node. For more information on menu item bindings, see <xref:System.Web.UI.WebControls.MenuItemBinding>.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="customizing_the_user_interface"></a>   
 ## Customizing the User Interface  
@@ -549,6 +549,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -579,6 +580,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -787,6 +790,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
       </Docs>
     </Member>
     <Member MemberName="DisappearAfter">
@@ -836,6 +841,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicBottomSeparatorImageUrl">
@@ -886,6 +892,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DynamicEnableDefaultPopOutImage">
@@ -936,6 +949,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicHorizontalOffset">
@@ -982,6 +1000,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="DynamicHoverStyle">
@@ -1039,6 +1059,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicItemFormatString">
@@ -1082,6 +1112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicItemTemplate">
@@ -1121,6 +1153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicMenuItemStyle">
@@ -1178,6 +1212,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicMenuStyle">
@@ -1235,6 +1279,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicPopOutImageTextFormatString">
@@ -1277,6 +1331,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicPopOutImageUrl">
@@ -1334,6 +1393,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicSelectedStyle">
@@ -1391,6 +1455,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicTopSeparatorImageUrl">
@@ -1438,6 +1512,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DynamicVerticalOffset">
@@ -1484,6 +1565,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Orientation" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -1548,6 +1632,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.PathSeparator" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1574,6 +1660,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="IncludeStyleBlock">
@@ -1661,6 +1748,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="ItemWrap">
@@ -1700,6 +1790,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="LevelMenuItemStyles">
@@ -1747,6 +1842,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LevelSelectedStyles">
@@ -1794,6 +1899,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LevelSubMenuStyles">
@@ -1841,6 +1956,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -1937,6 +2062,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" /> property is set to a value less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
       </Docs>
     </Member>
     <Member MemberName="MenuItemClick">
@@ -1961,7 +2087,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1973,6 +2099,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MenuItemClickCommandName">
@@ -2021,7 +2151,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2033,6 +2163,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2098,13 +2232,16 @@
   
  This method is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnDataBinding(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2131,7 +2268,7 @@
 ## Remarks  
  When notified by this method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access another server control when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2166,7 +2303,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2175,6 +2312,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMenuItemDataBound">
@@ -2201,7 +2342,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2210,6 +2351,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2236,7 +2381,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.Control.PreRender> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2288,6 +2433,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -2328,6 +2474,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ValuePath" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.FindItem(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -2353,6 +2501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -2374,6 +2523,7 @@
         <param name="eventArgument">A <see cref="T:System.String" /> that represents the event argument passed to the event handler.</param>
         <summary>Processes an event raised when a form is posted to the server.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2527,6 +2677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -2630,6 +2781,9 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollDownText">
@@ -2676,6 +2830,9 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollUpImageUrl">
@@ -2731,6 +2888,9 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollUpText">
@@ -2777,6 +2937,9 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -2823,6 +2986,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedValue" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -2867,6 +3032,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedItem" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -2929,6 +3096,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataItem(System.Web.UI.WebControls.MenuItem,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetItemDataItem">
@@ -2959,6 +3128,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataBound(System.Web.UI.WebControls.MenuItem,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetItemDataPath">
@@ -2989,6 +3160,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataItem(System.Web.UI.WebControls.MenuItem,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3031,6 +3204,10 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticBottomSeparatorImageUrl">
@@ -3078,6 +3255,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="StaticDisplayLevels">
@@ -3120,6 +3304,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" />
       </Docs>
     </Member>
     <Member MemberName="StaticEnableDefaultPopOutImage">
@@ -3170,6 +3355,11 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticHoverStyle">
@@ -3227,6 +3417,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticItemFormatString">
@@ -3270,6 +3470,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticItemTemplate">
@@ -3366,6 +3568,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticMenuStyle">
@@ -3423,6 +3635,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticPopOutImageTextFormatString">
@@ -3465,6 +3687,11 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="StaticPopOutImageUrl">
@@ -3522,6 +3749,11 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticSelectedStyle">
@@ -3619,6 +3851,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticSubMenuIndent">
@@ -3661,6 +3903,9 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the selected <see cref="T:System.Web.UI.WebControls.Unit" /> is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="StaticTopSeparatorImageUrl">
@@ -3708,6 +3953,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -3754,6 +4006,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -3808,6 +4061,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3826,6 +4080,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <Docs>
         <summary>Tracks view-state changes to the <see cref="T:System.Web.UI.WebControls.Menu" /> control so they can be stored in the control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

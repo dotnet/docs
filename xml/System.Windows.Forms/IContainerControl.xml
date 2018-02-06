@@ -26,6 +26,8 @@
   
  In most common scenarios, you do not need to directly implement this interface. For example, if you create a Windows Control Library project, Visual Studio generates an initial class for you. That class inherits from the <see cref="T:System.Windows.Forms.UserControl" /> class, and <see cref="T:System.Windows.Forms.UserControl" /> implements <see cref="T:System.Windows.Forms.IContainerControl" /> for you.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.ContainerControl" />
+    <altmember cref="T:System.Windows.Forms.Control" />
   </Docs>
   <Members>
     <Member MemberName="ActivateControl">
@@ -63,6 +65,8 @@
         <block subset="none" type="overrides">
           <para>When implemented in a class, this method activates the specified <see cref="T:System.Windows.Forms.Control" />. The control must be a child of the container control.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.IContainerControl.ActiveControl" />
+        <altmember cref="T:System.Windows.Forms.ContainerControl" />
       </Docs>
     </Member>
     <Member MemberName="ActiveControl">
@@ -95,6 +99,7 @@
         <block subset="none" type="overrides">
           <para>When implemented in a class, this property activates or retrieves the active control on the container control.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.IContainerControl.ActivateControl(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
   </Members>

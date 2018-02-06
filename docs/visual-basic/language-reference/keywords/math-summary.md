@@ -1,13 +1,10 @@
 ---
 title: "Math Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "math functions, summary"
@@ -18,21 +15,6 @@ ms.assetid: 6abf2dd7-92d2-488a-8e2b-819be9b30c3f
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Math Summary (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
@@ -47,6 +29,6 @@ translation.priority.ht:
 |Perform numeric conversions.|<xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
   
 ## See Also  
- [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)   
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)  
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

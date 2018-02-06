@@ -1,37 +1,21 @@
 ---
 title: "Relaxed Delegate Conversion (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "relaxed delegate conversion [Visual Basic]"
   - "delegates [Visual Basic], relaxed conversion"
-  - "conversions, relaxed delegate"
+  - "conversions [Visual Basic], relaxed delegate"
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Relaxed Delegate Conversion (Visual Basic)
 Relaxed delegate conversion enables you to assign subs and functions to delegates or handlers even when their signatures are not identical. Therefore, binding to delegates becomes consistent with the binding already allowed for method invocations.  
@@ -103,9 +87,9 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#11](../../../../visual-basic/programming-guide/language-features/delegates/codesnippet/VisualBasic/relaxed-delegate-conversion_13.vb)]  
   
 ## See Also  
- [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
- [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)   
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
+ [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
+ [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
+ [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)  
+ [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStringValue Interface1
 A subclass of ICorDebugHeapValue that applies to string values.  

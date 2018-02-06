@@ -81,6 +81,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.BindingSource" />
+    <altmember cref="T:System.Windows.Forms.BindingNavigator" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.ComponentModel.IBindingList" />
+    <altmember cref="T:System.ComponentModel.IEditableObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +118,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataSource" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataMember" />
+        <altmember cref="T:System.Windows.Forms.CurrencyManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,6 +209,12 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> differs in type from the existing items in the underlying list.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Remove(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AddingNew">
@@ -236,6 +252,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.AddingNewEventArgs.NewObject" /> is not the same type as the type contained in the list.</exception>
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" />
+        <altmember cref="T:System.ComponentModel.AddingNewEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AddNew">
@@ -286,6 +305,11 @@
  -or-  
   
  A public default constructor could not be found for the current item type.</exception>
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="T:System.ComponentModel.AddingNewEventArgs" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.AddingNew" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.AllowNew" />
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -350,7 +374,7 @@
 > [!NOTE]
 >  Once the value of this property is set, the getter no longer refers the call to the underlying list. Instead, it simply returns the value that was previously set until the <xref:System.Windows.Forms.BindingSource.ResetAllowNew%2A> method is called.  
   
- Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+ Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.Reset?displayProperty=nameWithType>.  
   
  If you set the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to `true` and the underlying list type does not have a default constructor, you must handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event and create the appropriate type.  
   
@@ -367,6 +391,14 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is set to <see langword="true" /> when the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property has a fixed size or is read-only.</exception>
         <exception cref="T:System.MissingMethodException">The property is set to <see langword="true" /> and the <see cref="E:System.Windows.Forms.BindingSource.AddingNew" /> event is not handled when the underlying list type does not have a default constructor.</exception>
+        <altmember cref="P:System.ComponentModel.AddingNewEventArgs.NewObject" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.ResetAllowNew" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.AllowEdit" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.AllowRemove" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.EndEdit" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.CancelEdit" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="AllowRemove">
@@ -503,6 +535,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteState" />
+        <altmember cref="T:System.Windows.Forms.BindingCompleteEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -534,6 +568,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.EndEdit" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -561,6 +598,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.CancelEdit" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -597,6 +637,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.IndexOf(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -665,6 +710,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyManager">
@@ -735,6 +783,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanged">
@@ -773,6 +824,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.PositionChanged" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItemChanged">
@@ -799,6 +856,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.PositionChanged" />
       </Docs>
     </Member>
     <Member MemberName="DataError">
@@ -863,6 +925,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataSource" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataMemberChanged" />
       </Docs>
     </Member>
     <Member MemberName="DataMemberChanged">
@@ -889,6 +954,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataMember" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -952,6 +1020,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataMember" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.ComponentModel.IListSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -978,6 +1049,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataSource" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataMemberChanged" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1013,7 +1087,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1044,6 +1118,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.CancelEdit" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.System#ComponentModel#ICancelAddNew#EndNew(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -1088,6 +1166,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataSource" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Sort" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveFilter" />
+        <altmember cref="P:System.ComponentModel.IBindingList.IsSorted" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -1130,6 +1213,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The underlying list is not of type <see cref="T:System.ComponentModel.IBindingList" />.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.IndexOf(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Contains(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -1215,6 +1304,7 @@
         <summary>Retrieves an array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects representing the bindable properties of the data source list type.</summary>
         <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that represents the properties on this list type used to bind data.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ListBindingHelper" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -1237,6 +1327,7 @@
         <summary>Gets the name of the list supplying data for the binding.</summary>
         <returns>The name of the list supplying the data for binding.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ListBindingHelper" />
       </Docs>
     </Member>
     <Member MemberName="GetRelatedCurrencyManager">
@@ -1301,6 +1392,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Contains(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1334,6 +1431,12 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
         <exception cref="T:System.NotSupportedException">The list is read-only or has a fixed size.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsReadOnly" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsFixedSize" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
       </Docs>
     </Member>
     <Member MemberName="IsBindingSuspended">
@@ -1513,6 +1616,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or is equal to or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -1569,6 +1674,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ListChanged">
@@ -1604,6 +1711,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
+        <altmember cref="T:System.ComponentModel.ListChangedType" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
       </Docs>
     </Member>
     <Member MemberName="MoveFirst">
@@ -1638,6 +1751,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveNext" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MovePrevious" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveLast" />
       </Docs>
     </Member>
     <Member MemberName="MoveLast">
@@ -1663,6 +1783,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveNext" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MovePrevious" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -1697,6 +1824,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveLast" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MovePrevious" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveFirst" />
       </Docs>
     </Member>
     <Member MemberName="MovePrevious">
@@ -1722,6 +1856,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveLast" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveNext" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveFirst" />
       </Docs>
     </Member>
     <Member MemberName="OnAddingNew">
@@ -1755,6 +1896,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.AddingNew" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBindingComplete">
@@ -1823,6 +1967,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
@@ -1856,6 +2003,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataError">
@@ -1924,6 +2074,9 @@
   
  The <see cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" /> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataMemberChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataMember" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceChanged">
@@ -1957,6 +2110,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataSourceChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.DataSource" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnListChanged">
@@ -1990,6 +2146,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.DataSourceChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
       </Docs>
     </Member>
     <Member MemberName="OnPositionChanged">
@@ -2023,6 +2182,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingSource.PositionChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -2071,6 +2233,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Current" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
       </Docs>
     </Member>
     <Member MemberName="PositionChanged">
@@ -2097,6 +2262,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaiseListChangedEvents">
@@ -2131,6 +2298,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2162,6 +2332,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The underlying list has a fixed size or is read-only.</exception>
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsFixedSize" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsReadOnly" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2203,6 +2381,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the value of the <see cref="P:System.Windows.Forms.BindingSource.Count" /> property.</exception>
         <exception cref="T:System.NotSupportedException">The underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property is read-only or has a fixed size.</exception>
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Remove(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsFixedSize" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.IsReadOnly" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.IndexOf(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -2234,6 +2421,11 @@
   
  <see cref="P:System.Windows.Forms.BindingSource.Position" /> is less than zero or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
         <exception cref="T:System.NotSupportedException">The underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property is read-only or has a fixed size.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveFilter">
@@ -2262,6 +2454,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The underlying list does not support filtering.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Filter" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSort">
@@ -2290,6 +2483,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The underlying list does not support sorting.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Sort" />
       </Docs>
     </Member>
     <Member MemberName="ResetAllowNew">
@@ -2320,6 +2514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.AllowNew" />
       </Docs>
     </Member>
     <Member MemberName="ResetBindings">
@@ -2347,11 +2542,11 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method informs all controls bound to the <xref:System.Windows.Forms.BindingSource> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event at least once; the `metaDataChanged` parameter indicates the nature of the underlying change.  
   
--   A `metaDataChanged` value of `true` indicates that the data schema of <xref:System.Windows.Forms.BindingSource> has changed. A <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+-   A `metaDataChanged` value of `true` indicates that the data schema of <xref:System.Windows.Forms.BindingSource> has changed. A <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.PropertyDescriptorChanged?displayProperty=nameWithType>.  
   
 -   A `metaDataChanged` value of `false` indicates that only the values of one or more items have changed.  
   
- Regardless of the value of `metaDataChanged`, a <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>. As a consequence, calling <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> with a parameter of `true` will raise two <xref:System.Windows.Forms.BindingSource.ListChanged> events.  
+ Regardless of the value of `metaDataChanged`, a <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.Reset?displayProperty=nameWithType>. As a consequence, calling <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> with a parameter of `true` will raise two <xref:System.Windows.Forms.BindingSource.ListChanged> events.  
   
  <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> is automatically called whenever another member makes major changes to the data-binding, such as setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties. However, the programmer can also call this method explicitly.  
   
@@ -2366,6 +2561,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.ResetItem(System.Int32)" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="T:System.ComponentModel.ListChangedType" />
       </Docs>
     </Member>
     <Member MemberName="ResetCurrentItem">
@@ -2415,7 +2614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method notifies all controls bound to the item at the specified <xref:System.Windows.Forms.BindingSource.Position%2A> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method notifies all controls bound to the item at the specified <xref:System.Windows.Forms.BindingSource.Position%2A> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.ItemChanged?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.BindingSource.ResetItem%2A> is automatically called whenever changes are made to the value of an individual item. However, the programmer can also call this method explicitly.  
   
@@ -2430,6 +2629,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.ResetBindings(System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.ListChanged" />
+        <altmember cref="T:System.ComponentModel.ListChangedType" />
       </Docs>
     </Member>
     <Member MemberName="ResumeBinding">
@@ -2458,6 +2661,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.ResumeBinding" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -2511,6 +2715,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Filter" />
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveSort" />
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">
@@ -2796,6 +3002,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.SuspendBinding" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -2904,6 +3111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICancelAddNew.EndNew">
@@ -2932,6 +3140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -2996,5 +3205,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Find the specified item in the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ApplySort">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the data source with the specified sort description or descriptions.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

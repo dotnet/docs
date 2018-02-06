@@ -28,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EnumerateCLRs Function
 Provides a mechanism for enumerating the CLRs in a process.  

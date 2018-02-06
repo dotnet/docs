@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetManifestResourceProps Method
 Gets the set of properties of the manifest resource with the specified metadata signature.  

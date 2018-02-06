@@ -1,40 +1,22 @@
 ---
 title: "Auto (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Auto"
 helpviewer_keywords: 
-  - "Auto keyword, external references"
-  - "Declare statement, marshaling strings"
-  - "Auto keyword"
-  - "Auto keyword, marshaling strings"
+  - "Auto keyword [Visual Basic], external references"
+  - "Declare statement [Visual Basic], marshaling strings"
+  - "Auto keyword [Visual Basic]"
+  - "Auto keyword [Visual Basic], marshaling strings"
 ms.assetid: bf79ba95-a62c-48a5-916f-0ac7a52c13ec
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Auto (Visual Basic)
 Specifies that Visual Basic should marshal strings according to .NET Framework rules based on the external name of the external procedure being declared.  
@@ -54,6 +36,6 @@ Specifies that Visual Basic should marshal strings according to .NET Framework r
  This keyword is not supported.  
   
 ## See Also  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)   
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)   
+ [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
+ [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

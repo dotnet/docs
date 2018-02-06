@@ -38,27 +38,27 @@
 ## Levels of Compatibility  
  The <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> supports the following levels of compatibility, which are represented by members of the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration:  
   
--   No version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType>). The client can expect that future versions will break the existing client. For more information, see the [No Compatibility](#None) section later in this topic.  
+-   No version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None?displayProperty=nameWithType>). The client can expect that future versions will break the existing client. For more information, see the [No Compatibility](#None) section later in this topic.  
   
--   Side-by-side version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType>). The component has been tested to work when more than one version of the assembly is loaded in the same application domain. In general, future versions can break compatibility. However, when breaking changes are made, the old version is not modified but exists alongside the new version. Side-by-side execution is the expected way to make existing clients work when breaking changes are made. For more information, see the [Side-by-Side Compatibility](#SideBySide) section later in this topic.  
+-   Side-by-side version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide?displayProperty=nameWithType>). The component has been tested to work when more than one version of the assembly is loaded in the same application domain. In general, future versions can break compatibility. However, when breaking changes are made, the old version is not modified but exists alongside the new version. Side-by-side execution is the expected way to make existing clients work when breaking changes are made. For more information, see the [Side-by-Side Compatibility](#SideBySide) section later in this topic.  
   
--   Stable version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType>). Future versions should not break the client, and side-by-side execution should not be needed. However, if the client is inadvertently broken, it may be possible to use side-by-side execution to fix the problem. For more information, see the [Stable Compatibility](#Standard) section.  
+-   Stable version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable?displayProperty=nameWithType>). Future versions should not break the client, and side-by-side execution should not be needed. However, if the client is inadvertently broken, it may be possible to use side-by-side execution to fix the problem. For more information, see the [Stable Compatibility](#Standard) section.  
   
--   Exchange version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType>). Extraordinary care is taken to ensure that future versions will not break the client. The client should use only these types in the signature of interfaces that are used for communication with other assemblies that are deployed independently of one another. Only one version of these types is expected to be in a given application domain, which means that if a client breaks, side-by-side execution cannot fix the compatibility problem. For more information, see the [Exchange Type Compatibility](#Exchange) section.  
+-   Exchange version-to-version compatibility (<xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange?displayProperty=nameWithType>). Extraordinary care is taken to ensure that future versions will not break the client. The client should use only these types in the signature of interfaces that are used for communication with other assemblies that are deployed independently of one another. Only one version of these types is expected to be in a given application domain, which means that if a client breaks, side-by-side execution cannot fix the compatibility problem. For more information, see the [Exchange Type Compatibility](#Exchange) section.  
   
  The following sections discuss each level of guarantee in greater detail.  
   
 <a name="None"></a>   
 ### No Compatibility  
- Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType> indicates that the provider makes no guarantees about compatibility. Clients should avoid taking any dependencies on the exposed interfaces. This level of compatibility is useful for types that are experimental or that are publicly exposed but are intended only for components that are always updated at the same time. <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> explicitly indicates that this component should not be used by external components.  
+ Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None?displayProperty=nameWithType> indicates that the provider makes no guarantees about compatibility. Clients should avoid taking any dependencies on the exposed interfaces. This level of compatibility is useful for types that are experimental or that are publicly exposed but are intended only for components that are always updated at the same time. <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> explicitly indicates that this component should not be used by external components.  
   
 <a name="SideBySide"></a>   
 ### Side-by-Side Compatibility  
- Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType> indicates that the component has been tested to work when more than one version of the assembly is loaded into the same application domain. Breaking changes are allowed as long as they are made to the assembly that has the greater version number. Components that are bound to an old version of the assembly are expected to continue to bind to the old version, and other components can bind to the new version. It is also possible to update a component that is declared to be <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide> by destructively modifying the old version.  
+ Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide?displayProperty=nameWithType> indicates that the component has been tested to work when more than one version of the assembly is loaded into the same application domain. Breaking changes are allowed as long as they are made to the assembly that has the greater version number. Components that are bound to an old version of the assembly are expected to continue to bind to the old version, and other components can bind to the new version. It is also possible to update a component that is declared to be <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide> by destructively modifying the old version.  
   
 <a name="Standard"></a>   
 ### Stable Compatibility  
- Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType> indicates that the type should remain stable across versions. However, it may also be possible for side-by-side versions of a stable type to exist in the same application domain.  
+ Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable?displayProperty=nameWithType> indicates that the type should remain stable across versions. However, it may also be possible for side-by-side versions of a stable type to exist in the same application domain.  
   
  Stable types maintain a high binary compatibility bar. Because of this, providers should avoid making breaking changes to stable types. The following kinds of changes are acceptable:  
   
@@ -84,7 +84,7 @@
   
 <a name="Exchange"></a>   
 ### Exchange Type Compatibility  
- Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=nameWithType> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable>, and should be applied to the most stable of all types. These types are intended to be used for interchange between independently built components across all component boundaries in both time (any version of the CLR or any version of a component or application) and space (cross-process, cross-CLR in one process, cross-application domain in one CLR). If a breaking change is made to an exchange type, it is impossible to fix the issue by loading multiple versions of the type.  
+ Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange?displayProperty=nameWithType> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable>, and should be applied to the most stable of all types. These types are intended to be used for interchange between independently built components across all component boundaries in both time (any version of the CLR or any version of a component or application) and space (cross-process, cross-CLR in one process, cross-application domain in one CLR). If a breaking change is made to an exchange type, it is impossible to fix the issue by loading multiple versions of the type.  
   
  Exchange types should be changed only when a problem is very serious (such as a severe security issue) or the probability of breakage is very low (that is, if the behavior was already broken in a random way that code could not have conceivably taken a dependency on). You can make the following kinds of changes to an exchange type:  
   
@@ -154,6 +154,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Versioning.ComponentGuaranteesOptions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

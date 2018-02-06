@@ -1,24 +1,17 @@
 ---
 title: "Thread Synchronization (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Thread Synchronization (C#)
 The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.  
@@ -67,7 +60,7 @@ public class TestThreading
   
 -   [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
   
--   @System.Threading.Monitor  
+-   <xref:System.Threading.Monitor>  
   
 ## Monitors  
  Like the `lock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `lock` keyword. For example:  
@@ -154,26 +147,26 @@ class ThreadingExample
  Thread synchronization is invaluable in multithreaded applications, but there is always the danger of creating a `deadlock`, where multiple threads are waiting for each other and the application comes to a halt. A deadlock is analogous to a situation in which cars are stopped at a four-way stop and each person is waiting for the other to go. Avoiding deadlocks is important; the key is careful planning. You can often predict deadlock situations by diagramming multithreaded applications before you start coding.  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- <xref:System.Threading.WaitHandle.WaitOne%2A>   
- <xref:System.Threading.WaitHandle.WaitAny%2A>   
- <xref:System.Threading.WaitHandle.WaitAll%2A>   
- <xref:System.Threading.Thread.Join%2A>   
- <xref:System.Threading.Thread.Start%2A>   
- <xref:System.Threading.Thread.Sleep%2A>   
- <xref:System.Threading.Monitor>   
- <xref:System.Threading.Mutex>   
- <xref:System.Threading.AutoResetEvent>   
- <xref:System.Threading.ManualResetEvent>   
- <xref:System.Threading.Interlocked>   
- <xref:System.Threading.WaitHandle>   
- <xref:System.Threading.EventWaitHandle>   
- <xref:System.Threading>   
- <xref:System.Threading.EventWaitHandle.Set%2A>   
- [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
- [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)   
- [Mutexes](../../../../standard/threading/mutexes.md)   
- @System.Threading.Monitor   
- [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)   
- [AutoResetEvent](../../../../standard/threading/autoresetevent.md)   
+ <xref:System.Threading.Thread>  
+ <xref:System.Threading.WaitHandle.WaitOne%2A>  
+ <xref:System.Threading.WaitHandle.WaitAny%2A>  
+ <xref:System.Threading.WaitHandle.WaitAll%2A>  
+ <xref:System.Threading.Thread.Join%2A>  
+ <xref:System.Threading.Thread.Start%2A>  
+ <xref:System.Threading.Thread.Sleep%2A>  
+ <xref:System.Threading.Monitor>  
+ <xref:System.Threading.Mutex>  
+ <xref:System.Threading.AutoResetEvent>  
+ <xref:System.Threading.ManualResetEvent>  
+ <xref:System.Threading.Interlocked>  
+ <xref:System.Threading.WaitHandle>  
+ <xref:System.Threading.EventWaitHandle>  
+ <xref:System.Threading>  
+ <xref:System.Threading.EventWaitHandle.Set%2A>  
+ <xref:System.Threading.Monitor>  
+ [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
+ [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
+ [Mutexes](../../../../standard/threading/mutexes.md)  
+ [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)  
+ [AutoResetEvent](../../../../standard/threading/autoresetevent.md)  
  [Synchronizing Data for Multithreading](../../../../standard/threading/synchronizing-data-for-multithreading.md)

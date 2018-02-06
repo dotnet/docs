@@ -240,5 +240,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStylusPoints">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected in the event.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

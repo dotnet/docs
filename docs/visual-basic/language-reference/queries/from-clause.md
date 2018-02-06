@@ -1,13 +1,11 @@
 ---
 title: "From Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryFrom"
@@ -15,27 +13,12 @@ f1_keywords:
   - "vb.QueryFromLet"
 helpviewer_keywords: 
   - "queries [Visual Basic], From"
-  - "From clause"
-  - "From statement"
+  - "From clause [Visual Basic]"
+  - "From statement [Visual Basic]"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # From Clause (Visual Basic)
 Specifies one or more range variables and a collection to query.  
@@ -90,19 +73,19 @@ From element [ As type ] In collection [ _ ]
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
 ## See Also  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)   
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)   
- [Distinct Clause](../../../visual-basic/language-reference/queries/distinct-clause.md)   
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)   
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)   
- [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)   
- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)   
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)   
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)   
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
+ [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
+ [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
+ [Distinct Clause](../../../visual-basic/language-reference/queries/distinct-clause.md)  
+ [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
+ [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
+ [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)  
+ [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)  
+ [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)  
+ [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
  [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)

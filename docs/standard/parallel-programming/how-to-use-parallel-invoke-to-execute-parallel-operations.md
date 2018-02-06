@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "task parallelism in .NET"
   - "parallel programming, task parallelism"
@@ -19,6 +19,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Use Parallel.Invoke to Execute Parallel Operations
 This example shows how to parallelize operations by using <xref:System.Threading.Tasks.Parallel.Invoke%2A> in the Task Parallel Library. Three operations are performed on a shared data source. Because none of the operations modifies the source, they can be executed in parallel in a straightforward manner.  
@@ -39,6 +42,6 @@ This example shows how to parallelize operations by using <xref:System.Threading
 -   Copy and paste the entire example into a Microsoft Visual Studio 2010 project and press F5.  
   
 ## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)   
- [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)   
+ [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+ [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)  
  [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CheckedListBox" />
+    <altmember cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@
         <param name="currentValue">One of the <see cref="T:System.Windows.Forms.CheckState" /> values that indicates whether the check box for the item is currently checked, unchecked, or indeterminate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ItemCheckEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
     <Member MemberName="CurrentValue">
@@ -98,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ItemCheckEventArgs.NewValue" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -170,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ItemCheckEventArgs.CurrentValue" />
       </Docs>
     </Member>
   </Members>

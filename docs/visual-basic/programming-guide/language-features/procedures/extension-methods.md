@@ -1,39 +1,22 @@
 ---
 title: "Extension Methods (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
 helpviewer_keywords: 
-  - "extending data types"
+  - "extending data types [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Extension Methods (Visual Basic)
 Extension methods enable developers to add custom functionality to data types that are already defined without creating a new derived type. Extension methods make it possible to write a method that can be called as if it were an instance method of the existing type.  
@@ -196,12 +179,12 @@ End Module
  If precedence does not resolve the ambiguity, you can use the fully qualified name to specify the method that you are calling. If the `Print` method in the earlier example is defined in a module named `StringExtensions`, the fully qualified name is `StringExtensions.Print(example)` instead of `example.Print()`.  
   
 ## See Also  
- <xref:System.Runtime.CompilerServices>   
- <xref:System.Runtime.CompilerServices.ExtensionAttribute>   
- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)   
- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Parameter Arrays](./parameter-arrays.md)   
- [Attributes overview](../../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ <xref:System.Runtime.CompilerServices>  
+ <xref:System.Runtime.CompilerServices.ExtensionAttribute>  
+ [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+ [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Optional Parameters](./optional-parameters.md)  
+ [Parameter Arrays](./parameter-arrays.md)  
+ [Attributes overview](../../../../visual-basic/programming-guide/concepts/attributes/index.md)  
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

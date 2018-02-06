@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;network&gt; Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  
@@ -33,15 +35,15 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ## Syntax  
   
 ```xml  
-      <network  
+<network  
   clientDomain="string"   
   defaultCredentials="true|false"  
   enableSsl="true|false"  
   host="string"   
-password="string"  
+  password="string"  
   port="integer"   
-targetName="string"  
-userName="string"  
+  targetName="string"  
+  userName="string"  
 />  
 ```  
   
@@ -95,7 +97,7 @@ userName="string"
  The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.  
   
 ## Example  
- The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  
 <configuration>  
@@ -116,7 +118,7 @@ userName="string"
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>   
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>   
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>   
+ <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+ <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

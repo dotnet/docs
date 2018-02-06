@@ -1,41 +1,25 @@
 ---
 title: "Nested Control Structures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, control flow"
-  - "control structures, nested"
-  - "conditional statements, nested"
+  - "control structures [Visual Basic], nested"
+  - "conditional statements [Visual Basic], nested"
   - "statements [Visual Basic], control flow"
-  - "control flow, nested control statements"
-  - "structures, nested control"
-  - "nested control statements"
+  - "control flow [Visual Basic], nested control statements"
+  - "structures [Visual Basic], nested control"
+  - "nested control statements [Visual Basic]"
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Nested Control Structures (Visual Basic)
 You can place control statements inside other control statements, for example an `If...Then...Else` block within a `For...Next` loop. A control statement placed inside another control statement is said to be *nested*.  
@@ -93,7 +77,7 @@ Invalid nesting of For and With structures
  The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler detects such overlapping control structures and signals a compile-time error.  
   
 ## See Also  
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
+ [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
+ [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
+ [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

@@ -41,6 +41,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.FormParameter> object created with the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> is initialized to <xref:System.String.Empty?displayProperty=nameWithType>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to null (`Nothing` in Visual Basic).  
+ A <xref:System.Web.UI.WebControls.FormParameter> object created with the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> is initialized to <xref:System.String.Empty?displayProperty=nameWithType>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to null (`Nothing` in Visual Basic).  
   
    
   
@@ -98,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FormParameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,6 +204,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -222,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FormParameter.#ctor(System.Web.UI.WebControls.FormParameter)" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -255,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormParameter.FormField" />
       </Docs>
     </Member>
     <Member MemberName="FormField">
@@ -305,6 +317,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
+        <altmember cref="M:System.Web.UI.WebControls.FormParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="ValidateInput">
@@ -331,5 +345,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

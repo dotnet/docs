@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;idn&gt; Element (Uri Settings)
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.  
@@ -30,7 +32,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ```xml  
 <idn  
   enabled="All|AllExceptIntranet|None"  
-/idn>  
+/>  
 ```  
   
 ## Attributes and Elements  
@@ -100,6 +102,6 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ```  
   
 ## See Also  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
+ <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

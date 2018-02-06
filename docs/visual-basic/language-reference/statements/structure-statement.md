@@ -1,43 +1,26 @@
 ---
 title: "Structure Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Structure"
   - "Structure"
 helpviewer_keywords: 
-  - "user-defined types, Structure statement"
-  - "compound data types"
-  - "Structure keyword"
-  - "Structure statement"
+  - "user-defined types [Visual Basic], Structure statement"
+  - "compound data types [Visual Basic]"
+  - "Structure keyword [Visual Basic]"
+  - "Structure statement [Visual Basic]"
   - "UDT (user-defined types)"
   - "types [Visual Basic], user-defined"
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Structure Statement
 Declares the name of a structure and introduces the definition of the variables, properties, events, and procedures that the structure comprises.  
@@ -125,13 +108,13 @@ End Structure
  [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
 ## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)   
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)   
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
+ [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
  [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)

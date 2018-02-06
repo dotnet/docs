@@ -1,38 +1,21 @@
 ---
 title: "How to: Invoke the Command-Line Compiler (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "command-line arguments"
   - "vbc.exe"
   - "Visual Basic compiler, starting"
-  - "command line, arguments"
+  - "command line [Visual Basic], arguments"
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Invoke the Command-Line Compiler (Visual Basic)
 You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Command Prompt, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.  
@@ -78,5 +61,5 @@ You can invoke the command-line compiler by typing the name of its executable fi
      For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type `cd SourceFiles` to change to that directory. If the directory contained a source file named `Source.vb`, you could compile it by typing `vbc.exe Source.vb`.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

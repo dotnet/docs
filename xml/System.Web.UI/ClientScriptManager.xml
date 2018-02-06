@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsCallback" />
+    <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsXmlHttp" />
   </Docs>
   <Members>
     <Member MemberName="GetCallbackEventReference">
@@ -107,6 +110,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+        <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -151,6 +155,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+        <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -207,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackEventReference">
@@ -251,6 +258,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+        <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackClientHyperlink">
@@ -295,6 +303,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackClientHyperlink">
@@ -329,6 +339,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -361,6 +373,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.PostBackOptions" /> parameter is <see langword="null" /></exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -408,6 +423,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -445,6 +462,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.PostBackOptions" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackEventReference">
@@ -484,6 +504,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetWebResourceUrl">
@@ -543,6 +565,9 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
  \- or -  
   
  The web resource name has a length of zero.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptResource(System.Type,System.String)" />
+        <altmember cref="T:System.Web.UI.WebResourceAttribute" />
+        <altmember cref="T:System.Web.Handlers.AssemblyResourceLoader" />
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptBlockRegistered">
@@ -583,6 +608,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.Type,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock" />
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptBlockRegistered">
@@ -626,6 +653,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The client script type is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock" />
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptIncludeRegistered">
@@ -660,6 +689,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.Type,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude" />
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptIncludeRegistered">
@@ -709,6 +740,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The client script include type is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered(System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude" />
       </Docs>
     </Member>
     <Member MemberName="IsOnSubmitStatementRegistered">
@@ -743,6 +776,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.Type,System.String)" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement(System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsOnSubmitStatementRegistered">
@@ -786,6 +821,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The OnSubmit statement type is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.String)" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement(System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsStartupScriptRegistered">
@@ -820,6 +857,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.Type,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterStartupScript" />
       </Docs>
     </Member>
     <Member MemberName="IsStartupScriptRegistered">
@@ -863,6 +902,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The startup script type is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterStartupScript" />
       </Docs>
     </Member>
     <Member MemberName="RegisterArrayDeclaration">
@@ -905,6 +946,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arrayName" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.String.Split" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptBlock">
@@ -951,6 +993,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptBlock">
@@ -1000,6 +1043,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The client script block type is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptInclude">
@@ -1044,6 +1088,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.Type,System.String,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptInclude">
@@ -1101,6 +1147,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
  \- or -  
   
  The URL is empty.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.String,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptResource">
@@ -1157,6 +1205,10 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
  \- or -  
   
  The client resource name has a length of zero.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude" />
+        <altmember cref="T:System.Web.Handlers.AssemblyResourceLoader" />
+        <altmember cref="T:System.Web.UI.WebResourceAttribute" />
       </Docs>
     </Member>
     <Member MemberName="RegisterExpandoAttribute">
@@ -1191,6 +1243,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.JScript.Expando" />
       </Docs>
     </Member>
     <Member MemberName="RegisterExpandoAttribute">
@@ -1235,6 +1288,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.JScript.Expando" />
       </Docs>
     </Member>
     <Member MemberName="RegisterForEventValidation">
@@ -1271,6 +1325,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterForEventValidation">
@@ -1299,6 +1354,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.ValidateEvent" />
       </Docs>
     </Member>
     <Member MemberName="RegisterForEventValidation">
@@ -1338,6 +1394,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method is called prior to the <see cref="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" /> method.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterHiddenField">
@@ -1378,6 +1435,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hiddenFieldName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HiddenField" />
       </Docs>
     </Member>
     <Member MemberName="RegisterOnSubmitStatement">
@@ -1428,6 +1486,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlForm" />
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered" />
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -1474,6 +1534,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -1524,6 +1585,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String)" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriterTag.Script" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEvent">
@@ -1545,6 +1608,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <param name="uniqueId">A unique ID representing the client control generating the event.</param>
         <summary>Validates a client event that was registered for event validation using the <see cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEvent">
@@ -1580,7 +1644,125 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="uniqueId" /> is <see langword="null" /> or an empty string ("").</exception>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPostBackEventReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that can be used in a client event to cause postback to the server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsOnSubmitStatementRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the OnSubmit statement is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterClientScriptBlock">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ValidateEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates a client event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCallbackEventReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to a server event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterClientScriptInclude">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the client script include with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsClientScriptIncludeRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the client script include is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsStartupScriptRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the startup script is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPostBackClientHyperlink">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a reference, with <see langword="javascript:" /> appended to the beginning of it, that can be used in a client event to post back to the server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsClientScriptBlockRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the client script block is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterStartupScript">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the startup script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterForEventValidation">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an event reference for validation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterExpandoAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a name/value pair as a custom (expando) attribute of the specified control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

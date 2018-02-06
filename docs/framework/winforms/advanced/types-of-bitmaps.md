@@ -23,7 +23,7 @@ helpviewer_keywords:
   - ".bmp files"
   - "EXIF file format"
   - "PNG files"
-  - "pictures, file formats"
+  - "pictures [Windows Forms], file formats"
   - "Tag Image File Format"
   - "bitmaps [Windows Forms], file format"
   - "Exchangeable Image File"
@@ -32,6 +32,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Types of Bitmaps
 A bitmap is an array of bits that specify the color of each pixel in a rectangular array of pixels. The number of bits devoted to an individual pixel determines the number of colors that can be assigned to that pixel. For example, if each pixel is represented by 4 bits, then a given pixel can be assigned one of 16 different colors (2^4 = 16). The following table shows a few examples of the number of colors that can be assigned to a pixel represented by a given number of bits.  
@@ -92,8 +94,8 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
  TIFF is a flexible and extendable format that is supported by a wide variety of platforms and image-processing applications. TIFF files can store images with an arbitrary number of bits per pixel and can employ a variety of compression algorithms. Several images can be stored in a single, multiple-page TIFF file. Information related to the image (scanner make, host computer, type of compression, orientation, samples per pixel, and so on) can be stored in the file and arranged through the use of tags. The TIFF format can be extended as needed by the approval and addition of new tags.  
   
 ## See Also  
- <xref:System.Drawing.Image?displayProperty=nameWithType>   
- <xref:System.Drawing.Bitmap?displayProperty=nameWithType>   
- <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType>   
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)   
+ <xref:System.Drawing.Image?displayProperty=nameWithType>  
+ <xref:System.Drawing.Bitmap?displayProperty=nameWithType>  
+ <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType>  
+ [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)  
  [Working with Images, Bitmaps, Icons, and Metafiles](../../../../docs/framework/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles.md)

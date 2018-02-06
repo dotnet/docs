@@ -31,10 +31,14 @@
   
  To have the derived button control display an image, set the <xref:System.Windows.Forms.ButtonBase.Image%2A> property or the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> and <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> properties. The image can be aligned on the button control by setting the <xref:System.Windows.Forms.ButtonBase.ImageAlign%2A> property. Likewise, to align the <xref:System.Windows.Forms.Control.Text%2A> displayed on the button control, set the <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property.  
   
- The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.Button" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
+    <altmember cref="T:System.Windows.Forms.RadioButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -196,6 +200,7 @@
         <summary>Creates a new accessibility object for the control.</summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -215,6 +220,7 @@
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -240,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -258,6 +265,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -293,7 +301,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -374,6 +382,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.FlatStyle" /> values.</exception>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -445,6 +454,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="P:System.Windows.Forms.ButtonBase.FlatStyle" />
       </Docs>
     </Member>
     <Member MemberName="ImageAlign">
@@ -483,6 +494,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ButtonBase.TextAlign" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -538,6 +550,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than the lower bounds of the <see cref="P:System.Windows.Forms.ButtonBase.ImageIndex" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -625,6 +638,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.ButtonBase.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -658,6 +673,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.ButtonBase.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -718,6 +735,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -739,6 +757,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -772,6 +791,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnGotFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnLostFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -808,6 +828,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -841,6 +862,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -874,6 +896,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnLostFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnLostFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnGotFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -910,6 +933,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -946,6 +970,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -979,6 +1004,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -1048,6 +1074,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1102,6 +1129,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1123,6 +1151,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -1144,6 +1173,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ResetFlagsandPaint">
@@ -1188,6 +1218,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1226,6 +1257,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ButtonBase.ImageAlign" />
       </Docs>
     </Member>
     <Member MemberName="TextImageRelation">
@@ -1286,6 +1318,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="UseMnemonic">
@@ -1357,6 +1391,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

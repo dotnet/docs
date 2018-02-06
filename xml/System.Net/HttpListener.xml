@@ -433,6 +433,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="EndGetContext">
@@ -537,6 +542,11 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" /> property after the <see cref="M:System.Net.HttpListener.Start" /> method was already called.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <see cref="P:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement" /> property was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="ExtendedProtectionSelectorDelegate">
@@ -582,6 +592,11 @@
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" /> property after the <see cref="M:System.Net.HttpListener.Start" /> method was already called.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">An attempt was made to set the <see cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" /> property on a platform that does not support extended protection.</exception>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="GetContext">
@@ -675,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListenerContext" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreWriteExceptions">

@@ -1,24 +1,17 @@
 ---
 title: "Common Attributes (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 785a0526-6c0e-4599-8c61-ccdc88dd9965
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Common Attributes (C#)
 This topic describes the attributes that are most commonly used in C# programs.  
@@ -241,9 +234,9 @@ class SampleClass
  For more information about the Caller Info attributes, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).  
   
 ## See Also  
- <xref:System.Reflection>   
- <xref:System.Attribute>   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
+ <xref:System.Reflection>  
+ <xref:System.Attribute>  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Attributes](../../../../../docs/standard/attributes/index.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

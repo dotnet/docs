@@ -16,6 +16,9 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Creating a Cryptographic Scheme
 The cryptographic components of the .NET Framework can be combined to create different schemes to encrypt and decrypt data.  

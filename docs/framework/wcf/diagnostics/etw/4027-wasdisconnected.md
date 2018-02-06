@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 940337a3-3094-488a-a1b5-0fb4ab16da73
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # 4027 - WasDisconnected
 ## Properties  

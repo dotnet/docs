@@ -180,6 +180,8 @@
       <Docs>
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+        <altmember cref="M:System.ComponentModel.GroupDescription.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeGroupNames">

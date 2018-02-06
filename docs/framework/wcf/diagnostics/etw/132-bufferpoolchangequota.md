@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe18d326-4220-46fc-9109-cec3d1530281
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # 132 - BufferPoolChangeQuota
 BufferPoolChangeQuota  

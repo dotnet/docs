@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Structures
 This section describes the unmanaged structures that the metadata API uses.  

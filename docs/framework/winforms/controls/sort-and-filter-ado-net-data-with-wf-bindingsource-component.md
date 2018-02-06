@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sorting data"
-  - "data sorting, ADO.NET"
+  - "data sorting [Windows Forms], ADO.NET"
   - "data [Windows Forms], filtering"
   - "BindingSource component [Windows Forms], sorting and filtering data"
   - "filtering [Windows Forms], ADO.NET"
@@ -25,6 +25,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component
 You can expose the sorting and filtering capability of <xref:System.Windows.Forms.BindingSource> control through the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties. You can apply simple sorting when the underlying data source is an <xref:System.ComponentModel.IBindingList>, and you can apply filtering and advanced sorting when the data source is an <xref:System.ComponentModel.IBindingListView>. The <xref:System.Windows.Forms.BindingSource.Sort%2A> property requires standard [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] syntax: a string representing the name of a column of data in the data source followed by `ASC` or `DESC` to indicate whether the list should be sorted in ascending or descending order. You can set advanced sorting or multiple-column sorting by separating each column with a comma separator. The <xref:System.Windows.Forms.BindingSource.Filter%2A> property takes a string expression.  
@@ -60,7 +62,7 @@ You can expose the sorting and filtering capability of <xref:System.Windows.Form
  To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1` and a <xref:System.Windows.Forms.DataGridView> named `dataGridView1`. Handle the <xref:System.Windows.Forms.Form.Load> event for the form and call `InitializeSortedFilteredBindingSource` in the load event handler method.  
   
 ## See Also  
- <xref:System.Windows.Forms.BindingSource.Sort%2A>   
- <xref:System.Windows.Forms.BindingSource.Filter%2A>   
- [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)   
+ <xref:System.Windows.Forms.BindingSource.Sort%2A>  
+ <xref:System.Windows.Forms.BindingSource.Filter%2A>  
+ [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)  
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)

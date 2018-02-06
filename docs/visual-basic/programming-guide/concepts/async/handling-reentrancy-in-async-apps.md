@@ -1,7 +1,7 @@
 ---
 title: "Handling Reentrancy in Async Apps (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Handling Reentrancy in Async Apps (Visual Basic)
 When you include asynchronous code in your app, you should consider and possibly prevent reentrancy, which refers to reentering an asynchronous operation before it has completed. If you don't identify and handle possibilities for reentrancy, it can cause unexpected results.  
@@ -69,7 +63,7 @@ TOTAL bytes returned:  890591
 1. msdn.microsoft.com/library/hh191443.aspx                83732  
 2. msdn.microsoft.com/library/aa578028.aspx               205273  
 6. msdn.microsoft.com/library/ms404677.aspx               197325  
-3. msdn.microsoft.com/en-us/library/jj155761.aspx                29019  
+3. msdn.microsoft.com/library/jj155761.aspx                29019  
 7. msdn.microsoft.com                                            42972  
 4. msdn.microsoft.com/library/hh290140.aspx               117152  
 8. msdn.microsoft.com/library/ff730837.aspx               146159  
@@ -688,5 +682,5 @@ End Function
 12. Make the changes from [Disable the Start Button](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), [Cancel and Restart the Operation](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), or [Run Multiple Operations and Queue the Output](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645) to handle the reentrancy.  
   
 ## See Also  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
+ [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
  [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)

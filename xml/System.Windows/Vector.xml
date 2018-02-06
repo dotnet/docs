@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Windows.Vector.Add" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Vector.Add" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -156,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Vector.Add" />
       </Docs>
     </Member>
     <Member MemberName="AngleBetween">
@@ -290,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Division(System.Windows.Vector,System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -344,6 +348,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -381,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -420,6 +426,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -547,6 +554,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -580,6 +588,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -613,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -648,6 +658,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -675,6 +686,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_UnaryNegation(System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -741,6 +753,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Vector.Add" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -775,6 +788,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Vector.Add" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -809,6 +823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Divide(System.Windows.Vector,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -849,6 +864,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Vector.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -867,10 +883,20 @@
         <Parameter Name="vector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The vector to convert.</param>
+        <summary>Creates a <see cref="T:System.Windows.Point" /> with the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of this vector.</summary>
+        <returns>A point with <see cref="P:System.Windows.Point.X" />- and <see cref="P:System.Windows.Point.Y" />-coordinate values equal to the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> offset values of <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to convert a <xref:System.Windows.Vector> into a <xref:System.Windows.Point>.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedExplicitOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedexplicitoperatorexample2)]
+ [!code-vb[VectorExamples_snip#OverloadedExplicitOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedexplicitoperatorexample2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -889,10 +915,20 @@
         <Parameter Name="vector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The vector to convert.</param>
+        <summary>Creates a <see cref="T:System.Windows.Size" /> from the offsets of this vector.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> with a <see cref="P:System.Windows.Size.Width" /> equal to the absolute value of this vector's <see cref="P:System.Windows.Vector.X" /> property and a <see cref="P:System.Windows.Size.Height" /> equal to the absolute value of this vector's <see cref="P:System.Windows.Vector.Y" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to explicitly convert a <xref:System.Windows.Vector> into a <xref:System.Windows.Size>.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedExplicitOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedexplicitoperatorexample1)]
+ [!code-vb[VectorExamples_snip#OverloadedExplicitOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedexplicitoperatorexample1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -967,6 +1003,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -1001,6 +1038,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -1035,6 +1073,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -1071,6 +1110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1105,6 +1145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Subtract(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -1137,6 +1178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.Negate" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1169,6 +1211,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -1203,6 +1246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -1264,6 +1308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1286,6 +1331,7 @@
         <summary>Returns the string representation of this <see cref="T:System.Windows.Vector" /> structure with the specified formatting information.</summary>
         <returns>A string that represents the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of this <see cref="T:System.Windows.Vector" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -1314,6 +1360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Vector.Y" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -1342,7 +1389,62 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Vector.X" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a vector to a point or to another vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the specified vector by the specified <see cref="T:System.Double" />, <see cref="T:System.Windows.Media.Matrix" />, or <see cref="T:System.Windows.Vector" /> and returns the result as a <see cref="T:System.Windows.Vector" /> or <see cref="T:System.Double" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a vector into a <see cref="T:System.Windows.Size" /> or a <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a vector to a point or to another vector.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Multiply">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Vector" /> by the specified <see cref="T:System.Double" />, <see cref="T:System.Windows.Media.Matrix" />, or <see cref="T:System.Windows.Vector" /> and returns the result.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string representation of this <see cref="T:System.Windows.Vector" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

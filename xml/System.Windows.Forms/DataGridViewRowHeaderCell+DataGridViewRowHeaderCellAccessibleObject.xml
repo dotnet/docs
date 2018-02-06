@@ -31,6 +31,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleRole" />
+    <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +59,8 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" /> that owns this accessible object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -67,6 +79,7 @@
         <summary>Gets the location and size of the accessible object.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the accessible object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -85,6 +98,8 @@
         <summary>Gets a description of the default action of the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" />.</summary>
         <value>An empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -111,6 +126,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -136,6 +153,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -173,6 +193,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.AccessibleNavigation" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -192,6 +217,10 @@
         <value>The <see cref="T:System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject" /> that belongs to the <see cref="T:System.Windows.Forms.DataGridViewRow" /> of the current <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -210,6 +239,9 @@
         <summary>Gets the role of the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" />.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.RowHeader" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+        <altmember cref="F:System.Windows.Forms.AccessibleRole.RowHeader" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -247,6 +279,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" /> property value is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.AccessibleSelection" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectionMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -272,6 +308,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -291,6 +330,8 @@
         <value>An empty string ("").</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
   </Members>

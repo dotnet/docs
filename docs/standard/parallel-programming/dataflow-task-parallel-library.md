@@ -1,32 +1,29 @@
 ---
 title: "Dataflow (Task Parallel Library)"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library"
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Dataflow (Task Parallel Library)
 <a name="top"></a> The Task Parallel Library (TPL) provides dataflow components to help increase the robustness of concurrency-enabled applications. These dataflow components are collectively referred to as the *TPL Dataflow Library*. This dataflow model promotes actor-based programming by providing in-process message passing for coarse-grained dataflow and pipelining tasks. The dataflow components build on the types and scheduling infrastructure of the TPL and integrate with the C#, [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], and F# language support for asynchronous programming. These dataflow components are useful when you have multiple operations that must communicate with one another asynchronously or when you want to process data as it becomes available. For example, consider an application that processes image data from a web camera. By using the dataflow model, the application can process image frames as they become available. If the application enhances image frames, for example, by performing light correction or red-eye reduction, you can create a *pipeline* of dataflow components. Each stage of the pipeline might use more coarse-grained parallelism functionality, such as the functionality that is provided by the TPL, to transform the image.  
   
  This document provides an overview of the TPL Dataflow Library. It describes the programming model, the predefined dataflow block types, and how to configure dataflow blocks to meet the specific requirements of your applications.  
-  
-> [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+
+[!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
   
  This document contains the following sections:  
   
@@ -82,7 +79,7 @@ manager: "wpickett"
  [!code-csharp[TPLDataflow_Overview#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_overview/cs/program.cs#11)]
  [!code-vb[TPLDataflow_Overview#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#11)]  
   
- You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md), and [NIB: How to: Handle Exceptions Thrown by Tasks](http://msdn.microsoft.com/en-us/d6c47ec8-9de9-4880-beb3-ff19ae51565d).  
+ You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md), and [NIB: How to: Handle Exceptions Thrown by Tasks](http://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d).  
   
  [[go to top](#top)]  
   

@@ -10,15 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "serialization of documents"
-  - "storage of documents"
-  - "documents, storage"
-  - "documents, serialization"
+  - "serialization of documents [WPF], , "
+  - "documents [WPF], storage"
+  - "documents [WPF], serialization"
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Document Serialization and Storage
 [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provides a powerful environment for creating and displaying high quality documents.  Enhanced features that support both fixed-documents and flow-documents, advanced viewing controls, combined with powerful 2D and 3D graphic capabilities take [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] applications to a new level of quality and user experience.  Being able to flexibly manage an in-memory representation of a document is a key feature of [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)], and being able to efficiently save and load documents from a data store is a need of almost every application.  The process of converting a document from an internal in-memory representation to an external data store is termed serialization.  The reverse process of reading a data store and recreating the original in-memory instance is termed deserialization.  
@@ -81,9 +82,9 @@ manager: "wpickett"
 3.  After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
   
 ## See Also  
- <xref:System.Windows.Documents.Serialization>   
- <xref:System.Windows.Xps.XpsDocumentWriter>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ <xref:System.Windows.Documents.Serialization>  
+ <xref:System.Windows.Xps.XpsDocumentWriter>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [XML Paper Specification: Overview](http://go.microsoft.com/fwlink?LinkID=106246)

@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "opening dialog boxes"
-  - "dialog boxes, opening"
+  - "opening dialog boxes [WPF]"
+  - "dialog boxes [WPF], opening"
 ms.assetid: 6b1557d2-da98-4ef4-9f68-4089f04ab9ea
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Open a Dialog Box
 This example shows how to open a dialog box.  

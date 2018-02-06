@@ -16,9 +16,11 @@ helpviewer_keywords:
   - "clients [WCF], consuming services"
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents and metadata documents from service model code.  
@@ -268,6 +270,6 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
  Finally, you should not use the tool in the middle-tier of your application, as it may cause denial-of-service to the current process.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)

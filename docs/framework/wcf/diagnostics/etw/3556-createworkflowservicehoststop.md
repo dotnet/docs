@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bac6387b-1096-4e17-9907-8e464ee780db
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # 3556 - CreateWorkflowServiceHostStop
 ## Properties  

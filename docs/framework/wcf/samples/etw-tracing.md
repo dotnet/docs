@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
 caps.latest.revision: 42
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ETW Tracing
 This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and includes ETW tracing.  

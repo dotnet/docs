@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AddImport Method1
 Adds imports to the assembly.  
@@ -62,6 +64,6 @@ HRESULT AddImport(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorNativeLinkFlags Enumeration
 Provides flag values used by the linker when linking native code.  

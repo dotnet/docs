@@ -1,41 +1,25 @@
 ---
 title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, parameters"
-  - "procedure overloading, indefinite number of parameters"
-  - "procedures, defining"
+  - "procedures [Visual Basic], parameters"
+  - "procedure overloading [Visual Basic], indefinite number of parameters"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "procedure parameters"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)
 If a procedure has a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter, you cannot define an overloaded version taking a one-dimensional array for the parameter array. For more information, see "Implicit Overloads for a ParamArray Parameter" in [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
@@ -74,13 +58,13 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
  Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the length of the array the calling code passed to it, and take appropriate steps if it is too large for your application.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Parameter Arrays](./parameter-arrays.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Optional Parameters](./optional-parameters.md)  
+ [Parameter Arrays](./parameter-arrays.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Troubleshooting Procedures](./troubleshooting-procedures.md)  
+ [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)  
+ [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)  
+ [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)  
  [Overload Resolution](./overload-resolution.md)

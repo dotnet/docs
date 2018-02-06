@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "handling attached events [WPF]"
   - "defining attached events as routed events [WPF]"
@@ -24,6 +24,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Attached Events Overview
 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] defines a language component and type of event called an *attached event*. The concept of an attached event enables you to add a handler for a particular event to an arbitrary element rather than to an element that actually defines or inherits the event. In this case, neither the object potentially raising the event nor the destination handling instance defines or otherwise "owns" the event.  
@@ -98,6 +100,6 @@ manager: "wpickett"
  However, if you are defining a custom attached event based on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model of basing attached events on <xref:System.Windows.RoutedEvent>, you can use <xref:System.Windows.UIElement.RaiseEvent%2A> to raise an attached event from any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. Raising a routed event (attached or not) requires that you declare a particular element in the element tree as the event source; that source is reported as the <xref:System.Windows.UIElement.RaiseEvent%2A> caller. Determining which element is reported as the source in the tree is your service's responsibility  
   
 ## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)   
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)  
  [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

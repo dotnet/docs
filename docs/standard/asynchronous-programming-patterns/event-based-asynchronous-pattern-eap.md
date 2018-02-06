@@ -17,6 +17,9 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Event-based Asynchronous Pattern (EAP)
 There are a number of ways to expose asynchronous features to client code. The Event-based Asynchronous Pattern prescribes one way for classes to present asynchronous behavior.  
@@ -64,7 +67,7 @@ There are a number of ways to expose asynchronous features to client code. The E
  Describes multithreading features in the C# and Visual Basic languages.  
   
 ## See Also  
- [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)   
- [Events](../../../docs/standard/events/index.md)   
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
+ [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)  
+ [Events](../../../docs/standard/events/index.md)  
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
  [Asynchronous Programming Design Patterns](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

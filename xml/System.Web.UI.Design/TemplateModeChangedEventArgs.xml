@@ -24,10 +24,13 @@
   
  Custom designers that are derived from the <xref:System.Web.UI.Design.TemplatedControlDesigner> class can override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to perform additional processing when the template editing mode changes for a control on the design surface.  
   
- For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
+    <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +58,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
+        <altmember cref="P:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup" />
       </Docs>
     </Member>
     <Member MemberName="NewTemplateGroup">
@@ -80,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
+        <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
       </Docs>
     </Member>
   </Members>

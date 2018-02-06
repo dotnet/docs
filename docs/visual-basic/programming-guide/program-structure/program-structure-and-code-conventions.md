@@ -1,45 +1,28 @@
 ---
 title: "Program Structure and Code Conventions (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions"
   - "Visual Basic code, coding conventions"
-  - "coding conventions, Visual Basic"
-  - "programs, structure"
-  - "program structure"
-  - "naming conventions, Visual Basic"
-  - "best practices, coding conventions"
-  - "conventions, Visual Basic coding"
+  - "coding conventions [Visual Basic], Visual Basic"
+  - "programs [Visual Basic], structure"
+  - "program structure [Visual Basic]"
+  - "naming conventions [Visual Basic], Visual Basic"
+  - "best practices [Visual Basic], coding conventions"
+  - "conventions [Visual Basic], Visual Basic coding"
   - "Visual Basic code"
-  - "programming, Visual Basic coding conventions"
+  - "programming [Visual Basic], Visual Basic coding conventions"
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Program Structure and Code Conventions (Visual Basic)
 This section introduces the typical [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program structure, provides a simple [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program, "Hello, World", and discusses [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code conventions. Code conventions are suggestions that focus not on a program's logic but on its physical structure and appearance. Following them makes your code easier to read, understand, and maintain. Code conventions can include, among others:  

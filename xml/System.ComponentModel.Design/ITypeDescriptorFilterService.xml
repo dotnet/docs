@@ -54,6 +54,11 @@
     <block subset="none" type="overrides">
       <para>To filter the member descriptors exposed by a <see cref="T:System.ComponentModel.TypeDescriptor" />, implement this interface on a component and override the <see cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterAttributes(System.ComponentModel.IComponent,System.Collections.IDictionary)" />, <see cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterEvents(System.ComponentModel.IComponent,System.Collections.IDictionary)" />, or <see cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterProperties(System.ComponentModel.IComponent,System.Collections.IDictionary)" /> methods of this class to filter attributes, events, or properties, respectively.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Collections.IDictionary" />
   </Docs>
   <Members>
     <Member MemberName="FilterAttributes">
@@ -98,6 +103,9 @@
         <block subset="none" type="overrides">
           <para>Return <see langword="false" /> only when necessary, because repeated queries to the type descriptor filter service can decrease performance.</para>
         </block>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="P:System.Attribute.TypeId" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="FilterEvents">
@@ -142,6 +150,8 @@
         <block subset="none" type="overrides">
           <para>Return <see langword="false" /> only when necessary, because repeated queries to the type descriptor filter service can decrease performance.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="FilterProperties">
@@ -186,6 +196,8 @@
         <block subset="none" type="overrides">
           <para>Return <see langword="false" /> only when necessary, because repeated queries to the type descriptor filter service can decrease performance.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
   </Members>

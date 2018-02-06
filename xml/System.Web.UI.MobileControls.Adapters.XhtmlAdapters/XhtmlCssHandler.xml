@@ -77,6 +77,8 @@ type =
         <value>
           <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.IHttpHandler" />
+        <altmember cref="P:System.Web.IHttpHandler.IsReusable" />
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -103,6 +105,7 @@ type =
  -or-  
   
  The CSS style sheet named in the <see cref="P:System.Web.HttpRequest.QueryString" /> cannot be found.</exception>
+        <altmember cref="M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       </Docs>
     </Member>
   </Members>

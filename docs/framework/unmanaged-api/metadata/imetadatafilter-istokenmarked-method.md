@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataFilter::IsTokenMarked Method
 Gets a value indicating whether the specified metadata token has been marked as processed.  

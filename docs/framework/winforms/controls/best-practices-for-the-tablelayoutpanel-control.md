@@ -12,20 +12,22 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "layout [Windows Forms]"
   - "TableLayoutPanel control [Windows Forms], best practices"
-  - "forms, best practices"
-  - "AutoSize property, TableLayoutPanel control"
-  - "controls [Windows Forms],sizing"
-  - "TableLayoutPanel control [Windows Forms],AutoSize behavior"
-  - "layout [Windows Forms],AutoSize"
+  - "forms [Windows Forms], best practices"
+  - "AutoSize property [Windows Forms], tableLayoutPanel control"
+  - "controls [Windows Forms], sizing"
+  - "TableLayoutPanel control [Windows Forms], AutoSize behavior"
+  - "layout [Windows Forms], AutoSize"
   - "layout [Windows Forms], best practices"
-  - "best practices, TableLayoutPanel control"
-  - "sizing, automatic"
+  - "best practices [Windows Forms], tableLayoutPanel control"
+  - "sizing [Windows Forms], automatic"
   - "automatic sizing"
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Best Practices for the TableLayoutPanel Control
 The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layout features that you should consider carefully before using on your Windows Forms.  
@@ -62,5 +64,5 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layou
  The <xref:System.Windows.Forms.TableLayoutPanel> control does not support visual inheritance in the Windows Forms Designer. A <xref:System.Windows.Forms.TableLayoutPanel> control in a derived class appears as "locked" at design time.  
   
 ## See Also  
- <xref:System.Windows.Forms.TableLayoutPanel>   
+ <xref:System.Windows.Forms.TableLayoutPanel>  
  <xref:System.Windows.Forms.FlowLayoutPanel>

@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "path gradients, creating"
-  - "gradients, creating path"
-  - "graphics paths, creating gradient"
+  - "path gradients [Windows Forms], creating"
+  - "gradients [Windows Forms], creating path"
+  - "graphics paths [Windows Forms], creating gradient"
 ms.assetid: 1948e834-e104-481c-b71d-d8aa9e4d106e
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Path Gradient
 The <xref:System.Drawing.Drawing2D.PathGradientBrush> class allows you to customize the way you fill a shape with gradually changing colors. For example, you can specify one color for the center of a path and another color for the boundary of a path. You can also specify separate colors for each of several points along the boundary of a path.  

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;allowAccounts&gt;
 Contains a collection of configuration elements that specify user accounts for processes that host [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] services, and are granted connection access to the sharing service.  
@@ -47,7 +49,7 @@ Contains a collection of configuration elements that specify user accounts for p
 |[\<net.pipe>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-pipe.md) or [\<net.tcp>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)|Specifies configuration settings for the Net Pipe or TCP sharing services.|  
   
 ## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>   
+ <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  
  <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>

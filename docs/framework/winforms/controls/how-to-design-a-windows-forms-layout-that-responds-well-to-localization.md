@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms]"
-  - "application design, localization"
+  - "application design [Windows Forms], localization"
   - "Windows Forms, localization"
-  - "localization, Windows Forms layout"
+  - "localization [Windows Forms], Windows Forms layout"
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Design a Windows Forms Layout that Responds Well to Localization
 Creating forms that are ready to be localized greatly speeds development for international markets. You can use the <xref:System.Windows.Forms.TableLayoutPanel> control to implement layouts that respond gracefully as controls resize due to changes in their <xref:System.Windows.Forms.Control.Text%2A> property values.  
@@ -60,6 +62,6 @@ Creating forms that are ready to be localized greatly speeds development for int
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.Windows.Forms.TableLayoutPanel>   
- <xref:System.Windows.Forms.FlowLayoutPanel>   
+ <xref:System.Windows.Forms.TableLayoutPanel>  
+ <xref:System.Windows.Forms.FlowLayoutPanel>  
  [Localization](../../../../docs/standard/globalization-localization/localization.md)

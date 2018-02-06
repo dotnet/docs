@@ -1,7 +1,7 @@
 ---
 title: "How to: Speed Up Access to an Object with a Long Qualification Path (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -12,28 +12,13 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], accessing"
   - "variables [Visual Basic], object"
-  - "With statement"
+  - "With statement [Visual Basic]"
   - "With block"
-  - "object variables, accessing"
+  - "object variables [Visual Basic], accessing"
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Speed Up Access to an Object with a Long Qualification Path (Visual Basic)
 If you frequently access an object that requires a qualification path of several methods and properties, you can speed up your code by not repeating the qualification path.  
@@ -74,5 +59,5 @@ If you frequently access an object that requires a qualification path of several
     ```  
   
 ## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)   
+ [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)

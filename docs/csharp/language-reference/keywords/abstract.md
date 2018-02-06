@@ -1,6 +1,6 @@
 ---
 title: "abstract (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # abstract (C# Reference)
 The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the `abstract` modifier in a class declaration to indicate that a class is intended only to be a base class of other classes. Members marked as abstract, or included in an abstract class, must be implemented by classes that derive from the abstract class.  
@@ -35,7 +21,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
 ## Example  
  In this example, the class `Square` must provide an implementation of `Area` because it derives from `ShapesClass`:  
   
- [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_1.cs)]  
   
  Abstract classes have the following features:  
   
@@ -57,7 +43,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 -   Because an abstract method declaration provides no actual implementation, there is no method body; the method declaration simply ends with a semicolon and there are no curly braces ({ }) following the signature. For example:  
   
-    ```  
+    ```csharp  
     public abstract void MyMethod();  
     ```  
   
@@ -77,28 +63,28 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
  An abstract class that implements an interface might map the interface methods onto abstract methods. For example:  
   
- [!code-cs[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_2.cs)]  
   
 ## Example  
  In this example, the class `DerivedClass` is derived from an abstract class `BaseClass`. The abstract class contains an abstract method, `AbstractMethod`, and two abstract properties, `X` and `Y`.  
   
- [!code-cs[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_3.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_3.cs)]  
   
  In the preceding example, if you attempt to instantiate the abstract class by using a statement like this:  
   
-```  
+```csharp
 BaseClass bc = new BaseClass();   // Error  
 ```  
   
- you will get an error saying that the compiler cannot create an instance of the abstract class 'BaseClass'.  
+You will get an error saying that the compiler cannot create an instance of the abstract class 'BaseClass'.  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [virtual](../../../csharp/language-reference/keywords/virtual.md)   
- [override](../../../csharp/language-reference/keywords/override.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [virtual](../../../csharp/language-reference/keywords/virtual.md)  
+ [override](../../../csharp/language-reference/keywords/override.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

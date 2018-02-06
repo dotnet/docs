@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Interpreting Network Tracing
 When network tracing is enabled, you can use tracing to capture calls your application makes to various <xref:System.Net> class members. The output from these calls may be similar to the following examples.  
@@ -49,6 +51,6 @@ When network tracing is enabled, you can use tracing to capture calls your appli
  `Connection: Close`  
   
 ## See Also  
- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)   
- [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)   
+ [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
+ [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)  
  [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)

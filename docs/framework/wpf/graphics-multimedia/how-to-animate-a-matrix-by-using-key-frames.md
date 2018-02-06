@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, Matrix properties with key frames"
-  - "Matrix properties, animating with key frames"
-  - "key frames, animating Matrix properties with"
+  - "animation [WPF], Matrix properties with key frames"
+  - "Matrix properties [WPF], animating with key frames"
+  - "key frames [WPF], animating Matrix properties with"
 ms.assetid: b851a4c7-ecb1-420e-9203-83e7afd037fd
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Matrix by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property of a <xref:System.Windows.Media.MatrixTransform> by using key frames.  
@@ -41,7 +43,7 @@ This example shows how to animate the <xref:System.Windows.Media.MatrixTransform
  For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
- <xref:System.Windows.Media.MatrixTransform.Matrix%2A>   
- <xref:System.Windows.Media.MatrixTransform>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ <xref:System.Windows.Media.MatrixTransform.Matrix%2A>  
+ <xref:System.Windows.Media.MatrixTransform>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

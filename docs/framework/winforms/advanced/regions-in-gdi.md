@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "GDI+, regions"
-  - "drawing, regions"
+  - "drawing [Windows Forms], regions"
   - "regions"
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Regions in GDI+
 A region is a portion of the display area of an output device. Regions can be simple (a single rectangle) or complex (a combination of polygons and closed curves). The following illustration shows two regions: one constructed from a rectangle, and the other constructed from a path.  
@@ -46,6 +48,6 @@ A region is a portion of the display area of an output device. Regions can be si
  [!code-vb[LinesCurvesAndShapes#61](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#61)]  
   
 ## See Also  
- <xref:System.Drawing.Region?displayProperty=nameWithType>   
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
+ <xref:System.Drawing.Region?displayProperty=nameWithType>  
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
  [Using Regions](../../../../docs/framework/winforms/advanced/using-regions.md)

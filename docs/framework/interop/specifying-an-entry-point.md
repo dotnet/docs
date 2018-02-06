@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying an Entry Point
 An entry point identifies the location of a function in a DLL. Within a managed project, the original name or ordinal entry point of a target function identifies that function across the interoperation boundary. Further, you can map the entry point to a different name, effectively renaming the function.  
@@ -93,7 +95,7 @@ extern "C" int MsgBox(HWND hWnd,
 ```  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)   
- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)   
+ <xref:System.Runtime.InteropServices.DllImportAttribute>  
+ [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
+ [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
  [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)

@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedScope::GetChildren Method
 Gets the children of this scope.  
@@ -58,5 +60,5 @@ HRESULT GetChildren(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See Also  
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)   
+ [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)  
  [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)

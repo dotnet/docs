@@ -319,7 +319,7 @@
   
  Use the <xref:System.Threading.AsyncFlowControl.Undo%2A> method on the returned <xref:System.Threading.AsyncFlowControl> structure to return the <xref:System.Security.SecurityContext> object to its previous state.  
   
- This method is protected with a <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> for <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Security.SecurityContext> information during asynchronous calls. When the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
+ This method is protected with a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for <xref:System.Security.Permissions.SecurityPermissionFlag.Infrastructure?displayProperty=nameWithType> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Security.SecurityContext> information during asynchronous calls. When the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
   
  ]]></format>
         </remarks>

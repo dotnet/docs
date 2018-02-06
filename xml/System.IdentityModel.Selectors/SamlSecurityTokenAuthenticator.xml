@@ -302,5 +302,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves the identity associated with the passed in security token or the security key identifier using the supporting token authenticators specified when the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> instance was created and returns it as an <see cref="T:System.Security.Principal.IIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResolveClaimSet">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves the identity associated with the specified security token or key identifier and returns it as a <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

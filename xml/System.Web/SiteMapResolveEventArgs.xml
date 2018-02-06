@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMapResolveEventHandler" />
+    <altmember cref="E:System.Web.SiteMap.SiteMapResolve" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.ResolveSiteMapNode(System.Web.HttpContext)" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -84,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -109,6 +113,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapProvider" />
+        <altmember cref="E:System.Web.SiteMap.SiteMapResolve" />
+        <altmember cref="E:System.Web.SiteMapProvider.SiteMapResolve" />
       </Docs>
     </Member>
   </Members>

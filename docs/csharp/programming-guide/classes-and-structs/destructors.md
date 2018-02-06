@@ -1,13 +1,9 @@
 ---
 title: "Finalizers (C# Programming Guide)"
-
-ms.date: "2017-05-10"
+ms.date: 05/10/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "~ [C#], in finalizers"
@@ -17,21 +13,6 @@ ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Finalizers (C# Programming Guide)
 Finalizers are used to destruct instances of classes.  
@@ -50,11 +31,11 @@ Finalizers are used to destruct instances of classes.
   
  For example, the following is a declaration of a finalizer for the `Car` class.
   
- [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_1.cs)]  
+ [!code-csharp[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_1.cs)]  
 
 A finalizer can also be implemented as an expression body definition, as the following example shows.
 
-[!code-cs[expression-bodied-finalizer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
+[!code-csharp[expression-bodied-finalizer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
   
  The finalizer implicitly calls <xref:System.Object.Finalize%2A> on the base class of the object. Therefore, a call to a finalizer is implicitly translated to the following code:  
   
@@ -98,13 +79,13 @@ protected override void Finalize()
 ## Example  
  The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. When the program runs, notice that the finalizers for the three classes are called automatically, and in order, from the most-derived to the least-derived.  
   
- [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_2.cs)]  
+ [!code-csharp[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.IDisposable>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
+ <xref:System.IDisposable>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
  [Garbage Collection](../../../standard/garbage-collection/index.md)

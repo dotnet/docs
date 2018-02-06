@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugGCReferenceEnum Interface
 Provides an enumerator for objects that will be garbage-collected.  

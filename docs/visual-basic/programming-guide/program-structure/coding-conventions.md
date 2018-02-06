@@ -1,37 +1,21 @@
 ---
 title: "Visual Basic Coding Conventions"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "coding conventions, Visual Basic"
+  - "coding conventions [Visual Basic], Visual Basic"
   - "examples [Visual Basic], coding conventions"
   - "Visual Basic code, conventions"
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 caps.latest.revision: 48
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Visual Basic Coding Conventions
 Microsoft develops samples and documentation that follow the guidelines in this topic. If you follow the same coding conventions, you may gain the following benefits:  

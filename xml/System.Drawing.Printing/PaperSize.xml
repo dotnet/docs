@@ -33,6 +33,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Drawing.Printing.PaperSize.Kind" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PageSettings.PaperSize" />
+    <altmember cref="P:System.Windows.Forms.ListControl.DisplayMember" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -50,7 +55,7 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=nameWithType>|  
+|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind.Custom?displayProperty=nameWithType>|  
 |<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=nameWithType>|  
   
  ]]></format>
@@ -134,6 +139,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Width" />
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -160,6 +166,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperKind" />
       </Docs>
     </Member>
     <Member MemberName="PaperName">
@@ -195,6 +202,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperKind" />
       </Docs>
     </Member>
     <Member MemberName="RawKind">
@@ -385,6 +393,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Height" />
       </Docs>
     </Member>
   </Members>

@@ -12,6 +12,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Integrated Windows Authentication with Extended Protection
 Enhancements were made that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream>, and related classes in the <xref:System.Net> and related namespaces. Support was added for extended protection to enhance security.  
@@ -153,5 +155,5 @@ Enhancements were made that affect how integrated Windows authentication is hand
  These extended protection features can also be used by server applications for authentication with other types of requests and when trusted proxies are used.  
   
 ## See Also  
- <xref:System.Security.Authentication.ExtendedProtection>   
+ <xref:System.Security.Authentication.ExtendedProtection>  
  <xref:System.Security.Authentication.ExtendedProtection.Configuration>

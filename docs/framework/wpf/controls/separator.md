@@ -19,6 +19,8 @@ caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Separator
 A <xref:System.Windows.Controls.Separator> control draws a line, horizontal or vertical, between items in controls, such as <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ToolBar>.  

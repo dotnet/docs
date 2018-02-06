@@ -1,6 +1,6 @@
 ---
 title: "extern alias (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,20 +15,6 @@ ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # extern alias (C# Reference)
 You might have to reference two versions of assemblies that have the same fully-qualified type names. For example, you might have to use two or more versions of an assembly in the same application. By using an external assembly alias, the namespaces from each assembly can be wrapped inside root-level namespaces named by the alias, which enables them to be used in the same file.  
@@ -56,9 +42,9 @@ You might have to reference two versions of assemblies that have the same fully-
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+ [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
  [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)

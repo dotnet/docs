@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Web Settings Schema
 Web settings specify CPU and execution-level ASP.NET settings that apply to process-wide behavior managed by the ASP.NET hosting layer. These settings differ from application domain-type settings that are specified in the Web.config file of an ASP.NET application.  

@@ -58,6 +58,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventHandler" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentChangingEventHandler" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentRenameEventHandler" />
+    <altmember cref="T:System.ComponentModel.MemberDescriptor" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerTransaction" />
   </Docs>
   <Members>
     <Member MemberName="ComponentAdded">
@@ -91,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentAdding">
@@ -124,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentChanged">
@@ -160,6 +170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" />
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentChanging">
@@ -193,6 +206,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentChangingEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentRemoved">
@@ -226,6 +241,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentRemoving">
@@ -259,6 +276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentRename">
@@ -292,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.ComponentRenameEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -342,6 +362,7 @@
         <block subset="none" type="overrides">
           <para>This event allows the implementer to do any post-processing that is needed after a property change. For example, a designer typically updates the source code that sets the property with the new value.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanging">
@@ -386,6 +407,7 @@
         <block subset="none" type="overrides">
           <para>This method throws an exception if the property cannot be changed. This is not intended to validate the values of a particular property. Instead, it is intended to provide a global method of preventing a component from changing. For example, if a designer file is checked into source code control, this event's handler would typically throw an exception if the user refused to check out the file.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,9 @@
 ---
 title: "Static Constructors (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "static constructors [C#]"
@@ -16,26 +12,11 @@ ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Static Constructors (C# Programming Guide)
 A static constructor is used to initialize any [static](../../../csharp/language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed once only. It is called automatically before the first instance is created or any static members are referenced.  
   
- [!code-cs[csProgGuideObjects#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-constructors_1.cs)]  
+ [!code-csharp[csProgGuideObjects#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-constructors_1.cs)]  
   
  Static constructors have the following properties:  
   
@@ -56,11 +37,11 @@ A static constructor is used to initialize any [static](../../../csharp/language
 ## Example  
  In this example, class `Bus` has a static constructor. When the first instance of `Bus` is created (`bus1`), the static constructor is invoked to initialize the class. The sample output verifies that the static constructor runs only one time, even though two instances of `Bus` are created, and that it runs before the instance constructor runs.  
   
- [!code-cs[csProgGuideObjects#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-constructors_2.cs)]  
+ [!code-csharp[csProgGuideObjects#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-constructors_2.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+ [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+ [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
  [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

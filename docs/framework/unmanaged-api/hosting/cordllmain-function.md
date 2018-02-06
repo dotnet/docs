@@ -26,6 +26,8 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorDllMain Function
 Initializes the common language runtime (CLR), locates the managed entry point in the DLL assembly's CLR header, and begins execution.  

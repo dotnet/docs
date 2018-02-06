@@ -60,6 +60,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+    <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +85,7 @@
         <param name="keyData">A <see cref="T:System.Windows.Forms.Keys" /> representing the key that was pressed, combined with any modifier flags that indicate which CTRL, SHIFT, and ALT keys were pressed at the same time. Possible values are obtained be applying the bitwise OR (|) operator to constants from the <see cref="T:System.Windows.Forms.Keys" /> enumeration.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Alt">
@@ -118,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -148,6 +159,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -185,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.SuppressKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyCode">
@@ -234,6 +249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyData" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyData">
@@ -269,6 +286,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyValue">
@@ -299,6 +318,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyData" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -333,6 +354,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
       </Docs>
     </Member>
     <Member MemberName="Shift">
@@ -363,6 +388,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="SuppressKeyPress">
@@ -399,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Handled" />
       </Docs>
     </Member>
   </Members>

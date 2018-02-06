@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Changes to the System.Uri namespace in Version 2.0
 Several changes were made to the <xref:System.Uri?displayProperty=nameWithType> class. These changes fixed incorrect behavior, enhanced usability, and enhanced security.  

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "changing selections in a text box [WPF]"
   - "changing selections in a RichTextBox [WPF]"
@@ -20,6 +20,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Change Selection in a RichTextBox Programmatically
 This example shows how to programmatically change the current selection in a <xref:System.Windows.Controls.RichTextBox>. This selection is the same as if the user had selected the content by using the user interface.  
@@ -36,5 +38,5 @@ This example shows how to programmatically change the current selection in a <xr
  [!code-vb[RichTextBoxMiscSnippets_snip#ChangeSelectionProgrammaticalyCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/ChangeSelectionProgrammaticaly.xaml.vb#changeselectionprogrammaticalycodeexamplewholepage)]  
   
 ## See Also  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)   
+ [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

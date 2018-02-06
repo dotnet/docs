@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4733e3b2-3efa-4b96-b591-ac31350e96ad
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # . (Member Access) (Entity SQL)
 The dot operator (.) is the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] member access operator. You use the member access operator to yield the value of a property or field of an instance of structural conceptual model type.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapValue2::CreateHandle Method
 Creates a handle of the specified type for the heap value represented by this ICorDebugHeapValue2 object.  

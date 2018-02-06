@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpResponse" />
+    <altmember cref="T:System.Web.HttpRequest" />
+    <altmember cref="T:System.Web.HttpCookieCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -178,6 +181,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+        <altmember cref="P:System.Web.HttpCookie.Value" />
       </Docs>
     </Member>
     <Member MemberName="HttpOnly">
@@ -239,6 +244,7 @@
         <summary>Gets a shortcut to the <see cref="P:System.Web.HttpCookie.Values" /> property. This property is provided for compatibility with previous versions of Active Server Pages (ASP).</summary>
         <value>The cookie value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.HttpCookie.Value" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -267,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpCookie.Value" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -300,6 +307,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpCookie.Domain" />
       </Docs>
     </Member>
     <Member MemberName="Secure">
@@ -322,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set the transmission of cookies using SSL for an entire application, enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [httpCookies Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/74790718-bfa3-4935-bc9a-59c88797e08f). Values set programmatically using the <xref:System.Web.HttpCookie.Secure%2A> property override values set in the Web.config file.  
+ To set the transmission of cookies using SSL for an entire application, enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [httpCookies Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/74790718-bfa3-4935-bc9a-59c88797e08f). Values set programmatically using the <xref:System.Web.HttpCookie.Secure%2A> property override values set in the Web.config file.  
   
  When dealing with sensitive information, it is strongly recommended that you use HTTPS protocol with SSL encryption. SSL protects against data being altered (data integrity), protects a user's identity (confidentiality), and assures that data originates from the expected client (authentication). For more information on the benefits of encryption, see [Cryptographic Services](~/docs/standard/security/cryptographic-services.md). For more information about configuring SSL on an Internet Information Services (IIS) Web server, see [Configuring SSL on a Web Server or a Web Site](http://go.microsoft.com/fwlink/?LinkId=38553).  
   
@@ -362,6 +370,31 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Web.HttpCookie result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Web.HttpCookie&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpCookie.TryParse(System.String,System.Web.HttpCookie@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="result" Type="System.Web.HttpCookie&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string representation of a cookie.</param>
+        <param name="result">If the conversion succeeded, contains the <see cref="T:System.Web.HttpCookie" /> value equivalent to the cookie contained in <paramref name="input" />. If the conversion failed, <paramref name="result" /> is <see langword="null" />. The conversion fails if the <paramref name="input" /> parameter is <see langword="null" /> or empty or if a cookie name can't be determined from <paramref name="input" />. This parameter's value is overwritten by the method; the parameter is passed by reference and set to null as soon as the method is entered.</param>
+        <summary>Converts the specified string representation of a cookie into its <see cref="T:System.Web.HttpCookie" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -418,7 +451,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpCookie.Value" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCookie" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

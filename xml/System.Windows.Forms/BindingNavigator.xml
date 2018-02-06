@@ -70,6 +70,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.BindingSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.BindingSource" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.BindingSource" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.BindingSource" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.BindingSource" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="AddNewItem">
@@ -214,6 +223,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.DeleteItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.CountItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="AddStandardItems">
@@ -244,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripItem" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Name" />
+        <altmember cref="E:System.Windows.Forms.BindingNavigator.RefreshItems" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -269,6 +286,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
+        <altmember cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.EndInit" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
+        <altmember cref="E:System.Windows.Forms.BindingNavigator.RefreshItems" />
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="BindingSource">
@@ -312,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingSource" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.List" />
       </Docs>
     </Member>
     <Member MemberName="CountItem">
@@ -346,6 +371,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.BindingSource" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.CountItemFormat" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
       </Docs>
     </Member>
     <Member MemberName="CountItemFormat">
@@ -373,6 +402,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.String.Format" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.CountItem" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Count" />
       </Docs>
     </Member>
     <Member MemberName="DeleteItem">
@@ -409,6 +441,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.AddNewItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.CountItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -444,7 +481,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -471,6 +508,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
+        <altmember cref="M:System.ComponentModel.ISupportInitialize.EndInit" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.BeginInit" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
+        <altmember cref="E:System.Windows.Forms.BindingNavigator.RefreshItems" />
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="MoveFirstItem">
@@ -507,6 +550,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveFirst" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveLastItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveNextItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MovePreviousItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="MoveLastItem">
@@ -543,6 +592,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveLast" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveFirstItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveNextItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MovePreviousItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="MoveNextItem">
@@ -579,6 +634,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.MoveNext" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveFirstItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveLastItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MovePreviousItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="MovePreviousItem">
@@ -615,6 +676,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingSource.MovePrevious" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveFirstItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveLastItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.MoveNextItem" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.PositionItem" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="OnRefreshItems">
@@ -653,6 +720,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingNavigator.OnRefreshItems" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingNavigator.OnRefreshItems" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingNavigator.RefreshItems" />
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       </Docs>
     </Member>
     <Member MemberName="PositionItem">
@@ -689,6 +758,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripTextBox" />
+        <altmember cref="P:System.Windows.Forms.BindingNavigator.CountItem" />
+        <altmember cref="P:System.Windows.Forms.BindingSource.Position" />
       </Docs>
     </Member>
     <Member MemberName="RefreshItems">
@@ -725,6 +797,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingNavigator.OnRefreshItems" />
       </Docs>
     </Member>
     <Member MemberName="RefreshItemsCore">
@@ -784,5 +857,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,43 +1,25 @@
 ---
 title: "How to: Draw Shapes with the OvalShape and RectangleShape Controls (Visual Studio)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "OvalShape control"
+  - "OvalShape control [Visual Basic]"
   - "shapes, drawing"
-  - "RectangleShape control"
+  - "RectangleShape control [Visual Basic]"
 ms.assetid: 0275b4c6-7a13-46c8-90f3-61db308c6b5d
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Draw Shapes with the OvalShape and RectangleShape Controls (Visual Studio)
 You can use the <xref:Microsoft.VisualBasic.PowerPacks.OvalShape> control to draw circles or ovals on a form or container, both at design time and at run time. You can use the <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape> control to draw squares, rectangles, or rectangles with rounded corners on a form or container. You can also use this control to draw shapes both at design time and at run time.  
@@ -74,7 +56,7 @@ using Microsoft.VisualBasic.PowerPacks;
   
 4.  Add the following code in an `Event` procedure:  
   
-     [!code-cs[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.cs)]
+     [!code-csharp[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.cs)]
      [!code-vb[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.vb)]  
   
 ## Customizing Shapes  
@@ -153,7 +135,7 @@ using Microsoft.VisualBasic.PowerPacks;
 5.  Click **OK** to insert the image.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>   
- <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>   
- [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)   
+ <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>  
+ <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>  
+ [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)  
  [How to: Draw Lines with the LineShape Control](../../../visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)

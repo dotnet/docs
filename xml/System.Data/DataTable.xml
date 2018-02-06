@@ -408,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.Select" />
       </Docs>
     </Member>
     <Member MemberName="ChildRelations">
@@ -458,6 +459,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.ParentRelations" />
+        <altmember cref="M:System.Data.DataRow.GetParentRows(System.String)" />
+        <altmember cref="M:System.Data.DataRow.GetChildRows(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -1054,6 +1058,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.Copy" />
       </Docs>
     </Member>
     <Member MemberName="ColumnChanged">
@@ -1093,6 +1098,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ColumnChanging">
@@ -1346,6 +1352,8 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.ToTable" />
+        <altmember cref="M:System.Data.DataTable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataReader">
@@ -1394,6 +1402,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.CreateDataReader" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1551,6 +1560,7 @@ class Program {
         <summary>Gets or sets the expression that returns a value used to represent this table in the user interface. The <see langword="DisplayExpression" /> property lets you display the name of this table in a user interface.</summary>
         <value>A display string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Data.DataColumn.Expression" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -1855,6 +1865,9 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.HasErrors" />
+        <altmember cref="P:System.Data.DataRow.RowError" />
+        <altmember cref="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1996,6 +2009,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.GetErrors" />
       </Docs>
     </Member>
     <Member MemberName="ImportRow">
@@ -2161,6 +2175,7 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.Load" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -2561,6 +2576,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Merge">
@@ -2981,7 +2997,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3021,7 +3037,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3061,7 +3077,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3101,7 +3117,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3141,7 +3157,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3181,7 +3197,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3221,7 +3237,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3261,7 +3277,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3303,7 +3319,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableCleared> event, which is fired immediately after all rows have been successfully cleared but before the <xref:System.Data.DataTable.Clear%2A> method returns control back to the caller.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3342,7 +3358,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableClearing> event, which is fired before processing of the <xref:System.Data.DataTable.Clear%2A> operation begins.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3381,7 +3397,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 ## Remarks  
  Raises the <xref:System.Data.DataTable.TableNewRow> event, which fires after a new <xref:System.Data.DataRow> has been created using <xref:System.Data.DataTable.NewRow%2A>.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3430,6 +3446,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.ChildRelations" />
+        <altmember cref="T:System.Data.DataRelation" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Data.DataSet.Relations" />
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -3513,6 +3533,9 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DataException">The key is a foreign key.</exception>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="T:System.Data.DataColumnCollection" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadXml">
@@ -3536,6 +3559,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.ReadXml" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXml">
@@ -3818,6 +3842,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.DataSet.ReadXmlSchema" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadXmlSchema">
@@ -3873,6 +3898,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -3928,6 +3954,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -3983,6 +4010,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSchema">
@@ -4039,6 +4067,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXmlSerializable">
@@ -4375,6 +4404,10 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTable.AcceptChanges" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="T:System.Data.DataRowCollection" />
+        <altmember cref="M:System.Data.DataTable.NewRow" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4418,6 +4451,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4468,6 +4502,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4518,6 +4553,7 @@ public class A {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTable.CaseSensitive" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4910,6 +4946,8 @@ public class A {
         <exception cref="T:System.ArgumentException">
           <see langword="null" /> or empty string ("") is passed in and this table belongs to a collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The table belongs to a collection that already has a table with the same name. (Comparison is case-sensitive).</exception>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Data.DataSet.Tables" />
       </Docs>
     </Member>
     <Member MemberName="TableNewRow">
@@ -6577,5 +6615,45 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a copy of the <see cref="T:System.Data.DataTable" /> containing all changes made to it since it was last loaded, or since <see cref="M:System.Data.DataTable.AcceptChanges" /> was called.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadDataRow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds and updates a specific row. If no matching row is found, a new row is created using the given values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataTable" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Data.DataRow" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

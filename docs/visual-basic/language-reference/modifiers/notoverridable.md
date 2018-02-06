@@ -1,25 +1,22 @@
 ---
 title: "NotOverridable (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.NotOverridable"
   - "NotOverridable"
 helpviewer_keywords: 
-  - "sealed methods"
-  - "NotOverridable keyword"
+  - "sealed methods [Visual Basic]"
+  - "NotOverridable keyword [Visual Basic]"
   - "properties [Visual Basic], redefining"
-  - "elements, sealed"
-  - "sealed elements"
-  - "procedures, overriding"
-  - "procedures, redefining"
+  - "elements [Visual Basic], sealed"
+  - "sealed [elements VB]"
+  - "procedures [Visual Basic], overriding"
+  - "procedures [Visual Basic], redefining"
   - "overriding"
   - "methods [Visual Basic], sealed"
   - "properties [Visual Basic], overriding"
@@ -27,21 +24,6 @@ ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # NotOverridable (Visual Basic)
 Specifies that a property or procedure cannot be overridden in a derived class.  
@@ -70,10 +52,10 @@ Specifies that a property or procedure cannot be overridden in a derived class.
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)   
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)   
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)   
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)   
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)   
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)  
+ [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
+ [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
+ [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
+ [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)

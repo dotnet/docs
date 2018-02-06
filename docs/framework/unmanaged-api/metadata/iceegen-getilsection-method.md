@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetIlSection Method
 Gets the section of the intermediate language code base referenced by the specified handle.  

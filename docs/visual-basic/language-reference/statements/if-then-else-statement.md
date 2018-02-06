@@ -1,13 +1,11 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ElseIf"
@@ -15,38 +13,23 @@ f1_keywords:
   - "vb.If"
   - "vb.EndIf"
 helpviewer_keywords: 
-  - "ElseIf statement, If...Then...Else"
-  - "Then statement, If...Then...Else"
-  - "control flow, branching"
-  - "execution, conditional"
+  - "ElseIf statement [Visual Basic], If...Then...Else"
+  - "Then statement [Visual Basic], If...Then...Else"
+  - "control flow [Visual Basic], branching"
+  - "execution [Visual Basic], conditional"
   - "TypeOf...Is expression, and If...Then...Else statements"
   - "If...Then...Else statements"
-  - "If statement, If...Then...Else"
-  - "If statement"
+  - "If statement [Visual Basic], If...Then...Else"
+  - "If statement [Visual Basic]"
   - "Is operator [Visual Basic], in If...Then...Else statements"
   - "If Operator [Visual Basic]"
-  - "branching, conditional"
-  - "IIf function, and If...Then...Else statements"
+  - "branching [Visual Basic], conditional"
+  - "If function [Visual Basic], and If...Then...Else statements"
   - "Else statement [Visual Basic]"
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # If...Then...Else Statement (Visual Basic)
 Conditionally executes a group of statements, depending on the value of an expression.  
@@ -126,11 +109,11 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
  [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>   
- <xref:Microsoft.VisualBasic.Interaction.Switch%2A>   
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)   
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
- [Decision Structures](../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)   
+ <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  
+ <xref:Microsoft.VisualBasic.Interaction.Switch%2A>  
+ [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
+ [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)  
+ [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
+ [Decision Structures](../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
+ [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)  
  [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)

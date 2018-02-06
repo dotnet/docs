@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+    <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+    <altmember cref="T:System.Windows.Forms.ListViewItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +108,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="M:System.Windows.Forms.ListViewItem.GetBounds(System.Windows.Forms.ItemBoundsPortion)" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -129,6 +138,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="DrawDefault">
@@ -202,6 +216,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -225,7 +243,7 @@
 ## Remarks  
  Use this method to draw the item text using the current values of the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=nameWithType> properties. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. You can also draw the text manually using the <xref:System.Drawing.Graphics> retrieved through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Graphics%2A> property.  
   
- The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=nameWithType>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> event.  
+ The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> event.  
   
    
   
@@ -239,6 +257,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Graphics" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -265,10 +292,20 @@
 ## Remarks  
  Use this method to draw the item text using the current values of the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=nameWithType> properties. The <xref:System.Windows.Forms.TextFormatFlags> values specified in the `flags` parameter let you provide formatting properties for the node label, such as text alignment. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. You can also draw the text manually using the <xref:System.Drawing.Graphics> retrieved through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Graphics%2A> property.  
   
- The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=nameWithType>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> event.  
+ The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Graphics" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
+        <altmember cref="T:System.Windows.Forms.TextFormatFlags" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -304,6 +341,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -339,6 +380,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.DrawListViewItemEventArgs.DrawText" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Text" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.State" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -369,6 +417,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.Items" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -404,7 +456,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Item" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItemStates" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current foreground color and the default formatting.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

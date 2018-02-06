@@ -6,6 +6,8 @@ ms.author: mairaw
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 # .NET Core RID Catalog
 
@@ -106,6 +108,8 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `win10-arm`
   - `win10-arm64`
 
+See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more information.
+
 ## Linux RIDs
 
 - Portable
@@ -158,12 +162,19 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `linuxmint.18-x64`
   - `linuxmint.18.1-x64` (.NET Core 2.0 or later versions)
 
-## OS X RIDs
+See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information.
 
-- `osx-x64` (.NET Core 2.0 or later versions)
+## macOS RIDs
+
+macOS RIDs use the older "OSX" branding.
+
+- `osx-x64` (.NET Core 2.0 or later versions, minimum version is `osx.10.12-x64`)
 - `osx.10.10-x64`
 - `osx.10.11-x64`
 - `osx.10.12-x64` (.NET Core 1.1 or later versions)
+- `osx.10.13-x64`
+
+See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
 
 ## Android RIDs (.NET Core 2.0 or later versions)
 
@@ -171,4 +182,5 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
 - `android.21`
 
 ## See also
- [Runtime IDs](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
+
+[Runtime IDs](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)

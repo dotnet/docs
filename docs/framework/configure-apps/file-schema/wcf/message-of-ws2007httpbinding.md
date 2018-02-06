@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;message&gt; of &lt;ws2007HttpBinding&gt;
 Defines settings for message-level security of the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
@@ -98,12 +100,12 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-ws2007httpbinding.md)|Defines the security settings for a [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md).|  
   
 ## See Also  
- <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>   
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>   
- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>   
- <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
+ <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>  
+ <xref:System.ServiceModel.WSHttpSecurity.Message%2A>  
+ <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugReferenceValue::SetValue Method
 Sets the specified memory address. That is, this method sets this ICorDebugReferenceValue to point to an object.  

@@ -1,13 +1,12 @@
 ---
 title: "Troubleshooting: Log Listeners (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "event logs, troubleshooting"
@@ -17,21 +16,6 @@ ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting: Log Listeners (Visual Basic)
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application.  
@@ -59,6 +43,6 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      For more information, see <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A>.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>   
- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
+ [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)  
  [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)

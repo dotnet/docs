@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
+    <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +95,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> object already exists in the collection or the collection is read only.</exception>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -153,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -209,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -246,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -305,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -380,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -411,6 +420,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -450,7 +460,26 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> is read-only or already exists.</exception>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the specified <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabaseCollection" /> element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> collection item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

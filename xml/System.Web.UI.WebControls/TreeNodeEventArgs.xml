@@ -20,7 +20,7 @@
   
  For a list of the initial property values for an instance of the <xref:System.Web.UI.WebControls.TreeNodeEventArgs> class, see <xref:System.Web.UI.WebControls.TreeNodeEventArgs.%23ctor%28System.Web.UI.WebControls.TreeNode%29>.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -32,6 +32,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeEventArgs.Node" />
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -99,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
       </Docs>
     </Member>
   </Members>

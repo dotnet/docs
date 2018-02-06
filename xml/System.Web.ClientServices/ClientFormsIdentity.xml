@@ -42,6 +42,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+    <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="P:System.Security.Principal.IPrincipal.Identity" />
+    <altmember cref="T:System.Security.Principal.IIdentity" />
+    <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+    <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
+    <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +139,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Principal.IIdentity" />
+        <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+        <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
+        <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -192,7 +206,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -228,6 +242,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <altmember cref="P:System.Security.Principal.IPrincipal.Identity" />
+        <altmember cref="T:System.Security.Principal.IIdentity" />
+        <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+        <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
+        <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -300,7 +321,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.ConnectivityStatus" />
+        <altmember cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Web.ClientServices.ClientFormsIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

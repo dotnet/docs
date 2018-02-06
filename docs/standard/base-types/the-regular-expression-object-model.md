@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "searching with regular expressions, backreferences"
   - "Regex class"
@@ -45,6 +45,9 @@ caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
@@ -354,6 +357,6 @@ manager: "wpickett"
 |`((\w+(\s\w+)*),(\d+);)+`|Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times. This is the first capturing group.|  
   
 ## See Also  
- <xref:System.Text.RegularExpressions>   
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
+ <xref:System.Text.RegularExpressions>  
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
  [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

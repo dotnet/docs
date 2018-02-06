@@ -11,12 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "examples [Windows Forms], regions"
-  - "regions, using"
+  - "regions [Windows Forms], using"
 ms.assetid: 7809295b-870f-4107-a8b5-8386c298acd5
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using Regions
 The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves.  

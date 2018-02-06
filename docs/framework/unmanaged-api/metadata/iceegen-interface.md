@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen Interface
 Provides methods for dynamic code compilation.  

@@ -11,13 +11,15 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
-  - "data grids, about data grids"
+  - "data grids [Windows Forms], about data grids"
   - "DataGridView control [Windows Forms], scenarios"
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGridView Control Scenarios (Windows Forms)
 With the <xref:System.Windows.Forms.DataGridView> control, you can display tabular data from a variety of data sources. For simple uses, you can manually populate a <xref:System.Windows.Forms.DataGridView> and manipulate the data directly through the control. Typically, however, you will store your data in an external data source and bind the control to it through a <xref:System.Windows.Forms.BindingSource> component.  
@@ -93,5 +95,5 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 -   You can implement your own cell and column classes to host controls other than the ones provided by the built-in column types. For more information, see [How to: Host Controls in Windows Forms DataGridView Cells](../../../../docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
+ <xref:System.Windows.Forms.DataGridView>  
  [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)

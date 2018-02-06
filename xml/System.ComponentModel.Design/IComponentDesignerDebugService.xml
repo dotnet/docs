@@ -10,6 +10,8 @@
   <Docs>
     <summary>Provides debugging services in a design-time environment.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName="Assert">
@@ -41,6 +43,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -69,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -94,6 +100,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Listeners">
@@ -119,6 +127,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -149,6 +159,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
   </Members>

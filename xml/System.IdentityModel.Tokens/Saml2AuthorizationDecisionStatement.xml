@@ -221,5 +221,14 @@
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not an absolute URI or is not an empty relative URI occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> class with the specified decision on the specified resource.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

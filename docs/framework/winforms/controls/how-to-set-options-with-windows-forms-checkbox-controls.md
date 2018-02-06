@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "checked"
 helpviewer_keywords: 
   - "CheckBox control [Windows Forms], checked state"
-  - "check boxes, using to set options"
+  - "check boxes [Windows Forms], using to set options"
   - "CheckBox control [Windows Forms], using to set options"
 ms.assetid: 2ac70498-7e3e-4e07-8901-ccabaeb5fd3e
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Options with Windows Forms CheckBox Controls
 A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give users True/False or Yes/No options. The control displays a check mark when it is selected.  
@@ -72,7 +74,7 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.CheckBox>   
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)   
- [How to: Respond to Windows Forms CheckBox Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-checkbox-clicks.md)   
+ <xref:System.Windows.Forms.CheckBox>  
+ [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
+ [How to: Respond to Windows Forms CheckBox Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-checkbox-clicks.md)  
  [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)

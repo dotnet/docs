@@ -6,9 +6,9 @@ ms.technology: ""
 ms.topic: "reference"
 topic_type: 
   - "apiref"
-api_name:
+api_name: 
   - "System.Net.ConnectionGroup.m_ConnectionList"
-api_location:
+api_location: 
   - "System.dll"
 api_type: 
   - "Assembly"
@@ -16,6 +16,8 @@ ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # ConnectionGroup.m\_ConnectionList Field

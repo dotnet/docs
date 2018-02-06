@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8911aa1b-e34b-4161-a3ae-7468d89a6861
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XmlSerializerOperationBehavior
 XmlSerializerOperationBehavior  

@@ -1,7 +1,7 @@
 ---
 title: "How to: Determine Whether Two Objects Are Identical (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -10,28 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "testing, objects"
+  - "testing [Visual Basic], objects"
   - "objects [Visual Basic], comparing"
-  - "object variables, determining identity"
+  - "object variables [Visual Basic], determining identity"
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Determine Whether Two Objects Are Identical (Visual Basic)
 In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], two variable references are considered identical if their pointers are the same, that is, if both variables point to the same class instance in memory. For example, in a Windows Forms application, you might want to make a comparison to determine whether the current instance (`Me`) is the same as a particular instance, such as `Form2`.  
@@ -71,10 +56,10 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], two variable references are cons
  `objA identical to objC? True`  
   
 ## See Also  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)   
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)   
- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)   
- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)   
- [How to: Determine Whether Two Objects Are Related](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-related.md)   
+ [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
+ [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
+ [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
+ [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)  
+ [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)  
+ [How to: Determine Whether Two Objects Are Related](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-related.md)  
  [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

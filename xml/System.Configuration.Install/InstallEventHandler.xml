@@ -28,5 +28,19 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.Install.InstallEventArgs" />
+    <altmember cref="T:System.Configuration.Install.Installer" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
   </Docs>
 </Type>

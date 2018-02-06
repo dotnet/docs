@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="P:System.Web.UI.WebControls.Style.Font" />
   </Docs>
   <Members>
     <Member MemberName="Bold">
@@ -82,6 +86,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ClearDefaults">
@@ -123,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.CopyFrom(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.MergeWith(System.Web.UI.WebControls.FontInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -164,6 +177,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.MergeWith(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -208,6 +223,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -247,6 +269,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FontInfo.CopyFrom(System.Web.UI.WebControls.FontInfo)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -304,6 +328,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified font name is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Names">
@@ -350,6 +381,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Overline">
@@ -397,6 +435,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeNames">
@@ -427,6 +471,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -474,6 +519,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified font size is negative.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="Strikeout">
@@ -521,6 +572,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Underline" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -556,6 +613,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -603,6 +662,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Bold" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Italic" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Names" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Overline" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Size" />
+        <altmember cref="P:System.Web.UI.WebControls.FontInfo.Strikeout" />
       </Docs>
     </Member>
   </Members>

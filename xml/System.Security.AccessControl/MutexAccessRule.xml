@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.MutexSecurity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> method, the user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> access.  
+ To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights.Synchronize?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> method, the user must have <xref:System.Security.AccessControl.MutexRights.Modify?displayProperty=nameWithType> access.  
   
  ]]></format>
         </remarks>
@@ -139,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> methods, the user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> access.  
+ To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights.Synchronize?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> methods, the user must have <xref:System.Security.AccessControl.MutexRights.Modify?displayProperty=nameWithType> access.  
   
  This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.MutexAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.MutexRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
   
@@ -218,5 +219,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

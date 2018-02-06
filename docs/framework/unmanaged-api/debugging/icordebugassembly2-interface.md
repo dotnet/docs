@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly2 Interface1
 Represents an assembly. This interface is an extension of the ICorDebugAssembly interface.  

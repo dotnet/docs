@@ -25,6 +25,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDomainManager::SetAppDomainManagerType Method
 Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.  
@@ -75,6 +77,6 @@ HRESULT SetAppDomainManagerType(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)   
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)   
+ [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
+ [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)  
  [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)

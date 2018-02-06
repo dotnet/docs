@@ -1,42 +1,26 @@
 ---
 title: "Composite Data Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2017-04-25"
+ms.date: 04/25/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
-  - "composite types"
-  - "composite data types"
+  - "composite types [Visual Basic]"
+  - "composite data types [Visual Basic]"
   - "data types [Visual Basic], composite"
   - "arrays [Visual Basic], composite data types"
-  - "structures, composite data types"
+  - "structures [Visual Basic], composite data types"
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Composite Data Types (Visual Basic)
 In addition to the elementary data types [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies, you can also assemble items of different types to create *composite data types* such as structures, arrays, and classes. You can build composite data types from elementary types and from other composite types. For example, you can define an array of structure elements, or a structure with array members.  
@@ -82,11 +66,11 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
  For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
+ [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [How to: Hold More Than One Value in a Variable](../../../../visual-basic/programming-guide/language-features/data-types/how-to-hold-more-than-one-value-in-a-variable.md)

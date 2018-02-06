@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 ms.custom: "updateeachrelease"
-ms.date: "08/29/2017"
+ms.date: "12/14/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -9,15 +9,19 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
-ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf 
+ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Framework deployment guide for developers
-This topic provides information for developers who want to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.6.1, 4.6.2, or the .NET Framework 4.7 with their apps.
+This topic provides information for developers who want to install any version of the .NET Framework from the .NET Framework 4.5 to the [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 For download links, see the section [Redistributable Packages](#redistributable-packages). You can also download the redistributable packages and language packs from these Microsoft Download Center pages:
+
+- .NET Framework 4.7.1 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=852095) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=852107))
 
 - .NET Framework 4.7 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=825299) or [offline installer](http://go.microsoft.com/fwlink/p/?LinkId=825303))
 
@@ -36,17 +40,17 @@ For download links, see the section [Redistributable Packages](#redistributable-
  Important notes:
 
 > [!NOTE]
-> The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7.
+> The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and all later versions.
 
-- The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
+- Versions of the .NET Framework from the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] through the [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, or 4.7 on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases are built incrementally on the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or its point releases on a system that has the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] installed, the version 4 assemblies are replaced with newer versions.
 
 - If you are referencing a Microsoft [out-of-band package](http://msdn.microsoft.com/library/dn151288\(v=vs.110\).aspx) in your app, the assembly will be included in the app package.
 
 - You must have administrator privileges to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases.
 
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update, and the .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
 
 - Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).
 
@@ -57,7 +61,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
  For information about how a system administrator can deploy the .NET Framework and its system dependencies across a network, see [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md).
 
 ## Deployment options for your app
- When you're ready to publish your app to a web server or other centralized location so that users can install it, you can choose from several deployment methods. Some of these are provided with Visual Studio. The following table lists the deployment options for your app, and specifies the .NET Framework redistributable package that supports each option. In addition to these, you can write a custom setup program for your app; for more information, see the section [Chaining the .NET Framework Installation to Your App's Setup](#chaining).
+ When you're ready to publish your app to a web server or other centralized location so that users can install it, you can choose from several deployment methods. Some of these are provided with Visual Studio. The following table lists the deployment options for your app and specifies the .NET Framework redistributable package that supports each option. In addition to these, you can write a custom setup program for your app; for more information, see the section [Chaining the .NET Framework Installation to Your App's Setup](#chaining).
 
 |Deployment strategy for your app|Deployment methods available|.NET Framework redistributable to use|
 |--------------------------------------|----------------------------------|-------------------------------------------|
@@ -70,12 +74,12 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 ||Web installer|Offline installer|
 |-|-------------------|-----------------------|
-|Download file|.NET Framework 4.7: <br />[NDP47-KB3186500-Web.exe](http://go.microsoft.com/fwlink/?LinkId=825298) <br /><br />[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]: <br />[NDP462-KB3151802-Web.exe](http://go.microsoft.com/fwlink/?LinkId=780596)<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]:<br />[NDP461-KB3102438-Web.exe](http://go.microsoft.com/fwlink/?LinkId=671728)<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]:<br />[NDP46-KB3045560-Web.exe](http://go.microsoft.com/fwlink/?LinkId=528222)<br /><br /> .NET Framework 4.5.2: <br />[NDP452-KB2901954-Web.exe](http://go.microsoft.com/fwlink/?LinkId=397707)<br /><br /> [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]: <br />[NDP451-KB2859818-Web.exe](http://go.microsoft.com/fwlink/?LinkId=322115)<br /><br /> [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]: <br />[dotNetFx45_Full_setup.exe](http://go.microsoft.com/fwlink/?LinkId=225704)|.NET Framework 4.7: <br />[NDP462-KB3186497-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=825302) <br /><br />[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]: <br />[NDP462-KB3151800-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=780600)<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]: <br />[NDP461-KB3102436-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=671743)<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]: <br />[NDP46-KB3045557-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=528232)<br /><br /> .NET Framework 4.5.2: <br />[NDP452-KB2901907-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=397708)<br /><br /> [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]: <br />[NDP451-KB2858728-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=322116)<br /><br /> [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]: <br />[dotNetFx45_Full_x86_x64.exe](http://go.microsoft.com/fwlink/?LinkId=225702)|
+|Download file|.NET Framework 4.7.1: <br/>[NDP471-KB4033344-Web.exe](http://go.microsoft.com/fwlink/?LinkId=852092)<br/><br/>.NET Framework 4.7: <br />[NDP47-KB3186500-Web.exe](http://go.microsoft.com/fwlink/?LinkId=825298) <br /><br />[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]: <br />[NDP462-KB3151802-Web.exe](http://go.microsoft.com/fwlink/?LinkId=780596)<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]:<br />[NDP461-KB3102438-Web.exe](http://go.microsoft.com/fwlink/?LinkId=671728)<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]:<br />[NDP46-KB3045560-Web.exe](http://go.microsoft.com/fwlink/?LinkId=528222)<br /><br /> .NET Framework 4.5.2: <br />[NDP452-KB2901954-Web.exe](http://go.microsoft.com/fwlink/?LinkId=397707)<br /><br /> [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]: <br />[NDP451-KB2859818-Web.exe](http://go.microsoft.com/fwlink/?LinkId=322115)<br /><br /> [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]: <br />[dotNetFx45_Full_setup.exe](http://go.microsoft.com/fwlink/?LinkId=225704)|.NET Framework 4.7.1: <br />[NDP471-KB4033342-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=852104) <br /><br />.NET Framework 4.7: <br />[NDP47-KB3186497-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=825302) <br /><br />[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]: <br />[NDP462-KB3151800-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=780600)<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]: <br />[NDP461-KB3102436-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=671743)<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]: <br />[NDP46-KB3045557-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=528232)<br /><br /> .NET Framework 4.5.2: <br />[NDP452-KB2901907-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=397708)<br /><br /> [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]: <br />[NDP451-KB2858728-x86-x64-AllOS-ENU.exe](http://go.microsoft.com/fwlink/?LinkId=322116)<br /><br /> [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]: <br />[dotNetFx45_Full_x86_x64.exe](http://go.microsoft.com/fwlink/?LinkId=225702)|
 |Internet connection required?|Yes|No|
 |Size of download|Smaller (includes installer for target platform only)*|Larger*|
 |Language packs|Included**|Must be [installed separately](#chain_langpack), unless you use the package that targets all operating systems|
 |Deployment method|Supports all methods:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|Supports all methods:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|
-|Location of download for ClickOnce deployment|Microsoft Download Center:<br /><br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825298) <br/> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780596)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671728)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528222)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/?LinkId=397703)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|Your own server or the Microsoft Download Center:<br /><br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825302)<br /> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780600)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671743)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528232)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/p/?LinkId=397706)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310159)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|
+|Location of download for ClickOnce deployment|Microsoft Download Center:<br /><br /> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852092) <br/> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825298) <br/> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780596)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671728)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528222)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/?LinkId=397703)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|Your own server or the Microsoft Download Center:<br /><br /> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852104)<br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825302)<br /> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780600)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671743)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528232)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/p/?LinkId=397706)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310159)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|
 
  \* The offline installer is larger because it contains the components for all the target platforms. When you finish running setup, the Windows operating system caches only the installer that was used. If the offline installer is deleted after the installation, the disk space used is the same as that used by the web installer. If the tool you use (for example, [InstallAware](#installaware-deployment) or [InstallShield](#installshield-deployment)) to create your app's setup program provides a setup file folder that is removed after installation, the offline installer can be automatically deleted by placing it into the setup folder.
 
@@ -143,7 +147,7 @@ InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EX
 
 3.  In the **Name** box, type a name for your project, and then choose **OK**.
 
-4.  If you are creating a setup and deployment  project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio . Restart Visual Studio.
+4.  If you are creating a setup and deployment project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio. Restart Visual Studio.
 
 5.  Go to **Project Assistant** wizard and choose **Application Files** to add the Project Output. You can configure other project attributes by using this wizard.
 
@@ -242,6 +246,8 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
+|.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
+|.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
 |.NET Framework 4.7 installed on all OS versions other than Windows 10 Creators Update|460805|
 |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on Windows 10 Anniversary Edition|394802|
@@ -266,11 +272,13 @@ Name: Release
 Type: DWORD
 ```
 
- To determine whether the final release version of a language pack is installed for the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, or 4.7, check the value of the RELEASE key DWORD value described in the previous section, [Detecting the .NET Framework](#detect_net).
+ To determine whether the final release version of a language pack is installed for the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1, check the value of the RELEASE key DWORD value described in the previous section, [Detecting the .NET Framework](#detect_net).
 
 <a name="chain_langpack"></a> 
 ### Chaining the language packs to your app setup
  The .NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the Microsoft Download Center:
+
+- [.NET Framework 4.7.1 language packs](http://go.microsoft.com/fwlink/p/?LinkId=852090)
 
 - [.NET Framework 4.7 language packs](http://go.microsoft.com/fwlink/p/?LinkId=825306)
 
@@ -316,7 +324,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 |5100|The user's computer does not meet system requirements.|
 
 #### Download error codes
- See the following content in the MSDN Library:
+ See the following content:
 
 - [Background Intelligent Transfer Service (BITS) error codes](http://go.microsoft.com/fwlink/?LinkId=180946)
 
@@ -325,17 +333,17 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 - [WinHttp error codes](http://go.microsoft.com/fwlink/?LinkId=180948)
 
 #### Other error codes
- See the following content in the MSDN Library:
+ See the following content:
 
 - [Windows Installer error codes](http://go.microsoft.com/fwlink/?LinkId=180949)
 
 - [Windows Update Agent result codes](http://go.microsoft.com/fwlink/?LinkId=180951)
 
 ## Uninstalling the .NET Framework
- Starting with [!INCLUDE[win8](../../../includes/win8-md.md)], you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, or 4.7, by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, or 4.7 by using **Add or Remove Programs** in Control Panel.
+ Starting with [!INCLUDE[win8](../../../includes/win8-md.md)], you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases by using **Add or Remove Programs** in Control Panel.
 
 > [!IMPORTANT]
-> For Windows 7 and earlier operating systems, uninstalling the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, or 4.7 doesn't restore [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] files, and uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] doesn't restore [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the older version, you must reinstall it and any updates to it.
+> For Windows 7 and earlier operating systems, uninstalling the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, or 4.7.1 doesn't restore [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] files, and uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] doesn't restore [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the older version, you must reinstall it and any updates to it.
 
 ## Appendix
 
@@ -390,9 +398,9 @@ The following table lists .NET Framework language packs that are available for t
 |3082|Spanish - Spain (Modern Sort)|es|
 
 ## See also
- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)   
- [System Requirements](../../../docs/framework/get-started/system-requirements.md)   
- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)   
- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)   
+ [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)  
+ [System Requirements](../../../docs/framework/get-started/system-requirements.md)  
+ [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
+ [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
+ [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
  [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

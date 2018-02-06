@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "CorDebugEHClause"
 api_location: 
@@ -24,6 +24,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugEHClause Structure
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -80,5 +82,5 @@ typedef struct _CorDebugEHClause {
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See Also  
- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)   
+ [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)  
  [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

@@ -22,7 +22,7 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DayRenderEventArgs>, see the <xref:System.Web.UI.WebControls.DayRenderEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -34,6 +34,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="T:System.Web.UI.WebControls.DayRenderEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +123,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -149,6 +166,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -182,6 +205,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="SelectUrl">
@@ -215,7 +244,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Uid Directive
 Provides a unique identifier for markup elements. In many scenarios, this unique identifier is used by XAML localization processes and tools.  
@@ -48,6 +50,6 @@ Provides a unique identifier for markup elements. In many scenarios, this unique
  For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](../../../docs/framework/wpf/advanced/globalization-for-wpf.md) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>  
   
 ## See Also  
- <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>   
- <xref:Microsoft.Build.Tasks.Windows.UidManager>   
+ <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>  
+ <xref:Microsoft.Build.Tasks.Windows.UidManager>  
  [Globalization for WPF](../../../docs/framework/wpf/advanced/globalization-for-wpf.md)

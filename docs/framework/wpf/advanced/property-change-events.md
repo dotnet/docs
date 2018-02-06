@@ -25,6 +25,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Property Change Events
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] defines several events that are raised in response to a change in the value of a property. Often the property is a dependency property. The event itself is sometimes a routed event and is sometimes a standard [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event. The definition of the event varies depending on the scenario, because some property changes are more appropriately routed through an element tree, whereas other property changes are generally only of concern to the object where the property changed.  
@@ -68,5 +70,5 @@ manager: "wpickett"
  To learn more about property triggers, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
   
 ## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "managed HTML DOM, changing styles on elements"
+  - "managed HTML DOM [Windows Forms], changing styles on elements"
 ms.assetid: 154e8d9f-3e2d-4e8b-a6f3-c85a070e9cc1
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change Styles on an Element in the Managed HTML Document Object Model
 You can use styles in HTML to control the appearance of a document and its elements. <xref:System.Windows.Forms.HtmlDocument> and <xref:System.Windows.Forms.HtmlElement> support <xref:System.Windows.Forms.HtmlElement.Style%2A> properties that take style strings of the following format:  

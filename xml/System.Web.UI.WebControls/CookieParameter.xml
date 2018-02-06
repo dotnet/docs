@@ -38,6 +38,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.CookieParameter> object created with the <xref:System.Web.UI.WebControls.CookieParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.CookieParameter.CookieName%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.CookieParameter> object created with the <xref:System.Web.UI.WebControls.CookieParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.CookieParameter.CookieName%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -98,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CookieParameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.CookieParameter.CookieName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +163,9 @@
         <param name="cookieName">The name of the HTTP cookie that the parameter object is bound to. The default is <see cref="F:System.String.Empty" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CookieParameter" /> class that has the specified name and database type and that is bound to the specified HTTP cookie.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.CookieParameter.CookieName" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.DbType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.CookieParameter.CookieName" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -218,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CookieParameter.#ctor(System.Web.UI.WebControls.CookieParameter)" />
       </Docs>
     </Member>
     <Member MemberName="CookieName">
@@ -292,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CookieParameter.CookieName" />
       </Docs>
     </Member>
     <Member MemberName="ValidateInput">
@@ -318,5 +333,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CookieParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

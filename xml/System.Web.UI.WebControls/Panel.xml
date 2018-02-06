@@ -103,6 +103,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.ScrollBars" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -296,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.IButtonControl.Click" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -347,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentDirection" />
       </Docs>
     </Member>
     <Member MemberName="GroupingText">
@@ -426,6 +433,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The horizontal alignment is not one of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -544,6 +552,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -570,6 +579,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">

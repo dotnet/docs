@@ -1,7 +1,7 @@
 ---
 title: "Validating Strings in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,26 +13,11 @@ helpviewer_keywords:
   - "Visual Basic, strings"
   - "Visual Basic code, strings"
   - "strings [Visual Basic], validating"
-  - "validation, strings"
+  - "validation [Visual Basic], strings"
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Validating Strings in Visual Basic
 This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
@@ -51,5 +36,5 @@ This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/v
  How to determine whether a string has the characteristics of a strong password.  
   
 ## See Also  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
+ [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)  
  [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

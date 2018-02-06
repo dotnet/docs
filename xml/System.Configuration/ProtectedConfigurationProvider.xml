@@ -75,6 +75,11 @@ providerName="System.Data.SqlClient" />
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ProtectedConfigurationProviderCollection" />
+    <altmember cref="T:System.Configuration.ProtectedConfiguration" />
+    <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
+    <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
+    <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

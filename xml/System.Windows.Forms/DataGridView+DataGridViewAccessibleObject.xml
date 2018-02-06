@@ -36,6 +36,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleRole" />
+    <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +63,7 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetChild">
@@ -83,6 +93,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -109,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetFocused">
@@ -128,6 +144,9 @@
         <summary>Returns the accessible object of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that has the keyboard focus.</summary>
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that specifies the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that has the current focus, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.DataGridView" /> does not have focus.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="GetSelected">
@@ -147,6 +166,8 @@
         <summary>Returns an <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the selected cells in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the currently selected cells, or <see langword="null" /> if no cells are selected or if the object itself does not have focus.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -185,6 +206,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -203,6 +229,7 @@
         <summary>Gets or sets the accessible object name.</summary>
         <value>The accessible object name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Name" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -233,6 +260,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.AccessibleNavigation" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -251,6 +281,8 @@
         <summary>Gets the role of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.Table" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Forms.AccessibleRole.Table" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
   </Members>

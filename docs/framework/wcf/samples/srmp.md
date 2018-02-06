@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SRMP
 This sample demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ) over HTTP.  

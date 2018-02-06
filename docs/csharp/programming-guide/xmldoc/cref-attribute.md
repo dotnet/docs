@@ -1,13 +1,9 @@
 ---
 title: "cref Attribute (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "cref [C#]"
@@ -15,21 +11,6 @@ ms.assetid: 66a6b0e5-b961-4504-a461-3a4cf481fc8b
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # cref Attribute (C# Programming Guide)
 The `cref` attribute in an XML documentation tag means "code reference." It specifies that the inner text of the tag is a code element, such as a type, method, or property. Documentation tools like [Sandcastle](https://github.com/EWSoftware/SHFB) use the `cref` attributes to automatically generate hyperlinks to the page where the type or member is documented.  
@@ -37,7 +18,7 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
 ## Example  
  The following example shows `cref` attributes used in [\<see>](../../../csharp/programming-guide/xmldoc/see.md) tags.  
   
- [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/cref-attribute_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/cref-attribute_1.cs)]  
   
  When compiled, the program produces the following XML file. Notice that the `cref` attribute for the `GetZero` method, for example, has been transformed by the compiler to `"M:TestNamespace.TestClass.GetZero"`. The "M:" prefix means "method" and is a convention that is recognized by documentation tools such as Sandcastle. For a complete list of prefixes, see [Processing the XML File](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md).  
   
@@ -139,5 +120,5 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
 ```  
   
 ## See Also  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)   
+ [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

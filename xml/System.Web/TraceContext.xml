@@ -20,10 +20,13 @@
   
  You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
- To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
+ To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.TraceContextEventArgs" />
+    <altmember cref="T:System.Web.TraceContextEventHandler" />
+    <altmember cref="T:System.Web.TraceContextRecord" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,7 @@
         <param name="context">An <see cref="T:System.Web.HttpContext" /> that contains information about the current Web request.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -113,6 +117,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContextEventHandler" />
+        <altmember cref="T:System.Web.TraceContextEventArgs" />
+        <altmember cref="T:System.Web.TraceContextRecord" />
       </Docs>
     </Member>
     <Member MemberName="TraceMode">
@@ -147,6 +154,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -245,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -351,7 +360,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Warn">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log. Unlike <see cref="M:System.Web.TraceContext.Write(System.String)" />, all warnings appear in the log as red text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,39 +1,21 @@
 ---
 title: "Ansi (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Ansi"
 helpviewer_keywords: 
-  - "Declare statement, marshaling strings"
+  - "Declare statement [Visual Basic], marshaling strings [Visual Basic]"
   - "ANSI, Visual Basic"
   - "ANSI"
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Ansi (Visual Basic)
 Specifies that Visual Basic should marshal all strings to American National Standards Institute (ANSI) values regardless of the name of the external procedure being declared.  
@@ -53,6 +35,6 @@ Specifies that Visual Basic should marshal all strings to American National Stan
  This keyword is not supported.  
   
 ## See Also  
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)   
+ [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
+ [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Web services, binding controls"
+  - "Web services [Windows Forms], binding controls"
   - "BindingSource component [Windows Forms], binding to a Web service"
   - "examples [Windows Forms], BindingSource component"
   - "controls [Windows Forms], binding to Web service"
@@ -24,6 +24,8 @@ caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to a Web Service Using the Windows Forms BindingSource
 If you want to bind a Windows Form control to the results obtained from calling an XML Web service, you can use a <xref:System.Windows.Forms.BindingSource> component. This procedure is similar to binding a <xref:System.Windows.Forms.BindingSource> component to a type. You must create a client-side proxy that contains the methods and types exposed by the Web service. You generate a client-side proxy from the Web service (.asmx) itself, or its Web Services Description Language (WSDL) file. Additionally, your client-side proxy must expose the fields of complex types used by the Web service as public properties. You then bind the <xref:System.Windows.Forms.BindingSource> to one of the types exposed in the Web service proxy.  
@@ -79,5 +81,5 @@ If you want to bind a Windows Form control to the results obtained from calling 
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
+ [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
  [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)

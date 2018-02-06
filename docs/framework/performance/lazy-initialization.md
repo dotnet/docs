@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "lazy initialization in .NET, introduction"
 ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
@@ -19,6 +19,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Lazy Initialization
 *Lazy initialization* of an object means that its creation is deferred until it is first used. (For this topic, the terms *lazy initialization* and *lazy instantiation* are synonymous.) Lazy initialization is primarily used to improve performance, avoid wasteful computation, and reduce program memory requirements. These are the most common scenarios:  
@@ -157,7 +159,7 @@ manager: "wpickett"
  In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=nameWithType> that takes a Boolean argument and a synchronization object.  
   
 ## See Also  
- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)   
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)   
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)   
+ [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)  
+ [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
+ [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
  [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)

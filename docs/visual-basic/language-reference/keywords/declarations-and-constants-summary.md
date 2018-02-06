@@ -1,37 +1,19 @@
 ---
 title: "Declarations and Constants Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "constants"
-  - "declaring constants, keywords"
-  - "declarations, Visual Basic language elements"
+  - "constants [Visual Basic]"
+  - "declaring constants [Visual Basic], keywords"
+  - "declarations [Visual Basic], Visual Basic language elements"
 ms.assetid: 79d64f3e-941d-4d39-bc5b-79f225d5be6e
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Declarations and Constants Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
@@ -49,5 +31,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Implement inheritance.|[Inherits](../../../visual-basic/language-reference/statements/inherits-statement.md), [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md), [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md), [MyBase](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md), [MyClass](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md), [New](../../../visual-basic/language-reference/operators/new-operator.md), [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md), [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md), [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md), [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md), [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

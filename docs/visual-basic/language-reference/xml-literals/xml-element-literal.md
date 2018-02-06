@@ -1,6 +1,6 @@
 ---
 title: "XML Element Literal (Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -17,20 +17,6 @@ ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Element Literal (Visual Basic)
 
@@ -177,11 +163,11 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
  Notice that the compiler converted the prefix of the global XML namespace into a prefix definition for the XML namespace. The \<ns:middle> element redefines the XML namespace prefix for the \<ns:inner1> element. However, the \<ns:inner2> element uses the namespace defined by the `Imports` statement.  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement>   
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)   
- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)   
- [XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)   
+ <xref:System.Xml.Linq.XElement>  
+ [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
+ [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  
+ [XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+ [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
+ [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)  
  [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)

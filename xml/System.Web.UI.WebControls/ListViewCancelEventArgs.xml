@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +74,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="CancelMode">
@@ -105,6 +111,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -140,6 +148,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
       </Docs>
     </Member>
   </Members>

@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a comment has not been assigned to the resource item, the value of the <xref:System.Resources.ResXDataNode.Comment%2A> property is <xref:System.String?displayProperty=nameWithType>.  
+ If a comment has not been assigned to the resource item, the value of the <xref:System.Resources.ResXDataNode.Comment%2A> property is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  You access the <xref:System.Resources.ResXDataNode.Comment%2A> property of an data node in an existing XML resource file by instantiating a <xref:System.Resources.ResXResourceReader> object, setting the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A?displayProperty=nameWithType> property to `true`, and calling the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method to retrieve an <xref:System.Collections.IDictionaryEnumerator> object that you use to enumerate the items in the XML resource file. The <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=nameWithType> property returns the <xref:System.Resources.ResXDataNode> object.  
   
@@ -372,5 +372,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the object that is stored by this node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXDataNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValueTypeName">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the type name for the value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

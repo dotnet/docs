@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous Programming with Async and Await (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Asynchronous Programming with Async and Await (Visual Basic)
 You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.  
@@ -325,5 +319,5 @@ End Class
 ```  
   
 ## See Also  
- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)   
+ [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
  [Async](../../../../visual-basic/language-reference/modifiers/async.md)

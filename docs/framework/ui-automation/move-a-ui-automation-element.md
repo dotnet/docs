@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "moving elements"
   - "elements, moving"
@@ -21,6 +21,8 @@ caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Move a UI Automation Element
 > [!NOTE]
@@ -37,4 +39,4 @@ manager: "markl"
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
 ## See Also  
- [WindowPattern Sample](http://msdn.microsoft.com/en-us/598b695c-8baf-406e-bbfb-2a1c7842a1de)
+ [WindowPattern Sample](http://msdn.microsoft.com/library/598b695c-8baf-406e-bbfb-2a1c7842a1de)

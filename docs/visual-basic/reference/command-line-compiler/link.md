@@ -1,13 +1,11 @@
 ---
 title: "/link (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
@@ -22,21 +20,6 @@ ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /link (Visual Basic)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  
@@ -106,10 +89,10 @@ vbc /link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
- [/libpath](../../../visual-basic/reference/command-line-compiler/libpath.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
+ [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
+ [/libpath](../../../visual-basic/reference/command-line-compiler/libpath.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [Introduction to COM Interop](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)

@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dependency properties, validation"
-  - "coerce value callbacks"
-  - "callbacks, validation"
-  - "dependency properties, callbacks"
-  - "validation of dependency properties"
+  - "dependency properties [WPF], validation"
+  - "coerce value callbacks [WPF]"
+  - "callbacks [WPF], validation"
+  - "dependency properties [WPF], callbacks"
+  - "validation of dependency properties [WPF]"
 ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dependency Property Callbacks and Validation
 This topic describes how to create dependency properties using alternative custom implementations for property-related features such as validation determination, callbacks that are invoked whenever the property's effective value is changed, and overriding possible outside influences on value determination. This topic also discusses scenarios where expanding on the default property system behaviors by using these techniques is appropriate.  
@@ -87,6 +89,6 @@ This topic describes how to create dependency properties using alternative custo
  The property system will treat any <xref:System.Windows.CoerceValueCallback> that returns the value <xref:System.Windows.DependencyProperty.UnsetValue> as a special case. This special case means that the property change that resulted in the <xref:System.Windows.CoerceValueCallback> being called should be rejected by the property system, and that the property system should instead report whatever previous value the property had. This mechanism can be useful to check that changes to a property that were initiated asynchronously are still valid for the current object state, and suppress the changes if not. Another possible scenario is that you can selectively suppress a value depending on which component of property value determination is responsible for the value being reported. To do this, you can use the <xref:System.Windows.DependencyProperty> passed in the callback and the property identifier as input for <xref:System.Windows.DependencyPropertyHelper.GetValueSource%2A>, and then process the <xref:System.Windows.ValueSource>.  
   
 ## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)   
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

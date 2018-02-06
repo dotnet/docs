@@ -516,5 +516,23 @@
  <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAppDomain">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the application domain of a specified application.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an object for the specified application domain and object type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

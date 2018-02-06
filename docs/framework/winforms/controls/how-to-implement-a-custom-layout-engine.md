@@ -9,21 +9,22 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "layout engines, custom"
+  - "layout engines [Windows Forms], custom"
   - "TableLayoutPanel control [Windows Forms], layout engine"
-  - "layout engines, implementing"
+  - "layout engines [Windows Forms], implementing"
   - "FlowLayoutPanel control [Windows Forms], layout engine"
-  - "LayoutEngine class"
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement a Custom Layout Engine
 The following code example demonstrates how to create a custom layout engine that performs a simple flow layout. It implements a panel control named `DemoFlowPanel`, which overrides the <xref:System.Windows.Forms.Control.LayoutEngine%2A> property to provide an instance of the `DemoFlowLayout` class.  
@@ -34,5 +35,5 @@ The following code example demonstrates how to create a custom layout engine tha
  [!code-vb[System.Windows.Forms.Layout.LayoutEngine#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Layout.LayoutEngine/VB/DemoFlowLayout.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Forms.Layout.LayoutEngine>   
+ <xref:System.Windows.Forms.Layout.LayoutEngine>  
  <xref:System.Windows.Forms.Control.LayoutEngine%2A?displayProperty=nameWithType>

@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method
 Retrieves a generic dictionary map.  
@@ -85,5 +87,5 @@ Heap Size = Stream.Length – (Directory Size + 4)
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See Also  
- [ICorDebugSymbolProvider2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)   
+ [ICorDebugSymbolProvider2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

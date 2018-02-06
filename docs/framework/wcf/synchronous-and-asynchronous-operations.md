@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "service contracts [WCF], synchronous operations"
   - "service contracts [WCF], asynchronous operations"
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Synchronous and Asynchronous Operations
 This topic discusses implementing and calling asynchronous service operations.  
@@ -189,5 +191,5 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the **/messageContract** command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  
   
 ## See Also  
- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>   
+ <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>  
  <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::GetConfiguration Method
 Gets an object that allows the host to specify the callback configuration of the common language runtime (CLR).  

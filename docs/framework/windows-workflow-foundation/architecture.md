@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d4c6495-d64a-46d0-896a-3a01fac90aa9
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Architecture
 [!INCLUDE[wf](../../../includes/wf-md.md)] raises the abstraction level for developing interactive long-running applications. Units of work are encapsulated as activities. Activities run in an environment that provides facilities for flow control, exception handling, fault propagation, persistence of state data, loading and unloading of in-progress workflows from memory, tracking, and transaction flow.  

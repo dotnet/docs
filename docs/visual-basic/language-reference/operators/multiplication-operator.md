@@ -1,41 +1,24 @@
 ---
 title: "* Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.*"
 helpviewer_keywords: 
-  - "arithmetic operators, multiplication"
+  - "arithmetic operators [Visual Basic], multiplication"
   - "operators [Visual Basic], multiplication"
   - "* operator [Visual Basic]"
-  - "multiplication operator, syntax"
-  - "math operators"
+  - "multiplication operator [Visual Basic], syntax"
+  - "math operators [Visual Basic]"
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # * Operator (Visual Basic)
 Multiplies two numbers.  
@@ -80,8 +63,8 @@ number1 * number2
  [!code-vb[VbVbalrOperators#4](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-operator_1.vb)]  
   
 ## See Also  
- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
+ [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

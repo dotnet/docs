@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ExportNestedType Method
 Specifies nested types as exportable. The [ExportType Method](../../../../docs/framework/unmanaged-api/alink/exporttype-method.md) can also export nested types, but this method is faster.  
@@ -74,6 +76,6 @@ HRESULT ExportNestedType(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

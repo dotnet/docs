@@ -31,6 +31,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Internet Applications
 The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) configuration element contains network configuration information for applications. Using the [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) element, you can set proxy servers, set connection management parameters, and include custom authentication and request modules in your application.  
@@ -102,6 +104,6 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 ```  
   
 ## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)  
  [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)

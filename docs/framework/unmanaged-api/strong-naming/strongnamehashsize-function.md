@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameHashSize Function
 Gets the buffer size required for a hash, using the specified hash algorithm.  
@@ -64,5 +66,5 @@ BOOLEAN StrongNameHashSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)   
+ [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

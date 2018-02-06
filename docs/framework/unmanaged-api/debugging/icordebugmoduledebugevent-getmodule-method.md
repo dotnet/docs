@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleDebugEvent::GetModule Method
 Gets the merged module that was just loaded or unloaded.  
@@ -46,5 +48,5 @@ HRESULT GetModule(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See Also  
- [ICorDebugModuleDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-interface.md)   
+ [ICorDebugModuleDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, DockPanel"
-  - "DockPanel control, creating"
+  - "controls [WPF], DockPanel"
+  - "DockPanel control [WPF], creating"
 ms.assetid: 9194f663-e279-4f1a-86d7-125a57d05c6f
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a DockPanel
 ## Example  
@@ -29,6 +31,6 @@ manager: "wpickett"
  [!code-vb[DockPanelCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelCode/VisualBasic/dockpanel_vb.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.DockPanel>   
- <xref:System.Windows.Controls.Dock>   
+ <xref:System.Windows.Controls.DockPanel>  
+ <xref:System.Windows.Controls.Dock>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

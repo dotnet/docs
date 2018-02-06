@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode::GetVersionNumber Method
 Gets the one-based number that identifies the version of the code that this "ICorDebugCode" represents.  

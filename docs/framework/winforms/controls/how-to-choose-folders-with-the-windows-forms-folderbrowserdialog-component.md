@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "directories [Windows Forms], choosing"
   - "FolderBrowserDialog component [Windows Forms], choosing directories"
@@ -24,6 +24,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Choose Folders with the Windows Forms FolderBrowserDialog Component
 Often, within Windows applications you create, you will have to prompt users to select a folder, most frequently to save a set of files. The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component allows you to easily accomplish this task.  
@@ -73,6 +75,6 @@ Often, within Windows applications you create, you will have to prompt users to 
  For information on how to save files, see [How to: Save Files Using the SaveFileDialog Component](../../../../docs/framework/winforms/controls/how-to-save-files-using-the-savefiledialog-component.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.FolderBrowserDialog>   
- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.FolderBrowserDialog>  
+ [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
  [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)

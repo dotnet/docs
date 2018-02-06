@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 97fd5816-935e-4625-ad04-e6f6befa07de
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Bookmark Resolver for WorkflowHostingEndpoint
 This sample demonstrates how the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> can be used with <xref:System.ServiceModel.Activities.WorkflowServiceHost> to create workflow instances.  

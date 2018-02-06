@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using WorkflowInvoker and WorkflowApplication
 [!INCLUDE[wf](../../../includes/wf-md.md)] provides several methods of hosting workflows. <xref:System.Activities.WorkflowInvoker> provides a simple way for invoking a workflow as if it were a method call and can be used only for workflows that do not use persistence. <xref:System.Activities.WorkflowApplication> provides a richer model for executing workflows that includes notification of lifecycle events, execution control, bookmark resumption, and persistence. <xref:System.ServiceModel.Activities.WorkflowServiceHost> provides support for messaging activities and is primarily used with workflow services. This topic introduces you to workflow hosting with <xref:System.Activities.WorkflowInvoker> and <xref:System.Activities.WorkflowApplication>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting workflows with <xref:System.ServiceModel.Activities.WorkflowServiceHost>, see [Workflow Services](../../../docs/framework/wcf/feature-details/workflow-services.md) and [Hosting Workflow Services Overview](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md).  
@@ -88,7 +90,7 @@ manager: "erikre"
   
  The following code example is like the previous example except that the active bookmarks are enumerated before the bookmark is resumed. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
   
- **What is your name?**   
+ **What is your name?**  
 **BookmarkName: UserName - OwnerDisplayName: ReadLine**   
 **Steve**   
 **Hello, Steve**

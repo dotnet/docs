@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "bitblt"
-  - "graphics, copying"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing flicker"
-  - "pixels, copying"
+  - "graphics [Windows Forms], copying"
+  - "flicker [Windows Forms], reducing in Windows Forms"
+  - "graphics [Windows Forms], reducing flicker"
+  - "pixels [Windows Forms], copying"
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b
@@ -25,6 +25,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy Pixels for Reducing Flicker in Windows Forms
 When you animate a simple graphic, users can sometimes encounter flicker or other undesirable visual effects. One way to limit this problem is to use a "bitblt" process on the graphic. Bitblt is the "bit-block transfer" of the color data from an origin rectangle of pixels to a destination rectangle of pixels.  
@@ -69,8 +71,8 @@ private void Form1_Paint(System.Object sender,
  The code above is run in the form's <xref:System.Windows.Forms.Control.Paint> event handler so that the graphics persist when the form is redrawn. As such, do not call graphics-related methods in the <xref:System.Windows.Forms.Form.Load> event handler, because the drawn content will not be redrawn if the form is resized or obscured by another form.  
   
 ## See Also  
- <xref:System.Drawing.CopyPixelOperation>   
- <xref:System.Drawing.Graphics.FillRectangle%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.Control.OnPaint%2A?displayProperty=nameWithType>   
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)   
+ <xref:System.Drawing.CopyPixelOperation>  
+ <xref:System.Drawing.Graphics.FillRectangle%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A?displayProperty=nameWithType>  
+ [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
  [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)

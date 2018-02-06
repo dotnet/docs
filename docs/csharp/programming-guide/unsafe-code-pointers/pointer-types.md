@@ -1,13 +1,9 @@
 ---
 title: "Pointer types (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"
@@ -16,21 +12,6 @@ ms.assetid: 3319faf9-336d-4148-9af2-1da2579cdd1e
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Pointer types (C# Programming Guide)
 In an unsafe context, a type may be a pointer type, a value type, or a reference type. A pointer type declaration takes one of the following forms:  
@@ -148,12 +129,12 @@ Console.ReadLine();
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
- [Pointer Conversions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)   
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)   
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+ [Pointer Conversions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)  
+ [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+ [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+ [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)  
  [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Click event, CheckBox control"
+  - "Click event [Windows Forms], CheckBox control"
   - "CheckBox control [Windows Forms], Click events"
   - "events [Windows Forms], Click events"
   - "double-clicks"
-  - "check boxes, responding to events"
+  - "check boxes [Windows Forms], responding to events"
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Respond to Windows Forms CheckBox Clicks
 Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> control, the <xref:System.Windows.Forms.Control.Click> event occurs. You can program your application to perform some action depending upon the state of the check box.  
@@ -142,7 +144,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
     >  When the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property returns `true` for both <xref:System.Windows.Forms.CheckState.Checked> and <xref:System.Windows.Forms.CheckState.Indeterminate>.  
   
 ## See Also  
- <xref:System.Windows.Forms.CheckBox>   
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)   
- [How to: Set Options with Windows Forms CheckBox Controls](../../../../docs/framework/winforms/controls/how-to-set-options-with-windows-forms-checkbox-controls.md)   
+ <xref:System.Windows.Forms.CheckBox>  
+ [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
+ [How to: Set Options with Windows Forms CheckBox Controls](../../../../docs/framework/winforms/controls/how-to-set-options-with-windows-forms-checkbox-controls.md)  
  [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)

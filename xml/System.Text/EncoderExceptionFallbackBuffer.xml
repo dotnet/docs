@@ -253,5 +253,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Throws an exception because the input character cannot be encoded. The nominal return value is not used.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

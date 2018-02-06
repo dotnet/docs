@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataObject class [WPF], creating"
   - "data objects [WPF], creating"
@@ -21,6 +21,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Data Object
 The following examples show various ways to create a data object using the constructors provided by the <xref:System.Windows.DataObject> class.  

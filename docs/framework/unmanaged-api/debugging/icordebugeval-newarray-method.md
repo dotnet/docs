@@ -27,6 +27,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewArray Method
 Allocates a new array of the specified element type and dimensions.  

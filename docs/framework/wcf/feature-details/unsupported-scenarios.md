@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
 caps.latest.revision: 43
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Unsupported Scenarios
 For various reasons, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] does not support some specific security scenarios. For example, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition does not implement the SSPI or Kerberos authentication protocols, and therefore [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not support running a service with Windows authentication on that platform. Other authentication mechanisms, such as username/password and HTTP/HTTPS integrated authentication are supported when running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] under Windows XP Home Edition.  
@@ -115,9 +117,9 @@ For various reasons, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] doe
  The fix is to modify the binding directly on the client after doing the import.  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)   
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)   
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)   
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
+ [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
+ [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
+ [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
  [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

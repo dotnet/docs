@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_GC_GENERATION_RANGE Structure
 Describes a range (that is, block) of memory that is undergoing garbage collection.  

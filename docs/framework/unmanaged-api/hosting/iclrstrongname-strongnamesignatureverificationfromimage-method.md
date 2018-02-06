@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameSignatureVerificationFromImage Method
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  

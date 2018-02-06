@@ -1,7 +1,7 @@
 ---
 title: Testing a class library with .NET Core in Visual Studio 2017
 description: Learn how to test a class library written in C# using Visual Studio 2017
-keywords: .NET Core, .NET Standard class library, Visual Studio 2017, unit testing 
+keywords: .NET Core, .NET Standard class library, Visual Studio 2017, unit testing
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
@@ -10,9 +10,11 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
+ms.workload: 
+  - dotnetcore
 ---
 
 # Testing a class library with .NET Core in Visual Studio 2017
@@ -100,7 +102,7 @@ You can also apply the [\[ExpectedException\]](https://msdn.microsoft.com/librar
 
 In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/library/ms243754.aspx) method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/library/ms243805.aspx) method.
 
-Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose @System.String.Length is 0, and a `null` string that has not been initialized. If `StartsWithUpper` is called as an extension method on a @System.String instance, it cannot be passed a `null` string. However, you can also call it directly as a static method and pass a single @System.String argument.
+Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose <xref:System.String.Length> is 0, and a `null` string that has not been initialized. If `StartsWithUpper` is called as an extension method on a <xref:System.String> instance, it cannot be passed a `null` string. However, you can also call it directly as a static method and pass a single <xref:System.String> argument.
 
 You'll define three methods, each of which calls its [Assert](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) method repeatedly for each element in a string array. Because the test method fails as soon as it encounters the first failure, you'll call a method overload that allows you to pass a string that indicates the string value used in the method call.
 

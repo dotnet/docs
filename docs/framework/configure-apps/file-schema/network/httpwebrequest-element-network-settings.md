@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpWebRequest&gt; Element (Network Settings)
 Customizes Web request parameters.  
@@ -32,7 +34,7 @@ Customizes Web request parameters.
 ## Syntax  
   
 ```xml  
-      <httpWebRequest  
+<httpWebRequest  
   maximumResponseHeadersLength="size"  
   maximumErrorResponseLength="size"  
   maximumUnauthorizedUploadLength="size"  
@@ -83,5 +85,5 @@ Customizes Web request parameters.
 ```  
   
 ## See Also  
- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>   
+ <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

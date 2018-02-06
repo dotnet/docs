@@ -19,6 +19,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolBar Control Overview (Windows Forms)
 > [!NOTE]
@@ -37,8 +39,8 @@ manager: "wpickett"
  The <xref:System.Windows.Forms.ToolBar> control allows you to create toolbars by adding <xref:System.Windows.Forms.Button> objects to a <xref:System.Windows.Forms.ToolBar.Buttons%2A> collection. You can use the Collection Editor to add buttons to a <xref:System.Windows.Forms.ToolBar> control; each <xref:System.Windows.Forms.Button> object should have text or an image assigned, although you can assign both. The image is supplied by an associated [ImageList](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) component. At run time, you can add or remove buttons from the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection> using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> and <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove%2A> methods. To program the buttons of a <xref:System.Windows.Forms.ToolBar>, add code to the <xref:System.Windows.Forms.ToolBar.ButtonClick> events of the <xref:System.Windows.Forms.ToolBar>, using the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class to determine which button was clicked.  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolBar>   
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)   
- [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md)   
- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)   
+ <xref:System.Windows.Forms.ToolBar>  
+ [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
+ [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md)  
+ [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)  
  [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)

@@ -44,6 +44,22 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.WebControls.BaseDataList" />, you must override the following members: <see cref="M:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)" /> and <see cref="M:System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellSpacing" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellPadding" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.GridLines" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
+    <altmember cref="M:System.Web.UI.WebControls.BaseDataList.DataBind" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
+    <altmember cref="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" />
+    <altmember cref="T:System.Collections.IEnumerable" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Data.DataSet" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -124,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -167,6 +186,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -209,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -250,6 +272,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -283,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -359,6 +383,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.SelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -396,6 +423,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyField">
@@ -439,6 +468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataKeys">
@@ -472,7 +503,7 @@
   
  The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
   
- For more information on accessing data with ASP.NET, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information on accessing data with ASP.NET, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
    
   
@@ -484,6 +515,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
       </Docs>
     </Member>
     <Member MemberName="DataKeysArray">
@@ -509,6 +542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -552,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -609,6 +645,13 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
         <exception cref="T:System.ArgumentException">The data source is of an invalid type. The data source must be <see langword="null" /> or implement either the <see cref="T:System.Collections.IEnumerable" /> or the <see cref="T:System.ComponentModel.IListSource" /> interface.</exception>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.ComponentModel.IListSource" />
+        <altmember cref="T:System.Data.DataView" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -652,6 +695,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -677,6 +721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -703,6 +749,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -748,6 +795,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -796,6 +844,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -822,6 +871,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -860,6 +912,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Byte" />
+        <altmember cref="T:System.SByte" />
+        <altmember cref="T:System.Int16" />
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.UInt32" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="T:System.Char" />
+        <altmember cref="T:System.Double" />
+        <altmember cref="T:System.Single" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -886,6 +955,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -912,7 +984,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Control.DataBinding> event is raised when data is bound to the <xref:System.Web.UI.WebControls.BaseDataList> control. This method notifies the control to perform any data-binding logic that is associated with it.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnDataBinding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -921,6 +993,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -947,6 +1020,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -977,7 +1054,7 @@
   
  The <xref:System.Web.UI.WebControls.BaseDataList> class sets the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property to `true` when the <xref:System.Web.UI.DataSourceView.DataSourceViewChanged> event is raised.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -986,6 +1063,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1082,7 +1161,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server. The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method allows you to create a custom handler for the event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1091,6 +1170,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -1116,6 +1196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.PrepareControlHierarchy" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.PrepareControlHierarchy" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1167,6 +1249,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SelectArguments">
@@ -1192,6 +1277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -1214,7 +1301,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1231,6 +1318,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1257,6 +1346,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="UseAccessibleHeader">
@@ -1290,6 +1382,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.Caption" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CaptionAlign" />
       </Docs>
     </Member>
   </Members>

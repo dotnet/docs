@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TableCellCollection" />
+    <altmember cref="T:System.Windows.Documents.TableColumnCollection" />
+    <altmember cref="T:System.Windows.Documents.TableRowGroupCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -86,6 +89,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when an attempt is made to set <see cref="P:System.Windows.Documents.TableCellCollection.Capacity" /> to a value that is less than the current value of <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
+        <altmember cref="P:System.Windows.Documents.TableRowCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -212,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TableRowCollection.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -365,6 +370,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Raised if *item* is not present in the collection.</exception>
         <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -394,6 +401,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableRowCollection.Count" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.Remove(System.Windows.Documents.TableRow)" />
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -426,6 +435,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* or *count* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableRowCollection.Count" />.</exception>
         <exception cref="T:System.ArgumentException">Raised when *index* and *count* do not specify a valid range in this collection.</exception>
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.Remove(System.Windows.Documents.TableRow)" />
+        <altmember cref="M:System.Windows.Documents.TableRowCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -656,7 +667,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableRowCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Documents.TableRowCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -682,7 +693,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableRowCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Documents.TableRowCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -803,5 +814,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

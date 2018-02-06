@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mitigation: WPF Layout
 The layout of WPF controls can change slightly.  

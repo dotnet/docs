@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9d46d9b9-96c9-4531-9695-ab526b4d704a
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Buffered Receive
 This sample demonstrates how to set up and configure the buffered receive feature in [!INCLUDE[wf](../../../../includes/wf-md.md)]. Buffered receive allows the workflow author to create a workflow without having to worry about the order in which messages are received. The buffered receive feature buffers messages locally and delivers them when the workflow is ready to receive them.  

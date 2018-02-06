@@ -16,6 +16,8 @@ caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Defining Custom Types for Use with .NET Framework XAML Services
 When you define custom types that are business objects or are types that do not have a dependency on specific frameworks, there are certain best practices for XAML you can follow. If you follow these practices, .NET Framework XAML Services and its XAML readers and XAML writers can discover the XAML characteristics of your type and give it appropriate representation in a XAML node stream using the XAML type system. This topic describes best practices for type definitions, member definitions, and CLR attributing of types or members.  
@@ -121,5 +123,5 @@ When you define custom types that are business objects or are types that do not 
  In WPF XAML terminology, an *internal type* is a type that is defined by the same assembly that also includes the referencing XAML. Such a type can be mapped through a XAML namespace that deliberately omits the assembly= portion of a mapping, for example, `xmlns:local="clr-namespace:WPFApplication1"`.  If BAML references an internal type and that type has `internal` access level, this generates a `GeneratedInternalTypeHelper` class for the assembly. If you want to avoid `GeneratedInternalTypeHelper`, you either must use `public` access level, or must factor the relevant class into a separate assembly and make that assembly dependent.  
   
 ## See Also  
- [XAML-Related CLR Attributes for Custom Types and Libraries](../../../docs/framework/xaml-services/xaml-related-clr-attributes-for-custom-types-and-libraries.md)   
+ [XAML-Related CLR Attributes for Custom Types and Libraries](../../../docs/framework/xaml-services/xaml-related-clr-attributes-for-custom-types-and-libraries.md)  
  [XAML Services](../../../docs/framework/xaml-services/index.md)

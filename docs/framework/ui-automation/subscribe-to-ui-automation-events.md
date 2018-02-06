@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UI Automation, subscribing to events"
   - "subscribing to UI Automation events"
@@ -22,6 +22,8 @@ caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Subscribe to UI Automation Events
 > [!NOTE]
@@ -42,7 +44,7 @@ manager: "markl"
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
 ## See Also  
- <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>   
- <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>   
- <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>   
+ <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>  
+ <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>  
+ <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>  
  [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)

@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TableColumnCollection" />
+    <altmember cref="T:System.Windows.Documents.TableRowCollection" />
+    <altmember cref="T:System.Windows.Documents.TableRowGroupCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -213,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.TrimToSize" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -367,6 +371,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Raised if <paramref name="item" /> is not present in the collection.</exception>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="item" /> is null.</exception>
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -396,6 +402,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.Remove(System.Windows.Documents.TableCell)" />
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -428,6 +436,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> or <paramref name="count" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
         <exception cref="T:System.ArgumentException">Raised when <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in this collection.</exception>
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.Remove(System.Windows.Documents.TableCell)" />
+        <altmember cref="M:System.Windows.Documents.TableCellCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -658,7 +668,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableCellCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Documents.TableCellCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -684,7 +694,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableCellCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Documents.TableCellCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -805,5 +815,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

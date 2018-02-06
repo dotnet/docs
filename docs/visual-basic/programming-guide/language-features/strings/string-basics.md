@@ -1,13 +1,12 @@
 ---
 title: "String Basics in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "strings [Visual Basic], Like operator"
@@ -17,21 +16,6 @@ ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # String Basics in Visual Basic
 The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
@@ -92,7 +76,7 @@ World]]></xml>.Value
  Unlike other intrinsic data types, `String` is a reference type. When a variable of reference type is passed as an argument to a function or subroutine, a reference to the memory address where the data is stored is passed instead of the actual value of the string. So in the previous example, the name of the variable remains the same, but it points to a new and different instance of the `String` class, which holds the new value.  
   
 ## See Also  
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
- [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)   
+ [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
+ [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)  
+ [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)  
  [Basic String Operations](../../../../standard/base-types/basic-string-operations.md)

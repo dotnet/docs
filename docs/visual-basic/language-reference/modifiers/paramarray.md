@@ -1,39 +1,21 @@
 ---
 title: "ParamArray (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ParamArray"
   - "ParamArray"
 helpviewer_keywords: 
-  - "ParamArray keyword"
-  - "ParamArray keyword, syntax"
+  - "ParamArray keyword [Visual Basic]"
+  - "ParamArray keyword [Visual Basic], syntax"
 ms.assetid: a5f18789-92bd-488f-9c7e-cf3719963635
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ParamArray (Visual Basic)
 Specifies that a procedure parameter takes an optional array of elements of the specified type. `ParamArray` can be used only on the last parameter of a parameter list.  
@@ -57,5 +39,5 @@ Specifies that a procedure parameter takes an optional array of elements of the 
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)

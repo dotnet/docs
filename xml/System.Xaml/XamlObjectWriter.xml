@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlWriter" />
+    <altmember cref="T:System.Xaml.XamlObjectReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -590,5 +592,14 @@
         <exception cref="T:System.Xaml.XamlObjectWriterException">Attempted to write a value in an invalid scope.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

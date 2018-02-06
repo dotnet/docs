@@ -27,6 +27,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetCodeInfo Method
 Gets the extent of native code associated with the specified function ID.  
@@ -67,6 +69,6 @@ HRESULT GetCodeInfo(
  **.NET Framework Versions:** 1.0  
   
 ## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)   
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)   
+ [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
+ [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
  [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

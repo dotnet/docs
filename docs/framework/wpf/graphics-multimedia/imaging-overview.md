@@ -9,30 +9,32 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "metadata, images"
-  - "displaying images"
-  - "Imaging API"
-  - "image metadata"
-  - "converting images"
-  - "encoding image formats"
-  - "format decoding for images"
-  - "painting with images"
-  - "stretching images"
-  - "images, about imaging"
-  - "format encoding for images"
-  - "cropping images"
-  - "decoding image formats"
-  - "rotating images"
+  - "metadata [WPF], images"
+  - "displaying images [WPF]"
+  - "Imaging API [WPF]"
+  - "image metadata [WPF]"
+  - "converting images [WPF]"
+  - "encoding image formats [WPF]"
+  - "format decoding for images [WPF]"
+  - "painting with images [WPF]"
+  - "stretching images [WPF]"
+  - "images [WPF], about imaging"
+  - "format encoding for images [WPF]"
+  - "cropping images [WPF]"
+  - "decoding image formats [WPF]"
+  - "rotating images [WPF]"
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Imaging Overview
 This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../includes/tlasharptla-wic-md.md)]. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] enables developers to display, transform, and format images.  
@@ -196,9 +198,9 @@ Image brushes can fill shapes, controls, text, and more
 >  The codec must be digitally signed for the system to recognize it.  
   
 ## See Also  
- <xref:System.Windows.Media.Imaging.BitmapSource>   
- <xref:System.Windows.Media.Imaging.BitmapImage>   
- <xref:System.Windows.Controls.Image>   
- <xref:System.Windows.Media.Imaging.BitmapMetadata>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
+ <xref:System.Windows.Media.Imaging.BitmapSource>  
+ <xref:System.Windows.Media.Imaging.BitmapImage>  
+ <xref:System.Windows.Controls.Image>  
+ <xref:System.Windows.Media.Imaging.BitmapMetadata>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
  [Win32 Sample Codec](http://go.microsoft.com/fwlink/?LinkID=160052)

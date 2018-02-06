@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: daad57eb-8198-49b5-9920-aa0e7428ccf1
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # 2026 - CompileVbExpressionStart
 ## Properties  

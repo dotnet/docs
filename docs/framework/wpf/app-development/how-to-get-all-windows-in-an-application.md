@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "window objects, getting"
+  - "window objects [WPF], getting"
 ms.assetid: f120f06e-993b-4a97-9657-af0d1986981f
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get all Windows in an Application
 This example shows how to get all <xref:System.Windows.Window> objects in an application.  

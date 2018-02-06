@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameHashSize Method
 Gets the buffer size required for a hash, using the specified hash algorithm.  

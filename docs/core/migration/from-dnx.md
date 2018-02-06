@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
+ms.workload: 
+  - dotnetcore
 ---
 
 # Migrating from DNX to .NET Core CLI (project.json)
@@ -65,7 +67,7 @@ The table below shows the mapping between the DNX/DNU commands and their CLI cou
 | dnu pack                       	| dotnet pack    	| Package up a NuGet package of your code.                                                                        	|
 | dnx \[command] (for example, "dnx web") 	| N/A\*          	| In DNX world, run a command as defined in the project.json.                                                     	|
 | dnu install                    	| N/A\*          	| In the DNX world, install a package as a dependency.                                                            	|
-| dnu restore                    	| dotnet restore 	| Restore dependencies specified in your project.json.                                                            	|
+| dnu restore                    	| dotnet restore 	| Restore dependencies specified in your project.json. ([see note](#dotnet-restore-note))                                                            	|
 | dnu publish                    	| dotnet publish 	| Publish your application for deployment in one of the three forms (portable, portable with native and standalone). 	|
 | dnu wrap                       	| N/A\*          	| In DNX world, wrap a project.json in csproj.                                                                    	|
 | dnu commands                   	| N/A\*          	| In DNX world, manage the globally installed commands.                                                           	|
@@ -86,7 +88,7 @@ invoked using the familiar `dotnet <command>` syntax.
 
 ### Installing dependencies
 As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a 
-package from NuGet, you would need to add it as a dependency to your `project.json` file and then run `dotnet restore`. 
+package from NuGet, you would need to add it as a dependency to your `project.json` file and then run `dotnet restore` ([see note](#dotnet-restore-note)). 
 
 ### Running your code
 There are two main ways to run your code. One is from source, with `dotnet run`. Unlike `dnx run`, this will not do any 
@@ -166,8 +168,7 @@ Your `project.json` is now mostly ready. You need to go through your dependencie
 their newer versions, especially if you are using ASP.NET Core dependencies. If you were using separate packages for BCL APIs, 
 you can use the runtime package as explained in the [application portability type](../deploying/index.md) document. 
 
-Once you are ready, you can try restoring with `dotnet restore`. Depending on the version of your dependencies, you 
-may encounter errors if NuGet cannot resolve the dependencies for one of the 
+Once you are ready, you can try restoring with `dotnet restore` ([see note](#dotnet-restore-note)). Depending on the version of your dependencies, you may encounter errors if NuGet cannot resolve the dependencies for one of the 
 targeted frameworks above. This is a "point-in-time" problem; as time progresses, more and more packages will include 
 support for these frameworks. For now, if you run into this, you can use the `imports` statement within the `framework` 
 node to specify to NuGet that it can restore the packages targeting the framework within the "imports" statement. 
@@ -185,3 +186,6 @@ import. If you are slightly lost or new to this, in general, specifying `dnxcore
 
 Running `dotnet build` will show any eventual build errors, though there shouldn't be too many of them. After your code is 
 building and running properly, you can test it out with the runner. Execute `dotnet <path-to-your-assembly>` and see it run.
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

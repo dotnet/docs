@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -107,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
   </Members>

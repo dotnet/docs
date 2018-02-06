@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e22b76a-76de-43b4-9be7-7a86ed3d5a44
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic TransactionScope
 This sample consists of four scenarios that run showing how to nest <xref:System.Activities.Statements.TransactionScope> instances. The first scenario shows nesting a 3rd party activity of which the author has no knowledge of the construction. The second and third scenarios show how time-outs are respected and the final scenario shows the <xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure%2A> setting.  
@@ -42,6 +44,4 @@ This sample consists of four scenarios that run showing how to nest <xref:System
 >   
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Transactions\BasicTransactionScope`  
-  
-## See Also
+>  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Transactions\BasicTransactionScope`

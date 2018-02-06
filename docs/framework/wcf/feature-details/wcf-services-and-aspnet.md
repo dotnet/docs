@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Services and ASP.NET
 This topic discusses hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services side-by-side with ASP.NET and hosting them in ASP.NET compatibility mode.  
@@ -107,5 +109,5 @@ This topic discusses hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.
  For more information about enabling ASP.NET compatibility mode for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services, see <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> and the [ASP.NET Compatibility](../../../../docs/framework/wcf/samples/aspnet-compatibility.md) sample.  
   
 ## See Also  
- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>   
+ <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

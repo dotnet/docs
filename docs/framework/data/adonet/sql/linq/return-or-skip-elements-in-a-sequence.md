@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Return Or Skip Elements in a Sequence
 Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.  
@@ -85,5 +87,5 @@ ORDER BY [t0].[CustomerID]
  For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.  
   
 ## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)   
+ [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
  [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

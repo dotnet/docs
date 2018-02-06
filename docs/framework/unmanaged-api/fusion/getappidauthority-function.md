@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetAppIdAuthority Function
 Gets a pointer to an [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) instance that manages keys for application identities and references.  
@@ -51,5 +53,5 @@ HRESULT GetAppIdAuthority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IAppIdAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md)   
+ [IAppIdAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md)  
  [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

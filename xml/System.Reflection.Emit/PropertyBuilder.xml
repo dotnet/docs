@@ -583,6 +583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Module" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1108,5 +1109,45 @@
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a custom attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the property by calling the getter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the custom attributes defined on this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the property value for the given object to the given value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -18,6 +18,8 @@ caps.latest.revision: 31
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling Interfaces
 This section describes the unmanaged interfaces that enable you to profile a program that is being executed by the common language runtime (CLR).  

@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ASSEMBLYMETADATA Structure
 Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.  
@@ -72,6 +74,6 @@ typedef struct {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)   
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)   
+ [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
+ [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)  
  [OSINFO Structure](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md)

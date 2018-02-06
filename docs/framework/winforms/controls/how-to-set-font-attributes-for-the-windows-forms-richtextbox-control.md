@@ -9,23 +9,25 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - ".rtf files, formatting in RichTextBox control"
-  - "fonts, changing attributes in RichTextBox control"
-  - "RTF files, formatting in RichTextBox control"
+  - ".rtf files [Windows Forms], formatting in RichTextBox control"
+  - "fonts [Windows Forms], changing attributes in RichTextBox control"
+  - "RTF files [Windows Forms], formatting in RichTextBox control"
   - "RichTextBox control [Windows Forms], setting font attributes"
   - "text [Windows Forms]"
-  - "text boxes, formatting text"
+  - "text boxes [Windows Forms], formatting text"
   - "formatting [Windows Forms]"
 ms.assetid: 2bc23ddb-0529-4489-a1a2-ad253cb43f9a
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Font Attributes for the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous options for formatting the text it displays. You can make the selected characters bold, underlined, or italic, using the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property. You can also use this property to change the size and typeface of the selected characters. The <xref:System.Windows.Forms.RichTextBox.SelectionColor%2A> property enables you to change the selected characters' color.  
@@ -60,6 +62,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     >  These properties only affect selected text, or, if no text is selected, the text that is typed at the current location of the insertion point. For information on selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBox>   
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.RichTextBox>  
+ [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

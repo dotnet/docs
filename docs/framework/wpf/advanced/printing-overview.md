@@ -9,30 +9,26 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "PrintTicket class"
-  - "classes, PrintCapabilities"
-  - "classes, PrintQueue"
-  - "classes, PrintTicket"
-  - "print path, XPS"
-  - "classes, PrintServer"
-  - "printers, XPSDrv-based"
-  - "printing"
-  - "PrintQueue class PrintServer class"
+  - "print path [WPF], XPS"
+  - "printers [WPF], XPSDrv-based"
+  - "printing [WPF]"
+  - "PrintQueue class PrintServer class [WPF]"
   - "XML Paper Specification (XPS) file format"
   - "XPS (XML Paper Specification) file format"
   - "XPSDrv-based printers"
-  - "PrintCapabilities class"
-  - "GDI print path"
+  - "GDI print path [WPF]"
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing Overview
 With [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], application developers using [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] have a rich new set of printing and print system management [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]. With [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] file format and the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path.  
@@ -69,7 +65,7 @@ With [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], ap
   
 -   Print Schema. The public schema is updated regularly and enables rapid extension of device capabilities. (See **PrintTicket and PrintCapabilities** below.)  
   
--   Extensible Filter Pipeline. The [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents. (Lookup "XPSDrv" in the [Windows Driver Development Kit](https://msdn.microsoft.com/library/windows/hardware/ff557573.aspx).)  
+-   Extensible Filter Pipeline. The [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents. (Lookup "XPSDrv" in the [Windows Driver Kit](https://msdn.microsoft.com/library/windows/hardware/ff557573.aspx).)  
   
 ### Print Path Architecture  
  While both [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] applications support [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)], [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] applications use a [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] to [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion in order to create [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] formatted content for the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv). These applications are not required to use the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] print path, and can continue to use [!INCLUDE[TLA#tla_emf](../../../../includes/tlasharptla-emf-md.md)] based printing. However, most [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] features and enhancements are only available to applications that target the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] print path.  
@@ -122,7 +118,7 @@ With [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], ap
 
 For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] functionality or support, the current [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path remains unchanged.  
   
--   For additional reference material on the [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path and the various [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion options, see [Microsoft XPS Document Converter (MXDC)](https://msdn.microsoft.com/library/windows/desktop/ff686803.aspx) and "XPSDrv" in the [Windows Driver Development Kit](https://msdn.microsoft.com/library/windows/hardware/ff557573.aspx).  
+-   For additional reference material on the [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path and the various [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion options, see [Microsoft XPS Document Converter (MXDC)](https://msdn.microsoft.com/library/windows/desktop/ff686803.aspx) and "XPSDrv" in the [Windows Driver Kit](https://msdn.microsoft.com/library/windows/hardware/ff557573.aspx).  
   
 <a name="XPS_Driver_Model_intro"></a>   
 ## XPSDrv Driver Model  
@@ -147,15 +143,15 @@ For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../inclu
 -   **ZIP compression**. All [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents use ZIP compression.  
   
 ## See Also  
- <xref:System.Windows.Controls.PrintDialog>   
- <xref:System.Windows.Xps.XpsDocumentWriter>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- <xref:System.Printing.PrintTicket>   
- <xref:System.Printing.PrintCapabilities>   
- <xref:System.Printing.PrintServer>   
- <xref:System.Printing.PrintQueue>   
- [How-to Topics](../../../../docs/framework/wpf/advanced/printing-how-to-topics.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [XPS](http://www.microsoft.com/xps)   
- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)   
+ <xref:System.Windows.Controls.PrintDialog>  
+ <xref:System.Windows.Xps.XpsDocumentWriter>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ <xref:System.Printing.PrintTicket>  
+ <xref:System.Printing.PrintCapabilities>  
+ <xref:System.Printing.PrintServer>  
+ <xref:System.Printing.PrintQueue>  
+ [How-to Topics](../../../../docs/framework/wpf/advanced/printing-how-to-topics.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [XPS](http://www.microsoft.com/xps)  
+ [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)  
  [Microsoft XPS Document Converter (MXDC)](https://msdn.microsoft.com/library/windows/desktop/ff686803.aspx)

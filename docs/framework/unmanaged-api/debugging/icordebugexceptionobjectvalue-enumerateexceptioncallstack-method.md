@@ -27,6 +27,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugExceptionObjectValue::EnumerateExceptionCallStack Method
 Gets an enumerator to the call stack embedded in an exception object.  
@@ -58,5 +60,5 @@ HRESULT EnumerateExceptionCallStack(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [ICorDebugExceptionObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)   
+ [ICorDebugExceptionObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

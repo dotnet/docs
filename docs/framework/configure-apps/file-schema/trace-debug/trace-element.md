@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;trace&gt; Element
 Contains listeners that collect, store, and route tracing messages.  
@@ -92,8 +94,8 @@ Contains listeners that collect, store, and route tracing messages.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceListener>   
- <xref:System.Diagnostics.DefaultTraceListener>   
- <xref:System.Diagnostics.TextWriterTraceListener>   
- <xref:System.Diagnostics.EventLogTraceListener>   
+ <xref:System.Diagnostics.TraceListener>  
+ <xref:System.Diagnostics.DefaultTraceListener>  
+ <xref:System.Diagnostics.TextWriterTraceListener>  
+ <xref:System.Diagnostics.EventLogTraceListener>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

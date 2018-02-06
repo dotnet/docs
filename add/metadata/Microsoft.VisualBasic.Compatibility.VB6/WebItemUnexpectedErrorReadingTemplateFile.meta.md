@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile.#ctor(System.String)
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

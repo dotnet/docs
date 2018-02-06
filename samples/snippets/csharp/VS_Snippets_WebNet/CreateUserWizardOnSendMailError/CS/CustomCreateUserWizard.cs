@@ -12,7 +12,7 @@ namespace Samples.AspNet.CS.Controls {
   {
     private void SiteSpecificErrorLoggingProcedure (SendMailErrorEventArgs e)
     {
-      // Site-specific code for logging e-mail errors goes here.
+      // Site-specific code for logging email errors goes here.
     }
 
     protected override void OnSendMailError (SendMailErrorEventArgs e)

@@ -1,45 +1,29 @@
 ---
 title: "Boolean Expressions (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "short-circuiting"
   - "Boolean expressions"
-  - "logical operators, Boolean expressions"
+  - "logical operators [Visual Basic], Boolean expressions"
   - "expressions [Visual Basic], Boolean"
-  - "expression evaluation, Boolean expressions"
+  - "expression evaluation [Visual Basic], Boolean expressions"
   - "operators [Visual Basic], short-circuiting"
   - "Visual Basic code, operators"
   - "short-circuit evaluation"
-  - "logical operators, short-circuiting"
+  - "logical operators [Visual Basic], short-circuiting"
   - "operators [Visual Basic], Boolean"
   - "Visual Basic code, expressions"
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Boolean Expressions (Visual Basic)
 A *Boolean expression* is an expression that evaluates to a value of the [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md): `True` or `False`. `Boolean` expressions can take several forms. The simplest is the direct comparison of the value of a `Boolean` variable to a `Boolean` literal, as shown in the following example.  
@@ -87,10 +71,10 @@ A *Boolean expression* is an expression that evaluates to a value of the [Boolea
  You can use parentheses to control the order of evaluation of Boolean expressions. Expressions enclosed by parentheses evaluate first. For multiple levels of nesting, precedence is granted to the most deeply nested expressions. Within parentheses, evaluation proceeds according to the rules of operator precedence. For more information, see [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md).  
   
 ## See Also  
- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)   
- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)   
- [Statements](../../../../visual-basic/programming-guide/language-features/statements.md)   
- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)   
- [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)   
+ [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)  
+ [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
+ [Statements](../../../../visual-basic/programming-guide/language-features/statements.md)  
+ [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)  
+ [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)  
  [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)

@@ -1,7 +1,7 @@
 ---
 title: "XDocument Class Overview (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 45cb7e71-196a-47da-bfe9-7a5589db1eed
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # XDocument Class Overview (Visual Basic)
 This topic introduces the <xref:System.Xml.Linq.XDocument> class.  

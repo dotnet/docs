@@ -1,13 +1,11 @@
 ---
 title: "Like Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Like"
@@ -19,7 +17,7 @@ helpviewer_keywords:
   - "? symbol, wildcard character"
   - "string comparison [Visual Basic], Like operator"
   - "strings [Visual Basic], comparing"
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "symbols, wildcard"
   - "wildcards, Like operator"
   - "strings [Visual Basic], matching"
@@ -33,21 +31,6 @@ ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Like Operator (Visual Basic)
 Compares a string against a pattern.  
@@ -123,11 +106,11 @@ result = string Like pattern
  [!code-vb[VbVbalrOperators#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/like-operator_1.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>   
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
+ <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
+ <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
+ [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
  [How to: Match a String against a Pattern](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-match-a-string-against-a-pattern.md)

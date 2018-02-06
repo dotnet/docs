@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStrip" />
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -449,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAutoToolTip">
@@ -624,5 +627,14 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

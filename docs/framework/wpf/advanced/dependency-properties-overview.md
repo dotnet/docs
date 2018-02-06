@@ -6,22 +6,24 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "properties, attached"
-  - "properties, overview"
-  - "styles"
-  - "attached properties"
-  - "data binding"
-  - "dependency properties"
-  - "resources, references to"
+  - "properties [WPF], attached"
+  - "properties [WPF], overview"
+  - "styles [WPF]"
+  - "attached properties [WPF]"
+  - "data binding [WPF]"
+  - "dependency properties [WPF]"
+  - "resources [WPF], references to"
 ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dependency properties overview
 
@@ -199,7 +201,7 @@ Typically, you would not want styles to always apply and to obscure even a local
 - Dependency properties should generally be considered to be public properties, accessible or at least discoverable by any caller that has access to an instance. For more information, see [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md).
 
 ## See also
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
- [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
+ [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)

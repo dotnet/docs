@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
 caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Secure Metadata Endpoints
 Metadata for a service can contain sensitive information about your application that a malicious user can leverage. Consumers of your service may also require a secure mechanism for obtaining metadata about your service. Therefore, it is sometimes necessary to publish your metadata using a secure endpoint.  
@@ -99,10 +101,10 @@ Metadata for a service can contain sensitive information about your application 
 -   <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
   
 ## See Also  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>   
- [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)   
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)   
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>  
+ [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)  
+ [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
+ [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

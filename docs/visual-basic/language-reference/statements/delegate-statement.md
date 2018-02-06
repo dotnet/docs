@@ -1,6 +1,6 @@
 ---
 title: "Delegate Statement"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
@@ -8,26 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
 helpviewer_keywords: 
-  - "delegate keyword"
-  - "Delegate statement"
+  - "delegate keyword [Visual Basic]"
+  - "Delegate statement [Visual Basic]"
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Delegate Statement
 Used to declare a delegate. A delegate is a reference type that refers to a `Shared` method of a type or to an instance method of an object. Any procedure with matching parameter and return types can be used to create an instance of this delegate class. The procedure can then later be invoked by means of the delegate instance.  
@@ -80,11 +66,11 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
 ## See Also  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)   
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
+ [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
+ [Of](../../../visual-basic/language-reference/statements/of-clause.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
+ [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)  
+ [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

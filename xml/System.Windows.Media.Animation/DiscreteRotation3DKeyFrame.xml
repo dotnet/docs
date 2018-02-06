@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.Rotation3DAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Media.Animation.Rotation3DKeyFrameCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,5 +122,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteRotation3DKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

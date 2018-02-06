@@ -1,6 +1,6 @@
 ---
 title: "=&gt; Operator (C# Reference)"
-ms.date: "2017-10-02"
+ms.date: 10/02/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -13,21 +13,6 @@ helpviewer_keywords:
   - "lambda expressions [C#], => operator"
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # =&gt; Operator (C# Reference)
 

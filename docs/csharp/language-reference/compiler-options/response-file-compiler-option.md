@@ -1,6 +1,6 @@
 ---
 title: "@ (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # @ (C# Compiler Options)
 The @ option lets you specify a file that contains compiler options and source code files to compile.  
@@ -57,7 +43,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
  The compiler processes the command options as they are encountered. Therefore, command line arguments can override previously listed options in response files. Conversely, options in a response file will override options listed previously on the command line or in other response files.  
   
- C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
+ C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [-noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
   
  This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
   
@@ -66,7 +52,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
 ```console  
 # build the first output file  
-/target:exe /out:MyExe.exe source1.cs source2.cs  
+-target:exe -out:MyExe.exe source1.cs source2.cs  
 ```  
   
 ## See Also  

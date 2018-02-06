@@ -1,13 +1,10 @@
 ---
 title: "My.Computer.Clipboard Object"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Clipboard"
@@ -16,21 +13,6 @@ ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # My.Computer.Clipboard Object
 Provides methods for manipulating the Clipboard.  
@@ -51,5 +33,5 @@ Provides methods for manipulating the Clipboard.
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>   
+ <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

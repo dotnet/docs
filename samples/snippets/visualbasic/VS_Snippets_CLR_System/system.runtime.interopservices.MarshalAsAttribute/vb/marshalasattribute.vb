@@ -17,7 +17,7 @@ Module Module1
         <MarshalAsAttribute(UnmanagedType.LPWStr)> Public msg As String
     End Class
 
-    'Applied to a a return value.
+    'Applied to a return value.
     Public Function M2() As <MarshalAsAttribute(UnmanagedType.LPWStr)> String
         Return "Hello World"
     End Function

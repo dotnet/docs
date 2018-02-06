@@ -2,28 +2,28 @@
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs
 ms.technology: 
   - "dotnet-wpf"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.Parent
 ms.technology: 
   - "dotnet-wpf"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChangeType
 ms.technology: 
   - "dotnet-wpf"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChildIndex
 ms.technology: 
   - "dotnet-wpf"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -39,5 +39,5 @@ manager: "wpickett"
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.Child
 ms.technology: 
   - "dotnet-wpf"
-manager: "ghogen"
+manager: "wpickett"
 ---

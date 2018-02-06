@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MainMenu" />
+    <altmember cref="T:System.Windows.Forms.ContextMenu" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
       </Docs>
     </Member>
     <Member MemberName="CreateMenuHandle">
@@ -291,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.GetMainMenu" />
       </Docs>
     </Member>
     <Member MemberName="GetMainMenu">
@@ -326,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.GetContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -406,6 +413,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName="MdiListItem">
@@ -439,6 +447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MdiList" />
       </Docs>
     </Member>
     <Member MemberName="MenuItems">
@@ -484,6 +494,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
+        <altmember cref="T:System.Windows.Forms.ContextMenu" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.Menu.MenuItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="MergeMenu">
@@ -528,6 +542,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">It was attempted to merge the menu with itself.</exception>
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeType" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeOrder" />
       </Docs>
     </Member>
     <Member MemberName="Name">

@@ -129,6 +129,8 @@
         <param name="context">Description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.RowNotInTableException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,5 +162,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.RowNotInTableException" /> class without arguments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

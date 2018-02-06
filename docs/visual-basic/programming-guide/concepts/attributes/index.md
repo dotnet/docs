@@ -1,7 +1,7 @@
 ---
 title: "Attributes overview (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Attributes overview (Visual Basic)
 Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md).  
@@ -154,6 +148,6 @@ Module: CLSCompliant(True)>
 -   [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md)  
   
 ## See Also  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
+ [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
+ [Attributes](../../../../standard/attributes/index.md)

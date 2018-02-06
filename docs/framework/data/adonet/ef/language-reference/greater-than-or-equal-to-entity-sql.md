@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 70780ac4-0123-4da8-b731-8af856daffe3
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # &gt;= (Greater Than or Equal To) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value greater than or equal to the right expression.  

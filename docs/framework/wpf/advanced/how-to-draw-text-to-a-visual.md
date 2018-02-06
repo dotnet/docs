@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "typography, drawing text to visuals"
-  - "visuals, drawing text to"
-  - "text, drawing to visuals"
-  - "drawing, text to visuals"
+  - "typography [WPF], drawing text to visuals"
+  - "visuals [WPF], drawing text to"
+  - "text [WPF], drawing to visuals"
+  - "drawing [WPF], text to visuals"
 ms.assetid: fee4003c-e8a6-46ec-babd-2c7f4231a101
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw Text to a Visual
 The following example shows how to draw text to a <xref:System.Windows.Media.DrawingVisual> using a <xref:System.Windows.Media.DrawingContext> object. A drawing context is returned by calling the <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A> method of a <xref:System.Windows.Media.DrawingVisual> object. You can draw graphics and text into a drawing context.  

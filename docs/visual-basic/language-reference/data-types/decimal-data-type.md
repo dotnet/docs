@@ -1,51 +1,33 @@
 ---
 title: "Decimal Data Type (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Decimal"
 helpviewer_keywords: 
-  - "literal type characters, D"
+  - "literal type characters [Visual Basic], D"
   - "trailing zeros"
   - "real numbers"
-  - "trailing 0 characters"
+  - "trailing 0 characters [Visual Basic]"
   - "Decimal data type"
-  - "D literal type character"
+  - "D literal type character [Visual Basic]"
   - "decimals, Decimal data type"
-  - "0 characters, trailing"
+  - "0 characters [Visual Basic], trailing"
   - "data types [Visual Basic], assigning"
-  - "decimal keyword"
-  - "numbers, real"
+  - "decimal keyword [Visual Basic]"
+  - "numbers [Visual Basic], real"
   - "variable-precision numbers"
   - "zeros, trailing"
   - "@ identifier type character"
-  - "identifier type characters, @"
+  - "identifier type characters [Visual Basic], @"
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Decimal Data Type (Visual Basic)
 Holds signed 128-bit (16-byte) values representing 96-bit (12-byte) integer numbers scaled by a variable power of 10. The scaling factor specifies the number of digits to the right of the decimal point; it ranges from 0 through 28. With a scale of 0 (no decimal places), the largest possible value is +/-79,228,162,514,264,337,593,543,950,335 (+/-7.9228162514264337593543950335E+28). With 28 decimal places, the largest value is +/-7.9228162514264337593543950335, and the smallest nonzero value is +/-0.0000000000000000000000000001 (+/-1E-28).  
@@ -99,12 +81,12 @@ Dim bigDec3 As Decimal = 9223372036854775808D  ' No overflow.
  For `bigDec3`, the literal type character `D` solves the problem by forcing the compiler to interpret the literal as a `Decimal` instead of as a `Long`.  
   
 ## See Also  
- <xref:System.Decimal?displayProperty=nameWithType>   
- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>   
- <xref:System.Math.Round%2A?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)   
- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
+ <xref:System.Decimal?displayProperty=nameWithType>  
+ <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>  
+ <xref:System.Math.Round%2A?displayProperty=nameWithType>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)  
+ [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

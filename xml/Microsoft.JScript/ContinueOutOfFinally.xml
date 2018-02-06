@@ -14,6 +14,7 @@
     <summary>Represents the exception state when code execution continues out of a <see langword="finally" /> block.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Try" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,6 +31,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ContinueOutOfFinally" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +51,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ContinueOutOfFinally" /> class, using the specified target.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ContinueOutOfFinally" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,6 +93,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ContinueOutOfFinally" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -118,6 +123,7 @@
         <summary>Stores information about the exception in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />. The stored information includes the <see cref="F:Microsoft.JScript.ContinueOutOfFinally.target" /> value.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
     <Member MemberName="target">
@@ -136,7 +142,18 @@
         <summary>Stores the target of the exception.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ContinueOutOfFinally" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.Try" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

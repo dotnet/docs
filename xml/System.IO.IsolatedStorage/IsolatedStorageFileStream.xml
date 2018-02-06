@@ -871,6 +871,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -909,6 +910,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -1004,6 +1006,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.FileStream" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -1454,5 +1457,25 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The write attempt exceeds the quota for the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears buffers for this stream and causes any buffered data to be written to the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> class. The only way to open an <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> is by using one of its constructors.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -101,6 +101,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+    <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+    <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,6 +146,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -184,6 +194,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -229,6 +244,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -275,6 +295,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -308,6 +333,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -353,6 +384,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -405,6 +441,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -469,6 +511,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -498,6 +546,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -528,6 +582,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IParserAccessor.AddParsedSubObject">
@@ -562,6 +622,12 @@
  \- or -  
   
  <paramref name="obj" /> is not a <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -609,6 +675,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -635,6 +706,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -660,6 +736,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -711,6 +792,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -730,6 +817,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -778,7 +866,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

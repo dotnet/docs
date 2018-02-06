@@ -2432,5 +2432,85 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReadStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets binary property data for the specified entity as a data stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Execute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginLoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the operation to load the value of the specified property from the data service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AttachTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the <see cref="T:System.Data.Services.Client.DataServiceContext" /> to start tracking the specified resource and supplies the location of the resource in the specified resource set.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSaveStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a new data stream as the binary property of an entity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Submits the pending changes to the data service collected by the <see cref="T:System.Data.Services.Client.DataServiceContext" /> since the last time changes were saved.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginExecute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads deferred content from the data service.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

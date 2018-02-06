@@ -22,7 +22,7 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.CommandEventArgs>, see the <xref:System.Web.UI.WebControls.CommandEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageButton.Command" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -187,7 +192,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,36 +1,20 @@
 ---
 title: "How Culture Affects Strings in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "locale, effect on strings"
+  - "locale [Visual Basic], effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How Culture Affects Strings in Visual Basic
 This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
@@ -99,6 +83,6 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass `Ordinal` or `OrdinalIgnoreCase` for the `comparisonType` argument.  
   
 ## See Also  
- <xref:System.Globalization.CultureInfo>   
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
+ <xref:System.Globalization.CultureInfo>  
+ [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

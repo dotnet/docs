@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -63,6 +64,7 @@
       </ReturnValue>
       <Docs>
         <summary>The properties should be requeried and the view should be refreshed.</summary>
+        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -89,6 +91,7 @@
       </ReturnValue>
       <Docs>
         <summary>No refresh is necessary.</summary>
+        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Repaint">
@@ -126,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RefreshPropertiesAttribute" />
       </Docs>
     </Member>
   </Members>

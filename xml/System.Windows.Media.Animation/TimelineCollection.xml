@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.Timeline" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -533,7 +534,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -810,7 +811,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -836,7 +837,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -904,5 +905,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,6 +1,6 @@
 ---
 title: "when (C# Reference)"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
  # when (C# Reference)
 
@@ -45,9 +31,9 @@ catch ExceptionType [e] when (expr)
 ```
 where *expr* is an expression that evaluates to a Boolean value. If it returns `true`, the exception handler executes; if `false`, it does not. 
 
-The following example uses the `when` keyword to conditionally execute handlers for an @System.Net.HttpRequestException depending on the text of the exception message.
+The following example uses the `when` keyword to conditionally execute handlers for an <xref:System.Net.Http.HttpRequestException> depending on the text of the exception message.
 
- [!code-cs[when-with-catch](../../../../samples/snippets/csharp/language-reference/keywords/when/catch.cs)]  
+ [!code-csharp[when-with-catch](../../../../samples/snippets/csharp/language-reference/keywords/when/catch.cs)]  
   
 ## `when` in a `switch` statement
 
@@ -60,7 +46,7 @@ where *expr* is a constant pattern or type pattern that is compared to the match
 
 The following example uses the `when` keyword to test for `Shape` objects that have an area of zero, as well as to test for a variety of `Shape` objects that have an area greater than zero. 
 
- [!code-cs[when-with-case#1](../../../../samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]  
+ [!code-csharp[when-with-case#1](../../../../samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]  
 
 ## See also 
   [switch statement](switch.md)  

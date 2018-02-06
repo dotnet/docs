@@ -35,6 +35,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -71,6 +76,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -104,6 +112,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRowCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -145,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -178,6 +191,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,6 +237,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -259,6 +280,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -313,6 +337,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -353,6 +379,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -392,6 +421,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRowCollection.RemoveAt(System.Int32)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -432,6 +464,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of index values in the collection.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRowCollection.Remove(System.Web.UI.HtmlControls.HtmlTableRow)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -459,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
   </Members>

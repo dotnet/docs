@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cells, displaying images"
-  - "data grids, displaying in grids"
+  - "cells [Windows Forms], displaying images"
+  - "data grids [Windows Forms], displaying in grids"
   - "DataGridView control [Windows Forms], displaying images"
-  - "data grids, displaying images in cells"
+  - "data grids [Windows Forms], displaying images in cells"
 ms.assetid: 53b13d31-1b56-476d-9ab4-18bfac138a22
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Images in Cells of the Windows Forms DataGridView Control
 A picture or graphic is one of the values that you can display in a row of data. Frequently, these graphics take the form of an employee's photograph or a company logo.  
@@ -46,6 +48,6 @@ A picture or graphic is one of the values that you can display in a row of data.
 -   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
  [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)

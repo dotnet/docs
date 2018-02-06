@@ -122,6 +122,7 @@
         <summary>Gets the access key for the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />.This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAccessKey" />.</summary>
         <returns>The access key for the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -356,6 +357,25 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.UIElementAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the notification characteristics of the live region of the <see cref="T:System.Windows.UIElement" /> object that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" />.</summary>
+        <returns>The notification characteristics of the live region.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">

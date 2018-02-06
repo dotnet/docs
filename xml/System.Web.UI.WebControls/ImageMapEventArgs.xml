@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+    <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageMapEventArgs.PostBackValue" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="PostBackValue">
@@ -94,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
   </Members>

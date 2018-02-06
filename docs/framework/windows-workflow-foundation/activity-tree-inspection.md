@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 100d00e4-8c1d-4233-8fbb-dd443a01155d
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Activity Tree Inspection
 Activity tree inspection is used by workflow application authors to inspect the workflows hosted by the application. By using <xref:System.Activities.WorkflowInspectionServices>, workflows can be searched for specific child activities, individual activities and their properties can be enumerated, and runtime metadata of the activities can be cached at a specific time. This topic provides an overview of <xref:System.Activities.WorkflowInspectionServices> and how to use it to inspect an activity tree.  
@@ -27,27 +29,27 @@ Activity tree inspection is used by workflow application authors to inspect the 
   
  This sample code provides the following output.  
   
- **List Item 1**   
+ **List Item 1**  
 **List Item 2**   
 **List Item 3**   
 **List Item 4**   
 **List Item 5**   
 **Items added to collection.**   
 **Sequence**   
- **Literal<List\<String>>**   
- **While**   
- **AddToCollection\<String>**   
- **VariableValue<ICollection\<String>>**   
- **LambdaValue\<String>**   
- **LocationReferenceValue<List\<String>>**   
- **LambdaValue\<Boolean>**   
- **LocationReferenceValue<List\<String>>**   
- **ForEach\<String>**   
- **VariableValue<IEnumerable\<String>>**   
- **WriteLine**   
- **DelegateArgumentValue\<String>**   
- **Sequence**   
- **WriteLine**   
+ **Literal<List\<String>>**  
+ **While**  
+ **AddToCollection\<String>**  
+ **VariableValue<ICollection\<String>>**  
+ **LambdaValue\<String>**  
+ **LocationReferenceValue<List\<String>>**  
+ **LambdaValue\<Boolean>**  
+ **LocationReferenceValue<List\<String>>**  
+ **ForEach\<String>**  
+ **VariableValue<IEnumerable\<String>>**  
+ **WriteLine**  
+ **DelegateArgumentValue\<String>**  
+ **Sequence**  
+ **WriteLine**  
  **Literal\<String>**  To retrieve a specific activity instead of enumerating all of the activities, <xref:System.Activities.WorkflowInspectionServices.Resolve%2A> is used. Both <xref:System.Activities.WorkflowInspectionServices.Resolve%2A> and <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> perform metadata caching if `WorkflowInspectionServices.CacheMetadata` has not been previously called. If <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> has been called then <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> is based on the existing metadata. Therefore, if tree changes have been made since the last call to <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A>, <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> might give unexpected results. If changes have been made to the workflow after calling <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A>, metadata can be re-cached by calling the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method. Caching metadata is discussed in the next section.  
   
 ### Caching Metadata  

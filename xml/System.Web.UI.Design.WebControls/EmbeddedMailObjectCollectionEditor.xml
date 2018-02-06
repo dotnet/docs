@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements of the <xref:System.Web.UI.WebControls.EmbeddedMailObjectsCollection> object of <xref:System.Web.UI.WebControls.MailDefinition> objects.  
   
- The <xref:System.Web.UI.WebControls.MailDefinition> objects define the content and format of the e-mail notification messages that are sent by the <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.PasswordRecovery>, and other controls. The <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements define the embedded objects within these e-mail messages.  
+ The <xref:System.Web.UI.WebControls.MailDefinition> objects define the content and format of the email notification messages that are sent by the <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.PasswordRecovery>, and other controls. The <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements define the embedded objects within these email messages.  
   
  The <xref:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor> is invoked by selecting the ellipsis (**…**) button on the **EmbeddedObjects** property, under **MailDefinition**, in the **Properties** grid of the visual designer.  
   
@@ -26,6 +26,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
+    <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +57,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -84,6 +95,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.CollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" />
+        <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" />
       </Docs>
     </Member>
   </Members>

@@ -70,6 +70,22 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Size" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Multiple" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" />
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataTextField" />
+    <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataValueField" />
+    <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.InnerHtml" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.InnerText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -182,6 +198,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Selected" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -208,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -252,6 +273,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" /> property is set during the data-binding phase of the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataTextField" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataValueField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -303,6 +329,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified data source is not compatible with either <see cref="T:System.Collections.IEnumerable" /> or <see cref="T:System.ComponentModel.IListSource" />, and it is not <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" /> property and the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataValueField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -346,6 +379,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" /> property and the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -393,6 +427,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataValueField" />
       </Docs>
     </Member>
     <Member MemberName="DataValueField">
@@ -440,6 +477,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataTextField" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -465,6 +505,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.RequiresDataBinding" />
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -501,6 +544,8 @@
  \- or -  
   
  The requested data view cannot be found.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -529,6 +574,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -557,6 +603,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -583,6 +630,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -626,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -661,6 +710,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" /> property was set to a value greater than the number of items in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control or less than <see langword="-1" />.</exception>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndices" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -696,6 +748,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.LoadViewState(System.Object)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.LoadViewState(System.Object)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control's view state is properly managed.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.SaveViewState" />
+        <altmember cref="T:System.Web.UI.Triplet" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Multiple">
@@ -745,6 +801,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Size" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -789,6 +846,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -815,7 +874,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Control.DataBinding> event is raised when data is bound to the <xref:System.Web.UI.HtmlControls.HtmlSelect> control. This method notifies the control to perform any data-binding logic that is associated with it. Specifically, the <xref:System.Web.UI.HtmlControls.HtmlSelect.OnDataBinding%2A> method creates the <xref:System.Web.UI.HtmlControls.HtmlSelect.Items%2A> collection from the data source specified in either the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSource%2A> property or the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> property.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlSelect.OnDataBinding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -835,6 +894,10 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnDataBinding(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.GetData" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -861,6 +924,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.RequiresDataBinding" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -891,6 +958,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.RequiresDataBinding" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -922,6 +993,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnInit(System.EventArgs)" /> method so that the registered delegates received the event.</para>
         </block>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.RequiresDataBinding" />
+        <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
+        <altmember cref="P:System.Web.UI.Page.IsPostBack" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -960,6 +1034,9 @@
  \- or -  
   
  The requested <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" /> property could not be found.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -999,6 +1076,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Size" />
+        <altmember cref="M:System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -1033,7 +1112,7 @@
   
  You can use this event to perform data validation on the <xref:System.Web.UI.HtmlControls.HtmlSelect> control when the user changes the selection in the control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlSelect.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1053,6 +1132,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnServerChange(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlSelect.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -1078,6 +1159,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnServerChange(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -1119,6 +1202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Name" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -1161,6 +1247,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Multiple items were selected but the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.Multiple" /> property is set to <see langword="false" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -1191,6 +1278,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1222,6 +1312,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.SaveViewState" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlSelect.SaveViewState" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control's view state is properly managed.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.Triplet" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1250,6 +1343,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -1299,6 +1395,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property was set to a value greater than the number of items in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control or less than <see langword="-1" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Selected" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Multiple" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Size" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndices">
@@ -1351,7 +1451,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlSelect.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1368,6 +1468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.OnServerChange(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1408,6 +1510,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.Multiple" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1441,6 +1544,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" /> property was set to a value greater than the number of items in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control or less than <see langword="-1" />.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1466,6 +1571,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1520,7 +1627,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlSelect.Value%2A> property is commonly used to get the value of the item referenced by the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property.  
   
 > [!NOTE]
->  If no item is selected in the control, <xref:System.String?displayProperty=nameWithType> is returned.  
+>  If no item is selected in the control, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
  If you set this property to a value, the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property is updated with the index of the first item in the list that contains that value. If no matching value is found, the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property is left unchanged.  
   
@@ -1535,6 +1642,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.Value" /> property was set to an item greater than the number of items in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control or less than <see langword="-1" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

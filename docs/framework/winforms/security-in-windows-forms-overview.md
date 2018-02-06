@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "code access security, Windows Forms"
-  - "permissions, Windows Forms"
+  - "code access security [Windows Forms], Windows Forms"
+  - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms], about security"
-  - "access control, Windows Forms"
+  - "access control [Windows Forms], Windows Forms"
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Security in Windows Forms Overview
 Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], all code running on a user's computer had the same rights or permissions to access resources that a user of the computer had. For example, if the user was allowed to access the file system, the code was allowed to access the file system; if the user was allowed to access a database, the code was allowed to access that database. Although these rights or permissions may be acceptable for code in executables that the user has explicitly installed on the local computer, they may not be acceptable for potentially malicious code coming from the Internet or a local Intranet. This code should not be able to access the user's computer resources without permission.  
@@ -29,14 +31,14 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] technology, which you use to deploy Windows Forms applications, helps make it easier for you to develop applications that run in partial trust, in full trust, or in partial trust with elevated permissions. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] provides features such as Permission Elevation and Trusted Application Deployment so that your application can request full trust or elevated permissions from the local user in a responsible manner.  
   
 ## Understanding Security in the .NET Framework  
- Code access security allows code to be trusted to varying degrees, depending on where the code originates and on other aspects of the code's identity. For more information about the evidence the common language runtime uses to determine security policy, see [Evidence](http://msdn.microsoft.com/en-us/64ceb7c8-a0b4-46c4-97dc-6c22da0539da). It helps protect computer systems from malicious code and helps protect trusted code from intentionally or accidentally compromising security. Code access security also gives you more control over what actions your application can perform, because you can specify only those permissions you need your application to have. Code access security affects all managed code that targets the common language runtime, even if that code does not make a single code-access-security permission check. For more information about security in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], see [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md) and [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md).  
+ Code access security allows code to be trusted to varying degrees, depending on where the code originates and on other aspects of the code's identity. For more information about the evidence the common language runtime uses to determine security policy, see [Evidence](http://msdn.microsoft.com/library/64ceb7c8-a0b4-46c4-97dc-6c22da0539da). It helps protect computer systems from malicious code and helps protect trusted code from intentionally or accidentally compromising security. Code access security also gives you more control over what actions your application can perform, because you can specify only those permissions you need your application to have. Code access security affects all managed code that targets the common language runtime, even if that code does not make a single code-access-security permission check. For more information about security in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], see [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md) and [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md).  
   
  If the user run a Windows Forms executable file directly off of a Web server or a file share, the degree of trust granted to your application depends on where the code resides, and how it is started. When an application runs, it is automatically evaluated and it receives a named permission set from the common language runtime. By default, the code from the local computer is granted the Full Trust permission set, code from a local network is granted the Local Intranet permission set, and code from the Internet is granted the Internet permission set.  
   
 > [!NOTE]
 >  In the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 1.0 Service Pack 1 and Service Pack 2, the Internet zone code group receives the Nothing permission set. In all other releases of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], the Internet zone code group receives the Internet permissions set.  
 >   
->  The default permissions granted in each of these permission sets are listed in the [Default Security Policy](http://msdn.microsoft.com/en-us/2c086873-0894-4f4d-8f7e-47427c1a3b55) topic. Depending on the permissions that the application receives, it either runs correctly or generates a security exception.  
+>  The default permissions granted in each of these permission sets are listed in the [Default Security Policy](http://msdn.microsoft.com/library/2c086873-0894-4f4d-8f7e-47427c1a3b55) topic. Depending on the permissions that the application receives, it either runs correctly or generates a security exception.  
 >   
 >  Many Windows Forms applications will be deployed using [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]. The tools used for generating a [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployment have different security defaults than what was discussed earlier. For more information, see the following discussion.  
   
@@ -51,7 +53,7 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
   
  If your application needs more permissions than partial trust allows, but you do not want to run in full trust, you can run in partial trust while asserting only those additional permissions you need. For example, if you want to run in partial trust, but must grant your application read-only access to a directory on the user's file system, you can request <xref:System.Security.Permissions.FileIOPermission> only for that directory. Used correctly, this approach can give your application increased functionality and minimize security risks to your users.  
   
- When you develop an application that will run in partial trust, keep track of what permissions your application must run and what permissions your application could optionally use. When all the permissions are known, you should make a declarative request for permission at the application level. Requesting permissions informs the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] run time about which permissions your application needs and which permissions it specifically does not want. For more information about requesting permissions, see [Requesting Permissions](http://msdn.microsoft.com/en-us/0447c49d-8cba-45e4-862c-ff0b59bebdc2).  
+ When you develop an application that will run in partial trust, keep track of what permissions your application must run and what permissions your application could optionally use. When all the permissions are known, you should make a declarative request for permission at the application level. Requesting permissions informs the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] run time about which permissions your application needs and which permissions it specifically does not want. For more information about requesting permissions, see [Requesting Permissions](http://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2).  
   
  When you request optional permissions, you must handle security exceptions that will be generated if your application performs an action that requires permissions not granted to it. Appropriate handling of the <xref:System.Security.SecurityException> will ensure that your application can continue to operate. Your application can use the exception to determine whether a feature should become disabled for the user. For example, an application can disable the **Save** menu option if the required file permission is not granted.  
   
@@ -89,9 +91,9 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  If you have deployed your Windows Forms application by using [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
   
 ## See Also  
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)   
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)   
+ [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
+ [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)  
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)  
+ [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
  [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

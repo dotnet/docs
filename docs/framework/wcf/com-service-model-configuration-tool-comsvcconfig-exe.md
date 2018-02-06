@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "WCF, COM+ integration"
 ms.assetid: 7717c6c2-85fc-418b-a8ed-bad8e61cec5c
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COM+ Service Model Configuration Tool (ComSvcConfig.exe)
 The COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) enables you to configure COM+ interfaces to be exposed as Web services.  

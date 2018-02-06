@@ -105,6 +105,7 @@
         <summary>Gets the collection of claims that are associated with this identity.</summary>
         <value>The collection of claims.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="&amp;#xA;          N:System.IdentityModel.Services" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -187,5 +188,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2e8061ea-10f5-407c-a31f-d0d74ce12f27
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Binding a custom activity property to a designer control
 Binding a text box designer control to an activity argument is fairly straightforward; binding a complex designer control (such as a combo box) to an activity argument may present challenges, however. This topic discusses how to bind an activity argument to a combo box control on a custom activity designer.  

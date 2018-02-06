@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -194,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -224,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -289,6 +292,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -373,5 +377,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specific member of the collection according to its position or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

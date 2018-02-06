@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,6 +67,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -94,6 +100,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -124,6 +133,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -197,6 +209,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -229,6 +244,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -258,6 +276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -311,6 +331,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyleCollection.RemoveAt(System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -341,6 +366,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyleCollection.Remove(System.Web.UI.WebControls.TreeNodeStyle)" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

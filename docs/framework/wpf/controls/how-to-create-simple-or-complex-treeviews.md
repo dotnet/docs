@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TreeView control, creating"
-  - "Control class, TreeView, creating"
+  - "TreeView control [WPF], creating"
+  - "Control class [WPF], TreeView [WPF], creating"
 ms.assetid: 1defbb78-b8e7-4c0e-b650-576453ac828d
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Simple or Complex TreeViews
 This example shows how to create simple or complex <xref:System.Windows.Controls.TreeView> controls.  
@@ -47,7 +49,7 @@ This example shows how to create simple or complex <xref:System.Windows.Controls
  [!code-xaml[TreeViewSimple#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSimple/CS/Window1.xaml#9)]  
   
 ## See Also  
- <xref:System.Windows.Controls.TreeView>   
- <xref:System.Windows.Controls.TreeViewItem>   
- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)   
+ <xref:System.Windows.Controls.TreeView>  
+ <xref:System.Windows.Controls.TreeViewItem>  
+ [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)

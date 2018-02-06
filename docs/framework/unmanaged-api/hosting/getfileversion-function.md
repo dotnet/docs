@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetFileVersion Function
 Gets the common language runtime (CLR) version information of the specified file, using the specified buffer.  

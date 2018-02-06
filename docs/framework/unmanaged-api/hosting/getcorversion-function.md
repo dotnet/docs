@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCORVersion Function
 Returns the version number of the common language runtime (CLR) that is running in the current process.  

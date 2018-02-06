@@ -1,41 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData.Type
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData.Name
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData.Attributes
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyData.Visibility
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, binary data"
   - "WCF Data Services, streams"
 ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Working with Binary Data (WCF Data Services)
 The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in one of the following ways:  
@@ -73,5 +75,5 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 >  When you call <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A>, the stream is not sent to the data service until <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called.  
   
 ## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)   
+ [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
  [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)

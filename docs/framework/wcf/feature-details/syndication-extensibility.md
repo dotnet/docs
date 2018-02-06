@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Syndication Extensibility
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written to the wire in a variety of formats. The abstract data model consists of the following classes:  
@@ -51,5 +53,5 @@ The Syndication API is designed to provide a format-neutral programming model th
 -   Override <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateItem> in the MyExtensionFeed class to instantiate a MyExtensionItem instead of the default <xref:System.ServiceModel.Syndication.SyndicationItem>. A series of methods are defined in <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem> that can create <xref:System.ServiceModel.Syndication.SyndicationLink>, <xref:System.ServiceModel.Syndication.SyndicationCategory>, and <xref:System.ServiceModel.Syndication.SyndicationPerson> objects (for example, <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateLink>, <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateCategory>, and <xref:System.ServiceModel.Syndication.SyndicationFeed.CreatePerson>). All of which can be overridden to create a custom derived class.  
   
 ## See Also  
- [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)   
+ [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
  [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)

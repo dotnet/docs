@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.TemplateInstance" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Multiple" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Single" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -159,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateInstance" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -196,6 +200,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.TemplateInstanceAttribute.Equals(System.Object)" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Multiple" />
       </Docs>
     </Member>
     <Member MemberName="Multiple">
@@ -220,6 +226,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateInstance" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Default" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Single" />
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -244,6 +253,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateInstance" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Default" />
+        <altmember cref="F:System.Web.UI.TemplateInstanceAttribute.Multiple" />
       </Docs>
     </Member>
   </Members>

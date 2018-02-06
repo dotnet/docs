@@ -1,7 +1,7 @@
 ---
 title: "How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -10,27 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Nothing keyword, variable assignment"
-  - "object variables, null reference"
+  - "Nothing keyword [Visual Basic], variable assignment"
+  - "object variables [Visual Basic], null reference"
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)
 You can disassociate an object variable from any object instance by setting it to [Nothing](../../../../visual-basic/language-reference/nothing.md).  
@@ -52,9 +37,9 @@ You can disassociate an object variable from any object instance by setting it t
  If you use an object variable for objects that contain confidential or sensitive data, you can set the variable to `Nothing` when you are not actively dealing with one of those objects. This reduces the chance of malicious code gaining access to the data.  
   
 ## See Also  
- <xref:System.NullReferenceException>   
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)   
- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)   
- [Nothing](../../../../visual-basic/language-reference/nothing.md)   
- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
+ <xref:System.NullReferenceException>  
+ [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
+ [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
+ [Nothing](../../../../visual-basic/language-reference/nothing.md)  
+ [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
  [Troubleshooting Exceptions: System.NullReferenceException](http://msdn.microsoft.com/library/4822b0b4-8105-43fb-887a-3cc51ff02899)

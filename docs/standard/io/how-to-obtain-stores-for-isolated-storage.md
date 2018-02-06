@@ -8,10 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "stores, obtaining"
   - "storing data using isolated storage, obtaining stores"
@@ -23,6 +23,9 @@ caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Obtain Stores for Isolated Storage
 An isolated store exposes a virtual file system within a data compartment. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies a number of methods for interacting with an isolated store. To create and retrieve stores, <xref:System.IO.IsolatedStorage.IsolatedStorageFile> provides three static methods:  
@@ -59,8 +62,8 @@ An isolated store exposes a virtual file system within a data compartment. The <
  [!code-vb[Conceptual.IsolatedStorage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source6.vb#7)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>   
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)   
- [Types of Isolation](../../../docs/standard/io/types-of-isolation.md)   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+ <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
+ [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
+ [Types of Isolation](../../../docs/standard/io/types-of-isolation.md)  
  [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

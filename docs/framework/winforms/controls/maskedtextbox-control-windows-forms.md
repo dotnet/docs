@@ -13,14 +13,16 @@ f1_keywords:
   - "MaskedTextBox"
 helpviewer_keywords: 
   - "MaskedTextBox control [Windows Forms]"
-  - "user input, validating in Windows Forms"
-  - "validating user input, Windows Forms"
-  - "text boxes, validating user input"
+  - "user input [Windows Forms], validating in Windows Forms"
+  - "validating user input [Windows Forms], Windows Forms"
+  - "text boxes [Windows Forms], validating user input"
 ms.assetid: 235d6121-027d-481d-8d59-4f6794d15d0c
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MaskedTextBox Control (Windows Forms)
 This topic links to others about the `MaskedTextBox` control.  

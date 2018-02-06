@@ -1,39 +1,23 @@
 ---
 title: "Walkthrough: Creating COM Objects with Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "COM interop, creating COM objects"
+  - "COM interop [Visual Basic], creating COM objects"
   - "COM objects, creating"
-  - "COM interop, walkthroughs"
-  - "object creation, COM objects"
+  - "COM interop [Visual Basic], walkthroughs"
+  - "object creation [Visual Basic], COM objects"
   - "COM objects, walkthroughs"
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Creating COM Objects with Visual Basic
 When creating new applications or components, it is best to create .NET Framework assemblies. However, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] also makes it easy to expose a .NET Framework component to COM. This enables you to provide new components for earlier application suites that require COM components. This walkthrough demonstrates how to use [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] to expose [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] objects as COM objects, both with and without the COM class template.  
@@ -111,9 +95,9 @@ When creating new applications or components, it is best to create .NET Framewor
     >  The COM objects you generate with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] cannot be used by other [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] applications because they are not true COM objects. Attempts to add references to such COM objects will raise an error. For details, see [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)   
- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)   
+ <xref:Microsoft.VisualBasic.ComClassAttribute>  
+ [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+ [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
+ [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)  
+ [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  
  [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)

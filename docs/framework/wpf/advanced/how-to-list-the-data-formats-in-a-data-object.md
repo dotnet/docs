@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "drag-and-drop [WPF], listing data formats"
   - "DataFormats class [WPF]"
@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: List the Data Formats in a Data Object
 The following examples show how to use the <xref:System.Windows.DataObject.GetFormats%2A> method overloads get an array of strings denoting each data format that is available in a data object.  
@@ -44,5 +46,5 @@ The following examples show how to use the <xref:System.Windows.DataObject.GetFo
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats_NativeOnly](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats_nativeonly)]  
   
 ## See Also  
- <xref:System.Windows.IDataObject>   
+ <xref:System.Windows.IDataObject>  
  [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

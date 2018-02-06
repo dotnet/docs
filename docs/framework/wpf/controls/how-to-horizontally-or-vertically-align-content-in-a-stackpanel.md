@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "StackPanel control, content alignment"
-  - "content alignment"
-  - "aligning, content"
+  - "StackPanel control [WPF], content alignment [WPF]"
+  - "content alignment [WPF]"
+  - "aligning [WPF], content"
 ms.assetid: c1e8f962-72c8-4e7a-8670-7a2d7e021791
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Horizontally or Vertically Align Content in a StackPanel
 This example shows how to adjust the <xref:System.Windows.Controls.StackPanel.Orientation%2A> of content within a <xref:System.Windows.Controls.StackPanel> element, and also how to adjust the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> of child content.  
@@ -36,8 +38,8 @@ This example shows how to adjust the <xref:System.Windows.Controls.StackPanel.Or
  [!code-vb[StackPanelIntroSamp#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StackPanelIntroSamp/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.StackPanel>   
- <xref:System.Windows.Controls.ListBox>   
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>   
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>   
+ <xref:System.Windows.Controls.StackPanel>  
+ <xref:System.Windows.Controls.ListBox>  
+ <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>  
+ <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

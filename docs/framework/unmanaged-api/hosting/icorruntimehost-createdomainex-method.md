@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomainEx Method
 Creates an application domain. The caller receives an interface pointer, of type <xref:System._AppDomain>, to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>. This method allows the caller to pass an IAppDomainSetup instance to configure additional features of the returned <xref:System._AppDomain> instance.  
@@ -77,8 +79,8 @@ HRESULT CreateDomainEx (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>   
- [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
+ <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
+ [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

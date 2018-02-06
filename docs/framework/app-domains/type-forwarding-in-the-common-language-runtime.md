@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], type forwarding"
   - "type forwarding"
@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Type Forwarding in the Common Language Runtime
 Type forwarding allows you to move a type to another assembly without having to recompile applications that use the original assembly.  
@@ -51,6 +53,6 @@ Type forwarding allows you to move a type to another assembly without having to 
 4.  Recompile the assembly where the type used to be located, with a reference to the assembly that now contains the type. For example, if you are compiling a C# file from the command line, use the [/reference (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/reference-compiler-option.md) option to specify the assembly that contains the type. In C++, use the [#using](http://msdn.microsoft.com/library/870b15e5-f361-40a8-ba1c-c57d75c8809a) directive in the source file to specify the assembly that contains the type.  
   
 ## See Also  
- <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>   
- [Type Forwarding (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)   
+ <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>  
+ [Type Forwarding (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)  
  [#using Directive](http://msdn.microsoft.com/library/870b15e5-f361-40a8-ba1c-c57d75c8809a)

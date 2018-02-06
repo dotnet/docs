@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "WCF Data Services, Entity Data Model (EDM) service"
 ms.assetid: 7b18ca1e-d4d6-4c7a-afb9-ce3cebb98a8d
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Quickstart (WCF Data Services)
 This quickstart helps you become familiar with [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] through a series of tasks that support the topics in [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md).  

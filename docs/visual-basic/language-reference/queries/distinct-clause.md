@@ -1,39 +1,22 @@
 ---
 title: "Distinct Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryDistinct"
 helpviewer_keywords: 
-  - "Distinct clause"
-  - "Distinct statement"
+  - "Distinct clause [Visual Basic]"
+  - "Distinct statement [Visual Basic]"
   - "queries [Visual Basic], Distinct"
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Distinct Clause (Visual Basic)
 Restricts the values of the current range variable to eliminate duplicate values in subsequent query clauses.  
@@ -53,8 +36,8 @@ Distinct
  [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

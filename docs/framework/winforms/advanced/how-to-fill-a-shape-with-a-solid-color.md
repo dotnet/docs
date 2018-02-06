@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "colors, adding to shapes"
-  - "shapes, filling"
+  - "colors [Windows Forms], adding to shapes"
+  - "shapes [Windows Forms], filling"
 ms.assetid: 06088b31-bac9-4ef3-9ebe-06c2c764d6df
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Fill a Shape with a Solid Color
 To fill a shape with a solid color, create a <xref:System.Drawing.SolidBrush> object, and then pass that <xref:System.Drawing.SolidBrush> object as an argument to one of the fill methods of the <xref:System.Drawing.Graphics> class. The following example shows how to fill an ellipse with the color red.  

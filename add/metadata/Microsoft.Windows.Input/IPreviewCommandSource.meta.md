@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.Windows.Input.IPreviewCommandSource
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Windows.Input.IPreviewCommandSource.PreviewCommandParameter
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

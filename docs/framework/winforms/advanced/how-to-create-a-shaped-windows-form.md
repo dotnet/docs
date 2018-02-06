@@ -9,27 +9,29 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "forms, rounded"
+  - "forms [Windows Forms], rounded"
   - "Windows Forms, custom shapes"
   - "Windows Forms, shaped"
   - "shaped forms"
-  - "forms, changing the shape of"
-  - "forms, circular"
-  - "forms, nonrectangular"
+  - "forms [Windows Forms], changing the shape of"
+  - "forms [Windows Forms], circular"
+  - "forms [Windows Forms], nonrectangular"
   - "Windows Forms, nonrectangular shape"
   - "Windows Forms, rounded"
   - "Windows Forms, circular"
-  - "forms, custom shapes"
+  - "forms [Windows Forms], custom shapes"
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Shaped Windows Form
 This example gives a form an elliptical shape that resizes with the form.  
@@ -47,9 +49,9 @@ This example gives a form an elliptical shape that resizes with the form.
  This example overrides the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the shape of the form. To use this code, copy the method declaration as well as the drawing code inside the method.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- <xref:System.Drawing.Region>   
- <xref:System.Drawing>   
- <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>   
- <xref:System.Windows.Forms.Control.Region%2A>   
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ <xref:System.Drawing.Region>  
+ <xref:System.Drawing>  
+ <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>  
+ <xref:System.Windows.Forms.Control.Region%2A>  
  [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)

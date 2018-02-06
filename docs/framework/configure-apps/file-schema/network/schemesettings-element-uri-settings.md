@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;schemeSettings&gt; Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
@@ -25,7 +27,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 ## Syntax  
   
 ```xml  
-      <schemeSettings>   
+<schemeSettings>   
 </schemeSettings>  
 ```  
   
@@ -90,10 +92,10 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Can be Empty||  
   
 ## See Also  
- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>   
- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>   
- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>   
- <xref:System.Uri?displayProperty=nameWithType>   
+ <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
+ <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
+ <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
+ <xref:System.Uri?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

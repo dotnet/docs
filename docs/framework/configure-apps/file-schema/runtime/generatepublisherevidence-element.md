@@ -17,6 +17,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;generatePublisherEvidence&gt; Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  
@@ -83,5 +85,5 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

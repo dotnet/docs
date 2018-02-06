@@ -1,6 +1,6 @@
 ---
 title: "struct (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # struct (C# Reference)
 A `struct` type is a value type that is typically used to encapsulate small groups of related variables, such as the coordinates of a rectangle or the characteristics of an item in an inventory. The following example shows a simple struct declaration:  
@@ -57,13 +43,13 @@ public struct Book
  For examples, see [Using Structs](../../../csharp/programming-guide/classes-and-structs/using-structs.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [class](../../../csharp/language-reference/keywords/class.md)   
- [interface](../../../csharp/language-reference/keywords/interface.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [class](../../../csharp/language-reference/keywords/class.md)  
+ [interface](../../../csharp/language-reference/keywords/interface.md)  
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

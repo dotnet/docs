@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+    <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +64,7 @@
  -or-  
   
  <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,6 +97,7 @@
  -or-  
   
  <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,6 +130,7 @@
  -or-  
   
  <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -159,6 +165,7 @@
  -or-  
   
  <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="AllowEditing">
@@ -311,5 +318,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class.</summary>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

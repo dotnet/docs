@@ -1,13 +1,11 @@
 ---
 title: "/nostdlib (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "nostdlib compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /nostdlib (Visual Basic)
 Causes the compiler not to automatically reference the standard libraries.  
@@ -59,7 +42,7 @@ vbc /nostdlib /define:_MYTYPE=\"Empty\" T2.vb
 ```  
   
 ## See Also  
- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)

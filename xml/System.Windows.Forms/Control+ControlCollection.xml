@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Collections.IList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +66,7 @@
         <param name="owner">A <see cref="T:System.Windows.Forms.Control" /> representing the control that owns the control collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Control.ControlCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -113,6 +116,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" /> method to ensure that the control is added to the collection.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.AddRange(System.Windows.Forms.Control[])" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -162,6 +168,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.ControlCollection.AddRange(System.Windows.Forms.Control[])" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.ControlCollection.AddRange(System.Windows.Forms.Control[])" /> method to ensure that the controls are added to the collection.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -245,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -331,6 +339,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /><see cref="T:System.Windows.Forms.Control" /> is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.BringToFront" />
       </Docs>
     </Member>
     <Member MemberName="GetChildIndex">
@@ -364,6 +373,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /><see cref="T:System.Windows.Forms.Control" /> is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />, and the <paramref name="throwException" /> parameter value is <see langword="true" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.BringToFront" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -475,6 +485,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than zero or is greater than or equal to the number of controls in the collection.</exception>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -566,6 +577,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" /> method to ensure that the control is removed from the collection.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -607,6 +621,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -666,6 +683,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="child" /> control is not in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.GetChildIndex(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -751,5 +769,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates a <see cref="T:System.Windows.Forms.Control" /> in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChildIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the index of a control within the control collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

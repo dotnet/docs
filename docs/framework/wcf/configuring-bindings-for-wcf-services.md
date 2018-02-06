@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "binding configuration [WCF]"
 ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c
 caps.latest.revision: 36
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Bindings for Windows Communication Foundation Services
 When creating an application, you often want to defer decisions to the administrator after the deployment of the application. For example, there is often no way of knowing in advance what a service address, or Uniform Resource Identifier (URI), will be. Instead of hard-coding an address, it is preferable to allow an administrator to do so after creating a service. This flexibility is accomplished through configuration.  
@@ -60,8 +62,7 @@ When creating an application, you often want to defer decisions to the administr
   <endpoint   
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-      binding="basicHttpBinding" />  
-  </endpoint>  
+      binding="basicHttpBinding" />
 </service>  
 ```  
   
@@ -86,8 +87,7 @@ When creating an application, you often want to defer decisions to the administr
   <endpoint   
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-      binding="basicHttpBinding" />  
-  </endpoint>  
+      binding="basicHttpBinding" />
 </service>  
 <bindings>  
     <basicHttpBinding   
@@ -110,12 +110,11 @@ When creating an application, you often want to defer decisions to the administr
 </behaviors>  
 <services>  
     <service   
-       name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
+       name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
        <endpoint   
           address="http://computer:8080/Hello"  
           contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
-          binding="basicHttpBinding" />  
-       </endpoint>  
+          binding="basicHttpBinding" />
     </service>  
 </services>  
 ```  
@@ -133,14 +132,12 @@ When creating an application, you often want to defer decisions to the administr
         address="http://computer:8080/Hello1"  
         contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
         binding="basicHttpBinding"  
-        bindingConfiguration="shortTimeout"  
-    </endpoint>  
+        bindingConfiguration="shortTimeout" />
     <endpoint  
         address="http://computer:8080/Hello2"  
         contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
         binding="basicHttpBinding"  
-        bindingConfiguration="Secure"  
-     </endpoint>  
+        bindingConfiguration="Secure" />
 </service>  
 <bindings>  
     <basicHttpBinding   
@@ -148,8 +145,9 @@ When creating an application, you often want to defer decisions to the administr
         timeout="00:00:00:01"   
      />  
      <basicHttpBinding   
-        name="Secure" />  
+        name="Secure">  
         <Security mode="Transport" />  
+     </basicHttpBinding>
 </bindings>  
 ```  
   
@@ -172,7 +170,7 @@ When creating an application, you often want to defer decisions to the administr
 ```  
   
 ## See Also  
- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)   
- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)   
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)   
+ [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
+ [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
+ [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

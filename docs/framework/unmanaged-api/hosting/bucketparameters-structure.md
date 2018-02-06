@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # BucketParameters Structure
 Stores the type name of an event and the parameters for the current exception that is associated with the event.  

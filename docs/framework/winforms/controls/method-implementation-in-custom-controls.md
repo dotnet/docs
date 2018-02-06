@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "user controls [Windows Forms], method implementation"
   - "custom controls [Windows Forms], overloading methods"
@@ -23,6 +23,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Method Implementation in Custom Controls
 A method is implemented in a control in the same manner a method would be implemented in any other component.  
@@ -82,5 +84,5 @@ public void Spin(Widget driver)
 ```  
   
 ## See Also  
- [Events](../../../../docs/standard/events/index.md)   
+ [Events](../../../../docs/standard/events/index.md)  
  [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)

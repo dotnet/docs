@@ -17,6 +17,9 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Synchronizing Data for Multithreading
 When multiple threads can make calls to the properties and methods of a single object, it is critical that those calls be synchronized. Otherwise one thread might interrupt what another thread is doing, and the object could be left in an invalid state. A class whose members are protected from such interruptions is called thread-safe.  
@@ -70,8 +73,8 @@ When multiple threads can make calls to the properties and methods of a single o
  You can use the **SynchronizationAttribute** on any **ContextBoundObject** to synchronize all instance methods and fields. All objects in the same context domain share the same lock. Multiple threads are allowed to access the methods and fields, but only a single thread is allowed at any one time.  
   
 ## See Also  
- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>   
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)   
- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)   
- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)   
+ <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
+ [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
+ [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
+ [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
  [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

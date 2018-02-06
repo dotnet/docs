@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetILFunctionBody Method
 Gets a pointer to the body of a method in Microsoft intermediate language (MSIL) code, starting at its header.  

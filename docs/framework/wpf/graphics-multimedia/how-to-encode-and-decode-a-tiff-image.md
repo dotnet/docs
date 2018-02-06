@@ -9,22 +9,24 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "TIFF encoding"
-  - "encoding TIFF images"
-  - "encoding image formats"
-  - "decoding TIFF images"
-  - "decoding image formats"
-  - "TIFF decoding"
+  - "TIFF encoding [WPF]"
+  - "encoding TIFF images [WPF]"
+  - "encoding image formats [WPF]"
+  - "decoding TIFF images [WPF]"
+  - "decoding image formats [WPF]"
+  - "TIFF decoding [WPF]"
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Encode and Decode a TIFF Image
 The following examples show how to decode and encode a [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)] image using the specific <xref:System.Windows.Media.Imaging.TiffBitmapDecoder> and <xref:System.Windows.Media.Imaging.TiffBitmapEncoder> objects.  

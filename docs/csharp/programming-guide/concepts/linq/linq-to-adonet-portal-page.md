@@ -1,24 +1,17 @@
 ---
 title: "LINQ to ADO.NET (Portal Page)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 6bd269b4-3509-4688-b672-836008704182
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # LINQ to ADO.NET (Portal Page)
 [!INCLUDE[linq_adonet](~/includes/linq-adonet-md.md)] enables you to query over any enumerable object in [!INCLUDE[vstecado](~/includes/vstecado-md.md)] by using the [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] programming model.  
@@ -40,11 +33,11 @@ translation.priority.mt:
   
  [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] includes support for stored procedures and user-defined functions in the database, and for inheritance in the object model.  
   
- For more information, see [LINQ to SQL](https://msdn.microsoft.com/library/bb386976).  
+ For more information, see [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md).  
   
 ## LINQ to Entities  
  Through the [!INCLUDE[adonet_edm](~/includes/adonet-edm-md.md)], relational data is exposed as objects in the .NET environment. This makes the object layer an ideal target for [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] support, allowing developers to formulate queries against the database from the language used to build the business logic. This capability is known as [!INCLUDE[linq_entities](~/includes/linq-entities-md.md)]. See [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md) for more information.  
   
 ## See Also  
- [LINQ and ADO.NET](http://msdn.microsoft.com/library/bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec)   
+ [LINQ and ADO.NET](http://msdn.microsoft.com/library/bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec)  
  [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

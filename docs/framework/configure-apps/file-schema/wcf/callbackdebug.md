@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;callbackDebug&gt;
 Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.  
@@ -52,5 +54,5 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.CallbackDebugElement>   
+ <xref:System.ServiceModel.Configuration.CallbackDebugElement>  
  <xref:System.ServiceModel.Description.CallbackDebugBehavior>

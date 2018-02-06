@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Web.UI.PersistChildrenAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,6 +135,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="childControlType" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean,System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="ChildControlType">
@@ -207,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="ChildrenAsProperties">
@@ -266,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProperty">
@@ -300,6 +309,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -377,6 +387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="ParseAsChildren">
@@ -401,6 +412,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName="ParseAsProperties">
@@ -425,7 +438,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.ParseAsChildren" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

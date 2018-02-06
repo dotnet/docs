@@ -1,7 +1,7 @@
 ---
 title: "Creating XML Trees (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: e86ba12b-17de-4579-81bb-66322b84cfbe
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Creating XML Trees (Visual Basic)
 One of the most common XML tasks is constructing an XML tree. This section describes several ways to create them.  

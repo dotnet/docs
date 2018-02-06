@@ -35,6 +35,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -100,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -154,6 +166,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource" />
       </Docs>
     </Member>
   </Members>

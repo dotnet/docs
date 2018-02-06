@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcessEnum Interface1
 Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.  

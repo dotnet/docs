@@ -14,6 +14,8 @@ caps.latest.revision: 24
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;customBinding&gt;
 Specifies the security options for a custom binding.  
@@ -40,8 +42,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
    requireSecurityContextCancellation="Boolean"  
    requireSignatureConfirmation="Boolean"  
       securityHeaderLayout=  
-              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast"  
-   includeTimestamp="Boolean">  
+              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast">  
    <issuedTokenParameters />  
    <localClientSettings />  
    <localServiceSettings />  
@@ -175,12 +176,12 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.SecurityElement>   
- <xref:System.ServiceModel.Channels.SecurityBindingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)   
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)   
+ <xref:System.ServiceModel.Configuration.SecurityElement>  
+ <xref:System.ServiceModel.Channels.SecurityBindingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
+ [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
+ [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

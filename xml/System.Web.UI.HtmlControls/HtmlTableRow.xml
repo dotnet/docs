@@ -41,6 +41,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTable.#ctor" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -132,6 +142,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
     <Member MemberName="BgColor">
@@ -198,6 +213,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -264,6 +285,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -308,6 +335,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCellCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -336,6 +364,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -380,6 +410,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -408,6 +443,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -436,6 +472,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -466,6 +503,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.Indent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -496,6 +536,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="VAlign">
@@ -551,6 +593,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
   </Members>

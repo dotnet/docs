@@ -23,6 +23,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Runtime Profiling
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  

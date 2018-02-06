@@ -1,46 +1,29 @@
 ---
 title: "With...End With Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.With"
 helpviewer_keywords: 
-  - "With keyword"
-  - "loop structures, and With...End With statements"
-  - "execution, on object"
+  - "With keyword [Visual Basic]"
+  - "loop structures [Visual Basic], and With...End With statements"
+  - "execution [Visual Basic], on object"
   - "instructions, repeating"
-  - "With...End With statements"
-  - "With statement"
-  - "With statement, nesting"
+  - "With...End With statements [Visual Basic]"
+  - "With statement [Visual Basic]"
+  - "With statement [Visual Basic], nesting"
   - "objects [Visual Basic], accessing"
   - "With block"
-  - "End keyword, With...End With statements"
+  - "End keyword [Visual Basic], With...End With statements"
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # With...End With Statement (Visual Basic)
 Executes a series of statements that repeatedly refer to a single object or structure so that the statements can use a simplified syntax when accessing members of the object or structure.  When using a structure, you can only read the values of members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.  
@@ -100,7 +83,7 @@ End With
  [!code-vb[VbVbalrWithStatement#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_2.vb)]  
   
 ## See Also  
- <xref:System.Collections.Generic.List%601>   
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
+ <xref:System.Collections.Generic.List%601>  
+ [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
+ [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
  [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

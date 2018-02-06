@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Cursor" />
   </Docs>
   <Members>
     <Member MemberName="AppStarting">
@@ -55,6 +56,7 @@
         <summary>Gets the cursor that appears when an application starts.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when an application starts.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Arrow">
@@ -73,6 +75,7 @@
         <summary>Gets the arrow cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the arrow cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Cross">
@@ -102,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -120,6 +124,7 @@
         <summary>Gets the default cursor, which is usually an arrow cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the default cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -149,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -178,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="HSplit">
@@ -196,6 +203,7 @@
         <summary>Gets the cursor that appears when the mouse is positioned over a horizontal splitter bar.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when the mouse is positioned over a horizontal splitter bar.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="IBeam">
@@ -214,6 +222,7 @@
         <summary>Gets the I-beam cursor, which is used to show where the text cursor appears when the mouse is clicked.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the I-beam cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -232,6 +241,7 @@
         <summary>Gets the cursor that indicates that a particular region is invalid for the current operation.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that indicates that a particular region is invalid for the current operation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="NoMove2D">
@@ -250,6 +260,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in both a horizontal and vertical direction.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="NoMoveHoriz">
@@ -268,6 +279,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in a horizontal direction.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="NoMoveVert">
@@ -286,6 +298,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is not moving, but the window can be scrolled in a vertical direction.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is not moving.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanEast">
@@ -304,6 +317,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the right.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the right.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanNE">
@@ -322,6 +336,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the right.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the right.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanNorth">
@@ -340,6 +355,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in an upward direction.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in an upward direction.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanNW">
@@ -358,6 +374,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the left.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically upward and to the left.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanSE">
@@ -376,6 +393,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the right.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the right.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanSouth">
@@ -394,6 +412,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in a downward direction.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling vertically in a downward direction.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanSW">
@@ -412,6 +431,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the left.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally and vertically downward and to the left.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="PanWest">
@@ -430,6 +450,7 @@
         <summary>Gets the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the left.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears during wheel operations when the mouse is moving and the window is scrolling horizontally to the left.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SizeAll">
@@ -448,6 +469,7 @@
         <summary>Gets the four-headed sizing cursor, which consists of four joined arrows that point north, south, east, and west.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the four-headed sizing cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SizeNESW">
@@ -466,6 +488,7 @@
         <summary>Gets the two-headed diagonal (northeast/southwest) sizing cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents two-headed diagonal (northeast/southwest) sizing cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SizeNS">
@@ -484,6 +507,7 @@
         <summary>Gets the two-headed vertical (north/south) sizing cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed vertical (north/south) sizing cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SizeNWSE">
@@ -502,6 +526,7 @@
         <summary>Gets the two-headed diagonal (northwest/southeast) sizing cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed diagonal (northwest/southeast) sizing cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SizeWE">
@@ -520,6 +545,7 @@
         <summary>Gets the two-headed horizontal (west/east) sizing cursor.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the two-headed horizontal (west/east) sizing cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="UpArrow">
@@ -549,6 +575,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="VSplit">
@@ -567,6 +594,7 @@
         <summary>Gets the cursor that appears when the mouse is positioned over a vertical splitter bar.</summary>
         <value>The <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor that appears when the mouse is positioned over a vertical splitter bar.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="WaitCursor">
@@ -592,6 +620,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
   </Members>

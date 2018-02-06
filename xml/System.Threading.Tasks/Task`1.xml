@@ -60,11 +60,12 @@
   
  Starting with desktop apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the culture of the thread that creates and invokes a task becomes part of the thread's context. That is, regardless of the current culture of the thread on which the task executes, the current culture of the task is the culture of the calling thread. For apps that target versions of the .NET Framework prior to the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the culture of the task is the culture of the thread on which the task executes. For more information, see the "Culture and task-based asynchronous operations" section in the <xref:System.Globalization.CultureInfo> topic. Note that Store apps follow the Windows Runtime in setting and getting the default culture.  
   
-For operations that do not return a value, you use the <xref:System.Threading.Tasks.Task> class. If you're developing with C# 7, for a more lightweight task that is a value type rather than a reference type, use the <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType> structure; it is supported starting with C# 7. 
+For operations that do not return a value, you use the <xref:System.Threading.Tasks.Task> class. If you're developing with C# 7, for a more lightweight task that is a value type rather than a reference type, use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure; it is supported starting with C# 7. 
   
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task`1" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <altmember cref="T:System.Threading.Tasks.Task" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1597,8 +1598,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Threading.Tasks.TaskFactory%601.CancellationToken%2A?displayProperty=nameWithType>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory%601.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions.None?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory%601.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions.None?displayProperty=nameWithType>|  
 |<xref:System.Threading.Tasks.TaskFactory%601.Scheduler%2A?displayProperty=nameWithType>|`null`, or <xref:System.Threading.Tasks.TaskScheduler.Current%2A?displayProperty=nameWithType>|  
   
  The most common use of this property is to create and start a new task in a single call to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=nameWithType> method.  
@@ -1714,5 +1715,25 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that executes when another task completes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -55,7 +55,7 @@
   
 -   Providing information to the ASP.NET page framework about which controls to keep together when paginating. By default, the contents of a panel are kept together on a page. You can modify this behavior by setting the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the panel.  
   
- You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/en-us/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
+ You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
   
    
   
@@ -71,6 +71,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.Panel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Panel" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Panel" />
       </Docs>
     </Member>
     <Member MemberName="AddLinkedForms">
@@ -107,6 +109,7 @@
         <param name="linkedForms">The set of forms that contain links to the specified control.</param>
         <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.AddLinkedForms(System.Collections.IList)" />
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -131,6 +134,7 @@
         <value>
           <see langword="true" /> if an additional trailing break is rendered after the control; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.BreakAfter" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -176,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextView" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultTemplatedUI">
@@ -197,6 +202,7 @@
         <param name="doDataBind">Set to <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Set to <see langword="false" /> if the templates must not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
         <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.CreateDefaultTemplatedUI(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -218,6 +224,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Paginate">
@@ -269,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="PaginateChildren">
@@ -288,6 +296,7 @@
         <value>
           <see langword="true" /> if the children of the control must be paginated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.PaginateChildren" />
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -309,6 +318,7 @@
         <param name="pager">The pager.</param>
         <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       </Docs>
     </Member>
   </Members>

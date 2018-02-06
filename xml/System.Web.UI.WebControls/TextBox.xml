@@ -244,6 +244,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Columns" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -283,6 +290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -364,6 +372,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteType">
@@ -420,6 +429,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.AutoCompleteType" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.AutoCompleteType" />
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -470,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -510,6 +522,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBox.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -547,6 +561,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -579,6 +595,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -729,6 +747,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -795,7 +814,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -818,6 +837,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -843,6 +864,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -896,6 +922,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -940,6 +967,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -990,6 +1020,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Columns" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1020,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1052,6 +1085,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1077,6 +1112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -1267,6 +1304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1292,7 +1331,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1318,6 +1357,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TextMode">
@@ -1369,6 +1409,9 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified mode is not one of the <see cref="T:System.Web.UI.WebControls.TextBoxMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextBoxMode" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1406,6 +1449,9 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1451,6 +1497,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
   </Members>

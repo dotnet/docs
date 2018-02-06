@@ -1,13 +1,12 @@
 ---
 title: "Troubleshooting Arrays (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting arrays"
@@ -20,21 +19,6 @@ ms.assetid: f4e971c7-c0a4-4ed7-a77a-8d71039f266f
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting Arrays (Visual Basic)
 This page lists some common problems that can occur when working with arrays.  
@@ -78,5 +62,5 @@ This page lists some common problems that can occur when working with arrays.
  When determining the bounds of a multidimensional array, take care how you specify the dimension. The `dimension` parameters of the <xref:System.Array.GetLowerBound%2A> and <xref:System.Array.GetUpperBound%2A> methods are 0-based, while the `Rank` parameters of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Information.LBound%2A> and <xref:Microsoft.VisualBasic.Information.UBound%2A> functions are 1-based.  
   
 ## See Also  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)

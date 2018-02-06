@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 01049a21-fd50-4419-9ab2-0e4a2e091050
+ms.workload: 
+  - dotnetcore
 ---
 
 # Deploying .NET Core apps with Visual Studio
@@ -36,7 +38,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    Open the *Program.cs* file in the editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Create a Debug build of your app.
 
@@ -86,7 +88,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
    Open the *Program.cs* file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Define the platforms that your app will target.
 

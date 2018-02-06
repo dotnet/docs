@@ -1,35 +1,17 @@
 ---
 title: "Control Flow Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "decision structures"
+  - "decision structures [Visual Basic]"
 ms.assetid: 6885d426-fa87-4e1c-881f-f0e9ec8d98af
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Control Flow Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
@@ -43,5 +25,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Use procedures.|[Call](../../../visual-basic/language-reference/statements/call-statement.md), [Function](../../../visual-basic/language-reference/statements/function-statement.md), [Property](../../../visual-basic/language-reference/statements/property-statement.md), [Sub](../../../visual-basic/language-reference/statements/sub-statement.md)|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

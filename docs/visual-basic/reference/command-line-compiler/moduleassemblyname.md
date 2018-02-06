@@ -1,13 +1,11 @@
 ---
 title: "/moduleassemblyname"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "moduleassemblyname compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /moduleassemblyname
 Specifies the name of the assembly that this module will be a part of.  
@@ -63,12 +46,12 @@ Specifies the name of the assembly that this module will be a part of.
 >  The `/moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See Also  
- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)   
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
- [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
- [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
+ [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
+ [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)

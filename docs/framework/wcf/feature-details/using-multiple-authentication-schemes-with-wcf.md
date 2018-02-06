@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f32a56a0-e2b2-46bf-a302-29e1275917f9
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Multiple Authentication Schemes with WCF
 WCF now allows you to specify multiple authentication schemes on a single endpoint. Furthermore web hosted services can inherit their authentication settings directly from IIS. Self-hosted services can specify what authentication schemes can be used. For more information about setting authentication settings in IIS, see [IIS Authentication](http://go.microsoft.com/fwlink/?LinkId=232458)  
@@ -126,10 +128,10 @@ else
 ```  
   
 ## See Also  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)   
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)   
- [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)   
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)   
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)   
+ [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
+ [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
+ [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
+ [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
+ [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
  [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

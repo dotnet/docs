@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "enabling spell checking in a text box [WPF]"
   - "reenabling spell checking in a text box [WPF]"
@@ -21,6 +21,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Spell Checking with a Context Menu
 By default, when you enable spell checking in an editing control like <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>, you get spell-checking choices in the context menu. For example, when users right-click a misspelled word, they get a set of spelling suggestions or the option to **Ignore All**. However, when you override the default context menu with your own custom context menu, this functionality is lost, and you need to write code to reenable the spell-checking feature in the context menu. The following example shows how to enable this on a <xref:System.Windows.Controls.TextBox>.  
@@ -45,7 +47,7 @@ By default, when you enable spell checking in an editing control like <xref:Syst
  `spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
   
 ## See Also  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)   
- [Enable Spell Checking in a Text Editing Control](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)   
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
+ [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
+ [Enable Spell Checking in a Text Editing Control](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)  
  [Use a Custom Context Menu with a TextBox](../../../../docs/framework/wpf/controls/how-to-use-a-custom-context-menu-with-a-textbox.md)

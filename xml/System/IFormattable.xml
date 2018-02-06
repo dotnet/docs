@@ -79,6 +79,9 @@
   
  A class that implements <see cref="T:System.IFormattable" /> must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md)</para>
     </block>
+    <altmember cref="T:System.IFormatProvider" />
+    <altmember cref="M:System.Object.ToString" />
+    <altmember cref="P:System.Threading.Thread.CurrentCulture" />
   </Docs>
   <Members>
     <Member MemberName="ToString">
@@ -165,6 +168,11 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" /> method must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).</para>
         </block>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.IFormatProvider" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
   </Members>

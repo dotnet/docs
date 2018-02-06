@@ -1,13 +1,11 @@
 ---
 title: "Module Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Module"
@@ -15,30 +13,15 @@ f1_keywords:
 helpviewer_keywords: 
   - "modules, classes"
   - "modules"
-  - "Module statement"
+  - "Module statement [Visual Basic]"
   - "modules, declaring"
   - "standard modules"
   - "classes [Visual Basic], vs. modules"
-  - "declarations, modules"
+  - "declarations [Visual Basic], modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Module Statement
 Declares the name of a module and introduces the definition of the variables, properties, events, and procedures that the module comprises.  
@@ -117,9 +100,9 @@ End Module
  [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
 ## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
  [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

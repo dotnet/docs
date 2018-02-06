@@ -1,39 +1,22 @@
 ---
 title: "As Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.as"
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
-  - "As keyword, statement syntax"
-  - "As keyword"
+  - "As keyword [Visual Basic], statement syntax"
+  - "As keyword [Visual Basic]"
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # As Clause (Visual Basic)
 Introduces an `As` clause, which identifies a data type in a declaration statement or a constraint list on a generic type parameter.  
@@ -80,9 +63,9 @@ Introduces an `As` clause, which identifies a data type in a declaration stateme
  [Try...Catch...Finally Statements](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
   
 ## See Also  
- [How to: Create a New Variable](../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)   
- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ [How to: Create a New Variable](../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
+ [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

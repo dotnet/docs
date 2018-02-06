@@ -21,6 +21,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback7 Interface
 [Supported in the .NET Framework 4.6.1 and later versions]  

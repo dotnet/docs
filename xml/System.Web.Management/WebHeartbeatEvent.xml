@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebProcessStatistics" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +85,7 @@
         <summary>Provides key information about the running process.</summary>
         <value>The <see cref="T:System.Web.Management.WebProcessStatistics" /> for the running process.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.WebProcessStatistics" />
       </Docs>
     </Member>
   </Members>

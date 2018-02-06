@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c0cae85f-56cb-4030-8807-6f96edff8d2d
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.serviceModel.activation&gt;
 This configuration section represents the configuration settings for the SMSvcHost.exe tool. The configuration elements can be configured in the SMSvcHost.exe.config file. Specifically, it includes all machine-wide settings that must be configured.  

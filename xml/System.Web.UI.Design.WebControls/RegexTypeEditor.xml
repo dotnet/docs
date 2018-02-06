@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides a user interface for editing regular expressions.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Text.RegularExpressions.Regex" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +30,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.WebControls.RegexTypeEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -54,6 +57,7 @@
         <summary>Edits the value of the given regular expression object using the given service provider and context.</summary>
         <returns>The new value of the object. If the value of the object hasn't changed, this method returns the same object it received.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -76,6 +80,7 @@
         <summary>Gets the editor style used by the <see cref="M:System.Web.UI.Design.WebControls.RegexTypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the editor style used by the method.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
   </Members>

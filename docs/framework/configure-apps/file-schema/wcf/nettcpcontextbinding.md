@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;netTcpContextBinding&gt;
 Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requires that the protection level be signed. The contextExchangeMechanism for NetTcpContextBinding is SOAPHeader.  
@@ -93,7 +95,7 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>.|  
 |[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
+|[reliableSession](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -102,12 +104,12 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## See Also  
- <xref:System.ServiceModel.NetTcpBinding>   
- <xref:System.ServiceModel.NetTcpContextBinding>   
- <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>   
- <xref:System.ServiceModel.Channels.ContextBindingElement>   
- [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.NetTcpBinding>  
+ <xref:System.ServiceModel.NetTcpContextBinding>  
+ <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>  
+ <xref:System.ServiceModel.Channels.ContextBindingElement>  
+ [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

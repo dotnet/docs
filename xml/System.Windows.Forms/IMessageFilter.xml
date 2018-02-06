@@ -19,6 +19,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.IMessageFilter" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" />
   </Docs>
   <Members>
     <Member MemberName="PreFilterMessage">

@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "I/O [.NET Framework], enumerating directories and files"
 ms.assetid: 86b69a08-3bfa-4e5f-b4e1-3b7cb8478215
@@ -18,6 +18,9 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Enumerate Directories and Files
 You can enumerate directories and files by using methods that return an enumerable collection of strings of their names. You can also use methods that return an enumerable collection of <xref:System.IO.DirectoryInfo>, <xref:System.IO.FileInfo>, or <xref:System.IO.FileSystemInfo> objects. Enumerable collections provide better performance than arrays when you work with large collections of directories and files.  

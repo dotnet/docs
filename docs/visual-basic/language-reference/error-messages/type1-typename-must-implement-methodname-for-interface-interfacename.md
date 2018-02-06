@@ -1,13 +1,11 @@
 ---
 title: "&lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;methodname&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc30149"
@@ -18,21 +16,6 @@ ms.assetid: 29d1b7f4-dca7-478c-bbe7-c657f342c183
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;methodname&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;
 A class or structure claims to implement an interface but does not implement a procedure defined by the interface. Every member of the interface must be implemented.  
@@ -50,5 +33,5 @@ A class or structure claims to implement an interface but does not implement a p
     ```  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

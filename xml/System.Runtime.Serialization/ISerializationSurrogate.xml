@@ -70,7 +70,7 @@
   
  Having located the surrogate, this method stores information on the object `obj` in the <xref:System.Runtime.Serialization.SerializationInfo>`info` parameter. This information describes its view of that object, including the object's fields, properties, and current values. The <xref:System.Runtime.Serialization.SerializationInfo> might correspond to the actual object, or it can be a synthesized view of the surrogate.  
   
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>
@@ -122,7 +122,7 @@
 ## Remarks  
  The <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A> method is called during deserialization. With this method, you can take the empty <xref:System.Object>`obj` that has already been created, and enter <xref:System.Runtime.Serialization.SerializationInfo>`info` data into that object. Constructors are not invoked during deserialization of information and reconstruction of the object.  
   
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>

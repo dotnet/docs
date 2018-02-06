@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selecting" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +65,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.ExecutingSelectCount" />
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="Arguments">
@@ -87,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="ExecutingSelectCount">
@@ -119,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanRetrieveTotalRowCount" />
       </Docs>
     </Member>
   </Members>

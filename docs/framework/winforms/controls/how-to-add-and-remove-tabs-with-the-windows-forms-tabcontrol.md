@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "tabs, removing from pages"
+  - "tabs [Windows Forms], removing from pages"
   - "TabPage control"
   - "TabControl control [Windows Forms], adding and removing tabs"
-  - "tabs, adding to pages"
+  - "tabs [Windows Forms], adding to pages"
   - "tab pages"
 ms.assetid: 66d4dfca-41e8-44e3-9c80-fb7ac4cb1619
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add and Remove Tabs with the Windows Forms TabControl
 By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:System.Windows.Forms.TabPage> controls. You can access these tabs through the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
@@ -81,7 +83,7 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     ```  
   
 ## See Also  
- [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)   
- [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)   
- [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)   
+ [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
+ [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)  
+ [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)

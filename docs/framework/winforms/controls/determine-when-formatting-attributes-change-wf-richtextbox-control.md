@@ -9,21 +9,22 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], text boxes"
   - "RichTextBox control [Windows Forms], determining font changes"
-  - "SelBold property"
-  - "text boxes, determining font changes"
+  - "text boxes [Windows Forms], determining font changes"
   - "SelChange event"
 ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control
 A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> control is formatting text with attributes such as font options or paragraph styles. Your application may need to keep track of any changes in text formatting for the purpose of displaying a toolbar, as in many word-processing applications.  
@@ -88,7 +89,7 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBox.SelectionChanged>   
- <xref:System.Windows.Forms.RichTextBox>   
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.RichTextBox.SelectionChanged>  
+ <xref:System.Windows.Forms.RichTextBox>  
+ [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

@@ -1,39 +1,22 @@
 ---
 title: "Inherits Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Inherits"
   - "Inherits"
 helpviewer_keywords: 
-  - "Inherits statement"
-  - "Inherits statement, syntax"
+  - "Inherits statement [Visual Basic]"
+  - "Inherits statement [Visual Basic], syntax"
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inherits Statement
 Causes the current class or interface to inherit the attributes, variables, properties, procedures, and events from another class or set of interfaces.  
@@ -84,8 +67,8 @@ Inherits basetypenames
  The interface named `thisInterface` now includes all the definitions in the <xref:System.IComparable>, <xref:System.IDisposable>, and <xref:System.IFormattable> interfaces The inherited members provide respectively for type-specific comparison of two objects, releasing allocated resources, and expressing the value of an object as a `String`. A class that implements `thisInterface` must implement every member of every base interface.  
   
 ## See Also  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)   
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)   
+ [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
+ [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
+ [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;ipv6&gt; Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  
@@ -32,9 +34,9 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```xml  
-      <ipv6  
+<ipv6  
   enabled="true|false"  
-/ipv6>  
+/>  
 ```  
   
 ## Attributes and Elements  
@@ -75,7 +77,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ```  
   
 ## See Also  
- <xref:System.Net?displayProperty=nameWithType>   
- <xref:System.Net.Dns?displayProperty=nameWithType>   
- <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>   
+ <xref:System.Net?displayProperty=nameWithType>  
+ <xref:System.Net.Dns?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

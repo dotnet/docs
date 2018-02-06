@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.BackgroundWorker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <param name="cancelled">A value indicating whether the asynchronous operation was canceled.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RunWorkerCompletedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -122,6 +124,7 @@
           <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> is not <see langword="null" />. The <see cref="P:System.Exception.InnerException" /> property holds a reference to <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" /> is <see langword="true" />.</exception>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -158,6 +161,7 @@
         <summary>Gets a value that represents the user state.</summary>
         <value>An <see cref="T:System.Object" /> representing the user state.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
   </Members>

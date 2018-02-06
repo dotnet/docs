@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 caps.latest.revision: 32
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Stand-Alone JSON Serialization
 JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

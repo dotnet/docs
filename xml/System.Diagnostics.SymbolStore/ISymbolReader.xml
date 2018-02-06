@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolBinder" />
   </Docs>
   <Members>
     <Member MemberName="GetDocument">
@@ -361,5 +362,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a symbol reader method object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

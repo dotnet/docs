@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 04e4d3bd-ab89-4b50-8f42-2a4430751a9c
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Basic
 This section includes sections of samples that demonstrate basic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]functionality.  

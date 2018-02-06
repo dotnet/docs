@@ -1,48 +1,31 @@
 ---
 title: "Of Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Of"
   - "vb.Of"
   - "vb.of"
 helpviewer_keywords: 
-  - "Of keyword"
+  - "Of keyword [Visual Basic]"
   - "arguments [Visual Basic], data types"
   - "constraints, Visual Basic generic types"
   - "generic parameters"
   - "generics [Visual Basic], constraints"
-  - "parameters, type"
+  - "parameters [Visual Basic], type"
   - "types [Visual Basic], generic"
-  - "parameters, generic"
+  - "parameters [Visual Basic], generic"
   - "type parameters"
   - "data type arguments"
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Of Clause (Visual Basic)
 Introduces an `Of` clause, which identifies a *type parameter* on a *generic* class, structure, interface, delegate, or procedure. For information on generic types, see [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md).  
@@ -85,8 +68,8 @@ Dim d As New dictionary(Of String, Integer)
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- <xref:System.IComparable>   
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
+ <xref:System.IComparable>  
+ [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

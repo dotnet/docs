@@ -1,42 +1,24 @@
 ---
 title: "Shadows (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Shadows"
   - "shadows"
 helpviewer_keywords: 
   - "shadowing"
-  - "duplicate names"
-  - "scope, shadowing"
-  - "Shadows keyword"
-  - "names, shadowing"
+  - "duplicate names [Visual Basic]"
+  - "scope [Visual Basic], shadowing"
+  - "Shadows keyword [Visual Basic]"
+  - "names [Visual Basic], shadowing"
 ms.assetid: 6bf687cd-0544-4797-b51b-911125ec57c6
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Shadows (Visual Basic)
 Specifies that a declared programming element redeclares and hides an identically named element, or set of overloaded elements, in a base class.  
@@ -89,14 +71,14 @@ Specifies that a declared programming element redeclares and hides an identicall
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)   
- [Static](../../../visual-basic/language-reference/modifiers/static.md)   
- [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)   
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)   
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)   
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)   
- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)   
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)   
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)   
+ [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
+ [Static](../../../visual-basic/language-reference/modifiers/static.md)  
+ [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)  
+ [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
+ [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
+ [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
+ [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)  
+ [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
+ [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
  [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)

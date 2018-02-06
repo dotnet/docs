@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Adjusting the size and scale of Windows Forms
 This topic provides links to information about resizing Windows Forms.  

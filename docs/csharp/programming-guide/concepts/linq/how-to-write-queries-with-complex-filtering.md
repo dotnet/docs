@@ -1,7 +1,7 @@
 ---
 title: "How to: Write Queries with Complex Filtering (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -76,8 +76,8 @@ foreach (XElement el in purchaseOrders)
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A>   
- <xref:System.Xml.Linq.XContainer.Elements%2A>   
- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)   
- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)   
+ <xref:System.Xml.Linq.XElement.Attribute%2A>  
+ <xref:System.Xml.Linq.XContainer.Elements%2A>  
+ [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
+ [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)  
  [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)

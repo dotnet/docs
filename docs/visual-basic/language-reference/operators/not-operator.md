@@ -1,23 +1,21 @@
 ---
 title: "Not Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Not"
 helpviewer_keywords: 
   - "Boolean expressions, negating"
   - "operators [Visual Basic], bitwise"
-  - "negation operator"
-  - "inverse bit values in variables"
-  - "bitwise operators, NOT operator"
-  - "bitwise comparison"
+  - "negation operator [Visual Basic]"
+  - "inverse bit values in variables [Visual Basic]"
+  - "bitwise operators [Visual Basic], NOT operator"
+  - "bitwise comparison [Visual Basic]"
   - "Not operator [Visual Basic]"
   - "logical negation"
   - "operators [Visual Basic], negation"
@@ -25,21 +23,6 @@ ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Not Operator (Visual Basic)
 Performs logical negation on a `Boolean` expression, or bitwise negation on a numeric expression.  
@@ -96,7 +79,7 @@ result = Not expression
  The preceding example produces results of –11, –9, and –7, respectively.  
   
 ## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

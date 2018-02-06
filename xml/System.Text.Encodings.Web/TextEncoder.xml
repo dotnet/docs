@@ -281,7 +281,7 @@
           <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%20> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
+ This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%2A> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
  ]]></format>
         </remarks>
       </Docs>

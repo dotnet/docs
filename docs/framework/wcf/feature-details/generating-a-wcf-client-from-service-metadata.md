@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 27f8f545-cc44-412a-b104-617e0781b803
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Generating a WCF Client from Service Metadata
 This topic describes how to use the various switches in Svcutil.exe to generate clients from metadata documents.  
@@ -76,5 +78,5 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
 |**/noConfig**|Do not generate configuration files.|  
   
 ## See Also  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)   
+ [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
  [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)

@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "proxy extensions [WCF]"
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Clients
 In a calling application, the service model layer is responsible for translating method invocations in application code into outbound messages, pushing them to the underlying channels, translating results back into return values and out parameters in application code, and returning the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
@@ -121,7 +123,7 @@ In a calling application, the service model layer is responsible for translating
  For examples that demonstrate interception across a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Dispatcher.ClientRuntime>   
- <xref:System.ServiceModel.Dispatcher.ClientOperation>   
- [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)   
+ <xref:System.ServiceModel.Dispatcher.ClientRuntime>  
+ <xref:System.ServiceModel.Dispatcher.ClientOperation>  
+ [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)  
  [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)

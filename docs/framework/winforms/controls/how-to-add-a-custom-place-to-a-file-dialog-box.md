@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Custom Place to dialog box"
   - "adding Custom Place to dialog box"
@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How To: Add a Custom Place to a File Dialog Box
 The default open and save dialog boxes on [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] have an area on the left side of the dialog box titled **Favorite Links**. This area is called custom places. The <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog> classes allow you to add folders to the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection.  
@@ -43,6 +45,6 @@ The default open and save dialog boxes on [!INCLUDE[wiprlhext](../../../../inclu
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.FileDialog>   
- <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.FileDialog>  
+ <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A?displayProperty=nameWithType>  
  [Known Folder GUIDs for File Dialog Custom Places](../../../../docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md)

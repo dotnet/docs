@@ -17,6 +17,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Change Notification in Windows Forms Data Binding
 One of the most important concepts of Windows Forms data binding is *change notification*. To ensure that your data source and bound controls always have the most recent data, you must add change notification for data binding. Specifically, you want to ensure that bound controls are notified of changes that were made to their data source, and the data source is notified of changes that were made to the bound properties of a control.  
@@ -39,9 +41,9 @@ One of the most important concepts of Windows Forms data binding is *change noti
  Finally, from the control side you must expose a *PropertyName*Changed event for each property designed to be bound to data. The changes to the control property are then propagated to the bound data source. For more information, see [How to: Apply the PropertyNameChanged Pattern](../../../docs/framework/winforms/how-to-apply-the-propertynamechanged-pattern.md)  
   
 ## See Also  
- <xref:System.Windows.Forms.BindingSource>   
- <xref:System.ComponentModel.INotifyPropertyChanged>   
- <xref:System.ComponentModel.BindingList%601>   
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)   
- [Data Sources Supported by Windows Forms](../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md)   
+ <xref:System.Windows.Forms.BindingSource>  
+ <xref:System.ComponentModel.INotifyPropertyChanged>  
+ <xref:System.ComponentModel.BindingList%601>  
+ [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [Data Sources Supported by Windows Forms](../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md)  
  [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

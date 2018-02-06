@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineFile Method
 Creates a `File` metadata structure containing metadata for assembly referenced by this assembly, and returns the associated metadata token.  

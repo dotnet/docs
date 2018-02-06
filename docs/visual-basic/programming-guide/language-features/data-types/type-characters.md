@@ -1,67 +1,51 @@
 ---
 title: "Type Characters (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 01/31/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "&H prefix for hexadecimal values"
-  - "hexadecimal literals"
-  - "F literal type character"
+  - "hexadecimal literals [Visual Basic]"
+  - "F literal type character [Visual Basic]"
   - "& identifier type character"
-  - "type characters"
-  - "octal literals"
-  - "literals, hexadecimal"
+  - "type characters [Visual Basic]"
+  - "octal literals [Visual Basic]"
+  - "literals [Visual Basic], hexadecimal"
   - "&O prefix for octal values"
-  - "literals, default types"
+  - "literals [Visual Basic], default types"
   - "defaults, literal types"
-  - "C literal type character"
-  - "type characters, literal"
+  - "C literal type character [Visual Basic]"
+  - "type characters [Visual Basic], literal"
   - "$ identifier type character"
-  - "L literal type character"
-  - "UI literal type characters"
-  - "default literal types"
-  - "D literal type character"
-  - "literals, octal"
-  - "S literal type character"
+  - "L literal type character [Visual Basic]"
+  - "UI literal type characters [Visual Basic]"
+  - "default literal types [Visual Basic]"
+  - "D literal type character [Visual Basic]"
+  - "literals [Visual Basic], octal"
+  - "S literal type character [Visual Basic]"
   - "! identifier type character"
-  - "US literal type characters"
+  - "US literal type characters [Visual Basic]"
   - "% identifier type character"
   - "data types [Visual Basic], type characters"
-  - "characters, identifier type"
-  - "type characters, identifier"
+  - "characters [Visual Basic], identifier type"
+  - "type characters [Visual Basic], identifier"
   - "# identifier type character"
-  - "identifier type characters"
-  - "literal type characters"
-  - "I literal type character"
-  - "R literal type character"
+  - "identifier type characters [Visual Basic]"
+  - "literal type characters [Visual Basic]"
+  - "I literal type character [Visual Basic]"
+  - "R literal type character [Visual Basic]"
   - "@ identifier type character"
-  - "UL literal type characters"
-  - "literal types, default"
+  - "UL literal type characters [Visual Basic]"
+  - "literal types [Visual Basic], default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: rpetrusha
+ms.author: ronpet
+ms.manager: wpickett
 ---
 # Type characters (Visual Basic)
 
@@ -152,12 +136,20 @@ Dim flags As UShort = &H8000US
 
 In the previous example, `counter` has the decimal value of -32768, and `flags` has the decimal value of +32768.
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Integer = &H_C305_F860
+```
+
+[!INCLUDE [supporting-underscores](../../../../../includes/vb-separator-langversion.md)]
+
 ## See Also
 
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
+ [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)

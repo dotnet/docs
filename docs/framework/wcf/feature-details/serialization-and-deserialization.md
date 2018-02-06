@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 3d71814c-bda7-424b-85b7-15084ff9377a
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Serialization and Deserialization
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes a new serialization engine, the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractSerializer> translates between [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects and XML, in both directions. This topic explains how the serializer works.  
@@ -28,7 +30,7 @@ manager: "erikre"
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer> is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type names as part of the serialized data. It is used when the same types are shared on the serializing and the deserializing ends. Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   
 > [!WARNING]
->  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client went sending such data to a WCF service.  
+>  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  
   
 ## Creating a DataContractSerializer Instance  
  Constructing an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> is an important step. After construction, you cannot change any of the settings.  
@@ -51,7 +53,7 @@ manager: "erikre"
   
  The following example shows a class, `LibraryPatron`, that includes a collection of a specific type, the `LibraryItem`. The second class defines the `LibraryItem` type. The third and four classes (`Book` and `Newspaper`) inherit from the `LibraryItem` class.  
   
- [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)]   
+ [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)]  
  [!code-vb[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb/source.vb#3)]  
   
  The following code constructs an instance of the serializer using the `knownTypes` parameter.  
@@ -267,8 +269,8 @@ manager: "erikre"
  Also, note that the `NetDataContractSerializer` does not output the full [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type and assembly name for each node in the object graph. It outputs that information only where it is ambiguous. That is, it outputs at the root object level and for any polymorphic cases.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.NetDataContractSerializer>   
- <xref:System.Runtime.Serialization.XmlObjectSerializer>   
- [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.NetDataContractSerializer>  
+ <xref:System.Runtime.Serialization.XmlObjectSerializer>  
+ [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)  
  [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the insert operation should be canceled. To determine the value of the command argument, use the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.Values%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.%23ctor%2A> constructor.  
   
@@ -37,6 +37,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -96,6 +107,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -134,6 +150,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
       </Docs>
     </Member>
   </Members>

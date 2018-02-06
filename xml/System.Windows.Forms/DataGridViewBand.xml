@@ -38,6 +38,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IDisposable" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewHeaderCell" />
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -67,6 +73,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewBand.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewBand.Clone" /> method so that the properties of the base class are copied to the new band, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -106,6 +115,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -145,6 +159,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultHeaderCellType">
@@ -178,6 +196,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is not a <see cref="T:System.Type" /> representing <see cref="T:System.Windows.Forms.DataGridViewHeaderCell" /> or a derived type.</exception>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Displayed">
@@ -205,6 +230,10 @@
         <value>
           <see langword="true" /> if the band is currently onscreen; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -233,6 +262,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IDisposable" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -268,8 +301,12 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.IDisposable" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -293,12 +330,15 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  When called by the garbage collector, this method calls the <xref:System.Windows.Forms.DataGridViewBand.Dispose%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -339,6 +379,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="HasDefaultCellStyle">
@@ -372,6 +416,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="HeaderCellCore">
@@ -403,6 +452,11 @@
  -or-  
   
  The specified value when setting this property is not a <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" /> and this <see cref="T:System.Windows.Forms.DataGridViewBand" /> instance is of type <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -445,6 +499,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowCollection" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnCollection" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AllowUserToOrderColumns" />
       </Docs>
     </Member>
     <Member MemberName="InheritedStyle">
@@ -477,6 +535,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsRow">
@@ -496,6 +558,9 @@
         <value>
           <see langword="true" /> if the band represents a <see cref="T:System.Windows.Forms.DataGridViewRow" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnDataGridViewChanged">
@@ -517,6 +582,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewBand.OnDataGridViewChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewBand.OnDataGridViewChanged" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -558,6 +626,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, this <see cref="T:System.Windows.Forms.DataGridViewBand" /> instance is a shared <see cref="T:System.Windows.Forms.DataGridViewRow" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Resizable">
@@ -599,6 +673,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewTriState" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AllowUserToResizeColumns" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AllowUserToResizeRows" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -646,6 +727,10 @@
  -or-  
   
  This property is being set on a shared <see cref="T:System.Windows.Forms.DataGridViewRow" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewSelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -688,6 +773,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -714,6 +803,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -755,7 +847,23 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The specified value when setting this property is <see langword="false" /> and the band is the row for new records.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.DataGridViewBand" />.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

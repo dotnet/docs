@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "DataGrid control [Windows Forms], dynamically changing at run time"
   - "DataGrid control [Windows Forms], data binding"
-  - "cells, changing DataGrid cell values"
+  - "cells [Windows Forms], changing DataGrid cell values"
 ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control
 > [!NOTE]
@@ -100,7 +102,7 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [ADO.NET DataSets](../../../../docs/framework/data/adonet/ado-net-datasets.md)   
- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)   
- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)   
+ [ADO.NET DataSets](../../../../docs/framework/data/adonet/ado-net-datasets.md)  
+ [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)  
+ [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
  [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)

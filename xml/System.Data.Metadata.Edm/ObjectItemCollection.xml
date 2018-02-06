@@ -250,5 +250,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadFromAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads metadata from the given assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetClrType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a CLR type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetClrType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the underlying CLR type for the specified OSpace type argument.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

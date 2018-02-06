@@ -16,6 +16,7 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumnHeaderCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumnHeaderCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +39,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -57,6 +60,7 @@
         <summary>Creates an exact copy of this cell.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewHeaderCell" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewHeaderCell.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -86,6 +90,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="GetClipboardContent">
@@ -137,6 +144,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ClipboardCopyMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -172,6 +183,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContentBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetInheritedContextMenuStrip">
@@ -196,6 +211,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.Control.ContextMenuStrip" />
       </Docs>
     </Member>
     <Member MemberName="GetInheritedStyle">
@@ -232,6 +250,12 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.HasStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -262,6 +286,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -286,6 +313,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -354,6 +382,10 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetValue(System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
       </Docs>
     </Member>
     <Member MemberName="SortGlyphDirection">
@@ -380,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>.  
+ This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic?displayProperty=nameWithType>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic?displayProperty=nameWithType>.  
   
    
   
@@ -398,6 +430,9 @@
  -or-  
   
  When changing the value of this property, the specified value is not <see cref="F:System.Windows.Forms.SortOrder.None" /> and the value of the <see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property of the owning column is <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.SortOrder" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

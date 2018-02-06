@@ -1,42 +1,25 @@
 ---
 title: "Get Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Get"
 helpviewer_keywords: 
-  - "Get statement, syntax"
-  - "Get statement"
+  - "Get statement [Visual Basic], syntax"
+  - "Get statement [Visual Basic]"
   - "properties [Visual Basic], read-only"
   - "read-only properties"
-  - "Get keyword"
-  - "property procedures, Get statements"
+  - "Get keyword [Visual Basic]"
+  - "property procedures [Visual Basic], Get statements"
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Get Statement
 Declares a `Get` property procedure used to retrieve the value of a property.  
@@ -103,8 +86,8 @@ End Get
  [!code-vb[VbVbalrStatements#30](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_4.vb)]  
   
 ## See Also  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  [Walkthrough: Defining Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)

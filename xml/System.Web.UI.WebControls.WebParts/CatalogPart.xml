@@ -98,6 +98,7 @@
     <block subset="none" type="overrides">
       <para>Because the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> class is abstract, you cannot use it directly on a Web page. The Web Parts control set provides three <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls (listed in the table in the Remarks section of this topic) that derive from the base class and that can be used on Web Parts pages. These controls should provide most of the features needed to create catalogs of Web server controls. However, you might have specialized needs that would require developing a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control. For example, you can create a special type of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control that makes server controls available through a Web service, or directly from a database. To do this, you must inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> class. You must also override the abstract <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" /> and <see cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" /> methods to provide an implementation that returns the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server controls, and their descriptions. You will also need methods to load the various server controls from your database or Web service.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +156,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.DisplayTitle" />
       </Docs>
     </Member>
     <Member MemberName="GetAvailableWebPartDescriptions">
@@ -299,6 +303,7 @@
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the control.</param>
         <summary>Sets design-time data for a control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -324,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -349,6 +355,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
       </Docs>
     </Member>
   </Members>

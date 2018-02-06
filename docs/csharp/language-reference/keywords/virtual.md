@@ -1,6 +1,6 @@
 ---
 title: "virtual (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # virtual (C# Reference)
 The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it:  
@@ -48,7 +34,7 @@ public virtual double Area()
   
  You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, or `override` modifiers. The following example shows a virtual property:  
   
- [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_1.cs)]  
   
  Virtual properties behave like abstract methods, except for the differences in declaration and invocation syntax.  
   
@@ -67,17 +53,17 @@ public Cylinder(double r, double h): base(r, h) {}
   
  The following program calculates and displays the appropriate area for each figure by invoking the appropriate implementation of the `Area()` method, according to the object that is associated with the method.  
   
- [!code-cs[csrefKeywordsModifiers#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
- [abstract](../../../csharp/language-reference/keywords/abstract.md)   
- [override](../../../csharp/language-reference/keywords/override.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)  
+ [abstract](../../../csharp/language-reference/keywords/abstract.md)  
+ [override](../../../csharp/language-reference/keywords/override.md)  
  [new](../../../csharp/language-reference/keywords/new.md)

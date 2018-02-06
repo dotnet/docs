@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [WPF], applying UI automation"
   - "accessibility [WPF], applying to custom controls"
@@ -22,6 +22,8 @@ caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # UI Automation of a WPF Custom Control
 [!INCLUDE[TLA#tla_uiautomation](../../../../includes/tlasharptla-uiautomation-md.md)] provides a single, generalized interface that automation clients can use to examine or operate the user interfaces of a variety of platforms and frameworks. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] enables both quality-assurance (test) code and accessibility applications such as screen readers to examine user-interface elements and simulate user interaction with them from other code. For information about [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] across all platforms, see Accessibility.  
@@ -161,6 +163,6 @@ End Class
  [!code-vb[CustomControlNumericUpDown#RaiseEventFromControl](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#raiseeventfromcontrol)]  
   
 ## See Also  
- [UI Automation Overview](../../../../docs/framework/ui-automation/ui-automation-overview.md)   
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025)   
+ [UI Automation Overview](../../../../docs/framework/ui-automation/ui-automation-overview.md)  
+ [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025)  
  [Server-Side UI Automation Provider Implementation](../../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

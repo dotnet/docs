@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMethodMalloc::Alloc Method
 Attempts to allocate a specified amount of memory for a new Microsoft intermediate language (MSIL) function body.  

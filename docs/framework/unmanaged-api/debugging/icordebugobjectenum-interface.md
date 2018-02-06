@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectEnum Interface1
 Implements ICorDebugEnum methods, and enumerates arrays of objects by their relative virtual addresses (RVAs).  

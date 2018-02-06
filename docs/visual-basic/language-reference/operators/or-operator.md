@@ -1,46 +1,29 @@
 ---
 title: "Or Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Or"
 helpviewer_keywords: 
-  - "Or operator"
+  - "Or operator [Visual Basic]"
   - "operators [Visual Basic], bitwise"
-  - "inclusive Or operator"
-  - "bitwise operators, OR operator"
-  - "Or keyword"
+  - "inclusive Or operator [Visual Basic]"
+  - "bitwise operators [Visual Basic], OR operator"
+  - "Or keyword [Visual Basic]"
   - "operators [Visual Basic], inclusive or"
   - "operators [Visual Basic], disjunction"
-  - "bitwise comparison"
+  - "bitwise comparison [Visual Basic]"
   - "logical disjunction"
-  - "disjunction operator"
+  - "disjunction operator [Visual Basic]"
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Or Operator (Visual Basic)
 Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjunction on two numeric expressions.  
@@ -109,8 +92,8 @@ result = expression1 Or expression2
  The preceding example produces results of 10, 14, and 14, respectively.  
   
 ## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)   
+ [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)  
  [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

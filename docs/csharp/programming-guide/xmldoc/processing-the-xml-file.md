@@ -1,13 +1,9 @@
 ---
 title: "Processing the XML File (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "XML processing [C#]"
@@ -16,21 +12,6 @@ ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Processing the XML File (C# Programming Guide)
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.  
@@ -98,9 +79,9 @@ The compiler generates an ID string for each construct in your code that is tagg
 ## Examples  
  The following examples show how the ID strings for a class and its members would be generated:  
   
- [!code-cs[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/processing-the-xml-file_1.cs)]  
+ [!code-csharp[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/processing-the-xml-file_1.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

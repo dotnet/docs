@@ -58,6 +58,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.SessionPageStatePersister" />
+    <altmember cref="M:System.Web.UI.Page.LoadPageStateFromPersistenceMedium" />
+    <altmember cref="M:System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)" />
+    <altmember cref="P:System.Web.UI.Page.MaxPageStateFieldLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +106,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.HiddenFieldPageStatePersister.Load" /> method could not successfully deserialize the state information contained in the request to the Web server.</exception>
+        <altmember cref="M:System.Web.UI.HiddenFieldPageStatePersister.Save" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -127,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HiddenFieldPageStatePersister.Load" />
       </Docs>
     </Member>
   </Members>

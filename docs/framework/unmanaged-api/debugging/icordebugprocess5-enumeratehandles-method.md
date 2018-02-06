@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateHandles Method
 Gets an enumerator for object handles in a process.  
@@ -66,5 +68,5 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

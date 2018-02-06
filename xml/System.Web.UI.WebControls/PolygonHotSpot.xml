@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -136,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
       </Docs>
     </Member>
     <Member MemberName="MarkupName">

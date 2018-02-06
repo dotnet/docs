@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 65a8905d-92cc-4ab0-b6ed-1f710e40784e
 caps.latest.revision: 29
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Supporting Tokens
 The Supporting Tokens sample demonstrates how to add additional tokens to a message that uses WS-Security. The example adds an X.509 binary security token in addition to a username security token. The token is passed in a WS-Security message header from the client to the service and part of the message is signed with the private key associated with the X.509 security token to prove the possession of the X.509 certificate to the receiver. This is useful in the case when there is a requirement to have multiple claims associated with a message to authenticate or authorize the sender. The service implements a contract that defines a request-reply communication pattern.  
@@ -436,7 +438,7 @@ iisreset
   
 2.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-3.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+3.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ##### To run the sample across machines  
   
@@ -464,7 +466,7 @@ iisreset
   
 12. On the server, run ImportClientCert.bat, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
   
-13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+13. On the client machine, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ##### To clean up after the sample  
   

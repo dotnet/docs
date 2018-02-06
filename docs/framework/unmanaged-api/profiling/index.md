@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Profiling (Unmanaged API Reference)
 The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).  

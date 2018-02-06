@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an insert operation. If an exception occurs during the insert operation, you can keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode by setting the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.%23ctor%2A> constructor.  
   
@@ -39,6 +39,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +86,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -117,6 +132,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -153,6 +174,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -187,6 +214,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -224,6 +257,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -262,6 +299,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
       </Docs>
     </Member>
   </Members>

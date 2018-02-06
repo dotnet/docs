@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows Presentation Foundation, what's new"
-  - "WPF, what's new"
+  - "Windows Presentation Foundation [WPF], what's new"
+  - "WPF [WPF], what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 caps.latest.revision: 55
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # What&#39;s New in WPF Version 4.5
-<a name="introduction"></a> Thistopic contains information about new and enhanced features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] version 4.5.  
+<a name="introduction"></a> This topic contains information about new and enhanced features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] version 4.5.  
   
  This topic contains the following sections:  
   

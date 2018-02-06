@@ -20,6 +20,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;servicePointManager&gt; Element (Network Settings)
 Configures connections to network resources.  
@@ -32,7 +34,7 @@ Configures connections to network resources.
 ## Syntax  
   
 ```xml  
-      <servicePointManager  
+<servicePointManager  
   checkCertificateName="true|false"  
   checkCertificateRevocationList="true|false"  
   encryptionPolicy="AllowNoEncryption|NoEncryption|RequireEncryption"  
@@ -73,6 +75,6 @@ Configures connections to network resources.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See Also  
- <xref:System.Net.ServicePointManager>   
- <xref:System.Net.Security.EncryptionPolicy>   
+ <xref:System.Net.ServicePointManager>  
+ <xref:System.Net.Security.EncryptionPolicy>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

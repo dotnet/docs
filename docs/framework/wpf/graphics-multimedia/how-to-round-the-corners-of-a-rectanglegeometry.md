@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "corners, rounding"
-  - "RectangleGeometry class, rounding corners"
-  - "graphics, rounding corners of RectangleGeometry objects"
-  - "rounding corners of RectangleGeometry objects"
+  - "corners [WPF], rounding"
+  - "RectangleGeometry class [WPF], rounding corners"
+  - "graphics [WPF], rounding corners of RectangleGeometry objects [WPF]"
+  - "rounding corners of RectangleGeometry objects [WPF]"
 ms.assetid: 926644bc-1357-4c0b-ac81-694bd090ae87
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Round the Corners of a RectangleGeometry
 To round the corners of a <xref:System.Windows.Media.RectangleGeometry>, set its <xref:System.Windows.Media.RectangleGeometry.RadiusX%2A> and <xref:System.Windows.Media.RectangleGeometry.RadiusY%2A> properties to a value greater than zero. The larger the values, the rounder the rectangle's corners.  
@@ -32,6 +34,6 @@ To round the corners of a <xref:System.Windows.Media.RectangleGeometry>, set its
 Rectangles with Rounded Corners  
   
 ## See Also  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)   
+ [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
+ [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)  
  [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)

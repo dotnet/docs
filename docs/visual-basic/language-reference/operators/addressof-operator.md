@@ -1,39 +1,22 @@
 ---
 title: "AddressOf Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "AddressOf"
   - "vb.AddressOf"
 helpviewer_keywords: 
-  - "AddressOf operator"
+  - "AddressOf operator [Visual Basic]"
   - "addresses, passing to API procedures"
 ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # AddressOf Operator (Visual Basic)
 Creates a procedure delegate instance that references the specific procedure.  
@@ -64,7 +47,7 @@ AddressOf procedurename
  [!code-vb[VbVbalrDelegates#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_2.vb)]  
   
 ## See Also  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

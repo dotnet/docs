@@ -1,7 +1,7 @@
 ---
 title: "Object Variables in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -10,29 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "object variables, about object variables"
+  - "object variables [Visual Basic], about object variables"
   - "variables [Visual Basic], object"
   - "objects [Visual Basic], accessing"
-  - "object variables"
+  - "object variables [Visual Basic]"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Object Variables in Visual Basic
 In addition to storing values directly, a variable can refer to an object. You assign an object to a variable for the same reasons you assign any value to a variable:  
@@ -63,8 +48,8 @@ ctrlActv.Show()
 ```  
   
 ## See Also  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [How to: Speed Up Access to an Object with a Long Qualification Path](../../../../visual-basic/programming-guide/language-features/variables/how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md)   
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)   
- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)   
+ [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [How to: Speed Up Access to an Object with a Long Qualification Path](../../../../visual-basic/programming-guide/language-features/variables/how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md)  
+ [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
+ [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
  [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)

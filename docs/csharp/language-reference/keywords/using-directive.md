@@ -1,6 +1,6 @@
 ---
 title: "using Directive (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -11,20 +11,6 @@ ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # using Directive (C# Reference)
 The `using` directive has three uses:  
@@ -81,7 +67,7 @@ class Program
   
  The following example shows how to define and use a `using` alias for a namespace:  
   
- [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_1.cs)]  
+ [!code-csharp[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_1.cs)]  
   
  A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a List\<T>, but you can create one for a List\<int>.  
   
@@ -89,16 +75,16 @@ class Program
   
  The following example shows how to define a `using` directive and a `using` alias for a class:  
   
- [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
+ [!code-csharp[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+ [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
  [using Statement](../../../csharp/language-reference/keywords/using-statement.md)

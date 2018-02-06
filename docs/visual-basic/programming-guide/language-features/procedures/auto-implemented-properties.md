@@ -1,40 +1,24 @@
 ---
 title: "Auto-Implemented Properties (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.AutoProperty"
   - "vb.AutoImplementedProperty"
 helpviewer_keywords: 
   - "properties [Visual Basic], auto-implemented"
-  - "properties, auto-implemented [Visual Basic]"
+  - "properties [Visual Basic], auto-implemented"
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Auto-Implemented Properties (Visual Basic)
 *Auto-implemented properties* enable you to quickly specify a property of a class without having to write code to `Get` and `Set` the property. When you write code for an auto-implemented property, the Visual Basic compiler automatically creates a private field to store the property variable in addition to creating the associated `Get` and `Set` procedures.  
@@ -114,9 +98,9 @@ End Class
  If you have to convert an auto-implemented property to an expanded property that contains a `Get` or `Set` procedure, the Visual Basic Code Editor can automatically generate the `Get` and `Set` procedures and `End Property` statement for the property. The code is generated if you put the cursor on a blank line following the `Property` statement, type a `G` (for `Get`) or an `S` (for `Set`) and press ENTER. The Visual Basic Code Editor automatically generates the `Get` or `Set` procedure for read-only and write-only properties when you press ENTER at the end of a `Property` statement.  
   
 ## See Also  
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)   
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)   
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   
- [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md)   
- [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)   
+ [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
+ [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
+ [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
+ [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md)  
+ [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

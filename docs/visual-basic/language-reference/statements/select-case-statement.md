@@ -1,52 +1,35 @@
 ---
 title: "Select...Case Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Select"
   - "vb.Case"
 helpviewer_keywords: 
-  - "Select statement"
-  - "Case statement"
+  - "Select statement [Visual Basic]"
+  - "Case statement [Visual Basic]"
   - "Select...Case statements"
-  - "conditional statements, Select Case"
-  - "control flow, branching"
+  - "conditional statements [Visual Basic], Select Case"
+  - "control flow [Visual Basic], branching"
   - "Else keyword [Visual Basic], in Select...Case statements"
-  - "execution, conditional"
-  - "To keyword, in Select...Case statements"
-  - "Select Case statement, Select...Case"
-  - "Select statement, Select...Case"
+  - "execution [Visual Basic], conditional"
+  - "To keyword [Visual Basic], in Select...Case statements"
+  - "Select Case statement [Visual Basic], Select...Case"
+  - "Select statement [Visual Basic], Select...Case"
   - "Is operator [Visual Basic], in Select...Case statements"
-  - "branching, conditional"
-  - "Case Else statement, Select...Case"
-  - "End keyword, Select Case statements"
-  - "Case statement, Select...Case"
+  - "branching [Visual Basic], conditional"
+  - "Case Else statement [Visual Basic], Select...Case"
+  - "End keyword [Visual Basic], Select Case statements"
+  - "Case statement [Visual Basic], Select...Case"
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Select...Case Statement (Visual Basic)
 Runs one of several groups of statements, depending on the value of an expression.  
@@ -103,8 +86,8 @@ End Select
  [!code-vb[VbVbalrStatements#54](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/select-case-statement_1.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>   
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)   
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
+ <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  
+ [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
+ [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
+ [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)

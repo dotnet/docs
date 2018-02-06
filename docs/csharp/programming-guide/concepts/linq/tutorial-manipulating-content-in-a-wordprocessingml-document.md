@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Manipulating Content in a WordprocessingML Document (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 # Tutorial: Manipulating Content in a WordprocessingML Document (C#)
 This tutorial shows how to apply the functional transformational approach and LINQ to XML to manipulate XML documents. The C# examples query and manipulate information in Office Open XML WordprocessingML documents that are saved by Microsoft Word.  
   
- For more information, see the [OpenXML Developer](http://go.microsoft.com/fwlink/?LinkID=95573) Web site.  
+ For more information, see [Introduction to WordprocessingML](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/).  
   
 ## In This Section  
   
@@ -36,5 +36,5 @@ This tutorial shows how to apply the functional transformational approach and LI
 |[Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)|Provides some details of Office Open XML WordprocessingML documents.|  
   
 ## See Also  
- [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)   
+ [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)  
  [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)

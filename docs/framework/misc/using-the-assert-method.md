@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "granting permissions, overriding security checks"
   - "code access security, overriding security checks"
@@ -28,6 +28,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the Assert Method
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -173,9 +175,9 @@ namespace LogUtil
 ```  
   
 ## See Also  
- <xref:System.Security.PermissionSet>   
- <xref:System.Security.Permissions.SecurityPermission>   
- <xref:System.Security.Permissions.FileIOPermission>   
- <xref:System.Security.Permissions.SecurityAction>   
- [Attributes](../../../docs/standard/attributes/index.md)   
+ <xref:System.Security.PermissionSet>  
+ <xref:System.Security.Permissions.SecurityPermission>  
+ <xref:System.Security.Permissions.FileIOPermission>  
+ <xref:System.Security.Permissions.SecurityAction>  
+ [Attributes](../../../docs/standard/attributes/index.md)  
  [Code Access Security](../../../docs/framework/misc/code-access-security.md)

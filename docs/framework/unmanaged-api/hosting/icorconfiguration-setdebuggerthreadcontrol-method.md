@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorConfiguration::SetDebuggerThreadControl Method
 Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.  

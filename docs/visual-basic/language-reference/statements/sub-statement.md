@@ -1,60 +1,43 @@
 ---
 title: "Sub Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Sub"
 helpviewer_keywords: 
-  - "Public keyword, Sub statements"
-  - "procedures, creating"
-  - "declaring procedures, Sub statement"
+  - "Public keyword [Visual Basic], Sub statements"
+  - "procedures [Visual Basic], creating"
+  - "declaring procedures [Visual Basic], Sub statement"
   - "arguments [Visual Basic], Sub procedures"
-  - "As keyword, Sub statements"
-  - "Optional keyword, Sub statements"
-  - "declarations, procedures"
-  - "Sub keyword"
-  - "Handles keyword, Sub statements"
-  - "Protected Friend keyword"
-  - "ParamArray keyword, Sub statements"
-  - "Implements keyword, Sub statements"
-  - "Sub statement"
+  - "As keyword [Visual Basic], Sub statements"
+  - "Optional keyword [Visual Basic], Sub statements"
+  - "declarations [Visual Basic], procedures"
+  - "Sub keyword [Visual Basic]"
+  - "Handles keyword [Visual Basic], Sub statements"
+  - "Protected Friend keyword [Visual Basic]"
+  - "ParamArray keyword [Visual Basic], Sub statements"
+  - "Implements keyword [Visual Basic], Sub statements"
+  - "Sub statement [Visual Basic]"
   - "subroutines"
-  - "ByRef keyword, Sub statements"
-  - "Sub procedures, Sub statement"
+  - "ByRef keyword [Visual Basic], Sub statements"
+  - "Sub procedures [Visual Basic], Sub statement"
   - "recursive procedures"
-  - "Private keyword, Sub statements"
-  - "Friend keyword, Sub statements"
-  - "Exit statement, Sub statements"
-  - "procedures, Sub"
-  - "End keyword, Sub statements"
-  - "ByVal keyword, Sub statements"
+  - "Private keyword [Visual Basic], Sub statements"
+  - "Friend keyword [Visual Basic], Sub statements"
+  - "Exit statement [Visual Basic], Sub statements"
+  - "procedures [Visual Basic], Sub"
+  - "End keyword [Visual Basic], Sub statements"
+  - "ByVal keyword [Visual Basic], Sub statements"
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sub Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Sub` procedure.  
@@ -238,20 +221,20 @@ End Sub
  [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
   
 ## Example  
- In the following example, `DelayAsync` is an an `Async``Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
+ In the following example, `DelayAsync` is an `Async``Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
   
  The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `Await DoSomethingAsync()`. The `startButton_Click``Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
 ## See Also  
- [Implements Statement](implements-statement.md)   
- [Function Statement](function-statement.md)   
- [Parameter List](parameter-list.md)   
- [Dim Statement](dim-statement.md)   
- [Call Statement](call-statement.md)   
- [Of](of-clause.md)   
- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
+ [Implements Statement](implements-statement.md)  
+ [Function Statement](function-statement.md)  
+ [Parameter List](parameter-list.md)  
+ [Dim Statement](dim-statement.md)  
+ [Call Statement](call-statement.md)  
+ [Of](of-clause.md)  
+ [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
+ [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
+ [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
  [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

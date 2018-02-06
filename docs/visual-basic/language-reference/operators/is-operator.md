@@ -1,18 +1,16 @@
 ---
 title: "Is Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.is"
 helpviewer_keywords: 
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "equivalent objects"
   - "TypeOf...Is expression"
   - "Is operator [Visual Basic]"
@@ -20,21 +18,6 @@ ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Is Operator (Visual Basic)
 Compares two object reference variables.  
@@ -71,9 +54,9 @@ result = object1 Is object2
  As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.  
   
 ## See Also  
- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)   
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)   
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
+ [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
+ [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

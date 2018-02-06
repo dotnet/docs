@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleBreakpoint Interface1
 Provides access to specific modules. This interface is a subclass of the ICorDebugBreakpoint interface.  

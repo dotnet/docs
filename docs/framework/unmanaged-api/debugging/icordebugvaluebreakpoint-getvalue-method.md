@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValueBreakpoint::GetValue Method
 Gets an interface pointer to an "ICorDebugValue" object that represents the value of the object on which the breakpoint is set.  

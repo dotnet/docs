@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property after an update operation. To keep the <xref:System.Web.UI.WebControls.DetailsView> control in edit mode, set the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.%23ctor%2A> constructor.  
   
@@ -36,6 +36,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -108,6 +122,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -144,6 +163,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -178,6 +202,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="KeepInEditMode">
@@ -215,6 +244,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -253,6 +286,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -291,6 +329,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -329,6 +372,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
   </Members>

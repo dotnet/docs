@@ -85,6 +85,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Parent" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +128,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,6 +170,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,6 +216,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -220,6 +242,7 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.TreeNode" /> is a root node; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> class using the specified owner.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -265,6 +288,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -316,6 +345,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -370,6 +407,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CheckedNodes" />
       </Docs>
     </Member>
     <Member MemberName="ChildNodes">
@@ -421,6 +460,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Parent" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -447,6 +490,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ICloneable" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -504,6 +548,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Expand" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="CollapseAll">
@@ -561,6 +611,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Expand" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="DataBound">
@@ -600,6 +656,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -636,6 +693,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataPath">
@@ -674,6 +733,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="M:System.Web.UI.HierarchicalDataSourceControl.GetHierarchicalView(System.String)" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -725,6 +787,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -784,6 +847,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -841,6 +910,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Expand" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -925,6 +1000,14 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandDepth" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Expand" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="ImageToolTip">
@@ -970,6 +1053,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -1033,6 +1118,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -1052,6 +1139,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
         <value>
           <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1080,6 +1168,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -1133,6 +1222,9 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1179,6 +1271,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="PopulateOnDemand">
@@ -1222,6 +1316,9 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostText">
@@ -1250,6 +1347,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.RenderPreText(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderPreText">
@@ -1278,6 +1376,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.RenderPreText(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1304,6 +1403,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1339,6 +1439,9 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Selected" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="SelectAction">
@@ -1394,6 +1497,11 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeSelectAction" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.SelectedNodeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1443,6 +1551,10 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="ShowCheckBox">
@@ -1529,6 +1641,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1555,6 +1669,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -1580,6 +1695,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -1601,6 +1717,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
         <param name="state">A <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the node's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1620,6 +1738,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
         <summary>Saves the view state changes to a <see cref="T:System.Object" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1645,6 +1765,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -1700,7 +1822,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeNode.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeNode.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.TreeNode> object must be XHTML 1.1-compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.TreeNode.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.TreeNode.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The value of this property is stored in view state.  
   
@@ -1719,6 +1841,9 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1767,6 +1892,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
       </Docs>
     </Member>
     <Member MemberName="ToggleExpandState">
@@ -1803,6 +1930,12 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Expanded" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Collapse" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.Expand" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1846,6 +1979,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageToolTip" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1864,6 +1999,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <Docs>
         <summary>Marks the starting point at which to begin tracking and saving view state changes to the node.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1915,6 +2051,8 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
       </Docs>
     </Member>
     <Member MemberName="ValuePath">
@@ -1961,7 +2099,19 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PathSeparator" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.FindNode(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

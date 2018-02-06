@@ -747,5 +747,14 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommandBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

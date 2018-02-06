@@ -101,5 +101,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NavigateTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates to target model item in the workflow designer and returns a Boolean that indicates whether navigation succeeds.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

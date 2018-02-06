@@ -25,6 +25,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <altmember cref="T:System.Web.UI.UserControl" />
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="T:System.Web.UI.TemplateControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -130,6 +134,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">

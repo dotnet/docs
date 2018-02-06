@@ -85,9 +85,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to be copied into the new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</param>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,10 +249,17 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to copy.</param>
+        <summary>Replaces the stored pair of values in the <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <returns>This method returns <c>*this</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::operator= (STL/CLR)](http://msdn.microsoft.com/library/b6228037-914e-4efa-8491-65dbb0e93f61).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="second">
@@ -293,9 +307,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to swap contents with.</param>
+        <summary>Swaps the contents of two <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::swap (STL/CLR)](http://msdn.microsoft.com/library/7f5cbfa0-3702-40ab-a3f4-ffde02126095).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

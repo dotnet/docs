@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Find and FindCriteria
 A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] discovery messages, see the [WS-Discovery specification](http://go.microsoft.com/fwlink/?LinkID=122347).  
@@ -71,8 +73,8 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
 ```  
   
 ## See Also  
- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)   
- [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)   
- [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)   
- [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md)   
+ [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
+ [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)  
+ [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)  
+ [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md)  
  [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)

@@ -55,6 +55,23 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +107,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -144,6 +165,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -177,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -208,6 +237,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TemplateField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataControlField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -237,6 +269,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TemplateField.CreateField" /> in a derived class, be sure to create a new instance of your type and not call the base method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="EditItemTemplate">
@@ -288,6 +323,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -323,6 +363,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -374,6 +415,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -425,6 +471,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -459,6 +510,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -513,6 +567,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -567,6 +626,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -620,6 +684,9 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.TemplateField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
   </Members>

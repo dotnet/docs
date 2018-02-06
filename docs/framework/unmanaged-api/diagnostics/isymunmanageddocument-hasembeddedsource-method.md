@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::HasEmbeddedSource Method
 Returns `true` if the document has source embedded in the debugging symbols; otherwise, returns `false`.  

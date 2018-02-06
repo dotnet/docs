@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+    <altmember cref="T:System.Globalization.CultureInfo" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -127,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -168,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -211,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
   </Members>

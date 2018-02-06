@@ -66,6 +66,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.StringBuilder" />
+    <altmember cref="T:System.IO.StringReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1197,5 +1199,49 @@
         <exception cref="T:System.InvalidOperationException">The string writer is currently in use by a previous write operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator asynchronously to the string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StringWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the string asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

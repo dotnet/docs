@@ -155,6 +155,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode" />
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteMode">
@@ -199,6 +201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteSource">
@@ -243,6 +247,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -1702,5 +1708,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindString">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> that starts with the specified string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindStringExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the item that exactly matches the specified string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

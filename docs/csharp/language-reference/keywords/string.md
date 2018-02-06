@@ -1,6 +1,6 @@
 ---
 title: "string (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -17,21 +17,6 @@ ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # string (C# Reference)
 The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String> in the .NET Framework.  
@@ -110,19 +95,19 @@ Console.WriteLine(a);
  For more information about strings in C#, see [Strings](../../../csharp/programming-guide/strings/index.md).  
   
 ## Example  
- [!code-cs[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
+ [!code-csharp[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Basic String Operations](../../../standard/base-types/basic-string-operations.md)   
- [Creating New Strings](../../../standard/base-types/creating-new.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [Basic String Operations](../../../standard/base-types/basic-string-operations.md)  
+ [Creating New Strings](../../../standard/base-types/creating-new.md)  
  [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)

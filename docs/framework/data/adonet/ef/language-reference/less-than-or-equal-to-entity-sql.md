@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7c46da5c-fa09-4d90-adcc-c7e1b769d8e6
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;= (Less Than or Equal To) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value less than or equal to the right expression.  

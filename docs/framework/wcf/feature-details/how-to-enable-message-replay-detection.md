@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF security"
   - "replay detection [WCF]"
@@ -19,9 +19,11 @@ helpviewer_keywords:
   - "WCF, security"
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Enable Message Replay Detection
 A replay attack occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack will process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
@@ -109,8 +111,8 @@ A replay attack occurs when an attacker copies a stream of messages between two 
 -   <xref:System.ServiceModel.Channels>  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>   
- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>   
- [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)   
- [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)   
+ <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
+ <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  
+ [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)  
+ [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)  
  [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

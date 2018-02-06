@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "width of windows, setting from a page"
-  - "windows, setting width from a page"
-  - "pages, setting window width from"
+  - "width of windows [WPF], setting from a page"
+  - "windows [WPF], setting width from a page"
+  - "pages [WPF], setting window width from"
 ms.assetid: 31601c92-7889-472a-b07e-bf675ad21c92
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Width of a Window from a Page
 This example illustrates how to set the width of the window from a <xref:System.Windows.Controls.Page>.  

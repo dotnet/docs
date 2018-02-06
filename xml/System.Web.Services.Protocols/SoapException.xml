@@ -95,6 +95,8 @@
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message and exception code.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.Message" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +120,9 @@
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,6 +146,9 @@
         <param name="actor">A URI that identifies the code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and URI that identifies the piece of code that caused the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +172,9 @@
         <param name="subcode">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and subcode.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +200,10 @@
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, URI that identifies the code that caused the exception, and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -347,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
       </Docs>
     </Member>
     <Member MemberName="ClientFaultCode">
@@ -421,6 +438,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlQualifiedName" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Subcode" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Actor" />
       </Docs>
     </Member>
     <Member MemberName="Detail">
@@ -460,6 +481,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNode" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
       </Docs>
     </Member>
     <Member MemberName="DetailElementName">
@@ -547,6 +570,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.ClientFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsMustUnderstandFaultCode">
@@ -578,6 +604,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsServerFaultCode">
@@ -609,6 +638,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.ServerFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="IsVersionMismatchFaultCode">
@@ -640,6 +672,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="F:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode" />
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="Lang">
@@ -787,6 +822,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode" />
       </Docs>
     </Member>
     <Member MemberName="SubCode">
@@ -845,5 +881,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

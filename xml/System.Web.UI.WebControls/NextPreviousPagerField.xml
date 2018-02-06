@@ -46,6 +46,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.IPageableItemContainer" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageButton" />
+    <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="ButtonCssClass">
@@ -127,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -186,6 +195,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -217,6 +231,10 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method to copy the new properties that were created in the derived class. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method so that the properties of the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class are also copied.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataPagers">
@@ -253,6 +271,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.CreatePagerFields" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -282,6 +303,8 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" /> method to return a new instance of the derived class. Do not call the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -363,6 +386,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="FirstPageText">
@@ -408,6 +437,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -466,6 +501,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlCommands" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LastPageImageUrl">
@@ -517,6 +554,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="LastPageText">
@@ -562,6 +605,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="NextPageImageUrl">
@@ -613,6 +662,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -658,6 +713,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageImageUrl">
@@ -709,6 +770,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -754,6 +821,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
       </Docs>
     </Member>
     <Member MemberName="RenderDisabledButtonsAsLabels">
@@ -794,6 +867,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
       </Docs>
     </Member>
     <Member MemberName="RenderNonBreakingSpacesBetweenControls">
@@ -830,6 +905,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" />
       </Docs>
     </Member>
     <Member MemberName="ShowFirstPageButton">
@@ -874,6 +950,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowLastPageButton">
@@ -918,6 +999,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowNextPageButton">
@@ -962,6 +1048,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowPreviousPageButton">
@@ -1006,6 +1097,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+        <altmember cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
       </Docs>
     </Member>
   </Members>

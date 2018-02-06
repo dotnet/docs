@@ -36,6 +36,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selected" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updated" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserted" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleted" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +64,8 @@
         <param name="exception">An <see cref="T:System.Exception" /> thrown by the database operation, if applicable.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" /> class, using the specified output parameters, return value, and number of rows affected by the database operation.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Command" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.AffectedRows" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -85,6 +93,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -120,6 +131,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserted" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -145,6 +160,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserted" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -171,6 +190,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Exception" />
       </Docs>
     </Member>
   </Members>

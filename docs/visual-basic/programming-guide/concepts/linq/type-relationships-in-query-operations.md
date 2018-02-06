@@ -1,7 +1,7 @@
 ---
 title: "Type Relationships in Query Operations (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -22,22 +22,6 @@ ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Type Relationships in Query Operations (Visual Basic)
 Variables used in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query operations are strongly typed and must be compatible with each other. Strong typing is used in the data source, in the query itself, and in the query execution. The following illustration identifies terms used to describe a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. For more information about the parts of a query, see [Basic Query Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).  
@@ -105,7 +89,7 @@ Next
 ```vb  
 ' Method GetTable returns a table of Customer objects.  
  Dim customers As Table(Of Customer) = db.GetTable(Of Customer)()  
- Dim custNames As IEnumerable(Of String) =   
+ Dim custNames As IEnumerable(Of String) =  
      From cust As Customer In customers   
      Where cust.City = "London"   
      Select cust.Name  
@@ -139,9 +123,9 @@ Next
 3.  The type of the iteration variable in the `For Each` loop is the anonymous type created in step 2. Because the type has no usable name, the type of the loop iteration variable must be determined implicitly.  
   
 ## See Also  
- [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)   
- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
+ [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+ [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+ [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)

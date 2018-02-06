@@ -1499,5 +1499,32 @@ End Sub
           <paramref name="entityType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Web.DynamicData.MetaTable" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPrimaryKeyString">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a list of values that represent the primary key for the specified row.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetQuery">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

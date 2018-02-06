@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "certificates [WCF]"
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Working with Certificates
 To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.509 digital certificates are commonly used to authenticate clients and servers, encrypt, and digitally sign messages. This topic briefly explains X.509 digital certificate features and how to use them in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and includes links to topics that explain these concepts further or that show how to accomplish common tasks using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and certificates.  
@@ -177,8 +179,8 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
  In the first release of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels>   
- <xref:System.ServiceModel.Security>   
- <xref:System.ServiceModel>   
- <xref:System.Security.Cryptography.X509Certificates.X509FindType>   
+ <xref:System.ServiceModel.Channels>  
+ <xref:System.ServiceModel.Security>  
+ <xref:System.ServiceModel>  
+ <xref:System.Security.Cryptography.X509Certificates.X509FindType>  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

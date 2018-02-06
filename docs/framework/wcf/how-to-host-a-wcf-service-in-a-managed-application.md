@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 5eb29db0-b6dc-4e77-8c68-0a62f79d743b
 caps.latest.revision: 42
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Host a WCF Service in a Managed Application
 To host a service inside a managed application, embed the code for the service inside the managed application code, define an endpoint for the service either imperatively in code, declaratively through configuration, or using default endpoints, and then create an instance of <xref:System.ServiceModel.ServiceHost>.  
@@ -95,14 +97,14 @@ To host a service inside a managed application, embed the code for the service i
  [!code-vb[CFX_SelfHost4#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#5)]  
   
 ## See Also  
- <xref:System.Uri>   
- <xref:System.Configuration.ConfigurationManager.AppSettings%2A>   
- <xref:System.Configuration.ConfigurationManager>   
- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)   
- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)   
- [Hosting Services](../../../docs/framework/wcf/hosting-services.md)   
- [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)   
- [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
+ <xref:System.Uri>  
+ <xref:System.Configuration.ConfigurationManager.AppSettings%2A>  
+ <xref:System.Configuration.ConfigurationManager>  
+ [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)  
+ [Self-Host](../../../docs/framework/wcf/samples/self-host.md)  
+ [Hosting Services](../../../docs/framework/wcf/hosting-services.md)  
+ [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
+ [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)

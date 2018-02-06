@@ -1,7 +1,7 @@
 ---
 title: "Common Attributes (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Common Attributes (Visual Basic)
 This topic describes the attributes that are most commonly used in Visual Basic programs.  
@@ -266,9 +260,9 @@ End Structure
  Use `VBFixedArrayAttribute` to declare arrays that are fixed in size. Like Visual Basic strings, arrays are of variable length by default. This attribute is useful when serializing or writing data to files.  
   
 ## See Also  
- <xref:System.Reflection>   
- <xref:System.Attribute>   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
+ <xref:System.Reflection>  
+ <xref:System.Attribute>  
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
+ [Attributes](../../../../standard/attributes/index.md)  
+ [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
  [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

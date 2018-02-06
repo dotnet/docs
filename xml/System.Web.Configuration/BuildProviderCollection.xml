@@ -80,6 +80,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.CompilationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -326,5 +327,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.BuildProvider" /> collection item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

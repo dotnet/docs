@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using Application Settings and User Settings
 Starting with the .NET Framework 2.0, you can create and access values that are persisted between application execution sessions. These values are called *settings*. Settings can represent user preferences, or valuable information the application needs to use. For example, you might create a series of settings that store user preferences for the color scheme of an application. Or you might store the connection string that specifies a database that your application uses. Settings allow you to both persist information that is critical to the application outside the code, and to create profiles that store the preferences of individual users.  

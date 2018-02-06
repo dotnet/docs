@@ -1,17 +1,16 @@
 ---
 title: "How to: Change the Value of a Procedure Argument (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "arguments [Visual Basic], passing by reference"
   - "Visual Basic code, procedures"
@@ -24,21 +23,6 @@ ms.assetid: 6fad2368-5da7-4c07-8bf8-0f4e65a1be67
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Change the Value of a Procedure Argument (Visual Basic)
 When you call a procedure, each argument you supply corresponds to one of the parameters defined in the procedure. In some cases, the procedure code can change the value underlying an argument in the calling code. In other cases, the procedure can change only its local copy of an argument.  
@@ -98,13 +82,13 @@ When you call a procedure, each argument you supply corresponds to one of the pa
  There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code. Make sure you expect this value to be changed, and be prepared to check it for validity before using it.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)   
- [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)   
- [How to: Protect a Procedure Argument Against Value Changes](./how-to-protect-a-procedure-argument-against-value-changes.md)   
- [How to: Force an Argument to Be Passed by Value](./how-to-force-an-argument-to-be-passed-by-value.md)   
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)  
+ [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)  
+ [How to: Protect a Procedure Argument Against Value Changes](./how-to-protect-a-procedure-argument-against-value-changes.md)  
+ [How to: Force an Argument to Be Passed by Value](./how-to-force-an-argument-to-be-passed-by-value.md)  
+ [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

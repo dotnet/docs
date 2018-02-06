@@ -244,5 +244,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Net.WebSockets.WebSocketReceiveResult" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

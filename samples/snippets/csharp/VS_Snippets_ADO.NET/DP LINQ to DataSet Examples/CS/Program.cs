@@ -1436,7 +1436,7 @@ namespace LINQtoDataSetSamples
 
         /*[Category("Element Operators")]
         [Title("First - Condition")]
-        [Description("This example uses First to find the first e-mail address that starts with 'caroline'.")]*/
+        [Description("This example uses First to find the first email address that starts with 'caroline'.")]*/
         static void FirstCondition_MQ()
         {
             //<SnippetFirstCondition_MQ>

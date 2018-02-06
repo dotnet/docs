@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ECLRAssemblyIdentityFlags Enumeration
 Indicates the type of an assembly's identity.  

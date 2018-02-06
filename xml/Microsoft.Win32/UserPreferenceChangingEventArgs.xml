@@ -29,6 +29,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.UserPreferenceChangingEventHandler" />
+    <altmember cref="T:Microsoft.Win32.UserPreferenceCategory" />
+    <altmember cref="E:Microsoft.Win32.SystemEvents.UserPreferenceChanging" />
+    <altmember cref="T:Microsoft.Win32.SystemEvents" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +51,10 @@
         <param name="category">One of the <see cref="T:Microsoft.Win32.UserPreferenceCategory" /> values that indicate the user preference category that is changing.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.UserPreferenceChangingEventArgs" /> class using the specified user preference category identifier.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.UserPreferenceChangingEventHandler" />
+        <altmember cref="T:Microsoft.Win32.UserPreferenceCategory" />
+        <altmember cref="E:Microsoft.Win32.SystemEvents.UserPreferenceChanging" />
+        <altmember cref="T:Microsoft.Win32.SystemEvents" />
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -76,6 +84,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.UserPreferenceChangingEventHandler" />
+        <altmember cref="T:Microsoft.Win32.UserPreferenceCategory" />
       </Docs>
     </Member>
   </Members>

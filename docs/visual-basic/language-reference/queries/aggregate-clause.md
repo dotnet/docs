@@ -1,41 +1,24 @@
 ---
 title: "Aggregate Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryAggregateIn"
   - "vb.QueryAggregate"
   - "vb.QueryAggregateInto"
 helpviewer_keywords: 
-  - "Aggregate clause"
-  - "Aggregate statement"
+  - "Aggregate clause [Visual Basic]"
+  - "Aggregate statement [Visual Basic]"
   - "queries [Visual Basic], Aggregate"
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Aggregate Clause (Visual Basic)
 Applies one or more aggregate functions to a collection.  
@@ -98,9 +81,9 @@ Aggregate element [As type] In collection _
  [!code-vb[VbSimpleQuerySamples#19](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_10.vb)]  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)   
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)   
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
+ [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
  [Group By Clause](../../../visual-basic/language-reference/queries/group-by-clause.md)

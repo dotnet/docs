@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::IsTransitionStub Method
 Gets a value that indicates whether an address is inside a stub that will cause a transition to managed code.  

@@ -202,6 +202,7 @@
         <summary>Gets the class that declares this member.</summary>
         <value>The <see cref="T:System.Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Reflection.MemberInfo.DeclaringType" />
       </Docs>
     </Member>
     <Member MemberName="GetAddMethod">
@@ -284,6 +285,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -322,6 +324,7 @@
           <paramref name="attributeType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetRaiseMethod">
@@ -399,6 +402,7 @@
         <exception cref="T:System.MethodAccessException">
           <paramref name="nonPublic" /> is <see langword="true" /> and the method used to add an event handler delegate is non-public, but the caller does not have permission to reflect on non-public methods.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -435,6 +439,9 @@
           <see langword="true" /> if the specified attribute has been applied to this member; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Delegate" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -467,6 +474,7 @@
         <summary>Gets the name of the current member.</summary>
         <value>The name of this member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Reflection.MemberInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -579,5 +587,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns all attributes that are applied to this member.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpointEnum::Next Method
 Gets the specified number of ICorDebugBreakpoint instances from the enumeration, starting at the current position.  

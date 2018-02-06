@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue Interface1
 A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-dimensional array.  

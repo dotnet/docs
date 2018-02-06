@@ -9,21 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "margins"
-  - "FrameworkElement class"
-  - "classes, FrameworkElement"
-  - "padding"
-  - "aligning"
+  - "margins [WPF]"
+  - "padding [WPF]"
+  - "aligning [WPF]"
 ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Alignment, Margins, and Padding Overview
 The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
@@ -150,10 +150,10 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement>   
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>   
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>   
- <xref:System.Windows.FrameworkElement.Margin%2A>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
+ <xref:System.Windows.FrameworkElement>  
+ <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>  
+ <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>  
+ <xref:System.Windows.FrameworkElement.Margin%2A>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
  [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)

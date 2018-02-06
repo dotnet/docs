@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
   - "resource files, deploying"
@@ -38,6 +38,8 @@ caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Packaging and Deploying Resources in Desktop Apps
 Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.  
@@ -60,7 +62,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
  When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center for a complete list of culture names.  
   
 > [!NOTE]
->  For information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) in the MSDN Library.  
+>  For information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md).  
   
 <a name="cpconpackagingdeployingresourcesanchor1"></a>   
 ## The Resource Fallback Process  
@@ -188,7 +190,7 @@ Bon jour!
  Time or budget constraints might prevent you from creating a set of resources for every subculture that your application supports. Instead, you can create a single satellite assembly for a parent culture that all related subcultures can use. For example, you can provide a single English satellite assembly (en) that is retrieved by users who request region-specific English resources, and a single German satellite assembly (de) for users who request region-specific German resources. For example, requests for German as spoken in Germany (de-DE), Austria (de-AT), and Switzerland (de-CH) would fall back to the German satellite assembly (de). The default resources are the final fallback and therefore should be the resources that will be requested by the majority of your application's users, so choose these resources carefully. This approach deploys resources that are less culturally specific, but can significantly reduce your application's localization costs.  
   
 ## See Also  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)   
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
+ [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
+ [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
  [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "open figures, filling"
-  - "figures, filling"
+  - "open figures [Windows Forms], filling"
+  - "figures [Windows Forms], filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Fill Open Figures
 You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> object to the <xref:System.Drawing.Graphics.FillPath%2A> method. The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the fill mode (alternate or winding) currently set for the path. If the path has any open figures, the path is filled as if those figures were closed. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] closes a figure by drawing a straight line from its ending point to its starting point.  
@@ -38,5 +40,5 @@ You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> ob
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See Also  
- <xref:System.Drawing.Drawing2D.GraphicsPath>   
+ <xref:System.Drawing.Drawing2D.GraphicsPath>  
  [Graphics Paths in GDI+](../../../../docs/framework/winforms/advanced/graphics-paths-in-gdi.md)

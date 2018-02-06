@@ -1,13 +1,11 @@
 ---
 title: "XML CDATA Literal (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralCdata"
@@ -19,21 +17,6 @@ ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML CDATA Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XCData> object.  
@@ -77,7 +60,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
  [!code-vb[VbXMLSamples#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-cdata-literal_1.vb)]  
   
 ## See Also  
- <xref:System.Xml.Linq.XCData>   
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
+ <xref:System.Xml.Linq.XCData>  
+ [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

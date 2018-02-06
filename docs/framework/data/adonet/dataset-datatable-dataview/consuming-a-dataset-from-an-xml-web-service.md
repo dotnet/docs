@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Consuming a DataSet from an XML Web Service
 The <xref:System.Data.DataSet> was architected with a disconnected design, in part to facilitate the convenient transport of data over the Internet. The **DataSet** is "serializable" in that it can be specified as an input to or output from XML Web services without any additional coding required to stream the contents of the **DataSet** from an XML Web service to a client and back. The **DataSet** is implicitly converted to an XML stream using the DiffGram format, sent over the network, and then reconstructed from the XML stream as a **DataSet** on the receiving end. This gives you a very simple and flexible method for transmitting and returning relational data using XML Web services. For more information about the DiffGram format, see [DiffGrams](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md).  
@@ -24,7 +26,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
  The following example shows how to create an XML Web service and client that use the **DataSet** to transport relational data (including modified data) and resolve any updates back to the original data source.  
   
 > [!NOTE]
->  We recommend that you always consider security implications when creating an XML Web service. For information on securing an XML Web service, see [Securing XML Web Services Created Using ASP.NET](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c).  
+>  We recommend that you always consider security implications when creating an XML Web service. For information on securing an XML Web service, see [Securing XML Web Services Created Using ASP.NET](http://msdn.microsoft.com/library/354b2ab1-2782-4542-b32a-dc560178b90c).  
   
 ### To create an XML Web service that returns and consumes a DataSet  
   
@@ -266,11 +268,11 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     ```  
   
 ## See Also  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)   
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)   
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)   
- [Populating a DataSet from a DataAdapter](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)   
- [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)   
- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)   
- [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88)   
+ [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
+ [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
+ [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
+ [Populating a DataSet from a DataAdapter](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)  
+ [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
+ [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
+ [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

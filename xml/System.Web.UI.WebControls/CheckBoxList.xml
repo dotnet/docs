@@ -151,6 +151,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -230,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -274,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -491,6 +495,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -584,6 +590,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -734,6 +742,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -798,6 +808,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatedItemCount">
@@ -872,6 +884,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -909,6 +923,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -939,6 +954,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -985,6 +1001,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
@@ -1016,6 +1033,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader">
@@ -1047,6 +1065,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators">
@@ -1078,6 +1097,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RenderItem">
@@ -1127,6 +1147,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
@@ -1157,6 +1178,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1202,6 +1224,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified label text alignment is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
       </Docs>
     </Member>
   </Members>

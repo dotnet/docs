@@ -533,6 +533,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="T:System.Web.UI.WebControls.TableHeaderRow" />
+    <altmember cref="T:System.Web.UI.WebControls.TableFooterRow" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCellCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -669,6 +677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Table.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -712,6 +721,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Table.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -746,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Table.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -779,6 +790,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Table.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -817,6 +829,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -901,6 +915,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -946,6 +961,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1004,6 +1020,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Table.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1092,6 +1112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1118,6 +1140,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">

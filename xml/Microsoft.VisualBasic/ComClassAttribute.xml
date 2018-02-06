@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Runtime.InteropServices" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName="ClassID">
@@ -166,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName="EventID">
@@ -191,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName="InterfaceID">
@@ -216,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
     <Member MemberName="InterfaceShadows">
@@ -241,7 +249,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime.InteropServices" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

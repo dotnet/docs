@@ -1,6 +1,6 @@
 ---
 title: "Value Types (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,20 +15,6 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Value Types (C# Reference)
 The value types consist of two main categories:  
@@ -115,9 +101,9 @@ Point p = new Point(); // Invoke default constructor for the struct.
  For information about formatting the output of numeric types, see [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
  [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

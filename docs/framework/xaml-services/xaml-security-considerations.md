@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAML Security Considerations
 This topic describes best practices for security in applications when you use XAML and .NET Framework XAML Services API.  

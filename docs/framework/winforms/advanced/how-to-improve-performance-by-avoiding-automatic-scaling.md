@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "automatic scaling"
   - "images [Windows Forms], improving performance"
   - "images [Windows Forms], using without automatic scaling"
-  - "performance, improving image"
+  - "performance [Windows Forms], improving image"
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Improve Performance by Avoiding Automatic Scaling
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] may automatically scale an image as you draw it, which would decrease performance. Alternatively, you can control the scaling of the image by passing the dimensions of the destination rectangle to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
@@ -47,5 +49,5 @@ manager: "wpickett"
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace Texture.jpg with an image name and path that are valid on your system.  
   
 ## See Also  
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)   
+ [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)  
  [Working with Images, Bitmaps, Icons, and Metafiles](../../../../docs/framework/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles.md)

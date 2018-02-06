@@ -72,6 +72,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="join">
@@ -102,6 +103,7 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="pop">
@@ -130,6 +132,7 @@
         <returns>The last element of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="push">
@@ -166,6 +169,7 @@
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="reverse">
@@ -195,6 +199,7 @@
           <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="shift">
@@ -223,6 +228,7 @@
         <returns>The first element of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="slice">
@@ -288,6 +294,7 @@
           <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="splice">
@@ -358,6 +365,7 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" /> and separates them with a <see cref="P:System.Globalization.TextInfo.ListSeparator" /> and a space.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -386,6 +394,7 @@
         <returns>A string that concatenates the elements of <paramref name="thisob" /> and separates them with a comma.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
     <Member MemberName="unshift">
@@ -422,6 +431,7 @@
         <returns>The new length of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayObject" />
       </Docs>
     </Member>
   </Members>

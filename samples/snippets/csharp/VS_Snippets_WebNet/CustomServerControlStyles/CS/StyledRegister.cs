@@ -121,7 +121,7 @@ namespace Samples.AspNet.CS.Controls
         Bindable(true),
         Category("Default"),
         DefaultValue(""),
-        Description("The e-mail address.")
+        Description("The email address.")
         ]
         public string Email
         {
@@ -142,7 +142,7 @@ namespace Samples.AspNet.CS.Controls
         Category("Appearance"),
         DefaultValue(""),
         Description(
-            "Error message of the e-mail validator.")
+            "Error message of the email validator.")
         ]
         public string EmailErrorMessage
         {
@@ -163,7 +163,7 @@ namespace Samples.AspNet.CS.Controls
         Bindable(true),
         Category("Appearance"),
         DefaultValue(""),
-        Description("The text for the e-mail label.")
+        Description("The text for the email label.")
         ]
         public string EmailLabelText
         {

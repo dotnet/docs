@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Callback Functions
 A callback function is code within a managed application that helps an unmanaged DLL function complete a task. Calls to a callback function pass indirectly from a managed application, through a DLL function, and back to the managed implementation. Some of the many DLL functions called with platform invoke require a callback function in managed code to run properly.  
@@ -31,5 +33,5 @@ Callback function and implementation
  Callback functions are ideal for use in situations in which a task is performed repeatedly. Another common usage is with enumeration functions, such as **EnumFontFamilies**, **EnumPrinters**, and **EnumWindows** in the Win32 API. The **EnumWindows** function enumerates through all existing windows on your computer, calling the callback function to perform a task on each window. For instructions and an example, see [How to: Implement Callback Functions](../../../docs/framework/interop/how-to-implement-callback-functions.md).  
   
 ## See Also  
- [How to: Implement Callback Functions](../../../docs/framework/interop/how-to-implement-callback-functions.md)   
+ [How to: Implement Callback Functions](../../../docs/framework/interop/how-to-implement-callback-functions.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

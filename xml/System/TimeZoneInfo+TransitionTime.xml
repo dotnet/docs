@@ -758,7 +758,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeZoneInfo.TransitionTime.Day" />
+        <altmember cref="P:System.TimeZoneInfo.TransitionTime.Month" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects have identical values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

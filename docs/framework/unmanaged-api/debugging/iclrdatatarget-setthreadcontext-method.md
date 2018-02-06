@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataTarget::SetThreadContext Method
 Sets the current context of the specified thread in the target process. This method is called by the common language runtime (CLR) data access services.  

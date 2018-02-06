@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
 caps.latest.revision: 30
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
 Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
@@ -109,6 +111,6 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
  For example, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint configured to use HTTP digest authentication must reside in an IIS virtual directory that is also configured to allow HTTP digest authentication. Unmatched combinations of IIS settings and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint settings result in an error during service activation.  
   
 ## See Also  
- [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   
- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)   
+ [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
+ [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

@@ -20,6 +20,8 @@ caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Run Partially Trusted Code in a Sandbox
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

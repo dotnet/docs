@@ -32,6 +32,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
   </Docs>
   <Members>
     <Member MemberName="Edit">

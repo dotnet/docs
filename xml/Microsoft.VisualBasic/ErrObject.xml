@@ -39,6 +39,7 @@ End If
   
  ]]></format>
     </remarks>
+    <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -90,6 +91,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -122,6 +125,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Erl">
@@ -159,6 +164,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="GetException">
@@ -192,6 +199,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="HelpContext">
@@ -227,6 +236,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="HelpFile">
@@ -262,6 +273,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="LastDllError">
@@ -293,7 +306,7 @@ End If
 > [!NOTE]
 >  The <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A> property is protected by <xref:System.Security.Permissions.SecurityAction.LinkDemand>, which helps prevent it from being accessed from untrusted code. However, <xref:System.Security.Permissions.SecurityAction.LinkDemand> requires only the immediate caller to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> permission. If your code can be called from partially trusted code, exposing the value of <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A> without validation is a security risk.  
 >   
->  For important limitations about how to use the <xref:System.Security.Permissions.SecurityAction.LinkDemand> member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5). For more information about permissions, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  For important limitations about how to use the <xref:System.Security.Permissions.SecurityAction.LinkDemand> member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/library/1ab877f2-70f4-4e0d-8116-943999dfe8f5). For more information about permissions, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  Note   For smart devices this property always returns zero.  
   
@@ -310,6 +323,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -354,6 +369,8 @@ End If
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is greater than 65535.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Raise">
@@ -399,6 +416,9 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -433,6 +453,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
   </Members>

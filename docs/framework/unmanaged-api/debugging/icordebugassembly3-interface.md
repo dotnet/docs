@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly3 Interface
 Logically extends the ICorDebugAssembly interface to provide support for container assemblies and their contained assemblies.  
@@ -40,5 +42,5 @@ Logically extends the ICorDebugAssembly interface to provide support for contain
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

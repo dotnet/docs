@@ -1,13 +1,9 @@
 ---
 title: "&lt;include&gt; (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "include"
@@ -19,21 +15,6 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;include&gt; (C# Programming Guide)
 ## Syntax  
@@ -63,7 +44,7 @@ translation.priority.ht:
 ## Example  
  This is a multifile example. The first file, which uses \<include>, is listed below:  
   
- [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
   
  The second file, xml_include_tag.doc, contains the following documentation comments:  
   
@@ -110,5 +91,5 @@ The summary for this other type.
 ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

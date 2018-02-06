@@ -41,7 +41,7 @@
         runat="server" 
         onclick="OnSendMailClick" 
         text="Send" 
-        tooltip="Click here to send a test E-mail message." />
+        tooltip="Click here to send a test Email message." />
     </form>
   </body>
 </html>

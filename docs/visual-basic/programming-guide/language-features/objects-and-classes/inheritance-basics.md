@@ -1,7 +1,7 @@
 ---
 title: "Inheritance Basics (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,41 +9,27 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "derived classes, inheritance"
-  - "MyClass keyword, using"
-  - "MyBase keyword, using"
-  - "Inherits statement, inheritance"
+  - "derived classes [Visual Basic], inheritance"
+  - "MyClass keyword [Visual Basic], using"
+  - "MyBase keyword [Visual Basic], using"
+  - "Inherits statement [Visual Basic], inheritance"
   - "overriding, Overridable keyword"
-  - "MustInherit keyword, using"
-  - "Overrides keyword, using"
+  - "MustInherit keyword [Visual Basic], using"
+  - "Overrides keyword [Visual Basic], using"
   - "inheritance"
-  - "MustInherit classes"
-  - "MustOverride keyword, using"
+  - "MustInherit classes [Visual Basic]"
+  - "MustOverride keyword [Visual Basic], using"
   - "classes [Visual Basic], derived"
-  - "NotInheritable keyword, using"
-  - "base classes, extending properties and methods"
-  - "NotOverridable keyword, using"
-  - "base classes, inheritance"
-  - "abstract classes, inheritance"
+  - "NotInheritable keyword [Visual Basic], using"
+  - "base classes [Visual Basic], extending properties and methods [Visual Basic]"
+  - "NotOverridable keyword [Visual Basic], using"
+  - "base classes [Visual Basic], inheritance"
+  - "abstract classes [Visual Basic], inheritance"
   - "overriding, Overrides keyword"
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inheritance Basics (Visual Basic)
 The `Inherits` statement is used to declare a new class, called a *derived class*, based on an existing class, known as a *base class*. Derived classes inherit, and can extend, the properties, methods, events, fields, and constants defined in the base class. The following section describes some of the rules for inheritance, and the modifiers you can use to change the way classes inherit or are inherited:  
@@ -161,5 +147,5 @@ End Class
  Even though `derivedClass` overrides `testMethod`, the `MyClass` keyword in `useMyClass` nullifies the effects of overriding, and the compiler resolves the call to the base class version of `testMethod`.  
   
 ## See Also  
- [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)   
+ [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)  
  [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

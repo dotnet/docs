@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Terminal Services rendering"
-  - "opacity"
+  - "Terminal Services rendering [WPF]"
+  - "opacity [WPF]"
   - "hit-test objects [WPF]"
-  - "ScrollBarVisibility enumeration"
-  - "brushes, performance"
+  - "ScrollBarVisibility enumeration [WPF]"
+  - "brushes [WPF], performance"
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Optimizing Performance: Other Recommendations
 <a name="introduction"></a> This topic provides performance recommendations in addition to the ones covered by the topics in the [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md) section.  
@@ -79,12 +81,12 @@ manager: "wpickett"
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
 ## See Also  
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)   
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)   
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)   
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
+ [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
+ [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
+ [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
+ [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
  [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

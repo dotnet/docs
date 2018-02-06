@@ -57,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedIndices" />
+    <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedItems" />
+    <altmember cref="P:System.Windows.Forms.CheckedListBox.Items" />
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -191,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -252,6 +256,7 @@
  -or-  
   
  The <paramref name="index" /> is not in the collection.</exception>
+        <altmember cref="M:System.Windows.Forms.CheckedListBox.CheckedIndexCollection.IndexOf(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">

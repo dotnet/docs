@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.AddIn.Pipeline.CollectionAdapters> class uses an <xref:System.AddIn.Contract.IListContract%601> interface to pass collections, in both directions, between the host and the add-in. It is recommended that you use the <xref:System.AddIn.Pipeline.CollectionAdapters> class instead of using this class directly in your code. For an example, see [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5).  
+ The <xref:System.AddIn.Pipeline.CollectionAdapters> class uses an <xref:System.AddIn.Contract.IListContract%601> interface to pass collections, in both directions, between the host and the add-in. It is recommended that you use the <xref:System.AddIn.Pipeline.CollectionAdapters> class instead of using this class directly in your code. For an example, see [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5).  
   
  This class can be used to pass objects by reference between application domains because the objects are not serialized.  
   

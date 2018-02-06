@@ -194,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -212,6 +213,7 @@
       <Docs>
         <summary>Binds a data source to the invoked server control and all its child controls.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -260,6 +262,8 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.Description" /> to enable user personalization of the control's description.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -278,6 +282,7 @@
       <Docs>
         <summary>Allows the developer of a designer for a composite part control to recreate the control's child controls on the design surface.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -325,6 +330,8 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /> to enable user personalization of the title.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
       </Docs>
     </Member>
   </Members>

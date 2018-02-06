@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -276,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -487,6 +489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.SecurityException.GrantedSet" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -746,6 +749,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GrantedSet">

@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostThreadPoolManager::GetMinThreads Method
 Gets the minimum number of idle threads that the host maintains in the thread pool in anticipation of requests.  
@@ -68,8 +70,8 @@ HRESULT GetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.Threading.ThreadPool.GetMinThreads%2A>   
- <xref:System.Threading.ThreadPool>   
- [GetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getmaxthreads-method.md)   
- [SetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setminthreads-method.md)   
+ <xref:System.Threading.ThreadPool.GetMinThreads%2A>  
+ <xref:System.Threading.ThreadPool>  
+ [GetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getmaxthreads-method.md)  
+ [SetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setminthreads-method.md)  
  [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

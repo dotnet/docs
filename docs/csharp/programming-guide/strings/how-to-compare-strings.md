@@ -1,6 +1,6 @@
 ---
 title: "How to: Compare strings (C# Programming Guide)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -45,8 +45,8 @@ The following example shows how to sort and search for strings in an array in a 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either `Ordinal` or `OrdinalIgnoreCase`.
 
 ## See also
- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>   
- <xref:System.StringComparer?displayProperty=nameWithType>   
- [Strings](../../../csharp/programming-guide/strings/index.md)   
- [Comparing Strings](../../../standard/base-types/comparing.md)   
+ <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
+ <xref:System.StringComparer?displayProperty=nameWithType>  
+ [Strings](../../../csharp/programming-guide/strings/index.md)  
+ [Comparing Strings](../../../standard/base-types/comparing.md)  
  [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)

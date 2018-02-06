@@ -43,7 +43,7 @@
   
  All items displayed in the list control are stored in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection. You can programmatically specify or determine the index of a selected item in the list control by using the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property. The properties of the selected item can be accessed by using the <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> property.  
   
- The <xref:System.Web.UI.WebControls.ListControl> class provides the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event, which is raised when the selection in the list control changes between posts to the server. This allows you to provide a custom handler for this event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ The <xref:System.Web.UI.WebControls.ListControl> class provides the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event, which is raised when the selection in the list control changes between posts to the server. This allows you to provide a custom handler for this event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ListControl> class implements the <xref:System.Web.UI.IEditableTextControl> interface so that derived list-type controls can be used in the template mode of other controls.  
   
@@ -60,6 +60,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+    <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+    <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+    <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +123,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method overrides the <see cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="AppendDataBoundItems">
@@ -164,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -254,6 +261,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="ClearSelection">
@@ -279,6 +288,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Selected" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -324,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -453,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataTextField" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -500,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -531,6 +546,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -552,6 +569,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -585,6 +603,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ListControl.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -614,7 +634,7 @@
 > [!NOTE]
 >  A list control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for the list control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -631,6 +651,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListControl.SelectedIndexChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -664,6 +685,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ListControl.OnTextChanged(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ListControl.OnTextChanged(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ListControl.TextChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -694,6 +717,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The cached value of <see cref="P:System.Web.UI.WebControls.ListControl.SelectedIndex" /> is out of range.</exception>
         <exception cref="T:System.ArgumentException">The cached values of <see cref="P:System.Web.UI.WebControls.ListControl.SelectedIndex" /> and <see cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" /> do not match.</exception>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -719,6 +743,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -747,6 +775,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -776,6 +805,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -831,6 +861,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index was set to less than -1, or greater than or equal to the number of items on the list at the time the list is rendered.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -856,7 +887,7 @@
 > [!NOTE]
 >  A list control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for the list control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -868,6 +899,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -912,6 +944,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -986,6 +1020,12 @@ if(DropDownList1.Items.FindByValue("2") != null) {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not in the list of available values and view state or other state has been loaded (a postback has been performed).</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataValueField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="SetPostDataSelection">
@@ -1089,6 +1129,7 @@ if(DropDownList1.Items.FindByValue("2") != null) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1111,7 +1152,7 @@ if(DropDownList1.Items.FindByValue("2") != null) {
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListControl.TextChanged> event is raised when the <xref:System.Web.UI.WebControls.ListControl.Text%2A> and <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> properties change.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1120,6 +1161,8 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ListControl.OnTextChanged(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ListControl.OnTextChanged(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Text" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1148,6 +1191,8 @@ if(DropDownList1.Items.FindByValue("2") != null) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1187,6 +1232,9 @@ if(DropDownList1.Items.FindByValue("2") != null) {
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
     <Member MemberName="VerifyMultiSelect">

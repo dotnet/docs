@@ -10,17 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "classes, RotateTransform"
-  - "graphics, spinning elements"
-  - "classes, DoubleAnimation"
-  - "DoubleAnimation class"
-  - "RotateTransform class"
-  - "spinning elements"
+  - "graphics [WPF], spinning elements"
+  - "spinning elements [WPF]"
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Make an Element Spin in Place
 This example shows how to make an element spin by using a <xref:System.Windows.Media.RotateTransform> and a <xref:System.Windows.Media.Animation.DoubleAnimation>.  
@@ -33,5 +31,5 @@ This example shows how to make an element spin by using a <xref:System.Windows.M
  For the complete sample, which includes more transformation examples, see [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 ## See Also  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

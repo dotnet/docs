@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTitle" />
+    <altmember cref="P:System.Web.UI.Page.Header" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +115,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Name" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="HttpEquiv">
@@ -148,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Name" />
+        <altmember cref="T:System.Web.HttpResponse" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -191,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Content" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -215,13 +223,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlMeta> control renders a <xref:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd> HTML bracket (/>) on the `<meta>` element if the client's browser is XHTML compliant. For more information on configuring ASP.NET for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/en-us/42483a54-f1ae-44e1-88e6-4370f8690149).  
+ The <xref:System.Web.UI.HtmlControls.HtmlMeta> control renders a <xref:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd> HTML bracket (/>) on the `<meta>` element if the client's browser is XHTML compliant. For more information on configuring ASP.NET for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/library/42483a54-f1ae-44e1-88e6-4370f8690149).  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.HtmlControls.HtmlMeta" /> control, override the <see cref="M:System.Web.UI.HtmlControls.HtmlMeta.Render(System.Web.UI.HtmlTextWriter)" /> method to provide custom rendering.</para>
         </block>
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd" />
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -265,6 +274,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Content" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlMeta.Name" />
       </Docs>
     </Member>
   </Members>

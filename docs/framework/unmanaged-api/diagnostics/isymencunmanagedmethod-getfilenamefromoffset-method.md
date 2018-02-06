@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymENCUnmanagedMethod::GetFileNameFromOffset Method
 Gets the file name for the line associated with an offset.  

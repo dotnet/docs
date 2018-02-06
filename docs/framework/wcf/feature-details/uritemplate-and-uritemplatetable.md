@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # UriTemplate and UriTemplateTable
 Web developers require the ability to describe the shape and layout of the URIs that their services respond to. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] added two new classes to give developers control over their URIs. <xref:System.UriTemplate> and <xref:System.UriTemplateTable> form the basis of the URI-based dispatch engine in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. These classes can also be used on their own, allowing developers to take advantage of templates and the URI mapping mechanism without implementing a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
@@ -339,8 +341,8 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 >  The characters á and Á are considered to be different characters when they appear as part of a URI path or <xref:System.UriTemplate> path segment literal (but the characters a and A are considered to be the same). The characters á and Á are considered to be the same characters when they appear as part of a <xref:System.UriTemplate> {variableName} or a query string (and a and A are also considered to be the same characters).  
   
 ## See Also  
- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)   
- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)   
- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)   
- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)   
+ [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
+ [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)  
+ [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)  
+ [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
  [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)

@@ -1,39 +1,22 @@
 ---
 title: "Take Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryTake"
 helpviewer_keywords: 
-  - "Take statement"
+  - "Take statement [Visual Basic]"
   - "queries [Visual Basic], Take"
-  - "Take clause"
+  - "Take clause [Visual Basic]"
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Take Clause (Visual Basic)
 Returns a specified number of contiguous elements from the start of a collection.  
@@ -63,10 +46,10 @@ Take count
  [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)   
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)   
- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)   
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
+ [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
+ [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)  
  [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)

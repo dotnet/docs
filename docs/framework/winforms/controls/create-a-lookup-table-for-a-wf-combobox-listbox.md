@@ -9,23 +9,25 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], creating lookup tables"
   - "lookup tables"
-  - "list boxes, lookup tables"
+  - "list boxes [Windows Forms], lookup tables"
   - "ListBox control [Windows Forms], lookup tables"
   - "ComboBox control [Windows Forms], lookup table"
-  - "lookup tables, creating for controls"
-  - "combo boxes, lookup tables"
+  - "lookup tables [Windows Forms], creating for controls"
+  - "combo boxes [Windows Forms], lookup tables"
   - "ListBox control [Windows Forms], creating lookup tables"
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control
 Sometimes it is useful to display data in a user-friendly format on a Windows Form, but store the data in a format that is more meaningful to your program. For example, an order form for food might display the menu items by name in a list box. However, the data table recording the order would contain the unique ID numbers representing the food. The following tables show an example of how to store and display order-form data for food.  
@@ -77,8 +79,8 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     ```  
   
 ## See Also  
- [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)   
- [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)   
- [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)   
- [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)   
+ [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
+ [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)  
+ [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)  
+ [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)  
  [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

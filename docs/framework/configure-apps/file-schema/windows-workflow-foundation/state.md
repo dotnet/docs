@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 619414f2-61c2-4427-9977-d05009e343db
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;state&gt;
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
@@ -101,5 +103,5 @@ Represents a collection of subscribed states from the tracked workflow instance 
  <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>       
  <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>       
  <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>      
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
+ [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

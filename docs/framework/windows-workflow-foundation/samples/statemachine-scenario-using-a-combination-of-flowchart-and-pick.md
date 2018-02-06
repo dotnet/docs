@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 88d81395-f7a3-41d8-8439-20a425c538a6
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StateMachine Scenario Using a Combination of FlowChart and Pick
 This sample demonstrates how to implement a simple stopwatch scenario using a combination of the <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Pick> activities. It uses Receive and Send within the Pick activity to listen for stopwatch events.  
@@ -60,6 +62,4 @@ This sample demonstrates how to implement a simple stopwatch scenario using a co
 >   
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\StateMachineWithPick`  
-  
-## See Also
+>  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\StateMachineWithPick`

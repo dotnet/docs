@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], adding buttons"
   - "ToolBar control [Windows Forms], adding buttons"
@@ -24,6 +24,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Buttons to a ToolBar Control
 > [!NOTE]
@@ -155,8 +157,8 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolBar>   
- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)   
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)   
- [ToolBar Control Overview](../../../../docs/framework/winforms/controls/toolbar-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolBar>  
+ [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)  
+ [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
+ [ToolBar Control Overview](../../../../docs/framework/winforms/controls/toolbar-control-overview-windows-forms.md)  
  [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)

@@ -1,57 +1,40 @@
 ---
 title: "ReDim Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ReDim"
   - "vb.Preserve"
 helpviewer_keywords: 
-  - "fixed-length strings, declaring"
-  - "ReDim statement, syntax"
-  - "dynamic arrays, ReDim statement"
+  - "fixed-length strings [Visual Basic], declaring"
+  - "ReDim statement [Visual Basic], syntax"
+  - "dynamic arrays [Visual Basic], ReDim statement"
   - "arrays [Visual Basic], reallocating"
   - "arrays [Visual Basic], reinitializing"
   - "arrays [Visual Basic], dimensions"
   - "scalars, and arrays"
   - "scalars"
-  - "declarations, dynamic arrays"
+  - "declarations [Visual Basic], dynamic arrays"
   - "variables [Visual Basic], scalar"
-  - "ReDim statement"
+  - "ReDim statement [Visual Basic]"
   - "data types [Visual Basic], assigning"
-  - "As keyword, in ReDim statement"
-  - "To keyword, ReDim statement"
+  - "As keyword [Visual Basic], in ReDim statement"
+  - "To keyword [Visual Basic], ReDim statement"
   - "arrays [Visual Basic], declaring"
-  - "Preserve keyword, ReDim statement"
-  - "storage, allocating"
+  - "Preserve keyword [Visual Basic], ReDim statement"
+  - "storage [Visual Basic], allocating"
   - "arrays [Visual Basic], and scalars"
-  - "declaration statements"
-  - "scalar variables"
+  - "declaration statements [Visual Basic]"
+  - "scalar variables [Visual Basic]"
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ReDim Statement (Visual Basic)
 Reallocates storage space for an array variable.  
@@ -121,9 +104,9 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
  For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## See Also  
- <xref:System.IndexOutOfRangeException>   
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)   
- [Nothing](../../../visual-basic/language-reference/nothing.md)   
+ <xref:System.IndexOutOfRangeException>  
+ [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)  
+ [Nothing](../../../visual-basic/language-reference/nothing.md)  
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

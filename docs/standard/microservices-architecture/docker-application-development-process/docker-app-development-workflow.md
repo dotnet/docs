@@ -4,10 +4,13 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Development workflow for Docker apps
 
@@ -33,7 +36,7 @@ An application is composed of your own services plus additional libraries (depen
 
 In this guide, this whole process is detailed and every major step is explained by focusing on a Visual Studio environment.
 
-When you are using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you are using Visual Studio. For more details about working in a CLI environment, refer to the eBook [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](http://aka.ms/dockerlifecycleebook/).
+When you are using an editor/CLI development approach (for example, Visual Studio Code plus Docker CLI on macOS or Windows), you need to know every step, generally in more detail than if you are using Visual Studio. For more details about working in a CLI environment, refer to the e-book [Containerized Docker Application lifecycle with Microsoft Platforms and Tools](http://aka.ms/dockerlifecycleebook/).
 
 When you are using Visual Studio 2015 or Visual Studio 2017, many of those steps are handled for you, which dramatically improves your productivity. This is especially true when you are using Visual Studio 2017 and targeting multi-container applications. For instance, with just one mouse click, Visual Studio adds the Dockerfile and docker-compose.yml file to your projects with the configuration for your application. When you run the application in Visual Studio, it builds the Docker image and runs the multi-container application directly in Docker; it even allows you to debug several containers at once. These features will boost your development speed.
 
@@ -43,7 +46,7 @@ However, just because Visual Studio makes those steps automatic does not mean th
 
 ## Step 1. Start coding and create your initial application or service baseline
 
-Developing a Docker application is similar to the way you develop an application without Docker. The difference is that while developing for Docker, you are deploying and testing your application or services running within Docker containers in your local environment (either a Linux VM or a Windows VM).
+Developing a Docker application is similar to the way you develop an application without Docker. The difference is that while developing for Docker, you are deploying and testing your application or services running within Docker containers in your local environment. The container can be either a Linux container or a Windows container.
 
 ### Set up your local environment with Visual Studio
 
@@ -93,14 +96,14 @@ This action on a project (like an ASP.NET Web application or Web API service) ad
 
 You usually build a custom image for your container on top of a base image you can get from an official repository at the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing aspnetcore image.
 
-Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core and Linux, the image to use is microsoft/aspnetcore:1.1. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding FROM microsoft/aspnetcore:1.1 to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
+Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is microsoft/aspnetcore:2.0. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding FROM microsoft/aspnetcore:2.0 to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
 Using an official .NET image repository from Docker Hub with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
 ```
-FROM microsoft/aspnetcore:1.1
+FROM microsoft/aspnetcore:2.0
   
 ARG source
   
@@ -113,7 +116,7 @@ COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
-In this case, the container is based on version 1.1 of the official ASP.NET Core Docker image for Linux; this is the setting FROM microsoft/aspnetcore:1.1. (For further details about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
+In this case, the container is based on version 2.0 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM microsoft/aspnetcore:2.0`. (For further details about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you are using. For instance, the ENTRYPOINT line with \["dotnet", "MySingleContainerWebApp.dll"\] tells Docker to run a .NET Core application. If you are using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
@@ -125,17 +128,27 @@ You can specify additional configuration settings in the Dockerfile, depending o
 -   **Build your own image**. In the official Docker documentation.
     [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
 
-### Using multi-platform image repositories
+### Using multi-arch image repositories
 
-A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms. For example, the [microsoft/dotnet](https://hub.docker.com/r/microsoft/aspnetcore/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name with different tags, as shown in the following examples:
+A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [microsoft/dotnet](https://hub.docker.com/r/microsoft/aspnetcore/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
 
--   microsoft/dotnet:1.1-runtime
-    .NET Core 1.1 runtime-only on Linux Debian
+If you specify a tag, targeting a platform that is explicit like in the following cases:
 
--   microsoft/dotnet:1.1-runtime-nanoserver
-    .NET Core 1.1 runtime-only on Windows Nano Server
+-   **microsoft/aspnetcore:2.0.0-jessie**
 
-In the future, it will be possible to use the same repo name and tag targeting multiple operating systems. That way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
+        .NET Core 2.0 runtime-only on Linux 
+
+-   **microsoft/aspnetcore:2.0.0-nanoserver**
+
+        .NET Core 2.0 runtime-only on Windows Nano Server
+
+But, and this is new since mid-2017, if you specify the same image name, even with the same tag, the new multi-arch images (like the aspnetcore image which supports multi-arch) will use the Linux or Windows version depending on the Docker host OS you are deploying, as shown in the following example:
+
+-   **microsoft/aspnetcore:2.0**
+
+        Multi-arch: .NET Core 2.0 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
+
+This way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
 
 ### Option B: Creating your base image from scratch
 
@@ -143,6 +156,8 @@ You can create your own Docker base image from scratch. This scenario is not rec
 
 ### Additional resources
 
+-   **Multi-arch .NET Core images**.
+https://github.com/dotnet/announcements/issues/14 
 -   **Create a base image**. Official Docker documentation.
     [*https://docs.docker.com/engine/userguide/eng-image/baseimages/*](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
 
@@ -187,10 +202,10 @@ The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file let
 To use a docker-compose.yml file, you need to create the file in your main or root solution folder, with content similar to that in the following example:
 
 ```yml
-version: '2'
+version: '3'
   
 services:
-  
+
   webmvc:
     image: eshop/web
     environment:
@@ -204,16 +219,17 @@ services:
 
   catalog.api:
     image: eshop/catalog.api
-    environment: ConnectionString=Server=catalogdata;Port=5432;Database=postgres;…
+    environment: 
+      - ConnectionString=Server=sql.data;Database=CatalogDB;…
     ports:
       - "81:80"
     depends_on:
-      - postgres.data
+      - sql.data
 
   ordering.api:
     image: eshop/ordering.api
     environment:
-      - ConnectionString=Server=ordering.data;Database=OrderingDb;…
+      - ConnectionString=Server=sql.data;Database=OrderingDb;…
     ports:
       - "82:80"
     extra_hosts:
@@ -229,25 +245,21 @@ services:
     ports:
       - "5433:1433"
 
-  postgres.data:
-    image: postgres:latest
-    environment:
-      POSTGRES_PASSWORD: tempPwd
 ```
 
 Note that this docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which always applies, plus configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how you can split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
 
-The docker-compose.yml file example defines five services: the webmvc service (a web application), two microservices (catalog.api and ordering.api), and two data source containers (sql.data based on SQL Server for Linux running as a container and postgres.data as a Postgres database). Each service is deployed as a container, so a Docker image is required for each.
+The docker-compose.yml file example defines five services: the webmvc service (a web application), two microservices (catalog.api and ordering.api), and one data source container, sql.data, based on SQL Server for Linux running as a container. Each service is deployed as a container, so a Docker image is required for each.
 
 The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
 
--   Uses the pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
+-   Uses a pre-built eshop/web:latest image. However, you could also configure the image to be built as part of the docker-compose execution with an additional configuration based on a build: section in the docker-compose file.
 
 -   Initializes two environment variables (CatalogUrl and OrderingUrl).
 
 -   Forwards the exposed port 80 on the container to the external port 80 on the host machine.
 
--   Links the web service to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
+-   Links the web app to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
@@ -313,7 +325,7 @@ Running a multi-container application using Visual Studio 2017 cannot get simple
 
 As mentioned before, each time you add Docker solution support to a project within a solution, that project is configured in the global (solution-level) docker-compose.yml file, which lets you run or debug the whole solution at once. Visual Studio will start one container for each project that has Docker solution support enabled, and perform all the internal steps for you (dotnet publish, docker build, etc.).
 
-The important point here is that, as shown in Figure 5-12, in Visual Studio 2017 there is an additional **Docker** command under the F5 key. This option lets you run or debug a multi-container application by running all the containers that are defined in the docker-compose.yml files at the solution level. The ability to debug multiple-container solutions means that you can set several breakpoints, each breakpoint in a different project (container), and while debugging from Visual Studio you will stop at breakpoints defined in different projects and running on different containers.
+The important point here is that, as shown in Figure 5-12, in Visual Studio 2017 there is an additional **Docker** command for the F5 key action. This option lets you run or debug a multi-container application by running all the containers that are defined in the docker-compose.yml files at the solution level. The ability to debug multiple-container solutions means that you can set several breakpoints, each breakpoint in a different project (container), and while debugging from Visual Studio you will stop at breakpoints defined in different projects and running on different containers.
 
 ![](./media/image16.png)
 

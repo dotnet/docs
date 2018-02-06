@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Serialization and Metadata
 If your app serializes and deserializes objects, you may need to add entries to your runtime directives (.rd.xml) file to ensure that the necessary metadata is present at run time. There are two categories of serializers, and each requires different handling in your runtime directives file:  
@@ -69,7 +71,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
  For information about the syntax used in the example, see [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md).  
   
 ## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)   
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)   
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
+ [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
  [\<Namespace> Element](../../../docs/framework/net-native/namespace-element-net-native.md)

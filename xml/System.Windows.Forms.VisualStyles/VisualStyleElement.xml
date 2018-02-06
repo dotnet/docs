@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleInformation" />
   </Docs>
   <Members>
     <Member MemberName="ClassName">
@@ -68,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.State" />
       </Docs>
     </Member>
     <Member MemberName="CreateElement">
@@ -121,6 +125,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.State" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -148,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" />
+        <altmember cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" />
       </Docs>
     </Member>
   </Members>

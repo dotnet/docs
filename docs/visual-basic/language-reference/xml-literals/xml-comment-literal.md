@@ -1,13 +1,11 @@
 ---
 title: "XML Comment Literal (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralComment"
@@ -20,21 +18,6 @@ ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Comment Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XComment> object.  
@@ -76,7 +59,7 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
  [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-comment-literal_1.vb)]  
   
 ## See Also  
- <xref:System.Xml.Linq.XComment>   
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
+ <xref:System.Xml.Linq.XComment>  
+ [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

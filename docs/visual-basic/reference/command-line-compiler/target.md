@@ -1,13 +1,11 @@
 ---
 title: "/target (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "target compiler options [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target (Visual Basic)
 Specifies the format of compiler output.  
@@ -62,7 +45,7 @@ Specifies the format of compiler output.
   
 ### To set /target in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
 2.  Click the **Application** tab.  
   
@@ -76,11 +59,11 @@ vbc /target:library in.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
- [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
- [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
+ [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
+ [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
+ [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)  
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

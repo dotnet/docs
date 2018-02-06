@@ -17,6 +17,8 @@ caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
@@ -108,6 +110,6 @@ manager: "markl"
  Updating the cache does not alter the properties of any existing <xref:System.Windows.Automation.AutomationElement> references.  
   
 ## See Also  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)   
- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)   
- [FetchTimer Sample](http://msdn.microsoft.com/en-us/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+ [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
+ [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
+ [FetchTimer Sample](http://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)

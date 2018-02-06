@@ -1,41 +1,23 @@
 ---
 title: "Overloads (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Overloads"
   - "Overloads"
 helpviewer_keywords: 
-  - "Overloads keyword"
+  - "Overloads keyword [Visual Basic]"
   - "hiding by signature"
-  - "Shadows keyword"
+  - "Shadows keyword [Visual Basic]"
   - "signature, hiding by"
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overloads (Visual Basic)
 Specifies that a property or procedure redeclares one or more existing properties or procedures with the same name.  
@@ -94,8 +76,8 @@ Specifies that a property or procedure redeclares one or more existing propertie
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
+ [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
  [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

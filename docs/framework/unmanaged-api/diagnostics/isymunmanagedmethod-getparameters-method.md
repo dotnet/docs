@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetParameters Method
 Gets the parameters for this method. The parameters are returned in the order in which they are defined within the method's signature.  

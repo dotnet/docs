@@ -24,7 +24,7 @@
 ## Remarks  
  The <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> class handles the complexity of asking the sinks in a channel sink chain for their properties. After the channel constructs its sink chain (if applicable), it must set the <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties> property.  
   
- This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
  ]]></format>
     </remarks>

@@ -52,6 +52,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewRow" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowEventArgs.Row" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -107,6 +113,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
   </Members>

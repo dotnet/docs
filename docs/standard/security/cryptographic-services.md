@@ -34,6 +34,9 @@ caps.latest.revision: 34
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Cryptographic Services
 <a name="top"></a> Public networks such as the Internet do not provide a means of secure communication between entities. Communication over such networks is susceptible to being read or even modified by unauthorized third parties. Cryptography helps protect data from being viewed, provides ways to detect whether data has been modified, and helps provide a secure means of communication over otherwise nonsecure channels. For example, data can be encrypted by using a cryptographic algorithm, transmitted in an encrypted state, and later decrypted by the intended party. If a third party intercepts the encrypted data, it will be difficult to decipher.  
@@ -107,7 +110,7 @@ manager: "wpickett"
   
  The disadvantage of secret-key encryption is that it presumes two parties have agreed on a key and IV, and communicated their values. The IV is not considered a secret and can be transmitted in plaintext with the message. However, the key must be kept secret from unauthorized users. Because of these problems, secret-key encryption is often used together with public-key encryption to privately communicate the values of the key and IV.  
   
- Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network e-mail) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because he does not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.  
+ Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network email) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because he does not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.  
   
  The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that implement secret-key encryption algorithms:  
   
@@ -198,7 +201,7 @@ manager: "wpickett"
   
 -   Alice sends the plaintext message and the hashed message (digital signature) to Bob. Bob receives and hashes the message and compares his hash value to the hash value that he received from Alice. If the hash values are identical, the message was not altered. If the values are not identical, the message was altered after Alice wrote it.  
   
-     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. See [NIB: Cryptography Next Generation (CNG) Secure Communication Example](http://msdn.microsoft.com/en-us/8048e94e-054a-417b-87c6-4f5e26710e6e) for more information.  
+     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. See [NIB: Cryptography Next Generation (CNG) Secure Communication Example](http://msdn.microsoft.com/library/8048e94e-054a-417b-87c6-4f5e26710e6e) for more information.  
   
 -   Alice sends the plaintext message to Bob over a nonsecure public channel. She sends the hashed message to Bob over a secure private channel. Bob receives the plaintext message, hashes it, and compares the hash to the privately exchanged hash. If the hashes match, Bob knows two things:  
   
@@ -275,7 +278,7 @@ manager: "wpickett"
   
 <a name="suite_b"></a>   
 ## Suite B Support  
- The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](http://go.microsoft.com/fwlink/?LinkId=100111).  
+ The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](https://www.nsa.gov/what-we-do/information-assurance/).  
   
  The following algorithms are included:  
   

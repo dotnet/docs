@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TextBox" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.AutoCompleteType" />
   </Docs>
   <Members>
     <Member MemberName="BusinessCity">
@@ -264,7 +266,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user's e-mail address category.</summary>
+        <summary>The user's email address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">

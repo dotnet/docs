@@ -1,7 +1,7 @@
 ---
 title: "Creating Custom Attributes (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 5c9ef584-6c7c-496b-92a9-6e42f8d9ca28
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Creating Custom Attributes (Visual Basic)
 You can create your own custom attributes by defining an attribute class, a class that derives directly or indirectly from <xref:System.Attribute>, which makes identifying attribute definitions in metadata fast and easy. Suppose you want to tag types with the name of the programmer who wrote the type. You might define a custom `Author` attribute class:  
@@ -74,10 +68,10 @@ End Class
 >  If your attribute class contains a property, that property must be read-write.  
   
 ## See Also  
- <xref:System.Reflection>   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Writing Custom Attributes](../../../../standard/attributes/writing-custom-attributes.md)   
- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
- [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)   
- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)   
+ <xref:System.Reflection>  
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
+ [Writing Custom Attributes](../../../../standard/attributes/writing-custom-attributes.md)  
+ [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
+ [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
+ [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
  [AttributeUsage (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)

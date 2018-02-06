@@ -1,39 +1,20 @@
 ---
 title: "Line and Shape Controls (Visual Studio)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "RectangleShape control, topic list"
-  - "OvalShape control, topic list"
-  - "Shape control"
-  - "Line control, topic list"
+  - "RectangleShape control [Visual Basic], topic list"
+  - "OvalShape control [Visual Basic], topic list"
+  - "Shape control [Visual Basic]"
+  - "Line control [Visual Basic], topic list"
 ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Line and Shape Controls (Visual Studio)
 The Visual Basic Power Packs Line and Shape controls are graphical controls that enable you to draw horizontal, vertical, and diagonal lines, rectangles, squares, ovals, circles, and rectangles and squares with rounded corners on a form or container.  

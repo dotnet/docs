@@ -30,5 +30,5 @@ uid: System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

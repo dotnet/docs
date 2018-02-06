@@ -1,39 +1,23 @@
 ---
 title: "Character Data Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], character"
-  - "String data type, character data types"
+  - "String data type [Visual Basic], character data types"
   - "character data types [Visual Basic]"
-  - "Char data type, character data types"
+  - "Char data type [Visual Basic], character data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Character Data Types (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides *character data types* to deal with printable and displayable characters. While they both deal with Unicode characters, `Char` holds a single character whereas `String` contains an indefinite number of characters.  
@@ -60,10 +44,10 @@ translation.priority.ht:
  For more information, see [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md).  
   
 ## See Also  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
+ [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
+ [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

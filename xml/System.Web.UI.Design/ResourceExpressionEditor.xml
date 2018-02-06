@@ -57,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
+    <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+    <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +121,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionFields" />
+        <altmember cref="Overload:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression" />
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -149,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
       </Docs>
     </Member>
   </Members>

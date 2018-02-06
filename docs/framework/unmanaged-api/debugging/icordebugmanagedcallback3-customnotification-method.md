@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback3::CustomNotification Method
 Indicates that a custom debugger notification has been raised.  
@@ -69,6 +71,6 @@ HRESULT CustomNotification(ICorDebugThread *    pThread,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICorDebugManagedCallback3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-interface.md)   
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [ICorDebugManagedCallback3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-interface.md)  
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

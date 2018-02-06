@@ -1,48 +1,31 @@
 ---
 title: "Operator Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.operator"
 helpviewer_keywords: 
   - "operators [Visual Basic]"
-  - "procedures, operator"
-  - "Narrowing keyword, conversion operators"
+  - "procedures [Visual Basic], operator"
+  - "Narrowing keyword [Visual Basic], conversion operators"
   - "Visual Basic code, operators"
-  - "Widening keyword, conversion operators"
-  - "syntax, Operator procedures"
+  - "Widening keyword [Visual Basic], conversion operators"
+  - "syntax [Visual Basic], Operator procedures"
   - "operators [Visual Basic], overloading"
-  - "overloaded operators"
+  - "overloaded operators [Visual Basic]"
   - "operator overloading"
   - "operator procedures"
-  - "Operator statement"
-  - "CType function, Operator statement"
+  - "Operator statement [Visual Basic]"
+  - "CType function [Visual Basic], Operator statement"
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operator Statement
 Declares the operator symbol, operands, and code that define an operator procedure on a class or structure.  
@@ -191,13 +174,13 @@ End Operator
  [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
   
 ## See Also  
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)   
- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)   
- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)   
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)   
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
- [How to: Call an Operator Procedure](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)   
+ [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
+ [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
+ [Widening](../../../visual-basic/language-reference/modifiers/widening.md)  
+ [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
+ [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
+ [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)  
+ [How to: Call an Operator Procedure](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)  
  [How to: Use a Class that Defines Operators](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)

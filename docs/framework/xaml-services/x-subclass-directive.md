@@ -22,6 +22,8 @@ caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Subclass Directive
 Modifies XAML markup compile behavior when `x:Class` is also provided. Instead of creating a partial class that is based on `x:Class`, the provided `x:Class` is created as an intermediate class, and then your provided derived class is expected to be based on `x:Class`.  
@@ -63,5 +65,5 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
  When you define both `x:Class` and `x:Subclass`, you do not need to provide any implementation for the class that is referenced by `x:Class`. You only need to give it a name via the `x:Class` attribute so that the compiler has some guidance for the class that it creates in the intermediate files (the compiler does not select a default name in this case). You can give the `x:Class` class an implementation; however, this is not the typical scenario for using both `x:Class` and `x:Subclass`.  
   
 ## See Also  
- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
+ [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
  [XAML and Custom Classes for WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

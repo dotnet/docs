@@ -1,6 +1,6 @@
 ---
 title: "using (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # using (C# Reference)
 The `using` keyword has two major uses:  
@@ -39,9 +25,9 @@ The `using` keyword has two major uses:
 In addition, the [using static](using-static.md) directive lets you define a type whose static members you can access without specifying a type name.
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+ [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
  [extern](../../../csharp/language-reference/keywords/extern.md)

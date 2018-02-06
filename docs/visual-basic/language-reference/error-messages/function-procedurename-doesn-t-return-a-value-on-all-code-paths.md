@@ -1,13 +1,11 @@
 ---
 title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc42105"
@@ -18,21 +16,6 @@ ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths
 Function '\<procedurename>' doesn't return a value on all code paths. Are you missing a 'Return' statement?  
@@ -60,6 +43,6 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
      It is easier to guarantee that every return from the procedure returns a value if you always use the `Return` statement. If you do this, the last statement before `End Function` should be a `Return` statement.  
   
 ## See Also  
- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
+ [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
  [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

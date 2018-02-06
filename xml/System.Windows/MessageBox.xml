@@ -34,6 +34,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.MessageBoxButton" />
+    <altmember cref="T:System.Windows.MessageBoxImage" />
+    <altmember cref="T:System.Windows.MessageBoxResult" />
+    <altmember cref="T:System.Windows.MessageBoxOptions" />
   </Docs>
   <Members>
     <MemberGroup MemberName="Show">
@@ -163,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -242,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -325,6 +333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -412,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -503,6 +515,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -549,6 +563,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
       </Docs>
     </Member>
   </Members>

@@ -1,38 +1,22 @@
 ---
 title: "File Encodings (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "character encodings"
-  - "files, encoding"
+  - "files [Visual Basic], encoding"
   - "Unicode, file encoding"
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # File Encodings (Visual Basic)
 File encodings, also known as character encodings, specify how to represent characters when text processing. One encoding may be preferable over another in terms of which language characters it can or cannot handle, although Unicode is usually preferred.  
@@ -56,5 +40,5 @@ File encodings, also known as character encodings, specify how to represent char
 |<xref:System.Text.UTF8Encoding>|Represents a UTF-8 encoding of Unicode characters.|  
   
 ## See Also  
- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)   
+ [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

@@ -66,6 +66,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.String" />
+    <altmember cref="T:System.Globalization.CompareOptions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -284,6 +286,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCulture">
@@ -539,6 +542,7 @@
         <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -585,6 +589,7 @@
         <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
       </Docs>
     </Member>
     <Member MemberName="InvariantCulture">
@@ -846,5 +851,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two objects or strings and returns an indication of their relative sort order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether two objects or strings are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetHashCode">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, gets the hash code for the current <see cref="T:System.StringComparer" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

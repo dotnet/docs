@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # OpenFileDialog Component (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.OpenFileDialog> component is a pre-configured dialog box. It is the same **Open File** dialog box exposed by the Windows operating system. It inherits from the <xref:System.Windows.Forms.CommonDialog> class.  

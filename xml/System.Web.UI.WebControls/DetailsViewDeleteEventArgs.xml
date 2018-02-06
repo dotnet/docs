@@ -23,7 +23,7 @@
 > [!NOTE]
 >  It is possible to modify the key field values in the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys%2A> property. If you change these values, the record that corresponds to the new key field values will be deleted.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.%23ctor%2A> constructor.  
   
@@ -37,6 +37,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -114,6 +126,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -147,6 +163,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -188,6 +207,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
   </Members>

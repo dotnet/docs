@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "SplitContainer control [Windows Forms], examples"
   - "ListView control [Windows Forms], examples"
@@ -24,6 +24,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Multipane User Interface with Windows Forms
 In the following procedure, you will create a multipane user interface that is similar to the one used in Microsoft Outlook, with a **Folder** list, a **Messages** pane, and a **Preview** pane. This arrangement is achieved chiefly through docking controls with the form.  
@@ -183,6 +185,6 @@ In the following procedure, you will create a multipane user interface that is s
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.SplitContainer>   
- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)   
+ <xref:System.Windows.Forms.SplitContainer>  
+ [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
  [How to: Create a Multipane User Interface with Windows Forms Using the Designer](../../../../docs/framework/winforms/controls/create-a-multipane-user-interface-with-wf-using-the-designer.md)

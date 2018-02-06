@@ -28,6 +28,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +107,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -144,6 +158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -191,6 +209,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -263,6 +285,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
   </Members>

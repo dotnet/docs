@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "thread-safe collections, concurrent dictionary"
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598
@@ -18,6 +18,9 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Add and Remove Items from a ConcurrentDictionary
 This example shows how to add, retrieve, update, and remove items from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>. This collection class is a thread-safe implementation. We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.  
@@ -51,5 +54,5 @@ This example shows how to add, retrieve, update, and remove items from a <xref:S
  Therefore, it is not guaranteed that the data that is returned by <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> is the same data that was created by the thread's valueFactory. A similar sequence of events can occur when <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> is called.  
   
 ## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>   
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
  [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

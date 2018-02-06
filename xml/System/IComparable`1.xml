@@ -64,6 +64,8 @@
   
  If you implement <see cref="T:System.IComparable`1" />, you should overload the <see langword="op_GreaterThan" />, <see langword="op_GreaterThanOrEqual" />, <see langword="op_LessThan" />, and <see langword="op_LessThanOrEqual" /> operators to return values that are consistent with <see cref="M:System.IComparable`1.CompareTo(`0)" />. In addition, you should also implement <see cref="T:System.IEquatable`1" />. See the <see cref="T:System.IEquatable`1" /> article for complete information.</para>
     </block>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.IEquatable`1" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -153,6 +155,8 @@
         <block subset="none" type="usage">
           <para>Use the <see cref="M:System.IComparable`1.CompareTo(`0)" /> method to determine the ordering of instances of a class.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
   </Members>

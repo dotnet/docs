@@ -56,6 +56,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+    <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.GetEnumerator" />
+    <altmember cref="T:System.Collections.IEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.ListItemCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+    <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +130,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -150,6 +163,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -180,6 +198,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -239,6 +263,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -269,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -308,6 +338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -341,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
       </Docs>
     </Member>
     <Member MemberName="FindByText">
@@ -376,6 +408,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.FindByValue(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
       </Docs>
     </Member>
     <Member MemberName="FindByValue">
@@ -411,6 +446,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.FindByText(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -452,6 +490,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -511,6 +553,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -541,6 +589,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -595,6 +649,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -632,6 +688,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -668,6 +725,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItem.Equals(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -704,6 +768,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItem.Equals(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -732,6 +803,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.AddRange(System.Web.UI.WebControls.ListItem[])" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Insert(System.Int32,System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -759,6 +836,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -788,6 +867,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -818,6 +898,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -847,6 +928,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -877,6 +959,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -903,6 +986,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -932,6 +1016,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -960,6 +1045,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -986,6 +1072,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -1014,6 +1101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1040,6 +1128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1065,7 +1154,35 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a <see cref="T:System.Web.UI.WebControls.ListItem" /> to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.UI.WebControls.ListItem" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a <see cref="T:System.Web.UI.WebControls.ListItem" /> in the collection at the specified index location.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

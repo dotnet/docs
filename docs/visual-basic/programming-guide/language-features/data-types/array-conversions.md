@@ -1,43 +1,27 @@
 ---
 title: "Array Conversions (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [Visual Basic], converting type"
-  - "type conversion, arrays"
-  - "conversions, type"
+  - "type conversion [Visual Basic], arrays"
+  - "conversions [Visual Basic], type"
   - "arrays [Visual Basic], data types"
-  - "conversions, data type"
-  - "object arrays, converting type"
-  - "data type conversion, array conversions"
-  - "conversions, array types"
+  - "conversions [Visual Basic], data type"
+  - "object arrays [Visual Basic], converting type"
+  - "data type conversion [Visual Basic], array conversions"
+  - "conversions [Visual Basic], array types"
   - "object arrays"
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Array Conversions (Visual Basic)
 You can convert an array type to a different array type provided you meet the following conditions:  
@@ -80,11 +64,11 @@ students = names
 ```  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)   
- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
+ [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)

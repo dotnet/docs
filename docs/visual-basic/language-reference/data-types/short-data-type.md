@@ -1,48 +1,30 @@
 ---
 title: "Short Data Type (Visual Basic)"
-
-ms.date: "2014-04-20"
+ms.date: 01/31/2018
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 author: "rpetrusha"
 ms.author: "ronpet"
 f1_keywords: 
   - "vb.Short"
 helpviewer_keywords: 
-  - "numbers, whole"
+  - "numbers [Visual Basic], whole"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "integers [Visual Basic], types"
   - "data types [Visual Basic], integral"
-  - "S literal type character"
+  - "S literal type character [Visual Basic]"
   - "Short data type"
-  - "literal type characters, S"
+  - "literal type characters [Visual Basic], S"
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
@@ -67,10 +49,18 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[Short](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ShortS)]
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Short = &H_3264
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
+
 Numeric literals can also include the `S` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
 
 ```vb
-Dim number = &H0326S
+Dim number = &H_3264S
 ```
 
 ## Programming tips
@@ -83,10 +73,10 @@ Dim number = &H0326S
   
 ## See also
 
- <xref:System.Int16?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)   
+ <xref:System.Int16?displayProperty=nameWithType>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
+ [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

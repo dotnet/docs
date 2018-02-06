@@ -11,12 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "GDI+, using managed interface"
-  - "graphics, class structure"
+  - "graphics [Windows Forms], class structure"
 ms.assetid: 010a1e46-656b-40a1-8d5d-87aa05ee1243
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Structure of the Graphics Interface
 The managed class interface to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] contains about 60 classes, 50 enumerations, and 8 structures. The <xref:System.Drawing.Graphics> class is at the core of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] functionality; it is the class that actually draws lines, curves, figures, images, and text.  
@@ -29,6 +31,6 @@ The managed class interface to [!INCLUDE[ndptecgdiplus](../../../../includes/ndp
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several enumerations, which are collections of related constants. For example, the <xref:System.Drawing.Drawing2D.LineJoin> enumeration contains the elements <xref:System.Drawing.Drawing2D.LineJoin.Bevel>, <xref:System.Drawing.Drawing2D.LineJoin.Miter>, and <xref:System.Drawing.Drawing2D.LineJoin.Round>, which specify styles that can be used to join two lines.  
   
 ## See Also  
- [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)   
- [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)   
+ [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)  
+ [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)  
  [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)

@@ -44,6 +44,8 @@
  ]]></format>
     </remarks>
     <threadsafe>The static methods on <see cref="T:System.Collections.Concurrent.Partitioner`1" /> are all thread-safe and may be used concurrently from multiple threads. However, while a created partitioner is in use, the underlying data source should not be modified, whether from the same thread that is using a partitioner or from a separate thread.</threadsafe>
+    <altmember cref="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+    <altmember cref="T:System.Collections.Concurrent.Partitioner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,8 @@
       <Docs>
         <summary>Creates a new partitioner instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+        <altmember cref="T:System.Collections.Concurrent.Partitioner" />
       </Docs>
     </Member>
     <Member MemberName="GetDynamicPartitions">
@@ -110,6 +114,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. You must implement it in a derived class.</exception>
+        <altmember cref="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+        <altmember cref="T:System.Collections.Concurrent.Partitioner" />
       </Docs>
     </Member>
     <Member MemberName="GetPartitions">
@@ -150,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+        <altmember cref="T:System.Collections.Concurrent.Partitioner" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDynamicPartitions">
@@ -186,6 +194,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+        <altmember cref="T:System.Collections.Concurrent.Partitioner" />
       </Docs>
     </Member>
   </Members>

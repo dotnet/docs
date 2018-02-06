@@ -1,43 +1,25 @@
 ---
 title: "Enum Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Enum"
 helpviewer_keywords: 
-  - "enumerated constants"
-  - "Enum statement"
-  - "Private keyword, Enum statements"
-  - "Public keyword, in Enum statement"
+  - "enumerated constants [Visual Basic]"
+  - "Enum statement [Visual Basic]"
+  - "Private keyword [Visual Basic], Enum statements"
+  - "Public keyword [Visual Basic], in Enum statement"
   - "variables [Visual Basic], enumeration"
-  - "constants, enumerated"
+  - "constants [Visual Basic], enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
 caps.latest.revision: 44
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Enum Statement (Visual Basic)
 Declares an enumeration and defines the values of its members.  
@@ -191,10 +173,10 @@ End Enum
  [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
   
 ## See Also  
- <xref:System.Enum>   
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>   
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
+ <xref:System.Enum>  
+ <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
+ [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)

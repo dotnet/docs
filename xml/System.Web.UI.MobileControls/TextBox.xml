@@ -60,6 +60,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -300,6 +301,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -332,6 +334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -357,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -389,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Title">

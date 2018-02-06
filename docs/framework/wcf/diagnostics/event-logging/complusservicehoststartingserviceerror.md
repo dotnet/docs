@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 10994991-3717-4352-ad58-c22c3eff60d5
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ComPlusServiceHostStartingServiceError
 Id: 130  
@@ -26,5 +28,5 @@ Id: 130
  This event indicates that an error occurred while starting the COM+ service. The event lists the AppID, ClsID, Surrogate, exception, process name and process ID.  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

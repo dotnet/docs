@@ -1,13 +1,9 @@
 ---
 title: "Structs (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, structs"
@@ -16,26 +12,11 @@ ms.assetid: b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Structs (C# Programming Guide)
 Structs are defined by using the [struct](../../../csharp/language-reference/keywords/struct.md) keyword, for example:  
   
- [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/structs_1.cs)]  
+ [!code-csharp[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/structs_1.cs)]  
   
  Structs share most of the same syntax as classes, although structs are more limited than classes:  
   
@@ -71,6 +52,6 @@ Structs are defined by using the [struct](../../../csharp/language-reference/key
 -   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
  [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)

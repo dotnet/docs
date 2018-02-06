@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ada536cf-97dc-4cd7-89ec-ed1466c1c557
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceTimeouts&gt;
 Specifies the timeout for a service.  

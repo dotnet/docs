@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Controls.Panel.Children" />
+    <altmember cref="T:System.Windows.Media.VisualCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Panel.Children" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -129,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Panel.Children" />
       </Docs>
     </Member>
     <Member MemberName="ClearLogicalParent">
@@ -275,6 +279,7 @@
         <summary>Returns an enumerator that can iterate the <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can list the members of this collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -362,6 +367,7 @@
         <value>
           <see langword="true" /> if access to the collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -507,6 +513,7 @@
         <value>
           <see cref="T:System.Object" /> that you can use to synchronize access to the <see cref="T:System.Collections.ICollection" /> interface.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -529,6 +536,7 @@
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
         <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.UIElementCollection.Add(System.Windows.UIElement)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -552,6 +560,7 @@
         <returns>
           <see langword="true" /> if the object was found in the list; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.UIElementCollection.Contains(System.Windows.UIElement)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -574,6 +583,7 @@
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.UIElementCollection.IndexOf(System.Windows.UIElement)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -597,6 +607,7 @@
         <param name="value">The object to insert to the list.</param>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.UIElementCollection.Insert(System.Int32,System.Windows.UIElement)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -678,7 +689,17 @@
         <param name="value">The object to remove from the list.</param>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.UIElementCollection.Remove(System.Windows.UIElement)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a <see cref="T:System.Windows.UIElement" /> from a <see cref="T:System.Windows.Controls.UIElementCollection" /> to an array, starting at a specified index position.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

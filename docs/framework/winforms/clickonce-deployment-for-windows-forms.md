@@ -18,6 +18,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ClickOnce Deployment for Windows Forms
 The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)], a technology used for easily deploying Windows Forms applications to client computers.  
@@ -69,9 +71,9 @@ The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndpteccli
  Demonstrates how to mark a file so that it is available in the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] data directory.  
   
 ## See Also  
- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)   
- [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)   
- [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)   
- [Debugging ClickOnce Applications That Use System.Deployment.Application](http://msdn.microsoft.com/library/86f31948-2ca8-47c0-8e8b-c2b817bbf79f)   
- [Deploying COM Components with ClickOnce](/visualstudio/deployment/deploying-com-components-with-clickonce)   
+ [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
+ [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)  
+ [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)  
+ [Debugging ClickOnce Applications That Use System.Deployment.Application](http://msdn.microsoft.com/library/86f31948-2ca8-47c0-8e8b-c2b817bbf79f)  
+ [Deploying COM Components with ClickOnce](/visualstudio/deployment/deploying-com-components-with-clickonce)  
  [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)

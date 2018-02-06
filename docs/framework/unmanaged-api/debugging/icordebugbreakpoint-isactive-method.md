@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpoint::IsActive Method
 Gets a value that indicates whether this `ICorDebugBreakpoint` is active.  

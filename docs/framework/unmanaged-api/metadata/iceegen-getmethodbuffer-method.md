@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetMethodBuffer Method
 Gets a buffer of the appropriate size for the method at the specified relative virtual address.  

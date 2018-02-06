@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 959a21c8-9d9d-4757-b255-4e57793ae9d6
 caps.latest.revision: 30
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Service Hosting Instructions
 To run the samples that are hosted by Internet Information Services (IIS), you must make sure that IIS is properly installed and is running.  

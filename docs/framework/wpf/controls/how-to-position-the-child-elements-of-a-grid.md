@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Grid control, positioning child elements"
+  - "Grid control [WPF], positioning child elements"
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Position the Child Elements of a Grid
 This example shows how to use the get and set methods that are defined on <xref:System.Windows.Controls.Grid> to position child elements.  
@@ -34,5 +36,5 @@ This example shows how to use the get and set methods that are defined on <xref:
  [!code-vb[gridGetSetMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridGetSetMethods/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
+ <xref:System.Windows.Controls.Grid>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

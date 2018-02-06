@@ -21,6 +21,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="T:System.Web.UI.ControlCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -53,6 +55,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The object specified by <paramref name="child" /> is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="M:System.Web.UI.WebControls.Table.RowControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -92,6 +96,8 @@
   
  The object is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="M:System.Web.UI.WebControls.Table.RowControlCollection.Add(System.Web.UI.Control)" />
       </Docs>
     </Member>
   </Members>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # DataContract Surrogate
 This sample demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class. This sample shows how to use a surrogate in a client and server scenario where data is serialized and transmitted between a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service.  

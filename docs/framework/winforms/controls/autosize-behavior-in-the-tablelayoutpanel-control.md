@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "AutoSize property, TableLayoutPanel control"
+  - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"
   - "localizing forms"
-  - "layout [Windows Forms],AutoSize"
-  - "sizing, automatic"
+  - "layout [Windows Forms], AutoSize"
+  - "sizing [Windows Forms], automatic"
   - "TableLayoutPanel control [Windows Forms], AutoSize behavior"
   - "automatic sizing"
   - "AutoSizeMode property"
@@ -23,6 +23,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # AutoSize Behavior in the TableLayoutPanel Control
 ## Distinct AutoSize Behaviors  
@@ -41,5 +43,5 @@ manager: "wpickett"
 |`true`|Similar to the previous interaction, with the exception that <xref:System.Windows.Forms.SizeType.Percent> columns or rows acquire an automatic sizing aspect.<br /><br /> The <xref:System.Windows.Forms.TableLayoutPanel> control expands the column or row to create adequate free space, so that no column or row with <xref:System.Windows.Forms.SizeType.Percent> styling clips its contents. The <xref:System.Windows.Forms.TableLayoutPanel> control allocates the new space proportionally according to the <xref:System.Windows.Forms.ColumnStyle.Width%2A> or <xref:System.Windows.Forms.RowStyle.Height%2A> property.|  
   
 ## See Also  
- <xref:System.Windows.Forms.TableLayoutPanel>   
+ <xref:System.Windows.Forms.TableLayoutPanel>  
  [TableLayoutPanel Control Overview](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-overview.md)

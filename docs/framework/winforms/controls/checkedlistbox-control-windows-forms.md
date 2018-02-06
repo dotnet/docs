@@ -11,20 +11,22 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], reference"
-  - "checked list items, Windows Forms controls"
-  - "list controls, Windows Forms"
+  - "checked list items [Windows Forms], Windows Forms controls"
+  - "list controls [Windows Forms], Windows Forms"
   - "CheckedListBox control [Windows Forms]"
-  - "list box controls"
+  - "list box controls [Windows Forms]"
   - "check marks"
-  - "list boxes, displaying check marks"
-  - "list boxes, Windows Forms controls"
-  - "list items, Windows Forms controls that display"
+  - "list boxes [Windows Forms], displaying check marks"
+  - "list boxes [Windows Forms], Windows Forms controls"
+  - "list items [Windows Forms], Windows Forms controls that display"
   - "list boxes"
 ms.assetid: 2a525f72-0245-41d7-94e9-b9c971dc4484
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # CheckedListBox Control (Windows Forms)
 The Windows Forms `CheckedListBox` control displays a list of items, like the <xref:System.Windows.Forms.ListBox> control, and also can display a check mark next to items in the list.  

@@ -8,8 +8,10 @@ ms.date: 08/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-vb
-dev_langs:
-- "vb"
+dev_langs: 
+  - "vb"
+ms.workload: 
+  - dotnetcore
 ---
 # Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017
 

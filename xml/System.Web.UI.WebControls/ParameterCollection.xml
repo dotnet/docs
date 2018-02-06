@@ -61,6 +61,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +120,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Insert(System.Int32,System.Web.UI.WebControls.Parameter)" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Remove(System.Web.UI.WebControls.Parameter)" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -158,6 +165,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -232,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -325,6 +334,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is not within the recognized range.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.GetKnownTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -344,6 +354,7 @@
         <summary>Gets an array of <see cref="T:System.Web.UI.WebControls.Parameter" /> types that the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> collection can contain.</summary>
         <returns>An ordered array of <see cref="T:System.Type" /> objects that identify the types of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects that the collection can contain.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.CreateKnownType(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -445,6 +456,7 @@
  -or-  
   
  <paramref name="index" /> is greater than <see langword="Count" />.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -474,6 +486,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -511,6 +529,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -541,6 +565,7 @@
   
  <see cref="M:System.Web.UI.StateManagedCollection.OnClear" /> is invoked before the standard <see langword="Clear" /> behavior, whereas <see cref="M:System.Web.UI.WebControls.ParameterCollection.OnClearComplete" /> is invoked after the standard <see langword="Clear" /> behavior.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.OnParametersChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -574,6 +599,7 @@
         <block subset="none" type="overrides">
           <para>This method allows implementers to define processes that must be performed before inserting an element into the underlying collection. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Insert(System.Int32,System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -607,6 +633,7 @@
         <block subset="none" type="overrides">
           <para>This method allows implementers to define processes that must be performed after inserting an element into the underlying collection. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Insert(System.Int32,System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="OnParametersChanged">
@@ -628,6 +655,8 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -661,6 +690,8 @@
         <block subset="none" type="overrides">
           <para>This method allows implementers to define processes that must be performed after removing an element from the underlying collection. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Remove(System.Web.UI.WebControls.Parameter)" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -713,7 +744,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged> event raises the data source control's `DataSourceChanged` event, causing any data-bound controls to rebind.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -758,6 +789,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Add(System.Web.UI.WebControls.Parameter)" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -794,6 +828,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.Add(System.Web.UI.WebControls.Parameter)" />
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -857,7 +894,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.GetValues(System.Web.HttpContext,System.Web.UI.Control)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.WebControls.Parameter" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.WebControls.Parameter" /> object in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

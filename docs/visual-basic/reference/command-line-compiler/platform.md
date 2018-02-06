@@ -1,13 +1,11 @@
 ---
 title: "/platform (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "platform compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /platform (Visual Basic)
 Specifies which platform version of common language runtime (CLR) can run the output file.  
@@ -84,13 +67,11 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 -   Executables that are compiled with `/platform:anycpu32bitpreferred` will execute on the 32-bit CLR.  
   
- For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](https://msdn.microsoft.com/library/ms241064).  
+ For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](../../../framework/64-bit-apps.md).  
   
 ### To set /platform in the Visual Studio IDE  
   
 1.  In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
-  
-     For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
   
 2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
@@ -104,6 +85,6 @@ vbc /platform:x86 myFile.vb
 ```  
   
 ## See Also  
- [/target (Visual Basic)](target.md)   
- [Visual Basic Command-Line Compiler](index.md)   
+ [/target (Visual Basic)](target.md)  
+ [Visual Basic Command-Line Compiler](index.md)  
  [Sample Compilation Command Lines](sample-compilation-command-lines.md)

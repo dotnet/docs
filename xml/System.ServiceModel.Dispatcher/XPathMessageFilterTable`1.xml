@@ -1319,5 +1319,32 @@ myFilters(filter)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a filter and its associated filter data from the filter table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> and its associated <paramref name="FilterData" /> to the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

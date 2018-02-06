@@ -1,7 +1,6 @@
 // <Snippet7>
 using System;
 
-[assembly: CLSCompliant(true)]
 public class Example
 {
    public static void Main()

@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Programming How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for network programming.  
@@ -82,6 +84,6 @@ The following list includes links to the How-to topics found in the conceptual d
 -   [How to: Ping a Host](../../../docs/framework/network-programming/how-to-ping-a-host.md)  
   
 ## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)   
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

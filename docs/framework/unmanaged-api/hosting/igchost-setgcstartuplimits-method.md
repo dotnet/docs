@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::SetGCStartupLimits Method
 Sets the segment size and the maximum size for generation 0.  

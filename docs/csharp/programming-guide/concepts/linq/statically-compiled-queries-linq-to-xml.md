@@ -1,7 +1,7 @@
 ---
 title: "Statically Compiled Queries (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

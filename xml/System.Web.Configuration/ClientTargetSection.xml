@@ -42,6 +42,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ClientTarget" />
+    <altmember cref="T:System.Web.Configuration.ClientTargetCollection" />
+    <altmember cref="P:System.Web.UI.Page.ClientTarget" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetCollection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

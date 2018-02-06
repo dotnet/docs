@@ -1,6 +1,6 @@
 ---
 title: "C# Compiler Options"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -17,25 +17,11 @@ ms.assetid: d3403556-1816-4546-a782-e8223a772e44
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# Compiler Options
 The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or code modules (.netmodule).  
   
- Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **/option** form.  
+ Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **-option** form.  
   
  In Visual Studio, you set compiler options in the web.config file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).  
   

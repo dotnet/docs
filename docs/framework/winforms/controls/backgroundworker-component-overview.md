@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "BackgroundWorker"
 helpviewer_keywords: 
   - "BackgroundWorker component"
   - "background tasks"
   - "Asynchronous Pattern"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
@@ -29,6 +29,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BackgroundWorker Component Overview
 There are many commonly performed operations that can take a long time to execute. For example:  
@@ -67,5 +69,5 @@ There are many commonly performed operations that can take a long time to execut
  For more information on using the <xref:System.ComponentModel.BackgroundWorker> class, see [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
   
 ## See Also  
- [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)   
+ [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
  [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)

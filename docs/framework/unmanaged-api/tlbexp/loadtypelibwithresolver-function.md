@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LoadTypeLibWithResolver Function
 Loads a type library and uses the supplied [ITypeLibResolver interface](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md) to resolve any internally referenced type libraries.  
@@ -98,5 +100,5 @@ HRESULT LoadTypeLibWithResolver(
  **.NET Framework Version:** 3.5, 3.0, 2.0  
   
 ## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)   
+ [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
  [LoadTypeLibEx Function](https://msdn.microsoft.com/library/windows/desktop/ms221249\(v=vs.85\).aspx)

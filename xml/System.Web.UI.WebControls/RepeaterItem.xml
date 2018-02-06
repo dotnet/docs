@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterItemCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.Repeater.Items" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -104,6 +109,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -140,6 +147,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+        <altmember cref="P:System.Web.UI.WebControls.Repeater.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.RepeaterItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -184,6 +194,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -209,6 +221,7 @@
         <returns>
           <see langword="true" /> if the event assigned to the parent was raised, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.RaiseBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -234,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -259,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
   </Members>

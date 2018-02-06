@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MsmqBindingElementBase
 MsmqBindingElementBase  
@@ -127,5 +129,5 @@ class MsmqBindingElementBase : TransportBindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See Also  
- <xref:System.ServiceModel.NetMsmqBinding>   
+ <xref:System.ServiceModel.NetMsmqBinding>  
  <xref:System.ServiceModel.MsmqBindingBase>

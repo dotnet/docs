@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "mouse, capture"
+  - "mouse [Windows Forms], capture"
 ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Mouse Capture in Windows Forms
 *Mouse capture* refers to when a control takes command of all mouse input. When a control has captured the mouse, it receives mouse input whether or not the pointer is within its borders.  

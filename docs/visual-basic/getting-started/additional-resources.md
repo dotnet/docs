@@ -1,13 +1,9 @@
 ---
 title: "Additional Resources for Visual Basic Programmers"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, additional resources"
@@ -24,21 +20,6 @@ ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Additional Resources for Visual Basic Programmers
 The following web sites provide guidance and can help you find answers to common problems.  
@@ -103,5 +84,5 @@ The following web sites provide guidance and can help you find answers to common
 |[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|Provides a forum for discussion of new features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] in the DevX forums.|  
   
 ## See Also  
- [Getting Started](../../visual-basic/getting-started/index.md)   
+ [Getting Started](../../visual-basic/getting-started/index.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

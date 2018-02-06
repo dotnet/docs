@@ -768,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlTypes.SqlBinary.IsNull" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -882,10 +883,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBinary" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure to be converted.</param>
+        <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure to a <see cref="T:System.Byte" /> array.</summary>
+        <returns>A <see cref="T:System.Byte" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.Value?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -917,10 +920,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlGuid" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to be converted.</param>
+        <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</summary>
+        <returns>The <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to be converted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.ToSqlGuid?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1030,9 +1035,9 @@
         <Parameter Name="x" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The array of bytes to be converted.</param>
+        <summary>Converts an array of bytes to a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure that represents the converted array of bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1365,5 +1370,23 @@
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The <see cref="P:System.Data.SqlTypes.SqlBinary.Value" /> property is read when the property contains <see cref="F:System.Data.SqlTypes.SqlBinary.Null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBinary" /> structures to determine whether they are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,6 +1,6 @@
 ---
 title: "Overloadable Operators (C# Programming Guide)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -12,20 +12,6 @@ ms.assetid: 390d9d01-79fc-40ab-9ed3-0bf448da1b6a
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overloadable Operators (C# Programming Guide)
 
@@ -72,4 +58,4 @@ For more information, see [How to: Use Operator Overloading to Create a Complex 
 [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
 [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
 [C# Operators](../../../csharp/language-reference/operators/index.md)  
-[Why are overloaded operators always static in C#?](http://go.microsoft.com/fwlink/?LinkId=112383)
+[Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

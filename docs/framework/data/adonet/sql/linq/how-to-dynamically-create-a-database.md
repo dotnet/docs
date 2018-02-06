@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: fb7f23c4-4572-4c38-9898-a287807d070c
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Dynamically Create a Database
 In LINQ to SQL, an object model is mapped to a relational database. Mapping is enabled by using attribute-based mapping or an external mapping file to describe the structure of the relational database. In both scenarios, there is enough information about the relational database that you can create a new instance of the database using the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method.  
@@ -55,8 +57,8 @@ In LINQ to SQL, an object model is mapped to a relational database. Mapping is e
  [!code-vb[DLinqSubmittingChanges#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#7)]  
   
 ## See Also  
- [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)   
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)   
- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)   
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)   
+ [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)  
+ [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
+ [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)  
+ [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
  [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo6 Interface
 [Supported in the .NET Framework 4.6 and later versions]  

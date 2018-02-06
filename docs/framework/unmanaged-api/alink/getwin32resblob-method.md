@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetWin32ResBlob Method
 Retrieves Win32 resource blob. Call this method after setting assembly options.  
@@ -69,6 +71,6 @@ HRESULT GetWin32ResBlob(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

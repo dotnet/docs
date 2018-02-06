@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # memberInfoCacheCreation MDA
 The `memberInfoCacheCreation` managed debugging assistant (MDA) is activated when a <xref:System.Reflection.MemberInfo> cache is created. This is a strong indication of a program that is making use of resource-expensive reflection features.  
@@ -69,5 +71,5 @@ public class Exe
 ```  
   
 ## See Also  
- <xref:System.Reflection.MemberInfo>   
+ <xref:System.Reflection.MemberInfo>  
  [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

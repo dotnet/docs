@@ -14,12 +14,14 @@ f1_keywords:
 helpviewer_keywords: 
   - "application settings [Windows Forms], about application settings"
   - "dynamic properties"
-  - "user preferences, tracking"
+  - "user preferences [Windows Forms], tracking"
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings Overview
 This topic discusses how to create and store settings data on behalf of your application and your users.  
@@ -54,13 +56,13 @@ This topic discusses how to create and store settings data on behalf of your app
  You can also use the <xref:System.Windows.Forms.Binding> class to bind settings programmatically to properties on forms and controls.  
   
 ## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>   
- <xref:System.Configuration.SettingsProvider>   
- <xref:System.Configuration.LocalFileSettingsProvider>   
- <xref:System.Configuration.IPersistComponentSettings>   
- [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)   
- [Managing Application Settings (.NET)](http://msdn.microsoft.com/library/35254321-ad14-47d9-b8c6-39ab3203c5d9)   
- [How To: Read Settings at Run Time With C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)   
- [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)   
- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)   
+ <xref:System.Configuration.ApplicationSettingsBase>  
+ <xref:System.Configuration.SettingsProvider>  
+ <xref:System.Configuration.LocalFileSettingsProvider>  
+ <xref:System.Configuration.IPersistComponentSettings>  
+ [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)  
+ [Managing Application Settings (.NET)](http://msdn.microsoft.com/library/35254321-ad14-47d9-b8c6-39ab3203c5d9)  
+ [How To: Read Settings at Run Time With C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)  
+ [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
+ [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
  [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)

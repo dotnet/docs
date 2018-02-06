@@ -24,6 +24,8 @@ caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Add-Ins Overview
 <a name="Introduction"></a> The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] includes an add-in model that developers can use to create applications that support add-in extensibility. This add-in model allows the creation of add-ins that integrate with and extend application functionality. In some scenarios, applications also need to display [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] that are provided by add-ins. This topic shows how [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] augments the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to enable these scenarios, the architecture behind it, its benefits, and its limitations.  
@@ -106,7 +108,7 @@ manager: "wpickett"
 -   Has the <xref:System.SerializableAttribute> attribute applied.  
   
 > [!NOTE]
->  For more information regarding the creation of remotable [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects, see [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a).  
+>  For more information regarding the creation of remotable [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects, see [Making Objects Remotable](http://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a).  
   
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] types are not remotable. To solve the problem, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to enable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] created by add-ins to be displayed from host applications. This support is provided by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] by two types: the <xref:System.AddIn.Contract.INativeHandleContract> interface and two static methods implemented by the <xref:System.AddIn.Pipeline.FrameworkElementAdapters> class: <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. At a high level, these types and methods are used in the following manner:  
   
@@ -289,9 +291,9 @@ manager: "wpickett"
  By default, when multiple application domains are used, the various [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)).  
   
 ## See Also  
- <xref:System.LoaderOptimizationAttribute>   
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)   
- [Application Domains](../../../../docs/framework/app-domains/application-domains.md)   
- [.NET Framework Remoting Overview](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)   
- [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a)   
+ <xref:System.LoaderOptimizationAttribute>  
+ [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
+ [Application Domains](../../../../docs/framework/app-domains/application-domains.md)  
+ [.NET Framework Remoting Overview](http://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
+ [Making Objects Remotable](http://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)  
  [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)

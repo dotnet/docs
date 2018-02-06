@@ -36,10 +36,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/timer.cs#051a39d380760b26). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use a <xref:System.Threading.TimerCallback> delegate to specify the method you want the <xref:System.Threading.Timer> to execute. The signature of the <xref:System.Threading.TimerCallback> delegate is:  
   
 ```csharp  
@@ -59,7 +55,7 @@ Sub TimerCallback(state As Object)
 > [!TIP]
 >  The .NET Framework Class Library includes four classes named `Timer`, each of which offers different functionality:  
 >   
->  -   <xref:System.Timers.Timer?displayProperty=nameWithType>, which fires an event and executes the code in one or more event sinks at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> -   <xref:System.Timers.Timer?displayProperty=nameWithType>, which fires an event and executes the code in one or more event sinks at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
 > -   <xref:System.Threading.Timer?displayProperty=nameWithType>, which executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
 > -   <xref:System.Windows.Forms.Timer?displayProperty=nameWithType>, a Windows Forms component that fires an event and executes the code in one or more event sinks at regular intervals. The component has no user interface and is designed for use in a single-threaded environment; it executes on the UI thread.  
 > -   <xref:System.Web.UI.Timer?displayProperty=nameWithType>, an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
@@ -96,6 +92,7 @@ Sub TimerCallback(state As Object)
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.TimerCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -675,5 +672,35 @@ Sub TimerCallback(state As Object)
         <exception cref="T:System.ArgumentNullException">The <paramref name="notifyObject" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Change">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the start time and the interval between method invocations for a timer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="Timer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of <see cref="T:System.Threading.Timer" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

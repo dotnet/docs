@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;certificateValidation&gt;
 Controls the settings that token handlers use to validate certificates. These settings are overridden if a specific handler is configured with its own validator.  

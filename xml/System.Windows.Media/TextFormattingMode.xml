@@ -12,6 +12,7 @@
   <Docs>
     <summary>Defines the formatting methods supported by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
   </Docs>
   <Members>
     <Member MemberName="Display">
@@ -28,6 +29,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using GDI-compatible font metrics.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
       </Docs>
     </Member>
     <Member MemberName="Ideal">
@@ -44,6 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using ideal font metrics.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
       </Docs>
     </Member>
   </Members>

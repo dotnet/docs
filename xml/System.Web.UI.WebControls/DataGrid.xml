@@ -44,7 +44,7 @@
  Use the <xref:System.Web.UI.WebControls.DataGrid> control to display the fields of a data source as columns in a table. Each row in the <xref:System.Web.UI.WebControls.DataGrid> control represents a record in the data source. The <xref:System.Web.UI.WebControls.DataGrid> control supports selection, editing, deleting, paging, and sorting.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  Different column types determine the behavior of the columns in the control. The following table lists the different column types that can be used.  
   
@@ -323,6 +323,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -410,6 +418,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.CurrentPageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.PageSize" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -463,6 +474,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.CurrentPageIndex" />
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
@@ -507,6 +522,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.SortCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemStyle">
@@ -566,6 +586,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumns">
@@ -617,6 +639,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Columns" />
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -667,6 +695,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommand">
@@ -694,7 +723,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -709,6 +738,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnCancelCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -733,6 +765,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -801,6 +841,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+        <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+        <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
+        <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
       </Docs>
     </Member>
     <Member MemberName="CreateColumnSet">
@@ -890,6 +936,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -926,6 +973,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
@@ -973,6 +1022,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified page index is a negative value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -997,7 +1048,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1012,6 +1063,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnDeleteCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandName">
@@ -1036,6 +1090,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="EditCommand">
@@ -1063,7 +1125,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1078,6 +1140,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnEditCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="EditCommandName">
@@ -1102,6 +1167,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="EditItemIndex">
@@ -1151,6 +1224,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
       </Docs>
     </Member>
     <Member MemberName="EditItemStyle">
@@ -1207,6 +1282,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -1264,6 +1341,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.ShowFooter" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -1321,6 +1401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.ShowHeader" />
       </Docs>
     </Member>
     <Member MemberName="InitializeItem">
@@ -1354,6 +1437,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
@@ -1389,6 +1474,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
+        <altmember cref="T:System.Web.UI.WebControls.PagedDataSource" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -1411,7 +1498,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataGrid> control. This event is commonly used to handle buttons controls with a custom CommandName value, such as Add, in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1426,6 +1513,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnItemCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -1450,7 +1540,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1468,6 +1558,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnItemCreated(System.Web.UI.WebControls.DataGridItemEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -1490,7 +1583,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataGrid> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is nulled out and no longer available.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1508,6 +1601,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnItemDataBound(System.Web.UI.WebControls.DataGridItemEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1555,6 +1651,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="ItemStyle">
@@ -1616,6 +1714,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1661,6 +1762,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -1696,6 +1805,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCancelCommand">
@@ -1729,7 +1839,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -1747,8 +1857,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnCancelCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnCancelCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleteCommand">
@@ -1779,7 +1892,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -1797,8 +1910,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnDeleteCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnDeleteCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnEditCommand">
@@ -1829,7 +1945,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to the selected row and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
@@ -1850,8 +1966,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnEditCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnEditCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -1880,7 +1999,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataGrid> control. This event is commonly used to handle buttons controls with a custom CommandName value, such as Add, in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -1898,8 +2017,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -1930,7 +2052,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -1951,8 +2073,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemCreated(System.Web.UI.WebControls.DataGridItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemCreated(System.Web.UI.WebControls.DataGridItemEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -1981,7 +2106,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataGrid> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is nulled out and no longer available.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -2002,8 +2127,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemDataBound(System.Web.UI.WebControls.DataGridItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnItemDataBound(System.Web.UI.WebControls.DataGridItemEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanged">
@@ -2037,7 +2165,7 @@
 > [!NOTE]
 >  The event handler receives a <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs> object as a parameter. You can use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property of this parameter to determine the index of the page selected by the user from the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -2055,8 +2183,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnSortCommand">
@@ -2087,7 +2218,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event sorts the list, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -2105,8 +2236,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" /> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.SortCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridSortCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridSortCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnUpdateCommand">
@@ -2140,7 +2274,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.DataGrid.OnUpdateCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2160,6 +2294,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataGrid.OnUpdateCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataGrid.OnUpdateCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PageCommandName">
@@ -2184,6 +2321,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -2225,6 +2370,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
@@ -2249,7 +2395,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event sets the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property to the index of the page you want to display and then uses the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2264,6 +2410,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -2313,6 +2462,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridPagerStyle" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -2355,6 +2505,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified page size less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -2404,6 +2557,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2447,6 +2608,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -2535,6 +2704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemStyle">
@@ -2594,6 +2764,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="ShowFooter">
@@ -2636,6 +2808,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.FooterStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -2678,6 +2851,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="SortCommand">
@@ -2702,7 +2876,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event sorts the list, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2717,6 +2891,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridSortCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridSortCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SortCommandName">
@@ -2741,6 +2918,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -2766,6 +2951,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2811,7 +2998,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2826,6 +3013,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnUpdateCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandName">
@@ -2850,6 +3040,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
+        <altmember cref="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="VirtualItemCount">
@@ -2896,6 +3094,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is a negative number.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.PageSize" />
       </Docs>
     </Member>
   </Members>

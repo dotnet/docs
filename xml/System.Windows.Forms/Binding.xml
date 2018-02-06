@@ -142,6 +142,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.BindingContext" />
+    <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,6 +211,8 @@
         <exception cref="T:System.Exception">
           <paramref name="propertyName" /> is neither a valid property of a control nor an empty string ("").</exception>
         <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control.</exception>
+        <altmember cref="T:System.Windows.Forms.BindingsCollection" />
+        <altmember cref="T:System.Windows.Forms.CurrencyManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -558,6 +564,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Binding.FormattingEnabled" />
+        <altmember cref="M:System.Windows.Forms.Binding.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BindingManagerBase">
@@ -626,6 +634,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -754,6 +763,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Binding.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceUpdateMode">
@@ -833,6 +843,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Binding.Parse" />
+        <altmember cref="M:System.Windows.Forms.Binding.OnFormat(System.Windows.Forms.ConvertEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="FormatInfo">
@@ -919,6 +931,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Binding.BindingComplete" />
+        <altmember cref="T:System.Windows.Forms.BindingCompleteEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="IsBinding">
@@ -1053,6 +1067,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Binding.OnFormat(System.Windows.Forms.ConvertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Binding.OnFormat(System.Windows.Forms.ConvertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Binding.Format" />
+        <altmember cref="M:System.Windows.Forms.Binding.OnParse(System.Windows.Forms.ConvertEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Binding.Parse" />
       </Docs>
     </Member>
     <Member MemberName="OnParse">
@@ -1086,6 +1103,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Binding.OnParse(System.Windows.Forms.ConvertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Binding.OnParse(System.Windows.Forms.ConvertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Binding.Format" />
+        <altmember cref="M:System.Windows.Forms.Binding.OnFormat(System.Windows.Forms.ConvertEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Binding.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1129,6 +1149,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Binding.Format" />
+        <altmember cref="M:System.Windows.Forms.Binding.OnParse(System.Windows.Forms.ConvertEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -1206,5 +1230,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Binding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

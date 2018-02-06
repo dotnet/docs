@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
+    <altmember cref="T:System.Windows.Input.InputBinding" />
+    <altmember cref="T:System.Windows.Input.CommandManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +42,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +155,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -194,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="Executed">
@@ -244,6 +256,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="PreviewCanExecute">
@@ -279,6 +294,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
     <Member MemberName="PreviewExecuted">
@@ -314,7 +332,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.CommandManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

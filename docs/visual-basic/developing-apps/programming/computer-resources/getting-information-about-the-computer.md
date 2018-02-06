@@ -1,35 +1,19 @@
 ---
 title: "Getting Information about the Computer (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.Computer.Info object, tasks"
+  - "My.Computer.Info object [Visual Basic], tasks"
 ms.assetid: 13c145bc-5c85-4fea-a5dd-2ca8681a0252
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Getting Information about the Computer (Visual Basic)
 The `My.Computer.Info` object provides properties for getting information about the computer's memory, loaded assemblies, name, and operating system.  

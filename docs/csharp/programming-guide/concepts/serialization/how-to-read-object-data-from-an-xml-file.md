@@ -1,24 +1,17 @@
 ---
 title: "How to: Read Object Data from an XML File (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 6ad60d96-a4d9-48e6-a8b0-d7f6f803cafa
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Read Object Data from an XML File (C#)
 This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
@@ -73,7 +66,7 @@ public void ReadXML()
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See Also  
- <xref:System.IO.StreamWriter>   
- [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)   
- [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)   
+ <xref:System.IO.StreamWriter>  
+ [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
+ [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 738705de-ad3e-40e0-b363-90305bddb140
 caps.latest.revision: 48
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport: UDP
 The UDP Transport sample demonstrates how to implement UDP unicast and multicast as a custom [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transport. The sample describes the recommended procedure for creating a custom transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], by using the channel framework and following [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] best practices. The steps to create a custom transport are as follows:  
@@ -400,7 +402,7 @@ protected override void OnApplyConfiguration(string configurationName)
 ```  
   
 ## The UDP Test Service and Client  
- Test code for using this sample transport is available in the UdpTestService and UdpTestClient directories. The service code consists of two tests—one test sets up bindings and endpoints from code and the other does it through configuration. Both tests use two endpoints. One endpoint uses the `SampleUdpProfileBinding` with [\<reliableSession>](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) set to `true`. The other endpoint uses a custom binding with `UdpTransportBindingElement`. This is equivalent to using `SampleUdpProfileBinding` with [\<reliableSession>](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) set to `false`. Both tests create a service, add an endpoint for each binding, open the service and then wait for the user to hit ENTER before closing the service.  
+ Test code for using this sample transport is available in the UdpTestService and UdpTestClient directories. The service code consists of two tests—one test sets up bindings and endpoints from code and the other does it through configuration. Both tests use two endpoints. One endpoint uses the `SampleUdpProfileBinding` with [\<reliableSession>](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) set to `true`. The other endpoint uses a custom binding with `UdpTransportBindingElement`. This is equivalent to using `SampleUdpProfileBinding` with [\<reliableSession>](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) set to `false`. Both tests create a service, add an endpoint for each binding, open the service and then wait for the user to hit ENTER before closing the service.  
   
  When you start the service test application you should see the following output.  
   

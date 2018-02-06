@@ -1,18 +1,15 @@
 ---
 title: "ReadOnly (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ReadOnly"
 helpviewer_keywords: 
-  - "ReadOnly keyword"
+  - "ReadOnly keyword [Visual Basic]"
   - "variables [Visual Basic], read-only"
   - "ReadOnly property"
   - "properties [Visual Basic], read-only"
@@ -21,21 +18,6 @@ ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ReadOnly (Visual Basic)
 Specifies that a variable or property can be read but not written.  
@@ -82,5 +64,5 @@ Specifies that a variable or property can be read but not written.
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See Also  
- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)   
+ [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

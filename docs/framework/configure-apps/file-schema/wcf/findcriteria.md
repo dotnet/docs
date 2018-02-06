@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;findCriteria&gt;
 A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).  
@@ -71,5 +73,5 @@ A configuration element that supplies a set of criteria used by a client applica
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ## See Also  
- <xref:System.ServiceModel.Discovery.FindCriteria>   
+ <xref:System.ServiceModel.Discovery.FindCriteria>  
  <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

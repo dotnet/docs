@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess3::SetEnableCustomNotification Method
 Enables and disables custom debugger notifications of the specified type.  
@@ -60,6 +62,6 @@ HRESULT SetEnableCustomNotification(ICorDebugClass * pClass,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICorDebugProcess3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-interface.md)   
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [ICorDebugProcess3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-interface.md)  
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

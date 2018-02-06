@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  
@@ -67,5 +69,5 @@ Follow these general guidelines to create managed applications or components des
  The [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) allows you to replace an assembly when only the file version number is newer. The installer generally does not install over an assembly unless the assembly version number is greater.  
   
 ## See Also  
- [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)   
+ [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)  
  [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

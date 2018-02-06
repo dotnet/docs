@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "transactions [WCF], enabling flow"
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Enabling Transaction Flow
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides highly flexible options for controlling transaction flow. A service's transaction flow settings can be expressed using a combination of attributes and configuration.  

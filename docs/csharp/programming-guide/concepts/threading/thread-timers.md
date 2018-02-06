@@ -1,24 +1,17 @@
 ---
 title: "Thread Timers (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 52ed71e8-4fd9-43a4-ae40-04cce7cff23f
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Thread Timers (C#)
 The <xref:System.Threading.Timer?displayProperty=nameWithType> class is useful for periodically running a task on a separate thread. For example, you could use a thread timer to check the status and integrity of a database or to back up critical files.  
@@ -81,5 +74,5 @@ private void TimerTask(object StateObj)
  Thread timers are particularly useful when the <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> object is unavailable, such as when you are developing console applications.  
   
 ## See Also  
- <xref:System.Threading>   
+ <xref:System.Threading>  
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)

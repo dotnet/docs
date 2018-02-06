@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +62,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="source" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Clone">

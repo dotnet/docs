@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.ServicePointManager" />
+    <altmember cref="T:System.Net.ServicePoint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -150,5 +156,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

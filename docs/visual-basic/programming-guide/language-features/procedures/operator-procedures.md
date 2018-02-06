@@ -1,42 +1,26 @@
 ---
 title: "Operator Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "procedures, operator"
+  - "procedures [Visual Basic], operator"
   - "Visual Basic code, operators"
-  - "syntax, Operator procedures"
+  - "syntax [Visual Basic], Operator procedures"
   - "operators [Visual Basic], overloading"
-  - "overloaded operators"
+  - "overloaded operators [Visual Basic]"
   - "operator overloading"
   - "operator procedures"
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operator Procedures (Visual Basic)
 An operator procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that define the behavior of a standard operator (such as `*`, `<>`, or `And`) on a class or structure you have defined. This is also called *operator overloading*.  
@@ -102,13 +86,13 @@ An operator procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]
  For more information and examples, see [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703).  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)   
- [How to: Define an Operator](./how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)   
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [How to: Define an Operator](./how-to-define-an-operator.md)  
+ [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  
+ [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
  [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)

@@ -1,6 +1,6 @@
 ---
 title: "Selection Statements (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -11,20 +11,6 @@ ms.assetid: cf21cfa2-34fb-48b0-9cbc-8bb4537a9a05
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Selection Statements (C# Reference)
 A selection statement causes the program control to be transferred to a specific flow based upon whether a certain condition is `true` or not.  
@@ -42,7 +28,7 @@ A selection statement causes the program control to be transferred to a specific
 -   [default](../../../csharp/language-reference/keywords/switch.md)  
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)

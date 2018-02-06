@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Putting Controls on Windows Forms
 There are a wide variety of controls that you can put on Windows Forms, depending on the needs of your application.  

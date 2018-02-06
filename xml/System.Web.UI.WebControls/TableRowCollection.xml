@@ -41,6 +41,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -78,6 +83,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -116,6 +124,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -145,6 +156,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="rows" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.Add(System.Web.UI.WebControls.TableRow)" />
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.AddAt(System.Int32,System.Web.UI.WebControls.TableRow)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -178,6 +191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="P:System.Web.UI.WebControls.TableRowCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -219,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -252,6 +268,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -295,6 +314,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetRowIndex">
@@ -332,6 +356,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -386,6 +411,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -423,6 +450,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -459,6 +489,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -495,6 +528,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="P:System.Web.UI.WebControls.Table.Rows" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -522,6 +558,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -553,6 +591,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.Add(System.Web.UI.WebControls.TableRow)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -583,6 +624,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -614,6 +656,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.GetRowIndex(System.Web.UI.WebControls.TableRow)" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -646,6 +690,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.AddAt(System.Int32,System.Web.UI.WebControls.TableRow)" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -731,6 +777,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TableRowCollection.Remove(System.Web.UI.WebControls.TableRow)" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
   </Members>

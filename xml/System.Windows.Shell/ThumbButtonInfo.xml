@@ -40,6 +40,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Shell.TaskbarItemInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +80,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shell.ThumbButtonInfo.Command" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -113,6 +115,9 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.ICommandSource.Command" />
+        <altmember cref="T:System.Windows.Input.ApplicationCommands" />
+        <altmember cref="T:System.Windows.Input.NavigationCommands" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -131,6 +136,7 @@ Windows Taskbar Thumb Buttons
         <summary>Gets or sets the parameter to pass to the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Command" /> property.</summary>
         <value>The parameter to pass to the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Command" /> property. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.ICommandSource.CommandParameter" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameterProperty">
@@ -190,6 +196,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.ICommandSource.CommandTarget" />
       </Docs>
     </Member>
     <Member MemberName="CommandTargetProperty">
@@ -258,6 +265,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shell.ThumbButtonInfo.ImageSource" />
       </Docs>
     </Member>
     <Member MemberName="DescriptionProperty">
@@ -359,6 +367,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ImageSource" />
       </Docs>
     </Member>
     <Member MemberName="ImageSourceProperty">
@@ -445,6 +454,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shell.ThumbButtonInfo.IsInteractive" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -490,6 +500,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shell.ThumbButtonInfo.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsInteractiveProperty">
@@ -532,6 +543,7 @@ Windows Taskbar Thumb Buttons
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Shell.ThumbButtonInfoCollection" />
       </Docs>
     </Member>
     <Member MemberName="VisibilityProperty">

@@ -1,7 +1,7 @@
 ---
 title: "How to: Create Signed Friend Assemblies (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: f2afd83d-b044-484b-a56d-56d0a8a40647
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Create Signed Friend Assemblies (Visual Basic)
 This example shows how to use friend assemblies with assemblies that have strong names. Both assemblies must be strong named. Although both assemblies in this example use the same keys, you could use different keys for two assemblies.  
@@ -27,7 +21,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 1.  Open a command prompt.  
   
-2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
+2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
     1.  Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
   
@@ -96,11 +90,11 @@ This example shows how to use friend assemblies with assemblies that have strong
  There are similarities between the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute and the <xref:System.Security.Permissions.StrongNameIdentityPermission> class. The main difference is that <xref:System.Security.Permissions.StrongNameIdentityPermission> can demand security permissions to run a particular section of code, whereas the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute controls the visibility of `Friend` types and members.  
   
 ## See Also  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
- [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
- [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)   
- [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
- [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617)   
+ <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+ [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
+ [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)  
+ [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)  
+ [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md))  
+ [Creating and Using Strong-Named Assemblies](../../../../framework/app-domains/create-and-use-strong-named-assemblies.md)  
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

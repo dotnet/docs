@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reflection and .NET Native
 In the .NET Framework, managed development supports metaprogramming through the reflection API. Reflection allows you to inspect objects in an app, call methods on objects discovered through inspection, generate new types at run time, and supports many other dynamic code scenarios. It also supports serialization and deserialization, which allows an object's field values to be persisted and later restored. These scenarios all require the .NET Framework just-in-time (JIT) compiler to generate native code based on available metadata.  
@@ -38,5 +40,5 @@ In the .NET Framework, managed development supports metaprogramming through the 
 -   [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
   
 ## See Also  
- [Compiling Apps with .NET Native](../../../docs/framework/net-native/index.md)   
+ [Compiling Apps with .NET Native](../../../docs/framework/net-native/index.md)  
  [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md)

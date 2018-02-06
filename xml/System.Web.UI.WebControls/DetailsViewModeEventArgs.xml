@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs> object is passed to the event handler, which allows you to determine the mode to which the <xref:System.Web.UI.WebControls.DetailsView> control is changing, to determine whether the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event was raised as a result of the user canceling an edit operation, or to indicate that an insert operation should be canceled. To determine the new mode, use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode%2A> property. You can also use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode%2A> property to change to an alternate mode by setting it to one of the <xref:System.Web.UI.WebControls.DetailsViewMode> enumeration values. Use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit%2A> property to determine whether the user canceled an edit operation. To cancel an insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.%23ctor%2A> constructor.  
   
@@ -34,6 +34,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +79,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
       </Docs>
     </Member>
     <Member MemberName="CancelingEdit">
@@ -106,6 +118,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="NewMode">
@@ -139,6 +154,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
       </Docs>
     </Member>
   </Members>

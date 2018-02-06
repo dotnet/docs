@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 96102f96-d403-4385-8ef6-5d80e406eb0c
+ms.workload: 
+  - dotnetcore
 ---
 
 # global.json reference

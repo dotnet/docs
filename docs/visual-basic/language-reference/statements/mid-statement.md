@@ -1,42 +1,24 @@
 ---
 title: "Mid Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.MidB"
   - "vb.Mid"
 helpviewer_keywords: 
-  - "substrings, Mid statement"
+  - "substrings [Visual Basic], Mid statement"
   - "strings [Visual Basic], substrings"
-  - "Mid statement"
+  - "Mid statement [Visual Basic]"
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Mid Statement
 Replaces a specified number of characters in a `String` variable with characters from another string.  
@@ -91,6 +73,6 @@ Mid( _
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.Mid%2A>   
- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)   
+ <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
+ [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)  
  [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

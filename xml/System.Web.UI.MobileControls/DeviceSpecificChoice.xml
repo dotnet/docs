@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is analogous to the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
+ This class is analogous to the [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. Choices are tested in the order that they appear within a [\<DeviceSpecific>](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element. If you specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property of the `<Choice>` element, its value must be the name of a device filter defined in the `<deviceFilters>` section of the Machine.config file. At run time, ASP.NET evaluates the specified device filter against the capabilities of the current device. If successful, the choice is selected. If you do not specify the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, the defaults for the `<Choice>` element are selected.  
   
    
   
@@ -195,7 +195,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
     capabilities, String optionalArgument);  
 ```  
   
- When evaluating the [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  
+ When evaluating the [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  
   
 > [!NOTE]
 >  Device filters are case-sensitive.  
@@ -245,7 +245,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets a value indicating whether the currently selected choice in the [&lt;DeviceSpecific&gt;](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) element has templates defined within it. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>
           <see langword="true" /> if the currently selected choice has templates defined with in it; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -379,7 +379,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the templates that have been defined in the [&lt;Choice&gt;](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets the templates that have been defined in the [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> instance containing the <see cref="T:System.Web.UI.ITemplate" /> objects defined for the <see langword="&lt;Choice&gt;" /> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,7 +402,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of markup in a [&lt;Choice&gt;](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Gets or sets the type of markup in a [&lt;Choice&gt;](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The type of markup inside templates of a choice.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

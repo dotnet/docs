@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlStatement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -294,6 +296,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlSecurityToken.ValidTo" />
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+        <altmember cref="P:System.IdentityModel.Tokens.SamlAssertion.Conditions" />
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -323,7 +328,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlSecurityToken.ValidFrom" />
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+        <altmember cref="P:System.IdentityModel.Tokens.SamlAssertion.Conditions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

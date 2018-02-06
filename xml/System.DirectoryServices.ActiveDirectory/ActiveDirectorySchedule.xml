@@ -202,6 +202,9 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       </Docs>
     </Member>
     <Member MemberName="SetSchedule">
@@ -245,6 +248,10 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="days" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       </Docs>
     </Member>
     <Member MemberName="SetSchedule">
@@ -288,7 +295,31 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="days" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.HourOfDay" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSchedule">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a range of times to the schedule.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

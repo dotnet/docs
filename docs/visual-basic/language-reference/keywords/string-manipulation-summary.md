@@ -1,37 +1,19 @@
 ---
 title: "String Manipulation Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "string functions"
-  - "manipulating strings"
+  - "manipulating strings [Visual Basic]"
   - "strings [Visual Basic], manipulating"
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # String Manipulation Summary (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
@@ -53,5 +35,5 @@ translation.priority.ht:
 |Return a specified number of substrings.|<xref:Microsoft.VisualBasic.Strings.Split%2A>, <xref:Microsoft.VisualBasic.Strings.Join%2A>|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

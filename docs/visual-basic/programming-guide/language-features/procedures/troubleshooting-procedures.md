@@ -1,39 +1,23 @@
 ---
 title: "Troubleshooting Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting Visual Basic, procedures"
-  - "procedures, troubleshooting"
+  - "procedures [Visual Basic], troubleshooting"
   - "Visual Basic code, procedures"
   - "troubleshooting procedures"
-  - "procedures, about procedures"
+  - "procedures [Visual Basic], about procedures"
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting Procedures (Visual Basic)
 This page lists some common problems that can occur when working with procedures.  
@@ -144,12 +128,12 @@ This page lists some common problems that can occur when working with procedures
  If two overloads of a procedure have identical signatures except that the last parameter is declared [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) in one and [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) in the other, the compiler resolves a call to that procedure according to the closest match. For more information, see [Overload Resolution](./overload-resolution.md).  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)  
  [Overload Resolution](./overload-resolution.md)

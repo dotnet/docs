@@ -181,6 +181,7 @@
         <summary>Returns the hash code for the display name value.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.String.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -251,5 +252,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

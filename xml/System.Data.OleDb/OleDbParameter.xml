@@ -687,6 +687,9 @@ public void CreateOleDbParameter()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.OleDb.OleDbParameter.ResetOleDbType" />
+        <altmember cref="P:System.Data.OleDb.OleDbParameter.DbType" />
+        <altmember cref="P:System.Data.OleDb.OleDbParameter.OleDbType" />
       </Docs>
     </Member>
     <Member MemberName="ResetOleDbType">
@@ -712,6 +715,9 @@ public void CreateOleDbParameter()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.OleDb.OleDbParameter.ResetDbType" />
+        <altmember cref="P:System.Data.OleDb.OleDbParameter.DbType" />
+        <altmember cref="P:System.Data.OleDb.OleDbParameter.OleDbType" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -1083,5 +1089,14 @@ public void CreateOleDbParameter()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

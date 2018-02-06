@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;entries&gt;
 A routing entry that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  

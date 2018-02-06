@@ -48,6 +48,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.DisplayMode" />
+    <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox" />
+    <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.ShowSummary" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,6 +144,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The display mode is not one of the <see cref="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -181,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -219,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -296,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -410,6 +421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.ShowSummary" />
+        <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.EnableClientScript" />
       </Docs>
     </Member>
     <Member MemberName="ShowModelStateErrors">
@@ -482,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox" />
       </Docs>
     </Member>
     <Member MemberName="ShowValidationErrors">
@@ -535,6 +549,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "providers, UI Automation, returning properties"
   - "properties, returned by UI Automation providers"
@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Return Properties from a UI Automation Provider
 > [!NOTE]
@@ -35,5 +37,5 @@ manager: "markl"
  [!code-vb[UIAFragmentProvider_snip#117](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#117)]  
   
 ## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)   
+ [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
  [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

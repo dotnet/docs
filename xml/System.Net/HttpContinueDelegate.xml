@@ -33,12 +33,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Net.HttpContinueDelegate> to specify the callback method to be called when an HTTP 100-continue response is received from the server. When set, the delegate is called whenever the first protocol response of type <xref:System.Net.HttpStatusCode?displayProperty=nameWithType> is received. This is a change from the behavior of the version 1.1 Framework.  
+ Use <xref:System.Net.HttpContinueDelegate> to specify the callback method to be called when an HTTP 100-continue response is received from the server. When set, the delegate is called whenever the first protocol response of type <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType> is received. This is a change from the behavior of the version 1.1 Framework.  
   
  Your event handler must declare the same parameters as the <xref:System.Net.HttpContinueDelegate>.  
   
 > [!NOTE]
->  `StatusCode` is always <xref:System.Net.HttpStatusCode?displayProperty=nameWithType>.  
+>  `StatusCode` is always <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType>.  
   
  This is useful when the client wants to display the status of data being received from the server.  
   

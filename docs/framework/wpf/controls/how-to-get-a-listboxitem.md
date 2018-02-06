@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ListBox controls, getting a ListBoxItem"
-  - "ListBoxItem"
+  - "ListBox controls [WPF], getting a ListBoxItem"
+  - "ListBoxItem [WPF]"
 ms.assetid: da877c6f-5fd8-40cb-8909-225cbfd99aa5
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get a ListBoxItem
 If you need to get a specific <xref:System.Windows.Controls.ListBoxItem> at a particular index in a <xref:System.Windows.Controls.ListBox>, you can use an <xref:System.Windows.Controls.ItemContainerGenerator>.  

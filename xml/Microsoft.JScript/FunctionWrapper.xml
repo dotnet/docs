@@ -14,6 +14,7 @@
     <summary>Binds the members of a function to an object.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Reflection.MemberInfo" />
   </Docs>
   <Members>
     <Member MemberName="ToString">
@@ -34,6 +35,7 @@
         <returns>A string representation of the function that contains the function source, the function members, and the function name.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
   </Members>

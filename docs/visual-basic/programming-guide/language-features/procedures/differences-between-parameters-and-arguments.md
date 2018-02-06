@@ -1,42 +1,26 @@
 ---
 title: "Differences Between Parameters and Arguments (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
-  - "parameters, and arguments"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
+  - "parameters [Visual Basic], and arguments"
   - "procedure arguments"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], and parameters"
   - "procedure parameters"
-  - "parameters, definition"
+  - "parameters [Visual Basic], definition"
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Differences Between Parameters and Arguments (Visual Basic)
 In most cases, a procedure must have some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  
@@ -58,13 +42,13 @@ In most cases, a procedure must have some information about the circumstances in
  In contrast to parameter definition, arguments do not have names. Each argument is an expression, which can contain zero or more variables, constants, and literals. The data type of the evaluated expression should typically match the data type defined for the corresponding parameter, and in any case it must be convertible to the parameter type.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Recursive Procedures](./recursive-procedures.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Recursive Procedures](./recursive-procedures.md)  
  [Procedure Overloading](./procedure-overloading.md)

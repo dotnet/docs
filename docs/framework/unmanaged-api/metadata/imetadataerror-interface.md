@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataError Interface
 Provides a callback mechanism for reporting errors during the metadata merge.  

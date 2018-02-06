@@ -27,7 +27,7 @@
 ## Remarks  
  The UriParser class enables you to create parsers for new URI schemes. You can write these parsers in their entirety, or the parsers can be derived from well-known schemes (HTTP, FTP, and other schemes based on network protocols). If you want to create a completely new parser, inherit from <xref:System.GenericUriParser>. If you want to create a parser that extends a well-known URI scheme, inherit from <xref:System.FtpStyleUriParser>, <xref:System.HttpStyleUriParser>, <xref:System.FileStyleUriParser>, <xref:System.GopherStyleUriParser>, or <xref:System.LdapStyleUriParser>.  
   
- Microsoft strongly recommends that you use a parser shipped with the .NET Framework. Building your own parser increases the complexity of your application, and will not perform as well as the shipped parsers.  
+ Microsoft strongly recommends that you use a parser shipped with .NET. Building your own parser increases the complexity of your application, and will not perform as well as the shipped parsers.  
   
  ]]></format>
     </remarks>
@@ -111,6 +111,12 @@
  \- or -  
   
  <paramref name="uri" /> is not an absolute URI. Relative URIs cannot be used with this method.</exception>
+        <altmember cref="T:System.UriComponents" />
+        <altmember cref="F:System.UriComponents.Host" />
+        <altmember cref="F:System.UriComponents.Port" />
+        <altmember cref="F:System.UriComponents.Scheme" />
+        <altmember cref="T:System.UriFormat" />
+        <altmember cref="M:System.UriParser.GetComponents(System.Uri,System.UriComponents,System.UriFormat)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeAndValidate">

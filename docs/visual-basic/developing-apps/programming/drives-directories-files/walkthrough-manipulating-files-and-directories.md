@@ -1,46 +1,30 @@
 ---
 title: "Manipulating Files and Directories in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, reading text"
-  - "reading files, text"
+  - "files [Visual Basic], reading text"
+  - "reading files [Visual Basic], text"
   - "I/O [Visual Basic], walkthroughs"
   - "text, writing to files"
   - "text, reading from files"
-  - "reading text from files, walkthroughs"
+  - "reading text from files [Visual Basic], walkthroughs"
   - "Visual Basic code, file access"
-  - "files, writing text"
+  - "files [Visual Basic], writing text"
   - "I/O [Visual Basic], writing text to files"
   - "file access, walkthroughs"
-  - "writing to files, walkthroughs"
+  - "writing to files [Visual Basic], walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
 caps.latest.revision: 49
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
 This walkthrough provides an introduction to the fundamentals of file I/O in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
@@ -180,7 +164,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
  [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
   
 ## See Also  
- <xref:System.IO>   
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>   
+ <xref:System.IO>  
+ <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
+ <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>  
  [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)

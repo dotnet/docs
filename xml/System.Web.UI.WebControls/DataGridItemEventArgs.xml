@@ -22,7 +22,7 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DataGridItemEventArgs>, see the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -40,6 +40,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +119,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
       </Docs>
     </Member>
   </Members>

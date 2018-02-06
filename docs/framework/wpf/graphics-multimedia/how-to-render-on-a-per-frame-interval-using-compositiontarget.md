@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "CompositionTarget objects, rendering per frame"
-  - "rendering per frame using CompositionTarget objects"
+  - "CompositionTarget objects [WPF], rendering per frame"
+  - "rendering per frame using CompositionTarget objects [WPF]"
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Render on a Per Frame Interval Using CompositionTarget
 The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine provides many features for creating frame-based animation. However, there are application scenarios in which you need finer-grained control over rendering on a per frame basis. The <xref:System.Windows.Media.CompositionTarget> object provides the ability to create custom animations based on a per-frame callback.  
@@ -47,5 +49,5 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  Adding or removing a rendering <xref:System.EventHandler> delegate while the event is firing will be delayed until after the event is finished firing. This is consistent with how <xref:System.MulticastDelegate>-based events are handled in the Common Language Runtime (CLR). Also note that rendering events are not guaranteed to be called in any particular order. If you have multiple <xref:System.EventHandler> delegates that rely on a particular order, you should register a single <xref:System.Windows.Media.CompositionTarget.Rendering> event and multiplex the delegates in the correct order yourself.  
   
 ## See Also  
- <xref:System.Windows.Media.CompositionTarget>   
+ <xref:System.Windows.Media.CompositionTarget>  
  [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

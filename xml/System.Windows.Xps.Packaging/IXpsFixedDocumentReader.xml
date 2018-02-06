@@ -50,6 +50,7 @@
         <param name="signatureDefinition">The definition that is added.</param>
         <summary>Adds the specified <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.CommitSignatureDefinition" />
       </Docs>
     </Member>
     <Member MemberName="CommitSignatureDefinition">
@@ -68,6 +69,7 @@
       <Docs>
         <summary>Flushes the package <see cref="T:System.IO.Stream" /> and also commits an <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the package.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.AddSignatureDefinition(System.Windows.Xps.Packaging.XpsSignatureDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="DocumentNumber">
@@ -186,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Printing" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSignatureDefinition">
@@ -225,6 +228,7 @@
         <summary>Gets a collection of all the signature definitions that are associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of signature definitions, typically one for every person who signed or will sign the document.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Xps.Packaging.XPSSignatureDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">

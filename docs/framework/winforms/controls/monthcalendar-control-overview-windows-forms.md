@@ -12,14 +12,16 @@ ms.topic: "article"
 f1_keywords: 
   - "MonthCalendar"
 helpviewer_keywords: 
-  - "calendars, Windows Forms controls"
-  - "calendar controls, Windows Forms"
+  - "calendars [Windows Forms], Windows Forms controls"
+  - "calendar controls [Windows Forms], Windows Forms"
   - "MonthCalendar control [Windows Forms], setting the first day of the week"
 ms.assetid: 788c5325-b721-44ec-95bf-9b680ba0f6a2
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MonthCalendar Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control presents an intuitive graphical interface for users to view and set date information. The control displays a calendar: a grid containing the numbered days of the month, arranged in columns underneath the days of the week, with the selected range of dates highlighted. You can select a different month by clicking the arrow buttons on either side of the month caption. Unlike the similar <xref:System.Windows.Forms.DateTimePicker> control, you can select more than one date with this control. For more information about the <xref:System.Windows.Forms.DateTimePicker> control, see [DateTimePicker Control](../../../../docs/framework/winforms/controls/datetimepicker-control-windows-forms.md).  
@@ -32,5 +34,5 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control presents an 
  The key property of the <xref:System.Windows.Forms.MonthCalendar> control is <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A>, the range of dates selected in the control. The <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> value cannot exceed the maximum number of days that can be selected, set in the <xref:System.Windows.Forms.MonthCalendar.MaxSelectionCount%2A> property. The earliest and latest dates the user can select are determined by the <xref:System.Windows.Forms.MonthCalendar.MaxDate%2A> and <xref:System.Windows.Forms.MonthCalendar.MinDate%2A> properties.  
   
 ## See Also  
- <xref:System.Windows.Forms.MonthCalendar>   
+ <xref:System.Windows.Forms.MonthCalendar>  
  [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)

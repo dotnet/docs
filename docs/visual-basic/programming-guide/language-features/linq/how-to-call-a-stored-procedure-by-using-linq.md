@@ -1,13 +1,12 @@
 ---
 title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], stored procedure calls"
@@ -18,28 +17,13 @@ ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call a Stored Procedure by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information, including database objects such as stored procedures.  
   
  The following example shows how to create an application that calls a stored procedure in a SQL Server database. The sample shows how to call two different stored procedures in the database. Each procedure returns the results of a query. One procedure takes input parameters, and the other procedure does not take parameters.  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
+ The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -89,8 +73,8 @@ Language-Integrated Query (LINQ) makes it easy to access database information, i
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
+ [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)  
  [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)

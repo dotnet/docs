@@ -35,7 +35,7 @@ Class GetAttribTest1
         Dim MyAttributes() As DeveloperAttribute =
             CType(Attribute.GetCustomAttributes(t, GetType(DeveloperAttribute)), DeveloperAttribute())
 
-        If MyAttributes Is Nothing Then
+        If MyAttributes.Length = 0 Then
             Console.WriteLine("The attribute was not found.")
         Else
             For i As Integer = 0 To MyAttributes.Length - 1

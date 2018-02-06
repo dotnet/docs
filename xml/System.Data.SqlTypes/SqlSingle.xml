@@ -955,10 +955,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be converted.</param>
+        <summary>This implicit operator converts the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlBoolean.ByteValue" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -990,10 +992,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDouble" /> parameter to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlDouble" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlDouble.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlDouble" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1025,9 +1029,9 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlSingle" /> value to be converted to float.</param>
+        <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure to float.</summary>
+        <returns>A float that contains the value of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,10 +1064,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlString" /> object to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlString" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the value represented by the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1173,10 +1179,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlByte" /> to be converted.</param>
+        <summary>This implicit operator converts the <see cref="T:System.Data.SqlTypes.SqlByte" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> property equals the <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlByte" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1208,10 +1216,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1243,10 +1253,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1278,10 +1290,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlInt32.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlInt32" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1313,10 +1327,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlInt64" /> parameter to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlInt64.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlInt64" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1348,10 +1364,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure to be converted.</param>
+        <summary>Converts the supplied <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose <see cref="P:System.Data.SqlTypes.SqlSingle.Value" /> is equal to the <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlSingle?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1383,9 +1401,9 @@
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The float value to be converted to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</param>
+        <summary>Converts the specified floating point value to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure that contains the value of the specified float.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2172,5 +2190,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logical comparison of two structures to determine whether they are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to and from a <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to a <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure using the supplied floating point value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to the supplied object and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

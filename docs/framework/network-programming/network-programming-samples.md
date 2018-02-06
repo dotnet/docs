@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Programming Samples
 This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.PeerToPeer>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces.  
@@ -69,6 +71,6 @@ This section contains descriptions and links to downloadable network programming
  <xref:System.Net.Sockets>  
   
 ## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)   
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  
  [Networking Samples for .NET](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

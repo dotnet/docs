@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +68,7 @@
         <param name="objectInstance">The business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> interacts to perform data operations.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" /> class using the specified object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ObjectInstance">
@@ -102,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
       </Docs>
     </Member>
   </Members>

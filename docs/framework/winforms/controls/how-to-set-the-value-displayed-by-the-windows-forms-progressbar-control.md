@@ -9,21 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Increment method"
-  - "Value property"
-  - "PerformStep method"
-  - "Step property"
   - "ProgressBar control [Windows Forms], setting value displayed"
-  - "progress controls, setting value displayed"
+  - "progress controls [Windows Forms], setting value displayed"
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Value Displayed by the Windows Forms ProgressBar Control
 > [!IMPORTANT]
@@ -235,7 +233,7 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ProgressBar>   
- <xref:System.Windows.Forms.ToolStripProgressBar>   
- [ProgressBar Control Overview](../../../../docs/framework/winforms/controls/progressbar-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.ProgressBar>  
+ <xref:System.Windows.Forms.ToolStripProgressBar>  
+ [ProgressBar Control Overview](../../../../docs/framework/winforms/controls/progressbar-control-overview-windows-forms.md)  
  [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)

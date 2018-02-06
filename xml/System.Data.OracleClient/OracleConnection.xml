@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.OracleClient.OracleDataAdapter" />
+    <altmember cref="T:System.Data.OracleClient.OracleCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +169,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Commit" />
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Rollback" />
       </Docs>
     </Member>
     <Member MemberName="BeginTransaction">
@@ -207,6 +211,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Commit" />
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Rollback" />
       </Docs>
     </Member>
     <Member MemberName="ChangeDatabase">
@@ -539,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.OracleClient.OracleConnection.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -575,6 +582,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.OracleClient.OracleConnection.ConnectionString" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -938,5 +946,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins a transaction at the database.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

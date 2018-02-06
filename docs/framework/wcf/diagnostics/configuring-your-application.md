@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Your Application
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the .NET configuration system and allows you to configure services at both the machine and application scope.  
@@ -36,6 +38,6 @@ manager: "erikre"
 >  If you edit the configuration file of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Web Service project in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] by right-clicking it in **Solution Explorer**, notice that the **Edit WCF Config** context menu item is missing. To workaround this issue, click the **Tools** menu, and choose **WCF Service Config Editor**. After that, you can right-click a configuration file and use the **Edit WCF Config** context menu item.  
   
 ## See Also  
- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)   
+ [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
+ [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
  [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)

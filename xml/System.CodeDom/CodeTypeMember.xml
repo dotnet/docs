@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeTypeMemberCollection" />
+    <altmember cref="T:System.CodeDom.MemberAttributes" />
+    <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.MemberAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -111,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeCommentStatementCollection" />
       </Docs>
     </Member>
     <Member MemberName="CustomAttributes">
@@ -143,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
       </Docs>
     </Member>
     <Member MemberName="EndDirectives">
@@ -197,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeLinePragma" />
       </Docs>
     </Member>
     <Member MemberName="Name">

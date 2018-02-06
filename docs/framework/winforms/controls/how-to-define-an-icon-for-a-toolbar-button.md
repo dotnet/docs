@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], adding icons to buttons"
   - "buttons [Windows Forms], icons"
@@ -25,6 +25,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define an Icon for a ToolBar Button
 > [!NOTE]
@@ -122,7 +124,7 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolBar>   
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)   
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolBar>  
+ [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
+ [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
  [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)

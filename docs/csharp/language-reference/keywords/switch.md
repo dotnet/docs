@@ -1,6 +1,6 @@
 ---
 title: "switch keyword (C# Reference)"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -19,34 +19,19 @@ ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # switch (C# Reference)
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*. 
   
- [!code-cs[switch#1](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]  
+ [!code-csharp[switch#1](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]  
 
 The `switch` statement is often used as an alternative to an [if-else](if-else.md) construct if a single expression is tested against three or more conditions. For example, the following `switch` statement determines whether a variable of type `Color` has one of three values: 
 
-[!code-cs[switch#3](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)] 
+[!code-csharp[switch#3](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)] 
 
 It is equivalent to the following example that uses an `if`-`else` construct. 
 
-[!code-cs[switch#3a](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)] 
+[!code-csharp[switch#3a](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)] 
 
 ## The match expression
 
@@ -72,9 +57,9 @@ Starting with C# 7, the match expression can be any non-null expression.
  
   A `switch` statement can include any number of switch sections, and each section can have one or more case labels, as shown in the following example. However, no two case labels may contain the same expression.  
 
- [!code-cs[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
+ [!code-csharp[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
 
- Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
+ Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."  
 
 ```csharp  
 switch (caseSwitch)  
@@ -90,13 +75,13 @@ switch (caseSwitch)
 ```  
 This requirement is usually met by explicitly exiting the switch section by using a [break](break.md), [goto](goto.md), or [return](return.md) statement. However, the following code is also valid, because it ensures that program control cannot fall through to the `default` switch section.
   
- [!code-cs[switch#4](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch4.cs#1)]    
+ [!code-csharp[switch#4](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch4.cs#1)]    
   
  Execution of the statement list in the switch section with a case label that matches the match expression begins with the first statement and proceeds through the statement list, typically until a jump statement, such as a `break`, `goto case`, `goto label`, `return`, or `throw`, is reached. At that point, control is transferred outside the `switch` statement or to another case label. A `goto` statement, if it is used, must transfer control to a constant label. This restriction is necessary, since attempting to transfer control to a non-constant label can have undesirable side-effects, such transferring control to an unintended location in code or creating an endless loop.
 
 ## Case labels
 
- Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transfered to the section with the `default` case label, if there is one. If there is no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
+ Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transferred to the section with the `default` case label, if there is one. If there is no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
 
  For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern) section.
 
@@ -106,7 +91,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
 
  The following example illustrates a `switch` statement that uses a variety of non-mutually exclusive patterns. If you move the `case 0:` switch section so that it is no longer the first section in the `switch` statement, C# generates a compiler error because an integer whose value is zero is a subset of all integers, which is the pattern defined by the `case int val` statement.
 
- [!code-cs[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch5.cs#1)]    
+ [!code-csharp[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch5.cs#1)]    
 
 You can correct this issue and eliminate the compiler warning in one of two ways:
 
@@ -147,13 +132,13 @@ The constant expression is evaluated as follows:
 
 - Otherwise, the value of the expression is determined by a call to the static [Object.Equals(expr, constant)](xref:System.Object.Equals(System.Object,System.Object)) method.  
 
-The following example uses the constant pattern to determine whether a particular date is a weekend, the first day of the work week, the last day of the work week, or the middle of the work week. It evaluates the [DateTime.DayOfWeek](xref:System.DateTime.DayOfWeek) property of the current day against the members of the @System.DayOfWeek enumeration. 
+The following example uses the constant pattern to determine whether a particular date is a weekend, the first day of the work week, the last day of the work week, or the middle of the work week. It evaluates the <xref:System.DateTime.DayOfWeek?displayProperty=nameWithType> property of the current day against the members of the <xref:System.DayOfWeek> enumeration. 
 
-[!code-cs[switch#7](../../../../samples/snippets/csharp/language-reference/keywords/switch/const-pattern.cs#1)]
+[!code-csharp[switch#7](../../../../samples/snippets/csharp/language-reference/keywords/switch/const-pattern.cs#1)]
 
 The following example uses the constant pattern to handle user input in a console application that simulates an automatic coffee machine.
   
- [!code-cs[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch6.cs)]  
+ [!code-csharp[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch6.cs)]  
 
 ### Type pattern
 
@@ -184,11 +169,11 @@ case null:
  
 The following example uses the type pattern to provide information about various kinds of collection types.
 
-[!code-cs[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern.cs#1)]
+[!code-csharp[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern.cs#1)]
 
 Without pattern matching, this code might be written as follows. The use of type pattern matching produces more compact, readable code by eliminating the need to test whether the result of a conversion is a `null` or to perform repeated casts.  
 
-[!code-cs[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
+[!code-csharp[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
 ## The `case` statement and the `when` clause
 
@@ -196,20 +181,20 @@ Starting with C# 7, because case statements need not be mutually exclusive, you 
 
  The following example defines a base `Shape` class, a `Rectangle` class that derives from `Shape`, and a `Square` class that derives from `Rectangle`. It uses the `when` clause to ensure that the `ShowShapeInfo` treats a `Rectangle` object that has been assigned equal lengths and widths as a `Square` even if is has not been instantiated as a `Square` object. The method does not attempt to display information either about an object that is `null` or a shape whose area is zero. 
 
-[!code-cs[switch#8](../../../../samples/snippets/csharp/language-reference/keywords/switch/when-clause.cs#1)]
+[!code-csharp[switch#8](../../../../samples/snippets/csharp/language-reference/keywords/switch/when-clause.cs#1)]
   
 Note that the `when` clause in the example that attempts to test whether a `Shape` object is `null` does not execute. The correct type pattern to test for a `null` is `case null:`.
 
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
 
- [C# Reference](../index.md)   
- [C# Programming Guide](../../programming-guide/index.md)   
- [C# Keywords](index.md)   
- [if-else](if-else.md)   
- [Pattern Matching](../../pattern-matching.md)   
+ [C# Reference](../index.md)  
+ [C# Programming Guide](../../programming-guide/index.md)  
+ [C# Keywords](index.md)  
+ [if-else](if-else.md)  
+ [Pattern Matching](../../pattern-matching.md)  
  
 
  

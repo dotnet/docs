@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "service contracts [WCF], defining"
 ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 caps.latest.revision: 58
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Define a Windows Communication Foundation Service Contract
 This is the first of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
@@ -88,8 +90,8 @@ This is the first of six tasks required to create a basic [!INCLUDE[indigo1](../
     >  When using attributes to annotate an interface, member, or class, you can drop the "Attribute" part from the attribute name. So <xref:System.ServiceModel.ServiceContractAttribute> becomes `[ServiceContract]` in C#, or `<ServiceContract>` in Visual Basic.  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>   
- <xref:System.ServiceModel.OperationContractAttribute>   
- [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)   
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ <xref:System.ServiceModel.ServiceContractAttribute>  
+ <xref:System.ServiceModel.OperationContractAttribute>  
+ [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)  
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ESymbolReadingPolicy Enumeration
 Contains values that set the policy for reading program database (PDB) files.  

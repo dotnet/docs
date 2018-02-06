@@ -190,6 +190,33 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -300,6 +327,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -446,6 +477,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Depth" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -595,6 +632,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Depth" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -626,6 +669,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="EnabledField">
@@ -667,6 +716,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="FormatString">
@@ -816,6 +871,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -948,6 +1009,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrlField">
@@ -1079,6 +1159,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -1211,6 +1310,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlField">
@@ -1342,6 +1460,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="PopOutImageUrl">
@@ -1386,6 +1523,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="PopOutImageUrlField">
@@ -1429,6 +1572,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -1460,6 +1609,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SelectableField">
@@ -1501,6 +1656,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorImageUrl">
@@ -1545,6 +1706,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorImageUrlField">
@@ -1588,6 +1755,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1617,6 +1790,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSourceViewSchemaAccessor.DataSourceViewSchema">
@@ -1642,6 +1816,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -1661,6 +1841,9 @@
         <value>
           <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -1682,6 +1865,8 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the node's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1701,6 +1886,8 @@
         <summary>Saves the view state changes to an <see cref="T:System.Object" />.</summary>
         <returns>An <see cref="T:System.Object" /> that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1726,6 +1913,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -1773,7 +1962,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.MenuItemBinding> object must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
    
   
@@ -1865,6 +2054,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="TargetField">
@@ -1908,7 +2116,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.MenuItemBinding> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  Note that setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.Menu> control for this menu item. Setting the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property to open a new window can make it difficult for users of assistive technology devices to use the page.  
   
@@ -1922,6 +2130,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1961,7 +2175,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> property takes precedence.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
@@ -2055,6 +2269,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="TextField">
@@ -2091,7 +2324,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A?displayProperty=nameWithType> property. This allows you to display the same text in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
@@ -2188,6 +2421,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -2319,6 +2571,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipField">
@@ -2450,6 +2721,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2469,6 +2759,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -2600,6 +2891,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ValueField">
@@ -2731,6 +3041,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.FormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBinding.Value" />
       </Docs>
     </Member>
   </Members>

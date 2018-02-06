@@ -37,6 +37,7 @@
   
  Also, clients using a custom resolver must have some upper bound on client-server latency in order to successfully refresh their registration with the peer resolver service.</para>
     </block>
+    <altmember cref="T:System.ServiceModel.PeerResolvers.IPeerResolverContract" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

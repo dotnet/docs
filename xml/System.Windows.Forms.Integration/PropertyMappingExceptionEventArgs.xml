@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
+    <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +46,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="exception" /> is <see langword="null" />; <paramref name="propertyName" /> is <see langword="null" /> or refers to an empty string.</exception>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -62,6 +66,8 @@
         <summary>Gets the name of the property associated with the property-mapping error.</summary>
         <value>A string representing the name of the property associated with the property-mapping error.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PropertyValue">
@@ -80,6 +86,8 @@
         <summary>Gets the value of the property associated with the property-mapping error.</summary>
         <value>An object representing the value of the property associated with the property-mapping error.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
   </Members>

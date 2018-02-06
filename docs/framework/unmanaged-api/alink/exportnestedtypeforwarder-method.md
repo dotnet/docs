@@ -26,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ExportNestedTypeForwarder Method
 Adds a type forwarder for a nested type to the type table of the given assembly.  
@@ -73,6 +75,6 @@ HRESULT ExportNestedTypeForwarder(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

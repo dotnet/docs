@@ -34,6 +34,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -112,6 +121,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified column type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonColumnType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonColumnType" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -147,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -187,6 +200,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -229,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -298,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataTextValue">
@@ -330,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -355,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -387,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonColumn.Initialize" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -437,6 +457,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.DataTextField" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -471,6 +493,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

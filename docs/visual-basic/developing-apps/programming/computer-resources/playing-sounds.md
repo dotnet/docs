@@ -1,13 +1,12 @@
 ---
 title: "Playing Sounds (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "system sounds, playing"
@@ -22,21 +21,6 @@ ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Playing Sounds (Visual Basic)
 The `My.Computer.Audio` object provides methods for playing sounds.  
@@ -86,8 +70,8 @@ The `My.Computer.Audio` object provides methods for playing sounds.
  [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_6.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Devices.Audio>   
- <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>   
- <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>   
- <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A>   
+ <xref:Microsoft.VisualBasic.Devices.Audio>  
+ <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A>  
  <xref:Microsoft.VisualBasic.AudioPlayMode>

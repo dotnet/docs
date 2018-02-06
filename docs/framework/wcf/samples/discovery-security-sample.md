@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Security Sample
 The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](http://go.microsoft.com/fwlink/?LinkId=177912) and the [1.1 version](http://go.microsoft.com/fwlink/?LinkId=179677).  

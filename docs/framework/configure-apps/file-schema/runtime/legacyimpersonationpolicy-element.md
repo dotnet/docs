@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;legacyImpersonationPolicy&gt; Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
@@ -120,6 +122,6 @@ configuration>
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<alwaysFlowImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md)

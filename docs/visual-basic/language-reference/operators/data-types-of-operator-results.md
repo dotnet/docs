@@ -1,18 +1,16 @@
 ---
 title: "Data Types of Operator Results (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], operator result data types"
-  - "result data types"
-  - "operator result data types"
+  - "result data types [Visual Basic]"
+  - "operator result data types [Visual Basic]"
   - "operators [Visual Basic], data types"
   - "data types [Visual Basic], ranges"
   - "operators [Visual Basic], result data types"
@@ -20,21 +18,6 @@ ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Types of Operator Results (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] determines the result data type of an operation based on the data types of the operands. In some cases this might be a data type with a greater range than that of either operand.  
@@ -196,13 +179,13 @@ translation.priority.ht:
  The `Like` operator is defined only for pattern matching of `String` operands. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] attempts to convert each operand as necessary to `String` before the operation. The result data type is always `Boolean`.  
   
 ## See Also  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)   
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Operators](../../../visual-basic/language-reference/operators/index.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
+ [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Operators](../../../visual-basic/language-reference/operators/index.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

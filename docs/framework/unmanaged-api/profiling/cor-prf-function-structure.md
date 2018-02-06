@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_FUNCTION Structure
 Provides a unique representation of a function by combining its ID with the ID of its recompiled version.  

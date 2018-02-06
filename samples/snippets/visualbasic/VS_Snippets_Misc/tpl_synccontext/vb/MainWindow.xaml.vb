@@ -22,7 +22,7 @@ Partial Public Class MainWindow : Inherits Window
         InitializeComponent()
 
         ' For this example, values are hard-coded to a mosaic of 8x8 tiles.
-        ' Each tile Is 50 pixels high And 66 pixels wide And 32 bits per pixel.
+        ' Each tile Is 50 pixels high and 66 pixels wide and 32 bits per pixel.
         colCount = 12
         rowCount = 8
         tilePixelHeight = 50
@@ -54,12 +54,12 @@ Partial Public Class MainWindow : Inherits Window
 
         '        Dim tiledImage As Task(Of Byte()) = Task.Factory.ContinueWhenAll(images, Function(i As Task(Of Byte())) TileImages(i))
         Dim tiledImage = Task.Factory.ContinueWhenAll(images, Function(i As Task(Of Byte())()) TileImages(i))
-        ' We are currently on the UI thread. Save the sync context And pass it to
+        ' We are currently on the UI thread. Save the sync context and pass it to
         ' the next task so that it can access the UI control "image1".
         Dim UISyncContext = TaskScheduler.FromCurrentSynchronizationContext()
 
-        '  On the UI thread, put the bytes into a bitmap And
-        ' And display it in the Image control.
+        ' On the UI thread, put the bytes into a bitmap and
+        ' display it in the Image control.
         Dim t3 = tiledImage.ContinueWith(Sub(antecedent)
                                              ' Get System DPI.
                                              Dim m As Matrix = PresentationSource.FromVisual(Application.Current.MainWindow).CompositionTarget.TransformToDevice
@@ -80,7 +80,7 @@ Partial Public Class MainWindow : Inherits Window
     End Sub
 
     Public Function LoadImage(filename As String) As Byte()
-        ' Use the WPF BitmapImage class to load And 
+        ' Use the WPF BitmapImage class to load and 
         ' resize the bitmap. NOTE: Only 32bpp formats are supported correctly.
         ' Support for additional color formats Is left as an exercise
         ' for the reader. For more information, see documentation for ColorConvertedBitmap.

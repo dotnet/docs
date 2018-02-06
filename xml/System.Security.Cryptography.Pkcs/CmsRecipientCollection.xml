@@ -44,6 +44,8 @@
       <Docs>
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.CmsRecipient)" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,6 +70,8 @@
         <param name="recipient">An instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> class that represents the specified CMS/PKCS #7 recipient.</param>
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.CmsRecipient)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> class and adds the specified recipient.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +98,8 @@
         <param name="certificates">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> collection that contains the certificates that identify the recipients.</param>
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> class and adds recipients based on the specified subject identifier and set of certificates that identify the recipients.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor(System.Security.Cryptography.Pkcs.CmsRecipient)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -126,6 +132,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="recipient" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Remove(System.Security.Cryptography.Pkcs.CmsRecipient)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -164,6 +171,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of elements in <paramref name="array" />.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.CopyTo(System.Security.Cryptography.Pkcs.CmsRecipient[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -202,6 +210,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of elements in <paramref name="array" />.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -226,6 +235,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Count" /> property retrieves the number of items in the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <value>An <see cref="T:System.Int32" /> value that represents the number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.IsSynchronized" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Item(System.Int32)" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -251,6 +263,7 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.GetEnumerator" /> method returns a <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" /> object for the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <returns>A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" /> object that can be used to enumerate the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -270,6 +283,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.IsSynchronized" /> property retrieves whether access to the collection is synchronized, or thread safe. This property always returns <see langword="false" />, which means that the collection is not thread safe.</summary>
         <value>A <see cref="T:System.Boolean" /> value of <see langword="false" />, which means that the collection is not thread safe.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Count" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Item(System.Int32)" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -299,6 +315,9 @@
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of an argument was outside the allowable range of values as defined by the called method.</exception>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Count" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.IsSynchronized" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -328,6 +347,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="recipient" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Add(System.Security.Cryptography.Pkcs.CmsRecipient)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -347,6 +367,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.SyncRoot" /> property retrieves an <see cref="T:System.Object" /> object used to synchronize access to the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <value>An <see cref="T:System.Object" /> object that is used to synchronize access to the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Count" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.IsSynchronized" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipientCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -419,5 +442,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection to an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

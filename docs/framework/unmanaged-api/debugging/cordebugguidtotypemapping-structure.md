@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "CorDebugGuidToTypeMapping"
 api_location: 
@@ -28,6 +28,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugGuidToTypeMapping Structure
 Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding ICorDebugType object.  
@@ -58,5 +60,5 @@ typedef struct CorDebugGuidToTypeMapping {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

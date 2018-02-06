@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "dates, choosing from a list"
-  - "dates, Windows Forms controls"
+  - "dates [Windows Forms], choosing from a list"
+  - "dates [Windows Forms], Windows Forms controls"
   - "DateTimePicker control [Windows Forms]"
   - "date and time picker controls"
 ms.assetid: 1dac1fbd-8f67-4910-9ccb-2c5462d0d855
@@ -19,6 +19,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DateTimePicker Control (Windows Forms)
 The Windows Forms `DateTimePicker` control allows the user to select a single item from a list of dates or times. When used to represent a date, it appears in two parts: a drop-down list with a date represented in text, and a grid that appears when you click on the down-arrow next to the list.  

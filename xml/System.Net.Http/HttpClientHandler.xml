@@ -88,6 +88,10 @@
  If <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> is set to `false`, all HTTP responses with an HTTP status code from 300 to 399 are  returned to the application.  
   
  The Authorization header is cleared on auto-redirects and the handler automatically tries to re-authenticate to the redirected location. In practice, this means that an application can't put custom authentication information into the Authorization header if it is possible to encounter redirection. Instead, the application must implement and register a custom authentication module.  
+
+> [!NOTE]
+>  With <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> set to `true`, the .NET Framework will follow redirections even when being redirected to an HTTP URI from an HTTPS URI.
+.NET Core versions 1.0, 1.1 and 2.0 will not follow a redirection from HTTPS to HTTP even if <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect%2A> is set to `true`.
   
  ]]></format>
         </remarks>
@@ -150,7 +154,8 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the certificate is checked against the certificate authority revocation list.</summary>
-        <value><see langword="true" /> if the certificate revocation list is checked; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the certificate revocation list is checked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,7 +306,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Net.ICredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When the default (system) proxy is being used, gets or sets the credentials to submit to the default proxy server for authentication. The default proxy is used only when <see cref="T:System.Net.Http.HttpClientHandler.UseProxy%2A"/> is set to <see langword="true"/> and <see cref="T:System.Net.Http.HttpClientHandler.Proxy%2A"/> is set to <see langword="null"/>.</summary>
+        <summary>When the default (system) proxy is being used, gets or sets the credentials to submit to the default proxy server for authentication. The default proxy is used only when <see cref="T:System.Net.Http.HttpClientHandler.UseProxy%2A" /> is set to <see langword="true" /> and <see cref="T:System.Net.Http.HttpClientHandler.Proxy%2A" /> is set to <see langword="null" />.</summary>
         <value>The credentials needed to authenticate a request to the default proxy server.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,7 +402,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of concurrent connections (per server endpoint) allowed when making requests using an <see cref="T:System.Net.Http.HttpClient" /> object. Note that the limit is per server endpoint, so for example a value of 256 would permit 256 concurrent connections to http://www.adatum.com/ and another 256 to http://www.adventure-works.com/.</summary>
-        <value>The maximum number of concurrent connections (per server endpoint) allowed by an <see cref="T:System.Net.Http.HttpClient"/> object.</value>
+        <value>The maximum number of concurrent connections (per server endpoint) allowed by an <see cref="T:System.Net.Http.HttpClient" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,7 +520,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a writable dictionary (that is, a map) of custom properties for the <see cref="T:System.Net.Http.HttpClient"/> requests. The dictionary is initialized empty; you can insert and query key-value pairs for your custom handlers and special processing.</summary>
+        <summary>Gets a writable dictionary (that is, a map) of custom properties for the <see cref="T:System.Net.Http.HttpClient" /> requests. The dictionary is initialized empty; you can insert and query key-value pairs for your custom handlers and special processing.</summary>
         <value>a writable dictionary of custom properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -656,8 +661,8 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the TLS/SSL protocol used by the <see cref="T:System.Net.Http.HttpClient"/> objects managed by the HttpClientHandler object.</summary>
-        <value>One of the values defined in the <see cref="T:System.Security.Authentication.SslProtocols"/> enumeration.</value>
+        <summary>Gets or sets the TLS/SSL protocol used by the <see cref="T:System.Net.Http.HttpClient" /> objects managed by the HttpClientHandler object.</summary>
+        <value>One of the values defined in the <see cref="T:System.Security.Authentication.SslProtocols" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

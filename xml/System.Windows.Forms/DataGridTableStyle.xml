@@ -110,6 +110,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+    <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+    <altmember cref="T:System.Windows.Forms.GridTableStylesCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -237,6 +241,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.AllowSortingChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.AllowSorting" />
       </Docs>
     </Member>
     <Member MemberName="AllowSortingChanged">
@@ -444,6 +450,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersVisible">
@@ -484,6 +492,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisibleChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersVisibleChanged">
@@ -519,6 +533,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="CreateGridColumn">
@@ -695,6 +713,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -949,6 +969,11 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="HeaderBackColorChanged">
@@ -1019,6 +1044,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.HeaderFontChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderFont" />
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderFontChanged">
@@ -1052,6 +1083,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderFont" />
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderForeColor">
@@ -1081,6 +1118,13 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderForeColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderForeColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.HeaderForeColorChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="HeaderForeColorChanged">
@@ -1114,6 +1158,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderForeColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="LinkColor">
@@ -1143,6 +1193,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkColorChanged">
@@ -1176,6 +1228,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkHoverColor">
@@ -1202,6 +1256,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <summary>Gets or sets the color displayed when hovering over link text.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the hover color.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkHoverColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetLinkHoverColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkHoverColorChanged">
@@ -1226,6 +1284,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkHoverColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetLinkHoverColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="MappingName">
@@ -1274,6 +1336,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.TableStyles" />
       </Docs>
     </Member>
     <Member MemberName="MappingNameChanged">
@@ -1307,6 +1373,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.MappingName" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowSortingChanged">
@@ -1331,7 +1398,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnAllowSortingChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1364,7 +1431,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnAlternatingBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1397,7 +1464,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1430,7 +1497,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnColumnHeadersVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1463,7 +1530,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnForeColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1496,7 +1563,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnGridLineColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1529,7 +1596,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnGridLineStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1562,7 +1629,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnHeaderBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1595,7 +1662,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnHeaderFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1628,7 +1695,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnHeaderForeColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1661,7 +1728,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnLinkColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1694,7 +1761,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnLinkHoverColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1727,7 +1794,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnMappingNameChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1760,7 +1827,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnPreferredColumnWidthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1793,7 +1860,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnPreferredRowHeightChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1826,7 +1893,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnReadOnlyChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1859,7 +1926,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnRowHeadersVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1892,7 +1959,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnRowHeaderWidthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1925,7 +1992,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnSelectionBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1958,7 +2025,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGridTableStyle.OnSelectionForeColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2007,6 +2074,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.PreferredRowHeight" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.PreferredColumnWidthChanged" />
       </Docs>
     </Member>
     <Member MemberName="PreferredColumnWidthChanged">
@@ -2075,6 +2146,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.PreferredColumnWidth" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRowHeightChanged">
@@ -2108,6 +2181,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.PreferredRowHeight" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2183,6 +2257,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ResetAlternatingBackColor">
@@ -2353,6 +2428,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="ResetHeaderFont">
@@ -2387,6 +2466,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.HeaderFontChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="ResetHeaderForeColor">
@@ -2421,6 +2506,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderForeColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.HeaderForeColorChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="ResetLinkColor">
@@ -2455,6 +2546,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetLinkHoverColor">
@@ -2480,6 +2574,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkHoverColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkHoverColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetSelectionBackColor">
@@ -2539,6 +2637,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.SelectionForeColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersVisible">
@@ -2581,6 +2683,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeaderWidth" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersVisibleChanged">
@@ -2614,6 +2718,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeaderWidth" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderWidth">
@@ -2658,6 +2764,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.RowHeaderWidthChanged" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderWidthChanged">
@@ -2691,6 +2800,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeaderWidth" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColor">
@@ -2720,6 +2832,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionBackColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.SelectionBackColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColorChanged">
@@ -2753,6 +2869,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="SelectionForeColor">
@@ -2787,6 +2907,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.SelectionForeColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="SelectionForeColorChanged">
@@ -2816,6 +2940,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAlternatingBackColor">
@@ -2951,6 +3079,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeHeaderForeColor">
@@ -2978,6 +3110,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderBackColor" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetHeaderForeColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.HeaderForeColorChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.HeaderFont" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeLinkColor">
@@ -3005,6 +3143,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeLinkHoverColor">
@@ -3032,6 +3173,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.LinkHoverColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.LinkHoverColorChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializePreferredRowHeight">
@@ -3059,6 +3204,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.PreferredRowHeight" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSelectionBackColor">
@@ -3086,6 +3232,10 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionBackColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.SelectionBackColorChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSelectionForeColor">
@@ -3113,7 +3263,29 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridTableStyle.ResetSelectionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.SelectionForeColor" />
+        <altmember cref="E:System.Windows.Forms.DataGridTableStyle.SelectionForeColorChanged" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateGridColumn">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

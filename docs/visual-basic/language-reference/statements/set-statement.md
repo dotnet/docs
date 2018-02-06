@@ -1,41 +1,24 @@
 ---
 title: "Set Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Set"
 helpviewer_keywords: 
-  - "property procedures, Set statements"
-  - "Set statement"
-  - "Set statement, syntax"
+  - "property procedures [Visual Basic], Set statements"
+  - "Set statement [Visual Basic]"
+  - "Set statement [Visual Basic], syntax"
   - "write-only properties"
   - "properties [Visual Basic], write-only"
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Set Statement (Visual Basic)
 Declares a `Set` property procedure used to assign a value to a property.  
@@ -108,7 +91,7 @@ End Set
  [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
   
 ## See Also  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
+ [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
  [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)

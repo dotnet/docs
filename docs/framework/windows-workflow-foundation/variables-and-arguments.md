@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d03dbe34-5b2e-4f21-8b57-693ee49611b8
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Variables and Arguments
 In [!INCLUDE[wf](../../../includes/wf-md.md)], variables represent the storage of data and arguments represent the flow of data into and out of an activity. An activity has a set of arguments and they make up the signature of the activity. Additionally, an activity can maintain a list of variables to which a developer can add or remove variables during the design of a workflow. An argument is bound using an expression that returns a value.  

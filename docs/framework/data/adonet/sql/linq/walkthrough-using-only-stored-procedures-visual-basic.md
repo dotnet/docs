@@ -9,13 +9,15 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "vb"
+dev_langs: 
+  - "vb"
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Using Only Stored Procedures (Visual Basic)
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by using stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  
@@ -198,5 +200,5 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
  You can enhance this project by making some changes. For example, you could list available stored procedures in a list box and have the user select which procedures to execute. You could also stream the output of the reports to a text file.  
   
 ## See Also  
- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)   
+ [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)  
  [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

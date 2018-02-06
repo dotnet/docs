@@ -1149,9 +1149,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Decimal" />.</summary>
+        <returns>A new <see langword="Decimal" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1171,9 +1171,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Double" />.</summary>
+        <returns>A new <see langword="Double" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1193,9 +1193,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Int32" />.</summary>
+        <returns>A new <see langword="Int32" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1215,10 +1215,31 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Int64" />.</summary>
+        <returns>A new <see langword="Int64" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates an <xref:System.Data.OracleClient.OracleNumber> and converts it to an <xref:System.Int32>.  
+  
+```csharp  
+//Create OracleNumber and cast it to an Int32.  
+OracleNumber n = new OracleNumber(42);  
+Int32 i = (Int32)n;  
+Console.WriteLine(i);  
+```  
+  
+```vb  
+'Create OracleNumber and cast it to an Int32.  
+ Dim n As OracleNumber = New OracleNumber(42)  
+ Dim i As Int32 = (Int32)n  
+ Console.WriteLine(i))  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1237,9 +1258,9 @@
         <Parameter Name="x" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Decimal" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Decimal" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> is equal to the value of the <see langword="Decimal" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1259,9 +1280,9 @@
         <Parameter Name="x" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Double" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Double" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property equals the value of the <see langword="Double" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1281,9 +1302,9 @@
         <Parameter Name="x" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The integer structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Int32" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property equals the value of the <see langword="Int32" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,9 +1324,9 @@
         <Parameter Name="x" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Int64" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Int64" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property is equal to the value of the <see langword="Int64" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1325,9 +1346,9 @@
         <Parameter Name="x" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="String" /> to be converted.</param>
+        <summary>Converts the supplied <see langword="String" /> to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> equals the value of the <see langword="String" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1960,5 +1981,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Pow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the result of raising a specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to the specified power.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the specified items to other items.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logarithmic calculation on an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

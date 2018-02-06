@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "service contracts [WCF], data transfer"
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
 caps.latest.revision: 38
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying Data Transfer in Service Contracts
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can be thought of as a messaging infrastructure. Service operations can receive messages, process them, and send them messages. Messages are described using operation contracts. For example, consider the following contract.  
@@ -581,6 +583,6 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] advanced serialization concepts, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
   
 ## See Also  
- [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)   
- [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)   
+ [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)  
+ [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)  
  [How to: Create a Basic Data Contract for a Class or Structure](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

@@ -1,13 +1,11 @@
 ---
 title: "XML Value Property (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionValue"
@@ -20,21 +18,6 @@ ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Value Property (Visual Basic)
 Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  
@@ -77,7 +60,7 @@ object.Value
  `Phone number: 206-555-0144`  
   
 ## Example  
- The following example shows how to get the value of an XML attribute from a collection of <xref:System.Xml.Linq.XAttribute> objects. The example uses the attribute axis property to display the value of the `type` attribute for all of the the `phone` elements.  
+ The following example shows how to get the value of an XML attribute from a collection of <xref:System.Xml.Linq.XAttribute> objects. The example uses the attribute axis property to display the value of the `type` attribute for all of the `phone` elements.  
   
  [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_2.vb)]  
   
@@ -88,12 +71,12 @@ object.Value
  `work`  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement>   
- <xref:System.Collections.Generic.IEnumerable%601>   
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
- [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
- [Extension Indexer Property](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)   
- [XML Child Axis Property](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)   
+ <xref:System.Xml.Linq.XElement>  
+ <xref:System.Collections.Generic.IEnumerable%601>  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+ [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
+ [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)  
+ [Extension Indexer Property](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)  
+ [XML Child Axis Property](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
  [XML Attribute Axis Property](../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)

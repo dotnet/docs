@@ -792,6 +792,7 @@
         <summary>Gets the name of the specified column.</summary>
         <returns>A string that is the name of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Data.Odbc.OdbcDataReader.GetOrdinal(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetOrdinal">
@@ -837,6 +838,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Odbc.OdbcDataReader.GetName(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -1301,5 +1303,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a column in its native format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

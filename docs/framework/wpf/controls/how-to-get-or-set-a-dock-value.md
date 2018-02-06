@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Dock values, setting"
-  - "Dock values, getting"
+  - "Dock values [WPF], setting"
+  - "Dock values [WPF], getting"
 ms.assetid: fcf4ab8a-c7cd-4835-8d04-de1c999ab4a8
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get or Set a Dock Value
 The following example shows how to assign a <xref:System.Windows.Controls.Dock> value for an object. The example uses the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods of <xref:System.Windows.Controls.DockPanel>.  
@@ -31,7 +33,7 @@ The following example shows how to assign a <xref:System.Windows.Controls.Dock> 
  [!code-vb[DockPanelSetDock#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelSetDock/VisualBasic/DockPanel_SetDock.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.DockPanel>   
- <xref:System.Windows.Controls.DockPanel.GetDock%2A>   
- <xref:System.Windows.Controls.DockPanel.SetDock%2A>   
+ <xref:System.Windows.Controls.DockPanel>  
+ <xref:System.Windows.Controls.DockPanel.GetDock%2A>  
+ <xref:System.Windows.Controls.DockPanel.SetDock%2A>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

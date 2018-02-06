@@ -1,6 +1,6 @@
 ---
 title: "readonly (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # readonly (C# Reference)
 The `readonly` keyword is a modifier that you can use on fields. When a field declaration includes a `readonly` modifier, assignments to the fields introduced by the declaration can only occur as part of the declaration or in a constructor in the same class.  
@@ -35,7 +21,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
 ## Example  
  In this example, the value of the field `year` cannot be changed in the method `ChangeYear`, even though it is assigned a value in the class constructor:  
   
- [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
   
  You can assign a value to a `readonly` field only in the following contexts:  
   
@@ -55,7 +41,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 ```  
   
 ## Example  
- [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
   
  In the preceding example, if you use a statement like this:  
   
@@ -71,9 +57,9 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [const](../../../csharp/language-reference/keywords/const.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [const](../../../csharp/language-reference/keywords/const.md)  
  [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)

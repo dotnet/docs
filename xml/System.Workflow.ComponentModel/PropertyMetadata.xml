@@ -522,5 +522,23 @@
         <exception cref="T:System.InvalidOperationException">Trying to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an array that contains all attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

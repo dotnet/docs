@@ -1,13 +1,11 @@
 ---
 title: "/recurse"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "/recurse compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /recurse
 Compiles source-code files in all child directories of either the specified directory or the project directory.  
@@ -69,6 +52,6 @@ vbc /target:library /out:Test.ABC.dll /recurse:Test\ABC\*.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

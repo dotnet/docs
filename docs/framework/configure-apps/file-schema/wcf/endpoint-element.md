@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
 caps.latest.revision: 23
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;endpoint&gt; element
 Specifies binding, contract, and address properties for a service endpoint, which is used to expose services.  
@@ -89,8 +91,8 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceEndpointElement>   
- <xref:System.ServiceModel.EndpointAddress>   
- <xref:System.ServiceModel.Description.ServiceEndpoint>   
- [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)   
+ <xref:System.ServiceModel.Configuration.ServiceEndpointElement>  
+ <xref:System.ServiceModel.EndpointAddress>  
+ <xref:System.ServiceModel.Description.ServiceEndpoint>  
+ [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
  [How to: Create a Service Endpoint in Configuration](../../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)

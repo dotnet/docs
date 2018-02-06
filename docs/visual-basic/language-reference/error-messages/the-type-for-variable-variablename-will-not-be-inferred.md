@@ -1,13 +1,11 @@
 ---
 title: "The type for variable &#39;&lt;variablename&gt;&#39; will not be inferred because it is bound to a field in an enclosing scope"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc42110"
@@ -18,22 +16,6 @@ ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # The type for variable &#39;&lt;variablename&gt;&#39; will not be inferred because it is bound to a field in an enclosing scope
 The type for variable '\<variablename>' will not be inferred because it is bound to a field in an enclosing scope. Either change the name of '\<variablename>', or use the fully qualified name (for example, 'Me.variablename' or 'MyBase.variablename').  
@@ -103,9 +85,9 @@ End Class
 ```  
   
 ## See Also  
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)   
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [How to: Refer to the Current Instance of an Object](../../../visual-basic/programming-guide/language-features/variables/how-to-refer-to-the-current-instance-of-an-object.md)   
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
+ [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [How to: Refer to the Current Instance of an Object](../../../visual-basic/programming-guide/language-features/variables/how-to-refer-to-the-current-instance-of-an-object.md)  
+ [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

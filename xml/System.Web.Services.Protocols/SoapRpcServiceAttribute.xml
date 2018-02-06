@@ -28,7 +28,7 @@
   
  To set the default method level encoding to `Document`, apply a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to the class implementing the XML Web service.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
   
  This attribute can be applied to a class implementing an XML Web service.  
   
@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +89,7 @@
         <summary>Gets or sets how SOAP messages are routed to the XML Web service.</summary>
         <value>A <see cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" /> that represents how SOAP messages are routed to the XML Web service. The default value is <see cref="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
       </Docs>
     </Member>
     <Member MemberName="Use">

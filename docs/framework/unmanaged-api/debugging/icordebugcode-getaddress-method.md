@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode::GetAddress Method
 Gets the relative virtual address (RVA) of the code segment that this "ICorDebugCode" interface represents.  

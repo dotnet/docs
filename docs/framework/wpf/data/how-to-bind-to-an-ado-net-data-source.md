@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data binding, binding to ADO.NET data sources"
-  - "ADO.NET data sources, binding to"
-  - "binding, to ADO.NET data sources"
+  - "data binding [WPF], binding to ADO.NET data sources"
+  - "ADO.NET data sources [WPF], binding to"
+  - "binding [WPF], to ADO.NET data sources"
 ms.assetid: a70c6d7b-7b38-4fdf-b655-4804db7c8315
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to an ADO.NET Data Source
 This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Controls.ListBox> control to an [!INCLUDE[TLA#tla_adonet](../../../../includes/tlasharptla-adonet-md.md)] `DataSet`.  
@@ -42,6 +44,6 @@ This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../../includ
  The `IntColorConverter` converts an `int` to a color. With the use of this converter, the <xref:System.Windows.Controls.TextBlock.Background%2A> color of the third <xref:System.Windows.Controls.TextBlock> appears green if the value of `NumPages` is less than 350 and red otherwise. The implementation of the converter is not shown here.  
   
 ## See Also  
- <xref:System.Windows.Data.BindingListCollectionView>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.BindingListCollectionView>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

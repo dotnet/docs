@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
@@ -28,6 +28,9 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern
 If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
@@ -62,7 +65,7 @@ If you are writing a class with some operations that may incur noticeable delays
 -   Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
   
 ## Defining Public Asynchronous Events and Delegates  
- Your component communicates to clients using events. The *MethodName*`Completed` event alerts clients to the completion of an asynchronous task, and the *MethodName*`ProgressChanged` event informs clients of the progress of an asynchronous task.  
+ Your component communicates to clients using events. The *MethodName***Completed** event alerts clients to the completion of an asynchronous task, and the *MethodName***ProgressChanged** event informs clients of the progress of an asynchronous task.  
   
 #### To define asynchronous events for clients of your component:  
   
@@ -256,8 +259,8 @@ If you are writing a class with some operations that may incur noticeable delays
  You can also improve this example by testing for trivial divisors, like 2, 3, and 5.  
   
 ## See Also  
- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)   
- [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)   
- [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)   
- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)   
+ [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
+ [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
+ [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
+ [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)  
  [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)

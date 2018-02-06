@@ -7,14 +7,17 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Control Serialization of Derived Classes
 Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization. You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.  
@@ -237,10 +240,10 @@ public class Run
 ```  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlSerializer>   
- <xref:System.Xml.Serialization.XmlElementAttribute>   
- <xref:System.Xml.Serialization.XmlAttributes>   
- <xref:System.Xml.Serialization.XmlAttributeOverrides>   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ <xref:System.Xml.Serialization.XmlElementAttribute>  
+ <xref:System.Xml.Serialization.XmlAttributes>  
+ <xref:System.Xml.Serialization.XmlAttributeOverrides>  
+ [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
  [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)

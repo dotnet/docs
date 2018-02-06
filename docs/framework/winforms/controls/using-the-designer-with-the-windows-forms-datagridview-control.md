@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using the Designer with the Windows Forms DataGridView Control
 Visual Studio provides designer support for the `DataGridView` control that enables you to perform many setup tasks without writing code. These tasks include binding the control to a data source, modifying the columns used to display data, and adjusting the appearance and basic behavior of the control.  

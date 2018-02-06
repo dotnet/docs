@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating the GamePiece Class
 The **GamePiece** class encapsulates all the functionality required to load a Microsoft XNA game piece image, track the state of the mouse in relation to the game piece, capture the mouse, provide manipulation and inertia processing, and provide bouncing capability when the game piece reaches the limits of the view port.  
@@ -104,7 +106,7 @@ The **GamePiece** class encapsulates all the functionality required to load a Mi
  [!code-csharp[ManipulationXNA#_GamePiece_PrivateProperties](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiece.cs#_gamepiece_privateproperties)]  
   
 ## See Also  
- [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)   
- [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)   
- [Creating the GamePieceCollection Class](../../../docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md)   
+ [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)  
+ [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)  
+ [Creating the GamePieceCollection Class](../../../docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md)  
  [Creating the Game1 Class](../../../docs/framework/common-client-technologies/creating-the-game1-class.md)

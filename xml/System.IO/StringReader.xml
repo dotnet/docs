@@ -65,6 +65,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.TextReader" />
+    <altmember cref="T:System.IO.StringWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -784,5 +786,16 @@
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next character or next set of characters from the input string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

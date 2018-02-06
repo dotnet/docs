@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpsTransport&gt;
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
@@ -81,13 +83,13 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
  The `httpsTransport` element is the starting point for creating a custom binding that implements the HTTPS transport protocol. HTTPS is the primary transport used for secure interoperability purposes. HTTPS is supported by the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] to ensure interoperability with other Web services stacks.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.HttpsTransportElement>   
- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>   
- <xref:System.ServiceModel.Channels.TransportBindingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.HttpsTransportElement>  
+ <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.TransportBindingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
+ [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "OnDeserializedAttribute [WCF]"
   - "OnDeserializingAttribute [WCF]"
@@ -20,9 +20,11 @@ helpviewer_keywords:
   - "OnSerializedAttribute [WCF]"
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Version-Tolerant Serialization Callbacks
 The data contract programming model fully supports the version-tolerant serialization callback methods that the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes support.  
@@ -48,9 +50,9 @@ The data contract programming model fully supports the version-tolerant serializ
  [!code-vb[C_DataContract#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#9)]  
   
 ## See Also  
- <xref:System.Runtime.Serialization.OnSerializingAttribute>   
- <xref:System.Runtime.Serialization.OnSerializedAttribute>   
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
- <xref:System.Runtime.Serialization.OnDeserializedAttribute>   
- <xref:System.Runtime.Serialization.StreamingContext>   
+ <xref:System.Runtime.Serialization.OnSerializingAttribute>  
+ <xref:System.Runtime.Serialization.OnSerializedAttribute>  
+ <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
+ <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
+ <xref:System.Runtime.Serialization.StreamingContext>  
  [Version Tolerant Serialization](../../../../docs/standard/serialization/version-tolerant-serialization.md)

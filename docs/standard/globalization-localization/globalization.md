@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "globalization [.NET Framework], about globalization"
   - "global applications, globalization"
@@ -23,6 +23,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Globalization
 Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your app will support. Although an app targets a single culture or region as its default, you can design and write it so that it can easily be extended to users in other cultures or regions.  
@@ -372,5 +375,5 @@ Globalization involves designing and developing a world-ready app that supports 
 -   The user can customize culture-specific settings by using the **Region and Language** app in Control Panel. When you instantiate a <xref:System.Globalization.CultureInfo> object, you can determine whether it reflects these user customizations by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor. Typically, for end-user apps, you should respect user preferences so that the user is presented with data in a format that he or she expects.  
   
 ## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)   
+ [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
  [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

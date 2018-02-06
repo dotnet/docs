@@ -135,6 +135,34 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.FormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.PopulateOnDemand" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.SelectAction" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ShowCheckBox" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -165,6 +193,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -234,6 +265,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -306,6 +341,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Depth" />
       </Docs>
     </Member>
     <Member MemberName="FormatString">
@@ -399,6 +439,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
       </Docs>
     </Member>
     <Member MemberName="ImageToolTip">
@@ -494,6 +537,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ImageToolTipField">
@@ -590,6 +653,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -688,6 +771,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrlField">
@@ -784,6 +888,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -878,6 +1003,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlField">
@@ -972,6 +1118,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="PopulateOnDemand">
@@ -1041,6 +1208,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
       </Docs>
     </Member>
     <Member MemberName="SelectAction">
@@ -1117,6 +1290,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
       </Docs>
     </Member>
     <Member MemberName="ShowCheckBox">
@@ -1182,6 +1359,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ShowCheckBox" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1285,6 +1466,8 @@
         <param name="state">A <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the previously saved view state for the node.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1304,6 +1487,8 @@
         <summary>Saves the view state changes to an object.</summary>
         <returns>The object that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1329,6 +1514,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -1384,7 +1571,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeNodeBinding.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeNodeBinding.Target%2A> property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeNodeBinding> control must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeNodeBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeNodeBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The value of this property is stored in view state.  
   
@@ -1419,6 +1606,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Target" />
       </Docs>
     </Member>
     <Member MemberName="TargetField">
@@ -1464,6 +1656,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Target" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1557,6 +1754,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="TextField">
@@ -1651,6 +1869,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1744,6 +1983,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipField">
@@ -1838,6 +2098,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1950,6 +2231,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ValueField" />
       </Docs>
     </Member>
     <Member MemberName="ValueField">
@@ -2044,6 +2346,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ImageToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.NavigateUrlField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.TextField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.ToolTipField" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.Value" />
       </Docs>
     </Member>
   </Members>

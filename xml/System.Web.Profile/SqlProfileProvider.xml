@@ -714,5 +714,14 @@ aspnet_regsql.exe -A p
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteProfiles">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes profile properties and information from the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

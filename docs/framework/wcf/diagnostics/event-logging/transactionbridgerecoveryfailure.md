@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a53891d9-67ea-4ead-8d38-3193cb57cd37
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # TransactionBridgeRecoveryFailure
 Id: 146  
@@ -26,5 +28,5 @@ Id: 146
  This event indicates that the MSDTC TransactionBridge failed during recovery. This is a fatal condition, so the MSDTC service has terminated. The event lists the exception, process name and process ID. .  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

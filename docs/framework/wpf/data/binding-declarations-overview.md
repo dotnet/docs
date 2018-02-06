@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "markup extensions"
-  - "data binding, declarations"
-  - "object element syntax"
-  - "binding data, declarations"
-  - "syntax, object elements"
-  - "binding declarations"
+  - "markup extensions [WPF]"
+  - "data binding [WPF], declarations"
+  - "object element syntax [WPF]"
+  - "binding data [WPF], declarations"
+  - "syntax [WPF], object elements"
+  - "binding declarations [WPF]"
 ms.assetid: b97fd626-4c0d-4761-872a-2bca5820da2c
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Binding Declarations Overview
 This topic discusses the different ways you can declare a binding.  
@@ -134,7 +136,7 @@ This topic discusses the different ways you can declare a binding.
 -   The default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value varies between <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged> and <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus> depending on the bound dependency property as well. The default value for most dependency properties is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, while the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property has a default value of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>.  
   
 ## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
  [PropertyPath XAML Syntax](../../../../docs/framework/wpf/advanced/propertypath-xaml-syntax.md)

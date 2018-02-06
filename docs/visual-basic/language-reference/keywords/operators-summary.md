@@ -1,37 +1,19 @@
 ---
 title: "Operators Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "operators [Visual Basic], about operators"
+  - "operators [Visual Basic], about operators [Visual Basic]"
   - "symbols, operators"
   - "Visual Basic code, operators"
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operators Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
@@ -46,5 +28,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Miscellaneous operations|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md), [Await](../../../visual-basic/language-reference/operators/await-operator.md), [GetType](../../../visual-basic/language-reference/operators/gettype-operator.md)|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

@@ -83,7 +83,7 @@ manager: "wpickett"
 uid: System.IO.UnmanagedMemoryStream.FlushAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ manager: "wpickett"
 uid: System.IO.UnmanagedMemoryStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ manager: "wpickett"
 uid: System.IO.UnmanagedMemoryStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -221,7 +221,7 @@ manager: "wpickett"
 uid: System.IO.UnmanagedMemoryStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -1,46 +1,30 @@
 ---
 title: "Statements in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
-  - "colons (:)"
-  - "constants, defining"
+  - "colons (:) [Visual Basic]"
+  - "constants [Visual Basic], defining"
   - "underlines"
-  - "constants, statements"
-  - "blue underline"
-  - "procedures, statements"
+  - "constants [Visual Basic], statements"
+  - "blue underline [Visual Basic]"
+  - "procedures [Visual Basic], statements"
   - "variables [Visual Basic], assigning"
-  - "line breaks, in code"
-  - "executable statements"
+  - "line breaks [Visual Basic], in code"
+  - "executable statements [Visual Basic]"
   - "variables [Visual Basic], defining"
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Statements in Visual Basic
 A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  

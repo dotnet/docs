@@ -1,13 +1,9 @@
 ---
 title: "&lt;code&gt; (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "code"
@@ -19,21 +15,6 @@ ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;code&gt; (C# Programming Guide)
 ## Syntax  
@@ -55,5 +36,5 @@ translation.priority.ht:
  See the [\<example>](../../../csharp/programming-guide/xmldoc/example.md) topic for an example of how to use the \<code> tag.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

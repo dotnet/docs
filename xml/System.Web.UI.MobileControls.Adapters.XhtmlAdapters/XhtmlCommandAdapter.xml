@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for verifying at load time that the class derived from <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> has this permission. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />, <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,7 @@
         <summary>Gets a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Command" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlCommandAdapter" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -88,6 +90,7 @@
         <returns>
           <see langword="true" /> if the adapter handles loading the post data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)" />
       </Docs>
     </Member>
     <Member MemberName="Render">

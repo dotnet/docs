@@ -59,6 +59,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.AspNetHostingPermission" />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +87,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -114,6 +124,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -147,6 +162,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
   </Members>

@@ -45,7 +45,7 @@
  The serialization procedure for a method response is identical to that of a method call, except the first object of the object graph must support the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface. To deserialize a method response, use the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> method. To save time, details about the caller object are not sent to the remote object during the method call. These details are instead obtained from the original method call, which is passed to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> method in the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> parameter. The first object in the graph returned by the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> method supports the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interface.  
   
 > [!IMPORTANT]
->  Using binary serialization to deserialize untrusted data can lead to security risks. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Using binary serialization to deserialize untrusted data can lead to security risks. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
 ## Unpaired Surrogates  
  Any unpaired surrogate characters are lost in binary serialization. For example, the following string contains a high surrogate Unicode character `(\ud800`) in between the two `Test` words:  
@@ -120,7 +120,7 @@
 |Property Type|Condition|  
 |-------------------|---------------|  
 |<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.SurrogateSelector%2A>|`null`|  
-|<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context%2A>|A <xref:System.Runtime.Serialization.StreamingContext> with a value that indicates that serialized data can be transmitted to or received from any of the other contexts. (<xref:System.Runtime.Serialization.StreamingContextStates?displayProperty=nameWithType>)|  
+|<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context%2A>|A <xref:System.Runtime.Serialization.StreamingContext> with a value that indicates that serialized data can be transmitted to or received from any of the other contexts. (<xref:System.Runtime.Serialization.StreamingContextStates.All?displayProperty=nameWithType>)|  
   
    
   
@@ -196,6 +196,7 @@
         <summary>Gets or sets the behavior of the deserializer with regards to finding and loading assemblies.</summary>
         <value>One of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values that specifies the deserializer behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
       </Docs>
     </Member>
     <Member MemberName="Binder">
@@ -232,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationBinder" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -266,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Deserialize">
@@ -282,7 +285,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -323,7 +326,7 @@
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
    
   
@@ -380,7 +383,7 @@
  In order for deserialization to succeed the current position in the stream must be at the beginning of the object graph.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -467,7 +470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Supported values are <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> (the default). For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ Supported values are <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> (the default). For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
   
  ]]></format>
         </remarks>
@@ -598,6 +601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SurrogateSelector" />
       </Docs>
     </Member>
     <Member MemberName="TypeFormat">
@@ -625,6 +629,7 @@
         <summary>Gets or sets the format in which type descriptions are laid out in the serialized stream.</summary>
         <value>The style of type layouts to use.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterTypeStyle" />
       </Docs>
     </Member>
     <Member MemberName="UnsafeDeserialize">
@@ -663,12 +668,12 @@
 ## Remarks  
  Headers are used only for specific remoting applications.  
   
- This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserialize%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A>.  
+ This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserialize%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A>.  
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -716,12 +721,12 @@
 ## Remarks  
  Details about the caller object are not sent to the remote object during the method call. Instead, these details are obtained from the original method call that is passed to the current method in the `methodCallMessage` parameter.  
   
- This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserializeMethodResponse%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A>.  
+ This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserializeMethodResponse%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A>.  
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -731,5 +736,25 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">To provide serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object, or graph of connected objects, to the given stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

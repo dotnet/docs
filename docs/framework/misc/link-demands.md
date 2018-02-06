@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [.NET Framework], demands"
   - "demanded permissions"
@@ -26,6 +26,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Link Demands
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -59,5 +61,5 @@ public static string ReadData()
 ```  
   
 ## See Also  
- [Attributes](../../../docs/standard/attributes/index.md)   
+ [Attributes](../../../docs/standard/attributes/index.md)  
  [Code Access Security](../../../docs/framework/misc/code-access-security.md)

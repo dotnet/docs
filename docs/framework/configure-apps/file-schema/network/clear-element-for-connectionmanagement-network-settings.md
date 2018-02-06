@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for connectionManagement (Network Settings)
 Clears the connection management list.  
@@ -74,6 +76,6 @@ Clears the connection management list.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>   
- <xref:System.Net.ServicePointManager>   
+ <xref:System.Net.ServicePoint>  
+ <xref:System.Net.ServicePointManager>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

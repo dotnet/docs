@@ -3,7 +3,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.SemanticKey
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Dictation
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recog
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Uri
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Void
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Params
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Null
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Garbage
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.MnemonicSpelling
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +123,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recog
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -131,5 +131,5 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recog
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

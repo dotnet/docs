@@ -9,23 +9,25 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "datasets [Windows Forms], binding to DataGrid control"
-  - "data binding, DataGrid control"
+  - "data binding [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], data binding"
-  - "bound controls, DataGrid control"
+  - "bound controls [Windows Forms], DataGrid control"
   - "Windows Forms controls, data binding"
-  - "bound controls"
-  - "data-bound controls, DataGrid"
+  - "bound controls [Windows Forms]"
+  - "data-bound controls [Windows Forms], DataGrid"
 ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind the Windows Forms DataGrid Control to a Data Source
 > [!NOTE]
@@ -110,7 +112,7 @@ manager: "wpickett"
 3.  (Optional) Add the appropriate table styles and column styles to the grid. If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
   
 ## See Also  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)   
- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)   
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)   
+ [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
+ [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
+ [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
  [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)

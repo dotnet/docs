@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+    <altmember cref="T:System.Web.SiteMapNode" />
   </Docs>
   <Members>
     <Member MemberName="GetChildren">
@@ -64,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.HasChildren" />
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -98,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetChildren" />
+        <altmember cref="P:System.Web.UI.IHierarchyData.HasChildren" />
       </Docs>
     </Member>
     <Member MemberName="HasChildren">
@@ -132,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetChildren" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -165,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Type" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -201,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Url" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -234,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Item" />
       </Docs>
     </Member>
   </Members>

@@ -86,6 +86,7 @@
         <returns>
           <see langword="true" /> if control properties to be validated are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.ControlPropertiesValid" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
@@ -105,6 +106,7 @@
         <summary>Virtual method for derived class to create its own aggregated Web validator. The Web validator is for getting and setting of the common properties of Web base validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An aggregated Web validator.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.CreateWebValidator" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -125,6 +127,7 @@
         <returns>
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.BaseValidator.EvaluateIsValid" />
       </Docs>
     </Member>
     <Member MemberName="OnServerValidate">

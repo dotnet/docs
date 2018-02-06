@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardEventArgs" />
+    <altmember cref="T:System.Windows.Input.KeyEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="AddGotKeyboardFocusHandler">
@@ -498,6 +500,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.KeyStates" />
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -560,6 +564,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsDown" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyToggled">
@@ -598,6 +604,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsToggled" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyUp">
@@ -636,6 +644,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="P:System.Windows.Input.KeyEventArgs.IsUp" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputProviderAcquireFocusEvent">
@@ -915,6 +925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardDevice" />
       </Docs>
     </Member>
     <Member MemberName="RemoveGotKeyboardFocusHandler">

@@ -237,6 +237,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to either get or set the path in the dialog. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:Microsoft.Win32.FileDialog.SafeFileName" />
       </Docs>
     </Member>
     <Member MemberName="FileNames">
@@ -261,6 +262,7 @@
         <value>An array of <see cref="T:System.String" /> that contains one file name for each selected file. The default is an array with a single item whose value is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to get the path collection from the dialog. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:Microsoft.Win32.FileDialog.SafeFileNames" />
       </Docs>
     </Member>
     <Member MemberName="FileOk">
@@ -406,6 +408,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The filter string is invalid.</exception>
+        <altmember cref="P:Microsoft.Win32.FileDialog.FileName" />
+        <altmember cref="P:Microsoft.Win32.FileDialog.FilterIndex" />
       </Docs>
     </Member>
     <Member MemberName="FilterIndex">
@@ -666,7 +670,7 @@
   
  If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.SafeFileNames%2A> is greater than one) then this property contains only the first selected file name.  
   
- See [Safe File Upload from an XBAP Sample](http://msdn.microsoft.com/en-us/01206dd3-acc7-45ff-aeb9-502c20aaad2c).  
+ See [Safe File Upload from an XBAP Sample](http://msdn.microsoft.com/library/01206dd3-acc7-45ff-aeb9-502c20aaad2c).  
   
  ]]></format>
         </remarks>

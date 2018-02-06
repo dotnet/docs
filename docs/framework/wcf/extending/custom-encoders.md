@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fa0e1d7f-af36-4bf4-aac9-cd4eab95bc4f
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Encoders
 This topic discusses how to create custom encoders.  
@@ -98,9 +100,9 @@ This topic discusses how to create custom encoders.
  There are two samples provided with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>   
- <xref:System.ServiceModel.Channels.MessageEncoderFactory>   
- <xref:System.ServiceModel.Channels.MessageEncoder>   
- [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)   
- [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)   
+ <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
+ <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
+ <xref:System.ServiceModel.Channels.MessageEncoder>  
+ [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)  
+ [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
  [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)

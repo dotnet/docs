@@ -1,79 +1,65 @@
 
-//<Snippet1>
-// Example for the Attribute.Equals( Object* ) method.
 using namespace System;
 using namespace System::Reflection;
 
-namespace NDP_UE_CPP
+ // Define a custom parameter attribute that takes a single message argument.
+
+[AttributeUsage(AttributeTargets::Parameter)]
+public ref class ArgumentUsageAttribute: public Attribute
 {
-   // Define a custom parameter attribute that takes a single message argument.
+    protected:
+       // usageMsg is storage for the attribute message.
+       String^ usageMsg;
 
-   [AttributeUsage(AttributeTargets::Parameter)]
-   public ref class ArgumentUsageAttribute: public Attribute
-   {
-   protected:
+    public:
+       // This is the attribute constructor.
+       ArgumentUsageAttribute( String^ UsageMsg )
+       {
+          this->usageMsg = UsageMsg;
+       }
 
-      // usageMsg is storage for the attribute message.
-      String^ usageMsg;
 
+       // Override ToString() to append the message to what the base generates.
+       virtual String^ ToString() override
+       {
+          return String::Concat( Attribute::ToString(), ":", usageMsg );
+       }
+} ;
+
+
+ // Define a custom parameter attribute that generates a GUID for each instance.
+[AttributeUsage(AttributeTargets::Parameter)]
+public ref class ArgumentIDAttribute : Attribute
+{
+    protected:
+        // instanceGUID is storage for the generated GUID.
+        Guid instanceGUID;
+
+    public:
+        // This is the attribute constructor, which generates the GUID.
+        ArgumentIDAttribute()
+        {
+           this->instanceGUID = Guid::NewGuid();
+        }
+
+        // Override ToString() to append the GUID to what the base generates.
+        virtual String^ ToString() override
+        {
+           return String::Concat( Attribute::ToString(), ".", instanceGUID.ToString() );
+        }
+};
+
+public ref class TestClass
+{
    public:
-
-      // This is the attribute constructor.
-      ArgumentUsageAttribute( String^ UsageMsg )
-      {
-         this->usageMsg = UsageMsg;
-      }
-
-
-      // Override ToString() to append the message to what the base generates.
-      virtual String^ ToString() override
-      {
-         return String::Concat( Attribute::ToString(), ":", usageMsg );
-      }
-
-   };
-
-
-   // Define a custom parameter attribute that generates a GUID for each instance.
-
-   [AttributeUsage(AttributeTargets::Parameter)]
-   public ref class ArgumentIDAttribute: public Attribute
-   {
-   protected:
-
-      // instanceGUID is storage for the generated GUID.
-      Guid instanceGUID;
-
-   public:
-
-      // This is the attribute constructor, which generates the GUID.
-      ArgumentIDAttribute()
-      {
-         this->instanceGUID = Guid::NewGuid();
-      }
-
-      // Override ToString() to append the GUID to what the base generates.
-      virtual String^ ToString() override
-      {
-         return String::Concat( Attribute::ToString(), ".", instanceGUID.ToString() );
-      }
-   };
-
-   public ref class TestClass
-   {
-   public:
-
       // Assign an ArgumentID attribute to each parameter.
       // Assign an ArgumentUsage attribute to each parameter.
       void TestMethod( [ArgumentID][ArgumentUsage("Must pass an array here.")]array<String^>^strArray, 
                        [ArgumentID][ArgumentUsage("Can pass param list or array here.")]array<String^>^strList ){}
+};
 
-   };
-
-
-   // Create Attribute objects and compare them.
-   void CompareAttributes()
-   {
+int main()
+{
       // Get the class type, and then get the MethodInfo object 
       // for TestMethod to access its metadata.
       Type^ clsType = TestClass::typeid;
@@ -81,13 +67,12 @@ namespace NDP_UE_CPP
 
       // There will be two elements in pInfoArray, one for each parameter.
       array<ParameterInfo^>^pInfoArray = mInfo->GetParameters();
-      if ( pInfoArray != nullptr )
+      if  (pInfoArray != nullptr)
       {
          // Create an instance of the argument usage attribute on strArray.
          ArgumentUsageAttribute^ arrayUsageAttr1 = static_cast<ArgumentUsageAttribute^>(Attribute::GetCustomAttribute( pInfoArray[ 0 ], ArgumentUsageAttribute::typeid ));
 
-         // Create another instance of the argument usage attribute 
-         // on strArray.
+         // Create another instance of the argument usage attribute on strArray.
          ArgumentUsageAttribute^ arrayUsageAttr2 = static_cast<ArgumentUsageAttribute^>(Attribute::GetCustomAttribute( pInfoArray[ 0 ], ArgumentUsageAttribute::typeid ));
 
          // Create an instance of the argument usage attribute on strList.
@@ -115,35 +100,25 @@ namespace NDP_UE_CPP
          Console::WriteLine( "   \"{0}\" == \n   \"{1}\" ? {2}", arrayIDAttr1->ToString(), listIDAttr->ToString(), arrayIDAttr1->Equals( listIDAttr ) );
       }
       else
-            Console::WriteLine( "The parameters information could "
-      "not be retrieved for method {0}.", mInfo->Name );
-   }
+      {
+            Console::WriteLine( "The parameters information could not be retrieved for method {0}.", mInfo->Name );
+      }
 }
-
-int main()
-{
-   Console::WriteLine( "This example of Attribute::Equals( Object* ) "
-   "generates the following output." );
-   NDP_UE_CPP::CompareAttributes();
-}
-
 /*
-This example of Attribute::Equals( Object* ) generates the following output.
-
-Compare a usage attribute instance to another instance of the same attribute:
-   "NDP_UE_CPP.ArgumentUsageAttribute:Must pass an array here." ==
-   "NDP_UE_CPP.ArgumentUsageAttribute:Must pass an array here." ? True
-
-Compare a usage attribute to another usage attribute:
-   "NDP_UE_CPP.ArgumentUsageAttribute:Must pass an array here." ==
-   "NDP_UE_CPP.ArgumentUsageAttribute:Can pass param list or array here." ? False
-
-Compare an ID attribute instance to another instance of the same attribute:
-   "NDP_UE_CPP.ArgumentIDAttribute.28db2434-1031-469a-9a13-babeb9be9e2c" ==
-   "NDP_UE_CPP.ArgumentIDAttribute.1140dcb9-7341-4ba0-b2de-e9d8f0955216" ? False
-
-Compare an ID attribute to another ID attribute:
-   "NDP_UE_CPP.ArgumentIDAttribute.28db2434-1031-469a-9a13-babeb9be9e2c" ==
-   "NDP_UE_CPP.ArgumentIDAttribute.7f983425-5ea9-4c90-b536-bd6229fdfe63" ? False
+The example displays the following output:
+      Compare a usage attribute instance to another instance of the same attribute:
+         "ArgumentUsageAttribute:Must pass an array here." ==
+         "ArgumentUsageAttribute:Must pass an array here." ? True
+      
+      Compare a usage attribute to another usage attribute:
+         "ArgumentUsageAttribute:Must pass an array here." ==
+         "ArgumentUsageAttribute:Can pass param list or array here." ? False
+      
+      Compare an ID attribute instance to another instance of the same attribute:
+         "ArgumentIDAttribute.22d1a176-4aca-427b-8230-0c1563e13187" ==
+         "ArgumentIDAttribute.7fa94bba-c290-48e1-a0de-e22f6c1e64f1" ? False
+      
+      Compare an ID attribute to another ID attribute:
+         "ArgumentIDAttribute.22d1a176-4aca-427b-8230-0c1563e13187" ==
+         "ArgumentIDAttribute.b9eea70d-9c0f-459e-a984-19c46b6c8789" ? False
 */
-//</Snippet1>

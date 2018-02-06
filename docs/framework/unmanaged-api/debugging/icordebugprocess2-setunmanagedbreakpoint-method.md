@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2::SetUnmanagedBreakpoint Method
 Sets an unmanaged breakpoint at the specified native image offset.  

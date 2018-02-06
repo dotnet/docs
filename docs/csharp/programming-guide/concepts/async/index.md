@@ -1,6 +1,6 @@
 ---
 title: "Asynchronous Programming with async and await (C#)"
-ms.date: "2017-05-22"
+ms.date: 05/22/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -9,11 +9,6 @@ ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 caps.latest.revision: 5
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Asynchronous programming with async and await (C#)
 You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.  
@@ -341,5 +336,5 @@ namespace AsyncFirstExample
 ```  
   
 ## See Also  
- [async](../../../../csharp/language-reference/keywords/async.md)   
+ [async](../../../../csharp/language-reference/keywords/async.md)  
  [await](../../../../csharp/language-reference/keywords/await.md)

@@ -163,6 +163,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+    <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -221,6 +226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -250,7 +257,7 @@
   
  To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event that contains the code to run when the event is raised.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -262,6 +269,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -296,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="HotSpotMode">
@@ -375,6 +386,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.HotSpotMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
       </Docs>
     </Member>
     <Member MemberName="HotSpots">
@@ -419,6 +435,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -449,6 +467,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.Control.ViewState" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -475,7 +494,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised when a <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control is clicked. To allow a <xref:System.Web.UI.WebControls.HotSpot> to raise the <xref:System.Web.UI.WebControls.ImageMap.Click> event, you must first set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.Postback`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ImageMap.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -484,6 +503,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -515,6 +536,7 @@
         <block subset="none" type="overrides">
           <para>To handle a click event in a derived class, override the <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -543,6 +565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -573,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -662,6 +687,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -687,6 +713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

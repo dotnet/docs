@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3530c3a3-756d-4712-9f10-fb2897414d3a
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Property Grid Extensibliity
 A developer can customize the property grid that is displayed when a given activity is selected within the designer. This can be done to create a rich editing experience. This sample shows how this can be done.  

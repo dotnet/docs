@@ -1,7 +1,7 @@
 ---
 title: "Persisting an Object in Visual Studio (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Persisting an Object in Visual Studio (Visual Basic)
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
@@ -35,7 +29,7 @@ Although you can set an object's properties to default values at design time, an
 >  This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Loan Object  
  The first step is to create a `Loan` class and a test application that uses the class.  
@@ -227,5 +221,5 @@ Although you can set an object's properties to default values at design time, an
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
 ## See Also  
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)   
+ [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

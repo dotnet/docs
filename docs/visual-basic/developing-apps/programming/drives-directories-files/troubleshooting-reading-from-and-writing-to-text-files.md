@@ -1,40 +1,24 @@
 ---
 title: "Troubleshooting: reading from and writing to text files (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting file I/O"
-  - "writing text to files, troubleshooting"
+  - "writing text to files [Visual Basic], troubleshooting"
   - "troubleshooting Visual Basic, text files"
   - "I/O [Visual Basic], troubleshooting text files"
-  - "writing to files, troubleshooting"
-  - "reading text files, troubleshooting"
+  - "writing to files [Visual Basic], troubleshooting"
+  - "reading text files [Visual Basic], troubleshooting"
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting: reading from and writing to text files (Visual Basic)
 This topic discusses common problems encountered when working with text files and suggests an approach to each.  
@@ -52,7 +36,7 @@ This topic discusses common problems encountered when working with text files an
  When parsing file paths, particularly relative paths, it is easy to supply the wrong data. Many problems can be corrected by making sure you are supplying the correct path. For more information, see [How to: Parse File Paths](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md).  
   
 ## See also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)   
- [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)   
+ <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
+ [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
  [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

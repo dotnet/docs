@@ -1,39 +1,22 @@
 ---
 title: "&lt;&lt; Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.<<"
 helpviewer_keywords: 
-  - "bit shift operators"
+  - "bit shift operators [Visual Basic]"
   - "<< operator [Visual Basic]"
   - "operator <<, Visual Basic left shift operator"
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;&lt; Operator (Visual Basic)
 Performs an arithmetic left shift on a bit pattern.  
@@ -93,9 +76,9 @@ result = pattern << amount
  The shift amount for `result4` is calculated as 17 AND 15, which equals 1.  
   
 ## See Also  
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)   
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)   
- [<<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
+ [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
+ [<<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

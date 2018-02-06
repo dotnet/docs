@@ -96,6 +96,7 @@
   
  If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> class, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" /> method and use the method to add custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />, if you want greater programmatic control over adding custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to your zone.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +158,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control does not have an ID.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -204,6 +206,8 @@
         <block subset="none" type="overrides">
           <para>If you want to create a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> zone, but you plan to create the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls programmatically rather than allowing page developers to declare them, you do not need zone template support, and you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class.</para>
         </block>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" />
       </Docs>
     </Member>
   </Members>

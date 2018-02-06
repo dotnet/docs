@@ -1,7 +1,7 @@
 ---
 title: "How to: Filter on an Optional Element (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -113,12 +113,12 @@ Child Four Text
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>   
- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>   
- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>   
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)   
- [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)   
- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)   
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
+ <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
+ <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  
+ <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>  
+ [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
+ [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
+ [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)  
+ [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)  
+ [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [Projection Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)

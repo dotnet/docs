@@ -111,6 +111,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">A <see cref="T:System.Windows.Style" /> cannot contain a <see cref="T:System.Windows.Trigger" /> that refers to the <see cref="T:System.Windows.Style" /> property.</exception>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Trigger" /> is in use, it cannot be modified.</exception>
+        <altmember cref="P:System.Windows.Trigger.Value" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -141,6 +142,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -409,6 +412,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Expressions such as bindings are not supported.</exception>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Trigger" /> is in use, it cannot be modified.</exception>
+        <altmember cref="P:System.Windows.Trigger.Property" />
+        <altmember cref="P:System.Windows.Trigger.Setters" />
       </Docs>
     </Member>
   </Members>

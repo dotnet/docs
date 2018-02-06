@@ -7,14 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 49d1706a-1e0c-4c85-9704-75c908372eb9
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing an Implicit Transaction using Transaction Scope
 The <xref:System.Transactions.TransactionScope> class provides a simple way to mark a block of code as participating in a transaction, without requiring you to interact with the transaction itself. A transaction scope can select and manage the ambient transaction automatically. Due to its ease of use and efficiency, it is recommended that you use the <xref:System.Transactions.TransactionScope> class when developing a transaction application.  
@@ -173,5 +175,5 @@ using(TransactionScope scope1 = new TransactionScope())
  When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
   
 ## See Also  
- <xref:System.Transactions.Transaction.Clone%2A>   
+ <xref:System.Transactions.Transaction.Clone%2A>  
  <xref:System.Transactions.TransactionScope>

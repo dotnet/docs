@@ -76,6 +76,9 @@ namespace SampleSynthesis
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
+    <altmember cref="T:System.Speech.Synthesis.Prompt" />
+    <altmember cref="T:System.Speech.Synthesis.PromptBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +101,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
       </Docs>
     </Member>
     <Member MemberName="AddLexicon">
@@ -126,7 +133,7 @@ namespace SampleSynthesis
 ## Remarks  
  A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use a lexicon to specify custom pronunciations for specialized vocabulary in your application.  
   
- Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/library/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
   
  You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
   
@@ -200,6 +207,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="BookmarkReached">
@@ -288,6 +296,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -353,6 +362,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetInstalledVoices">
@@ -463,6 +473,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
+        <altmember cref="Overload:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints" />
+        <altmember cref="Overload:System.Speech.Synthesis.PromptBuilder.StartVoice" />
       </Docs>
     </Member>
     <Member MemberName="GetInstalledVoices">
@@ -556,6 +570,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -574,6 +589,9 @@ namespace SampleSynthesis
       <Docs>
         <summary>Pauses the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.Resume" />
+        <altmember cref="P:System.Speech.Synthesis.SpeechSynthesizer.State" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" />
       </Docs>
     </Member>
     <Member MemberName="PhonemeReached">
@@ -602,6 +620,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Rate">
@@ -659,6 +678,8 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.PromptStyle" />
+        <altmember cref="T:System.Speech.Synthesis.PromptRate" />
       </Docs>
     </Member>
     <Member MemberName="RemoveLexicon">
@@ -687,6 +708,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon(System.Uri,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -705,6 +727,9 @@ namespace SampleSynthesis
       <Docs>
         <summary>Resumes the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object after it has been paused.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.Pause" />
+        <altmember cref="P:System.Speech.Synthesis.SpeechSynthesizer.State" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectVoice">
@@ -737,6 +762,8 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="SelectVoiceByHints">
@@ -792,6 +819,9 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.VoiceGender" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceInfo" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SelectVoiceByHints">
@@ -828,6 +858,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.VoiceAge" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceGender" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceInfo" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SelectVoiceByHints">
@@ -866,6 +900,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.VoiceAge" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceGender" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceInfo" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SelectVoiceByHints">
@@ -916,6 +954,11 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceAge" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceGender" />
+        <altmember cref="T:System.Speech.Synthesis.VoiceInfo" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetOutputToAudioStream">
@@ -1137,6 +1180,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="SetOutputToWaveFile">
@@ -1210,6 +1257,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="SetOutputToWaveStream">
@@ -1391,6 +1442,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Speak">
@@ -1458,6 +1510,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Speak">
@@ -1521,6 +1574,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <MemberGroup MemberName="SpeakAsync">
@@ -1558,6 +1612,14 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange" />
       </Docs>
     </MemberGroup>
     <Member MemberName="SpeakAsync">
@@ -1625,6 +1687,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakAsync">
@@ -1692,6 +1755,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakAsync">
@@ -1755,6 +1819,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Speech.Synthesis.SpeechSynthesizer.Speak" />
       </Docs>
     </Member>
     <Member MemberName="SpeakAsyncCancel">
@@ -1791,6 +1856,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakAsyncCancelAll">
@@ -1885,6 +1951,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakCompleted">
@@ -1911,6 +1978,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.SpeakCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SpeakProgress">
@@ -1935,6 +2003,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakSsml">
@@ -1959,7 +2028,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
   
  To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> to initiate the synchronous speaking of a string that does not contain SSML markup.  
   
@@ -2022,6 +2091,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakSsmlAsync">
@@ -2047,7 +2117,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
   
  To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> to initiate the asynchronous speaking of a string that does not contain SSML markup.  
   
@@ -2111,6 +2181,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="SpeakStarted">
@@ -2137,6 +2208,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -2242,6 +2314,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="VisemeReached">
@@ -2297,6 +2370,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Voice">
@@ -2389,6 +2463,10 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender)" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
+        <altmember cref="E:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange" />
       </Docs>
     </Member>
     <Member MemberName="VoiceChange">
@@ -2415,6 +2493,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="Volume">

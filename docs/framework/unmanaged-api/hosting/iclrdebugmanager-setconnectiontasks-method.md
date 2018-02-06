@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager::SetConnectionTasks Method
 Associates a list of [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instances with an identifier and a friendly name.  
@@ -79,8 +81,8 @@ HRESULT SetConnectionTasks (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)   
- [BeginConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md)   
- [EndConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md)   
+ [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
+ [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
+ [BeginConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md)  
+ [EndConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md)  
  [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

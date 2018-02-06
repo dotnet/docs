@@ -672,5 +672,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds metadata with the given names and values. Overwrites any metadata with the same name already in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

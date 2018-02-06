@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;connectionManagement&gt; Element (Network Settings)
 Specifies the maximum number of connections to a network host.  
@@ -31,7 +33,7 @@ Specifies the maximum number of connections to a network host.
 ## Syntax  
   
 ```xml  
-      <connectionManagement>   
+<connectionManagement>   
 </connectionManagement>  
 ```  
   
@@ -76,6 +78,6 @@ Specifies the maximum number of connections to a network host.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>   
- <xref:System.Net.ServicePointManager>   
+ <xref:System.Net.ServicePoint>  
+ <xref:System.Net.ServicePointManager>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

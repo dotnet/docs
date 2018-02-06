@@ -1,39 +1,21 @@
 ---
 title: "Public (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Public"
 helpviewer_keywords: 
-  - "Public keyword"
-  - "Public keyword, syntax"
+  - "Public keyword [Visual Basic]"
+  - "Public keyword [Visual Basic], syntax"
   - "Public access modifier"
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Public (Visual Basic)
 Specifies that one or more declared programming elements have no access restrictions.  
@@ -86,10 +68,10 @@ Specifies that one or more declared programming elements have no access restrict
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)   
- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
- [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+ [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
+ [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

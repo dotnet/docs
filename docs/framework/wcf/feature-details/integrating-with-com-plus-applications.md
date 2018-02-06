@@ -18,9 +18,11 @@ helpviewer_keywords:
   - "WCF, COM+ integration"
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Integrating with COM+ Applications
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich environment for creating distributed applications. If you have a substantial investment in component-based application logic hosted in COM+, you can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to extend your existing logic rather than having to rewrite it. The topics within this section describe how to use COM+ with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

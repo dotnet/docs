@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e7e54ed3-d1e5-4aa7-a653-1300c6b304eb
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transactional Support in System.ServiceModel
 The topics in this section describe the transactional functionalities [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides.  

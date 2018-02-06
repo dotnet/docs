@@ -145,6 +145,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
+        <altmember cref="T:System.Web.DynamicData.ModelProviders.TableProvider" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -384,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetTable">
@@ -422,6 +425,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not found in the data model.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -455,6 +459,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type was not found in the data model.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -492,6 +497,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tablename" /> or <paramref name="contextType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The context is not registered or the table does not exist in the data context.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RegisterContext">
@@ -848,5 +854,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the metadata that is associated with the specified table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instantiates a new instance of the <see cref="T:System.Web.DynamicData.MetaModel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

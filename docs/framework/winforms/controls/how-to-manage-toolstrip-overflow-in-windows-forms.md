@@ -9,11 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Overflow property"
   - "ToolStrip control [Windows Forms], managing overflow"
   - "toolbars [Windows Forms], managing overflow"
   - "examples [Windows Forms], toolbars"
@@ -23,6 +22,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Manage ToolStrip Overflow in Windows Forms
 When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit in the allotted space, you can enable overflow functionality on the <xref:System.Windows.Forms.ToolStrip> and determine the overflow behavior of specific <xref:System.Windows.Forms.ToolStripItem>s.  
@@ -50,10 +51,10 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.ToolStripOverflowButton>   
- <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>   
- <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>   
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)   
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)   
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.ToolStripOverflowButton>  
+ <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>  
+ <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>  
+ [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
+ [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
  [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)

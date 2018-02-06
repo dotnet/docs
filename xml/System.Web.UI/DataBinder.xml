@@ -18,7 +18,7 @@
 ## Remarks  
  You can use the overloaded static <xref:System.Web.UI.DataBinder.Eval%2A> method of this class in data-binding syntax in an ASP.NET Web page. This provides an easier syntax to work with than standard data binding. However, because `DataBinder.Eval` provides automatic type conversion, it can result in slower performance.  
   
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
   
@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.XPathBinder" />
+    <altmember cref="T:System.Web.UI.IBindableTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +159,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="expression" /> is <see langword="null" /> or is an empty string after trimming.</exception>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="T:System.Web.UI.DataBinding" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -226,6 +232,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GetDataItem">
@@ -257,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="GetDataItem">
@@ -288,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="GetIndexedPropertyValue">
@@ -333,6 +343,7 @@
  \- or -  
   
  <paramref name="expr" /> does not allow indexed access.</exception>
+        <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
       </Docs>
     </Member>
     <Member MemberName="GetIndexedPropertyValue">
@@ -376,6 +387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -489,5 +501,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetIndexedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an indexed property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDataItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an object's declared data item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of a property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

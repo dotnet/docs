@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Resolving External Resources
 The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument** class to locate resources that are not inline in the XML data, such as external document type definitions (DTDs), entities, and schemas. These items can be located on a network or on a local drive, and are identifiable by a Uniform Resource Identifier (URI). This allows the **XmlDocument** to resolve **EntityReference** nodes that are present in the document and validate the document according to the external DTD or schema.  

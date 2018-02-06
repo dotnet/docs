@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
+    <altmember cref="T:System.Windows.Forms.ToolStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -711,6 +713,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">

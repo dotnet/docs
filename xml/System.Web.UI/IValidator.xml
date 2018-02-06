@@ -31,6 +31,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ValidatorCollection" />
+    <altmember cref="P:System.Web.UI.Page.Validators" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseCompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.CustomValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RangeValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
   </Docs>
   <Members>
     <Member MemberName="ErrorMessage">
@@ -52,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET developers access this property declaratively in the opening tag of a validation server control. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+ ASP.NET developers access this property declaratively in the opening tag of a validation server control. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -66,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -97,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -127,6 +138,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
   </Members>

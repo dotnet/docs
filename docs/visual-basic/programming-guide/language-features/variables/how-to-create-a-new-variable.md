@@ -1,7 +1,7 @@
 ---
 title: "How to: Create a New Variable (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -10,27 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Dim statement"
+  - "Dim statement [Visual Basic]"
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create a New Variable (Visual Basic)
 You create a variable with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  
@@ -76,11 +61,11 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
     ```  
   
 ## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Statements](../../../../visual-basic/language-reference/statements/index.md)   
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
+ [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
+ [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Statements](../../../../visual-basic/language-reference/statements/index.md)  
+ [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)

@@ -33,7 +33,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate whether the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.%23ctor%2A> constructor.  
   
@@ -50,6 +50,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +91,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="NewPageIndex">
@@ -117,6 +129,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
       </Docs>
     </Member>
   </Members>

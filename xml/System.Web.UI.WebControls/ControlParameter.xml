@@ -35,6 +35,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,7 +58,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the <xref:System.Web.UI.WebControls.ControlParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties are initialized to <xref:System.String.Empty?displayProperty=nameWithType>. In addition, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the <xref:System.Web.UI.WebControls.ControlParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties are initialized to <xref:System.String.Empty?displayProperty=nameWithType>. In addition, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -90,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ControlParameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +123,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,6 +162,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -217,6 +228,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -243,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.Web.UI.WebControls.ControlParameter)" />
       </Docs>
     </Member>
     <Member MemberName="ControlID">
@@ -297,6 +313,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -344,6 +361,8 @@
  \- or -  
   
  The control identified by the <see cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" /> property does not support the property named by <see cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -408,7 +427,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

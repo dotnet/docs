@@ -9,20 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "architecture, System.Windows.Input.StylusPlugIns"
-  - "StylusPlugIns architecture"
-  - "InkCanvas, adding plug-ins to"
-  - "System.Windows.Input.StylusPlugIns architecture"
-  - "plug-ins, stylus"
+  - "architecture [WPF], "
+  - ", "
+  - ", "
+  - ", "
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Intercepting Input from the Stylus
 The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism for implementing low-level control over <xref:System.Windows.Input.Stylus> input and the creation of digital ink <xref:System.Windows.Ink.Stroke> objects. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> class provides a mechanism for you to implement custom behavior and apply it to the stream of data coming from the stylus device for the optimal performance.  
@@ -78,5 +79,5 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
  By deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes and inserting them into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> collections, you can greatly enhance the behavior of your digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to customize the <xref:System.Windows.Input.Stylus> input. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and rendering with optimal performance for your application.  
   
 ## See Also  
- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)   
+ [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)  
  [Accessing and Manipulating Pen Input](http://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

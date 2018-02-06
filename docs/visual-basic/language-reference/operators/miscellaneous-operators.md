@@ -1,13 +1,11 @@
 ---
 title: "Miscellaneous Operators (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic]"
@@ -16,21 +14,6 @@ ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Miscellaneous Operators (Visual Basic)
 The following are miscellaneous operators defined in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorRefToDefCheck Enumeration
 Specifies flags to control which referenced items are converted to their definitions in order to optimize the code.  

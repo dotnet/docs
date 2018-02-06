@@ -116,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName)" />
       </Docs>
     </Member>
     <Member MemberName="AnchorChanged">
@@ -237,6 +238,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection(System.Windows.Annotations.AnnotationService,System.String,System.Windows.Media.Brush)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection(System.Windows.Annotations.AnnotationService,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CargoChanged">
@@ -311,10 +314,11 @@
 ## Remarks  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.CreationTime%2A> returns             <xref:System.DateTime?displayProperty=nameWithType> if the annotation was incorrectly created by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation.  
+>  <xref:System.Windows.Annotations.Annotation.CreationTime%2A> returns             <xref:System.DateTime.MinValue?displayProperty=nameWithType> if the annotation was incorrectly created by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Annotations.Annotation.LastModificationTime" />
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -379,6 +383,7 @@
         <summary>Gets the date and the time that the annotation was last modified.</summary>
         <value>The date and the time the annotation was last modified.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Annotations.Annotation.CreationTime" />
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -403,6 +408,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.XmlException">The serialized XML for the <see cref="T:System.Windows.Annotations.Annotation" /> is not valid.</exception>
+        <altmember cref="M:System.Windows.Annotations.Annotation.WriteXml(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -427,7 +433,17 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Annotations.Annotation.AnnotationType" /> is not valid.</exception>
+        <altmember cref="M:System.Windows.Annotations.Annotation.ReadXml(System.Xml.XmlReader)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Annotation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

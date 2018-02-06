@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Tracing to Troubleshoot Your Application
 This section contains various topics that describe how you can use tracing to troubleshoot your application.  
@@ -38,6 +40,6 @@ This section contains various topics that describe how you can use tracing to tr
  Describes how to emit traces programmatically in user code, so that you can proactively create instrumentation data to be used later for diagnostic purpose, and in correlation with WCF traces.  
   
 ## See Also  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)   
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
+ [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)

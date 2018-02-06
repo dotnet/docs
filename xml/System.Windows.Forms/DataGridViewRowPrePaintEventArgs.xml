@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +78,12 @@
  -or-  
   
  <paramref name="inheritedRowStyle" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ClipBounds">
@@ -111,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="DrawFocus">
@@ -152,6 +162,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.ComponentModel.HandledEventArgs.Handled" />
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -187,6 +202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -220,6 +238,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="InheritedRowStyle">
@@ -255,6 +276,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsFirstDisplayedRow">
@@ -286,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="IsLastVisibleRow">
@@ -317,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintCells">
@@ -342,6 +370,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintCellsBackground">
@@ -375,6 +404,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
+        <altmember cref="P:System.ComponentModel.HandledEventArgs.Handled" />
       </Docs>
     </Member>
     <Member MemberName="PaintCellsContent">
@@ -398,6 +432,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintHeader">
@@ -429,6 +464,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
+        <altmember cref="P:System.ComponentModel.HandledEventArgs.Handled" />
       </Docs>
     </Member>
     <Member MemberName="PaintHeader">
@@ -452,6 +491,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintParts">
@@ -481,6 +521,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RowBounds">
@@ -514,6 +555,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnsWidth(System.Windows.Forms.DataGridViewElementStates)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -547,6 +592,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -580,7 +627,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PaintHeader">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Paints the row header of the current row.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

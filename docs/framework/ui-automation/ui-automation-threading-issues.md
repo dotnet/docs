@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Threading Issues
 > [!NOTE]

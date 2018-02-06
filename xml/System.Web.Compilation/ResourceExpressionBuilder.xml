@@ -52,6 +52,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.Compilation.BuildManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -224,7 +229,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ParseExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an object that represents the parsed expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

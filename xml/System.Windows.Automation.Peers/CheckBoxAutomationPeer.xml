@@ -50,6 +50,7 @@
         <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> for the element associated with this <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.CheckBox" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -69,6 +70,7 @@
         <summary>Gets the name of the element associated with this <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "CheckBox".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
   </Members>

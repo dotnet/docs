@@ -1,51 +1,34 @@
 ---
 title: "Do...Loop Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Do"
   - "vb.Loop"
   - "vb.Until"
 helpviewer_keywords: 
-  - "conditional statements, Do…Loop"
-  - "while statement, Do...Loop"
-  - "execution, conditional"
+  - "conditional statements [Visual Basic], Do�Loop"
+  - "while statement [Visual Basic], Do...Loop"
+  - "execution [Visual Basic], conditional"
   - "Do loops"
-  - "Until keyword, Do...Loop statement"
+  - "Until keyword [Visual Basic], Do...Loop statement"
   - "Do...Loop statement"
   - "instructions, repeating"
-  - "Do statement"
-  - "Exit statement, in Do...Loop statements"
-  - "loop structures, Do…Loop statements"
-  - "do-while statements"
+  - "Do statement [Visual Basic]"
+  - "Exit statement [Visual Basic], in Do...Loop statements"
+  - "loop structures [Visual Basic], Do�Loop statements"
+  - "do-while statements [Visual Basic]"
   - "loops, exiting"
-  - "Loop keyword, Do...Loop statement"
+  - "Loop keyword [Visual Basic], Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Do...Loop Statement (Visual Basic)
 Repeats a block of statements while a `Boolean` condition is `True` or until the condition becomes `True`.  
@@ -127,9 +110,9 @@ Loop { While | Until } condition
  [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
   
 ## See Also  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)   
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
+ [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
+ [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
+ [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
  [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

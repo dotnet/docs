@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.Globalization.KoreanCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -81,14 +81,14 @@ manager: "wpickett"
 uid: System.Globalization.KoreanCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.KoreanCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -140,14 +140,14 @@ manager: "wpickett"
 uid: System.Globalization.KoreanCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.KoreanCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ manager: "wpickett"
 uid: System.Globalization.KoreanCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -215,14 +215,14 @@ manager: "wpickett"
 uid: System.Globalization.KoreanCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.KoreanCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

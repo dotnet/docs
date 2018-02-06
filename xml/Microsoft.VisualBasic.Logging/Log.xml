@@ -114,6 +114,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
     <Member MemberName="InitializeWithDefaultsSinceNoConfigExists">
@@ -146,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
     <Member MemberName="TraceSource">
@@ -198,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSource" />
       </Docs>
     </Member>
     <Member MemberName="WriteEntry">
@@ -275,6 +278,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="WriteEntry">
@@ -355,6 +359,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The message type is not one of the <see cref="T:System.Diagnostics.TraceEventType" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="WriteEntry">
@@ -437,6 +442,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The message type is not one of the <see cref="T:System.Diagnostics.TraceEventType" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="WriteException">
@@ -516,6 +522,8 @@
           <paramref name="ex" /> is <see langword="Nothing" />.</exception>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="WriteException">
@@ -600,6 +608,8 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The message type is not one of the <see cref="T:System.Diagnostics.TraceEventType" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
     <Member MemberName="WriteException">
@@ -686,7 +696,36 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The message type is not one of the <see cref="T:System.Diagnostics.TraceEventType" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">Code with partial trust calls the method, but writes to an event log listener that requires full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.Diagnostics.TraceEventType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteException">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes exception information to the application's log listeners.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.Log" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEntry">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to the application's log listeners.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

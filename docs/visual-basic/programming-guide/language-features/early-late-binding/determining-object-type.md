@@ -1,18 +1,17 @@
 ---
 title: "Determining Object Type (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], discovering which an object belongs to"
   - "types [Visual Basic], determining Visual Basic object types"
-  - "object variables, testing values"
+  - "object variables [Visual Basic], testing values"
   - "TypeOf...Is expression, object type at run time"
   - "TypeName function"
   - "objects [Visual Basic], type determining"
@@ -20,21 +19,6 @@ ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Determining Object Type (Visual Basic)
 Generic object variables (that is, variables you declare as `Object`) can hold objects from any class. When using variables of type `Object`, you may need to take different actions based on the class of the object; for example, some objects might not support a particular property or method. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides two means of determining which type of object is stored in an object variable: the `TypeName` function and the `TypeOf...Is` operator.  
@@ -65,9 +49,9 @@ Generic object variables (that is, variables you declare as `Object`) can hold o
      [!code-vb[VbVbalrOOP#95](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.TypeName%2A>   
- [Calling a Property or Method Using a String Name](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)   
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [If...Then...Else Statement](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
+ <xref:Microsoft.VisualBasic.Information.TypeName%2A>  
+ [Calling a Property or Method Using a String Name](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)  
+ [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
+ [If...Then...Else Statement](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
+ [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)  
  [Integer Data Type](../../../../visual-basic/language-reference/data-types/integer-data-type.md)

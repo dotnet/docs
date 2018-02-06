@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property after an insert operation. To keep the <xref:System.Web.UI.WebControls.DetailsView> control in insert mode, set the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.%23ctor%2A> constructor.  
   
@@ -36,6 +36,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +83,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -108,6 +123,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -144,6 +165,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -178,6 +205,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -215,6 +248,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -253,6 +290,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
       </Docs>
     </Member>
   </Members>

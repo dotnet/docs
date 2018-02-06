@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ContextMenuStrip control [Windows Forms]"
   - "toolbars [Windows Forms], adding items dynamically"
@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add ToolStrip Items Dynamically
 You can dynamically populate the menu item collection of a <xref:System.Windows.Forms.ToolStrip> control when the menu opens.  
@@ -43,10 +45,10 @@ You can dynamically populate the menu item collection of a <xref:System.Windows.
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  
   
 ## See Also  
- <xref:System.Windows.Forms.ContextMenuStrip>   
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.ToolStripItem>   
- <xref:System.Windows.Forms.ToolStripMenuItem>   
- <xref:System.Windows.Forms.ToolStripDropDownButton>   
+ <xref:System.Windows.Forms.ContextMenuStrip>  
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.ToolStripItem>  
+ <xref:System.Windows.Forms.ToolStripMenuItem>  
+ <xref:System.Windows.Forms.ToolStripDropDownButton>  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

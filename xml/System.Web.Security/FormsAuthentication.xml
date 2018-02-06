@@ -633,7 +633,7 @@
         <param name="userName">The name of the authenticated user.</param>
         <param name="createPersistentCookie">This parameter is ignored.</param>
         <summary>Returns the redirect URL for the original request that caused the redirect to the login page.</summary>
-        <returns>A string that contains the redirect URL.</returns>
+        <returns>A string that contains the redirect URL, or null if <paramref name="userName" /> is null.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -645,6 +645,8 @@
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   
  By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> methods returns the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow the return URL to refer to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+
+This method does not create a cookie.
   
 > [!IMPORTANT]
 >  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
@@ -1287,5 +1289,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectFromLoginPage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects an authenticated user back to the originally requested URL or the default URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAuthCookie">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an authentication cookie for a given user name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,45 +1,28 @@
 ---
 title: "Operator Precedence in Visual Basic"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "arithmetic operators, precedence"
+  - "arithmetic operators [Visual Basic], precedence"
   - "operator precedence"
-  - "logical operators, precedence"
+  - "logical operators [Visual Basic], precedence"
   - "operators [Visual Basic], associativity"
   - "operators [Visual Basic], resolution"
-  - "associativity of operators"
+  - "associativity of operators [Visual Basic]"
   - "operators [Visual Basic], precedence"
-  - "precedence, of operators"
-  - "comparison operators, precedence"
-  - "math operators"
+  - "precedence [Visual Basic], of operators"
+  - "comparison operators [Visual Basic], precedence"
+  - "math operators [Visual Basic]"
   - "order of precedence"
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operator Precedence in Visual Basic
 When several operations occur in an expression, each part is evaluated and resolved in a predetermined order called *operator precedence*.  
@@ -132,11 +115,11 @@ g = (a - (b + c)) / (d * e)
 ```  
   
 ## See Also  
- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)   
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)   
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)   
- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)   
- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)   
- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
+ [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
+ [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
+ [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)  
+ [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
+ [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

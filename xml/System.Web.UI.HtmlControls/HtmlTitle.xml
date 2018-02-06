@@ -19,7 +19,7 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlTitle> class to programmatically specify the HTML `<title>` element of a Web Forms page.  
   
 > [!NOTE]
->  You can also set the page title by using the `title` attribute of the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive, or by setting the <xref:System.Web.UI.Page.Title%2A> property of the <xref:System.Web.UI.Page> class.  
+>  You can also set the page title by using the `title` attribute of the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive, or by setting the <xref:System.Web.UI.Page.Title%2A> property of the <xref:System.Web.UI.Page> class.  
   
    
   
@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="P:System.Web.UI.Page.Title" />
+    <altmember cref="P:System.Web.UI.Page.Header" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +96,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -140,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Text">

@@ -2,8 +2,8 @@
 uid: System.Windows.TriggerCollection
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Windows.TriggerCollection.IsSealed
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

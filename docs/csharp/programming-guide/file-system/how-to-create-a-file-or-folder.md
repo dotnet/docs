@@ -1,13 +1,9 @@
 ---
 title: "How to: Create a File or Folder (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "folders [C#]"
@@ -18,27 +14,12 @@ ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create a File or Folder (C# Programming Guide)
 You can programmatically create a folder on your computer, create a subfolder, create a file in the subfolder, and write data to the file.  
   
 ## Example  
- [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
+ [!code-csharp[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
   
  If the folder already exists, <xref:System.IO.Directory.CreateDirectory%2A> does nothing, and no exception is thrown. However, <xref:System.IO.File.Create%2A?displayProperty=nameWithType> replaces an existing file with a new file. The example uses an `if`-`else` statement to prevent an existing file from being replaced.  
   
@@ -88,6 +69,6 @@ You can programmatically create a folder on your computer, create a subfolder, c
  If you don’t have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
   
 ## See Also  
- <xref:System.IO?displayProperty=nameWithType>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ <xref:System.IO?displayProperty=nameWithType>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepperEnum::Next Method
 Gets the specified number of ICorDebugStepper instances from the enumeration, starting at the current position.  

@@ -1,40 +1,24 @@
 ---
 title: "Decision Structures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"
-  - "If statement, decision structures"
-  - "If statement, If...Then...Else"
-  - "control flow, decision structures"
-  - "decision structures"
-  - "conditional statements, decision structures"
+  - "If statement [Visual Basic], decision structures"
+  - "If statement [Visual Basic], If...Then...Else"
+  - "control flow [Visual Basic], decision structures"
+  - "decision structures [Visual Basic]"
+  - "conditional statements [Visual Basic], decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Decision Structures (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] lets you test conditions and perform different operations depending on the results of that test. You can test for a condition being true or false, for various values of an expression, or for various exceptions generated when you execute a series of statements.  
@@ -67,8 +51,8 @@ Taking different actions when a condition is true and when it is false
 >  For many control structures, when you click a keyword, all of the keywords in the structure are highlighted. For instance, when you click `If` in an `If...Then...Else` construction, all instances of `If`, `Then`, `ElseIf`, `Else`, and `End If` in the construction are highlighted. To move to the next or previous highlighted keyword, press CTRL+SHIFT+DOWN ARROW or CTRL+SHIFT+UP ARROW.  
   
 ## See Also  
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)   
- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
+ [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
+ [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
+ [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)  
+ [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
  [If Operator](../../../../visual-basic/language-reference/operators/if-operator.md)

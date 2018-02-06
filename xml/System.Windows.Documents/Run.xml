@@ -28,6 +28,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.Block" />
+    <altmember cref="T:System.Windows.Documents.Span" />
+    <altmember cref="T:System.Windows.Documents.InlineUIContainer" />
+    <altmember cref="T:System.Windows.Documents.Floater" />
+    <altmember cref="T:System.Windows.Documents.Figure" />
+    <altmember cref="T:System.Windows.Documents.LineBreak" />
+    <altmember cref="T:System.Windows.Documents.FlowDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,5 +192,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Run" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

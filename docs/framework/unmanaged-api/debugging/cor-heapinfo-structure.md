@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_HEAPINFO Structure
 Provides general information about the garbage collection heap, including whether it is enumerable.  
@@ -67,5 +69,5 @@ typedef struct _COR_HEAPINFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

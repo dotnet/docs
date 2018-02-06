@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object is passed to the event-handling method, which allows you to determine the index of the current row and to indicate that the update operation should be canceled. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A>, and <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> collections, if necessary, before the values are passed to the data source. A common way to use these collections is to HTML-encode the values supplied by the user before they are stored in the data source. This helps to prevent script injection attacks.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
   
@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewUpdateEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -108,6 +112,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -148,6 +158,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -188,6 +203,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -213,6 +234,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
   </Members>

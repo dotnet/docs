@@ -1,42 +1,26 @@
 ---
 title: "How to: Control the Availability of a Variable (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "access levels, declared elements"
-  - "Private keyword, accessing variables"
+  - "Private keyword [Visual Basic], accessing variables"
   - "access levels, variables"
-  - "Public keyword, accessing variables"
-  - "Friend keyword, accessing variables"
+  - "Public keyword [Visual Basic], accessing variables"
+  - "Friend keyword [Visual Basic], accessing variables"
   - "variables [Visual Basic], access level"
-  - "declared elements, access level"
-  - "Protected keyword, accessing variables"
+  - "declared elements [Visual Basic], access level"
+  - "Protected keyword [Visual Basic], accessing variables"
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Control the Availability of a Variable (Visual Basic)
 You control the availability of a variable by specifying its *access level*. The access level determines what code has permission to read or write to the variable.  
@@ -107,9 +91,9 @@ Private numberForMeOnly As Integer
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See Also  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Public](../../../../visual-basic/language-reference/modifiers/public.md)   
- [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)   
- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)   
+ [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Public](../../../../visual-basic/language-reference/modifiers/public.md)  
+ [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
  [Private](../../../../visual-basic/language-reference/modifiers/private.md)

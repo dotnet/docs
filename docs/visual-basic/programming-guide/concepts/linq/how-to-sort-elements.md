@@ -1,7 +1,7 @@
 ---
 title: "How to: Sort Elements (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -81,5 +81,5 @@ End Module
 ```  
   
 ## See Also  
- [Sorting Data](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)   
+ [Sorting Data](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)  
  [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

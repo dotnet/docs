@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DataObject" />
   </Docs>
   <Members>
     <Member MemberName="AddDragEnterHandler">
@@ -73,6 +74,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragEnterEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddDragLeaveHandler">
@@ -105,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragLeaveEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddDragOverHandler">
@@ -137,6 +142,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragOverEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddDropHandler">
@@ -169,6 +176,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DropEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddGiveFeedbackHandler">
@@ -201,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.GiveFeedbackEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewDragEnterHandler">
@@ -233,6 +244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragEnterEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewDragLeaveHandler">
@@ -265,6 +278,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragLeaveEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewDragOverHandler">
@@ -297,6 +312,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragOverEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewDropHandler">
@@ -329,6 +346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDropEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewGiveFeedbackHandler">
@@ -361,6 +380,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewGiveFeedbackEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewQueryContinueDragHandler">
@@ -393,6 +414,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewQueryContinueDragEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddQueryContinueDragHandler">
@@ -425,6 +448,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.QueryContinueDragEvent" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DoDragDrop">
@@ -501,6 +526,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.DragEnter" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DragLeaveEvent">
@@ -527,6 +555,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.DragLeave" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DragOverEvent">
@@ -553,6 +584,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.DragOver" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="DropEvent">
@@ -579,6 +613,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.Drop" />
+        <altmember cref="M:System.Windows.DragDrop.AddDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedbackEvent">
@@ -605,6 +642,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.GiveFeedback" />
+        <altmember cref="M:System.Windows.DragDrop.AddGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragEnterEvent">
@@ -631,6 +671,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewDragEnter" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragLeaveEvent">
@@ -657,6 +700,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewDragLeave" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragOverEvent">
@@ -683,6 +729,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewDragOver" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDropEvent">
@@ -709,6 +758,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewDrop" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewGiveFeedbackEvent">
@@ -735,6 +787,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewGiveFeedback" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewQueryContinueDragEvent">
@@ -761,6 +816,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.PreviewQueryContinueDrag" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemovePreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDragEvent">
@@ -787,6 +845,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.DragDrop.QueryContinueDrag" />
+        <altmember cref="M:System.Windows.DragDrop.AddQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
+        <altmember cref="M:System.Windows.DragDrop.RemoveQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveDragEnterHandler">
@@ -819,6 +880,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragEnterEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveDragLeaveHandler">
@@ -851,6 +914,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragLeaveEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveDragOverHandler">
@@ -883,6 +948,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DragOverEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveDropHandler">
@@ -915,6 +982,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.DropEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveGiveFeedbackHandler">
@@ -947,6 +1016,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.GiveFeedbackEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewDragEnterHandler">
@@ -979,6 +1050,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragEnterEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragEnterHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewDragLeaveHandler">
@@ -1011,6 +1084,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragLeaveEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragLeaveHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewDragOverHandler">
@@ -1043,6 +1118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDragOverEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDragOverHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewDropHandler">
@@ -1075,6 +1152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewDropEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewDropHandler(System.Windows.DependencyObject,System.Windows.DragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewGiveFeedbackHandler">
@@ -1107,6 +1186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewGiveFeedbackEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewGiveFeedbackHandler(System.Windows.DependencyObject,System.Windows.GiveFeedbackEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewQueryContinueDragHandler">
@@ -1139,6 +1220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.PreviewQueryContinueDragEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddPreviewQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveQueryContinueDragHandler">
@@ -1171,6 +1254,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DragDrop.QueryContinueDragEvent" />
+        <altmember cref="M:System.Windows.DragDrop.AddQueryContinueDragHandler(System.Windows.DependencyObject,System.Windows.QueryContinueDragEventHandler)" />
       </Docs>
     </Member>
   </Members>

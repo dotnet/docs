@@ -71,6 +71,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.EventWaitHandleAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.EventWaitHandleAuditRule" />
+    <altmember cref="T:System.Security.AccessControl.EventWaitHandleRights" />
+    <altmember cref="M:System.Threading.EventWaitHandle.GetAccessControl" />
+    <altmember cref="M:System.Threading.EventWaitHandle.SetAccessControl(System.Security.AccessControl.EventWaitHandleSecurity)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

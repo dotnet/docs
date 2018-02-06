@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::CreateEval Method
 Creates an ICorDebugEval object that collects and exposes the functionality of this ICorDebugThread.  

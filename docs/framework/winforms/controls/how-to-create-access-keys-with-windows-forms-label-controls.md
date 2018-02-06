@@ -9,26 +9,28 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "controls [Windows Forms], access keys"
-  - "dialog box controls, mnemonics"
-  - "access keys, creating for controls"
+  - "dialog box controls [Windows Forms], mnemonics"
+  - "access keys [Windows Forms], creating for controls"
   - "Label control [Windows Forms], creating access keys"
-  - "mnemonics, adding to dialog box controls"
+  - "mnemonics [Windows Forms], adding to dialog box controls"
   - "mnemonics"
   - "Windows Forms controls, access keys"
-  - "UseMnemonic property, Label control"
-  - "keyboard shortcuts, creating for controls"
-  - "access keys, Windows Forms"
+  - "UseMnemonic property [Windows Forms], Label control"
+  - "keyboard shortcuts [Windows Forms], creating for controls"
+  - "access keys [Windows Forms], Windows Forms"
 ms.assetid: 5ee8f823-80be-4a4f-96a4-412671e2e306
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Access Keys with Windows Forms Label Controls
 Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define access keys for other controls. When you define an access key in a label control, the user can press the ALT key plus the character you designate to move the focus to the control that follows it in the tab order. Because labels cannot receive focus, focus automatically moves to the next control in the tab order. Use this technique to assign access keys to text boxes, combo boxes, list boxes, and data grids.  
@@ -70,6 +72,6 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
     ```  
   
 ## See Also  
- [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)   
- [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)   
+ [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)  
+ [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)  
  [Label Control](../../../../docs/framework/winforms/controls/label-control-windows-forms.md)

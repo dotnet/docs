@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fusion Enumerations
 This section describes the unmanaged enumerations that the fusion API uses.  

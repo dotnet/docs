@@ -1,41 +1,25 @@
 ---
 title: "Parameter Arrays (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "parameter arrays, about parameter arrays"
-  - "ParamArray keyword, parameter arrays"
+  - "parameter arrays [Visual Basic], about parameter arrays"
+  - "ParamArray keyword [Visual Basic], parameter arrays"
   - "Visual Basic code, procedures"
-  - "parameters, parameter arrays"
+  - "parameters [Visual Basic], parameter arrays"
   - "arguments [Visual Basic], parameter arrays"
-  - "procedures, indefinite number of argument values"
+  - "procedures [Visual Basic], indefinite number of argument values"
   - "arrays [Visual Basic], parameter arrays"
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Parameter Arrays (Visual Basic)
 Usually, you cannot call a procedure with more arguments than the procedure declaration specifies. When you need an indefinite number of arguments, you can declare a *parameter array*, which allows a procedure to accept an array of values for a parameter. You do not have to know the number of elements in the parameter array when you define the procedure. The array size is determined individually by each call to the procedure.  
@@ -77,12 +61,12 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
  [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.UBound%2A>   
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
+ <xref:Microsoft.VisualBasic.Information.UBound%2A>  
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
+ [Optional Parameters](./optional-parameters.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)

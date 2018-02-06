@@ -13,6 +13,9 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Entity References are Expanded and Not Preserved
 When the entity reference is expanded and replaced by the text it represents, the **XmlEntityReference** node is not created. Instead, the entity declaration is parsed, and nodes created from the content in the declaration are copied in the place of the **XmlEntityReference**. Therefore, in the `&publisher;` example, the `&publisher;` is not saved, but instead, an **XmlText** node is created.  

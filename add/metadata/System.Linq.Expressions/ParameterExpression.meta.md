@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.ParameterExpression.IsByRef
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,5 +47,5 @@ uid: System.Linq.Expressions.ParameterExpression.Name
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

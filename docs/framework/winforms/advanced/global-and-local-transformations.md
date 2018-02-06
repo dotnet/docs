@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "matrices, using transformations"
-  - "transformations, global"
-  - "transformations, local"
+  - "matrices [Windows Forms], using transformations"
+  - "transformations [Windows Forms], global"
+  - "transformations [Windows Forms], local"
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Global and Local Transformations
 A global transformation is a transformation that applies to every item drawn by a given <xref:System.Drawing.Graphics> object. In contrast, a local transformation is a transformation that applies to a specific item to be drawn.  
@@ -67,5 +69,5 @@ A global transformation is a transformation that applies to every item drawn by 
  ![Transformations](../../../../docs/framework/winforms/advanced/media/aboutgdip05-art16.gif "AboutGdip05_art16")  
   
 ## See Also  
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)   
+ [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Using Transformations in Managed GDI+](../../../../docs/framework/winforms/advanced/using-transformations-in-managed-gdi.md)

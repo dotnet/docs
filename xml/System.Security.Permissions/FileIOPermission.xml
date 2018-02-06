@@ -71,6 +71,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.FileIOPermissionAccess" />
+    <altmember cref="T:System.Security.Permissions.FileIOPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -933,5 +935,35 @@
         <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPathList">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds access for the specified files and directories to the existing state of the permission.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.FileIOPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetPathList">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the specified access to the specified files and directories, replacing the existing state of the permission.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

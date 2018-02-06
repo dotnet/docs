@@ -8,10 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "generics [.NET Framework], collections"
   - "generic collections [.NET Framework]"
@@ -20,6 +20,9 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Generic Collections in the .NET Framework
 This topic provides an overview of the generic collection classes and other generic types in the .NET Framework.  
@@ -54,8 +57,8 @@ This topic provides an overview of the generic collection classes and other gene
  [!code-vb[Conceptual.Generics.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source2.vb#7)]  
   
 ## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>   
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>   
- [Generics](../../../docs/standard/generics/index.md)   
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)   
+ <xref:System.Collections.Generic?displayProperty=nameWithType>  
+ <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+ [Generics](../../../docs/standard/generics/index.md)  
+ [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
  [Generic Interfaces](../../../docs/standard/generics/interfaces.md)

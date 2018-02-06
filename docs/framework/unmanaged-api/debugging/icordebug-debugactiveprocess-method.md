@@ -27,6 +27,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::DebugActiveProcess Method
 Attaches the debugger to an existing process.  

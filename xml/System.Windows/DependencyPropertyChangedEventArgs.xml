@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -295,5 +296,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the provided object is equivalent to the current <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

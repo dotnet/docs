@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 6e0cacc1-9b11-4665-adb7-577a62626fd6
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Basic Atom Feed
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes an Atom syndication feed.  
@@ -103,5 +105,5 @@ manager: "erikre"
  When compiling the preceding code, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See Also  
- <xref:System.ServiceModel.WebHttpBinding>   
+ <xref:System.ServiceModel.WebHttpBinding>  
  <xref:System.ServiceModel.Web.WebGetAttribute>

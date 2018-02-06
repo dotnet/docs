@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 241e428e-5030-4b13-8a0a-69f05288d3d9
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;sendMessageChannelCache&gt;
 A service behavior that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using Send messaging activities.  
@@ -96,7 +98,7 @@ A service behavior that enables the customization of the cache sharing levels, t
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.SendMessageChannelCache>   
- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>   
- <xref:System.ServiceModel.Activities.Send>   
+ <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
+ <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
+ <xref:System.ServiceModel.Activities.Send>  
  [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)

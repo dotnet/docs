@@ -1,38 +1,22 @@
 ---
 title: "How to: Call a Procedure That Returns a Value (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedure calls, returning values"
+  - "procedure calls [Visual Basic], returning values"
   - "Visual Basic code, procedures"
-  - "procedures, calling"
-  - "procedures, returning a value"
+  - "procedures [Visual Basic], calling"
+  - "procedures [Visual Basic], returning a value"
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call a Procedure That Returns a Value (Visual Basic)
 A `Function` procedure returns a value to the calling code. You call it by including its name and arguments either on the right side of an assignment statement or in an expression.  
@@ -65,9 +49,9 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
  [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
   
 ## See Also  
- [Function Procedures](./function-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)   
- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)   
- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)   
+ [Function Procedures](./function-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
+ [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)  
+ [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)  
  [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)

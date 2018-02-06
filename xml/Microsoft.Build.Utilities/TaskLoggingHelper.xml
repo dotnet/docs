@@ -1643,5 +1643,104 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LogWarningFromException">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning using the message from the specified exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogMessageFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a message with the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogMessagesFromFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs errors, warnings, and messages for each line of text in the given file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorWithCodeFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error with an error code using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarningFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.TaskLoggingHelper" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarningWithCodeFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning with a warning code using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogCommandLine">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs the command line.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorFromException">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error using the message from the specified exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarning">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -26,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ImportTypes2 Method
 Initiates the import of types. Call this method to begin importing types from each scope imported via [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md).  
@@ -69,6 +71,6 @@ HRESULT ImportTypes2(
  Requires alink.h  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

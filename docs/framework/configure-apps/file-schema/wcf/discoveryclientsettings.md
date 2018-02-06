@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;discoveryClientSettings&gt;
 Contains the settings needed by an application to participate in the service discovery process as a client.  
@@ -69,5 +71,5 @@ Contains the settings needed by an application to participate in the service dis
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.|  
   
 ## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>   
+ <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>  
  <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>

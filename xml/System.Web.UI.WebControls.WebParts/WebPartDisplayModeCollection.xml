@@ -73,6 +73,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -114,6 +118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -143,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -173,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Array.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -202,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -232,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -289,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -318,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -430,5 +442,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific member of the collection according to its index or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

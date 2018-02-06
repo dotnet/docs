@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "print queues, timing"
-  - "printers, availability"
-  - "print jobs, timing"
+  - "print queues [WPF], timing"
+  - "printers [WPF], availability"
+  - "print jobs [WPF], timing"
 ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Discover Whether a Print Job Can Be Printed At This Time of Day
 Print queues are not always available for 24 hours a day. They have start and end time properties that can be set to make them unavailable at certain times of day. This feature can be used, for example, to reserve a printer for the exclusive use of a certain department after 5 P.M.. That department would have a different queue servicing the printer than other departments use. The queue for the other departments would be set to be unavailable after 5 P.M., while queue for the favored department could be set to be available at all times.  
@@ -81,8 +83,8 @@ Print queues are not always available for 24 hours a day. They have start and en
  [!code-vb[DiagnoseProblematicPrintJob#TimeConverter](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#timeconverter)]  
   
 ## See Also  
- <xref:System.DateTime>   
- <xref:System.Printing.PrintSystemJobInfo>   
- <xref:System.Printing.PrintQueue>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.DateTime>  
+ <xref:System.Printing.PrintSystemJobInfo>  
+ <xref:System.Printing.PrintQueue>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

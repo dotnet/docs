@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataInfo Interface
 Provides a method that gets information about the mapping of metadata from an on-disk file into memory.  
@@ -46,5 +48,5 @@ Provides a method that gets information about the mapping of metadata from an on
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)   
+ [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)  
  [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

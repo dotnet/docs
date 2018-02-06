@@ -58,6 +58,26 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +113,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -261,6 +285,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -312,6 +342,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -382,6 +418,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataNavigateUrlValue">
@@ -551,6 +593,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -598,7 +646,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property is rendered as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLinkField> object must be XHTML 1.1-compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
    
   
@@ -610,6 +658,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Text" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -658,6 +712,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkField.Target" />
       </Docs>
     </Member>
     <Member MemberName="ValidateSupportsCallback">

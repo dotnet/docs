@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "transformations, page"
+  - "transformations [Windows Forms], page"
   - "unit of measure"
   - "world coordinate system"
   - "page coordinate system"
@@ -21,12 +21,14 @@ helpviewer_keywords:
   - "device coordinate system"
   - "world transformation"
   - "coordinate systems"
-  - "transformations, world"
+  - "transformations [Windows Forms], world"
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Types of Coordinate Systems
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] uses three coordinate spaces: world, page, and device. World coordinates are the coordinates used to model a particular graphic world and are the coordinates you pass to methods in the .NET Framework. Page coordinates refer to the coordinate system used by a drawing surface, such as a form or control. Device coordinates are the coordinates used by the physical device being drawn on, such as a screen or sheet of paper. When you make the call `myGraphics.DrawLine(myPen, 0, 0, 160, 80)`, the points that you pass to the <xref:System.Drawing.Graphics.DrawLine%2A> method—`(0, 0)` and `(160, 80)`—are in the world coordinate space. Before [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can draw the line on the screen, the coordinates pass through a sequence of transformations. One transformation, called the world transformation, converts world coordinates to page coordinates, and another transformation, called the page transformation, converts page coordinates to device coordinates.  
@@ -101,5 +103,5 @@ manager: "wpickett"
 |Device|(192, 48) to (384, 144)|  
   
 ## See Also  
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)   
+ [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Matrix Representation of Transformations](../../../../docs/framework/winforms/advanced/matrix-representation-of-transformations.md)

@@ -9,25 +9,27 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "composite transformations"
-  - "transformations, linear"
+  - "transformations [Windows Forms], linear"
   - "matrices"
   - "translations in matrix representation"
-  - "transformations, composite"
+  - "transformations [Windows Forms], composite"
   - "vectors"
   - "linear transformations"
-  - "transformations, matrix representation of"
-  - "transformations, translation"
+  - "transformations [Windows Forms], matrix representation of"
+  - "transformations [Windows Forms], translation"
   - "affine transformations"
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Matrix Representation of Transformations
 An m×n matrix is a set of numbers arranged in m rows and n columns. The following illustration shows several matrices.  
@@ -110,5 +112,5 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
  ![Transformations](../../../../docs/framework/winforms/advanced/media/aboutgdip05-art13.gif "AboutGdip05_art13")  
   
 ## See Also  
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)   
+ [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Using Transformations in Managed GDI+](../../../../docs/framework/winforms/advanced/using-transformations-in-managed-gdi.md)

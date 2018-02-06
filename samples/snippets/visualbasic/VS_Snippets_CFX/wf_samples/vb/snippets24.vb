@@ -522,7 +522,7 @@ Namespace WF_Snippets
                 Dim validationError As ValidationError = System.Workflow.ComponentModel.Compiler.ValidationError.GetNotSetValidationError(SendEmailActivity.ToProperty.Name)
                 validationErrors.Add(validationError)
             ElseIf Not activity.EmailTo.Contains("@") Then
-                Dim validationError As New ValidationError("Invalid To e-mail address", _
+                Dim validationError As New ValidationError("Invalid To email address", _
                   InvalidToAddress, False, SendEmailActivity.ToProperty.Name)
                 validationErrors.Add(validationError)
             End If
@@ -531,7 +531,7 @@ Namespace WF_Snippets
             If String.IsNullOrEmpty(activity.FromEmail) Then
                 validationErrors.Add(ValidationError.GetNotSetValidationError(SendEmailActivity.FromEmailProperty.Name))
             ElseIf Not activity.FromEmail.Contains("@") Then
-                Dim validationError As New ValidationError("Invalid From e-mail address", _
+                Dim validationError As New ValidationError("Invalid From email address", _
                     InvalidFromAddress, False, SendEmailActivity.FromEmailProperty.Name)
                 validationErrors.Add(validationError)
             End If

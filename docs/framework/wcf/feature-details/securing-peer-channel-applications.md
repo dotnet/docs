@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d4a0311d-3f78-4525-9c4b-5c93c4492f28
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Peer Channel Applications
 Like other bindings under the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], `NetPeerTcpBinding` has security enabled by default and offers both transport- and message-based security (or both). This topic discusses these two types of security. The type of security is specified by the security mode tag in the binding specification (<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`).  
@@ -48,5 +50,5 @@ Like other bindings under the [!INCLUDE[vstecwinfx](../../../../includes/vstecwi
  [Peer Channel Scenarios](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
   
 ## See Also  
- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)   
+ [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
  [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

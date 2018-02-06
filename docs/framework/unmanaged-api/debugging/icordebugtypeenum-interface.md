@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugTypeEnum Interface1
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.  

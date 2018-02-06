@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpCookie" />
+    <altmember cref="T:System.Web.HttpCookieMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCookieMode" />
       </Docs>
     </Member>
     <Member MemberName="CookieName">
@@ -383,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCookie" />
+        <altmember cref="T:System.Web.HttpCookieMode" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">

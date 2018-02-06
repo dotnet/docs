@@ -70,6 +70,8 @@
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException" /> class, using the specified serialization information and streaming context.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +116,8 @@
         <param name="collisions">A <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" /> object that contains one or more <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" /> objects that describe the trust relationship collision errors.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException" /> class with a specified error message, an underlying exception object, and a specified <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" />
       </Docs>
     </Member>
     <Member MemberName="Collisions">
@@ -133,6 +137,8 @@
         <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" /> objects that describe the trust relationship collision errors.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" /> that contains one or more <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" /> objects that describe the trust relationship collision errors.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -158,7 +164,19 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

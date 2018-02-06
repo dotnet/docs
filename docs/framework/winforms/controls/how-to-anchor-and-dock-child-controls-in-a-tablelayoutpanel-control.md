@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor.TLP.AnchorDock"
 helpviewer_keywords: 
   - "layout [Windows Forms], child controls"
   - "controls [Windows Forms], child"
-  - "child controls, anchoring and docking"
+  - "child controls [Windows Forms], anchoring and docking"
   - "TableLayoutPanel control [Windows Forms], child controls"
 ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Anchor and Dock Child Controls in a TableLayoutPanel Control
 The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties in its child controls.  
@@ -91,5 +93,5 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.Windows.Forms.TableLayoutPanel>   
+ <xref:System.Windows.Forms.TableLayoutPanel>  
  [TableLayoutPanel Control](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-windows-forms.md)

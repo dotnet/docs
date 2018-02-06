@@ -1,50 +1,32 @@
 ---
 title: "Long Data Type (Visual Basic)"
-
-ms.date: "2017-04-20"
+ms.date: 01/31/2018
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Long"
 helpviewer_keywords: 
-  - "identifier type characters, &"
-  - "numbers, whole"
+  - "identifier type characters [Visual Basic], &"
+  - "numbers [Visual Basic], whole"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "& identifier type character"
   - "integer numbers"
-  - "literal type characters, L"
-  - "numbers, integer"
-  - "integers, data types"
-  - "L literal type character"
-  - "integers, types"
-  - "Long keyword"
+  - "literal type characters [Visual Basic], L"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "L literal type character [Visual Basic]"
+  - "integers [Visual Basic], types"
+  - "Long keyword [Visual Basic]"
   - "data types [Visual Basic], integral"
   - "data types [Visual Basic], assigning"
   - "Long data type"
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Long data type (Visual Basic)
 
@@ -71,10 +53,18 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[long](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#LongS)]
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Long = &H_0FAC_0326_1489_D68C
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
+
 Numeric literals can also include the `L` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
 
 ```vb
-Dim number = &H0FAC0326L
+Dim number = &H_0FAC_0326_1489_D68CL
 ```
 
 ## Programming tips

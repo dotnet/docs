@@ -1,12 +1,14 @@
 ---
 title: dotnet build command - .NET Core CLI
-description: The dotnet build command builds a project and all of its dependencies. 
+description: The dotnet build command builds a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
 ms.date: 10/16/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet-build
 
@@ -38,6 +40,8 @@ The `dotnet build` command builds the project and its dependencies into a set of
 If the project has third-party dependencies, such as libraries from NuGet, they're resolved from the NuGet cache and aren't available with the project's built output. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. This is in contrast to the behavior of the .NET Framework in which building an executable project (an application) produces output that's runnable on any machine where the .NET Framework is installed. To have a similar experience with .NET Core, you need to use the [dotnet publish](dotnet-publish.md) command. For more information, see [.NET Core Application Deployment](../deploying/index.md).
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitily run the `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitily when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 `dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information.
 

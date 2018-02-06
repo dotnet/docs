@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::SetUnmanagedHandler Method
 Specifies the event handler object for unmanaged events.  

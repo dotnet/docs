@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "visual layer, DrawingVisual objects"
-  - "DrawingVisual objects in visual layer"
+  - "visual layer [WPF], DrawingVisual objects"
+  - "DrawingVisual objects in visual layer [WPF]"
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using DrawingVisual Objects
 This topic provides an overview of how to use <xref:System.Windows.Media.DrawingVisual> objects in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual layer.  
@@ -76,7 +78,7 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
  [!code-vb[DrawingVisualSample#103](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#103)]  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingVisual>   
- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>   
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)   
+ <xref:System.Windows.Media.DrawingVisual>  
+ <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>  
+ [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
  [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)

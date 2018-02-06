@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "impersonation [WCF]"
   - "delegation [WCF]"
 ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Delegation and Impersonation with WCF
 *Impersonation* is a common technique that services use to restrict client access to a service domain's resources. Service domain resources can either be machine resources, such as local files (impersonation), or a resource on another machine, such as a file share (delegation). For a sample application, see [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md). For an example of how to use impersonation, see [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md).  
@@ -212,20 +214,20 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 -   [Kerberos Protocol Transition and Constrained Delegation](http://go.microsoft.com/fwlink/?LinkId=36725)  
   
 ## See Also  
- <xref:System.ServiceModel.OperationBehaviorAttribute>   
- <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>   
- <xref:System.ServiceModel.ImpersonationOption>   
- <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A>   
- <xref:System.ServiceModel.ServiceSecurityContext>   
- <xref:System.Security.Principal.WindowsIdentity>   
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>   
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A>   
- <xref:System.ServiceModel.ServiceHost>   
- <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A>   
- <xref:System.ServiceModel.Security.WindowsClientCredential>   
- <xref:System.ServiceModel.ChannelFactory%601>   
- <xref:System.Security.Principal.TokenImpersonationLevel.Identification>   
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)   
- [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md)   
- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)   
+ <xref:System.ServiceModel.OperationBehaviorAttribute>  
+ <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>  
+ <xref:System.ServiceModel.ImpersonationOption>  
+ <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A>  
+ <xref:System.ServiceModel.ServiceSecurityContext>  
+ <xref:System.Security.Principal.WindowsIdentity>  
+ <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  
+ <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A>  
+ <xref:System.ServiceModel.ServiceHost>  
+ <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A>  
+ <xref:System.ServiceModel.Security.WindowsClientCredential>  
+ <xref:System.ServiceModel.ChannelFactory%601>  
+ <xref:System.Security.Principal.TokenImpersonationLevel.Identification>  
+ [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
+ [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md)  
+ [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)  
  [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: da0fd144-dda9-4613-b650-fe6325076513
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;variables&gt;
 Represents a collection of variables associated with this activity query.  
@@ -81,5 +83,5 @@ Represents a collection of variables associated with this activity query.
 ## See Also  
  <xref:System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection?displayProperty=nameWithType>       
  <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
+ [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

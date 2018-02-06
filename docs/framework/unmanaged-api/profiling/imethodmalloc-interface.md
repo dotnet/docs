@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMethodMalloc Interface
 Provides a method to allocate memory for a new Microsoft intermediate language (MSIL) function body.  

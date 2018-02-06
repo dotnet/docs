@@ -71,6 +71,26 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +116,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
       </Docs>
     </Member>
     <Member MemberName="FirstPageImageUrl">
@@ -148,6 +177,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="FirstPageText">
@@ -194,6 +232,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="LastPageImageUrl">
@@ -246,6 +293,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="LastPageText">
@@ -292,6 +348,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -364,6 +429,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.Mode" /> is set to a value that is not one of the <see cref="T:System.Web.UI.WebControls.PagerButtons" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="NextPageImageUrl">
@@ -416,6 +490,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -462,6 +545,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="PageButtonCount">
@@ -506,6 +598,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" /> is set to a value that is less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -556,6 +651,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.Position" /> is set to a value that is not one of the <see cref="T:System.Web.UI.WebControls.PagerPosition" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageImageUrl">
@@ -608,6 +706,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -654,6 +761,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -681,7 +797,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.PagerSettings.PropertyChanged> event is raised each time a property of a <xref:System.Web.UI.WebControls.PagerSettings> object changes values. The <xref:System.Web.UI.WebControls.PagerSettings.PropertyChanged> event commonly is used by data-bound controls that support pagination to rebind the data to the control when the pager settings change.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -711,6 +827,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -742,6 +859,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -771,6 +891,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -799,6 +922,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -825,6 +952,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -869,6 +997,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
       </Docs>
     </Member>
   </Members>

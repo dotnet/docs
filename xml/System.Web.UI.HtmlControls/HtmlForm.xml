@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.TagName" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -109,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpContext.RewritePath(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -153,6 +158,7 @@
         <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> collection for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child server controls.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DefaultButton">
@@ -204,6 +210,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control referenced as the default button is not of the type <see cref="T:System.Web.UI.WebControls.IButtonControl" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="DefaultFocus">
@@ -244,6 +254,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="M:System.Web.UI.Control.Focus" />
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Enctype">
@@ -295,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -339,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -375,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -401,7 +418,7 @@
 ## Remarks  
  When notified by the <xref:System.Web.UI.HtmlControls.HtmlForm.OnInit%2A> method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -412,6 +429,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method so that registered delegates receive the event. Additionally, calling the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method ensures that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control is properly set as the Web page form and the page's view state is persisted.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Page.RegisterViewStateHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -443,6 +461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.SmartNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -477,6 +496,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child controls are correctly rendered.</para>
         </block>
+        <altmember cref="T:System.Web.HttpException" />
+        <altmember cref="P:System.Web.UI.Page.SmartNavigation" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -513,6 +535,11 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's attributes are correctly rendered.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.IsValidFormAttribute(System.String)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <altmember cref="T:System.InvalidOperationException" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -548,6 +575,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child controls are correctly rendered.</para>
         </block>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.Control.Focus" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -572,6 +602,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderControl(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control is correctly rendered.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Control.DesignMode" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SubmitDisabledControls">
@@ -706,6 +738,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
       </Docs>
     </Member>
   </Members>

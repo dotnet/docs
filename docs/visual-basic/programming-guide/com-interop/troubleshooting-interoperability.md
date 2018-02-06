@@ -1,13 +1,12 @@
 ---
 title: "Troubleshooting Interoperability (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "interop, deploying assemblies"
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "interop, installing assemblies that share components"
   - "COM objects, troubleshooting"
   - "interop, sharing components"
-  - "troubleshooting interoperability"
+  - "troubleshooting interoperability [Visual Basic]"
   - "interoperability, troubleshooting"
-  - "COM interop, troubleshooting"
+  - "COM interop [Visual Basic], troubleshooting"
   - "assemblies [Visual Basic], deploying"
   - "troubleshooting Visual Basic, interoperability"
   - "interop assemblies"
@@ -27,21 +26,6 @@ ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting Interoperability (Visual Basic)
 When you interoperate between COM and the managed code of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], you may encounter one or more of the following common issues.  
@@ -147,10 +131,10 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
  Assemblies that are not shared should be located side by side in the directory with the calling application.  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
- [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)   
- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)   
+ <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
+ [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+ [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
+ [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
+ [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
+ [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
  [Global Assembly Cache](../../../framework/app-domains/gac.md)

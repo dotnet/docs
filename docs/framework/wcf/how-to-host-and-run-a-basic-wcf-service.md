@@ -1,22 +1,22 @@
 ---
 title: "How to: Host and Run a Basic Windows Communication Foundation Service"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF services [WCF]"
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-caps.latest.revision: 58
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Host and Run a Basic Windows Communication Foundation Service
 This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
@@ -33,7 +33,7 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
   
  A complete listing of the code written in this task is provided in the example following the procedure.  
   
-### To create a new console application to host the service  
+## To create a new console application to host the service  
   
 1.  Create a new Console Application project by right-clicking on the Getting Started solution, selecting, **Add**, **New Project**. In the **Add New Project** dialog on the left hand side of the dialog select **Windows** under **C#** or **VB**. In the center section of the dialog select **Console Application**. Name the project GettingStartedHost.  
   
@@ -49,7 +49,7 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
   
 -   Open the Program.cs or Module.vb file and enter the following code:  
   
-    ```  
+    ```csharp
     // program.cs  
     using System;  
     using System.Collections.Generic;  
@@ -101,8 +101,8 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
     }  
     ```  
   
-    ```  
-    ‘Module1.vb  
+    ```vb
+    'Module1.vb  
     Imports System  
     Imports System.ServiceModel  
     Imports System.ServiceModel.Description  
@@ -172,9 +172,9 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
 ## Example  
  The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.  
   
- To compile this with a command-line compiler, compile IService1.cs and Service2.cs into a class library referencing `System.ServiceModel.dll`. And compile Program.cs to a console application.  
+ To compile this with a command-line compiler, compile IService1.cs and Service1.cs into a class library referencing `System.ServiceModel.dll`. And compile Program.cs to a console application.  
   
-```  
+```csharp
 // IService1.cs  
 using System;  
 using System.Collections.Generic;  
@@ -200,7 +200,7 @@ namespace GettingStartedLib
 }  
 ```  
   
-```  
+```csharp
 // Service1.cs  
 using System;  
 using System.Collections.Generic;  
@@ -249,7 +249,7 @@ namespace GettingStartedLib
 }  
 ```  
   
-```  
+```csharp
 //Program.cs  
 using System;  
 using System.Collections.Generic;  
@@ -301,8 +301,8 @@ namespace GettingStartedHost
 }  
 ```  
   
-```  
-‘IService1.vb  
+```vb
+'IService1.vb  
 Imports System  
 Imports System.ServiceModel  
   
@@ -323,8 +323,8 @@ Namespace GettingStartedLib
 End Namespace  
 ```  
   
-```  
-‘Service1.vb  
+```vb
+'Service1.vb  
 Imports System  
 Imports System.ServiceModel  
   
@@ -368,8 +368,8 @@ Namespace GettingStartedLib
 End Namespace  
 ```  
   
-```  
-‘Module1.vb  
+```vb
+'Module1.vb  
 Imports System  
 Imports System.ServiceModel  
 Imports System.ServiceModel.Description  
@@ -424,5 +424,5 @@ End Module
  Now the service is running. Proceed to [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md).  
   
 ## See Also  
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

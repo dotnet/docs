@@ -32,7 +32,7 @@
 ## Examples  
  The following code example demonstrates an event handler method that takes <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs> as a parameter. The `OnWorkflowCompleted` method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters%2A> property to obtain the value associated with the `Status` key and writes it to the console.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
   
  [!code-csharp[wf_samples#192](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#192)]
  [!code-vb[wf_samples#192](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#192)]  
@@ -67,7 +67,7 @@
 ## Examples  
  The following code example demonstrates how to obtain a value from a key stored in the <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters%2A> property. The `OnWorkflowCompleted` method has a parameter that takes a <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs>. This method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters%2A> property to obtain the value associated with the `Status` key and writes it to the console.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow With Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
   
  [!code-csharp[WF_Samples#192](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#192)]
  [!code-vb[WF_Samples#192](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#192)]  

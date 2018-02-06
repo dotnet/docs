@@ -1,50 +1,34 @@
 ---
 title: "Widening and Narrowing Conversions (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "widening conversions"
-  - "narrowing conversions"
-  - "conversions, type"
+  - "widening conversions [Visual Basic]"
+  - "narrowing conversions [Visual Basic]"
+  - "conversions [Visual Basic], type"
   - "data types [Visual Basic], changing"
   - "variables [Visual Basic], changing data type"
-  - "conversions, exceptions during conversion"
-  - "type conversion, exceptions during conversion"
-  - "conversions, data type"
-  - "conversions, narrowing"
-  - "type conversion, narrowing"
-  - "data type conversion, widening"
-  - "data type conversion, narrowing"
-  - "changing data types"
-  - "type conversion, widening"
-  - "data type conversion, exceptions during conversion"
-  - "conversions, widening"
+  - "conversions [Visual Basic], exceptions during conversion"
+  - "type conversion [Visual Basic], exceptions during conversion"
+  - "conversions [Visual Basic], data type"
+  - "conversions [Visual Basic], narrowing"
+  - "type conversion [Visual Basic], narrowing"
+  - "data type conversion [Visual Basic], widening"
+  - "data type conversion [Visual Basic], narrowing"
+  - "changing data types [Visual Basic]"
+  - "type conversion [Visual Basic], widening"
+  - "data type conversion [Visual Basic], exceptions during conversion"
+  - "conversions [Visual Basic], widening"
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Widening and Narrowing Conversions (Visual Basic)
 An important consideration with a type conversion is whether the result of the conversion is within the range of the destination data type.  
@@ -128,11 +112,11 @@ shape = square
 ```  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)   
- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)   
- [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
+ [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
+ [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

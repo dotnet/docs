@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+    <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +65,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,6 +103,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -131,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.SelectedDatesCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -169,6 +179,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -210,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -243,6 +257,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -286,6 +303,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -340,6 +363,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -377,6 +402,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -413,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="SelectRange">
@@ -451,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -478,6 +509,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
   </Members>

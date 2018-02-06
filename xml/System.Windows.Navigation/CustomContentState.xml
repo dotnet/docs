@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Navigation.NavigationService" />
+    <altmember cref="T:System.Windows.Navigation.JournalEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
+        <altmember cref="T:System.Windows.Navigation.IProvideCustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="Replay">
@@ -145,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
+        <altmember cref="T:System.Windows.Navigation.IProvideCustomContentState" />
       </Docs>
     </Member>
   </Members>

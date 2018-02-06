@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
         <param name="streamingContext">The serialization destination associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</param>
         <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance with the associated parameters required for serialization.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="AddToContactManager">
@@ -85,6 +87,9 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The Collaboration infrastructure has failed to create and associate a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="AddToContactManager">
@@ -291,6 +296,7 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />. A derived type must call the base type <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="InternalRefreshData">
@@ -639,6 +645,8 @@
         <summary>Signaled when the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" /> or <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" /> operation for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance is completed.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -667,6 +675,7 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance with the data obtained from the serialized source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -690,5 +699,51 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invite">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an invitation to join a peer collaboration application to a remote peer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddToContactManager">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> from a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object and associates it with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InviteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives an invitation response from a peer regarding joining a peer collaboration application.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

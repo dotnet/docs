@@ -24,7 +24,7 @@
   
  The <xref:System.Web.UI.Design.DesignerRegionMouseEventArgs.Region%2A> property represents the control designer region that the event applies to, if any. The <xref:System.Web.UI.Design.DesignerRegionMouseEventArgs.Location%2A> property represents the location on the design surface that was clicked.  
   
- For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -36,6 +36,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Region" />
+    <altmember cref="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Location" />
+    <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Region" />
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Location" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -92,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Region">
@@ -127,6 +136,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
       </Docs>
     </Member>
   </Members>

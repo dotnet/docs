@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetClass Method
 Gets an interface pointer to an ICorDebugClass that represents the uninstantiated generic type.  

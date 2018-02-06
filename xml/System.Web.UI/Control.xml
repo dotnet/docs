@@ -73,7 +73,7 @@
   
  The <xref:System.Web.UI.Control> class can directly or indirectly be used as part of the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed.  
   
- For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
    
   
@@ -88,6 +88,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="T:System.Web.UI.TemplateControl" />
+    <altmember cref="T:System.Web.UI.LiteralControl" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -130,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
@@ -162,6 +168,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="control" /> is a <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="M:System.Web.UI.Control.RemovedControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -201,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleSheetSkin">
@@ -345,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
       </Docs>
     </Member>
     <Member MemberName="BuildProfileTree">
@@ -409,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="ClearCachedClientID">
@@ -456,6 +467,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.ClearChildState" />
+        <altmember cref="M:System.Web.UI.Control.ClearChildViewState" />
       </Docs>
     </Member>
     <Member MemberName="ClearChildState">
@@ -491,6 +504,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.ClearChildControlState" />
+        <altmember cref="M:System.Web.UI.Control.ClearChildViewState" />
       </Docs>
     </Member>
     <Member MemberName="ClearChildViewState">
@@ -520,6 +535,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="M:System.Web.UI.Control.ClearChildControlState" />
+        <altmember cref="M:System.Web.UI.Control.ClearChildState" />
       </Docs>
     </Member>
     <Member MemberName="ClearEffectiveClientIDMode">
@@ -605,6 +624,9 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="T:System.Web.UI.INamingContainer" />
       </Docs>
     </Member>
     <Member MemberName="ClientIDMode">
@@ -687,6 +709,10 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="P:System.Web.UI.Control.ClientID" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="P:System.Web.UI.Control.IdSeparator" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -726,6 +752,11 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpContext" />
+        <altmember cref="T:System.Web.HttpApplication" />
+        <altmember cref="T:System.Web.HttpServerUtility" />
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="T:System.Web.HttpResponse" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -772,6 +803,9 @@ span#ProductIDLabel { background-color: white; }
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Web.UI.Control.Controls" /> property, be sure to call the <see cref="M:System.Web.UI.Control.EnsureChildControls" /> method. Furthermore, if you are planning to add controls to the controls collection programmatically, consider adding the controls in an overridden <see cref="M:System.Web.UI.Control.CreateChildControls" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
+        <altmember cref="M:System.Web.UI.Control.CreateControlCollection" />
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -810,6 +844,10 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
+        <altmember cref="P:System.Web.UI.Control.ChildControlsCreated" />
+        <altmember cref="T:System.Web.UI.INamingContainer" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -849,6 +887,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -884,6 +923,9 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -918,6 +960,8 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
       </Docs>
     </Member>
     <Member MemberName="DataBindChildren">
@@ -976,6 +1020,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DataItemContainer">
@@ -1123,6 +1168,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -1169,6 +1215,7 @@ span#ProductIDLabel { background-color: white; }
  \- or -  
   
  The control has already been added to the <see langword="Controls" /> collection.</exception>
+        <altmember cref="P:System.Web.UI.Control.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -1225,6 +1272,11 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewStateMode" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
       </Docs>
     </Member>
     <Member MemberName="EndRenderTracing">
@@ -1295,6 +1347,9 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="P:System.Web.UI.Control.ChildControlsCreated" />
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="EnsureID">
@@ -1354,6 +1409,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventHandlerList" />
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -1445,6 +1501,8 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1474,6 +1532,7 @@ span#ProductIDLabel { background-color: white; }
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Control.GetDesignModeState" /> method returns <see langword="null" /> by default. You must override this method to provide the design-time data your control requires.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IControlDesignerAccessor" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetRouteUrl">
@@ -1735,6 +1794,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -1773,6 +1833,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Control.HasControls" /> method should be overridden only to change metadata attributes such as <see cref="T:System.ComponentModel.EditorBrowsableAttribute" />. For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).</para>
         </block>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="HasEvents">
@@ -1843,6 +1905,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
+        <altmember cref="T:System.Web.UI.INamingContainer" />
       </Docs>
     </Member>
     <Member MemberName="IdSeparator">
@@ -1954,6 +2018,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.HasControls" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -1988,6 +2054,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="IsViewStateEnabled">
@@ -2019,6 +2088,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <block subset="none" type="overrides">
           <para>Page developers will set the <see cref="P:System.Web.UI.Control.EnableViewState" /> property and the <see cref="P:System.Web.UI.Control.ViewStateMode" /> property to indicate whether they are using view state with your control. Use the <see cref="P:System.Web.UI.Control.IsViewStateEnabled" /> property and the <see cref="P:System.Web.UI.Control.ViewStateMode" /> property in your code to determine whether view state is enabled for your control and for all containers.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewStateMode" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2090,6 +2161,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2126,6 +2200,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewStateByID">
@@ -2160,6 +2236,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.ViewStateModeByIdAttribute" />
       </Docs>
     </Member>
     <Member MemberName="MapPathSecure">
@@ -2247,6 +2326,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.INamingContainer" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2287,6 +2369,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RaiseBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -2325,6 +2408,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2359,6 +2444,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -2393,6 +2479,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="P:System.Web.UI.Page.IsPostBack" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2427,6 +2515,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -2461,6 +2550,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.Unload" />
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -2493,6 +2583,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Access to the specified file was denied.</exception>
+        <altmember cref="T:System.IO.FileStream" />
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -2538,6 +2629,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control is a <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2646,6 +2738,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -2675,6 +2768,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control is a <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="M:System.Web.UI.Control.AddedControl(System.Web.UI.Control,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2711,6 +2806,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -2749,6 +2845,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -2787,6 +2885,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -2824,6 +2923,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" /> method in custom controls, call the base class method to ensure trace information is correctly captured.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="P:System.Web.HttpContext.Trace" />
       </Docs>
     </Member>
     <Member MemberName="RenderingCompatibility">
@@ -2874,6 +2976,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion" />
       </Docs>
     </Member>
     <Member MemberName="ResolveAdapter">
@@ -2904,6 +3007,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.Configuration.HttpCapabilitiesBase" />
       </Docs>
     </Member>
     <Member MemberName="ResolveClientUrl">
@@ -2995,6 +3100,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="relativeUrl" /> parameter contains <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.Control.TemplateSourceDirectory" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -3038,6 +3144,10 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  Control state is intended for small amounts of critical data, such as a page index or a keyword. Using control state for large amounts of data can adversely affect page performance. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -3074,6 +3184,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -3138,6 +3251,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SetTraceData">
@@ -3233,6 +3347,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control is a <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</exception>
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -3282,6 +3397,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  \- or -  
   
  The control was already added to the <see langword="Controls" /> collection.</exception>
+        <altmember cref="P:System.Web.UI.Control.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IControlBuilderAccessor.ControlBuilder">
@@ -3638,6 +3754,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="T:System.Web.UI.UserControl" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3673,6 +3791,10 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="UniqueID">
@@ -3718,6 +3840,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -3817,6 +3941,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="ViewStateIgnoresCase">
@@ -3859,6 +3984,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ViewStateMode">
@@ -3899,6 +4026,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to set this property to a value that is not in the <see cref="T:System.Web.UI.ViewStateMode" /> enumeration.</exception>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+        <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -3938,5 +4068,41 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetTraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets trace data for design-time tracing of rendering data.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches the current naming container for the specified server control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RenderControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Outputs server control content and stores tracing information about the control if tracing is enabled.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBind">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Binds a data source to the invoked server control and all its child controls.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

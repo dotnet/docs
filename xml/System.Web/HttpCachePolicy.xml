@@ -446,7 +446,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the cache has a sliding expiration policy.</summary>
         <returns>
-          <see langword="true" /> if the the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the HTTP cache has been modified.</summary>
         <returns>
-          <see langword="true" /> if the the cache has been modified; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client that invalidate the cache.</summary>
         <returns>
-          <see langword="true" /> if the the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,6 +1068,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="revalidation" /> is not one of the enumeration values.</exception>
+        <altmember cref="T:System.Web.HttpCacheRevalidation" />
       </Docs>
     </Member>
     <Member MemberName="SetSlidingExpiration">
@@ -1256,6 +1257,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.ContentEncoding" />
+        <altmember cref="T:System.Web.HttpCacheVaryByContentEncodings" />
       </Docs>
     </Member>
     <Member MemberName="VaryByHeaders">
@@ -1283,6 +1286,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCachePolicy.SetOmitVaryStar(System.Boolean)" />
+        <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
       </Docs>
     </Member>
     <Member MemberName="VaryByParams">
@@ -1310,7 +1315,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCacheVaryByParams" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCacheability">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see langword="Cache-Control" /> HTTP header. The <see langword="Cache-Control" /> HTTP header controls how documents are to be cached on the network.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

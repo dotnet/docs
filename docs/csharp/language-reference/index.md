@@ -1,6 +1,6 @@
 ---
 title: "C# Reference"
-ms.date: "2017-02-14"
+ms.date: 02/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,21 +15,6 @@ ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # C# Reference
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  

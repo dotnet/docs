@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 054adb87-c244-4d5a-83d1-0b2b44bd454b
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the WCF Development Tools
 This section describes the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)][!INCLUDE[indigo1](../../../includes/indigo1-md.md)] development tools that can assist you in developing your [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]service.  
@@ -49,6 +51,6 @@ netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
  [!INCLUDE[crabout](../../../includes/crabout-md.md)] Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](http://go.microsoft.com/fwlink/?LinkId=97877).  
   
 ## See Also  
- [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)   
- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)   
+ [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)  
+ [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
  [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

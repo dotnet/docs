@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Authenticode (Unmanaged API Reference)
 Supports the Authenticode XrML license creation and verification module.  

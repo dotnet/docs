@@ -27,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain3::GetCachedWinRTTypes Method
 Gets an enumerator for all cached [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types.  

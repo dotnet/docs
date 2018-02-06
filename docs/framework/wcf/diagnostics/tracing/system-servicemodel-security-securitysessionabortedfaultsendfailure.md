@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # System.ServiceModel.Security.SecuritySessionAbortedFaultSendFailure
 System.ServiceModel.Security.SecuritySessionAbortedFaultSendFailure  
@@ -22,6 +24,6 @@ System.ServiceModel.Security.SecuritySessionAbortedFaultSendFailure
  Failure to send security session that aborted the fault to the client.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

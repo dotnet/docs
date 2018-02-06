@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "context menus, custom"
-  - "menus, custom"
-  - "custom context menus"
-  - "TextBox control, custom content menus"
+  - "context menus [WPF], custom"
+  - "menus [WPF], custom"
+  - "custom context menus [WPF]"
+  - "TextBox control [WPF], custom content menus"
 ms.assetid: 842d3cd5-6fa0-4be4-8d90-6c7466213b1c
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use a Custom Context Menu with a TextBox
 This example shows how to define and implement a simple custom context menu for a <xref:System.Windows.Controls.TextBox>.  
@@ -42,6 +44,6 @@ This example shows how to define and implement a simple custom context menu for 
  [!code-vb[TextBox_ContextMenu#_TextBox_ContextMenu](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_ContextMenu/VisualBasic/Window1.xaml.vb#_textbox_contextmenu)]  
   
 ## See Also  
- [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)   
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)  
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

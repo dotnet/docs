@@ -1,13 +1,11 @@
 ---
 title: "XML Document Literal (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralDocument"
@@ -20,21 +18,6 @@ ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Document Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XDocument> object.  
@@ -76,13 +59,13 @@ rootElement
  [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement>   
- <xref:System.Xml.Linq.XProcessingInstruction>   
- <xref:System.Xml.Linq.XComment>   
- <xref:System.Xml.Linq.XDocument>   
- [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)   
- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)   
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
+ <xref:System.Xml.Linq.XElement>  
+ <xref:System.Xml.Linq.XProcessingInstruction>  
+ <xref:System.Xml.Linq.XComment>  
+ <xref:System.Xml.Linq.XDocument>  
+ [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)  
+ [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  
+ [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+ [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)

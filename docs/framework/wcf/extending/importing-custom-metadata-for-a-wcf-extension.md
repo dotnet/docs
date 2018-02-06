@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Importing Custom Metadata for a WCF Extension
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata import is the process of generating an abstract representation of a service or its component parts from its metadata. For example, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can import <xref:System.ServiceModel.Description.ServiceEndpoint> instances, <xref:System.ServiceModel.Channels.Binding> instances or <xref:System.ServiceModel.Description.ContractDescription> instances from a WSDL document for a service. To import service metadata in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> abstract class. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
@@ -55,6 +57,6 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata import is t
 >  Invalid or improper metadata can be passed to the importer. Ensure that custom importers are robust to all forms of XML.  
   
 ## See Also  
- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)   
- [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)   
+ [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)  
+ [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)  
  [How to: Write an Extension for the ServiceContractGenerator](../../../../docs/framework/wcf/extending/how-to-write-an-extension-for-the-servicecontractgenerator.md)

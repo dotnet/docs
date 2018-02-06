@@ -1,24 +1,17 @@
 ---
 title: "Thread Pooling (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 98ae68c1-ace8-44b9-9317-8920ac9ef2b6
 caps.latest.revision: 5
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Thread Pooling (C#)
 A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  
@@ -70,10 +63,10 @@ private void AnotherLongTask(Object state)
  Structures cannot be used to return values inside state objects. Because structures are value types, changes that the asynchronous process makes do not change the members of the original structure. Use structures to provide parameters when return values are not needed.  
   
 ## See Also  
- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>   
- <xref:System.Threading>   
- <xref:System.Threading.ThreadPool>   
- [How to: Use a Thread Pool (C#)](../../../../csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)   
- [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
- [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
+ <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
+ <xref:System.Threading>  
+ <xref:System.Threading.ThreadPool>  
+ [How to: Use a Thread Pool (C#)](../../../../csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)  
+ [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)  
+ [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
  [Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 94a4457f-f43f-458d-a47e-2d11103ee75e
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;channelSettings&gt;
 Specifies the settings of the channel cache.  
@@ -92,8 +94,8 @@ Specifies the settings of the channel cache.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.SendMessageChannelCache>   
- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>   
- <xref:System.ServiceModel.Activities.Send>   
- <xref:System.ServiceModel.Activities.ChannelCacheSettings>   
+ <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
+ <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
+ <xref:System.ServiceModel.Activities.Send>  
+ <xref:System.ServiceModel.Activities.ChannelCacheSettings>  
  [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)

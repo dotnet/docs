@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.diagnostics&gt; Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  
@@ -79,6 +81,6 @@ Specifies trace listeners that collect, store, and route messages and the level 
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.Trace>   
- <xref:System.Diagnostics.Debug>   
+ <xref:System.Diagnostics.Trace>  
+ <xref:System.Diagnostics.Debug>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

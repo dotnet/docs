@@ -1,54 +1,38 @@
 ---
 title: "Numeric Data Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "integral types, Visual Basic"
-  - "Short data type, numeric data types"
-  - "Double data type, numeric data types"
-  - "Long data type, Visual Basic numeric data types"
-  - "numbers, whole"
+  - "integral types [Visual Basic], Visual Basic"
+  - "Short data type [Visual Basic], numeric data types"
+  - "Double data type [Visual Basic], numeric data types"
+  - "Long data type [Visual Basic], Visual Basic numeric data types"
+  - "numbers [Visual Basic], whole"
   - "fractions"
   - "numbers"
   - "whole numbers"
   - "integer numbers"
-  - "numbers, integer"
-  - "fractional data types"
+  - "numbers [Visual Basic], integer"
+  - "fractional data types [Visual Basic]"
   - "mantissas, of fractional numbers"
   - "mantissas"
   - "data types [Visual Basic], numeric"
-  - "Integer data type, numeric data types"
+  - "Integer data type [Visual Basic], numeric data types"
   - "exponent, of fractional numbers"
-  - "integers"
-  - "numeric data types, Visual Basic"
-  - "Single data type, numeric types"
-  - "Decimal data type, numeric data types"
+  - "integers [Visual Basic]"
+  - "numeric data types [Visual Basic], Visual Basic"
+  - "Single data type [Visual Basic], numeric types"
+  - "Decimal data type [Visual Basic], numeric data types"
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Numeric Data Types (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  
@@ -99,8 +83,8 @@ translation.priority.ht:
  If you do not need the full range of the `Double` data type, you can use the `Single` data type, which can hold floating-point numbers from -3.4028235E+38 through 3.4028235E+38. The smallest magnitudes for `Single` variables are -1.401298E-45 for negative values and 1.401298E-45 for positive values. If you have a very large number of variables that hold small floating-point numbers, the common language runtime can sometimes store your `Single` variables more efficiently and save memory consumption.  
   
 ## See Also  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)   
- [Miscellaneous Data Types](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
+ [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
+ [Miscellaneous Data Types](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [How to: Call a Windows Function that Takes Unsigned Types](../../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)

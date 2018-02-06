@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> property to get the <xref:System.Windows.Forms.ListViewGroupCollection> associated with a <xref:System.Windows.Forms.ListView> control. This collection contains the <xref:System.Windows.Forms.ListViewGroup> objects that represent the groups shown in the control when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=nameWithType>. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, the grouping feature is disabled.  
+ Use the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> property to get the <xref:System.Windows.Forms.ListViewGroupCollection> associated with a <xref:System.Windows.Forms.ListView> control. This collection contains the <xref:System.Windows.Forms.ListViewGroup> objects that represent the groups shown in the control when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.List?displayProperty=nameWithType>. Any items that are not assigned to a group will appear in the default group, which has the header label "DefaultGroup{0}". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups. If there are no groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType> collection, the grouping feature is disabled.  
   
  Use the <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method to add a single group to the collection. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Insert%2A> method to add a group at a particular index within the collection. To remove a group, use the <xref:System.Windows.Forms.ListViewGroupCollection.Remove%2A> method. Use the <xref:System.Windows.Forms.ListViewGroupCollection.RemoveAt%2A> method to remove the group at a particular index.  
   
@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewGroup" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -91,6 +93,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="group" /> contains at least one <see cref="T:System.Windows.Forms.ListViewItem" /> that belongs to a <see cref="T:System.Windows.Forms.ListView" /> control other than the one that owns this <see cref="T:System.Windows.Forms.ListViewGroupCollection" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -160,6 +163,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="groups" /> contains at least one group with at least one <see cref="T:System.Windows.Forms.ListViewItem" /> that belongs to a <see cref="T:System.Windows.Forms.ListView" /> control other than the one that owns this <see cref="T:System.Windows.Forms.ListViewGroupCollection" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -262,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -372,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -404,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -487,6 +494,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -740,5 +748,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ListViewGroup" /> in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds multiple groups to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ListViewGroup" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

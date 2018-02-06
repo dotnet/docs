@@ -16,7 +16,7 @@ Class SMTP_CredentailCache_Sample
         Dim sendto As New MailAddress("recepient@RecepientMailServerName.com", "Recepient Name")
         Dim message As New MailMessage(from, sendto)
 
-        message.Body = "This is a test e-mail message sent by an application. "
+        message.Body = "This is a test email message sent by an application. "
         message.Subject = "Test Email using Credentials"
 
         Dim myCreds As New NetworkCredential("username", "password", "domain")

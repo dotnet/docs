@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Channel Factory and Caching
 WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:  
@@ -118,8 +120,8 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
  In the example above, all instances of `TestClient` would use different channel factories. This is useful when each endpoint has different security requirements and it makes no sense to cache.  
   
 ## See Also  
- <xref:System.ServiceModel.ClientBase%601>   
- [Building Clients](../../../../docs/framework/wcf/building-clients.md)   
- [Clients](../../../../docs/framework/wcf/feature-details/clients.md)   
- [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)   
+ <xref:System.ServiceModel.ClientBase%601>  
+ [Building Clients](../../../../docs/framework/wcf/building-clients.md)  
+ [Clients](../../../../docs/framework/wcf/feature-details/clients.md)  
+ [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
  [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)

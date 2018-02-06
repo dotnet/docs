@@ -1,39 +1,23 @@
 ---
 title: "How to: Call an Event Handler in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "event handlers, calling"
+  - "event handlers [Visual Basic], calling"
   - "event handlers"
-  - "procedures, event handlers"
-  - "procedures, calling"
+  - "procedures [Visual Basic], event handlers"
+  - "procedures [Visual Basic], calling"
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call an Event Handler in Visual Basic
 An *event* is an action or occurrence — such as a mouse click or a credit limit exceeded — that is recognized by some program component, and for which you can write code to respond. An *event handler* is the code you write to respond to an event.  
@@ -73,9 +57,9 @@ An *event* is an action or occurrence — such as a mouse click or a credit limi
      You can dissociate an event handler from an event by executing the [RemoveHandler Statement](../../../../visual-basic/language-reference/statements/removehandler-statement.md).  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [How to: Create a Procedure](./how-to-create-a-procedure.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)  
+ [How to: Create a Procedure](./how-to-create-a-procedure.md)  
  [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)

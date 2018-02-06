@@ -1,42 +1,25 @@
 ---
 title: "Option Infer Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
   - "vb.Infer"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
-  - "Option Infer statement"
-  - "Infer keyword"
-  - "declaring variables, inferred"
+  - "Option Infer statement [Visual Basic]"
+  - "Infer keyword [Visual Basic]"
+  - "declaring variables [Visual Basic], inferred"
   - "inferred variable declaration"
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Option Infer Statement
 Enables the use of local type inference in declaring variables.  
@@ -81,7 +64,7 @@ IntelliSense when Option Infer is off
   
 #### To set Option Infer in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
+1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
 2.  Click the **Compile** tab.  
   
@@ -114,11 +97,11 @@ IntelliSense when Option Infer is off
  [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
   
 ## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+ [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
+ [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
+ [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
  [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

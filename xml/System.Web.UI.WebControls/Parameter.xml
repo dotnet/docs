@@ -75,6 +75,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.RouteParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>
@@ -118,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -130,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -291,6 +304,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -327,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertDbTypeToTypeCode">
@@ -618,6 +635,10 @@
         <value>
           <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -648,6 +669,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -692,6 +717,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName="OnParameterChanged">
@@ -717,7 +743,7 @@
   
  If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=nameWithType> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -734,6 +760,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -764,6 +791,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -789,6 +820,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -819,6 +851,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -847,6 +880,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -866,6 +900,10 @@
         <value>
           <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -896,6 +934,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -926,6 +968,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -978,6 +1024,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -996,6 +1043,8 @@
       <Docs>
         <summary>Causes the <see cref="T:System.Web.UI.WebControls.Parameter" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.Control.ViewState" /> object and persisted across requests for the same page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1037,6 +1086,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameter type is not one of the <see cref="T:System.TypeCode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -1080,7 +1130,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

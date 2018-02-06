@@ -392,7 +392,7 @@ module Arrays =
     for word in array4 do 
         printfn "word: %s" word
 
-    // You can modify the contents of an an array element by using the left arrow assignment operator.
+    // You can modify the contents of an array element by using the left arrow assignment operator.
     //
     // To learn more about this operator, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
     array2.[1] <- "WORLD!"

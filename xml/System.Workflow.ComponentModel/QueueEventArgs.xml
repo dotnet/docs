@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Workflow.Runtime.WorkflowQueue" />
   </Docs>
   <Members>
     <Member MemberName="QueueName">
@@ -45,6 +46,7 @@
         <summary>Gets the name of the workflow queue that originated the event.</summary>
         <value>The name of the workflow queue that originated the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Workflow.Runtime.WorkflowQueue" />
       </Docs>
     </Member>
   </Members>

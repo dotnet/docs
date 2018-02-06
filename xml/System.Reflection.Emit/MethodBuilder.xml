@@ -47,7 +47,7 @@
   
  Global methods must be static. If a dynamic module contains global methods, the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A?displayProperty=nameWithType> method must be called before persisting the dynamic module or the containing dynamic assembly because the common language runtime postpones fixing up the dynamic module until all global functions have been defined.  
   
- A global native method is defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A?displayProperty=nameWithType> method. Platform invoke (PInvoke) methods must not be declared abstract or virtual. The runtime sets the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute for a platform invoke method.  
+ A global native method is defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A?displayProperty=nameWithType> method. Platform invoke (PInvoke) methods must not be declared abstract or virtual. The runtime sets the <xref:System.Reflection.MethodAttributes.PinvokeImpl?displayProperty=nameWithType> attribute for a platform invoke method.  
   
 ### Methods as members of types  
  A method is defined as a type member by using the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=nameWithType> method, which returns a <xref:System.Reflection.Emit.MethodBuilder> object.  
@@ -57,19 +57,19 @@
 ## Attributes  
  Members of the <xref:System.Reflection.MethodAttributes> enumeration define the precise character of a dynamic method:  
   
--   Static methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Static methods are specified using the <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType> attribute.  
   
--   Final methods (methods that cannot be overridden) are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Final methods (methods that cannot be overridden) are specified using the <xref:System.Reflection.MethodAttributes.Final?displayProperty=nameWithType> attribute.  
   
--   Virtual methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Virtual methods are specified using the <xref:System.Reflection.MethodAttributes.Virtual?displayProperty=nameWithType> attribute.  
   
--   Abstract methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Abstract methods are specified using the <xref:System.Reflection.MethodAttributes.Abstract?displayProperty=nameWithType> attribute.  
   
 -   Several attributes determine method visibility. See the description of the <xref:System.Reflection.MethodAttributes> enumeration.  
   
--   Methods that implement overloaded operators must set the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Methods that implement overloaded operators must set the <xref:System.Reflection.MethodAttributes.SpecialName?displayProperty=nameWithType> attribute.  
   
--   Finalizers must set the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Finalizers must set the <xref:System.Reflection.MethodAttributes.SpecialName?displayProperty=nameWithType> attribute.  
   
 ## Known Issues  
   
@@ -240,6 +240,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="CreateMethodBody">
@@ -406,6 +408,9 @@
  An element of <paramref name="names" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="names" /> is an empty array.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Type.IsGenericType" />
+        <altmember cref="Overload:System.Reflection.Emit.TypeBuilder.DefineMethod" />
       </Docs>
     </Member>
     <Member MemberName="DefineParameter">
@@ -623,6 +628,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericMethodDefinition">
@@ -658,6 +665,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is not generic. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property returns <see langword="false" />.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1358,6 +1367,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The declaring type has not been created.</exception>
+        <altmember cref="M:System.Reflection.ParameterInfo.GetOptionalCustomModifiers" />
+        <altmember cref="M:System.Reflection.ParameterInfo.GetRequiredCustomModifiers" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -1534,7 +1545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you use the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method in combination with the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method, be aware of potential interactions. For example, using the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method to add the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also sets the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag. If you subsequently call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method, the <xref:System.Reflection.MethodImplAttributes.PreserveSig> flag is overwritten. There are two ways to avoid this:  
+ When you use the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method in combination with the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method, be aware of potential interactions. For example, using the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method to add the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also sets the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag. If you subsequently call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method, the <xref:System.Reflection.MethodImplAttributes.PreserveSig> flag is overwritten. There are two ways to avoid this:  
   
 -   Call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method before you call the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method. The <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method always respects existing method implementation flags.  
   
@@ -1705,6 +1716,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is generic, but is not a generic method definition. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetReturnType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="SetReturnType">
@@ -1756,6 +1768,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is generic, but is not a generic method definition. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetParameters(System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="SetSignature">
@@ -1817,6 +1830,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is generic, but is not a generic method definition. That is, the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetReturnType(System.Type)" />
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.SetParameters(System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="SetSymCustomAttribute">
@@ -2058,5 +2073,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes defined for this method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetILGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see langword="ILGenerator" /> for this method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a custom attribute.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

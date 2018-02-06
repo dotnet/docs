@@ -9,28 +9,30 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [Visual Basic]"
   - "user controls [Visual Basic]"
-  - "UserControl class, walkthroughs"
+  - "UserControl class [Windows Forms], walkthroughs"
   - "user controls [Windows Forms], creating with Visual Basic"
   - "controls [Windows Forms], composite controls"
-  - "composite controls, creating"
+  - "composite controls [Windows Forms], creating"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f50e270e-4db2-409a-8319-6db6ca5c7daf
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Authoring a Composite Control with Visual Basic
 Composite controls provide a means by which custom graphical interfaces can be created and reused. A composite control is essentially a component with a visual representation. As such, it might consist of one or more Windows Forms controls, components, or blocks of code that can extend functionality by validating user input, modifying display properties, or performing other tasks required by the author. Composite controls can be placed on Windows Forms in the same manner as other controls. In the first part of this walkthrough, you create a simple composite control called `ctlClock`. In the second part of the walkthrough, you extend the functionality of `ctlClock` through inheritance.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## Creating the Project  
  When you create a new project, you specify its name to set the root namespace, assembly name, and project name, and ensure that the default component will be in the correct namespace.  
@@ -402,7 +404,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
      This walkthrough has covered a number of key concepts. You have learned to create a composite control by combining controls and components into a composite control container. You have learned to add properties to your control, and to write code to implement custom functionality. In the last section, you learned to extend the functionality of a given composite control through inheritance, and to alter the functionality of host methods by overriding those methods.  
   
 ## See Also  
- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)   
- [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md)   
- [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)   
+ [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
+ [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md)  
+ [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
  [Component Authoring Walkthroughs](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)

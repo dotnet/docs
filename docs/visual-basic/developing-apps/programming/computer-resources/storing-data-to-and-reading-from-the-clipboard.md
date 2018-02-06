@@ -1,13 +1,12 @@
 ---
 title: "Storing data to and reading from the Clipboard (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Clipboard, storing data to (My.Computer.Clipboard)"
@@ -20,21 +19,6 @@ ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Storing data to and reading from the Clipboard (Visual Basic)
 The Clipboard can be used to store data, such as text and images. Because the Clipboard is shared by all active processes, it can be used to transfer data between them. The `My.Computer.Clipboard` object allows you to easily access the Clipboard and to read from and write to it.  
@@ -89,8 +73,8 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
 ## See also  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>   
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>   
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>   
- [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)   
+ <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>  
+ <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>  
+ <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>  
+ [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)  
  [How to: Write Object Data to an XML File](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)

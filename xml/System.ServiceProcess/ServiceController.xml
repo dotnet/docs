@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceBase" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerStatus" />
+    <altmember cref="T:System.ServiceProcess.ServiceType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -343,6 +346,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Pause" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="DependentServices">
@@ -505,7 +511,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -547,6 +553,7 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDevices">
@@ -588,6 +595,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetServices" />
       </Docs>
     </Member>
     <Member MemberName="GetDevices">
@@ -624,6 +632,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetServices" />
       </Docs>
     </Member>
     <Member MemberName="GetServices">
@@ -665,6 +674,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetDevices" />
       </Docs>
     </Member>
     <Member MemberName="GetServices">
@@ -701,6 +711,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetDevices" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -788,6 +799,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Continue" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -1012,6 +1026,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <altmember cref="T:System.ServiceProcess.ServiceType" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1055,6 +1070,8 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceController.Stop" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1098,6 +1115,8 @@
  A member of the array is <see langword="null" />.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceController.Stop" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="StartType">
@@ -1131,6 +1150,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for browsing services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Browse" />.</permission>
+        <altmember cref="T:System.ServiceProcess.ServiceStartMode" />
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -1225,6 +1245,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Start" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="WaitForStatus">
@@ -1271,6 +1294,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="WaitForStatus">
@@ -1311,7 +1335,57 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
         <exception cref="T:System.ServiceProcess.TimeoutException">The value specified for the <paramref name="timeout" /> parameter expires.</exception>
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDevices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the device driver services on a computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetServices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the non-device driver services on a computer, and those that are not drivers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts the service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForStatus">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the service to reach the specified status.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -59,6 +59,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.SiteMapNodeCollection" />
+    <altmember cref="T:System.Web.SiteMapProviderCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
   </Docs>
   <Members>
     <Member MemberName="CurrentNode">
@@ -101,6 +107,8 @@
         <exception cref="T:System.InvalidOperationException">The site map feature is not enabled.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The default provider specified in the configuration does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The feature is supported only when running in Low trust or higher.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.CurrentNode" />
+        <altmember cref="E:System.Web.SiteMap.SiteMapResolve" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -179,6 +187,9 @@
         <exception cref="T:System.InvalidOperationException">The site map feature is not enabled.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The default provider specified in the configuration does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The feature is supported only when running in Low trust or higher.</exception>
+        <altmember cref="P:System.Web.SiteMap.Providers" />
+        <altmember cref="T:System.Web.SiteMapProvider" />
+        <altmember cref="T:System.Web.StaticSiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -222,6 +233,9 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
         <exception cref="T:System.InvalidOperationException">The site map feature is not enabled.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The default provider specified in the configuration does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The feature is supported only when running in Low trust or higher.</exception>
+        <altmember cref="P:System.Web.SiteMap.Provider" />
+        <altmember cref="T:System.Web.SiteMapProvider" />
+        <altmember cref="T:System.Web.StaticSiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="RootNode">
@@ -268,6 +282,7 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
  The <see cref="P:System.Web.SiteMap.RootNode" /> resolves to <see langword="null" />, which occurs if security trimming is enabled and the root node is not visible to the current user.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The default provider specified in the configuration does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The feature is supported only when running in Low trust or higher.</exception>
+        <altmember cref="P:System.Web.SiteMap.CurrentNode" />
       </Docs>
     </Member>
     <Member MemberName="SiteMapResolve">
@@ -317,6 +332,8 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapResolveEventHandler" />
+        <altmember cref="T:System.Web.SiteMapResolveEventArgs" />
       </Docs>
     </Member>
   </Members>

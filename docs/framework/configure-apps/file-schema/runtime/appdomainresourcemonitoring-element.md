@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;appDomainResourceMonitoring&gt; Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  
@@ -77,6 +79,6 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ```  
   
 ## See Also  
- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], binding multiple"
   - "controls [Windows Forms], synchronizing with data source"
@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized
 Oftentimes when working with data binding in Windows Forms, multiple controls are bound to the same data source. In some cases, it may be necessary to take extra steps to ensure that the bound properties of the controls remain synchronized with each other and the data source. These steps are necessary in two situations:  
@@ -47,7 +49,7 @@ Oftentimes when working with data binding in Windows Forms, multiple controls ar
 -   A form with the <xref:System.Windows.Forms.Form.Load> event handled and a call to the `InitializeControlsAndDataSource` method in the example from the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
 ## See Also  
- [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)   
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)   
- [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md)   
+ [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)  
+ [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
+ [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md)  
  [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

@@ -215,6 +215,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsFlowSuppressed">
@@ -391,12 +392,13 @@
   
  You must use the <xref:System.Threading.AsyncFlowControl.Undo%2A> method on the returned <xref:System.Threading.AsyncFlowControl> structure to restore the flow of the <xref:System.Threading.ExecutionContext>.  
   
- This method is protected with a <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> for <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Threading.ExecutionContext> during asynchronous calls. While the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
+ This method is protected with a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for <xref:System.Security.Permissions.SecurityPermissionFlag.Infrastructure?displayProperty=nameWithType> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Threading.ExecutionContext> during asynchronous calls. While the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The context flow is already suppressed.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Threading.AsyncFlowControl" />
       </Docs>
     </Member>
   </Members>

@@ -212,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ErrorStyle">
@@ -283,6 +286,8 @@
         <summary>Gets the style attributes for the contents of a zone's footer area.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the contents of a zone's footer area.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="GetEffectiveChromeType">
@@ -307,6 +312,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="part" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -338,6 +344,9 @@
         <block subset="none" type="overrides">
           <para>If you are creating a custom tool zone that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderFooter(System.Web.UI.HtmlTextWriter)" /> method and provide rendering for your zone's footer.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderFooter(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasHeader" />
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -369,6 +378,8 @@
         <block subset="none" type="overrides">
           <para>If you are creating a custom tool zone that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderHeader(System.Web.UI.HtmlTextWriter)" /> method and provide rendering for your zone's header.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasFooter" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -401,6 +412,9 @@
         <summary>Gets the style attributes for the contents of a zone's header area.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the contents of a zone's header area.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -474,6 +488,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -503,6 +518,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The zone control was added at too late of a stage in the page life cycle, or the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -532,6 +548,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.UI.WebControls.WebParts.WebZone" /> control is nested within another zone or within a <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -639,6 +656,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
       </Docs>
     </Member>
     <Member MemberName="PartChromeType">
@@ -670,6 +690,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
       </Docs>
     </Member>
     <Member MemberName="PartStyle">
@@ -717,6 +739,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeStyle" />
       </Docs>
     </Member>
     <Member MemberName="PartTitleStyle">
@@ -749,6 +773,8 @@
         <summary>Gets style attributes for the title bar content for each Web Parts control contained by a zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the title bar content for each Web Parts control in the zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -777,6 +803,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -852,6 +879,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderFooter">
@@ -920,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -938,6 +967,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to this Web server control. This property is used primarily by control developers.</summary>
         <value>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> enumeration values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -963,6 +993,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="VerbButtonType">
@@ -994,6 +1025,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is not set to a <see cref="T:System.Web.UI.WebControls.ButtonType" /> value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.VerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="VerbStyle">
@@ -1026,6 +1058,8 @@
         <summary>Gets the style attributes for the user interface (UI) verbs associated with Web Parts controls in a zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the verbs associated with Web Parts controls contained by a zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1044,6 +1078,7 @@
         <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebZone" /> control instance on a Web Parts page.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control that is associated with a zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
       </Docs>
     </Member>
   </Members>

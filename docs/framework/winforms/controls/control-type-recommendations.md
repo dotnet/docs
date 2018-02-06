@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
+  - "inheritance [Windows Forms], Windows Forms custom controls"
   - "user controls [Windows Forms], when to use"
   - "custom controls [Windows Forms], types"
   - "controls [Windows Forms], creating"
@@ -19,6 +19,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Control Type Recommendations
 The .NET Framework gives you power to develop and implement new controls. In addition to the familiar user control, you will now find that you are able to write custom controls that perform their own painting, and are even able to extend the functionality of existing controls through inheritance. Deciding which type of control to create can be confusing. This section highlights the differences between the various types of controls from which you can inherit, and gives considerations regarding the type to choose for your project.  
@@ -55,7 +57,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](http://msdn.microsoft.com/library/ms171731\(v=vs.110\))  
   
--   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](http://msdn.microsoft.com/en-us/library/5h0k2e6x\(v=vs.110\))  
+-   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](http://msdn.microsoft.com/library/5h0k2e6x\(v=vs.110\))  
   
 -   [How to: Provide a Toolbox Bitmap for a Control](http://msdn.microsoft.com/library/4wk1wc0a\(v=vs.110\))  
   
@@ -77,7 +79,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [Walkthrough: Authoring a Composite Control with Visual Basic](http://msdn.microsoft.com/library/c316f119\(v=vs.110\))  
   
--   [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/en-us/library/a6h7e207\(v=vs.110\))  
+-   [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/library/a6h7e207\(v=vs.110\))  
   
 -   [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](http://msdn.microsoft.com/library/w2a8y03d\(v=vs.110\))  
   
@@ -86,5 +88,5 @@ The .NET Framework gives you power to develop and implement new controls. In add
 -   [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/307hck25\(v=vs.120\))  
   
 ## See Also  
- [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)   
+ [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)  
  [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

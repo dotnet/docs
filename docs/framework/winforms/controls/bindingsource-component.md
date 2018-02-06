@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, Windows Forms"
+  - "data binding [Windows Forms], Windows Forms"
   - "Windows Forms, data binding control"
   - "BindingSource component [Windows Forms]"
 ms.assetid: 3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9
@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BindingSource Component
 Encapsulates a data source for binding to controls.  

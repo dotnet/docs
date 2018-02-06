@@ -226,7 +226,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -243,6 +243,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -314,7 +316,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -326,6 +328,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

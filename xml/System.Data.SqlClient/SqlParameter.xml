@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.SqlClient.SqlParameterCollection" />
+    <altmember cref="T:System.Data.SqlClient.SqlCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -550,7 +552,7 @@ Parameter = new SqlParameter("@pname", (object)0);
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enforces encryption of a parameter when using [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). If SQL Server informs the driver that the parameter does not need to be encrypted, the query using the parameter will fail. This property provides additional protection against security attacks that involve a compromised SQL Server providing incorrect encryption metadata to the client, which may lead to data disclosure.</summary>
+        <summary>Enforces encryption of a parameter when using [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine). If SQL Server informs the driver that the parameter does not need to be encrypted, the query using the parameter will fail. This property provides additional protection against security attacks that involve a compromised SQL Server providing incorrect encryption metadata to the client, which may lead to data disclosure.</summary>
         <value>
           <see langword="true" /> if the parameter has a force column encryption; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1515,5 +1517,15 @@ FieldName = @OriginalFieldName
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

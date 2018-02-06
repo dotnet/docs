@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -104,6 +109,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Insert(System.Int32,System.Web.UI.WebControls.HotSpot)" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -183,6 +191,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Add(System.Web.UI.WebControls.HotSpot)" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -220,6 +231,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -279,6 +292,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.RemoveAt(System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -317,6 +333,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Remove(System.Web.UI.WebControls.HotSpot)" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

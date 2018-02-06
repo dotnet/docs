@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Help" />
+    <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Help" />
       </Docs>
     </Member>
     <Member MemberName="HelpNamespace">
@@ -136,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Help" />
       </Docs>
     </Member>
     <Member MemberName="HelpString">
@@ -167,7 +171,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Help" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

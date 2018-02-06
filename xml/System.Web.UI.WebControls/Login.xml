@@ -230,6 +230,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Security.Membership" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -322,6 +323,9 @@
   
  When a user submits his or her login information, the <see cref="T:System.Web.UI.WebControls.Login" /> control first raises the <see cref="E:System.Web.UI.WebControls.Login.LoggingIn" /> event, then the <see cref="E:System.Web.UI.WebControls.Login.Authenticate" /> event, and finally the <see cref="E:System.Web.UI.WebControls.Login.LoggedIn" /> event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.AuthenticateEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.Login.OnAuthenticate(System.Web.UI.WebControls.AuthenticateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BorderPadding">
@@ -432,6 +436,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeSet" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeText" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -486,6 +493,9 @@
         <summary>Gets the location of an image to display next to the link to a registration page for new users.</summary>
         <value>The URL of the image to display. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserText">
@@ -536,6 +546,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserUrl">
@@ -585,6 +599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserText" />
       </Docs>
     </Member>
     <Member MemberName="DestinationPageUrl">
@@ -687,6 +704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeSet" />
       </Docs>
     </Member>
     <Member MemberName="FailureAction">
@@ -782,6 +800,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.FailureTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="FailureTextStyle">
@@ -861,6 +880,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.FailureText" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageIconUrl">
@@ -890,6 +911,8 @@
         <summary>Gets the location of an image to display next to the link to the login Help page.</summary>
         <value>The URL of the image to display. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageText">
@@ -937,6 +960,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageUrl">
@@ -985,6 +1011,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageText" />
       </Docs>
     </Member>
     <Member MemberName="HyperLinkStyle">
@@ -1068,6 +1096,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.CreateUserUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HelpPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -1113,6 +1145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.InstructionTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -1271,6 +1304,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordLabelText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.UserNameLabelText" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1377,6 +1413,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.PageStatePersister.ViewState" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoggedIn">
@@ -1447,7 +1484,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginBeforeLogin/CS/loginbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginBeforeLogin/VB/loginbeforeloginvb.aspx#1)]  
@@ -1724,7 +1761,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.LoginError> event is raised when the credentials entered by the user are invalid. You can use the <xref:System.Web.UI.WebControls.Login.LoginError> event to redirect the user to a custom error page, to offer additional help, or to log failed login attempts.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1736,6 +1773,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Login.OnLoginError(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MembershipProvider">
@@ -1801,7 +1839,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnAuthenticate%2A> method raises the <xref:System.Web.UI.WebControls.Login.Authenticate> event. Use the <xref:System.Web.UI.WebControls.Login.Authenticate> event to implement a custom authentication scheme.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Login.OnAuthenticate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1855,6 +1893,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnBubbleEvent(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnBubbleEvent(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLoggedIn">
@@ -1931,7 +1970,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginOnBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginOnBeforeLogin/CS/loginonbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginOnBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginOnBeforeLogin/VB/loginonbeforeloginvb.aspx#1)]  
@@ -1975,7 +2014,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoginError%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoginError> event. Use the <xref:System.Web.UI.WebControls.Login.LoginError> event to provide additional processing, such as error logging, when a user's login attempt fails.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoginError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2018,7 +2057,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method implements the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method to notify the <xref:System.Web.UI.WebControls.Login> control to perform any necessary prerendering steps before saving view state and rendering content.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2027,6 +2066,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Login.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Login.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -2185,6 +2225,10 @@
         <summary>Gets the location of an image to display next to the link to the password recovery page.</summary>
         <value>The URL of the image to display. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRecoveryText">
@@ -2232,6 +2276,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRecoveryUrl">
@@ -2278,6 +2327,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryText" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.PasswordRecoveryUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.HyperLinkStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRequiredErrorMessage">
@@ -2373,6 +2427,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.DisplayRememberMe" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.RememberMeText" />
       </Docs>
     </Member>
     <Member MemberName="RememberMeText">
@@ -2478,6 +2534,7 @@
         <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
         <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -2499,6 +2556,7 @@
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the control.</param>
         <summary>Sets design-time data for a control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -2604,6 +2662,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.Password" />
+        <altmember cref="P:System.Web.UI.WebControls.Login.UserName" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="TextLayout">
@@ -2693,6 +2754,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.TitleTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="TitleTextStyle">
@@ -2775,6 +2837,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Login.TitleText" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2793,6 +2857,8 @@
       <Docs>
         <summary>Overrides the base <see cref="M:System.Web.UI.Control.TrackViewState" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Login.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Login.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="UserName">

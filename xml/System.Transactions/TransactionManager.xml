@@ -205,7 +205,7 @@
 ## Remarks  
  All durable resource managers should do recovery when they first start up by calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method for each outstanding transaction.  Only when all of the reenlistments are done should the resource manager call <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>.  
   
- For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+ For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
   
  **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
@@ -262,7 +262,7 @@
   
  If the transaction manager fails, and your resource manager performs recovery only a short time after you called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method on an enlistment in phase 1 of the Two-Phase Commit protocol, your resource manager might either receive the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> or <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> callback.  
   
- For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+ For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
   
  **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   

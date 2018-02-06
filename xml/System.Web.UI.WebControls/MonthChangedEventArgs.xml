@@ -20,7 +20,7 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.MonthChangedEventArgs>, see the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
+    <altmember cref="T:System.Web.UI.WebControls.MonthChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="NewDate">
@@ -104,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.VisibleDate" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       </Docs>
     </Member>
     <Member MemberName="PreviousDate">
@@ -141,6 +149,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.VisibleDate" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       </Docs>
     </Member>
   </Members>

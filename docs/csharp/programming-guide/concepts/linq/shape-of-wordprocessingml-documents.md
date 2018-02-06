@@ -1,7 +1,7 @@
 ---
 title: "Shape of WordprocessingML Documents (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ This topic introduces the XML shape of a WordprocessingML document.
 ## Microsoft Office Formats  
  The native file format for the 2007 Microsoft Office system is Office Open XML (commonly called Open XML). Open XML is an XML-based format that an Ecma standard and is currently going through the ISO-IEC standards process. The markup language for word processing files within Open XML is called WordprocessingML. This tutorial uses WordprocessingML source files as input for the examples.  
   
- If you are using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.  
+ If you are using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.  
   
 ## The Shape of WordprocessingML Documents  
  The first thing to understand is the shape of WordprocessingML documents. A WordprocessingML document contains a body element (named `w:body`) that contains the paragraphs of the document. Each paragraph contains one or more text runs (named `w:r`). Each text run contains one or more text pieces (named `w:t`).  
@@ -94,11 +94,11 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
 ```  
   
 ## External Resources  
- [Introducing the Office (2007) Open XML File Formats](http://go.microsoft.com/fwlink/?LinkId=98093)  
-  
- [Overview of WordprocessingML](http://go.microsoft.com/fwlink/?LinkId=98094)  
-  
- [Office 2003: XML Reference Schemas Download page](http://go.microsoft.com/fwlink/?LinkId=98095)  
+ [Introducing the Office (2007) Open XML File Formats](https://msdn.microsoft.com/library/ms406049.aspx)  
+ [Overview of WordprocessingML](https://msdn.microsoft.com/library/aa212812(office.11).aspx)  
+ [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)  
+ [Introduction to WordprocessingML](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
+ [Office 2003: XML Reference Schemas Download page](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
   
 ## See Also  
  [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

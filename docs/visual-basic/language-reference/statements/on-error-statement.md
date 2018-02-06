@@ -1,58 +1,41 @@
 ---
 title: "On Error Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.OnError"
 helpviewer_keywords: 
   - "Visual Basic code, control flow"
-  - "Resume Next statement"
+  - "Resume Next statement [Visual Basic]"
   - "errors [Visual Basic], trapping"
   - "error handling, On Error statement"
-  - "Next statement, On Error"
-  - "control flow, branching"
-  - "Error keyword"
-  - "execution, conditional"
-  - "Resume statement, and On Error statement"
-  - "Error statement, and On Error statement"
-  - "GoTo statement, and On Error statement"
-  - "branching, on error"
-  - "conditional statements, On Error"
-  - "On Error statement, syntax"
-  - "On keyword"
-  - "run-time errors, handling"
-  - "On Error statement"
+  - "Next statement [Visual Basic], On Error"
+  - "control flow [Visual Basic], branching"
+  - "Error keyword [Visual Basic]"
+  - "execution [Visual Basic], conditional"
+  - "Resume statement [Visual Basic], and On Error statement"
+  - "Error statement [Visual Basic], and On Error statement"
+  - "GoTo statement [Visual Basic], and On Error statement"
+  - "branching [Visual Basic], on error"
+  - "conditional statements [Visual Basic], On Error"
+  - "On Error statement [Visual Basic], syntax"
+  - "On keyword [Visual Basic]"
+  - "run-time errors [Visual Basic], handling"
+  - "On Error statement [Visual Basic]"
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # On Error Statement (Visual Basic)
 Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.  
   
- Without an `On Error` statement, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
+ Without error handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
   
  Whenever possible, we suggest you use structured exception handling in your code, rather than using unstructured exception handling and the `On Error` statement. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
   
@@ -139,12 +122,12 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.Err%2A>   
- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>   
- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>   
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>   
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)   
- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)   
+ <xref:Microsoft.VisualBasic.Information.Err%2A>  
+ <xref:Microsoft.VisualBasic.ErrObject.Number%2A>  
+ <xref:Microsoft.VisualBasic.ErrObject.Description%2A>  
+ <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
+ [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)  
+ [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)  
  [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

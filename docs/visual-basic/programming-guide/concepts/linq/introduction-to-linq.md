@@ -1,7 +1,7 @@
 ---
 title: "Introduction to LINQ (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Introduction to LINQ (Visual Basic)
 Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framework version 3.5 that bridges the gap between the world of objects and the world of data.  
@@ -36,7 +30,7 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
 ## Next Steps  
  To learn more details about LINQ, start by becoming familiar with some basic concepts in the Getting Started section [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md), and then read the documentation for the LINQ technology in which you are interested:  
   
--   SQL Server databases: [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+-   SQL Server databases: [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
 -   XML documents: [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)  
   

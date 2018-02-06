@@ -18,6 +18,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IALink3 Interface
 Provides a single method, `SetManifestFile`, which enables you to specify or reset the manifest file the linker will use when it creates an assembly.  

@@ -17,9 +17,11 @@ helpviewer_keywords:
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reliable Services
 Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] features that implement reliable messaging. This topic explains the reliable messaging features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)].  
@@ -51,5 +53,5 @@ Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo
  The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when the source's rate of message production and the destination's rate of the message consumption do not match. [!INCLUDE[crabout](../../../includes/crabout-md.md)] queues, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See Also  
- [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)   
+ [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)  
  [Queuing in WCF](../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

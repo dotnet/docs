@@ -8,6 +8,9 @@ ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 ![](./media/cover.png)
@@ -58,7 +61,7 @@ Editors:
 
 Participants and reviewers:
 
-> **Jeffrey Ritcher**, Partner Software Eng, Azure team, Microsoft
+> **Jeffrey Richter**, Partner Software Eng, Azure team, Microsoft
 >
 > **Jimmy Bogard**, Chief Architect at Headspring
 >
@@ -124,7 +127,7 @@ This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines,
 
 ### Additional resources
 
--   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable eBook)
+-   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)
     [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
 
 ## Who should use this guide

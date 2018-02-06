@@ -1,45 +1,29 @@
 ---
 title: "How to: Protect a Procedure Argument Against Value Changes (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "arguments [Visual Basic], passing by reference"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], ByVal"
   - "arguments [Visual Basic], passing by value"
   - "procedure parameters"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "arguments [Visual Basic], ByRef"
   - "arguments [Visual Basic], changing value"
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Protect a Procedure Argument Against Value Changes (Visual Basic)
 If a procedure declares a parameter as [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] gives the procedure code a direct reference to the programming element underlying the argument in the calling code. This permits the procedure to change the value underlying the argument in the calling code. In some cases the calling code might want to protect against such a change.  
@@ -63,13 +47,13 @@ If a procedure declares a parameter as [ByRef](../../../../visual-basic/language
  The default in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)   
- [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)   
- [How to: Change the Value of a Procedure Argument](./how-to-change-the-value-of-a-procedure-argument.md)   
- [How to: Force an Argument to Be Passed by Value](./how-to-force-an-argument-to-be-passed-by-value.md)   
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)  
+ [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)  
+ [How to: Change the Value of a Procedure Argument](./how-to-change-the-value-of-a-procedure-argument.md)  
+ [How to: Force an Argument to Be Passed by Value](./how-to-force-an-argument-to-be-passed-by-value.md)  
+ [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

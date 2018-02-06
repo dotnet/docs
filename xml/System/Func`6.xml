@@ -76,7 +76,7 @@
     <param name="arg3">The third parameter of the method that this delegate encapsulates.</param>
     <param name="arg4">The fourth parameter of the method that this delegate encapsulates.</param>
     <param name="arg5">The fifth parameter of the method that this delegate encapsulates.</param>
-    <summary>Encapsulates a method that has five parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <summary>Encapsulates a method that has five parameters and returns a value of the type specified by the <typeparamref name="TResult" /> parameter.</summary>
     <returns>The return value of the method that this delegate encapsulates.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
@@ -93,5 +93,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Action`5" />
   </Docs>
 </Type>

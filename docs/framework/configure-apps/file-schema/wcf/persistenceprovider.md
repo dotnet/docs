@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;persistenceProvider&gt;
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.  
@@ -54,5 +56,5 @@ Specifies the type of the persistence provider implementation to use, as well as
  This element specifies the persistence provider to be used to serialize the state of a WCF service. It should be used together with the `wsHttpContextBinding` which passes state information in HTTP headers.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.PersistenceProviderElement>   
+ <xref:System.ServiceModel.Configuration.PersistenceProviderElement>  
  <xref:System.ServiceModel.Persistence.PersistenceProvider>

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly::EnumerateModules Method
 Gets an enumerator for the modules contained in the `ICorDebugAssembly`.  

@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepper::StepOut Method
 Causes this ICorDebugStepper to single-step through its containing thread, and to complete when the current frame returns control to the calling frame.  

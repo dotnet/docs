@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStripContainer Control
 <xref:System.Windows.Forms.ToolStrip> controls feature built-in rafting (sharing of horizontal or vertical space within the tool area when docked) by using the <xref:System.Windows.Forms.ToolStripContainer>.  

@@ -10,19 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, simple data binding"
+  - "data binding [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Simple-Bound Control on a Windows Form
 With *simple binding*, you can display a single data element, such as a column value from a dataset table, in a control. You can simple-bind any property of a control to a data value.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### To simple-bind a control  
   
@@ -52,6 +54,6 @@ With *simple binding*, you can display a single data element, such as a column v
     >  Because simple-bound controls show only a single data element, it is very typical to include navigation logic in a Windows Form with simple-bound controls.  
   
 ## See Also  
- <xref:System.Windows.Forms.Binding>   
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)   
+ <xref:System.Windows.Forms.Binding>  
+ [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
  [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

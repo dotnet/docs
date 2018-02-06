@@ -1,13 +1,11 @@
 ---
 title: "Join Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryJoinIn"
@@ -15,27 +13,12 @@ f1_keywords:
   - "vb.QueryJoinOn"
 helpviewer_keywords: 
   - "queries [Visual Basic], Join"
-  - "Join statement"
-  - "Join clause"
+  - "Join statement [Visual Basic]"
+  - "Join clause [Visual Basic]"
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Join Clause (Visual Basic)
 Combines two collections into a single collection. The join operation is based on matching keys and uses the `Equals` operator.  
@@ -108,9 +91,9 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
  `explorer (2424), File Explorer, Priority = 8`  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)   
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
+ [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
  [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

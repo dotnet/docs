@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;assemblyBinding&gt; Element for &lt;runtime&gt;
 Contains information about assembly version redirection and the locations of assemblies.  
@@ -97,6 +99,6 @@ Contains information about assembly version redirection and the locations of ass
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

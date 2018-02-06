@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 16aaa80d-3ffe-47c4-8b16-ec65c4d25f8d
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Binding Reliable Session over HTTPS
 This sample demonstrates the use of SSL transport security with Reliable Sessions. Reliable Sessions implements the WS-Reliable Messaging protocol. You can have a secure reliable session by composing WS-Security over Reliable Sessions. But sometimes, you may choose to instead use HTTP transport security with SSL.  

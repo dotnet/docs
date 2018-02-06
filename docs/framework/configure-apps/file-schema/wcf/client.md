@@ -14,9 +14,11 @@ f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#client"
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;client&gt;
 The `client` element defines a list of endpoints that a client can connect to.  
@@ -77,7 +79,7 @@ The `client` element defines a list of endpoints that a client can connect to.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ClientSection>   
- <xref:System.ServiceModel.Configuration.MetadataElement>   
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)   
+ <xref:System.ServiceModel.Configuration.ClientSection>  
+ <xref:System.ServiceModel.Configuration.MetadataElement>  
+ [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
  [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

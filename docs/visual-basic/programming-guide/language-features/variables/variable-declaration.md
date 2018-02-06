@@ -1,7 +1,7 @@
 ---
 title: "Variable Declaration in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -11,39 +11,23 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
-  - "member variables, declarations"
-  - "Dim statement, variable declaration"
-  - "declaring variables"
+  - "member variables [Visual Basic], declarations"
+  - "Dim statement [Visual Basic], variable declaration"
+  - "declaring variables [Visual Basic]"
   - "variables [Visual Basic], scope"
   - "variables [Visual Basic], data types"
   - "data types [Visual Basic], variable declarations"
-  - "lifetime, variables"
+  - "lifetime [Visual Basic], variables"
   - "variables [Visual Basic], lifetime"
-  - "access levels, variables"
-  - "scope, declaration statements"
+  - "access levels [Visual Basic], variables"
+  - "scope [Visual Basic], declaration statements"
   - "variables [Visual Basic], access level"
-  - "local variables, declarations"
-  - "scope, variables"
+  - "local variables [Visual Basic], declarations"
+  - "scope [Visual Basic], variables"
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Variable Declaration in Visual Basic
 You declare a variable to specify its name and characteristics. The declaration statement for variables is the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md). Its location and contents determine the variable's characteristics.  
@@ -99,12 +83,12 @@ Dim l, m As Long, x, y As Single
  A variable's *access level* is the extent of code that has permission to access it. This is determined by the access modifier (such as [Public](../../../../visual-basic/language-reference/modifiers/public.md) or [Private](../../../../visual-basic/language-reference/modifiers/private.md)) that you use in the `Dim` statement. For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 ## See Also  
- [How to: Create a New Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)   
- [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)   
- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)   
- [Static](../../../../visual-basic/language-reference/modifiers/static.md)   
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
+ [How to: Create a New Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
+ [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
+ [Static](../../../../visual-basic/language-reference/modifiers/static.md)  
+ [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
+ [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)

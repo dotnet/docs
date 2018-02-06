@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessibility Best Practices
 > [!NOTE]
@@ -137,6 +139,6 @@ manager: "markl"
  Device-independent calls ensure keyboard and mouse feature equality, while providing [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
 ## See Also  
- <xref:System.Windows.Automation.Peers>   
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://msdn.microsoft.com/en-us/9aed3c10-68eb-419e-a57f-1d2af15a8253)   
+ <xref:System.Windows.Automation.Peers>  
+ [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
  [Guidelines for Keyboard User Interface Design](http://msdn2.microsoft.com/library/ms971323.aspx)

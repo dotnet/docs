@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Connection Strings in ADO.NET
 The .NET Framework 2.0 introduced new capabilities for working with connection strings, including the introduction of new keywords to the connection string builder classes, which facilitate creating valid connection strings at run time.  
@@ -44,5 +46,5 @@ The .NET Framework 2.0 introduced new capabilities for working with connection s
  Demonstrates techniques for protecting information used to connect to a data source.  
   
 ## See Also  
- [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)   
+ [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

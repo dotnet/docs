@@ -1,13 +1,10 @@
 ---
 title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc30663"
@@ -18,21 +15,6 @@ ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times
 The attribute can only be applied once. The `AttributeUsage` attribute determines whether an attribute can be applied more than once.  
@@ -50,6 +32,6 @@ The attribute can only be applied once. The `AttributeUsage` attribute determine
 ```  
   
 ## See Also  
- <xref:System.AttributeUsageAttribute>   
- [Creating Custom Attributes](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)   
+ <xref:System.AttributeUsageAttribute>  
+ [Creating Custom Attributes](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  
  [AttributeUsage](../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)

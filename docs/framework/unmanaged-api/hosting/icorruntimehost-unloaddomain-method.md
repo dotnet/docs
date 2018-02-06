@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::UnloadDomain Method
 Unloads the specified application domain from the current process.  
@@ -62,6 +64,6 @@ HRESULT UnloadDomain (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

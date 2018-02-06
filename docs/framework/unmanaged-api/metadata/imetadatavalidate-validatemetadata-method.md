@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataValidate::ValidateMetaData Method
 Validates the metadata signatures of the objects in the current metadata scope.  

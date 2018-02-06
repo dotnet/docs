@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ServiceModel.Channels.Message.Properties" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -255,5 +256,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ContextMessageProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the <see langword="ContextMessageProperty" /> from a specified message or collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,39 +1,22 @@
 ---
 title: "Call Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Call"
 helpviewer_keywords: 
-  - "procedures, Call statement"
-  - "Call statement"
-  - "procedures, calling"
+  - "procedures [Visual Basic], Call statement"
+  - "Call statement [Visual Basic]"
+  - "procedures [Visual Basic], calling"
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Call Statement (Visual Basic)
 Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedure.  
@@ -64,7 +47,7 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
  [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
   
 ## See Also  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)

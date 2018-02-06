@@ -212,6 +212,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.IDataSource.GetViewNames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -293,6 +294,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -346,6 +350,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheKeyContext">
@@ -410,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -462,6 +470,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The document is loading.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -521,6 +531,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The document is loading.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.Data" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -577,6 +589,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalView">
@@ -684,6 +698,8 @@
   
  Both caching and client impersonation are enabled. The <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control does not support caching when client impersonation is enabled.</exception>
         <exception cref="T:System.Web.HttpException">Access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.XmlDataSource.Save" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" />
       </Docs>
     </Member>
     <Member MemberName="OnTransforming">
@@ -708,7 +724,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.XmlDataSource.OnTransforming%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -799,6 +815,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.XmlDataSource.OnTransforming(System.EventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.XmlDataSource.OnTransforming(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.XmlDataSource.Transforming" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.TransformFile" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -881,6 +900,7 @@
   
  A design-time relative path was not mapped correctly by the designer before using the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</exception>
         <exception cref="T:System.Web.HttpException">Access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -907,6 +927,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IListSource" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -933,6 +954,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IListSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">
@@ -955,6 +977,7 @@
         <summary>Gets the named data source view associated with the data source control.</summary>
         <returns>Returns the named <see cref="T:System.Web.UI.WebControls.XmlDataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -981,6 +1004,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1062,6 +1086,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The document is loading.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.TransformFile" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -1176,6 +1202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.XmlDataSource.Transforming" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.TransformFile" />
       </Docs>
     </Member>
     <Member MemberName="TransformFile">
@@ -1297,6 +1326,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The document is loading.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       </Docs>
     </Member>
     <Member MemberName="Transforming">
@@ -1319,7 +1350,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.XmlDataSource.Transforming> event to set the <xref:System.Web.UI.WebControls.XmlDataSource.TransformArgumentList%2A> property with an <xref:System.Xml.Xsl.XsltArgumentList> object before the <xref:System.Web.UI.WebControls.XmlDataSource> control performs an XML transformation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1405,6 +1436,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.XmlDataSource.OnTransforming(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -1431,7 +1463,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on XPath data-binding expressions, see [Binding a Tabular Control to the XmlDataSource Control](http://msdn.microsoft.com/en-us/d6bf202f-6454-45fd-9424-e17f6c7eafe8).  
+ For more information on XPath data-binding expressions, see [Binding a Tabular Control to the XmlDataSource Control](http://msdn.microsoft.com/library/d6bf202f-6454-45fd-9424-e17f6c7eafe8).  
   
    
   

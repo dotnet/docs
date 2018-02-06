@@ -46,6 +46,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataBindItem">
@@ -85,6 +89,8 @@
         <summary>Binds the field of the specified item to its corresponding data. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">the specified <see cref="P:System.Web.UI.MobileControls.ObjectListField.DataField" /> does not exist.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -115,6 +121,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -145,6 +153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -178,6 +188,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -203,6 +215,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -231,6 +245,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -257,6 +273,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -282,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -312,6 +332,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -336,6 +358,8 @@
         <value>
           <see langword="true" /> if the object list field should be rendered; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
   </Members>

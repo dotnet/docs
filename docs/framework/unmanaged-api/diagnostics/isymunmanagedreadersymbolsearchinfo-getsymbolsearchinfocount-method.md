@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method
 Gets a count of symbol search information.  

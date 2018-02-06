@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hit tests, using regions"
-  - "regions, hit testing"
+  - "hit tests [Windows Forms], using regions"
+  - "regions [Windows Forms], hit testing"
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Hit Testing with a Region
 The purpose of hit testing is to determine whether the cursor is over a given object, such as an icon or a button.  
@@ -34,6 +36,6 @@ The purpose of hit testing is to determine whether the cursor is over a given ob
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- <xref:System.Drawing.Region>   
- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)   
+ <xref:System.Drawing.Region>  
+ [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)  
  [How to: Use Clipping with a Region](../../../../docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md)

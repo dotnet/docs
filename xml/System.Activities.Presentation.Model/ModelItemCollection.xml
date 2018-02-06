@@ -868,5 +868,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an element into the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> or other <see cref="T:System.Object" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a model item to the end of the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains the specified element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

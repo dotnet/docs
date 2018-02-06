@@ -1,45 +1,28 @@
 ---
 title: "^ Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.^"
 helpviewer_keywords: 
   - "raising numbers to powers"
   - "^ operator [Visual Basic], exponention"
-  - "square operator"
+  - "square operator [Visual Basic]"
   - "^ operator [Visual Basic]"
   - "exponentiation operator [Visual Basic]"
   - "exponent"
-  - "numbers, rasing"
+  - "numbers [Visual Basic], rasing"
   - "powers"
-  - "arithmetic operators, exponentiation"
+  - "arithmetic operators [Visual Basic], exponentiation"
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ^ Operator (Visual Basic)
 Raises a number to the power of another number.  
@@ -99,8 +82,8 @@ number ^ exponent
  `exp6 = 8 ^ -1.0 / 3.0` would be calculated as (8 to the –1 power, or 0.125) divided by 3.0, which would result in 0.041666666666666666666666666666667.  
   
 ## See Also  
- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)  
+ [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 56ed12ba-adff-4e9c-a668-7fcba80c4795
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)
 If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence. That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.  
@@ -234,7 +228,7 @@ End Function
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
 ## See Also  
- [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)   
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
+ [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)  
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)

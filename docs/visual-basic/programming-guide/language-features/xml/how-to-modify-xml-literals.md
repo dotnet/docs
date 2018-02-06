@@ -1,7 +1,7 @@
 ---
 title: "How to: Modify XML Literals (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -17,21 +17,6 @@ ms.assetid: 4e864522-a37a-43a2-8236-af80277c5482
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Modify XML Literals (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides convenient ways to modify XML literals. You can add or delete elements and attributes, and you can also replace an existing element with a new XML element. This topic provides several examples of how to modify an existing XML literal.  
@@ -286,8 +271,8 @@ translation.priority.ht:
     ```  
   
 ## See Also  
- [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)   
- [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)  
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
+ [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)  
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

@@ -23,7 +23,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the button control that raised the event by using the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCommandEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.%23ctor%2A> constructor.  
   
@@ -37,6 +37,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +126,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -148,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -176,5 +193,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,8 @@ caps.latest.revision: 17
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceSecurityAudit&gt;
 Specifies settings that enable auditing of security events during service operations.  
@@ -84,9 +86,9 @@ Specifies settings that enable auditing of security events during service operat
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>   
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)   
- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)   
+ <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>  
+ <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
+ [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
  [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)

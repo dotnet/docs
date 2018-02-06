@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "procedural code in lieu of XAML"
-  - "gradient brush, animating colors of"
-  - "XAML, procedural code in lieu of"
-  - "animation, gradient brush colors"
-  - "brushes, animating colors of"
+  - "procedural code in lieu of XAML [WPF]"
+  - "gradient brush [WPF], animating colors of"
+  - "XAML [WPF], procedural code in lieu of"
+  - "animation [WPF], gradient brush colors"
+  - "brushes [WPF], animating colors of"
 ms.assetid: 760332dd-594a-475d-865b-01659db8cab7
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Getting Started with Ink
 Incorporating digital ink into your applications is easier than ever. Ink has evolved from being a corollary to the COM and Windows Forms method of programming to achieving full integration into the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. You do not need to install separate SDKs or runtime libraries.  
@@ -84,7 +86,7 @@ Incorporating digital ink into your applications is easier than ever. Ink has ev
  [!code-vb[InkCanvasConsoleApp#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasConsoleApp/VisualBasic/Module1.vb#1)]  
   
 ## See Also  
- [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)   
- [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)   
- [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)   
+ [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)  
+ [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)  
+ [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)  
  [Storing Ink](../../../../docs/framework/wpf/advanced/storing-ink.md)

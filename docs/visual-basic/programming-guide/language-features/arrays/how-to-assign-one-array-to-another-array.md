@@ -1,13 +1,12 @@
 ---
 title: "How to: Assign One Array to Another Array (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "covariance, arrays"
@@ -17,21 +16,6 @@ ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Assign One Array to Another Array (Visual Basic)
 Because arrays are objects, you can use them in assignment statements like other object types. An array variable holds a pointer to the data constituting the array elements and the rank and length information, and an assignment copies only this pointer.  
@@ -63,7 +47,7 @@ Because arrays are objects, you can use them in assignment statements like other
  The compiler reports an error if the above rules are violated, for example if the data types are not compatible or the ranks are unequal. You can add error handling to your code to make sure that the arrays are compatible before attempting an assignment. You can also use the [TryCast Operator](../../../../visual-basic/language-reference/operators/trycast-operator.md) keyword if you want to avoid throwing an exception.  
   
 ## See Also  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)   
- [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)   
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+ [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)  
+ [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
  [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)

@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # FolderBrowserDialog Component (Windows Forms)
 The Windows Forms `FolderBrowserDialog` component displays an interface with which users can browse and select a folder or create a new one. It is a complement to the [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md) component, which is used for browsing and selecting files.  

@@ -161,6 +161,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.View" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActiveViewIndex">
@@ -268,6 +270,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index was set to less than -1, or greater than or equal to the number of items on the list.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -297,6 +302,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified <see cref="T:System.Object" /> is not a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -323,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -396,6 +405,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" /> property is not set to a valid <see cref="T:System.Web.UI.WebControls.View" /> control within the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
+        <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -451,6 +463,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="OnActiveViewChanged">
@@ -497,6 +513,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.MultiView.ActiveViewChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -596,6 +613,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -718,6 +739,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified <paramref name="view" /> parameter value was not contained in the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIDCommandName">
@@ -755,6 +779,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIndexCommandName">
@@ -792,6 +820,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -835,6 +867,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
       </Docs>
     </Member>
   </Members>

@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.XsdDataContractImporter" />
+    <altmember cref="T:System.Runtime.Serialization.ExportOptions" />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -132,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
       </Docs>
     </Member>
   </Members>

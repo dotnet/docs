@@ -172,6 +172,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The binding has been detached from its target.</exception>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateTarget" />
       </Docs>
     </Member>
     <Member MemberName="UpdateTarget">
@@ -198,6 +199,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The binding has been detached from its target.</exception>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateSource" />
       </Docs>
     </Member>
   </Members>

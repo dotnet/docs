@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clear&gt; Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  
@@ -76,5 +78,5 @@ Removes all registered Web request modules from the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
+ <xref:System.Net.WebRequest>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

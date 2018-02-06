@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "strings, interop marshaling"
   - "interop marshaling, strings"
@@ -20,6 +20,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default Marshaling for Strings
 Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.  
@@ -266,7 +268,7 @@ public class Window {
 ```  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)   
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)   
- [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)   
+ [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
+ [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
+ [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
  [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)

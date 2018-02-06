@@ -17,6 +17,8 @@ caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Mage.exe (Manifest Generation and Editing Tool)
 The Manifest Generation and Editing Tool (Mage.exe) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, Mage.exe can be run from both batch scripts and other Windows-based applications, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.  
@@ -199,8 +201,8 @@ mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 ```  
   
 ## See Also  
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)   
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
+ [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)  
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)  
+ [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

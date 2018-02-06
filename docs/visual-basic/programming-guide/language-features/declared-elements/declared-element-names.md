@@ -1,54 +1,38 @@
 ---
 title: "Declared Element Names (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declared elements, case sensitivity"
-  - "names, Visual Basic rules"
-  - "naming conventions"
-  - "element names"
-  - "declared elements, identifiers"
-  - "declarations, elements"
-  - "declared elements, valid names"
+  - "declared elements [Visual Basic], case sensitivity"
+  - "names [Visual Basic], Visual Basic rules"
+  - "naming conventions [Visual Basic]"
+  - "element names [Visual Basic]"
+  - "declared elements [Visual Basic], identifiers"
+  - "declarations [Visual Basic], elements"
+  - "declared elements [Visual Basic], valid names"
   - "[] escape characters [Visual Basic]"
-  - "names, elements"
-  - "declaration statements, declared elements"
-  - "declaring elements"
-  - "identifiers, declared elements"
+  - "names [Visual Basic], elements"
+  - "declaration statements [Visual Basic], declared elements"
+  - "declaring elements [Visual Basic]"
+  - "identifiers [Visual Basic], declared elements"
   - "case sensitivity, declared element names"
-  - "escape characters"
-  - "names, declared elements"
-  - "declared elements, about declared elements"
-  - "escaped names"
-  - "declared elements, names"
-  - "names, naming conventions"
-  - "identifiers, elements"
+  - "escape characters [Visual Basic]"
+  - "names [Visual Basic], declared elements"
+  - "declared elements [Visual Basic], about declared elements"
+  - "escaped names [Visual Basic]"
+  - "declared elements [Visual Basic], names"
+  - "names [Visual Basic], naming conventions"
+  - "identifiers [Visual Basic], elements"
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Declared Element Names (Visual Basic)
 Every declared element has a name, also called an *identifier*, which is what the code uses to refer to it.  
@@ -83,7 +67,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  `xyz$wv`  
   
 > [!CAUTION]
->  Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
+>  Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
   
 ### Name Length Guidelines  
  As a practical matter, your name should be as short as possible while still clearly identifying the nature of the element. This improves the readability of your code and reduces line length and source-file size.  
@@ -110,7 +94,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  Comparison of names is independent of locale. If two names match in one locale, they are guaranteed to match in all locales.  
   
 ## See Also  
- [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)   
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
+ [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
+ [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
+ [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
  [Statements](../../../../visual-basic/language-reference/statements/index.md)

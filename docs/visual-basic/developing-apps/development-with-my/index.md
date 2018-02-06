@@ -1,13 +1,10 @@
 ---
 title: "Development with My (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "My.MyWpfExtension.Windows"
@@ -20,21 +17,6 @@ ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Development with My (Visual Basic)
 Visual Basic provides new features for rapid application development that improve productivity and ease of use while delivering power. One of these features, called `My`, provides access to information and default object instances that are related to the application and its run-time environment. This information is organized in a format that is discoverable through IntelliSense and logically delineated according to use.  
@@ -62,9 +44,9 @@ Visual Basic provides new features for rapid application development that improv
  Gives details on which `My` features are available in different project types.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>   
- <xref:Microsoft.VisualBasic.Devices.Computer>   
- <xref:Microsoft.VisualBasic.ApplicationServices.User>   
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)   
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)   
+ <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
+ <xref:Microsoft.VisualBasic.Devices.Computer>  
+ <xref:Microsoft.VisualBasic.ApplicationServices.User>  
+ [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
+ [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)  
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)

@@ -80,7 +80,7 @@
  *offsetX*  
  <xref:System.Double?displayProperty=nameWithType>  
   
- The value in the third row and third column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetX%2A> property.  
+ The value in the third row and first column. For more information, see the <xref:System.Windows.Media.Matrix.OffsetX%2A> property.  
   
  *offsetY*  
  <xref:System.Double?displayProperty=nameWithType>  
@@ -152,6 +152,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.op_Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Prepend(System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="Determinant">
@@ -244,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.op_Equality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -283,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.op_Equality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -317,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.op_Equality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -404,6 +410,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.SetIdentity" />
+        <altmember cref="P:System.Windows.Media.Matrix.IsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="Invert">
@@ -466,6 +474,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Matrix.Identity" />
+        <altmember cref="M:System.Windows.Media.Matrix.SetIdentity" />
       </Docs>
     </Member>
     <Member MemberName="M11">
@@ -645,6 +655,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.op_Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Prepend(System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Append(System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -752,6 +765,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Matrix.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -831,6 +845,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Prepend(System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Append(System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -899,6 +916,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.op_Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Append(System.Windows.Media.Matrix)" />
       </Docs>
     </Member>
     <Member MemberName="Rotate">
@@ -929,6 +949,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.RotatePrepend(System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.RotateAt(System.Double,System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.RotateAtPrepend(System.Double,System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="RotateAt">
@@ -1037,6 +1060,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Rotate(System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.RotateAt(System.Double,System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.RotateAtPrepend(System.Double,System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -1069,6 +1095,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.ScaleAt(System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.ScaleAtPrepend(System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.ScalePrepend(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleAt">
@@ -1183,6 +1212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.ScaleAtPrepend(System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.Scale(System.Double,System.Double)" />
+        <altmember cref="M:System.Windows.Media.Matrix.ScaleAt(System.Double,System.Double,System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SetIdentity">
@@ -1223,6 +1255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Matrix.Identity" />
+        <altmember cref="P:System.Windows.Media.Matrix.IsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="Skew">
@@ -1255,6 +1289,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.SkewPrepend(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SkewPrepend">
@@ -1292,6 +1327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Skew(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -1324,6 +1360,7 @@
         <summary>Formats the value of the current instance using the specified format.</summary>
         <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -1569,6 +1606,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.TranslatePrepend(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="TranslatePrepend">
@@ -1606,6 +1644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Matrix.Translate(System.Double,System.Double)" />
       </Docs>
     </Member>
   </Members>

@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, configuring"
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring the Data Service (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create data services that expose [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. Data in these feeds can come from a variety of data sources. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses data providers to expose this data as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. These providers include an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, a reflection provider, and a set of custom data service provider interfaces. The provider implementation defines the data model for the service. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).  
@@ -75,7 +77,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
 |`/Customers?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend>|Not supported|  
 |`/Customers('ALFKI')?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|Not supported|Not supported|  
   
- <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, you can use the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](http://msdn.microsoft.com/en-us/afb8e206-0ffe-4597-b6d4-6ab566897e1d).  
+ <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, you can use the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](http://msdn.microsoft.com/library/afb8e206-0ffe-4597-b6d4-6ab566897e1d).  
   
  <sup>2</sup> This URI is supported when a property that returns a binary large object (BLOB) is defined as the media resource that belongs to an entity that is a media link entry, which in this case, is `Customers`. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
@@ -90,5 +92,5 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)   
+ [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
  [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)

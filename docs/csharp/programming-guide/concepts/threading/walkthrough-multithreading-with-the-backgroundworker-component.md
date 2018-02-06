@@ -1,24 +1,17 @@
 ---
 title: "Walkthrough: Multithreading with the BackgroundWorker Component (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: ff670fbf-a0ac-40c1-ab08-9ed53768f880
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Multithreading with the BackgroundWorker Component (C#)
 This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word. It demonstrates:  
@@ -286,5 +279,5 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
  This application contains some basic error handling. It detects blank search strings. You can make this program more robust by handling other errors, such as exceeding the maximum number of words or lines that can be counted.  
   
 ## See Also  
- [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
+ [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)  
  [How to: Subscribe to and Unsubscribe from Events](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)

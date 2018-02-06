@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Concerns and Useful Tips for Tracing
 This topic describes how you can protect sensitive information from being exposed, as well as useful tips when using WebHost.  

@@ -58,6 +58,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="DataNavigateUrlField">
@@ -137,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DataNavigateUrlFormatString">
@@ -188,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField" />
+        <altmember cref="M:System.String.Format(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -239,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -290,6 +304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextField" />
+        <altmember cref="M:System.String.Format(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataNavigateUrlValue">
@@ -336,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataTextValue">
@@ -365,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -383,6 +401,7 @@
       <Docs>
         <summary>Provides the base implementation to reset a column derived from the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class to its initial state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGridColumn.Initialize" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -472,6 +491,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -508,7 +529,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLinkColumn> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   
@@ -603,6 +624,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextField" />
       </Docs>
     </Member>
   </Members>

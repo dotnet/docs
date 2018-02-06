@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "BitmapSource objects, converting to indexed pixel format"
-  - "converting images"
-  - "converting, BitmapSource objects to indexed pixel formats"
-  - "converting, BitmapSource objects to palettized pixel format"
-  - "BitmapSource objects, converting to palettized pixel format"
+  - "BitmapSource objects [WPF], converting to indexed pixel format"
+  - "converting images [WPF]"
+  - "converting [WPF], BitmapSource objects to indexed pixel formats"
+  - "converting [WPF], BitmapSource objects to palettized pixel format"
+  - "BitmapSource objects [WPF], converting to palettized pixel format"
 ms.assetid: cd9df1e4-d5dc-4f57-b67b-4ec67e086b33
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Convert a BitmapSource to a Different PixelFormat
 This example demonstrates how to convert a <xref:System.Windows.Media.Imaging.BitmapSource> object (<xref:System.Windows.Media.Imaging.BitmapImage>) to a different <xref:System.Windows.Media.PixelFormat> using a <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>.  

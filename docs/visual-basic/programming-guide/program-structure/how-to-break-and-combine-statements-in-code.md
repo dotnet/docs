@@ -1,13 +1,12 @@
 ---
 title: "How to: Break and Combine Statements in Code (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb._"
@@ -22,32 +21,16 @@ helpviewer_keywords:
   - "long lines of code"
   - "line terminator"
   - "line-continuation sequence"
-  - "underscores, in code"
+  - "underscores [Visual Basic], in code"
   - "statements [Visual Basic], line continuation in"
-  - "line breaks, in code"
-  - "line-continuation character"
+  - "line breaks [Visual Basic], in code"
+  - "line-continuation character [Visual Basic]"
   - "Visual Basic code, line continuation in"
   - "statements [Visual Basic], line breaks in"
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Break and Combine Statements in Code (Visual Basic)
 When writing your code, you might at times create lengthy statements that necessitate horizontal scrolling in the Code Editor. Although this doesn't affect the way your code runs, it makes it difficult for you or anyone else to read the code as it appears on the monitor. In such cases, you should consider breaking the single long statement into several lines.  
@@ -80,5 +63,5 @@ When writing your code, you might at times create lengthy statements that necess
      [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
   
 ## See Also  
- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)   
+ [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

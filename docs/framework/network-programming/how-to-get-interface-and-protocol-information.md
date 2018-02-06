@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Get Interface and Protocol Information
 This sample shows how to read the TCP statistics of a network interface.  

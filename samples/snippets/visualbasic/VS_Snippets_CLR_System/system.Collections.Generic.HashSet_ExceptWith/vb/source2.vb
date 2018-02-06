@@ -4,8 +4,7 @@ Imports System.Collections.Generic
 
 Class Program
     Public Shared Sub Main()
-        Dim compareVehicles As New SameVehicleComparer()
-        Dim allVehicles As New HashSet(Of String)(compareVehicles)
+        Dim allVehicles As New HashSet(Of String)(StringComparer.OrdinalIgnoreCase)
         Dim someVehicles As New List(Of String)()
 
         someVehicles.Add("Planes")
@@ -38,7 +37,7 @@ Class Program
             Console.WriteLine("'Some' vechicles list.")
         End If
 
-        ' Check for Rockets. Here the SameVehicleComparer will compare
+        ' Check for Rockets. Here the OrdinalIgnoreCase comparer will compare
         ' True for the mixed-case vehicle type.
         If allVehicles.Contains("roCKeTs") Then
             Console.WriteLine(vbNewLine + "The 'All' vehicles set contains 'roCKeTs'")
@@ -65,18 +64,6 @@ Class Program
             (vehicle <> "Helicopters") And (vehicle <> "Motorcycles")
 
         Return notSuperCool
-    End Function
-End Class
-
-Class SameVehicleComparer
-    Inherits EqualityComparer(Of String)
-
-    Public Overrides Function Equals(s1 As String, s2 As String) As Boolean
-        Return s1.Equals(s2, StringComparison.CurrentCultureIgnoreCase)
-    End Function
-
-    Public Overrides Function GetHashCode(s As String) As Integer
-        return MyBase.GetHashCode()
     End Function
 End Class
 

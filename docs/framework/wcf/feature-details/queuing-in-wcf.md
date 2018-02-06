@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e98d76ba-1acf-42cd-b137-0f8214661112
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queuing in WCF
 This section describes how to use queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
@@ -134,5 +136,5 @@ This section describes how to use queued communication in [!INCLUDE[indigo1](../
 -   [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
   
 ## See Also  
- [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)   
+ [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)  
  [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

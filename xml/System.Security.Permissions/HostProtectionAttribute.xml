@@ -193,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt" />
       </Docs>
     </Member>
     <Member MemberName="ExternalThreading">
@@ -233,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.ExternalThreading" />
       </Docs>
     </Member>
     <Member MemberName="MayLeakOnAbort">
@@ -264,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort" />
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -303,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Permissions.HostProtectionResource" />
       </Docs>
     </Member>
     <Member MemberName="SecurityInfrastructure">
@@ -348,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.SecurityInfrastructure" />
       </Docs>
     </Member>
     <Member MemberName="SelfAffectingProcessMgmt">
@@ -388,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt" />
       </Docs>
     </Member>
     <Member MemberName="SelfAffectingThreading">
@@ -428,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.SelfAffectingThreading" />
       </Docs>
     </Member>
     <Member MemberName="SharedState">
@@ -468,6 +475,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.SharedState" />
       </Docs>
     </Member>
     <Member MemberName="Synchronization">
@@ -503,6 +511,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.Synchronization" />
       </Docs>
     </Member>
     <Member MemberName="UI">
@@ -538,7 +547,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.HostProtectionResource.UI" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.HostProtectionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

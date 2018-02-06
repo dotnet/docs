@@ -1,13 +1,9 @@
 ---
 title: "&lt;mailSettings&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mailSettings"
@@ -20,20 +16,22 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;mailSettings&gt; Element (Network Settings)
 Configures mail sending options.  
-  
- \<configuration>  
+
+\<configuration>  
 \<system.net>  
 \<mailSettings>  
   
 ## Syntax  
   
 ```xml  
-      <mailSettings  
+<mailSettings>
   <smtp> … </smtp>  
-/mailsettings>  
+</mailSettings>
 ```  
   
 ## Attributes and Elements  
@@ -55,7 +53,7 @@ Configures mail sending options.
 |[\<system.Net> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Example  
- The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  
 <configuration>  
@@ -74,5 +72,5 @@ Configures mail sending options.
 ```  
   
 ## See Also  
- <xref:System.Net.Mail.SmtpClient>   
+ <xref:System.Net.Mail.SmtpClient>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

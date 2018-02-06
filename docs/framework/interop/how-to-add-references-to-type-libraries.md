@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Add References to Type Libraries
 Visual Studio generates an interop assembly containing metadata when you add a reference to a type library. If a primary interop assembly is available, Visual Studio uses the existing assembly before generating a new interop assembly.  
@@ -49,9 +51,9 @@ Visual Studio generates an interop assembly containing metadata when you add a r
 2.  Use the [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
 ## See Also  
- [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)   
- [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)   
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3)   
- [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
- [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md)   
+ [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)  
+ [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)  
+ [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3)  
+ [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
+ [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md)  
  [/link (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/link.md)

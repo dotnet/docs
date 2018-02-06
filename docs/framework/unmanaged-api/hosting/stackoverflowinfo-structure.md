@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StackOverflowInfo Structure
 Stores the type of overflow that occurred and information on the exception that was thrown due to the overflow.  

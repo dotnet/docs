@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+    <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="DayNumberText">
@@ -155,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="IsOtherMonth">
@@ -192,6 +200,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectable">
@@ -226,6 +242,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -260,6 +284,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsToday">
@@ -297,6 +329,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsWeekend">
@@ -334,6 +374,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
       </Docs>
     </Member>
   </Members>

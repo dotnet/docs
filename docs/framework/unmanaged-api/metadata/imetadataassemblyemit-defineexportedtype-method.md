@@ -27,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineExportedType Method
 Creates an `ExportedType` structure containing metadata for the specified exported type, and returns the associated metadata token.  

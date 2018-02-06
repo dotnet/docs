@@ -65,6 +65,7 @@
     <block subset="none" type="overrides">
       <para>Developers can derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class to create custom display modes. To make a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> available on a Web Parts page, you would also need to derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" /> method.</para>
     </block>
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,7 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> base class to create custom display modes must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" /> property in order to set its value.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">

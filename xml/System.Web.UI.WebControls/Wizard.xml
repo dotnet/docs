@@ -299,6 +299,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CompositeControl" />
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -363,6 +365,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The corresponding <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> is less than -1 or greater than the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects in the <see cref="T:System.Web.UI.WebControls.Wizard" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
       </Docs>
     </Member>
     <Member MemberName="ActiveStepChanged">
@@ -385,7 +388,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step of the <xref:System.Web.UI.WebControls.Wizard> control changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -397,6 +400,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -450,6 +454,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is higher than the number of wizard steps defined in the <see cref="P:System.Web.UI.WebControls.Wizard.WizardSteps" /> collection.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="AllowNavigationToStep">
@@ -488,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.AllowReturn" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonClick">
@@ -510,7 +518,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event to provide additional processing when the **Cancel** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -522,6 +530,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonID">
@@ -546,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonImageUrl">
@@ -582,6 +592,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonStyle">
@@ -623,6 +638,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonText">
@@ -664,6 +686,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonType">
@@ -687,6 +714,10 @@
         <summary>Gets or sets the type of button that is rendered as the **Cancel** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -711,6 +742,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CancelDestinationPageUrl">
@@ -752,6 +784,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -790,6 +827,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -828,6 +866,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -884,6 +923,9 @@
         <summary>Creates the hierarchy of child controls that make up the control.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The sidebar template does not contain a <see cref="T:System.Web.UI.WebControls.DataList" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -927,6 +969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CustomNextButtonID">
@@ -951,6 +994,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CustomPreviousButtonID">
@@ -975,6 +1019,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="DataListID">
@@ -999,6 +1044,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
       </Docs>
     </Member>
     <Member MemberName="DisplayCancelButton">
@@ -1028,6 +1074,11 @@
   
  This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1064,6 +1115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishButtonClick">
@@ -1086,7 +1140,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event to provide additional processing when the **Finish** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1098,6 +1152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="FinishButtonID">
@@ -1122,6 +1177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonImageUrl">
@@ -1158,6 +1214,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonStyle">
@@ -1199,6 +1258,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonText">
@@ -1240,6 +1304,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonType">
@@ -1263,6 +1330,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Finish** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="FinishDestinationPageUrl">
@@ -1304,6 +1374,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
       </Docs>
     </Member>
     <Member MemberName="FinishNavigationTemplate">
@@ -1361,6 +1434,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Finish" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonID">
@@ -1385,6 +1461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonImageUrl">
@@ -1421,6 +1498,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonStyle">
@@ -1462,6 +1542,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonText">
@@ -1503,6 +1587,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonType">
@@ -1526,6 +1613,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Previous** button on the <see cref="F:System.Web.UI.WebControls.WizardStepType.Finish" /> step.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1610,6 +1700,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
     <Member MemberName="HeaderPlaceholderId">
@@ -1675,6 +1767,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -1718,6 +1813,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1766,6 +1863,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1883,6 +1982,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
       </Docs>
     </Member>
     <Member MemberName="MoveNextCommandName">
@@ -1907,6 +2010,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="MovePreviousCommandName">
@@ -1931,6 +2035,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -1969,6 +2074,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> of the associated <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is equal to -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="MoveToCommandName">
@@ -1993,6 +2102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="NavigationButtonStyle">
@@ -2052,6 +2162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NavigationPlaceholderId">
@@ -2137,6 +2249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NextButtonClick">
@@ -2159,7 +2273,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event to provide additional processing when the **Next** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2171,6 +2285,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnActiveStepChanged">
@@ -2199,7 +2314,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.OnActiveStepChanged%2A> method raises the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event when the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is changed. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnActiveStepChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2216,6 +2331,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2267,7 +2383,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnCancelButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2284,6 +2400,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnFinishButtonClick">
@@ -2310,7 +2427,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnFinishButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2327,6 +2444,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2374,7 +2492,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnNextButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2391,6 +2509,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviousButtonClick">
@@ -2417,7 +2536,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2434,6 +2553,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnSideBarButtonClick">
@@ -2463,7 +2583,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2480,6 +2600,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="PreviousButtonClick">
@@ -2502,7 +2623,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event to provide additional processing when the **Previous** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2514,6 +2635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
@@ -2619,7 +2741,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2631,6 +2753,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonID">
@@ -2655,6 +2778,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonStyle">
@@ -2718,6 +2842,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SideBarPlaceholderId">
@@ -2806,6 +2934,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SideBarTemplate">
@@ -2872,6 +3004,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -2953,6 +3088,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Start" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonID">
@@ -2977,6 +3115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonImageUrl">
@@ -3013,6 +3152,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonStyle">
@@ -3054,6 +3197,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonText">
@@ -3095,6 +3244,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonType">
@@ -3118,6 +3271,10 @@
         <summary>Gets or sets the type of button that is rendered as the **Next** button on the <see cref="F:System.Web.UI.WebControls.WizardStepType.Start" /> step.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StepNavigationTemplate">
@@ -3164,6 +3321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonID">
@@ -3188,6 +3347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonImageUrl">
@@ -3224,6 +3384,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonStyle">
@@ -3265,6 +3428,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonText">
@@ -3306,6 +3474,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonType">
@@ -3329,6 +3500,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Next** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonID">
@@ -3353,6 +3527,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonImageUrl">
@@ -3389,6 +3564,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonStyle">
@@ -3430,6 +3608,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonText">
@@ -3471,6 +3654,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonType">
@@ -3494,6 +3680,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Previous** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
       </Docs>
     </Member>
     <Member MemberName="StepStyle">
@@ -3557,6 +3746,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -3582,6 +3773,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3678,6 +3870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
   </Members>

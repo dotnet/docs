@@ -169,6 +169,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.UpdatePanel" />
+    <altmember cref="T:System.Web.UI.ScriptManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -232,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -342,6 +345,7 @@
         <value>An integer that represents the number of milliseconds before the <see cref="T:System.Web.UI.UpdateProgress" /> control's progress template is displayed. The default is 500 milliseconds (.5 seconds).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.UpdateProgress.DisplayAfter" /> property is less than zero.</exception>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="DynamicLayout">
@@ -380,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GetScriptDescriptors">
@@ -411,6 +416,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
       </Docs>
     </Member>
     <Member MemberName="GetScriptReferences">
@@ -442,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptReferences" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -498,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateInstanceAttribute" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -613,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IScriptControl.GetScriptReferences">
@@ -639,6 +649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptReferences" />
       </Docs>
     </Member>
   </Members>

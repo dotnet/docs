@@ -14,6 +14,10 @@
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -44,6 +48,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.StringComparer</ReturnType>

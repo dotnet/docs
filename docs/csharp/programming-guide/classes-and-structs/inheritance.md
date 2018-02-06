@@ -1,13 +1,9 @@
 ---
 title: "Inheritance (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "abstract methods [C#]"
@@ -20,21 +16,6 @@ ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inheritance (C# Programming Guide)
 
@@ -54,7 +35,7 @@ Class inheritance
   
  The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method.  
   
- [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
   
 ## Abstract and Virtual Methods  
  When a base class declares a method as [virtual](../../../csharp/language-reference/keywords/virtual.md), a derived class can [override](../../../csharp/language-reference/keywords/override.md) the method with its own implementation. If a base class declares a member as [abstract](../../../csharp/language-reference/keywords/abstract.md), that method must be overridden in any non-abstract class that directly inherits from that class. If a derived class is itself abstract, it inherits abstract members without implementing them. Abstract and virtual members are the basis for polymorphism, which is the second primary characteristic of object-oriented programming. For more information, see [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  
@@ -74,7 +55,7 @@ Class inheritance
  A derived class can hide base class members by declaring members with the same name and signature. The [new](../../../csharp/language-reference/keywords/new.md) modifier can be used to explicitly indicate that the member is not intended to be an override of the base member. The use of [new](../../../csharp/language-reference/keywords/new.md) is not required, but a compiler warning will be generated if [new](../../../csharp/language-reference/keywords/new.md) is not used. For more information, see [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md).  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [class](../../../csharp/language-reference/keywords/class.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+ [class](../../../csharp/language-reference/keywords/class.md)  
  [struct](../../../csharp/language-reference/keywords/struct.md)

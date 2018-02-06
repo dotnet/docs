@@ -14,6 +14,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Method&gt; Element (.NET Native)
 Applies runtime reflection policy to a constructor or method.  
@@ -150,7 +152,7 @@ Applies runtime reflection policy to a constructor or method.
 ```  
   
 ## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)   
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)   
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
+ [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
  [\<MethodInstantiation> Element](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)

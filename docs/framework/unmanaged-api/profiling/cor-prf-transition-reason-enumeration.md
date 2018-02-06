@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_TRANSITION_REASON Enumeration
 Indicates the reason for a transition from managed to unmanaged code, or vice versa.  

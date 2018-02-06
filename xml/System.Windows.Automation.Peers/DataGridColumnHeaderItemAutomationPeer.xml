@@ -113,13 +113,13 @@
 ## Remarks  
  If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer> object:  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridColumn> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer> can be sorted.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Invoke?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridColumn> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer> can be sorted.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridColumn> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer> can be resized by the user.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Transform?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridColumn> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer> can be resized by the user.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.ScrollItem?displayProperty=nameWithType>.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.VirtualizedItem?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

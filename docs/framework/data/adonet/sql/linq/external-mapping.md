@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # External Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports *external mapping*, a process by which you use a separate XML file to specify mapping between the data model of the database and your object model. Advantages of using an external mapping file include the following:  
@@ -148,6 +150,6 @@ elementFormDefault="qualified" >
 ```  
   
 ## See Also  
- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)   
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)   
+ [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
+ [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
  [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)

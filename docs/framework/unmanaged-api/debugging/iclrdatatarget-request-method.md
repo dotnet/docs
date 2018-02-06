@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataTarget::Request Method
 Called by the common language runtime (CLR) data access services to request an operation, as defined by the implementation.  

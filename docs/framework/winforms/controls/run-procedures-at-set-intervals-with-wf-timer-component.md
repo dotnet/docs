@@ -9,27 +9,29 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], timers"
-  - "timers, event intervals"
-  - "initialization, Timer components"
-  - "timers, Windows-based"
+  - "timers [Windows Forms], event intervals"
+  - "initialization [Windows Forms], Timer components"
+  - "timers [Windows Forms], Windows-based"
   - "Timer component [Windows Forms], initializing"
-  - "procedures, specific time intervals"
+  - "procedures [Windows Forms], specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Run Procedures at Set Intervals with the Windows Forms Timer Component
 You might sometimes want to create a procedure that runs at specific time intervals until a loop has finished or that runs when a set time interval has elapsed. The <xref:System.Windows.Forms.Timer> component makes such a procedure possible.  
   
- This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/en-us/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+ This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
   
 > [!NOTE]
 >  There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md).  
@@ -249,6 +251,6 @@ private:
 ```  
   
 ## See Also  
- <xref:System.Windows.Forms.Timer>   
- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)   
+ <xref:System.Windows.Forms.Timer>  
+ [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
  [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)

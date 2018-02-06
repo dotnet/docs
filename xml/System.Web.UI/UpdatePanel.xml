@@ -173,6 +173,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ScriptManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -203,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -278,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
+        <altmember cref="M:System.Web.UI.UpdatePanel.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContentTemplate">
@@ -319,6 +323,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.UpdatePanel.ContentTemplate" /> property of the <see cref="T:System.Web.UI.UpdatePanel" /> control is set after an instance of the template is created or after the content template container is created.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+        <altmember cref="T:System.Web.UI.TemplateInstanceAttribute" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateContainer">
@@ -357,6 +364,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -383,6 +391,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.ControlCollection.Add(System.Web.UI.Control)" />, <see cref="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />, <see cref="M:System.Web.UI.ControlCollection.Clear" />, <see cref="M:System.Web.UI.ControlCollection.Remove(System.Web.UI.Control)" />, or <see cref="M:System.Web.UI.ControlCollection.RemoveAt(System.Int32)" /> method of the <see cref="T:System.Web.UI.ControlCollection" /> class has been called. To change the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control, modify the child controls of the <see cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" /> property.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
       </Docs>
     </Member>
     <Member MemberName="CreateContentTemplateContainer">
@@ -424,6 +433,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -452,6 +463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -480,6 +492,8 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.Initialize" /> method, make sure to call the base class so that triggers are registered if partial-page rendering is enabled.</para>
         </block>
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
+        <altmember cref="P:System.Web.UI.ScriptManager.SupportsPartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="IsInPartialRendering">
@@ -511,6 +525,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ScriptManager.IsInAsyncPostBack" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -569,6 +584,8 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.UpdatePanel.OnLoad(System.EventArgs)" /> method, make sure to call the base class so that the <see cref="E:System.Web.UI.Control.Load" /> event will be raised.</para>
         </block>
+        <altmember cref="M:System.Web.UI.UpdatePanel.Initialize" />
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -598,6 +615,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" /> property is set to <see langword="false" />, and the <see cref="P:System.Web.UI.UpdatePanel.UpdateMode" /> property is set to <see cref="F:System.Web.UI.UpdatePanelUpdateMode.Always" />.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -727,6 +746,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.UpdatePanelRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="RequiresUpdate">
@@ -860,6 +880,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.UpdatePanelTriggerCollection" />
+        <altmember cref="T:System.Web.UI.UpdatePanelTrigger" />
+        <altmember cref="T:System.Web.UI.AsyncPostBackTrigger" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterPostBackControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -902,6 +927,8 @@
  \- or –  
   
  The <see cref="M:System.Web.UI.UpdatePanel.Update" /> method is called during or after the page's <see cref="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" /> event.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMode">
@@ -958,6 +985,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.UpdatePanelUpdateMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.UpdatePanelUpdateMode" />
+        <altmember cref="M:System.Web.UI.UpdatePanel.Update" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
       </Docs>
     </Member>
   </Members>

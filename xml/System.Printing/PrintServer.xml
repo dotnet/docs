@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Printing.PrintQueue" />
+    <altmember cref="T:System.Printing.LocalPrintServer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -315,6 +317,7 @@
  \- or -  
   
  The <see cref="T:System.Printing.PrintServer" /> object was not created with sufficient rights.</exception>
+        <altmember cref="M:System.Printing.PrintServer.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPortThreadPriority">
@@ -882,6 +885,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintServer.MinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="MinorVersion">
@@ -913,6 +917,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintServer.MajorVersion" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1002,6 +1007,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintSystemException">Some of the properties cannot be refreshed.</exception>
+        <altmember cref="M:System.Printing.PrintServer.Commit" />
       </Docs>
     </Member>
     <Member MemberName="RestartJobOnPoolEnabled">
@@ -1106,5 +1112,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InstallPrintQueue">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Installs a print queue, and its associated printer driver, on the print server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPrintQueue">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified print queue from the print server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeletePrintQueue">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a print queue from the print server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPrintQueues">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the collection of print queues that the print server hosts.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

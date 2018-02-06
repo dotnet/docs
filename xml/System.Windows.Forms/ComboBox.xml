@@ -152,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteSource" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteMode">
@@ -208,6 +210,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteSource">
@@ -262,6 +266,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -509,6 +515,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -606,7 +613,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -713,6 +720,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a valid <see cref="T:System.Windows.Forms.DrawMode" /> enumeration value.</exception>
+        <altmember cref="T:System.Windows.Forms.DrawMode" />
+        <altmember cref="E:System.Windows.Forms.ComboBox.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ComboBox.MeasureItem" />
       </Docs>
     </Member>
     <Member MemberName="DropDown">
@@ -746,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ComboBox.DropDownClosed" />
       </Docs>
     </Member>
     <Member MemberName="DropDownClosed">
@@ -782,6 +793,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ComboBox.DropDown" />
       </Docs>
     </Member>
     <Member MemberName="DropDownHeight">
@@ -862,6 +874,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ComboBoxStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ComboBoxStyle" />
       </Docs>
     </Member>
     <Member MemberName="DropDownStyleChanged">
@@ -1654,6 +1667,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DrawItemEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ComboBox.DrawItem" />
       </Docs>
     </Member>
     <Member MemberName="OnDropDown">
@@ -1722,6 +1737,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ComboBox.OnDropDownClosed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ComboBox.OnDropDownClosed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ComboBox.DropDownClosed" />
       </Docs>
     </Member>
     <Member MemberName="OnDropDownStyleChanged">
@@ -2042,6 +2058,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ComboBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ComboBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.MeasureItemEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ComboBox.MeasureItem" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -2392,6 +2410,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ComboBox.OnTextUpdate(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ComboBox.OnTextUpdate(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ComboBox.TextUpdate" />
       </Docs>
     </Member>
     <Member MemberName="OnValidating">
@@ -2704,6 +2723,7 @@
  -or-  
   
  <paramref name="start" /> plus <paramref name="length" /> is less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.ComboBox.SelectionStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2778,6 +2798,9 @@
  -or-  
   
  The specified index is greater than or equal to the number of items in the combo box.</exception>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
+        <altmember cref="P:System.Windows.Forms.ListControl.FormattingEnabled" />
+        <altmember cref="P:System.Windows.Forms.ListControl.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -3006,6 +3029,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is less than zero.</exception>
+        <altmember cref="M:System.Windows.Forms.ComboBox.Select(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -3191,6 +3215,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ComboBox.OnTextUpdate(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3253,7 +3278,27 @@
         <block subset="none" type="overrides">
           <para>Inheriting controls should call the base class's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" /> method to process any messages that they do not handle.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindStringExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the item that exactly matches the specified string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindString">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of the first item in the <see cref="T:System.Windows.Forms.ComboBox" /> that starts with the specified string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

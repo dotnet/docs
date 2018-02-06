@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, Expander"
-  - "Expander control, about Expander control"
+  - "controls [WPF], Expander"
+  - "Expander control [WPF], about Expander control"
 ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Expander Overview
 An <xref:System.Windows.Controls.Expander> control provides a way to provide content in an expandable area that resembles a window and includes a header.  
@@ -66,6 +68,6 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
  You can align content by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the <xref:System.Windows.Controls.Expander> control. When you set these properties, the alignment applies to the header and also to the expanded content.  
   
 ## See Also  
- <xref:System.Windows.Controls.Expander>   
- <xref:System.Windows.Controls.ExpandDirection>   
+ <xref:System.Windows.Controls.Expander>  
+ <xref:System.Windows.Controls.ExpandDirection>  
  [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)

@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data binding, grids"
-  - "data binding, DataGridView control"
+  - "data binding [Windows Forms], grids"
+  - "data binding [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 1660f69c-5711-45d2-abc1-e25bc6779124
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind Data to the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it will bind to a variety of data sources. In most circumstances, however, you will bind to a <xref:System.Windows.Forms.BindingSource> component which will manage the details of interacting with the data source. The <xref:System.Windows.Forms.BindingSource> component can represent any Windows Forms data source and gives you great flexibility when choosing or modifying the location of your data. For more information about the data sources supported by the <xref:System.Windows.Forms.DataGridView> control, see [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md).  
@@ -62,8 +64,8 @@ The <xref:System.Windows.Forms.DataGridView> control supports the standard Windo
  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.BindingSource>   
- [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.BindingSource>  
+ [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)  
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)

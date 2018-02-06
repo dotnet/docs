@@ -1,13 +1,9 @@
 ---
 title: "Properties (C# Programming Guide)"
-
-ms.date: "2017-03-10"
+ms.date: 03/10/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "cs.properties"
@@ -18,21 +14,6 @@ ms.assetid: e295a8a2-b357-4ee7-a12e-385a44146fa8
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Properties (C# Programming Guide)
 
@@ -53,9 +34,9 @@ A property is a member that provides a flexible mechanism to read, write, or com
 
 One basic pattern for implementing a property involves using a private backing field for setting and retrieving the property value. The `get` accessor returns the value of the private field, and the `set` accessor may perform some data validation before assigning a value to the private field. Both accessors may also perform some conversion or computation on the data before it is stored or returned.
 
-The following example illustrates this pattern. In this example, the `TimePeriod` class represents an interval of time. Internally, the class stores the time interval in seconds in a private field named `seconds`. A read-write property named `Hours` allows the customer to specify the time interval in hours. Both the `get` and the `set` accessors perform the necessary conversion between hours and seconds. In addition, the `set` accessor validates the data and throws an @System.ArgumentOutOfRangeException if the number of hours is invalid. 
+The following example illustrates this pattern. In this example, the `TimePeriod` class represents an interval of time. Internally, the class stores the time interval in seconds in a private field named `seconds`. A read-write property named `Hours` allows the customer to specify the time interval in hours. Both the `get` and the `set` accessors perform the necessary conversion between hours and seconds. In addition, the `set` accessor validates the data and throws an <xref:System.ArgumentOutOfRangeException> if the number of hours is invalid. 
    
- [!code-cs[Properties#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-1.cs)]  
+ [!code-csharp[Properties#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-1.cs)]  
   
 ## Expression body definitions  
 
@@ -63,11 +44,11 @@ The following example illustrates this pattern. In this example, the `TimePeriod
 
  Starting with C# 6, read-only properties can implement the `get` accessor as an expression-bodied member. In this case, neither the `get` accessor keyword nor the `return` keyword is used. The following example implements the read-only `Name` property as an expression-bodied member.
 
- [!code-cs[Properties#2](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-2.cs)]  
+ [!code-csharp[Properties#2](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-2.cs)]  
 
  Starting with C# 7, both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. Note that the `return` keyword is not used with the `get` accessor.
  
-  [!code-cs[Properties#3](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-3.cs)]  
+  [!code-csharp[Properties#3](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-3.cs)]  
 
 ## Auto-implemented properties
 
@@ -75,7 +56,7 @@ In some cases, property `get` and `set` accessors just assign a value to or retr
 
 If a property has both a `get` and a `set` accessor, both must be auto-implemented. You define an auto-implemented property by using the `get` and `set` keywords without providing any implementation. The following example repeats the previous one, except that `Name` and `Price` are auto-implemented properties. Note that the example also removes the parameterized constructor, so that `SaleItem` objects are now initialized with a call to the default constructor and an [object initializer](object-and-collection-initializers.md).
 
-  [!code-cs[Properties#4](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-4.cs)]  
+  [!code-csharp[Properties#4](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-4.cs)]  
 
 ## Related sections  
   
@@ -93,8 +74,8 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
  [get keyword](../../../csharp/language-reference/keywords/get.md)    
  [set keyword](../../../csharp/language-reference/keywords/set.md)    

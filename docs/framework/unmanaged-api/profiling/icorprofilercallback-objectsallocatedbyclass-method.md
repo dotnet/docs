@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ObjectsAllocatedByClass Method
 Notifies the profiler about the number of instances of each specified class that have been created since the most recent garbage collection.  

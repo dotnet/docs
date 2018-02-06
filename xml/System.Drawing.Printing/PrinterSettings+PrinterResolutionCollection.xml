@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +60,7 @@
         <param name="array">An array of type <see cref="T:System.Drawing.Printing.PrinterResolution" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -164,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -197,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

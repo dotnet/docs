@@ -1619,5 +1619,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromHbitmap">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a Windows handle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the information in the specified <see cref="T:System.Drawing.Image" /> to this <see cref="T:System.Drawing.Image" />. The specified <see cref="T:System.Drawing.Imaging.EncoderParameters" /> determine how the new information is incorporated into the existing image.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves this image to the specified stream in the specified format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

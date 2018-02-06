@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.TraceContextEventHandler" />
+    <altmember cref="E:System.Web.TraceContext.TraceFinished" />
+    <altmember cref="T:System.Web.TraceContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +84,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContextRecord" />
+        <altmember cref="T:System.Web.TraceContextEventHandler" />
+        <altmember cref="T:System.Web.TraceContext" />
       </Docs>
     </Member>
   </Members>

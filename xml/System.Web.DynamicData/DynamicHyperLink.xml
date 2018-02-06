@@ -124,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.DynamicHyperLink.TableName" />
       </Docs>
     </Member>
     <Member MemberName="ContextTypeName">
@@ -223,6 +224,7 @@
  -or-  
   
  An attempt has been made to bind to a <see langword="null" /> data field.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -252,6 +254,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.DynamicData.DynamicHyperLink" /> object cannot determine the data table to link to.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -274,6 +277,7 @@
         <summary>Retrieves the value of the specified attribute that is applied to the <see cref="T:System.Web.DynamicData.DynamicHyperLink" /> control.</summary>
         <returns>The specified attribute that is applied to the link.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IAttributeAccessor" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -297,6 +301,7 @@
         <param name="value">The value that is assigned to the attribute.</param>
         <summary>Defines an attribute and its value to apply to the <see cref="T:System.Web.DynamicData.DynamicHyperLink" /> control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IAttributeAccessor" />
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -323,6 +328,7 @@
         <summary>Gets or sets the table for the link action.</summary>
         <value>The name of the table for the link action.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.DynamicData.DynamicHyperLink.Action" />
       </Docs>
     </Member>
   </Members>

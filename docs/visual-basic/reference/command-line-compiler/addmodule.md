@@ -1,13 +1,11 @@
 ---
 title: "/addmodule"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "/addmodule compiler option [Visual Basic]"
@@ -17,22 +15,6 @@ ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /addmodule
 Causes the compiler to make all type information from the specified file(s) available to the project you are currently compiling.  
@@ -71,7 +53,7 @@ Causes the compiler to make all type information from the specified file(s) avai
  When you run `t1`, it outputs `802`.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

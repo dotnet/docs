@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ProcessUnhandledException"
 api_location: 
@@ -20,6 +20,8 @@ caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ProcessUnhandledException Function (WPF Unmanaged API Reference)
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  

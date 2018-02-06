@@ -51,6 +51,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.AspNetHostingPermission" />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +77,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -115,6 +123,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
   </Members>

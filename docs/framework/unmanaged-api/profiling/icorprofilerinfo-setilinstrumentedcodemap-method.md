@@ -27,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::SetILInstrumentedCodeMap Method
 Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.  

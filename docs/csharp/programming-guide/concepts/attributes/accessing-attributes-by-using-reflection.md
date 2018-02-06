@@ -1,24 +1,17 @@
 ---
 title: "Accessing Attributes by Using Reflection (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: dce3a696-4ceb-489a-b5e4-322a83052f18
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Accessing Attributes by Using Reflection (C#)
 The fact that you can define custom attributes and place them in your source code would be of little value without some way of retrieving that information and acting on it. By using reflection, you can retrieve the information that was defined with custom attributes. The key method is `GetCustomAttributes`, which returns an array of objects that are the run-time equivalents of the source code attributes. This method has several overloaded versions. For more information, see <xref:System.Attribute>.  
@@ -125,10 +118,10 @@ class TestAuthorAttribute
 ```  
   
 ## See Also  
- <xref:System.Reflection>   
- <xref:System.Attribute>   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Retrieving Information Stored in Attributes](../../../../standard/attributes/retrieving-information-stored-in-attributes.md)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
+ <xref:System.Reflection>  
+ <xref:System.Attribute>  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Retrieving Information Stored in Attributes](../../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+ [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
  [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)

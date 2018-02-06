@@ -39,6 +39,8 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="P:System.Web.SiteMap.Providers" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -99,6 +102,7 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
   
  A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapProviderCollection.AddArray(System.Web.SiteMapProvider[])" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -133,6 +137,7 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
           <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       </Docs>
     </Member>
     <Member MemberName="AddArray">
@@ -167,6 +172,8 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
         <exception cref="T:System.ArgumentNullException">
           <paramref name="providerArray" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)" />
+        <altmember cref="M:System.Web.SiteMapProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -204,7 +211,17 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.SiteMapProviderCollection.Add" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a site map provider to the <see cref="T:System.Web.SiteMapProviderCollection" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

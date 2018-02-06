@@ -27,6 +27,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputImage" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +83,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputImage" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputFile" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -122,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -150,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Name" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Type" />
       </Docs>
     </Member>
     <Member MemberName="Type">

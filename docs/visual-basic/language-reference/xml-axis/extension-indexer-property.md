@@ -1,13 +1,11 @@
 ---
 title: "Extension Indexer Property (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionIndexer"
@@ -20,21 +18,6 @@ ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Extension Indexer Property (Visual Basic)
 Provides access to individual elements in a collection.  
@@ -76,8 +59,8 @@ object(index)
  `Second phone number: 425-555-0145`  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement>   
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
+ <xref:System.Xml.Linq.XElement>  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+ [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)

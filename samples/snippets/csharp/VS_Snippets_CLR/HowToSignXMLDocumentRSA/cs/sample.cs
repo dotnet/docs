@@ -55,13 +55,13 @@ public class SignXML
     // Sign an XML file. 
     // This document cannot be verified unless the verifying 
     // code has the key with which it was signed.
-    public static void SignXml(XmlDocument xmlDoc, RSA Key)
+    public static void SignXml(XmlDocument xmlDoc, RSA key)
     {
         // Check arguments.
         if (xmlDoc == null)
             throw new ArgumentException("xmlDoc");
-        if (Key == null)
-            throw new ArgumentException("Key");
+        if (key == null)
+            throw new ArgumentException("key");
 
         // Create a SignedXml object.
         // <snippet5>
@@ -70,7 +70,7 @@ public class SignXML
 
         // Add the key to the SignedXml document.
         // <snippet6>
-        signedXml.SigningKey = rsaKey;
+        signedXml.SigningKey = key;
         // </snippet6>
 
         // <snippet7>

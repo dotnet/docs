@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "expliciting defining cache behavior"
   - "location-based cache policies"
@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Set a Location-Based Cache Policy for an Application
 Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
@@ -158,8 +160,8 @@ Location-based cache policies allow an application to explicitly define caching 
     ```  
   
 ## See Also  
- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)   
- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)   
- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)   
- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)   
+ [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
+ [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
+ [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  
+ [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)  
  [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)

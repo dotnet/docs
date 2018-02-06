@@ -110,6 +110,7 @@
         <summary>Positions the first visual child object and returns the size in layout required by this <see cref="T:System.Windows.Controls.AdornedElementPlaceholder" /> object.</summary>
         <returns>The actual size needed by the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -203,6 +204,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.AdornedElementPlaceholder" /> object is not part of a template.</exception>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnInitialized">

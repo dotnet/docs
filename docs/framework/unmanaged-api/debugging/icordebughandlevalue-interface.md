@@ -26,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHandleValue Interface1
 A subclass of ICorDebugReferenceValue that represents a reference value to which the debugger has created a handle for garbage collection.  

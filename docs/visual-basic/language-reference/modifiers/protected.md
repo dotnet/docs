@@ -1,41 +1,23 @@
 ---
 title: "Protected (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Protected"
 helpviewer_keywords: 
   - "Protected Friend keyword combination"
-  - "Protected keyword, and Friend"
-  - "Protected keyword, syntax"
+  - "Protected keyword [Visual Basic], and Friend"
+  - "Protected keyword [Visual Basic], syntax"
   - "Protected access modifier"
-  - "Protected keyword"
+  - "Protected keyword [Visual Basic]"
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Protected (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within their own class or from a derived class.  
@@ -84,10 +66,10 @@ Specifies that one or more declared programming elements are accessible only fro
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)   
- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
- [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Public](../../../visual-basic/language-reference/modifiers/public.md)  
+ [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+ [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
+ [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

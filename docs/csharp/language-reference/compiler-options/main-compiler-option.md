@@ -1,6 +1,6 @@
 ---
 title: "-main (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,28 +15,14 @@ ms.assetid: 975cf4d5-36ac-4530-826c-4aad0c7f2049
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /main (C# Compiler Options)
+# -main (C# Compiler Options)
 This option specifies the class that contains the entry point to the program, if more than one class contains a **Main** method.  
   
 ## Syntax  
   
 ```console  
-/main:class  
+-main:class  
 ```  
   
 ## Arguments  
@@ -62,9 +48,9 @@ This option specifies the class that contains the entry point to the program, if
  Compile `t2.cs` and `t3.cs`, specifying that the **Main** method will be found in `Test2`:  
   
 ```console  
-csc t2.cs t3.cs /main:Test2  
+csc t2.cs t3.cs -main:Test2  
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

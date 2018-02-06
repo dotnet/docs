@@ -26,6 +26,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorImageUnloading Function
 Notifies the loader when the managed module images are unloaded.  

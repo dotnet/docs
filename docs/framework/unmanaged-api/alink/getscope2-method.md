@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetScope2 Method
 Gets an import scope.  
@@ -61,6 +63,6 @@ HRESULT GetScope2(
  Requires alink.h.  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

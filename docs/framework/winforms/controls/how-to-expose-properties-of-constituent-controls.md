@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "user controls [Windows Forms], exposing constituent controls"
   - "controls [Windows Forms], constituent"
@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Expose Properties of Constituent Controls
 The controls that make up a composite control are called *constituent controls*. These controls are normally declared private, and thus cannot be accessed by the developer. If you want to make properties of these controls available to future users, you must expose them to the user. A property of a constituent control is exposed by creating a property in the user control, and using the `get` and `set` accessors of that property to effect the change in the private property of the constituent control.  
@@ -64,6 +66,6 @@ public Color ButtonColor
 3.  In the `set` section of the property, write code that passes the value of the property to the exposed property of the constituent control.  
   
 ## See Also  
- <xref:System.Windows.Forms.UserControl>   
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)   
+ <xref:System.Windows.Forms.UserControl>  
+ [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
  [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

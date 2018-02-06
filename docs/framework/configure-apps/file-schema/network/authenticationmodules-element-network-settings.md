@@ -20,6 +20,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;authenticationModules&gt; Element (Network Settings)
 Specifies modules used to authenticate network requests.  
@@ -31,7 +33,7 @@ Specifies modules used to authenticate network requests.
 ## Syntax  
   
 ```xml  
-      <authenticationModules>   
+<authenticationModules>   
 </authenticationModules>  
 ```  
   
@@ -76,6 +78,6 @@ Specifies modules used to authenticate network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.IAuthenticationModule>   
- <xref:System.Net.AuthenticationManager>   
+ <xref:System.Net.IAuthenticationModule>  
+ <xref:System.Net.AuthenticationManager>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -110,6 +110,21 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Add(System.Web.UI.WebControls.MenuItemBinding)" />
+    <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Contains(System.Web.UI.WebControls.MenuItemBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Web.UI.WebControls.MenuItem[],System.Int32)" />
+    <altmember cref="P:System.Web.UI.StateManagedCollection.Count" />
+    <altmember cref="M:System.Web.UI.StateManagedCollection.GetEnumerator" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.IndexOf(System.Web.UI.WebControls.MenuItemBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemBinding)" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemBindingCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Remove(System.Web.UI.WebControls.MenuItemBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.RemoveAt(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -217,6 +232,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Remove(System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -247,6 +270,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.StateManagedCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.IndexOf(System.Web.UI.WebControls.MenuItemBinding)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -349,6 +378,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.GetEnumerator" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemBindingCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -497,6 +532,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="P:System.Web.UI.StateManagedCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Contains(System.Web.UI.WebControls.MenuItemBinding)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -605,6 +646,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Add(System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Remove(System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -704,6 +753,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.CopyTo(System.Web.UI.WebControls.MenuItemBinding[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -872,6 +927,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Add(System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -975,6 +1038,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Add(System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemBindingCollection.Remove(System.Web.UI.WebControls.MenuItemBinding)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

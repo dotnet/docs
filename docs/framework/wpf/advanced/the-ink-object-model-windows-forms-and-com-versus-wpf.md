@@ -5,21 +5,23 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "enabling ink"
-  - "InkCanvas control"
-  - "ink object model"
-  - "tablet pen, events"
-  - "ink, enabling"
-  - "events, tablet pen"
+  - "enabling ink [WPF]"
+  - "InkCanvas control [WPF]"
+  - "ink object model [WPF]"
+  - "tablet pen [WPF], events [WPF]"
+  - "ink [WPF], enabling"
+  - "events [WPF], tablet pen"
 ms.assetid: 577835be-b145-4226-8570-1d309e9b3901
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # The Ink Object Model: Windows Forms and COM versus WPF
 

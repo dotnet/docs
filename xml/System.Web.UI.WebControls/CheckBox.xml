@@ -120,6 +120,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -270,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBox.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -363,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CheckBox.OnCheckedChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InputAttributes">
@@ -493,6 +498,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CheckBox.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnCheckedChanged">
@@ -545,6 +551,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CheckBox.OnCheckedChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CheckBox.OnCheckedChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CheckBox.CheckedChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -666,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CheckBox.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -817,6 +826,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -879,6 +889,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBox.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

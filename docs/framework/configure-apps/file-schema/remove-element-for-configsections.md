@@ -14,6 +14,8 @@ ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<remove> element for \<configSections>

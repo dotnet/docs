@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "BackgroundWorker component"
   - "background tasks"
   - "Asynchronous Pattern"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: bef7b0ab-ce57-475a-a2d6-fb8a702a9417
@@ -23,6 +23,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BackgroundWorker Component
 The `BackgroundWorker` component enables your form or control to run an operation asynchronously.  

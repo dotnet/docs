@@ -42,7 +42,7 @@
  For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](http://msdn.microsoft.com/library/c020b139-8699-4f0d-9ac9-70d0c5b2a8c8).  
   
 > [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown if either the immediate caller or the derived class does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown if either the immediate caller or the derived class does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -60,6 +60,10 @@
     <block subset="none" type="overrides">
       <para>In the .NET Framework versions 1.0 and 1.1, code providers consist of implementations of <see cref="T:System.CodeDom.Compiler.CodeDomProvider" />, <see cref="T:System.CodeDom.Compiler.ICodeGenerator" />, <see cref="T:System.CodeDom.Compiler.ICodeParser" />, and <see cref="T:System.CodeDom.Compiler.ICodeCompiler" />. In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" />, <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateParser" />, and <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> methods are obsolete, and the methods of <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> and <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> are directly available in the <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> class. You should override those methods in your code provider implementation and not call the base methods.</para>
     </block>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
+    <altmember cref="T:Microsoft.CSharp.CSharpCodeProvider" />
+    <altmember cref="T:Microsoft.VisualBasic.VBCodeProvider" />
+    <altmember cref="T:Microsoft.JScript.JScriptCodeProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,6 +131,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFile">
@@ -174,6 +181,8 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSource">
@@ -221,6 +230,8 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CreateCompiler">
@@ -373,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -504,6 +516,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateProvider">
@@ -687,6 +700,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromExpression">
@@ -729,6 +745,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromMember">
@@ -774,6 +793,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not overridden in a derived class.</exception>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeTypeMember" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromNamespace">
@@ -816,6 +838,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromStatement">
@@ -858,6 +883,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromType">
@@ -900,6 +928,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GetAllCompilerInfo">
@@ -949,6 +980,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCompilerInfo">
@@ -1006,6 +1038,8 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1039,6 +1073,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguageFromExtension">
@@ -1096,6 +1131,8 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="extension" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -1188,6 +1225,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="extension" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefinedLanguage">
@@ -1241,6 +1280,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidIdentifier">
@@ -1345,6 +1385,8 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a parser in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateParser" /> method for compatibility with preexisting providers that use code parsers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeParser" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code parser.</para>
         </block>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
     <Member MemberName="Supports">
@@ -1386,7 +1428,26 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateProvider">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> instance for the specified language.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates a new code generator.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

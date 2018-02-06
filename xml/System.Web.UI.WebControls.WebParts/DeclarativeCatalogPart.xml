@@ -79,6 +79,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.AccessKey" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -187,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -229,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -271,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderColor" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -313,6 +319,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -355,6 +362,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.BorderWidth" />
       </Docs>
     </Member>
     <Member MemberName="CssClass">
@@ -400,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.CssClass" />
       </Docs>
     </Member>
     <Member MemberName="DefaultButton">
@@ -442,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -484,6 +494,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -526,6 +537,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -572,6 +584,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -614,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -656,6 +670,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="GetAvailableWebPartDescriptions">
@@ -714,6 +729,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="GetWebPart">
@@ -819,6 +835,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.GroupingText" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -861,6 +878,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Height" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -903,6 +921,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -966,6 +985,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -1012,6 +1032,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -1054,6 +1075,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1089,6 +1111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1131,6 +1154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1173,6 +1197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Visible" />
       </Docs>
     </Member>
     <Member MemberName="WebPartsListUserControlPath">
@@ -1344,6 +1369,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1386,6 +1412,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.Wrap" />
       </Docs>
     </Member>
   </Members>

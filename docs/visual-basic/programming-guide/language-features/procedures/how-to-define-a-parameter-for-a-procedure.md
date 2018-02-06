@@ -1,39 +1,23 @@
 ---
 title: "How to: Define a Parameter for a Procedure (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedure parameters, defining data types for"
-  - "procedures, parameters"
-  - "procedures, defining"
+  - "procedure parameters [Visual Basic], defining data types for"
+  - "procedures [Visual Basic], parameters"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
-  - "procedure parameters, defining"
+  - "procedure parameters [Visual Basic], defining"
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Define a Parameter for a Procedure (Visual Basic)
 A *parameter* allows the calling code to pass a value to the procedure when it calls it. You declare each parameter for a procedure the same way you declare a variable, specifying its name and data type. You also specify the passing mechanism, and whether the parameter is optional.  
@@ -73,12 +57,12 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
     -   It results in faster execution of your code. One reason for this is that if you do not specify a data type for a programming element, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler assigns it the `Object` type. Your compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Recursive Procedures](./recursive-procedures.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Recursive Procedures](./recursive-procedures.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)

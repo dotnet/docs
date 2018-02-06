@@ -1,7 +1,7 @@
 ---
 title: "How to: Control the Type of a Projection (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -93,5 +93,5 @@ LETSS:Let's Stop N Shop:Jaime Yorres
 ```  
   
 ## See Also  
- <xref:System.Linq.Enumerable.Select%2A>   
+ <xref:System.Linq.Enumerable.Select%2A>  
  [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

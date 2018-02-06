@@ -1,7 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -57,6 +57,6 @@ This topic compares and contrasts functional programming with more traditional i
  Fortunately, Visual Basic doesn't require the full leap to functional programming, because it supports both imperative and functional programming approaches. A developer can choose which approach is most appropriate for a particular scenario. In fact, programs often combine both approaches.  
   
 ## See Also  
- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
- [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)   
+ [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
+ [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)  
  [Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

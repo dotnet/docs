@@ -12,6 +12,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Isolation for Windows Store Apps
 Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.Http.Headers> namespaces can be used to develop Windows Store  apps  or desktop apps. When used in a Windows Store app, classes in these namespaces are affected by network isolation, part of the application security model used by the [!INCLUDE[win8](../../../includes/win8-md.md)]. The appropriate network capabilities must be enabled in the app manifest for a Windows Store app for the system to allow network access.  
@@ -30,9 +32,9 @@ Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.
  For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](http://go.microsoft.com/fwlink/?LinkID=228265) in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] developer documentation.  
   
 ## See Also  
- [Connecting to a web service](http://go.microsoft.com/fwlink/?LinkID=245696)   
- [Guidelines and checklist for network isolation](http://go.microsoft.com/fwlink/?LinkID=228265)   
- [Quickstart: Connecting using HttpClient](http://go.microsoft.com/fwlink/?LinkId=245697)   
- [How to use HttpClient handlers](http://go.microsoft.com/fwlink/?LinkId=245699)   
- [How to secure HttpClient connections](http://go.microsoft.com/fwlink/?LinkId=245698)   
+ [Connecting to a web service](http://go.microsoft.com/fwlink/?LinkID=245696)  
+ [Guidelines and checklist for network isolation](http://go.microsoft.com/fwlink/?LinkID=228265)  
+ [Quickstart: Connecting using HttpClient](http://go.microsoft.com/fwlink/?LinkId=245697)  
+ [How to use HttpClient handlers](http://go.microsoft.com/fwlink/?LinkId=245699)  
+ [How to secure HttpClient connections](http://go.microsoft.com/fwlink/?LinkId=245698)  
  [HttpClient Sample](http://go.microsoft.com/fwlink/?LinkId=242550)

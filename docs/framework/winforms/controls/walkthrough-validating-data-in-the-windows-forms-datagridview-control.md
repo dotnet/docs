@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "validating data, Windows Forms"
+  - "validating data [Windows Forms], Windows Forms"
   - "data [Windows Forms], validation"
   - "DataGridView control [Windows Forms], data validation"
-  - "data grids, validating data"
-  - "data validation, Windows Forms"
+  - "data grids [Windows Forms], validating data"
+  - "data validation [Windows Forms], Windows Forms"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: a4f1d015-2969-430c-8ea2-b612d179c290
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Validating Data in the Windows Forms DataGridView Control
 When you display data entry functionality to users, you frequently have to validate the data entered into your form. The <xref:System.Windows.Forms.DataGridView> class provides a convenient way to perform validation before data is committed to the data store. You can validate data by handling the <xref:System.Windows.Forms.DataGridView.CellValidating> event, which is raised by the <xref:System.Windows.Forms.DataGridView> when the current cell changes.  
@@ -95,9 +97,9 @@ When you display data entry functionality to users, you frequently have to valid
 -   Customize the appearance of cells. For more information, see [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customize-the-appearance-of-cells-in-the-datagrid.md) and [How to: Set Font and Color Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-font-and-color-styles-in-the-windows-forms-datagridview-control.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.BindingSource>   
- [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)   
- [How to: Validate Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control.md)   
- [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/handling-errors-that-occur-during-data-entry-in-the-datagrid.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.BindingSource>  
+ [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)  
+ [How to: Validate Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control.md)  
+ [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/handling-errors-that-occur-during-data-entry-in-the-datagrid.md)  
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)

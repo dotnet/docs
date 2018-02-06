@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], inserting"
   - "MenuStrip control [Windows Forms], merging"
-  - "MDI, merging menu items"
+  - "MDI [Windows Forms], merging menu items"
 ms.assetid: 0fad444e-26d9-49af-8860-044d9c10d608
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Insert a MenuStrip into an MDI Drop-Down Menu (Windows Forms)
 In some applications, the kind of a multiple-document interface (MDI) child window can be different from the MDI parent window. For example, the MDI parent might be a spreadsheet, and the MDI child might be a chart. In that case, you want to update the contents of the MDI parent's menu with the contents of the MDI child's menu as MDI child windows of different kinds are activated.  
@@ -102,6 +104,6 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)   
- [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)   
+ [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)  
+ [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;byteStreamMessageEncoding&gt;
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  
@@ -52,13 +54,13 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ByteStreamMessageEncodingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>   
- <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>   
- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)   
- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.ByteStreamMessageEncodingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
+ <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>  
+ [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)  
+ [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

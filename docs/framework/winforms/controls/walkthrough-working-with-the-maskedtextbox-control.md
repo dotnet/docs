@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "input, controlling to ensure validity"
+  - "input [Windows Forms], controlling to ensure validity"
   - "MaskedTextBox control [Windows Forms], walkthroughs"
   - "MaskedTextBox control [Windows Forms], validation"
-  - "user input, controlling"
-  - "text, controls for input"
+  - "user input [Windows Forms], controlling"
+  - "text [Windows Forms], controls for input"
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Working with the MaskedTextBox Control
 Tasks illustrated in this walkthrough include:  
@@ -131,5 +133,5 @@ Tasks illustrated in this walkthrough include:
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.MaskedTextBox>   
+ <xref:System.Windows.Forms.MaskedTextBox>  
  [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)

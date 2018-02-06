@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/en-us/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
   
  ]]></format>
         </remarks>
@@ -385,11 +385,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/en-us/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

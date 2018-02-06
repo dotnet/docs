@@ -18,7 +18,7 @@
 ## Remarks  
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterItemEventArgs>, see the <xref:System.Web.UI.WebControls.RepeaterItemEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -92,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
   </Members>

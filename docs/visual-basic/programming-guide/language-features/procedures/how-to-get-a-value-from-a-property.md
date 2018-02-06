@@ -1,39 +1,23 @@
 ---
 title: "How to: Get a Value from a Property (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "property values"
+  - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
-  - "values, properties"
+  - "values [Visual Basic], properties"
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Get a Value from a Property (Visual Basic)
 You retrieve a property's value by including the property name in an expression.  
@@ -59,13 +43,13 @@ You retrieve a property's value by including the property name in an expression.
  The value of the property participates in the expression just as a variable or constant would, or it is stored in the variable or property on the left side of the assignment statement.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Property Procedures](./property-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)   
- [How to: Create a Property](./how-to-create-a-property.md)   
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)   
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)   
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)   
+ [Procedures](./index.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
+ [How to: Create a Property](./how-to-create-a-property.md)  
+ [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
+ [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
+ [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
  [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)

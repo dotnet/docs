@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using an Asynchronous Server Socket
 Asynchronous server sockets use the .NET Framework asynchronous programming model to process network service requests. The <xref:System.Net.Sockets.Socket> class follows the standard .NET Framework asynchronous naming pattern; for example, the synchronous <xref:System.Net.Sockets.Socket.Accept%2A> method corresponds to the asynchronous <xref:System.Net.Sockets.Socket.BeginAccept%2A> and <xref:System.Net.Sockets.Socket.EndAccept%2A> methods.  
@@ -266,7 +268,7 @@ public static void readCallback(IAsyncResult ar) {
 ```  
   
 ## See Also  
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)   
- [Asynchronous Server Socket Example](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)   
- [Threading](../../../docs/standard/threading/index.md)   
+ [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
+ [Asynchronous Server Socket Example](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)

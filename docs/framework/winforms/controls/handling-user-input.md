@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], user input using code"
   - "custom controls [Windows Forms], keyboard events using code"
@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Handling User Input
 This topic describes the main keyboard and mouse events provided by <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. When handling an event, control authors should override the protected `On`*EventName* method rather than attaching a delegate to the event. For a review of events, see [Raising Events from a Component](http://msdn.microsoft.com/library/9aebf605-a87d-470b-b7c8-f9abfc8360a0).  
@@ -70,7 +72,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
  For the complete source code for the `FlashTrackBar` sample, see [How to: Create a Windows Forms Control That Shows Progress](../../../../docs/framework/winforms/controls/how-to-create-a-windows-forms-control-that-shows-progress.md).  
   
 ## See Also  
- [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)   
- [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)   
- [Events](../../../../docs/standard/events/index.md)   
+ [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)  
+ [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)  
+ [Events](../../../../docs/standard/events/index.md)  
  [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)

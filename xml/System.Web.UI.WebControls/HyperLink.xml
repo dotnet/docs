@@ -51,7 +51,7 @@
  If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
@@ -113,6 +113,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.HasControls" />
       </Docs>
     </Member>
     <Member MemberName="ImageHeight">
@@ -293,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
       </Docs>
     </Member>
     <Member MemberName="ImageWidth">
@@ -337,6 +341,7 @@
         <param name="savedState">An object that contains the previously saved state.</param>
         <summary>Restores view-state information from a previous request that was saved with the <see cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -444,6 +449,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -509,6 +517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -549,7 +558,7 @@
  If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
@@ -563,6 +572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
       </Docs>
     </Member>
   </Members>

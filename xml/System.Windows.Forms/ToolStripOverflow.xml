@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/en-us/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
+ If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/library/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
   
  ]]></format>
     </remarks>
@@ -90,6 +90,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="DisplayedItems">
@@ -180,6 +182,7 @@
         <summary>Passes a reference to the cached <see cref="P:System.Windows.Forms.Control.LayoutEngine" /> returned by the layout engine interface.</summary>
         <value>A <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> that represents the cached layout engine returned by the layout engine interface.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.LayoutEngine" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">

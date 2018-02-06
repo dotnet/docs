@@ -1,6 +1,6 @@
 ---
 title: "$ (C# Reference)"
-ms.date: "2017-02-09"
+ms.date: 02/09/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,20 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7d9e21b5-eac3-4878-9530-50e4da578acd
 author: "rpetrusha"
 ms.author: "ronpet"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # $ (C# Reference)
 
@@ -35,11 +21,11 @@ Identifies a string literal as an [interpolated string](../keywords/interpolated
 
 The following example uses the `$` character to define an interpolated string.
 
-[!CODE-cs[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
+[!code-csharp[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
 
 For more information on interpolated strings, see the [Interpolated Strings](../keywords/interpolated-strings.md) topic.
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Special Characters](../../../csharp/language-reference/tokens/index.md)

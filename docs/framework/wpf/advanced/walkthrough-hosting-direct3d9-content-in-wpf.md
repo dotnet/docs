@@ -11,12 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Direct3D9 [WPF interoperability], hosting Direct3D9 content"
-  - "WPF, hosting Direct3D9 content"
+  - "WPF [WPF], hosting Direct3D9 content"
 ms.assetid: 60983736-0ab5-42cc-8b16-e9fbde261a43
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Hosting Direct3D9 Content in WPF
 This walkthrough shows how to host Direct3D9 content in a Windows Presentation Foundation (WPF) application.  
@@ -45,7 +47,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 #### To create the WPF project  
   
--   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+-   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
      MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
@@ -78,5 +80,5 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
      The Direct3D9 content appears within the WPF application.  
   
 ## See Also  
- <xref:System.Windows.Interop.D3DImage>   
+ <xref:System.Windows.Interop.D3DImage>  
  [Performance Considerations for Direct3D9 and WPF Interoperability](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)

@@ -1,13 +1,9 @@
 ---
 title: "Nullable Types (C# Programming Guide)"
-
-ms.date: "2017-05-15"
+ms.date: 05/15/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "nullable types [C#]"
@@ -17,26 +13,11 @@ ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
 caps.latest.revision: 44
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Nullable Types (C# Programming Guide)
 Nullable types are instances of the <xref:System.Nullable%601?displayProperty=nameWithType> struct. A nullable type can represent the correct range of values for its underlying value type, plus an additional `null` value. For example, a `Nullable<Int32>`, pronounced "Nullable of Int32," can be assigned any value from -2147483648 to 2147483647, or it can be assigned the `null` value. A `Nullable<bool>` can be assigned the values [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md), or [null](../../../csharp/language-reference/keywords/null.md). The ability to assign `null` to numeric and Boolean types is especially useful when you are dealing with databases and other data types that contain elements that may not be assigned a value. For example, a Boolean field in a database can store the values `true` or `false`, or it may be undefined. 
   
-[!code-cs[nullable-types](../../../../samples/snippets/csharp/programming-guide/nullable-types/nullable-ex1.cs)]  
+[!code-csharp[nullable-types](../../../../samples/snippets/csharp/programming-guide/nullable-types/nullable-ex1.cs)]  
   
 For more examples, see [Using Nullable Types](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
   
@@ -78,8 +59,8 @@ For more examples, see [Using Nullable Types](../../../csharp/programming-guide/
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Nullable>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C#](../../../csharp/index.md)   
- [C# Reference](../../../csharp/language-reference/index.md)   
+ <xref:System.Nullable>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C#](../../../csharp/index.md)  
+ [C# Reference](../../../csharp/language-reference/index.md)  
  [What exactly does 'lifted' mean?](http://go.microsoft.com/fwlink/?LinkId=112382)

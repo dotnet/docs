@@ -27,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmitInternalExportedTypes Method
 Emits types added to the assembly. Call this method after known internal types have been added.  
@@ -50,6 +52,6 @@ HRESULT EmitInternalExportedTypes(
  Requires alink.h  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

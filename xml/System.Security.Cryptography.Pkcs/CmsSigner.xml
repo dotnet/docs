@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption?displayProperty=nameWithType>.  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -156,6 +156,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" /> property sets or retrieves the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object that represents the signing certificate.</summary>
         <value>An  <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object that represents the signing certificate.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Certificates">
@@ -181,6 +187,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="DigestAlgorithm">
@@ -206,6 +218,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IncludeOption">
@@ -249,6 +267,12 @@
  </description></item></list></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">One of the arguments provided to a method was not valid.</exception>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="SignedAttributes">
@@ -276,6 +300,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="SignerIdentifierType">
@@ -295,6 +326,12 @@
         <value>A member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration that specifies the type of the identifier of the signer.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">One of the arguments provided to a method was not valid.</exception>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="UnsignedAttributes">
@@ -320,7 +357,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsSigner" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

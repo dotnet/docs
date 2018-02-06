@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides data for a focus-changed event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="F:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent" />
+    <altmember cref="T:System.Windows.Automation.AutomationFocusChangedEventHandler" />
+    <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

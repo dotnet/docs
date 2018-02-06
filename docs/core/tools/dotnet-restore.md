@@ -4,10 +4,12 @@ description: Learn how to restore dependencies and project-specific tools with t
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet restore
 
@@ -39,6 +41,8 @@ dotnet restore [-h|--help]
 
 The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.
 
 For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
@@ -46,6 +50,21 @@ For dependencies, you specify where the restored packages are placed during the 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
 The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
+
+## Implicit `dotnet restore`
+
+Starting with .NET Core 2.0, `dotnet restore` is run implicitly if necessary when you issue the following commands:
+
+- [`dotnet new`](dotnet-new.md)
+- [`dotnet build`](dotnet-build.md)
+- [`dotnet run`](dotnet-run.md)
+- [`dotnet test`](dotnet-test.md)
+- [`dotnet publish`](dotnet-publish.md)
+- [`dotnet pack`](dotnet-pack.md)
+
+In most cases, you no longer need to explicitly use the `dotnet restore` command. 
+
+In some cases, it is inconvenient for `dotnet restore` to run implicitly. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent `dotnet restore` from running implicitly, you can use the `--no-restore` switch with any of these commands to disable implicit restore.
 
 ## Arguments
 

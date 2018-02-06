@@ -69,7 +69,7 @@
   
  When the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property is set to <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>, the <xref:System.Web.UI.WebControls.BulletedList> control displays list items as links that post back to the server when clicked. To programmatically control the actions that are performed when a link button is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event. Note that the <xref:System.Web.UI.WebControls.BulletedList.SelectedIndex%2A> and <xref:System.Web.UI.WebControls.BulletedList.SelectedItem%2A> properties are inherited from the <xref:System.Web.UI.WebControls.ListControl> class and are not applicable to the <xref:System.Web.UI.WebControls.BulletedList> control. Use the event data of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class to determine the index of the link button in a <xref:System.Web.UI.WebControls.BulletedList> that was clicked.  
   
- The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
@@ -161,6 +161,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.FirstBulletNumber" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.DisplayMode" />
+    <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -222,6 +229,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method overrides the <see cref="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -265,6 +273,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.AutoPostBack" />
       </Docs>
     </Member>
     <Member MemberName="BulletImageUrl">
@@ -336,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
       </Docs>
     </Member>
     <Member MemberName="BulletStyle">
@@ -395,6 +406,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletStyle" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -417,7 +430,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property first must be set to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -429,6 +442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -454,6 +468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -505,6 +521,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
       </Docs>
     </Member>
     <Member MemberName="FirstBulletNumber">
@@ -548,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -574,7 +594,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in the <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, you must first set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.BulletedList.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -591,6 +611,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -621,6 +642,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+        <altmember cref="M:System.Web.UI.Page.Validate(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -685,6 +709,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -713,6 +739,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -780,6 +808,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedListEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -816,6 +845,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -855,6 +885,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -883,6 +914,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -908,6 +940,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -971,6 +1004,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Text">

@@ -1,6 +1,6 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this C# error"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -889,20 +889,6 @@ ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sorry, we don&#39;t have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  
@@ -923,7 +909,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
   
 ## See Also  
- [C# Programming Guide](../../csharp/programming-guide/index.md)   
- [C# Reference](../../csharp/language-reference/index.md)   
- [Talk to Us](/visualstudio/ide/talk-to-us)   
+ [C# Programming Guide](../../csharp/programming-guide/index.md)  
+ [C# Reference](../../csharp/language-reference/index.md)  
+ [Talk to Us](/visualstudio/ide/talk-to-us)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

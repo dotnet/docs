@@ -1,13 +1,9 @@
 ---
 title: "Auto-Implemented Properties (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "auto-implemented properties [C#]"
@@ -16,21 +12,6 @@ ms.assetid: aa55fa97-ccec-431f-b5e9-5ac789fd32b7
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Auto-Implemented Properties (C# Programming Guide)
 In C# 3.0 and later, auto-implemented properties make property-declaration more concise when no additional logic is required in the property accessors. They also enable client code to create objects. When you declare a property as shown in the following example, the compiler creates a private, anonymous backing field that can only be accessed through the property's `get` and `set` accessors.  
@@ -38,7 +19,7 @@ In C# 3.0 and later, auto-implemented properties make property-declaration more 
 ## Example  
  The following example shows a simple class that has some auto-implemented properties:  
   
- [!code-cs[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
   
  In C# 6 and later, you can initialize auto-implemented properties similarly to fields:  
   
@@ -51,5 +32,5 @@ public string FirstName { get; set; } = "Jane";
  Attributes are permitted on auto-implemented properties but obviously not on the backing fields since those are not accessible from your source code. If you must use an attribute on the backing field of a property, just create a regular property.  
   
 ## See Also  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
+ [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

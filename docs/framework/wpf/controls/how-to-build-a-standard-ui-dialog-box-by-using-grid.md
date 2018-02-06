@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dialog boxes, creating"
-  - "Grid control, creating, dialog box"
+  - "dialog boxes [WPF], creating"
+  - "Grid control [WPF], creating [WPF], dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Build a Standard UI Dialog Box by Using Grid
 This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] dialog box by using the <xref:System.Windows.Controls.Grid> element.  
@@ -39,7 +41,7 @@ This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../in
  [!code-vb[GridRunDialog#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
- <xref:System.Windows.GridUnitType>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ <xref:System.Windows.Controls.Grid>  
+ <xref:System.Windows.GridUnitType>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/grid-how-to-topics.md)

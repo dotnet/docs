@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "structured navigation [WPF]"
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26
@@ -19,6 +19,8 @@ caps.latest.revision: 43
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Structured Navigation Overview
 Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)], a <xref:System.Windows.Controls.Frame>, or a <xref:System.Windows.Navigation.NavigationWindow> is composed of pages that can be identified by pack [!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)] and navigated to by hyperlinks. The structure of pages and the ways in which they can be navigated, as defined by hyperlinks, is known as a navigation topology. Such a topology suits a variety of application types, particularly those that navigate through documents. For such applications, the user can navigate from one page to another page without either page needing to know anything about the other.  
@@ -125,15 +127,15 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 -   From the calling page:  
   
-    1.  Instantiate the called                                          <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
+    1.  Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
-    2.  Store the parameters in                                          <xref:System.Windows.Application.Properties%2A>.  
+    2.  Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
   
-    3.  Navigate to the called                                          <xref:System.Windows.Navigation.PageFunction%601>.  
+    3.  Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
   
--   From the called                                  <xref:System.Windows.Navigation.PageFunction%601>:  
+-   From the called <xref:System.Windows.Navigation.PageFunction%601>:  
   
-    -   Retrieve and use the parameters stored in                                          <xref:System.Windows.Application.Properties%2A>.  
+    -   Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
   
  But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
@@ -146,7 +148,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 2.  The data that was provided by the user.  
   
- To return information,                          <xref:System.Windows.Navigation.PageFunction%601> implements the                          <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
+ To return information, <xref:System.Windows.Navigation.PageFunction%601> implements the <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
   
  [!code-csharp[StructuredNavigationSample#ReturnCODEBEHIND1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StructuredNavigationSample/CSharp/CalledPageFunction.xaml.cs#returncodebehind1)]
  [!code-vb[StructuredNavigationSample#ReturnCODEBEHIND1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StructuredNavigationSample/VisualBasic/CalledPageFunction.xaml.vb#returncodebehind1)]  
@@ -176,6 +178,6 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
  In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Navigation.PageFunction%601>   
- <xref:System.Windows.Navigation.NavigationService>   
+ <xref:System.Windows.Navigation.PageFunction%601>  
+ <xref:System.Windows.Navigation.NavigationService>  
  [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)

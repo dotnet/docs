@@ -1,6 +1,6 @@
 ---
 title: "-bugreport (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,28 +15,14 @@ ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /bugreport (C# Compiler Options)
+# -bugreport (C# Compiler Options)
 Specifies that debug information should be placed in a file for later analysis.  
   
 ## Syntax  
   
 ```console  
-/bugreport:file  
+-bugreport:file  
 ```  
   
 ## Arguments  
@@ -44,7 +30,7 @@ Specifies that debug information should be placed in a file for later analysis.
  The name of the file that you want to contain your bug report.  
   
 ## Remarks  
- The **/bugreport** option specifies that the following information should be placed in `file`:  
+ The **-bugreport** option specifies that the following information should be placed in `file`:  
   
 -   A copy of all source code files in the compilation.  
   
@@ -60,7 +46,7 @@ Specifies that debug information should be placed in a file for later analysis.
   
 -   A description of how you think the problem should be fixed, which you will be prompted for.  
   
- If this option is used with **/errorreport:prompt** or **/errorreport:send**, the information in the file will be sent to Microsoft Corporation.  
+ If this option is used with **-errorreport:prompt** or **-errorreport:send**, the information in the file will be sent to Microsoft Corporation.  
   
  Because a copy of all source code files will be placed in `file`, you might want to reproduce the suspected code defect in the shortest possible program.  
   
@@ -69,6 +55,6 @@ Specifies that debug information should be placed in a file for later analysis.
  Notice that contents of the generated file expose source code that could result in inadvertent information disclosure.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [/errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [-errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

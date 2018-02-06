@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _EFN_GetManagedExcepStack Function
 Given a managed exception object address, returns a string version of the stack trace contained inside.  

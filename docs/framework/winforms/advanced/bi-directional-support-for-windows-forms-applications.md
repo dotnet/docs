@@ -1,25 +1,21 @@
 ---
 title: "Bi-Directional Support for Windows Forms Applications"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "09/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-winforms"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "globalization [Windows Forms], bi-directional support in Windows"
   - "Windows Forms, international"
   - "localization [Windows Forms], bi-directional support in Windows"
-  - "bi-directional language support, Windows applications"
+  - "bi-directional language support [Windows Forms], Windows applications"
   - "Windows Forms, bi-directional support"
-ms.assetid: 7b622fa4-f390-4e4d-b624-83a1917cccf2
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Bi-Directional Support for Windows Forms Applications
 You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Windows-based applications that support bi-directional (right-to-left) languages such as Arabic and Hebrew. This includes standard forms, dialog boxes, MDI forms, and all the controls you can work with in these forms—that is, all the objects in the <xref:System.Windows.Forms.Control> namespace.  
@@ -59,7 +55,7 @@ You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Wind
 |<xref:System.Windows.Forms.MonthCalendar>|Not affected; depends on the language of the operating system|Mirrors the control|Yes|  
 |<xref:System.Windows.Forms.NotifyIcon>|Not supported|Not supported|No|  
 |<xref:System.Windows.Forms.NumericUpDown>|Up and down buttons are left-aligned|No effect|No|  
-|<xref:System.Windows.Forms.OpenFileDialog>|Not affected; depends on the language of the operating system|No effect|No|  
+|<xref:System.Windows.Forms.OpenFileDialog>|On right-to-left operating systems, setting the containing form's <xref:System.Windows.Forms.Control.RightToLeft> property to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> localizes the dialog |No effect|No|  
 |<xref:System.Windows.Forms.PageSetupDialog>|Not affected; depends on the language of the operating system|No effect|No|  
 |<xref:System.Windows.Forms.Panel>|Child controls may inherit this property|Use <xref:System.Windows.Forms.TableLayoutPanel> within the control for right to left support|Yes|  
 |<xref:System.Windows.Forms.PictureBox>|Not supported|No effect|No|  
@@ -123,5 +119,5 @@ You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Wind
  Some controls are sealed. Therefore, you cannot derive a new control from them. These include the <xref:System.Windows.Forms.ImageList> and <xref:System.Windows.Forms.ProgressBar> controls.  
   
 ## See Also  
- [Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
  [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)

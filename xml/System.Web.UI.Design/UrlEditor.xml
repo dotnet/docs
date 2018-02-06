@@ -143,6 +143,7 @@
         <summary>Gets the editing style of the <see cref="M:System.Web.UI.Design.UrlEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style. If the method is not supported, this method will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
     <Member MemberName="Options">

@@ -78,6 +78,20 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+    <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
+    <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +132,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -154,6 +171,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -182,6 +202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -235,6 +258,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="RowState">
@@ -277,6 +302,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
       </Docs>
     </Member>
     <Member MemberName="RowType">
@@ -321,6 +349,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
@@ -346,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -371,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -396,6 +429,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
   </Members>

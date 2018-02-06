@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, customizing requests"
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Specify Client Credentials for a Data Service Request (WCF Data Services)
 By default, the client library does not supply credentials when sending a request to an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service. However, you can specify that credentials be sent to authenticate requests to the data service by supplying a <xref:System.Net.NetworkCredential> for the <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> property of the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md). The example in this topic shows how to explicitly provide credentials that are used by the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client when requesting data from the data service.  
@@ -28,24 +30,24 @@ By default, the client library does not supply credentials when sending a reques
 ## Example  
  The following example is from the code-behind page for an Extensible Application Markup Language (XAML) file that is the main page of the Windows Presentation Framework application. This example displays a `LoginWindow` instance to collect authentication credentials from the user, and then uses these credentials when making a request to the data service.  
   
- [!code-csharp[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentials.xaml.cs#clientcredentials)]   
+ [!code-csharp[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentials.xaml.cs#clientcredentials)]  
  [!code-vb[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/clientcredentials.xaml.vb#clientcredentials)]
   
 ## Example  
  The following XAML defines the main page of the WPF application.  
   
- [!code-xaml[Astoria Northwind Client#ClientCredentialsXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentials.xaml#clientcredentialsxaml)]   
+ [!code-xaml[Astoria Northwind Client#ClientCredentialsXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentials.xaml#clientcredentialsxaml)]  
   
 ## Example  
  The following example is from the code-behind page for the window that is used to collect the authentication credentials from the user before making a request to the data service.  
   
- [!code-csharp[Astoria Northwind Client#ClientCredentialsLogin](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentialslogin.xaml.cs#clientcredentialslogin)]   
+ [!code-csharp[Astoria Northwind Client#ClientCredentialsLogin](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentialslogin.xaml.cs#clientcredentialslogin)]  
  [!code-vb[Astoria Northwind Client#ClientCredentialsLogin](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/clientcredentialslogin.xaml.vb#clientcredentialslogin)]
   
 ## Example  
  The following XAML defines the login of the WPF application.  
   
- [!code-xaml[Astoria Northwind Client#ClientCredentialsLoginXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentialslogin.xaml#clientcredentialsloginxaml)]   
+ [!code-xaml[Astoria Northwind Client#ClientCredentialsLoginXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/clientcredentialslogin.xaml#clientcredentialsloginxaml)]  
   
 ## .NET Framework Security  
  The following security considerations apply to the example in this topic:  
@@ -59,5 +61,5 @@ By default, the client library does not supply credentials when sending a reques
  For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).  
   
 ## See Also  
- [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)   
+ [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)  
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

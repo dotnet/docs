@@ -1,27 +1,27 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleSetChangeAction
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleSetChangeAction.RuleSetName
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleSetChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleSetChangeAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

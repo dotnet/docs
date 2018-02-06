@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.MultiBinding" />
+    <altmember cref="T:System.Windows.Data.PriorityBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,6 +164,9 @@
         <summary>Gets or sets opaque data passed to the asynchronous data dispatcher.</summary>
         <value>Data passed to the asynchronous data dispatcher.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.IsAsync" />
+        <altmember cref="P:System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       </Docs>
     </Member>
     <Member MemberName="BindsDirectlyToSource">
@@ -193,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.ObjectDataProvider" />
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
     <Member MemberName="Converter">
@@ -447,10 +454,14 @@
   
  While waiting for the value to arrive, the binding reports the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available, or the default value of the binding target property.  
   
- However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/en-us/55825e8f-7e2e-448a-9505-7217cc91b1af).  
+ However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/library/55825e8f-7e2e-448a-9505-7217cc91b1af).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.AsyncState" />
+        <altmember cref="P:System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
+        <altmember cref="T:System.Windows.PropertyChangedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -511,6 +522,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.Data.Binding.SourceUpdated" /> event should be raised when the binding source value is updated; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateSource" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnTargetUpdated">
@@ -535,6 +547,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.Data.Binding.TargetUpdated" /> event should be raised when the binding target value is updated; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateTarget" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnValidationError">
@@ -659,11 +672,7 @@
  The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
   
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
-  
-<a name="xamlTextUsage_RelativeSource"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
@@ -673,6 +682,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.Source" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSourceUpdatedHandler">
@@ -1042,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.Mode" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnDataErrors">
@@ -1087,6 +1098,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ValidatesOnExceptions" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnExceptions">
@@ -1132,6 +1144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ValidatesOnDataErrors" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnNotifyDataErrors">
@@ -1210,6 +1223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Validation" />
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceManagerProperty">
@@ -1265,5 +1279,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.Binding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

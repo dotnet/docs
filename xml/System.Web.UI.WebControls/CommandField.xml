@@ -89,6 +89,40 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.ControlStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.FooterStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.ItemStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,6 +158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="CancelImageUrl">
@@ -171,6 +209,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CancelText">
@@ -214,6 +269,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -256,6 +328,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -284,6 +358,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CommandField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -310,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CommandField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteImageUrl">
@@ -357,6 +435,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -400,6 +493,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="EditImageUrl">
@@ -447,6 +555,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="EditText">
@@ -490,6 +614,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -526,6 +666,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="InsertImageUrl">
@@ -573,6 +715,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InsertText">
@@ -616,6 +774,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="NewImageUrl">
@@ -663,6 +837,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="NewText">
@@ -706,6 +896,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="SelectImageUrl">
@@ -753,6 +959,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="SelectText">
@@ -796,6 +1017,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="ShowCancelButton">
@@ -837,6 +1073,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowDeleteButton">
@@ -881,6 +1123,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowEditButton">
@@ -927,6 +1175,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="ShowInsertButton">
@@ -976,6 +1232,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowSelectButton">
@@ -1017,6 +1281,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
       </Docs>
     </Member>
     <Member MemberName="UpdateImageUrl">
@@ -1064,6 +1334,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="UpdateText">
@@ -1107,6 +1393,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ValidateSupportsCallback">

@@ -10,13 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "GetCustomUI method"
   - "custom error messages [WPF]"
 ms.assetid: e55180fc-35bb-4f80-a136-772b5eb3e4e5
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # GetCustomUI
 Called by PresentationHost.exe to get custom progress and error messages from the host, if implemented.  

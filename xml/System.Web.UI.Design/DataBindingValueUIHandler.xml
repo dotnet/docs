@@ -56,6 +56,8 @@
         <summary>Adds a data binding for the specified property and the specified value item list, if the current control has data bindings and the current object does not already have a binding.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
   </Members>

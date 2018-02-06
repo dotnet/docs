@@ -30,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <param name="message">A message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class with a specified error message.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +72,9 @@
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class, using the specified serialization information and streaming context.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +96,7 @@
         <param name="inner">An <see cref="T:System.Exception" /> object that contains underlying exception information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class with a specified error message and an underlying exception object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +120,7 @@
         <param name="name">A <see cref="T:System.String" /> that contains the name of the requested object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class with a specified error message and information about the requested object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -139,6 +146,8 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -158,6 +167,7 @@
         <summary>Gets the name of the requested object.</summary>
         <value>A string that contains the name of the requested object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -177,7 +187,19 @@
         <summary>Gets the type of the requested object.</summary>
         <value>A <see cref="T:System.Type" /> object that represents the type of the requested object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

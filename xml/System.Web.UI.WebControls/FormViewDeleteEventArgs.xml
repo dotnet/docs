@@ -23,7 +23,7 @@
 > [!NOTE]
 >  It is possible to modify the key field values and non-key field values in the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties, respectively. If you change these values, the record that corresponds to the new values will be deleted.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.%23ctor%2A> constructor.  
   
@@ -37,6 +37,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -114,6 +126,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -147,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -192,6 +212,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys" />
       </Docs>
     </Member>
   </Members>

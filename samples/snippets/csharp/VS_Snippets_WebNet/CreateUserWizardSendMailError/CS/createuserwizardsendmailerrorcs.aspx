@@ -6,7 +6,7 @@
 <script runat="server">
   void SiteSpecificLoggingProcedure(SendMailErrorEventArgs e)
   {
-    // Code to log e-mail error, e.Exception.ToString, goes here.
+    // Code to log email error, e.Exception.ToString, goes here.
   }
 
   void Createuserwizard1_SendMailError (object sender, SendMailErrorEventArgs e)

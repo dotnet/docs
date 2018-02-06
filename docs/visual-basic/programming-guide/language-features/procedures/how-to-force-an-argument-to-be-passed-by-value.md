@@ -1,45 +1,29 @@
 ---
 title: "How to: Force an Argument to Be Passed by Value (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], ByVal"
   - "arguments [Visual Basic], passing by value"
   - "procedure parameters"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "arguments [Visual Basic], in parentheses"
-  - "procedure arguments, in parentheses"
+  - "procedure arguments [Visual Basic], in parentheses"
   - "arguments [Visual Basic], changing value"
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Force an Argument to Be Passed by Value (Visual Basic)
 The procedure declaration determines the passing mechanism. If a parameter is declared [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] expects to pass the corresponding argument by reference. This allows the procedure to change the value of the programming element underlying the argument in the calling code. If you wish to protect the underlying element against such change, you can override the `ByRef` passing mechanism in the procedure call by enclosing the argument name in parentheses. These parentheses are in addition to the parentheses enclosing the argument list in the call.  
@@ -73,13 +57,13 @@ The procedure declaration determines the passing mechanism. If a parameter is de
  There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code. Make sure you expect this value to be changed, and be prepared to check it for validity before using it.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)   
- [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)   
- [How to: Change the Value of a Procedure Argument](./how-to-change-the-value-of-a-procedure-argument.md)   
- [How to: Protect a Procedure Argument Against Value Changes](./how-to-protect-a-procedure-argument-against-value-changes.md)   
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Differences Between Modifiable and Nonmodifiable Arguments](./differences-between-modifiable-and-nonmodifiable-arguments.md)  
+ [Differences Between Passing an Argument By Value and By Reference](./differences-between-passing-an-argument-by-value-and-by-reference.md)  
+ [How to: Change the Value of a Procedure Argument](./how-to-change-the-value-of-a-procedure-argument.md)  
+ [How to: Protect a Procedure Argument Against Value Changes](./how-to-protect-a-procedure-argument-against-value-changes.md)  
+ [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

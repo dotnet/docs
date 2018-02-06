@@ -1,6 +1,6 @@
 ---
 title: "-unsafe (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,28 +15,14 @@ ms.assetid: fdb77ed9-da03-45bd-bb7f-250704da1bcc
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /unsafe (C# Compiler Options)
-The **/unsafe** compiler option allows code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword to compile.  
+# -unsafe (C# Compiler Options)
+The **-unsafe** compiler option allows code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword to compile.  
   
 ## Syntax  
   
 ```console  
-/unsafe  
+-unsafe  
 ```  
   
 ## Remarks  
@@ -56,9 +42,9 @@ The **/unsafe** compiler option allows code that uses the [unsafe](../../../csha
  Compile `in.cs` for unsafe mode:  
   
 ```console  
-csc /unsafe in.cs  
+csc -unsafe in.cs  
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

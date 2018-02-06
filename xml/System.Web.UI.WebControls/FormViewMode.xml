@@ -35,6 +35,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
   </Docs>
   <Members>
     <Member MemberName="Edit">

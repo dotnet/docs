@@ -14,6 +14,8 @@
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.DatePrototype" /> class. The <see cref="T:Microsoft.JScript.LenientDatePrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.DateConstructor" />
+    <altmember cref="T:Microsoft.JScript.DateObject" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -32,6 +34,8 @@
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
+        <altmember cref="T:Microsoft.JScript.DatePrototype" />
       </Docs>
     </Member>
     <Member MemberName="getDate">
@@ -50,6 +54,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getDay">
@@ -68,6 +74,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getFullYear">
@@ -86,6 +94,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getHours">
@@ -104,6 +114,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getMilliseconds">
@@ -122,6 +134,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getMinutes">
@@ -140,6 +154,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getMonth">
@@ -158,6 +174,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getSeconds">
@@ -176,6 +194,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getTime">
@@ -194,6 +214,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getTime(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getTimezoneOffset">
@@ -212,6 +234,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getTimezoneOffset(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCDate">
@@ -230,6 +254,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCDay">
@@ -248,6 +274,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCFullYear">
@@ -266,6 +294,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCHours">
@@ -284,6 +314,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMilliseconds">
@@ -302,6 +334,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMinutes">
@@ -320,6 +354,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMonth">
@@ -338,6 +374,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getUTCSeconds">
@@ -356,6 +394,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getUTCSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getVarDate">
@@ -374,6 +414,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getVarDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getYear">
@@ -397,6 +439,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.getYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setDate">
@@ -415,6 +459,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setFullYear">
@@ -433,6 +479,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setHours">
@@ -451,6 +499,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setMilliseconds">
@@ -469,6 +519,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setMinutes">
@@ -487,6 +539,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setMonth">
@@ -505,6 +559,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setSeconds">
@@ -523,6 +579,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setTime">
@@ -541,6 +599,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setTime(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCDate">
@@ -559,6 +619,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCFullYear">
@@ -577,6 +639,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCHours">
@@ -595,6 +659,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMilliseconds">
@@ -613,6 +679,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMinutes">
@@ -631,6 +699,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMonth">
@@ -649,6 +719,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setUTCSeconds">
@@ -667,6 +739,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setUTCSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="setYear">
@@ -690,6 +764,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.setYear(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toDateString">
@@ -708,6 +784,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toGMTString">
@@ -731,6 +809,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toGMTString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleDateString">
@@ -749,6 +829,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -767,6 +849,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleTimeString">
@@ -785,6 +869,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -803,6 +889,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toTimeString">
@@ -821,6 +909,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toUTCString">
@@ -839,6 +929,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -857,6 +949,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DatePrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
   </Members>

@@ -1,41 +1,25 @@
 ---
 title: "How to: Dispose of a System Resource (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Using statement, disposing of system resources"
+  - "Using statement [Visual Basic], disposing of system resources"
   - "Visual Basic code, control flow"
   - "system resources, disposing of"
   - "resources [Visual Basic], disposing of system"
   - "system resources"
-  - "Using statement, Using...End Using"
+  - "Using statement [Visual Basic], Using...End Using"
   - "Using block"
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Dispose of a System Resource (Visual Basic)
 You can use a `Using` block to guarantee that the system disposes of a resource when your code exits the block. This is useful if you are using a system resource that consumes a large amount of memory, or that other components also want to use.  
@@ -65,10 +49,10 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
      You can use this same technique on a system resource such as a file handle or a COM wrapper. You use a `Using` block when you want to be sure to leave the resource available for other components after you have exited the `Using` block.  
   
 ## See Also  
- <xref:System.Data.SqlClient.SqlConnection>   
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)   
- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
+ <xref:System.Data.SqlClient.SqlConnection>  
+ [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
+ [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
+ [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
+ [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)  
+ [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
  [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)

@@ -13,17 +13,19 @@ helpviewer_keywords:
   - "data [Windows Forms], data-binding interfaces"
   - "INotifyPropertyChanged interface"
   - "IBindingListView interface"
-  - "IList interface, Windows Forms data binding"
-  - "IBindingList interface, Windows Forms data binding"
-  - "interfaces, Windows Forms data binding"
-  - "IEditableObject interface, Windows Forms data binding"
-  - "data binding, interfaces"
-  - "IDataErrorInfo interface, Windows Forms data binding"
+  - "IList interface [Windows Forms], Windows Forms data binding"
+  - "IBindingList interface [Windows Forms], Windows Forms data binding"
+  - "interfaces [Windows Forms], Windows Forms data binding"
+  - "IEditableObject interface [Windows Forms], Windows Forms data binding"
+  - "data binding [Windows Forms], interfaces"
+  - "IDataErrorInfo interface [Windows Forms], Windows Forms data binding"
 ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Interfaces Related to Data Binding
 With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many different data structures to suit the binding needs of your application and the data you are working with. You may want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity, from basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.  
@@ -156,6 +158,6 @@ With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many
     >  A class that inherits from <xref:System.Windows.Forms.Control> manages bindings automatically through its <xref:System.Windows.Forms.Control.BindingContext%2A> property, so cases in which you need to implement the <xref:System.Windows.Forms.ICurrencyManagerProvider> are fairly rare.  
   
 ## See Also  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)   
- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)   
+ [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
+ [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
  [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

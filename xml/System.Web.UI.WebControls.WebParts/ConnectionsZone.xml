@@ -88,6 +88,10 @@
     <block subset="none" type="overrides">
       <para>The <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> class can be extended, if developers want to change its behavior or the default UI that it provides for working with connections.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -193,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -218,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="CloseVerb">
@@ -283,6 +290,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConfigureConnectionTitle">
@@ -393,6 +402,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerInstructionText">
@@ -442,6 +453,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerText">
@@ -489,6 +502,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerTitle">
@@ -536,6 +551,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderInstructionText">
@@ -585,6 +602,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderText">
@@ -632,6 +651,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderTitle">
@@ -679,6 +700,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       </Docs>
     </Member>
     <Member MemberName="ConnectVerb">
@@ -745,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConsumersInstructionText">
@@ -792,6 +816,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConsumersTitle">
@@ -839,6 +864,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -864,6 +890,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectVerb">
@@ -927,6 +954,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -946,6 +974,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -982,6 +1011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ExistingConnectionErrorMessage">
@@ -1047,6 +1077,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -1094,6 +1126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1143,6 +1177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -1192,6 +1227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTitle">
@@ -1242,6 +1278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -1271,6 +1308,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" /> method.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1302,6 +1340,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" /> method.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NewConnectionErrorMessage">
@@ -1367,6 +1406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle" />
       </Docs>
     </Member>
     <Member MemberName="NoExistingConnectionTitle">
@@ -1414,6 +1454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -1446,6 +1487,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged(System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1474,6 +1517,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnInit(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -1504,6 +1549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PartChromeType">
@@ -1540,6 +1586,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" />
       </Docs>
     </Member>
     <Member MemberName="ProvidersInstructionText">
@@ -1587,6 +1635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ProvidersTitle">
@@ -1634,6 +1683,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1662,6 +1712,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1690,6 +1741,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CompositeControl.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -1720,6 +1772,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -1748,6 +1801,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -1774,6 +1829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1802,6 +1858,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SendText">
@@ -1829,6 +1886,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       </Docs>
     </Member>
     <Member MemberName="SendToText">
@@ -1856,6 +1915,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1881,6 +1942,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="WebPartToConnect">
@@ -1909,6 +1971,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
       </Docs>
     </Member>
   </Members>

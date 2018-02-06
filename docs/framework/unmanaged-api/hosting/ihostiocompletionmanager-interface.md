@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostIoCompletionManager Interface
 Provides methods that allow the common language runtime (CLR) to interact with I/O completion ports provided by the host.  

@@ -20,6 +20,8 @@ caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Compiling Apps with .NET Native
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] is a precompilation technology for building and deploying Windows apps that is included with Visual Studio 2015 and later versions. It automatically compiles the release version of apps that are written in managed code (C# or Visual Basic) and that target the .NET Framework and Windows 10 to native code.  
@@ -43,7 +45,7 @@ manager: "wpickett"
 -   Optimized app memory usage.  
 
 > [!IMPORTANT]
-> For the vast majority of apps and scenarios, .NET Native offers significantly faster startup times and superior performance when compared to an app compiled to IL or to an NGEN image. However, your results may vary. To ensure that your app has benefited from the performance enhancements of .NET Native, you should compare its performance with that of the non-.NET Native version of your app. For more information, see [Performance Session Overview](https:/docs.microsoft.com/visualstudio/profiling/performance-session-overview).
+> For the vast majority of apps and scenarios, .NET Native offers significantly faster startup times and superior performance when compared to an app compiled to IL or to an NGEN image. However, your results may vary. To ensure that your app has benefited from the performance enhancements of .NET Native, you should compare its performance with that of the non-.NET Native version of your app. For more information, see [Performance Session Overview](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).
  
 But [!INCLUDE[net_native](../../../includes/net-native-md.md)] involves more than a compilation to native code. It transforms the way that .NET Framework apps are built and executed. In particular:  
   

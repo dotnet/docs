@@ -132,6 +132,7 @@
   
  Return <see langword="true" /> if your layout engine logic determines that layout should be performed again by the parent of the container. This might occur, for example, when the layout engine resizes child controls and determines that the container must be increased in size to accommodate the new layout.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.LayoutEventArgs" />
       </Docs>
     </Member>
   </Members>

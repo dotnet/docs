@@ -63,5 +63,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.InArgument" /> that references the specified target argument using the specified referenced argument name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

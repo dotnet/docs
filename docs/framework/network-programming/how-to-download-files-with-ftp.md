@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Download Files with FTP
 This sample shows how to download a file from an FTP server.  

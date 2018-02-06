@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -89,6 +93,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CloneFields">
@@ -118,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -141,6 +149,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection contains the specified field; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -194,6 +203,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is not in the recognized range.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" />
       </Docs>
     </Member>
     <Member MemberName="FieldsChanged">
@@ -216,10 +226,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event is usually raised as a result of a call to the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -239,6 +253,7 @@
         <summary>Gets an array of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> types that the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection can contain.</summary>
         <returns>An array of type objects that identify the types of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> objects that the collection can contain.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -261,6 +276,7 @@
         <summary>Gets the index of a specific <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object in the collection.</summary>
         <returns>The index of the <paramref name="field" /> parameter, if it is found in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -284,6 +300,7 @@
         <param name="field">The object to insert.</param>
         <summary>Inserts the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object into the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.IndexOf(System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -311,6 +328,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is at the specified index in the collection.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is at the specified index in the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -336,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -366,6 +385,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -396,6 +416,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -428,6 +450,7 @@
           <paramref name="o" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="o" /> is not an instance of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class or of one of its derived classes.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -498,6 +521,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
   </Members>

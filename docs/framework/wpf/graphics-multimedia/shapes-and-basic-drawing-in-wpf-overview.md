@@ -9,21 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "shapes, about shapes"
-  - "basic drawing"
-  - "vector drawing, overview"
-  - "vectors, drawing"
-  - "Shape objects"
+  - "shapes [WPF], about shapes"
+  - "basic drawing [WPF]"
+  - "vector drawing [WPF], overview"
+  - "vectors [WPF], drawing"
+  - "Shape objects [WPF]"
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Shapes and Basic Drawing in WPF Overview
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  
@@ -225,8 +227,8 @@ myPolygon.StrokeThickness = 2;
  In the previous examples, a single transform was applied to each shape object. To apply multiple transforms to a shape (or any other UI element), use a <xref:System.Windows.Media.TransformGroup>.  
   
 ## See Also  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
+ [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

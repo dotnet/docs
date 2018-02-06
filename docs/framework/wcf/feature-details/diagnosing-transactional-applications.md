@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Diagnosing Transactional Applications
 This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management and diagnostics feature to troubleshoot a transactional application.  
@@ -127,6 +129,6 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
      This also enables [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing, as [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also utilizes the <xref:System.Transactions> infrastructure.  
   
 ## See Also  
- [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)   
- [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)   
+ [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)  
+ [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
  [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

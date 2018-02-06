@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,7 @@
       <Docs>
         <summary>Returns an instance of the <see cref="P:Microsoft.VisualBasic.MyServices.FileSystemProxy.SpecialDirectories" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="AllUsersApplicationData">
@@ -96,6 +98,7 @@
         </remarks>
         <exception cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -131,6 +134,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -166,6 +170,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -201,6 +206,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -236,6 +242,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -271,6 +278,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -306,6 +314,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -341,6 +350,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -376,6 +386,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
   </Members>

@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.WebConfigurationFileMap" />
+    <altmember cref="T:System.Configuration.ExeConfigurationFileMap" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,5 +125,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationFileMap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -21,7 +21,7 @@
   
  An XML Web service client starts XML Web services discovery by supplying a URL to either the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover%2A> or <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny%2A> methods. Typically, this URL refers to a discovery document, which in turn refers to documents that describe one or more XML Web services, which are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property. At that point, only that document is downloaded and verified to point to valid information about XML Web services. However, the references contained in that document are not verified at this stage. Instead they are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property. To verify that the references are valid, invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll%2A> or <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel%2A> methods, which add valid referenced documents to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property. Last, if a client wants to save the discovery results to disk, invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method.  
   
- If programmatic access to XML Web services discovery is not needed, the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)] ships the Web Services Discovery tool (Disco.exe) for discovering XML Web services within a command prompt. For more details, see [Web Services Discovery Tool (Disco.exe)](http://msdn.microsoft.com/en-us/acd88078-c581-42bc-94ca-6633e2851979).  
+ If programmatic access to XML Web services discovery is not needed, the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)] ships the Web Services Discovery tool (Disco.exe) for discovering XML Web services within a command prompt. For more details, see [Web Services Discovery Tool (Disco.exe)](http://msdn.microsoft.com/library/acd88078-c581-42bc-94ca-6633e2851979).  
   
    
   
@@ -36,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryDocument" />
+    <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
+    <altmember cref="T:System.Web.Services.Protocols.HttpWebClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -206,6 +209,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny(System.String)" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover(System.String)" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll" />
       </Docs>
     </Member>
     <Member MemberName="Download">
@@ -525,7 +533,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Download">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the discovery document at the supplied URL into a <see cref="T:System.IO.Stream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

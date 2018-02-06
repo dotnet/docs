@@ -16,9 +16,11 @@ helpviewer_keywords:
   - "DataContractAttribute"
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;declaredTypes&gt; Element
 Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. Each declared type includes the known types that will be returned as a field or property of the declared type.  
@@ -82,7 +84,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ```  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)   
- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
+ [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
  [\<add> of \<declaredTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)

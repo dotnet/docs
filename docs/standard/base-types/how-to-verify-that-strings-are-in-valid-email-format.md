@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, examples"
   - "user input, examples"
@@ -18,16 +18,19 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "examples [Visual Basic], strings"
   - "IsValidEmail"
-  - "validation, e-mail strings"
+  - "validation, email strings"
   - "input, checking"
   - "strings [.NET Framework], examples [Visual Basic]"
-  - "e-mail [.NET Framework], validating"
+  - "email [.NET Framework], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Verify that Strings Are in Valid Email Format
 The following example uses a regular expression to verify that a string is in valid email format.  
@@ -52,7 +55,7 @@ The following example uses a regular expression to verify that a string is in va
  [!code-csharp[RegularExpressions.Examples.Email#7](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.Email/cs/example4.cs#7)]
  [!code-vb[RegularExpressions.Examples.Email#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.Email/vb/example4.vb#7)]  
   
- In this example, the regular expression pattern ``^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`{}|~\w])*)(?<=[0-9a-z])@))(?([)([(\d{1,3}.){3}\d{1,3}])|(([0-9a-z][-\w]*[0-9a-z]*.)+[a-z0-9][-a-z0-9]{0,22}[a-z0-9]))$`` is interpreted as shown in the following table. Note that the regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.  
+ In this example, the regular expression pattern ``^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`{}|~\w])*)(?<=[0-9a-z])@))(?([)([(\d{1,3}.){3}\d{1,3}])|(([0-9a-z][-0-9a-z]*[0-9a-z]*.)+[a-z0-9][-a-z0-9]{0,22}[a-z0-9]))$`` is interpreted as shown in the following table. Note that the regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
@@ -67,7 +70,7 @@ The following example uses a regular expression to verify that a string is in va
 |`(?<=[0-9a-z])`|Continue the match if the character that precedes the @ character is A through Z, a through z, or 0 through 9. The `(?<=[0-9a-z])` construct defines a zero-width positive lookbehind assertion.|  
 |`(?(\[)`|Check whether the character that follows @ is an opening bracket.|  
 |`(\[(\d{1,3}\.){3}\d{1,3}\])`|If it is an opening bracket, match the opening bracket followed by an IP address (four sets of one to three digits, with each set separated by a period) and a closing bracket.|  
-|`&#124;(([0-9a-z][-\w]*[0-9a-z]*\.)+`|If the character that follows @ is not an opening bracket, match one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by zero or more occurrences of a word character or a hyphen, followed by zero or one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by a period. This pattern can be repeated one or more times, and must be followed by the top-level domain name.|  
+|`&#124;(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+`|If the character that follows @ is not an opening bracket, match one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by zero or more occurrences of a hyphen, followed by zero or one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by a period. This pattern can be repeated one or more times, and must be followed by the top-level domain name.|  
 |`[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))`|The top-level domain name must begin and end with an alphanumeric character (a-z, A-Z, and 0-9). It can also include from zero to 22 ASCII characters that are either alphanumeric or hyphens.|  
 |`$`|End the match at the end of the string.|  
   

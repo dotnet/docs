@@ -9,20 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ISF (Ink Serialized Format)"
-  - "storing ink"
-  - "ink, storing"
-  - "retrieving ink"
+  - "storing ink [WPF]"
+  - "ink [WPF], storing"
+  - "retrieving ink [WPF]"
   - "Ink Serialized Format (ISF)"
 ms.assetid: a3f6d16b-d682-4680-9965-907332b4d2b8
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Storing Ink
 The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support for storing ink as Ink Serialized Format (ISF). Constructors for the <xref:System.Windows.Ink.StrokeCollection> class provide support for reading ink data.  
@@ -41,5 +43,5 @@ The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support f
  [!code-vb[DigitalInkTopics#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#13)]  
   
 ## See Also  
- <xref:System.Windows.Controls.InkCanvas>   
+ <xref:System.Windows.Controls.InkCanvas>  
  [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md)

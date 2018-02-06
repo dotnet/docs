@@ -1,13 +1,11 @@
 ---
 title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc31102"
@@ -18,21 +16,6 @@ ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible
 A statement attempts to store the value of a property when it does not have access to the property's `Set` procedure.  
@@ -54,5 +37,5 @@ A statement attempts to store the value of a property when it does not have acce
 -   If you do not have control of the source code defining the property, or you must restrict the `Set` procedure access level more than the property itself, try to move the statement that sets the property value to a region of code that has better access to the property.  
   
 ## See Also  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)  
  [How to: Declare a Property with Mixed Access Levels](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

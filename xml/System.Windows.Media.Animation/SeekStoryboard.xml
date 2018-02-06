@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.EventTrigger" />
+    <altmember cref="T:System.Windows.Trigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -133,6 +136,7 @@
         <summary>Gets or sets the position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied.</summary>
         <value>The position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied. The default value is <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeOffset">

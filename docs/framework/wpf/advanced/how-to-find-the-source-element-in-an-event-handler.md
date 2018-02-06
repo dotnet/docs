@@ -9,17 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "source element in event handlers"
-  - "event handlers, finding source element in"
+  - "source element in event handlers [WPF]"
+  - "event handlers [WPF], finding source element in"
 ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Find the Source Element in an Event Handler
 This example shows how to find the source element in an event handler.  
@@ -33,6 +35,6 @@ This example shows how to find the source element in an event handler.
  [!code-vb[RoutedEventSource#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventSource/VisualBasic/default.xaml.vb#handler)]  
   
 ## See Also  
- <xref:System.Windows.RoutedEventArgs>   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
+ <xref:System.Windows.RoutedEventArgs>  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)

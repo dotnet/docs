@@ -9,19 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], progress tracking"
   - "controls [Windows Forms], creating"
-  - "progress, reporting [Windows Forms]"
+  - "progress [Windows Forms], reporting [Windows Forms]"
   - "FlashTrackBar custom control"
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Windows Forms Control That Shows Progress
 The following code example shows a custom control called `FlashTrackBar` that can be used to show the user the level or the progress of an application. It uses a gradient to visually represent progress.  
@@ -99,5 +101,5 @@ The following code example shows a custom control called `FlashTrackBar` that ca
  [!code-vb[System.Windows.Forms.FlashTrackBar#30](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/HostApp.vb#30)]  
   
 ## See Also  
- [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)   
+ [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
  [Windows Forms Control Development Basics](../../../../docs/framework/winforms/controls/windows-forms-control-development-basics.md)

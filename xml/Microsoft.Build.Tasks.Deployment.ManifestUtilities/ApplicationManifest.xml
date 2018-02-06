@@ -187,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install" />
       </Docs>
     </Member>
     <Member MemberName="IconFile">
@@ -1141,5 +1142,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

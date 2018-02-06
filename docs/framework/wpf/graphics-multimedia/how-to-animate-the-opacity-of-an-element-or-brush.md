@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "opacity, animating"
-  - "animation, Opacity property"
+  - "opacity [WPF], animating"
+  - "animation [WPF], Opacity property"
 ms.assetid: 572af23b-39dd-48d1-9db5-4bca56a4b3d3
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate the Opacity of an Element or Brush
 To make a framework element fade in and out of view, you can animate its <xref:System.Windows.UIElement.Opacity%2A> property or you can animate the <xref:System.Windows.Media.Brush.Opacity%2A> property of the <xref:System.Windows.Media.Brush> (or brushes) used to paint it. Animating the element's opacity makes it and its children fade in and out of view, but animating the brush used to paint the element enables you to be more selective about which portion of the element fades. For example, you could animate the opacity of a brush used to paint a button's background. This would cause the button's background to fade in and out of view, while leaving its text fully opaque.  

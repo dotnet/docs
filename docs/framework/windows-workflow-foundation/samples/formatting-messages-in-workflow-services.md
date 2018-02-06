@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6d15d44b-20f8-4cb7-bd4f-598c32781ebc
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Formatting messages in Workflow Services
 This sample shows how different user types can be used in messaging activities (WF services). The sample service is a simple expense approval service and exposes three operations. `ApproveExpense` takes a data contract type and shows how to use known types. The operation returns `true` or `false` based on the expense amount. `ApprovePO` takes an XmlSerializer type and returns `true` or `false` based on the expense amount.`ApprovedVendor` takes a message contract type and returns `true` or `false` if the vendor is in the list of approved vendors or if the request came from the finance department (the finance department can use any vendor).  
@@ -33,6 +35,4 @@ This sample shows how different user types can be used in messaging activities (
 >   
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\Formatter`  
-  
-## See Also
+>  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\Formatter`

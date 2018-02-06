@@ -157,6 +157,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.ComVisibleAttribute" />
+    <altmember cref="T:System.Runtime.InteropServices.Marshal" />
+    <altmember cref="T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject" />
+    <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -382,6 +386,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
+        <altmember cref="P:System.Security.SecureString.Length" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -423,6 +428,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <altmember cref="M:System.Security.SecureString.MakeReadOnly" />
+        <altmember cref="M:System.Security.SecureString.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -572,6 +579,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <altmember cref="M:System.Security.SecureString.MakeReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -665,6 +673,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <altmember cref="M:System.Security.SecureString.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -799,5 +808,14 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecureString" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

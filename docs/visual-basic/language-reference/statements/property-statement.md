@@ -1,42 +1,25 @@
 ---
 title: "Property Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.PropertySet"
   - "vb.Property"
   - "vb.PropertyGet"
 helpviewer_keywords: 
-  - "Property statement"
+  - "Property statement [Visual Basic]"
   - "default modifier"
-  - "property procedures, Property statements"
-  - "Property keyword"
+  - "property procedures [Visual Basic], Property statements"
+  - "Property keyword [Visual Basic]"
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Property Statement
 Declares the name of a property, and the property procedures used to store and retrieve the value of the property.  
@@ -226,9 +209,9 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
  [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
   
 ## See Also  
- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)   
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
+ [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
+ [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
+ [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
+ [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
  [Default](../../../visual-basic/language-reference/modifiers/default.md)

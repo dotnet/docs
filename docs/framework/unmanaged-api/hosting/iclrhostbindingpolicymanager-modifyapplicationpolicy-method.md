@@ -27,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostBindingPolicyManager::ModifyApplicationPolicy Method
 Modifies the binding policy for the specified assembly, and creates a new version of the policy.  

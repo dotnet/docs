@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceMetadata&gt;
 Specifies the publication of service metadata and associated information.  
@@ -127,7 +129,7 @@ Specifies the publication of service metadata and associated information.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
+ <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [Metadata Publishing Behavior](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)

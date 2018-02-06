@@ -1,13 +1,11 @@
 ---
 title: "Operator declaration must be one of:  +,-,*,-,-,^, &amp;, Like, Mod, And, Or, Xor, Not, &lt;&lt;, &gt;&gt;, =, &lt;&gt;, &lt;, &lt;=, &gt;, &gt;=, CType, IsTrue, IsFalse"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc33000"
@@ -18,21 +16,6 @@ ms.assetid: 15c5d8eb-3a8c-4141-8f41-33151afabf97
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operator declaration must be one of:  +,-,*,\,/,^, &amp;, Like, Mod, And, Or, Xor, Not, &lt;&lt;, &gt;&gt;...
 You can declare only an operator that is eligible for overloading. The following table lists the operators you can declare.  
@@ -54,8 +37,8 @@ You can declare only an operator that is eligible for overloading. The following
 2.  If you need the functionality of overloading an operator that you cannot overload directly, create a `Function` procedure that takes the appropriate parameters and returns the appropriate value.  
   
 ## See Also  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
+ [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
+ [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

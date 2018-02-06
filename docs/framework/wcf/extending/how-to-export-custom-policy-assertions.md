@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 99030386-43b0-4f7b-866d-17ea307f5cbd
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Export Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint. Service applications can use custom policy assertions in service metadata to communicate endpoint, binding or contract customization information to the client application. You can use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to export assertions in policy expressions attached in WSDL bindings at the endpoint, operation, or message subjects, depending upon the capabilities or requirements you are communicating.  
@@ -56,6 +58,6 @@ Policy assertions describe the capabilities and requirements of a service endpoi
      [!code-vb[s_imperative#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_imperative/vb/service.vb#1)]  
   
 ## See Also  
- <xref:System.ServiceModel.Description.IPolicyImportExtension>   
- <xref:System.ServiceModel.Description.IPolicyExportExtension>   
+ <xref:System.ServiceModel.Description.IPolicyImportExtension>  
+ <xref:System.ServiceModel.Description.IPolicyExportExtension>  
  [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)

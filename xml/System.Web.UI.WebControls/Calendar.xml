@@ -177,6 +177,20 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.DayHeaderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.DayStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.NextPrevStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.OtherMonthDayStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDayStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectorStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.TitleStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.TodayDayStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.WeekendDayStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowDayHeader" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowGridLines" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -250,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -297,6 +312,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -342,6 +358,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified cell padding is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -387,6 +404,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified cell spacing is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -476,6 +494,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowDayHeader" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.DayNameFormat" />
       </Docs>
     </Member>
     <Member MemberName="DayNameFormat">
@@ -522,6 +543,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified day name format is not one of the <see cref="T:System.Web.UI.WebControls.DayNameFormat" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DayNameFormat" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowDayHeader" />
       </Docs>
     </Member>
     <Member MemberName="DayRender">
@@ -549,7 +572,7 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -564,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Calendar.OnDayRender(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay)" />
       </Docs>
     </Member>
     <Member MemberName="DayStyle">
@@ -619,6 +643,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.WeekendDayStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.OtherMonthDayStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.TodayDayStyle" />
       </Docs>
     </Member>
     <Member MemberName="FirstDayOfWeek">
@@ -661,6 +689,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The date specified is not one of the <see cref="T:System.Web.UI.WebControls.FirstDayOfWeek" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.FirstDayOfWeek" />
       </Docs>
     </Member>
     <Member MemberName="HasWeekSelectors">
@@ -773,6 +802,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.PrevMonthText" />
       </Docs>
     </Member>
     <Member MemberName="NextPrevFormat">
@@ -819,6 +850,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified format is not one of the <see cref="T:System.Web.UI.WebControls.NextPrevFormat" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.NextPrevFormat" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.NextMonthText" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.PrevMonthText" />
       </Docs>
     </Member>
     <Member MemberName="NextPrevStyle">
@@ -868,6 +902,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnDayRender">
@@ -903,7 +938,7 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -923,6 +958,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Calendar.OnDayRender(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Calendar.OnDayRender(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -947,7 +985,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -990,7 +1028,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1010,6 +1048,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.SelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleMonthChanged">
@@ -1038,7 +1077,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the next or previous month navigation elements on the title section.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1058,6 +1097,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged(System.DateTime,System.DateTime)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged(System.DateTime,System.DateTime)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="OtherMonthDayStyle">
@@ -1107,6 +1148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.DayStyle" />
       </Docs>
     </Member>
     <Member MemberName="PrevMonthText">
@@ -1157,6 +1200,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.NextMonthText" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1288,6 +1333,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.SelectionChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDates">
@@ -1340,6 +1391,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectedDate" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.SelectionChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDayStyle">
@@ -1392,6 +1449,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -1414,7 +1472,7 @@
 ## Remarks  
  This event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -1429,6 +1487,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -1475,6 +1534,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified selection mode is not one of the <see cref="T:System.Web.UI.WebControls.CalendarSelectionMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectorStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectMonthText">
@@ -1525,6 +1586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="SelectorStyle">
@@ -1571,6 +1633,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectWeekText">
@@ -1621,6 +1685,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="ShowDayHeader">
@@ -1665,6 +1730,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.DayHeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowGridLines">
@@ -1751,6 +1817,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.NextPrevStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowTitle">
@@ -1795,6 +1862,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.TitleStyle" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1821,6 +1889,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1886,6 +1957,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified title format is not one of the <see cref="T:System.Web.UI.WebControls.TitleFormat" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
       </Docs>
     </Member>
     <Member MemberName="TitleStyle">
@@ -1935,6 +2007,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="TodayDayStyle">
@@ -1987,6 +2061,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.DayStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="TodaysDate">
@@ -2036,6 +2112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.TodayDayStyle" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2130,6 +2208,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       </Docs>
     </Member>
     <Member MemberName="VisibleMonthChanged">
@@ -2152,7 +2232,7 @@
 ## Remarks  
  This event is raised when the user clicks the next or previous month navigation elements on the title heading.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -2167,6 +2247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged(System.DateTime,System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="WeekendDayStyle">
@@ -2216,6 +2297,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.DayStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
   </Members>

@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+    <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Array@,System.Int64,System.Boolean,System.Boolean)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Array,System.Int64,System.Boolean,System.Boolean)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -110,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -135,7 +142,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the value of the <see langword="Bounds" /> property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

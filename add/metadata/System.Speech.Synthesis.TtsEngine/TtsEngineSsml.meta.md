@@ -3,7 +3,7 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml.GetOutputFormat(System.Spee
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml.Speak(System.Speech.Synthes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml.RemoveLexicon(System.Uri,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml.AddLexicon(System.Uri,Syste
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,5 +43,5 @@ uid: System.Speech.Synthesis.TtsEngine.TtsEngineSsml.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---

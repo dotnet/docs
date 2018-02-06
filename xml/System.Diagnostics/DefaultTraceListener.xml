@@ -71,6 +71,11 @@
  ]]></format>
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
+    <altmember cref="T:System.Diagnostics.TraceListener" />
+    <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+    <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +111,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="AssertUiEnabled">
@@ -195,6 +206,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -243,6 +260,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="LogFileName">
@@ -331,6 +354,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -381,7 +410,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fail">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Emits or displays a message and a stack trace for an assertion that always fails.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

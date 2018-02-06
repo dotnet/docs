@@ -13,6 +13,9 @@ caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XSLT Compiler (xsltc.exe)
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  
@@ -85,6 +88,6 @@ xsltc booksort.xsl output.xsl
 ```  
   
 ## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>   
- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)   
+ <xref:System.Xml.Xsl.XslCompiledTransform>  
+ [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
  [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

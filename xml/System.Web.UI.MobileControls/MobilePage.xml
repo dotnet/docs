@@ -276,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
       </Docs>
     </Member>
     <Member MemberName="ClientViewState">
@@ -332,10 +333,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](http://msdn.microsoft.com/en-us/8437a6a5-855c-4637-8654-75a87b293847).  
+ The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](http://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -431,6 +436,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="EnableEventValidation">
@@ -583,6 +590,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The requested form was not found.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="GetPrivateViewState">
@@ -680,6 +688,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
+        <altmember cref="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
       </Docs>
     </Member>
     <Member MemberName="HiddenVariablePrefix">
@@ -751,6 +761,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.ID" />
       </Docs>
     </Member>
     <MemberGroup MemberName="InitOutputCache">
@@ -868,6 +879,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -898,6 +910,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="MakePathAbsolute">
@@ -1332,6 +1345,7 @@
         <param name="endResponse">Specifies whether the response should be ended at that point. The default of the first form of the method is <see langword="true" />.</param>
         <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RelativeFilePath">
@@ -1383,6 +1397,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.Forms" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1468,6 +1484,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">Session state is disabled or read-only.</exception>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1494,6 +1511,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StyleSheet">
@@ -1732,5 +1750,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectToMobilePage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -41,7 +41,7 @@
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlButton>, see the <xref:System.Web.UI.HtmlControls.HtmlButton.%23ctor%2A> constructor.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -53,6 +53,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -132,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -197,7 +201,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlButton.OnServerClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -219,6 +223,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -251,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -292,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -314,7 +322,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This server event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -331,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -392,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
       </Docs>
     </Member>
   </Members>

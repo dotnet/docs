@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorRuntimeHost Coclass
 Provides interfaces for managing applications that are being executed by the common language runtime.  

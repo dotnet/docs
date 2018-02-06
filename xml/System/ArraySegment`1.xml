@@ -91,6 +91,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Array" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +145,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -203,6 +205,7 @@
           <paramref name="offset" /> or <paramref name="count" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="offset" /> and <paramref name="count" /> do not specify a valid range in <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Array">
@@ -250,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -357,6 +361,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.ArraySegment`1.Offset" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -588,6 +594,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.ArraySegment`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1346,5 +1354,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

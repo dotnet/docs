@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugCodeInvokePurpose Enumeration
 Describes why an exported function calls managed code.  
@@ -63,5 +65,5 @@ typedef enum CorDebugCodeInvokePurpose
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)   
+ [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

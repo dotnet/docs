@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0d052bc0-5b98-4c50-8bb5-270cc8a8b145
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Partial Trust Best Practices
 This topic describes best practices when running [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] in a partial trust environment.  
@@ -72,5 +74,5 @@ This topic describes best practices when running [!INCLUDE[indigo1](../../../../
  As a best practice, avoid creating thread-specific permission context by calling <xref:System.Security.PermissionSet.Assert%2A>, <xref:System.Security.PermissionSet.PermitOnly%2A>, or <xref:System.Security.PermissionSet.Deny%2A>. Instead, grant or deny the privilege to the application itself, so that no <xref:System.Security.PermissionSet.Assert%2A>, <xref:System.Security.PermissionSet.Deny%2A>, or <xref:System.Security.PermissionSet.PermitOnly%2A> is required.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Xml.Serialization.IXmlSerializable>

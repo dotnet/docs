@@ -1,6 +1,6 @@
 ---
 title: "C# Operators"
-ms.date: "2017-03-09"
+ms.date: 03/09/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -25,20 +25,6 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 caps.latest.revision: 40
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# Operators
 C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression.  You can [overload](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.  
@@ -213,7 +199,7 @@ C# provides many operators, which are symbols that specify which operations (mat
 ## Arithmetic Overflow  
  The arithmetic operators ([+](../../../csharp/language-reference/operators/addition-operator.md), [-](../../../csharp/language-reference/operators/subtraction-operator.md), [*](../../../csharp/language-reference/operators/multiplication-operator.md), [/](../../../csharp/language-reference/operators/division-operator.md)) can produce results that are outside the range of possible values for the numeric type involved. You should refer to the section on a particular operator for details, but in general:  
   
-- Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a @System.DivideByZeroException.  
+- Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a <xref:System.DivideByZeroException>.  
 
    When integer overflow occurs, what happens depends on the execution context, which can be [checked or unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown. In an unchecked context, the most significant bits of the result are discarded and execution continues. Thus, C# gives you the choice of handling or ignoring overflow. By default, arithmetic operations occur in an *unchecked* context. 
 
@@ -225,8 +211,8 @@ C# provides many operators, which are symbols that specify which operations (mat
   
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C#](../../../csharp/index.md)
- [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)   
+ [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

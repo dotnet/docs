@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Type.AssemblyQualifiedName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +101,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
   </Members>

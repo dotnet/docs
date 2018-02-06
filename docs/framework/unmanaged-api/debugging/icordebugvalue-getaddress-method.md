@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue::GetAddress Method
 Gets the address of this "ICorDebugValue" object, which is in the process of being debugged.  

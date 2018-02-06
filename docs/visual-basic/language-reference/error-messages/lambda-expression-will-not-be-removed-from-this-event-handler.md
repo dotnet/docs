@@ -1,13 +1,11 @@
 ---
 title: "Lambda expression will not be removed from this event handler"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc42326"
@@ -18,21 +16,6 @@ ms.assetid: 63214dc6-0112-4245-8ebf-7c9e8f5a5782
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Lambda expression will not be removed from this event handler
 Lambda expression will not be removed from this event handler. Assign the lambda expression to a variable and use the variable to add and remove the event.  
@@ -105,6 +88,6 @@ End Module
 ```  
   
 ## See Also  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)   
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
+ [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

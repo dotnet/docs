@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TileBrush, creating tile patterns"
-  - "tile patterns, creating"
-  - "creating, tile patterns with TileBrush"
+  - "TileBrush [WPF], creating tile patterns"
+  - "tile patterns [WPF], creating"
+  - "creating [WPF], tile patterns with TileBrush"
 ms.assetid: 5aa46632-3527-4668-9d8d-0375c8af28aa
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Different Tile Patterns with a TileBrush
 This example shows how to use the <xref:System.Windows.Media.TileBrush.TileMode%2A> property of a <xref:System.Windows.Media.TileBrush> to create a pattern.  
@@ -40,5 +42,5 @@ Tile patterns created with the TileMode property
  [!code-xaml[BrushesIntroduction_snip#GraphicsMMDrawingBrushTileModeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/BrushesIntroduction_snip/XAML/TileModeExample.xaml#graphicsmmdrawingbrushtilemodeexample)]  
   
 ## See Also  
- [Set the Tile Size for a TileBrush](../../../../docs/framework/wpf/graphics-multimedia/how-to-set-the-tile-size-for-a-tilebrush.md)   
+ [Set the Tile Size for a TileBrush](../../../../docs/framework/wpf/graphics-multimedia/how-to-set-the-tile-size-for-a-tilebrush.md)  
  [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

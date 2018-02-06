@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2d41b337-8132-4ac2-bea2-6e9ae2f00f8d
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices: Intermediaries
 Care must be taken to handle faults correctly when calling intermediaries to make sure service side channels on the intermediary are closed properly.  
@@ -39,5 +41,5 @@ catch (Exception e)
 ```  
   
 ## See Also  
- [WCF Error Handling](../../../docs/framework/wcf/wcf-error-handling.md)   
+ [WCF Error Handling](../../../docs/framework/wcf/wcf-error-handling.md)  
  [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

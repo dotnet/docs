@@ -101,6 +101,8 @@ Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall p
 The .NET Framework starting with version 4.7.1 supports portable PDBs. While standard PDB files are Windows-only, portable PDB files can be created and read on all platforms. In most cases, the file format is transparent to an application running on a particular .NET implementation. An exception is an application that dynamically emits an assembly at run time; in this case, the ability to emit a portable PDB can offer a performance improvement and reduce the application's memory footprint. 
 
 You can determine at run time whether portable PDBs are supported on the current .NET implementation by passing the string "PortablePdb" to the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)?displayProperty=nameWithType> method before emitting the assembly.  
+
+However, debug information on stack traces for portable PDBs is not available on the .NET Framework 4.7.1. This shortcoming will be addressed in the next release of the .NET Framework. for more information, see [Stack traces are missing source information for frames with debug information in the Portable PDB format when running on .NET Framework 4.7.1](https://github.com/Microsoft/dotnet/blob/master/releases/net471/KnownIssues/517815-BCL%20Stack%20traces%20are%20missing%20source%20information%20for%20frames%20with%20debug%20information%20in%20the%20Portable%20PDB%20format.md) in the [Microsoft/dotnet repository on GitHub.com](https://github.com/Microsoft/dotnet).
  
 <a name="net471"/>
 #### Networking

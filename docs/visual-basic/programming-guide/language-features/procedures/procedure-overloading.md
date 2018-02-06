@@ -1,50 +1,32 @@
 ---
 title: "Procedure Overloading (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "signatures"
-  - "Overloads keyword"
+  - "Overloads keyword [Visual Basic]"
   - "hiding by signature"
   - "Visual Basic code, procedures"
-  - "procedures, signatures for"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
-  - "parameters, lists"
-  - "signatures, procedure"
-  - "parameter lists"
+  - "procedures [Visual Basic], signatures for"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
+  - "parameters [Visual Basic], lists"
+  - "signatures [Visual Basic], procedure"
+  - "parameter lists [Visual Basic]"
   - "Visual Basic code, parameter lists"
-  - "Shadows keyword"
+  - "Shadows keyword [Visual Basic]"
   - "procedure overloading"
-  - "procedures, parameter lists"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Procedure Overloading (Visual Basic)
 *Overloading* a procedure means defining it in multiple versions, using the same name but different parameter lists. The purpose of overloading is to define several closely related versions of a procedure without having to differentiate them by name. You do this by varying the parameter list.  
@@ -107,12 +89,12 @@ translation.priority.ht:
  [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/procedure-overloading_4.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)   
- [Overload Resolution](./overload-resolution.md)   
- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)   
+ [Procedures](./index.md)  
+ [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)  
+ [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)  
+ [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)  
+ [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)  
+ [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)  
+ [Overload Resolution](./overload-resolution.md)  
+ [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)  
  [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

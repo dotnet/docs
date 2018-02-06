@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "event logging [WCF]"
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Event Logging in WCF
 [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] traces internal events in the Windows event log.  
@@ -54,5 +56,5 @@ manager: "erikre"
  When you click "more information" when viewing an event in the Event Viewer, the Event Viewer may send information across the Internet. For more information, see the Event Viewer help.  
   
 ## See Also  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)   
+ [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

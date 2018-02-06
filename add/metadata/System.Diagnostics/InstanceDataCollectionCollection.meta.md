@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.Diagnostics.InstanceDataCollectionCollection.CopyTo
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

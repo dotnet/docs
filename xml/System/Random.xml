@@ -33,10 +33,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/random.cs#bb77e610694e64ca). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Pseudo-random numbers are chosen with equal probability from a finite set of numbers. The chosen numbers are not completely random because a mathematical algorithm is used to select them, but they are sufficiently random for practical purposes. The current implementation of the <xref:System.Random> class is based on a modified version of Donald E. Knuth's subtractive random number generator algorithm. For more information, see D. E. Knuth. *The Art of Computer Programming, Volume 2: Seminumerical Algorithms*. Addison-Wesley, Reading, MA, third edition, 1997.  
   
  To generate a cryptographically secure random number, such as one that's suitable for creating a random password, use the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class or derive a class from <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=nameWithType>.  
@@ -450,7 +446,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Random.Next%2A?displayProperty=nameWithType> generates a random number whose value ranges from 0 to less than <xref:System.Int32?displayProperty=nameWithType>. To generate a random number whose value ranges from 0 to some other positive number, use the <xref:System.Random.Next%28System.Int32%29?displayProperty=nameWithType> method overload. To generate a random number within a different range, use the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method overload.  
+ <xref:System.Random.Next%2A?displayProperty=nameWithType> generates a random number whose value ranges from 0 to less than <xref:System.Int32.MaxValue?displayProperty=nameWithType>. To generate a random number whose value ranges from 0 to some other positive number, use the <xref:System.Random.Next%28System.Int32%29?displayProperty=nameWithType> method overload. To generate a random number within a different range, use the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method overload.  
   
    
   
@@ -472,6 +468,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         <block subset="none" type="overrides">
           <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.Next" /> method. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.Next" /> method.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -530,6 +527,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="maxValue" /> is less than 0.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -595,6 +593,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         <block subset="none" type="overrides">
           <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.Next(System.Int32,System.Int32)" /> method overload if the difference between the <paramref name="minValue" /> and <paramref name="maxValue" /> parameters is greater than <see cref="F:System.Int32.MaxValue" />. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.Next(System.Int32,System.Int32)" /> method overload.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="NextBytes">
@@ -651,6 +650,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         <block subset="none" type="overrides">
           <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.NextBytes(System.Byte[])" /> method. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.NextBytes(System.Byte[])" /> method.</para>
         </block>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="NextDouble">
@@ -768,7 +768,32 @@ Random.NextDouble() * (maxValue – minValue) + minValue
   
  Instead, the uniform distribution provided by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the implementation of the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the behavior of these three members. The example provides an illustration.</para>
         </block>
+        <altmember cref="M:System.Random.NextDouble" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Next">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a random integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Random" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

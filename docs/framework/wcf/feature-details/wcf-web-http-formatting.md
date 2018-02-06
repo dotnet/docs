@@ -7,9 +7,11 @@ ms.technology:
 ms.topic: "article"
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Web HTTP formatting
 The WCF Web HTTP programming model allows you to dynamically determine the best format for a service operation to return its response in. Two methods for determining an appropriate format are supported: automatic and explicit.  
@@ -166,9 +168,9 @@ public class Service : IService
 ```  
   
 ## See also  
- <xref:System.UriTemplate>   
- <xref:System.UriTemplateMatch>   
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)   
- [UriTemplate and UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)   
- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)   
+ <xref:System.UriTemplate>  
+ <xref:System.UriTemplateMatch>  
+ [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
+ [UriTemplate and UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)  
+ [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
  [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)

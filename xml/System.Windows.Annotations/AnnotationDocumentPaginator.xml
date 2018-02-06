@@ -196,6 +196,8 @@
         <param name="userState">The unique application-defined identifier passed in the call to start the asynchronous operation.</param>
         <summary>Cancels all asynchronous operations initiated with a given <paramref name="userState" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCountAsync(System.Object)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ComputePageCount">
@@ -223,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCountAsync(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ComputePageCountAsync">
@@ -251,6 +254,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync(System.Object)" />
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.ComputePageCountCompleted" />
+        <altmember cref="M:System.Windows.Documents.DocumentPaginator.OnComputePageCountCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount" />
       </Docs>
     </Member>
     <Member MemberName="GetPage">
@@ -273,6 +280,7 @@
         <summary>Returns a <see cref="T:System.Windows.Documents.DocumentPage" /> together with associated user-annotations for a specified page number.</summary>
         <returns>The <see cref="T:System.Windows.Documents.DocumentPage" /> for the specified <paramref name="pageNumber" />; or <see cref="F:System.Windows.Documents.DocumentPage.Missing" />, if the specified <paramref name="pageNumber" /> does not exist.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPageAsync">
@@ -303,6 +311,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync(System.Object)" />
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" />
+        <altmember cref="M:System.Windows.Documents.DocumentPaginator.OnGetPageCompleted(System.Windows.Documents.GetPageCompletedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsPageCountValid">

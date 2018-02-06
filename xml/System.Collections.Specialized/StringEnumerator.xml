@@ -54,6 +54,9 @@
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IEnumerable" />
+    <altmember cref="T:System.Collections.IEnumerator" />
+    <altmember cref="T:System.Collections.Specialized.StringCollection" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -105,6 +108,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.Specialized.StringEnumerator.Reset" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -156,6 +162,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.Specialized.StringEnumerator.Current" />
+        <altmember cref="M:System.Collections.Specialized.StringEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -201,6 +210,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.Specialized.StringEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
   </Members>

@@ -10,15 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "application settings, Windows Forms"
-  - "application settings, creating"
+  - "application settings [Windows Forms], Windows Forms"
+  - "application settings [Windows Forms], creating"
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Application Settings
 Using managed code, you can create new application settings and bind them to properties on your form or your form's controls, so that these settings are loaded and saved automatically at run time.  
@@ -52,7 +55,7 @@ Using managed code, you can create new application settings and bind them to pro
  The default settings provider, <xref:System.Configuration.LocalFileSettingsProvider>, persists information to configuration files as plain text. This limits security to the file access security provided by the operating system for the current user. Because of this, care must be taken with the information stored in configuration files. For example, one common use for application settings is to store connection strings that point to the application's data store. However, because of security concerns, such strings should not include passwords. For more information about connection strings, see <xref:System.Configuration.SpecialSetting>.  
   
 ## See Also  
- <xref:System.Configuration.SpecialSettingAttribute>   
- <xref:System.Configuration.LocalFileSettingsProvider>   
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)   
+ <xref:System.Configuration.SpecialSettingAttribute>  
+ <xref:System.Configuration.LocalFileSettingsProvider>  
+ [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)

@@ -49,14 +49,14 @@
 
   Public Sub EmailPassword_OnClick(ByVal sender As Object, ByVal args As EventArgs)
 
-    ' Note: Returning a password in clear text using e-mail is not recommended for
+    ' Note: Returning a password in clear text using email is not recommended for
     ' sites that require a high level of security.
 
     Try
       Dim password As String = Membership.Provider.GetPassword(UsernameTextBox.Text, AnswerTextBox.Text)
       Dim u As MembershipUser = Membership.GetUser(UsernameTextBox.Text)
       EmailPassword(u.Email, password)
-      Msg.Text = "Your password was sent via e-mail."
+      Msg.Text = "Your password was sent via email."
     Catch e As MembershipPasswordException
       Msg.Text = "The password answer is incorrect. Please check the value and try again."
     Catch e As System.Configuration.Provider.ProviderException

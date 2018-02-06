@@ -1,13 +1,9 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; must be within the range 0 to 99"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_Range0to99_1"
@@ -15,22 +11,6 @@ ms.assetid: d9d9a15e-c5ee-4104-9504-b48a4a191415
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; must be within the range 0 to 99
 An argument is not valid because it falls outside of the range 0 to 99.  

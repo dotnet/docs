@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, RichTextBox"
+  - "controls [WPF], RichTextBox"
   - "RichTextBox control [WPF], about RichTextBox control"
 ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # RichTextBox Overview
 The <xref:System.Windows.Controls.RichTextBox> control enables you to display or edit flow content including paragraphs, images, tables, and more. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)].  
@@ -98,5 +103,5 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
  [!code-vb[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/SaveLoadPrintRTB.xaml.vb#saveloadprintrtbcodeexamplewholepage)]  
   
 ## See Also  
- [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)   
+ [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

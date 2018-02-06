@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "strong-name bypass feature"
   - "bypassTrustedAppStrongNames element"
@@ -24,6 +19,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bypassTrustedAppStrongNames&gt; Element
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.  
@@ -93,6 +90,6 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)

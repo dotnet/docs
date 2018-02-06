@@ -15,7 +15,7 @@ class Program
               Console.WriteLine("The first day of the work week.");
               break;
            case DayOfWeek.Friday:
-              Console.WriteLine("The last day of teh work week.");
+              Console.WriteLine("The last day of the work week.");
               break;
            default:
               Console.WriteLine("The middle of the work week.");

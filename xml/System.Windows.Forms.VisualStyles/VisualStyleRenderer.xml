@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleInformation" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -178,7 +180,7 @@
   
  If the <xref:System.Drawing.Rectangle.Width%2A> or <xref:System.Drawing.Rectangle.Height%2A> of the rectangle specified by the `bounds` parameter is less than 0, the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method will return without drawing the background.  
   
- The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=nameWithType>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=nameWithType>.  
+ The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty.BackgroundType?displayProperty=nameWithType>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty.SizingType?displayProperty=nameWithType>.  
   
    
   
@@ -225,7 +227,7 @@
   
  If the <xref:System.Drawing.Rectangle.Width%2A> or <xref:System.Drawing.Rectangle.Height%2A> of the rectangle specified by either the `bounds` or `clipRectangle` parameters is less than 0, the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method will return without drawing the background.  
   
- The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=nameWithType>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=nameWithType>.  
+ The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty.BackgroundType?displayProperty=nameWithType>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty.SizingType?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1040,7 +1042,7 @@
 ## Remarks  
  This property is used internally by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> methods. If the class of elements specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A> property is not defined by the current visual style, then this property returns <xref:System.IntPtr.Zero?displayProperty=nameWithType>.  
   
- This property value is invalidated when the visual style of the operating system changes, or when the user disables visual styles. If you access this property directly, your code should query this property again to get a new handle when the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> event is raised with the <xref:Microsoft.Win32.UserPreferenceChangedEventArgs.Category%2A?displayProperty=nameWithType> property value of <xref:Microsoft.Win32.UserPreferenceCategory?displayProperty=nameWithType>.  
+ This property value is invalidated when the visual style of the operating system changes, or when the user disables visual styles. If you access this property directly, your code should query this property again to get a new handle when the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> event is raised with the <xref:Microsoft.Win32.UserPreferenceChangedEventArgs.Category%2A?displayProperty=nameWithType> property value of <xref:Microsoft.Win32.UserPreferenceCategory.VisualStyle?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1243,7 +1245,7 @@
 |---------------|---------------------------------|  
 |The operating system supports visual styles.|Verify that the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class is `true`.|  
 |The user has enabled visual styles in the operating system.|Verify that the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class is `true`.|  
-|Visual styles are being used to draw the client area of application windows.|Verify that the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType>.|  
+|Visual styles are being used to draw the client area of application windows.|Verify that the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAreaEnabled?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAndNonClientAreasEnabled?displayProperty=nameWithType>.|  
   
  ]]></format>
         </remarks>
@@ -1414,5 +1416,77 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPartSize">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the value of the specified size property of the current visual style part.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws text in the specified bounds.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetParameters">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the current visual style element of this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified image within the specified bounding rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTestBackground">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a point is contained in the background of the current visual style element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawBackground">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the background image of the current visual style element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTextExtent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the size and location of the specified string when drawn with the font of the current visual style element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

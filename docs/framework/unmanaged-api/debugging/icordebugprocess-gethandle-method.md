@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHandle method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::GetHandle method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::GetHandle Method
 Gets a handle to the process.  

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides a type converter for a property representing a Boolean field in a data source schema.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.Design.DataSourceViewSchemaConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.DataSourceBooleanViewSchemaConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceViewSchemaConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -50,6 +52,7 @@
         <summary>Returns a list of available Boolean values that can be assigned to the associated field.</summary>
         <returns>A collection of Boolean values.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues" />
       </Docs>
     </Member>
   </Members>

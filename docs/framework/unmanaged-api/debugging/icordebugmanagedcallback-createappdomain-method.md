@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::CreateAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAppDomain method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::CreateAppDomain method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::CreateAppDomain Method
 Notifies the debugger that an application domain has been created.  

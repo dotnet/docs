@@ -1,6 +1,6 @@
 ---
 title: dotnet-install scripts
-description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime. 
+description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime.
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
+ms.workload: 
+  - dotnetcore
 ---
 
 # dotnet-install scripts reference

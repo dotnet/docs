@@ -39,6 +39,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDefaultActionDescription" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +74,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="ownerControl" /> parameter value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Owner" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -87,6 +94,7 @@
         <summary>Gets a string that describes the default action of the object. Not all objects have a default action.</summary>
         <value>A description of the default action for an object, or <see langword="null" /> if this object has no default action.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -105,6 +113,7 @@
         <summary>Gets the description of the <see cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />.</summary>
         <value>A string describing the <see cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
       </Docs>
     </Member>
     <Member MemberName="GetHelpTopic">
@@ -159,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -177,6 +187,8 @@
         <summary>Gets the description of what the object does or how the object is used.</summary>
         <value>The description of what the object does or how the object is used.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardShortcut">
@@ -202,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -220,6 +233,7 @@
         <summary>Gets or sets the accessible object name.</summary>
         <value>The accessible object name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
       </Docs>
     </Member>
     <Member MemberName="NotifyClients">
@@ -248,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleEvents" />
       </Docs>
     </Member>
     <Member MemberName="NotifyClients">
@@ -278,6 +293,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleEvents" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="NotifyClients">
@@ -332,6 +349,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="M:System.Windows.Forms.Control.ControlAccessibleObject.#ctor(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -368,6 +387,7 @@
         <summary>Gets the role of this accessible object.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -387,7 +407,17 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="NotifyClients">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies accessibility client applications of <see cref="T:System.Windows.Forms.AccessibleEvents" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

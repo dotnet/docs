@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameHashSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameHashSize method [.NET Framework hosting]"
   - "StrongNameHashSize method, ICLRStrongName interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameHashSize Method
 Gets the buffer size required for a hash, using the specified hash algorithm.  

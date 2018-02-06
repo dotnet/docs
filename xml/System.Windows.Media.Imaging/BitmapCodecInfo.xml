@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +80,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="ContainerFormat">
@@ -111,6 +116,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeviceManufacturer">
@@ -145,6 +152,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeviceModels">
@@ -179,6 +188,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="FileExtensions">
@@ -213,6 +224,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -247,6 +260,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="MimeTypes">
@@ -281,6 +296,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="SpecificationVersion">
@@ -315,6 +332,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="SupportsAnimation">
@@ -340,6 +359,8 @@
           <see langword="true" /> if the codec supports animation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="SupportsLossless">
@@ -365,6 +386,8 @@
           <see langword="true" /> if the codec supports lossless of images; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="SupportsMultipleFrames">
@@ -390,6 +413,8 @@
           <see langword="true" /> if the codec supports multiple frames; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -424,6 +449,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo" />
       </Docs>
     </Member>
   </Members>

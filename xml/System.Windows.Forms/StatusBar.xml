@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+    <altmember cref="T:System.Drawing.Graphics" />
+    <altmember cref="T:System.Windows.Forms.ToolStripStatusLabel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -130,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -321,6 +325,7 @@
         <summary>Gets the <see cref="T:System.Windows.Forms.CreateParams" /> used to create the handle for this control.</summary>
         <value>The <see cref="T:System.Windows.Forms.CreateParams" /> used to create the handle for this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -342,10 +347,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value.  
+ As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType> value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -399,7 +405,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -427,6 +433,7 @@
         <summary>Gets or sets the docking behavior of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see langword="Bottom" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DockStyle" />
       </Docs>
     </Member>
     <Member MemberName="DoubleBuffered">
@@ -493,6 +500,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
+        <altmember cref="T:System.Windows.Forms.StatusBarDrawItemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -516,6 +526,7 @@
         <summary>Gets or sets the font the <see cref="T:System.Windows.Forms.StatusBar" /> control will use to display information.</summary>
         <value>The <see cref="T:System.Drawing.Font" /> of the text. The default is the font of the container, unless you override it.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -542,6 +553,7 @@
         <summary>Gets or sets the forecolor for the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the forecolor of the control. The default is <see langword="Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -660,6 +672,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.StatusBar.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -817,6 +831,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.StatusBar.PanelClick" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -910,6 +926,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelClickEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Panels">
@@ -955,6 +974,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
       </Docs>
     </Member>
     <Member MemberName="ShowPanels">
@@ -995,6 +1016,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
       </Docs>
     </Member>
     <Member MemberName="SizingGrip">
@@ -1037,6 +1059,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.FormBorderStyle" />
+        <altmember cref="T:System.Windows.Forms.FormBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1143,6 +1167,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

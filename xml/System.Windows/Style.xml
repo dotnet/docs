@@ -246,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Style.BasedOn" />
       </Docs>
     </Member>
     <Member MemberName="RegisterName">
@@ -407,6 +408,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Setter" />
+        <altmember cref="T:System.Windows.EventSetter" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -515,6 +518,7 @@
         <returns>
           <see langword="true" /> if the requested ambient property is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.IQueryAmbient" />
       </Docs>
     </Member>
     <Member MemberName="TargetType">
@@ -631,6 +635,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DataTrigger" />
+        <altmember cref="T:System.Windows.EventTrigger" />
       </Docs>
     </Member>
     <Member MemberName="UnregisterName">
@@ -654,5 +660,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Style" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

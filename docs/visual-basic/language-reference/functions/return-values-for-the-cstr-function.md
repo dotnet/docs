@@ -1,44 +1,24 @@
 ---
 title: "Return Values for the CStr Function (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "times, CStr Function return values"
-  - "type conversion"
+  - "times [Visual Basic], CStr Function return values"
+  - "type conversion [Visual Basic]"
   - "dates [Visual Basic], CStr Function return values"
   - "CStr function"
   - "strings [Visual Basic], return value"
-  - "Date data type, converting"
+  - "Date data type [Visual Basic], converting"
   - "dates [Visual Basic]"
-  - "String data type, converting"
+  - "String data type [Visual Basic], converting"
 ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Return Values for the CStr Function (Visual Basic)
 The following table describes the return values for `CStr` for different data types of `expression`.  
@@ -56,7 +36,7 @@ The following table describes the return values for `CStr` for different data ty
 >  The `CStr` function performs its conversion based on the current culture settings for the application. To get the string representation of a number in a particular culture, use the number's `ToString(IFormatProvider)` method. For example, use <xref:System.Double.ToString%2A?displayProperty=nameWithType> when converting a value of type `Double` to a `String`.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)   
+ <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
  [Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md)

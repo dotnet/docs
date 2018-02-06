@@ -22,6 +22,8 @@ caps.latest.revision: 17
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:XData Intrinsic XAML Type
 Enables placement of XML data islands within a XAML production. XML elements within `x:XData` should not be treated by XAML processors as if they are a part of the acting default XAML namespace or any other XAML namespace. `x:XData` can contain arbitrary well-formed XML.  
@@ -56,6 +58,6 @@ Enables placement of XML data islands within a XAML production. XML elements wit
  Technically, `x:XData` can be used as the content of any property of type <xref:System.Xml.Serialization.IXmlSerializable>. However, <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A?displayProperty=nameWithType> is the only prominent implementation.  
   
 ## See Also  
- <xref:System.Windows.Data.XmlDataProvider>   
- [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.XmlDataProvider>  
+ [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md)  
  [Binding Markup Extension](../../../docs/framework/wpf/advanced/binding-markup-extension.md)

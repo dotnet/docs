@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/exception.cs#f092fb2b893a0162). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  This class is the base class for all exceptions. When an error occurs, either the system or the currently executing application reports it by throwing an exception that contains information about the error. After an exception is thrown, it is handled by the application or by the default exception handler.  
   
  In this section:  
@@ -78,7 +74,7 @@
      [!code-csharp[System.Exception.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/usageerrors2.cs#5)]
      [!code-vb[System.Exception.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/usageerrors2.vb#5)]  
   
-     Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+     Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
 -   **Program errors.** A program error is a run-time error that cannot necessarily be avoided by writing bug-free code.  
   
@@ -122,7 +118,7 @@
   
 <a name="Performance"></a>   
 ## Performance considerations  
- Throwing or handling an exception consumes a significant amount of system resources and execution time. Throw exceptions only to handle truly extraordinary conditions, not to handle predictable events or flow control. For example, in some cases, such as when you're developing a class library, it's reasonable to throw an exception if a method argument is invalid, because you expect your method to be called with valid parameters. An invalid method argument, if it is not the result of a usage error, means that something extraordinary has occurred. Conversely, do not throw an exception if user input is invalid, because you can expect users to occasionally enter invalid data. Instead, provide a retry mechanism so users can enter valid input. Nor should you use exceptions to handle usage errors. Instead, use [assertions](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1) to identify and correct usage errors.  
+ Throwing or handling an exception consumes a significant amount of system resources and execution time. Throw exceptions only to handle truly extraordinary conditions, not to handle predictable events or flow control. For example, in some cases, such as when you're developing a class library, it's reasonable to throw an exception if a method argument is invalid, because you expect your method to be called with valid parameters. An invalid method argument, if it is not the result of a usage error, means that something extraordinary has occurred. Conversely, do not throw an exception if user input is invalid, because you can expect users to occasionally enter invalid data. Instead, provide a retry mechanism so users can enter valid input. Nor should you use exceptions to handle usage errors. Instead, use [assertions](/visualstudio/debugger/assertions-in-managed-code) to identify and correct usage errors.  
   
  In addition, do not throw an exception when a return code is sufficient; do not convert a return code to an exception; and do not routinely catch an exception, ignore it, and then continue processing.  
   
@@ -428,6 +424,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -554,6 +552,7 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseException">
@@ -664,6 +663,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -699,6 +700,8 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -1075,6 +1078,7 @@ Stack Trace:
   
  By default, the stack trace is captured immediately before an exception object is thrown. Use <see cref="P:System.Environment.StackTrace" /> to get stack trace information when no exception is being thrown.</para>
         </block>
+        <altmember cref="P:System.Environment.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="TargetSite">
@@ -1182,5 +1186,18 @@ Stack Trace:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

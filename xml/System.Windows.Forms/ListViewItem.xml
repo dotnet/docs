@@ -72,6 +72,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,6 +187,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -232,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -293,6 +299,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -313,6 +321,8 @@
         <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon and an array of strings representing subitems.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -370,6 +380,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -397,6 +409,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -458,6 +473,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -526,6 +544,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -592,6 +613,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -663,6 +688,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -734,6 +763,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -806,6 +840,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="BeginEdit">
@@ -866,6 +902,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="M:System.Windows.Forms.ListViewItem.GetBounds(System.Windows.Forms.ItemBoundsPortion)" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -925,6 +963,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.CheckBoxes" />
+        <altmember cref="E:System.Windows.Forms.ListView.ItemCheck" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckedItems" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -977,6 +1018,9 @@
         <block subset="none" type="overrides">
           <para>This method should be overridden if you are going to serialize and deserialize your derived version of this class and your derived class contains state information you want to be serialized and deserialized. You must call the base class implementation of this method in order to ensure that your items are serialized and deserialized properly.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ListViewItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="EnsureVisible">
@@ -1004,6 +1048,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.EnsureVisible(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="FindNearestItem">
@@ -1080,6 +1125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.FocusedItem" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -1160,6 +1206,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -1189,6 +1237,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.GetItemRect(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetSubItemAt">
@@ -1275,6 +1324,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -1321,6 +1371,9 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified is less than -1.</exception>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="P:System.Windows.Forms.ListView.SmallImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.LargeImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -1399,6 +1452,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="IndentCount">
@@ -1498,6 +1552,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1576,6 +1631,9 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListViewItem.Position" /> is set when the containing <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1601,6 +1659,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
+        <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1647,6 +1707,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedItems" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedIndices" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -1673,6 +1735,9 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
         <block subset="none" type="overrides">
           <para>This method should be overridden if you are going to serialize and deserialize your derived version of this class and your derived class contains state information you want to be serialized and deserialized. You must call the base class implementation of this method in order to ensure that your items are serialized and deserialized properly.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ListViewItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="StateImageIndex">
@@ -1726,6 +1791,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
  -or-  
   
  The value specified for this property is greater than 14.</exception>
+        <altmember cref="P:System.Windows.Forms.ListView.StateImageList" />
       </Docs>
     </Member>
     <Member MemberName="SubItems">
@@ -1787,6 +1853,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1902,6 +1969,10 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListView.LabelWrap" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -1959,6 +2030,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="UseItemStyleForSubItems">
@@ -1999,7 +2071,19 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ForeColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

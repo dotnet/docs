@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocumentWriter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocumentWriter interface [.NET Framework debugging]"
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocumentWriter Interface
 Provides methods for writing to a document referenced by a symbol store.  

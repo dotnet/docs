@@ -31,7 +31,7 @@ Class Program
         ' Get the certifcate to use to encrypt the key.
         Dim cert As X509Certificate2 = GetCertificateFromStore("CN=CERT_SIGN_TEST_CERT")
         If cert Is Nothing Then
-            Console.WriteLine("Certificatge 'CN=CERT_SIGN_TEST_CERT' not found.")
+            Console.WriteLine("Certificate 'CN=CERT_SIGN_TEST_CERT' not found.")
             Console.ReadLine()
         End If
 

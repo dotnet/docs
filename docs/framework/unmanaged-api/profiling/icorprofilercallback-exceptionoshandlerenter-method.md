@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionOSHandlerEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionOSHandlerEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerEnter method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerEnter Method
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  

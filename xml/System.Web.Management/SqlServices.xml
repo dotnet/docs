@@ -58,6 +58,7 @@
         <summary>Generates the SQL scripts for the selected features. The scripts will reference the database indicated by the database parameter.</summary>
         <returns>Returns the generated script code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="GenerateSessionStateScripts">
@@ -86,6 +87,7 @@
         <returns>Returns the generated script code.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -132,6 +134,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -175,6 +178,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -217,6 +221,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contains one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -263,6 +268,7 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -301,6 +307,7 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="InstallSessionState">
@@ -351,6 +358,7 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -397,6 +405,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -443,6 +452,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -485,6 +495,7 @@
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="features" /> value contained one or more invalid flags.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation, an attempt was made to uninstall from a nonexistent database, or one or more tables for the features in the specified database contained data.</exception>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -530,6 +541,7 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -568,6 +580,7 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
     <Member MemberName="UninstallSessionState">
@@ -617,7 +630,48 @@
         <exception cref="T:System.ArgumentException">The type is <see langword="Custom" /> and the <paramref name="customDatabase" /> value is not supplied, or the type is either <see langword="Temporary" /> or <see langword="Persisted" /> and the <paramref name="customDatabase" /> value is not null.</exception>
         <exception cref="T:System.Web.HttpException">Unable to connect to the specified database server.</exception>
         <exception cref="T:System.Web.Management.SqlExecutionException">An exception occurred while processing the SQL statements required for the operation.</exception>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Uninstall">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UninstallSessionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InstallSessionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Install">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Installs components for specified ASP.NET features on a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

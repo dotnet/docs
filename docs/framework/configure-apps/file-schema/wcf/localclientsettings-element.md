@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;localClientSettings&gt; element
 Specifies the security settings of a local client for this binding.  
@@ -75,14 +77,14 @@ Specifies the security settings of a local client for this binding.
  The settings are local in the sense that they are not settings derived from the security policy of the service.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>   
- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>   
- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>   
- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)   
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)   
+ <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>  
+ <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>  
+ <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>  
+ <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
+ [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
+ [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

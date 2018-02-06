@@ -109,9 +109,9 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintQueueProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintQueueProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Printing.PrintQueue" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintQueueProperty" />.</summary>
+        <returns>A <see cref="T:System.Printing.PrintQueue" /> that is the converted value of the <see cref="T:System.Printing.IndexedProperties.PrintQueueProperty" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,5 +133,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintQueueProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintQueueProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Printing.PrintQueue" /> value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

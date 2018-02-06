@@ -217,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.EndPoint" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -265,6 +266,8 @@
  -or-  
   
  <paramref name="socketAddress" />.Size &lt; 8.</exception>
+        <altmember cref="T:System.Net.EndPoint" />
+        <altmember cref="T:System.Net.SocketAddress" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -298,6 +301,7 @@
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -492,6 +496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.EndPoint" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -534,5 +539,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.IPEndPoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -45,6 +45,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Layout.LayoutEngine" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
   </Docs>
   <Members>
     <Member MemberName="ColumnCount">
@@ -86,6 +90,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property value is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.TableLayoutSettings.RowCount" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
       </Docs>
     </Member>
     <Member MemberName="ColumnStyles">
@@ -116,6 +122,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutSettings.RowStyles" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
       </Docs>
     </Member>
     <Member MemberName="GetCellPosition">
@@ -155,6 +164,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="GetColumn">
@@ -184,6 +194,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="GetColumnSpan">
@@ -206,6 +217,7 @@
         <summary>Gets the number of columns that the cell containing the child control spans.</summary>
         <returns>The number of columns that the cell containing the child control spans.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="GetRow">
@@ -235,6 +247,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="GetRowSpan">
@@ -257,6 +270,7 @@
         <summary>Gets the number of rows that the cell containing the child control spans.</summary>
         <returns>The number of rows that the cell containing the child control spans.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="GrowStyle">
@@ -288,6 +302,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is not valid for the enumeration type.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.GrowStyle" />
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -317,6 +333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Layout.LayoutEngine" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.LayoutEngine" />
       </Docs>
     </Member>
     <Member MemberName="RowCount">
@@ -358,6 +376,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property value is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.TableLayoutSettings.ColumnCount" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowCount" />
       </Docs>
     </Member>
     <Member MemberName="RowStyles">
@@ -388,6 +408,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutSettings.ColumnStyles" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
       </Docs>
     </Member>
     <Member MemberName="SetCellPosition">
@@ -428,6 +451,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="SetColumn">
@@ -455,6 +479,7 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="column" /> is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="SetColumnSpan">
@@ -482,6 +507,7 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than 1.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="SetRow">
@@ -509,6 +535,7 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="row" /> is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="SetRowSpan">
@@ -536,6 +563,7 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than 1.</exception>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -566,6 +594,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
   </Members>

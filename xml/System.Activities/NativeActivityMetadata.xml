@@ -1032,5 +1032,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddImportedChild">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddChild">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddImportedDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

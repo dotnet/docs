@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethod method, ISymUnmanagedReader interface [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethod method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetMethod Method
 Gets a symbol reader method, given a method token.  

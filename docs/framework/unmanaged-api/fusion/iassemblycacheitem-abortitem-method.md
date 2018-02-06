@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::AbortItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AbortItem method [.NET Framework fusion]"
   - "IAssemblyCacheItem::AbortItem method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCacheItem::AbortItem Method
 Allows the assembly in the global assembly cache to perform cleanup operations before it is released.  

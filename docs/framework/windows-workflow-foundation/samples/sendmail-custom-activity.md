@@ -9,12 +9,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SendMail Custom Activity
-This sample demonstrates how to create a custom activity that derives from <xref:System.Activities.AsyncCodeActivity> to send mail using SMTP for use within a workflow application. The custom activity uses the capabilities of <xref:System.Net.Mail.SmtpClient> to send e-mail asynchronously and to send mail with authentication. It also provides some end-user features like test mode, token replacement, file templates, and test drop path.  
+This sample demonstrates how to create a custom activity that derives from <xref:System.Activities.AsyncCodeActivity> to send mail using SMTP for use within a workflow application. The custom activity uses the capabilities of <xref:System.Net.Mail.SmtpClient> to send email asynchronously and to send mail with authentication. It also provides some end-user features like test mode, token replacement, file templates, and test drop path.  
   
  The following table details the arguments for the `SendMail` activity.  
   
@@ -27,15 +29,15 @@ This sample demonstrates how to create a custom activity that derives from <xref
 |Password|String|Password to set up the credentials to authenticate the sender <xref:System.Net.Mail.SmtpClient.Credentials%2A> property.|  
 |Subject|<xref:System.Activities.InArgument%601>\<string>|Subject of the message.|  
 |Body|<xref:System.Activities.InArgument%601>\<string>|Body of the message.|  
-|Attachments|<xref:System.Activities.InArgument%601>\<string>|Attachment collection used to store data attached to this e-mail message.|  
-|From|<xref:System.Net.Mail.MailAddress>|From address for this e-mail message.|  
-|To|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the recipients of this e-mail message.|  
-|CC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the carbon copy (CC) recipients for this e-mail message.|  
-|BCC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the blind carbon copy (BCC) recipients for this e-mail message.|  
+|Attachments|<xref:System.Activities.InArgument%601>\<string>|Attachment collection used to store data attached to this email message.|  
+|From|<xref:System.Net.Mail.MailAddress>|From address for this email message.|  
+|To|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the recipients of this email message.|  
+|CC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the carbon copy (CC) recipients for this email message.|  
+|BCC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Address collection that contains the blind carbon copy (BCC) recipients for this email message.|  
 |Tokens|<xref:System.Activities.InArgument%601><IDictionary\<string, string>>|Tokens to replace in the body. This feature allows users to specify some values in the body than can be replaced later by the tokens provided using this property.|  
 |BodyTemplateFilePath|String|Path of a template for the body. The `SendMail` activity copies the contents of this file to its body property.<br /><br /> The template can contain tokens that are replaced by the contents of the tokens property.|  
-|TestMailTo|<xref:System.Net.Mail.MailAddress>|When this property is set, all e-mails are sent to the address specified in it.<br /><br /> This property is intended to be used when testing workflows. For example, when you want to make sure that all e-mails are sent without sending them to the actual recipients.|  
-|TestDropPath|String|When this property is set, all e-mails are also saved in the specified file.<br /><br /> This property is intended to be used when you are testing or debugging workflows, to make sure that the format and contents of the outgoing e-mails is appropriate.|  
+|TestMailTo|<xref:System.Net.Mail.MailAddress>|When this property is set, all emails are sent to the address specified in it.<br /><br /> This property is intended to be used when testing workflows. For example, when you want to make sure that all emails are sent without sending them to the actual recipients.|  
+|TestDropPath|String|When this property is set, all emails are also saved in the specified file.<br /><br /> This property is intended to be used when you are testing or debugging workflows, to make sure that the format and contents of the outgoing emails is appropriate.|  
   
 ## Solution Contents  
  The solution contains two projects.  
@@ -127,9 +129,9 @@ new SendMail
   
 2.  Ensure that you have access to a valid SMTP server. See the set-up instructions.  
   
-3.  Configure the program with your server address, and From and To e-mail addresses.  
+3.  Configure the program with your server address, and From and To email addresses.  
   
-     To correctly run this sample, you may need to configure the value of From and To e-mail addresses and the address of the SMTP server in  Program.cs and in Sequence.xaml. You will need to change the address in both locations since the program sends mail in two different ways  
+     To correctly run this sample, you may need to configure the value of From and To email addresses and the address of the SMTP server in  Program.cs and in Sequence.xaml. You will need to change the address in both locations since the program sends mail in two different ways  
   
 4.  To build the solution, press CTRL+SHIFT+B.  
   
@@ -142,6 +144,4 @@ new SendMail
 >   
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`  
-  
-## See Also
+>  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`

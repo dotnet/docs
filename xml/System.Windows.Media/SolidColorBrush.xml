@@ -91,6 +91,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Brush" />
+    <altmember cref="T:System.Windows.Media.Brushes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -213,6 +215,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Colors" />
+        <altmember cref="T:System.Windows.SystemColors" />
+        <altmember cref="T:System.Windows.Media.Brushes" />
+        <altmember cref="T:System.Windows.Media.Animation.ColorAnimation" />
+        <altmember cref="T:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames" />
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -273,5 +280,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SolidColorBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

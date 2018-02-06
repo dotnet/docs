@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables2::GetMetaDataStreamInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMetaDataStreamInfo method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStreamInfo method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables2::GetMetaDataStreamInfo Method
 Gets the name, size, and contents of the metadata stream at the specified index.  
@@ -67,5 +67,5 @@ HRESULT GetMetaDataStreamInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)   
+ [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)  
  [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)

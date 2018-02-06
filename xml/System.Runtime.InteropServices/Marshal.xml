@@ -93,6 +93,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.QueryInterface(System.IntPtr,System.Guid@,System.IntPtr@)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AllocCoTaskMem">
@@ -138,6 +143,8 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AllocHGlobal(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="AllocHGlobal">
@@ -199,6 +206,8 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AllocCoTaskMem(System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="AllocHGlobal">
@@ -253,6 +262,8 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AllocCoTaskMem(System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="AreComObjectsAvailableForCleanup">
@@ -871,6 +882,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -930,6 +942,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -989,6 +1002,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1048,6 +1062,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1107,6 +1122,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1166,6 +1182,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1268,6 +1285,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" />, <paramref name="destination" />, <paramref name="startIndex" />, or <paramref name="length" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1514,11 +1532,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.CreateWrapperOfType%2A> converts one COM class type, typically the generic `__ComObject` type, to another COM class type. The input COM object, represented by parameter `o`, is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).  
+ <xref:System.Runtime.InteropServices.Marshal.CreateWrapperOfType%2A> converts one COM class type, typically the base `__ComObject` type, to another COM class type. The input COM object, represented by parameter `o`, is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).  
   
  Both the `t` and `o` parameters must be classes whose signatures are attributed with <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType>. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/en-us/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
+ Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
   
 > [!NOTE]
 >  You lose the identity of the input COM object because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
@@ -1535,6 +1553,7 @@
         <exception cref="T:System.InvalidCastException">
           <paramref name="o" /> cannot be converted to the destination type because it does not support all required interfaces.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CreateWrapperOfType&lt;T,TWrapper&gt;">
@@ -1585,7 +1604,7 @@
   
  Both the `T` generic type parameter and the `o` parameter must be classes whose signatures are attributed with the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/en-us/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
+ Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
   
 > [!NOTE]
 >  You lose the identity of the input COM object, because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
@@ -1657,6 +1676,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="structureType" /> has an automatic layout. Use sequential or explicit instead.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="DestroyStructure&lt;T&gt;">
@@ -1761,6 +1782,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="o" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReleaseComObject(System.Object)" />
+        <altmember cref="T:System.NullReferenceException" />
       </Docs>
     </Member>
     <Member MemberName="FreeBSTR">
@@ -1804,6 +1827,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="FreeCoTaskMem">
@@ -1851,6 +1876,10 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AllocCoTaskMem(System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem(System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="FreeHGlobal">
@@ -1917,6 +1946,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AllocHGlobal(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocHGlobal(System.IntPtr,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="GenerateGuidForType">
@@ -1952,6 +1983,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Type.GUID" />
       </Docs>
     </Member>
     <Member MemberName="GenerateProgIdForType">
@@ -2085,7 +2117,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2097,7 +2129,7 @@
   
  -or-  
   
- The <typeparamref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.InvalidCastException">The <paramref name="o" /> parameter does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
@@ -2105,6 +2137,11 @@
   
  The <typeparamref name="T" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObjectInContext(System.Object,System.Type)" />
+        <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="T:System.Runtime.InteropServices.UCOMIConnectionPointContainer" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetComInterfaceForObject">
@@ -2160,7 +2197,7 @@
   
  -or-  
   
- The <typeparamref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.InvalidCastException">The object <paramref name="o" /> does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
@@ -2220,7 +2257,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2283,6 +2320,11 @@
   
  <paramref name="t" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
+        <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="T:System.Runtime.InteropServices.UCOMIConnectionPointContainer" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetComObjectData">
@@ -2332,6 +2374,7 @@
   
  <paramref name="obj" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] object.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.SetComObjectData(System.Object,System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetComSlotForMethodInfo">
@@ -2358,9 +2401,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The zero-based slot number returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
+ The zero-based slot number returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
   
- You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -2371,6 +2414,8 @@
   
  The <paramref name="m" /> parameter is not an interface method.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot(System.Type,System.Int32,System.Runtime.InteropServices.ComMemberType@)" />
       </Docs>
     </Member>
     <Member MemberName="GetDelegateForFunctionPointer">
@@ -2524,11 +2569,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetStartComSlot(System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot(System.Type,System.Int32,System.Runtime.InteropServices.ComMemberType@)" />
       </Docs>
     </Member>
     <Member MemberName="GetExceptionCode">
@@ -2611,13 +2658,14 @@
 ## Remarks  
  Use the <xref:System.Runtime.InteropServices.Marshal.GetExceptionForHR%2A> method to get an <xref:System.Exception> based on an HRESULT without having to call the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method and catch the exception.  
   
- The current [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
+ The current [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
   
  For the mapping from each HRESULT to its comparable exception class in the .NET Framework, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR" />
       </Docs>
     </Member>
     <Member MemberName="GetExceptionForHR">
@@ -2653,7 +2701,7 @@
       <Docs>
         <param name="errorCode">The HRESULT to be converted.</param>
         <param name="errorInfo">A pointer to the <see langword="IErrorInfo" /> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see langword="IErrorInfo" /> interface, or <c>IntPtr(-1)</c> to ignore the current <see langword="IErrorInfo" /> interface and construct the exception just from the error code.</param>
-        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
+        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
         <returns>An object that represents the converted HRESULT and information obtained from <paramref name="errorInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2668,6 +2716,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR" />
       </Docs>
     </Member>
     <Member MemberName="GetExceptionPointers">
@@ -2746,7 +2795,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="d" /> parameter is a generic type.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="d" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="d" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
@@ -2799,6 +2848,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="d" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="d" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
@@ -2883,6 +2933,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.PreserveSigAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetHRForLastWin32Error">
@@ -2937,6 +2988,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.DllImportAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetIDispatchForObject">
@@ -2961,7 +3013,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface from a managed object.</summary>
+        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface from a managed object.</summary>
         <returns>The <see langword="IDispatch" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2976,6 +3028,8 @@
         <exception cref="T:System.InvalidCastException">
           <paramref name="o" /> does not support the requested interface.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObjectInContext(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetIDispatchForObjectInContext">
@@ -2996,7 +3050,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface pointer from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface pointer from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IDispatch" /> interface pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3011,6 +3065,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="o" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetITypeInfoForType">
@@ -3057,6 +3113,8 @@
  <paramref name="t" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] type.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">A type library is registered for the assembly that contains the type, but the type definition cannot be found.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypeForITypeInfo(System.IntPtr)" />
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetIUnknownForObject">
@@ -3111,6 +3169,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="GetIUnknownForObjectInContext">
@@ -3150,6 +3210,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="GetLastWin32Error">
@@ -3206,6 +3269,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.DllImportAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetManagedThunkForUnmanagedMethodPtr">
@@ -3278,7 +3342,7 @@
 ## Remarks  
  The return value may be a <xref:System.Reflection.FieldInfo>, <xref:System.Reflection.MethodInfo>, or <xref:System.Reflection.PropertyInfo> object. The return value depends on the type of managed member that exists in the given COM slot (hence the generalized return type <xref:System.Reflection.MemberInfo> from which all three derive).  
   
- The zero-based slot number that is returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
+ The zero-based slot number that is returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
   
  The `memberType` parameter is important only on return. It contains the type of the COM member (a regular method or a property accessor) that corresponds to the returned <xref:System.Reflection.MemberInfo> object.  
   
@@ -3287,6 +3351,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="t" /> is not visible from COM.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo(System.Reflection.MemberInfo)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetEndComSlot(System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetStartComSlot(System.Type)" />
+        <altmember cref="T:System.Runtime.InteropServices.ComMemberType" />
       </Docs>
     </Member>
     <Member MemberName="GetNativeVariantForObject">
@@ -3331,7 +3399,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="obj" /> parameter is a generic type.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="obj" /> parameter is an instance of a generic type.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -3424,7 +3492,7 @@
 ## Remarks  
  This method wraps `IUnknown` in a managed object. This has the effect of incrementing the reference count of the COM component. The reference count will be decremented when the runtime performs garbage collection on the managed object that represents the COM object.  
   
- The `pUnk` parameter represents an `IUnknown` interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), which the common language runtime manages as it does any other managed object. The type of this wrapper is often a generic `System.__ComObject` type, which is a hidden type used when the wrapper type is ambiguous. You can still make late-bound calls to such a generic type as long as the COM object implements the [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface. Likewise, you can cast the returned object to an appropriate COM interface.  
+ The `pUnk` parameter represents an `IUnknown` interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), which the common language runtime manages as it does any other managed object. The type of this wrapper is often a base `System.__ComObject` type, which is a hidden type used when the wrapper type is ambiguous. You can still make late-bound calls to such a base type as long as the COM object implements the [IDispatch](https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5(vs.85)) interface. Likewise, you can cast the returned object to an appropriate COM interface.  
   
  For an object to be wrapped with a specific managed class type (and not a generic wrapper type), you must adhere to the following requirements:  
   
@@ -3437,6 +3505,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AddRef(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown(System.IntPtr,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectForNativeVariant">
@@ -3489,6 +3560,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="pSrcNativeVariant" /> has an unsupported type.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject(System.Object,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectForNativeVariant&lt;T&gt;">
@@ -3683,18 +3755,20 @@
       <Docs>
         <param name="t">A type that represents an interface.</param>
         <summary>Gets the first slot in the virtual function table (v-table or VTBL) that contains user-defined methods.</summary>
-        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
+        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="t" /> is not visible from COM.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetEndComSlot(System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot(System.Type,System.Int32,System.Runtime.InteropServices.ComMemberType@)" />
       </Docs>
     </Member>
     <Member MemberName="GetThreadFromFiberCookie">
@@ -3732,6 +3806,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="cookie" /> parameter is 0.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Threading.Thread" />
       </Docs>
     </Member>
     <Member MemberName="GetTypedObjectForIUnknown">
@@ -3764,7 +3839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](http://msdn.microsoft.com/en-us/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
+ The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](http://msdn.microsoft.com/library/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
   
  If an object has already been obtained for the `pUnk` parameter, `t` is ignored and the existing object is returned. `pUnk` represents an[IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW), which the common language runtime manages as it does any other managed object.  
   
@@ -3777,6 +3852,7 @@
   
  <paramref name="t" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] type.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeForITypeInfo">
@@ -3797,7 +3873,7 @@
       </Parameters>
       <Docs>
         <param name="piTypeInfo">The <see langword="ITypeInfo" /> interface to marshal.</param>
-        <summary>Converts an unmanaged [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
+        <summary>Converts an unmanaged [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
         <returns>A managed type that represents the unmanaged <see langword="ITypeInfo" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3808,6 +3884,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetITypeInfoForType(System.Type)" />
+        <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromCLSID">
@@ -3878,7 +3956,7 @@
       </Parameters>
       <Docs>
         <param name="typeInfo">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="typeInfo" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3890,6 +3968,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="typeInfo" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfoName">
@@ -3915,7 +3994,7 @@
       </Parameters>
       <Docs>
         <param name="pTI">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="pTI" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3926,6 +4005,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibGuid">
@@ -3954,11 +4034,13 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly(System.Reflection.Assembly)" />
+        <altmember cref="T:System.Runtime.InteropServices.ComTypes.ITypeLib" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibGuid">
@@ -3992,11 +4074,13 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly(System.Reflection.Assembly)" />
+        <altmember cref="T:System.Runtime.InteropServices.UCOMITypeLib" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibGuidForAssembly">
@@ -4025,13 +4109,15 @@
 ## Remarks  
  When assemblies are exported to type libraries, the type library is assigned a LIBID. You can set the LIBID explicitly by applying the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> at the assembly level, or it can be generated automatically. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool calculates a LIBID value based on the identity of the assembly. <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> returns the LIBID that is associated with the <xref:System.Runtime.InteropServices.GuidAttribute>, if the attribute is applied. Otherwise, <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A> returns the calculated value. Alternatively, you can use the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> method to extract the actual LIBID from an existing type library.  
   
- See the [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
+ See the [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asm" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GuidAttribute" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetTypeLibGuid(System.Runtime.InteropServices.UCOMITypeLib)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibLcid">
@@ -4119,6 +4205,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="typelib" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibName">
@@ -4157,6 +4244,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeLibVersionForAssembly">
@@ -4195,6 +4283,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inputAssembly" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.TypeLibExporterFlags" />
+        <altmember cref="T:System.Runtime.InteropServices.TypeLibVersionAttribute" />
+        <altmember cref="T:System.Runtime.InteropServices.ITypeLibConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetUniqueObjectForIUnknown">
@@ -4327,6 +4418,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="o" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
+        <altmember cref="P:System.Type.IsImport" />
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="IsTypeVisibleFromCom">
@@ -4358,6 +4452,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.ComVisibleAttribute" />
       </Docs>
     </Member>
     <Member MemberName="NumParamBytes">
@@ -4434,7 +4529,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
@@ -4443,6 +4538,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The class cannot be exported as a structure or the field is nonpublic. Beginning with the .NET Framework version 2.0, the field may be private.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="t" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.SizeOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OffsetOf&lt;T&gt;">
@@ -4487,13 +4583,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.SizeOf``1(``0)" />
       </Docs>
     </Member>
     <Member MemberName="Prelink">
@@ -4544,6 +4641,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="m" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="m" /> parameter is not a <see cref="T:System.Reflection.MethodInfo" /> object.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PrelinkAll(System.Type)" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="PrelinkAll">
@@ -4583,6 +4682,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="c" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Prelink(System.Reflection.MethodInfo)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringAnsi">
@@ -4634,6 +4734,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringAnsi">
@@ -4689,6 +4791,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="len" /> is less than zero.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringAuto">
@@ -4734,6 +4838,10 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAuto(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAuto(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringAuto">
@@ -4783,6 +4891,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="len" /> is less than zero.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAuto(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAuto(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringBSTR">
@@ -4831,6 +4943,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ptr" /> equals <see cref="F:System.IntPtr.Zero" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToBSTR(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringUni">
@@ -4875,6 +4988,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringUni">
@@ -4921,6 +5036,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStringUTF8">
@@ -5094,11 +5211,12 @@
   
  -or-  
   
- The <paramref name="structureType" /> parameter is a generic type.</exception>
+ The <paramref name="structureType" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="structureType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.MissingMethodException">The class specified by <paramref name="structureType" /> does not have an accessible default constructor.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetTypeAttr(System.IntPtr@)" />
       </Docs>
     </Member>
     <Member MemberName="PtrToStructure&lt;T&gt;">
@@ -5249,6 +5367,12 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AddRef(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Release(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ReadByte">
@@ -5317,6 +5441,7 @@
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadByte">
@@ -5378,6 +5503,7 @@
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadByte">
@@ -5434,6 +5560,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt16">
@@ -5502,6 +5629,7 @@
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt16">
@@ -5563,6 +5691,8 @@
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt16">
@@ -5619,6 +5749,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt32">
@@ -5692,6 +5823,7 @@
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt32">
@@ -5758,6 +5890,8 @@
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt32">
@@ -5817,6 +5951,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt64">
@@ -5890,6 +6025,7 @@
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt64">
@@ -5951,6 +6087,8 @@
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadInt64">
@@ -6010,6 +6148,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadIntPtr">
@@ -6079,6 +6218,7 @@
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadIntPtr">
@@ -6141,6 +6281,8 @@
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadIntPtr">
@@ -6197,6 +6339,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReAllocCoTaskMem">
@@ -6244,6 +6387,8 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocHGlobal(System.IntPtr,System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ReAllocHGlobal">
@@ -6293,6 +6438,8 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem(System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -6352,6 +6499,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.AddRef(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.QueryInterface(System.IntPtr,System.Guid@,System.IntPtr@)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseComObject">
@@ -6414,6 +6566,8 @@
         <exception cref="T:System.NullReferenceException">
           <paramref name="o" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FinalReleaseComObject(System.Object)" />
+        <altmember cref="T:System.NullReferenceException" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseThreadCache">
@@ -6748,6 +6902,7 @@
   
  <paramref name="obj" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] object.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComObjectData(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SizeOf">
@@ -6809,6 +6964,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="structure" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.CharSet" />
       </Docs>
     </Member>
     <Member MemberName="SizeOf">
@@ -6863,8 +7019,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="t" /> parameter is a generic type.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="t" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="t" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.CharSet" />
       </Docs>
     </Member>
     <Member MemberName="SizeOf&lt;T&gt;">
@@ -7011,6 +7168,8 @@
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The length for <paramref name="s" /> is out of range.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringBSTR(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeBSTR(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="StringToCoTaskMemAnsi">
@@ -7057,6 +7216,8 @@
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="s" /> parameter exceeds the maximum length allowed by the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="StringToCoTaskMemAuto">
@@ -7100,6 +7261,7 @@
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The length for <paramref name="s" /> is out of range.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAuto(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="StringToCoTaskMemUni">
@@ -7146,6 +7308,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="s" /> parameter exceeds the maximum length allowed by the operating system.</exception>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="StringToCoTaskMemUTF8">
@@ -7225,6 +7389,8 @@
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="s" /> parameter exceeds the maximum length allowed by the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAnsi(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="StringToHGlobalAuto">
@@ -7274,6 +7440,7 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory available.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAuto(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="StringToHGlobalUni">
@@ -7322,6 +7489,7 @@
         <exception cref="T:System.OutOfMemoryException">The method could not allocate enough native heap memory.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="s" /> parameter exceeds the maximum length allowed by the operating system.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringUni(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="StructureToPtr">
@@ -7375,7 +7543,7 @@
 ## Remarks  
  If `structure` is a value type, it can be boxed or unboxed. If it is boxed, it is unboxed before copying.  
   
- A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType>.  
+ A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType>.  
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=nameWithType>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A?displayProperty=nameWithType> method before you free the memory block.  
   
@@ -7410,8 +7578,10 @@
   
  -or-  
   
- <paramref name="structure" /> is a generic type.</exception>
+ <paramref name="structure" /> is an instance of a generic type (in the .NET Framework 4.5 and earlier versions only). </exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" />
+        <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
       </Docs>
     </Member>
     <Member MemberName="StructureToPtr&lt;T&gt;">
@@ -7460,7 +7630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType>.  
+ A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType>.  
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=nameWithType>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%60%601%28System.IntPtr%29> method before you free the memory block.  
   
@@ -7485,6 +7655,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="structure" /> is a reference type that is not a formatted class.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure``1(System.IntPtr)" />
+        <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
       </Docs>
     </Member>
     <Member MemberName="SystemDefaultCharSize">
@@ -7527,6 +7699,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.PtrToStringAuto(System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAuto(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAuto(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SystemMaxDBCSCharSize">
@@ -7569,6 +7744,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToCoTaskMemAnsi(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ThrowExceptionForHR">
@@ -7625,6 +7802,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.COMException" />
       </Docs>
     </Member>
     <Member MemberName="ThrowExceptionForHR">
@@ -7678,6 +7856,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.COMException" />
       </Docs>
     </Member>
     <Member MemberName="UnsafeAddrOfPinnedArrayElement">
@@ -7724,6 +7903,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
       </Docs>
     </Member>
     <Member MemberName="UnsafeAddrOfPinnedArrayElement&lt;T&gt;">
@@ -7775,6 +7955,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
       </Docs>
     </Member>
     <Member MemberName="WriteByte">
@@ -7838,6 +8019,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteByte">
@@ -7894,6 +8076,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteByte">
@@ -7949,6 +8132,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8014,6 +8198,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8079,6 +8264,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8137,6 +8323,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8195,6 +8383,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8247,6 +8437,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt16">
@@ -8304,6 +8495,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt32">
@@ -8369,6 +8561,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt32">
@@ -8427,6 +8620,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt32">
@@ -8484,6 +8679,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt64">
@@ -8549,6 +8745,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt64">
@@ -8607,6 +8804,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
       </Docs>
     </Member>
     <Member MemberName="WriteInt64">
@@ -8664,6 +8863,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteIntPtr">
@@ -8729,6 +8929,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
   
  <paramref name="ptr" /> is invalid.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteIntPtr">
@@ -8789,6 +8990,8 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         </remarks>
         <exception cref="T:System.AccessViolationException">Base address (<paramref name="ptr" />) plus offset byte (<paramref name="ofs" />) produces a null or invalid address.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.WriteByte(System.IntPtr,System.Int32,System.Byte)" />
       </Docs>
     </Member>
     <Member MemberName="WriteIntPtr">
@@ -8841,6 +9044,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <exception cref="T:System.ArgumentException">
           <paramref name="ptr" /> is an <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> object. This method does not accept <see cref="T:System.Runtime.InteropServices.ArrayWithOffset" /> parameters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ZeroFreeBSTR">
@@ -9104,5 +9308,325 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SizeOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the unmanaged size, in bytes, of a class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeLibGuid">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the library identifier (LIBID) of a type library.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThrowExceptionForHR">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Throws an exception with a specific failure HRESULT value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 32-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetComInterfaceForObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an interface pointer that represents an interface for an object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PtrToStructure">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Marshals data from an unmanaged block of memory to a managed object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PtrToStringUni">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged Unicode string into it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 32-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 64-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteIntPtr">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a processor native-sized integer value to unmanaged memory. 32-bit integers are written on 32-bit systems, and 64-bit integers are written on 64-bit systems. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 64-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a single byte value to unmanaged memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetExceptionForHR">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an HRESULT error code to a corresponding <see cref="T:System.Exception" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeLibName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the name of a type library.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AllocHGlobal">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates memory from the unmanaged memory of the process.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PtrToStringAuto">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged string into it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Copy">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies data from a managed array to an unmanaged memory pointer, or from an unmanaged memory pointer to a managed array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a 16-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a single byte from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadIntPtr">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a processor native sized integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PtrToStringAnsi">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged ANSI string into it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeLibLcid">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the LCID of a type library.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a 16-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeInfoName">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

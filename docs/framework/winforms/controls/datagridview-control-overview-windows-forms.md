@@ -11,28 +11,28 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DataGridView"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], about DataGridView control"
   - "grid controls [Windows Forms]"
   - "tables [Windows Forms], displaying in DataGridView control"
   - "tables [Windows Forms], binding to DataGridView control"
   - "columns [Windows Forms], DataGridView control"
-  - "bound controls, DataGridView control"
+  - "bound controls [Windows Forms], dataGridView control"
   - "datasets [Windows Forms], binding to DataGridView control"
-  - "data grids, about data grids"
+  - "data grids [Windows Forms], about data grids"
   - "data [Windows Forms], resorting"
   - "data [Windows Forms], navigating"
   - "grids [Windows Forms]"
-  - "data binding, DataGridView control"
-  - "data sources, binding to DataGridView control"
+  - "data binding [Windows Forms], DataGridView control"
+  - "data sources [Windows Forms], binding to DataGridView control"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGridView Control Overview (Windows Forms)
 > [!NOTE]
@@ -87,8 +87,8 @@ manager: "wpickett"
  Provides topics that describe how to use the control efficiently to avoid performance problems when working with large amounts of data.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.BindingSource>   
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
- [Default Functionality in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-functionality-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.BindingSource>  
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
+ [Default Functionality in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-functionality-in-the-windows-forms-datagridview-control.md)  
  [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)

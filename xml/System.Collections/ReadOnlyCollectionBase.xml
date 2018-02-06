@@ -58,6 +58,9 @@
   
  This class makes the underlying collection available through the <see cref="P:System.Collections.ReadOnlyCollectionBase.InnerList" /> property, which is intended for use only by classes that are derived directly from <see cref="T:System.Collections.ReadOnlyCollectionBase" />. The derived class must ensure that its own users cannot modify the underlying collection.</para>
     </block>
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Collections.CollectionBase" />
+    <altmember cref="N:System.Collections.Generic" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -190,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="InnerList">
@@ -341,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -389,6 +394,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
   </Members>

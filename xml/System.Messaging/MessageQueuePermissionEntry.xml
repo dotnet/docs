@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Code Access Security](http://msdn.microsoft.com/en-us/23a20143-241d-4fe5-9d9f-3933fd594c03).  
+ For more information, see [Code Access Security](http://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03).  
   
    
   
@@ -28,6 +28,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.MessageQueuePermission" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionAccess" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionAttribute" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -234,5 +239,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.StringValidatorAttribute" />
+    <altmember cref="T:System.Configuration.ConfigurationValidatorBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,5 +222,14 @@
  <paramref name="value" /> contains invalid characters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

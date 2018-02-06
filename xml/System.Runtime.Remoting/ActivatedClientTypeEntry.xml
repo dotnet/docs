@@ -26,7 +26,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. By calling <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> you are giving the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the URL of the server on which you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client activated objects and remote object activation see [&#91;\<topic://cpconActivation>&#93;](http://msdn.microsoft.com/en-us/e90d0c64-00da-4080-ae78-a6c558825c25).  
+ For a detailed description of client activated objects and remote object activation see [&#91;\<topic://cpconActivation>&#93;](http://msdn.microsoft.com/library/e90d0c64-00da-4080-ae78-a6c558825c25).  
   
    
   
@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType(System.Type,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -171,6 +172,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextProperty" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.IContextAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -234,5 +239,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

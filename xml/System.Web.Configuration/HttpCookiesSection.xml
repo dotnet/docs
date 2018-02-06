@@ -36,6 +36,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.HttpCookie" />
+    <altmember cref="T:System.Web.HttpCookieMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,6 +135,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpCookie" />
+        <altmember cref="T:System.Web.HttpCookieMode" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

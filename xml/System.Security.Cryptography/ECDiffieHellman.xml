@@ -94,6 +94,7 @@
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
           <paramref name="curve" /> does not validate.</exception>
+        <altmember cref="M:System.Security.Cryptography.ECDiffieHellman.GenerateKey(System.Security.Cryptography.ECCurve)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -127,6 +128,7 @@
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
           <paramref name="parameters" /> does not validate.</exception>
+        <altmember cref="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -544,5 +546,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeriveKeyFromHash">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a hash function .</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHmac">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of an implementation of the Elliptic Curve Diffie-Hellman (ECDH) algorithm.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

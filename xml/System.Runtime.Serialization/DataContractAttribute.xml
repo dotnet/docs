@@ -74,6 +74,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+    <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.DataMemberAttribute" />
+    <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+    <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -191,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences" />
       </Docs>
     </Member>
     <Member MemberName="IsReferenceSetExplicitly">

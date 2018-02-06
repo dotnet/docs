@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Services
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] allows you to fully describe a workflow-based service declaratively in XAML. You can define a workflow that implements your service and describe endpoints the service exposes, all entirely in XAML. The topics in this section describe, in detail, the programming model that supports writing services declaratively.  

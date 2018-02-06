@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModule method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetModule method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetModule Method
 `GetModule` is obsolete. Do not call this method.  

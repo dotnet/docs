@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::Initialize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader::Initialize method [.NET Framework debugging]"
   - "Initialize method, ISymUnmanagedReader interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::Initialize Method
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  

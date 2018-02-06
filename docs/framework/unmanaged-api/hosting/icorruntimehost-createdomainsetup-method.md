@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomainSetup"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDomainSetup method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomainSetup method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
 Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
@@ -67,8 +67,8 @@ HRESULT CreateDomainSetup (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
- <xref:System.AppDomainSetup>   
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
+ <xref:System.AppDomainSetup>  
+ <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

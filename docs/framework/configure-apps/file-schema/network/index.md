@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "elements [.NET Framework], network configuration elements"
   - "sending data, network configuration elements"
@@ -29,6 +24,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Network Settings Schema
 Network settings specify how the .NET Framework connects to the Internet. The following table describes the function of each child configuration element under the [\<system.Net> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md).  
@@ -52,5 +49,5 @@ Network settings specify how the .NET Framework connects to the Internet. The fo
 |[\<schemeSettings> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## See Also  
- [Configuring Internet Applications](../../../../../docs/framework/network-programming/configuring-internet-applications.md)   
+ [Configuring Internet Applications](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

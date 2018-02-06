@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Xml.XmlTextWriter.WriteStartElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -396,5 +396,5 @@ manager: "wpickett"
 uid: System.Xml.XmlTextWriter.WriteStartAttribute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

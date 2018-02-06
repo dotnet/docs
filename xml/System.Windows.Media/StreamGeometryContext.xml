@@ -18,6 +18,8 @@
     <summary>Describes a geometry using drawing commands. This class is used with the <see cref="T:System.Windows.Media.StreamGeometry" /> class to create a lightweight geometry that does not support data binding, animation, or modification.</summary>
     <remarks>To be added.</remarks>
     <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+    <altmember cref="T:System.Windows.Media.StreamGeometry" />
+    <altmember cref="T:System.Windows.Media.PathGeometry" />
   </Docs>
   <Members>
     <Member MemberName="ArcTo">
@@ -71,6 +73,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.BezierTo(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo(System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="BeginFigure">
@@ -158,6 +164,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.ArcTo(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo(System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -229,6 +239,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyLineTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PolyBezierTo">
@@ -276,6 +287,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.ArcTo(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.BezierTo(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo(System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PolyLineTo">
@@ -321,6 +336,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.LineTo(System.Windows.Point,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PolyQuadraticBezierTo">
@@ -366,6 +382,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.ArcTo(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.BezierTo(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo(System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="QuadraticBezierTo">
@@ -415,6 +435,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.ArcTo(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.BezierTo(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

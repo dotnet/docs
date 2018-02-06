@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure Tracking with WorkflowServiceHost
 This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] workflow hosted in <xref:System.ServiceModel.Activities.WorkflowServiceHost>. It is configured through a Web.config file by specifying a service behavior.  
@@ -75,6 +77,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] tracking in general, see [Workflow Tracking and Tracing](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md). For an example of configuring tracking programmatically see [Configuring Tracking for a Workflow](../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
 ## See Also  
- [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)   
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
+ [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)  
+ [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
  [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

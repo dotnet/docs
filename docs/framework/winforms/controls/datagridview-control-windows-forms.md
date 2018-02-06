@@ -9,17 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "tables [Windows Forms]"
-  - "data grids"
+  - "data grids [Windows Forms"
   - "data [Windows Forms], displaying in tabular format"
   - "grid controls [Windows Forms]"
   - "datasets [Windows Forms], user interface"
   - "Windows Forms, displaying data"
   - "data presentation"
-  - "tabular data, displaying on Windows Forms"
+  - "tabular data [Windows Forms], displaying on Windows Forms"
   - "datasets [Windows Forms], displaying in DataGridView control"
   - "DataGridView control [Windows Forms]"
 ms.assetid: dbee73f2-bba6-4874-9389-cd21d44309be
@@ -27,6 +25,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DataGridView Control (Windows Forms)
 The `DataGridView` control provides a powerful and flexible way to display data in a tabular format. You can use the `DataGridView` control to show read-only views of a small amount of data, or you can scale it to show editable views of very large sets of data.  

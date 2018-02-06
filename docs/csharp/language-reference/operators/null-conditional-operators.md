@@ -1,30 +1,14 @@
 ---
 title: "Null-conditional Operators (C# and Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Null-conditional Operators (C# and Visual Basic)
 Used to test for null before performing a member access (`?.`) or index (`?[`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  
@@ -87,8 +71,8 @@ PropertyChanged?.Invoke(e)
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   
 ## See Also  
- [?? (null-coalescing operator)](null-conditional-operator.md)   
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   
+ [?? (null-coalescing operator)](null-conditional-operator.md)  
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
  [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)

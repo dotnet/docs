@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetVersionNumber"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVersionNumber method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetVersionNumber method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode::GetVersionNumber Method
 Gets the one-based number that identifies the version of the code that this "ICorDebugCode" represents.  

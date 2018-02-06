@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
@@ -16,6 +19,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
 You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  
@@ -27,7 +32,7 @@ You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.m
  When using HTTPS to communicate between a client and a service, the certificate that the server authenticates with must support chain trust by default. That is, it must chain to a trusted root certificate authority. No online check is performed to see whether the certificate has been revoked. You can override this behavior by registering a <xref:System.Net.Security.RemoteCertificateValidationCallback> callback, as shown in the following code.  
   
  [!code-csharp[c_CertificateValidationDifferences#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs/source.cs#1)] 
- [!code-vb[c_CertificateValidationDifferences#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#1)]   
+ [!code-vb[c_CertificateValidationDifferences#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#1)]  
   
  where the signature for `ValidateServerCertificate` is as follows:  
   
@@ -51,5 +56,5 @@ You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.m
  [!code-vb[c_CertificateValidationDifferences#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#4)]  
   
 ## See Also  
- <xref:System.Net.Security.RemoteCertificateValidationCallback>   
+ <xref:System.Net.Security.RemoteCertificateValidationCallback>  
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

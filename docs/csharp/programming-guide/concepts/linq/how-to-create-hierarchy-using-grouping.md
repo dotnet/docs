@@ -1,7 +1,7 @@
 ---
 title: "How to: Create Hierarchy Using Grouping (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
 caps.latest.revision: 3
 author: "BillWagner"

@@ -4,10 +4,13 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Official .NET Docker images
 
@@ -33,7 +36,7 @@ Why multiple images? When developing, building, and running containerized applic
 
 ### During development and build
 
-During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image is not as important as the ability to make changes to your code and see the changes quickly. Some of our tools, like [yo docker](https://github.com/Microsoft/generator-docker) for Visual Studio Code, use the development ASP.NET Core image (microsoft/aspnetcore-build) during development; you could even use that image as a build container. When building inside a Docker container, the important aspects are the elements that are needed in order to compile your app. This includes the compiler and any other .NET dependencies, plus web development dependencies like npm, Gulp, and Bower.
+During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image is not as important as the ability to make changes to your code and see the changes quickly. Some tools and "build-agent containers", use the development ASP.NET Core image (microsoft/aspnetcore-build) during development and build proces. When building inside a Docker container, the important aspects are the elements that are needed in order to compile your app. This includes the compiler and any other .NET dependencies, plus web development dependencies like npm, Gulp, and Bower.
 
 Why is this type of build image important? You do not deploy this image to production. Instead, it is an image you use to build the content you place into a production image. This image would be used in your continuous integration (CI) environment or build environment. For instance, rather than manually installing all your application dependencies directly on a build agent host (a VM, for example), the build agent would instantiate a .NET Core build image with all the dependencies required to build the application. Your build agent only needs to know how to run this Docker image. This simplifies your CI environment and makes it much more predictable.
 
@@ -45,22 +48,16 @@ In this optimized image you put only the binaries and other content needed to ru
 
 Although there are multiple versions of the .NET Core and ASP.NET Core images, they all share one or more layers, including the base layer. Therefore, the amount of disk space needed to store an image is small; it consists only of the delta between your custom image and its base image. The result is that it is quick to pull the image from your registry.
 
-When you explore the .NET image repositories at Docker Hub, you will find multiple image versions classified or marked with tags. These help decide which one to use, depending on the version you need, like those in the following list::
+When you explore the .NET image repositories at Docker Hub, you will find multiple image versions classified or marked with tags. These tags help to decide which one to use, depending on the version you need, like those in the following table:
 
--   microsoft/aspnetcore:**1.1**
-    ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux
+-   microsoft/**aspnetcore:2.0**
 
--   microsoft/aspnetcore-build:**1.0-1.1**
-    ASP.NET Core, with SDKs included, on Linux
+        ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch)
 
--   microsoft/dotnet:**1.1-runtime**
-    .NET Core 1.1, with runtime only, on Linux
+-   microsoft/**aspnetcore-build:2.0**
 
--   microsoft/dotnet:**1.1-runtime-deps**
-    .NET Core 1.1, with runtime and framework dependencies for self-contained apps, on Linux
+        ASP.NET Core, with SDKs included, on Linux and Windows (multi-arch)
 
--   microsoft/dotnet**:1.1.0-sdk-msbuild**
-    .NET Core 1.1 with SDKs included, on Linux
 
 >[!div class="step-by-step"]
 [Previous] (net-container-os-targets.md)

@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property after an insert operation. To keep the <xref:System.Web.UI.WebControls.DetailsView> control in insert mode, set the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.%23ctor%2A> constructor.  
   
@@ -31,11 +31,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event to determine whether an exception occurred during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +83,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -103,11 +118,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows%2A> property to determine the number of rows affected by the insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -139,11 +160,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception%2A> property to determine whether an exception was raised during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -173,11 +200,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -210,11 +243,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to keep the <xref:System.Web.UI.WebControls.DetailsView> control in insert mode after an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -248,11 +285,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values%2A> property to access the values of the fields of the inserted record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
       </Docs>
     </Member>
   </Members>

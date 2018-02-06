@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
 caps.latest.revision: 5
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL Server Schema Collections
 The Microsoft .NET Framework Data Provider for SQL Server supports additional schema collections in addition to the common schema collections. The schema collections vary slightly by the version of SQL Server you are using. To determine the list of supported schema collections, call the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use.  
@@ -262,5 +264,5 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |Permission_set_desc|String|The friendly name for the permission-set/security-level for the assembly.|  
   
 ## See Also  
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)   
+ [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

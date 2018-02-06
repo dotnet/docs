@@ -308,5 +308,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets whether the collection contains the referenced <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

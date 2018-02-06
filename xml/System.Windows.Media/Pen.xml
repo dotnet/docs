@@ -275,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.DashStyles" />
       </Docs>
     </Member>
     <Member MemberName="DashStyleProperty">
@@ -331,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Pen.StartLineCap" />
       </Docs>
     </Member>
     <Member MemberName="EndLineCapProperty">
@@ -441,6 +443,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeMiterLimit" />
       </Docs>
     </Member>
     <Member MemberName="MiterLimitProperty">
@@ -497,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Pen.EndLineCap" />
       </Docs>
     </Member>
     <Member MemberName="StartLineCapProperty">
@@ -566,5 +570,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Pen" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

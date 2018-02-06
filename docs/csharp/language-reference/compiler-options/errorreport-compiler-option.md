@@ -1,14 +1,12 @@
 ---
 title: "-errorreport (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/errorreport"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-errorreport compiler option [C#]"
   - "errorreport compiler option [C#]"
@@ -17,22 +15,8 @@ ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /errorreport (C# Compiler Options)
+# -errorreport (C# Compiler Options)
 This option provides a convenient way to report a C# internal compiler error to Microsoft.  
   
 > [!NOTE]
@@ -41,7 +25,7 @@ This option provides a convenient way to report a C# internal compiler error to 
 ## Syntax  
   
 ```console  
-/errorreport:{ none | prompt | queue | send }  
+-errorreport:{ none | prompt | queue | send }  
 ```  
   
 ## Arguments  
@@ -55,18 +39,16 @@ This option provides a convenient way to report a C# internal compiler error to 
  Queues the error report. When you log on with administrative credentials, you can report any failures since the last time that you were logged on. You will not be prompted to send reports for failures more than once every three days. **queue** is the default when you compile an application at the command line.  
   
  **send**  
- Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to the Microsoft data collection policy. The first time that you specify **/errorreport:send** on a computer, a compiler message will refer you to a Web site that contains the Microsoft data collection policy.  
-  
- This option depends on registry settings. For information about how to set the appropriate values in the registry, see [How to Turn on Automatic Error Reporting in Visual Studio 2008 Command-line Tools](http://go.microsoft.com/fwlink/?LinkID=184695) on the MSDN Web site.  
-  
+ Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to the Microsoft data collection policy. The first time that you specify **-errorreport:send** on a computer, a compiler message will refer you to a Web site that contains the Microsoft data collection policy.  
+    
 ## Remarks  
  An internal compiler error (ICE) results when the compiler cannot process a source code file. When an ICE occurs, the compiler does not produce an output file or any useful diagnostic that you can use to fix your code.  
   
- In previous releases, when you received an ICE, you were encouraged to contact Microsoft Product Support Services to report the problem. By using **/errorreport**, you can provide ICE information to the Visual C# team. Your error reports can help improve future compiler releases.  
+ In previous releases, when you received an ICE, you were encouraged to contact Microsoft Product Support Services to report the problem. By using **-errorreport**, you can provide ICE information to the Visual C# team. Your error reports can help improve future compiler releases.  
   
  A user's ability to send reports depends on computer and user policy permissions.  
   
- For more information about error debugger, see [Description of the Dr. Watson for Windows (Drwtsn32.exe) Tool](http://go.microsoft.com/fwlink/?LinkId=147286).  
+ For more information about error debugger, see [Description of the Dr. Watson for Windows (Drwtsn32.exe) Tool](https://support.microsoft.com/help/308538/description-of-the-dr--watson-for-windows-drwtsn32-exe-tool).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

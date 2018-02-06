@@ -39,13 +39,16 @@
   
  The second part of the code example is the Web page that declares the static connection and hosts the controls. Near the top of the page is a `Register` directive that declares the namespace of the source code contained in the App_Code directory. The connection is declared using an `<asp:webpartconnection>` element. The custom consumer and provider controls are declared in a `<zonetemplate>` element within an `<asp:webpartzone>` element, which is required for them to be able to connect (they must reside within a zone that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPartRow_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartRow_Overview/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPartRow_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartRow_Overview/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPartRow_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartRow_Overview/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPartRow_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartRow_Overview/VB/defaultvb.aspx#1)]  
   
  Load the page in a browser. The consumer control displays the data provided from the specified table, which the provider makes available through an instance of the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> interface.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebPartField" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebPartRow" />
   </Docs>
   <Members>
     <Member MemberName="GetTableData">
@@ -115,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
   </Members>

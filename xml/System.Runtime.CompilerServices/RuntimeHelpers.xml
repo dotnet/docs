@@ -134,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteCodeWithGuaranteedCleanup">
@@ -256,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectValue">
@@ -857,5 +859,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PrepareMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares a method for inclusion in a constrained execution region (CER).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

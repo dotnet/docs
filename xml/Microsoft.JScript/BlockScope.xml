@@ -14,6 +14,7 @@
     <summary>Represents the scope of a block of code that is taking part in a scope hierarchy and that can be pushed onto the global scope stack. For example, this class can represent the scope of a <see langword="try" /> block.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Block" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BlockScope" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Block" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -64,6 +67,8 @@
         <returns>A scope variable that has the specified name, value, and attributes.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Block" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
       </Docs>
     </Member>
   </Members>

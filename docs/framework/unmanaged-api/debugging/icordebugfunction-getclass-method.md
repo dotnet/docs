@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetClass method, ICorDebugFunction interface [.NET Framework debugging]"
   - "ICorDebugFunction::GetClass method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::GetClass Method
 Gets an ICorDebugClass object that represents the class this function is a member of.  

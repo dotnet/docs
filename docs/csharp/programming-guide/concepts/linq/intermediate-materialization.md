@@ -1,7 +1,7 @@
 ---
 title: "Intermediate Materialization (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 7922d38f-5044-41cf-8e17-7173d6553a5e
 caps.latest.revision: 3
 author: "BillWagner"

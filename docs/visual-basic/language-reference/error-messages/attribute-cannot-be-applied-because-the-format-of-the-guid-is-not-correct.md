@@ -1,40 +1,21 @@
 ---
 title: "&#39;&lt;attribute&gt;&#39; cannot be applied because the format of the GUID &#39;&lt;number&gt;&#39; is not correct"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc32500"
   - "bc32500"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32500"
 ms.assetid: 6fa34c55-368e-4d7d-b488-07a3fffe045f
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &#39;&lt;attribute&gt;&#39; cannot be applied because the format of the GUID &#39;&lt;number&gt;&#39; is not correct
 A `COMClassAttribute` attribute block specifies a globally unique identifier (GUID) that does not conform to the proper format for a GUID. `COMClassAttribute` uses GUIDs to uniquely identify the class, the interface, and the creation event.  
@@ -50,6 +31,6 @@ A `COMClassAttribute` attribute block specifies a globally unique identifier (GU
 2.  Ensure that the GUID strings presented to the `COMClassAttribute` attribute block are copied correctly.  
   
 ## See Also  
- <xref:System.Guid>   
+ <xref:System.Guid>  
 [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
 

@@ -29,7 +29,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.DynamicMethod.Invoke
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

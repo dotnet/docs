@@ -267,5 +267,14 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
           <paramref name="key" /> or <paramref name="provider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a class file that contains strongly typed properties that match the resources that are specified in the input parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

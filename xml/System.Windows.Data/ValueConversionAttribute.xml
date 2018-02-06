@@ -18,6 +18,8 @@
   <Docs>
     <summary>Represents an attribute that allows the author of a value converter to specify the data types involved in the implementation of the converter.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Data.IValueConverter" />
+    <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.ValueConversionAttribute" /> class with the specified source type and target type.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="targetType" /> parameter cannot be <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -58,6 +62,8 @@
         <summary>Returns the hash code for this instance of <see cref="T:System.Windows.Data.ValueConversionAttribute" />.</summary>
         <returns>The hash code for this instance of <see cref="T:System.Windows.Data.ValueConversionAttribute" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="ParameterType">
@@ -76,6 +82,8 @@
         <summary>Gets and sets the type of the optional value converter parameter object.</summary>
         <value>The type of the optional value converter parameter object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -94,6 +102,8 @@
         <summary>Gets the type this converter converts.</summary>
         <value>The type this converter converts.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="TargetType">
@@ -112,6 +122,8 @@
         <summary>Gets the type this converter converts to.</summary>
         <value>The type this converter converts to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="TypeId">
@@ -130,6 +142,8 @@
         <summary>Gets the unique identifier of this <see cref="T:System.Windows.Data.ValueConversionAttribute" /> instance.</summary>
         <value>The unique identifier of this <see cref="T:System.Windows.Data.ValueConversionAttribute" /> instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.IValueConverter" />
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
   </Members>

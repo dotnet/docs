@@ -60,6 +60,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.TreeView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeViewItem.IsExpanded" />
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Collapsed" />
       </Docs>
     </Member>
     <Member MemberName="CollapsedEvent">
@@ -217,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeViewItem.IsExpanded" />
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Collapsed" />
       </Docs>
     </Member>
     <Member MemberName="ExpandedEvent">
@@ -339,6 +344,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Collapsed" />
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Expanded" />
       </Docs>
     </Member>
     <Member MemberName="IsExpandedProperty">
@@ -429,6 +436,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Selected" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -753,6 +761,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Controls.TreeViewItem.OnSelected(System.Windows.RoutedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.TreeViewItem.OnSelected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Controls.TreeViewItem.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="OnUnselected">
@@ -860,6 +869,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeViewItem.IsSelected" />
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Unselected" />
+        <altmember cref="E:System.Windows.Controls.TreeView.SelectedItemChanged" />
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -1084,6 +1097,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeViewItem.IsSelected" />
+        <altmember cref="E:System.Windows.Controls.TreeViewItem.Selected" />
+        <altmember cref="E:System.Windows.Controls.TreeView.SelectedItemChanged" />
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">

@@ -20,8 +20,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CorExitProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorExitProcess function [.NET Framework hosting]"
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
@@ -31,6 +29,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorExitProcess Function
 Shuts down the current unmanaged process.  

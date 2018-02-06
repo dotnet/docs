@@ -4,10 +4,13 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 12/11/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Testing ASP.NET Core services and web apps
 
@@ -107,7 +110,7 @@ public class PrimeWebDefaultRequestShould
     [*https://xunit.github.io/*](https://xunit.github.io/)
 
 -   **Unit Test Basics.**
-    [*https://msdn.microsoft.com/en-us/library/hh694602.aspx*](https://msdn.microsoft.com/en-us/library/hh694602.aspx)
+    [*https://msdn.microsoft.com/library/hh694602.aspx*](https://msdn.microsoft.com/library/hh694602.aspx)
 
 -   **Moq**. GitHub repo.
     [*https://github.com/moq/moq*](https://github.com/moq/moq)

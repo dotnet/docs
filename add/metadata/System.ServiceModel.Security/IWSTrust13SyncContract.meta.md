@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13ValidateR
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Renew(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Issue(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13IssueResp
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13CancelRes
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Validate(
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13RenewResp
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,5 +67,5 @@ uid: System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Cancel(Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

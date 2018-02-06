@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback method [.NET Framework hosting]"
   - "RegisterMemoryNotificationCallback method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::RegisterMemoryNotificationCallback Method
 Registers a pointer to a callback function that the host invokes to notify the common language runtime (CLR) of the current memory load on the computer.  
@@ -72,5 +72,5 @@ HRESULT RegisterMemoryNotificationCallback (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)   
+ [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)  
  [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

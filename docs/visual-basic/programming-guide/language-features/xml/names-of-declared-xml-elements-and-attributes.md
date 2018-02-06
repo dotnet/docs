@@ -1,7 +1,7 @@
 ---
 title: "Names of Declared XML Elements and Attributes (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,33 +9,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "declarations [XML in Visual Basic]"
   - "element names [XML in Visual Basic]"
-  - "names in XML literals"
+  - "names in XML literals [Visual Basic]"
   - "attribute names [XML in Visual Basic]"
   - "XML literals [Visual Basic], element names"
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Names of Declared XML Elements and Attributes (Visual Basic)
 This topic provides [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] guidelines for naming XML elements and attributes in XML literals.  In an XML literal, you can specify a local name or a qualified name. A qualified name consists of an XML namespace prefix, a colon, and a local name. For more information about XML namespace prefixes, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
@@ -67,5 +50,5 @@ This topic provides [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] guidelines for n
  When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
 ## See Also  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
+ [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

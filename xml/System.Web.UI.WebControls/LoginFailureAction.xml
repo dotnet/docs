@@ -17,8 +17,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginFailureAction> enumeration to set the <xref:System.Web.UI.WebControls.Login.FailureAction%2A> property to redirect the user to the login page defined in the Web.config file when a login attempt fails.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginLoginFailureAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginFailureAction/CS/loginloginfailureactioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginLoginFailureAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginFailureAction/VB/loginloginfailureactionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginLoginFailureAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginFailureAction/CS/loginloginfailureactioncs.aspx#1)]
+ [!code-aspx-vb[LoginLoginFailureAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginFailureAction/VB/loginloginfailureactionvb.aspx#1)]  
   
  ]]></format>
     </remarks>

@@ -462,6 +462,7 @@
 -   The <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.  
   
  To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -496,6 +497,7 @@
 -   The <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.  
   
  To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -1134,6 +1136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UnvalidatedRequestValues" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1269,5 +1272,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InsertEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBufferlessInputStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MapPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Maps the virtual path in the requested URL to a physical path on the server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

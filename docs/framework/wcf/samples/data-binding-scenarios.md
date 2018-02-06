@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a2c10dc4-84af-4dab-baee-e9c84ca26ebf
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Binding Scenarios
 This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data binding scenarios.  

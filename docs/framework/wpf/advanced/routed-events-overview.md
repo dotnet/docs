@@ -9,21 +9,26 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "attached events"
-  - "grouped button set"
-  - "routed events"
-  - "events, routed"
-  - "tunneling"
-  - "events, attached"
-  - "routing strategies for events"
-  - "button set, grouped"
-  - "bubbling"
+  - "attached events [WPF]"
+  - "grouped button set [WPF]"
+  - "routed events [WPF]"
+  - "events [WPF], routed"
+  - "tunneling [WPF]"
+  - "events [WPF], attached"
+  - "routing strategies for events [WPF]"
+  - "button set [WPF], grouped"
+  - "bubbling [WPF]"
 ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Routed Events Overview
 This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
@@ -248,12 +253,12 @@ Input Event Bubbling and Tunneling
  This topic mainly discusses routed events from the perspective of describing the basic concepts and offering guidance on how and when to respond to the routed events that are already present in the various base elements and controls. However, you can create your own routed event on your custom class along with all the necessary support, such as specialized event data classes and delegates. The routed event owner can be any class, but routed events must be raised by and handled by <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> derived classes in order to be useful. For more information about custom events, see [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md).  
   
 ## See Also  
- <xref:System.Windows.EventManager>   
- <xref:System.Windows.RoutedEvent>   
- <xref:System.Windows.RoutedEventArgs>   
- [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)   
+ <xref:System.Windows.EventManager>  
+ <xref:System.Windows.RoutedEvent>  
+ <xref:System.Windows.RoutedEventArgs>  
+ [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
+ [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
+ [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)  
  [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md)

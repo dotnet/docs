@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +78,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -94,6 +102,11 @@
         <summary>Gets the designer action list collection for this designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -119,6 +132,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -158,6 +174,13 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.FormViewDesigner.GetDesignTimeHtml" /> method, be sure to call the base method because it eventually, through several override levels, calls on the <see cref="T:System.Web.UI.WebControls.FormView" /> control or a copy of the <see cref="T:System.Web.UI.WebControls.FormView" /> control to generate the markup.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.FormViewDesigner.GetEmptyDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -184,6 +207,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.FormViewDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -214,6 +241,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="OnSchemaRefreshed">
@@ -239,6 +271,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -319,6 +354,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -344,6 +383,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroupCollection" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -372,6 +416,11 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.FormViewDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> object. If the <see cref="P:System.Web.UI.Design.WebControls.FormViewDesigner.UsePreviewControl" /> is not overridden, the <see cref="T:System.Web.UI.WebControls.FormView" /> control ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
   </Members>

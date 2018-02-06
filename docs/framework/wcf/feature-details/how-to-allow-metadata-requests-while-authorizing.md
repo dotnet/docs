@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "allowing metadata requests while authorizing [WCF]"
 ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How To: Allow Metadata Requests While Authorizing
 During custom authorization, it may be necessary to allow a request for metadata to be processed. The following topic walks through the steps to validate such a request.  
@@ -39,6 +44,6 @@ During custom authorization, it may be necessary to allow a request for metadata
  [!code-vb[C_HowtoCheckForMexRequestsInAuthorization#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtocheckformexrequestsinauthorization/vb/source.vb#1)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>   
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)   
+ <xref:System.ServiceModel.ServiceAuthorizationManager>  
+ [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
  [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

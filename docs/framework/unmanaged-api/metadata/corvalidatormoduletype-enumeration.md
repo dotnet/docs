@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorValidatorModuleType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorValidatorModuleType enumeration [.NET Framework metadata]"
 ms.assetid: 748f1ab2-fbcb-4f55-89ec-8d23d81ebc80
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorValidatorModuleType Enumeration
 Specifies the type of a module.  

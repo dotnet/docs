@@ -10,16 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cells, detecting changes"
+  - "cells [Windows Forms], detecting changes"
   - "DataGridView control [Windows Forms], detecting changes in cells"
-  - "data grids, detecting changes in cells"
+  - "data grids [Windows Forms], detecting changes in cells"
 ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control has a number of events you can use to detect changes in the state of <xref:System.Windows.Forms.DataGridView> cells. Two of the most commonly used are the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.  
@@ -46,8 +49,8 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>   
- [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programming-with-cells-rows-and-columns-in-the-datagrid.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>  
+ [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programming-with-cells-rows-and-columns-in-the-datagrid.md)  
  [Walkthrough: Validating Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)

@@ -19,6 +19,9 @@
     <summary>Defines methods to handle errors that occur when code is being parsed.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSAuthor" />
+    <altmember cref="T:Microsoft.JScript.JSToken" />
+    <altmember cref="T:Microsoft.JScript.IParseText" />
   </Docs>
   <Members>
     <Member MemberName="OnCompilerError">
@@ -43,6 +46,9 @@
           <see langword="false" /> to handle the error; <see langword="true" /> to ignore the error and continue parsing.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSAuthor" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.IParseText" />
       </Docs>
     </Member>
   </Members>

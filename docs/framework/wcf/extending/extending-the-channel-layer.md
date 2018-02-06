@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "extending channels [WCF]"
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending the Channel Layer
 The channel layer is responsible for the exchange of messages between clients and services. Channel extensions can implement new protocol functionality, such as security, or transport functionality, such as implementing a new network transport to carry SOAP messages.  

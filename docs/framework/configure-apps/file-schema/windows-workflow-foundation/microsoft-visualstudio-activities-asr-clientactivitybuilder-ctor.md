@@ -15,9 +15,11 @@ api_type:
   - "Assembly"
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
 Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  

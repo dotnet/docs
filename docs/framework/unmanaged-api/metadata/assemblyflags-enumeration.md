@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AssemblyFlags enumeration [.NET Framework metadata]"
 ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AssemblyFlags Enumeration
 Contains values that describe run-time features of an assembly.  
@@ -67,5 +67,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)   
+ [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)  
  [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

@@ -44,6 +44,8 @@
 #### [private](private.md)
 #### [protected](protected.md)
 #### [public](public.md)
+#### [protected internal](protected-internal.md)
+#### [private protected](private-protected.md)
 ### [abstract](abstract.md)
 ### [async](async.md)
 ### [const](const.md)

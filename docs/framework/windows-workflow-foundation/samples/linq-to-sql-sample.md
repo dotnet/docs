@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5f39db9e-0e62-42c9-8c98-bb8b54cec98c
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to SQL Sample
 This sample demonstrates how to create an activity to use LINQ to SQL query entities from tables in SQL Server databases.  
@@ -93,5 +95,5 @@ new FindInSqlTable<Employee>
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Liiinq\LinqToSql`  
   
 ## See Also  
- [LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=150376)   
+ [LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=150376)  
  [Getting Started (LINQ to SQL)](http://go.microsoft.com/fwlink/?LinkId=150377)

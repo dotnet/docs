@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom WSDL Publication
 This sample demonstrates how to:  

@@ -526,10 +526,12 @@ public class Class1 {
         <Parameter Name="x" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see langword="OracleString" /> to be converted.</param>
+        <summary>Converts an <see cref="T:System.Data.OracleClient.OracleString" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A <see langword="String" />, whose contents are the same as the <see cref="P:System.Data.OracleClient.OracleString.Value" /> property of the <see langword="OracleString" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleString.ToString?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -600,9 +602,9 @@ public class Class1 {
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="s">The <see cref="T:System.String" /> to be converted.</param>
+        <summary>Converts the <see cref="T:System.String" /> parameter to an <see cref="T:System.Data.OracleClient.OracleString" />.</summary>
+        <returns>An <see langword="OracleString" /> containing the value of the specified <see langword="String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,5 +725,14 @@ public class Class1 {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied item(s) to another item(s).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

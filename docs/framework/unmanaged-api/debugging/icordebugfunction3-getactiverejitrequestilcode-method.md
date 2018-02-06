@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugFunction3.GetActiveReJitRequestILCode"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type: 
   - "apiref"
@@ -24,6 +24,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction3::GetActiveReJitRequestILCode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -32,7 +34,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetActiveReJitRequestILCode(  
    ICorDebugILCode **ppReJitedILCode  
 );  
@@ -57,6 +59,6 @@ HRESULT GetActiveReJitRequestILCode(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See Also  
- [ICorDebugFunction3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)   
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [ICorDebugFunction3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)  
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [ReJIT: A How-To Guide](http://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)

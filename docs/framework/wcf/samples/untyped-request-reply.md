@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Untyped Request/Reply
 This sample demonstrates how to define operation contracts that use the Message class.  

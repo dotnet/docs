@@ -1,16 +1,10 @@
 ---
 title: "Comparison Between Properties and Indexers (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "properties [C#], vs. indexers"
   - "indexers [C#], vs. properties"
@@ -18,21 +12,6 @@ ms.assetid: 3358a89f-44a0-4a4d-bf8c-07237a90af39
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Comparison Between Properties and Indexers (C# Programming Guide)
 Indexers are like properties. Except for the differences shown in the following table, all the rules that are defined for property accessors apply to indexer accessors also.  
@@ -47,6 +26,6 @@ Indexers are like properties. Except for the differences shown in the following 
 |Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Does not support shortened syntax.|  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

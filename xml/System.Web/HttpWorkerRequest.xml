@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.HttpRuntime.ProcessRequest(System.Web.HttpWorkerRequest)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -2592,6 +2593,7 @@
       <Docs>
         <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="ReasonCacheSecurity">
@@ -2610,6 +2612,7 @@
       <Docs>
         <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="ReasonClientDisconnect">
@@ -2628,6 +2631,7 @@
       <Docs>
         <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="ReasonDefault">
@@ -2646,6 +2650,7 @@
       <Docs>
         <summary>Specifies a reason for the request. The default value is <see cref="F:System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="ReasonFileHandleCacheMiss">
@@ -2664,6 +2669,7 @@
       <Docs>
         <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="ReasonResponseCacheMiss">
@@ -2682,6 +2688,7 @@
       <Docs>
         <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       </Docs>
     </Member>
     <Member MemberName="RequestHeaderMaximum">
@@ -2732,6 +2739,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Trace.CorrelationManager" />
+        <altmember cref="T:System.Web.HttpRuntime" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
       </Docs>
     </Member>
     <Member MemberName="ResponseHeaderMaximum">
@@ -2782,6 +2792,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath" />
       </Docs>
     </Member>
     <Member MemberName="SendCalculatedContentLength">
@@ -2812,6 +2823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="SendCalculatedContentLength">
@@ -2842,6 +2854,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SendKnownResponseHeader">
@@ -3077,5 +3090,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendCalculatedContentLength">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see langword="Content-Length" /> HTTP header to the response.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendResponseFromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of a file to the response.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPreloadedEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Overloaded. Returns the portion of the HTTP request body that has currently been read.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendResponseFromMemory">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of a memory block to the response.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

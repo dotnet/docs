@@ -2,8 +2,8 @@
 uid: System.Web.ClientServices.ConnectivityStatus
 ms.technology: 
   - "dotnet-webforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Web.ClientServices.ConnectivityStatus.IsOffline
 ms.technology: 
   - "dotnet-webforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

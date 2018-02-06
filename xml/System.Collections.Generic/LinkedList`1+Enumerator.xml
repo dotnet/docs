@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -103,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -175,6 +179,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.Generic.LinkedList`1.Enumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -218,6 +223,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Reset" />
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">
@@ -255,6 +262,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.Generic.LinkedList`1.Enumerator.Current" />
+        <altmember cref="P:System.Collections.Generic.LinkedList`1.Enumerator.System#Collections#IEnumerator#Current" />
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.Enumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -286,6 +296,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and raises the deserialization event when the deserialization is complete.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Generic.LinkedList`1" /> instance is invalid.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -320,6 +334,10 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Generic.LinkedList`1.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
   </Members>

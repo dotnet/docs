@@ -1,42 +1,22 @@
 ---
 title: "Unicode (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Unicode"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Unicode, external references"
-  - "Declare statement, marshaling strings"
-  - "Unicode keyword"
+  - "Declare statement [Visual Basic], marshaling strings"
+  - "Unicode keyword [Visual Basic]"
   - "Unicode, marshaling strings"
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Unicode (Visual Basic)
 Specifies that Visual Basic should marshal all strings to Unicode values regardless of the name of the external procedure being declared.  
@@ -56,6 +36,6 @@ Specifies that Visual Basic should marshal all strings to Unicode values regardl
  This keyword is not supported.  
   
 ## See Also  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)   
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
+ [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
+ [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

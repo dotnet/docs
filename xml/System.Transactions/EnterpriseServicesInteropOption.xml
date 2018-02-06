@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework allows managed .NET components to participate in COM+ transactions using the classes in the <xref:System.EnterpriseServices> namespace. However, since the interoperation is not provided by default, you need to use this enumeration to specify how you want to participate in the COM+ context. Specifically, when you create a new <xref:System.Transactions.TransactionScope>, use this enumeration to indicate how you want your transaction to participate in COM+ transactions. For more information, see [Interoperability with Enterprise Services and COM+ Transactions](http://msdn.microsoft.com/en-us/2e93b3c6-4d48-4b9b-82b2-7d5908a2c970).  
+ The .NET Framework allows managed .NET components to participate in COM+ transactions using the classes in the <xref:System.EnterpriseServices> namespace. However, since the interoperation is not provided by default, you need to use this enumeration to specify how you want to participate in the COM+ context. Specifically, when you create a new <xref:System.Transactions.TransactionScope>, use this enumeration to indicate how you want your transaction to participate in COM+ transactions. For more information, see [Interoperability with Enterprise Services and COM+ Transactions](http://msdn.microsoft.com/library/2e93b3c6-4d48-4b9b-82b2-7d5908a2c970).  
   
  ]]></format>
     </remarks>

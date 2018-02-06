@@ -56,6 +56,7 @@
         <summary>Executes the command using the specified temporary files and waits for the call to return.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -131,6 +132,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -166,6 +168,7 @@
         <returns>The return value from the compiler.</returns>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -203,7 +206,17 @@
         <returns>The return value from the compiler.</returns>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecWaitWithCapture">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified command.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,15 +15,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.ViewStateEncryptionMode> enumeration provides values for specifying whether the view-state information in a <xref:System.Web.UI.Page> object is encrypted. The <xref:System.Web.UI.ViewStateEncryptionMode> value can be set only in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or in the  section of the configuration file.  
+ The <xref:System.Web.UI.ViewStateEncryptionMode> enumeration provides values for specifying whether the view-state information in a <xref:System.Web.UI.Page> object is encrypted. The <xref:System.Web.UI.ViewStateEncryptionMode> value can be set only in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or in the  section of the configuration file.  
   
    
   
 ## Examples  
  The following code example demonstrates setting the view-state encryption mode for a <xref:System.Web.UI.Page> object and requesting encryption of the view-state information through the <xref:System.Web.UI.Page.RegisterRequiresViewStateEncryption%2A> method. In this example, the view-state information will be encrypted when customer information is retrieved from a database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  
   
  ]]></format>
     </remarks>

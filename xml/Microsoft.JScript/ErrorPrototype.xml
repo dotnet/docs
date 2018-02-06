@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.ErrorObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -33,6 +34,8 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorObject" />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -51,6 +54,8 @@
         <summary>Specifies the name of the type of the error. Possible values include Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError, and URIError.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -79,6 +84,8 @@
         <returns>A string representation of <paramref name="thisob" /> that contains the name of the type of the error object, and an error message if there is one.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorObject" />
       </Docs>
     </Member>
   </Members>

@@ -59,6 +59,7 @@
   
  It is possible to simulate overriding protected event methods in the control, such as the <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.LinkButton" />. First, create an adapter class with an <c>OnClick</c> method. Then create a new control derived from <see cref="T:System.Web.UI.WebControls.LinkButton" /> and override the <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method. The overriden <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method calls the <c>OnClick</c> method of the adapter. The adapter object is available through the protected <see cref="P:System.Web.UI.Control.Adapter" /> property of the <see cref="T:System.Web.UI.Control" /> class. The <see cref="P:System.Web.UI.Control.Adapter" /> property of the control is <see langword="null" /> when there is no associated adapter, so any code should check for that condition before calling methods of the adapter.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="BeginRender">
@@ -114,6 +116,11 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.HtmlTextWriter.BeginRender" /> method. Thus, overrides of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> method should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> base method only if its processing is in addition to, rather than instead of, the <see cref="M:System.Web.UI.HtmlTextWriter.BeginRender" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.BeginRender" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Browser">
@@ -148,6 +155,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
+        <altmember cref="T:System.Web.Configuration.HttpCapabilitiesBase" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -193,6 +203,7 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, at a minimum, you should implement a <see langword="Control" /> property to return a strongly-typed instance of the control, as shown in the Example section.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -216,13 +227,15 @@
 ## Remarks  
  If there is a derived control adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> method is overridden, the override is called instead of the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method. Thus, <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> can be used to create a target-specific child control set.  
   
- For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/en-us/fb174677-d845-467c-8bf3-cc096b2490b0).  
+ For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/library/fb174677-d845-467c-8bf3-cc096b2490b0).  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>If you create an inheriting class and override the <see cref="M:System.Web.UI.Adapters.ControlAdapter.CreateChildControls" /> method, do not call the base method unless you want to add controls to those created by the base method. Otherwise you could create two sets of child controls.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="EndRender">
@@ -256,6 +269,11 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.HtmlTextWriter.EndRender" /> method. Thus, overrides of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> method should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> base method only if its processing is in addition to, rather than instead of, the <see cref="M:System.Web.UI.HtmlTextWriter.EndRender" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.EndRender" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterControlState">
@@ -288,6 +306,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterViewState">
@@ -320,6 +342,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState(System.Object)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -362,6 +389,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnInit(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method. If the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method is not called, the <see cref="E:System.Web.UI.Control.Init" /> event will not be raised.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -395,6 +425,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnLoad(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> method. If <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> is not called, the <see cref="E:System.Web.UI.Control.Load" /> event will not be raised.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Load" />
+        <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -428,6 +461,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method. If the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method is not called, the <see cref="E:System.Web.UI.Control.PreRender" /> event will not be raised.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -461,6 +497,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnUnload(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" /> method. If <see cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" /> is not called, the <see cref="E:System.Web.UI.Control.Unload" /> event will not be raised.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Unload" />
+        <altmember cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -494,6 +533,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -529,6 +570,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Adapters.PageAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -562,6 +605,11 @@
   
  For a composite control, the adapter developer must ensure that the child controls are rendered. If the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method causes the child controls to be rendered but does not generate markup, it might be appropriate for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method to call its base method. If target-specific rendering of the child controls is necessary, the adapter should implement the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method and call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method from the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -595,6 +643,10 @@
   
  If the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method causes the child controls to be rendered but itself does not generate markup, it might be appropriate for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method to call its base method, which calls the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method, instead of implementing an override for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterControlState">
@@ -625,6 +677,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterViewState">
@@ -655,6 +711,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

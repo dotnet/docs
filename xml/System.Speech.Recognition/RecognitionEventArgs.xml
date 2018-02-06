@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property obtains the recognition information as a <xref:System.Speech.Recognition.RecognitionResult> object. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property obtains the recognition information as a <xref:System.Speech.Recognition.RecognitionResult> object. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
  **RecognitionEventArgs** is the base for the following classes:  
   
@@ -74,6 +74,14 @@ private void DisplayResult(object sender, RecognitionEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="E:System.Speech.Recognition.Grammar.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
   </Docs>
   <Members>
     <Member MemberName="Result">
@@ -92,6 +100,16 @@ private void DisplayResult(object sender, RecognitionEventArgs e)
         <summary>Gets the recognition result data associated with the speech recognition event.</summary>
         <value>The <see cref="P:System.Speech.Recognition.RecognitionEventArgs.Result" /> property returns the <see cref="T:System.Speech.Recognition.RecognitionResult" /> that contains the information about the recognition.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechHypothesizedEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.Grammar.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
   </Members>

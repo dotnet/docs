@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "painting"
-  - "visuals, painting with"
-  - "brushes, painting with visuals"
+  - "painting [WPF]"
+  - "visuals [WPF], painting with"
+  - "brushes [WPF], painting with visuals"
 ms.assetid: 35f92996-1d03-4542-acc4-3469dcf09492
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Paint an Area with a Visual
 This example shows how to use the <xref:System.Windows.Media.VisualBrush> class to paint an area with a <xref:System.Windows.Media.Visual>.  

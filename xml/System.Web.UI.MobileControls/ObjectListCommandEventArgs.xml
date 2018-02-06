@@ -19,6 +19,7 @@
     <summary>Provides information data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
         <param name="commandName">Initializes the <see cref="P:System.Web.UI.MobileControls.Command.CommandName" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -86,6 +89,7 @@
         <summary>Returns the control that raised the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The control that raised the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCommand">
@@ -112,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -130,7 +135,19 @@
         <summary>Returns the list item that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The list item that generated the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommand" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

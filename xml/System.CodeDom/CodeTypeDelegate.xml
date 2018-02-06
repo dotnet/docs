@@ -111,6 +111,7 @@
         <summary>Gets the parameters of the delegate.</summary>
         <value>A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> that indicates the parameters of the delegate.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -135,5 +136,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDelegate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

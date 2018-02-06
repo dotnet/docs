@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::IsArrayClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsArrayClass method [.NET Framework profiling]"
   - "ICorProfilerInfo::IsArrayClass method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::IsArrayClass Method
 Determines whether the specified class is an array class.  

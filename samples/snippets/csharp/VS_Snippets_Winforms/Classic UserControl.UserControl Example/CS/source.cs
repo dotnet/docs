@@ -177,10 +177,10 @@ namespace UserControls
          {
             throw new Exception("Email address is a required field.");
          }
-         // Confirm that there is a "." and an "@" in the e-mail address.
+         // Confirm that there is a "." and an "@" in the email address.
          else if(textEmail.Text.IndexOf(".") == -1 || textEmail.Text.IndexOf("@") == -1)
          {
-            throw new Exception("Email address must be valid e-mail address format." +
+            throw new Exception("Email address must be valid email address format." +
              "\nFor example: 'someone@example.com'");
          }
       }

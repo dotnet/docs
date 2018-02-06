@@ -1,26 +1,17 @@
 ---
 title: "Creating XML Trees in C# (LINQ to XML)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Creating XML Trees in C# (LINQ to XML)
 This section provides information about creating XML trees in C#.  

@@ -120,7 +120,7 @@ static ICustomMarshaler *GetInstance(String *pstrCookie);
 ## Applying MarshalAsAttribute  
  To use a custom marshaler, you must apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to the parameter or field that is being marshaled.  
   
- You must also pass the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute> constructor. In addition, you must specify the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field with one of the following named parameters:  
+ You must also pass the <xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler?displayProperty=nameWithType> enumeration value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute> constructor. In addition, you must specify the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field with one of the following named parameters:  
   
 -   <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> (required): The assembly-qualified name of the custom marshaler. The name should include the namespace and class of the custom marshaler. If the custom marshaler is not defined in the assembly it is used in, you must specify the name of the assembly in which it is defined.  
   
@@ -161,7 +161,7 @@ library UserLib {
  [!code-csharp[System.Runtime.InteropServices.ICustomMarshaler#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.icustommarshaler/cs/source.cs#5)]
  [!code-vb[System.Runtime.InteropServices.ICustomMarshaler#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.icustommarshaler/vb/source.vb#5)]  
   
- In the previous examples, the first parameter provided to the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute is the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration value `UnmanagedType.CustomMarshaler`.  
+ In the previous examples, the first parameter provided to the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute is the <xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler?displayProperty=nameWithType> enumeration value `UnmanagedType.CustomMarshaler`.  
   
  The second parameter is the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field, which provides the assembly-qualified name of the custom marshaler. This name consists of the namespace and class of the custom marshaler (`MarshalType="MyCompany.NewOldMarshaler"`).  
   

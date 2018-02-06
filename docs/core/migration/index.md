@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
+ms.workload: 
+  - dotnetcore
 ---
 
 # Migrating .NET Core projects to the .csproj format

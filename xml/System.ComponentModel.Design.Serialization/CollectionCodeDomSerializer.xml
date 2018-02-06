@@ -67,6 +67,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="method" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -104,12 +105,13 @@
   
 2.  If the collection is an <xref:System.Collections.IList>, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> method will cast the collection to an <xref:System.Collections.IList> and add through that interface.  
   
-    1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=nameWithType>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
+    1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility.Content?displayProperty=nameWithType>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="manager" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Docs>
     </Member>
     <Member MemberName="SerializeCollection">
@@ -149,6 +151,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="manager" />, <paramref name="targetType" />, <paramref name="originalCollection" />, or <paramref name="valuesToSerialize" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Docs>
     </Member>
   </Members>

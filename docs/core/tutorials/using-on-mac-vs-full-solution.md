@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
+ms.workload: 
+  - dotnetcore
 ---
 
 # Building a complete .NET Core solution on macOS using Visual Studio for Mac

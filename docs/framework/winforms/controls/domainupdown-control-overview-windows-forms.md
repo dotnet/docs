@@ -11,16 +11,16 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DomainUpDown"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "spin button control, about spin button"
+  - "spin button control [Windows Forms], about spin button"
   - "DomainUpDown control [Windows Forms], about DomainUpDown control"
 ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DomainUpDown Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentially a combination of a text box and a pair of buttons for moving up or down through a list. The control displays and sets a text string from a list of choices. The user can select the string by clicking up and down buttons to move through a list, by pressing the UP and DOWN ARROW keys, or by typing a string that matches an item in the list. One possible use for this control is for selecting items from an alphabetically sorted list of names.  
@@ -36,5 +36,5 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentiall
  This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DomainUpDown>   
+ <xref:System.Windows.Forms.DomainUpDown>  
  [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)

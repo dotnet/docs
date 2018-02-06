@@ -87,6 +87,7 @@
   
 -   Code to handle any format strings that your extension does not support. These should be passed on to the type's <see cref="T:System.IFormattable" /> implementation. You should be prepared to handle any exceptions these method calls might throw.</para>
     </block>
+    <altmember cref="T:System.IFormatProvider" />
   </Docs>
   <Members>
     <Member MemberName="Format">
@@ -160,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IFormattable" />
       </Docs>
     </Member>
   </Members>

@@ -78,6 +78,10 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
   </Docs>
   <Members>
     <Member MemberName="AudioPosition">
@@ -99,7 +103,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
  The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation.  
   
@@ -136,6 +140,9 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Enabled" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedAudio.Duration" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedAudio.StartTime" />
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -187,6 +194,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognizedAudio.AudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedAudio.StartTime" />
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -238,6 +247,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Speech.AudioFormat" />
       </Docs>
     </Member>
     <Member MemberName="GetRange">
@@ -347,6 +357,8 @@ private static void TestAudio(object item)
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="audioPosition" /> and <paramref name="duration" /> define a segment of audio outside the range of the current segment.</exception>
         <exception cref="T:System.InvalidOperationException">The current recognized audio contains no data.</exception>
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.WriteToWaveStream(System.IO.Stream)" />
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -405,6 +417,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognizedAudio.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="WriteToAudioStream">
@@ -435,6 +448,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.GetRange(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.WriteToWaveStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="WriteToWaveStream">
@@ -545,6 +560,8 @@ private static void TestAudio(object item)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.GetRange(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream(System.IO.Stream)" />
       </Docs>
     </Member>
   </Members>

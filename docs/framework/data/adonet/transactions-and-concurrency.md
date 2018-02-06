@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
 caps.latest.revision: 5
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Transactions and Concurrency
 A transaction consists of a single command or a group of commands that execute as a package. Transactions allow you to combine multiple operations into a single unit of work. If a failure occurs at one point in the transaction, all of the updates can be rolled back to their pre-transaction state.  
@@ -41,9 +43,9 @@ A transaction consists of a single command or a group of commands that execute a
  Describes optimistic and pessimistic concurrency, and how you can test for concurrency violations.  
   
 ## See Also  
- [Transaction Fundamentals](http://msdn.microsoft.com/en-us/2a476b63-b94f-443f-992d-53943fdf4e5d)   
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)   
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)   
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)   
- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)   
+ [Transaction Fundamentals](../../../../docs/framework/data/transactions/transaction-fundamentals.md)  
+ [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
+ [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
+ [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
+ [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

@@ -125,7 +125,7 @@
 </script>
 <html xmlns="http://www.w3.org/1999/xhtml" >
     <head runat="server">
-    <title>Create an e-mail message</title>
+    <title>Create an email message</title>
 </head>
 <body>
         <form id="Form1" runat="server">
@@ -133,7 +133,7 @@
                 style="padding:1; width:450px; text-align:center">
                 <tr>
                     <td align="center" colspan="3">
-                        <h3>Create an e-mail message</h3>
+                        <h3>Create an email message</h3>
                     </td>
                 </tr>
                 <tr>
@@ -237,11 +237,11 @@
                 <tr>
                     <td align="center" colspan="3">
                         <asp:button id="createEMail" runat="server" 
-                            text="Create e-mail and display only"
+                            text="Create email and display only"
                             onclick="createEMail_Click">
                         </asp:button>
                         <asp:button id="sendEMail" runat="server" 
-                            text="Create e-mail and send">
+                            text="Create email and send">
                         </asp:button></td>
                 </tr>
             </table>

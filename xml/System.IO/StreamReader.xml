@@ -36,10 +36,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/streamreader.cs#b5fe1efcec14de32). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.IO.StreamReader> is designed for character input in a particular encoding, whereas the <xref:System.IO.Stream> class is designed for byte input and output. Use <xref:System.IO.StreamReader> for reading lines of information from a standard text file.  
   
 > [!IMPORTANT]
@@ -72,6 +68,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="T:System.IO.Stream" />
+    <altmember cref="T:System.IO.StreamWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,6 +191,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -315,6 +315,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -438,6 +439,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -504,6 +506,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -570,6 +573,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -642,6 +646,7 @@
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -719,6 +724,7 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="buffersize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1687,5 +1693,27 @@
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamReader" /> class for the specified stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next character or next set of characters from the input stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, IAssemblyEnum interface [.NET Framework fusion]"
   - "IAssemblyEnum::Clone method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyEnum::Clone Method
 Creates a shallow copy of this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) object.  

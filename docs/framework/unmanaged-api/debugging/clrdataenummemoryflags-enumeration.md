@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRDataEnumMemoryFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLRDataEnumMemoryFlags enumeration [.NET Framework debugging]"
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLRDataEnumMemoryFlags Enumeration
 Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) method should include.  

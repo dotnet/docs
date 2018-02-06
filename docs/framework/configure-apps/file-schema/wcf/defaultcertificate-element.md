@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultCertificate&gt; Element
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  
@@ -103,10 +105,10 @@ x509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>   
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>   
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>   
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
- [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)   
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)   
+ <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>  
+ <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
+ <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>  
+ [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
+ [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)  
+ [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

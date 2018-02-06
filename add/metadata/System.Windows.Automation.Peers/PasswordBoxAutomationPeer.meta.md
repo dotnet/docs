@@ -2,16 +2,16 @@
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.GetAutomationControlTypeCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -19,8 +19,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.IsPasswordCore
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---
 
 ---
@@ -39,8 +39,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -48,8 +48,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.#ctor(System.Windows.Controls.PasswordBox)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -57,8 +57,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.GetClassNameCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -66,6 +66,6 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.PasswordBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---

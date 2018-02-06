@@ -115,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -418,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -512,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="SlidingExpiration">
@@ -584,7 +587,7 @@
 ## Examples  
  <xref:System.Web.Configuration.TicketCompatibilityMode>  
   
- [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)  
+ [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)  
   
  ]]></format>
         </remarks>
@@ -627,6 +630,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       </Docs>
     </Member>
   </Members>

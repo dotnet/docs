@@ -14,6 +14,8 @@ caps.latest.revision: 2
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # JSON Web Token Handler API Reference
 This section contains the API Reference for the JSON Web Token Handler WIF Extension.

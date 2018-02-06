@@ -18,7 +18,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell%2A> property to determine which cell changed. Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged%2A> property to determine which cell state changed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -30,6 +30,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellStateChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellStateChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +66,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCell" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged" />
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -87,6 +100,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="StateChanged">
@@ -115,6 +131,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
   </Members>

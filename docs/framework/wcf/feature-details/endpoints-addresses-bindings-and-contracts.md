@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "WCF [WCF], endpoints"
 ms.assetid: 9ddc46ee-1883-4291-9926-28848c57e858
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoints: Addresses, Bindings, and Contracts
 All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality offered by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
@@ -94,5 +96,5 @@ All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]
  Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## See Also  
- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)   
+ [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
  [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)

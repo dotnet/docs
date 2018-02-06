@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDomainManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDomainManager interface [.NET Framework hosting]"
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
@@ -26,6 +24,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDomainManager Interface
 Enables the host to specify the application domain manager that will be used to initialize the default application domain, and to specify initialization properties.  
@@ -50,5 +50,5 @@ Enables the host to specify the application domain manager that will be used to 
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
+ [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

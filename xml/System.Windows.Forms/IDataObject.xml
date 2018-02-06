@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataObject" />
+    <altmember cref="T:System.Windows.Forms.DataFormats" />
   </Docs>
   <Members>
     <Member MemberName="GetData">
@@ -79,6 +81,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -124,6 +133,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -174,6 +190,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -218,6 +241,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -262,6 +288,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -321,6 +350,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -361,6 +394,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -405,6 +440,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -446,6 +483,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -489,6 +529,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -532,6 +575,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -576,7 +623,46 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the data associated with the specified data format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores the specified data and its associated format in this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFormats">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of all formats that data stored in this instance is associated with or can be converted to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDataPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether data stored in this instance is associated with the specified format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

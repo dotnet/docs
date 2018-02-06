@@ -17,6 +17,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.AttachableMemberIdentifier" />
+    <altmember cref="T:System.Xaml.AttachablePropertyServices" />
   </Docs>
   <Members>
     <Member MemberName="CopyPropertiesTo">
@@ -111,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xaml.AttachableMemberIdentifier" />
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">

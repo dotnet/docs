@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateALink"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateALink function"
   - "Alink API, CreateALink function"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateALink Function
 Creates an instance of the Assembly Linker and sets a pointer to the specified interface.  

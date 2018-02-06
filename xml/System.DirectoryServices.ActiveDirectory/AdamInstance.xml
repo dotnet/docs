@@ -75,6 +75,7 @@
         <value>The <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object for this <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPartition">
@@ -139,6 +140,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -167,6 +169,8 @@
         <exception cref="T:System.ArgumentException">The <paramref name="context" /> or <paramref name="partitionName" /> parameter is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or <paramref name="partitionName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No AD LDS instance was found.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -195,6 +199,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No AD LDS instance was found.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="context" /> or <paramref name="partitionName" /> parameter is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or <paramref name="partitionName" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetAdamInstance">
@@ -230,6 +235,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the target that was specified in the <paramref name="context" /> parameter could not be made.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="context" /> parameter is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetAllReplicationNeighbors">
@@ -255,6 +261,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
@@ -280,6 +287,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
@@ -310,6 +318,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
@@ -342,6 +351,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
@@ -372,6 +382,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
@@ -397,6 +408,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="HostName">
@@ -438,6 +450,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" />
       </Docs>
     </Member>
     <Member MemberName="IPAddress">
@@ -501,6 +514,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" />
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -521,6 +535,8 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.AdamRoleCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" /> members that indicate the roles that this AD LDS instance serves.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRoleCollection" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -566,6 +582,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="role" /> parameter is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -628,6 +645,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" />
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromAllServers">
@@ -657,6 +675,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException">An error occurred in the synchronization operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
@@ -712,6 +731,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="role" /> parameter is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>
     <Member MemberName="TriggerSyncReplicaFromNeighbors">

@@ -40,8 +40,8 @@
 ## Examples  
  The following code example demonstrates a set of simple responses to users selecting from a group of <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -76,8 +76,8 @@
 ## Examples  
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.HtmlInputCheckBox Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.HtmlInputCheckBox Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputCheckBox.HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -121,8 +121,8 @@
 ## Examples  
  The following code example demonstrates a set of responses to users selecting from a group of <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputCheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputCheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -189,8 +189,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnPreRender%2A> method in a custom server control so that a `Title` attribute is added to each <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputCheckBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/CS/custom_htmlinputcheckbox_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputCheckBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/VB/custom_htmlinputcheckbox_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputCheckBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/CS/custom_htmlinputcheckbox_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputCheckBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/VB/custom_htmlinputcheckbox_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputCheckBoxOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/CS/custom_htmlinputcheckbox_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputCheckBoxOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputCheckBoxOnPreRender/VB/custom_htmlinputcheckbox_onprerender.vb#2)]  
@@ -226,7 +226,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -235,14 +235,16 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -314,18 +316,19 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox.ServerChange> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputCheckBox.ServerChange Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputCheckBox.ServerChange Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputCheckBox.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

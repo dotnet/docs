@@ -37,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IComponentInitializer" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+    <altmember cref="T:System.ComponentModel.Design.IRootDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
   </Docs>
   <Members>
     <Member MemberName="Children">
@@ -71,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.Design.ITreeDesigner.Parent" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -98,6 +103,7 @@
         <summary>Gets the parent designer.</summary>
         <value>An <see cref="T:System.ComponentModel.Design.IDesigner" /> representing the parent designer, or <see langword="null" /> if there is no parent.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.ITreeDesigner.Children" />
       </Docs>
     </Member>
   </Members>

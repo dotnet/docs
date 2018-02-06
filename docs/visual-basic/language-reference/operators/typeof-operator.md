@@ -1,45 +1,26 @@
 ---
 title: "TypeOf Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "TypeOf"
   - "vb.TypeOf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "types [Visual Basic], compatible"
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "TypeOf...Is expression"
   - "data types [Visual Basic], compatible"
   - "TypeOf operator [Visual Basic]"
-  - "compatible data types"
+  - "compatible data types [Visual Basic]"
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # TypeOf Operator (Visual Basic)
 Compares an object reference variable to a data type.  
@@ -85,9 +66,9 @@ result = TypeOf objectexpression IsNot typename
  The variable `refInteger` has a run-time type of `Integer`. It is compatible with `Integer` but not with `Double`. The variable `refForm` has a run-time type of <xref:System.Windows.Forms.Form>. It is compatible with <xref:System.Windows.Forms.Form> because that is its type, with <xref:System.Windows.Forms.Control> because <xref:System.Windows.Forms.Form> inherits from <xref:System.Windows.Forms.Control>, and with <xref:System.ComponentModel.IComponent> because <xref:System.Windows.Forms.Form> inherits from <xref:System.ComponentModel.Component>, which implements <xref:System.ComponentModel.IComponent>. However, `refForm` is not compatible with <xref:System.Windows.Forms.Label>.  
   
 ## See Also  
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)   
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)   
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
+ [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
+ [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # What is "managed code"?
@@ -39,5 +42,5 @@ Similar to this, C# is one language that allows you to use unmanaged constructs 
 ## More resources
 
 *   [.NET Framework Conceptual Overview](https://msdn.microsoft.com/library/zw4w595w.aspx)
-*   [Unsafe Code and Pointers](https://msdn.microsoft.com/library/t2yzs44b.aspx)
+*   [Unsafe Code and Pointers](../../docs/csharp/programming-guide/unsafe-code-pointers/index.md)
 *   [Interoperability (C# Programming guide)](https://msdn.microsoft.com/library/ms173184.aspx)

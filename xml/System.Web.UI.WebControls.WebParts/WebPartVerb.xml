@@ -87,13 +87,16 @@
   
  The third part of the code example is the Web page that hosts the controls. Note that there is a `Register` directive near the top of the page to declare the namespace of the custom controls. No assembly is declared because this example uses dynamic compilation. The custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control is declared within the custom zone. You could also declare other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in this zone, and the custom verb would be added to their verbs menus as well.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  
   
  Load the page in a browser, and click the verbs menu on the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The **Copy Web Part** verb should be visible. Click the verb, and note that a copy of the control is added to the zone.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -139,6 +142,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="clientClickHandler" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ClientClickHandler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -167,6 +171,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="serverClickHandler" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ServerClickHandler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -201,6 +206,8 @@
  \- or -  
   
  The <paramref name="serverClickHandler" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ServerClickHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ClientClickHandler" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -462,6 +469,7 @@
         <value>
           <see langword="true" /> if view state is being tracked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -577,6 +585,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -605,6 +615,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartVerb.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -631,6 +643,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartVerb.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -656,6 +669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartVerb.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -751,6 +765,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -792,6 +807,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
       </Docs>
     </Member>
   </Members>

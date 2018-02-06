@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::IsInMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsInMemory method [.NET Framework debugging]"
   - "ICorDebugModule::IsInMemory method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::IsInMemory Method
 Gets a value that indicates whether this module exists only in memory.  

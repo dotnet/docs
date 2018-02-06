@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.TableLayoutPanel.Controls" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,6 +100,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Either <paramref name="column" /> or <paramref name="row" /> is less than -1.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetColumn(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetRow(System.Windows.Forms.Control,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -123,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TableLayoutControlCollection.#ctor(System.Windows.Forms.TableLayoutPanel)" />
       </Docs>
     </Member>
   </Members>

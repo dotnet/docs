@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Stop method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Stop method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::Stop Method
 Performs a cooperative stop on all threads that are running managed code in the process.  

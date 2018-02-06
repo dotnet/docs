@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSearchPath method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetSearchPath Method
 Gets the search path.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRGCManager2::SetCLRGCStartupLimitsEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRGCManager2::SetGCStartupLimitsEx method [.NET Framework hosting]"
   - "SetGCStartupLimitsEx method, ICLRGCManager2 interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRGCManager2::SetGCStartupLimitsEx Method
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  
@@ -79,7 +79,7 @@ HRESULT SetGCStartupLimitsEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)   
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)   
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   
+ [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
+ [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)  
+ [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
  [ICLRGCManager2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-interface.md)

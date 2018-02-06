@@ -18,6 +18,8 @@
     <summary>Represents a reflectable reference to the <see cref="T:System.Array" /> class. This class stores the element type of a typed array, but this class does not store data.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Type" />
+    <altmember cref="T:System.Reflection.IReflect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.TypedArray" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -63,6 +66,7 @@
           <see langword="true" /> if <paramref name="obj" /> has the same element type and rank as the current typed array; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -88,6 +92,8 @@
         <returns>A field that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -111,6 +117,8 @@
         <returns>An array of objects that contains all fields of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -131,6 +139,7 @@
         <returns>A hash code for the current object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -156,6 +165,8 @@
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -179,6 +190,8 @@
         <returns>An array of objects that contains all members of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -204,6 +217,8 @@
         <returns>A method that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -235,6 +250,8 @@
         <returns>A method that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -258,6 +275,8 @@
         <returns>An array of objects that contains all methods of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -281,6 +300,8 @@
         <returns>An array of objects that contains all properties of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -306,6 +327,8 @@
         <returns>A property that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -339,6 +362,8 @@
         <returns>A property that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -383,6 +408,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -403,6 +430,7 @@
         <returns>A string that contains the element type of the typed array and the rank information.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -429,7 +457,30 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a method of the <see cref="T:System.Array" /> class type that has a specified name.</summary>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a property of the <see cref="T:System.Array" /> class type that has a specified name.</summary>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

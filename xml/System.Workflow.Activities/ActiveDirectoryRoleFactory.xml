@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A factory class for creating <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> objects from Windows NT aliases, e-mail addresses, and security identifiers (SIDs).</summary>
+    <summary>A factory class for creating <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> objects from Windows NT aliases, email addresses, and security identifiers (SIDs).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -101,9 +101,9 @@
         <Parameter Name="emailAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="emailAddress">The e-mail address string from which to create the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</param>
-        <summary>Creates an instance of <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> using an e-mail address.</summary>
-        <returns>An instance of <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that describes the specified e-mail address.</returns>
+        <param name="emailAddress">The email address string from which to create the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> using an email address.</summary>
+        <returns>An instance of <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that describes the specified email address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

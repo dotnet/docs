@@ -33,8 +33,8 @@
   
  The first part of the code example is a Web page that contains three <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls, each of which contains a single server control. Although these server controls are all standard ASP.NET controls, they can act as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time because they are placed within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneCollection_Overview/CS/webpartzonecollection_overview_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneCollection_Overview/VB/webpartzonecollection_overview_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneCollection_Overview/CS/webpartzonecollection_overview_cs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartZoneCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneCollection_Overview/VB/webpartzonecollection_overview_vb.aspx#1)]  
   
  The second part of the code example is the partial class that contains the code to demonstrate usage of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneCollection> class. This code handles the events for the Web page.  
   
@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Zones" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -299,7 +300,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specific member of the collection according to its position or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

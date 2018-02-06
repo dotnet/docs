@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Page and control developers cannot use the <xref:System.Web.UI.PartialCachingControl> class directly. ASP.NET creates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap a user control (.ascx file) when a dynamically loaded user control enables output caching. You can enable output caching for a user control using either the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive or the <xref:System.Web.UI.PartialCachingAttribute> attribute.  
+ Page and control developers cannot use the <xref:System.Web.UI.PartialCachingControl> class directly. ASP.NET creates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap a user control (.ascx file) when a dynamically loaded user control enables output caching. You can enable output caching for a user control using either the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive or the <xref:System.Web.UI.PartialCachingAttribute> attribute.  
   
  You add a user control to a page programmatically by calling the <xref:System.Web.UI.TemplateControl.LoadControl%2A?displayProperty=nameWithType> method.  
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetVirtualMemLimit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost::SetVirtualMemLimit method [.NET Framework hosting]"
   - "SetVirtualMemLimit method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::SetVirtualMemLimit Method
 Sets the maximum size of the runtime's virtual memory.  

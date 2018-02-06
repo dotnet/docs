@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;peerTransport&gt;
 Contains the security settings associated with a peer channel, including the type of authentication used and the security used for the message transport.  
@@ -64,13 +66,13 @@ Contains the security settings associated with a peer channel, including the typ
 |[\<peerTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|Defines a peer transport for a custom binding.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.PeerSecurityElement>   
- <xref:System.ServiceModel.PeerSecuritySettings>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md)   
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
+ <xref:System.ServiceModel.PeerSecuritySettings>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md)  
+ [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
+ [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

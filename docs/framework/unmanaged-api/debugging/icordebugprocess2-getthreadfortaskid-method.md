@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::GetThreadForTaskID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess2::GetThreadForTaskId method [.NET Framework debugging]"
   - "GetThreadForTaskID method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2::GetThreadForTaskID Method
 Gets the thread on which the task with the specified identifier is executing.  

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "properties, UI Automation clients"
   - "UI Automation, client properties"
@@ -17,6 +20,8 @@ caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Properties for Clients
 > [!NOTE]
@@ -107,6 +112,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|  
   
 ## See Also  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)   
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)   
+ [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)  
+ [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
  [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)

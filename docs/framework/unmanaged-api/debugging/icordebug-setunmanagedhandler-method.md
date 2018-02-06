@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::SetUnmanagerHandler"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetUnmanagedHandler method [.NET Framework debugging]"
   - "ICorDebug::SetUnmanagedHandler method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::SetUnmanagedHandler Method
 Specifies the event handler object for unmanaged events.  

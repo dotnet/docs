@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStartupNotificationEvent function"
   - "debugging API [Silverlight]"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetStartupNotificationEvent Function
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  

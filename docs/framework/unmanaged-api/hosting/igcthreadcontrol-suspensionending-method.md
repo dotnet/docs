@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SuspensionEnding"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCThreadControl::SuspensionEnding method [.NET Framework hosting]"
   - "SuspensionEnding method, IGCThreadControl interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCThreadControl::SuspensionEnding Method
 Notifies the host that the runtime is resuming threads after a garbage collection or other suspension.  

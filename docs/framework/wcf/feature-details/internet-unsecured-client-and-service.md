@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
 caps.latest.revision: 17
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Unsecured Client and Service
 The following illustration shows an example of a public, unsecured [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service.  
@@ -113,6 +118,6 @@ The following illustration shows an example of a public, unsecured [!INCLUDE[ind
 ```  
   
 ## See Also  
- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

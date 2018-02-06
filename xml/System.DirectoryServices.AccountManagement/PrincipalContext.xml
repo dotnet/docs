@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -51,6 +52,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -72,6 +74,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">A name or container must be specified when using the application directory context.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +100,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,6 +141,7 @@
   
  A name or container must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,6 +186,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
   
  The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,6 +218,7 @@
   
  A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -258,6 +265,7 @@
   
  A <paramref name="name" /> or <paramref name="container" /> must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -308,6 +316,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
   
  The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ConnectedServer">
@@ -334,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -360,6 +370,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ContextType">
@@ -386,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -405,6 +417,7 @@
       <Docs>
         <summary>Disposes the current instance of the <see cref="T:System.DirectorySerices.AccountManagement.PrincipalContext" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -424,6 +437,7 @@
         <summary>Gets the value specified as the <paramref name="name" /> parameter in the constructor.</summary>
         <value>The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> contexts types, the host name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, the name of the server hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance, or null if no name is set.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -443,6 +457,7 @@
         <summary>Gets the options specified in the <paramref name="contextOptions" /> parameter of the constructor.</summary>
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration value specifying the type of target to connect to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -469,6 +484,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ValidateCredentials">
@@ -482,10 +498,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+The `userName` argument in both overloads of this method must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.   
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ValidateCredentials">
@@ -506,7 +523,7 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">The username that is validated on the server.</param>
+        <param name="userName">The username that is validated on the server. See the Remarks section for more information on the format of <paramref name="userName"/>. </param>
         <param name="password">The password that is validated on the server.</param>
         <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified username and password are valid.</summary>
         <returns>
@@ -515,10 +532,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` arguments are `null`, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are `null`, this method validates the default credentials for the current principal.  
+
+The `userName` argument must take the form *userName* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.
+
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ValidateCredentials">
@@ -540,7 +560,7 @@
         <Parameter Name="options" Type="System.DirectoryServices.AccountManagement.ContextOptions" />
       </Parameters>
       <Docs>
-        <param name="userName">The username that is validated on the server.</param>
+        <param name="userName">The username that is validated on the server. See the Remarks section for information on the format of <paramref name="userName"/>. </param>
         <param name="password">The password that is validated on the server.</param>
         <param name="options">A combination of one or more <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values the options used to bind to the server. This parameter can only specify Simple bind with or without SSL, or Negotiate bind.</param>
         <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified user name and password are valid. This method performs fast credential validation of the username and password.</summary>
@@ -551,10 +571,13 @@
   
 ## Remarks  
  The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+
+The `userName` argument must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*. 
+ 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify Negotiate when the context type is <see cref="T:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify <see cref="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" /> when the context type is <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
   </Members>

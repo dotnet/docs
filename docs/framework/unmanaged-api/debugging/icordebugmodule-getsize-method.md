@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSize method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetSize method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetSize Method
 Gets the size, in bytes, of the module.  

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1690b42f-acfd-4bb3-8f0d-0b17cd5ca36c
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # NetTCPBinding
 This section contains samples that demonstrate using TCP binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetCustomAttributeByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetCustomAttributeByName method [.NET Framework metadata]"
   - "GetCustomAttributeByName method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetCustomAttributeByName Method
 Gets the custom attribute, given its name and owner.  
@@ -70,5 +70,5 @@ HRESULT GetCustomAttributeByName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)   
+ [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
  [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

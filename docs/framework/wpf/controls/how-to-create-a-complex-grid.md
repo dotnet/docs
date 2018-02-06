@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "calendar, creating"
-  - "monthly calendar, creating"
-  - "Grid control, creating, complex grid"
+  - "calendar [WPF], creating"
+  - "monthly calendar [WPF], creating"
+  - "Grid control [WPF], creating [WPF], complex grid"
 ms.assetid: 4ce3040a-a156-4364-9596-98ca1eca5550
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Complex Grid
 This example shows how to use a <xref:System.Windows.Controls.Grid> to create layout that looks like a monthly calendar.  
@@ -30,8 +32,8 @@ This example shows how to use a <xref:System.Windows.Controls.Grid> to create la
  [!code-xaml[GridComplex#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
- <xref:System.Windows.Documents.TableCell>   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ <xref:System.Windows.Controls.Grid>  
+ <xref:System.Windows.Documents.TableCell>  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)

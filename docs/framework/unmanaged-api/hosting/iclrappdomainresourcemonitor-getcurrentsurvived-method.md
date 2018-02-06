@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived method [.NET Framework hosting]"
   - "GetCurrentSurvived method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentSurvived Method
 Gets the number of bytes that survived the last full, blocking garbage collection and that are referenced by the current application domain.  
@@ -75,7 +75,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)   
- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)   
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
+ [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
+ [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)  
+ [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionIThisThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionIThisThread method [.NET Framework profiling]"
   - "GetInprocInspectionIThisThread method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetInprocInspectionIThisThread Method
 Gets an object that can be queried for the ICorDebugThread interface. This method is obsolete in the .NET Framework version 2.0.  

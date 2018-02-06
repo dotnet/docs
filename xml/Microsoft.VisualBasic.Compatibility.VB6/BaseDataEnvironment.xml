@@ -58,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" />
       </Docs>
     </Member>
     <Member MemberName="addDataSourceListener">
@@ -628,5 +629,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Commands">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of <see langword="ADODB.Command" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources that are used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" />, and optionally releases the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Connections">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of <see langword="ADODB.Connection" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Recordsets">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of <see langword="ADODB.Recordset" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

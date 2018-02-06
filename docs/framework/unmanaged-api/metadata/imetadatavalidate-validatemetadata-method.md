@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataValidate::ValidateMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataValidate::ValidateMetaData method [.NET Framework metadata]"
   - "ValidateMetaData method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataValidate::ValidateMetaData Method
 Validates the metadata signatures of the objects in the current metadata scope.  

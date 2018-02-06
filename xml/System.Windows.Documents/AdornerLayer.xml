@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.AdornerDecorator" />
+    <altmember cref="T:System.Windows.Documents.Adorner" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="GetAdornerLayer">
@@ -187,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.AdornerLayer.VisualChildrenCount" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -236,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Measure(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -331,7 +336,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.AdornerLayer.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Update">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the layout and redraws all of the adorners in the adorner layer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

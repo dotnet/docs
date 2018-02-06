@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, deleting columns"
+  - "data grids [Windows Forms], deleting columns"
   - "DataGrid control [Windows Forms], deleting columns"
-  - "data grids, hiding columns"
+  - "data grids [Windows Forms], hiding columns"
   - "columns [Windows Forms], hiding"
   - "columns [Windows Forms], deleting in data grids"
   - "DataGrid control [Windows Forms], hiding columns"
@@ -23,6 +24,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Delete or Hide Columns in the Windows Forms DataGrid Control
 > [!NOTE]
@@ -130,5 +133,5 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/change-displayed-data-at-run-time-wf-datagrid-control.md)   
+ [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/change-displayed-data-at-run-time-wf-datagrid-control.md)  
  [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)

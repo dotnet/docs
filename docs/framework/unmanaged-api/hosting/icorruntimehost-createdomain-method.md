@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDomain method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomain Method
 Creates an application domain. The caller receives an interface pointer of type <xref:System._AppDomain> to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>.  
@@ -72,6 +72,6 @@ HRESULT CreateDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

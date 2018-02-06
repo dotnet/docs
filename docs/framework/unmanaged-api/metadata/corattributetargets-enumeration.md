@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorAttributeTargets"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorAttributeTargets enumeration [.NET Framework metadata]"
 ms.assetid: 694c0fa0-7011-41a9-9dfd-f0e16ea574b5
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorAttributeTargets Enumeration
 Specifies the application elements on which it is valid to apply an attribute.  

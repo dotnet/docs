@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetCurrentThreadID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentThreadID method, ICorProfilerInfo interface [.NET Framework profiling]"
   - "ICorProfilerInfo::GetCurrentThreadID method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetCurrentThreadID Method
 Gets the ID of the current thread, if it is a managed thread.  

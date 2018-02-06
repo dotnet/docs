@@ -45,6 +45,16 @@ void recognizer_SpeechHypothesized (object sender, SpeechHypothesizedEventArgs e
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
   </Docs>
   <Members />
 </Type>

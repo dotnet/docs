@@ -2,12 +2,12 @@
 uid: System.Runtime.Remoting.Contexts.IContributeDynamicSink
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeDynamicSink.GetDynamicSink
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

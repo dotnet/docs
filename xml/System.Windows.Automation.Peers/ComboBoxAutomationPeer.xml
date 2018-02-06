@@ -79,6 +79,7 @@
         <summary>Gets the control type for this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ComboBox" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -98,6 +99,7 @@
         <summary>Gets a collection of child elements. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>A collection of child elements.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -117,6 +119,7 @@
         <summary>Gets the name of the class that defines the type that is associated with this <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "ComboBox".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">

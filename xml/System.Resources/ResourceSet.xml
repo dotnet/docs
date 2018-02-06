@@ -338,6 +338,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>
         </block>
+        <altmember cref="T:System.Resources.IResourceReader" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultWriter">
@@ -369,6 +370,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>
         </block>
+        <altmember cref="T:System.Resources.IResourceWriter" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -612,6 +614,7 @@
       <Docs>
         <summary>Indicates the <see cref="T:System.Resources.IResourceReader" /> used to read the resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Resources.IResourceReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadResources">
@@ -688,7 +691,48 @@
       <Docs>
         <summary>The <see cref="T:System.Collections.Hashtable" /> in which the resources are stored.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Resources.ResourceSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a resource object with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> resource with a specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current <see cref="T:System.Resources.ResourceSet" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

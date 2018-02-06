@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetObjectSize2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectSize2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetObjectSize2 method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo4::GetObjectSize2 Method
 Returns the size of a specified object. Replaces the [ICorProfilerInfo::GetObjectSize](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getobjectsize-method.md) method by reporting sizes of objects that are larger than what can be expressed in a `ULONG`.  

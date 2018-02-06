@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows Forms controls"
+  - "Windows Forms controls [Windows Forms]"
   - "Windows Forms controls, creating"
   - "controls [Windows Forms]"
   - "controls [Windows Forms], creating"
@@ -23,6 +21,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Developing Windows Forms Controls at Design Time
 For control authors, the .NET Framework provides a wealth of control authoring technology. Authors are no longer limited to designing composite controls that act as a collection of preexisting controls. Through inheritance, you can create your own controls from preexisting composite controls or preexisting Windows Forms controls. You can also design your own controls that implement custom painting. These options enable a great deal of flexibility to the design and functionality of the visual interface. To take advantage of these features, you should be familiar with object-based programming concepts.  

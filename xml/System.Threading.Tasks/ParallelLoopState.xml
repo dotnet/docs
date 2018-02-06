@@ -116,6 +116,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Threading.Tasks.ParallelLoopState.Stop" /> method was previously called. <see cref="M:System.Threading.Tasks.ParallelLoopState.Break" /> and <see cref="M:System.Threading.Tasks.ParallelLoopState.Stop" /> may not be used in combination by iterations of the same loop.</exception>
+        <altmember cref="P:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration" />
+        <altmember cref="P:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration" />
       </Docs>
     </Member>
     <Member MemberName="IsExceptional">
@@ -242,6 +244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration" />
+        <altmember cref="M:System.Threading.Tasks.ParallelLoopState.Break" />
       </Docs>
     </Member>
     <Member MemberName="ShouldExitCurrentIteration">
@@ -296,6 +300,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration" />
+        <altmember cref="M:System.Threading.Tasks.ParallelLoopState.Break" />
+        <altmember cref="M:System.Threading.Tasks.ParallelLoopState.Stop" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -346,6 +353,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Threading.Tasks.ParallelLoopState.Break" /> method was called previously. <see cref="M:System.Threading.Tasks.ParallelLoopState.Break" /> and <see cref="M:System.Threading.Tasks.ParallelLoopState.Stop" /> may not be used in combination by iterations of the same loop.</exception>
+        <altmember cref="P:System.Threading.Tasks.ParallelLoopState.IsStopped" />
       </Docs>
     </Member>
   </Members>

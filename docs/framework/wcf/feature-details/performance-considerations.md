@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 83082d4a-7350-4b04-ab2d-1fa5ffd643f5
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Performance Considerations
 Performance considerations are always important when building applications. This section contains entries related to performance and security.  
@@ -26,5 +28,5 @@ Performance considerations are always important when building applications. This
  Describes how encrypting the digital signature can add a performance penalty and how to disable it.  
   
 ## See Also  
- [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)   
+ [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)  
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)

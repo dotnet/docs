@@ -11,16 +11,16 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ProgressBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ProgressBar control [Windows Forms], about ProgressBar control"
-  - "progress controls, about progress controls"
+  - "progress controls [Windows Forms], about progress controls"
 ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ProgressBar Control Overview (Windows Forms)
 > [!IMPORTANT]
@@ -44,5 +44,5 @@ manager: "wpickett"
 >  The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   
 ## See Also  
- <xref:System.Windows.Forms.ProgressBar>   
+ <xref:System.Windows.Forms.ProgressBar>  
  [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9376309a-39e3-4819-b47b-a73982b57620
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Understanding HTTP Authentication
 Authentication is the process of identifying whether a client is eligible to access a resource. The HTTP protocol supports authentication as a means of negotiating access to a secure resource.  
@@ -42,6 +44,6 @@ Authentication is the process of identifying whether a client is eligible to acc
 -   A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
 ## See Also  
- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)   
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)   
+ [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
+ [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
  [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

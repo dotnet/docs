@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewParameterizedArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval2::NewParameterizedArray method [.NET Framework debugging]"
   - "NewParameterizedArray method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::NewParameterizedArray Method
 Allocates a new array of the specified element type and dimensions.  

@@ -79,6 +79,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAuditRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreRights" />
+    <altmember cref="M:System.Threading.Semaphore.GetAccessControl" />
+    <altmember cref="M:System.Threading.Semaphore.SetAccessControl(System.Security.AccessControl.SemaphoreSecurity)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -843,5 +848,15 @@
           <paramref name="rule" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SemaphoreSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -68,6 +68,9 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebErrorEvent" />
+    <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
+    <altmember cref="T:System.Web.Management.WebManagementEvent" />
   </Docs>
   <Members>
     <Member MemberName="FormatToString">

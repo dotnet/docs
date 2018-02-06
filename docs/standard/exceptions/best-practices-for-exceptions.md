@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "exceptions, best practices"
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
@@ -15,6 +19,9 @@ caps.latest.revision: 28
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Best practices for exceptions
 
@@ -50,7 +57,7 @@ The method to choose depends on how often you expect the event to occur.
 
 ## Design classes so that exceptions can be avoided
 
-A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a @System.IO.FileStream class provides methods that help determine whether the end of the file has been reached. These can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
+A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. These can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
 
 [!code-cpp[Conceptual.Exception.Handling#5](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#5)]
 [!code-csharp[Conceptual.Exception.Handling#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
@@ -66,13 +73,13 @@ Exceptions ensure that failures do not go unnoticed because calling code didn't 
 
 Introduce a new exception class only when a predefined one doesn't apply. For example:
 
-- Throw an @System.InvalidOperationException exception if a property set or method call is not appropriate given the object's current state.
+- Throw an <xref:System.InvalidOperationException> exception if a property set or method call is not appropriate given the object's current state.
 
-- Throw an @System.ArgumentException exception or one of the predefined classes that derive from @System.ArgumentException if invalid parameters are passed.
+- Throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException> if invalid parameters are passed.
 
 ## End exception class names with the word `Exception`
 
-When a custom exception is necessary, name it appropriately and derive it from the @System.Exception class. For example:
+When a custom exception is necessary, name it appropriately and derive it from the <xref:System.Exception> class. For example:
 
 [!code-cpp[Conceptual.Exception.Handling#4](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#4)]
 [!code-csharp[Conceptual.Exception.Handling#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#4)]
@@ -82,7 +89,7 @@ When a custom exception is necessary, name it appropriately and derive it from t
 
 Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-* <xref:System.Exception.%23ctor> , which uses default vales.  
+* <xref:System.Exception.%23ctor>, which uses default values.
   
 * <xref:System.Exception.%23ctor%28System.String%29>, which accepts a string message.  
   
@@ -94,7 +101,7 @@ For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-
 
 When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely. 
 
-For example, on .NET implementations that support App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a @System.IO.FileNotFoundException exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
+For example, on .NET implementations that support App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
 
 - Put the assembly into a common application base shared by both app domains.
 
@@ -112,7 +119,7 @@ Write clear sentences and include ending punctuation. Each sentence in a descrip
 
 ## In custom exceptions, provide additional properties as needed
 
-Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful. For example, the @System.IO.FileNotFoundException provides the @System.IO.FileNotFoundException.FileName property.
+Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful. For example, the <xref:System.IO.FileNotFoundException> provides the <xref:System.IO.FileNotFoundException.FileName> property.
 
 ## Place throw statements so that the stack trace will be helpful
 
@@ -126,7 +133,7 @@ It is common for a class to throw the same exception from different places in it
 [!code-csharp[Conceptual.Exception.Handling#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#6)]
 [!code-vb[Conceptual.Exception.Handling#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#6)]  
   
-In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as @System.ArgumentException, 
+In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as <xref:System.ArgumentException>.
 
 ## Clean up intermediate results when throwing an exception
 
@@ -154,12 +161,12 @@ private static void TransferFunds(Account from, Account to, decimal amount)
     catch
     {
         from.RollbackTransaction(withdrawalTrxID);
-        throw
+        throw;
     }
 }
 ```
 
-This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the @System.Exception.InnerException property. An alternative is to throw a new exception and include the original exception as the inner exception:
+This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception:
 
 ```csharp
 catch (Exception ex)

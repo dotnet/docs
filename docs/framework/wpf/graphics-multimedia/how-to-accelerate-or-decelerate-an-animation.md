@@ -10,18 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "decelerating animation"
-  - "accelerating animation"
-  - "animation, accelerating"
-  - "animation, decelerating"
+  - "decelerating animation [WPF]"
+  - "accelerating animation [WPF]"
+  - "animation [WPF], accelerating"
+  - "animation [WPF], decelerating"
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Accelerate or Decelerate an Animation
-This example demonstrates how to make an animation accelerate and decelerate over time. In the following example, several rectangles are animated by animations with different          <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.  
+This example demonstrates how to make an animation accelerate and decelerate over time. In the following example, several rectangles are animated by animations with different <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.  
   
 ## Example  
  [!code-xaml[timingbehaviors_snip#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AccelDecelExample.xaml#1)]  

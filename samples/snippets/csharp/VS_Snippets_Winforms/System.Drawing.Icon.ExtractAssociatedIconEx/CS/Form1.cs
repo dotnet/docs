@@ -47,8 +47,7 @@ namespace ExtractAssociatedIcon
                 Icon iconForFile = SystemIcons.WinLogo;
 
                 item = new ListViewItem(file.Name, 1);
-                iconForFile = Icon.ExtractAssociatedIcon(file.FullName);
-                
+                                
                 // Check to see if the image collection contains an image
                 // for this extension, using the extension as a key.
                 if (!imageList1.Images.ContainsKey(file.Extension))

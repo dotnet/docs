@@ -23,6 +23,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -149,5 +151,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

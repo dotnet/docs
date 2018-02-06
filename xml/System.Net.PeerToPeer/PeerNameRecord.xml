@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+    <altmember cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -41,6 +43,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -56,6 +60,7 @@
       <Docs>
         <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +183,7 @@
         <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> object.</param>
         <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerNameRecord.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="PeerName">
@@ -196,6 +202,7 @@
         <summary>Gets or sets the <see cref="T:System.Net.PeerToPeer.PeerName" /> within this <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> object. A peer name is a string used to identify a peer resource.</summary>
         <value>The <see cref="P:System.Net.PeerToPeer.PeerNameRecord.PeerName" /> within this <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> object. The default value for this property is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRegistration" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -224,6 +231,7 @@
         <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> instance.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerNameRecord.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
   </Members>

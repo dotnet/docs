@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, ListView"
-  - "controls, CheckBox"
-  - "ListView controls, CheckBox controls"
-  - "CheckBox control, ListView control"
+  - "controls [WPF], ListView"
+  - "controls [WPF], CheckBox"
+  - "ListView controls [WPF], CheckBox controls"
+  - "CheckBox control [WPF], ListView control"
 ms.assetid: f6d66c7f-906c-4f65-a55a-0ede9d00e26a
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create ListViewItems with a CheckBox
 This example shows how to display a column of <xref:System.Windows.Controls.CheckBox> controls in a <xref:System.Windows.Controls.ListView> control that uses a <xref:System.Windows.Controls.GridView>.  
@@ -35,9 +37,9 @@ This example shows how to display a column of <xref:System.Windows.Controls.Chec
  [!code-xaml[ListViewChkBox#GridViewColumnCheckBox](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#gridviewcolumncheckbox)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Control>   
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
+ <xref:System.Windows.Controls.Control>  
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

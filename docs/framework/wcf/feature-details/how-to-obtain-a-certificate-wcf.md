@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "certificates [WCF], obtaining"
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Obtain a Certificate (WCF)
 To use any of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features of that use X.509 certificates, you just first obtain certificates.  
@@ -34,5 +36,5 @@ To use any of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] featur
     >  Whichever approach you take, the recipient of the SOAP request that contains the X.509 certificate must trust the X.509 certificate. This means that the X.509 certificate or an issuer in the certificate chain is in the Trusted People certificate store and that the X.509 certificate is not in the Untrusted Certificates store.  
   
 ## See Also  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
+ [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)

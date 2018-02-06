@@ -72,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsyncCancel(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnResolveProgressChanged">
@@ -129,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRegistration" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Resolve">
@@ -177,6 +179,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="peerName" /> parameter is set to <see langword="null" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The peer name specified cannot be resolved.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRegistration" />
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -544,6 +547,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="userState" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ResolveCompleted">
@@ -570,6 +574,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Net.PeerToPeer.PeerNameResolver.ResolveProgressChanged" />
       </Docs>
     </Member>
     <Member MemberName="ResolveProgressChanged">
@@ -594,6 +599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Net.PeerToPeer.PeerNameResolver.ResolveCompleted" />
       </Docs>
     </Member>
   </Members>

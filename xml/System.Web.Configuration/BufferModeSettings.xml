@@ -66,6 +66,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -170,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="MaxBufferThreads">
@@ -214,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="MaxFlushSize">
@@ -260,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -301,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -365,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="UrgentFlushInterval">
@@ -408,6 +415,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.BufferModeSettings.RegularFlushInterval" />
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="UrgentFlushThreshold">
@@ -454,6 +463,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.BufferModeSettings.MaxBufferSize" />
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
   </Members>

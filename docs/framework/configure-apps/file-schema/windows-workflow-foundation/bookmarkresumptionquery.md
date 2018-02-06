@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 226de75d-d25c-48d5-b069-4b7d80a6852b
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bookmarkResumptionQuery&gt;
 Represents a query that is used to track resumption of a bookmark within a workflow instance. The query is necessary for a tracking participant to subscribe to bookmark resumption records.  
@@ -60,5 +62,5 @@ Represents a query that is used to track resumption of a bookmark within a workf
 ## See Also  
  <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType>       
  <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
+ [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

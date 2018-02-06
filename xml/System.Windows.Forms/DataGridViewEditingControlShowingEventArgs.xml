@@ -18,7 +18,7 @@
 ## Remarks  
  Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -30,6 +30,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +57,12 @@
         <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> representing the style of the cell being edited.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="CellStyle">
@@ -84,6 +97,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified value when setting this property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -117,6 +132,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
       </Docs>
     </Member>
   </Members>

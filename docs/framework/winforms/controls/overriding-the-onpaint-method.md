@@ -10,15 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Paint event, handling in Windows Forms custom control"
-  - "OnPaint method, overriding in Windows Forms custom controls"
+  - "Paint event [Windows Forms], handling in Windows Forms custom control"
+  - "OnPaint method [Windows Forms], overriding in Windows Forms custom controls"
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Overriding the OnPaint Method
 The basic steps for overriding any event defined in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] are identical and are summarized in the following list.  
@@ -92,6 +95,6 @@ public class PaintEventArgs : EventArgs {
  A control invokes its <xref:System.Windows.Forms.Control.OnPaint%2A> method whenever it needs to change its visual display. This method in turn raises the <xref:System.Windows.Forms.Control.Paint> event.  
   
 ## See Also  
- [Events](../../../../docs/standard/events/index.md)   
- [Rendering a Windows Forms Control](../../../../docs/framework/winforms/controls/rendering-a-windows-forms-control.md)   
+ [Events](../../../../docs/standard/events/index.md)  
+ [Rendering a Windows Forms Control](../../../../docs/framework/winforms/controls/rendering-a-windows-forms-control.md)  
  [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)

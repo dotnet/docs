@@ -9,18 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "position, animating"
-  - "animation, position of GradientStop objects"
-  - "GradientStop objects, animating color of"
-  - "colors, animating"
-  - "animation, color of GradientStop objects"
-  - "GradientStop objects, animating position of"
+  - "position [WPF], animating"
+  - "animation [WPF], position of GradientStop objects"
+  - "GradientStop objects [WPF], animating color of"
+  - "colors [WPF], animating"
+  - "animation [WPF], color of GradientStop objects"
+  - "GradientStop objects [WPF], animating position of"
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate the Position or Color of a Gradient Stop
 This example shows how to animate the <xref:System.Windows.Media.GradientStop.Color%2A> and <xref:System.Windows.Media.GradientStop.Offset%2A> of <xref:System.Windows.Media.GradientStop> objects.  
@@ -43,6 +48,6 @@ This example shows how to animate the <xref:System.Windows.Media.GradientStop.Co
  For additional examples, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973).  
   
 ## See Also  
- <xref:System.Windows.Media.GradientStop>   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
+ <xref:System.Windows.Media.GradientStop>  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

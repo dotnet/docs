@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TextBox control, detecting text change"
-  - "text change, detecting"
-  - "detecting text change"
+  - "TextBox control [WPF], detecting text change"
+  - "text change [WPF], detecting"
+  - "detecting text change [WPF]"
 ms.assetid: 1c39ee14-e37f-49fb-a0d1-a9824ca13584
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Detect When Text in a TextBox Has Changed
 This example shows one way to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event to execute a method whenever the text in a <xref:System.Windows.Controls.TextBox> control has changed.  
@@ -46,6 +51,6 @@ This example shows one way to use the <xref:System.Windows.Controls.Primitives.T
  Comments  
   
 ## See Also  
- <xref:System.Windows.Controls.TextChangedEventArgs>   
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ <xref:System.Windows.Controls.TextChangedEventArgs>  
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

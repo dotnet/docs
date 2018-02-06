@@ -46,7 +46,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](http://msdn.microsoft.com/en-us/24a1946a-bb3c-41c8-90cd-f00643525016). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](http://msdn.microsoft.com/en-us/b86d9d1d-ab18-4cad-a825-092826bb3922).  
+ A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](http://msdn.microsoft.com/library/24a1946a-bb3c-41c8-90cd-f00643525016). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](http://msdn.microsoft.com/library/b86d9d1d-ab18-4cad-a825-092826bb3922).  
   
    
   
@@ -56,12 +56,14 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.StyleSheet" />
+    <altmember cref="P:System.Web.UI.MobileControls.Form.PagerStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Command" />
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -156,10 +159,11 @@
   
  [!code-csharp[MobileFormSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#3)]
  [!code-vb[MobileFormSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#3)]  
-<!-- TODO: review snippet reference [!code-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  -->  
+[!code-aspx-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -249,11 +253,12 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]
+ [!code-aspx-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Panel.Paginate" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultTemplatedUI">
@@ -390,10 +395,11 @@
   
  In this example, since no filter is specified for the `<Choice>` element, it will always be the <xref:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice%2A>. To specify a filter change the element to: `<Choice Filter="isPocketIE">` and include a Web.config file that defines the filters you want to use.  
   
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  -->  
+ [!code-aspx-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice" />
       </Docs>
     </Member>
     <Member MemberName="GetLinkedForms">
@@ -561,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FormMethod" />
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
@@ -594,6 +601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -648,6 +656,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -677,6 +686,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The form is contained by another form.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="OnPaginated">
@@ -773,6 +783,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Paginated" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -865,6 +877,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -947,6 +960,7 @@
         <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An object containing the altered private view state.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.SavePrivateViewState" />
       </Docs>
     </Member>
     <Member MemberName="Script">

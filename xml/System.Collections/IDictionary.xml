@@ -65,6 +65,8 @@
     <block subset="none" type="overrides">
       <para>The implementing class must have a means to compare keys.</para>
     </block>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -127,6 +129,7 @@
  -or-  
   
  The <see cref="T:System.Collections.IDictionary" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.IDictionary.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -279,6 +282,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -441,6 +446,7 @@
  -or-  
   
  The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.IDictionary" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -488,6 +494,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -592,6 +599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
   </Members>

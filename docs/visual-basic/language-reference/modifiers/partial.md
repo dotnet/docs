@@ -1,21 +1,16 @@
 ---
 title: "Partial (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Partial"
   - "partial"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "structures, partial"
+  - "structures [Visual Basic], partial"
   - "classes [Visual Basic]"
   - "partial, types [Visual Basic]"
   - "partial, structures"
@@ -27,21 +22,6 @@ ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Partial (Visual Basic)
 Indicates that a type declaration is a partial definition of the type.  
@@ -116,9 +96,9 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
  The two partial definitions in the preceding example could be in the same source file or in two different source files.  
   
 ## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)   
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)  
+ [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
  [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

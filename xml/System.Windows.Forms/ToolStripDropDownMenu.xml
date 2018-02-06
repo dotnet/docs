@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDown" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +138,7 @@
         <summary>Gets the rectangle that represents the display area of the <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the display area.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DisplayRectangle" />
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -154,6 +157,7 @@
         <summary>Passes a reference to the cached <see cref="P:System.Windows.Forms.Control.LayoutEngine" /> returned by the layout engine interface.</summary>
         <value>A <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> that represents the cached layout engine returned by the layout engine interface.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.LayoutEngine" />
       </Docs>
     </Member>
     <Member MemberName="LayoutStyle">
@@ -289,6 +293,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Paints the background of the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SetDisplayedItems">
@@ -346,6 +351,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin" />
       </Docs>
     </Member>
     <Member MemberName="ShowImageMargin">
@@ -385,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin" />
       </Docs>
     </Member>
   </Members>

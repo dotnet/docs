@@ -1,18 +1,14 @@
 ---
 title: "Imports Statement (XML Namespace)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ImportsXmlns"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML namespace [Visual Basic], importing"
   - "imports [Visual Basic]"
@@ -22,21 +18,6 @@ ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Imports Statement (XML Namespace)
 Imports XML namespace prefixes for use in XML literals and XML axis properties.  
@@ -111,7 +92,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
  `Patrick Hines`  
   
 ## See Also  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)   
+ [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
  [GetXmlNamespace Operator](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)

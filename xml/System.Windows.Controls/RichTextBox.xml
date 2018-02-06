@@ -155,6 +155,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set this property to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a <see cref="T:System.Windows.Documents.TextPointer" /> that references a position outside of the current document.</exception>
+        <altmember cref="T:System.Windows.Documents.TextPointer" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -217,6 +218,8 @@
         <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
         <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />, or <see langword="null" /> if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetSpellingErrorRange(System.Windows.Documents.TextPointer)" />
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetSpellingError(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromPoint">
@@ -280,6 +283,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetSpellingErrorRange(System.Windows.Documents.TextPointer)" />
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetNextSpellingErrorPosition(System.Windows.Documents.TextPointer,System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
     <Member MemberName="GetSpellingErrorRange">
@@ -309,6 +314,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetSpellingError(System.Windows.Documents.TextPointer)" />
+        <altmember cref="M:System.Windows.Controls.RichTextBox.GetNextSpellingErrorPosition(System.Windows.Documents.TextPointer,System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
     <Member MemberName="IsDocumentEnabled">
@@ -559,5 +566,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RichTextBox" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

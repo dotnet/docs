@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewObject method [.NET Framework debugging]"
   - "ICorDebugEval::NewObject method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewObject Method
 Allocates a new object instance and calls the specified constructor method.  

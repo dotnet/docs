@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetCodeInfo2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetCodeInfo2 method [.NET Framework profiling]"
   - "GetCodeInfo2 method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo2::GetCodeInfo2 Method
 Gets the extents of native code associated with the specified `FunctionID`.  
@@ -74,7 +74,7 @@ HRESULT GetCodeInfo2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [GetCodeInfo3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md)   
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)   
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)   
+ [GetCodeInfo3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md)  
+ [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)  
+ [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
  [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

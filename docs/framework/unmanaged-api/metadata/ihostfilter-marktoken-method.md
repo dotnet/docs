@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostFilter::MarkToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MarkToken method, IHostFilter interface [.NET Framework metadata]"
   - "IHostFilter::MarkToken method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostFilter::MarkToken Method
 Indicates that the specified metadata token will be processed.  
@@ -58,5 +58,5 @@ HRESULT MarkToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)   
+ [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)  
  [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)

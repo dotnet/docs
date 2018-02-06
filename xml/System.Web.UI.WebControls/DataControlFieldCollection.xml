@@ -50,6 +50,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,11 +109,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A> method to dynamically add a <xref:System.Web.UI.WebControls.CheckBoxField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataControlField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Remove(System.Web.UI.WebControls.DataControlField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CloneFields">
@@ -137,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -200,6 +207,7 @@
  -or-  
   
  The number of fields in the source <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> collection is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -244,7 +252,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataControlFieldCollection.FieldsChanged> event is raised when the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, or <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A> method is called.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -318,6 +326,7 @@
  \- or -  
   
  <paramref name="index" /> is greater than <see cref="P:System.Web.UI.StateManagedCollection.Count" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.IndexOf(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -355,11 +364,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Item%2A> indexer to access the fields of a <xref:System.Web.UI.WebControls.GridView> control when the user clicks a button in the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -466,6 +476,9 @@
         <param name="field">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> to remove from the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" />.</param>
         <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object from the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Add(System.Web.UI.WebControls.DataControlField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -487,6 +500,9 @@
         <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataControlField" /> to remove.</param>
         <summary>Removes the <see cref="T:System.Web.UI.WebControls.DataControlField" /> object at the specified index from the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Add(System.Web.UI.WebControls.DataControlField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.Remove(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

@@ -27,6 +27,7 @@
   
  For more information, see the <see cref="T:System.Web.UI.Design.DataSourceDesigner" /> class.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -60,6 +63,8 @@
         <summary>Gets a list of items that are used to create an action list menu at design time.</summary>
         <value>A collection that contains the action list items.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CanConfigure">
@@ -88,6 +93,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure" />
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -122,6 +130,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -184,6 +195,8 @@
         <summary>Gets or sets the name of the type that contains the property whose value has the data that you want to retrieve.</summary>
         <value>The name of the class to retrieve data from.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -233,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableDelete">
@@ -252,6 +267,7 @@
         <value>
           <see langword="true" /> if the delete operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableInsert">
@@ -271,6 +287,8 @@
         <value>
           <see langword="true" /> if the insert operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableUpdate">
@@ -290,6 +308,8 @@
         <value>
           <see langword="true" /> if the update operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -312,6 +332,8 @@
         <summary>Returns a data source view that has the specified name.</summary>
         <returns>An object whose name is specified by <paramref name="viewName" />; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -331,6 +353,8 @@
         <summary>Gets a list of available views.</summary>
         <returns>A collection with one element that contains the name "DefaultView".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
@@ -366,6 +390,8 @@
         <summary>Gets or sets the value that is used when the Group By clause is being created.</summary>
         <value>A string that contains the properties that are used for grouping data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -387,6 +413,8 @@
         <param name="component">The object to initialize.</param>
         <summary>Initializes the control designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -436,6 +464,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="OrderBy">
@@ -471,6 +501,8 @@
         <summary>Gets or sets the value that is used when the Order By clause is being created.</summary>
         <value>A string that contains the properties that are used for sorting the data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="OrderGroupsBy">
@@ -506,6 +538,8 @@
         <summary>Gets or sets the value that is used when the Order Groups By clause is being created.</summary>
         <value>A string that contains the properties that are used for sorting grouped data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -527,6 +561,8 @@
         <param name="properties">The properties to be filtered.</param>
         <summary>Used by the designer to add properties or remove properties in the properties grid.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -556,6 +592,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -591,6 +630,8 @@
         <summary>Gets or sets the string that contains values for the select operation.</summary>
         <value>A string that is used when the Select clause is being created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="ServiceProvider">
@@ -609,6 +650,8 @@
         <summary>Gets the service provider that is associated with the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance.</summary>
         <value>An object that represents the service provider.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -644,6 +687,8 @@
         <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance.</summary>
         <value>The name of the class that contains the data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -693,6 +738,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Where">
@@ -728,6 +775,8 @@
         <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.LinqDataSource.Where" /> property of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
         <value>The value of the <see cref="P:System.Web.UI.WebControls.LinqDataSource.Where" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
       </Docs>
     </Member>
   </Members>

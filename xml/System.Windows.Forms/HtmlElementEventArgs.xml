@@ -156,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
       </Docs>
     </Member>
     <Member MemberName="CtrlKeyPressed">
@@ -217,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HtmlDocument" />
+        <altmember cref="T:System.Windows.Forms.HtmlElement" />
       </Docs>
     </Member>
     <Member MemberName="FromElement">
@@ -367,6 +371,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
       </Docs>
     </Member>
     <Member MemberName="OffsetMousePosition">
@@ -417,6 +423,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
+        <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">

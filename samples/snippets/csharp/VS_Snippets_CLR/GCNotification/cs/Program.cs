@@ -165,13 +165,13 @@ namespace GCNotify
 
                     // <Snippet4>
                     // Check for a notification of a completed collection.
-                    s = GC.WaitForFullGCComplete();
-                    if (s == GCNotificationStatus.Succeeded)
+                    GCNotificationStatus status = GC.WaitForFullGCComplete();
+                    if (status == GCNotificationStatus.Succeeded)
                     {
                         Console.WriteLine("GC Notifiction raised.");
                         OnFullGCCompleteEndNotify();
                     }
-                    else if (s == GCNotificationStatus.Canceled)
+                    else if (status == GCNotificationStatus.Canceled)
                     {
                         Console.WriteLine("GC Notification cancelled.");
                         break;

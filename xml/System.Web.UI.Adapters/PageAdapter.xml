@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="CacheVaryByHeaders">
@@ -104,6 +107,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByHeaders" /> property to return a list of the additional headers to control target-specific caching. The <see cref="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByHeaders" /> base property returns <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
+        <altmember cref="P:System.Web.HttpCachePolicy.VaryByHeaders" />
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="CacheVaryByParams">
@@ -134,6 +140,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByParams" /> property to return a list of the additional GET or POST parameters to control target-specific caching. The <see cref="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByParams" /> base method returns <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="T:System.Web.HttpCacheVaryByParams" />
+        <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
       </Docs>
     </Member>
     <Member MemberName="ClientState">
@@ -164,6 +173,11 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you cannot override the <see cref="P:System.Web.UI.Adapters.PageAdapter.ClientState" /> property because it is not <see langword="virtual" />. To modify the behavior of <see cref="P:System.Web.UI.Adapters.PageAdapter.ClientState" /> in a derived class, implement a new <see cref="P:System.Web.UI.Adapters.PageAdapter.ClientState" /> property that references the <see cref="P:System.Web.UI.Adapters.PageAdapter.ClientState" /> property of the base class.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -197,6 +211,10 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.DeterminePostBackMode" /> method to provide target-specific handling of the postback variables collection.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="M:System.Web.UI.Page.DeterminePostBackMode" />
+        <altmember cref="P:System.Web.HttpRequest.Form" />
+        <altmember cref="P:System.Web.HttpRequest.QueryString" />
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackModeUnvalidated">
@@ -259,6 +277,7 @@
   
  <c>document.</c><paramref name="formID" /></para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="GetRadioButtonsByGroup">
@@ -288,6 +307,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Adapters.PageAdapter.RegisterRadioButton(System.Web.UI.WebControls.RadioButton)" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButton" />
       </Docs>
     </Member>
     <Member MemberName="GetStatePersister">
@@ -329,6 +350,11 @@
   
  The <see cref="M:System.Web.UI.Adapters.PageAdapter.GetStatePersister" /> base class returns a <see cref="T:System.Web.UI.HiddenFieldPageStatePersister" /> object. You can use the <see cref="T:System.Web.UI.SessionPageStatePersister" /> class to maintain the page state in session state.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="T:System.Web.UI.PageStatePersister" />
+        <altmember cref="T:System.Web.UI.HiddenFieldPageStatePersister" />
+        <altmember cref="T:System.Web.UI.SessionPageStatePersister" />
+        <altmember cref="P:System.Web.UI.Page.PageStatePersister" />
       </Docs>
     </Member>
     <Member MemberName="RegisterRadioButton">
@@ -359,6 +385,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Adapters.PageAdapter.GetRadioButtonsByGroup(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButton" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginHyperlink">
@@ -407,6 +435,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String)" /> method to write a different format for an opening hyperlink tag or to write additional tag attributes. For example, the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String)" /> base method does not write an attribute for <paramref name="softkeyLabel" />.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink" />
+        <altmember cref="M:System.Web.UI.Adapters.PageAdapter.RenderEndHyperlink(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginHyperlink">
@@ -459,6 +490,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String,System.String)" /> method to write a different format for an opening hyperlink tag or to write additional tag attributes. For example, the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String,System.String)" /> base method does not write an attribute for <paramref name="softkeyLabel" />.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink" />
+        <altmember cref="M:System.Web.UI.Adapters.PageAdapter.RenderEndHyperlink(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndHyperlink">
@@ -492,6 +526,8 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderEndHyperlink(System.Web.UI.HtmlTextWriter)" /> and <see cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink" /> methods when a different format of hyperlink must be rendered.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -531,6 +567,8 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String)" /> method if a different format is required for the postback event hyperlink or the browser has other unique requirements. For example, some browsers require the hyperlink text to be nonempty if the link is to render. You can also override <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String)" /> if limited resources prevent including the view state as a URL parameter. The <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String)" /> base method does not write an attribute for <paramref name="softkeyLabel" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -569,13 +607,15 @@
 ## Remarks  
  The <xref:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent%2A> method writes a postback event as a scriptless hyperlink, including the possibly chunked <xref:System.Web.HttpUtility.UrlEncode%2A> view state, `__EVENTTARGET=target`, `__EVENTARGUMENT=argument`, `__PREVIOUSPAGE=currentFilePath` parameters, and an `accessKey="accessKey"` attribute.  
   
- View state is encrypted if the `enableViewStateMac` attribute of the [pages Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4123bb66-3fe4-4d62-b70e-33758656b458) configuration element is set to `true`.  
+ View state is encrypted if the `enableViewStateMac` attribute of the [pages Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) configuration element is set to `true`.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> method if a different format is required for the postback event hyperlink or the browser has other unique requirements. For example, some browsers require the hyperlink text to be nonempty if the link is to render. You can also override <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> if limited resources prevent including the view state as a URL parameter. The <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> base method does not write an attribute for <paramref name="softkeyLabel" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -622,6 +662,8 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> method if a different format is required for the postback event hyperlink or the browser has other unique requirements. For example, some browsers require the hyperlink text to be nonempty if the link is to render. You can also override <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> if limited resources prevent including view state as a URL parameter. The <see cref="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" /> base method does not write an attribute for <paramref name="softkeyLabel" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="Overload:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent" />
       </Docs>
     </Member>
     <Member MemberName="TransformText">
@@ -656,7 +698,26 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override <see cref="M:System.Web.UI.Adapters.PageAdapter.TransformText(System.String)" /> if a particular markup has a construct with a different form from standard HTML. For example, if a browser requires a different identifier for a tag than what would be used in HTML, <see cref="M:System.Web.UI.Adapters.PageAdapter.TransformText(System.String)" /> method can be overridden to find that tag and change it.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderPostBackEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a postback event into the response stream as a link, including all required arguments.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RenderBeginHyperlink">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders an opening hyperlink tag to the response stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

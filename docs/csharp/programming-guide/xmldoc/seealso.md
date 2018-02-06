@@ -1,20 +1,14 @@
 ---
 title: "&lt;seealso&gt; (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "cref"
   - "<seealso>"
   - "seealso"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "cref [C#], see also"
   - "seealso C# XML tag"
@@ -25,21 +19,6 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;seealso&gt; (C# Programming Guide)
 ## Syntax  
@@ -63,5 +42,5 @@ translation.priority.ht:
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<seealso>.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

@@ -1,37 +1,16 @@
 ---
 title: "Arithmetic Operations on Pointers (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], arithmetic operations"
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Arithmetic Operations on Pointers (C# Programming Guide)
 This topic discusses using the arithmetic operators `+` and **-** to manipulate pointers.  
@@ -50,21 +29,21 @@ This topic discusses using the arithmetic operators `+` and **-** to manipulate 
  No exceptions are generated when the arithmetic operation overflows the domain of the pointer, and the result depends on the implementation.  
   
 ## Example  
- [!code-cs[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
+ [!code-csharp[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
   
- [!code-cs[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
+ [!code-csharp[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)   
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+ [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
+ [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+ [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
  [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="Overload:System.Diagnostics.EventLog.CreateEventSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -227,6 +229,9 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryCount" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="CategoryResourceFile">
@@ -389,6 +394,9 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryCount" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -462,6 +470,9 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform the installer is trying to use is not Windows NT 4.0 or later.</exception>
         <exception cref="T:System.ArgumentException">The name specified in the <see cref="P:System.Diagnostics.EventLogInstaller.Source" /> property is already registered for a different event log.</exception>
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="IsEquivalentInstaller">
@@ -492,6 +503,7 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.CopyFromComponent(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -530,6 +542,8 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Log" />
+        <altmember cref="T:System.Diagnostics.EventLog" />
       </Docs>
     </Member>
     <Member MemberName="MessageResourceFile">
@@ -698,6 +712,7 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.MessageResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="ParameterResourceFile">
@@ -887,6 +902,7 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.ParameterResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -919,6 +935,9 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -957,6 +976,8 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Source" />
+        <altmember cref="T:System.Diagnostics.EventLog" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -989,6 +1010,8 @@ SVC_UPDATE.EXE
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.EventLogInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="UninstallAction">

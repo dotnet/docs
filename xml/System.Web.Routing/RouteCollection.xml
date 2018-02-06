@@ -858,5 +858,23 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is already in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetVirtualPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns information about the URL path that is associated with the route.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

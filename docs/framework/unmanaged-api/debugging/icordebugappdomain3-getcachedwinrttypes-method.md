@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes method [.NET Framework debugging]"
   - "GetCachedWinRTTypes method, ICorDebugAppDomain3 interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain3::GetCachedWinRTTypes Method
 Gets an enumerator for all cached [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types.  

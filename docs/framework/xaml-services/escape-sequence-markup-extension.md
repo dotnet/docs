@@ -23,6 +23,8 @@ caps.latest.revision: 21
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # {} Escape Sequence / Markup Extension
 Provides the XAML escape sequence for attribute values. The escape sequence allows the subsequent values in the attribute to be interpreted as a literal.  
@@ -65,5 +67,5 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
  [!code-xaml[XLINQExample#StackPanelResources](../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
   
 ## See Also  
- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)   
+ [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
  [XML Character Entities and XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)

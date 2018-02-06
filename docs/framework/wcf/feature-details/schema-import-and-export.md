@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, schema import and export"
   - "XsdDataContractExporter class"
   - "XsdDataContractImporter class"
 ms.assetid: 0da32b50-ccd9-463a-844c-7fe803d3bf44
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Schema Import and Export
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes a new serialization engine, the <xref:System.Runtime.Serialization.DataContractSerializer>. The `DataContractSerializer` translates between [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects and XML (in both directions). In addition to the serializer itself, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes associated schema import and schema export mechanisms. *Schema* is a formal, precise, and machine-readable description of the shape of XML that the serializer produces or that the deserializer can access. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the World Wide Web Consortium (W3C) XML Schema definition language (XSD) as its schema representation, which is widely interoperable with numerous third-party platforms.  
@@ -52,7 +57,7 @@ manager: "erikre"
   
  For example, the following schema fragment cannot be imported using the default import settings.  
   
- [!code-xml[c_SchemaImportExport#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#9)]   
+ [!code-xml[c_SchemaImportExport#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#9)]  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). If a schema does not conform to the data contract rules, use a different serialization engine. For example, the <xref:System.Xml.Serialization.XmlSerializer> uses its own separate schema import mechanism. Also, there is a special import mode in which the range of supported schema is expanded. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the section about generating <xref:System.Xml.Serialization.IXmlSerializable> types in [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md).  
   
@@ -63,8 +68,8 @@ manager: "erikre"
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.XsdDataContractExporter>, see [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md).  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.XsdDataContractImporter>   
- <xref:System.Runtime.Serialization.XsdDataContractExporter>   
- [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.XsdDataContractImporter>  
+ <xref:System.Runtime.Serialization.XsdDataContractExporter>  
+ [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)  
  [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of WCF
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  
@@ -27,10 +29,10 @@ Configure a tracking participant that listens to the tracking records being emit
   
 ## Syntax  
   
-```vb  
-   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
-```  
-  
+```xml
+   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -89,8 +91,8 @@ Configure a tracking participant that listens to the tracking records being emit
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>   
- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>   
- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>   
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
+ <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
+ <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>  
+ [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
  [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)

@@ -90,6 +90,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="T:System.Text.Encoder" />
+    <altmember cref="T:System.Text.Decoder" />
+    <altmember cref="T:System.Text.UTF32Encoding" />
+    <altmember cref="T:System.Text.UTF8Encoding" />
+    <altmember cref="T:System.Text.UTF7Encoding" />
+    <altmember cref="T:System.Text.ASCIIEncoding" />
+    <altmember cref="T:System.Globalization.UnicodeCategory" />
+    <altmember cref="T:System.Globalization.CharUnicodeInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -189,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -246,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName="CharSize">
@@ -347,6 +358,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UnicodeEncoding.#ctor" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -414,6 +427,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -485,6 +501,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -564,6 +583,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -645,6 +667,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -740,6 +765,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -835,6 +863,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -903,6 +934,9 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Text.UnicodeEncoding.GetChars" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -981,6 +1015,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.UnicodeEncoding.GetChars" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -1061,6 +1098,10 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -1155,6 +1196,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDecoder">
@@ -1203,6 +1248,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Decoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1256,6 +1306,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1286,6 +1340,7 @@
         <summary>Returns the hash code for the current instance.</summary>
         <returns>The hash code for the current <see cref="T:System.Text.UnicodeEncoding" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxByteCount">
@@ -1355,6 +1410,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxCharCount">
@@ -1424,6 +1482,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetPreamble">
@@ -1578,7 +1640,63 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UnicodeEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetDecoder" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.UnicodeEncoding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

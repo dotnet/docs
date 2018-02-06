@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly::GetAppDomain method [.NET Framework debugging]"
   - "GetAppDomain method, ICorDebugAssembly interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly::GetAppDomain Method
 Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.  

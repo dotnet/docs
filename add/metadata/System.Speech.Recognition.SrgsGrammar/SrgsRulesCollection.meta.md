@@ -3,7 +3,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,12 +19,12 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

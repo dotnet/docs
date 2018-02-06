@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostProtectionManager::SetEagerSerializeGrantSets"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetEagerSerializeGrantSets method [.NET Framework hosting]"
   - "ICLRHostProtectionManager::SetEagerSerializeGrantSets method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostProtectionManager::SetEagerSerializeGrantSets Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
@@ -60,5 +60,5 @@ HRESULT SetEagerSerializeGrantSets ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   
+ [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
  [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)

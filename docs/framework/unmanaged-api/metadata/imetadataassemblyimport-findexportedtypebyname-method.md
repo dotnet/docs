@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::FindExportedTypeByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindExportedTypeByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::FindExportedTypeByName Method
 Gets a pointer to an exported type, given its name and enclosing type.  
@@ -66,5 +66,5 @@ HRESULT FindExportedTypeByName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)   
+ [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)  
  [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

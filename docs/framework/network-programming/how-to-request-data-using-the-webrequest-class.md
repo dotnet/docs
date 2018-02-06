@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "downloading Internet resources, steps"
   - "requesting data from Internet, steps"
@@ -23,6 +21,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Request Data Using the WebRequest Class
 The following procedure describes the steps used to request a resource from a server, for example, a Web page or file. The resource must be identified by a URI.  
@@ -179,8 +179,8 @@ End Namespace
 ```  
   
 ## See Also  
- [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)   
- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)   
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)   
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)   
+ [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)  
+ [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)  
+ [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
+ [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)  
  [How to: Send Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md)

@@ -14,6 +14,7 @@
     <summary>Stores constants, data type information, utility functions, and references to prototype-based objects. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Globals" />
   </Docs>
   <Members>
     <Member MemberName="ActiveXObject">
@@ -152,6 +153,8 @@
         <summary>Calls the garbage collector.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.GC" />
+        <altmember cref="M:System.GC.Collect" />
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -390,6 +393,7 @@
         <returns>A new copy of <paramref name="string" /> in which the reserved characters are escaped by the % character and expressed in Unicode.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="eval">
@@ -1435,6 +1439,7 @@
         <returns>A new copy of <paramref name="string" /> in which the escaped characters are converted to their original form.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="URIError">

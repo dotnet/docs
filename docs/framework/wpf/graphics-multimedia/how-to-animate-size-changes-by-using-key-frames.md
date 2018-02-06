@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "key frames, animating size changes with"
-  - "animation, size changes with key frames"
-  - "size changes, animating with key frames"
+  - "key frames [WPF], animating size changes with"
+  - "animation [WPF], size changes with key frames"
+  - "size changes [WPF], animating with key frames"
 ms.assetid: 86bd2950-d4c9-4ec4-aa8d-7dc3ccadded4
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate Size Changes by Using Key Frames
 This example shows how to animate size changes by using key frames.  
@@ -36,11 +38,11 @@ This example shows how to animate size changes by using key frames.
  For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames>   
- <xref:System.Windows.Media.ArcSegment.Size%2A>   
- <xref:System.Windows.Media.ArcSegment>   
- <xref:System.Windows.Media.Animation.LinearSizeKeyFrame>   
- <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame>   
- <xref:System.Windows.Media.Animation.SplineSizeKeyFrame>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames>  
+ <xref:System.Windows.Media.ArcSegment.Size%2A>  
+ <xref:System.Windows.Media.ArcSegment>  
+ <xref:System.Windows.Media.Animation.LinearSizeKeyFrame>  
+ <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame>  
+ <xref:System.Windows.Media.Animation.SplineSizeKeyFrame>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

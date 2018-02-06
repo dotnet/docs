@@ -1,13 +1,11 @@
 ---
 title: "Sub Expression (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "lambda expressions [Visual Basic], sub expression"
@@ -17,21 +15,6 @@ ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sub Expression (Visual Basic)
 Declares the parameters and code that define a subroutine lambda expression.  
@@ -78,8 +61,8 @@ End Sub
  [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/sub-expression_1.vb)]  
   
 ## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
  [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

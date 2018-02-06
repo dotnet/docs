@@ -1,48 +1,29 @@
 ---
 title: "Resume Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Resume"
   - "vb.ResumeNext"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Next statement, Resume"
-  - "Resume Next statement"
-  - "execution, resuming"
-  - "run-time errors, resuming after"
-  - "Resume statement, syntax"
+  - "Next statement [Visual Basic], Resume"
+  - "Resume Next statement [Visual Basic]"
+  - "execution [Visual Basic], resuming"
+  - "run-time errors [Visual Basic], resuming after"
+  - "Resume statement [Visual Basic], syntax"
   - "errors [Visual Basic], resuming after"
-  - "Error statement, and Resume statement"
+  - "Error statement [Visual Basic], and Resume statement"
   - "execution"
-  - "Resume statement"
+  - "Resume statement [Visual Basic]"
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Resume Statement
 Resumes execution after an error-handling routine is finished.  
@@ -85,6 +66,6 @@ Resume [ Next | line ]
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See Also  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
- [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md)   
+ [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
+ [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md)  
  [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)

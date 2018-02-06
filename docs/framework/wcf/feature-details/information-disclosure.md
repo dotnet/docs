@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Information Disclosure
 Information disclosure enables an attacker to gain valuable information about a system. Therefore, always consider what information you are revealing and whether it can be used by a malicious user. The following lists possible information disclosure attacks and provides mitigations for each.  
@@ -63,9 +65,9 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
  If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)   
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)   
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)   
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
+ [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
+ [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
+ [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)  
  [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

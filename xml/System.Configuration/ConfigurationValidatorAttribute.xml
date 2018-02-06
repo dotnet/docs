@@ -72,6 +72,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.IntegerValidatorAttribute" />
+    <altmember cref="T:System.Configuration.TimeSpanValidatorAttribute" />
+    <altmember cref="T:System.Configuration.StringValidatorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,6 +134,10 @@
           <paramref name="validator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="validator" /> is not derived from <see cref="T:System.Configuration.ConfigurationValidatorBase" />.</exception>
+        <altmember cref="T:System.Configuration.IntegerValidator" />
+        <altmember cref="T:System.Configuration.LongValidator" />
+        <altmember cref="T:System.Configuration.RegexStringValidator" />
+        <altmember cref="T:System.Configuration.StringValidator" />
       </Docs>
     </Member>
     <Member MemberName="ValidatorInstance">
@@ -177,5 +184,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a validator attribute type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

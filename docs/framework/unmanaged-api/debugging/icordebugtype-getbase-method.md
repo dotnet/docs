@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType::GetBase"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugType::GetBase method [.NET Framework debugging]"
   - "GetBase method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetBase Method
 Gets an interface pointer to an ICorDebugType that represents the base type, if one exists, of the type represented by this `ICorDebugType`.  

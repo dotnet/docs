@@ -121,16 +121,23 @@
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.DropDownList> control that contains four items.  
   
- <!-- TODO: review snippet reference [!code-csharp[DropDownListDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDeclarative/CS/dropdownlistdeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DropDownListDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDeclarative/VB/dropdownlistdeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DropDownListDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDeclarative/CS/dropdownlistdeclarativecs.aspx#1)]
+ [!code-aspx-vb[DropDownListDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDeclarative/VB/dropdownlistdeclarativevb.aspx#1)]  
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.DropDownList> control though data binding.  
   
- <!-- TODO: review snippet reference [!code-csharp[DropDownListDataBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDataBinding/CS/dropdownlistdatabindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DropDownListDataBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDataBinding/VB/dropdownlistdatabindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DropDownListDataBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDataBinding/CS/dropdownlistdatabindingcs.aspx#1)]
+ [!code-aspx-vb[DropDownListDataBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDataBinding/VB/dropdownlistdatabindingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderColor" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderWidth" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="M:System.Web.UI.Control.DataBind" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.SelectedIndex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,8 +163,8 @@
 ## Examples  
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DropDownList> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[DropDownListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListCtor/CS/dropdownlistctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DropDownListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListCtor/VB/dropdownlistctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DropDownListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListCtor/CS/dropdownlistctorcs.aspx#1)]
+ [!code-aspx-vb[DropDownListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListCtor/VB/dropdownlistctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -224,8 +231,8 @@
 ## Examples  
  The following code example demonstrates how to get or set the <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A> property in a custom <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomDropDownListBorderColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomDropDownListBorderColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomDropDownListBorderColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolorcs.aspx#1)]
+ [!code-aspx-vb[CustomDropDownListBorderColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolorvb.aspx#1)]  
 [!code-csharp[CustomDropDownListBorderColor#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolor.cs#2)]
 [!code-vb[CustomDropDownListBorderColor#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolor.vb#2)]  
   
@@ -319,8 +326,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DropDownList.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomDropDownListCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomDropDownListCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomDropDownListCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollectioncs.aspx#1)]
+ [!code-aspx-vb[CustomDropDownListCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollectionvb.aspx#1)]  
 [!code-csharp[CustomDropDownListCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollection.cs#2)]
 [!code-vb[CustomDropDownListCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollection.vb#2)]  
   
@@ -422,11 +429,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DropDownList.SelectedIndex%2A> property to determine the selected item in the <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DropDownListSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListSelectedIndex/CS/dropdownlistselectedindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DropDownListSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListSelectedIndex/VB/dropdownlistselectedindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DropDownListSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListSelectedIndex/CS/dropdownlistselectedindexcs.aspx#1)]
+ [!code-aspx-vb[DropDownListSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListSelectedIndex/VB/dropdownlistselectedindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -453,6 +461,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

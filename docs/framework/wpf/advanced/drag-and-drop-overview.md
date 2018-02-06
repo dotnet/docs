@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "drag-and-drop [WPF], implementing"
   - "drag sources [WPF], drag-and-drop"
@@ -21,6 +24,8 @@ caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drag and Drop Overview
 This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. Drag-and-drop commonly refers to a method of data transfer that involves using a mouse (or some other pointing device) to select one or more objects, dragging these objects over some desired drop target in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], and dropping them.  
@@ -220,7 +225,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  [!code-vb[DragDropSnippets#Drop](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
   
 ## See Also  
- <xref:System.Windows.Clipboard>   
- [Walkthrough: Enabling Drag and Drop on a User Control](../../../../docs/framework/wpf/advanced/walkthrough-enabling-drag-and-drop-on-a-user-control.md)   
- [How-to Topics](../../../../docs/framework/wpf/advanced/drag-and-drop-how-to-topics.md)   
+ <xref:System.Windows.Clipboard>  
+ [Walkthrough: Enabling Drag and Drop on a User Control](../../../../docs/framework/wpf/advanced/walkthrough-enabling-drag-and-drop-on-a-user-control.md)  
+ [How-to Topics](../../../../docs/framework/wpf/advanced/drag-and-drop-how-to-topics.md)  
  [Drag and Drop](../../../../docs/framework/wpf/advanced/drag-and-drop.md)

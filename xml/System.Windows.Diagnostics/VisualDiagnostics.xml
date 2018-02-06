@@ -1,6 +1,6 @@
 <Type Name="VisualDiagnostics" FullName="System.Windows.Diagnostics.VisualDiagnostics">
   <TypeSignature Language="C#" Value="public static class VisualDiagnostics" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualDiagnostics extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed VisualDiagnostics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualDiagnostics" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
@@ -22,6 +22,58 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="DisableVisualTreeChanged">
+      <MemberSignature Language="C#" Value="public static void DisableVisualTreeChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisableVisualTreeChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualDiagnostics.DisableVisualTreeChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disables the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This method is for diagnostic use only. Microsoft does not support the use of this method in a production application under any circumstances.
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableVisualTreeChanged">
+      <MemberSignature Language="C#" Value="public static void EnableVisualTreeChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableVisualTreeChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualDiagnostics.EnableVisualTreeChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enables the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This method is for diagnostic use only.
+
+Microsoft does not support the use of this method in a production application under any circumstances.
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetXamlSourceInfo">
       <MemberSignature Language="C#" Value="public static System.Windows.Diagnostics.XamlSourceInfo GetXamlSourceInfo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Diagnostics.XamlSourceInfo GetXamlSourceInfo(object obj) cil managed" />

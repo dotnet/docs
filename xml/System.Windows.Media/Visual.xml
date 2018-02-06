@@ -59,6 +59,8 @@ Visual class hierarchy
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.VisualCollection" />
+    <altmember cref="T:System.Windows.Media.VisualTreeHelper" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +115,7 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.VisualCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindCommonVisualAncestor">
@@ -386,6 +389,7 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Visual.VisualParent" />
       </Docs>
     </Member>
     <Member MemberName="PointFromScreen">
@@ -483,6 +487,7 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.VisualCollection" />
       </Docs>
     </Member>
     <Member MemberName="TransformToAncestor">
@@ -667,6 +672,7 @@ Visual class hierarchy
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
         <value>The bitmap effect for this visual object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.UIElement.BitmapEffect" />
       </Docs>
     </Member>
     <Member MemberName="VisualBitmapEffectInput">
@@ -690,6 +696,7 @@ Visual class hierarchy
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
         <value>The bitmap effect input value for this visual object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.UIElement.BitmapEffectInput" />
       </Docs>
     </Member>
     <Member MemberName="VisualBitmapScalingMode">
@@ -733,6 +740,10 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.CacheMode" />
+        <altmember cref="P:System.Windows.Media.ContainerVisual.CacheMode" />
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
+        <altmember cref="T:System.Windows.Media.BitmapCacheBrush" />
       </Docs>
     </Member>
     <Member MemberName="VisualChildrenCount">
@@ -841,6 +852,8 @@ Visual class hierarchy
         <summary>Gets or sets the bitmap effect to apply to the <see cref="T:System.Windows.Media.Visual" />.</summary>
         <value>An <see cref="T:System.Windows.Media.Effects.Effect" /> that represents the bitmap effect.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="VisualOffset">
@@ -927,6 +940,8 @@ Visual class hierarchy
         <summary>Gets the visual tree parent of the visual object.</summary>
         <value>The <see cref="T:System.Windows.Media.Visual" /> parent.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.FrameworkContentElement.Parent" />
+        <altmember cref="T:System.Windows.Media.VisualTreeHelper" />
       </Docs>
     </Member>
     <Member MemberName="VisualScrollableAreaClip">
@@ -1077,6 +1092,7 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VisualTreeHelper.GetXSnappingGuidelines(System.Windows.Media.Visual)" />
       </Docs>
     </Member>
     <Member MemberName="VisualYSnappingGuidelines">
@@ -1104,7 +1120,26 @@ Visual class hierarchy
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VisualTreeHelper.GetYSnappingGuidelines(System.Windows.Media.Visual)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransformToAncestor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified ancestor of the visual object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTestCore">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a point or geometry value is within the bounds of the visual object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

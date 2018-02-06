@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -146,5 +149,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

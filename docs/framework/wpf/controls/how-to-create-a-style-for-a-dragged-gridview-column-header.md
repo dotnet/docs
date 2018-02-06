@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListView controls, styling"
+  - "ListView controls [WPF], styling"
 ms.assetid: 0b999645-0313-4b33-80b9-19ece08b5459
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Style for a Dragged GridView Column Header
 This example shows how to change the appearance of a dragged <xref:System.Windows.Controls.GridViewColumnHeader> when the user changes the position of a column.  
@@ -37,10 +39,10 @@ This example shows how to change the appearance of a dragged <xref:System.Window
 [!code-xaml[ListViewHeaderRoleStyle#GVCHControlTemplateEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHeaderRoleStyle/CS/Window1.xaml#gvchcontroltemplateend)]  
   
 ## See Also  
- <xref:System.Windows.Controls.GridViewColumnHeader>   
- <xref:System.Windows.Controls.GridViewColumnHeaderRole>   
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
+ <xref:System.Windows.Controls.GridViewColumnHeader>  
+ <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

@@ -8,22 +8,20 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: f9b074f6-d6f4-49dd-a093-df510bf0cf7b
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Using the XslCompiledTransform Class
 The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Framework XSLT processor. This class is used to compile style sheets and execute XSLT transformations.  
   
 > [!NOTE]
->  Although the overall performance of the <xref:System.Xml.Xsl.XslCompiledTransform> class is better than the <xref:System.Xml.Xsl.XslTransform> class, the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslCompiledTransform> class might perform more slowly than the <xref:System.Xml.Xsl.XslTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslTransform> class the first time it is called on a transformation. This is because the XSLT file must be compiled before it is loaded. For more information, see the following blog post: [XslCompiledTransform Slower than XslTransform?](http://go.microsoft.com/fwlink/?LinkId=130590)  
+>  Although the overall performance of the <xref:System.Xml.Xsl.XslCompiledTransform> class is better than the <xref:System.Xml.Xsl.XslTransform> class, the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslCompiledTransform> class might perform more slowly than the <xref:System.Xml.Xsl.XslTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslTransform> class the first time it is called on a transformation. This is because the XSLT file must be compiled before it is loaded. For more information, see the following blog post: [XslCompiledTransform Slower than XslTransform?](https://blogs.msdn.microsoft.com/antosha/2006/07/16/xslcompiledtransform-slower-than-xsltransform/)  
   
 ## In This Section  
  [Inputs to the XslCompiledTransform Class](../../../../docs/standard/data/xml/inputs-to-the-xslcompiledtransform-class.md)  
@@ -48,5 +46,5 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Frame
  Discusses how to migrate code from the <xref:System.Xml.Xsl.XslTransform> class  
   
 ## See Also  
- <xref:System.Xml.Xsl.XsltSettings>   
+ <xref:System.Xml.Xsl.XsltSettings>  
  <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDebugAutoAttach::AutoAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AutoAttach method [.NET Framework debugging]"
   - "IDebugAutoAttach::AutoAttach method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebugAutoAttach::AutoAttach Method
 Performs server-invoked debugger auto attach.  

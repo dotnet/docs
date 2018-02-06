@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyRefHash"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAssemblyRefHash method"
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41
@@ -28,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetAssemblyRefHash Method
 Retrieves a hash blob for a given assembly.  
@@ -59,6 +59,6 @@ HRESULT GetAssemblyRefHash(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

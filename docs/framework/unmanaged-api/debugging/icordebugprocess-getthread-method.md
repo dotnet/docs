@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::GetThread method [.NET Framework debugging]"
   - "GetThread method, ICorDebugProcess interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::GetThread Method
 Gets this process's thread that has the specified operating system (OS) thread ID.  

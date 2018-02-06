@@ -243,5 +243,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="URLFor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used to specify the URL that the system must have to reference a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /><see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> in the browser.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

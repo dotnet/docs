@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::SetThreadContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::SetThreadContext method [.NET Framework debugging]"
   - "SetThreadContext method, ICorDebugProcess interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::SetThreadContext Method
 Sets the context for the given thread in this process.  

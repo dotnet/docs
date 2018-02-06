@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 763c7b1f-e7b0-4d99-a42c-4506fcb8da00
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;allowAccounts&gt;
 Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] services, and are granted connection access to the sharing service.  
@@ -65,7 +67,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>   
+ <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  
  <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>

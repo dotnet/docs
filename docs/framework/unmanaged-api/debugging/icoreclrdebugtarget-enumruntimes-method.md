@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICoreClrDebugTarget::EnumRuntimes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "ICorClrDebugTarget::EnumRuntimes method [Silverlight debugging]"
@@ -31,6 +29,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICoreClrDebugTarget::EnumRuntimes Method
 Enumerates the common language runtimes (CLRs) in the specified process that is running on a remote computer.  

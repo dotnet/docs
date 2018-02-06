@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "configuration [WCF]"
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Services
 Once you have designed and implemented your service contract, you are ready to configure your service. This is where you define and customize how your service is exposed to clients, including specifying the address where it can be found, the transport and message encoding it uses to send and receive messages, and the type of security it requires.  
@@ -62,6 +64,6 @@ Once you have designed and implemented your service contract, you are ready to c
  [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)  
   
 ## See Also  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)   
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)   
+ [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
+ [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAddress method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetAddress method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode::GetAddress Method
 Gets the relative virtual address (RVA) of the code segment that this "ICorDebugCode" interface represents.  

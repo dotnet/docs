@@ -99,10 +99,10 @@
                           <asp:textbox runat="server" id="Email"></asp:textbox>
                           <asp:requiredfieldvalidator runat="server" 
                             controltovalidate="Email" 
-                            tooltip="E-mail is a required field."
+                            tooltip="Email is a required field."
                             id="EmailRequired" 
                             validationgroup="Createuserwizard1" 
-                            errormessage="E-mail is a required field.">
+                            errormessage="Email is a required field.">
                             *
                           </asp:requiredfieldvalidator>
                         </td>

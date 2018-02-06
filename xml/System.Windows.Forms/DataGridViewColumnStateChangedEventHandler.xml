@@ -38,9 +38,13 @@
   
 -   <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A>  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.ColumnStateChanged" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
   </Docs>
 </Type>

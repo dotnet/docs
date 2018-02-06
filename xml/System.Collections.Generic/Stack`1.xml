@@ -210,6 +210,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.Generic.ICollection`1" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -433,6 +435,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="arrayIndex" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.Stack`1" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.Stack`1.ToArray" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -558,6 +561,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.Stack`1.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -616,6 +621,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Stack`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Stack`1.Pop" />
+        <altmember cref="M:System.Collections.Generic.Stack`1.Push(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Pop">
@@ -674,6 +681,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Stack`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Stack`1.Peek" />
+        <altmember cref="M:System.Collections.Generic.Stack`1.Push(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -735,6 +744,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Stack`1.Peek" />
+        <altmember cref="M:System.Collections.Generic.Stack`1.Pop" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -788,6 +799,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -894,6 +906,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -961,6 +974,7 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1014,6 +1028,9 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Stack`1.GetEnumerator" />
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -1069,6 +1086,8 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Stack`1.CopyTo(`0[],System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.Stack`1.Pop" />
       </Docs>
     </Member>
     <Member MemberName="TrimExcess">
@@ -1109,6 +1128,8 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Stack`1.Clear" />
+        <altmember cref="P:System.Collections.Generic.Stack`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="TryPeek">
@@ -1155,5 +1176,16 @@ finally {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

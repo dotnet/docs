@@ -139,6 +139,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="CreateFromNameValueCollection">
@@ -223,6 +224,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">A message cannot be created from the specified URI.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationMessage.TryCreateFromUri(System.Uri,System.IdentityModel.Services.WSFederationMessage@)" />
+        <altmember cref="M:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -284,6 +287,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="requestUri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
   </Members>

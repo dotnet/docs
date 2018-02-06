@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugInterfaceVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugInterfaceVersion enumeration [.NET Framework debugging]"
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90
@@ -28,6 +26,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugInterfaceVersion Enumeration
 Specifies an interface, a version of the .NET Framework, or a version of the .NET Framework in which an interface was introduced.  

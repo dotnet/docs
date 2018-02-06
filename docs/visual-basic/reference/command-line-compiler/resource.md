@@ -1,16 +1,12 @@
 ---
 title: "/resource (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/resource compiler option [Visual Basic]"
   - "-resource compiler option [Visual Basic]"
@@ -22,21 +18,6 @@ ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /resource (Visual Basic)
 Embeds a managed resource in an assembly.  
@@ -73,8 +54,8 @@ vbc /res:rf.resource in.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)   
- [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md)   
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)  
+ [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md)  
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

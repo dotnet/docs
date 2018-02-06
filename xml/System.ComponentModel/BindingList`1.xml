@@ -56,6 +56,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IBindingList" />
+    <altmember cref="T:System.ComponentModel.ICancelAddNew" />
+    <altmember cref="T:System.ComponentModel.IEditableObject" />
+    <altmember cref="T:System.ComponentModel.IRaiseItemChangedEvents" />
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+    <altmember cref="T:System.Windows.Forms.BindingSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ObjectModel.Collection`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ObjectModel.Collection`1" />
       </Docs>
     </Member>
     <Member MemberName="AddingNew">
@@ -176,7 +184,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event occurs before a new object is added to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. This event is raised after the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method is called, but before the new item is created and added to the internal list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.ComponentModel.BindingList%601> class.  
   
- For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -188,6 +196,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ObjectModel.Collection`1.Items" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.ListChanged" />
       </Docs>
     </Member>
     <Member MemberName="AddNew">
@@ -252,6 +263,15 @@
  -or-  
   
  A public default constructor could not be found for the current item type.</exception>
+        <altmember cref="M:System.ComponentModel.IBindingList.AddNew" />
+        <altmember cref="M:System.Activator.CreateInstance(System.Type)" />
+        <altmember cref="P:System.Collections.ObjectModel.Collection`1.Items" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.AddingNew" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.EndNew(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.CancelNew(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.RemoveItem(System.Int32)" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.ListChanged" />
       </Docs>
     </Member>
     <Member MemberName="AddNewCore">
@@ -288,6 +308,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The new item is not the same type as the objects contained in the <see cref="T:System.ComponentModel.BindingList`1" />.</exception>
+        <altmember cref="M:System.ComponentModel.IBindingList.AddNew" />
+        <altmember cref="M:System.Activator.CreateInstance(System.Type)" />
+        <altmember cref="P:System.Collections.ObjectModel.Collection`1.Items" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.AddingNew" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowNew" />
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -331,6 +356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowNew" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowRemove" />
       </Docs>
     </Member>
     <Member MemberName="AllowNew">
@@ -376,6 +403,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowEdit" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowRemove" />
       </Docs>
     </Member>
     <Member MemberName="AllowRemove">
@@ -421,6 +451,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BindingList`1.RemoveItem(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowEdit" />
+        <altmember cref="P:System.ComponentModel.BindingList`1.AllowNew" />
       </Docs>
     </Member>
     <Member MemberName="ApplySortCore">
@@ -516,6 +549,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ICancelAddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.EndNew(System.Int32)" />
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -552,6 +589,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.Collection`1.Clear" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.RemoveItem(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="EndNew">
@@ -591,6 +631,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ICancelAddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.RemoveItem(System.Int32)" />
+        <altmember cref="M:System.Collections.ObjectModel.Collection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="FindCore">
@@ -766,7 +810,7 @@
 ## Remarks  
  <xref:System.ComponentModel.BindingList%601.ListChanged> notifications for item value changes are only raised if the list item type implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -777,6 +821,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IRaiseItemChangedEvents" />
+        <altmember cref="T:System.ComponentModel.ListChangedEventArgs" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAddingNew">
@@ -812,7 +859,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event and the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method allow custom-created items to be added to the list.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.ComponentModel.BindingList%601.OnAddingNew%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -821,6 +868,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BindingList`1.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BindingList`1.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AddingNewEventArgs" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.AddingNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="OnListChanged">
@@ -861,6 +911,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BindingList`1.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BindingList`1.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.BindingList`1.ListChanged" />
+        <altmember cref="T:System.ComponentModel.ListChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaiseListChangedEvents">
@@ -942,6 +994,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You are removing a newly added item and <see cref="P:System.ComponentModel.IBindingList.AllowRemove" /> is set to <see langword="false" />.</exception>
+        <altmember cref="M:System.ComponentModel.BindingList`1.AddNew" />
+        <altmember cref="M:System.ComponentModel.BindingList`1.ClearItems" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSortCore">
@@ -1093,6 +1147,8 @@
  -or-  
   
  <paramref name="index" /> is greater than <see cref="P:System.Collections.ObjectModel.Collection`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)" />
+        <altmember cref="E:System.ComponentModel.BindingList`1.ListChanged" />
       </Docs>
     </Member>
     <Member MemberName="SortDirectionCore">
@@ -1323,6 +1379,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.AddNew">
@@ -1605,6 +1662,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BindingList`1.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IBindingList.RemoveSort">
@@ -1849,5 +1907,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindingList`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

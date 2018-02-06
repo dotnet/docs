@@ -1,40 +1,21 @@
 ---
 title: "Namespace or type specified in the Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc40056"
   - "vbc40056"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC40056"
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Namespace or type specified in the Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found
 Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.  
@@ -66,8 +47,8 @@ Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't con
 3.  Verify that the containing element exposes at least one `Public` member.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)   
- [Public](../../../visual-basic/language-reference/modifiers/public.md)   
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
+ [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
+ [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
+ [Public](../../../visual-basic/language-reference/modifiers/public.md)  
+ [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
  [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

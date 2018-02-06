@@ -396,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.OracleClient.OracleBinary.IsNull" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -475,10 +476,19 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBinary" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBinary" />.</param>
+        <summary>Gets the contents of the <see cref="P:System.Data.OracleClient.OracleBinary.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleBinary" /> parameter as an array of bytes.</summary>
+        <returns>An array of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Visual Basic]  
+  
+ In Visual Basic, you can use the conversions defined by the class, but you cannot override them or create your own. If Option Strict is set, you must use the \<CType operator> to convert the <xref:System.Data.OracleClient.OracleBinary> to a binary object.  
+  
+ The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Value?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -549,9 +559,9 @@
         <Parameter Name="b" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The array of bytes to be converted.</param>
+        <summary>Converts an array of bytes to an <see cref="T:System.Data.OracleClient.OracleBinary" /> structure.</summary>
+        <returns>An <see langword="OracleBinary" /> structure that represents the converted array of bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,5 +668,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if they are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

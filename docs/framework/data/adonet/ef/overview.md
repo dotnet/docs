@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity Framework Overview
 The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of technologies in ADO.NET that support the development of data-oriented software applications. Architects and developers of data-oriented applications have struggled with the need to achieve two very different objectives. They must model the entities, relationships, and logic of the business problems they are solving, and they must also work with the data engines used to store and retrieve the data. The data may span multiple storage systems, each with its own protocols; even applications that work with a single storage system must balance the requirements of the storage system against the requirements of writing efficient and maintainable application code.  
@@ -97,7 +95,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of t
  The following topics enable you to learn more about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
   
  [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- Provide information about how to get up and running quickly using the [Quickstart](http://msdn.microsoft.com/en-us/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+ Provide information about how to get up and running quickly using the [Quickstart](http://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
   
  [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)  
  Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.  

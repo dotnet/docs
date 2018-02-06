@@ -37,10 +37,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/timers/system/timers/Timer.cs#897683f27faba082). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Timers.Timer> component is a server-based timer that raises an <xref:System.Timers.Timer.Elapsed> event in your application after the number of milliseconds in the <xref:System.Timers.Timer.Interval%2A> property has elapsed. You can configure the <xref:System.Timers.Timer> object to raise the event just once or repeatedly using the <xref:System.Timers.Timer.AutoReset%2A> property. Typically, a <xref:System.Timers.Timer> object is declared at the class level so that it stays in scope as long as it is needed. You can then handle its <xref:System.Timers.Timer.Elapsed> event to provide regular processing. For example, suppose you have a critical server that must be kept running 24 hours a day, 7 days a week. You could create a service that uses a <xref:System.Timers.Timer> object to periodically check the server and ensure that the system is up and running. If the system is not responding, the service could attempt to restart the server or notify an administrator.  
   
 > [!IMPORTANT]
@@ -92,6 +88,11 @@
  ]]></format>
     </remarks>
     <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.</threadsafe>
+    <altmember cref="P:System.Timers.Timer.AutoReset" />
+    <altmember cref="P:System.Timers.Timer.Interval" />
+    <altmember cref="E:System.Timers.Timer.Elapsed" />
+    <altmember cref="M:System.Timers.Timer.#ctor" />
+    <altmember cref="T:System.Threading.Timer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,6 +140,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Timers.Timer.AutoReset" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="P:System.Timers.Timer.Interval" />
+        <altmember cref="P:System.Timers.Timer.SynchronizingObject" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +187,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value of the <paramref name="interval" /> parameter is less than or equal to zero, or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="P:System.Timers.Timer.Interval" />
       </Docs>
     </Member>
     <Member MemberName="AutoReset">
@@ -239,6 +245,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Timers.Timer.Interval" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="M:System.Timers.Timer.Start" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -273,6 +283,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="M:System.Timers.Timer.EndInit" />
+        <altmember cref="P:System.Timers.Timer.Interval" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -399,6 +412,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Timers.Timer.Interval" />
+        <altmember cref="P:System.Timers.Timer.AutoReset" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
+        <altmember cref="T:System.Timers.ElapsedEventArgs" />
+        <altmember cref="T:System.Timers.ElapsedEventHandler" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -466,6 +485,11 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This property cannot be set because the timer has been disposed.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Timers.Timer.Interval" /> property was set to a value greater than <see cref="F:System.Int32.MaxValue" /> before the timer was enabled.</exception>
+        <altmember cref="P:System.Timers.Timer.Interval" />
+        <altmember cref="P:System.Timers.Timer.AutoReset" />
+        <altmember cref="M:System.Timers.Timer.Start" />
+        <altmember cref="M:System.Timers.Timer.Stop" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -500,6 +524,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Timers.Timer.BeginInit" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="P:System.Timers.Timer.Interval" />
       </Docs>
     </Member>
     <Member MemberName="Interval">
@@ -579,6 +606,9 @@
  -or-  
   
  The interval is greater than <see cref="F:System.Int32.MaxValue" />, and the timer is currently enabled. (If the timer is not currently enabled, no exception is thrown until it becomes enabled.)</exception>
+        <altmember cref="P:System.Timers.Timer.AutoReset" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -655,6 +685,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="T:System.Timers.Timer" /> is created with an interval equal to or greater than <see cref="F:System.Int32.MaxValue" /> + 1, or set to an interval less than zero.</exception>
+        <altmember cref="P:System.Timers.Timer.Interval" />
+        <altmember cref="P:System.Timers.Timer.AutoReset" />
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="M:System.Timers.Timer.Stop" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -711,6 +746,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Timers.Timer.Enabled" />
+        <altmember cref="M:System.Timers.Timer.Start" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -779,7 +817,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.ComponentModel.ISynchronizeInvoke" />
+        <altmember cref="T:System.Threading.ThreadPool" />
+        <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Timers.Timer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

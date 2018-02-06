@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsHttpContextBinding&gt;
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  
@@ -96,7 +98,7 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|  
 |[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
+|[reliableSession](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -105,12 +107,12 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## See Also  
- <xref:System.ServiceModel.WSHttpBinding>   
- <xref:System.ServiceModel.WSHttpContextBinding>   
- <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement>   
- <xref:System.ServiceModel.Channels.ContextBindingElement>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
+ <xref:System.ServiceModel.WSHttpBinding>  
+ <xref:System.ServiceModel.WSHttpContextBinding>  
+ <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement>  
+ <xref:System.ServiceModel.Channels.ContextBindingElement>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

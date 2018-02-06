@@ -36,6 +36,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.UniqueConstraint" />
+    <altmember cref="T:System.Data.ForeignKeyConstraint" />
+    <altmember cref="P:System.Data.ForeignKeyConstraint.AcceptRejectRule" />
   </Docs>
   <Members>
     <Member MemberName="Cascade">

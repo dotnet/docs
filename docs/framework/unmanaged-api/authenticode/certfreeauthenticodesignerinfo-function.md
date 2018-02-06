@@ -15,13 +15,13 @@ api_location:
   - "clr.dll"
 api_type: 
   - "DLLExport"
-dev_langs: 
-  - "C++"
 ms.assetid: 8029633c-b6e4-4665-a7c2-89607c3247ef
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CertFreeAuthenticodeSignerInfo Function
 Frees resources allocated for the [AXL_AUTHENTICODE_SIGNER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md) structure.  

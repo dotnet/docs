@@ -96,6 +96,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,6 +129,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetView(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -153,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -179,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Insert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -205,6 +213,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -233,6 +245,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectCountMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -259,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SortParameterName" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -285,6 +301,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
       </Docs>
     </Member>
     <Member MemberName="ConflictDetection">
@@ -341,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.DBNull.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.ConvertNullToDBNull" />
       </Docs>
     </Member>
     <Member MemberName="DataObjectTypeName">
@@ -399,6 +420,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleted" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -421,7 +450,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Deleted> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after a <xref:System.Web.UI.WebControls.ObjectDataSourceView.Delete%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -432,11 +461,15 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -475,11 +508,13 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -507,6 +542,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -529,7 +567,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Deleting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Delete%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -540,11 +578,15 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleted" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="EnablePaging">
@@ -577,6 +619,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteDelete">
@@ -614,6 +659,13 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanDelete" /> property returns <see langword="false" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value, and no values are passed in the <paramref name="oldValues" /> collection.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteInsert">
@@ -652,6 +704,13 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanInsert" /> property returns <see langword="false" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="values" /> is <see langword="null" /> or empty.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Insert(System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserted" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -714,6 +773,13 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" /> property is set to <see langword="true" />, but the <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.StartRowIndexParameterName" /> and <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.MaximumRowsParameterName" /> properties are not set.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectCountMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selecting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -756,6 +822,13 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanInsert" /> property returns <see langword="false" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="oldValues" /> is <see langword="null" /> or empty and <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.ConflictDetection" /> is set to <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updating" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updated" />
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -799,8 +872,8 @@
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression%2A> property specifies an expression that is used to filter the data that is retrieved by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterParameters%2A> collection. In this example, the parameter placeholder is bounded by single quotation marks because the type of the parameter is a string type that might contain spaces. If the type of the parameter is a numeric or date type, bounding quotation marks are not required.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -818,6 +891,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression" /> property was set and the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> method does not return a <see cref="T:System.Data.DataSet" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.FilterParameters" />
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -840,13 +914,16 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Filtering> event to perform validation operations on filter parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs a filter operation. You can cancel the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs> object to `true`. The event is raised, only if the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property is set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
       </Docs>
     </Member>
     <Member MemberName="FilterParameters">
@@ -883,8 +960,8 @@
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression%2A> property specifies an expression that is used to filter the data that is retrieved by the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterParameters%2A> collection. In this example, the parameter placeholder is bounded by single quotation marks because the type of the parameter is a string type that might contain spaces. If the type of the parameter is a numeric or date type, bounding quotation marks are not required. The <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterParameters%2A> collection contains one parameter, a <xref:System.Web.UI.WebControls.FormParameter> that is bound to the <xref:System.Web.UI.WebControls.TextBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -902,6 +979,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression" /> property was set and the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> method does not return a <see cref="T:System.Data.DataSet" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -934,6 +1012,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanInsert" /> property returns <see langword="false" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserted" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -956,10 +1041,14 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Inserted> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -982,7 +1071,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Inserting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -995,8 +1084,8 @@
   
  When the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation is performed, the method that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod%2A> property is called. If the `Insert` method of the object has a method signature that includes parameters, the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters%2A> collection must contain a parameter with names that match the method signature parameters for the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> method to complete successfully.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -1013,6 +1102,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserted" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -1053,8 +1146,8 @@
   
  When the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation is performed, the method that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod%2A> property is called. If the `Insert` method of the object has a method signature that includes parameters, the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters%2A> collection must contain a parameter with names that match the method signature parameters for the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> method to complete successfully.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the previous code example uses. The code example consists of two basic classes and an additional class:  
   
@@ -1071,6 +1164,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Insert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -1105,8 +1200,8 @@
   
  When the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation is performed, the method that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod%2A> property is called. If the `Insert` method of the object has a method signature that includes parameters, the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters%2A> collection must contain a parameter with names that match the method signature parameters for the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> to complete successfully.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/CS/objds8cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/VB/objds8vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/CS/objds8cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/VB/objds8vb.aspx#1)]  
   
  The following code example provides an example implementation of the `Insert` method that the preceding code example uses. The `InsertNewEmployeeWrapper` method is added to the `EmployeeLogic` middle-tier object to enable the object to work more easily with the <xref:System.Web.UI.WebControls.ObjectDataSource> control in Web scenarios, without a substantial rewrite to the actual business logic.  
   
@@ -1115,6 +1210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.InsertMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Insert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -1134,6 +1231,9 @@
         <value>
           <see langword="true" />, if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1164,6 +1264,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="MaximumRowsParameterName">
@@ -1191,6 +1294,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
       </Docs>
     </Member>
     <Member MemberName="ObjectCreated">
@@ -1217,6 +1326,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreated(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.TypeName" />
       </Docs>
     </Member>
     <Member MemberName="ObjectCreating">
@@ -1239,12 +1350,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically calls the default constructor of a business object to create and instance of it using reflection. Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating> event to explicitly call another constructor and to set the instance of the object that results to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  If the method that is identified to perform the data operation is `static` (`Shared` in Visual Basic), the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating> and <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreated> events are never raised.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.TypeName" />
       </Docs>
     </Member>
     <Member MemberName="ObjectDisposing">
@@ -1273,6 +1386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing(System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.TypeName" />
       </Docs>
     </Member>
     <Member MemberName="OldValuesParameterFormatString">
@@ -1311,6 +1426,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.ConflictDetection" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleted">
@@ -1335,7 +1453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1348,14 +1466,16 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleted" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleting">
@@ -1380,7 +1500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1393,14 +1513,16 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Deleting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleting" />
       </Docs>
     </Member>
     <Member MemberName="OnFiltering">
@@ -1425,7 +1547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnFiltering%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1434,6 +1556,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnFiltering(System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnFiltering(System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Filtering" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
       </Docs>
     </Member>
     <Member MemberName="OnInserted">
@@ -1458,7 +1582,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1467,6 +1591,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserted" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
       </Docs>
     </Member>
     <Member MemberName="OnInserting">
@@ -1493,7 +1619,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> method is called, only if the method that is identified to perform the data operation is not `static` (`Shared` in Visual Basic).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1502,6 +1628,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Inserting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserting" />
       </Docs>
     </Member>
     <Member MemberName="OnObjectCreated">
@@ -1537,6 +1665,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreated(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreated(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" />
       </Docs>
     </Member>
     <Member MemberName="OnObjectCreating">
@@ -1561,7 +1691,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1570,6 +1700,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
       </Docs>
     </Member>
     <Member MemberName="OnObjectDisposing">
@@ -1596,7 +1728,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> is called when the instance of an object that was created to perform a data operation is discarded. The `Dispose` method is called, only if the type that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.TypeName%2A> property implements the <xref:System.IDisposable> interface.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1605,6 +1737,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing(System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing(System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.ObjectDisposing" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing" />
       </Docs>
     </Member>
     <Member MemberName="OnSelected">
@@ -1629,7 +1763,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1638,6 +1772,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
       </Docs>
     </Member>
     <Member MemberName="OnSelecting">
@@ -1662,7 +1798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1671,6 +1807,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Selecting" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="OnUpdated">
@@ -1695,7 +1833,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1704,6 +1842,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
       </Docs>
     </Member>
     <Member MemberName="OnUpdating">
@@ -1728,7 +1868,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1737,14 +1877,16 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a `NorthwindEmployee`, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that triggers the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation is enabled only after an employee is selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updating" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updating" />
       </Docs>
     </Member>
     <Member MemberName="ParsingCulture">
@@ -1763,6 +1905,7 @@
         <summary>Gets a or sets a value that indicates what culture information is used when converting string values to actual property types in order to construct an object of the type indicated by <see cref="P:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName" />.</summary>
         <value>The culture information. The default value is <see cref="F:System.Web.UI.WebControls.ParsingCulture.Invariant" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1793,6 +1936,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1823,6 +1970,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> method specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectCountMethod">
@@ -1850,6 +2000,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanRetrieveTotalRowCount" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1872,10 +2026,14 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Selected> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after a data retrieval operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Selecting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -1898,10 +2056,14 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the data retrieval operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Selected" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -1943,11 +2105,13 @@
 ## Examples  
  The following code example demonstrates how a <xref:System.Web.UI.WebControls.GridView> control can display data using an <xref:System.Web.UI.WebControls.ObjectDataSource> control on a Web Forms page. The <xref:System.Web.UI.WebControls.ObjectDataSource> identifies a partially or fully qualified class name with its <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property and a method that is called to retrieve data with its <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property. At run time, the object is created and the method is called using reflection. The <xref:System.Web.UI.WebControls.GridView> control enumerates through the <xref:System.Collections.IEnumerable> collection that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A>, and then displays the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -1978,11 +2142,13 @@
   
  To view the example implementation of the `EmployeeLogic` class and the `GetEmployee` method, see <xref:System.Web.UI.WebControls.ObjectDataSource>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2010,6 +2176,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndexParameterName">
@@ -2037,6 +2205,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -2063,6 +2235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -2091,6 +2264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -2117,6 +2291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -2142,6 +2317,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2167,6 +2343,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -2195,8 +2375,8 @@
 ## Examples  
  The following code example demonstrates how a <xref:System.Web.UI.WebControls.GridView> control can display data using an <xref:System.Web.UI.WebControls.ObjectDataSource> control on a Web Forms page. The <xref:System.Web.UI.WebControls.ObjectDataSource> identifies a partially or fully qualified class name with its <xref:System.Web.UI.WebControls.ObjectDataSourceView.TypeName%2A> property and a method that is called to retrieve data with its <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property. At run time, the object is created and the method is called using reflection. The <xref:System.Web.UI.WebControls.GridView> control enumerates through the <xref:System.Collections.IEnumerable> collection that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> and displays the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2235,6 +2415,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.ConflictDetection" />
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updating" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updated" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2257,10 +2445,14 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Updated> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updating" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -2297,11 +2489,14 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a `NorthwindEmployee`, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that triggers the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation is enabled only after an employee is selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Update" />
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -2330,11 +2525,14 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a `NorthwindEmployee`, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that triggers the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation is enabled only after an employee is selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2357,18 +2555,22 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Updating> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection, accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a `NorthwindEmployee`, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that triggers the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation is enabled only after an employee is selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Updated" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.ObjectDataSourceView.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters" />
       </Docs>
     </Member>
   </Members>

@@ -28,7 +28,7 @@
   
  You can also specify shortcut menus for individual rows rather than individual cells by setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property or handling the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event. The cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property setting overrides the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting, and the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event overrides both the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event and the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting. You can specify `null` for a cell shortcut menu, however, to prevent a row shortcut menu from being overridden.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -41,6 +41,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContextMenuStrip" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +72,9 @@
         <param name="rowIndex">The row index of the cell that the event occurred for.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -95,6 +109,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContextMenuStrip" />
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
       </Docs>
     </Member>
   </Members>

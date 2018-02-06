@@ -866,5 +866,15 @@
         <exception cref="T:System.NotSupportedException">Items cannot be removed from a read-only collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

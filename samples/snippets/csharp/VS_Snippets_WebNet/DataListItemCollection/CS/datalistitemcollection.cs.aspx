@@ -1,4 +1,4 @@
-<%--<Snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Import Namespace = "System.Data"  %>
 <%@ Page language="c#" AutoEventWireup="true"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -180,4 +180,4 @@ void itemSelected(Object sender,EventArgs e)
 </form>
 </body>
 </html>
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->

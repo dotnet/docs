@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -93,10 +95,12 @@
  <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> to the next element. If the list is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.  
   
 > [!NOTE]
->  For better performance, this property does not throw an exception if the enumerator is positioned before the first element or after the last element. The value of the property is undefined. To get an exception instead, cast the <xref:System.Collections.Generic.Dictionary%602.Enumerator> to the <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface before using it.  
+>  For better performance, this property does not throw an exception if the enumerator is positioned before the first element or after the last element. The value of the property is undefined. To get an exception instead, cast the <xref:System.Collections.Generic.List%601.Enumerator> to the <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface before using it.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.Enumerator.MoveNext" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -169,6 +173,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.Generic.List`1.Enumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -212,6 +217,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">
@@ -251,6 +259,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
   </Members>

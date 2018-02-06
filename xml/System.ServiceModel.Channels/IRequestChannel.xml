@@ -365,5 +365,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Request">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a message-based request and returns the correlated message-based response.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to transmit a request message to the reply side of a request-reply message exchange.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -26,6 +26,7 @@
   <Docs>
     <summary>Provides access to an ordered, strongly typed collection of <see cref="T:System.Windows.Controls.RowDefinition" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.RowDefinition" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -89,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -124,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -164,6 +168,7 @@
  The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from index to the end of the destination array.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.</exception>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -199,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -233,6 +239,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -275,6 +282,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -306,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -363,6 +372,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index position in the collection.</exception>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -386,6 +396,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> was found in the collection and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -424,6 +435,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -464,6 +476,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -545,6 +558,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RowDefinitionCollection.CopyTo(System.Windows.Controls.RowDefinition[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -600,6 +614,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RowDefinitionCollection.Add(System.Windows.Controls.RowDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -659,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RowDefinitionCollection.IndexOf(System.Windows.Controls.RowDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -689,6 +705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RowDefinitionCollection.Insert(System.Int32,System.Windows.Controls.RowDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -706,7 +723,7 @@
       <Docs>
         <summary>Gets a value indicating whether the collection has a fixed size.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -776,6 +793,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.RowDefinitionCollection.Remove(System.Windows.Controls.RowDefinition)" />
       </Docs>
     </Member>
   </Members>

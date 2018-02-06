@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "data contracts"
   - "service contracts"
@@ -19,9 +16,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices: Data Contract Versioning
 This topic lists the best practices for creating data contracts that can evolve easily over time. [!INCLUDE[crabout](../../../includes/crabout-md.md)] data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
@@ -100,17 +99,17 @@ This topic lists the best practices for creating data contracts that can evolve 
  Some of the guidelines listed here can be safely ignored when special circumstances apply. Make sure you fully understand the serialization, deserialization, and schema mechanisms involved before deviating from the guidelines.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>   
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject>   
- <xref:System.ServiceModel.ServiceBehaviorAttribute>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>   
- <xref:System.Runtime.Serialization.ExtensionDataObject>   
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)   
- [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)   
- [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)   
+ <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject>  
+ <xref:System.ServiceModel.ServiceBehaviorAttribute>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>  
+ <xref:System.Runtime.Serialization.ExtensionDataObject>  
+ <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
+ [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
+ [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)  
+ [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)  
  [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

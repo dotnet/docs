@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain method [.NET Framework hosting]"
   - "GetDefaultDomain method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::GetDefaultDomain Method
 Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the default domain for the current process.  
@@ -66,6 +66,6 @@ HRESULT GetDefaultDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.IAmbientProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
         <summary>Gets the XAML type system identifier (<see cref="T:System.Xaml.XamlMember" />) that represents the ambient property.</summary>
         <value>The identifier that represents the ambient property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.AmbientAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Value">

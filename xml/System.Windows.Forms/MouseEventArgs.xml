@@ -49,6 +49,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseDown" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseUp" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseMove" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +84,8 @@
         <param name="delta">A signed count of the number of detents the wheel has rotated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MouseEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
       </Docs>
     </Member>
     <Member MemberName="Button">
@@ -103,6 +114,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Clicks" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
     <Member MemberName="Clicks">
@@ -138,6 +153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
       </Docs>
     </Member>
     <Member MemberName="Delta">
@@ -175,6 +192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Clicks" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -203,6 +222,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Y" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.X" />
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -236,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Y" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -269,6 +294,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.X" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::EnumerateThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugController::EnumerateThreads method [.NET Framework debugging]"
   - "EnumerateThreads method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::EnumerateThreads Method
 Gets an enumerator for the active managed threads in the process.  

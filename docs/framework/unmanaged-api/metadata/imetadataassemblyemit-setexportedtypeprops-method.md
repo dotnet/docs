@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetExportedTypeProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::SetExportedTypeProps Method
 Modifies the specified `ExportedType` metadata structure.  

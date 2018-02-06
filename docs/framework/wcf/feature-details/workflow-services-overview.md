@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e536dda3-e286-441e-99a7-49ddc004b646
 caps.latest.revision: 30
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Services Overview
 Workflow services are [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-based services that are implemented using workflows. Workflow services are workflows that use the messaging activities to send and receive [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] messages. .NET Framework 4.5 introduces a number of messaging activities that allow you send and receive messages from within a workflow. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] messaging activities and how they can be used to implement different message exchange patterns, see [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md).  

@@ -1,44 +1,26 @@
 ---
 title: "Sub Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Sub procedures, about Sub procedures"
+  - "Sub procedures [Visual Basic], about Sub procedures"
   - "statement blocks"
-  - "Sub procedures, calling"
-  - "procedures, calling"
-  - "Sub procedures, syntax"
+  - "Sub procedures [Visual Basic], calling"
+  - "procedures [Visual Basic], calling"
+  - "Sub procedures [Visual Basic], syntax"
   - "Sub procedures"
-  - "procedures, Sub"
-  - "syntax, Sub procedures"
+  - "procedures [Visual Basic], Sub"
+  - "syntax [Visual Basic], Sub procedures"
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sub Procedures (Visual Basic)
 A `Sub` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements enclosed by the `Sub` and `End Sub` statements. The `Sub` procedure performs a task and then returns control to the calling code, but it does not return a value to the calling code.  
@@ -95,11 +77,11 @@ A `Sub` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] sta
  [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)   
+ [Procedures](./index.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)  
  [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)

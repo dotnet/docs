@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorNativeLinkFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorNativeLinkFlags enumeration [.NET Framework metadata]"
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorNativeLinkFlags Enumeration
 Provides flag values used by the linker when linking native code.  

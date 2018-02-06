@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Interlocked class, about Interlocked class"
   - "threading [.NET Framework], Interlocked class"
@@ -16,6 +20,9 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Interlocked Operations
 The <xref:System.Threading.Interlocked> class provides methods that synchronize access to a variable that is shared by multiple threads. The threads of different processes can use this mechanism if the variable is in shared memory. Interlocked operations are atomic — that is, the entire operation is a unit that cannot be interrupted by another interlocked operation on the same variable. This is important in operating systems with preemptive multithreading, where a thread can be suspended after loading a value from a memory address, but before having the chance to alter it and store it.  
@@ -56,7 +63,7 @@ The <xref:System.Threading.Interlocked> class provides methods that synchronize 
  [!code-vb[Conceptual.Interlocked#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interlocked/vb/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Threading.Interlocked>   
- <xref:System.Threading.Monitor>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.Interlocked>  
+ <xref:System.Threading.Monitor>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

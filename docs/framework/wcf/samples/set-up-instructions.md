@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation Samples [WCF], setup"
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Set-Up Instructions
 This set of topics describes how to set up services that are required to run a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service.  
@@ -50,4 +52,4 @@ This set of topics describes how to set up services that are required to run a [
  Outlines the steps to install Message Queuing.  
   
 ## Related Sections  
- [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b)
+ [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)

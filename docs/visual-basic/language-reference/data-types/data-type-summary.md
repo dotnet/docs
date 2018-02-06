@@ -1,43 +1,38 @@
 ---
 title: "Data Type Summary (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Boolean data type, supported types in Visual Basic"
-  - "storage, order of storage"
+  - "Boolean data type [Visual Basic], supported types in Visual Basic"
+  - "storage [Visual Basic], order of storage"
   - "data types [Visual Basic], Visual Basic"
-  - "Single data type, supported types in Visual Basic"
-  - "notation, scientific"
+  - "Single data type [Visual Basic], supported types in Visual Basic"
+  - "notation [Visual Basic], scientific"
   - "memory requirements, data types"
-  - "user-defined data types, Visual Basic"
-  - "Date data type, Visual Basic"
+  - "user-defined data types [Visual Basic], Visual Basic"
+  - "Date data type [Visual Basic], Visual Basic"
   - "Visual Basic, data types"
-  - "storage, allocation"
-  - "Integer data type, Visual Basic data types"
-  - "storage, space"
-  - "Variant data types, supported types in Visual Basic"
-  - "Char data type, Visual Basic data types"
-  - "intrinsic data types"
-  - "memory consumption, data types"
+  - "storage [Visual Basic], allocation"
+  - "Integer data type [Visual Basic], Visual Basic data types"
+  - "storage [Visual Basic], space"
+  - "Variant data types [Visual Basic], supported types in Visual Basic"
+  - "Char data type [Visual Basic], Visual Basic data types"
+  - "intrinsic data types [Visual Basic]"
+  - "memory consumption [Visual Basic], data types"
   - "single-precision numbers"
   - "data types [Visual Basic], order of storage"
-  - "Long data type, supported types in Visual Basic"
-  - "String data type, Visual Basic data types"
+  - "Long data type [Visual Basic], supported types in Visual Basic"
+  - "String data type [Visual Basic], Visual Basic data types"
   - "storage order, data types"
   - "StructLayoutAttribute class, Visual Basic data type storage"
   - "scientific notation"
-  - "Double data type, Visual Basic data types"
-  - "Byte data type, Visual Basic data types"
-  - "Object data type, supported types in Visual Basic"
+  - "Double data type [Visual Basic], Visual Basic data types"
+  - "Byte data type [Visual Basic], Visual Basic data types"
+  - "Object data type [Visual Basic], supported types in Visual Basic"
   - "data types [Visual Basic], storage allocation"
   - "double-precision numbers"
   - "data types [Visual Basic], summary"
@@ -50,21 +45,6 @@ ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Type Summary (Visual Basic)
 The following table shows the Visual Basic data types, their supporting common language runtime types, their nominal storage allocation, and their value ranges.  
@@ -114,9 +94,9 @@ The following table shows the Visual Basic data types, their supporting common l
  An `Object` referring to any elementary or composite data type uses 4 bytes in addition to the data contained in the data type.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.StrConv%2A>   
- <xref:System.Runtime.InteropServices.StructLayoutAttribute>   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)   
+ <xref:Microsoft.VisualBasic.Strings.StrConv%2A>  
+ <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

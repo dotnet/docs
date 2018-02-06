@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientSendingMessage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RemotingClientSendingMessage method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingClientSendingMessage method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingClientSendingMessage Method
 Notifies the profiler that the client is sending a request to the server.  

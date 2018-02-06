@@ -11,9 +11,11 @@ helpviewer_keywords:
   - "programming [WF], workflow security"
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Security
 [!INCLUDE[wf](../../../includes/wf-md.md)] is integrated with several different technologies, such as Microsoft SQL Server and [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]. Interacting with these technologies may introduce security issues into your workflow if done improperly.  
@@ -59,4 +61,4 @@ manager: "erikre"
   
 4.  Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs  
   
- For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](http://wf.codeplex.com/releases/view/48114)
+For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](http://wf.codeplex.com/releases/view/48114)

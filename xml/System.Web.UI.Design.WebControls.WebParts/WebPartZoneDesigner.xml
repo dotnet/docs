@@ -25,6 +25,8 @@
     <block subset="none" type="overrides">
       <para>If you want to override the <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml" /> method to change the design-time appearance of your custom control, make sure to use <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> and invoke the parent method before adding custom code, because that is the method that creates the rendering for the regions in the control. If you override <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml" /> and do not call <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> somewhere in the method, your designer regions will not be rendered.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -224,5 +226,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the markup that is used to represent the control at design time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

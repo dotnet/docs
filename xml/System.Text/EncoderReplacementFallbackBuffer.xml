@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.EncoderReplacementFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -288,5 +289,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

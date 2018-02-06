@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [WCF], auditing events"
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
@@ -16,6 +19,8 @@ caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Audit Windows Communication Foundation Security Events
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to log security events to the Windows event log, which can be viewed using the Windows Event Viewer. This topic explains how to set up an application so that it logs security events. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] auditing, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
@@ -91,7 +96,7 @@ manager: "mbaldwin"
  If the <xref:System.ServiceModel.AuditLogLocation> property is set to <xref:System.ServiceModel.AuditLogLocation.Security> and **Audit Object Access** is not set in the **Local Security Policy**, audit events will not be written to the Security log. Note that no failure is returned, but audit entries are not written to the Security log.  
   
 ## See Also  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>   
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>   
- <xref:System.ServiceModel.AuditLogLocation>   
+ <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>  
+ <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
+ <xref:System.ServiceModel.AuditLogLocation>  
  [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)

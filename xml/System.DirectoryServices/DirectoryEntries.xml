@@ -21,6 +21,8 @@
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
       <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
     </permission>
+    <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
+    <altmember cref="P:System.DirectoryServices.DirectoryEntry.Children" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -486,5 +488,15 @@ int main() {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a member of this collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -114,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Assemblies.AssemblyHashAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -216,5 +217,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Assemblies.AssemblyHash" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

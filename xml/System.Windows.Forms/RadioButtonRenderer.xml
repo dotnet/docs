@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+    <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="DrawParentBackground">
@@ -381,5 +385,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawRadioButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an option button control (also known as a radio button).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

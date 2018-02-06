@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EMemoryCriticalLevel"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EMemoryCriticalLevel enumeration [.NET Framework hosting]"
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EMemoryCriticalLevel Enumeration
 Contains values that indicate the impact of a failure when a specific memory allocation has been requested but cannot be satisfied.  
@@ -63,5 +63,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)   
+ [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)  
  [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

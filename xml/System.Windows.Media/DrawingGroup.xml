@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.DrawingContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.DrawingGroup.Open" />
       </Docs>
     </Member>
     <Member MemberName="BitmapEffect">
@@ -532,6 +534,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.DrawingGroup.OpacityMask" />
       </Docs>
     </Member>
     <Member MemberName="OpacityMask">
@@ -660,6 +663,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.DrawingGroup.Append" />
+        <altmember cref="T:System.Windows.Media.DrawingContext" />
       </Docs>
     </Member>
     <Member MemberName="Transform">

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "NotAutodone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICatalogServices::NotAutodone method [.NET Framework hosting]"
   - "NotAutodone method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICatalogServices::NotAutodone Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

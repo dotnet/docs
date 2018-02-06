@@ -23,6 +23,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Cursor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,7 @@
         <block subset="none" type="overrides">
           <para>Override this method to provide your own conversion requirements.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -124,6 +127,7 @@
         <summary>Converts the given object to the type of this converter, using the specified context and culture information.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -152,6 +156,7 @@
         <summary>Converts the given value object to the specified type, using the specified context and culture information.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">

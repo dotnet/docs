@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.identityModel&gt;
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  

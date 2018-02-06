@@ -654,5 +654,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBookmarks">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCompletionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScheduleBookmarkResumption">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Schedules a <see cref="T:System.Activities.Bookmark" /> resumption.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

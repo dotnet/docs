@@ -7,11 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c09b1e99-21b5-4d96-9c04-ec31db3f4436
 caps.latest.revision: 39
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create an Activity
 Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1-md.md)]. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.  
@@ -108,9 +113,9 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
      For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).  
   
 ## See Also  
- <xref:System.Activities.CodeActivity>   
- <xref:System.Activities.NativeActivity%601>   
- [Designing and Implementing Custom Activities](../../../docs/framework/windows-workflow-foundation/designing-and-implementing-custom-activities.md)   
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)   
- [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)   
+ <xref:System.Activities.CodeActivity>  
+ <xref:System.Activities.NativeActivity%601>  
+ [Designing and Implementing Custom Activities](../../../docs/framework/windows-workflow-foundation/designing-and-implementing-custom-activities.md)  
+ [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)  
+ [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)  
  [Using the ExpressionTextBox in a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

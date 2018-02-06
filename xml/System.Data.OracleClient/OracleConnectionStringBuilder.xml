@@ -447,6 +447,8 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Values" />
+        <altmember cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Item(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadBalanceTimeout">
@@ -922,5 +924,14 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

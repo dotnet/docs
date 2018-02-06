@@ -26,7 +26,7 @@
   
  To customize the conversion of a cell value into a formatted value for display, handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -39,6 +39,22 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellParsing(System.Windows.Forms.DataGridViewCellParsingEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.EditMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewCell.ParseFormattedValue(System.Object,System.Windows.Forms.DataGridViewCellStyle,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellParsingEventHandler" />
+    <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +81,13 @@
         <param name="inheritedCellStyle">The style applied to the cell that was changed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellParsing(System.Windows.Forms.DataGridViewCellParsingEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -99,6 +122,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Columns" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
       </Docs>
     </Member>
     <Member MemberName="InheritedCellStyle">
@@ -134,6 +160,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ParsingApplied">
@@ -169,6 +199,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellParsingEventHandler" />
+        <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -204,6 +238,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
       </Docs>
     </Member>
   </Members>

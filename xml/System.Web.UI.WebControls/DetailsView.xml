@@ -126,11 +126,11 @@
   
 -   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method.  
   
- For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="security"></a>   
 ## Security  
- This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+ This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -522,21 +522,38 @@
 ## Examples  
  The following code example demonstrates how to use to use a <xref:System.Web.UI.WebControls.DetailsView> control in combination with a <xref:System.Web.UI.WebControls.GridView> control for a simple master-detail scenario. It displays the details of an item selected in the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewSimple/CS/detailsviewsimplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewSimple/VB/detailsviewsimplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewSimple/CS/detailsviewsimplecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewSimple/VB/detailsviewsimplevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView> control to add, delete, and edit records.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add row fields to the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowField/CS/detailsviewrowfieldscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowField/VB/detailsviewrowfieldsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowField/CS/detailsviewrowfieldscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowField/VB/detailsviewrowfieldsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Type.IsPrimitive" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateDeleteButton" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateInsertButton" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -562,11 +579,13 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.DetailsView> control to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCtor/CS/detailsviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCtor/VB/detailsviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCtor/CS/detailsviewctorcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCtor/VB/detailsviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -623,11 +642,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AllowPaging%2A> property to enable the paging capabilities of the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAllowPaging/CS/detailsviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAllowPaging/VB/detailsviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAllowPaging/CS/detailsviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAllowPaging/VB/detailsviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowStyle">
@@ -670,11 +697,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle%2A> property to specify the font and style settings for the alternating data rows in the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowStyle/CS/detailsviewrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowStyle/VB/detailsviewrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowStyle/CS/detailsviewrowstylecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowStyle/VB/detailsviewrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateDeleteButton">
@@ -726,11 +762,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateDeleteButton%2A> property to display the built-in control to delete the current record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/CS/detailsviewautogeneratedeletebuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/VB/detailsviewautogeneratedeletebuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/CS/detailsviewautogeneratedeletebuttoncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/VB/detailsviewautogeneratedeletebuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKeyNames" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateEditButton">
@@ -793,11 +836,24 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton%2A> property to display the built-in controls to edit the current record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAutoGenerateEditButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateEditButton/CS/detailsviewautogenerateeditbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAutoGenerateEditButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateEditButton/VB/detailsviewautogenerateeditbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAutoGenerateEditButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateEditButton/CS/detailsviewautogenerateeditbuttoncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAutoGenerateEditButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateEditButton/VB/detailsviewautogenerateeditbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateInsertButton" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateInsertButton">
@@ -855,11 +911,24 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateInsertButton%2A> property to display the built-in controls to insert a new record in a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAutoGenerateInsertButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateInsertButton/CS/detailsviewautogenerateinsertbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAutoGenerateInsertButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateInsertButton/VB/detailsviewautogenerateinsertbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAutoGenerateInsertButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateInsertButton/CS/detailsviewautogenerateinsertbuttoncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAutoGenerateInsertButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateInsertButton/VB/detailsviewautogenerateinsertbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserting" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateRows">
@@ -904,11 +973,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> property to automatically create bound row fields for each field in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAutoGenerateRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateRows/CS/detailsviewautogeneraterowscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAutoGenerateRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateRows/VB/detailsviewautogeneraterowsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAutoGenerateRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateRows/CS/detailsviewautogeneraterowscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAutoGenerateRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateRows/VB/detailsviewautogeneraterowsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AutoGeneratedField" />
+        <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+        <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -951,11 +1028,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.BackImageUrl%2A> property to display a custom image in the background of a <xref:System.Web.UI.WebControls.DetailsView> control. You must provide your own image for this example to work.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewBackImageUrl/CS/detailsviewbackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewBackImageUrl/VB/detailsviewbackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewBackImageUrl/CS/detailsviewbackimageurlcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewBackImageUrl/VB/detailsviewbackimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="BottomPagerRow">
@@ -997,11 +1077,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.BottomPagerRow%2A> property to access the bottom pager row of the <xref:System.Web.UI.WebControls.DetailsView> control during the <xref:System.Web.UI.WebControls.DetailsView.ItemCreated> event. Two <xref:System.Web.UI.WebControls.Label> controls within the custom pager row are then updated with the current page number and total number of pages.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCreated" />
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -1044,11 +1128,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> property to specify the text for the HTML caption element rendered in a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCaption/CS/detailsviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCaption/VB/detailsviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCaption/CS/detailsviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCaption/VB/detailsviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -1096,12 +1181,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.CaptionAlign%2A> property to specify that the HTML caption element in a <xref:System.Web.UI.WebControls.DetailsView> control should be rendered on the left side of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCaption/CS/detailsviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCaption/VB/detailsviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCaption/CS/detailsviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCaption/VB/detailsviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -1139,11 +1226,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.CellPadding%2A> property to specify the amount of spacing between the contents of a cell and the cell's border.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCellPadding/CS/detailsviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCellPadding/VB/detailsviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCellPadding/CS/detailsviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCellPadding/VB/detailsviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -1182,11 +1271,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.CellSpacing%2A> property to specify the amount of spacing between adjacent cells.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCellPadding/CS/detailsviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCellPadding/VB/detailsviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCellPadding/CS/detailsviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCellPadding/VB/detailsviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="ChangeMode">
@@ -1224,11 +1315,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ChangeMode%2A> method to return the <xref:System.Web.UI.WebControls.DetailsView> control to read-only mode whenever the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewChangeMode/CS/detailsviewchangemodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewChangeMode/VB/detailsviewchangemodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewChangeMode/CS/detailsviewchangemodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewChangeMode/VB/detailsviewchangemodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
       </Docs>
     </Member>
     <Member MemberName="CommandRowStyle">
@@ -1271,11 +1364,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.CommandRowStyle%2A> property to specify the font and style settings for the command row in the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandRowStyle/CS/detailsviewcommandrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandRowStyle/VB/detailsviewcommandrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandRowStyle/CS/detailsviewcommandrowstylecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandRowStyle/VB/detailsviewcommandrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateAutoGeneratedRow">
@@ -1308,6 +1410,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own automatically generated row field.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.AutoGeneratedFieldProperties" />
       </Docs>
     </Member>
     <Member MemberName="CreateAutoGeneratedRows">
@@ -1341,6 +1444,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own set of automatically generated row fields.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateRows" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.CreateAutoGeneratedRows(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -1390,6 +1495,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own control hierarchy.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -1424,6 +1530,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to return a <see cref="T:System.Web.UI.WebControls.TableStyle" /> object with custom settings.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -1450,6 +1558,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="CreateFieldSet">
@@ -1485,6 +1595,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own set of row fields.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.CreateAutoGeneratedRows(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateRow">
@@ -1521,6 +1632,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to return a <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> object with custom settings.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="CreateTable">
@@ -1598,11 +1712,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.CurrentMode%2A> property to determine whether the <xref:System.Web.UI.WebControls.DetailsView> control is in edit, insert, or read-only mode. If the user attempts to navigate to a different record while the <xref:System.Web.UI.WebControls.DetailsView> control is in edit mode, the paging operation is canceled.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCurrentMode/CS/detailsviewcurrentmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCurrentMode/VB/detailsviewcurrentmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCurrentMode/CS/detailsviewcurrentmodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCurrentMode/VB/detailsviewcurrentmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -1667,11 +1786,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DataItem%2A> property to determine the value of a field in the data item.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDataItem/CS/DetailsViewDataItem.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDataItem/VB/DetailsViewDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDataItem/CS/DetailsViewDataItem.aspx#1)]
+ [!code-aspx-vb[DetailsViewDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDataItem/VB/DetailsViewDataItemVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="Overload:System.Web.UI.DataBinder.Eval" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemCount">
@@ -1713,11 +1836,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DataItemCount%2A> property to determine the number of items in the data source. This value is used to display the page count in a <xref:System.Web.UI.WebControls.Label> control contained within a custom pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -1759,11 +1884,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DataItemIndex%2A> property to determine the index of the current item in the data source. This value is used to display the current page number in a <xref:System.Web.UI.WebControls.Label> control contained in a custom pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataItemCount" />
       </Docs>
     </Member>
     <Member MemberName="DataKey">
@@ -1803,11 +1930,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DataKey%2A> property to determine the key field and corresponding value for the current record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDataKey/CS/detailsviewdatakeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDataKey/VB/detailsviewdatakeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDataKey/CS/detailsviewdatakeycs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDataKey/VB/detailsviewdatakeyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyNames">
@@ -1852,11 +1982,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DataKeyNames%2A> property to identify the key field for the data source bound to the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/CS/detailsviewautogeneratedeletebuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/VB/detailsviewautogeneratedeletebuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/CS/detailsviewautogeneratedeletebuttoncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewAutoGenerateDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewAutoGenerateDeleteButton/VB/detailsviewautogeneratedeletebuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMode">
@@ -1896,12 +2028,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property to specify that the <xref:System.Web.UI.WebControls.DetailsView> control should remain in edit mode after a record has been updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDefaultMode/CS/detailsviewdefaultmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDefaultMode/VB/detailsviewdefaultmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDefaultMode/CS/detailsviewdefaultmodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDefaultMode/VB/detailsviewdefaultmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.DetailsViewMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteItem">
@@ -2002,11 +2137,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.EditRowStyle%2A> property to specify the font and style settings for the data rows when a <xref:System.Web.UI.WebControls.DetailsView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewEditRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEditRowStyle/CS/detailsvieweditrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewEditRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEditRowStyle/VB/detailsvieweditrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewEditRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEditRowStyle/CS/detailsvieweditrowstylecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewEditRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEditRowStyle/VB/detailsvieweditrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataRowStyle">
@@ -2049,11 +2193,22 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle%2A> property to specify the font and style settings for the empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataText/CS/detailsviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataText/VB/detailsviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataText/CS/detailsviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataText/VB/detailsviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataTemplate">
@@ -2099,11 +2254,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.EmptyDataTemplate%2A> property to create a custom empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataTemplate/CS/detailsviewemptydatatemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataTemplate/VB/detailsviewemptydatatemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataTemplate/CS/detailsviewemptydatatemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataTemplate/VB/detailsviewemptydatatemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataText" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataText">
@@ -2147,11 +2304,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.EmptyDataText%2A> property to specify the text to display in the empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataText/CS/detailsviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataText/VB/detailsviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEmptyDataText/CS/detailsviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEmptyDataText/VB/detailsviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelValidation">
@@ -2215,11 +2374,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.EnablePagingCallbacks%2A> property to enable the use of client-side callback functions for paging operations.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewEnablePagingCallbacks#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEnablePagingCallbacks/CS/detailsviewenablepagingcallbackscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewEnablePagingCallbacks#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEnablePagingCallbacks/VB/detailsviewenablepagingcallbacksvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewEnablePagingCallbacks#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewEnablePagingCallbacks/CS/detailsviewenablepagingcallbackscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewEnablePagingCallbacks#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewEnablePagingCallbacks/VB/detailsviewenablepagingcallbacksvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -2327,11 +2487,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle%2A> property to specify the font and style settings for the field header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFieldHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFieldHeaderStyle/CS/FieldHeaderStyleCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFieldHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFieldHeaderStyle/VB/FieldHeaderStyleVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFieldHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFieldHeaderStyle/CS/FieldHeaderStyleCS.aspx#1)]
+ [!code-aspx-vb[DetailsViewFieldHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFieldHeaderStyle/VB/FieldHeaderStyleVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="Fields">
@@ -2395,11 +2556,19 @@
 ## Examples  
  The following code example demonstrates how to declaratively add row fields to the <xref:System.Web.UI.WebControls.DetailsView.Fields%2A> collection of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFields/CS/DetailsViewFieldsCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFields/VB/DetailsViewFieldsVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFields/CS/DetailsViewFieldsCS.aspx#1)]
+ [!code-aspx-vb[DetailsViewFields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFields/VB/DetailsViewFieldsVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+        <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
       </Docs>
     </Member>
     <Member MemberName="FooterRow">
@@ -2443,11 +2612,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.FooterRow%2A> property to access the footer row of the <xref:System.Web.UI.WebControls.DetailsView> control during the <xref:System.Web.UI.WebControls.DetailsView.ItemCreated> event. A <xref:System.Web.UI.WebControls.Label> control within the custom footer row is then updated with the current page number.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterTemplate/CS/detailsviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterTemplate/VB/detailsviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterTemplate/CS/detailsviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterTemplate/VB/detailsviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderRow" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -2490,11 +2662,23 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.FooterStyle%2A> property to specify the font and style settings for the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterText/CS/detailsviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterText/VB/detailsviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterText/CS/detailsviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterText/VB/detailsviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -2540,11 +2724,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.FooterTemplate%2A> property to create a custom footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterTemplate/CS/detailsviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterTemplate/VB/detailsviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterTemplate/CS/detailsviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterTemplate/VB/detailsviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -2588,11 +2776,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.FooterText%2A> property to specify the text to display in the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterText/CS/detailsviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterText/VB/detailsviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewFooterText/CS/detailsviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewFooterText/VB/detailsviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackResult">
@@ -2683,11 +2874,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.GridLines%2A> property to hide all gridlines in a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewGridLines/CS/detailsviewgridlinescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewGridLines/VB/detailsviewgridlinesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewGridLines/CS/detailsviewgridlinescs.aspx#1)]
+ [!code-aspx-vb[DetailsViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewGridLines/VB/detailsviewgridlinesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="HeaderRow">
@@ -2729,11 +2923,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.HeaderRow%2A> property to access the header row of the <xref:System.Web.UI.WebControls.DetailsView> control during the <xref:System.Web.UI.WebControls.DetailsView.ItemCreated> event. A <xref:System.Web.UI.WebControls.Label> control within the custom header row is then updated with the current page number.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -2776,11 +2973,22 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.HeaderStyle%2A> property to specify the font and style settings for the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderText/CS/detailsviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderText/VB/detailsviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderText/CS/detailsviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderText/VB/detailsviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderText" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -2826,11 +3034,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.HeaderTemplate%2A> property to create a custom header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -2874,11 +3086,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.HeaderText%2A> property to specify the text to display in the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderText/CS/detailsviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderText/VB/detailsviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderText/CS/detailsviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderText/VB/detailsviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -2923,11 +3138,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.HorizontalAlign%2A> property to specify that a <xref:System.Web.UI.WebControls.DetailsView> control should be centered on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHorizontalAlign/CS/detailsviewhorizontalaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHorizontalAlign/VB/detailsviewhorizontalalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHorizontalAlign/CS/detailsviewhorizontalaligncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHorizontalAlign/VB/detailsviewhorizontalalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
@@ -2961,6 +3177,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own pager row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.PagedDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
       </Docs>
     </Member>
     <Member MemberName="InitializeRow">
@@ -2994,6 +3213,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to create your own custom row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -3033,6 +3254,10 @@
  \- or -  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is <see langword="null" />.</exception>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.UpdateItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -3108,11 +3333,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.InsertRowStyle%2A> property to specify the font and style settings for the data rows when the <xref:System.Web.UI.WebControls.DetailsView> control is in insert mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertRowStyle/CS/detailsviewinsertrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertRowStyle/VB/detailsviewinsertrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertRowStyle/CS/detailsviewinsertrowstylecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertRowStyle/VB/detailsviewinsertrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -3156,6 +3390,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DetailsView" /> class, you can override this method to add or restrict the data types that can be used in a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</para>
         </block>
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
+        <altmember cref="T:System.Guid" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -3180,18 +3419,23 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs> object is passed to the event handler, which allows you to determine the command name and command argument of the button clicked. To determine the index of the current record, use the <xref:System.Web.UI.WebControls.DetailsView.PageIndex%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event to handle a button click in a <xref:System.Web.UI.WebControls.DetailsView> control. When the user clicks the Add Contact button, the item is added to a <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewCommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -3216,18 +3460,25 @@
   
  You can access the header, footer, and pager rows in the <xref:System.Web.UI.WebControls.DetailsView> control by using the <xref:System.Web.UI.WebControls.DetailsView.HeaderRow%2A>, <xref:System.Web.UI.WebControls.DetailsView.FooterRow%2A>, <xref:System.Web.UI.WebControls.DetailsView.TopPagerRow%2A>, or <xref:System.Web.UI.WebControls.DetailsView.BottomPagerRow%2A> properties, respectively. To access one of the data rows, use the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemCreated> event to update a custom pager row with current paging statistics.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewHeaderTemplate/CS/detailsviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewHeaderTemplate/VB/detailsviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleted">
@@ -3252,18 +3503,22 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemDeleted> event to refresh a <xref:System.Web.UI.WebControls.GridView> control after a <xref:System.Web.UI.WebControls.DetailsView> control performs a delete operation. This keeps the <xref:System.Web.UI.WebControls.GridView> control synchronized with the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleting">
@@ -3288,18 +3543,24 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs> object is passed to the event handler, which allows you to determine the index of the record being deleted and to indicate that the delete operation should be canceled. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values%2A> collections, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemDeleting> event to cancel the delete operation if the user attempts to delete the last item from the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemDeleting/CS/detailsviewitemdeletingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemDeleting/VB/detailsviewitemdeletingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemDeleting/CS/detailsviewitemdeletingcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemDeleting/VB/detailsviewitemdeletingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserted">
@@ -3324,18 +3585,23 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled%2A> property. To keep the control in insert mode after an insert operation, set the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event to refresh a <xref:System.Web.UI.WebControls.GridView> control after a <xref:System.Web.UI.WebControls.DetailsView> control performs an insert operation. This keeps the <xref:System.Web.UI.WebControls.GridView> control synchronized with the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserted(System.Web.UI.WebControls.DetailsViewInsertedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserting">
@@ -3360,18 +3626,23 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs> object is passed to the event handler, which allows you to indicate that the insert operation should be canceled. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs.Values%2A> collection, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemInserting> event to HTML-encode the values entered by the user before a new record is added to the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewInsertEventArgs.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserting(System.Web.UI.WebControls.DetailsViewInsertEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdated">
@@ -3396,18 +3667,23 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled%2A> property. To keep the control in edit mode after an update operation, set the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdated> event to refresh a <xref:System.Web.UI.WebControls.GridView> control after a <xref:System.Web.UI.WebControls.DetailsView> control performs an update operation. This keeps the <xref:System.Web.UI.WebControls.GridView> control synchronized with the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdated(System.Web.UI.WebControls.DetailsViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdating">
@@ -3432,18 +3708,25 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> object is passed to the event handler, which allows you to determine the index of the record being updated and to indicate that the update operation should be canceled. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A>, and <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> collections, if necessary, before the values are passed to the data source. A common way to use these collections is to HTML-encode the values supplied by the user before they are stored in the data source. This helps to prevent script injection attacks.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdating> event to HTML-encode the values entered by the user before a record is updated in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewComplex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewComplex/CS/detailsviewcomplexcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewComplex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewComplex/VB/detailsviewcomplexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdating(System.Web.UI.WebControls.DetailsViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -3475,6 +3758,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -3505,6 +3791,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanged">
@@ -3527,18 +3815,22 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.ModeChanged> event is raised when a <xref:System.Web.UI.WebControls.DetailsView> control attempts to change between edit, insert, and read-only mode, but after the <xref:System.Web.UI.WebControls.DetailsView.CurrentMode%2A> property is updated. This allows you to provide an event handler that performs a custom routine, such as synchronizing the <xref:System.Web.UI.WebControls.DetailsView> control with another control, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ModeChanged> event to display the current mode in the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeChanged/CS/detailsviewmodechangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeChanged/VB/detailsviewmodechangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeChanged/CS/detailsviewmodechangedcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeChanged/VB/detailsviewmodechangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanging">
@@ -3563,18 +3855,24 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs> object is passed to the event handler, which allows you to determine the new mode, to determine whether the mode change was a result of the user canceling an edit operation, or to cancel the mode change. To determine the new mode, use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode%2A> property. To determine whether the mode change was a result of the user canceling an edit operation, use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit%2A> property. You can cancel the mode change by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event to disable the paging feature when the <xref:System.Web.UI.WebControls.DetailsView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeChanging/CS/detailsviewmodechangingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeChanging/VB/detailsviewmodechangingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeChanging/CS/detailsviewmodechangingcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeChanging/VB/detailsviewmodechangingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanging(System.Web.UI.WebControls.DetailsViewModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -3610,6 +3908,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnBubbleEvent(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnBubbleEvent(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -3645,6 +3945,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -3678,6 +3980,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -3711,6 +4015,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -3744,6 +4050,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCreated" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleted">
@@ -3777,6 +4085,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleting">
@@ -3811,6 +4121,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleting(System.Web.UI.WebControls.DetailsViewDeleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleting(System.Web.UI.WebControls.DetailsViewDeleteEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserted">
@@ -3844,6 +4156,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserted(System.Web.UI.WebControls.DetailsViewInsertedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserted(System.Web.UI.WebControls.DetailsViewInsertedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserting">
@@ -3878,6 +4192,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserting(System.Web.UI.WebControls.DetailsViewInsertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserting(System.Web.UI.WebControls.DetailsViewInsertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserting" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdated">
@@ -3911,6 +4227,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdated(System.Web.UI.WebControls.DetailsViewUpdatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdated(System.Web.UI.WebControls.DetailsViewUpdatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdating">
@@ -3945,6 +4263,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdating(System.Web.UI.WebControls.DetailsViewUpdateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdating(System.Web.UI.WebControls.DetailsViewUpdateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanged">
@@ -3978,6 +4298,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanging">
@@ -4012,6 +4334,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanging(System.Web.UI.WebControls.DetailsViewModeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanging(System.Web.UI.WebControls.DetailsViewModeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanged">
@@ -4038,7 +4362,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged%2A> method is called by the <xref:System.Web.UI.WebControls.DetailsView> control to raise the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.DetailsView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4047,6 +4371,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanging">
@@ -4073,7 +4399,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging%2A> method is called by the <xref:System.Web.UI.WebControls.DetailsView> control to raise the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.DetailsView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4083,6 +4409,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging(System.Web.UI.WebControls.DetailsViewPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging(System.Web.UI.WebControls.DetailsViewPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePreLoad">
@@ -4115,6 +4443,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="N:System.Web.UI.WebControls" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -4148,6 +4479,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DetailsView.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DetailsView.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -4220,6 +4553,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="-1" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
@@ -4247,18 +4588,21 @@
   
  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.DetailsView> control. This event is often used to synchronize a <xref:System.Web.UI.WebControls.DetailsView> control with a <xref:System.Web.UI.WebControls.GridView> control or to set the behavior of the <xref:System.Web.UI.WebControls.DetailsView> control after a paging operation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanged> event to return the <xref:System.Web.UI.WebControls.DetailsView> to read-only mode when the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewChangeMode/CS/detailsviewchangemodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewChangeMode/VB/detailsviewchangemodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewChangeMode/CS/detailsviewchangemodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewChangeMode/VB/detailsviewchangemodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanging">
@@ -4288,18 +4632,22 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs> object is passed to the event handler, which allows you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event to cancel a paging operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCurrentMode/CS/detailsviewcurrentmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCurrentMode/VB/detailsviewcurrentmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCurrentMode/CS/detailsviewcurrentmodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCurrentMode/VB/detailsviewcurrentmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewPageEventArgs" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewPageEventArgs.NewPageIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging(System.Web.UI.WebControls.DetailsViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagerSettings">
@@ -4339,11 +4687,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.PagerSettings%2A> property to specify the properties of the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -4383,11 +4735,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.PagerStyle%2A> property to specify the font and style settings for the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="PagerTemplate">
@@ -4430,11 +4786,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.PagerTemplate%2A> property to create a custom pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPagerTemplate/CS/detailsviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPagerTemplate/VB/detailsviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerStyle" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -4463,6 +4823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -4547,6 +4908,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -4575,6 +4939,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -4614,11 +4979,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> property to access a data row in a <xref:System.Web.UI.WebControls.DetailsView> control. The data row is used to retrieve the value of a field from the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRowCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="RowsGenerator">
@@ -4687,11 +5055,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.RowStyle%2A> property to specify the font and style settings for the data rows in the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowStyle/CS/detailsviewrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowStyle/VB/detailsviewrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowStyle/CS/detailsviewrowstylecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowStyle/VB/detailsviewrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.CommandRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.FieldHeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.InsertRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -4721,6 +5098,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4747,6 +5125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -4785,11 +5164,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A> property to determine the data key value for the current record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewSelectedValue/CS/detailsviewselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewSelectedValue/VB/detailsviewselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewSelectedValue/CS/detailsviewselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewSelectedValue/VB/detailsviewselectedvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="SetPageIndex">
@@ -4883,6 +5265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -4908,6 +5291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -4936,6 +5320,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript">
@@ -4967,6 +5352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IDataBoundControl.DataKeyNames">
@@ -5204,6 +5590,7 @@
           <paramref name="buttonControl" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="buttonControl" /> causes validation in the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control and attempts to use the same <see cref="T:System.Web.UI.WebControls.DetailsView" /> control as a postback target.</exception>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -5273,11 +5660,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsView.TopPagerRow%2A> property to access the top pager row of the <xref:System.Web.UI.WebControls.DetailsView> control during the <xref:System.Web.UI.WebControls.DetailsView.ItemCreated> event. Two <xref:System.Web.UI.WebControls.Label> controls within the custom pager row are then updated with the current page number and total number of pages.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewTopPagerRow/CS/detailsviewtoppagerrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewTopPagerRow/VB/detailsviewtoppagerrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewTopPagerRow/CS/detailsviewtoppagerrowcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewTopPagerRow/VB/detailsviewtoppagerrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCreated" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -5303,6 +5694,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="UpdateItem">
@@ -5342,6 +5735,10 @@
  \- or -  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is <see langword="null" />.</exception>
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.InsertItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">

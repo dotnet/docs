@@ -60,7 +60,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
   
  You can also add your own members to classes derived from the `DynamicObject` class. If your class defines properties and also overrides the <xref:System.Dynamic.DynamicObject.TrySetMember%2A> method, the dynamic language runtime (DLR) first uses the language binder to look for a static definition of a property in the class. If there is no such property, the DLR calls the <xref:System.Dynamic.DynamicObject.TrySetMember%2A> method.  
   
- The `DynamicObject` class implements the DLR interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `DynamicObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `DynamicObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md) and documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ The `DynamicObject` class implements the DLR interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `DynamicObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `DynamicObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md).  
   
 > [!NOTE]
 >  If you have a simple scenario in which you need an object that can only add and remove members at run time but that does not need to define specific operations and does not have static members, use the <xref:System.Dynamic.ExpandoObject> class.  
@@ -261,7 +261,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
   
  You can get information about the type of the binary operation by using the `Operation` property of the `binder` parameter.  
   
- If your dynamic object is used only in C# and Visual Basic, the `binder.Operation` property can have one of the following values from the <xref:System.Linq.Expressions.ExpressionType> enumeration. However, in other languages such as IronPython or IronRuby, you can have other values. For more information about <xref:System.Linq.Expressions.ExpressionType>, see documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ If your dynamic object is used only in C# and Visual Basic, the `binder.Operation` property can have one of the following values from the <xref:System.Linq.Expressions.ExpressionType> enumeration. However, in other languages such as IronPython or IronRuby, you can have other values.
   
 |Value|Description|C#|Visual Basic|  
 |-----------|-----------------|---------|------------------|  
@@ -935,7 +935,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
   
  You can get information about the type of the unary operation by using the `Operation` property of the `binder` parameter.  
   
- If your dynamic object is used only in C# and Visual Basic, the `binder.Operation` property can have one of the following values from the <xref:System.Linq.Expressions.ExpressionType> enumeration. However, in other languages such as IronPython or IronRuby, you can have other values. For more information about <xref:System.Linq.Expressions.ExpressionType>, see documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ If your dynamic object is used only in C# and Visual Basic, the `binder.Operation` property can have one of the following values from the <xref:System.Linq.Expressions.ExpressionType> enumeration. However, in other languages such as IronPython or IronRuby, you can have other values.
   
 |Value|Description|C#|Visual Basic|  
 |-----------|-----------------|---------|------------------|  

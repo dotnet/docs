@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IRootDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
   </Docs>
   <Members>
     <Member MemberName="Component">
@@ -186,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerVerbCollection" />
       </Docs>
     </Member>
   </Members>

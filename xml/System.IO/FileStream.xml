@@ -34,10 +34,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/filestream.cs#e23a38af5d11ddd3). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.FileStream> class to read from, write to, open, and close files on a file system, and to manipulate other file-related operating system handles, including pipes, standard input, and standard output. You can use the <xref:System.IO.FileStream.Read%2A>, <xref:System.IO.FileStream.Write%2A>, <xref:System.IO.Stream.CopyTo%2A>, and <xref:System.IO.FileStream.Flush%2A> methods to perform synchronous operations, or the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A> methods to perform asynchronous operations. Use the asynchronous methods to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. <xref:System.IO.FileStream> buffers input and output for better performance.  
   
 > [!IMPORTANT]
@@ -81,6 +77,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="T:System.IO.FileAccess" />
+    <altmember cref="T:System.IO.FileMode" />
+    <altmember cref="T:System.IO.FileShare" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -293,6 +293,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="mode" /> contains an invalid value.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="F:System.IO.Path.InvalidPathChars" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -987,6 +988,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The <paramref name="access" /> requested is not permitted by the operating system for the specified <paramref name="path" />, such as when <paramref name="access" /> is <see langword="Write" /> or <see langword="ReadWrite" /> and the file or directory is set for read-only access.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="T:System.IO.File" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1840,6 +1842,7 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="M:System.IO.FileStream.Flush(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1884,6 +1887,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileStream.Flush" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -2937,5 +2941,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears buffers for this stream and causes any buffered data to be written to the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

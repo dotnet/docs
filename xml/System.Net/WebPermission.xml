@@ -40,7 +40,7 @@
  The <xref:System.Net.WebPermission.ConnectList%2A> and <xref:System.Net.WebPermission.AcceptList%2A> hold the URIs to which you have granted access permission. To add a URI to either of these lists, use <xref:System.Net.WebPermission.AddPermission%2A>. If you pass <xref:System.Net.NetworkAccess.Accept> as the <xref:System.Net.NetworkAccess> parameter, the URI will be added to the <xref:System.Net.WebPermission.AcceptList%2A>. <xref:System.Net.WebPermission> will allow connections to your target class with URIs matching the <xref:System.Net.WebPermission.AcceptList%2A>.  
   
 > [!CAUTION]
->  To deny access to an Internet resource, you must deny access to all the possible paths to that resource. This requires calling <xref:System.Net.WebPermission.%23ctor%2A?displayProperty=nameWithType> with state parameter set to <xref:System.Security.CodeAccessPermission.Deny%2A>. A better approach is to allow access to the specific resource only. For more information about this subject, refer to the [NIB: Using the Deny Method](http://msdn.microsoft.com/en-us/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25) topic.  
+>  To deny access to an Internet resource, you must deny access to all the possible paths to that resource. This requires calling <xref:System.Net.WebPermission.%23ctor%2A?displayProperty=nameWithType> with state parameter set to <xref:System.Security.CodeAccessPermission.Deny%2A>. A better approach is to allow access to the specific resource only. For more information about this subject, refer to the [NIB: Using the Deny Method](http://msdn.microsoft.com/library/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25) topic.  
   
 > [!NOTE]
 >  You need to deny access using only the resource canonical path. There is no need to use all the path's syntactical variations.  
@@ -59,6 +59,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.CodeAccessPermission" />
+    <altmember cref="T:System.Security.Permissions.PermissionState" />
+    <altmember cref="T:System.Net.NetworkAccess" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.IsUnrestricted" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the `state` parameter is either <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType> or <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType>, respectively yielding fully restricted or fully unrestricted access to all security variables. If you specify <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType>, then you can give access to individual URIs using <xref:System.Net.WebPermission.AddPermission%2A>.  
+ The value of the `state` parameter is either <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType> or <xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>, respectively yielding fully restricted or fully unrestricted access to all security variables. If you specify <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType>, then you can give access to individual URIs using <xref:System.Net.WebPermission.AddPermission%2A>.  
   
    
   
@@ -125,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.PermissionState.Unrestricted" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,6 +173,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,7 +205,7 @@
  This constructor initializes a <xref:System.Net.WebPermission> and grants its target permission to either make a remote host connection or accept a remote host connection using the URI described by the `uriRegex` parameter.  
   
 > [!NOTE]
->  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> flags.  
+>  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> flags.  
   
 > [!NOTE]
 >  A candidate URI string is checked against the list of relevant regular expressions (<xref:System.Net.WebPermission.AcceptList%2A> or <xref:System.Net.WebPermission.ConnectList%2A>) in two ways. First, the candidate URI string is checked against the appropriate list; then, if there is no match, the candidate URI string is converted into a <xref:System.Uri> and checked against the appropriate list.  
@@ -215,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="AcceptList">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AddPermission">
@@ -312,6 +320,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.NetworkAccess" />
       </Docs>
     </Member>
     <Member MemberName="AddPermission">
@@ -349,7 +358,7 @@
 >  Calling <xref:System.Net.WebPermission.AddPermission%2A> on an <xref:System.Security.Permissions.PermissionState.Unrestricted><xref:System.Net.WebPermission> instance will have no effect as permission is granted to all URIs.  
   
 > [!NOTE]
->  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> flags.  
+>  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> flags.  
   
 > [!NOTE]
 >  A candidate URI string is checked against the list of relevant regular expressions (<xref:System.Net.WebPermission.AcceptList%2A> or <xref:System.Net.WebPermission.ConnectList%2A>) in two ways. First, the candidate URI string is checked against the appropriate list; then, if there is no match, the candidate URI string is converted into a <xref:System.Uri> and checked against the appropriate list.  
@@ -366,6 +375,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriRegex" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.NetworkAccess" />
       </Docs>
     </Member>
     <Member MemberName="ConnectList">
@@ -411,6 +421,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -498,6 +509,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="securityElement" /> parameter is <see langword="null." /></exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="securityElement" /> is not a permission element for this type.</exception>
+        <altmember cref="M:System.Net.WebPermission.ToXml" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -626,6 +638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -666,6 +679,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.FromXml(System.Security.SecurityElement)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -710,7 +724,28 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">target is not <see langword="null" /> or of type <see cref="T:System.Net.WebPermission" />.</exception>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPermission">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified URI with the specified access rights to the current <see cref="T:System.Net.WebPermission" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.WebPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

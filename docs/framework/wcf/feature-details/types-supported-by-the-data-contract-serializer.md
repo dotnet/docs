@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "serialization [WCF], supported types"
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Types Supported by the Data Contract Serializer
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the <xref:System.Runtime.Serialization.DataContractSerializer> as its default serialization engine to convert data into XML and to convert XML back into data. The <xref:System.Runtime.Serialization.DataContractSerializer> is designed to serialize *data contract* types. However, it supports many other types, which can be thought of as having an implicit data contract. The following is a complete list of types that can be serialized:  
@@ -74,8 +76,8 @@ manager: "erikre"
 -   The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> permission.  
   
 ## See Also  
- [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)   
- [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md)   
+ [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)  
+ [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md)  
  [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md)

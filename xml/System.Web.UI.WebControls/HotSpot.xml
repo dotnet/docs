@@ -36,6 +36,10 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.WebControls.HotSpot" />, you must override the following members: <see cref="M:System.Web.UI.WebControls.HotSpot.GetCoordinates" /> and <see cref="P:System.Web.UI.WebControls.HotSpot.MarkupName" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -246,6 +252,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.HotSpotMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -272,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -304,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
@@ -376,6 +387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="PostBackValue">
@@ -414,6 +426,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -444,6 +457,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -475,6 +491,8 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" /> member. The explicit interface implementation calls the <see cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" /> property to determine whether the object is tracking view-state changes.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -508,6 +526,8 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for restoring view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" /> method to restore the view state for the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -539,6 +559,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> method to save view-state changes for the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -569,6 +590,9 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" /> method to initialize view-state tracking for the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -610,6 +634,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified tab index is not between -32768 and 32767.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -648,7 +673,7 @@
 >  The <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property renders as a `target` attribute. The `target` attribute on ANCHOR elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HotSpot> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
   
 > [!CAUTION]
->  We strongly recommend that, when creating accessible Web pages, you avoid using the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  We strongly recommend that, when creating accessible Web pages, you avoid using the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The <xref:System.Web.UI.WebControls.HotSpot.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   
@@ -665,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -718,6 +744,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -757,6 +786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
   </Members>

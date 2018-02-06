@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Type Converters and Markup Extensions for XAML
 Type converters and markup extensions are two techniques that XAML type systems and XAML writers use to generate object graph components. Although they share some characteristics, type converters and markup extensions are represented differently in a XAML node stream. In this documentation set, type converters, markup extensions, and similar constructs are sometimes collectively referred to as value converters.  
@@ -72,8 +74,8 @@ Type converters and markup extensions are two techniques that XAML type systems 
  When you implement a value converter, you often need access to a context in which the value converter is applied. This context is known as the service context. The service context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. For more information about the service contexts available for a value converter and how to access the services that a service context might provide, see [Service Contexts Available to Type Converters and Markup Extensions](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
   
 ## See Also  
- <xref:System.Windows.Markup.MarkupExtension>   
- <xref:System.Xaml.XamlObjectWriter>   
- [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)   
- [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)   
+ <xref:System.Windows.Markup.MarkupExtension>  
+ <xref:System.Xaml.XamlObjectWriter>  
+ [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)  
+ [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)  
  [Service Contexts Available to Type Converters and Markup Extensions](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md)

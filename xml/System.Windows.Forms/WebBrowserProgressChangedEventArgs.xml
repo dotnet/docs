@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ProgressBar" />
+    <altmember cref="T:System.Windows.Forms.WebBrowser" />
+    <altmember cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" />
+    <altmember cref="T:System.Windows.Forms.WebBrowserProgressChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +89,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress" />
+        <altmember cref="T:System.Windows.Forms.ProgressBar" />
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" />
       </Docs>
     </Member>
     <Member MemberName="MaximumProgress">
@@ -120,6 +128,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress" />
+        <altmember cref="T:System.Windows.Forms.ProgressBar" />
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" />
       </Docs>
     </Member>
   </Members>

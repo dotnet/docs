@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.CharAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Media.Animation.CharKeyFrame" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -215,6 +218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -275,6 +279,7 @@
         <summary>Creates a new, frozen instance of <see cref="T:System.Windows.Media.Animation.CharKeyFrameCollection" />.</summary>
         <returns>A frozen instance of <see cref="T:System.Windows.Media.Animation.CharKeyFrameCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -447,6 +452,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="Insert">

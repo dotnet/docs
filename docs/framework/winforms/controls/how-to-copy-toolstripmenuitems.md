@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "menu items, copying and pasting"
+  - "menu items [Windows Forms], copying and pasting"
   - "MenuStrip control [Windows Forms], arranging items"
-  - "ToolStripMenuItems, copying and pasting"
+  - "ToolStripMenuItems [Windows Forms], copying and pasting"
 ms.assetid: 17ef4207-e92e-4db2-b648-27246e6517ad
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy ToolStripMenuItems
 At design time, you can copy entire top-level menus and their submenu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also copy individual menu items between top-level menus or change the position of menu items within a menu.  
@@ -51,6 +51,6 @@ At design time, you can copy entire top-level menus and their submenu items to a
      The submenu item that you copied is inserted before the selected submenu item.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStripMenuItem>   
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStripMenuItem>  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -54,6 +57,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -85,6 +91,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -104,6 +113,9 @@
         <summary>Returns a string representation of the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />, separated by commas.</summary>
         <returns>String representing the current value for each instance of PeerObject, separated by commas.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
   </Members>

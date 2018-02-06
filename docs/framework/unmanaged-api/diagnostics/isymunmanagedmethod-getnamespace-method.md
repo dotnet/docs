@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetNamespace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedMethod::GetNamespace method [.NET Framework debugging]"
   - "GetNamespace method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetNamespace Method
 Gets the namespace within which this method is defined.  

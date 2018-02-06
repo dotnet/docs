@@ -141,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.RootVisual" />
+        <altmember cref="T:System.Windows.Media.CompositionTarget" />
       </Docs>
     </Member>
     <Member MemberName="TransformFromDevice">
@@ -159,6 +161,9 @@
         <summary>Gets a matrix that transforms the coordinates of the device that is associated with the rendering destination of this target.</summary>
         <value>The transform matrix.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Matrix" />
+        <altmember cref="P:System.Windows.Interop.HwndTarget.TransformToDevice" />
+        <altmember cref="P:System.Windows.Media.CompositionTarget.TransformFromDevice" />
       </Docs>
     </Member>
     <Member MemberName="TransformToDevice">
@@ -177,6 +182,9 @@
         <summary>Gets a matrix that transforms the coordinates of this target to the device that is associated with the rendering destination.</summary>
         <value>The transform matrix.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Matrix" />
+        <altmember cref="P:System.Windows.Interop.HwndTarget.TransformFromDevice" />
+        <altmember cref="P:System.Windows.Media.CompositionTarget.TransformToDevice" />
       </Docs>
     </Member>
     <Member MemberName="UsesPerPixelOpacity">
@@ -203,6 +211,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.UsesPerPixelOpacity" />
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.UsesPerPixelOpacity" />
       </Docs>
     </Member>
   </Members>

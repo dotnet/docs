@@ -99,6 +99,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,6 +134,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +167,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,6 +314,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode" />
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -343,9 +349,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -385,9 +391,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -428,9 +434,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -473,9 +479,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -519,6 +525,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -550,7 +557,7 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -717,5 +724,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Decrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrypts the contents of the decoded enveloped CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Encrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encrypts the contents of the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

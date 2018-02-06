@@ -22,6 +22,7 @@
   <Docs>
     <summary>When used as a resource key for a data template, allows the data template to participate in the lookup process.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.DataTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -195,5 +196,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ddc3718d-ce60-44f6-92af-a5c67477dd99
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Import Custom WSDL
 This topic describes how to import custom WSDL. To handle the custom WSDL, you must implement the <xref:System.ServiceModel.Description.IWsdlImportExtension> interface.  
@@ -84,6 +86,6 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
     ```  
   
 ## See Also  
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)   
- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)   
+ [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
+ [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
  [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)

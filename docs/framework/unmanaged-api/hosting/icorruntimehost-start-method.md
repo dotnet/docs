@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::Start"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Start method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::Start method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::Start Method
 Starts the common language runtime (CLR).  

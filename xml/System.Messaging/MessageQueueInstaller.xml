@@ -192,6 +192,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -290,6 +293,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="IsEquivalentInstaller">
@@ -433,6 +440,7 @@
 ```</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MulticastAddress" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -575,6 +583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -607,6 +616,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Transactional">
@@ -670,6 +683,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="UninstallAction">
@@ -700,6 +715,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.UninstallAction" />
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -735,5 +751,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueInstaller" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

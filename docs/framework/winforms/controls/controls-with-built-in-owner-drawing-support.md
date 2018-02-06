@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "drawing, owner"
-  - "drawing, custom"
+  - "drawing [Windows Forms], owner"
+  - "drawing [Windows Forms], custom"
   - "controls [Windows Forms], changing appearance"
   - "custom drawing"
   - "owner drawing"
@@ -22,6 +20,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Controls with Built-In Owner-Drawing Support
 Owner drawing in Windows Forms, which is also known as custom drawing, is a technique for changing the visual appearance of certain controls.  

@@ -188,9 +188,9 @@
   
 |Enumeration type|Unmanaged format|  
 |----------------------|----------------------|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 4-byte integer value, where any nonzero value represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> field in a structure and of a <xref:System.Boolean> parameter in platform invoke calls.|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 1-byte integer value, where the 1 represents `true` and 0 represents `false`.|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 2-byte integer value, where -1 represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> parameter in COM interop calls.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.Bool?displayProperty=nameWithType>|A 4-byte integer value, where any nonzero value represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> field in a structure and of a <xref:System.Boolean> parameter in platform invoke calls.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.U1?displayProperty=nameWithType>|A 1-byte integer value, where the 1 represents `true` and 0 represents `false`.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType>|A 2-byte integer value, where -1 represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> parameter in COM interop calls.|  
   
  ]]></format>
     </remarks>
@@ -270,6 +270,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Boolean.CompareTo(System.Object)" />
+        <altmember cref="Overload:System.Boolean.Equals" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -334,6 +336,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> is not a <see cref="T:System.Boolean" />.</exception>
+        <altmember cref="M:System.Boolean.CompareTo(System.Boolean)" />
+        <altmember cref="Overload:System.Boolean.Equals" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -377,6 +381,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Boolean.Equals(System.Object)" />
+        <altmember cref="Overload:System.Boolean.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -420,6 +426,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Boolean.Equals(System.Boolean)" />
+        <altmember cref="Overload:System.Boolean.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="FalseString">
@@ -455,10 +463,12 @@
 ## Remarks  
  This field is equal to the string "False".  
   
- The <xref:System.Boolean.FalseString> property defines the string representation of a `False`<xref:System.Boolean> value in formatting and parsing operations.  
+ The <xref:System.Boolean.FalseString> property defines the string representation of a `False` <xref:System.Boolean> value in formatting and parsing operations.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="F:System.Boolean.TrueString" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -498,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -582,6 +593,8 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not equivalent to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+        <altmember cref="F:System.Boolean.TrueString" />
+        <altmember cref="F:System.Boolean.FalseString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -708,6 +721,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Convert.ToByte(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToChar">
@@ -1124,6 +1138,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">The requested type conversion is not supported.</exception>
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt16">
@@ -1164,6 +1179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="M:System.Convert.ToUInt16(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt32">
@@ -1204,6 +1221,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt32" />
+        <altmember cref="M:System.Convert.ToUInt32(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt64">
@@ -1244,6 +1263,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="M:System.Convert.ToUInt64(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1374,6 +1395,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="F:System.Boolean.FalseString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1429,7 +1452,49 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Boolean.Parse(System.String)" />
+        <altmember cref="F:System.Boolean.TrueString" />
+        <altmember cref="F:System.Boolean.FalseString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether this instance is equal to a specified object or <see cref="T:System.Boolean" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Boolean" /> object and returns an integer that indicates their relationship to one another.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation (either "True" or "False").</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

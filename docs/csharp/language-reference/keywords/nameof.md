@@ -1,6 +1,6 @@
 ---
 title: "nameof  (C# Reference)"
-ms.date: "2017-06-16"
+ms.date: 06/16/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,26 +8,10 @@ ms.topic: "article"
 f1_keywords: 
   - "nameof_CSharpKeyword"
   - "nameof"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # nameof (C# Reference)
 
@@ -147,7 +131,7 @@ class C {
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [typeof](../../../csharp/language-reference/keywords/typeof.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [typeof](../../../csharp/language-reference/keywords/typeof.md)  
  

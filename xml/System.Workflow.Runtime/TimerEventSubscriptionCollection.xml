@@ -292,5 +292,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified <see cref="T:System.Workflow.Runtime.TimerEventSubscription" /> from the timer queue.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

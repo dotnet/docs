@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetBlobFromImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameGetBlobFromImage method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameGetBlobFromImage method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRStrongName::StrongNameGetBlobFromImage Method
 Gets a binary representation of the assembly image at the specified memory address.  
@@ -70,5 +70,5 @@ HRESULT StrongNameGetBlobFromImage (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [StrongNameGetBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblob-method.md)   
+ [StrongNameGetBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblob-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

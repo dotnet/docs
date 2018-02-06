@@ -10,9 +10,12 @@ ms.assetid: d899d43c-335a-433e-a589-cd187192984f
 dev_langs: 
   - "CSharp"
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Basic serialization
 
@@ -95,5 +98,5 @@ public class MyStuff : MyObject
  Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it has been compiled.  
   
 ## See also  
- [Binary Serialization](binary-serialization.md)   
+ [Binary Serialization](binary-serialization.md)  
  [XML and SOAP Serialization](xml-and-soap-serialization.md)

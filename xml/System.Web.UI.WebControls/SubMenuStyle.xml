@@ -39,11 +39,21 @@
 ## Examples  
  The following example demonstrates how to specify a custom style for a submenu within a dynamic menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicMenuStyle/CS/menudynamicmenustylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicMenuStyle/VB/menudynamicmenustylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicMenuStyle/CS/menudynamicmenustylecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicMenuStyle/VB/menudynamicmenustylevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+    <altmember cref="P:System.Web.UI.WebControls.SubMenuStyle.HorizontalPadding" />
+    <altmember cref="P:System.Web.UI.WebControls.SubMenuStyle.VerticalPadding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +76,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +139,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.MergeWith(System.Web.UI.WebControls.Style)" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.Reset" />
       </Docs>
     </Member>
     <Member MemberName="FillStyleAttributes">
@@ -157,6 +175,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CssStyleCollection" />
+        <altmember cref="T:System.Web.UI.IUrlResolutionService" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalPadding">
@@ -191,6 +211,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of <see cref="P:System.Web.UI.WebControls.Unit.Type" /><see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SubMenuStyle.VerticalPadding" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -222,6 +243,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -247,6 +271,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+        <altmember cref="M:System.Web.UI.WebControls.SubMenuStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -639,7 +665,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of <see cref="P:System.Web.UI.WebControls.Unit.Type" /><see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SubMenuStyle.HorizontalPadding" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

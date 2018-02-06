@@ -56,6 +56,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -84,6 +85,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       </Docs>
     </Member>
     <Member MemberName="Certificate">
@@ -108,6 +110,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipient.Certificate" /> property retrieves the certificate associated with the recipient.</summary>
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object that holds the certificate associated with the recipient.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName="RecipientIdentifierType">
@@ -132,7 +135,18 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType" /> property retrieves the type of the identifier of the recipient.</summary>
         <value>A member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration that specifies the type of the identifier of the recipient.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.CmsRecipient.Certificate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs an instance of the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

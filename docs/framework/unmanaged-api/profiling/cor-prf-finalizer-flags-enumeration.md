@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_FINALIZER_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_FINALIZER_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_FINALIZER_FLAGS Enumeration
 Describes the finalizer for an object.  

@@ -10,17 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "OpenFileDialog component, opening files"
-  - "OpenFile method"
-  - "OpenFile method, OpenFileDialog component"
-  - "files, opening with OpenFileDialog component"
+  - "OpenFileDialog component [Windows Forms], opening files"
+  - "OpenFile method [Windows Forms], OpenFileDialog component"
+  - "files [Windows Forms], opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Open Files Using the OpenFileDialog Component
 The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse the folders of their computer or any computer on the network and select one or more files to open. The dialog box returns the path and name of the file the user selected in the dialog box.  
@@ -179,5 +182,5 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.OpenFileDialog>   
+ <xref:System.Windows.Forms.OpenFileDialog>  
  [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

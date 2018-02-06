@@ -56,7 +56,7 @@
   
  The `name` argument refers to the `Name` property of the object being added.  
   
- **Note** If you use this method to add <xref:System.Web.UI.DataVisualization.Charting.Series> objects to the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> class, the associated <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects of the newly added <xref:System.Web.UI.DataVisualization.Charting.Series> object cannot have more than one Y-value per data point. To add a series that can handle multiple Y-values per data point, use the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection.Add%2A> System.Int32)?qualifyHint=False&autoUpgrade=True definition of this overloaded method.  
+ **Note** If you use this method to add <xref:System.Web.UI.DataVisualization.Charting.Series> objects to the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> class, the associated <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects of the newly added <xref:System.Web.UI.DataVisualization.Charting.Series> object cannot have more than one Y-value per data point.  
   
  ]]></format>
         </remarks>

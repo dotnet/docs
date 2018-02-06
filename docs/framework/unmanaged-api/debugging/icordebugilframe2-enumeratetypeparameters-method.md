@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame2::EnumerateTypeParameters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateTypeParameters method, ICorDebugILFrame2 interface [.NET Framework debugging]"
   - "ICorDebugILFrame2::EnumerateTypeParameters method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame2::EnumerateTypeParameters Method
 Gets an ICorDebugTypeEnum object that contains the <xref:System.Type> parameters in this frame.  

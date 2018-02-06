@@ -38,14 +38,14 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,14 +115,14 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.EastAsianLunisolarCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -156,7 +156,7 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -172,7 +172,7 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -188,7 +188,7 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -204,7 +204,7 @@ manager: "wpickett"
 uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

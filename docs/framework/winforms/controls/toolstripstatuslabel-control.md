@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ToolStripStatusLabel control [Windows Forms]"
   - "status bars"
@@ -20,6 +18,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStripStatusLabel Control
 The <xref:System.Windows.Forms.ToolStripStatusLabel> provides a display area in a <xref:System.Windows.Forms.StatusStrip> for text, images, or both.  

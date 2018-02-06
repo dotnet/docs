@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDebugAutoAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebugAutoAttach interface [.NET Framework debugging]"
 ms.assetid: d4cc51ac-c1d6-41b9-ab8e-ef0073f13241
@@ -28,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebugAutoAttach Interface
 Defines the interface for server-invoked debugger auto attach.  

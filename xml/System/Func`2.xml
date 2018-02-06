@@ -49,16 +49,12 @@
     <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
     <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
     <param name="arg">The parameter of the method that this delegate encapsulates.</param>
-    <summary>Encapsulates a method that has one parameter and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <summary>Encapsulates a method that has one parameter and returns a value of the type specified by the <typeparamref name="TResult" /> parameter.</summary>
     <returns>The return value of the method that this delegate encapsulates.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#7a86aba051da82dd). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have one parameter that is passed to it by value, and that it must return a value.  
   
 > [!NOTE]

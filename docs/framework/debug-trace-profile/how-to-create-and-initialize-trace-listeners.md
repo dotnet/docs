@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "initializing trace listeners"
   - "trace listeners, creating"
@@ -25,6 +23,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create and Initialize Trace Listeners
 The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace?displayProperty=nameWithType> classes send messages to objects called listeners that receive and process these messages. One such listener, the <xref:System.Diagnostics.DefaultTraceListener?displayProperty=nameWithType>, is automatically created and initialized when tracing or debugging is enabled. If you want <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> output to be directed to any additional sources, you must create and initialize additional trace listeners.  
@@ -101,7 +101,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:Syste
     ```  
   
 ## See Also  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)   
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)   
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)   
+ [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
+ [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)  
+ [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
  [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

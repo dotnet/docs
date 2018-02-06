@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.identityModel.services&gt;
 Configuration section for authentication using the WS-Federation protocol.  

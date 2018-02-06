@@ -104,6 +104,7 @@
         <summary>Converts the given object to the type of this converter, using the specified context and culture information.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -132,6 +133,7 @@
         <summary>Converts the given value object to the specified type, using the specified context and culture information.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -179,6 +181,7 @@
         <returns>
           <see langword="true" /> if changing a property on this object requires a call to <see cref="M:System.ComponentModel.TypeConverter.CreateInstance(System.Collections.IDictionary)" /> to create a new value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -205,6 +208,7 @@
         <summary>Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for this data type, or null if there are no properties.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesSupported">
@@ -228,6 +232,7 @@
         <returns>
           <see langword="true" /> if <see cref="Overload:System.ComponentModel.TypeConverter.GetProperties" /> should be called to find the properties of this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
   </Members>

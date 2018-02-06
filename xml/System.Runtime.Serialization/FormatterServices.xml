@@ -27,6 +27,7 @@
   <Docs>
     <summary>Provides static methods to aid with the implementation of a <see cref="T:System.Runtime.Serialization.Formatter" /> for serialization. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Runtime.Serialization.Formatter" />
   </Docs>
   <Members>
     <Member MemberName="CheckTypeSecurity">
@@ -64,7 +65,7 @@
 ## Remarks  
  Use this method to determine whether a specified type can be deserialized when the <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> property is set to `Low`.  
   
- .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
   
    
   
@@ -176,7 +177,7 @@
 ## Remarks  
  Because the new instance of the object is initialized to zero and no constructors are run, the object might not represent a state that is regarded as valid by that object. <xref:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject%2A> should only be used for deserialization when the user intends to immediately populate all fields. It does not create an uninitialized string, since creating an empty instance of an immutable type serves no purpose.  
   
- <xref:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject%2A> converts all class level [Link Demands](~/docs/framework/misc/link-demands.md) to [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) to ensure that all direct and indirect callers have the permissions that the demand specifies. Use <xref:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject%2A> to increase the level of security when deserializing from a partially trusted source. For better performance in full trust scenarios, use <xref:System.Runtime.Serialization.FormatterServices.GetUninitializedObject%2A>.  
+ <xref:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject%2A> converts all class level [Link Demands](~/docs/framework/misc/link-demands.md) to [Demands](http://msdn.microsoft.com/library/e5283e28-2366-4519-b27d-ef5c1ddc1f48) to ensure that all direct and indirect callers have the permissions that the demand specifies. Use <xref:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject%2A> to increase the level of security when deserializing from a partially trusted source. For better performance in full trust scenarios, use <xref:System.Runtime.Serialization.FormatterServices.GetUninitializedObject%2A>.  
   
  ]]></format>
         </remarks>
@@ -238,6 +239,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetSerializableMembers">
@@ -288,6 +291,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetSurrogateForCyclicalReference">
@@ -369,6 +374,7 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">For extraction of reflection information on members of a type that are not visible. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation" />.</permission>
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetUninitializedObject">
@@ -482,5 +488,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSerializableMembers">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the serializable members for a particular class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

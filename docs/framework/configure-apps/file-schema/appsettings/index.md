@@ -5,11 +5,6 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "schema app settings"
   - "app settings, schema [Windows Forms]"
@@ -19,6 +14,8 @@ ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # App Settings schema

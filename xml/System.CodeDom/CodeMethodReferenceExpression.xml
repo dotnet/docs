@@ -88,6 +88,7 @@
         <param name="methodName">The name of the method to call.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class using the specified target object and method name.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -180,6 +181,7 @@
         <summary>Gets or sets the expression that indicates the method to reference.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that represents the method to reference.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="TypeArguments">
@@ -216,5 +218,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -56,14 +56,14 @@ manager: "wpickett"
 uid: System.Diagnostics.XmlWriterTraceListener.Fail
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.XmlWriterTraceListener.WriteLine
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -142,7 +142,7 @@ manager: "wpickett"
 uid: System.Diagnostics.XmlWriterTraceListener.Write
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

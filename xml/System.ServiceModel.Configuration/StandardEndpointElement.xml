@@ -338,5 +338,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes and verifies the format of the specified endpoint in a service application configuration file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies the content of a specified configuration endpoint to the current configuration element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called from a derived class, loads the service description information from the configuration file and applies it to the runtime being constructed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called from a derived class, initializes and verifies the format of the specified service endpoint in a service application configuration file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

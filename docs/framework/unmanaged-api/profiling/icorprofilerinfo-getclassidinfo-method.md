@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetClassIDInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetClassIDInfo method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetClassIDInfo method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetClassIDInfo Method
 Gets the parent module and the metadata token for the specified class.  

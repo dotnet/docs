@@ -85,7 +85,7 @@
 ## Remarks  
  Use this constructor as an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you want to provide a specific object instance for use by a singleton service. You may want to use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default public constructor that has no parameters).  
   
- Note that when an object is provided to this overload, some features related to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> have no effect when a well-known object instance is provided using this constructor overload. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode?displayProperty=nameWithType> for all operations.  
+ Note that when an object is provided to this overload, some features related to the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> have no effect when a well-known object instance is provided using this constructor overload. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
    
   
@@ -485,5 +485,23 @@ protected override void OnClosed()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddServiceEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a service endpoint to the hosted service.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

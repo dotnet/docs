@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, federation"
   - "federation"
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure Credentials on a Federation Service
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a federated service consists of the following main procedures:  
@@ -75,11 +80,11 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a federated
  For example, setting the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust> would authenticate any issued token whose signing certificate is in the `TrustedPeople` certificate store. In that case, set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.TrustedStoreLocation%2A> property to either <xref:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser> or <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine>. You can select other modes, including <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>. When `Custom` is selected, you must assign an instance of the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class to the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CustomCertificateValidator%2A> property. The custom validator can validate certificates using any criteria it likes. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Service that Employs a Custom Certificate Validator](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
 ## See Also  
- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)   
- [Federation and Trust](../../../../docs/framework/wcf/feature-details/federation-and-trust.md)   
- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)   
- [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)   
- [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)   
- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)   
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
+ [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
+ [Federation and Trust](../../../../docs/framework/wcf/feature-details/federation-and-trust.md)  
+ [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)  
+ [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)  
+ [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
+ [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
+ [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md)

@@ -39,7 +39,7 @@
      [!code-csharp[System.EntryPointNotFoundException.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.entrypointnotfoundexception.class/cs/nofunction1.cs#1)]
      [!code-vb[System.EntryPointNotFoundException.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.entrypointnotfoundexception.class/vb/nofunction1.vb#1)]  
   
--   The call to a function in a Windows DLL cannot be resolved because the name used in the method call does not match a name found in the assembly. Frequently, this occurs because the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is either implicitly or explicitly set to `true`, the called method includes one or more string parameters and has both an ANSI and a Unicode version, and the name used in the method call does not correspond to the name of this ANSI or Unicode version. The following example provides an illustration by attempting to call the Windows `MessageBox` function in User32.dll. Because the first method definition specifies <xref:System.Runtime.InteropServices.CharSet?displayProperty=nameWithType> for string marshaling, the common language looks for the wide-character version of the function, `MessageBoxW`, instead of the name used in the method call, `MessageBox`.  The second method definition corrects this problem by calling the `MessageBoxW` instead of the `MessageBox` function.  
+-   The call to a function in a Windows DLL cannot be resolved because the name used in the method call does not match a name found in the assembly. Frequently, this occurs because the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is either implicitly or explicitly set to `true`, the called method includes one or more string parameters and has both an ANSI and a Unicode version, and the name used in the method call does not correspond to the name of this ANSI or Unicode version. The following example provides an illustration by attempting to call the Windows `MessageBox` function in User32.dll. Because the first method definition specifies <xref:System.Runtime.InteropServices.CharSet.Unicode?displayProperty=nameWithType> for string marshaling, the common language looks for the wide-character version of the function, `MessageBoxW`, instead of the name used in the method call, `MessageBox`.  The second method definition corrects this problem by calling the `MessageBoxW` instead of the `MessageBox` function.  
   
      [!code-csharp[System.EntryPointNotFoundException.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.entrypointnotfoundexception.class/cs/badcall1.cs#2)]
      [!code-vb[System.EntryPointNotFoundException.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.entrypointnotfoundexception.class/vb/badcall1.vb#2)]  
@@ -81,6 +81,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -239,7 +240,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EntryPointNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

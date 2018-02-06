@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +88,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Name" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +126,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Name" />
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Namespace" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -158,6 +167,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Location" />
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Name" />
+        <altmember cref="P:System.Web.Services.WebServiceBindingAttribute.Namespace" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ConformsTo">
@@ -186,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.WsiProfiles" />
       </Docs>
     </Member>
     <Member MemberName="EmitConformanceClaims">
@@ -241,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -299,5 +315,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.WebServiceBindingAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -101,7 +101,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XAttribute.op_Explicit
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

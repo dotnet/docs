@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetLocalVarSigToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction::GetLocalVarSigToken method [.NET Framework debugging]"
   - "GetLocalVarSigToken method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::GetLocalVarSigToken Method
 Gets the metadata token for the local variable signature of the function that is represented by this ICorDebugFunction instance.  

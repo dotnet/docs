@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::ReadVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReadVirtual method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::ReadVirtual method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataTarget::ReadVirtual Method
 Reads data from the specified virtual memory address into the specified buffer.  

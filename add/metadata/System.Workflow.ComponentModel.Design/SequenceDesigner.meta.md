@@ -1,13 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesigner
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesigner.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

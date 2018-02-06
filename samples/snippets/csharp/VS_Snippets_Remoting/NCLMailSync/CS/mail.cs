@@ -24,11 +24,11 @@ namespace Examples.SmptExamples.Sync
 			string to = "jane@contoso.com";
 			string from = "ben@contoso.com";
 			string subject = "Using the new SMTP client.";
-			string body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			string body = @"Using this new feature, you can send an email message from an application very easily.";
 			MailMessage message = new MailMessage(from, to, subject, body);
 			SmtpClient client = new SmtpClient(server, port);
 			// Credentials are necessary if the server requires the client 
-			// to authenticate before it will send e-mail on the client's behalf.
+			// to authenticate before it will send email on the client's behalf.
 			client.Credentials = CredentialCache.DefaultNetworkCredentials;
 
       try {
@@ -48,10 +48,10 @@ namespace Examples.SmptExamples.Sync
 			string from = "ben@contoso.com";
 			MailMessage message = new MailMessage(from, to);
 			message.Subject = "Using the new SMTP client.";
-			message.Body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this new feature, you can send an email message from an application very easily.";
 			SmtpClient client = new SmtpClient(server);
 			// Credentials are necessary if the server requires the client 
-			// to authenticate before it will send e-mail on the client's behalf.
+			// to authenticate before it will send email on the client's behalf.
 			client.UseDefaultCredentials = true;
 
       try {
@@ -70,13 +70,13 @@ namespace Examples.SmptExamples.Sync
 			string to = "jane@contoso.com";
 			string from = "ben@contoso.com";
 			string subject = "Using the new SMTP client.";
-			string body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			string body = @"Using this new feature, you can send an email message from an application very easily.";
 			MailMessage message = new MailMessage(from, to, subject, body);
 			SmtpClient client = new SmtpClient(server);
 			Console.WriteLine("Changing time out from {0} to 100.", client.Timeout);
 			client.Timeout = 100;
 			// Credentials are necessary if the server requires the client 
-			// to authenticate before it will send e-mail on the client's behalf.
+			// to authenticate before it will send email on the client's behalf.
 			client.Credentials = CredentialCache.DefaultNetworkCredentials;
 
       try {
@@ -96,11 +96,11 @@ namespace Examples.SmptExamples.Sync
 			MailAddress from = new MailAddress("ben@contoso.com");
 			MailMessage message = new MailMessage(from, to);
 			message.Subject = "Using the new SMTP client.";
-			message.Body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this new feature, you can send an email message from an application very easily.";
 			// Use the application or machine configuration to get the 
 			// host, port, and credentials.
 			SmtpClient client = new SmtpClient();
-			Console.WriteLine("Sending an e-mail message to {0} at {1} by using the SMTP host={2}.",
+			Console.WriteLine("Sending an email message to {0} at {1} by using the SMTP host={2}.",
 				to.User, to.Host, client.Host);
       try {
 			  client.Send(message);
@@ -119,7 +119,7 @@ namespace Examples.SmptExamples.Sync
 			MailMessage message = new MailMessage(
 				"jane@contoso.com",
 				recipients,
-				"This e-mail message has multiple views.",
+				"This email message has multiple views.",
 				"This is some plain text.");
 
 			// Construct the alternate body as HTML.
@@ -179,14 +179,14 @@ namespace Examples.SmptExamples.Sync
 			   "Quarterly data report.",
 			   "See the attached spreadsheet.");
 
-			// Create  the file attachment for this e-mail message.
+			// Create  the file attachment for this email message.
 			Attachment data = new Attachment(file, MediaTypeNames.Application.Octet);
 			// Add time stamp information for the file.
 			ContentDisposition disposition = data.ContentDisposition;
 			disposition.CreationDate = System.IO.File.GetCreationTime(file);
 			disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
 			disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
-			// Add the file attachment to this e-mail message.
+			// Add the file attachment to this email message.
 			message.Attachments.Add(data);
 
 			//Send the message.
@@ -228,9 +228,9 @@ namespace Examples.SmptExamples.Sync
 			MailAddress to = new MailAddress("Jane@contoso.com");
 			MailMessage message = new MailMessage(from, to);
 			message.Subject = "Using the SmtpClient class.";
-			message.Body = @"Using this feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this feature, you can send an email message from an application very easily.";
 			SmtpClient client = new SmtpClient(server);
-			Console.WriteLine("Sending an e-mail message to {0} by using SMTP host {1} port {2}.",
+			Console.WriteLine("Sending an email message to {0} by using SMTP host {1} port {2}.",
 				 to.ToString(), client.Host, client.Port);
 
       try {
@@ -249,7 +249,7 @@ namespace Examples.SmptExamples.Sync
 			string to = "jane@contoso.com";
 			string from = "ben@contoso.com";
 			string subject = "Using the new SMTP client.";
-			string body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			string body = @"Using this new feature, you can send an email message from an application very easily.";
 			SmtpClient client = new SmtpClient(server);
 			client.Credentials = CredentialCache.DefaultNetworkCredentials;
 
@@ -269,12 +269,12 @@ namespace Examples.SmptExamples.Sync
 			MailAddress to = new MailAddress("jane@contoso.com", "Jane Clayton");
 			MailMessage message = new MailMessage(from, to);
 			message.Subject = "Using the SmtpClient class.";
-			message.Body = @"Using this feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this feature, you can send an email message from an application very easily.";
 			MailAddress bcc = new MailAddress("manager1@contoso.com");
 			message.Bcc.Add(bcc);
 			SmtpClient client = new SmtpClient(server);
 			client.Credentials = CredentialCache.DefaultNetworkCredentials;
-			Console.WriteLine("Sending an e-mail message to {0} and {1}.", 
+			Console.WriteLine("Sending an email message to {0} and {1}.", 
 			    to.DisplayName, message.Bcc.ToString());
       try {
         client.Send(message);
@@ -294,14 +294,14 @@ namespace Examples.SmptExamples.Sync
 			MailMessage message = new MailMessage(from, to);
 			// message.Subject = "Using the SmtpClient class.";
 			message.Subject = "Using the SmtpClient class.";
-			message.Body = @"Using this feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this feature, you can send an email message from an application very easily.";
 			// Add a carbon copy recipient.
 			MailAddress copy = new MailAddress("Notification_List@contoso.com");
 			message.CC.Add(copy);
 			SmtpClient client = new SmtpClient(server);
 			// Include credentials if the server requires them.
 			client.Credentials = CredentialCache.DefaultNetworkCredentials;
-			Console.WriteLine("Sending an e-mail message to {0} by using the SMTP host {1}.",
+			Console.WriteLine("Sending an email message to {0} by using the SMTP host {1}.",
 				 to.Address, client.Host);
 	
 	    try {
@@ -325,7 +325,7 @@ namespace Examples.SmptExamples.Sync
 			   "A text message for you.",
 			   "Message: ");
 
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			Attachment data = new Attachment(textMessage, MediaTypeNames.Text.Plain);
 			ContentDisposition disposition = data.ContentDisposition;
 			// Suggest a file name for the attachment.
@@ -371,9 +371,9 @@ namespace Examples.SmptExamples.Sync
 			   "An inline text message for you.",
 			   "Message: ");
 
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			Attachment data = new Attachment(textMessage, MediaTypeNames.Text.Plain);
-			// Send textMessage as part of the e-mail body.
+			// Send textMessage as part of the email body.
 			message.Attachments.Add(data);
 			ContentDisposition disposition = data.ContentDisposition;
 			disposition.Inline = true;
@@ -404,9 +404,9 @@ namespace Examples.SmptExamples.Sync
 			   "A text message for you.",
 			   "Message: ");
 
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			Attachment data = new Attachment(textMessage);
-			// Send textMessage as part of the e-mail body.
+			// Send textMessage as part of the email body.
 			message.Attachments.Add(data);
 			ContentType content = data.ContentType;
 			content.MediaType = MediaTypeNames.Text.Plain;
@@ -428,7 +428,7 @@ namespace Examples.SmptExamples.Sync
 
 		//<snippet14>
 		// The following example sends a summary of a log file as the message
-		// and the log as an e-mail attachment.
+		// and the log as an email attachment.
 		public static void SendErrorLog(string server, string recipientList)
 		{
 			// Create a message from logMailer@contoso.com to recipientList.
@@ -447,7 +447,7 @@ namespace Examples.SmptExamples.Sync
 				// Process each line from the log file here.
 				errors++;
 			}
-			// The e-mail message summarizes the data found in the log.
+			// The email message summarizes the data found in the log.
 			message.Body = String.Format("{0} errors in log as of {1}",
 				errors, DateTime.Now);
 			// Close the stream reader. This also closes the file.
@@ -457,7 +457,7 @@ namespace Examples.SmptExamples.Sync
 			// Make a contentType indicating that the log data
 			// that is attached is plain text.
 			ContentType ct = new ContentType(MediaTypeNames.Text.Plain);
-			// Attach the log file stream to the e-mail message.
+			// Attach the log file stream to the email message.
 			Attachment data = new Attachment(fs, ct);
 			ContentDisposition disposition = data.ContentDisposition;
 			// Suggest a file name for the attachment.
@@ -484,7 +484,7 @@ namespace Examples.SmptExamples.Sync
 
 		//<snippet15>
 		// The following example sends a summary of a log file as the message
-		// and the log as an e-mail attachment.
+		// and the log as an email attachment.
 		public static void SendNamedErrorLog(string server, string recipientList)
 		{
 			// Create a message from logMailer@contoso.com to recipientList.
@@ -503,7 +503,7 @@ namespace Examples.SmptExamples.Sync
 				// Process each line from the log file here.
 				errors++;
 			}
-			// The e-mail message summarizes the data found in the log.
+			// The email message summarizes the data found in the log.
 			message.Body = String.Format("{0} errors in log as of {1}",
 				errors, DateTime.Now);
 			// Close the stream reader. This also closes the file.
@@ -540,7 +540,7 @@ namespace Examples.SmptExamples.Sync
 
 		//<snippet16>
 		// The following example sends a summary of a log file as the message
-		// and the log as an e-mail attachment.
+		// and the log as an email attachment.
 		public static void SendNamedAndTypedErrorLog(string server, string recipientList)
 		{
 			// Create a message from logMailer@contoso.com to recipientList.
@@ -559,7 +559,7 @@ namespace Examples.SmptExamples.Sync
 				// Process each line from the log file here.
 				errors++;
 			}
-			// The e-mail message summarizes the data found in the log.
+			// The email message summarizes the data found in the log.
 			message.Body = String.Format("{0} errors in log as of {1}",
 				errors, DateTime.Now);
 			// Close the stream reader. This also closes the file.
@@ -601,7 +601,7 @@ namespace Examples.SmptExamples.Sync
 			Console.Write("To: ");
 			string recipient = Console.ReadLine();
 			// Check for recipient data.
-			// A real application would add error checking here for a valid e-mail 
+			// A real application would add error checking here for a valid email 
 			// address format. This example accepts any input.
 			if (recipient.Length == 0)
 				return null;
@@ -627,7 +627,7 @@ namespace Examples.SmptExamples.Sync
 			// Create a message and set up the recipients.
 			MailMessage message = new MailMessage(from, recipient);
 			message.Subject = subject;
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			// Set the encoding to the computer's current encoding.
 			Attachment data = new Attachment(sb.ToString(),
 				MediaTypeNames.Text.Plain);
@@ -666,7 +666,7 @@ namespace Examples.SmptExamples.Sync
 			MailMessage message = new MailMessage("ReportMailer@contoso.com", to);
 			message.Subject = "Monthly Expense report";
 			message.Body = "Please review the attached report.";
-			// Attach a file to this e-mail message.
+			// Attach a file to this email message.
 			Attachment data = new Attachment("data.xls", MediaTypeNames.Application.Octet);
 			AttachmentCollection attachments = message.Attachments;
 			attachments.Add(data);
@@ -711,8 +711,8 @@ namespace Examples.SmptExamples.Sync
 			Console.WriteLine("Content: {0}", reader.ReadToEnd());
 			Console.WriteLine("Content Type {0}", a.ContentType.ToString());
 			Console.WriteLine("Transfer Encoding {0}", a.TransferEncoding);
-			// Note that you cannot close the reader before the e-mail is sent. 
-			// Closing the reader before sending the e-mail will close the 
+			// Note that you cannot close the reader before the email is sent. 
+			// Closing the reader before sending the email will close the 
 			// ContentStream and cause an SmtpException.
 			reader = null;
 		}
@@ -732,14 +732,14 @@ namespace Examples.SmptExamples.Sync
 			   "Quarterly data report",
 			   "See the attached spreadsheet.");
 
-			// Create  the file attachment for this e-mail message.
+			// Create  the file attachment for this email message.
 			Attachment data = new Attachment(file);
 			// Add time stamp information for the file.
 			ContentDisposition disposition = data.ContentDisposition;
 			disposition.CreationDate = System.IO.File.GetCreationTime(file);
 			disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
 			disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
-			// Add the file attachment to this e-mail message.
+			// Add the file attachment to this email message.
 			message.Attachments.Add(data);
 			//Send the message.
 			SmtpClient client = new SmtpClient(server);
@@ -773,14 +773,14 @@ namespace Examples.SmptExamples.Sync
 			   "Quarterly data report",
 			   "See the attached spreadsheet.");
 
-			// Create  the file attachment for this e-mail message.
+			// Create  the file attachment for this email message.
 			Attachment data = new Attachment("Qtr3.xls");
 			// Add time stamp information for the file.
 			ContentDisposition disposition = data.ContentDisposition;
 			disposition.CreationDate = System.IO.File.GetCreationTime(file);
 			disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
 			disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
-			// Add the file attachment to this e-mail message.
+			// Add the file attachment to this email message.
 			message.Attachments.Add(data);
 			//Send the message.
 			SmtpClient client = new SmtpClient(server);
@@ -815,7 +815,7 @@ namespace Examples.SmptExamples.Sync
 			   "Quarterly data report",
 			   "See the attached spreadsheet.");
 
-			// Create  the file attachment for this e-mail message.
+			// Create  the file attachment for this email message.
 			Attachment data = new Attachment("qtr3.xls", MediaTypeNames.Application.Octet);
 			// Add time stamp information for the file.
 			ContentDisposition disposition = data.ContentDisposition;
@@ -823,7 +823,7 @@ namespace Examples.SmptExamples.Sync
 			disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
 			disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
 			disposition.DispositionType = DispositionTypeNames.Attachment;
-			// Add the file attachment to this e-mail message.
+			// Add the file attachment to this email message.
 			message.Attachments.Add(data);
 			//Send the message.
 			SmtpClient client = new SmtpClient(server);
@@ -852,7 +852,7 @@ namespace Examples.SmptExamples.Sync
 			   "A text message for you.",
 			   "Message: ");
 
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			Attachment data = new Attachment(textMessage,
 				                         MediaTypeNames.Text.Plain);
 //			data.SetContent(textMessage,
@@ -881,9 +881,9 @@ namespace Examples.SmptExamples.Sync
 			   "An inline text message for you.",
 			   "Message: ");
 
-			// Attach the message string to this e-mail message.
+			// Attach the message string to this email message.
 			Attachment data = new Attachment(textMessage, MediaTypeNames.Text.Plain);
-			// Send textMessage as part of the e-mail body.
+			// Send textMessage as part of the email body.
 			message.Attachments.Add(data);
 			ContentDisposition disposition = data.ContentDisposition;
 			disposition.DispositionType = DispositionTypeNames.Inline;
@@ -905,14 +905,14 @@ namespace Examples.SmptExamples.Sync
 			MailMessage message = new MailMessage(from, to);
 			// message.Subject = "Using the SmtpClient class.";
 			message.Subject = "Using the SmtpClient class.";
-			message.Body = @"Using this feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this feature, you can send an email message from an application very easily.";
 			// Add a carbon copy recipient.
 			MailAddress copy = new MailAddress("Notifications@contoso.com");
 			message.CC.Add(copy);
 			SmtpClient client = new SmtpClient(server);
 			// Include credentials if the server requires them.
 			client.Credentials = (ICredentialsByHost)CredentialCache.DefaultNetworkCredentials;
-			Console.WriteLine("Sending an e-mail message to {0} using the SMTP host {1}.",
+			Console.WriteLine("Sending an email message to {0} using the SMTP host {1}.",
 				 to.Address, client.Host);
 			try
 			{

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ClassLoadStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ClassLoadStarted method [.NET Framework profiling]"
   - "ClassLoadStarted method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ClassLoadStarted Method
 Notifies the profiler that a class is being loaded.  

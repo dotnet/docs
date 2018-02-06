@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.WebProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +58,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="AutoDetect">
@@ -81,6 +84,7 @@
         <value>
           <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.True" /> if the <see cref="T:System.Net.WebProxy" /> is automatically detected; <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.False" /> if the <see cref="T:System.Net.WebProxy" /> is not automatically detected; or <see cref="F:System.Net.Configuration.ProxyElement.AutoDetectValues.Unspecified" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
     <Member MemberName="BypassOnLocal">
@@ -113,6 +117,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.WebProxy" />
+        <altmember cref="P:System.Net.WebProxy.BypassProxyOnLocal" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -154,6 +160,7 @@
         <summary>Gets or sets the URI that identifies the Web proxy server to use.</summary>
         <value>A <see cref="T:System.String" /> containing a URI.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
     <Member MemberName="ScriptLocation">
@@ -177,6 +184,7 @@
         <summary>Gets or sets an <see cref="T:System.Uri" /> value that specifies the location of the automatic proxy detection script.</summary>
         <value>A <see cref="T:System.Uri" /> specifying the location of the automatic proxy detection script.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
     <Member MemberName="UseSystemDefault">
@@ -201,6 +209,7 @@
         <value>
           <see langword="true" /> if the Internet Explorer LAN settings are used to detect and configure the default <see cref="T:System.Net.WebProxy" /> used for requests; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
   </Members>

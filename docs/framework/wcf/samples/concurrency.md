@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "Concurrency Sample [Windows Communication Foundation]"
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
 caps.latest.revision: 32
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Concurrency
 The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceBehaviorAttribute> with the <xref:System.ServiceModel.ConcurrencyMode> enumeration, which controls whether an instance of a service processes messages sequentially or concurrently. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. This sample defines a new contract, `ICalculatorConcurrency`, which inherits from `ICalculator`, providing two additional operations for inspecting the state of the service concurrency. By altering the concurrency setting, you can observe the change in behavior by running the client.  

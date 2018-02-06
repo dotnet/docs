@@ -12,7 +12,7 @@ uid: System.Linq.Queryable.Last
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Linq.Queryable.First``1(System.Linq.IQueryable{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -37,7 +37,7 @@ uid: System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Double})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -126,7 +126,7 @@ uid: System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Int
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -134,7 +134,7 @@ uid: System.Linq.Queryable.LongCount``1(System.Linq.IQueryable{``0},System.Linq.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -187,7 +187,7 @@ uid: System.Linq.Queryable.Intersect``1(System.Linq.IQueryable{``0},System.Colle
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -195,7 +195,7 @@ uid: System.Linq.Queryable.OrderBy``2(System.Linq.IQueryable{``0},System.Linq.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -229,7 +229,7 @@ manager: "wpickett"
 uid: System.Linq.Queryable.Min
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -273,7 +273,7 @@ uid: System.Linq.Queryable.OrderByDescending``2(System.Linq.IQueryable{``0},Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -335,7 +335,7 @@ uid: System.Linq.Queryable.Concat``1(System.Linq.IQueryable{``0},System.Collecti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -352,7 +352,7 @@ uid: System.Linq.Queryable.Except``1(System.Linq.IQueryable{``0},System.Collecti
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -450,7 +450,7 @@ uid: System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -467,7 +467,7 @@ uid: System.Linq.Queryable.Min``2(System.Linq.IQueryable{``0},System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -511,7 +511,7 @@ uid: System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -681,7 +681,7 @@ uid: System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -707,7 +707,7 @@ uid: System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -724,7 +724,7 @@ uid: System.Linq.Queryable.Any
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -813,7 +813,7 @@ uid: System.Linq.Queryable.ElementAt``1(System.Linq.IQueryable{``0},System.Int32
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -821,7 +821,7 @@ uid: System.Linq.Queryable.OrderByDescending
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -847,7 +847,7 @@ uid: System.Linq.Queryable.Count``1(System.Linq.IQueryable{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -863,7 +863,7 @@ manager: "wpickett"
 uid: System.Linq.Queryable.Aggregate
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -880,7 +880,7 @@ uid: System.Linq.Queryable.GroupBy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -897,7 +897,7 @@ uid: System.Linq.Queryable.Any``1(System.Linq.IQueryable{``0})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -905,7 +905,7 @@ uid: System.Linq.Queryable.GroupBy``2(System.Linq.IQueryable{``0},System.Linq.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -957,7 +957,7 @@ manager: "wpickett"
 uid: System.Linq.Queryable.AsQueryable
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -983,7 +983,7 @@ uid: System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1000,7 +1000,7 @@ uid: System.Linq.Queryable.ThenByDescending
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1062,7 +1062,7 @@ uid: System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Int
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1178,7 +1178,7 @@ uid: System.Linq.Queryable.SequenceEqual``1(System.Linq.IQueryable{``0},System.C
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1248,7 +1248,7 @@ manager: "wpickett"
 uid: System.Linq.Queryable.Max
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1310,7 +1310,7 @@ uid: System.Linq.Queryable.FirstOrDefault``1(System.Linq.IQueryable{``0},System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1327,7 +1327,7 @@ uid: System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1335,7 +1335,7 @@ uid: System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Ex
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1370,7 +1370,7 @@ uid: System.Linq.Queryable.DefaultIfEmpty``1(System.Linq.IQueryable{``0},``0)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

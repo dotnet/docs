@@ -30,6 +30,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+    <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+    <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+    <altmember cref="T:System.Windows.Input.MouseButtonState" />
+    <altmember cref="T:System.Windows.Input.MouseAction" />
+    <altmember cref="T:System.Windows.Input.Mouse" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +58,12 @@
         <param name="button">The mouse button whose state is being described.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> class by using the specified <see cref="T:System.Windows.Input.MouseDevice" />, timestamp, and <see cref="T:System.Windows.Input.MouseButton" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,6 +88,12 @@
         <param name="stylusDevice">The stylus device associated with this event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> class by using the specified <see cref="T:System.Windows.Input.MouseDevice" />, timestamp, <see cref="T:System.Windows.Input.MouseButton" />, and <see cref="T:System.Windows.Input.StylusDevice" />.  .</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="ButtonState">
@@ -109,6 +127,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="ChangedButton">
@@ -142,6 +166,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="ClickCount">
@@ -175,6 +205,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -205,7 +241,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Input.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Input.MouseButtonState" />
+        <altmember cref="T:System.Windows.Input.MouseAction" />
+        <altmember cref="T:System.Windows.Input.Mouse" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

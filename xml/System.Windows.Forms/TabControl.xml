@@ -163,6 +163,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAlignment" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Multiline" />
+        <altmember cref="T:System.Windows.Forms.TabAlignment" />
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -211,6 +214,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAppearance" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.Alignment" />
+        <altmember cref="T:System.Windows.Forms.TabAppearance" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -498,6 +503,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="Deselecting">
@@ -544,6 +557,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -574,6 +595,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -608,6 +637,14 @@
  -or-  
   
  <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -644,6 +681,14 @@
  <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tabPage" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -675,6 +720,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -759,6 +805,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DrawItemEventHandler" />
+        <altmember cref="M:System.Windows.Forms.TabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DrawMode">
@@ -803,6 +851,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabDrawMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TabDrawMode" />
+        <altmember cref="E:System.Windows.Forms.TabControl.DrawItem" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1075,6 +1125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1147,6 +1198,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Size" /> is less than 0.</exception>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="Multiline">
@@ -1191,6 +1243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="OnDeselected">
@@ -1224,6 +1277,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
       </Docs>
     </Member>
     <Member MemberName="OnDeselecting">
@@ -1257,6 +1311,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
       </Docs>
     </Member>
     <Member MemberName="OnDrawItem">
@@ -1325,6 +1380,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1412,6 +1468,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.HandleDestroyed" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1482,6 +1540,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -1541,6 +1600,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnSelected">
@@ -1574,6 +1634,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -1640,6 +1701,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -1698,6 +1760,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Point" /> is less than 0.</exception>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1809,6 +1872,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="Overload:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftLayoutChanged">
@@ -1843,6 +1909,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.RightToLeftLayout" />
       </Docs>
     </Member>
     <Member MemberName="RowCount">
@@ -1915,6 +1982,7 @@
         <param name="dy">The vertical scaling factor.</param>
         <summary>This member overrides <see cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1961,6 +2029,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -2001,6 +2077,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -2081,6 +2165,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2127,6 +2220,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2157,6 +2258,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2191,6 +2300,14 @@
  -or-  
   
  <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2227,6 +2344,14 @@
  <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tabPage" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="ShowToolTips">
@@ -2272,6 +2397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="SizeMode">
@@ -2312,6 +2438,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabSizeMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TabSizeMode" />
       </Docs>
     </Member>
     <Member MemberName="TabCount">
@@ -2398,6 +2525,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -2537,5 +2666,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectTab">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the specified tab the current tab.</summary>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeselectTab">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the tab following the specified tab the current tab.</summary>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

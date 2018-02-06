@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.Vector3DKeyFrame" />
+    <altmember cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -199,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -259,6 +263,7 @@
         <summary>Creates a new, frozen instance of <see cref="T:System.Windows.Media.Animation.Vector3DKeyFrameCollection" />.</summary>
         <returns>A frozen instance of <see cref="T:System.Windows.Media.Animation.Vector3DKeyFrameCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -302,6 +307,7 @@
   
  If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -433,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="Insert">

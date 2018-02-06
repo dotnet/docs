@@ -70,6 +70,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyObject" />
+    <altmember cref="T:System.Windows.DependencyPropertyHelper" />
   </Docs>
   <Members>
     <Member MemberName="AddOwner">
@@ -471,6 +473,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="OverrideMetadata">
@@ -651,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -690,6 +694,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -725,6 +731,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -770,6 +778,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAttached">
@@ -813,6 +823,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAttached">
@@ -853,6 +865,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAttached">
@@ -903,6 +917,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+        <altmember cref="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAttachedReadOnly">
@@ -1105,6 +1121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.DependencyProperty.Name" />
       </Docs>
     </Member>
     <Member MemberName="UnsetValue">
@@ -1170,7 +1187,71 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.ValidateValueCallback" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OverrideMetadata">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Supplies alternate metadata for this dependency property when it is present on instances of a specified type, versus the metadata that was provided in the initial dependency property registration.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a dependency property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddOwner">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds another type as an owner of a dependency property that has already been registered to a type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the metadata associated with this dependency property as it exists for a particular type. This can be the type where the dependency property was first registered, one to which it was added subsequently, or a type where the dependency property was obtained through inheritance but the metadata was specifically overridden.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterAttachedReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a read-only attached property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterAttached">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an attached property with the property system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a dependency property as a read-only dependency property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

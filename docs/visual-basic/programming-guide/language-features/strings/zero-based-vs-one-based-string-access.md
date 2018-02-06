@@ -1,7 +1,7 @@
 ---
 title: "Zero-based vs. One-based String Access in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,29 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "strings [Visual Basic], indexing"
 ms.assetid: 0ed39f35-d68e-421d-ae14-460a5c0373b8
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Zero-based vs. One-based String Access in Visual Basic
 This topic compares how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] provide access to the characters in a string. The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] always provides zero-based access to the characters in a string, whereas [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides zero-based and one-based access, depending on the function.  
@@ -43,8 +26,8 @@ This topic compares how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and the [!IN
  For an example of a zero-based [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] function, consider the `Split` function. It splits a string and returns an array containing the substrings. The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.String.Split%2A?displayProperty=nameWithType> method also splits a string and returns an array containing the substrings. Because the `Split` function and <xref:System.String.Split%2A> method return [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] arrays, they must be zero-based.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.Mid%2A>   
- <xref:Microsoft.VisualBasic.Strings.Split%2A>   
- <xref:System.String.Substring%2A>   
- <xref:System.String.Split%2A>   
+ <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Split%2A>  
+ <xref:System.String.Substring%2A>  
+ <xref:System.String.Split%2A>  
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

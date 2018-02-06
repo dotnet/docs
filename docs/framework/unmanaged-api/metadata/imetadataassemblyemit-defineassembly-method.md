@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyEmit::DefineAssembly method [.NET Framework metadata]"
   - "DefineAssembly method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineAssembly Method
 Creates an `Assembly` structure containing metadata for the specified assembly and returns the associated metadata token.  

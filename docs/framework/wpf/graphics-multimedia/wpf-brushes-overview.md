@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, about brushes"
+  - "brushes [WPF], about brushes"
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Brushes Overview
 Everything visible on your screen is visible because it was painted by a brush. For example, a brush is used to describe the background of a button, the foreground of text, and the fill of a shape. This topic introduces the concepts of painting with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] brushes and provides examples. Brushes enable you to paint [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] objects with anything from simple, solid colors to complex sets of patterns and images.  
@@ -164,13 +169,13 @@ A Rectangle painted using a VisualBrush
  For more information on why <xref:System.Windows.Media.VisualBrush> objects cannot be frozen, see the <xref:System.Windows.Media.VisualBrush> type page.  
   
 ## See Also  
- <xref:System.Windows.Media.Brush>   
- <xref:System.Windows.Media.Brushes>   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)   
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)   
- [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973)   
- [ImageBrush Sample](http://go.microsoft.com/fwlink/?LinkID=160005)   
- [VisualBrush Sample](http://go.microsoft.com/fwlink/?LinkID=160049)   
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)   
+ <xref:System.Windows.Media.Brush>  
+ <xref:System.Windows.Media.Brushes>  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
+ [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
+ [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
+ [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973)  
+ [ImageBrush Sample](http://go.microsoft.com/fwlink/?LinkID=160005)  
+ [VisualBrush Sample](http://go.microsoft.com/fwlink/?LinkID=160049)  
+ [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)  
  [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)

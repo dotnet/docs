@@ -7,11 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "sectionGroup Element"
   - "<sectionGroup> Element"
@@ -19,6 +14,8 @@ ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<sectionGroup> element for \<configSections>

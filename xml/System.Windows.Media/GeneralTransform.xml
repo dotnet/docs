@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Point" />
+    <altmember cref="T:System.Windows.Rect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -271,5 +273,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

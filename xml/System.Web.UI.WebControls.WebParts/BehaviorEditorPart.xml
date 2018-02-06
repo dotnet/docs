@@ -94,16 +94,16 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0). The documentation for this user control explains how to call the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method to switch the page into shared mode, which enables the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to appear.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]
+ [!code-aspx-vb[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control. Note that the page also contains a <xref:System.Web.UI.WebControls.BulletedList> control that is bound to the Pubs database; because this control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, it is able to function as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that can be edited by the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#1)]  
   
  The third part of the example is an entry in the Web.config file. You must make an entry like the following in the `<webParts>` section of the file, to enable an authorized user or set of users to edit the Web page when it is in shared personalization scope. This entry is a critical step; otherwise, the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control will not be visible when you switch the page into edit mode.  
   
@@ -127,6 +127,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,6 +186,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">An error occurred when trying to set the value for a property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.ApplyChanges" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -239,6 +246,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.LayoutEditorPart.DefaultButton" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.DefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -266,6 +276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.LayoutEditorPart.Display" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.Display" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -335,6 +347,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.LayoutEditorPart.SyncChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -365,8 +381,8 @@
   
  The following code shows how to set the title on a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control declaratively in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#2)]
+ [!code-aspx-vb[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#2)]  
   
  The next part of the code example shows how to set the value of the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title%2A> property programmatically.  
   
@@ -380,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
   </Members>

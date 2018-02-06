@@ -282,8 +282,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.WindowsTokenRoleProvider.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and binds the list of roles to a <xref:System.Web.UI.WebControls.GridView> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.WindowsTokenRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/viewrolescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/viewrolesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/viewrolescs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/viewrolesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -398,8 +398,8 @@
 ## Examples  
  The following code example programmatically checks whether the currently logged-on user is in the Administrators role before allowing the user to view roles information for the application. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.WindowsTokenRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/ViewRoles2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/ViewRoles2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/ViewRoles2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/ViewRoles2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -445,8 +445,8 @@
 ## Examples  
  The following code example programmatically checks whether the currently logged-on user is in the Administrators role before allowing the user to view roles information for the application. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.WindowsTokenRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/viewrolescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/viewrolesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/viewrolescs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.WindowsTokenRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/viewrolesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -521,5 +521,14 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsUserInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified user is in the specified built-in Windows role.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "platform invoke, identifying functions"
   - "COM interop, DLL functions"
@@ -28,6 +23,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Identifying Functions in DLLs
 The identity of a DLL function consists of the following elements:  
@@ -55,8 +52,8 @@ The identity of a DLL function consists of the following elements:
  For complete documentation on the Win32 API, see the Platform SDK. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
   
 ## See Also  
- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)   
- [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)   
- [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)   
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)   
+ [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
+ [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)  
+ [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  
+ [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

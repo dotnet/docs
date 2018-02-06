@@ -22,6 +22,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+    <altmember cref="P:System.Configuration.ConnectionStringsSection.ConnectionStrings" />
+    <altmember cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+    <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +44,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <altmember cref="P:System.Configuration.ConnectionStringsSection.ConnectionStrings" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -76,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -103,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor sheet implementation for connection string expressions. The editor sheet for connection string expressions allows users to select a connection name and type, based on the current connection strings that are defined in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) section of the Web configuration file. Once users have selected the connection expression properties, the editor sheet implementation combines the connection name and type into a connection string expression, which is returned to the visual designer.  
+ The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor sheet implementation for connection string expressions. The editor sheet for connection string expressions allows users to select a connection name and type, based on the current connection strings that are defined in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) section of the Web configuration file. Once users have selected the connection expression properties, the editor sheet implementation combines the connection name and type into a connection string expression, which is returned to the visual designer.  
   
  ]]></format>
         </remarks>

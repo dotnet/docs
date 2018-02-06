@@ -13,6 +13,17 @@
   <Docs>
     <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> event that occurs when a user completes a drag operation with the mouse of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.DragStartedEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +65,7 @@
         <value>
           <see langword="true" /> if a drag operation was canceled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.Thumb.CancelDrag" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalChange">

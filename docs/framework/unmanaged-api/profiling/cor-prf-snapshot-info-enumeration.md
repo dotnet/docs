@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_SNAPSHOT_INFO"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_SNAPSHOT_INFO enumeration [.NET Framework profiling]"
 ms.assetid: a5906b2a-ad4a-4cc6-a421-2d7d8adf7468
@@ -28,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_SNAPSHOT_INFO Enumeration
 Specifies how much data to pass back with a stack snapshot in each call to the profiler's [StackSnapshotCallback](../../../../docs/framework/unmanaged-api/profiling/stacksnapshotcallback-function.md) function.  
@@ -63,5 +63,5 @@ typedef enum _COR_PRF_SNAPSHOT_INFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [DoStackSnapshot Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md)   
+ [DoStackSnapshot Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md)  
  [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

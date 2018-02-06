@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.ServicePoint" />
   </Docs>
   <Members>
     <Member MemberName="CertificatePolicy">
@@ -87,6 +88,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">To set the <see cref="P:System.Net.ServicePointManager.CertificatePolicy" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Security.Permissions.SecurityPermission" />
       </Docs>
     </Member>
     <Member MemberName="CheckCertificateRevocationList">
@@ -137,6 +140,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">To set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Security.Permissions.SecurityPermission" />
       </Docs>
     </Member>
     <Member MemberName="ClientCipherSuitesCallback">
@@ -211,6 +216,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Net.ServicePointManager.DefaultConnectionLimit" /> is less than or equal to 0.</exception>
         <permission cref="T:System.Net.WebPermission">for unrestricted Web permissions. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Net.WebPermission" />
       </Docs>
     </Member>
     <Member MemberName="DefaultNonPersistentConnectionLimit">
@@ -314,6 +321,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="EnableDnsRoundRobin">
@@ -363,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionPolicy">
@@ -398,12 +407,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
+ If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="P:System.Net.Configuration.ServicePointManagerElement.EncryptionPolicy" />
+        <altmember cref="T:System.Net.Security.EncryptionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="Expect100Continue">
@@ -458,6 +470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="FindServicePoint">
@@ -499,6 +512,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of <see cref="T:System.Net.ServicePoint" /> objects defined in <see cref="P:System.Net.ServicePointManager.MaxServicePoints" /> has been reached.</exception>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="FindServicePoint">
@@ -550,6 +564,8 @@
         </remarks>
         <exception cref="T:System.UriFormatException">The URI specified in <paramref name="uriString" /> is invalid.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of <see cref="T:System.Net.ServicePoint" /> objects defined in <see cref="P:System.Net.ServicePointManager.MaxServicePoints" /> has been reached.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="FindServicePoint">
@@ -593,6 +609,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of <see cref="T:System.Net.ServicePoint" /> objects defined in <see cref="P:System.Net.ServicePointManager.MaxServicePoints" /> has been reached.</exception>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="MaxServicePointIdleTime">
@@ -641,6 +658,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Net.ServicePointManager.MaxServicePointIdleTime" /> is less than <see cref="F:System.Threading.Timeout.Infinite" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <permission cref="T:System.Net.WebPermission">For unrestricted Web permissions. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Net.WebPermission" />
       </Docs>
     </Member>
     <Member MemberName="MaxServicePoints">
@@ -687,6 +706,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Net.ServicePointManager.MaxServicePoints" /> is less than 0 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <permission cref="T:System.Net.WebPermission">for unrestricted Web permissions. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Net.WebPermission" />
       </Docs>
     </Member>
     <Member MemberName="ReusePort">
@@ -771,6 +792,8 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The value specified to set the property is not a valid <see cref="T:System.Net.SecurityProtocolType" /> enumeration value.</exception>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Net.SecurityProtocolType" />
       </Docs>
     </Member>
     <Member MemberName="ServerCertificateValidationCallback">
@@ -801,13 +824,19 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
+An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
   
- When custom validation is not used, the certificate name is compared with host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.hmtl", the default behavior is for the client to check the certificate against www.contoso.com.  
+When custom validation is not used, the certificate name is compared with the host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.html", the default behavior is for the client to check the certificate against www.contoso.com.  
+
+Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritative. 
+In other words, you can attach multiple delegates, and they all get a callback from <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A>. 
+Each callback returns a value that indicates whether the certificate is accepted or not; however, only the value from the last delegate is respected.
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to set the <see cref="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
+        <altmember cref="T:System.Net.ServicePoint" />
+        <altmember cref="T:System.Security.Permissions.SecurityPermission" />
       </Docs>
     </Member>
     <Member MemberName="ServerCipherSuitesCallback">
@@ -885,6 +914,7 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for <paramref name="keepAliveTime" /> or <paramref name="keepAliveInterval" /> parameter is less than or equal to 0.</exception>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="UseNagleAlgorithm">
@@ -933,7 +963,18 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindServicePoint">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds an existing <see cref="T:System.Net.ServicePoint" /> object or creates a new <see cref="T:System.Net.ServicePoint" /> object to manage communication for this request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

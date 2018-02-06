@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.ISynchronizeInvoke.BeginInvoke(System.Delegate,System.Object[])" />
+    <altmember cref="M:System.ComponentModel.ISynchronizeInvoke.EndInvoke(System.IAsyncResult)" />
+    <altmember cref="M:System.ComponentModel.ISynchronizeInvoke.Invoke(System.Delegate,System.Object[])" />
   </Docs>
   <Members>
     <Member MemberName="BeginInvoke">
@@ -79,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ISynchronizeInvoke.EndInvoke(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="EndInvoke">
@@ -117,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ISynchronizeInvoke.BeginInvoke(System.Delegate,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">

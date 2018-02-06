@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue::GetType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue::GetType method [.NET Framework debugging]"
   - "GetType method, ICorDebugValue interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue::GetType Method
 Gets the primitive type of this "ICorDebugValue" object.  

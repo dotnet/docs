@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetSymAttribute"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymAttribute method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetSymAttribute Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these custom attributes are held in the symbol store.  

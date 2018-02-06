@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4b6ddabf-3861-4c40-b9a2-b153cf1e4d35
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ProtocolRecoveryBeginningFailure
 Id: 144  
@@ -26,5 +28,5 @@ Id: 144
  This event indicates that the MSDTC WS-Atomic Transaction protocol failed at the beginning of recovery. As a result, WS-Atomic Transaction functionality is disabled. The event lists the protocol ID, protocol name, exception, process name and process ID.  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

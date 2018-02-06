@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a text-based header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a text-based header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.View.List?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.ListView> groups help your users find the items they are looking for by separating the items into useful categories. You can create whatever categories you need. One typical way to group the items is by the way they are sorted. For example, you can group the items by the initial letter of the item name when they are sorted alphabetically, or by subitems such as type or date when the list is sorted by clicking a column header in the details view. Windows Explorer uses this type of grouping.  
   
@@ -63,6 +63,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewGroupCollection" />
+    <altmember cref="P:System.Windows.Forms.ListViewItem.Group" />
+    <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -240,6 +244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListViewItem.Group" />
+        <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="ListView">
@@ -373,7 +379,17 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

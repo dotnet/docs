@@ -10,18 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ContextMenuStrip control [Windows Forms]"
-  - "context menus, event handling"
+  - "context menus [Windows Forms], event handling"
   - "ToolStrip control [Windows Forms]"
-  - "event handling, context menus"
-  - "shortcut menus, event handling"
+  - "event handling [Windows Forms], context menus"
+  - "shortcut menus [Windows Forms], event handling"
 ms.assetid: b661b3dd-7815-4cc2-a1aa-a9a391ab3427
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle the ContextMenuStrip Opening Event
 You can customize the behavior of your <xref:System.Windows.Forms.ContextMenuStrip> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
@@ -35,7 +38,7 @@ You can customize the behavior of your <xref:System.Windows.Forms.ContextMenuStr
  Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true` to prevent the menu from opening.  
   
 ## See Also  
- <xref:System.Windows.Forms.ContextMenuStrip>   
- <xref:System.ComponentModel.CancelEventArgs.Cancel%2A>   
- <xref:System.Windows.Forms.ToolStripDropDown>   
+ <xref:System.Windows.Forms.ContextMenuStrip>  
+ <xref:System.ComponentModel.CancelEventArgs.Cancel%2A>  
+ <xref:System.Windows.Forms.ToolStripDropDown>  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

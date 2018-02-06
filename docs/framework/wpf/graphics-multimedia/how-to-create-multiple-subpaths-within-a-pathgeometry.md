@@ -10,16 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "multiple subpaths"
+  - "multiple subpaths [WPF]"
   - "graphics [WPF], subpaths"
-  - "subpaths"
+  - "subpaths [WPF]"
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Multiple Subpaths Within a PathGeometry
 This example shows how to create multiple subpaths in a <xref:System.Windows.Media.PathGeometry>. To create multiple subpaths, you create a <xref:System.Windows.Media.PathFigure> for each subpath.  

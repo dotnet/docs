@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.BindingsCollection" />
+    <altmember cref="T:System.Windows.Forms.BindingContext" />
+    <altmember cref="T:System.Windows.Forms.Binding" />
   </Docs>
   <Members>
     <Member MemberName="AddNew">
@@ -73,6 +76,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The underlying data source does not implement <see cref="T:System.ComponentModel.IBindingList" />, or the data source has thrown an exception because the user has attempted to add a row to a read-only or fixed-size <see cref="T:System.Data.DataView" />.</exception>
+        <altmember cref="P:System.ComponentModel.IBindingList.AllowNew" />
+        <altmember cref="M:System.Data.DataView.AddNew" />
+        <altmember cref="M:System.Data.DataTable.NewRow" />
       </Docs>
     </Member>
     <Member MemberName="CancelCurrentEdit">
@@ -110,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.EndCurrentEdit" />
       </Docs>
     </Member>
     <Member MemberName="CheckEmpty">
@@ -163,6 +170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.List" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Current" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -197,6 +207,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataRowView" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.List" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Count" />
       </Docs>
     </Member>
     <Member MemberName="EndCurrentEdit">
@@ -234,6 +248,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.CancelCurrentEdit" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
+        <altmember cref="T:System.ComponentModel.ICancelAddNew" />
       </Docs>
     </Member>
     <Member MemberName="finalType">
@@ -251,6 +268,7 @@
       <Docs>
         <summary>Specifies the data type of the list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -286,6 +304,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.List" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.GetListName(System.Collections.ArrayList)" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.GetItemProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -315,6 +336,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.GetItemProperties" />
       </Docs>
     </Member>
     <Member MemberName="ItemChanged">
@@ -357,6 +379,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -403,6 +426,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Current" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Count" />
       </Docs>
     </Member>
     <Member MemberName="ListChanged">
@@ -441,6 +467,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.CurrencyManager.ItemChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
       </Docs>
     </Member>
     <Member MemberName="listposition">
@@ -465,6 +493,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
       </Docs>
     </Member>
     <Member MemberName="MetaDataChanged">
@@ -501,6 +530,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanged">
@@ -522,6 +552,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
@@ -543,6 +574,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemChanged">
@@ -576,6 +608,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.CurrencyManager.ItemChanged" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.OnCurrentItemChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMetaDataChanged">
@@ -642,6 +676,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.OnCurrentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -678,6 +715,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.List" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Count" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Current" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -712,6 +752,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.List" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -750,6 +791,8 @@ private void PrintCurrentListName(DataGrid myDataGrid){
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">There is no row at the specified <paramref name="index" />.</exception>
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.AddNew" />
+        <altmember cref="P:System.Windows.Forms.CurrencyManager.Count" />
       </Docs>
     </Member>
     <Member MemberName="ResumeBinding">
@@ -787,6 +830,11 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.SuspendBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="SuspendBinding">
@@ -824,6 +872,11 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.ResumeBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="UpdateIsBinding">

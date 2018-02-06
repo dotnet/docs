@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<NetFx40_PInvokeStackResilience> element"
   - "NetFx40_PInvokeStackResilience element"
@@ -22,6 +17,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;NetFx40_PInvokeStackResilience&gt; Element
 Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.  
@@ -86,6 +83,6 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md)

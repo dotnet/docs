@@ -15,6 +15,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Managed Thread States
 The property <xref:System.Threading.Thread.ThreadState%2A?displayProperty=nameWithType> provides a bit mask that indicates the thread's current state. A thread is always in at least one of the possible states in the <xref:System.Threading.ThreadState> enumeration, and can be in multiple states at the same time.  
@@ -51,7 +54,7 @@ if ((state & (Unstarted | Stopped)) == 0)   // implies Running
  Once a thread leaves the <xref:System.Threading.ThreadState.Unstarted> state as the result of a call to <xref:System.Threading.Thread.Start%2A>, it can never return to the <xref:System.Threading.ThreadState.Unstarted> state. A thread can never leave the <xref:System.Threading.ThreadState.Stopped> state.  
   
 ## See Also  
- <xref:System.Threading.ThreadAbortException>   
- <xref:System.Threading.Thread>   
- <xref:System.Threading.ThreadState>   
+ <xref:System.Threading.ThreadAbortException>  
+ <xref:System.Threading.Thread>  
+ <xref:System.Threading.ThreadState>  
  [Threading](../../../docs/standard/threading/index.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetDebugState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDebugState method [.NET Framework debugging]"
   - "ICorDebugThread::GetDebugState method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetDebugState Method
 Gets the current debug state of this ICorDebugThread object.  

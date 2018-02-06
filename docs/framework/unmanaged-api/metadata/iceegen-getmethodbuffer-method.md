@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetMethodBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GetMethodBuffer method [.NET Framework metadata]"
   - "GetMethodBuffer method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetMethodBuffer Method
 Gets a buffer of the appropriate size for the method at the specified relative virtual address.  

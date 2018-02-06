@@ -16,9 +16,11 @@ helpviewer_keywords:
   - "clients [WCF], consuming services"
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents and metadata documents from service model code.  
@@ -85,7 +87,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
 |Option|Description|  
 |------------|-----------------|  
 |/async|Generates both synchronous and asynchronous method signatures.<br /><br /> Default: generate only synchronous method signatures.<br /><br /> Short Form: `/a`|  
-|/collectionType:\<type>|Generates both synchronous and asynchronous method signatures.<br /><br /> Default: generate only synchronous method signatures.<br /><br /> Short Form: `/a`|  
+|/collectionType:\<type>|Specifies the list collection type for a WCF client.<br/><br /> Default: collection type is System.Array. <br /><br /> Short Form: `/ct`|  
 |/config:\<configFile>|Specifies the filename for the generated configuration file.<br /><br /> Default: output.config|  
 |/dataContractOnly|Generates code for data contract types only. Service Contract types are not generated.<br /><br /> You should only specify local metadata files for this option.<br /><br /> Short Form: `/dconly`|  
 |/enableDataBinding|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all Data Contract types to enable data binding.<br /><br /> Short Form: `/edb`|  
@@ -102,7 +104,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
 |/reference:\<file path>|References types in the specified assembly. When generating clients, use this option to specify assemblies that might contain types that represent the metadata being imported.<br /><br /> You cannot specify message contracts and <xref:System.Xml.Serialization.XmlSerializer> types using this switch.<br /><br /> If <xref:System.DateTimeOffset> referenced, this type is used instead of generating a new type. If the application is written using [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)], SvcUtil.exe references <xref:System.DateTimeOffset> automatically.<br /><br /> Short Form: `/r`|  
 |/serializable|Generates classes marked with the Serializable Attribute.<br /><br /> Short Form: `/s`|  
 |/serviceContract|Generate code for service contracts only. Client class and configuration will not be generated<br /><br /> Short Form: `/sc`|  
-|/serializer:Auto|Generates classes marked with the Serializable Attribute.<br /><br /> Short Form: `/s`|  
+|/serializer:Auto|Automatically select the serializer. This tries to use the Data Contract serializer and uses the XmlSerializer if that fails.<br /><br /> Short Form: `/ser`|  
 |/serializer:DataContractSerializer|Generates data types that use the Data Contract Serializer for serialization and deserialization.<br /><br /> Short Form: `/ser:DataContractSerializer`|  
 |/serializer:XmlSerializer|Generates data types that use the <xref:System.Xml.Serialization.XmlSerializer> for serialization and deserialization.<br /><br /> Short Form: `/ser:XmlSerializer`|  
 |/targetClientVersion|Specify which version of [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] the application is targeting. Valid values are `Version30` and `Version35`. The default value is `Version30`.<br /><br /> Short Form: `/tcv`<br /><br /> `Version30`: Use `/tcv:Version30` if you are generating code for clients that use [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)].<br /><br /> `Version35`: Use `/tcv:Version35` if you are generating code for clients that use [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. When using `/tcv:Version35` with the `/async` switch, both event-based and callback/delegate-based asynchronous methods are generated. In addition, support for LINQ-enabled DataSets and <xref:System.DateTimeOffset> is enabled.|  
@@ -268,6 +270,6 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
  Finally, you should not use the tool in the middle-tier of your application, as it may cause denial-of-service to the current process.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)

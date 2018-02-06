@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataEnumMemoryRegions::EnumMemoryRegions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataEnumMemoryRegions::EnumMemoryRegions method [.NET Framework debugging]"
   - "EnumMemoryRegions method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDataEnumMemoryRegions::EnumMemoryRegions Method
 Enumerates specified areas of memory.  

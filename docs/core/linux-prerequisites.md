@@ -4,11 +4,13 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: jralexander
 ms.author: johalex
-ms.date: 09/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
+ms.workload: 
+  - dotnetcore
 ---
 
 # Prerequisites for .NET Core on Linux
@@ -58,33 +60,35 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ## Linux distribution dependencies
 
+The following are intended to be examples. The exact versions and names may vary slightly on your Linux distribution of choice.
+
 ### Ubuntu
 
 Ubuntu distributions require the following libraries installed:
 
 * libunwind8
-* libunwind8-dev
-* gettext
-* libicu-dev
-* liblttng-ust-dev
-* libcurl4-openssl-dev
-* libssl-dev
-* uuid-dev
-* unzip
+* liblttng-ust0
+* libcurl3
+* libssl1.0.0
+* libuuid1
+* libkrb5-3
+* zlib1g
+* libicu52 (for 14.X)
+* libicu55 (for 16.X)
+* libicu57 (for 17.X)
 
 ### CentOS
 
 CentOS distributions require the following libraries installed:
 
-* deltarpm
-* epel-release
-* unzip
 * libunwind
-* gettext
-* libcurl-devel
-* openssl-devel
+* lttng-ust
+* libcurl
+* openssl-libs
+* libuuid
+* krb5-libs
+* libicu
 * zlib
-* libicu-devel
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
@@ -99,7 +103,7 @@ On Linux, there are two installer package choices:
 
 ### Scripting Installs with the .NET Core installer script
 
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from the [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain).
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from: https://dot.net/v1/dotnet-install.sh
 
 The installer bash script is used in automation scenarios and non-admin installations. This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.
 
@@ -205,6 +209,12 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 
 3. Set up the desired version host package feed.
 
+   **Ubuntu 17.10**
+
+   ```bash
+   sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list'
+   sudo apt-get update
+   ```
    **Ubuntu 17.04**
 
    ```bash
@@ -229,7 +239,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 4. Install .NET Core.
 
    ```bash
-   sudo apt-get install dotnet-sdk-2.0.0
+   sudo apt-get install dotnet-sdk-2.1.3
    ```
 
 4. Run the `dotnet --version` command to prove the installation succeeded.

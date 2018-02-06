@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#runtime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<runtime> element"
   - "runtime element"
@@ -26,6 +21,8 @@ caps.latest.revision: 70
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;runtime&gt; Element
 Provides information used by the common language runtime to configure applications.  
@@ -101,5 +98,5 @@ Provides information used by the common language runtime to configure applicatio
  The elements in the [\<runtime>](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section are read automatically by the common language runtime at application startup. You can also define the configuration file for a non-default application domain by supplying its name to the <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> property; its settings are read automatically when the application domain is loaded. You should rarely, if ever, have a need to directly read the settings in the [\<runtime>](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section in your application's configuration file.  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

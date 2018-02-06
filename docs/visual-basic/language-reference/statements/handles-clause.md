@@ -1,40 +1,21 @@
 ---
 title: "Handles Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Handles"
   - "vb.Handles"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Handles keyword"
+  - "Handles keyword [Visual Basic]"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Handles Clause (Visual Basic)
 Declares that a procedure handles a specified event.  
@@ -77,9 +58,9 @@ proceduredeclaration Handles eventlist
  [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_4.vb)]  
   
 ## See Also  
- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)   
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
+ [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)  
+ [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
+ [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
+ [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

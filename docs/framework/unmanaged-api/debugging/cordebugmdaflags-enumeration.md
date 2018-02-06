@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugMDAFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugMDAFlags enumeration [.NET Framework debugging]"
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugMDAFlags Enumeration
 Specifies the status of the thread on which the managed debugging assistant (MDA) is fired.  

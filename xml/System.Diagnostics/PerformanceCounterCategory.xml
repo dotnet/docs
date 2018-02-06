@@ -53,6 +53,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+    <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
+    <altmember cref="T:System.Diagnostics.CounterSample" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +87,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +121,9 @@
         <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> is an empty string ("").</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading category information, such as the category name. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,6 +161,9 @@
  The <paramref name="machineName" /> syntax is invalid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading category information, such as the computer and category name. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="CategoryHelp">
@@ -182,6 +194,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The category name must be set before getting the category help.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.CounterHelp" />
       </Docs>
     </Member>
     <Member MemberName="CategoryName">
@@ -213,6 +229,8 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> is an empty string ("").</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="CategoryType">
@@ -291,6 +309,10 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property has not been set.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="CounterExists">
@@ -347,6 +369,9 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="CounterExists">
@@ -409,6 +434,9 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -480,6 +508,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+        <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -560,6 +592,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+        <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -634,6 +670,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.CounterHelp" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -711,6 +751,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+        <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -760,6 +804,7 @@
         <exception cref="T:System.InvalidOperationException">The category cannot be deleted because it is not a custom category.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)" />
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -811,6 +856,8 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -873,6 +920,8 @@
   
  Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetCategories">
@@ -917,6 +966,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="GetCategories">
@@ -966,6 +1016,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="GetCounters">
@@ -1014,6 +1065,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.InvalidOperationException">The category does not have an associated instance.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="GetCounters">
@@ -1071,6 +1123,7 @@
  The category does not contain the instance that is specified by the <paramref name="instanceName" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="GetInstanceNames">
@@ -1119,6 +1172,9 @@
  The category does not have an associated instance.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.InstanceName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="InstanceExists">
@@ -1169,6 +1225,11 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.InstanceName" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="InstanceExists">
@@ -1225,6 +1286,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.InstanceName" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="InstanceExists">
@@ -1289,6 +1354,10 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounter.InstanceName" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+        <altmember cref="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -1319,6 +1388,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> syntax is invalid.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+        <altmember cref="T:System.Diagnostics.PerformanceCounter" />
       </Docs>
     </Member>
     <Member MemberName="ReadCategory">
@@ -1370,7 +1441,73 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The property might not have been set.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <altmember cref="T:System.Diagnostics.InstanceDataCollectionCollection" />
+        <altmember cref="T:System.Diagnostics.InstanceDataCollection" />
+        <altmember cref="T:System.Diagnostics.InstanceData" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCategories">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a list of the performance counter categories that are registered on a computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCounters">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a list of the counters in this performance counter category.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a custom performance counter category and one or more counters with the system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CounterExists">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specified counter is registered to a particular category.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exists">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the category is registered on the system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InstanceExists">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the category contains the specified performance object instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

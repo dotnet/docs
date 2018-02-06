@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#settings"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "settings element"
   - "<settings> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;settings&gt; Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  
@@ -36,14 +33,14 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## Syntax  
   
 ```xml  
-      <settings>  
-..<httpListener> … </httpListener>  
-..<httpWebRequest> … </httpWebRequest>  
-..<ipv6> … </ipv6>  
-..<performanceCounters> … </performanceCounters>  
+<settings>  
+  <httpListener> … </httpListener>  
+  <httpWebRequest> … </httpWebRequest>  
+  <ipv6> … </ipv6>  
+  <performanceCounters> … </performanceCounters>  
   <servicePointManager> … </servicePointManager>  
-..<socket> … </socket>  
-..<webProxyScript> … </webProxyScript>  
+  <socket> … </socket>  
+  <webProxyScript> … </webProxyScript>  
 </settings>  
 ```  
   
@@ -77,5 +74,5 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See Also  
- <xref:System.Net?displayProperty=nameWithType>   
+ <xref:System.Net?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

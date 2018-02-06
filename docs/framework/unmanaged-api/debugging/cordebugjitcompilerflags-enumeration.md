@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugJITCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugJITCompilerFlags enumeration [.NET Framework debugging]"
 ms.assetid: c0774f70-5bed-45e8-9922-fdad778c4c33
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugJITCompilerFlags Enumeration
 Contains values that influence the behavior of the managed just-in-time (JIT) compiler.  

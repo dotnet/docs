@@ -207,6 +207,7 @@ Example of capitals
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.CapitalSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CapitalSpacing">
@@ -254,6 +255,7 @@ Example of normal and capital spacing
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.Capitals" />
       </Docs>
     </Member>
     <Member MemberName="CapitalSpacingProperty">
@@ -390,6 +392,7 @@ Example of random contextual alternates
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.StylisticAlternates" />
       </Docs>
     </Member>
     <Member MemberName="ContextualAlternatesProperty">
@@ -449,6 +452,9 @@ Example of random contextual alternates
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.HistoricalLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="ContextualLigaturesProperty">
@@ -512,6 +518,7 @@ Example of a contextual swash
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.StandardSwashes" />
       </Docs>
     </Member>
     <Member MemberName="ContextualSwashesProperty">
@@ -576,6 +583,9 @@ Example of discretionary set of ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.HistoricalLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryLigaturesProperty">
@@ -631,6 +641,8 @@ Example of discretionary set of ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianLanguage" />
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianWidths" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianExpertFormsProperty">
@@ -685,6 +697,8 @@ Example of discretionary set of ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianExpertForms" />
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianWidths" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianLanguageProperty">
@@ -739,6 +753,8 @@ Example of discretionary set of ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianExpertForms" />
+        <altmember cref="P:System.Windows.Documents.Typography.EastAsianLanguage" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianWidthsProperty">
@@ -849,6 +865,7 @@ Example of slashed and stacked fraction styles
         <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.SetAnnotationAlternates(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCapitals">
@@ -876,6 +893,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.Capitals" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.Capitals" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetCapitals(System.Windows.DependencyObject,System.Windows.FontCapitals)" />
       </Docs>
     </Member>
     <Member MemberName="GetCapitalSpacing">
@@ -903,6 +921,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.CapitalSpacing" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.CapitalSpacing" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetCapitalSpacing(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetCaseSensitiveForms">
@@ -930,6 +949,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.CaseSensitiveForms" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.CaseSensitiveForms" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetCaseSensitiveForms(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetContextualAlternates">
@@ -957,6 +977,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.ContextualAlternates" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.ContextualAlternates" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetContextualAlternates(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetContextualLigatures">
@@ -984,6 +1005,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.ContextualLigatures" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.ContextualLigatures" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetContextualLigatures(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetContextualSwashes">
@@ -1011,6 +1033,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.ContextualSwashes" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.ContextualSwashes" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetContextualSwashes(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDiscretionaryLigatures">
@@ -1038,6 +1061,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetDiscretionaryLigatures(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetEastAsianExpertForms">
@@ -1065,6 +1089,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianExpertForms" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.EastAsianExpertForms" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetEastAsianLanguage(System.Windows.DependencyObject,System.Windows.FontEastAsianLanguage)" />
       </Docs>
     </Member>
     <Member MemberName="GetEastAsianLanguage">
@@ -1092,6 +1117,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianLanguage" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.EastAsianLanguage" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetEastAsianLanguage(System.Windows.DependencyObject,System.Windows.FontEastAsianLanguage)" />
       </Docs>
     </Member>
     <Member MemberName="GetEastAsianWidths">
@@ -1119,6 +1145,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianWidths" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.EastAsianWidths" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetEastAsianWidths(System.Windows.DependencyObject,System.Windows.FontEastAsianWidths)" />
       </Docs>
     </Member>
     <Member MemberName="GetFraction">
@@ -1146,6 +1173,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.Fraction" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.Fraction" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetFraction(System.Windows.DependencyObject,System.Windows.FontFraction)" />
       </Docs>
     </Member>
     <Member MemberName="GetHistoricalForms">
@@ -1173,6 +1201,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.HistoricalForms" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.HistoricalForms" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetHistoricalForms(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetHistoricalLigatures">
@@ -1200,6 +1229,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.HistoricalLigatures" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.HistoricalLigatures" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetHistoricalLigatures(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetKerning">
@@ -1227,6 +1257,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.Kerning" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.Kerning" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetKerning(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetMathematicalGreek">
@@ -1254,6 +1285,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.MathematicalGreek" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.MathematicalGreek" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetMathematicalGreek(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetNumeralAlignment">
@@ -1281,6 +1313,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.NumeralAlignment" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.NumeralAlignment" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetNumeralAlignment(System.Windows.DependencyObject,System.Windows.FontNumeralAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="GetNumeralStyle">
@@ -1308,6 +1341,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.NumeralStyle" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.NumeralStyle" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetNumeralStyle(System.Windows.DependencyObject,System.Windows.FontNumeralStyle)" />
       </Docs>
     </Member>
     <Member MemberName="GetSlashedZero">
@@ -1335,6 +1369,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.SlashedZero" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.SlashedZero" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetSlashedZero(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardLigatures">
@@ -1362,6 +1397,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StandardLigatures" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StandardLigatures" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStandardLigatures(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardSwashes">
@@ -1389,6 +1425,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StandardSwashes" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StandardSwashes" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStandardSwashes(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticAlternates">
@@ -1416,6 +1453,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticAlternates" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticAlternates" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticAlternates(System.Windows.DependencyObject,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet1">
@@ -1443,6 +1481,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet1" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet1" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet1(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet10">
@@ -1470,6 +1509,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet10" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet10" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet10(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet11">
@@ -1497,6 +1537,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet11" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet11" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet11(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet12">
@@ -1524,6 +1565,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet12" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet12" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet12(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet13">
@@ -1551,6 +1593,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet13" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet13" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet13(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet14">
@@ -1578,6 +1621,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet14" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet14" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet14(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet15">
@@ -1605,6 +1649,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet15" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet15" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet15(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet16">
@@ -1632,6 +1677,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet16" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet16" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet16(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet17">
@@ -1659,6 +1705,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet17" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet17" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet17(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet18">
@@ -1686,6 +1733,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet18" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet18" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet18(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet19">
@@ -1713,6 +1761,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet19" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet19" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet19(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet2">
@@ -1740,6 +1789,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet2" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet2" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet2(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet20">
@@ -1767,6 +1817,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet20" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet20" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet20(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet3">
@@ -1794,6 +1845,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet3" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet3" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet3(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet4">
@@ -1821,6 +1873,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet4" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet4" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet4(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet5">
@@ -1848,6 +1901,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet5" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet5" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet5(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet6">
@@ -1875,6 +1929,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet6" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet6" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet6(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet7">
@@ -1902,6 +1957,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet7" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet7" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet7(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet8">
@@ -1929,6 +1985,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet8" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet8" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet8(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetStylisticSet9">
@@ -1956,6 +2013,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet8" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet8" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet1(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetVariants">
@@ -1983,6 +2041,7 @@ Example of slashed and stacked fraction styles
         <summary>Returns the value of the <see cref="P:System.Windows.Documents.Typography.Variants" /> attached property for a specified dependency object.</summary>
         <returns>The current value of the <see cref="P:System.Windows.Documents.Typography.Variants" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Documents.Typography.SetStylisticSet1(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="HistoricalForms">
@@ -2030,6 +2089,7 @@ Example of historical forms
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.HistoricalLigatures" />
       </Docs>
     </Member>
     <Member MemberName="HistoricalFormsProperty">
@@ -2087,6 +2147,10 @@ Example of historical forms
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.HistoricalForms" />
+        <altmember cref="P:System.Windows.Documents.Typography.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="HistoricalLigaturesProperty">
@@ -2266,6 +2330,8 @@ Example of proportional and tabbed figures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.NumeralStyle" />
+        <altmember cref="P:System.Windows.Documents.Typography.SlashedZero" />
       </Docs>
     </Member>
     <Member MemberName="NumeralAlignmentProperty">
@@ -2334,6 +2400,8 @@ Example of standard and old style numeral sets
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.NumeralAlignment" />
+        <altmember cref="P:System.Windows.Documents.Typography.SlashedZero" />
       </Docs>
     </Member>
     <Member MemberName="NumeralStyleProperty">
@@ -2375,6 +2443,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.AnnotationAlternates" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetAnnotationAlternates(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetCapitals">
@@ -2399,6 +2468,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.Capitals" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetCapitals(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetCapitalSpacing">
@@ -2423,6 +2493,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.CapitalSpacing" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetCapitalSpacing(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetCaseSensitiveForms">
@@ -2447,6 +2518,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.CaseSensitiveForms" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetCaseSensitiveForms(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetContextualAlternates">
@@ -2471,6 +2543,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.ContextualAlternates" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetContextualAlternates(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetContextualLigatures">
@@ -2495,6 +2568,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.ContextualLigatures" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetContextualLigatures(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetContextualSwashes">
@@ -2519,6 +2593,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.ContextualSwashes" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetContextualSwashes(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetDiscretionaryLigatures">
@@ -2543,6 +2618,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetDiscretionaryLigatures(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetEastAsianExpertForms">
@@ -2567,6 +2643,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianExpertForms" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetEastAsianExpertForms(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetEastAsianLanguage">
@@ -2591,6 +2668,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianLanguage" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetEastAsianLanguage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetEastAsianWidths">
@@ -2615,6 +2693,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.EastAsianWidths" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetEastAsianWidths(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFraction">
@@ -2639,6 +2718,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.Fraction" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetFraction(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetHistoricalForms">
@@ -2663,6 +2743,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.HistoricalForms" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetHistoricalForms(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetHistoricalLigatures">
@@ -2687,6 +2768,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.HistoricalLigatures" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetHistoricalLigatures(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetKerning">
@@ -2711,6 +2793,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.Kerning" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetKerning(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetMathematicalGreek">
@@ -2735,6 +2818,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.MathematicalGreek" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetMathematicalGreek(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetNumeralAlignment">
@@ -2759,6 +2843,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.NumeralAlignment" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetNumeralAlignment(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetNumeralStyle">
@@ -2783,6 +2868,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.NumeralStyle" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetNumeralStyle(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetSlashedZero">
@@ -2807,6 +2893,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.SlashedZero" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetSlashedZero(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStandardLigatures">
@@ -2831,6 +2918,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StandardLigatures" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStandardLigatures(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStandardSwashes">
@@ -2855,6 +2943,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StandardSwashes" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStandardSwashes(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticAlternates">
@@ -2879,6 +2968,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticAlternates" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticAlternates(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet1">
@@ -2903,6 +2993,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet1" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet1(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet10">
@@ -2927,6 +3018,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet10" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet10(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet11">
@@ -2951,6 +3043,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet11" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet11(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet12">
@@ -2975,6 +3068,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet12" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet12(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet13">
@@ -2999,6 +3093,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet13" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet13(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet14">
@@ -3023,6 +3118,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet14" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet14(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet15">
@@ -3047,6 +3143,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet15" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet15(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet16">
@@ -3071,6 +3168,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet16" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet16(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet17">
@@ -3095,6 +3193,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet17" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet17(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet18">
@@ -3119,6 +3218,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet18" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet18(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet19">
@@ -3143,6 +3243,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet19" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet19(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet2">
@@ -3167,6 +3268,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet2" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet2(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet20">
@@ -3191,6 +3293,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet20" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet20(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet3">
@@ -3215,6 +3318,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet3" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet3(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet4">
@@ -3239,6 +3343,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet4" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet4(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet5">
@@ -3263,6 +3368,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet5" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet5(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet6">
@@ -3287,6 +3393,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet6" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet6(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet7">
@@ -3311,6 +3418,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet7" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet7(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet8">
@@ -3335,6 +3443,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet8" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet8(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetStylisticSet9">
@@ -3359,6 +3468,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.StylisticSet9" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetStylisticSet9(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetVariants">
@@ -3383,6 +3493,7 @@ Example of standard and old style numeral sets
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Typography.Variants" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.Typography.GetVariants(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SlashedZero">
@@ -3434,6 +3545,8 @@ Example of slashed zero numerals
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.NumeralAlignment" />
+        <altmember cref="P:System.Windows.Documents.Typography.NumeralStyle" />
       </Docs>
     </Member>
     <Member MemberName="SlashedZeroProperty">
@@ -3514,6 +3627,9 @@ Example of disabled standard ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Documents.Typography.HistoricalLigatures" />
       </Docs>
     </Member>
     <Member MemberName="StandardLigaturesProperty">
@@ -3584,6 +3700,7 @@ Example of swashes used for capital letters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.ContextualSwashes" />
       </Docs>
     </Member>
     <Member MemberName="StandardSwashesProperty">
@@ -3661,6 +3778,7 @@ Example of other stylistic alternate glyphs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Typography.ContextualAlternates" />
       </Docs>
     </Member>
     <Member MemberName="StylisticAlternatesProperty">

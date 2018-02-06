@@ -19,6 +19,9 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Thread.Suspend, Garbage Collection, and Safe Points
 When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it has reached a safe point before actually suspending the thread. A safe point for a thread is a point in its execution at which garbage collection can be performed.  
@@ -29,7 +32,7 @@ When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithT
 >  In order to perform a garbage collection, the runtime must suspend all the threads except the thread performing the collection. Each thread must be brought to a safe point before it can be suspended.  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- <xref:System.GC>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.Thread>  
+ <xref:System.GC>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Automatic Memory Management](../../../docs/standard/automatic-memory-management.md)

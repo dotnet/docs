@@ -125,5 +125,14 @@
         <exception cref="T:System.ArgumentException">Raised when <paramref name="start" /> and <paramref name="end" /> do not resolve to a range of content suitable for enclosure by a <see cref="T:System.Windows.Documents.Underline" /> element, for example, if <paramref name="start" /> and <paramref name="end" /> indicate positions in different paragraphs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Underline" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

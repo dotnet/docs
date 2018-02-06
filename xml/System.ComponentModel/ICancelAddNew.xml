@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IBindingList" />
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+    <altmember cref="T:System.ComponentModel.IEditableObject" />
+    <altmember cref="T:System.ComponentModel.BindingList`1" />
   </Docs>
   <Members>
     <Member MemberName="CancelNew">
@@ -78,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.CancelCurrentEdit" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
       </Docs>
     </Member>
     <Member MemberName="EndNew">
@@ -115,6 +122,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.CurrencyManager.EndCurrentEdit" />
       </Docs>
     </Member>
   </Members>

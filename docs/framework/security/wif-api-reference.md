@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # WIF API Reference
 Windows Identity Foundation (WIF) classes are split across the following assemblies: `mscorlib` (mscorlib.dll), `System.IdentityModel` (System.IdentityModel.dll), `System.IdentityModel.Services` (System.IdentityModel.Services.dll), and `System.ServiceModel` (System.ServiceModel.dll). This topic provides links to the WIF namespaces and brief explanations of the classes that each namespace contains.  
@@ -52,5 +54,5 @@ Windows Identity Foundation (WIF) classes are split across the following assembl
  Contains classes that represent WCF contracts, channels, service hosts and other artifacts that are used in active (WS-Trust) scenarios. This namespace also contains classes that are specific to Windows Communication Foundation (WCF) and that are not used by WIF.  
   
 ## See Also  
- [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md)   
+ [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md)  
  [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)

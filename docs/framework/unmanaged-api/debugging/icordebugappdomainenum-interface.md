@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomainEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomainEnum interface [.NET Framework debugging]"
 ms.assetid: e9226e6e-ca2c-428e-bb38-0c099210f507
@@ -28,6 +26,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomainEnum Interface1
 Provides the `Next` method, which returns a specified number of `ICorDebugAppDomainEnum` values starting at the next location in the enumeration. This interface is a subclass of "ICorDebugEnum".  
@@ -53,5 +53,5 @@ Provides the `Next` method, which returns a specified number of `ICorDebugAppDom
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)   
+ [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

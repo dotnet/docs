@@ -21,8 +21,8 @@ public partial class WizardClasscs_aspx : System.Web.UI.Page
         Label tempLabel = (Label)Wizard1.FindControl("CompleteMessageLabel");
         if (tempLabel != null)
         {
-            tempLabel.Text = "Your order has been placed. An e-mail confirmation will be sent to "
-            + (EmailAddress.Text.Length == 0 ? "your e-mail address" : EmailAddress.Text) + ".";
+            tempLabel.Text = "Your order has been placed. An email confirmation will be sent to "
+            + (EmailAddress.Text.Length == 0 ? "your email address" : EmailAddress.Text) + ".";
         }
     }
 

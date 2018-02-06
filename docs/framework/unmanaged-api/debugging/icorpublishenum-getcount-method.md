@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishEnum::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCount method, ICorPublishEnum interface [.NET Framework debugging]"
   - "ICorPublishEnum::GetCount method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishEnum::GetCount Method
 Gets the number of items in the enumeration.  

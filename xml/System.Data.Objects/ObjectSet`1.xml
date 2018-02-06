@@ -69,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.AddObject(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyCurrentValues">
@@ -98,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectStateEntry.ApplyCurrentValues(System.Object)" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.ApplyCurrentValues``1(System.String,``0)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyOriginalValues">
@@ -127,6 +130,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectStateEntry.ApplyOriginalValues(System.Object)" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.ApplyOriginalValues``1(System.String,``0)" />
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -155,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.AttachTo(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -230,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.DeleteObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -258,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.Detach(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="EntitySet">

@@ -155,5 +155,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the schema for the AppSequence as defined in version 1.1 of the WS-Discovery protocol.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

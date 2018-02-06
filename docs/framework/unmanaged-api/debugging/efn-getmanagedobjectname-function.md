@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "_EFN_GetManagedObjectName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_EFN_GetManagedObjectName function [.NET Framework debugging]"
 ms.assetid: 6e7c6bee-7ced-495f-bf6c-2a5f0c716f7e
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _EFN_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  

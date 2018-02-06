@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "value comparisons of strings"
   - "LastIndexOf method"
@@ -24,6 +28,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Comparing Strings in .NET
 .NET provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  
@@ -149,5 +156,5 @@ manager: "wpickett"
  Both methods are useful when used in conjunction with the **String.Remove** method. You can use either the **IndexOf** or **LastIndexOf** methods to retrieve the position of a character, and then supply that position to the **Remove** method in order to remove a character or a word that begins with that character.  
   
 ## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

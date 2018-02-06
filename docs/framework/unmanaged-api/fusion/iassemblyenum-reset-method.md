@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyEnum::Reset method [.NET Framework fusion]"
   - "Reset method, IAssemblyEnum interface [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyEnum::Reset Method
 Resets this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) object to its starting position.  

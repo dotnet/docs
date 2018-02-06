@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetErrorCode method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetErrorCode Method
 `GetErrorCode` is obsolete. Do not call this method.  

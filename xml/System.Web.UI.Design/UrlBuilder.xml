@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.UrlBuilderOptions" />
   </Docs>
   <Members>
     <Member MemberName="BuildUrl">
@@ -70,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.UrlBuilderOptions" />
       </Docs>
     </Member>
     <Member MemberName="BuildUrl">
@@ -111,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.UrlBuilderOptions" />
       </Docs>
     </Member>
     <Member MemberName="BuildUrl">
@@ -150,7 +153,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.UrlBuilderOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildUrl">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a UI to create or pick a URL.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

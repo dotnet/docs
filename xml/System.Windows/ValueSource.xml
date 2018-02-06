@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+    <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
   </Docs>
   <Members>
     <Member MemberName="BaseValueSource">
@@ -49,6 +51,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -79,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -105,6 +111,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="IsAnimated">
@@ -131,6 +139,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="P:System.Windows.ValueSource.BaseValueSource" />
       </Docs>
     </Member>
     <Member MemberName="IsCoerced">
@@ -159,6 +170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="P:System.Windows.ValueSource.BaseValueSource" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrent">
@@ -206,6 +220,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="P:System.Windows.ValueSource.BaseValueSource" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -238,6 +255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -270,6 +289,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyHelper" />
+        <altmember cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
   </Members>

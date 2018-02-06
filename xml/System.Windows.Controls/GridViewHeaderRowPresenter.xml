@@ -29,6 +29,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ListView" />
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+    <altmember cref="T:System.Windows.Controls.GridViewRowPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -378,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderTemplateProperty">
@@ -465,6 +470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderTemplateSelectorProperty">

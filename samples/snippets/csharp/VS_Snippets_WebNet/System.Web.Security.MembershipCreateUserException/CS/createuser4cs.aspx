@@ -66,13 +66,13 @@ public string GetErrorMessage(MembershipCreateStatus status)
         return "Username already exists. Please enter a different user name.";
 
       case MembershipCreateStatus.DuplicateEmail:
-        return "A username for that e-mail address already exists. Please enter a different e-mail address.";
+        return "A username for that email address already exists. Please enter a different email address.";
 
       case MembershipCreateStatus.InvalidPassword:
         return "The password provided is invalid. Please enter a valid password value.";
 
       case MembershipCreateStatus.InvalidEmail:
-        return "The e-mail address provided is invalid. Please check the value and try again.";
+        return "The email address provided is invalid. Please check the value and try again.";
 
       case MembershipCreateStatus.InvalidAnswer:
         return "The password retrieval answer provided is invalid. Please check the value and try again.";

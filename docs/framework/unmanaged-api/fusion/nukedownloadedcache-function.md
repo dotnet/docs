@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "NukeDownloadedCache"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NukeDownloadedCache function [.NET Framework fusion]"
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
@@ -30,6 +28,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # NukeDownloadedCache Function
 Deletes the common language runtime (CLR) download cache.  
@@ -56,6 +56,6 @@ HRESULT NukeDownloadedCache();
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See Also  
- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)   
- [GetHistoryFileDirectory Function](../../../../docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md)   
+ [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)  
+ [GetHistoryFileDirectory Function](../../../../docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md)  
  [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

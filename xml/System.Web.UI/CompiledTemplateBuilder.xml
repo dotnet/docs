@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.ITemplate" />
+    <altmember cref="T:System.Web.UI.TemplateBuilder" />
+    <altmember cref="T:System.Web.UI.CompiledBindableTemplateBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateIn">
@@ -80,6 +84,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
   </Members>

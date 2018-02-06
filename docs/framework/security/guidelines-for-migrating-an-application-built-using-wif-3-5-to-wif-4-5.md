@@ -14,6 +14,8 @@ caps.latest.revision: 12
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5
 ## Applies To  
@@ -176,7 +178,7 @@ add-windowsfeature windows-identity-foundation
 >  Because many of the classes in WIF 3.5 and WIF 4.5 share the same names, when you are using both WIF 3.5 and WIF 4.5 together, be sure to either use fully qualified class names or use namespace aliases to distinguish between classes in WIF 3.5 and WIF 4.5.  
   
 ## See Also  
- [WIF Configuration Schema](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md)   
- [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)   
- [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)   
+ [WIF Configuration Schema](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md)  
+ [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)  
+ [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)  
  [Identity and Access Tool for Visual Studio 2012](../../../docs/framework/security/identity-and-access-tool-for-vs.md)

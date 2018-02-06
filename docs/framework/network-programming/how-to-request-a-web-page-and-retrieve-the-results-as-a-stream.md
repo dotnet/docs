@@ -8,15 +8,15 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: d32b7f35-29d8-4fb7-ad71-d219edc5e359
 caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Request a Web Page and Retrieve the Results as a Stream
 This example shows how to request a Web page and retrieve the results in a stream.  

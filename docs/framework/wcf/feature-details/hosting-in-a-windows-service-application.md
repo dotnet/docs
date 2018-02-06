@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting in a Windows Service Application
 Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for "always on" applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows service applications, see [Windows Service Applications](http://go.microsoft.com/fwlink/?LinkId=89450).  
@@ -43,9 +45,9 @@ Windows services (formerly known as Windows NT services) provide a process model
      Windows service applications that host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services are deployed and managed in the same way as Windows service applications that do not make use of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
 ## See Also  
- <xref:System.ServiceProcess>   
- [Walkthrough: Creating a Windows Service Application in the Component Designer](http://go.microsoft.com/fwlink/?LinkId=94875)   
- [How to: Host a WCF Service in a Managed Windows Service](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)   
- [Windows Service Host](../../../../docs/framework/wcf/samples/windows-service-host.md)   
- [Service Application Programming Architecture](http://go.microsoft.com/fwlink/?LinkId=94876)   
+ <xref:System.ServiceProcess>  
+ [Walkthrough: Creating a Windows Service Application in the Component Designer](http://go.microsoft.com/fwlink/?LinkId=94875)  
+ [How to: Host a WCF Service in a Managed Windows Service](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)  
+ [Windows Service Host](../../../../docs/framework/wcf/samples/windows-service-host.md)  
+ [Service Application Programming Architecture](http://go.microsoft.com/fwlink/?LinkId=94876)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

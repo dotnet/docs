@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "NOTIFY_FILTER"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NOTIFY_FILTER enumeration [.NET Framework debugging]"
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # NOTIFY_FILTER Enumeration
 Identifies callbacks for debugger functions. For more information, see the [INotifySource2::SetNotifyFilter](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-setnotifyfilter-method.md) method.  

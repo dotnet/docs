@@ -10,28 +10,26 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], custom drawing"
-  - "drawing, owner"
-  - "ToolStripRenderMode class"
-  - "RenderMode property"
-  - "ProfessionalColorTable class, overriding"
+  - "drawing [Windows Forms], owner"
+  - "ProfessionalColorTable class [Windows Forms], overriding"
   - "examples [Windows Forms], toolbars"
-  - "ToolStripRenderer class"
-  - "drawing, custom"
+  - "drawing [Windows Forms], custom"
   - "toolbars [Windows Forms], changing colors"
-  - "ToolStripProfessionalRenderer class"
   - "ToolStrip control [Windows Forms], drawing"
   - "ToolStrip control [Windows Forms], changing colors"
   - "custom drawing"
   - "owner drawing"
-  - "ToolStripSystemRenderer class"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Custom Draw a ToolStrip Control
 The <xref:System.Windows.Forms.ToolStrip> controls have the following associated rendering (painting) classes:  
@@ -144,9 +142,9 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripSystemRenderer>   
- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>   
- <xref:System.Windows.Forms.ToolStripRenderer>   
- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)   
- [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)   
+ <xref:System.Windows.Forms.ToolStripSystemRenderer>  
+ <xref:System.Windows.Forms.ToolStripProfessionalRenderer>  
+ <xref:System.Windows.Forms.ToolStripRenderer>  
+ [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)  
+ [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
  [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

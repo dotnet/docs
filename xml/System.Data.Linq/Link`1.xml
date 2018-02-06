@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.Linq.EntityRef`1" />
+    <altmember cref="T:System.Data.Linq.EntitySet`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,5 +160,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

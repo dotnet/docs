@@ -3,7 +3,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.GetServiceSettings
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.Update(System.Servi
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.Register(System.Ser
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.Unregister(System.S
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.Refresh(System.Serv
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,5 +51,5 @@ uid: System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve(System.Serv
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
-manager: "ghogen"
+manager: "wpickett"
 ---

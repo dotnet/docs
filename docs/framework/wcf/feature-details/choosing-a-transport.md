@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "choosing transports [WCF]"
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Transport
 This topic discusses criteria for choosing among the three main transports that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: HTTP, TCP, and named pipes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  
@@ -68,15 +70,15 @@ This topic discusses criteria for choosing among the three main transports that 
 |Tooling|Tooling represents third-party application support for a protocol for development, diagnosis, hosting, and other activities. Developing tools and software to work with the HTTP protocol signifies a particularly large investment.|HTTP|  
   
 ## See Also  
- <xref:System.ServiceModel.BasicHttpBinding>   
- <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>   
+ <xref:System.ServiceModel.BasicHttpBinding>  
+ <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>  
   <<!--zz <xref:System.ServiceModel.WsDualHttpBinding> --> `System.ServiceModel.WsDualHttpBinding`
  <<!--zz <xref:System.ServiceModel.WsFederationHttpBinding>  --> `System.ServiceModel.WsFederationHttpBinding`
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>   
- <xref:System.ServiceModel.NetTcpBinding>   
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>   
- <xref:System.ServiceModel.NetNamedPipeBinding>   
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>   
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)   
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)   
+ <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
+ <xref:System.ServiceModel.NetTcpBinding>  
+ <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
+ <xref:System.ServiceModel.NetNamedPipeBinding>  
+ <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>  
+ [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
+ [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)

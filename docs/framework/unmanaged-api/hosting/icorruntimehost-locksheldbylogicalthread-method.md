@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::LocksHeldByLogicalThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::LocksHeldByLogicalThread method [.NET Framework hosting]"
   - "LocksHeldByLogicalThread method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::LocksHeldByLogicalThread Method
 Retrieves the number of locks that current thread holds.  

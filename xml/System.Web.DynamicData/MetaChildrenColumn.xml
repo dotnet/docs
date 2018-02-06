@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.MetaColumn" />
+    <altmember cref="T:System.Web.DynamicData.MetaForeignKeyColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.Table" />
       </Docs>
     </Member>
     <Member MemberName="ColumnInOtherTable">
@@ -123,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.PageAction.List" />
+        <altmember cref="Overload:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath" />
       </Docs>
     </Member>
     <Member MemberName="GetChildrenPath">
@@ -158,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.PageAction" />
       </Docs>
     </Member>
     <Member MemberName="GetChildrenPath">
@@ -195,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.PageAction" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -241,5 +248,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildrenPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path for the specified action page of the child table.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

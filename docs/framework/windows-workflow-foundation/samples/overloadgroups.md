@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1d547d2-f5fb-4de3-a959-ee6139a4f1ad
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # OverloadGroups
 This sample consists of an activity (`CreateLocation`), which has two interesting characteristics:  
@@ -26,7 +28,7 @@ This sample consists of an activity (`CreateLocation`), which has two interestin
   
 -   `[OverloadGroup]` puts together a set of arguments, so that the user of the activity can choose between using one set or another. The user cannot use arguments from different Overload Groups in the same instance.  
   
- After setting up different workflows, call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> which returns a <xref:System.Activities.Validation.ValidationResults> collection of <!--zz <xref:System.Activities.Validation.ConstraintViolation>--> `System.Activities.Validation.ConstraintViolation`. Print the <!--zz <xref:System.Activities.Validation.ConstraintViolation>--> `System.Activities.Validation.ConstraintViolation` objects to the console.  
+ After setting up different workflows, call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.Constraint>. Print the <xref:System.Activities.Validation.Constraint> objects to the console.  
   
 ### To set up, build, and run the sample  
   
@@ -41,6 +43,4 @@ This sample consists of an activity (`CreateLocation`), which has two interestin
 >   
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Validation\OverloadGroups`  
-  
-## See Also
+>  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Validation\OverloadGroups`

@@ -7,11 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 3ec60e8f-fad4-493e-a426-e7962d7aee8c
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a State Machine Workflow
 Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.StateMachine> activity, and the custom activities from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
@@ -158,7 +163,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 23. Type the following expression into the **If** activity’s **Condition** property value box.  
   
-    ```vb-c#  
+    ```
     Guess < Target  
     ```  
   
@@ -166,13 +171,13 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 25. Click the **WriteLine** activity in the **Then** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb-c#  
+    ```
     "Your guess is too low."  
     ```  
   
 26. Click the **WriteLine** activity in the **Else** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb-c#  
+    ```
     "Your guess is too high."  
     ```  
   
@@ -189,10 +194,10 @@ Workflows can be constructed from built-in activities as well as from custom act
      For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the state machine workflow from this step, skip ahead to the [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md).  
   
 ## See Also  
- <xref:System.Activities.Statements.Flowchart>   
- <xref:System.Activities.Statements.FlowDecision>   
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)   
- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)   
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)   
- [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)   
+ <xref:System.Activities.Statements.Flowchart>  
+ <xref:System.Activities.Statements.FlowDecision>  
+ [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
+ [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)  
+ [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)  
+ [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)  
  [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)

@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "adorners, implementing"
+  - "adorners [WPF], implementing"
 ms.assetid: 56ae32b6-0599-455c-b52f-2ff97e6f1ec2
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement an Adorner
 This example shows a minimal adorner implementation.  

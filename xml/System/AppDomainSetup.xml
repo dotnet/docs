@@ -82,6 +82,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="activationContext" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.AppDomainSetup.ActivationArguments" />
+        <altmember cref="T:System.Runtime.Hosting.ActivationArguments" />
+        <altmember cref="T:System.ActivationContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -176,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.AppDomainInitializer" />
+        <altmember cref="P:System.AppDomainSetup.AppDomainInitializerArguments" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainInitializerArguments">
@@ -213,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.AppDomainInitializer" />
+        <altmember cref="P:System.AppDomainSetup.AppDomainInitializer" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainManagerAssembly">
@@ -417,6 +424,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyDirectories" />
       </Docs>
     </Member>
     <Member MemberName="ConfigurationFile">
@@ -738,6 +747,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" />
+        <altmember cref="P:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel" />
+        <altmember cref="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" />
       </Docs>
     </Member>
     <Member MemberName="PrivateBinPath">
@@ -786,7 +798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to any non-null string value, including <xref:System.String?displayProperty=nameWithType> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
+ Set this property to any non-null string value, including <xref:System.String.Empty?displayProperty=nameWithType> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
   
  ]]></format>
         </remarks>
@@ -861,6 +873,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomain.IsCompatibilitySwitchSet(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetConfigurationBytes">
@@ -989,6 +1002,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
       </Docs>
     </Member>
     <Member MemberName="ShadowCopyFiles">
@@ -1015,6 +1030,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyDirectories" />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkName">
@@ -1045,5 +1062,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

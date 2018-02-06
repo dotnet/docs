@@ -17,6 +17,9 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Working with Base Types in .NET
 This section describes .NET base type operations, including formatting, conversion, and common operations.  

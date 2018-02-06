@@ -45,6 +45,13 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+    <altmember cref="T:System.IntPtr" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="T:System.Windows.Forms.AxHost" />
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.Form" />
+    <altmember cref="T:System.Windows.Forms.IWin32Window" />
+    <altmember cref="T:System.Windows.Forms.Message" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +74,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NativeWindow.Finalize" />
+        <altmember cref="T:System.AppDomain" />
       </Docs>
     </Member>
     <Member MemberName="AssignHandle">
@@ -115,6 +124,12 @@
         </remarks>
         <exception cref="T:System.Exception">This window already has a handle.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">The windows procedure for the associated native window could not be retrieved.</exception>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.Finalize" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -168,6 +183,12 @@
         <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 API could not create the specified window.</exception>
         <exception cref="T:System.InvalidOperationException">The handle of the current native window is already assigned; in explanation, the <see cref="P:System.Windows.Forms.NativeWindow.Handle" /> property is not equal to <see cref="F:System.IntPtr.Zero" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to create a top-level window. This permission is only demanded if the window style is not a child or if the window does not have a parent. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.Finalize" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
       </Docs>
     </Member>
     <Member MemberName="DefWndProc">
@@ -203,6 +224,9 @@
   
  In contrast, adding customized message handling for an application can be accomplished through the <see cref="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" /> method of the <see cref="T:System.Windows.Forms.Application" /> class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Message" />
+        <altmember cref="M:System.Windows.Forms.Application.SetUnhandledExceptionMode(System.Windows.Forms.UnhandledExceptionMode)" />
+        <altmember cref="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" />
       </Docs>
     </Member>
     <Member MemberName="DestroyHandle">
@@ -231,6 +255,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.Finalize" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -256,6 +286,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NativeWindow.#ctor" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
       </Docs>
     </Member>
     <Member MemberName="FromHandle">
@@ -285,6 +318,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -324,6 +362,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleChange">
@@ -368,6 +411,12 @@
         <block subset="none" type="overrides">
           <para>Override this method to track changes that are made to the window handle.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="OnThreadException">
@@ -396,6 +445,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.WndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="T:System.Windows.Forms.Application" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandle">
@@ -436,6 +492,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.WndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -480,6 +543,10 @@
         <block subset="none" type="overrides">
           <para>Override this method to implement specific message processing. Call <c>base.WndProc</c> for unhandled messages.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.NativeWindow.Handle" />
+        <altmember cref="T:System.Windows.Forms.Message" />
+        <altmember cref="M:System.Windows.Forms.Application.SetUnhandledExceptionMode(System.Windows.Forms.UnhandledExceptionMode)" />
+        <altmember cref="M:System.Windows.Forms.NativeWindow.OnThreadException(System.Exception)" />
       </Docs>
     </Member>
   </Members>

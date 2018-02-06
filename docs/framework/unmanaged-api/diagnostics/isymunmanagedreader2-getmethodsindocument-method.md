@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument method [.NET Framework debugging]"
   - "GetMethodsInDocument method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader2::GetMethodsInDocument Method
 Gets every method that has line information in the provided document.  

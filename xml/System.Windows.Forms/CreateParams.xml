@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +74,7 @@
         <summary>Gets or sets the control's initial text.</summary>
         <value>The control's initial text.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -128,6 +130,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CreateParams.Style" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.ExStyle" />
       </Docs>
     </Member>
     <Member MemberName="ExStyle">
@@ -158,6 +162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CreateParams.Style" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.ClassStyle" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -176,6 +182,8 @@
         <summary>Gets or sets the initial height of the control.</summary>
         <value>The numeric value that represents the initial height of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.Width" />
       </Docs>
     </Member>
     <Member MemberName="Param">
@@ -221,6 +229,7 @@
         <summary>Gets or sets the control's parent.</summary>
         <value>An <see cref="T:System.IntPtr" /> that contains the window handle of the control's parent.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -260,6 +269,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CreateParams.ExStyle" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.ClassStyle" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -279,6 +290,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -297,6 +309,8 @@
         <summary>Gets or sets the initial width of the control.</summary>
         <value>The numeric value that represents the initial width of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Width" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.Height" />
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -315,6 +329,8 @@
         <summary>Gets or sets the initial left position of the control.</summary>
         <value>The numeric value that represents the initial left position of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Drawing.Rectangle.X" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.Y" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -333,6 +349,8 @@
         <summary>Gets or sets the top position of the initial location of the control.</summary>
         <value>The numeric value that represents the top position of the initial location of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Drawing.Rectangle.Y" />
+        <altmember cref="P:System.Windows.Forms.CreateParams.X" />
       </Docs>
     </Member>
   </Members>

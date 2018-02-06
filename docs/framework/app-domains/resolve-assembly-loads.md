@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], resolving loads"
   - "application domains, loading assemblies"
@@ -20,6 +24,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Resolving Assembly Loads
 The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event for applications that require greater control over assembly loading. By handling this event, your application can load an assembly into the load context from outside the normal probing paths, select which of several assembly versions to load, emit a dynamic assembly and return it, and so on. This topic provides guidance for handling the <xref:System.AppDomain.AssemblyResolve> event.  
@@ -81,5 +87,5 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
  [!code-vb[AssemblyResolveRecursive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/assemblyresolverecursive/vb/example.vb#1)]  
   
 ## See Also  
- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)   
+ [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: df2fe31f-a4bb-4024-92ca-b74ba055e038
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure an IIS-hosted WCF service with SSL
 This topic describes how to set up an IIS-hosted WCF service to use HTTP transport security. HTTP transport security requires an SSL certificate to be registered with IIS. If you do not have an SSL certificate you can use IIS to generate a test certificate. Next you must add an SSL binding to the web site and configure the web site’s authentication properties. Finally you need to configure the WCF service to use HTTPS.  
@@ -151,7 +153,7 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
 ```  
   
 ## See Also  
- [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   
- [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)   
- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)   
+ [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
+ [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)  
+ [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
  [IIS Hosting Using Inline Code](../../../../docs/framework/wcf/samples/iis-hosting-using-inline-code.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugChainReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugChainReason enumeration [.NET Framework debugging]"
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
@@ -28,6 +26,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugChainReason Enumeration
 Indicates the reason or reasons for the initiation of a call chain.  

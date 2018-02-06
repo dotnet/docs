@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "applications, focus"
-  - "focus in applications"
+  - "applications [WPF], focus"
+  - "focus in applications [WPF]"
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Focus Overview
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  
@@ -121,8 +126,8 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
  The events related to logical focus are <xref:System.Windows.UIElement.GotFocus> and <xref:System.Windows.UIElement.LostFocus>.  These events are defined on the <xref:System.Windows.Input.FocusManager> as attached events, but the <xref:System.Windows.Input.FocusManager> does not expose CLR event wrappers.  <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> expose these events more conveniently.  
   
 ## See Also  
- <xref:System.Windows.Input.FocusManager>   
- <xref:System.Windows.UIElement>   
- <xref:System.Windows.ContentElement>   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
+ <xref:System.Windows.Input.FocusManager>  
+ <xref:System.Windows.UIElement>  
+ <xref:System.Windows.ContentElement>  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
  [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)

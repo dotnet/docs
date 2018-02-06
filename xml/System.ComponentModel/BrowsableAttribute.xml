@@ -63,6 +63,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Browsable">
@@ -156,6 +162,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -190,6 +202,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="F:System.ComponentModel.BrowsableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.BrowsableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -315,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="F:System.ComponentModel.BrowsableAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -351,6 +368,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="F:System.ComponentModel.BrowsableAttribute.No" />
       </Docs>
     </Member>
   </Members>

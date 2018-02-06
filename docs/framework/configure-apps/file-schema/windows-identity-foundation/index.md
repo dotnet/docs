@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Identity Foundation Configuration Schema
 The topics in this section provide information about the Windows Identity Foundation (WIF) configuration schema. You can also configure an application to use WIF through classes exposed by the framework,. These classes are noted in the sections that treat relevant elements in the schema. The following shows the basic XML tag structure exposed by the WIF configuration schema. Attributes are omitted. Highlighted comments indicate major components of the schema.  
@@ -117,4 +119,4 @@ The topics in this section provide information about the Windows Identity Founda
  [\<system.identityModel.services>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) Provides configuration for passive federation using WIF. Configures the Session Authentication Module (SAM) and the Federated Authentication Module (WSFAM).  
   
 ## Related Sections  
- [Configuration, Administration, And Management](http://msdn.microsoft.com/en-us/1e03c389-de2c-4096-aaff-86b087e1bea0) Describes how to configure and manage WIF applications and services.
+ [Configuration, Administration, And Management](http://msdn.microsoft.com/library/1e03c389-de2c-4096-aaff-86b087e1bea0) Describes how to configure and manage WIF applications and services.

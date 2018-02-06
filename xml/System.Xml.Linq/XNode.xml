@@ -78,8 +78,7 @@
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -103,8 +102,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _  
+Dim srcTree As XElement = _  
     <Root>  
         <Element1>1</Element1>  
         <Element2>2</Element2>  
@@ -134,8 +132,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
@@ -193,8 +190,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method to add an element into the tree.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -209,8 +205,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -227,8 +222,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <NewChild>10</NewChild>  
   <Child2>2</Child2>  
@@ -292,8 +286,7 @@ Console.WriteLine(xmlTree)
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -317,8 +310,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -347,8 +339,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
@@ -388,8 +379,7 @@ Console.WriteLine(xmlTree)
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -413,8 +403,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -444,8 +433,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
   <Child1>1</Child1>  
@@ -505,8 +493,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method to add an element into the tree.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -521,8 +508,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -539,8 +525,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <NewChild>10</NewChild>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
@@ -606,8 +591,7 @@ Console.WriteLine(xmlTree)
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -631,8 +615,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -662,8 +645,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
   <Child1>1</Child1>  
@@ -744,8 +726,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method to enumerate the ancestors of a node.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child",   
         new XElement("GrandChild", "content")  
     )  
@@ -756,8 +737,7 @@ foreach (XElement el in grandChild.Ancestors())
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child>  
                 <GrandChild>content</GrandChild>  
@@ -773,8 +753,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Child  
+Child  
 Root  
 ```  
   
@@ -828,8 +807,7 @@ Root
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child",   
         new XElement("GrandChild", "content")  
     )  
@@ -840,8 +818,7 @@ foreach (XElement el in grandChild.Ancestors("Child"))
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child>  
                 <GrandChild>content</GrandChild>  
@@ -857,7 +834,6 @@ Next
  This example produces the following output:  
   
 ```  
-  
 Child  
 ```  
   
@@ -909,8 +885,7 @@ Child
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1",  
         new XElement("GrandChild1", 1),  
         new XElement("GrandChild2", 2),  
@@ -933,8 +908,7 @@ else
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>  
                 <GrandChild1>1</GrandChild1>  
@@ -963,7 +937,6 @@ End If
  This example produces the following output:  
   
 ```  
-  
 el1 is before el2  
 ```  
   
@@ -1009,7 +982,7 @@ el1 is before el2
   
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
   
- The the `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=nameWithType> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method.  
+ The `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=nameWithType> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method.  
   
  Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
   
@@ -1021,8 +994,7 @@ el1 is before el2
  The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
   
 ```csharp  
-  
-                XDocument xmlTree = new XDocument(  
+XDocument xmlTree = new XDocument(  
     new XElement("Root",  
         new XAttribute("Att1", "Attribute Content"),  
         new XElement("Child1", 1),  
@@ -1038,8 +1010,7 @@ Console.WriteLine(doc.OuterXml);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XDocument =  _   
+Dim xmlTree As XDocument =  _   
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <Root Att1="Attribute Content">  
             <Child1>1</Child1>  
@@ -1056,15 +1027,13 @@ Console.WriteLine(doc.OuterXml)
  This example produces the following output:  
   
 ```xml  
-  
 <Root Att1="Attribute Content"><Child1>1</Child1><Child2>2</Child2></Root>  
 ```  
   
  Another use for this method is to do an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create an <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transform.  
   
 ```csharp  
-  
-                string xslMarkup = @"<?xml version='1.0'?>  
+string xslMarkup = @"<?xml version='1.0'?>  
 <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
     <xsl:template match='/Parent'>  
         <Root>  
@@ -1099,8 +1068,7 @@ Console.WriteLine(newTree);
 ```  
   
 ```vb  
-  
-                Dim xslMarkup As XDocument = _   
+Dim xslMarkup As XDocument = _   
     <?xml version='1.0'?>  
     <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
         <xsl:template match='/Parent'>  
@@ -1139,8 +1107,7 @@ Console.WriteLine(newTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <C1>Child1 data</C1>  
   <C2>Child2 data</C2>  
 </Root>  
@@ -1244,8 +1211,7 @@ Console.WriteLine(newTree)
  The following example uses this method to compare two XML trees.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XElement("Child1", 1),  
@@ -1261,8 +1227,7 @@ Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2));
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root Att1="1" Att2="2">  
             <Child1>1</Child1>  
             <Child2>some content</Child2>  
@@ -1280,7 +1245,6 @@ Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2))
  This example produces the following output:  
   
 ```  
-  
 True  
 ```  
   
@@ -1326,8 +1290,7 @@ True
  The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=nameWithType> and <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interfaces.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -1348,8 +1311,7 @@ foreach (XElement el in nodeList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1374,8 +1336,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                <Child1>1</Child1>  
+<Child1>1</Child1>  
 <Child3>3</Child3>  
 <Child5>5</Child5>  
 ```  
@@ -1443,8 +1404,7 @@ Next
  The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -1460,8 +1420,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -1480,8 +1439,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Child4  
+Child4  
 Child5  
 ```  
   
@@ -1533,8 +1491,7 @@ Child5
  The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -1550,8 +1507,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -1571,7 +1527,6 @@ Next
  This example produces the following output:  
   
 ```  
-  
 Child4  
 ```  
   
@@ -1638,8 +1593,7 @@ Child4
  The following example uses this axis method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -1655,8 +1609,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -1676,8 +1629,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Child1  
+Child1  
 Child2  
 ```  
   
@@ -1729,8 +1681,7 @@ Child2
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -1746,8 +1697,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -1767,7 +1717,6 @@ Next
  This example produces the following output:  
   
 ```  
-  
 Child2  
 ```  
   
@@ -1808,8 +1757,7 @@ Child2
  The following example uses this property to retrieve an <xref:System.Xml.Linq.XNodeEqualityComparer>, which implements the <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType> interfaces. It creates a dictionary that uses this property.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -1827,8 +1775,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1849,7 +1796,6 @@ Console.WriteLine(str)
  This example produces the following output:  
   
 ```  
-  
 Child 3 Information  
 ```  
   
@@ -1900,8 +1846,7 @@ Child 3 Information
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -1919,8 +1864,7 @@ else
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -1941,7 +1885,6 @@ End If
  This example produces the following output:  
   
 ```  
-  
 Child5 is after Child3  
 ```  
   
@@ -1992,8 +1935,7 @@ Child5 is after Child3
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -2010,11 +1952,8 @@ else
     Console.WriteLine("Child5 is not before Child3");  
 ```  
   
- [vb]  
-  
-```  
-  
-                Dim xmlTree As XElement = _   
+```vb  
+Dim xmlTree As XElement = _   
         <Root>Text content.  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -2035,7 +1974,6 @@ End If
  This example produces the following output:  
   
 ```  
-  
 Child5 is not before Child3  
 ```  
   
@@ -2081,8 +2019,7 @@ Child5 is not before Child3
  The following example uses this property to loop through nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XText("Some Text"),  
     new XElement("Child2",  
@@ -2114,8 +2051,7 @@ while ((node = node.NextNode) != null);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>Some Text  
             <Child2>2  
@@ -2146,8 +2082,7 @@ Loop While (Not (node Is Nothing))
  This example produces the following output:  
   
 ```  
-  
-                NodeType: Element   Child2  
+NodeType: Element   Child2  
 NodeType: Comment   a comment  
 NodeType: Element   Child3  
 ```  
@@ -2197,8 +2132,7 @@ NodeType: Element   Child3
  The following example creates an XML tree, and then queries the tree using this axis method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -2218,8 +2152,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
+Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
     New XElement("Child1", "child1 content"), _  
     New XElement("Child2", "child2 content"), _  
     New XText("More text content."), _  
@@ -2242,8 +2175,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Node type: Text  More text content.  
+Node type: Text  More text content.  
 Node type: Element  
 ```  
   
@@ -2292,8 +2224,7 @@ Node type: Element
  The following example creates an XML tree, and then queries the tree using this axis method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -2311,8 +2242,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = New XElement("Root", _  
+Dim xmlTree As XElement = New XElement("Root", _  
     New XText("Text content."), _  
     New XElement("Child1", "child1 content"), _  
     New XElement("Child2", "child2 content"), _  
@@ -2336,8 +2266,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Node type: Text  Text content.  
+Node type: Text  Text content.  
 Node type: Element  
 ```  
   
@@ -2385,8 +2314,7 @@ Node type: Element
  The following example uses this property to loop through nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XText("Some Text"),  
     new XElement("Child2",  
@@ -2418,8 +2346,7 @@ while ((node = node.PreviousNode) != null);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Child1>1</Child1>Some Text<Child2>2  
             <GrandChild>GrandChild Content</GrandChild>  
@@ -2449,8 +2376,7 @@ Loop While (Not (node Is Nothing))
  This example produces the following output:  
   
 ```  
-  
-                NodeType: Element   Child2  
+NodeType: Element   Child2  
 NodeType: Text      Some Text  
 NodeType: Element   Child1  
 ```  
@@ -2509,8 +2435,7 @@ NodeType: Element   Child1
  This example uses the following XML file, named Source.xml:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <Root>  
   <Child Key="01">  
     <GrandChild>aaa</GrandChild>  
@@ -2530,8 +2455,7 @@ NodeType: Element   Child1
 >  The following example uses the yield return construct of C#. Because there is no equivalent feature in [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)], this example is provided only in C#.  
   
 ```csharp  
-  
-                class Program  
+class Program  
 {  
     static IEnumerable<XElement> StreamRootChildDoc(string uri)  
     {  
@@ -2572,8 +2496,7 @@ NodeType: Element   Child1
  This example produces the following output.  
   
 ```  
-  
-                bbb  
+bbb  
 ccc  
 ```  
   
@@ -2651,8 +2574,7 @@ ccc
  The following example removes a node from its parent.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
     new XElement("Child3", "child3 content"),  
@@ -2665,8 +2587,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -2683,8 +2604,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>child1 content</Child1>  
   <Child2>child2 content</Child2>  
   <Child4>child4 content</Child4>  
@@ -2721,8 +2641,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method to replace the contents of a node with different content.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
     new XElement("Child3", "child3 content"),  
@@ -2737,8 +2656,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -2755,8 +2673,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>child1 content</Child1>  
   <Child2>child2 content</Child2>  
   <NewChild>new content</NewChild>  
@@ -2816,8 +2733,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method to replace the contents of a node with different content.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
     new XElement("Child3", "child3 content"),  
@@ -2832,8 +2748,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>child1 content</Child1>  
             <Child2>child2 content</Child2>  
@@ -2850,8 +2765,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>child1 content</Child1>  
   <Child2>child2 content</Child2>  
   <NewChild>new content</NewChild>  
@@ -2917,8 +2831,7 @@ Console.WriteLine(xmlTree)
  The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -2942,8 +2855,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -2973,8 +2885,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
   <Element4>4</Element4>  
@@ -3022,16 +2933,14 @@ Console.WriteLine(xmlTree)
  The following example uses this method to retrieve indented XML.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1)  
 );  
 Console.WriteLine(xmlTree);  
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
         </Root>  
@@ -3042,8 +2951,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
 </Root>  
 ```  
@@ -3089,16 +2997,14 @@ Console.WriteLine(xmlTree)
  The following example uses this method to retrieve unformatted and formatted XML.  
   
 ```csharp  
-  
-                XElement root = XElement.Parse("<Root><Child/></Root>");  
+XElement root = XElement.Parse("<Root><Child/></Root>");  
 Console.WriteLine(root.ToString(SaveOptions.DisableFormatting));  
 Console.WriteLine("---");  
 Console.WriteLine(root.ToString(SaveOptions.None));  
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root>  
+Dim root As XElement = <Root>  
                            <Child/>  
                        </Root>  
 Console.WriteLine(root.ToString(SaveOptions.DisableFormatting))  
@@ -3109,8 +3015,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
  This example produces the following output:  
   
 ```  
-  
-                <Root><Child /></Root>  
+<Root><Child /></Root>  
 ---  
 <Root>  
   <Child />  
@@ -3162,8 +3067,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
  The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
@@ -3184,8 +3088,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
@@ -3209,8 +3112,7 @@ Console.WriteLine(sb.ToString())
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>  
     <GrandChild>some content</GrandChild>  
   </Child>  
@@ -3248,5 +3150,27 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the XML for this node, optionally disabling formatting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlReader" /> for this node.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

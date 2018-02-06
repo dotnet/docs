@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingServerReceivingMessage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RemotingServerReceivingMessage method [.NET Framework profiling]"
   - "RemotingServerReceivingMessage method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingServerReceivingMessage Method
 Notifies the profiler that the process has received a remote method invocation or activation request.  

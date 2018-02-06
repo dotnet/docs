@@ -38,11 +38,13 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.HttpUtility.UrlEncode%2A>, <xref:System.Web.HttpUtility.UrlDecode%2A> and <xref:System.Web.HttpUtility.ParseQueryString%2A> methods of the <xref:System.Web.HttpUtility> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]
+ [!code-aspx-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpServerUtility" />
+    <altmember cref="P:System.Web.HttpContext.Server" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.HtmlEncode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecode">
@@ -264,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -358,6 +362,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -403,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="JavaScriptStringEncode">
@@ -542,13 +548,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.HttpUtility.ParseQueryString%2A> method. Multiple occurrences of the same query string variable are consolidated in one entry of the returned <xref:System.Collections.Specialized.NameValueCollection>.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]
+ [!code-aspx-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="query" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ParseQueryString">
@@ -602,6 +609,7 @@
  \- or -  
   
  <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -646,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -692,6 +701,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -738,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -796,6 +807,7 @@
  \- or -  
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecodeToBytes">
@@ -840,6 +852,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecodeToBytes">
@@ -884,6 +897,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecodeToBytes">
@@ -930,6 +944,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecodeToBytes">
@@ -986,6 +1001,7 @@
  \- or -  
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
+        <altmember cref="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1030,6 +1046,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1080,6 +1097,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1126,6 +1144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -1174,6 +1193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1218,6 +1238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1262,6 +1283,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1308,6 +1330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeToBytes">
@@ -1364,6 +1387,7 @@
  \- or -  
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UrlEncodeUnicode">
@@ -1485,5 +1509,89 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string into an HTML-encoded string.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlAttributeEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Minimally converts a string into an HTML-encoded string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlDecodeToBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a URL-encoded string or byte array into a decoded array of bytes.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string that has been HTML-encoded for HTTP transmission into a decoded string.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlEncodeToBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string or a byte array into an encoded array of bytes.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseQueryString">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses a query string into a <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a URL string. These method overloads can be used to encode the entire URL, including query-string values.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string that has been encoded for transmission in a URL into a decoded string.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

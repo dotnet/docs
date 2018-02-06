@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostFilter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostFilter interface [.NET Framework metadata]"
 ms.assetid: e79456b1-045b-4a84-9714-2ea560ff75ea
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostFilter Interface
 Provides a method to indicate that a specified token will be processed.  

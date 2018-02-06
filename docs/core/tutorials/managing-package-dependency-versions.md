@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
+ms.workload: 
+  - dotnetcore
 ---
 
 # How to Manage Package Dependency Versions for .NET Core 1.0
@@ -45,7 +47,7 @@ To reliably restore packages and write reliable code, it's important that you fi
 
 ### Why does this matter?
 
-We guarantee that if you fixed your dependencies to what ships alongside .NET Core 1.0, those packages will all work together.  There is no such guarantee if you use packages which aren't fixed in this way.
+We guarantee that if you fix your dependencies to what ships alongside .NET Core 1.0, those packages will all work together. There is no such guarantee if you use packages which aren't fixed in this way.
 
 ### Scenarios
 
@@ -53,11 +55,11 @@ Although there is a big list of all packages and their versions released with .N
 
 **Are you depending only on** `NETStandard.Library`**?**
 
-If so, you should fixed your `NETStandard.Library` package to version `1.6`.  Because this is a curated metapackage, its package closure is also fixed to 1.0.
+If so, you should fix your `NETStandard.Library` package to version `1.6`.  Because this is a curated metapackage, its package closure is also fixed to 1.0.
 
 **Are you depending only on** `Microsoft.NETCore.App`**?**
 
-If so, you should fixed your `Microsoft.NETCore.App` package to version `1.0.0`.  Because this is a curated metapackage, its package closure is also fixed to 1.0.
+If so, you should fix your `Microsoft.NETCore.App` package to version `1.0.0`.  Because this is a curated metapackage, its package closure is also fixed to 1.0.
 
 **Are you [trimming](../deploying/reducing-dependencies.md) your** `NETStandard.Library` **or** `Microsoft.NETCore.App` **metapackage dependencies?**
 

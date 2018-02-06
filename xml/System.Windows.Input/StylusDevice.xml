@@ -620,5 +620,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Capture">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Binds input from the stylus to a particular element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetStylusPoints">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

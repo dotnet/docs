@@ -1,12 +1,14 @@
 ---
 title: dotnet publish command - .NET Core CLI
-description: The dotnet publish command publishes your .NET Core project into a directory. 
+description: The dotnet publish command publishes your .NET Core project into a directory.
 author: mairaw
 ms.author: mairaw
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet publish
 
@@ -21,7 +23,7 @@ ms.technology: dotnet-cli
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
 
@@ -90,7 +92,7 @@ If a relative path is provided, the output directory generated is relative to th
 
 `--self-contained`
 
-Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more infomation about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
+Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. If a runtime identifier is specified, its default value is `true`. For more information about the different deployment types, see [.NET Core application deployment](../deploying/index.md).
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

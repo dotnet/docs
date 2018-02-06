@@ -125,6 +125,6 @@ If you need reference equality for records, add the attribute `[<ReferenceEquali
 
 [F# Language Reference](index.md)
 
-[Reference-Equality](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
+[Reference-Equality](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
 
 [Pattern Matching](pattern-matching.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCachedFunctionSearchFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "JITCachedFunctionSearchFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCachedFunctionSearchFinished method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::JITCachedFunctionSearchFinished Method
 Notifies the profiler that a search has finished for a function that was compiled previously using the Native Image Generator (NGen.exe).  

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+    <altmember cref="T:System.Web.HttpResponse" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -56,6 +58,7 @@
         <summary>Gets an <see cref="T:System.Text.Encoding" /> object for the <see cref="T:System.IO.TextWriter" />.</summary>
         <value>An instance of the <see cref="T:System.Text.Encoding" /> class indicating the character set of the current response.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -113,6 +116,7 @@
         <param name="ch">The character to send to the HTTP output stream.</param>
         <summary>Sends a single character to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Web.HttpWriter.Write" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -155,6 +159,7 @@
         <param name="s">The string to send to the HTTP output stream.</param>
         <summary>Sends a string to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Web.HttpWriter.Write" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -194,6 +199,7 @@
  \- or -  
   
  <paramref name="buffer" /> length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <altmember cref="Overload:System.Web.HttpWriter.Write" />
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -273,5 +279,14 @@
  The sum of the <paramref name="index" /> and the <paramref name="count" /> are greater than the string length.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends HTTP output to the client.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

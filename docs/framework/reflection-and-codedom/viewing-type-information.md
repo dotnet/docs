@@ -10,8 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "types, viewing type information"
   - "Type object"
@@ -22,6 +23,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Viewing Type Information
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the **Type** for a loaded type when reflection requests it. You can use a **Type** object's methods, fields, properties, and nested classes to find out everything about that type.  
@@ -78,18 +81,18 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
  [!code-vb[Conceptual.Types.ViewInfo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source4.vb#4)]  
   
 ## See Also  
- <xref:System.Reflection.BindingFlags>   
- <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>   
- <xref:System.Type.GetType%2A?displayProperty=nameWithType>   
- <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>   
- <xref:System.Type.GetFields%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.MemberInfo>   
- <xref:System.Reflection.ConstructorInfo>   
- <xref:System.Reflection.MethodInfo>   
- <xref:System.Reflection.FieldInfo>   
- <xref:System.Reflection.EventInfo>   
- <xref:System.Reflection.ParameterInfo>   
+ <xref:System.Reflection.BindingFlags>  
+ <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>  
+ <xref:System.Type.GetType%2A?displayProperty=nameWithType>  
+ <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>  
+ <xref:System.Type.GetFields%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.MemberInfo>  
+ <xref:System.Reflection.ConstructorInfo>  
+ <xref:System.Reflection.MethodInfo>  
+ <xref:System.Reflection.FieldInfo>  
+ <xref:System.Reflection.EventInfo>  
+ <xref:System.Reflection.ParameterInfo>  
  [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)

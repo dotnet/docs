@@ -109,10 +109,10 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Threading.ThreadPriority" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" />.</summary>
+        <returns>A <see cref="T:System.Threading.ThreadPriority" /> value.</returns>
+        <ReturnType>System.Object</ReturnType>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -138,5 +138,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Threading.ThreadPriority" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

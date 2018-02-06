@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Unwrap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Unwrap method [.NET Framework hosting]"
   - "IObjectHandle::Unwrap method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IObjectHandle::Unwrap Method
 Unwraps a marshal-by-value object from indirection.  

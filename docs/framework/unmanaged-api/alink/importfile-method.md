@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ImportFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImportFile method"
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ImportFile Method
 Imports assemblies and unbound modules.  
@@ -71,6 +71,6 @@ HRESULT ImportFile(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

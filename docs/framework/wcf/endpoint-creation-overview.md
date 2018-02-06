@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "endpoints [WCF], overview"
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint Creation Overview
 All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide the clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers. This section describes the structure of an endpoint and outlines how to define an endpoint in configuration and in code.  

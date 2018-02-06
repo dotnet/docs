@@ -9,18 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "application-scope properties, persisting"
-  - "persisting application-scope properties"
-  - "properties, persisting"
-  - "restoring application-scope properties"
-  - "properties, restoring"
-  - "application-scope properties, restoring"
+  - "application-scope properties [WPF], persisting"
+  - "persisting application-scope properties [WPF]"
+  - "properties [WPF], persisting"
+  - "restoring application-scope properties [WPF]"
+  - "properties [WPF], restoring"
+  - "application-scope properties [WPF], restoring"
 ms.assetid: 55d5904a-f444-4eb5-abd3-6bc74dd14226
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Persist and Restore Application-Scope Properties Across Application Sessions
 This example shows how to persist application-scope properties when an application shuts down, and how to restore application-scope properties when an application is next launch.  

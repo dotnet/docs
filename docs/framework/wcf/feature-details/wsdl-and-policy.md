@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WSDL and Policy
 This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
@@ -79,6 +81,6 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1
 |mssp:RequireClientCertificate|Nested|This optional element specifies a requirement for a client certificate to be provided as part of the TLSNEGO protocol. If this assertion is present, then a client certificate must be provided. If this assertion is not present, then a client certificate must not be provided. This assertion must not be used outside of mssp:SslContextToken.|  
   
 ## See Also  
- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)   
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)   
+ [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)  
+ [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
  [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)

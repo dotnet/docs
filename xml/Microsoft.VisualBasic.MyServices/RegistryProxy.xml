@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.Registry" />
   </Docs>
   <Members>
     <Member MemberName="ClassesRoot">
@@ -96,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.ClassesRoot" />
       </Docs>
     </Member>
     <Member MemberName="CurrentConfig">
@@ -150,6 +153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.CurrentConfig" />
       </Docs>
     </Member>
     <Member MemberName="CurrentUser">
@@ -204,6 +209,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.CurrentUser" />
       </Docs>
     </Member>
     <Member MemberName="DynData">
@@ -263,6 +270,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.DynData" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -374,6 +383,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.LocalMachine" />
       </Docs>
     </Member>
     <Member MemberName="PerformanceData">
@@ -432,6 +443,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.PerformanceData" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -491,6 +504,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access..</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+        <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
+        <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -557,6 +572,8 @@
         <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only, and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+        <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
+        <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="Users">
@@ -611,7 +628,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.RegistryKey" />
+        <altmember cref="F:Microsoft.Win32.Registry.Users" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a value to a registry key.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

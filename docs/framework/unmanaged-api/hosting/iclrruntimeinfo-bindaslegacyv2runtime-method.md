@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime method [.NET Framework hosting]"
   - "BindAsLegacyV2Runtime method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeInfo::BindAsLegacyV2Runtime Method
 Binds the current runtime for all legacy common language runtime (CLR) version 2 activation policy decisions.  
@@ -60,7 +60,7 @@ HRESULT BindAsLegacyV2Runtime ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)   
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)   
+ [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
+ [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
+ [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
  [\<startup> Element](../../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)

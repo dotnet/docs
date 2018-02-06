@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "RUNTIME_INFO_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RUNTIME_INFO_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: adba37be-f775-4cdb-8919-5746ce694f33
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # RUNTIME_INFO_FLAGS Enumeration
 Contains values that indicate what information about the common language runtime (CLR) should be returned.  

@@ -1,7 +1,7 @@
 ---
 title: "How to: Read and Write an Encoded Document (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,18 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 159d868f-5ac8-40f2-95ca-07dd925f35c6
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Read and Write an Encoded Document (Visual Basic)
 To create an encoded XML document, you add an <xref:System.Xml.Linq.XDeclaration> to the XML tree, setting the encoding to the desired code page name.  
@@ -90,5 +82,5 @@ Encoding of loaded document is:utf-16
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>  
  [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

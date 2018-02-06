@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<appDomainManagerAssembly> element"
   - "appDomainManagerAssembly element"
@@ -22,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;appDomainManagerAssembly&gt; Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  
@@ -83,9 +80,9 @@ Specifies the assembly that provides the application domain manager for the defa
 ```  
   
 ## See Also  
- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>   
- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>   
- [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
+ <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
+ [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

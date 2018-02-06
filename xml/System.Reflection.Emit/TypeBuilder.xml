@@ -67,13 +67,13 @@
 ## Attributes  
  The <xref:System.Reflection.Emit.TypeBuilder> class uses the <xref:System.Reflection.TypeAttributes> enumeration to further specify the characteristics of the type to be created:  
   
--   Interfaces are specified using the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> and <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> attributes.  
+-   Interfaces are specified using the <xref:System.Reflection.TypeAttributes.Interface?displayProperty=nameWithType> and <xref:System.Reflection.TypeAttributes.Abstract?displayProperty=nameWithType> attributes.  
   
--   Concrete classes (classes that cannot be extended) are specified using the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> attribute.  
+-   Concrete classes (classes that cannot be extended) are specified using the <xref:System.Reflection.TypeAttributes.Sealed?displayProperty=nameWithType> attribute.  
   
 -   Several attributes determine type visibility. See the description of the <xref:System.Reflection.TypeAttributes> enumeration.  
   
--   If <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> is specified, the class loader lays out fields in the order they are read from metadata. The class loader considers the specified packing size but ignores any specified field offsets. The metadata preserves the order in which the field definitions are emitted. Even across a merge, the metadata will not reorder the field definitions. The loader will honor the specified field offsets only if <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> is specified.  
+-   If <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> is specified, the class loader lays out fields in the order they are read from metadata. The class loader considers the specified packing size but ignores any specified field offsets. The metadata preserves the order in which the field definitions are emitted. Even across a merge, the metadata will not reorder the field definitions. The loader will honor the specified field offsets only if <xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType> is specified.  
   
 ## Known Issues  
   
@@ -90,7 +90,7 @@
   
  The following code example shows how to define a dynamic assembly with one module. The module in the example assembly contains one type, `MyDynamicType`, which has a private field, a property that gets and sets the private field, constructors that initialize the private field, and a method that multiplies a user-supplied number by the private field value and returns the result.  
   
- The <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType> field is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
+ The <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=nameWithType> field is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
   
  [!code-cpp[AssemblyBuilderClass#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilderClass/cpp/24895.cpp#1)]
  [!code-csharp[AssemblyBuilderClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilderClass/cs/24895.cs#1)]
@@ -156,7 +156,7 @@
    
   
 ## Examples  
- The following example demonstrates the use of the `AddDeclarativeSecurity` method to add a security demand for <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> flag to a dynamic type named `MyDynamicClass`, in an assembly named EmittedExample.dll. The example produces no console output; after you run it, you can use [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine EmittedExample.dll. In `MyDynamicClass`, open the `.class public auto ansi` statement to see the declarative permission.  
+ The following example demonstrates the use of the `AddDeclarativeSecurity` method to add a security demand for <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag to a dynamic type named `MyDynamicClass`, in an assembly named EmittedExample.dll. The example produces no console output; after you run it, you can use [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine EmittedExample.dll. In `MyDynamicClass`, open the `.class public auto ansi` statement to see the declarative permission.  
   
  [!code-cpp[TypeBuilder_AddDeclarativeSecurity#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_AddDeclarativeSecurity/CPP/typebuilder_adddeclarativesecurity.cpp#1)]
  [!code-csharp[TypeBuilder_AddDeclarativeSecurity#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_AddDeclarativeSecurity/CS/typebuilder_adddeclarativesecurity.cs#1)]
@@ -860,6 +860,8 @@
  An element of <paramref name="names" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="names" /> is an empty array.</exception>
+        <altmember cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="DefineInitializedData">
@@ -943,7 +945,7 @@
 ## Remarks  
  Use this method overload when you do not know the method signature at the time you define the method. For example, the parameter types and return type of a generic method might be specified by the method's generic type parameters, which must be defined after the method has been added to the type. The parameters and return type of the method can be set later using the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%2A?displayProperty=nameWithType> method.  
   
- This method overload defines a method with <xref:System.Reflection.CallingConventions?displayProperty=nameWithType>. If you need to define a method without a signature, with a different calling convention, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%2CSystem.Reflection.CallingConventions%29> method overload.  
+ This method overload defines a method with <xref:System.Reflection.CallingConventions.Standard?displayProperty=nameWithType>. If you need to define a method without a signature, with a different calling convention, use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%2CSystem.Reflection.CallingConventions%29> method overload.  
   
    
   
@@ -976,6 +978,7 @@
  -or-  
   
  For the current dynamic type, the <see cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.TypeBuilder.IsGenericTypeDefinition" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.DefineGenericParameters(System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="DefineMethod">
@@ -1027,6 +1030,7 @@
  -or-  
   
  For the current dynamic type, the <see cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" /> property is <see langword="true" />, but the <see cref="P:System.Reflection.Emit.TypeBuilder.IsGenericTypeDefinition" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Reflection.Emit.MethodBuilder.DefineGenericParameters(System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="DefineMethod">
@@ -1758,15 +1762,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
+ Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
   
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
+ The following example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
   
 > [!IMPORTANT]
->  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag.  
+>  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag.  
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   
@@ -1840,15 +1844,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
+ Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
+ The following code example demonstrates how to use the <xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
   
 > [!IMPORTANT]
->  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag.  
+>  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag.  
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   
@@ -1930,7 +1934,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
+ Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
   
 > [!NOTE]
 >  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
@@ -1938,12 +1942,12 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
+ The following code example demonstrates how to use the [\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.TypeBuilder.DefinePInvokeMethod%2A> method to create a `PInvoke` method, and how to add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   
 > [!IMPORTANT]
->  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag.  
+>  To get a non-zero return value, you must add the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag.  
   
 > [!NOTE]
 >  The example uses an overload that does not specify custom modifiers. To specify custom modifiers, change the example code to use this method overload instead.  
@@ -2984,6 +2988,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeGenericType(System.Type[])" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.DefineGenericParameters(System.String[])" />
+        <altmember cref="P:System.Type.IsGenericType" />
+        <altmember cref="M:System.Type.GetGenericArguments" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericParameterConstraints">
@@ -3038,6 +3047,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current type is not generic. That is, <see cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" /> returns <see langword="false" />.</exception>
+        <altmember cref="P:System.Type.IsGenericType" />
+        <altmember cref="M:System.Type.GetGenericTypeDefinition" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeGenericType(System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="GetInterface">
@@ -3933,6 +3945,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsGenericType" />
+        <altmember cref="M:System.Type.GetGenericTypeDefinition" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeGenericType(System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericTypeDefinition">
@@ -3969,6 +3984,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.GetGenericTypeDefinition" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeGenericType(System.Type[])" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.DefineGenericParameters(System.String[])" />
+        <altmember cref="P:System.Type.IsGenericType" />
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsPointerImpl">
@@ -4065,6 +4085,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current dynamic type has not been created by calling the <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method.</exception>
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -4113,6 +4135,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current dynamic type has not been created by calling the <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method.</exception>
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -4161,6 +4185,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current dynamic type has not been created by calling the <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method.</exception>
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSerializable">
@@ -4325,6 +4351,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeByRefType" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeArrayType">
@@ -4370,6 +4398,8 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="rank" /> is not a valid array dimension.</exception>
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeByRefType" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -4413,6 +4443,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Emit.TypeBuilder.MakeArrayType" />
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
@@ -4519,6 +4551,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.TypeBuilder.MakeByRefType" />
+        <altmember cref="Overload:System.Reflection.Emit.TypeBuilder.MakeArrayType" />
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -4670,7 +4704,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -4717,7 +4751,7 @@
  For more information on how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -5069,5 +5103,124 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DefineMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a method to the type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefinePInvokeMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a <see langword="PInvoke" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineField">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new field to the dynamic type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes defined for this type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAssignableFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specified type can be assigned to this object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the events defined by the current <see cref="T:System.Reflection.Emit.TypeBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineNestedType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a nested type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeArrayType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> object that represents an array of the current type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new property to the type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineConstructor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new constructor to the dynamic type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetField">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a field defined by the current <see cref="T:System.Reflection.Emit.TypeBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a custom attribute.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

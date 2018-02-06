@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::IsActive"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsActive method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::IsActive method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepper::IsActive Method
 Gets a value that indicates whether this ICorDebugStepper is currently executing a step.  

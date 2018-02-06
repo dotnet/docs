@@ -18,6 +18,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:System.Windows.Forms.Control" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +37,7 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.TabControl" /> that this collection belongs to.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl.ControlCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -65,6 +67,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see cref="T:System.Windows.Forms.Control" /> is a <see cref="T:System.Windows.Forms.TabPage" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.ControlCollection.Remove(System.Windows.Forms.Control)" />
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -86,6 +91,8 @@
         <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to remove.</param>
         <summary>Removes a <see cref="T:System.Windows.Forms.Control" /> from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.TabControl.ControlCollection.Add(System.Windows.Forms.Control)" />
+        <altmember cref="T:System.Windows.Forms.TabControl" />
       </Docs>
     </Member>
   </Members>

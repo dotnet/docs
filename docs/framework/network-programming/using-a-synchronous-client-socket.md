@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using a Synchronous Client Socket
 A synchronous client socket suspends the application program while the network operation completes. Synchronous sockets are not suitable for applications that make heavy use of the network for their operation, but they can enable simple access to network services for other applications.  
@@ -77,6 +77,6 @@ s.Close();
 ```  
   
 ## See Also  
- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)   
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)   
+ [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
+ [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
  [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)

@@ -1,7 +1,7 @@
 ---
 title: "Basic Query Operations (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "data sources [LINQ in Visual Basic]"
   - "Join clause [LINQ in Visual Basic]"
@@ -28,22 +26,6 @@ ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Basic Query Operations (Visual Basic)
 This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  
@@ -176,8 +158,8 @@ Where cust.City = "London" Or cust.City = "Paris"
  For more information about `Group By`, see [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).  
   
 ## See Also  
- <xref:System.Collections.Generic.IEnumerable%601>   
- [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)   
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
+ <xref:System.Collections.Generic.IEnumerable%601>  
+ [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)

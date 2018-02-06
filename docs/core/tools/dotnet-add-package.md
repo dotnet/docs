@@ -7,6 +7,8 @@ ms.date: 08/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet add package
 
@@ -23,6 +25,8 @@ ms.technology: dotnet-cli
 ## Description
 
 The `dotnet add package` command provides a convenient option to add a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a `<PackageReference>` element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
 

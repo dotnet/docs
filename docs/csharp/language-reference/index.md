@@ -1,12 +1,10 @@
 ---
 title: "C# Reference"
-ms.date: "2017-02-14"
+ms.date: 02/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "Visual C#, language reference"
   - "language reference [C#]"
@@ -17,21 +15,6 @@ ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # C# Reference
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
@@ -59,13 +42,7 @@ This section provides reference material about C# keywords, operators, special c
  Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
   
 ## Related Sections  
-<!--
- [C# FAQ](http://go.microsoft.com/fwlink/?LinkId=70367)  
- Provides a growing list of C# Frequently Asked Questions in the C# Developer Center.  
--->  
- [C# KB articles in the Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkId=70368)  
- Opens a Microsoft search page for Knowledge Base articles that are available on MSDN.  
-  
+
  [C#](../../csharp/index.md)
  Provides a portal to Visual C# documentation.  
   

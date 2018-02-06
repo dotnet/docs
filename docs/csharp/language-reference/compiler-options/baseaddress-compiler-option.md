@@ -1,44 +1,28 @@
 ---
 title: "-baseaddress (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/dllbase"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "baseaddress compiler option [C#]"
-  - "/baseaddress compiler option [C#]"
   - "-baseaddress compiler option [C#]"
+  - "/baseaddress compiler option [C#]"
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /baseaddress (C# Compiler Options)
-The **/baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Improving Application Startup Time](http://go.microsoft.com/fwlink/?LinkId=107043) and [Larry Osterman's WebLog](http://go.microsoft.com/fwlink/?LinkId=107044).  
+# -baseaddress (C# Compiler Options)
+The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](https://blogs.msdn.microsoft.com/larryosterman/2004/07/06/why-should-i-even-bother-to-use-dlls-in-my-system/).  
   
 ## Syntax  
   
 ```console  
-/baseaddress:address  
+-baseaddress:address  
 ```  
   
 ## Arguments  
@@ -65,6 +49,6 @@ The **/baseaddress** option lets you specify the preferred base address at which
      To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.BaseAddress%2A>.  
   
 ## See Also  
- <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>   
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>  
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

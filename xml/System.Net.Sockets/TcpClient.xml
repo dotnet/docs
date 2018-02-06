@@ -56,6 +56,14 @@
     <block subset="none" type="overrides">
       <para>To send and receive data, use the <see cref="M:System.Net.Sockets.TcpClient.GetStream" /> method to obtain a <see cref="T:System.Net.Sockets.NetworkStream" />. Call the <see cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" /> methods of the <see cref="T:System.Net.Sockets.NetworkStream" /> to send and receive data with the remote host. Use the <see cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" /> method to release all resources associated with the <see cref="T:System.Net.Sockets.TcpClient" />.</para>
     </block>
+    <altmember cref="T:System.Net.Sockets.TcpListener" />
+    <altmember cref="T:System.Net.Sockets.NetworkStream" />
+    <altmember cref="T:System.Net.Sockets.Socket" />
+    <altmember cref="T:System.Net.Sockets.ProtocolType" />
+    <altmember cref="T:System.Net.IPEndPoint" />
+    <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
+    <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
+    <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,6 +161,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The  <paramref name="localEP" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -259,6 +270,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="hostname" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> parameter is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="Overload:System.Net.Sockets.TcpClient.#ctor" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -295,6 +308,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.Socket.Connected" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -570,6 +585,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -672,6 +688,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="remoteEp" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -731,6 +749,7 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -790,6 +809,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> flag or the <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> flag.</exception>
+        <altmember cref="T:System.Net.Sockets.TcpListener" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -851,6 +871,8 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
@@ -907,6 +929,7 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
@@ -964,6 +987,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> flag or the <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> flag.</exception>
+        <altmember cref="T:System.Net.Sockets.TcpListener" />
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
@@ -1022,6 +1046,8 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="Connected">
@@ -1143,7 +1169,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1281,10 +1307,11 @@
   
  The <xref:System.Net.Sockets.TcpClient> class finalizer closes the TCP connection and releases all managed resources associated with the <xref:System.Net.Sockets.TcpClient>. These resources include the underlying <xref:System.Net.Sockets.Socket> used for connecting with the remote host, and the <xref:System.Net.Sockets.NetworkStream> used to send and receive data. The finalizer does not release any unmanaged resources.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.TcpClient.Close" />
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -1343,6 +1370,12 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.TcpClient" /> is not connected to a remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.TcpClient" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.NetworkStream" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.DataAvailable" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LingerState">
@@ -1403,6 +1436,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.LingerOption" />
+        <altmember cref="M:System.Net.Sockets.TcpClient.Close" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="NoDelay">
@@ -1501,6 +1537,8 @@
  -or-  
   
  In .NET Compact Framework applications, you cannot set this property. For a workaround, see the Platform Note in Remarks.</exception>
+        <altmember cref="P:System.Net.Sockets.TcpClient.SendBufferSize" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTimeout">
@@ -1545,6 +1583,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.TcpClient.SendTimeout" />
       </Docs>
     </Member>
     <Member MemberName="SendBufferSize">
@@ -1593,6 +1633,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.TcpClient.ReceiveBufferSize" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SendTimeout">
@@ -1639,6 +1681,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.TcpClient.ReceiveTimeout" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -1659,5 +1703,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConnectAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects the client to a remote TCP host using the specified host name and port number as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.TcpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects the client to a remote TCP host using the specified host name and port number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginConnect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a remote host connection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

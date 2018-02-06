@@ -49,6 +49,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMap" />
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.XmlSiteMapProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -226,6 +229,7 @@
  \- or -  
   
  <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,6 +287,8 @@
  \- or -  
   
  <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
+        <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -311,6 +317,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ChildNodes">
@@ -339,6 +347,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -365,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapNode.Clone(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -405,6 +415,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapNode.Clone" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -438,6 +449,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="P:System.Web.SiteMapNode.Url" />
+        <altmember cref="P:System.Web.SiteMapNode.Title" />
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
+        <altmember cref="P:System.Web.SiteMapProvider.EnableLocalization" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -472,6 +488,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Object.Equals" />
       </Docs>
     </Member>
     <Member MemberName="GetAllNodes">
@@ -506,6 +523,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.RootNode" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetDataSourceView">
@@ -530,6 +549,7 @@
         <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> object that is associated with the current node.</summary>
         <returns>A named <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> for the current node.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNode.GetHierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="GetExplicitResourceString">
@@ -574,6 +594,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributeName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A matching resource object was not found and <paramref name="throwIfNotFound" /> is <see langword="true" />.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.EnableLocalization" />
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -600,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Key" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalDataSourceView">
@@ -619,6 +642,7 @@
         <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> object that is associated with the current node.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> for the current node.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNode.GetDataSourceView(System.Web.UI.WebControls.SiteMapDataSource,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetImplicitResourceString">
@@ -657,6 +681,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributeName" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.EnableLocalization" />
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="HasChildNodes">
@@ -683,6 +709,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="IsAccessibleToUser">
@@ -714,6 +741,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified context is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
+        <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsDescendantOf">
@@ -773,6 +802,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="P:System.Web.SiteMapNode.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -800,6 +832,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapProvider.FindSiteMapNodeFromKey(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -825,6 +858,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.PreviousSibling" />
       </Docs>
     </Member>
     <Member MemberName="ParentNode">
@@ -851,6 +885,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="P:System.Web.SiteMapNode.RootNode" />
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -876,6 +911,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.NextSibling" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -901,6 +937,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -932,6 +969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.XmlSiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -958,6 +996,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="M:System.Web.SiteMapNode.#ctor(System.Web.SiteMapProvider,System.String,System.String,System.String,System.String,System.Collections.IList,System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.String)" />
+        <altmember cref="P:System.Web.SiteMapProvider.ResourceKey" />
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -986,6 +1027,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
+        <altmember cref="T:System.Web.Security.UrlAuthorizationModule" />
+        <altmember cref="T:System.Web.Security.FileAuthorizationModule" />
       </Docs>
     </Member>
     <Member MemberName="RootNode">
@@ -1012,6 +1056,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The root node cannot be retrieved from the root provider.</exception>
+        <altmember cref="P:System.Web.SiteMapNode.ParentNode" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1066,6 +1111,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapNode.System#Web#UI#IHierarchyData#GetParent" />
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetChildren" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchyData.GetParent">
@@ -1094,6 +1141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapNode.System#Web#UI#IHierarchyData#GetChildren" />
+        <altmember cref="M:System.Web.UI.IHierarchyData.GetParent" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchyData.HasChildren">
@@ -1122,6 +1171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.HasChildNodes" />
+        <altmember cref="M:System.Web.SiteMapNode.System#Web#UI#IHierarchyData#GetChildren" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchyData.Item">
@@ -1147,6 +1198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Item" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchyData.Path">
@@ -1174,6 +1226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SiteMapNode.Url" />
+        <altmember cref="P:System.Web.UI.IHierarchyData.Path" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchyData.Type">
@@ -1199,6 +1253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IHierarchyData.Type" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.INavigateUIData.Description">
@@ -1226,6 +1281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.INavigateUIData.Description" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.INavigateUIData.Name">
@@ -1253,6 +1309,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.INavigateUIData" />
+        <altmember cref="P:System.Web.UI.INavigateUIData.Name" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.INavigateUIData.NavigateUrl">
@@ -1280,6 +1338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.INavigateUIData.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.INavigateUIData.Value">
@@ -1307,6 +1366,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.INavigateUIData.Value" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1340,6 +1400,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="P:System.Web.SiteMapNode.Url" />
+        <altmember cref="P:System.Web.SiteMapNode.Description" />
+        <altmember cref="M:System.Web.SiteMapNode.GetImplicitResourceString(System.String)" />
+        <altmember cref="M:System.Web.SiteMapNode.GetExplicitResourceString(System.String,System.String,System.Boolean)" />
+        <altmember cref="P:System.Web.SiteMapProvider.EnableLocalization" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1369,8 +1434,8 @@
 ## Examples  
  The following code example demonstrates how to compare the <xref:System.Web.SiteMapNode.ToString%2A> method to the <xref:System.Web.SiteMapNode.Url%2A> and <xref:System.Web.SiteMapNode.Title%2A> properties of a <xref:System.Web.SiteMapNode> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.SiteMap_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap_2/CS/catalog2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.SiteMap_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap_2/VB/catalog2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.SiteMap_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap_2/CS/catalog2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.SiteMap_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap_2/VB/catalog2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1413,7 +1478,27 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
+        <altmember cref="P:System.Web.SiteMapNode.Title" />
+        <altmember cref="P:System.Web.SiteMapNode.Description" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class and associates it with the specified <see cref="T:System.Web.SiteMapProvider" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clone">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new node that is a copy of the current node.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

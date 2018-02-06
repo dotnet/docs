@@ -1,12 +1,9 @@
 ---
 title: "Common Language Runtime (CLR)"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.custom: "updateeachrelease"
+ms.date: "10/17/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
@@ -21,10 +18,12 @@ helpviewer_keywords:
   - "source code execution"
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Common Language Runtime (CLR)
 The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.  
@@ -32,7 +31,7 @@ The .NET Framework provides a run-time environment called the common language ru
  Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code; it benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.  
   
 > [!NOTE]
->  Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](http://go.microsoft.com/fwlink/?LinkId=99212).  
+>  Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/).  
   
  To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.  
   
@@ -75,7 +74,7 @@ The .NET Framework provides a run-time environment called the common language ru
 |4|4|  
 |4.5 (including 4.5.1 and 4.5.2)|4|  
 |4.6 (including 4.6.1 and 4.6.2)|4|
-|4.7|4|  
+|4.7 (including 4.7.1)|4|  
   
 ## Related Topics  
   
@@ -83,7 +82,7 @@ The .NET Framework provides a run-time environment called the common language ru
 |-----------|-----------------|  
 |[Managed Execution Process](../../docs/standard/managed-execution-process.md)|Describes the steps required to take advantage of the common language runtime.|  
 |[Automatic Memory Management](../../docs/standard/automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|  
-|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/en-us/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
+|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/library/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
 |[Common Type System](../../docs/standard/base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|  
   
 ## See Also  

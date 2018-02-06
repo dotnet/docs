@@ -27,7 +27,11 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 1. Enter the [dotnet new console](../../core/tools/dotnet-new.md) command at a command prompt to create a new .NET Core project.
 1. Copy and paste the code from the example into your code editor.
 1. Enter the [dotnet restore](../../core/tools/dotnet-restore.md) command from the command line to load or restore the project's dependencies.
+
+  [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 1. Enter the [dotnet run](../../core/tools/dotnet-run.md) command to compile and execute the example.
+
 
 ## Background: What is inheritance?
 
@@ -51,9 +55,9 @@ While all other members of a base class are inherited by derived classes, whethe
 
 - [Protected](../language-reference/keywords/protected.md) members are visible only in derived classes.
 
-- [Internal](../language-reference/keywords/protected.md) members are visible only in derived classes that are located in the same assembly as the base class. They are not visible in derived classes located in a different assembly from the base class.
+- [Internal](../language-reference/keywords/internal.md) members are visible only in derived classes that are located in the same assembly as the base class. They are not visible in derived classes located in a different assembly from the base class.
 
-- [Public] (../language-reference/keywords/protected.md) members are visible in derived classes and are part of the derived class' public interface. Public inherited members can be called just as if they were defined in the derived class. In the following example, class `A` defines a method named `Method1`, and class `B` inherits from class `A`. The example then calls `Method1` as if it were an instance method on `B`.
+- [Public](../language-reference/keywords/public.md) members are visible in derived classes and are part of the derived class' public interface. Public inherited members can be called just as if they were defined in the derived class. In the following example, class `A` defines a method named `Method1`, and class `B` inherits from class `A`. The example then calls `Method1` as if it were an instance method on `B`.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/basics.cs#1)]
 
@@ -170,7 +174,7 @@ In designing our `Publication` class, we need to make several design decisions:
 
 - What members to include in our base `Publication` class, and whether the `Publication` members provide method implementations, or whether `Publication` is an abstract base class that serves as a template for its derived classes.
 
-  In this case, the `Publication` class will provide method implementations. The [Designing abstract base classes amd their derived classes](#abstract) section contains an example that uses an abstract base class to define the methods that derived classes must override. Derived classes are free to provide any implementation that is suitable for the derived type.
+  In this case, the `Publication` class will provide method implementations. The [Designing abstract base classes and their derived classes](#abstract) section contains an example that uses an abstract base class to define the methods that derived classes must override. Derived classes are free to provide any implementation that is suitable for the derived type.
 
   The ability to reuse code (that is, multiple derived classes share the declaration and implementation of base class methods and do not need to override them) is an advantage of non-abstract base classes. Therefore, we should add members to `Publication` if their code is likely to be shared by some or most specialized `Publication` types. If we fail to do this efficiently, we'll end up having to provide largely identical member implementations in derived classes rather a single implementation in the base class. The need to maintain duplicated code in multiple locations is a potential source of bugs.
 

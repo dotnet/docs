@@ -90,6 +90,7 @@
   
 -   <see cref="P:System.Runtime.Serialization.Formatter.Context" /></para>
     </block>
+    <altmember cref="T:System.Runtime.Serialization.ObjectIDGenerator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ObjectIDGenerator" />
       </Docs>
     </Member>
     <Member MemberName="Binder">
@@ -268,6 +270,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The next object retrieved from the work queue did not have an assigned ID.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ObjectIDGenerator" />
       </Docs>
     </Member>
     <Member MemberName="m_idGenerator">
@@ -334,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Queue" />
       </Docs>
     </Member>
     <Member MemberName="Schedule">
@@ -372,6 +376,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ObjectIDGenerator" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -623,6 +628,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="WriteDecimal">
@@ -658,6 +664,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="WriteDouble">
@@ -991,6 +998,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="WriteUInt16">
@@ -1148,6 +1156,7 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class.</para>
         </block>
+        <altmember cref="T:System.ValueType" />
       </Docs>
     </Member>
   </Members>

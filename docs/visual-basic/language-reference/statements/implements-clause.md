@@ -1,6 +1,6 @@
 ---
 title: "Implements Clause (Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,39 +9,23 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ImplementsClause"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "interface implementation, reimplementation"
-  - "interface members, reimplementation"
-  - "interface members, Implements keyword"
+  - "interface implementation [Visual Basic], reimplementation"
+  - "interface members [Visual Basic], reimplementation"
+  - "interface members [Visual Basic], Implements keyword"
   - "interface members"
-  - "members, reimplementation"
-  - "interface implementation, Implements keyword"
-  - "interface members, implementing"
-  - "Implements keyword"
-  - "Implements statement, about Implements"
-  - "members, implementing"
-  - "members, Implements keyword"
+  - "members [Visual Basic], reimplementation"
+  - "interface implementation [Visual Basic], Implements keyword"
+  - "interface members [Visual Basic], implementing"
+  - "Implements keyword [Visual Basic]"
+  - "Implements statement [Visual Basic], about Implements"
+  - "members [Visual Basic], implementing"
+  - "members [Visual Basic], Implements keyword"
   - "reimplementation"
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implements Clause (Visual Basic)
 Indicates that a class or structure member is providing the implementation for a member defined in an interface.  
@@ -64,7 +48,7 @@ The `Implements` keyword can be used in the following contexts:
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)

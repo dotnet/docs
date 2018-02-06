@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetObjectIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectIdentity method [.NET Framework hosting]"
   - "IManagedObject::GetObjectIdentity method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IManagedObject::GetObjectIdentity Method
 Gets the identity of this managed object.  

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcServer"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#gcServer"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "gcServer element"
   - "<gcServer> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcServer&gt; Element
 Specifies whether the common language runtime runs server garbage collection.  
@@ -88,7 +85,7 @@ Specifies whether the common language runtime runs server garbage collection.
 ```  
   
 ## See Also  
- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
- [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/en-us/ba2c6c67-5778-497c-9fac-5f793b5500c7)
+ <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)

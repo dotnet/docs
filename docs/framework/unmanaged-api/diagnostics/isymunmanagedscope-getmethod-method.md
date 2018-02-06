@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethod method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetMethod method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedScope::GetMethod Method
 Gets the method that contains this scope.  

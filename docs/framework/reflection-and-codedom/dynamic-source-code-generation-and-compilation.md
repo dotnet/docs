@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dynamic Source Code Generation and Compilation
 The .NET Framework includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at run time, based on a single model that represents the code to render.  
@@ -55,5 +57,5 @@ The .NET Framework includes a mechanism called the Code Document Object Model (C
  Defines interfaces for generating and compiling code at run time.  
   
 ## Related Sections  
- [CodeDOM Quick Reference](http://msdn.microsoft.com/en-us/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
+ [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
  Provides a quick way for developers to find the CodeDOM elements that represent source code elements.

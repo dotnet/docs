@@ -2,8 +2,8 @@
 uid: System.Windows.Documents.BlockCollection
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.Windows.Documents.BlockCollection.LastBlock
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Windows.Documents.BlockCollection.FirstBlock
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

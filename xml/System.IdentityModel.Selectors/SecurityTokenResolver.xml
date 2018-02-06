@@ -389,5 +389,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryResolveToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to retrieve the security token that is referenced in the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryResolveTokenCore">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to retrieve the key that is referenced in the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResolveToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a security token that matches the specified key identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

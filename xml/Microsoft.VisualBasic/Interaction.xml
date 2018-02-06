@@ -26,7 +26,7 @@
    
   
 ## Examples  
- The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle.NormalFocus?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
 ```  
 Dim procID As Integer  
@@ -90,6 +90,9 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="AppActivate">
@@ -142,6 +145,9 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Beep">
@@ -237,6 +243,8 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Invalid <paramref name="UseCallType" /> value; must be <see langword="Method" />, <see langword="Get" />, or <see langword="Set" />.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.CallType" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Choose">
@@ -288,6 +296,8 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.IIf(System.Boolean,System.Object,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Switch(System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -330,6 +340,8 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Environment.GetCommandLineArgs" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -406,7 +418,7 @@ End Sub
  You can use the `CreateObject` function only to create a COM object. While there is no exact equivalent mechanism for creating a .NET Framework object, the <xref:System.Activator> in the <xref:System> namespace contains methods to create local or remote objects. In particular, the <xref:System.Activator.CreateInstance%2A> method or the <xref:System.Activator.CreateInstanceFrom%2A> method might be useful.  
   
 > [!IMPORTANT]
->  The `CreateObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `CreateObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -419,6 +431,12 @@ End Sub
         </remarks>
         <exception cref="T:System.Exception">Server is unavailable</exception>
         <exception cref="T:System.IO.FileNotFoundException">No object of the specified type exists</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetObject(System.String,System.String)" />
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
+        <altmember cref="T:System.Activator" />
+        <altmember cref="Overload:System.Activator.CreateInstance" />
+        <altmember cref="Overload:System.Activator.CreateInstanceFrom" />
       </Docs>
     </Member>
     <Member MemberName="DeleteSetting">
@@ -463,6 +481,10 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">User is not logged in.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetAllSettings(System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.SaveSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Environ">
@@ -498,7 +520,7 @@ End Sub
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
 > [!IMPORTANT]
->  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -511,6 +533,7 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Expression" /> is missing.</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Environ">
@@ -541,7 +564,7 @@ End Sub
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
 > [!IMPORTANT]
->  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -554,6 +577,7 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Expression" /> is missing.</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="GetAllSettings">
@@ -599,6 +623,10 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">User is not logged in.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.DeleteSetting(System.String,System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.SaveSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -691,7 +719,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
 >  If an object has registered itself as an ActiveX single-instance object, only one instance of the object is created, no matter how many times `CreateObject` is called. With a single-instance object, `GetObject` always returns the same instance when called with the zero-length string (`""`) syntax, and it causes an error if the `PathName` argument is omitted. You cannot use `GetObject` to obtain a reference to a class created with Visual Basic.  
   
 > [!IMPORTANT]
->  The `GetObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `GetObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -715,6 +743,9 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         </remarks>
         <exception cref="T:System.Exception">No object of the specified class type exists.</exception>
         <exception cref="T:System.IO.FileNotFoundException">No object with the specified path and file name exists.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.CreateObject(System.String,System.String)" />
+        <altmember cref="T:System.Exception" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="GetSetting">
@@ -766,6 +797,11 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more arguments are not <see langword="String" /> expressions, or user is not logged in.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.DeleteSetting(System.String,System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetAllSettings(System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.SaveSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.Security.Permissions.RegistryPermission" />
       </Docs>
     </Member>
     <Member MemberName="IIf">
@@ -808,6 +844,8 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Choose(System.Double,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Switch(System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="InputBox">
@@ -857,6 +895,9 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MsgBox">
@@ -1001,6 +1042,8 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
           <paramref name="Prompt" /> is not a <see langword="String" /> expression, or <paramref name="Title" /> is invalid.</exception>
         <exception cref="T:System.InvalidOperationException">Process is not running in User Interactive mode.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters not a member of <see langword="MsgBoxResult" /> or <see langword="MsgBoxStyle" /> enumeration.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.InputBox(System.String,System.String,System.String,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.MessageBox.Show(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Partition">
@@ -1111,6 +1154,10 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Key registry could not be created, or user is not logged in.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.DeleteSetting(System.String,System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetAllSettings(System.String,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.GetSetting(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.Security.Permissions.RegistryPermission" />
       </Docs>
     </Member>
     <Member MemberName="Shell">
@@ -1195,12 +1242,12 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
 >  If you do not enclose the path and file specification in quotation marks, there is a security risk if the file name or a path node contains spaces. In the preceding example, the path node `\Program Files` includes a space. If the specification were not inside quotation marks and a program named `Program.exe` had been installed in C:\\, for example by illicit tampering, Windows would execute it instead of `display.exe`.  
   
 > [!IMPORTANT]
->  The `Shell` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `Shell` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
 ## Examples  
- The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle.NormalFocus?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
  [!code-vb[VbVbalrFunctions#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#47)]  
   
@@ -1212,6 +1259,12 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
           <see langword="Shell" /> cannot find the <paramref name="PathName" /> file.</exception>
         <exception cref="T:System.NullReferenceException">
           <paramref name="PathName" /> is <see langword="Nothing" />.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
+        <altmember cref="T:System.NullReferenceException" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Interaction.AppActivate" />
       </Docs>
     </Member>
     <Member MemberName="Switch">
@@ -1262,7 +1315,27 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Number of arguments is odd.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Choose(System.Double,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.IIf(System.Boolean,System.Object,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Environ">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string associated with an operating-system environment variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppActivate">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Activates an application that is already running.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

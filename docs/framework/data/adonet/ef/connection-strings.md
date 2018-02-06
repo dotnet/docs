@@ -9,22 +9,20 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Connection Strings
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.  
   
  The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md).  
   
- The [Entity Data Model tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
+ The [Entity Data Model tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
   
 ## Connection String Parameters  
  The format of a connection string is a semicolon-delimited list of key/value parameter pairs:  
@@ -40,7 +38,7 @@ A connection string contains initialization information that is passed as a para
 |`Metadata`|Required if the `Name` keyword is not specified. A pipe-delimited list of directories, files, and resource locations in which to look for metadata and mapping information. The following is an example:<br /><br /> `Metadata=`<br /><br /> `c:\model &#124; c:\model\sql\mapping.msl;`<br /><br /> Blank spaces on each side of the pipe separator are ignored.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.|  
 |`Name`|The application can optionally specify the connection name in an application configuration file that provides the required keyword/value connection string values. In this case, you cannot supply them directly in the connection string. The `Name` keyword is not allowed in a configuration file.<br /><br /> When the `Name` keyword is not included in the connection string, a non-empty values for Provider keyword is required.<br /><br /> This keyword is mutually exclusive with all the other connection string keywords.|  
   
- The following is an example of a connection string for the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832) stored in the application configuration file:  
+ The following is an example of a connection string for the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) stored in the application configuration file:  
   
   
   
@@ -118,7 +116,7 @@ Metadata=.\
  The resolution of the `DataDirectory` substitution string and the ~ operator is non-recursive. For example, when `DataDirectory` includes the `~` character, an exception will occur. This prevents an infinite recursion.  
   
 ## See Also  
- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)   
- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)   
- [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)   
+ [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)  
+ [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
+ [Managing Connections and Transactions](http://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
  [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)

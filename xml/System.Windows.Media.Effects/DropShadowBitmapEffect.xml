@@ -23,6 +23,10 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for creating an instance of the <see cref="T:System.Windows.Media.Effects.DropShadowBitmapEffect" /> class. Associated enumerations: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+    <altmember cref="T:System.Windows.Media.Effects.BlurBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.OuterGlowBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.EmbossBitmapEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.BevelBitmapEffect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Annotations.AnnotationResourceChangedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +72,8 @@
         <summary>Gets the author change operation for the event.</summary>
         <value>The author change operation: <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Annotation" />
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Author" />
       </Docs>
     </Member>
     <Member MemberName="Annotation">
@@ -89,6 +92,8 @@
         <summary>Gets the annotation that raised the event.</summary>
         <value>The annotation that raised the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Action" />
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Author" />
       </Docs>
     </Member>
     <Member MemberName="Author">
@@ -107,6 +112,8 @@
         <summary>Gets the author object that is the target of the event.</summary>
         <value>The author object that is the target of the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Action" />
+        <altmember cref="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Annotation" />
       </Docs>
     </Member>
   </Members>

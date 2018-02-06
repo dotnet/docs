@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6665a2d3-7e11-4cce-8968-3fcf3426d362
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COM+
 The following figure shows how you can use activity tracing in a COM+ application. Instead of executing user code on the server, we can define a COM+ activity for each method call to the COM+ object model.  

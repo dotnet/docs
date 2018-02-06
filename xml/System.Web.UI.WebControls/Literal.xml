@@ -79,11 +79,13 @@
 > [!NOTE]
 >  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]
+ [!code-aspx-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Label" />
+    <altmember cref="P:System.Web.UI.WebControls.Literal.Text" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,8 +127,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.AddParsedSubObject%2A> method in a custom server control so that it always sets the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to the parsed object's `Text` property, if the parsed object is a <xref:System.Web.UI.WebControls.Literal>, and to an empty `string` otherwise.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomLiteralAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/CS/custom_literal_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomLiteralAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/VB/custom_literal_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomLiteralAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/CS/custom_literal_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomLiteralAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/VB/custom_literal_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomLiteralAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/CS/custom_literal_addparsedsubobject.cs#2)]
  [!code-vb[CustomLiteralAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/VB/custom_literal_addparsedsubobject.vb#2)]  
@@ -159,8 +161,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.CreateControlCollection%2A> method in a custom server control so that it always returns an instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.Literal> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomLiteralCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/CS/custom_literal_createcontrolcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomLiteralCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/VB/custom_literal_createcontrolcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomLiteralCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/CS/custom_literal_createcontrolcollectioncs.aspx#1)]
+ [!code-aspx-vb[CustomLiteralCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/VB/custom_literal_createcontrolcollectionvb.aspx#1)]  
   
  [!code-csharp[CustomLiteralCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/CS/custom_literal_createcontrolcollection.cs#2)]
  [!code-vb[CustomLiteralCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/VB/custom_literal_createcontrolcollection.vb#2)]  
@@ -248,11 +250,12 @@
 > [!NOTE]
 >  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-vb[Literal.Mode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal.Mode/VB/literal.modevb.aspx#1)]  -->  
+ [!code-aspx-vb[Literal.Mode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal.Mode/VB/literal.modevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.LiteralMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.LiteralMode" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -279,8 +282,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.Render%2A> method in a custom server control so that specific text is always displayed before the <xref:System.Web.UI.WebControls.Literal>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomLiteralRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralRender/CS/custom_literal_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomLiteralRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralRender/VB/custom_literal_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomLiteralRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralRender/CS/custom_literal_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomLiteralRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralRender/VB/custom_literal_rendervb.aspx#1)]  
 [!code-csharp[CustomLiteralRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralRender/CS/custom_literal_render.cs#2)]
 [!code-vb[CustomLiteralRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralRender/VB/custom_literal_render.vb#2)]  
   
@@ -323,7 +326,7 @@
  The caption is HTML-decoded depending on how you assign a value to this property. If you assign a value through an attribute of the <xref:System.Web.UI.WebControls.Literal> control, the value is HTML decoded before it is displayed. For example, `<asp:Literal id="DisplayLiteral" Text="A&nbsp;B"/>` is rendered as "A B" on the browser. However, if you set this property programmatically or by placing the text between the opening and closing tags of the control, the caption is not HTML decoded. For example, `<asp:Literal id="DisplayLiteral"> A&nbsp;B </asp:Literal>` is rendered as "A&nbsp;B".  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
@@ -335,8 +338,8 @@
 > [!NOTE]
 >  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]
+ [!code-aspx-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  
   
  ]]></format>
         </remarks>

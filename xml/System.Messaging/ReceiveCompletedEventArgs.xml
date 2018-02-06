@@ -33,6 +33,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.ReceiveCompletedEventHandler" />
+    <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+    <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+    <altmember cref="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName="AsyncResult">
@@ -60,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="Message">

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -67,6 +68,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseException">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.GetBaseException" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -125,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -159,6 +163,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -188,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.GetType" />
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -216,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.HelpLink" />
       </Docs>
     </Member>
     <Member MemberName="InnerException">
@@ -244,6 +251,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -272,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.Message" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -300,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.Source" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -328,6 +338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="TargetSite">
@@ -356,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.TargetSite" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -385,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Exception.ToString" />
       </Docs>
     </Member>
   </Members>

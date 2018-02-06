@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain2::GetFunctionPointerType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain2::GetFunctionPointerType method [.NET Framework debugging]"
   - "GetFunctionPointerType method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain2::GetFunctionPointerType Method
 Gets a pointer to a function that has a given signature.  

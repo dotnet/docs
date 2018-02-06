@@ -247,5 +247,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified input.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

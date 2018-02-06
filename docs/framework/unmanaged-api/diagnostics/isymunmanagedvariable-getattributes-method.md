@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAttributes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAttributes method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAttributes method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedVariable::GetAttributes Method
 Gets the attribute flags for this variable.  

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "unmanaged interfaces [.NET Framework], debugging"
   - "diagnostics symbol store interfaces [.NET Framework]"
@@ -23,6 +21,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Diagnostics Symbol Store Interfaces
 This topic describes the unmanaged interfaces that enable a compiler to generate symbol information for use by a debugger.  

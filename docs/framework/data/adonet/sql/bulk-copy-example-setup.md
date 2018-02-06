@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d4dde6ac-b8b6-4593-965a-635c8fb2dadb
 caps.latest.revision: 5
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Bulk Copy Example Setup
 The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data only to SQL Server tables. The code samples shown in this topic use the SQL Server sample database, **AdventureWorks**. To avoid altering the existing tables code samples write data to tables that you must create first.  
@@ -32,46 +34,46 @@ The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data onl
 USE AdventureWorks  
   
 IF EXISTS (SELECT * FROM dbo.sysobjects   
- WHERE id = object_id(N'[dbo].[BulkCopyDemoMatchingColumns]')   
+ WHERE id = object_id(N'[dbo].[BulkCopyDemoMatchingColumns]')  
  AND OBJECTPROPERTY(id, N'IsUserTable') = 1)  
     DROP TABLE [dbo].[BulkCopyDemoMatchingColumns]  
   
 CREATE TABLE [dbo].[BulkCopyDemoMatchingColumns]([ProductID] [int] IDENTITY(1,1) NOT NULL,  
     [Name] [nvarchar](50) NOT NULL,  
     [ProductNumber] [nvarchar](25) NOT NULL,  
- CONSTRAINT [PK_ProductID] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_ProductID] PRIMARY KEY CLUSTERED  
 (  
     [ProductID] ASC  
 ) ON [PRIMARY]) ON [PRIMARY]  
   
 IF EXISTS (SELECT * FROM dbo.sysobjects   
- WHERE id = object_id(N'[dbo].[BulkCopyDemoDifferentColumns]')   
+ WHERE id = object_id(N'[dbo].[BulkCopyDemoDifferentColumns]')  
  AND OBJECTPROPERTY(id, N'IsUserTable') = 1)  
     DROP TABLE [dbo].[BulkCopyDemoDifferentColumns]  
   
 CREATE TABLE [dbo].[BulkCopyDemoDifferentColumns]([ProdID] [int] IDENTITY(1,1) NOT NULL,  
     [ProdNum] [nvarchar](25) NOT NULL,  
     [ProdName] [nvarchar](50) NOT NULL,  
- CONSTRAINT [PK_ProdID] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_ProdID] PRIMARY KEY CLUSTERED  
 (  
     [ProdID] ASC  
 ) ON [PRIMARY]) ON [PRIMARY]  
   
 IF EXISTS (SELECT * FROM dbo.sysobjects   
- WHERE id = object_id(N'[dbo].[BulkCopyDemoOrderHeader]')   
+ WHERE id = object_id(N'[dbo].[BulkCopyDemoOrderHeader]')  
  AND OBJECTPROPERTY(id, N'IsUserTable') = 1)  
     DROP TABLE [dbo].[BulkCopyDemoOrderHeader]  
   
 CREATE TABLE [dbo].[BulkCopyDemoOrderHeader]([SalesOrderID] [int] IDENTITY(1,1) NOT NULL,  
     [OrderDate] [datetime] NOT NULL,  
     [AccountNumber] [nvarchar](15) NULL,  
- CONSTRAINT [PK_SalesOrderID] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_SalesOrderID] PRIMARY KEY CLUSTERED  
 (  
     [SalesOrderID] ASC  
 ) ON [PRIMARY]) ON [PRIMARY]  
   
 IF EXISTS (SELECT * FROM dbo.sysobjects   
- WHERE id = object_id(N'[dbo].[BulkCopyDemoOrderDetail]')   
+ WHERE id = object_id(N'[dbo].[BulkCopyDemoOrderDetail]')  
  AND OBJECTPROPERTY(id, N'IsUserTable') = 1)  
     DROP TABLE [dbo].[BulkCopyDemoOrderDetail]  
   
@@ -80,7 +82,7 @@ CREATE TABLE [dbo].[BulkCopyDemoOrderDetail]([SalesOrderID] [int] NOT NULL,
     [OrderQty] [smallint] NOT NULL,  
     [ProductID] [int] NOT NULL,  
     [UnitPrice] [money] NOT NULL,  
- CONSTRAINT [PK_LineNumber] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_LineNumber] PRIMARY KEY CLUSTERED  
 (  
     [SalesOrderID] ASC,  
     [SalesOrderDetailID] ASC  
@@ -88,5 +90,5 @@ CREATE TABLE [dbo].[BulkCopyDemoOrderDetail]([SalesOrderID] [int] NOT NULL,
 ```  
   
 ## See Also  
- [Bulk Copy Operations in SQL Server](../../../../../docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md)   
+ [Bulk Copy Operations in SQL Server](../../../../../docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

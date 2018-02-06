@@ -8,4 +8,5 @@
 |Version|4.5|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Uri.IsWellFormedUriString(System.String%2CSystem.UriKind)?displayProperty=nameWithType></li></ul>|
+|Analyzers|<ul><li>CD0121</li></ul>|
 

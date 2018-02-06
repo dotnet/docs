@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the Internet using HTTP, and deserialized it at the destination machine.  
@@ -110,5 +108,5 @@ public class Person : ISerializable {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

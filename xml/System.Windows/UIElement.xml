@@ -240,7 +240,7 @@
    
   
 ## Examples  
- The following markup example sets the <xref:System.Windows.UIElement.AllowDrop%2A> property `true` using an attribute on a <xref:System.Windows.Controls.TextBox>, as well as setting some other related properties that in aggregate enable that <xref:System.Windows.Controls.TextBox> to be the target of a multiline text data object when it is dragged in. For the complete sample, see [Load a Dropped File Sample](http://msdn.microsoft.com/en-us/be90d645-dd61-4f53-93bb-87902d086ef7).  
+ The following markup example sets the <xref:System.Windows.UIElement.AllowDrop%2A> property `true` using an attribute on a <xref:System.Windows.Controls.TextBox>, as well as setting some other related properties that in aggregate enable that <xref:System.Windows.Controls.TextBox> to be the target of a multiline text data object when it is dragged in. For the complete sample, see [Load a Dropped File Sample](http://msdn.microsoft.com/library/be90d645-dd61-4f53-93bb-87902d086ef7).  
   
  [!code-xaml[DragDrop_DropOpenTextFile#UIElementAllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DropOpenTextFile/CS/window1.xaml#uielementallowdrop)]  
   
@@ -811,6 +811,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Media3D.Viewport2DVisual3D.CacheMode" />
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
+        <altmember cref="T:System.Windows.Media.BitmapCacheBrush" />
       </Docs>
     </Member>
     <Member MemberName="CacheModeProperty">
@@ -869,6 +872,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsMouseCaptured" />
       </Docs>
     </Member>
     <Member MemberName="CaptureStylus">
@@ -940,6 +944,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="touchDevice" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement)" />
       </Docs>
     </Member>
     <Member MemberName="Clip">
@@ -994,10 +999,11 @@ Image with an Elliptical Clip Region
   
  [!code-xaml[ClipPathExample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#5)]  
   
- For the full sample, see the [Clip Region Sample](http://msdn.microsoft.com/en-us/83043a0b-f824-445f-9675-103280c5ca67).  
+ For the full sample, see the [Clip Region Sample](http://msdn.microsoft.com/library/83043a0b-f824-445f-9675-103280c5ca67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.ClipToBounds" />
       </Docs>
     </Member>
     <Member MemberName="ClipProperty">
@@ -1055,6 +1061,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.Clip" />
       </Docs>
     </Member>
     <Member MemberName="ClipToBoundsProperty">
@@ -1132,6 +1139,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="DesiredSize">
@@ -1168,6 +1176,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.UIElement.Measure(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -1205,6 +1215,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragLeave" />
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="DragEnterEvent">
@@ -1268,6 +1280,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragEnter" />
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
+        <altmember cref="E:System.Windows.UIElement.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="DragLeaveEvent">
@@ -1333,6 +1348,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragEnter" />
+        <altmember cref="E:System.Windows.UIElement.DragLeave" />
+        <altmember cref="E:System.Windows.UIElement.Drop" />
       </Docs>
     </Member>
     <Member MemberName="DragOverEvent">
@@ -1396,6 +1414,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
+        <altmember cref="E:System.Windows.UIElement.MouseLeftButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="DropEvent">
@@ -1462,6 +1482,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="EffectProperty">
@@ -1585,6 +1607,9 @@ Image with an Elliptical Clip Region
   
  where <paramref name="myElement" /> should be the class name of the type that you are overriding the metadata value on.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="E:System.Windows.UIElement.GotKeyboardFocus" />
+        <altmember cref="E:System.Windows.UIElement.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="FocusableChanged">
@@ -1609,6 +1634,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.Focusable" />
       </Docs>
     </Member>
     <Member MemberName="FocusableProperty">
@@ -1663,6 +1689,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetLayoutClip">
@@ -1694,6 +1721,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.GetLayoutClip(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="GetUIParentCore">
@@ -1761,6 +1789,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedbackEvent">
@@ -1828,6 +1857,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotKeyboardFocus" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="GotFocusEvent">
@@ -1895,6 +1926,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -1962,6 +1994,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.CaptureMouse" />
       </Docs>
     </Member>
     <Member MemberName="GotMouseCaptureEvent">
@@ -2279,6 +2312,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="InputHitTest">
@@ -2393,6 +2427,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.InvalidateArrange" />
       </Docs>
     </Member>
     <Member MemberName="IsArrangeValid">
@@ -2421,6 +2456,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.InvalidateArrange" />
+        <altmember cref="P:System.Windows.UIElement.IsMeasureValid" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -2465,6 +2502,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.IsEnabledChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledChanged">
@@ -2513,6 +2551,8 @@ Image with an Elliptical Clip Region
   
  The <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> class provides an existing override implementation of this property. This override determines whether the content inside the content presentation area exceeds the available area. If the content does exceed the area, the scrollbar portion is enabled. Otherwise, the scrollbar is not enabled.</para>
         </block>
+        <altmember cref="E:System.Windows.UIElement.IsEnabledChanged" />
+        <altmember cref="P:System.Windows.UIElement.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -2571,10 +2611,12 @@ Image with an Elliptical Clip Region
   
  [!code-csharp[PopupSimple#IsFocused](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml.cs#isfocused)]  
   
- Another common way to achieve this same effect is to place a <xref:System.Windows.Trigger> in the <xref:System.Windows.Style> of a control; this approach does not require handling specific events with code-behind and allows designers greater access to the interactive and graphical nature of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. For an example, see [How to: Create an Outer Glow Effect](http://msdn.microsoft.com/en-us/a2ccf19a-d0dc-4e3c-88e3-95d7f7d765b1).  
+ Another common way to achieve this same effect is to place a <xref:System.Windows.Trigger> in the <xref:System.Windows.Style> of a control; this approach does not require handling specific events with code-behind and allows designers greater access to the interactive and graphical nature of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. For an example, see [How to: Create an Outer Glow Effect](http://msdn.microsoft.com/library/a2ccf19a-d0dc-4e3c-88e3-95d7f7d765b1).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.Focusable" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="IsFocusedProperty">
@@ -2626,6 +2668,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.IsHitTestVisibleChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsHitTestVisibleChanged">
@@ -2729,6 +2772,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotFocus" />
+        <altmember cref="E:System.Windows.UIElement.LostFocus" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusedChanged">
@@ -2832,6 +2877,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.IsKeyboardFocusedChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusWithinProperty">
@@ -2927,6 +2973,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.UpdateLayout" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseCaptured">
@@ -2971,6 +3018,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.CaptureMouse" />
+        <altmember cref="E:System.Windows.UIElement.GotMouseCapture" />
+        <altmember cref="E:System.Windows.UIElement.LostMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseCapturedChanged">
@@ -3045,6 +3095,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsMouseCaptured" />
+        <altmember cref="M:System.Windows.UIElement.CaptureMouse" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseCaptureWithinChanged">
@@ -3086,6 +3138,7 @@ Image with an Elliptical Clip Region
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.UIElement.IsMouseCaptureWithin" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.UIElement.IsMouseCaptureWithinChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseDirectlyOver">
@@ -3122,6 +3175,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseEnter" />
+        <altmember cref="E:System.Windows.UIElement.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseDirectlyOverChanged">
@@ -3163,6 +3218,7 @@ Image with an Elliptical Clip Region
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.UIElement.IsMouseDirectlyOver" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.UIElement.IsMouseDirectlyOverChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseOver">
@@ -3261,6 +3317,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.CaptureStylus" />
+        <altmember cref="E:System.Windows.UIElement.GotStylusCapture" />
+        <altmember cref="E:System.Windows.UIElement.LostStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusCapturedChanged">
@@ -3324,7 +3383,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/library/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptureWithin"></a>   
 ## Dependency Property Information  
@@ -3336,6 +3395,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.CaptureStylus" />
+        <altmember cref="P:System.Windows.UIElement.IsStylusCaptured" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusCaptureWithinChanged">
@@ -3377,6 +3438,7 @@ Image with an Elliptical Clip Region
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.UIElement.IsStylusCaptureWithin" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.UIElement.IsStylusCaptureWithinChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusDirectlyOver">
@@ -3417,6 +3479,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsMouseDirectlyOver" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusDirectlyOverChanged">
@@ -3629,6 +3692,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownEvent">
@@ -3692,6 +3756,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpEvent">
@@ -3785,6 +3850,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostKeyboardFocus" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="LostFocusEvent">
@@ -4763,6 +4830,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseLeftButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonDownEvent">
@@ -4830,6 +4898,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseLeftButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonUpEvent">
@@ -4893,6 +4962,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseEnter" />
+        <altmember cref="E:System.Windows.UIElement.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="MouseMoveEvent">
@@ -4962,6 +5033,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseRightButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonDownEvent">
@@ -5029,6 +5101,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseRightButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonUpEvent">
@@ -5215,6 +5288,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="OnAccessKey">
@@ -5335,6 +5409,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -5367,6 +5442,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -5399,6 +5475,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="OnDrop">
@@ -5431,6 +5508,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.Drop" />
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -5463,6 +5541,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -5496,6 +5575,8 @@ Image with an Elliptical Clip Region
         <block subset="none" type="overrides">
           <para>Unless you have a deliberate and unusual need to not raise the focus events, make sure that your implementation calls the base implementation. Otherwise, the <see cref="E:System.Windows.UIElement.GotFocus" /> event is not raised during typical user operations that ordinarily set focus to this element. If you do not intend your element to be focusable, you can prevent the element from being focusable by setting <see cref="P:System.Windows.UIElement.Focusable" /> to <see langword="false" />.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement.Focusable" />
+        <altmember cref="E:System.Windows.UIElement.GotFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnGotKeyboardFocus">
@@ -5528,6 +5609,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnGotMouseCapture">
@@ -5560,6 +5642,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnGotStylusCapture">
@@ -5592,6 +5675,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.GotStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnGotTouchCapture">
@@ -5890,6 +5974,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -5924,6 +6009,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -5989,6 +6075,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnLostMouseCapture">
@@ -6021,6 +6108,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnLostStylusCapture">
@@ -6053,6 +6141,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnLostTouchCapture">
@@ -6289,6 +6378,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -6319,6 +6409,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -6349,6 +6440,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -6443,6 +6535,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseRightButtonDown">
@@ -6577,6 +6670,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseWheel" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragEnter">
@@ -6609,6 +6703,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragLeave">
@@ -6641,6 +6736,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragOver">
@@ -6673,6 +6769,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDragOver" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDrop">
@@ -6705,6 +6802,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewDrop" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewGiveFeedback">
@@ -6737,6 +6835,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewGiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewGotKeyboardFocus">
@@ -6769,6 +6868,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewGotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -6801,6 +6901,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewKeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyUp">
@@ -6833,6 +6934,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewKeyUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewLostKeyboardFocus">
@@ -6865,6 +6967,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewLostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseDown">
@@ -6905,6 +7008,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseLeftButtonDown">
@@ -6999,6 +7103,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseRightButtonDown">
@@ -7101,6 +7206,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseWheel">
@@ -7133,6 +7239,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewMouseWheel" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewQueryContinueDrag">
@@ -7165,6 +7272,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewQueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusButtonDown">
@@ -7197,6 +7305,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusButtonUp">
@@ -7229,6 +7338,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusDown">
@@ -7261,6 +7371,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusInAirMove">
@@ -7293,6 +7404,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusInRange">
@@ -7325,6 +7437,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusMove">
@@ -7357,6 +7470,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusOutOfRange">
@@ -7389,6 +7503,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusSystemGesture">
@@ -7421,6 +7536,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusUp">
@@ -7453,6 +7569,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewTextInput">
@@ -7485,6 +7602,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.UIElement.PreviewTextInput" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewTouchDown">
@@ -7601,6 +7720,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.QueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryCursor">
@@ -7633,6 +7753,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.QueryCursor" />
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -7732,6 +7853,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusButtonUp">
@@ -7764,6 +7886,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusDown">
@@ -7796,6 +7919,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusDown" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusEnter">
@@ -7826,6 +7950,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusInAirMove">
@@ -7858,6 +7983,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusInRange">
@@ -7890,6 +8016,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusLeave">
@@ -7920,6 +8047,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusMove">
@@ -7952,6 +8080,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusMove" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusOutOfRange">
@@ -7984,6 +8113,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusSystemGesture">
@@ -8016,6 +8146,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusUp">
@@ -8048,6 +8179,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusUp" />
       </Docs>
     </Member>
     <Member MemberName="OnTextInput">
@@ -8080,6 +8212,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.TextInput" />
       </Docs>
     </Member>
     <Member MemberName="OnTouchDown">
@@ -8290,6 +8423,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.OpacityMask" />
       </Docs>
     </Member>
     <Member MemberName="OpacityMask">
@@ -8334,6 +8468,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.Opacity" />
       </Docs>
     </Member>
     <Member MemberName="OpacityMaskProperty">
@@ -8432,6 +8567,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragEnter">
@@ -8788,6 +8924,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewLostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="PreviewGotKeyboardFocusEvent">
@@ -8853,6 +8990,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewKeyUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDownEvent">
@@ -8983,6 +9121,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewGotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="PreviewLostKeyboardFocusEvent">
@@ -9115,6 +9254,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseLeftButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseLeftButtonDownEvent">
@@ -9314,6 +9454,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseRightButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonDownEvent">
@@ -9381,6 +9522,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.MouseRightButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonUpEvent">
@@ -9624,7 +9766,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/library/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonDown"></a>   
 ## Routed Event Information  
@@ -9641,6 +9783,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.StylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonDownEvent">
@@ -10230,6 +10373,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewKeyDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputEvent">
@@ -10295,6 +10439,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" />
+        <altmember cref="M:System.Windows.Input.Stylus.GetIsPressAndHoldEnabled(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.Stylus.SetIsPressAndHoldEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTouchDownEvent">
@@ -10524,6 +10671,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="QueryCursorEvent">
@@ -10639,6 +10787,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsMouseCaptured" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseStylusCapture">
@@ -10735,6 +10884,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="RenderSize">
@@ -10769,10 +10919,6 @@ Image with an Elliptical Clip Region
   
  A more common scenario is handling the <xref:System.Windows.FrameworkElement.SizeChanged> event with the class handler override or the <xref:System.Windows.UIElement.OnRenderSizeChanged%2A> event.  
   
-<a name="xamlTextUsage_RenderSize"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example shows how a custom adorner uses the <xref:System.Windows.UIElement.RenderSize%2A> value in order to create and size the rectangle graphic that defines the adorner, as part of its <xref:System.Windows.UIElement.OnRender%2A> implementation.  
   
@@ -10781,6 +10927,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.UpdateLayout" />
       </Docs>
     </Member>
     <Member MemberName="RenderTransform">
@@ -10885,6 +11032,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.RenderTransform" />
       </Docs>
     </Member>
     <Member MemberName="RenderTransformOriginProperty">
@@ -11083,6 +11231,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonDownEvent">
@@ -11148,6 +11297,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.PreviewStylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonUpEvent">
@@ -11668,6 +11818,8 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.StylusPlugIns.DynamicRenderer" />
+        <altmember cref="T:System.Windows.Controls.InkCanvas" />
       </Docs>
     </Member>
     <Member MemberName="StylusSystemGesture">
@@ -11912,6 +12064,9 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" />
+        <altmember cref="M:System.Windows.Input.Stylus.GetIsPressAndHoldEnabled(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.Stylus.SetIsPressAndHoldEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="TouchDownEvent">
@@ -12321,6 +12476,7 @@ Image with an Elliptical Clip Region
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Visibility">
@@ -12364,13 +12520,15 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example implements a handler that references two different named buttons that are intended to be a mutually exclusive pair in the user interface. Prior to running the actual program logic associated with the button, the button itself is set to be <xref:System.Windows.Visibility?displayProperty=nameWithType>, and the other button in the pair is set to <xref:System.Windows.Visibility?displayProperty=nameWithType>.  
+ The following example implements a handler that references two different named buttons that are intended to be a mutually exclusive pair in the user interface. Prior to running the actual program logic associated with the button, the button itself is set to be <xref:System.Windows.Visibility.Hidden?displayProperty=nameWithType>, and the other button in the pair is set to <xref:System.Windows.Visibility.Visible?displayProperty=nameWithType>.  
   
  [!code-csharp[MediaElement_snip#UIElementVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/PlaybackExample.cs#uielementvisibility)]
  [!code-vb[MediaElement_snip#UIElementVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaElement_snip/VB/PlaybackExample.vb#uielementvisibility)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsVisible" />
+        <altmember cref="T:System.Windows.Visibility" />
       </Docs>
     </Member>
     <Member MemberName="VisibilityProperty">
@@ -12390,5 +12548,32 @@ Image with an Elliptical Clip Region
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddHandler">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginAnimation">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts an animation for a specified animated property on this element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTestCore">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements <see cref="M:System.Windows.Media.Visual.HitTestCore(System.Windows.Media.GeometryHitTestParameters)" /> to supply base element hit testing behavior.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

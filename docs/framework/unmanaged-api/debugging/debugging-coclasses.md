@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "unmanaged coclasses [.NET Framework], debugging"
   - "debugging coclasses [.NET Framework]"
@@ -20,6 +18,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Coclasses
 This section describes the unmanaged coclasses that the debugging API uses.  

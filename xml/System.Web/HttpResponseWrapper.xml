@@ -2069,5 +2069,104 @@
         <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveOutputCacheItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes cached items from the output cache by using the default output-cache provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Redirect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a different URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddCacheItemDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransmitFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream, without buffering it in memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectPermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirect from a requested URL to the specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PushPromise">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Promotes the promised object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoutePermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using the specified route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddFileDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on a specified file or files.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a new URL by using the specified route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

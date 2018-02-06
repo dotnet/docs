@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Stop method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::Stop method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::Stop Method
 Stops the execution of code in the runtime for the current process.  

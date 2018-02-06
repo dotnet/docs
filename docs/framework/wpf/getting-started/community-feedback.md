@@ -10,19 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Feedback Center"
-  - "Microsoft Product Feedback Center"
-  - "community resources"
-  - "forums"
-  - "blogs for feedback"
-  - "weblogs for feedback"
-  - "Product Feedback Center"
-  - "bug descriptions"
+  - "Feedback Center [WPF]"
+  - "Microsoft Product Feedback Center [WPF]"
+  - "community resources [WPF]"
+  - "forums [WPF]"
+  - "blogs for feedback [WPF]"
+  - "weblogs for feedback [WPF]"
+  - "Product Feedback Center [WPF]"
+  - "bug descriptions [WPF]"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Community Feedback
 [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] exposes a variety of community resources for you to learn about, discuss, and provide feedback on [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)], including blogs produced by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] team members and community leaders, forums, and the [!INCLUDE[TLA2#tla_ms](../../../../includes/tla2sharptla-ms-md.md)] Product Feedback Center. Each community resource offers a different set of benefits. These benefits are described here, as are a set of best practices for using each to ensure the best response from the community at large and [!INCLUDE[TLA2#tla_ms](../../../../includes/tla2sharptla-ms-md.md)] in particular.  

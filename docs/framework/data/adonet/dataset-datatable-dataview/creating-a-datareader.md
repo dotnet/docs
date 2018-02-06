@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 49d4422a-7464-4ab8-8ec7-90185fde3ecf
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating a DataReader
 The <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes have a <xref:System.Data.DataTable.CreateDataReader%2A> method that returns the contents of the <xref:System.Data.DataTable> or the contents of the <xref:System.Data.DataSet> object's <xref:System.Data.DataSet.Tables%2A> collection as one or more read-only, forward-only result sets.  
@@ -34,7 +39,7 @@ The <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes have a <
 ```  
   
 ## See Also  
- <xref:System.Data.DataTable.CreateDataReader%2A>   
- <xref:System.Data.DataSet.CreateDataReader%2A>   
- [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)   
+ <xref:System.Data.DataTable.CreateDataReader%2A>  
+ <xref:System.Data.DataSet.CreateDataReader%2A>  
+ [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

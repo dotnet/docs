@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.PagesSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +103,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.NamespaceInfo" /> object to add already exists in the collection or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
+        <altmember cref="T:System.Web.Configuration.NamespaceInfo" />
       </Docs>
     </Member>
     <Member MemberName="AutoImportVBNamespace">
@@ -141,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -174,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -253,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -316,6 +322,7 @@
  \- or -  
   
  The collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -361,6 +368,7 @@
  \- or -  
   
  The collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
   </Members>

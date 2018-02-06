@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetPublicKeyToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetPublicKeyToken method"
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetPublicKeyToken Method
 Retrieves the public key token for a given keyfile or key container.  
@@ -63,6 +63,6 @@ HRESULT GetPublicKeyToken(
  Requires alink.h.  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

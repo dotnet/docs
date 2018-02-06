@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEnum::Skip"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEnum::Skip method [.NET Framework debugging]"
   - "Skip method, ICorDebugEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEnum::Skip Method
 Moves the cursor forward in the enumeration by the specified number of items.  

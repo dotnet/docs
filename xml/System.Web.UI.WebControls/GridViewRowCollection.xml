@@ -37,11 +37,18 @@
 ## Examples  
  The following example demonstrates how to iterate through the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection of a <xref:System.Web.UI.WebControls.GridView> control and display the values of a column on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+    <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +74,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -103,11 +112,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.CopyTo%2A> method to copy the items of collection into an array. The array is iterated through and the values of the first cell are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/CS/gridviewrowcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/VB/gridviewrowcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/CS/gridviewrowcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionCopyTo/VB/gridviewrowcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -136,11 +148,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.Count%2A> property to determine whether the <xref:System.Web.UI.WebControls.GridView> control contains any records. A value greater than zero indicates that the <xref:System.Web.UI.WebControls.GridView> control contains at least one record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollection/CS/gridviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollection/VB/gridviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -173,11 +186,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator%2A> method to retrieve an enumerator that contains the values from the collection. The enumerator is iterated through and the values of the first cell are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/CS/gridviewrowcollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/VB/gridviewrowcollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/CS/gridviewrowcollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionGetEnumerator/VB/gridviewrowcollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -206,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -236,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -268,11 +290,16 @@
 ## Examples  
  The following example demonstrates how to use the indexer to retrieve a <xref:System.Web.UI.WebControls.GridViewRow> object from the collection. The values of the cells in the <xref:System.Web.UI.WebControls.GridViewRow> object are displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionIndexer/CS/gridviewrowcollectionindexercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionIndexer/VB/gridviewrowcollectionindexervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCollectionIndexer/CS/gridviewrowcollectionindexercs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCollectionIndexer/VB/gridviewrowcollectionindexervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -300,6 +327,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -330,6 +359,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
       </Docs>
     </Member>
   </Members>

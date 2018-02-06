@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetSourceRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocument::GetSourceRange method [.NET Framework debugging]"
   - "GetSourceRange method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetSourceRange Method
 Returns the specified range of the embedded source into the given buffer. The buffer must be large enough to hold the source.  

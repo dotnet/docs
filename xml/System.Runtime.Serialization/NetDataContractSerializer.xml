@@ -419,7 +419,7 @@
  This method assumes the default format is text XML.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -569,7 +569,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -601,7 +601,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -640,7 +640,7 @@
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -679,7 +679,7 @@
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>

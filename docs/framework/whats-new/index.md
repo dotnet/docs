@@ -96,12 +96,6 @@ The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOn
 
 Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) blog post. 
 
-**Support for portable PDBs**
-
-The .NET Framework starting with version 4.7.1 supports portable PDBs. While standard PDB files are Windows-only, portable PDB files can be created and read on all platforms. In most cases, the file format is transparent to an application running on a particular .NET implementation. An exception is an application that dynamically emits an assembly at run time; in this case, the ability to emit a portable PDB can offer a performance improvement and reduce the application's memory footprint. 
-
-You can determine at run time whether portable PDBs are supported on the current .NET implementation by passing the string "PortablePdb" to the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)?displayProperty=nameWithType> method before emitting the assembly.  
- 
 <a name="net471"/>
 #### Networking
 

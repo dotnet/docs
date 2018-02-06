@@ -313,5 +313,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the various parts collections in the specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> to the current instance of this class.  If there are protection requirements for a particular message in both the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> instances, then the requirements are merged together to ensure that the resulting protection requirement is the maximum of the individual protection requirements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

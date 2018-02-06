@@ -38,6 +38,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.CompositeControl.Controls" />
+    <altmember cref="M:System.Web.UI.WebControls.CompositeControl.DataBind" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -112,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="RecreateChildControls">
@@ -165,6 +170,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.EnsureChildControls" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.WebControls.CompositeControl.Controls" />
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -191,6 +200,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -209,6 +221,7 @@
       <Docs>
         <summary>Enables a designer to recreate the composite control's collection of child controls in the design-time environment.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
       </Docs>
     </Member>
   </Members>

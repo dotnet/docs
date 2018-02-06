@@ -13,6 +13,7 @@
   <Docs>
     <summary>Extends the <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> class by adding new properties that are useful for issued tokens.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -187,5 +188,14 @@
  Validation fails.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

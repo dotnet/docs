@@ -14,6 +14,8 @@
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientBooleanPrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.BooleanObject" />
+    <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -32,6 +34,8 @@
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
+        <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -50,6 +54,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
+        <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -68,6 +74,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
+        <altmember cref="T:Microsoft.JScript.BooleanConstructor" />
       </Docs>
     </Member>
   </Members>

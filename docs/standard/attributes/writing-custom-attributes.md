@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "multiple attribute instances"
   - "AttributeTargets enumeration"
@@ -22,6 +26,9 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Writing Custom Attributes
 To design your own custom attributes, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from <xref:System.Attribute?displayProperty=nameWithType>. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
@@ -155,6 +162,6 @@ To design your own custom attributes, you do not need to master many new concept
  The first example shows the attribute applied with only the required named parameters, while the second example shows the attribute applied with both the required and optional parameters.  
   
 ## See Also  
- <xref:System.Attribute?displayProperty=nameWithType>   
- <xref:System.AttributeUsageAttribute>   
+ <xref:System.Attribute?displayProperty=nameWithType>  
+ <xref:System.AttributeUsageAttribute>  
  [Attributes](../../../docs/standard/attributes/index.md)

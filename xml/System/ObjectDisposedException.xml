@@ -65,6 +65,7 @@ Caught:
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -331,11 +332,24 @@ Caught:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current property is not `null` or <xref:System.String?displayProperty=nameWithType>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
+ If the current property is not `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ObjectDisposedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

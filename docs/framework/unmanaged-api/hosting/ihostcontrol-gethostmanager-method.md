@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostControl::GetHostManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHostManager method [.NET Framework hosting]"
   - "IHostControl::GetHostManager method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostControl::GetHostManager Method
 Gets an interface pointer to the host's implementation of the interface with the specified `IID`.  

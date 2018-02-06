@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::CreateAssemblyScavenger"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAssemblyScavenger method [.NET Framework fusion]"
   - "IAssemblyCache::CreateAssemblyScavanger method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCache::CreateAssemblyScavenger Method
 Reserved for internal use by the fusion technology.  

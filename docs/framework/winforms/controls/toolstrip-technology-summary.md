@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ToolStrip control [Windows Forms], technology summary"
-  - "status bars, technology summary"
+  - "status bars [Windows Forms], technology summary"
   - "toolbars [Windows Forms], technology summary"
   - "menus [Windows Forms], technology summary"
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
@@ -21,6 +19,8 @@ caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStrip Technology Summary
 This topic summarizes information about the `ToolStrip` control and the classes that support its use.  
@@ -127,5 +127,5 @@ This topic summarizes information about the `ToolStrip` control and the classes 
  The <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.StatusStrip> let items overflow. This is similar to the way these items behave on Microsoft Office toolbars.  
   
 ## See Also  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)   
+ [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
  [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)

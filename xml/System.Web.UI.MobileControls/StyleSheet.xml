@@ -38,7 +38,7 @@
 ## Remarks  
  A <xref:System.Web.UI.MobileControls.StyleSheet> control can contain any number of style objects, or more specialized style objects that inherit from the <xref:System.Web.UI.MobileControls.Style> class. These should have unique name properties. You can then refer to other controls on the same page by their <xref:System.Web.UI.MobileControls.Style.Name%2A> property. This class has no visual representation.  
   
- A page can also use an external style sheet, and several pages can share the same external style sheet. For more information about styles, refer to the [\<style>](http://msdn.microsoft.com/en-us/0048ce21-2c92-4377-a211-9aca9efdf748) element and the <xref:System.Web.UI.MobileControls.StyleSheet.Styles%2A> topic.  
+ A page can also use an external style sheet, and several pages can share the same external style sheet. For more information about styles, refer to the [\<style>](http://msdn.microsoft.com/library/0048ce21-2c92-4377-a211-9aca9efdf748) element and the <xref:System.Web.UI.MobileControls.StyleSheet.Styles%2A> topic.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.MobileControls.StyleSheet> control ignores its own style attributes; setting a style attribute on the <xref:System.Web.UI.MobileControls.StyleSheet> itself has no effect on the styles contained as children within the <xref:System.Web.UI.MobileControls.StyleSheet> control.  
@@ -48,12 +48,13 @@
 ## Examples  
  The following example shows how you can add Style properties to a <xref:System.Web.UI.MobileControls.StyleSheet> control during the `Page_Load` event.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileStyleSheetSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSheetSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileStyleSheetSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSheetSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileStyleSheetSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSheetSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileStyleSheetSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSheetSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +92,7 @@
         <summary>Notifies the server control that an element was parsed, and adds the element to the server control's <see cref="P:System.Web.UI.Control.Controls" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">the object to be added does not have a Name attribute.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -135,6 +137,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -179,6 +183,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -217,6 +223,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.BreakAfter" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -271,6 +279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -301,6 +310,7 @@
         <value>
           <see langword="true" /> if the server control maintains its view state; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -334,6 +344,8 @@
         <value>The <see cref="T:System.Web.UI.MobileControls.FontInfo" /> that contains the font information about the control.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.MobileControls.StyleSheet.Font" /> property was accessed at run time,</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -378,6 +390,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -400,6 +414,8 @@
         <summary>Gets or sets a <see cref="T:System.Web.UI.MobileControls.Style" /> object in the style sheet, by name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.Style" /> object in the style sheet with the specified name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -421,6 +437,7 @@
         <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
         <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobileControl.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ReferencePath">
@@ -457,6 +474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -479,6 +497,11 @@
         <summary>Removes the specified style from the style sheet. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The specified style does not exist.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -498,6 +521,7 @@
         <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>Returns the server control's current view state. If there is no view state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="StyleReference">
@@ -542,6 +566,8 @@
  -or-  
   
  An attempt was made to set the property.</exception>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.StyleReference" />
       </Docs>
     </Member>
     <Member MemberName="Styles">
@@ -568,6 +594,7 @@
         <summary>Returns the collection of styles in a style sheet. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The collection of styles in a style sheet.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -616,6 +643,7 @@
         <value>
           <see langword="true" /> if the control is visible on the page; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Wrapping">
@@ -667,6 +695,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Wrapping" />
       </Docs>
     </Member>
   </Members>

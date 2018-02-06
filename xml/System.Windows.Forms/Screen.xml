@@ -90,6 +90,7 @@
         <summary>Gets the bounds of the display.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" />, representing the bounds of the display.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="DeviceName">
@@ -216,6 +217,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Screen.FromControl(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.Screen.FromHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.Screen.FromRectangle(System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="FromRectangle">
@@ -238,6 +242,9 @@
         <summary>Retrieves a <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest portion of the rectangle.</summary>
         <returns>A <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest region of the specified rectangle. In multiple display environments where no display contains the rectangle, the display closest to the rectangle is returned.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Screen.FromControl(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.Screen.FromHandle(System.IntPtr)" />
+        <altmember cref="M:System.Windows.Forms.Screen.FromPoint(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -506,7 +513,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the bounds of the display.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetWorkingArea">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the working area of a display.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

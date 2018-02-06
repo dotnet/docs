@@ -17,6 +17,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IDataSource" />
+    <altmember cref="M:System.Web.UI.IDataSource.GetView(System.String)" />
+    <altmember cref="T:System.Web.UI.DataSourceView" />
   </Docs>
   <Members>
     <Member MemberName="GetChildren">
@@ -43,6 +46,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.XmlDocumentSchema" />
+        <altmember cref="M:System.Web.UI.Design.XmlDocumentSchema.GetViews" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -69,6 +74,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
+        <altmember cref="M:System.Web.UI.Design.DataSetViewSchema.GetFields" />
+        <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -94,6 +102,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataSource" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.DataTable.TableName" />
       </Docs>
     </Member>
   </Members>

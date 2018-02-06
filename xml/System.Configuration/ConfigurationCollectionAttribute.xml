@@ -80,6 +80,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationPropertyAttribute" />
+    <altmember cref="T:System.Configuration.IntegerValidatorAttribute" />
+    <altmember cref="T:System.Configuration.LongValidatorAttribute" />
+    <altmember cref="T:System.Configuration.RegexStringValidatorAttribute" />
+    <altmember cref="T:System.Configuration.StringValidatorAttribute" />
+    <altmember cref="T:System.Configuration.TimeSpanValidatorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

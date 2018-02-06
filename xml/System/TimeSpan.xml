@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/timespan.cs#865ef7b89f41b632). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A <xref:System.TimeSpan> object represents a time interval (duration of time or elapsed time) that is measured as a positive or negative number of days, hours, minutes, seconds, and fractions of a second. The <xref:System.TimeSpan> structure can also be used to represent the time of day, but only if the time is unrelated to a particular date. Otherwise, the <xref:System.DateTime> or <xref:System.DateTimeOffset> structure should be used instead. (For more information about using the <xref:System.TimeSpan> structure to reflect the time of day, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md).)  
   
 > [!NOTE]
@@ -129,9 +125,13 @@
   
  [!code-csharp[System.TimeSpan.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.class/cs/structure1.cs#1)]
  [!code-vb[System.TimeSpan.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.class/vb/structure1.vb#1)]  
+ [!code-powershell[System.TimeSpan.Class#1](~/samples/snippets/powershell/VS_Snippets_CLR_System/system.timespan.class/ps/structure1.ps1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.DateTime" />
+    <altmember cref="T:System.DateTimeOffset" />
+    <altmember cref="T:System.Globalization.Calendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -179,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Ticks" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -231,6 +232,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -285,6 +287,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -341,6 +344,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -379,7 +383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value must be between <xref:System.TimeSpan?displayProperty=nameWithType> and <xref:System.TimeSpan?displayProperty=nameWithType>; otherwise, an exception is thrown.  
+ The return value must be between <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>; otherwise, an exception is thrown.  
   
  The return value is a new <xref:System.TimeSpan>; the original <xref:System.TimeSpan> is not modified.  
   
@@ -394,6 +398,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The resulting <see cref="T:System.TimeSpan" /> is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -459,6 +464,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -556,6 +563,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.TimeSpan" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -674,6 +684,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalDays" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -762,6 +778,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The value of this instance is <see cref="F:System.TimeSpan.MinValue" />.</exception>
+        <altmember cref="P:System.TimeSpan.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -809,6 +826,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -861,6 +881,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
+        <altmember cref="Overload:System.TimeSpan.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -910,6 +932,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FromDays">
@@ -976,6 +1001,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromHours">
@@ -1042,6 +1073,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromMilliseconds">
@@ -1108,6 +1145,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromMinutes">
@@ -1174,6 +1217,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromSeconds">
@@ -1240,6 +1289,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromTicks">
@@ -1291,6 +1346,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1388,6 +1449,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -1434,6 +1501,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="Milliseconds">
@@ -1483,6 +1552,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="Minutes">
@@ -1532,6 +1607,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1578,6 +1659,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1694,6 +1777,7 @@
  The equivalent method for this operator is <xref:System.TimeSpan.Add%28System.TimeSpan%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The resulting <see cref="T:System.TimeSpan" /> is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1791,6 +1875,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1840,6 +1927,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1889,6 +1978,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1938,6 +2029,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1987,6 +2080,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2036,6 +2131,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -2282,7 +2379,7 @@
 |*.*|A culture-sensitive symbol that separates seconds from fractions of a second. The invariant format uses a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
   
- The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan?displayProperty=nameWithType>.  
+ The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `s` by using each of the culture-specific formats for the current culture.  
   
@@ -2371,7 +2468,7 @@
 |.|A culture-sensitive symbol that separates seconds from fractions of a second. The default value is a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
   
- The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan?displayProperty=nameWithType>.  
+ The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `input` by using each of the culture-specific formats for the culture specified by `formatProvider`.  
   
@@ -2571,6 +2668,7 @@
  -or-  
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
+        <altmember cref="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.TimeSpan@)" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -2632,12 +2730,12 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
+ The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
   
  [!code-csharp[System.TimeSpan.ParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parseexact/cs/parseexactexample2.cs#2)]
  [!code-vb[System.TimeSpan.ParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parseexact/vb/parseexactexample2.vb#2)]  
@@ -2717,14 +2815,14 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
  The following example calls the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.TimeSpanStyles%29> method to convert each element of a string array to a <xref:System.TimeSpan> value. The strings can represent a time interval in either the general short format or the general long format.  
   
- In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
+ In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
   
  [!code-csharp[System.TimeSpan.ParseExact#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parseexact/cs/parseexactexample4.cs#4)]
  [!code-vb[System.TimeSpan.ParseExact#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parseexact/vb/parseexactexample4.vb#4)]  
@@ -2792,6 +2890,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -2830,7 +2934,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value must be between <xref:System.TimeSpan?displayProperty=nameWithType> and <xref:System.TimeSpan?displayProperty=nameWithType>; otherwise, an exception is thrown.  
+ The return value must be between <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>; otherwise, an exception is thrown.  
   
  The return value is a new <xref:System.TimeSpan>; the original <xref:System.TimeSpan> is not modified.  
   
@@ -2844,6 +2948,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -2916,6 +3021,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerDay">
@@ -2963,6 +3074,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerHour">
@@ -3010,6 +3126,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerMillisecond">
@@ -3057,6 +3178,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerMinute">
@@ -3104,6 +3230,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerSecond">
@@ -3151,6 +3282,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3217,6 +3353,9 @@
         <block subset="none" type="usage">
           <para>Support for formatting <see cref="T:System.TimeSpan" /> values was added in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. However, the <see cref="M:System.TimeSpan.ToString" /> method overload remains culture-insensitive. Its behavior remains unchanged from previous versions of the .NET Framework. To control the formatting of a <see cref="T:System.TimeSpan" /> value, call the <see cref="M:System.TimeSpan.ToString(System.String)" /> or <see cref="M:System.TimeSpan.ToString(System.String,System.IFormatProvider)" /> overload.</para>
         </block>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.TimeSpan.Parse(System.String)" />
+        <altmember cref="M:System.TimeSpan.TryParse(System.String,System.TimeSpan@)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3255,7 +3394,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  If `format` is a standard format string, the format of the returned string is defined by the formatting conventions of the current culture.  
   
@@ -3319,7 +3458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If format is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If format is any other value, the method throws a <xref:System.FormatException>.  
   
 > [!IMPORTANT]
 >  The custom format strings for <xref:System.TimeSpan> values do not include a date or time separator. If you want to include these elements in your format string, you must treat them as character literals. See the example for an illustration, and see the [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md) topic for more information.  
@@ -3399,6 +3538,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Days" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
       </Docs>
     </Member>
     <Member MemberName="TotalHours">
@@ -3447,6 +3591,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalMilliseconds">
@@ -3495,6 +3644,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalMinutes">
@@ -3543,6 +3697,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalSeconds">
@@ -3591,6 +3750,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -3974,12 +4138,12 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
+ The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
   
  [!code-csharp[System.TimeSpan.TryParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.tryparseexact/cs/tryparseexactexample2.cs#2)]
  [!code-vb[System.TimeSpan.TryParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.tryparseexact/vb/tryparseexactexample2.vb#2)]  
@@ -4050,14 +4214,14 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
  The following example calls the <xref:System.TimeSpan.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.TimeSpanStyles%2CSystem.TimeSpan%40%29> method to convert each element of a string array to a <xref:System.TimeSpan> value. The strings can represent a time interval in either the general short format or the general long format.  
   
- In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
+ In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
   
  [!code-csharp[System.TimeSpan.TryParseExact#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.tryparseexact/cs/tryparseexactexample4.cs#4)]
  [!code-vb[System.TimeSpan.TryParseExact#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.tryparseexact/vb/tryparseexactexample4.vb#4)]  
@@ -4112,5 +4276,100 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent.</summary>
+        <altmember cref="Overload:System.TimeSpan.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.TimeSpan" /> are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+        <altmember cref="Overload:System.TimeSpan.TryParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.TimeSpan" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.TimeSpan" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match a specified format exactly.</summary>
+        <altmember cref="Overload:System.TimeSpan.ParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.TimeSpan.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

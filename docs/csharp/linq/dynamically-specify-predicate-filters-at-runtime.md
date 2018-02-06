@@ -25,7 +25,7 @@ In some cases you do not know until run time how many predicates you have to app
   
 4.  Replace class `Program` with the following code.  
   
-     [!code-cs[csProgGuideLINQ#26](../../../samples/snippets/csharp/concepts/linq/how-to-dynamically-specify-predicate-filters-at-runtime_1.cs)]  
+     [!code-csharp[csProgGuideLINQ#26](../../../samples/snippets/csharp/concepts/linq/how-to-dynamically-specify-predicate-filters-at-runtime_1.cs)]  
   
 5.  Add the following line to the `Main` method in class `DynamicPredicates`, under the declaration of `ids`.  
   
@@ -63,7 +63,7 @@ In some cases you do not know until run time how many predicates you have to app
   
 2.  Copy the following method and paste it into class `DynamicPredicates`.  
   
-     [!code-cs[csProgGuideLINQ#27](../../../samples/snippets/csharp/concepts/linq//how-to-dynamically-specify-predicate-filters-at-runtime_2.cs)]  
+     [!code-csharp[csProgGuideLINQ#27](../../../samples/snippets/csharp/concepts/linq//how-to-dynamically-specify-predicate-filters-at-runtime_2.cs)]  
   
 3.  In the `Main` method, replace the call to `QueryByID` with the following call, which sends the first element from the `args` array as its argument: `QueryByYear(args[0])`.  
   
@@ -71,5 +71,5 @@ In some cases you do not know until run time how many predicates you have to app
   
  
 ## See Also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  [where clause](../language-reference/keywords/where-clause.md)

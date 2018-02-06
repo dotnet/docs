@@ -299,5 +299,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OrderBy&lt;TRow,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderByDescending&lt;TRow,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

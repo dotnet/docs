@@ -19,6 +19,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
+    <altmember cref="T:System.Web.UI.Design.XmlDocumentSchema" />
+    <altmember cref="T:System.Web.UI.Design.TypeSchema" />
   </Docs>
   <Members>
     <Member MemberName="GetViews">
@@ -45,6 +48,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceViewSchema" />
+        <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
       </Docs>
     </Member>
   </Members>

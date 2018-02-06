@@ -1,44 +1,25 @@
 ---
 title: "New Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.new"
   - "vb.NewConstraint"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
   - "generics [Visual Basic], constraints"
-  - "constraints, New keyword"
+  - "constraints, New keyword [Visual Basic]"
   - "New constraint"
-  - "New keyword"
+  - "New keyword [Visual Basic]"
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # New Operator (Visual Basic)
 Introduces a `New` clause to create a new object instance, specifies a constructor constraint on a type parameter, or identifies a `Sub` procedure as a class constructor.  
@@ -70,8 +51,8 @@ Introduces a `New` clause to create a new object instance, specifies a construct
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- <xref:System.OutOfMemoryException>   
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ <xref:System.OutOfMemoryException>  
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
+ [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
  [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

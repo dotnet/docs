@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::GetProcessID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishProcess::GetProcessID method [.NET Framework debugging]"
   - "GetProcessID method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishProcess::GetProcessID Method
 Gets the operating system identifier for this process.  

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "structures [.NET Framework metadata]"
   - "unmanaged structures [.NET Framework], metadata"
@@ -20,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Structures
 This section describes the unmanaged structures that the metadata API uses.  

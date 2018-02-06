@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b883334-1590-4fbb-b0d6-65197efe0700
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Control Endpoint
 The workflow control endpoint allows developers to call control operations to remotely control workflow instances hosted using <xref:System.ServiceModel.Activities.WorkflowServiceHost>. This feature can be used to programmatically perform control operations like suspend, resume, and terminate.  

@@ -1,45 +1,26 @@
 ---
 title: "Namespace Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "namespaces, root"
-  - "Namespace statement"
-  - "namespaces, nested"
-  - "declaring namespaces, syntax"
-  - "namespaces, declaring"
+  - "namespaces [Visual Basic], root"
+  - "Namespace statement [Visual Basic]"
+  - "namespaces [Visual Basic], nested"
+  - "declaring namespaces [Visual Basic], syntax"
+  - "namespaces [Visual Basic], declaring"
   - "root namespaces"
-  - "declarations, namespaces"
+  - "declarations [Visual Basic], namespaces"
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Namespace Statement
 Declares the name of a namespace and causes the source code that follows the declaration to be compiled within that namespace.  
@@ -125,6 +106,6 @@ End Namespace
 ```  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
+ [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
+ [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
  [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)

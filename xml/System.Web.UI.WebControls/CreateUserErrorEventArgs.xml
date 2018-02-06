@@ -28,11 +28,14 @@
   
  The following is the .aspx file that can be used to run the preceding example.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.CreateUserErrorEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.CreateUserErrorEventArgs/CS/createuserwizarderrorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.CreateUserErrorEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.CreateUserErrorEventArgs/VB/createuserwizarderrorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.CreateUserErrorEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.CreateUserErrorEventArgs/CS/createuserwizarderrorcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.CreateUserErrorEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.CreateUserErrorEventArgs/VB/createuserwizarderrorvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,7 @@
         <param name="s">A <see cref="T:System.Web.Security.MembershipCreateStatus" /> object that describes the result of a <see cref="Overload:System.Web.Security.Membership.CreateUser" /> attempt.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserErrorEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserError">
@@ -84,6 +88,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
       </Docs>
     </Member>
   </Members>

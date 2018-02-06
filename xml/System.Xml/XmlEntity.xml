@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents an entity declaration, such as &lt;!ENTITY... &gt;.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Xml.XmlDocumentType.Entities" />
   </Docs>
   <Members>
     <Member MemberName="BaseURI">
@@ -326,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocumentType" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -368,6 +370,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="NotationName">
@@ -410,6 +413,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocumentType" />
       </Docs>
     </Member>
     <Member MemberName="OuterXml">
@@ -486,6 +490,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocumentType" />
       </Docs>
     </Member>
     <Member MemberName="SystemId">
@@ -528,6 +533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocumentType" />
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">

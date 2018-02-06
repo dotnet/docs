@@ -1,7 +1,7 @@
 ---
 title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
 caps.latest.revision: 3
 author: dotnet-bot

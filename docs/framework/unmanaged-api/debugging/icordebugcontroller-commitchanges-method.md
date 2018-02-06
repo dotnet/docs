@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::CommitChanges"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugController::CommitChanges method [.NET Framework debugging]"
   - "CommitChanges method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::CommitChanges Method
 `CommitChanges` is obsolete. Do not call this method.  

@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
 caps.latest.revision: 16
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Security with a Certificate Client
 The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured using message security mode. Both the client and the service are authenticated with certificates. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  
@@ -147,7 +152,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ```  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
+ [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

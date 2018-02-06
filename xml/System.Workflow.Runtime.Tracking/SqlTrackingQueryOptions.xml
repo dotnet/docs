@@ -62,7 +62,7 @@
    
   
 ## Examples  
- The following example demonstrates creating an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ The following example demonstrates creating an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
   
@@ -134,7 +134,7 @@
    
   
 ## Examples  
- The following example demonstrates setting the StatusMaxDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ The following example demonstrates setting the StatusMaxDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
   
@@ -171,7 +171,7 @@
    
   
 ## Examples  
- The following example demonstrates setting the StatusMinDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ The following example demonstrates setting the StatusMinDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
   
@@ -229,7 +229,7 @@
 ## Remarks  
  <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=nameWithType> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
   
- A workflow instance is considered to have a status that matches <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> if the last <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> received for that workflow instance before or during the specified time period has its <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent%2A?displayProperty=nameWithType> property set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> value that maps to the <xref:System.Workflow.Runtime.WorkflowStatus?displayProperty=nameWithType> value specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A>. Therefore, the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow instance must have a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> that is configured for the appropriate <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent?displayProperty=nameWithType> value. Only <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that have been sent in workflow tracking records can be matched. If no workflow tracking records have been sent for the workflow instance, the workflow instance is considered to have a status of <xref:System.Workflow.Runtime.WorkflowStatus?displayProperty=nameWithType>.  
+ A workflow instance is considered to have a status that matches <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> if the last <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> received for that workflow instance before or during the specified time period has its <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent%2A?displayProperty=nameWithType> property set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> value that maps to the <xref:System.Workflow.Runtime.WorkflowStatus?displayProperty=nameWithType> value specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A>. Therefore, the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow instance must have a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> that is configured for the appropriate <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent?displayProperty=nameWithType> value. Only <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that have been sent in workflow tracking records can be matched. If no workflow tracking records have been sent for the workflow instance, the workflow instance is considered to have a status of <xref:System.Workflow.Runtime.WorkflowStatus.Created?displayProperty=nameWithType>.  
   
  The following table shows the mapping between <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values and <xref:System.Workflow.Runtime.WorkflowStatus> values.  
   
@@ -254,7 +254,7 @@
    
   
 ## Examples  
- The following example demonstrates setting the WorkflowStatus property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ The following example demonstrates setting the WorkflowStatus property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
   

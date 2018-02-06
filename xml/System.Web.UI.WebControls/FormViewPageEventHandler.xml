@@ -29,22 +29,26 @@
 > [!NOTE]
 >  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- When you create a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventHandler/CS/formviewpageeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventHandler/VB/formviewpageeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventHandler/CS/formviewpageeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventHandler/VB/formviewpageeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
   </Docs>
 </Type>

@@ -349,6 +349,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClient">
@@ -482,6 +483,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClientAsync">
@@ -652,6 +654,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClientAsync">
@@ -783,6 +786,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AuthenticateAsServer">
@@ -907,6 +911,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServer">
@@ -1040,6 +1045,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServerAsync">
@@ -1140,6 +1146,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServerAsync">
@@ -1267,6 +1274,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginAuthenticateAsClient">
@@ -1490,6 +1498,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="BeginAuthenticateAsClient">
@@ -1639,6 +1648,7 @@
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginAuthenticateAsServer">
@@ -1774,6 +1784,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="BeginAuthenticateAsServer">
@@ -1921,6 +1932,7 @@
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -2187,6 +2199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Security.NegotiateStream.Position" />
       </Docs>
     </Member>
     <Member MemberName="CanTimeout">
@@ -2329,7 +2342,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -2775,6 +2788,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Security.ProtectionLevel" />
       </Docs>
     </Member>
     <Member MemberName="IsMutuallyAuthenticated">
@@ -3378,5 +3392,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthenticateAsServerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Handles the server side of an authentication for a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsClientAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsClient">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by clients to authenticate the client, and optionally the server, in a client-server connection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

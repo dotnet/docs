@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cd7ddffc-a261-44aa-bd50-33c1c74f0df0
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extensibility
 This section contains samples that deal with custom extensibility and other features of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

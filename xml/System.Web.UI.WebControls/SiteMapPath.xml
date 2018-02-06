@@ -159,8 +159,8 @@
 ## Examples  
  The following code example uses a <xref:System.Web.UI.WebControls.SiteMapPath> control declaratively in a Web Forms page. This example demonstrates some of the rules of precedence that govern the order with which templates and styles are applied to <xref:System.Web.UI.WebControls.SiteMapPath> nodes.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  
   
  The previous example uses the default site map provider and a Web.sitemap file with the following structure.  
   
@@ -179,6 +179,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMap" />
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItem" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -204,8 +211,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SiteMapPath.%23ctor%2A> constructor to add a <xref:System.Web.UI.WebControls.SiteMapPath> control to a page. For the example to work, you need to add an image to your root directory and change the image name in the example code from "myimage.jpg" to the name of your image file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -234,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
@@ -268,6 +276,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">No <see cref="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" /> is available to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateChildControls" />
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.InitializeItem(System.Web.UI.WebControls.SiteMapNodeItem)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentNodeStyle">
@@ -321,11 +331,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> of a <xref:System.Web.UI.WebControls.SiteMapPath> control in a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="CurrentNodeTemplate">
@@ -372,11 +384,13 @@
 ## Examples  
  The following code example declaratively defines a <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> and overrides a defined <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -448,6 +462,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -526,6 +541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.TrackViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="NodeStyle">
@@ -579,11 +596,14 @@
 ## Examples  
  The following code example demonstrates how to define a <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> that is merged with a <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> to demonstrate the order of style precedence for the <xref:System.Web.UI.WebControls.SiteMapPath> nodes.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
       </Docs>
     </Member>
     <Member MemberName="NodeTemplate">
@@ -633,8 +653,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/CS/webform1navpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/VB/webform1navpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/CS/webform1navpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/VB/webform1navpathvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -685,7 +705,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated> event is raised after the <xref:System.Web.UI.WebControls.SiteMapPath> control creates a <xref:System.Web.UI.WebControls.SiteMapNodeItem>, which is a Web server control that represents a <xref:System.Web.SiteMapNode>, and associates it to a <xref:System.Web.SiteMapNode>. The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method is called before the created node item is bound to its data. This allows you to provide an event-handling method that performs a custom routine whenever a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -702,6 +722,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -728,7 +749,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound> event is raised when the <xref:System.Web.UI.WebControls.SiteMapPath> control binds to the data provided by its <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A>. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -737,6 +758,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ParentLevelsDisplayed">
@@ -812,12 +834,14 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> property of a <xref:System.Web.UI.WebControls.SiteMapPath> in a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <see cref="P:System.Web.UI.WebControls.SiteMapPath.PathDirection" /> is not one of the base <see cref="T:System.Web.UI.WebControls.PathDirection" /> enumerations.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -858,11 +882,13 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> property of a <xref:System.Web.UI.WebControls.SiteMapPath> to a string other than the default.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="PathSeparatorStyle">
@@ -950,11 +976,14 @@
 ## Examples  
  The following code example demonstrates how to define an <xref:System.Web.UI.WebControls.Image> as a <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> declaratively in a Web Form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/CS/aboutuscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/VB/aboutusvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/CS/aboutuscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/VB/aboutusvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1014,6 +1043,8 @@
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered output.</param>
         <summary>Writes the <see cref="T:System.Web.UI.WebControls.CompositeControl" /> content to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object, for display on the client.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CompositeControl.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1042,6 +1073,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.SkipLinkText" />
       </Docs>
     </Member>
     <Member MemberName="RenderCurrentNodeAsLink">
@@ -1078,8 +1110,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SiteMapPath.RenderCurrentNodeAsLink%2A> property to `true` to make the current node a hyperlink when the <xref:System.Web.UI.WebControls.SiteMapPath> control renders its content.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1139,11 +1171,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="RootNodeTemplate">
@@ -1190,11 +1224,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically define a class that implements the <xref:System.Web.UI.ITemplate> interface to wrap an <xref:System.Web.UI.WebControls.Image> control. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is set to an instance of the class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1223,6 +1259,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="ShowToolTips">
@@ -1264,8 +1302,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.ShowToolTips%2A> property to `false` in a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1362,6 +1400,8 @@
       <Docs>
         <summary>Tracks changes to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control's view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" />
       </Docs>
     </Member>
   </Members>

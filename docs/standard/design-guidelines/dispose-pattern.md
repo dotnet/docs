@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Dispose method"
   - "class library design guidelines [.NET Framework], Dispose method"
@@ -24,6 +19,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Dispose Pattern
 All programs acquire one or more system resources, such as memory, system handles, or database connections, during the course of their execution. Developers have to be careful when using such system resources, because they must be released after they have been acquired and used.  
@@ -287,8 +285,8 @@ public class ComplexResourceHolder : IDisposable {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
- [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)   
+ <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>  
+ <xref:System.Object.Finalize%2A?displayProperty=nameWithType>  
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+ [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)  
  [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

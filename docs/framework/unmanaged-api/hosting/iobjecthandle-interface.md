@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IObjectHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IObjectHandle interface [.NET Framework hosting]"
 ms.assetid: 436683ef-9849-4b24-89a9-28c06d148dce
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IObjectHandle Interface
 Provides a method for unwrapping marshal-by-value objects from indirection.  

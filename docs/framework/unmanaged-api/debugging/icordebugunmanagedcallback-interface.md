@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugUnmanagedCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugUnmanagedCallback interface [.NET Framework debugging]"
 ms.assetid: bc71cbca-7d73-40e5-84dd-2109fade3c2a
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugUnmanagedCallback Interface
 Provides notification of native events that are not directly related to the common language runtime (CLR).  

@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "protocols, UDP"
   - "network resources, UDP"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using UDP Services
 The <xref:System.Net.Sockets.UdpClient> class communicates with network services using UDP. The properties and methods of the <xref:System.Net.Sockets.UdpClient> class abstract the details of creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using UDP.  
@@ -181,6 +181,6 @@ class Program
 ```  
   
 ## See Also  
- <xref:System.Net.Sockets.UdpClient>   
- <xref:System.Net.IPAddress>   
+ <xref:System.Net.Sockets.UdpClient>  
+ <xref:System.Net.IPAddress>  
  

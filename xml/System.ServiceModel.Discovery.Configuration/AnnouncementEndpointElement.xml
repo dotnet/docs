@@ -259,5 +259,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to an announcement endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, initializes and validates the specified endpoint element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,7 @@
 ---
 title: "Atomized XName and XNamespace Objects (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
 caps.latest.revision: 3
 author: "BillWagner"

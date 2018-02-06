@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" />
+    <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
+    <altmember cref="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
+    <altmember cref="T:System.ServiceModel.AuditLevel" />
   </Docs>
   <Members>
     <Member MemberName="Application">

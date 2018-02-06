@@ -53,6 +53,42 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.ValueSource" />
+      </Docs>
+    </Member>
+    <Member MemberName="IsTemplatedValueDynamic">
+      <MemberSignature Language="C#" Value="public static bool IsTemplatedValueDynamic (System.Windows.DependencyObject elementInTemplate, System.Windows.DependencyProperty dependencyProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTemplatedValueDynamic(class System.Windows.DependencyObject elementInTemplate, class System.Windows.DependencyProperty dependencyProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyHelper.IsTemplatedValueDynamic(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementInTemplate" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="elementInTemplate">An element that belongs to a template instance.</param>
+        <param name="dependencyProperty">A dependency property. </param>
+        <summary>Indicates whether a specified element belongs to an instance of a template that defines a value for the specified property that may change at runtime based on changes elsewhere.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="elementInTemplate" /> belongs to an instance of a template that defines a value for the specified property that may change at runtime based on changes elsewhere; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+Examples of values that may change at runtime based on changes elsewhere are values set by <xref:System.Windows.Data.Binding>, <xref:System.Windows.TemplateBindingExtension> and <xref:System.Windows.DynamicResourceExtension> objects.
+
+This method provides more detailed information in cases where the value of the <xref:System.Windows.ValueSource.BaseValueSource?displayProperty=nameWithType> property is <xref:System.Windows.BaseValueSource.ParentTemplate?displayProperty=nameWithType>.
+The information is primarily of use to diagnostic tools.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

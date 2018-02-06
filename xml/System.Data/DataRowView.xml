@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.DataRow" />
   </Docs>
   <Members>
     <Member MemberName="BeginEdit">
@@ -99,6 +100,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRow.AcceptChanges" />
+        <altmember cref="P:System.Data.DataView.AllowDelete" />
+        <altmember cref="P:System.Data.DataView.AllowEdit" />
+        <altmember cref="P:System.Data.DataView.AllowNew" />
+        <altmember cref="M:System.Data.DataRowView.CancelEdit" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="M:System.Data.DataRowView.EndEdit" />
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -141,6 +149,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRow.AcceptChanges" />
+        <altmember cref="P:System.Data.DataView.AllowDelete" />
+        <altmember cref="P:System.Data.DataView.AllowEdit" />
+        <altmember cref="P:System.Data.DataView.AllowNew" />
+        <altmember cref="M:System.Data.DataRowView.BeginEdit" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="M:System.Data.DataRowView.EndEdit" />
+        <altmember cref="P:System.Data.DataRowView.RowVersion" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildView">
@@ -351,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRowView.BeginEdit" />
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
@@ -387,6 +404,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRow.AcceptChanges" />
+        <altmember cref="P:System.Data.DataView.AllowDelete" />
+        <altmember cref="P:System.Data.DataView.AllowEdit" />
+        <altmember cref="P:System.Data.DataView.AllowNew" />
+        <altmember cref="M:System.Data.DataRowView.CancelEdit" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="M:System.Data.DataRowView.BeginEdit" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -475,6 +499,7 @@
         <value>
           <see langword="true" /> if the row is in edit mode; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Data.DataRowView.BeginEdit" />
       </Docs>
     </Member>
     <Member MemberName="IsNew">
@@ -662,6 +687,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataRowView" />
+        <altmember cref="T:System.Data.DataRow" />
       </Docs>
     </Member>
     <Member MemberName="RowVersion">
@@ -704,6 +731,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRow.AcceptChanges" />
+        <altmember cref="M:System.Data.DataRow.BeginEdit" />
+        <altmember cref="T:System.Data.DataRowVersion" />
+        <altmember cref="M:System.Data.DataRow.EndEdit" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -1246,5 +1277,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a value in a specified column.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateChildView">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataView" /> for the child <see cref="T:System.Data.DataTable" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

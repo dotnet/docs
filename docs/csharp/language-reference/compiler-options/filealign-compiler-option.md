@@ -1,14 +1,12 @@
 ---
 title: "-filealign (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/filealign"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/alignment compiler option [C#]"
   - "filealign compiler option [C#]"
@@ -25,28 +23,14 @@ ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /filealign (C# Compiler Options)
-The **/filealign** option lets you specify the size of sections in your output file.  
+# -filealign (C# Compiler Options)
+The **-filealign** option lets you specify the size of sections in your output file.  
   
 ## Syntax  
   
 ```console  
-/filealign:number  
+-filealign:number  
 ```  
   
 ## Arguments  
@@ -54,7 +38,7 @@ The **/filealign** option lets you specify the size of sections in your output f
  A value that specifies the size of sections in the output file. Valid values are 512, 1024, 2048, 4096, and 8192. These values are in bytes.  
   
 ## Remarks  
- Each section will be aligned on a boundary that is a multiple of the **/filealign** value. There is no fixed default. If **/filealign** is not specified, the common language runtime picks a default at compile time.  
+ Each section will be aligned on a boundary that is a multiple of the **-filealign** value. There is no fixed default. If **-filealign** is not specified, the common language runtime picks a default at compile time.  
   
  By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices.  
   
@@ -73,5 +57,5 @@ The **/filealign** option lets you specify the size of sections in your output f
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

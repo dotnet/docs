@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Metadata.Edm.MetadataWorkspace> class provides a central runtime service component that you can use to interact with conceptual model metadata in the context of a given application. For more information, see [Metadata Workspace](http://msdn.microsoft.com/en-us/601aee56-3eda-4caa-9082-a01df76c5e84).  
+ The <xref:System.Data.Metadata.Edm.MetadataWorkspace> class provides a central runtime service component that you can use to interact with conceptual model metadata in the context of a given application. For more information, see [Metadata Workspace](http://msdn.microsoft.com/library/601aee56-3eda-4caa-9082-a01df76c5e84).  
   
  ]]></format>
     </remarks>
@@ -1003,5 +1003,122 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFromAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads metadata from an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObjectSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the object space type that matches the type supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEdmSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> or <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="edmSpaceType" /> that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the type metadata that is described via an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, the namespace name, and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEdmSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetObjectSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> or <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="objectSpaceType" /> that represents the type that matches the <see cref="T:System.Data.Metadata.Edm.EdmType" /> supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFunctions">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the overloads of the functions by using the specified name, namespace name, and data model.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

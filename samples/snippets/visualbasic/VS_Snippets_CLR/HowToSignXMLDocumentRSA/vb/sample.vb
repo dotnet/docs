@@ -1,14 +1,9 @@
 ' <snippet1>
-Imports System
 Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 Imports System.Xml
 
-
-
 Module SignXML
-
-
     Sub Main(ByVal args() As String)
         Try
             ' Create a new CspParameters object to specify
@@ -46,18 +41,16 @@ Module SignXML
 
     End Sub
 
-
-
     ' Sign an XML file. 
     ' This document cannot be verified unless the verifying 
     ' code has the key with which it was signed.
-    Sub SignXml(ByVal xmlDoc As XmlDocument, ByVal Key As RSA)
+    Sub SignXml(ByVal xmlDoc As XmlDocument, ByVal key As RSA)
         ' Check arguments.
         If xmlDoc Is Nothing Then
             Throw New ArgumentException("xmlDoc")
         End If
-        If Key Is Nothing Then
-            Throw New ArgumentException("Key")
+        If key Is Nothing Then
+            Throw New ArgumentException("key")
         End If
         ' Create a SignedXml object.
         ' <snippet5>
@@ -65,7 +58,7 @@ Module SignXML
         ' </snippet5>
         ' Add the key to the SignedXml document.
         ' <snippet6>
-        signedXml.SigningKey = rsaKey
+        signedXml.SigningKey = key
         ' </snippet6>
         ' <snippet7>
         ' Create a reference to be signed.

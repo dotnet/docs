@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "security [WCF], authentication"
 ms.assetid: 9254d873-843d-4c6e-bea4-8184ac3e44f4
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Authentication in WCF
 The following topics show a number of different mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] that provide authentication, for example, Windows authentication, X.509 certificates, and user name and passwords.  
@@ -44,5 +46,5 @@ The following topics show a number of different mechanisms in [!INCLUDE[indigo1]
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

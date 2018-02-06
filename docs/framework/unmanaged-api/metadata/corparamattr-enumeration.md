@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorParamAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorParamAttr enumeration [.NET Framework metadata]"
 ms.assetid: a7ff90ad-dad8-48e8-917d-4aa9a118cbc8
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorParamAttr Enumeration
 Contains values that describe the metadata of a method parameter.  

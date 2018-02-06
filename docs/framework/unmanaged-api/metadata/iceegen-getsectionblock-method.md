@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetSectionBlock"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSectionBlock method [.NET Framework metadata]"
   - "ICeeGen::GetSectionBlock method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetSectionBlock Method
 Gets a section block of the code base.  

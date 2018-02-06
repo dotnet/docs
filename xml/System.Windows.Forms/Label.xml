@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.TextBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -188,6 +191,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
+        <altmember cref="P:System.Windows.Forms.Label.PreferredHeight" />
+        <altmember cref="P:System.Windows.Forms.Label.PreferredWidth" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoEllipsis" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -406,6 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CalcImageRenderBounds">
@@ -439,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -495,6 +506,7 @@
         <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> supported by this control. The default is <see cref="F:System.Windows.Forms.ImeMode.Disable" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -566,7 +578,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -598,6 +610,10 @@
         <block subset="none" type="overrides">
           <para>When you are creating your own control that derives from <see cref="T:System.Windows.Forms.Label" />, you can use this method to draw images onto the surface of the control.</para>
         </block>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -693,6 +709,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="ImageAlign">
@@ -736,6 +756,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -788,6 +812,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than the lower bounds of the <see cref="P:System.Windows.Forms.Label.ImageIndex" /> property.</exception>
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -875,6 +902,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -909,6 +940,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to this property is not within the range of valid values specified in the enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.Label.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -1281,6 +1314,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Label.TextAlign" />
+        <altmember cref="E:System.Windows.Forms.Label.TextAlignChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1371,6 +1406,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.PreferredWidth" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="PreferredWidth">
@@ -1419,6 +1456,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.PreferredHeight" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1546,6 +1585,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabel" />
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -1638,6 +1678,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignChanged">
@@ -1672,6 +1713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.TextAlign" />
+        <altmember cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1724,6 +1767,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="UseMnemonic">
@@ -1764,6 +1809,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">

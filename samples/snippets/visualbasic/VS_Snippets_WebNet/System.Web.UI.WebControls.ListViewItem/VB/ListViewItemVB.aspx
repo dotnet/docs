@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="VB" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -18,7 +18,7 @@
       ' Get the EmailAddressLabel Label control in the item.      
       Dim EmailAddressLabel As Label = CType(item.FindControl("EmailAddressLabel"), Label)
       
-      ' Display the e-mail address in italics.
+      ' Display the email address in italics.
       EmailAddressLabel.Font.Italic = True
             
     End If
@@ -51,7 +51,7 @@
             <tr class="bgcolor" runat="server">
               <th runat="server">First Name</th>
               <th runat="server">Last Name</th>
-              <th runat="server">E-mail Address</th>
+              <th runat="server">Email Address</th>
             </tr>
             <tr id="itemPlaceholder" runat="server"></tr>
           </table>
@@ -113,4 +113,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

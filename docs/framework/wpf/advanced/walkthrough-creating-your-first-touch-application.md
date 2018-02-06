@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "creating a touch-sensitive application [WPF]"
   - "touchscreen applications [WPF], creating"
@@ -19,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating Your First Touch Application
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] enables applications to respond to touch. For example, you can interact with an application by using one or more fingers on a touch-sensitive device, such as a touchscreen This walkthrough creates an application that enables the user to move, resize, or rotate a single object by using touch.  
@@ -38,7 +43,7 @@ manager: "wpickett"
   
 #### To create the application  
   
-1.  Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+1.  Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
 2.  Replace the contents of MainWindow.xaml with the following XAML.  
   
@@ -87,6 +92,6 @@ manager: "wpickett"
  To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.  
   
 ## See Also  
- <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>   
- <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>   
+ <xref:System.Windows.UIElement.ManipulationStarting?displayProperty=nameWithType>  
+ <xref:System.Windows.UIElement.ManipulationDelta?displayProperty=nameWithType>  
  <xref:System.Windows.UIElement.ManipulationInertiaStarting?displayProperty=nameWithType>

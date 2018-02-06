@@ -18,6 +18,10 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Reflection.FieldInfo" />
+    <altmember cref="T:System.Reflection.PropertyInfo" />
+    <altmember cref="T:System.Reflection.MethodInfo" />
+    <altmember cref="M:Microsoft.JScript.ScriptObject.WrapMembers(System.Reflection.MemberInfo,System.Object)" />
   </Docs>
   <Members>
     <Member MemberName="GetWrappedObject">
@@ -45,6 +49,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="M:Microsoft.JScript.ScriptObject.WrapMembers(System.Reflection.MemberInfo,System.Object)" />
       </Docs>
     </Member>
   </Members>

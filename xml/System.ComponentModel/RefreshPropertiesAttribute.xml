@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.RefreshProperties" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RefreshProperties" />
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -146,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.RefreshProperties" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -265,6 +268,7 @@
         <summary>Gets the refresh properties for the member.</summary>
         <value>A <see cref="T:System.ComponentModel.RefreshProperties" /> that indicates the current refresh properties for the member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.RefreshProperties" />
       </Docs>
     </Member>
     <Member MemberName="Repaint">

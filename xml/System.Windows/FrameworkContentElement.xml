@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.FrameworkElement" />
+    <altmember cref="T:System.Windows.ContentElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.AddLogicalChild(System.Object)" />
+        <altmember cref="P:System.Windows.FrameworkContentElement.LogicalChildren" />
+        <altmember cref="T:System.Windows.LogicalTreeHelper" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -361,6 +366,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosing">
@@ -408,6 +415,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosingEvent">
@@ -471,6 +479,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuOpeningEvent">
@@ -565,6 +575,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.ContentElement.QueryCursor" />
+        <altmember cref="P:System.Windows.FrameworkContentElement.ForceCursor" />
+        <altmember cref="P:System.Windows.Input.Mouse.OverrideCursor" />
       </Docs>
     </Member>
     <Member MemberName="CursorProperty">
@@ -1186,6 +1199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkContentElement.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="IsLoaded">
@@ -1220,6 +1234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkContentElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -1376,6 +1391,7 @@
         <summary>Moves the keyboard focus from this element to another element.</summary>
         <returns>Returns <see langword="true" /> if focus is moved successfully; <see langword="false" /> if the target element in direction as specified does not exist.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.ContentElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1429,6 +1445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="NameProperty">
@@ -1601,6 +1618,8 @@
         <block subset="none" type="overrides">
           <para>Always call the base implementation, as the first operation in your implementation. Failure to do this will significantly disable the entire [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, which causes incorrect values to be reported.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+        <altmember cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -1634,6 +1653,7 @@
         <block subset="none" type="overrides">
           <para>Always call the base implementation, otherwise styles cannot be applied. Scenarios for overriding this method might include if your derived class has a specialized style selector, or caches style values. Theme changes will potentially invoke this method.</para>
         </block>
+        <altmember cref="P:System.Windows.FrameworkContentElement.Style" />
       </Docs>
     </Member>
     <Member MemberName="OnToolTipClosing">
@@ -1728,6 +1748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkContentElement.DefaultStyleKey" />
       </Docs>
     </Member>
     <Member MemberName="OverridesDefaultStyleProperty">
@@ -1786,6 +1807,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkContentElement.TemplatedParent" />
       </Docs>
     </Member>
     <Member MemberName="PredictFocus">
@@ -1848,6 +1870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkContentElement.UnregisterName(System.String)" />
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="RemoveLogicalChild">
@@ -1878,6 +1902,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.LogicalTreeHelper" />
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -1939,6 +1964,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Application.Resources" />
       </Docs>
     </Member>
     <Member MemberName="SetBinding">
@@ -2047,6 +2073,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkContentElement.FindResource(System.Object)" />
+        <altmember cref="P:System.Windows.Application.Resources" />
+        <altmember cref="P:System.Windows.FrameworkElement.Resources" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeResources">
@@ -2288,6 +2317,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkContentElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="TagProperty">
@@ -2625,6 +2655,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkContentElement.FindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -2710,6 +2741,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkContentElement.RegisterName(System.String,System.Object)" />
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDefaultStyle">
@@ -2730,5 +2763,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginStoryboard">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the sequence of actions that are contained in the provided storyboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBinding">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches a binding to this element for the specified dependency property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

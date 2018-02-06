@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorPinvokeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorPinvokeMap enumeration [.NET Framework metadata]"
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorPinvokeMap Enumeration
 Specifies options for a PInvoke call.  

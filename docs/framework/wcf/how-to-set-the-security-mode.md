@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Mode property"
   - "WCF, security mode"
@@ -18,6 +21,8 @@ caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Set the Security Mode
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] security has three common security modes that are found on most predefined bindings: transport, message, and "transport with message credential." Two additional modes are specific to two bindings: the "transport-credential only" mode found on the <xref:System.ServiceModel.BasicHttpBinding>, and the "Both" mode, found on the <xref:System.ServiceModel.NetMsmqBinding>. However, this topic concentrates on the three common security modes: <xref:System.ServiceModel.SecurityMode.Transport>, <xref:System.ServiceModel.SecurityMode.Message>, and <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
@@ -117,12 +122,12 @@ manager: "mbaldwin"
  [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md).  
   
 ## See Also  
- [How to: Configure a Port with an SSL Certificate](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)   
- [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)   
- [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md)   
- [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)   
- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)   
- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)   
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)   
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)   
+ [How to: Configure a Port with an SSL Certificate](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)  
+ [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
+ [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md)  
+ [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)  
+ [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)  
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)  
  [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

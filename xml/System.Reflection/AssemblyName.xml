@@ -140,6 +140,14 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Version" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKey" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKeyToken" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKey(System.Byte[])" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKeyToken(System.Byte[])" />
+    <altmember cref="P:System.Type.FullName" />
+    <altmember cref="M:System.Type.GetType" />
+    <altmember cref="P:System.Type.AssemblyQualifiedName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -779,7 +787,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -916,6 +924,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
         <param name="sender">The source of the deserialization event.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessorArchitecture">
@@ -951,10 +961,11 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture?displayProperty=nameWithType> for reference assemblies.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture.None?displayProperty=nameWithType> for reference assemblies.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceMatchesDefinition">
@@ -1385,11 +1396,22 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
  <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> information indicates, for example, that the assembly cannot execute side-by-side with other versions due to conflicts over a device driver.  
   
- Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
+ Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameMachine?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,6 +17,8 @@ caps.latest.revision: 2
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Mitigation: Pointer-based Touch and Stylus Support
 

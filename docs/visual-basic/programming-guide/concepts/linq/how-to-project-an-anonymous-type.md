@@ -1,7 +1,7 @@
 ---
 title: "How to: Project an Anonymous Type (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 30b42987-0e0e-4b2b-adb1-5255ddfbcd7b
 caps.latest.revision: 4
 author: dotnet-bot

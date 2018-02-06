@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "typography, about typography"
+  - "typography [WPF], about typography"
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Typography in WPF
 This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
@@ -174,11 +176,11 @@ Interaction between application and TextFormatter
  For more details on creating custom text layout, see [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md).  
   
 ## See Also  
- <xref:System.Windows.Media.FormattedText>   
- <xref:System.Windows.Media.TextFormatting.TextFormatter>   
- [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)   
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)   
- [Drawing Formatted Text](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)   
- [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
+ <xref:System.Windows.Media.FormattedText>  
+ <xref:System.Windows.Media.TextFormatting.TextFormatter>  
+ [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
+ [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
+ [Drawing Formatted Text](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)  
+ [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
  [Microsoft Typography](http://www.microsoft.com/typography/default.mspx)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval interface [.NET Framework debugging]"
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
@@ -28,6 +26,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval Interface1
 Provides methods to enable the debugger to execute code within the context of the code being debugged.  

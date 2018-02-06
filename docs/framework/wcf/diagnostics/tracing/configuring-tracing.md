@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "tracing [WCF]"
 ms.assetid: 82922010-e8b3-40eb-98c4-10fc05c6d65d
 caps.latest.revision: 53
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Tracing
 This topic describes how you can enable tracing, configure trace sources to emit traces and set trace levels, set activity tracing and propagation to support end-to-end trace correlation, and set trace listeners to access traces.  
@@ -187,7 +189,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)   
- [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
+ [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)  
  [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239)

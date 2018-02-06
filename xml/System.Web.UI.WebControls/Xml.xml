@@ -98,11 +98,17 @@
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlDocument" />
+    <altmember cref="T:System.Xml.Xsl.XslTransform" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.TransformArgumentList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,8 +150,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Xml.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.WebControls.Xml> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomXmlAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomXmlAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomXmlAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomXmlAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomXmlAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobject.cs#2)]
  [!code-vb[CustomXmlAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobject.vb#2)]  
@@ -154,6 +160,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -177,6 +184,7 @@
         <summary>Overrides the <see cref="P:System.Web.UI.Control.ClientID" /> property and returns the base server control identifier.</summary>
         <value>The base server control identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientID" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -267,11 +275,16 @@
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentContent">
@@ -308,6 +321,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentSource">
@@ -347,11 +364,15 @@
 ## Examples  
  The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]
+ [!code-aspx-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -524,8 +545,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Xml.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Xml> control is always displayed with an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomXmlRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomXmlRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomXmlRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomXmlRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_rendervb.aspx#1)]  
   
  [!code-csharp[CustomXmlRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_render.cs#2)]
  [!code-vb[CustomXmlRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_render.vb#2)]  
@@ -608,11 +629,16 @@
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XslTransform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -648,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="TransformSource">
@@ -684,11 +711,15 @@
 ## Examples  
  The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]
+ [!code-aspx-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="XPathNavigator">

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetModuleFromMetaDataInterface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::GetModuleFromMetaDatainterface method [.NET Framework debugging]"
   - "GetModuleFromMetaDatainterface method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetModuleFromMetaDataInterface Method
 Gets the module that corresponds to the given metadata interface.  

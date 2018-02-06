@@ -68,6 +68,8 @@ Each member of a class has an associated accessibility, which controls the regio
 	- Access limited to the containing class or classes derived from the containing class
 * `private`
 	- Access limited to this class
+* `private protected`
+    - Access limited to the containing class or classes derived from the containing type withing the same assembly
 
 ## Type parameters
 
@@ -134,7 +136,7 @@ An *output parameter* is used for passing arguments by reference. It's similar t
 
 [!code-csharp[OutExample](../../../samples/snippets/csharp/tour/classes-and-objects/OutExample.cs#L3-L17)]
 
-A *parameter array* permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the `@System.Console` class are good examples of parameter array usage. They are declared as follows.
+A *parameter array* permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the <xref:System.Console?displayProperty=nameWithType> class are good examples of parameter array usage. They are declared as follows.
 
 [!code-csharp[ConsoleExample](../../../samples/snippets/csharp/tour/classes-and-objects/Program.cs#L78-L83)]
 

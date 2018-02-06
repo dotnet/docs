@@ -18,10 +18,13 @@
 ## Remarks  
  The <xref:System.Web.UI.PageHandlerFactory> class implements the <xref:System.Web.IHttpHandlerFactory> interface to provide the default HTTP handler for ASP.NET files. The <xref:System.Web.UI.PageHandlerFactory> calls the ASP.NET compilation system to compile, if necessary, and return the exact type corresponding to the URL, and then creates an instance of that type. The page type inherits from the <xref:System.Web.UI.Page> class and implements the <xref:System.Web.IHttpHandler> interface.  
   
- To build a custom page handler factory, implement the <xref:System.Web.IHttpHandlerFactory> and register the custom <xref:System.Web.UI.PageHandlerFactory> class in the Web.config file for the application in the [httpHandlers Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/24ca01f3-7141-4fdc-acac-71c0733cf6c2) configuration section.  
+ To build a custom page handler factory, implement the <xref:System.Web.IHttpHandlerFactory> and register the custom <xref:System.Web.UI.PageHandlerFactory> class in the Web.config file for the application in the [httpHandlers Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/24ca01f3-7141-4fdc-acac-71c0733cf6c2) configuration section.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.IHttpHandler" />
+    <altmember cref="T:System.Web.IHttpHandlerFactory" />
+    <altmember cref="T:System.Web.Services.Protocols.WebServiceHandlerFactory" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandler">
@@ -100,6 +104,7 @@
         <param name="handler">The <see cref="T:System.Web.IHttpHandler" /> to reuse.</param>
         <summary>Enables a factory to reuse an existing instance of a handler.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       </Docs>
     </Member>
   </Members>

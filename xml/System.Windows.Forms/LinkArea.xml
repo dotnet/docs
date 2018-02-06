@@ -36,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.LinkLabel.LinkArea" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +101,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -157,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.LinkArea.Start" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -234,6 +239,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.LinkArea.Length" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -253,6 +259,7 @@
         <summary>Returns the fully qualified type name of this instance.</summary>
         <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.ToString" />
       </Docs>
     </Member>
   </Members>

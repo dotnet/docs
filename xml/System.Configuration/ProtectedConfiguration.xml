@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+    <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName="DataProtectionProviderName">
@@ -70,6 +72,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+        <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
@@ -99,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+        <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="ProtectedDataSectionName">
@@ -135,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+        <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -167,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="RsaProviderName">
@@ -203,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+        <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
       </Docs>
     </Member>
   </Members>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b2723929-8829-424d-8015-a37ba2ab4f68
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Find Criteria
 This sample demonstrates how to create a custom scope match using logic and how to implement a custom discovery service. Clients use custom scope matching functionality to refine and further build on top of the system-provided find functionality of WCF Discovery. The scenario this sample covers is as follows:  

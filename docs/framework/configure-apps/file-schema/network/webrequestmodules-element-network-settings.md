@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#webRequestModules"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "webRequestModules element"
   - "<webRequestModules> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;webRequestModules&gt; Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
@@ -36,7 +33,7 @@ Specifies modules to use to request information from network hosts.
 ## Syntax  
   
 ```xml  
-      <webRequestModules>   
+<webRequestModules>   
 </webRequestModules>  
 ```  
   
@@ -85,6 +82,6 @@ Specifies modules to use to request information from network hosts.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
- <xref:System.Net.IWebRequestCreate>   
+ <xref:System.Net.WebRequest>  
+ <xref:System.Net.IWebRequestCreate>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

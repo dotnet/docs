@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.FrameworkElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +63,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="P:System.Windows.Input.TraversalRequest.FocusNavigationDirection" />
       </Docs>
     </Member>
     <Member MemberName="FocusNavigationDirection">

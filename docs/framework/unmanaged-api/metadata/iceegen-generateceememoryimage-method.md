@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GenerateCeeMemoryImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GenerateCeeMemoryImage method [.NET Framework metadata]"
   - "GenerateCeeMemoryImage method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GenerateCeeMemoryImage Method
 Generates an image in memory for the code base.  

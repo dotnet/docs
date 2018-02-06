@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.SetAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -54,7 +54,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAccessRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -70,7 +70,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.ResetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -86,7 +86,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -120,7 +120,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.SetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -145,7 +145,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAuditRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -161,7 +161,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.AddAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -177,7 +177,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAuditRuleAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -202,7 +202,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAccessRuleAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -254,7 +254,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.AddAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -288,7 +288,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.ObjectSecurity`1.RemoveAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -13,7 +13,7 @@ namespace CSharp
 
         void createOwnedWindowButton_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: this commented section goes between the the following two
+            // TODO: this commented section goes between the following two
             //       lines of code:
             //         ownedWindow.Owner = this;
             //         <-- goes here -->

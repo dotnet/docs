@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1dfa02df-15b1-4e97-9c8e-f5f2772711b0
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Proxy Sample
 This sample shows how to create an implementation of a Discovery proxy to store information about existing services and how clients can query that proxy for information. This sample consists of three projects:  

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "RelativeBindForResources element"
   - "<relativeBindForResources> element"
@@ -22,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;relativeBindForResources&gt; Element
 Optimizes the probe for satellite assemblies.  
@@ -32,7 +29,7 @@ Optimizes the probe for satellite assemblies.
   
 ## Syntax  
   
-```vb  
+```xml
 <relativeBindForResources    
    enabled="true|false" />  
 ```  
@@ -81,6 +78,6 @@ Optimizes the probe for satellite assemblies.
 -   It does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
 ## See Also  
- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -11,6 +11,8 @@
     <summary>Defines methods that get and set references to the scripting engine.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.LateBinding" />
+    <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
   </Docs>
   <Members>
     <Member MemberName="GetEngine">
@@ -31,6 +33,7 @@
         <returns>A reference to the scripting engine.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
       </Docs>
     </Member>
     <Member MemberName="SetEngine">
@@ -53,6 +56,7 @@
         <summary>When implemented in a class, sets a reference to the scripting engine.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
       </Docs>
     </Member>
   </Members>

@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Claims.ClaimSet" />
+    <altmember cref="T:System.IdentityModel.Claims.Claim" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -233,5 +235,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks authorization for the given operation context and optional message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -4,27 +4,47 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 07/07/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
+ms.workload: 
+  - dotnetcore
 ---
 
-# Prerequisites for .NET Core on Mac
+# Prerequisites for .NET Core on macOS
 
 This article shows you the supported macOS versions and .NET Core dependencies that you need to develop, deploy, and run .NET Core applications on macOS machines. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on a Mac: via the [command-line with your favorite editor](tutorials/using-with-xplat-cli.md), [Visual Studio Code](https://code.visualstudio.com/), and [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/).
 
 ## Supported macOS versions
 
-.NET Core is supported on the following versions of macOS:
+# [.NET Core 2.x](#tab/netcore2x)
+
+.NET Core 2.x is supported on the following versions of macOS:
+
+* macOS 10.12 "Sierra" and later versions
+
+See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+.NET Core 1.x is supported on the following versions of macOS:
 
 * macOS 10.12 "Sierra"
-* macOS 10.11 "El Capitan" (.NET Core 1.x only)
+* macOS 10.11 "El Capitan"
 
-See [Supported OS Versions](https://github.com/dotnet/core/blob/master/roadmap.md#supported-os-versions) for the complete list of supported operating systems.
+See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
+
+---
 
 ## .NET Core dependencies
+
+# [.NET Core 2.x](#tab/netcore2x)
+
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
+
+# [.NET Core 1.x](#tab/netcore1x)
 
 **.NET Core 1.x**
 
@@ -40,9 +60,7 @@ ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 
 Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [1.0.0 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0-known-issues.md) and [1.0.1 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.1-known-issues.md) topics.
 
-**.NET Core 2.x**
-
-Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
+---
 
 ## Increase the maximum open file limit
 

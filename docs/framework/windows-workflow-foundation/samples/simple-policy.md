@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6a94c834-2e32-4bed-9f47-ae5845eef6ff
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Simple Policy
 This sample shows how to use a <xref:System.Workflow.Activities.PolicyActivity> activity in a workflow.  
@@ -40,6 +42,6 @@ This sample shows how to use a <xref:System.Workflow.Activities.PolicyActivity> 
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Rules\Policy\SimplePolicy`  
   
 ## See Also  
- <xref:System.Workflow.Activities.Rules.RuleSet>   
- <xref:System.Workflow.Activities.PolicyActivity>   
+ <xref:System.Workflow.Activities.Rules.RuleSet>  
+ <xref:System.Workflow.Activities.PolicyActivity>  
  [Advanced Policy](../../../../docs/framework/windows-workflow-foundation/samples/advanced-policy.md)

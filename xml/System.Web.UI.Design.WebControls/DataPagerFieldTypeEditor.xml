@@ -25,6 +25,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+    <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +43,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -66,6 +72,9 @@
         <summary>Displays the visual editor by using the style that is indicated by the <see cref="Overload:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.GetEditStyle" /> method to update the <see cref="P:System.Web.UI.WebControls.DataPager.Fields" /> property.</summary>
         <returns>The new value of the object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -95,6 +104,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
   </Members>

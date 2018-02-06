@@ -13,6 +13,10 @@
   <Docs>
     <summary>Provides basic design-time functionality for ASP.NET server controls.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.ContainerControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.HtmlIntrinsicControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +32,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ContainerControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Behavior">
@@ -60,6 +67,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" />
       </Docs>
     </Member>
     <Member MemberName="DataBindings">
@@ -143,8 +153,9 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Expressions">
@@ -172,6 +183,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ExpressionBindingCollection" />
+        <altmember cref="T:System.Web.UI.ExpressionBinding" />
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+        <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+        <altmember cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -203,6 +220,8 @@
         <block subset="none" type="overrides">
           <para>During initialization, use the <see cref="M:System.Web.UI.Design.IControlDesignerTag.SetAttribute(System.String,System.String)" /> and <see cref="M:System.Web.UI.Design.IControlDesignerTag.GetAttribute(System.String)" /> methods on the <see cref="P:System.Web.UI.Design.ControlDesigner.Tag" /> property to map properties to styles.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -238,6 +257,10 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" /> method can be overridden and implemented to perform additional processing when a behavior is attached to the designer.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Behavior" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorDetaching">
@@ -273,6 +296,8 @@
         <block subset="none" type="overrides">
           <para>The M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorDetaching method can be overridden and implemented to perform additional processing when a behavior is detached from the designer.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="OnBindingsCollectionChanged">
@@ -312,6 +337,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged(System.String)" /> method can be overridden and implemented to perform additional processing when the data bindings collection for the control has changed.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSetParent">
@@ -333,6 +359,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.HtmlControlDesigner.OnSetParent" /> method can be overridden and implemented to perform additional processing when the designer is attached to a parent control.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterEvents">
@@ -366,6 +394,7 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through <paramref name="events" /> or you can leave the dictionary unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterEvents(System.Collections.IDictionary)" /> method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -399,6 +428,7 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through <paramref name="properties" /> or you can leave the dictionary unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="ShouldCodeSerialize">

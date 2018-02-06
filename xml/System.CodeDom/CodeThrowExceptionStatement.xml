@@ -84,6 +84,7 @@
         <param name="toThrow">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the exception to throw.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class with the specified exception type instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="ToThrow">
@@ -106,7 +107,17 @@
         <summary>Gets or sets the exception to throw.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> representing an instance of the exception to throw.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

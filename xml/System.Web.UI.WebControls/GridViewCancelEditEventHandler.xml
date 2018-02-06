@@ -26,22 +26,26 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event is raised when the Cancel button of a row in edit mode is clicked, but before the row exits edit mode. This allows you to provide an event-handling method that performs a custom routine, such as stopping the cancel operation if it would put the row in an undesired state, whenever this event occurs.  
   
- When you create a <xref:System.Web.UI.WebControls.GridViewCancelEditEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.GridViewCancelEditEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewCancelEditEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCancelEditEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCancelEditEventHandler/CS/gridviewcancelediteventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCancelEditEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCancelEditEventHandler/VB/gridviewcancelediteventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCancelEditEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCancelEditEventHandler/CS/gridviewcancelediteventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewCancelEditEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCancelEditEventHandler/VB/gridviewcancelediteventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewCancelEditEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewCancelEditEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
   </Docs>
 </Type>

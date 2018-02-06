@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Collect"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Collect method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::Collect method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::Collect Method
 Forces a collection to occur for the given generation, regardless of the state of the current garbage collection.  

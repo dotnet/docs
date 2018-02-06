@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "AppDomainSetup object"
   - "retrieving setup information"
@@ -18,6 +22,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Retrieving Setup Information from an Application Domain
 Each instance of an application domain consists of both properties and <xref:System.AppDomainSetup> information. You can retrieve setup information from an application domain using the <xref:System.AppDomain?displayProperty=nameWithType> class. This class provides several members that retrieve configuration information about an application domain.  
@@ -37,5 +43,5 @@ Each instance of an application domain consists of both properties and <xref:Sys
  [!code-vb[AppDomain_Setup#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AppDomain_Setup/VB/source3.vb#3)]  
   
 ## See Also  
- [Programming with Application Domains](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131)   
+ [Programming with Application Domains](http://msdn.microsoft.com/library/bd36055b-56bd-43eb-b4d8-820c37172131)  
  [Using Application Domains](../../../docs/framework/app-domains/use.md)

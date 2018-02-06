@@ -121,5 +121,53 @@
         <summary>SHA hashing algorithm.</summary>
       </Docs>
     </Member>
+    <Member MemberName="Sha256">
+      <MemberSignature Language="C#" Value="Sha256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.HashAlgorithm Sha256 = int32(32780)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>SHA-256 hashing algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha384">
+      <MemberSignature Language="C#" Value="Sha384" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.HashAlgorithm Sha384 = int32(32781)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha384" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>SHA-384 hashing algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha512">
+      <MemberSignature Language="C#" Value="Sha512" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.HashAlgorithm Sha512 = int32(32782)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha512" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>SHA-512 hashing algorithm.</summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

@@ -11,16 +11,16 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PrintDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Print dialog box, displaying"
+  - "Print dialog box [Windows Forms], displaying"
   - "PrintDialog component [Windows Forms], about PrintDialog component"
 ms.assetid: 8327b8ac-1017-4b5e-a88b-fea9dd56999c
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PrintDialog Component Overview (Windows Forms)
 The Windows Forms [PrintDialog](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md) component is a pre-configured dialog box used to select a printer, choose the pages to print, and determine other print-related settings in Windows-based applications. Use it as a simple solution for printer and print-related settings selection in lieu of configuring your own dialog box. You can enable users to print many parts of their documents: print all, print a selected page range, or print a selection. By relying on standard Windows dialog boxes, you create applications whose basic functionality is immediately familiar to users. The <xref:System.Windows.Forms.PrintDialog> component inherits from the <xref:System.Windows.Forms.CommonDialog> class.  
@@ -31,5 +31,5 @@ The Windows Forms [PrintDialog](../../../../docs/framework/winforms/controls/pri
  When it is added to a form, the <xref:System.Windows.Forms.PrintDialog> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See Also  
- <xref:System.Windows.Forms.PrintDialog>   
+ <xref:System.Windows.Forms.PrintDialog>  
  [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md)

@@ -277,5 +277,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateCode">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates source code that contains the objects generated from the conceptual schema definition language (CSDL).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

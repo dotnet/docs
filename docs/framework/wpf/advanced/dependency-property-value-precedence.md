@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "dependency properties, classes as owners"
-  - "dependency properties, metadata"
-  - "classes, owners of dependency properties"
-  - "metadata, dependency properties"
+  - "dependency properties [WPF], classes as owners"
+  - "dependency properties [WPF], metadata"
+  - "classes [WPF], owners of dependency properties"
+  - "metadata [WPF], dependency properties"
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dependency Property Value Precedence
 <a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
@@ -98,7 +100,7 @@ manager: "wpickett"
   
  The most important information that is found within a default style for a control is its control template, which exists in the theme style as a setter for its <xref:System.Windows.Controls.Control.Template%2A> property. If there were no template from default styles, a control without a custom template as part of a custom style would have no visual appearance at all. The template from the default style gives the visual appearance of each control a basic structure, and also defines the connections between properties defined in the visual tree of the template and the corresponding control class. Each control exposes a set of properties that can influence the visual appearance of the control without completely replacing the template. For example, consider the default visual appearance of a <xref:System.Windows.Controls.Primitives.Thumb> control, which is a component of a <xref:System.Windows.Controls.Primitives.ScrollBar>.  
   
- A <xref:System.Windows.Controls.Primitives.Thumb> has certain customizable properties. The default template of a <xref:System.Windows.Controls.Primitives.Thumb> creates a basic stucture / visual tree with several nested <xref:System.Windows.Controls.Border> components to create a bevel look. If a property that is part of the template is intended to be exposed for customization by the <xref:System.Windows.Controls.Primitives.Thumb> class, then that property must be exposed by a [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md), within the template. In the case of <xref:System.Windows.Controls.Primitives.Thumb>, various properties of these borders share a template binding to properties such as <xref:System.Windows.Controls.Border.Background%2A> or <xref:System.Windows.Controls.Border.BorderThickness%2A>. But certain other properties or visual arrangements are hard-coded into the control template or are bound to values that come directly from the theme, and cannot be changed short of replacing the entire template. Generally, if a property comes from a templated parent and is not exposed by a template binding, it cannot be adjusted by styles because there is no easy way to target it. But that property could still be influenced by property value inheritance in the applied template, or by default value.  
+ A <xref:System.Windows.Controls.Primitives.Thumb> has certain customizable properties. The default template of a <xref:System.Windows.Controls.Primitives.Thumb> creates a basic structure / visual tree with several nested <xref:System.Windows.Controls.Border> components to create a bevel look. If a property that is part of the template is intended to be exposed for customization by the <xref:System.Windows.Controls.Primitives.Thumb> class, then that property must be exposed by a [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md), within the template. In the case of <xref:System.Windows.Controls.Primitives.Thumb>, various properties of these borders share a template binding to properties such as <xref:System.Windows.Controls.Border.Background%2A> or <xref:System.Windows.Controls.Border.BorderThickness%2A>. But certain other properties or visual arrangements are hard-coded into the control template or are bound to values that come directly from the theme, and cannot be changed short of replacing the entire template. Generally, if a property comes from a templated parent and is not exposed by a template binding, it cannot be adjusted by styles because there is no easy way to target it. But that property could still be influenced by property value inheritance in the applied template, or by default value.  
   
  The theme styles use a type as the key in their definitions. However, when themes are applied to a given element instance, themes lookup for this type is performed by checking the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> property on a control. This is in contrast to using the literal Type, as implicit styles do. The value of <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> would inherit to derived classes even if the implementer did not change it (the intended way of changing the property is not to override it at the property level, but to instead change its default value in property metadata). This indirection enables base classes to define the theme styles for derived elements that do not otherwise have a style (or more importantly, do not have a template within that style and would thus have no default visual appearance at all). Thus, you can derive `MyButton` from <xref:System.Windows.Controls.Button> and will still get the <xref:System.Windows.Controls.Button> default template. If you were the control author of `MyButton` and you wanted a different behavior, you could override the dependency property metadata for <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> on `MyButton` to return a different key, and then define the relevant theme styles including template for `MyButton` that you must package with your `MyButton` control. For more details on themes, styles, and control authoring, see [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md).  
   
@@ -133,8 +135,8 @@ manager: "wpickett"
  The <xref:System.Windows.DependencyObject.ClearValue%2A> method provides an expedient means to clear any locally applied value from a dependency property that is set on an element. However, calling <xref:System.Windows.DependencyObject.ClearValue%2A> is not a guarantee that the default as established in metadata during property registration is the new effective value. All of the other participants in value precedence are still active. Only the locally set value has been removed from the precedence sequence. For example, if you call <xref:System.Windows.DependencyObject.ClearValue%2A> on a property where that property is also set by a theme style, then the theme value is applied as the new value rather than the metadata-based default. If you want to take all property value participants out of the process and set the value to the registered metadata default, you can obtain that default value definitively by querying the dependency property metadata, and then you can use the default value to locally set the property with a call to <xref:System.Windows.DependencyObject.SetValue%2A>.  
   
 ## See Also  
- <xref:System.Windows.DependencyObject>   
- <xref:System.Windows.DependencyProperty>   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ <xref:System.Windows.DependencyObject>  
+ <xref:System.Windows.DependencyProperty>  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)

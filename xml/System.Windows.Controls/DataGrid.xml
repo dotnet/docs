@@ -205,6 +205,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.AlternationCount" />
+        <altmember cref="P:System.Windows.Controls.ItemsControl.AlternationIndex" />
+        <altmember cref="P:System.Windows.Controls.DataGridRow.AlternationIndex" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowBackgroundProperty">
@@ -248,6 +251,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsVisibilityMode" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsTemplate" />
       </Docs>
     </Member>
     <Member MemberName="AreRowDetailsFrozenProperty">
@@ -306,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumnsProperty">
@@ -386,6 +392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="BeginEdit">
@@ -586,6 +594,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.InitializingNewItem" />
       </Docs>
     </Member>
     <Member MemberName="CanUserAddRowsProperty">
@@ -674,6 +683,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.CanUserReorder" />
       </Docs>
     </Member>
     <Member MemberName="CanUserReorderColumnsProperty">
@@ -848,6 +864,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGridCellEditEndingEventArgs" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
+        <altmember cref="M:System.Windows.Controls.DataGrid.CommitEdit" />
+        <altmember cref="M:System.Windows.Controls.DataGrid.CancelEdit" />
       </Docs>
     </Member>
     <Member MemberName="CellsPanelHorizontalOffset">
@@ -928,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.CellStyle" />
       </Docs>
     </Member>
     <Member MemberName="CellStyleProperty">
@@ -996,6 +1017,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.DataGrid.GetDetailsVisibilityForItem(System.Object)" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
       </Docs>
     </Member>
     <Member MemberName="ClipboardCopyMode">
@@ -1064,6 +1087,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="ColumnFromDisplayIndex">
@@ -1112,6 +1142,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderDragDelta">
@@ -1136,6 +1173,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderDragStarted">
@@ -1160,6 +1204,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderHeight">
@@ -1240,6 +1291,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.HeadersVisibility" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderStyleProperty">
@@ -1281,6 +1334,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordering" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="ColumnReordering">
@@ -1305,6 +1365,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnReordered" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragStarted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragDelta" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.CanUserReorderColumns" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -1411,6 +1478,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.MaxColumnWidth" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.MinColumnWidth" />
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.Width" />
       </Docs>
     </Member>
     <Member MemberName="ColumnWidthProperty">
@@ -1556,6 +1626,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.CellStyle" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.SelectedCells" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCellChanged">
@@ -1664,6 +1736,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.CurrentColumn" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItemProperty">
@@ -1804,6 +1877,7 @@
         <value>
           <see langword="true" /> if column virtualization is enabled; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
       </Docs>
     </Member>
     <Member MemberName="EnableColumnVirtualizationProperty">
@@ -1847,6 +1921,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableColumnVirtualization" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
       </Docs>
     </Member>
     <Member MemberName="EnableRowVirtualizationProperty">
@@ -1928,6 +2005,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGridColumn.IsFrozen" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="FrozenColumnCountProperty">
@@ -2021,6 +2100,8 @@
         <summary>Gets the <see cref="P:System.Windows.Controls.DataGridRow.DetailsVisibility" /> property for the <see cref="T:System.Windows.Controls.DataGridRow" /> that represents the specified data item.</summary>
         <returns>The visibility for the row that contains the <paramref name="item" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.DataGrid.ClearDetailsVisibilityForItem(System.Object)" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
       </Docs>
     </Member>
     <Member MemberName="GridLinesVisibility">
@@ -2046,6 +2127,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.HorizontalGridLinesBrush" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.VerticalGridLinesBrush" />
       </Docs>
     </Member>
     <Member MemberName="GridLinesVisibilityProperty">
@@ -2181,6 +2264,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.GridLinesVisibility" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.VerticalGridLinesBrush" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalGridLinesBrushProperty">
@@ -2351,6 +2436,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
       </Docs>
     </Member>
     <Member MemberName="LoadingRowDetails">
@@ -2381,6 +2469,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
       </Docs>
     </Member>
     <Member MemberName="MaxColumnWidth">
@@ -2404,7 +2495,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MaxColumnWidth%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.NaN?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=nameWithType> properties are constrained by the following properties if they are set, in order of precedence:  
   
@@ -2418,6 +2509,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.ColumnWidth" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.MinColumnWidth" />
       </Docs>
     </Member>
     <Member MemberName="MaxColumnWidthProperty">
@@ -2480,7 +2573,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MinColumnWidth%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> and <xref:System.Double?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> and <xref:System.Double.NaN?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=nameWithType> properties are constrained by the following properties if they are set, in order of precedence:  
   
@@ -2494,6 +2587,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.MaxColumnWidth" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.ColumnWidth" />
       </Docs>
     </Member>
     <Member MemberName="MinColumnWidthProperty">
@@ -2534,12 +2629,14 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> and <xref:System.Double?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> and <xref:System.Double.NaN?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  If a conflict exists between the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property and the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> takes precedence. However, the <xref:System.Windows.FrameworkElement.Height%2A> property set on an individual <xref:System.Windows.Controls.DataGridRow> has higher precedence than a property set at the <xref:System.Windows.Controls.DataGrid> level and is not constrained by the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowHeight" />
+        <altmember cref="P:System.Windows.FrameworkElement.MinHeight" />
       </Docs>
     </Member>
     <Member MemberName="MinRowHeightProperty">
@@ -2706,7 +2803,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnAutoGeneratedColumns%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2739,7 +2836,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnAutoGeneratingColumn%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2774,7 +2871,7 @@
 ## Remarks  
  This method enables derived classes to prevent the cell from entering edit mode.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnBeginningEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2914,7 +3011,7 @@
 ## Remarks  
  This method enables derived classes to cancel the operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnCellEditEnding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2949,7 +3046,7 @@
 ## Remarks  
  <xref:System.Windows.Controls.DataGrid> requires that the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property of all columns must be unique integers from 0 to <xref:System.Windows.Controls.DataGrid.Columns%2A><xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> -1. Therefore, when the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of one column changes, the change will typically cause the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of other columns to change too.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnDisplayIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2982,7 +3079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnHeaderDragCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3015,7 +3112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnHeaderDragDelta%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3048,7 +3145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnHeaderDragStarted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3081,7 +3178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnReordered%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3114,7 +3211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnColumnReordering%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3229,7 +3326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnCurrentCellChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3379,7 +3476,7 @@
 ## Remarks  
  This method enables derived classes to initialize the item with custom default values.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnInitializingNewItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3488,6 +3585,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ItemsControl.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLoadingRow">
@@ -3512,7 +3610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnLoadingRow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3545,7 +3643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnLoadingRowDetails%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3601,7 +3699,7 @@
 ## Remarks  
  This method enables derived classes to modify the contents of the cell before it enters edit mode. This method is invoked from <xref:System.Windows.Controls.DataGridCell> (instead of <xref:System.Windows.Controls.DataGrid>) when it has entered edit mode.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnPreparingCellForEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3634,7 +3732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnRowDetailsVisibilityChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3669,7 +3767,7 @@
 ## Remarks  
  This method enables derived classes to cancel the operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnRowEditEnding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3702,7 +3800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnSelectedCellsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3765,7 +3863,7 @@
 ## Remarks  
  This method causes a default sort to occur on the column that raised the event if the sort event is not marked as handled.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnSorting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3797,6 +3895,7 @@
         <param name="newTemplate">The new template.</param>
         <summary>Called whenever the template of the <see cref="T:System.Windows.Controls.DataGrid" /> changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextInput">
@@ -3849,7 +3948,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnUnloadingRow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3882,7 +3981,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Controls.DataGrid.OnUnloadingRowDetails%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4036,6 +4135,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsVisibilityMode" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.AreRowDetailsFrozen" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
       </Docs>
     </Member>
     <Member MemberName="RowDetailsTemplateProperty">
@@ -4139,6 +4242,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.AreRowDetailsFrozen" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowDetailsTemplate" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" />
       </Docs>
     </Member>
     <Member MemberName="RowDetailsVisibilityModeProperty">
@@ -4182,6 +4288,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGridRowEditEndingEventArgs" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.CellEditEnding" />
+        <altmember cref="M:System.Windows.Controls.DataGrid.CommitEdit" />
+        <altmember cref="M:System.Windows.Controls.DataGrid.CancelEdit" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderActualWidth">
@@ -4263,6 +4373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.HeadersVisibility" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderStyleProperty">
@@ -4380,10 +4491,11 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeaderWidth%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row header automatically adjust its size to fit its content.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Width" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderWidthProperty">
@@ -4424,7 +4536,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row automatically adjust its size to fit its content.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property is applied to each <xref:System.Windows.Controls.DataGridRow> that does not have its <xref:System.Windows.FrameworkElement.Height%2A> property set. If a conflict exists between the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property and the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property, <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> takes precedence.  
   
@@ -4432,6 +4544,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.MinRowHeight" />
+        <altmember cref="P:System.Windows.FrameworkElement.Height" />
       </Docs>
     </Member>
     <Member MemberName="RowHeightProperty">
@@ -4580,6 +4694,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowValidationRules" />
       </Docs>
     </Member>
     <Member MemberName="RowValidationErrorTemplateProperty">
@@ -4636,6 +4751,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.RowValidationErrorTemplate" />
+        <altmember cref="T:System.Windows.Controls.ValidationRule" />
+        <altmember cref="P:System.Windows.Data.Binding.ValidationRules" />
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -4805,6 +4923,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.SelectedCells" />
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Selected" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" />
+        <altmember cref="E:System.Windows.Controls.DataGridRow.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -4964,6 +5086,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRow" />
       </Docs>
     </Member>
     <Member MemberName="UnloadingRowDetails">
@@ -4994,6 +5119,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.EnableRowVirtualization" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRow" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
       </Docs>
     </Member>
     <Member MemberName="UnselectAllCells">
@@ -5037,6 +5165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DataGrid.GridLinesVisibility" />
+        <altmember cref="P:System.Windows.Controls.DataGrid.HorizontalGridLinesBrush" />
       </Docs>
     </Member>
     <Member MemberName="VerticalGridLinesBrushProperty">
@@ -5091,5 +5221,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CommitEdit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the <see cref="F:System.Windows.Controls.DataGrid.CommitEditCommand" /> command for the cell or row currently in edit mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CancelEdit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the <see cref="F:System.Windows.Controls.DataGrid.CancelEditCommand" /> command for the cell or row currently in edit mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginEdit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the <see cref="M:System.Windows.Controls.DataGrid.BeginEdit" /> command, which will place the current cell or row into edit mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScrollIntoView">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scrolls the <see cref="T:System.Windows.Controls.DataGrid" /> vertically and horizontally to display the specified item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

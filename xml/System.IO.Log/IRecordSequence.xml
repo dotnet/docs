@@ -1611,5 +1611,59 @@ using System;
         <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginReserveAndAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, begins an asynchronous reserve and append operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, writes a log record to the <see cref="T:System.IO.Log.IRecordSequence" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, causes appended records to be written.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReserveAndAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, automatically makes a single reservation and appends a record to the sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginWriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, begins an asynchronous restart area write operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, begins an asynchronous append operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

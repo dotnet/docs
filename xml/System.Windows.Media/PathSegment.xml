@@ -30,6 +30,8 @@
     <block subset="none" type="overrides">
       <para>Although this class is abstract, it is not publicly extensible.</para>
     </block>
+    <altmember cref="T:System.Windows.Shapes.Path" />
+    <altmember cref="T:System.Windows.Media.GeometryDrawing" />
   </Docs>
   <Members>
     <Member MemberName="Clone">

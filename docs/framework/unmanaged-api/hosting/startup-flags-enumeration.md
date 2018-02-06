@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "STARTUP_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "STARTUP_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
@@ -28,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # STARTUP_FLAGS Enumeration
 Contains values that indicate the startup behavior of the common language runtime (CLR). By default, garbage collection is non-concurrent, and only the base class library is loaded into the domain-neutral area.  

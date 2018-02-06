@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "user-defined bindings [WCF]"
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating User-Defined Bindings
 There are several ways to create bindings not provided by the system:  
@@ -125,5 +127,5 @@ public override BindingElementCollection CreateBindingElements()
  Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.Binding>   
+ <xref:System.ServiceModel.Channels.Binding>  
  [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

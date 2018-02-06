@@ -1,6 +1,6 @@
 ---
 title: .NET Core app deployment with CLI tools
-description: Learn .NET Core app deployment with command-line interface (CLI) tools 
+description: Learn .NET Core app deployment with command-line interface (CLI) tools
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 82ebe16d-5e1c-46cc-91e8-71974296429c
+ms.workload: 
+  - dotnetcore
 ---
 
 # Deploying .NET Core apps with command-line interface (CLI) tools
@@ -40,11 +42,11 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Update the project's dependencies and tools.
  
-   Run the [dotnet restore](../tools/dotnet-restore.md) command to restore the dependencies specified in your project.
+   Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
 1. Create a Debug build of your app.
 
@@ -67,7 +69,7 @@ In addition to the application binaries, your installer should also either bundl
 
 ## Framework-dependent deployment with third-party dependencies
 
-Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project. Two additional steps are required before you can run the `dotnet restore` command:
+Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project. Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:
 
 1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](http://www.newtonsoft.com/json) as a third-party library:
 
@@ -77,7 +79,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
       </ItemGroup>
       ```
 
-1. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+1. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` ([see note](#dotnet-restore-note)) command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 Note that a framework-dependent deployment with third-party dependencies is only as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app isn't portable to Windows systems. This happens if the third-party dependency itself depends on native code. A good example of this is [Kestrel server](/aspnet/core/fundamentals/servers/kestrel), which requires a native dependency on [libuv](https://github.com/libuv/libuv). When an FDD is created for an application with this kind of third-party dependency, the published output contains a folder for each [Runtime Identifier (RID)](../rid-catalog.md) that the native dependency supports (and that exists in its NuGet package).
 
@@ -97,7 +99,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Define the platforms that your app will target.
 
@@ -115,7 +117,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
 1. Update the project's dependencies and tools.
 
-   Run the [dotnet restore](../tools/dotnet-restore.md) command to restore the dependencies specified in your project.
+   Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
 1. Create a Debug build of your app.
 
@@ -150,7 +152,7 @@ The following is the complete *csproj* file for this project.
 
 ## Self-contained deployment with third-party dependencies
 
-Deploying a self-contained deployment with one or more third-party dependencies involves adding the dependencies. Two additional steps are required before you can run the `dotnet restore` command:
+Deploying a self-contained deployment with one or more third-party dependencies involves adding the dependencies. Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:
 
 1. Add references to any third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section uses Json.NET as a third-party library.
 
@@ -160,7 +162,7 @@ Deploying a self-contained deployment with one or more third-party dependencies 
       </ItemGroup>
     ```
 
-1. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+1. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` ([see note](#dotnet-restore-note)) command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 The following is the complete *csproj* file for this project:
 
@@ -181,7 +183,11 @@ When you deploy your application, any third-party dependencies used in your app 
 
 Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in a framework-dependent deployment, where the native dependencies must be compatible with the platform to which the app is deployed.
 
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 # See also
 
 [.NET Core Application Deployment](index.md)   
 [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)   
+

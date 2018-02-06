@@ -222,6 +222,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="P:System.Net.HttpWebResponse.ContentLength" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -270,6 +271,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="P:System.Net.HttpWebResponse.ContentType" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -478,6 +480,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="T:System.Net.WebHeaderCollection" />
+        <altmember cref="P:System.Net.HttpWebResponse.Headers" />
       </Docs>
     </Member>
     <Member MemberName="IsFromCache">
@@ -679,5 +683,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebResponse" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.WebResponse" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

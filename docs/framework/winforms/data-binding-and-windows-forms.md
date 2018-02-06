@@ -9,24 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "master-details lists"
   - "data [Windows Forms], data binding"
-  - "reports, Windows Forms"
-  - "lookup tables, data binding"
+  - "reports [Windows Forms], Windows Forms"
+  - "lookup tables [Windows Forms], data binding"
   - "data [Windows Forms], complex data binding"
-  - "data binding, Windows Forms"
-  - "bound controls, Windows Forms"
+  - "data binding [Windows Forms], Windows Forms"
   - "data [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
-  - "data-bound controls, Windows Forms"
+  - "data-bound controls [Windows Forms], Windows Forms"
 ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Binding and Windows Forms
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.  
@@ -63,7 +62,7 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
 |Lookup Table|Another common data presentation/manipulation scenario is the table lookup. Often, as part of a larger data display, a <xref:System.Windows.Forms.ComboBox> control is used to display and manipulate data. The key is that the data displayed in the <xref:System.Windows.Forms.ComboBox> control is different than the data written to the database. For example, if you have a <xref:System.Windows.Forms.ComboBox> control displaying the items available from a grocery store, you would probably like to see the names of the products (bread, milk, eggs). However, to ease information retrieval within the database and for database normalization, you would probably store the information for the specific items of a given order as item numbers (#501, #603, and so on). Thus, there is an implicit connection between the "friendly name" of the grocery item in the <xref:System.Windows.Forms.ComboBox> control on your form and the related item number that is present in an order. This is the essence of a table lookup. For more information, see [How to: Create a Lookup Table with the Windows Forms BindingSource Component](../../../docs/framework/winforms/controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component.md).|  
   
 ## See Also  
- <xref:System.Windows.Forms.Binding>   
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)   
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)   
+ <xref:System.Windows.Forms.Binding>  
+ [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
  [BindingSource Component](../../../docs/framework/winforms/controls/bindingsource-component.md)

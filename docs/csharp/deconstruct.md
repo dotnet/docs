@@ -29,7 +29,7 @@ C# features built-in support for deconstructing tuples, which lets you unpackage
 var (name, address, city, zip) = contact.GetAddressInfo();
 ```
 
-There are two ways to deconstruct a tuple:
+There are three ways to deconstruct a tuple:
 
 - You can explicitly declare the type of each field inside parentheses. The following example uses this approach to deconstruct the 3-tuple returned by the `QueryCityData` method.
 
@@ -45,10 +45,16 @@ There are two ways to deconstruct a tuple:
 
     This is cumbersome and is not recommended.
 
+- Lastly, you may deconstruct the tuple into variables that have already been declared.
+
+    [!code-csharp[Deconstruction-Declared](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple5.cs#1)]
+
 Note that you cannot specify a specific type outside the parentheses even if every field in the tuple has the
 same type. This generates compiler error CS8136, "Deconstruction 'var (...)' form disallows a specific type for 'var'.".
 
 Note that you must also assign each element of the tuple to a variable. If you omit any elements, the compiler generates error CS8132, "Cannot deconstruct a tuple of 'x' elements into 'y' variables."
+
+Note that you cannot mix declarations and assignments to existing variables on the left-hand side of a deconstruction. The compiler generates error CS8184, "a deconstruction cannot mix declarations and expressions on the left-hand-side." when the members include newly declared and existing variables.
 
 ## Deconstructing tuple elements with discards
 

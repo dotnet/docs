@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "directory copying"
   - "I/O [.NET Framework], copying directories"
@@ -19,6 +22,9 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Copy Directories
 This example demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location. In this example, the user can specify whether to also copy the subdirectories. If the subdirectories are copied, the method in this example recursively copies them by calling itself on each subsequent subdirectory until there are no more to copy.  
@@ -30,9 +36,9 @@ This example demonstrates how to use I/O classes to synchronously copy the conte
  [!code-vb[System.IO.Directory_Copy#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory_Copy/vb/Program.vb#1)]  
   
 ## See Also  
- <xref:System.IO.FileInfo>   
- <xref:System.IO.DirectoryInfo>   
- <xref:System.IO.FileStream>   
- [File and Stream I/O](../../../docs/standard/io/index.md)   
- [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)   
+ <xref:System.IO.FileInfo>  
+ <xref:System.IO.DirectoryInfo>  
+ <xref:System.IO.FileStream>  
+ [File and Stream I/O](../../../docs/standard/io/index.md)  
+ [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)  
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

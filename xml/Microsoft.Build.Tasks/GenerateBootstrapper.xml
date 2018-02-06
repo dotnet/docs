@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be set in the project file, but it is not exposed in the MSBuild schema. In the project file's `MsiBootstrapper` section, set the [RequiresElevation Property](http://msdn.microsoft.com/en-us/6f449071-9caf-46e7-b7d4-7bbc21cf9aa7) to `True`.  
+ This property can be set in the project file, but it is not exposed in the MSBuild schema. In the project file's `MsiBootstrapper` section, set the [RequiresElevation Property](http://msdn.microsoft.com/library/6f449071-9caf-46e7-b7d4-7bbc21cf9aa7) to `True`.  
   
  A component runs with elevated permissions when it writes a registry key or is being installed to the GAC. For example, if you are installing assemblies to the GAC, you need to set this property to `True`.  
   

@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +125,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +158,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="propertyName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -183,6 +187,7 @@
         <summary>Gets the name of the property for which attributes will be retrieved.</summary>
         <value>The name of the property for which attributes will be retrieved.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -211,7 +216,18 @@
         <summary>Gets the assembly qualified type name passed into the constructor.</summary>
         <value>The assembly qualified name of the type specified in the constructor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeProviderAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

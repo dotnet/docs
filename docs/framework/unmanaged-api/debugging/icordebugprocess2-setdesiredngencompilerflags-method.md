@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::SetDesiredNGENCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess2::SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
   - "SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2::SetDesiredNGENCompilerFlags Method
 Sets the flags that must be embedded in a precompiled image in order for the runtime to load that image into the current process.  
@@ -62,5 +62,5 @@ HRESULT SetDesiredNGENCompilerFlags (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)   
+ [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
  [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

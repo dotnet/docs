@@ -1,41 +1,23 @@
 ---
 title: "How to: Put a Value in a Property (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "property values"
+  - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
-  - "values, properties"
+  - "values [Visual Basic], properties"
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Put a Value in a Property (Visual Basic)
 You store a value in a property by putting the property name on the left side of an assignment statement.  
@@ -57,13 +39,13 @@ You store a value in a property by putting the property name on the left side of
 4.  The value generated on the right side of the assignment statement is stored in the property.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>   
- [Property Procedures](./property-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)   
- [How to: Create a Property](./how-to-create-a-property.md)   
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)   
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)   
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)   
+ <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>  
+ [Property Procedures](./property-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
+ [How to: Create a Property](./how-to-create-a-property.md)  
+ [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
+ [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
+ [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
  [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

@@ -11,6 +11,10 @@
     <summary>Defines methods for resolving scope. This interface is implemented by all objects that take part in a scope hierarchy.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ActivationObject" />
+    <altmember cref="T:Microsoft.JScript.ScriptObject" />
+    <altmember cref="T:Microsoft.JScript.GlobalScope" />
+    <altmember cref="T:System.Reflection.FieldInfo" />
   </Docs>
   <Members>
     <Member MemberName="GetDefaultThisObject">
@@ -31,6 +35,10 @@
         <returns>The current default scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -63,6 +71,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -83,6 +94,9 @@
         <returns>The global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalField">
@@ -106,6 +120,9 @@
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetMemberValue">
@@ -138,6 +155,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
   </Members>

@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlDocument" />
+    <altmember cref="T:System.Web.UI.Design.IDataSourceSchema" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +61,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
+        <altmember cref="T:System.Web.UI.Design.IDataSourceSchema" />
       </Docs>
     </Member>
     <Member MemberName="GetViews">
@@ -78,6 +82,9 @@
         <summary>Gets an array containing information about each child node starting at the node identified by the <paramref name="xPath" /> parameter in the constructor, or each child node starting at the document root if the <paramref name="xPath" /> parameter is empty.</summary>
         <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.XmlDocumentSchema.#ctor(System.Xml.XmlDocument,System.String)" />
+        <altmember cref="T:System.Xml.XmlDocument" />
+        <altmember cref="T:System.Web.UI.Design.IDataSourceSchema" />
       </Docs>
     </Member>
   </Members>

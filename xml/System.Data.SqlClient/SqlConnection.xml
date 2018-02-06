@@ -33,7 +33,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an open connection to a SQL Server database. This class cannot be inherited.</summary>
+    <summary>Represents a connection to a SQL Server database. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -856,7 +856,7 @@ End Module
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time-to-live for column encryption key entries in the column encryption key cache for the [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) feature. The default value is 2 hours. 0 means no caching at all.</summary>
+        <summary>Gets or sets the time-to-live for column encryption key entries in the column encryption key cache for the [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) feature. The default value is 2 hours. 0 means no caching at all.</summary>
         <value>The time interval.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -879,7 +879,7 @@ End Module
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether query metadata caching is enabled (true) or not (false) for parameterized queries running against [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) enabled databases. The default value is true.</summary>
+        <summary>Gets or sets a value that indicates whether query metadata caching is enabled (true) or not (false) for parameterized queries running against [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) enabled databases. The default value is true.</summary>
         <value>Returns true if query metadata caching is enabled; otherwise false. true is the default.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1795,6 +1795,7 @@ class Program {
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="collectionName" /> is specified as null.</exception>
+        <altmember cref="M:System.Data.SqlClient.SqlConnection.GetSchema" />
       </Docs>
     </Member>
     <Member MemberName="InfoMessage">
@@ -2308,5 +2309,35 @@ class Program {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ChangePassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the SQL Server password.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

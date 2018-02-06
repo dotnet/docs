@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::CloseEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseEnum method, IMetaDataAssemblyImport interface [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::CloseEnum Method
 Releases a reference to the specified enumeration instance.  

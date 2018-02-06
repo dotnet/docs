@@ -41,6 +41,7 @@
         <summary>Returns a project item from a design host based on its URL.</summary>
         <returns>A project item from a design host based on its URL.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IProjectItem" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -64,6 +65,7 @@
         <summary>Returns a <see cref="T:System.Configuration.Configuration" /> object representing the current Web application in the design host.</summary>
         <returns>An object representing the current Web application in the design host.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="RootProjectItem">
@@ -82,6 +84,7 @@
         <summary>Gets the root project item from the design host.</summary>
         <value>The root project item from the design host.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IProjectItem" />
       </Docs>
     </Member>
   </Members>

@@ -46,6 +46,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.StrongNameIdentityPermission" />
+    <altmember cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" />
+    <altmember cref="T:System.Security.Policy.StrongName" />
+    <altmember cref="T:System.Security.Policy.StrongNameMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -510,5 +514,15 @@
         <exception cref="T:System.NotSupportedException">The property value cannot be retrieved because it contains an ambiguous identity.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.StrongNameIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

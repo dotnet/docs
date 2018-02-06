@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.SignInResponseMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -482,5 +483,14 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignInRequestMessage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

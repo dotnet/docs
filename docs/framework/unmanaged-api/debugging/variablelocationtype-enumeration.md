@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "VariableLocationType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "VariableLocationType enumeration [.NET Framework debugging]"
 ms.assetid: 8635ee3a-c84b-4626-876c-416bee54f787
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # VariableLocationType Enumeration
 Indicates the native location type of a variable.  

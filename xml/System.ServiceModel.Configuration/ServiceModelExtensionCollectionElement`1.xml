@@ -604,5 +604,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item within the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContainsKey">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether this collection contains an element of the specified key.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

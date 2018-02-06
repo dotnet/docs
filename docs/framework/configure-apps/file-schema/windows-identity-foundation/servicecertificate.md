@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceCertificate&gt;
 Configures the X.509 certificate that is used to encrypt and decrypt tokens.  

@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is passed into the <xref:System.Transactions.Transaction.EnlistVolatile%2A> and <xref:System.Transactions.Transaction.EnlistDurable%2A> and methods to notify the transaction manager whether the resource manager needs to create another enlistment during the Prepare phase. For more information on enlistment, see [Enlisting Resources as Participants in a Transaction](http://msdn.microsoft.com/en-us/7bf66ce7-4190-4910-89d7-df4ad43e9f31).  
+ This enumeration is passed into the <xref:System.Transactions.Transaction.EnlistVolatile%2A> and <xref:System.Transactions.Transaction.EnlistDurable%2A> and methods to notify the transaction manager whether the resource manager needs to create another enlistment during the Prepare phase. For more information on enlistment, see [Enlisting Resources as Participants in a Transaction](http://msdn.microsoft.com/library/7bf66ce7-4190-4910-89d7-df4ad43e9f31).  
   
  If EnlistDuringPrepareRequired is specified during enlistment, the resource manager indicates that it wants to receive a Prepare notification while new enlistments are still allowed for the transaction. A resource manager who acts as a cache for another durable resource, such as a backend database, would probably use this option during enlistment. When the caching resource gets its Prepare notification, it transfers its content to the durable resource. By doing so, the durable resource enlists on the transaction to become a participant of the 2 Phase Commit (2PC) protocol. Before this happens, only the caching resource (not the durable resource) was enlisted.  
   

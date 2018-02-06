@@ -19,14 +19,16 @@ caps.latest.revision: 66
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # FlowDocumentScrollViewer
 The <xref:System.Windows.Controls.FlowDocumentScrollViewer> control is used to view <xref:System.Windows.Documents.FlowDocument> content in a scrolling container. Contrast with <xref:System.Windows.Controls.FlowDocumentPageViewer>, which views content on a per page basis.  
   
 ## See Also  
- <xref:System.Windows.Controls.FlowDocumentReader>   
- <xref:System.Windows.Controls.FlowDocumentPageViewer>   
- <xref:System.Windows.Controls.FlowDocumentScrollViewer>   
- <xref:System.Windows.Documents.FlowDocument>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Windows.Controls.FlowDocumentReader>  
+ <xref:System.Windows.Controls.FlowDocumentPageViewer>  
+ <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
+ <xref:System.Windows.Documents.FlowDocument>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

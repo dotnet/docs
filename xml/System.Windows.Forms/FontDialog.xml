@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
+    <altmember cref="T:System.Drawing.Font" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="AllowScriptChange">
@@ -110,6 +113,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowSimulations" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVectorFonts" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVerticalFonts" />
       </Docs>
     </Member>
     <Member MemberName="AllowSimulations">
@@ -134,6 +140,9 @@
         <value>
           <see langword="true" /> if font simulations are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowScriptChange" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVectorFonts" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVerticalFonts" />
       </Docs>
     </Member>
     <Member MemberName="AllowVectorFonts">
@@ -158,6 +167,9 @@
         <value>
           <see langword="true" /> if vector fonts are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowScriptChange" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowSimulations" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVerticalFonts" />
       </Docs>
     </Member>
     <Member MemberName="AllowVerticalFonts">
@@ -182,6 +194,9 @@
         <value>
           <see langword="true" /> if both vertical and horizontal fonts are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowScriptChange" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowSimulations" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.AllowVectorFonts" />
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -217,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.FontDialog.OnApply(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -251,6 +267,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.Font" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowColor" />
       </Docs>
     </Member>
     <Member MemberName="EventApply">
@@ -292,6 +311,8 @@
         <value>
           <see langword="true" /> if only fixed-pitch fonts can be selected; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.FontMustExist" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ScriptsOnly" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -321,6 +342,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.Color" />
       </Docs>
     </Member>
     <Member MemberName="FontMustExist">
@@ -356,6 +379,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.FixedPitchOnly" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ScriptsOnly" />
       </Docs>
     </Member>
     <Member MemberName="HookProc">
@@ -403,6 +428,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.FontDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.FontDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.CommonDialog" />
       </Docs>
     </Member>
     <Member MemberName="MaxSize">
@@ -446,6 +472,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.MinSize" />
       </Docs>
     </Member>
     <Member MemberName="MinSize">
@@ -489,6 +516,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.MaxSize" />
       </Docs>
     </Member>
     <Member MemberName="OnApply">
@@ -520,6 +548,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.FontDialog.OnApply(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.FontDialog.OnApply(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.FontDialog.Apply" />
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -624,6 +653,8 @@
         <value>
           <see langword="true" /> if selection of fonts for all non-OEM and Symbol character sets, as well as the ANSI character set, is allowed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.FixedPitchOnly" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.FontMustExist" />
       </Docs>
     </Member>
     <Member MemberName="ShowApply">
@@ -659,6 +690,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowColor" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowEffects" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowHelp" />
       </Docs>
     </Member>
     <Member MemberName="ShowColor">
@@ -694,6 +728,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.Color" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowApply" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowEffects" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowHelp" />
       </Docs>
     </Member>
     <Member MemberName="ShowEffects">
@@ -729,6 +767,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowApply" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowColor" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowHelp" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelp">
@@ -753,6 +794,9 @@
         <value>
           <see langword="true" /> if the dialog box displays a Help button; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowApply" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowColor" />
+        <altmember cref="P:System.Windows.Forms.FontDialog.ShowEffects" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

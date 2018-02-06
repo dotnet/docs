@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Tracing and logging"
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
 caps.latest.revision: 53
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracing and Message Logging
 This sample demonstrates how to enable tracing and message logging. The resulting traces and message logs are viewed using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
@@ -77,7 +76,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   <system.serviceModel>  
     <diagnostics>  
       <!-- Enable Message Logging here. -->  
-      <!-- log all messages received or sent at the transport or service model levels >  
+      <!-- log all messages received or sent at the transport or service model levels -->  
       <messageLogging logEntireMessage="true"  
                       maxMessagesToLog="300"  
                       logMessagesAtServiceLevel="true"  
@@ -142,5 +141,5 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\TracingAndLogging`  
   
 ## See Also  
- [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
+ [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)

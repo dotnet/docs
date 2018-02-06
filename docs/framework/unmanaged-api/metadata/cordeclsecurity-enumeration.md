@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDeclSecurity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDeclSecurity enumeration [.NET Framework metadata]"
 ms.assetid: 864f1267-d267-4696-8df7-1f83f8444d6f
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDeclSecurity Enumeration
 Specifies the security actions that can be performed using declarative security.  

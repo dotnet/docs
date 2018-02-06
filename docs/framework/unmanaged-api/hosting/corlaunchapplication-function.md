@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorLaunchApplication"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorLaunchApplication function [.NET Framework hosting]"
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorLaunchApplication Function
 Starts the application at the specified network path, using the specified manifests and other application data.  

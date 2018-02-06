@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Stream
 The Stream sample demonstrates the use of streaming transfer mode communication. The service exposes several operations that send and receive streams. This sample is self-hosted. Both the client and service are console programs.  

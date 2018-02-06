@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedNamespace::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedNamespace::GetName method [.NET Framework debugging]"
   - "GetName method, ISymUnmanagedNamespace interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedNamespace::GetName Method
 Gets the name of this namespace.  

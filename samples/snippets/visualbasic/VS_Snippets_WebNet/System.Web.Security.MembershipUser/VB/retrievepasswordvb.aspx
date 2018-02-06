@@ -53,7 +53,7 @@ Public Sub EmailPassword_OnClick(sender As Object, args As EventArgs)
     End Try
 
     EmailPassword(u.Email, password)
-    Msg.Text = "Password sent via e-mail."
+    Msg.Text = "Password sent via email."
   Else
     Msg.Text = "Password Answer is not valid. Please check the value and try again."
   End If

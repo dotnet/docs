@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "creating new BitmapSource objects"
-  - "BitmapSource objects, creating"
+  - "creating new BitmapSource objects [WPF]"
+  - "BitmapSource objects [WPF], creating"
 ms.assetid: 0adf447e-014f-4ceb-97b2-f21affe6d55b
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a new BitmapSource
 This example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapSource.Create%2A> method of <xref:System.Windows.Media.Imaging.BitmapSource> to create a new <xref:System.Windows.Media.Imaging.BitmapSource> object.  

@@ -25,6 +25,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +61,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uiItemImage" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
+        <altmember cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -85,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
       </Docs>
     </Member>
     <Member MemberName="InvokeHandler">
@@ -103,6 +107,8 @@
         <summary>Gets the handler that is raised when a user double-clicks this item.</summary>
         <value>A <see cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" /> indicating the event handler for this user interface (UI) item.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
+        <altmember cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -142,6 +148,7 @@
         <summary>Gets or sets the information string to display for this item.</summary>
         <value>A string containing the information string to display for this item.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
       </Docs>
     </Member>
   </Members>

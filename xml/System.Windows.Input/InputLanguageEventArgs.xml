@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.InputLanguageManager" />
+    <altmember cref="T:System.Windows.Input.InputLanguageEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +51,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputLanguageEventArgs.NewLanguage" />
+        <altmember cref="P:System.Windows.Input.InputLanguageEventArgs.PreviousLanguage" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
       </Docs>
     </Member>
     <Member MemberName="NewLanguage">
@@ -74,6 +80,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputLanguageEventArgs.PreviousLanguage" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
       </Docs>
     </Member>
     <Member MemberName="PreviousLanguage">
@@ -99,6 +108,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputLanguageEventArgs.NewLanguage" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
       </Docs>
     </Member>
   </Members>

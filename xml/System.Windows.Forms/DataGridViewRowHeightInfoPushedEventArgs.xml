@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -30,6 +30,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventHandler" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.Height" />
   </Docs>
   <Members>
     <Member MemberName="Height">
@@ -60,6 +65,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Height" />
       </Docs>
     </Member>
     <Member MemberName="MinimumHeight">
@@ -90,6 +99,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.MinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -120,6 +133,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
       </Docs>
     </Member>
   </Members>

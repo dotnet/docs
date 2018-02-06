@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.MetaChildrenColumn" />
+    <altmember cref="T:System.Web.DynamicData.MetaForeignKeyColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode" />
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.DataFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -193,6 +199,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -218,6 +227,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="DataTypeAttribute">
@@ -236,6 +249,7 @@
         <summary>Gets the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> attribute that is applied to the data field.</summary>
         <value>The <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> attribute that is applied to the data field.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -261,6 +275,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DefaultValueAttribute" />
+        <altmember cref="P:System.ComponentModel.DefaultValueAttribute.Value" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -286,6 +302,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DescriptionAttribute" />
+        <altmember cref="P:System.ComponentModel.DescriptionAttribute.Description" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -311,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DisplayNameAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EntityTypeProperty">
@@ -410,6 +429,9 @@
         <value>
           <see langword="true" /> if the data field contains binary data; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsFloatingPoint" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsInteger" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsString" />
       </Docs>
     </Member>
     <Member MemberName="IsCustomProperty">
@@ -462,6 +484,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsBinaryData" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsInteger" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsString" />
       </Docs>
     </Member>
     <Member MemberName="IsForeignKeyComponent">
@@ -481,6 +506,7 @@
         <value>
           <see langword="true" /> if the data field is part of a foreign key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsPrimaryKey" />
       </Docs>
     </Member>
     <Member MemberName="IsGenerated">
@@ -526,6 +552,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsBinaryData" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsFloatingPoint" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsString" />
       </Docs>
     </Member>
     <Member MemberName="IsLongString">
@@ -552,6 +581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsString" />
       </Docs>
     </Member>
     <Member MemberName="IsPrimaryKey">
@@ -571,6 +601,7 @@
         <value>
           <see langword="true" /> if the data field is part of the table's primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsForeignKeyComponent" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -616,6 +647,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute" />
+        <altmember cref="P:System.Web.DynamicData.ModelProviders.ColumnProvider.Nullable" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.RequiredErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="IsString">
@@ -635,6 +669,10 @@
         <value>
           <see langword="true" /> if the data field type is a string type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsLongString" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsBinaryData" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsFloatingPoint" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsInteger" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -660,6 +698,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.StringLengthAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength" />
       </Docs>
     </Member>
     <Member MemberName="Model">
@@ -678,6 +718,8 @@
         <summary>Gets the <see cref="T:System.Web.DynamicData.MetaModel" /> object that represents the data model that this data field belongs to.</summary>
         <value>An object that represents the data model that this data field belongs to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaModel" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.Table" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -721,6 +763,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText" />
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Prompt">
@@ -769,6 +814,7 @@
         <summary>Gets the abstraction provider object that is used to generate the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</summary>
         <value>The abstraction provider object that is used to generate the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Docs>
     </Member>
     <Member MemberName="RequiredErrorMessage">
@@ -787,6 +833,8 @@
         <summary>Gets the error message that is displayed when the data field requires a value but its value is empty.</summary>
         <value>The error message that is displayed when the data field requires a value but its value is empty.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsRequired" />
       </Docs>
     </Member>
     <Member MemberName="ResetMetadata">
@@ -846,6 +894,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold" />
+        <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsForeignKeyComponent" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsGenerated" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.IsCustomProperty" />
       </Docs>
     </Member>
     <Member MemberName="ShortDisplayName">
@@ -907,6 +961,8 @@
         <summary>Gets the <see cref="T:System.Web.DynamicData.MetaTable" /> object that represents the table that the data field belongs to.</summary>
         <value>An object that represents the table that the data field belongs to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.Model" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -951,6 +1007,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaColumn.ColumnType" />
       </Docs>
     </Member>
     <Member MemberName="UIHint">
@@ -976,6 +1033,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
       </Docs>
     </Member>
   </Members>

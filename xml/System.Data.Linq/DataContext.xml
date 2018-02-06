@@ -396,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.Linq.DataContext.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1431,5 +1432,23 @@ public IEnumerable<T> Translate<T>(IDataReader reader) {}
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DataContext" /> class. The connection string you use can be an ADO.NET connection string. You can also specify a filename to a SQL Server Express or SQL Server Compact file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Data.Linq.DataContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

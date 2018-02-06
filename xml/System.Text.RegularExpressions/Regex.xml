@@ -33,10 +33,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/regex/system/text/regularexpressions/Regex.cs#bbe3b2eb80ae5526). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Text.RegularExpressions.Regex> class represents the .NET Framework's regular expression engine. It can be used to quickly parse large amounts of text to find specific character patterns; to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection to generate a report.  
   
 > [!NOTE]
@@ -185,6 +181,7 @@
  ]]></format>
     </remarks>
     <threadsafe>The <see cref="T:System.Text.RegularExpressions.Regex" /> class is immutable (read-only) and thread safe. <see cref="T:System.Text.RegularExpressions.Regex" /> objects can be created on any thread and shared between threads. For more information, see [Thread Safety](~/docs/standard/base-types/thread-safety-in-regular-expressions.md).</threadsafe>
+    <altmember cref="T:System.Configuration.RegexStringValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -552,6 +549,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -562,9 +560,19 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a dictionary that maps named capturing groups to their index values.</summary>
+        <value>A dictionary that maps named capturing groups to their index values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
+  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=nameWithType> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Text.RegularExpressions.Regex.CapNames" /> property in a set operation is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="caps">
@@ -611,6 +619,7 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -621,9 +630,19 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a dictionary that maps numbered capturing groups to their index values.</summary>
+        <value>A dictionary that maps numbered capturing groups to their index values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
+  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=nameWithType> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Text.RegularExpressions.Regex.Caps" /> property in a set operation is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="capsize">
@@ -720,7 +739,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile1.vb#1)]  
@@ -804,7 +823,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile3.cs#3)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile3.vb#3)]  
@@ -958,7 +977,7 @@
  In a regular expression that is defined by using static text, characters that are to be interpreted literally rather than as metacharacters can be escaped by preceding them with a backslash symbol (\\) as well as by calling the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method. In a regular expression that is defined dynamically using characters that are not known at design time, calling the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method is particularly important to ensure that the regular expression engine interprets individual characters as literals rather than as metacharacters.  
   
 > [!NOTE]
->  If a regular expression pattern includes either the number sign (#) or literal white-space characters, they must be escaped if input text is parsed with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option enabled.  
+>  If a regular expression pattern includes either the number sign (#) or literal white-space characters, they must be escaped if input text is parsed with the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option enabled.  
   
  While the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method escapes the straight opening bracket ([) and opening brace ({) characters, it does not escape their corresponding closing characters (] and }). In most cases, escaping these is not necessary. If a closing bracket or brace is not preceded by its corresponding opening character, the regular expression engine interprets it literally. If an opening braket or brace is interpreted as a metacharacter, the regular expression engine interprets the first corresponding closing character as a metacharacter. If this is not the desired behavior, the closing bracket or brace should be escaped by explicitly prepending the backslash (\\) character. For an illustration, see the Example section.  
   
@@ -974,6 +993,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Regex.Unescape(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="factory">
@@ -1064,6 +1084,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetGroupNumbers">
@@ -1124,6 +1145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
       </Docs>
     </Member>
     <Member MemberName="GroupNameFromNumber">
@@ -1164,7 +1186,7 @@
 ## Remarks  
  A regular expression pattern may contain either named or numbered capturing groups, which delineate subexpressions within a pattern match. Numbered groups are delimited by the syntax (*subexpression*) and are assigned numbers based on their order in the regular expression. Named groups are delimited by the syntax (?`<`*name*`>`*subexpression*) or (?'*name*'*subexpression*), where *name* is the name by which the subexpression will be identified. (For more information, see [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md).) The <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A> method identifies both named groups and numbered groups by their ordinal positions in the regular expression. Ordinal position zero always represents the entire regular expression. All numbered groups are then counted before named groups, regardless of their actual position in the regular expression pattern.  
   
- If `i` is the number of a named group, the method returns the name of the group. If `i` is the number of an unnamed group, the method returns the string representation of the number. For example, if `i` is 1, the method returns "1". If `i` is not the number of a capturing group, the method returns <xref:System.String?displayProperty=nameWithType>.  
+ If `i` is the number of a named group, the method returns the name of the group. If `i` is the number of an unnamed group, the method returns the string representation of the number. For example, if `i` is 1, the method returns "1". If `i` is not the number of a capturing group, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  If a pattern match is found, the value returned by this method can then be used to retrieve the <xref:System.Text.RegularExpressions.Group> object that represents the captured group from the <xref:System.Text.RegularExpressions.GroupCollection.Item%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection> object is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property.  
   
@@ -1191,6 +1213,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
+        <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNumbers" />
       </Docs>
     </Member>
     <Member MemberName="GroupNumberFromName">
@@ -1237,6 +1261,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
+        <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNames" />
       </Docs>
     </Member>
     <Member MemberName="InfiniteMatchTimeout">
@@ -1297,6 +1323,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.Regex.MatchTimeout" />
       </Docs>
     </Member>
     <Member MemberName="InitializeReferences">
@@ -1680,7 +1707,7 @@
 |`[A-Z0-9]`|Match any single alphabetic character from `A` through `Z`, or any numeric character.|  
 |`$`|End the match at the end of the string.|  
   
- Calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> is equivalent to defining the following regular expression:  
+ Calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> is equivalent to defining the following regular expression:  
   
 ```  
 [a-zA-Z0-9]\d{2}[a-zA-Z0-9](-\d{3}){2}[A-Za-z0-9]  
@@ -1780,7 +1807,7 @@
 |`[A-Z0-9]`|Match any single alphabetic character from `A` through `Z`, or any numeric character.|  
 |`$`|End the match at the end of the string.|  
   
- Calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> is equivalent to defining the following regular expression:  
+ Calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> is equivalent to defining the following regular expression:  
   
 ```  
 [a-zA-Z0-9]\d{2}[a-zA-Z0-9](-\d{3}){2}[A-Za-z0-9]  
@@ -1877,6 +1904,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -1921,7 +1949,7 @@
   
  The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- You can optionally specify a starting position in the string by using the `startat` parameter. When the regular expression engine parses from left to right (the default), the match and the scan move rightward, starting at the character specified in `startat`. When the regular expression engine parses from right to left (when the regular expression pattern is constructed with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option), the match and scan move in the opposite direction and begin with the character at `startat` -1. If you do not specify a starting position, the search begins at the default `startat` position. If the regular expression searches from left to right, the default `startat` position is at the left end of `input`; if it searches from right to left, the default `startat` position is at the right end of `input`.  
+ You can optionally specify a starting position in the string by using the `startat` parameter. When the regular expression engine parses from left to right (the default), the match and the scan move rightward, starting at the character specified in `startat`. When the regular expression engine parses from right to left (when the regular expression pattern is constructed with the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option), the match and scan move in the opposite direction and begin with the character at `startat` -1. If you do not specify a starting position, the search begins at the default `startat` position. If the regular expression searches from left to right, the default `startat` position is at the left end of `input`; if it searches from right to left, the default `startat` position is at the right end of `input`.  
   
  If you want to restrict a match so that it begins at a particular character position in the string and the regular expression engine does not scan the remainder of the string for a match, anchor the regular expression with a `\G` (at the left for a left-to-right pattern, or at the right for a right-to-left pattern). This restricts the match so it must start exactly at `startat`.  
   
@@ -1938,6 +1966,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2017,6 +2046,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for retrieving a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Match(System.String,System.String)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2063,7 +2093,7 @@
   
  The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches the portion of `input` defined by the `beginning` and `length` parameters for the regular expression pattern. `beginning` always defines the index of the leftmost character to include in the search, and `length` defines the maximum number of characters to search. Together, they define the range of the search. If the search proceeds from left to right (the default), the regular expression engine searches from the character at index `beginning` to the character at index `beginning` + `length` – 1. If the regular expression engine was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option so that the search proceeds from right to left, the regular expression engine searches from the character at index `beginning` + `length` – 1 to the character at index `beginning`. This method returns the first match that it finds within this range. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method.  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches the portion of `input` defined by the `beginning` and `length` parameters for the regular expression pattern. `beginning` always defines the index of the leftmost character to include in the search, and `length` defines the maximum number of characters to search. Together, they define the range of the search. If the search proceeds from left to right (the default), the regular expression engine searches from the character at index `beginning` to the character at index `beginning` + `length` – 1. If the regular expression engine was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option so that the search proceeds from right to left, the regular expression engine searches from the character at index `beginning` + `length` – 1 to the character at index `beginning`. This method returns the first match that it finds within this range. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method.  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
@@ -2084,6 +2114,7 @@
   
  <paramref name="beginning" /><see langword="+" /><paramref name="length" /><see langword="–1" /> identifies a position that is outside the range of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2141,7 +2172,7 @@
    
   
 ## Examples  
- The following example defines a regular expression that matches words beginning with the letter "a". It uses the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option to ensure that the regular expression locates words beginning with both an uppercase "a" and a lowercase "a".  
+ The following example defines a regular expression that matches words beginning with the letter "a". It uses the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option to ensure that the regular expression locates words beginning with both an uppercase "a" and a lowercase "a".  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Match#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.match/cs/match2.cs#2)]
  [!code-vb[System.Text.RegularExpressions.Regex.Match#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.match/vb/match2.vb#2)]  
@@ -2166,6 +2197,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for retrieving a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Match(System.String,System.String)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2722,7 +2754,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Text.RegularExpressions.Regex.Options%2A> property consists of one or more members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration. If no options were defined in the <xref:System.Text.RegularExpressions.Regex> class constructor, its value is <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>. The available options are discussed in detail in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.  
+ The value of the <xref:System.Text.RegularExpressions.Regex.Options%2A> property consists of one or more members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration. If no options were defined in the <xref:System.Text.RegularExpressions.Regex> class constructor, its value is <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>. The available options are discussed in detail in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.  
   
  Note that the <xref:System.Text.RegularExpressions.Regex.Options%2A> property does not reflect inline options defined in the regular expression pattern itself.  
   
@@ -2732,6 +2764,7 @@
           <para>
             <see cref="T:System.Text.RegularExpressions.Regex" /> is the base class of regular expressions created by the <see cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" /> method. These compiled regular expressions use the base class implementation of the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property. If called from a derived class, the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property returns the options that were passed to the <paramref name="options" /> parameter of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class constructor that was used to define the regular expression.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="pattern">
@@ -2918,6 +2951,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3160,6 +3194,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for evaluating and replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3248,6 +3283,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3315,9 +3351,9 @@
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`^`|Match the start of a line. (Note that the <xref:System.Text.RegularExpressions.Regex> object was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option; otherwise, this character class would only match the beginning of the input string.)|  
+|`^`|Match the start of a line. (Note that the <xref:System.Text.RegularExpressions.Regex> object was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option; otherwise, this character class would only match the beginning of the input string.)|  
 |`.*`|Match any character zero or more times.|  
-|`$`|Match the end of a line. (Note that the <xref:System.Text.RegularExpressions.Regex> object was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option; otherwise, this character class would only match the beginning of the input string.)|  
+|`$`|Match the end of a line. (Note that the <xref:System.Text.RegularExpressions.Regex> object was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option; otherwise, this character class would only match the beginning of the input string.)|  
   
  The replacement string (`vbCrLf + "$&"` in Visual Basic, `"\n$&"` in C#) adds a new line before the matched string. Note that `\n` in the C# example is interpreted as the newline character by the C# compiler; it does not represent a regular expression character escape.  
   
@@ -3421,6 +3457,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3493,7 +3530,7 @@
    
   
 ## Examples  
- The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=nameWithType> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
+ The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=nameWithType> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Replace#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/cs/replace6.cs#10)]
  [!code-vb[System.Text.RegularExpressions.Regex.Replace#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/vb/replace6.vb#10)]  
@@ -3506,6 +3543,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="options" /> is not a valid bitwise combination of <see cref="T:System.Text.RegularExpressions.RegexOptions" /> values.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3580,6 +3619,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3685,6 +3725,7 @@
   
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3759,7 +3800,7 @@
    
   
 ## Examples  
- The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=nameWithType> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
+ The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=nameWithType> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Replace#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/cs/replace13.cs#13)]
  [!code-vb[System.Text.RegularExpressions.Regex.Replace#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/vb/replace13.vb#13)]  
@@ -3785,6 +3826,7 @@
   
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -4457,6 +4499,7 @@
           <paramref name="str" /> includes an unrecognized escape sequence.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Regex.Escape(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UseOptionC">
@@ -4549,5 +4592,101 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches an input string for all occurrences of a regular expression and returns all the matches.</summary>
+        <block subset="none" type="usage">
+          <para>When a match attempt is repeated by calling the <see cref="Overload:System.Text.RegularExpressions.Regex.Matches" /> method, the regular expression engine gives empty matches special treatment. Usually, the regular expression engine begins the search for the next match exactly where the previous match left off. However, after an empty match, the regular expression engine advances by one character before trying the next match. This behavior guarantees that the regular expression engine will progress through the string. Otherwise, because an empty match does not result in any forward movement, the next match would start in exactly the same place as the previous match, and it would match the same empty string repeatedly.  
+  
+ In the following example, the regular expression pattern <c>a*</c> searches for zero or more occurrences of the letter "a" in the string "abaabb". As the output from the example shows, the resulting <see cref="T:System.Text.RegularExpressions.MatchCollection" /> object contains six <see cref="T:System.Text.RegularExpressions.Match" /> objects. The first match attempt finds the first "a". The second match starts exactly where the first match ends, before the first b; it finds zero occurrences of "a" and returns an empty string. The third match does not begin exactly where the second match ended, because the second match returned an empty string. Instead, it begins one character later, after the first "b". The third match finds two occurrences of "a" and returns "aa". The fourth match attempt begins where the third match ended, before the second "b", and returns an empty string. The fifth match attempt again advances one character so that it begins before the third "b" and returns an empty string. The sixth match begins after the last "b" and returns an empty string again.  
+  
+ [!code-csharp[System.Text.RegularExpressions.Regex.Matches#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/cs/emptymatches1.cs#9)]
+ [!code-vb[System.Text.RegularExpressions.Regex.Matches#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/vb/emptymatches1.vb#9)]</para>
+        </block>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>In a specified input string, replaces strings that match a regular expression pattern with a specified replacement string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches an input string for a substring that matches a regular expression pattern and returns the first occurrence as a single <see cref="T:System.Text.RegularExpressions.Match" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompileToAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles regular expressions and saves them to disk in a single assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the regular expression finds a match in the input string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.Regex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Split">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Splits an input string into an array of substrings at the positions defined by a regular expression match.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

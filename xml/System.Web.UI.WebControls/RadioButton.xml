@@ -37,7 +37,7 @@
  The <xref:System.Web.UI.WebControls.RadioButton> server control permits you to intersperse the radio buttons in a group with other content in the page. The buttons are grouped logically if they all share the same <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property.  
   
 > [!NOTE]
->  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
@@ -98,11 +98,12 @@
 ## Examples  
  The following code example illustrates how to use the <xref:System.Web.UI.WebControls.RadioButton> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButton Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButton Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButton Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButton Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,8 +171,8 @@
 ## Examples  
  The following code example illustrates how to set the <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RadioButton.GroupName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RadioButton.GroupName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RadioButton.GroupName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RadioButton.GroupName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButton.GroupName Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -207,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">

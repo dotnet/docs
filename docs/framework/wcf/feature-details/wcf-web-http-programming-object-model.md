@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Web HTTP Programming Object Model
 The WCF WEB HTTP  Programming Model allows developers to expose [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web services through basic HTTP requests without requiring SOAP. The WCF WEB HTTP  Programming Model is built on top of the existing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] extensibility model. It defines the following classes:  
@@ -106,9 +108,9 @@ The WCF WEB HTTP  Programming Model allows developers to expose [!INCLUDE[indigo
  Because the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP  Programming Model is to expose your service using SSL. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](http://go.microsoft.com/fwlink/?LinkId=131613)  
   
 ## See Also  
- <xref:System.ServiceModel.WebHttpBinding>   
- <xref:System.ServiceModel.Web.WebGetAttribute>   
- <xref:System.ServiceModel.Web.WebInvokeAttribute>   
- <xref:System.ServiceModel.Description.WebHttpBehavior>   
- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>   
+ <xref:System.ServiceModel.WebHttpBinding>  
+ <xref:System.ServiceModel.Web.WebGetAttribute>  
+ <xref:System.ServiceModel.Web.WebInvokeAttribute>  
+ <xref:System.ServiceModel.Description.WebHttpBehavior>  
+ <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)

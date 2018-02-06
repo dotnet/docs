@@ -39,8 +39,8 @@
   
  The second part of the example is the Web page. Note that there is a `Register` directive near the top of the file to register the compiled component and a tag prefix. Also note that the page references the custom editor zone using the element `<aspSample:MyEditorZone>`.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartChrome_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartChrome_Overview/CS/EditorPartDemo.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartChrome_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartChrome_Overview/VB/EditorPartDemo.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartChrome_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartChrome_Overview/CS/EditorPartDemo.aspx#1)]
+ [!code-aspx-vb[WebParts_EditorPartChrome_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartChrome_Overview/VB/EditorPartDemo.aspx#1)]  
   
  The third part of the example contains the implementation of the custom editor part chrome and editor part zone. `MyEditorZone` extends <xref:System.Web.UI.WebControls.WebParts.EditorZone> and overrides <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> to return the custom editor part chrome. `MyEditorPartChrome` changes the background color of the editor part control in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.CreateEditorPartChromeStyle%2A> method. The background color of the zone is changed in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender%2A> method, and text is added to the editor part in the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderPartContents%2A> method.  
   

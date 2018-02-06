@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue2::GetVirtualMethodAndType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVirtualMethodAndType method [.NET Framework debugging]"
   - "ICorDebugObjectValue2::GetVirtualMethodAndType method"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectValue2::GetVirtualMethodAndType Method
 This method is not yet implemented.  

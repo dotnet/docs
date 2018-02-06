@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.XmlObjectSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -416,7 +419,7 @@
  This method assumes the default format is text XML.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -566,7 +569,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -598,7 +601,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -637,7 +640,7 @@
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -676,7 +679,7 @@
  You can set the `rootName` and `rootNamespace` in the following constructors: <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.String%2CSystem.String%29>, <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%29>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.%23ctor%28System.Xml.XmlDictionaryString%2CSystem.Xml.XmlDictionaryString%2CSystem.Runtime.Serialization.StreamingContext%2CSystem.Int32%2CSystem.Boolean%2CSystem.Runtime.Serialization.Formatters.FormatterAssemblyStyle%2CSystem.Runtime.Serialization.ISurrogateSelector%29>.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -731,6 +734,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISurrogateSelector" />
+        <altmember cref="T:System.Runtime.Serialization.IFormatter" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteEndObject">
@@ -980,5 +985,25 @@
         <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening XML element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

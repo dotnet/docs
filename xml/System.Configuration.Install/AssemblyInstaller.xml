@@ -72,6 +72,8 @@
         <param name="commandLine">The command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation. Can be a null value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class, and specifies both the assembly to install and the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.Assembly" />
+        <altmember cref="T:System.Configuration.Install.InstallContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.InstallContext" />
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -122,6 +125,7 @@
         <value>An <see cref="T:System.Reflection.Assembly" /> that defines the assembly to install.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.Assembly" />
       </Docs>
     </Member>
     <Member MemberName="CheckIfInstallable">
@@ -202,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.InstallContext" />
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -304,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.InstallContext" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -561,5 +567,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySink2::OnSyncCallEnter method [.NET Framework debugging]"
   - "OnSyncCallEnter method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySink2::OnSyncCallEnter Method
 Gets invoked when entering a call.  
@@ -61,6 +61,6 @@ HRESULT OnSyncCallEnter
  **Header:** ProtocolNotify2.idl  
   
 ## See Also  
- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)   
- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)   
+ [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
+ [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
  [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)

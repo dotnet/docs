@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::EnumerateLocalVariables"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateLocalVariables method [.NET Framework debugging]"
   - "ICorDebugILFrame::EnumerateLocalVariables method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::EnumerateLocalVariables Method
 Gets an enumerator for the local variables in this frame.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugCode2 interface [.NET Framework debugging]"
 ms.assetid: 9321903b-7dea-40d8-ba32-99016c00cc46
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode2 Interface1
 Provides methods that extend the capabilities of "ICorDebugCode".  
@@ -55,5 +55,5 @@ Provides methods that extend the capabilities of "ICorDebugCode".
   
 ## See Also  
     
- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)   
+ [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

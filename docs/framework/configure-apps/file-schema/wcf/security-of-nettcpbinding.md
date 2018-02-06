@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netTcpBinding&gt;
 Defines the security settings for a binding.  
@@ -76,12 +78,12 @@ Defines the security settings for a binding.
  This configuration element provides the security specifications for `netTcpBinding`. This is a secure, reliable, optimized binding suitable for cross-machine communication. By default it generates a runtime communication stack supporting TCP for message delivery and Windows Security for message security and authentication, WS-ReliableMessaging for reliability, and binary message encoding.  
   
 ## See Also  
- <xref:System.ServiceModel.NetTcpSecurity>   
- <xref:System.ServiceModel.NetTcpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.NetTcpSecurity>  
+ <xref:System.ServiceModel.NetTcpBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

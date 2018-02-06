@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo" />
   </Docs>
   <Members>
     <Member MemberName="Date">
@@ -51,6 +52,12 @@
         <value>The date and time of the start of the key agreement protocol by the originator.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The recipient identifier type is not a subject key identifier.</exception>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="EncryptedKey">
@@ -75,6 +82,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" /> property retrieves the encrypted recipient keying material.</summary>
         <value>An array of byte values that contain the encrypted recipient keying material.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="KeyEncryptionAlgorithm">
@@ -99,6 +112,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" /> property retrieves the algorithm used to perform the key agreement.</summary>
         <value>The value of the algorithm used to perform the key agreement.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="OriginatorIdentifierOrKey">
@@ -123,6 +142,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" /> property retrieves information about the originator of the key agreement for key agreement algorithms that warrant it.</summary>
         <value>An object that contains information about the originator of the key agreement.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="OtherKeyAttribute">
@@ -148,6 +173,12 @@
         <value>The attributes of the keying material.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The recipient identifier type is not a subject key identifier.</exception>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="RecipientIdentifier">
@@ -172,6 +203,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" /> property retrieves the identifier of the recipient.</summary>
         <value>The identifier of the recipient.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -203,6 +240,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifier" />
       </Docs>
     </Member>
   </Members>

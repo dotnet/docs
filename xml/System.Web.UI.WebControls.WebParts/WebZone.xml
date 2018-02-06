@@ -72,8 +72,8 @@
   
  The second part of the code example shows a Web page that hosts the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Notice that the declarative markup contains two <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls, a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control and an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zoneoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zoneoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zoneoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zoneoverviewvb.aspx#1)]  
   
  You can load the page in a browser and switch among the various page display modes to see how the different zones behave. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -123,8 +123,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_BackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/CS/zonebackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_BackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/VB/zonebackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_BackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/CS/zonebackimageurlcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_BackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/VB/zonebackimageurlvb.aspx#1)]  
   
  In a browser, you can switch to design mode to see the image in the empty zone. Note that an actual URL for the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property is not provided in this example. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -166,8 +166,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/CS/zoneemptyzonetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/VB/zoneemptyzonetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/CS/zoneemptyzonetextcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/VB/zoneemptyzonetextvb.aspx#1)]  
   
  In a browser, you can switch to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property displayed in the empty zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -212,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ErrorStyle">
@@ -283,6 +286,8 @@
         <summary>Gets the style attributes for the contents of a zone's footer area.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the contents of a zone's footer area.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="GetEffectiveChromeType">
@@ -307,6 +312,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="part" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -338,6 +344,9 @@
         <block subset="none" type="overrides">
           <para>If you are creating a custom tool zone that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderFooter(System.Web.UI.HtmlTextWriter)" /> method and provide rendering for your zone's footer.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderFooter(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasHeader" />
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -369,6 +378,8 @@
         <block subset="none" type="overrides">
           <para>If you are creating a custom tool zone that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderHeader(System.Web.UI.HtmlTextWriter)" /> method and provide rendering for your zone's header.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasFooter" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -401,6 +412,9 @@
         <summary>Gets the style attributes for the contents of a zone's header area.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the contents of a zone's header area.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -436,8 +450,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_HeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_HeaderText/CS/zoneheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_HeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_HeaderText/VB/zoneheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_HeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_HeaderText/CS/zoneheadertextcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_HeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_HeaderText/VB/zoneheadertextvb.aspx#1)]  
   
  In a browser, you can switch the page to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property displayed in the header area of the zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -474,6 +488,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -503,6 +518,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The zone control was added at too late of a stage in the page life cycle, or the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -532,6 +548,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.UI.WebControls.WebParts.WebZone" /> control is nested within another zone or within a <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -632,13 +649,16 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeStyle%2A> property to set style attributes for the outer borders of Web Parts controls contained in a zone.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/CS/zonepartchromestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/VB/zonepartchromestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/CS/zonepartchromestylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/VB/zonepartchromestylevb.aspx#1)]  
   
  Note that when you first load the page in a browser, the upper control has its own green border with a width of 2 pixels, as set in the declarative markup for the page. After a user clicks the calendar, the page programmatically changes the borders of both controls in the zone to red, and sets their border width to 4 pixels, yet the upper control retains its original green inner border.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
       </Docs>
     </Member>
     <Member MemberName="PartChromeType">
@@ -670,6 +690,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
       </Docs>
     </Member>
     <Member MemberName="PartStyle">
@@ -712,11 +734,13 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartStyle%2A> property. Note that in the zone referenced in the declarative markup, there is an `<asp:calendar>` element and an `<asp:literal>` element, with both controls acting as Web Parts controls at run time because they are in a zone. After the user clicks a date on the calendar control, the page programmatically uses the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartStyle%2A> property to change the background color of all part controls in the zone to red.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_PartStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartStyle/CS/zonepartstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_PartStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartStyle/VB/zonepartstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_PartStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartStyle/CS/zonepartstylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_PartStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartStyle/VB/zonepartstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeStyle" />
       </Docs>
     </Member>
     <Member MemberName="PartTitleStyle">
@@ -749,6 +773,8 @@
         <summary>Gets style attributes for the title bar content for each Web Parts control contained by a zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> that contains style attributes for the title bar content for each Web Parts control in the zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartStyle" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -777,6 +803,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -852,6 +879,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderFooter">
@@ -920,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -938,6 +967,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to this Web server control. This property is used primarily by control developers.</summary>
         <value>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> enumeration values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -963,6 +993,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="VerbButtonType">
@@ -994,6 +1025,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is not set to a <see cref="T:System.Web.UI.WebControls.ButtonType" /> value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.VerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="VerbStyle">
@@ -1026,6 +1058,8 @@
         <summary>Gets the style attributes for the user interface (UI) verbs associated with Web Parts controls in a zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the verbs associated with Web Parts controls contained by a zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1044,6 +1078,7 @@
         <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebZone" /> control instance on a Web Parts page.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control that is associated with a zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
       </Docs>
     </Member>
   </Members>

@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Oracle and ADO.NET
 > [!NOTE]
@@ -81,5 +86,5 @@ csc /r:System.Data.OracleClient.dll
  Describes generic classes that allow you to write provider-independent code in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
   
 ## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)   
+ [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

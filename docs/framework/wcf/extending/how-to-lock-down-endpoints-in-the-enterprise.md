@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Lock Down Endpoints in the Enterprise
 Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  
@@ -70,5 +72,5 @@ Large enterprises often require that applications are developed in compliance wi
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
 ## See Also  
- [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)   
+ [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)  
  [Encrypting configuration file elements using RSA](http://go.microsoft.com/fwlink/?LinkId=94955)

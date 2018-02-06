@@ -94,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="CreateSampleDataTable">
@@ -299,5 +300,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSampleDataTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.DataTable" /> object with the same schema as the provided data.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSelectedDataSource">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a data source selected by name in the design host, represented by the specified component's site property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

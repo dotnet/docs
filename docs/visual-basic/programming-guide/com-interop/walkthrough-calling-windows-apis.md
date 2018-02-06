@@ -1,44 +1,26 @@
 ---
 title: "Walkthrough: Calling Windows APIs (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "DLLs, calling"
   - "Windows API, walkthroughs"
   - "platform invoke, walkthroughs"
-  - "API calls, walkthroughs [Visual Basic]"
+  - "API calls [Visual Basic], walkthroughs [Visual Basic]"
   - "Windows API, calling"
   - "walkthroughs [Visual Basic], API calls"
   - "DllImport attribute, calling Windows API"
-  - "Declare statement, declaring DLL functions"
+  - "Declare statement [Visual Basic], declaring DLL functions"
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Calling Windows APIs (Visual Basic)
 Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows operating system. You use them to perform tasks when it is difficult to write equivalent procedures of your own. For example, Windows provides a function named `FlashWindowEx` that lets you make the title bar for an application alternate between light and dark shades.  
@@ -170,11 +152,11 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 12. Click **Button2**. The message "The file was moved successfully" is displayed if the file can be moved.  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>   
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
- [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)   
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)   
+ <xref:System.Runtime.InteropServices.DllImportAttribute>  
+ <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
+ [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)  
+ [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+ [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)  
  [Marshaling a Delegate as a Callback Method](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)

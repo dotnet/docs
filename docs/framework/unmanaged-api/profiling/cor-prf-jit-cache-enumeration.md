@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_JIT_CACHE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_JIT_CACHE enumeration [.NET Framework profiling]"
 ms.assetid: e7b8f6b4-95bc-4ba5-b9eb-f5590a7326a4
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_JIT_CACHE Enumeration
 Indicates the result of a cached function search.  

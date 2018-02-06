@@ -12,7 +12,7 @@
 <body>
     <form id="form1" runat="server">
         
-<%--<snippet4>--%>
+<!-- <snippet4> -->
       <%
          Dim charArray As Char() = {"H"c, "e"c, "l"c, "l"c, "o"c, ","c, " "c, _
                                  "w"c, "o"c, "r"c, "l"c, "d"c}
@@ -32,7 +32,7 @@
 ' </snippet6>
       %>
 
-<%--</snippet4>--%>
+<!-- </snippet4> -->
     </form>
 </body>
 </html>

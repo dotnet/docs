@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetMvid"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetMvid method [.NET Framework debugging]"
   - "GetMvid method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::GetMvid Method
 `GetMvid` is obsolete. Do not call this method.  

@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="C#" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -83,7 +83,7 @@
               </td>
               <td>
                 <asp:LinkButton runat="server" ID="SortByEmailButton"
-                  CommandName="Sort" Text="E-mail Address" 
+                  CommandName="Sort" Text="Email Address" 
                   CommandArgument="EmailAddress" />
                 <asp:Image runat="server" ID="SortImage3" 
                   ImageUrl="~/images/ascending.gif" Visible="false" />
@@ -141,4 +141,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

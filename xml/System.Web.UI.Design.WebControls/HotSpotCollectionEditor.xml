@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+    <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +52,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="CanSelectMultipleInstances">
@@ -75,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="M:System.ComponentModel.Design.CollectionEditor.CanSelectMultipleInstances" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewItemTypes">
@@ -101,6 +111,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="M:System.ComponentModel.Design.CollectionEditor.CreateNewItemTypes" />
+        <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+        <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
       </Docs>
     </Member>
     <Member MemberName="HelpTopic">
@@ -129,6 +145,9 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="P:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic" /> property to display a different Help topic.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="P:System.ComponentModel.Design.CollectionEditor.HelpTopic" />
       </Docs>
     </Member>
   </Members>

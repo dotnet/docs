@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/socket"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#socket"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<socket> element"
   - "socket element"
@@ -25,6 +20,8 @@ caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;socket&gt; Element (Network Settings)
 Specifies whether socket operations use completion ports.  
@@ -37,11 +34,11 @@ Specifies whether socket operations use completion ports.
 ## Syntax  
   
 ```xml  
-      <socket  
+<socket  
   alwaysUseCompletionPortsForConnect="true|false"  
   alwaysUseCompletionPortsForAccept="true|false"  
-  ipProtectionLevel ="EdgeRestricted|Restricted|Unrestricted|Unspecified"  
-/socket>  
+  ipProtectionLevel="EdgeRestricted|Restricted|Unrestricted|Unspecified"  
+/>  
 ```  
   
 ## Attributes and Elements  
@@ -115,9 +112,9 @@ Specifies whether socket operations use completion ports.
 ```  
   
 ## See Also  
- <xref:System.Net?displayProperty=nameWithType>   
- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>   
- <xref:System.Net.Sockets?displayProperty=nameWithType>   
- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>   
- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>   
+ <xref:System.Net?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

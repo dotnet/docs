@@ -51,6 +51,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.IContainer" />
+    <altmember cref="T:System.ComponentModel.Container" />
+    <altmember cref="T:System.ComponentModel.ISite" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +117,10 @@
         <block subset="none" type="overrides">
           <para>If you override this method in a deriving class and change it to return <see langword="false" />, the <see cref="T:System.ComponentModel.EventHandlerList" /> collection returned by the <see cref="P:System.ComponentModel.Component.Events" /> property returns <see langword="null" /> for an event. Events can still be added and removed from the collection, but the collection's <see cref="P:System.ComponentModel.EventHandlerList.Item(System.Object)" /> property will always return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -155,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -198,6 +208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -235,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -279,7 +294,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -318,10 +333,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create a <xref:System.ComponentModel.Component.Disposed> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about the event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.ComponentModel.Component.Disposed> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about the event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Component.Dispose" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -352,10 +369,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventHandlerList" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -388,7 +406,7 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -430,6 +448,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -476,6 +498,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -513,7 +538,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Component" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

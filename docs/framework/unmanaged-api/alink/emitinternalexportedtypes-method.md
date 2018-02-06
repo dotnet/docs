@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmitInternalExportedTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmitInternalExportedTypes method"
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmitInternalExportedTypes Method
 Emits types added to the assembly. Call this method after known internal types have been added.  
@@ -52,6 +52,6 @@ HRESULT EmitInternalExportedTypes(
  Requires alink.h  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

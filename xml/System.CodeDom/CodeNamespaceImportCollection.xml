@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeNamespaceImport" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespaceImport" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -138,6 +140,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeNamespaceImport" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -216,6 +219,7 @@
         <summary>Gets an enumerator that enumerates the collection members.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that indicates the collection members.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">

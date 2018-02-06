@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "custom attributes, accessibility"
   - "attributes [.NET Framework], accessing"
@@ -18,6 +22,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessing Custom Attributes
 After attributes have been associated with program elements, reflection can be used to query their existence and values. In the .NET Framework version 1.0 and 1.1, custom attributes are examined in the execution context. The .NET Framework version 2.0 provides a new load context, the reflection-only context, which can be used to examine code that cannot be loaded for execution.  
@@ -73,7 +79,7 @@ public class LocalizationExtenderProvider
  [!code-vb[CustomAttributeData#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CustomAttributeData/VB/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>   
- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>   
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)   
+ <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>  
+ <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
+ [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
  [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)

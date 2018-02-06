@@ -7,11 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "clear Element"
   - "<clear> Element"
@@ -19,6 +14,8 @@ ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<clear> element for NameValueSectionHandler and DictionarySectionHandler

@@ -26,6 +26,8 @@
     <summary>Defines extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.VsaItem" />
+    <altmember cref="T:Microsoft.JScript.Context" />
   </Docs>
   <Members>
     <Member MemberName="Execute">
@@ -46,6 +48,10 @@
         <returns>The return value from running the code, if there is any; otherwise, null.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaCodeItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.VsaItem" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -65,6 +71,10 @@
         <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaCodeItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.VsaItem" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName="StartLine">
@@ -84,6 +94,10 @@
         <value>The line number where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaCodeItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.JScript.VsaItem" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
   </Members>

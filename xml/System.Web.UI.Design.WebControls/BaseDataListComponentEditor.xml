@@ -22,6 +22,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+    <altmember cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +52,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+        <altmember cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
       </Docs>
     </Member>
     <Member MemberName="EditComponent">
@@ -84,6 +92,12 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages" /> method must have been overridden to return a <see cref="T:System.Type" /> array of page control types. This array must exist in order for the <see cref="Overload:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent" /> method to succeed.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+        <altmember cref="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataGridComponentEditor.GetComponentEditorPages" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataListComponentEditor.GetComponentEditorPages" />
+        <altmember cref="T:System.Windows.Forms.Design.ComponentEditorForm" />
       </Docs>
     </Member>
     <Member MemberName="GetInitialComponentEditorPageIndex">
@@ -110,6 +124,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.#ctor(System.Int32)" />
       </Docs>
     </Member>
   </Members>

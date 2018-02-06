@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValueBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValueBreakpoint interface [.NET Framework debugging]"
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValueBreakpoint Interface1
 Extends the ICorDebugBreakpoint interface to provide access to specific values.  

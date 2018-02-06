@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetProcess method, ICorDebugAppDomain interface [.NET Framework debugging]"
   - "ICorDebugAppDomain::GetProcess method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetProcess Method
 Gets the process containing the application domain.  

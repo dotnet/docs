@@ -32,8 +32,6 @@
   
  Using this class requires referencing WPF assemblies, it is not intended for general .NET Framework XAML Services scenarios. The scenario here is for WPF internal implementation of service-intensive features during serialization, such as when processing the `ShouldSerialize` implementations of certain types. The practical class involved in this scenario is the derived class <xref:System.Windows.Markup.XamlDesignerSerializationManager>.  
   
-<a name="xamlTextUsage_ServiceProviders"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

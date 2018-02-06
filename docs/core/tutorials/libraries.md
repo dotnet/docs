@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
+ms.workload: 
+  - dotnetcore
 ---
 
 # Developing Libraries with Cross Platform Tools
@@ -253,6 +255,8 @@ It's important to be able to test across platforms. You can use either [xUnit](h
    dotnet restore
    dotnet build
    ```
+
+   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
     

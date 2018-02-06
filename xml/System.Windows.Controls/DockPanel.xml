@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Dock" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +83,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DockPanel.Dock" />
       </Docs>
     </Member>
     <Member MemberName="GetDock">
@@ -109,6 +111,8 @@
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property for a specified <see cref="T:System.Windows.UIElement" />.</summary>
         <returns>The <see cref="P:System.Windows.Controls.DockPanel.Dock" /> property value for the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DockPanel" />
+        <altmember cref="P:System.Windows.Controls.DockPanel.Dock" />
       </Docs>
     </Member>
     <Member MemberName="LastChildFill">
@@ -160,6 +164,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DockPanel.LastChildFill" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DockPanel.LastChildFill" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -219,6 +224,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DockPanel" />
+        <altmember cref="P:System.Windows.Controls.DockPanel.Dock" />
       </Docs>
     </Member>
   </Members>

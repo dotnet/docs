@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ShutdownDbgTransportManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "Silverlight, remote debugging"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ShutdownDbgTransportManager Function
 Shuts down the transport manager for a connection to a remote target machine.  

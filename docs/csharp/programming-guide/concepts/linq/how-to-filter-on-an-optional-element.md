@@ -1,7 +1,7 @@
 ---
 title: "How to: Filter on an Optional Element (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 caps.latest.revision: 4
 author: "BillWagner"
@@ -104,9 +102,9 @@ Child Four Text
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>   
- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>   
- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>   
- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)   
- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
+ <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
+ <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  
+ <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>  
+ [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
+ [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)

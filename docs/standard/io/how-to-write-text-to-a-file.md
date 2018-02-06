@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "writing text to files"
   - "I/O [.NET Framework], writing text to files"
@@ -18,6 +21,9 @@ caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Write Text to a File
 This topic shows different ways you can write text to a file for .NET Framework applications or [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. The following classes and methods are typically used to write text to a file:  
@@ -34,7 +40,7 @@ This topic shows different ways you can write text to a file for .NET Framework 
  The following example shows how to synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. The new text file is saved to the user's My Documents folder. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked which automatically flushes and closes the stream.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writeline)] 
- [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeline)]   
+ [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeline)]  
   
 ## Example  
  The following example shows how to append text to an existing file using the <xref:System.IO.StreamWriter> class. It uses the same text file from the previous example.  
@@ -83,10 +89,10 @@ This topic shows different ways you can write text to a file for .NET Framework 
  [!code-vb[OpenFileWindowsStore#Code](../../../samples/snippets/visualbasic/VS_Snippets_CLR/openfilewindowsstore/vb/mainpage.xaml.vb#code)]  
   
 ## See Also  
- <xref:System.IO.StreamWriter>   
- <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>   
- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)   
- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)   
- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)   
- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)   
+ <xref:System.IO.StreamWriter>  
+ <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>  
+ [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+ [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
+ [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+ [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
  [File and Stream I-O](../../../docs/standard/io/index.md)

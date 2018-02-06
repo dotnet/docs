@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetCurrentException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetCurrentException method [.NET Framework debugging]"
   - "GetCurrentException method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetCurrentException Method
 Gets an interface pointer to an ICorDebugValue object that represents an exception that is currently being thrown by managed code.  

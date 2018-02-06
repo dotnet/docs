@@ -67,7 +67,7 @@ End Class
 ' to create custom configuration sections at the specified 
 ' level in the configuration hierarchy that is in the 
 ' proper configuration file.
-' This enables the the user that has the proper access 
+' This enables the user that has the proper access 
 ' rights, to make changes to the configuration files.
 Public Class ConsoleSection
     Inherits ConfigurationSection

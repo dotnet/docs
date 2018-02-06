@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FormatEventInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IValidator::FormatEventInfo method [.NET Framework hosting]"
   - "FormatEventInfo method, IValidator interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IValidator::FormatEventInfo Method
 Gets the error message corresponding to the specified validation error.  

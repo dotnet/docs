@@ -12,6 +12,7 @@
   <Docs>
     <summary>Specifies the reason for which the user's session is ending. Used by the <see cref="P:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" /> property.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Windows.Application.SessionEnding" />
   </Docs>
   <Members>
     <Member MemberName="Logoff">

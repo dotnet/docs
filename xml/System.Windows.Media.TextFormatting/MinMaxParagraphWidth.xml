@@ -168,6 +168,7 @@
         <returns>
           <see langword="true" /> to show the specified <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Inequality(System.Windows.Media.TextFormatting.MinMaxParagraphWidth,System.Windows.Media.TextFormatting.MinMaxParagraphWidth)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -202,5 +203,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

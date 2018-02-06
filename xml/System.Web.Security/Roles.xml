@@ -180,8 +180,8 @@
 ## Examples  
  The following code example adds one or more users to a role or removes a user from a role based on user input. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -240,8 +240,8 @@
 ## Examples  
  The following code example adds one or more users to one or more roles. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/adduserstorolescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/adduserstorolesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/adduserstorolescs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.Roles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/adduserstorolesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -300,8 +300,8 @@
 ## Examples  
  The following code example adds a user to a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/addusertorolecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/addusertorolevb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/addusertorolecs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.Roles#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/addusertorolevb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -360,8 +360,8 @@
 ## Examples  
  The following code example adds a user to one or more roles. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/addusertorolescs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/addusertorolesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/addusertorolescs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.Roles#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/addusertorolesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -860,8 +860,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -905,8 +905,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/logincs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/loginvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/logincs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.Roles#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/loginvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -946,8 +946,8 @@
 ## Examples  
  The following code example deletes a role from the data source. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -998,8 +998,8 @@
 ## Examples  
  The following code example deletes a role from the data source. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1125,8 +1125,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/FindUsersInRolecs.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/FindUsersInRolevb.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/FindUsersInRolecs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.Roles#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/FindUsersInRolevb.aspx#11)]  
   
  ]]></format>
         </remarks>
@@ -1175,8 +1175,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1212,8 +1212,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and bind the returned roles to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.Roles#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1253,8 +1253,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and bind the returned roles to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.Roles#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1295,8 +1295,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetUsersInRole%2A> method to get a list of the users in a particular role and binds the results to a <xref:System.Web.UI.WebControls.GridView> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -1340,8 +1340,8 @@
 ## Examples  
  The following code example programmatically checks whether the currently logged-on user is in the Administrators role before allowing the user to view roles settings for the application. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1391,8 +1391,8 @@
 ## Examples  
  The following code example programmatically checks whether a user is in the Administrators role before allowing the user to view roles settings for the application. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1484,8 +1484,8 @@
 ## Examples  
  The following code example casts the default role provider as a <xref:System.Web.Security.WindowsTokenRoleProvider> and checks whether the currently logged-on user is in the Administrators role before allowing the user to view roles settings for the application. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.WindowsTokenRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/ViewRoles2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/ViewRoles2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/CS/ViewRoles2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.WindowsTokenRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsTokenRoleProvider/VB/ViewRoles2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1555,8 +1555,8 @@
 ## Examples  
  The following code example lists the providers enabled for an application and their respective types.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/Providerscs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/Providersvb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/Providerscs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.Roles#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/Providersvb.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -1594,8 +1594,8 @@
 ## Examples  
  The following code example removes a user from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -1645,8 +1645,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.RemoveUserFromRoles%2A> method to remove a user from one or more roles. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUserFromRolescs.aspx#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUserFromRolesvb.aspx#10)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUserFromRolescs.aspx#10)]
+ [!code-aspx-vb[System.Web.Security.Roles#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUserFromRolesvb.aspx#10)]  
   
  ]]></format>
         </remarks>
@@ -1700,8 +1700,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.RemoveUsersFromRole%2A> method to remove one or more users from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUsersFromRolecs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUsersFromRolevb.aspx#9)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUsersFromRolecs.aspx#9)]
+ [!code-aspx-vb[System.Web.Security.Roles#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUsersFromRolevb.aspx#9)]  
   
  ]]></format>
         </remarks>
@@ -1757,8 +1757,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.RemoveUsersFromRoles%2A> method to remove one or more users from one or more roles based on user input. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUsersFromRolescs.aspx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUsersFromRolesvb.aspx#8)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Roles#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/RemoveUsersFromRolescs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.Roles#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/RemoveUsersFromRolesvb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -1817,8 +1817,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1829,5 +1829,32 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsUserInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether a user is in the specified role.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetRolesForUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a list of the roles that a user is in.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a role from the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

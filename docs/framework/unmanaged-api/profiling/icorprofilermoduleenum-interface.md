@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerModuleEnum interface [.NET Framework profiling]"
 ms.assetid: 24d0fcfa-1601-4fba-868f-da8c97303467
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerModuleEnum Interface
 Provides methods to sequentially iterate through a collection of modules loaded by the application or the profiler.  
@@ -55,6 +55,6 @@ Provides methods to sequentially iterate through a collection of modules loaded 
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)   
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)   
+ [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
+ [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
  [EnumModules Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-enummodules-method.md)

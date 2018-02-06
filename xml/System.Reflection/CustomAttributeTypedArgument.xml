@@ -61,6 +61,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.CustomAttributeData" />
+    <altmember cref="T:System.Reflection.CustomAttributeNamedArgument" />
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,6 +195,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeTypedArgument.Value" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -228,6 +233,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -260,6 +266,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -433,5 +440,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

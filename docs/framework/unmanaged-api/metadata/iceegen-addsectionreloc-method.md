@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::AddSectionReloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddSectionReloc method [.NET Framework metadata]"
   - "ICeeGen::AddSectionReloc method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::AddSectionReloc Method
 Adds a .reloc instruction to the code base.  

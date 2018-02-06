@@ -9,17 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Storyboards, seeking"
-  - "seeking Storyboards"
+  - "Storyboards [WPF], seeking"
+  - "seeking Storyboards [WPF]"
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Seek a Storyboard
-The following example shows how to use the              <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method of a              <xref:System.Windows.Media.Animation.Storyboard> to jump to any position in a storyboard animation.  
+The following example shows how to use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method of a <xref:System.Windows.Media.Animation.Storyboard> to jump to any position in a storyboard animation.  
   
 ## Example  
  Below is the XAML markup for the sample.  

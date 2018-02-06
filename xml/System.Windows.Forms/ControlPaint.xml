@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.ControlStyles" />
   </Docs>
   <Members>
     <Member MemberName="ContrastControlDark">
@@ -54,6 +56,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemInformation" />
+        <altmember cref="T:System.Drawing.SystemColors" />
       </Docs>
     </Member>
     <Member MemberName="CreateHBitmap16Bit">
@@ -323,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ButtonBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -349,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=nameWithType> style is used by default to draw the border.  
+ The <xref:System.Windows.Forms.Border3DStyle.Etched?displayProperty=nameWithType> style is used by default to draw the border.  
   
    
   
@@ -362,6 +367,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.Border3DStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -398,6 +405,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.Border3DStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -436,6 +445,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.Border3DStyle" />
+        <altmember cref="T:System.Windows.Forms.Border3DSide" />
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -468,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=nameWithType> style is used by default to draw the border.  
+ The <xref:System.Windows.Forms.Border3DStyle.Etched?displayProperty=nameWithType> style is used by default to draw the border.  
   
    
   
@@ -523,6 +535,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Border3DStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -567,6 +580,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Border3DStyle" />
+        <altmember cref="T:System.Windows.Forms.Border3DSide" />
       </Docs>
     </Member>
     <Member MemberName="DrawButton">
@@ -592,6 +607,7 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the button in.</param>
         <summary>Draws a button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Button" />
       </Docs>
     </Member>
     <Member MemberName="DrawButton">
@@ -632,6 +648,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Button" />
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
       </Docs>
     </Member>
     <Member MemberName="DrawCaptionButton">
@@ -670,6 +688,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CaptionButton" />
       </Docs>
     </Member>
     <Member MemberName="DrawCaptionButton">
@@ -714,6 +733,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CaptionButton" />
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -1044,6 +1064,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName="DrawLockedFrame">
@@ -1102,6 +1123,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.MenuGlyph" />
       </Docs>
     </Member>
     <Member MemberName="DrawMenuGlyph">
@@ -1138,6 +1161,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.MenuGlyph" />
       </Docs>
     </Member>
     <Member MemberName="DrawMenuGlyph">
@@ -1218,6 +1243,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.MenuGlyph" />
       </Docs>
     </Member>
     <Member MemberName="DrawMixedCheckBox">
@@ -1243,6 +1270,7 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
         <summary>Draws a three-state check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.CheckBox.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="DrawMixedCheckBox">
@@ -1274,6 +1302,7 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
         <summary>Draws a three-state check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.CheckBox.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
@@ -1299,6 +1328,7 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the radio button in.</param>
         <summary>Draws a radio button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.RadioButton" />
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
@@ -1373,6 +1403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FrameStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawReversibleLine">
@@ -1416,6 +1447,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FrameStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawScrollButton">
@@ -1443,6 +1475,9 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the scroll button in.</param>
         <summary>Draws the specified scroll button on a scroll bar control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollButton" />
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
+        <altmember cref="T:System.Windows.Forms.ScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="DrawScrollButton">
@@ -1476,6 +1511,9 @@
         <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the scroll button in.</param>
         <summary>Draws the specified scroll button on a scroll bar control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollButton" />
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
+        <altmember cref="T:System.Windows.Forms.ScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="DrawSelectionFrame">
@@ -1551,6 +1589,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.SizeGripStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawSizeGrip">
@@ -1591,6 +1631,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.SizeGripStyle" />
       </Docs>
     </Member>
     <Member MemberName="DrawStringDisabled">
@@ -1717,6 +1759,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="Light">
@@ -1808,5 +1851,140 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawCaptionButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a caption button control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawMenuGlyph">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a menu glyph on a menu item control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawBorder">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a border on a button-style control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawStringDisabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified string in a disabled state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawScrollButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a scroll button on a scroll bar control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawCheckBox">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a check box control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawSizeGrip">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a size grip on a form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Light">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new light color object for the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a button control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dark">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new dark color object for the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawRadioButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a radio button control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawBorder3D">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a three-dimensional style border on a control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawMixedCheckBox">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a three-state check box control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawFocusRectangle">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a focus rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawComboButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a drop-down button on a combo box control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

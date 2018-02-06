@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"
@@ -19,6 +23,8 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Sign an Assembly with a Strong Name
 There are a number of ways to sign an assembly with a strong name:  
@@ -98,9 +104,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
     ```  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)   
- [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)   
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)   
- [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)   
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
+ [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)  
+ [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
+ [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
+ [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)  
  [Signing Page, Project Designer](https://msdn.microsoft.com/library/0k50fs3b)

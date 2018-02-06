@@ -261,5 +261,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateStoreSchemaConnection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateStoreMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates store metadata and returns any schema errors.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStoreSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the generated store schema definition language (SSDL) to a file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

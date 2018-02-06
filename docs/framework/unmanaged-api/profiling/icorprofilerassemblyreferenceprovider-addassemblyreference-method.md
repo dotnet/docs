@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorProfilerAssemblyReferenceProvider.AddAssemblyReference"
 api_location: 
   - "mscorwks.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
 topic_type: 
   - "apiref"
@@ -24,6 +24,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerAssemblyReferenceProvider::AddAssemblyReference Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -32,7 +34,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT AddAssemblyReference(  
         const COR_PRF_ASSEMBLY_REFERENCE_INFO* pAssemblyRefInfo  
 );  
@@ -55,6 +57,6 @@ HRESULT AddAssemblyReference(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See Also  
- [ICorProfilerAssemblyReferenceProvider Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-interface.md)   
- [GetAssemblyReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)   
+ [ICorProfilerAssemblyReferenceProvider Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-interface.md)  
+ [GetAssemblyReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)  
  [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)

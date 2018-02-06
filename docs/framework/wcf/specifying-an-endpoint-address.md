@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "endpoints [WCF], addressing"
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
 caps.latest.revision: 41
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying an Endpoint Address
 All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service occurs through its endpoints. Each <xref:System.ServiceModel.Description.ServiceEndpoint> contains an <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>, a <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A>, and a <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A>. The contract specifies which operations are available. The binding specifies how to communicate with the service, and the address specifies where to find the service. Every endpoint must have a unique address. The endpoint address is represented by the <xref:System.ServiceModel.EndpointAddress> class, which contains a Uniform Resource Identifier (URI) that represents the address of the service, an <xref:System.ServiceModel.EndpointAddress.Identity%2A>, which represents the security identity of the service, and a collection of optional <xref:System.ServiceModel.EndpointAddress.Headers%2A>. The optional headers provide more detailed addressing information to identify or interact with the endpoint. For example, headers can indicate how to process an incoming message, where the endpoint should send a reply message, or which instance of a service to use to process an incoming message from a particular user when multiple instances are available.  
@@ -45,15 +47,15 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
  When hosting with IIS, you do not manage the <xref:System.ServiceModel.ServiceHost> instance yourself. The base address is always the address specified in the .svc file for the service when hosting in IIS. So you must use relative endpoint addresses for IIS-hosted service endpoints. Supplying a fully-qualified endpoint address can lead to errors in the deployment of the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Deploying an Internet Information Services-Hosted WCF Service](../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md).  
   
 ## Defining Endpoint Addresses in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+ To define an endpoint in a configuration file, use the [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
   
- [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]   
+ [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  
   
  When the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method is called (that is, when the hosting application attempts to start the service), the system looks for a [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element with a name attribute that specifies "UE.Samples.HelloService". If the [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element is found, the system loads the specified class and creates endpoints using the endpoint definitions provided in the configuration file. This mechanism allows you to load and start a service with two lines of code while keeping binding and addressing information out of your code. The advantage of this approach is that these changes can be made without having to recompile or redeploy the application.  
   
  The optional headers are declared in a [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). The following is an example of the elements used to specify endpoints for a service in a configuration file that distinguishes between two headers: "Gold" clients from http://tempuri1.org/ and "Standard" clients from http://tempuri2.org/. The client calling this service must have the appropriate [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) in its configuration file.  
   
- [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]   
+ [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  
   
  Headers can also be set on individual messages instead of all messages on an endpoint (as shown previously). This is done by using <xref:System.ServiceModel.OperationContextScope> to create a new context in a client application to add a custom header to the outgoing message, as shown in the following example.  
   
@@ -70,7 +72,7 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
   
  The following example demonstrates how to specify the full endpoint address in code.  
   
- [!code-csharp[S_UEHelloWorld#2](../../../samples/snippets/csharp/VS_Snippets_CFX/s_uehelloworld/cs/snippet.cs#2)]   
+ [!code-csharp[S_UEHelloWorld#2](../../../samples/snippets/csharp/VS_Snippets_CFX/s_uehelloworld/cs/snippet.cs#2)]  
   
  The following example demonstrates how to add a relative address ("MyService") to the base address of the service host.  
   
@@ -89,7 +91,7 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
  If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 ## See Also  
- <xref:System.ServiceModel.EndpointAddress>   
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)   
+ <xref:System.ServiceModel.EndpointAddress>  
+ [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
+ [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)

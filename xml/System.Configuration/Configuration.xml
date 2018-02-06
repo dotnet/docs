@@ -77,6 +77,9 @@
   
 -   Read permissions on all the configuration files.</para>
     </block>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
+    <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -217,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ContextInformation" />
       </Docs>
     </Member>
     <Member MemberName="FilePath">
@@ -858,5 +862,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the specified XML configuration file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

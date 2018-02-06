@@ -6,13 +6,13 @@
 
 <script runat="server">
 Function IsValidEmail(ByVal strIn As String) As Boolean
-    ' Return true if strIn is in valid e-mail format.
+    ' Return true if strIn is in valid email format.
     Return Regex.IsMatch(strIn, ("^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"))
 End Function
 
 Sub OnLoggingIn(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.LoginCancelEventArgs)
     If Not IsValidEmail(Login1.UserName) Then
-        Login1.InstructionText = "Enter a valid e-mail address."
+        Login1.InstructionText = "Enter a valid email address."
         Login1.InstructionTextStyle.ForeColor = System.Drawing.Color.RosyBrown
         e.Cancel = True
     Else
@@ -43,7 +43,7 @@ End Sub
                 CreateUserUrl="newUser.aspx" 
                 HelpPageUrl="help.aspx"
                 PasswordRecoveryUrl="getPass.aspx" 
-                UserNameLabelText="E-mail address:" 
+                UserNameLabelText="Email address:" 
                 OnLoggingIn="OnLoggingIn"
                 OnLoginError="OnLoginError" >
                 <TitleTextStyle Font-Bold="True" 

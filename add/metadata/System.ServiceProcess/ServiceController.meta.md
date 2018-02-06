@@ -245,7 +245,7 @@ manager: "wpickett"
 uid: System.ServiceProcess.ServiceController.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

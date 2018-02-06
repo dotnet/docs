@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Bitmap" />
+    <altmember cref="T:System.Drawing.Icon" />
+    <altmember cref="T:System.Drawing.Imaging.Metafile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +139,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The color depth is not a valid <see cref="T:System.Windows.Forms.ColorDepth" /> enumeration value.</exception>
+        <altmember cref="T:System.Windows.Forms.ColorDepth" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -602,7 +606,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ImageList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Draw">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the indicated image.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

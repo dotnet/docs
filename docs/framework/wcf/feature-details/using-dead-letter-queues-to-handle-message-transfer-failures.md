@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 9e891c6a-d960-45ea-904f-1a00e202d61a
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Dead-Letter Queues to Handle Message Transfer Failures
 Queued messages can fail delivery. These failed messages are recorded in a dead-letter queue. The failed delivery can be caused by reasons such as network failures, a deleted queue, a full queue, authentication failure, or a failure to deliver on time.  
@@ -77,6 +82,6 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
   
 ## See Also  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)   
- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)   
+ [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
+ [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
  [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)

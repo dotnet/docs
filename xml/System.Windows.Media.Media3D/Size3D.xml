@@ -29,12 +29,7 @@
   
 ## Remarks  
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_ResourceReferenceExpressionConverter"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  This example shows how to determine if two  <xref:System.Windows.Media.Media3D.Size3D> structures are equal using the <xref:System.Windows.Media.Media3D.Size3D> static <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method.  
   
@@ -146,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Size3D.op_Equality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -176,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Size3D.op_Equality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -217,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Size3D.op_Equality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -280,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Media3D.Size3D.Empty" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -320,6 +319,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Size3D.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -338,10 +338,20 @@
         <Parameter Name="size" Type="System.Windows.Media.Media3D.Size3D" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="size">The size to convert.</param>
+        <summary>Converts this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+        <returns>The result of converting <paramref name="size" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to explicitly convert a <xref:System.Windows.Media.Media3D.Size3D> structure into a  <xref:System.Windows.Media.Media3D.Point3D> structure.  
+  
+ [!code-csharp[size3dsample#Mil3dSize3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn8)]
+ [!code-vb[size3dsample#Mil3dSize3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -360,10 +370,20 @@
         <Parameter Name="size" Type="System.Windows.Media.Media3D.Size3D" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="size">The size to convert.</param>
+        <summary>Converts this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of converting <paramref name="size" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to explicitly convert a <xref:System.Windows.Media.Media3D.Size3D> structure into a  <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[size3dsample#Mil3dSize3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/Size3DSample/CSharp/Window1.xaml.cs#mil3dsize3dn7)]
+ [!code-vb[size3dsample#Mil3dSize3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Size3DSample/visualbasic/window1.xaml.vb#mil3dsize3dn7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -555,12 +575,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_X"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   
@@ -593,12 +608,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_Y"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   
@@ -630,12 +640,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_Z"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   
@@ -645,5 +650,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Size3D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

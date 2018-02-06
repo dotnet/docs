@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.XmlMessageFormatter" />
+    <altmember cref="T:System.Messaging.ActiveXMessageFormatter" />
+    <altmember cref="P:System.Messaging.Message.Formatter" />
+    <altmember cref="P:System.Messaging.MessageQueue.Formatter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.IMessageFormatter" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -166,7 +171,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  The body of the message must be in binary format, and the same serializer must be used to deserialize the message as that which initially serialized it. If the body represents a custom class, the assembly for that class must exist locally.  
   
@@ -174,6 +179,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The message's <see cref="P:System.Messaging.Message.BodyType" /> property does not indicate a binary object.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.BinaryMessageFormatter.CanRead(System.Messaging.Message)" />
+        <altmember cref="M:System.Messaging.BinaryMessageFormatter.Write(System.Messaging.Message,System.Object)" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="TopObjectFormat">
@@ -207,6 +215,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.BinaryMessageFormatter.TypeFormat" />
       </Docs>
     </Member>
     <Member MemberName="TypeFormat">
@@ -240,6 +249,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.BinaryMessageFormatter.TopObjectFormat" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -273,7 +283,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.BinaryMessageFormatter.Read(System.Messaging.Message)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.BinaryMessageFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

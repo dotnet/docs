@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CondiitonalWeakTableElementReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ConditionalWeakTableElementReferences method, ICorProfilerCallback5 interface [.NET Framework profiling]"
   - "ICorProfilerCallback5::ConditionalWeakTableElementReferences method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback5::ConditionalWeakTableElementReferences Method
 Identifies the transitive closure of objects referenced by those roots through both direct member field references and through `ConditionalWeakTable` dependencies.  

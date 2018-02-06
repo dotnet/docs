@@ -20,15 +20,15 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.AdCreatedEventArgs>, see the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement when the <xref:System.Web.UI.WebControls.AdRotator> control gets created and displays it below the control. This example requires the XML file (Ads.xml) listed in the example below.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
   
@@ -53,11 +53,14 @@
 </Advertisements>  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+    <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="AdProperties">
@@ -124,8 +129,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> property in the <xref:System.Web.UI.WebControls.AdRotator.OnAdCreated%2A> event handler to provide a custom caption.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs.AdProperties Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs.AdProperties Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs.AdProperties Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs.AdProperties Example/VB/sourcevb.aspx#1)]  -->
+ [!code-aspx-csharp[Classic AdCreatedEventArgs.AdProperties Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs.AdProperties Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdCreatedEventArgs.AdProperties Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs.AdProperties Example/VB/sourcevb.aspx#1)]
  [!code-xml[Classic AdCreatedEventArgs.AdProperties Example#1](~/samples/snippets/common/VS_Snippets_WebNet/Classic AdCreatedEventArgs.AdProperties Example/Common/Ads.xml#1)]  
   
  The following code example demonstrates how to include custom attributes about an advertisement in the advertisement XML file. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
@@ -153,6 +158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -183,8 +192,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically set the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventArgsAlternateText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsAlternateText/CS/adcreatedeventargsalternatetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventArgsAlternateText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsAlternateText/VB/adcreatedeventargsalternatetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventArgsAlternateText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsAlternateText/CS/adcreatedeventargsalternatetextcs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventArgsAlternateText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsAlternateText/VB/adcreatedeventargsalternatetextvb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
   
@@ -211,6 +220,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -244,8 +257,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically set the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventArgsImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsImageUrl/CS/adcreatedeventargsimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventArgsImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsImageUrl/VB/adcreatedeventargsimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventArgsImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsImageUrl/CS/adcreatedeventargsimageurlcs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventArgsImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsImageUrl/VB/adcreatedeventargsimageurlvb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
   
@@ -272,6 +285,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -305,8 +321,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically set the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventArgsNavigateUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsNavigateUrl/CS/adcreatedeventargsnavigateurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventArgsNavigateUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsNavigateUrl/VB/adcreatedeventargsnavigateurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventArgsNavigateUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventArgsNavigateUrl/CS/adcreatedeventargsnavigateurlcs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventArgsNavigateUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventArgsNavigateUrl/VB/adcreatedeventargsnavigateurlvb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
   
@@ -333,6 +349,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

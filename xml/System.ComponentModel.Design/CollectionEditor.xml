@@ -27,6 +27,7 @@
     <block subset="none" type="overrides">
       <para>This editor can edit collections that have an <see langword="Item" /> property. The editor can determine the type of the collection from the <see langword="Item" /> property, if it exists. If the collection does not have this property, or if you want to provide collections of more than one type, you can override certain protected members of this class to customize the editor to support other types of collections.</para>
     </block>
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

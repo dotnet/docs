@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
+    <altmember cref="T:System.CodeDom.CodeAttributeArgument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.CodeDom.CodeAttributeDeclaration.Name" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +151,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.CodeDom.CodeAttributeDeclaration.Name" />
+        <altmember cref="P:System.CodeDom.CodeAttributeDeclaration.Arguments" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -200,6 +205,7 @@
         <summary>Gets the arguments for the attribute.</summary>
         <value>A <see cref="T:System.CodeDom.CodeAttributeArgumentCollection" /> that contains the arguments for the attribute.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeArgumentCollection" />
       </Docs>
     </Member>
     <Member MemberName="AttributeType">
@@ -246,5 +252,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

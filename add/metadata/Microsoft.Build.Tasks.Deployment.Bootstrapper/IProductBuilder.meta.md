@@ -1,13 +1,13 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder.Product
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

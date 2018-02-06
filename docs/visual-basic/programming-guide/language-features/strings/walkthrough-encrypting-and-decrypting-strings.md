@@ -1,7 +1,7 @@
 ---
 title: "Encrypting and Decrypting Strings in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,32 +9,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "encryption, strings"
+  - "encryption [Visual Basic], strings"
   - "strings [Visual Basic], encrypting"
-  - "decryption, strings"
+  - "decryption [Visual Basic], strings"
   - "strings [Visual Basic], decrypting"
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Encrypting and Decrypting Strings in Visual Basic
 This walkthrough shows you how to use the <xref:System.Security.Cryptography.DESCryptoServiceProvider> class to encrypt and decrypt strings using the cryptographic service provider (CSP) version of the Triple Data Encryption Standard (<xref:System.Security.Cryptography.TripleDES>) algorithm. The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string. Then, that wrapper is used to securely store private user data in a publicly accessible text file.  
@@ -97,9 +80,9 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.DES
      When you test the application, notice that it will not decrypt the data if you provide the wrong password.  
   
 ## See Also  
- <xref:System.Security.Cryptography>   
- <xref:System.Security.Cryptography.DESCryptoServiceProvider>   
- <xref:System.Security.Cryptography.DES>   
- <xref:System.Security.Cryptography.TripleDES>   
- <xref:System.Security.Cryptography.Rijndael>   
+ <xref:System.Security.Cryptography>  
+ <xref:System.Security.Cryptography.DESCryptoServiceProvider>  
+ <xref:System.Security.Cryptography.DES>  
+ <xref:System.Security.Cryptography.TripleDES>  
+ <xref:System.Security.Cryptography.Rijndael>  
  [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

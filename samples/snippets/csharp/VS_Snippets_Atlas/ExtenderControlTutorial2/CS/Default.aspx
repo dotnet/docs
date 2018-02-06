@@ -44,7 +44,7 @@
                 <td><asp:TextBox ID="TextBox2" runat="server" /></td>
               </tr>
               <tr>
-                <td><asp:Label runat="server" ID="Label3" AssociatedControlID="TextBox3">E-mail</asp:Label></td>
+                <td><asp:Label runat="server" ID="Label3" AssociatedControlID="TextBox3">Email</asp:Label></td>
                 <td><asp:TextBox ID="TextBox3" runat="server" /></td>
               </tr>
             </table>

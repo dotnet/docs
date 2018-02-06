@@ -17,7 +17,7 @@ ORDER BY LastName
 -------------------------------------------------------------------------------
 -- Trigger
 -------------------------------------------------------------------------------
--- Insert one user name that is not an e-mail address and one that is
+-- Insert one user name that is not an email address and one that is
 INSERT INTO Users(UserName, Pass) VALUES(N'someone', N'cnffjbeq')
 INSERT INTO Users(UserName, Pass) VALUES(N'someone@example.com', N'cnffjbeq')
 

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorCallOrQueueUserWorkItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool::CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
   - "CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorThreadpool::CorCallOrQueueUserWorkItem Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

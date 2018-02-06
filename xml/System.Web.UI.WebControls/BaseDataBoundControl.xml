@@ -28,10 +28,13 @@
   
  You can use the data-bound controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView>, to perform most Web development tasks that involve displaying data. In scenarios in which these controls do not provide the functionality you need, you can inherit from the base <xref:System.Web.UI.WebControls.DataBoundControl> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> classes to implement your own custom data source control.  
   
- While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmInitState">
@@ -79,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -106,6 +114,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="DataBound">
@@ -128,10 +138,12 @@
 ## Remarks  
  This event notifies the server control that any data binding logic written for it has completed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -176,11 +188,12 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of a data-bound control is used. In this example, the <xref:System.Web.UI.WebControls.GridView> control is bound to a <xref:System.Data.DataSet> object. After the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property is set, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called explicitly.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]
+ [!code-aspx-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -219,11 +232,12 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of a data-bound control is used. The <xref:System.Web.UI.WebControls.GridView> control is associated to the <xref:System.Web.UI.WebControls.SqlDataSource> control by setting its <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property to "AuthorsSqlDataSource", the ID of the <xref:System.Web.UI.WebControls.SqlDataSource> control. When the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property is set (instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property), the data-bound control automatically binds to the data source control at run time.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]
+ [!code-aspx-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -251,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.EnsureDataBound" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -285,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -318,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="IsDataBindingAutomatic">
@@ -392,7 +411,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is sealed on all controls derived from <xref:System.Web.UI.WebControls.BaseDataBoundControl>. Data-bound controls should override `PerformDataBinding` instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method to bind data. If <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is overridden, the <xref:System.Web.UI.Control.OnDataBinding%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> events are raised out of order.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -409,6 +428,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -443,6 +463,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -471,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePreLoad">
@@ -501,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -529,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -554,6 +581,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformSelect" />
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -587,6 +616,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -613,6 +644,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ValidateDataSource">

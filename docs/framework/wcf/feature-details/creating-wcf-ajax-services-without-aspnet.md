@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating WCF AJAX Services without ASP.NET
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] AJAX services can be accessed from any JavaScript-enabled Web page, without requiring ASP.NET AJAX. This topic describes how to create such a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  

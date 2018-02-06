@@ -93,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -168,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DependencyProperty">
@@ -287,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.DependencyProperty.Name" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -864,5 +867,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromProperty">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> based either on a provided <see cref="T:System.ComponentModel.PropertyDescriptor" /> or a provided type, depending on the signature used.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromName">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> for a provided property name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

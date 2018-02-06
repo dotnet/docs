@@ -207,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationIdentifier" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -621,6 +622,51 @@
       <Docs>
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />.</summary>
         <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSetting">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationLiveSetting GetLiveSetting ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSetting() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the notification characteristics of a live region that is associated with this automation peer.</summary>
+        <returns>The notification characteristics.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method calls the derived implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore>.
+
+]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the notification characteristics of a live region. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" /> method.</summary>
+        <returns>The notification characteristics of a live region.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,6 +1252,7 @@
         <returns>
           <see langword="true" /> if the element must be completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" />
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">

@@ -13,6 +13,17 @@
   <Docs>
     <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event that occurs one or more times when a user drags a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

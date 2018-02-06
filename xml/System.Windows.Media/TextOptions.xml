@@ -13,6 +13,10 @@
   <Docs>
     <summary>Defines a set of attached properties that affect the way text is displayed in an element.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+    <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+    <altmember cref="T:System.Windows.Media.TextHintingMode" />
+    <altmember cref="T:System.Windows.Media.TextRenderingMode" />
   </Docs>
   <Members>
     <Member MemberName="GetTextFormattingMode">
@@ -35,6 +39,8 @@
         <summary>Gets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
         <returns>The <see cref="T:System.Windows.Media.TextFormattingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
       </Docs>
     </Member>
     <Member MemberName="GetTextHintingMode">
@@ -57,6 +63,8 @@
         <summary>Gets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
         <returns>The <see cref="T:System.Windows.Media.TextHintingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="GetTextRenderingMode">
@@ -79,6 +87,8 @@
         <summary>Gets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
         <returns>The <see cref="T:System.Windows.Media.TextRenderingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextRenderingMode" />
       </Docs>
     </Member>
     <Member MemberName="SetTextFormattingMode">
@@ -104,6 +114,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
       </Docs>
     </Member>
     <Member MemberName="SetTextHintingMode">
@@ -129,6 +141,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="SetTextRenderingMode">
@@ -154,6 +168,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextRenderingMode" />
       </Docs>
     </Member>
     <Member MemberName="TextFormattingModeProperty">

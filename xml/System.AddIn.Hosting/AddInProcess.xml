@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform?displayProperty=nameWithType> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
+ This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform.Host?displayProperty=nameWithType> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
   
  ]]></format>
         </remarks>
@@ -308,5 +308,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0 (zero).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

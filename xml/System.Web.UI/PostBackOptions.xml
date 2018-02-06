@@ -30,11 +30,12 @@
   
  The following code example is a Web page that can be used to run the preceding code-behind file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackOptions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions/CS/postbackoptions.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions/VB/postbackoptions.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PostBackOptions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions/CS/postbackoptions.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PostBackOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions/VB/postbackoptions.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +54,7 @@
         <param name="targetControl">The <see cref="T:System.Web.UI.Control" /> that receives the postback event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PostBackOptions" /> class with the specified target control data.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.PostBackOptions.TargetControl" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,6 +75,8 @@
         <param name="argument">The optional parameter passed during the postback event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PostBackOptions" /> class with the specified target control and argument data.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.PostBackOptions.TargetControl" />
+        <altmember cref="P:System.Web.UI.PostBackOptions.Argument" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,8 +151,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.PostBackOptions.ActionUrl%2A> property of a <xref:System.Web.UI.PostBackOptions> object to cause a cross-page postback if a user positions the mouse pointer on a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackOptions.ActionUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.ActionUrl/CS/postbackoptions.actionurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackOptions.ActionUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.ActionUrl/VB/postbackoptions.actionurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PostBackOptions.ActionUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.ActionUrl/CS/postbackoptions.actionurlcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PostBackOptions.ActionUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.ActionUrl/VB/postbackoptions.actionurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -294,11 +298,12 @@ javascript:setTimeout('__doPostBack('__Page','')', 0)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PostBackOptions.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="RequiresJavaScriptProtocol">
@@ -391,6 +396,7 @@ javascript:setTimeout('__doPostBack('__Page','')', 0)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PostBackOptions.TargetControl" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -427,12 +433,22 @@ javascript:setTimeout('__doPostBack('__Page','')', 0)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PostBackOptions.PerformValidation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PostBackOptions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

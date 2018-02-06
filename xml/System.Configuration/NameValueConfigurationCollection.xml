@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.NameValueConfigurationElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -351,5 +352,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Configuration.NameValueConfigurationElement" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,8 @@ caps.latest.revision: 25
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Key Directive
 Uniquely identifies elements that are created and referenced in a XAML-defined dictionary. Adding an `x:Key` value to a XAML object element is the most common way to identify a resource in a resource dictionary, for example in a WPF <xref:System.Windows.ResourceDictionary>.  
@@ -117,6 +119,6 @@ keyObject
  `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](http://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See Also  
- [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Resources and Code](../../../docs/framework/wpf/advanced/resources-and-code.md)   
+ [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Resources and Code](../../../docs/framework/wpf/advanced/resources-and-code.md)  
  [StaticResource Markup Extension](../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)

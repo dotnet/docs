@@ -26,6 +26,7 @@
   <Docs>
     <summary>Provides access to an ordered, strongly typed collection of <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -89,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -124,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -164,6 +168,7 @@
  The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.</exception>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -194,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -228,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -270,6 +277,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -301,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -358,6 +367,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index position in the collection.</exception>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -381,6 +391,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.ColumnDefinition" /> was found in the collection and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -419,6 +430,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -459,6 +471,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -540,6 +553,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.CopyTo(System.Windows.Controls.ColumnDefinition[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -566,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -595,6 +610,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.Add(System.Windows.Controls.ColumnDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -625,6 +641,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.Contains(System.Windows.Controls.ColumnDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -654,6 +671,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.IndexOf(System.Windows.Controls.ColumnDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -684,6 +702,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.Insert(System.Int32,System.Windows.Controls.ColumnDefinition)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -701,7 +720,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -771,6 +790,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ColumnDefinitionCollection.Remove(System.Windows.Controls.ColumnDefinition)" />
       </Docs>
     </Member>
   </Members>

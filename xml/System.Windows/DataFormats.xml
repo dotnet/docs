@@ -294,7 +294,7 @@
 ## Remarks  
  This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
   
- Use of this method requires that the caller have <xref:System.Security.Permissions.UIPermission> with the <xref:System.Security.Permissions.UIPermissionClipboard?displayProperty=nameWithType>  
+ Use of this method requires that the caller have <xref:System.Security.Permissions.UIPermission> with the <xref:System.Security.Permissions.UIPermissionClipboard.AllClipboard?displayProperty=nameWithType>  
   
  flag set.  The following code shows the attribute syntax to request this permission for an assembly.  
   

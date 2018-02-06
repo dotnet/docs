@@ -22,6 +22,7 @@
   <Docs>
     <summary>Encapsulates principals that are user accounts.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +52,7 @@
 ## Examples  
  The following code example connects to the LDAP domain "fabrikam.com" with the username and password initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor to "administrator" and "securelyStoredPassword."  
   
- The properties set in the example, such as user name and e-mail address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
+ The properties set in the example, such as user name and email address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
   
 ```  
   
@@ -76,6 +77,7 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +110,7 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="AdvancedSearchFilter">
@@ -127,6 +130,8 @@ ctx.Dispose();
         <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
         <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -149,6 +154,7 @@ ctx.Dispose();
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The user principal object for the current user could not be found. The principal object may contain an access control list to prevent access by unauthorized users.</exception>
         <exception cref="T:System.MultipleMatchesException">Multiple user principal objects matching the current user were found.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -165,10 +171,11 @@ ctx.Dispose();
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the e-mail address for this account.</summary>
-        <value>The e-mail address of the user principal.</value>
+        <summary>Gets or sets the email address for this account.</summary>
+        <value>The email address of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="EmployeeId">
@@ -189,6 +196,7 @@ ctx.Dispose();
         <value>The employee ID of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -219,10 +227,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByExpirationTime">
@@ -253,10 +262,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -283,6 +293,7 @@ ctx.Dispose();
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object that matches the specified identity value, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user object were found.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -341,6 +352,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user object were found.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLockoutTime">
@@ -371,10 +383,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLogonTime">
@@ -405,10 +418,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByPasswordSetTime">
@@ -439,10 +453,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GetAuthorizationGroups">
@@ -474,6 +489,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">The attempt to retrieve authorization groups failed.</exception>
         <exception cref="T:System.NotSupportedException">The retrieval of authorization groups is not supported by this operating system.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GivenName">
@@ -494,6 +510,7 @@ ctx.Dispose();
         <value>The given name of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="MiddleName">
@@ -514,6 +531,7 @@ ctx.Dispose();
         <value>The middle name of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Surname">
@@ -534,6 +552,7 @@ ctx.Dispose();
         <value>The surname of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="VoiceTelephoneNumber">
@@ -554,7 +573,30 @@ ctx.Dispose();
         <value>The voice telephone number of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindByIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a user principal object that matches the specified identity value.</summary>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class.</summary>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

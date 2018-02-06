@@ -1,45 +1,25 @@
 ---
 title: "Conversion functions (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "conversions, conversion functions"
+  - "conversions [Visual Basic], conversion functions"
   - "conversion functions"
-  - "string conversion, conversion functions"
+  - "string conversion [Visual Basic], conversion functions"
   - "data types [Visual Basic], converting"
   - "declaring functions, conversion functions"
   - "data types [Visual Basic], assigning"
-  - "numbers, converting"
+  - "numbers [Visual Basic], converting"
   - "functions [Visual Basic], conversion"
-  - "dates, converting"
+  - "dates [Visual Basic], converting"
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 
 # Conversion functions (Visual Basic)

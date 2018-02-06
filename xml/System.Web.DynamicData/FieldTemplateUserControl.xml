@@ -921,5 +921,14 @@ public partial class ForeignKeyField :
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetUpValidator">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets up a <see cref="T:System.Web.DynamicData.DynamicValidator" /> for field templates to use.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

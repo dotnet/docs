@@ -15,7 +15,7 @@ void main()
         MailAddress^ to = gcnew MailAddress("recepient@RecepientMailServerName.com", "Recepient Name");
         MailMessage^ message = gcnew MailMessage(from, to);
 
-        message->Body = "This is a test e-mail message sent by an application. ";
+        message->Body = "This is a test email message sent by an application. ";
         message->Subject = "Test Email using Credentials";
 
         NetworkCredential^ myCreds = gcnew NetworkCredential("username", "password", "domain");

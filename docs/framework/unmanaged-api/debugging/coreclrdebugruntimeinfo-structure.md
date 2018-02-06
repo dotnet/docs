@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CoreClrDebugRuntimeInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "CoreDebugRuntimeInfo structure"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CoreClrDebugRuntimeInfo Structure
 Represents a common language runtime (CLR) instance that is loaded in a process on a remote machine.  

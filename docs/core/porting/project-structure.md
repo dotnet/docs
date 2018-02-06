@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
+ms.workload: 
+  - dotnetcore
 ---
 
 # Organizing your project to support .NET Framework and .NET Core

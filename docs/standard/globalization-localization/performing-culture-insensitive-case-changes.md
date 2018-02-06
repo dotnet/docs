@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "String.ToLower method"
   - "culture, case sensitivity"
@@ -22,6 +25,9 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Performing Culture-Insensitive Case Changes
 The <xref:System.String.ToUpper%2A?displayProperty=nameWithType>, <xref:System.String.ToLower%2A?displayProperty=nameWithType>, <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>, and <xref:System.Char.ToLower%2A?displayProperty=nameWithType> methods provide overloads that do not accept any parameters. By default, these overloads without parameters perform case changes based on the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>. This produces case-sensitive results that can vary by culture. To make it clear whether you want case changes to be culture-sensitive or culture-insensitive, you should use the overloads of these methods that require you to explicitly specify a `culture` parameter. For culture-sensitive case changes, specify `CultureInfo.CurrentCulture` for the `culture` parameter. For culture-insensitive case changes, specify `CultureInfo.InvariantCulture` for the `culture` parameter.  
@@ -67,8 +73,8 @@ static object LookupKey(string key)
  Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteristics as the `String.ToUpper` and `String.ToLower` methods, the only cultures that are affected are Turkish (Turkey) and Azerbaijani (Latin, Azerbaijan). These are the only two cultures with single-character casing differences. For more details about this unique case mapping, see the "Casing" section in the <xref:System.String> class topic. For code clarity and to ensure consistent results, it is recommended that you always use the overloads of these methods that allow you to explicitly specify a `culture` parameter.  
   
 ## See Also  
- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>   
- <xref:System.String.ToLower%2A?displayProperty=nameWithType>   
- <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>   
- <xref:System.Char.ToLower%2A?displayProperty=nameWithType>   
+ <xref:System.String.ToUpper%2A?displayProperty=nameWithType>  
+ <xref:System.String.ToLower%2A?displayProperty=nameWithType>  
+ <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>  
+ <xref:System.Char.ToLower%2A?displayProperty=nameWithType>  
  [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

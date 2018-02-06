@@ -36,7 +36,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.  
 - **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases. 
 - **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
-- **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb and xml.
+- **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb, powershell and xml.
 - **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
@@ -222,44 +222,33 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 The best way to include code is to include snippets from a working sample. Create your
 sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
 
-You can include the code using include syntax:
-
-```
-[!code-csharp[<title>](<pathToFile>#<RegionName)]
-```
-
-The example above shows C# syntax, but other languages are supported.
-Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
-Other languages that are supported are:
-* C++: `code-cpp`
-* HTML: `code-html`
-* JavaScript: `code-javascript`
-* Powershell: `code-ps`
-* SQL: `code-sql`
-* XML: `code-xml`
-
-
-
-The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
-is the path to the source file. The `<RegionName>` should be a region in your source
-code that should be included. Use the `#region` and `#endregion` preprocessor syntax
-to specify the region of code to include.
-
-For cases where regions don't work, you can specify the start and end of a snippet
-using an XML element name in a single line comment. For example, you could write this in C#:
-
-```csharp
-// <CodeToInclude>
-int j = 5;
-int i ; 10;
-int sum = i + j;
-// </CodeToInclude>
+You can include the code using the following syntax:
+```markdown
+[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-In other languages, use the comment syntax for that language.
-Finally, you can use line
-numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
-because they are very brittle.
+* `-<language>` (*optional* but *recommended*)
+  * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
+
+* `<name>` (*optional*) 
+  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source. 
+
+* `<pathToFile>` (*mandatory*) 
+  * Relative path in the file system that indicates the code snippet file to reference.
+  
+* `<queryoption>` and `<queryoptionvalue>` (*optional*)
+ * Used together to specify how the code should be retrieved from the file:
+  * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+   We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
+  * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+  * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+  * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+
+We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
+```
+[!code-csharp[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]
+```
+And you can see how the snippet tags are structured in [this source file](https://github.com/dotnet/docs/blob/master/samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs). For details about tag name representation in code snippet source files by language, see the [DocFX guidelines](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
 system. However, if you need to show something that causes compile time or
@@ -269,14 +258,17 @@ runtime errors, you can use inline code blocks.
 
 Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID. 
 
-#### Supported Languages
-|Name|Markdown Label|
+#### Supported languages
+|Name|Markdown label|
 |-----|-------|
+|ASP.NET with C#|aspx-csharp|
+|ASP.NET with VB|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
 |C++|cpp|
 |C#|csharp|
 |F#|fsharp|
+|Java|java|
 |JavaScript|javascript|
 |JSON|json|
 |NodeJS|nodejs|
@@ -285,13 +277,11 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |PowerShell|powershell|
 |Python|python|
 |Ruby|ruby|
-|SQL / T-SQL|sql|
+|SQL|sql|
 |Swift|swift|
 |VB|vb|
 |XAML|xaml|
 |XML|xml| 
- 
- 
 
 The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
@@ -430,15 +420,15 @@ You can embed the Markdown of one file into another using an include.
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
+You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio). 
 
 ### Selectors
 
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/csharp/getting-started/with-visual-studio.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
 
-You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+You can see an example of selectors in action at the [Azure docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 
 ### Step-By-Steps
 
@@ -446,4 +436,4 @@ You can see an example of selectors in action at the [Intune docs](https://docs.
 [Pre](../docs/csharp/expression-trees-interpreting.md)
 [Next](../docs/csharp/expression-trees-translating.md)
 
-You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
+You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

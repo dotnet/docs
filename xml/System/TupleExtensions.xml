@@ -83,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``1(System.ValueTuple{``0})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``1(System.Tuple{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2&gt;">
@@ -138,6 +140,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``2(System.ValueTuple{``0,``1})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``2(System.Tuple{``0,``1})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3&gt;">
@@ -197,6 +201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``3(System.ValueTuple{``0,``1,``2})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``3(System.Tuple{``0,``1,``2})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4&gt;">
@@ -260,6 +266,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``4(System.ValueTuple{``0,``1,``2,``3})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``4(System.Tuple{``0,``1,``2,``3})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5&gt;">
@@ -327,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``5(System.ValueTuple{``0,``1,``2,``3,``4})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``5(System.Tuple{``0,``1,``2,``3,``4})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -398,6 +408,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``6(System.ValueTuple{``0,``1,``2,``3,``4,``5})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``6(System.Tuple{``0,``1,``2,``3,``4,``5})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -473,6 +485,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``7(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``7(System.Tuple{``0,``1,``2,``3,``4,``5,``6})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -554,6 +568,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``8(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``8(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt;">
@@ -639,6 +655,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``9(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``9(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt;">
@@ -728,6 +746,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``10(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``10(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt;">
@@ -821,6 +841,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``11(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``11(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt;">
@@ -918,6 +940,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``12(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``12(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
@@ -1019,6 +1043,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``13(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``13(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt;">
@@ -1115,6 +1141,8 @@
         <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
         <summary>Deconstructs a tuple with 14 elements into separate variables.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``14(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``14(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15&gt;">
@@ -1224,6 +1252,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``15(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``15(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt;">
@@ -1337,6 +1367,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``16(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``16(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17&gt;">
@@ -1454,6 +1486,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``17(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``17(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18&gt;">
@@ -1575,6 +1609,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``18(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``18(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19&gt;">
@@ -1700,6 +1736,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``19(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``19(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20&gt;">
@@ -1820,6 +1858,8 @@
         <param name="item20">The value of the twentieth element, or <c>value</c><see langword=".Rest.Rest.Item6" />.</param>
         <summary>Deconstructs a tuple with 20 elements into separate variables.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``20(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``20(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19}}})" />
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21&gt;">
@@ -1953,6 +1993,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``21(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19,``20}}})" />
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``21(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19,``20}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1&gt;">
@@ -1991,6 +2033,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``1(System.Tuple{``0})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2&gt;">
@@ -2031,6 +2074,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``2(System.Tuple{``0,``1})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3&gt;">
@@ -2073,6 +2117,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``3(System.Tuple{``0,``1,``2})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4&gt;">
@@ -2117,6 +2162,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``4(System.Tuple{``0,``1,``2,``3})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5&gt;">
@@ -2163,6 +2209,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``5(System.Tuple{``0,``1,``2,``3,``4})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -2211,6 +2258,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``6(System.Tuple{``0,``1,``2,``3,``4,``5})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -2261,6 +2309,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``7(System.Tuple{``0,``1,``2,``3,``4,``5,``6})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -2313,6 +2362,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``8(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt;">
@@ -2367,6 +2417,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``9(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt;">
@@ -2423,6 +2474,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``10(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt;">
@@ -2481,6 +2533,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``11(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt;">
@@ -2541,6 +2594,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``12(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
@@ -2603,6 +2657,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``13(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt;">
@@ -2667,6 +2722,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``14(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15&gt;">
@@ -2733,6 +2789,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``15(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt;">
@@ -2801,6 +2858,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``16(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17&gt;">
@@ -2871,6 +2929,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``17(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18&gt;">
@@ -2943,6 +3002,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``18(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19&gt;">
@@ -3017,6 +3077,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``19(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20&gt;">
@@ -3093,6 +3154,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``20(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21&gt;">
@@ -3171,6 +3233,7 @@
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToValueTuple``21(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19,``20}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1&gt;">
@@ -3209,6 +3272,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``1(System.ValueTuple{``0})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2&gt;">
@@ -3249,6 +3313,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``2(System.ValueTuple{``0,``1})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3&gt;">
@@ -3291,6 +3356,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``3(System.ValueTuple{``0,``1,``2})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4&gt;">
@@ -3335,6 +3401,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``4(System.ValueTuple{``0,``1,``2,``3})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5&gt;">
@@ -3381,6 +3448,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``5(System.ValueTuple{``0,``1,``2,``3,``4})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -3429,6 +3497,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``6(System.ValueTuple{``0,``1,``2,``3,``4,``5})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -3479,6 +3548,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``7(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -3531,6 +3601,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``8(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt;">
@@ -3585,6 +3656,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``9(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt;">
@@ -3641,6 +3713,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``10(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt;">
@@ -3699,6 +3772,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``11(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt;">
@@ -3759,6 +3833,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``12(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
@@ -3821,6 +3896,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``13(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt;">
@@ -3885,6 +3961,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``14(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15&gt;">
@@ -3951,6 +4028,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``15(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt;">
@@ -4019,6 +4097,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``16(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17&gt;">
@@ -4089,6 +4168,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``17(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18&gt;">
@@ -4161,6 +4241,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``18(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19&gt;">
@@ -4235,6 +4316,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``19(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20&gt;">
@@ -4311,6 +4393,7 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``20(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19}}})" />
       </Docs>
     </Member>
     <Member MemberName="ToValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21&gt;">
@@ -4389,7 +4472,35 @@
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.TupleExtensions.ToTuple``21(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19,``20}}})" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deconstruct&lt;T1&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deconstructs the components of a tuple into separate variables.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToTuple&lt;T1&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a value tuple to a tuple.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToValueTuple&lt;T1&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a tuple to a value tuple.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

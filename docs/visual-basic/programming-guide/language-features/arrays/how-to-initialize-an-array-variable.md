@@ -1,16 +1,13 @@
 ---
 title: "How to: Initialize an Array Variable in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "variables [Visual Basic], initializing"
   - "arrays [Visual Basic], variables"
@@ -20,21 +17,6 @@ ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
 caps.latest.revision: 42
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Initialize an Array Variable in Visual Basic
 You initialize an array variable by including an array literal in a `New` clause and specifying the initial values of the array. You can either specify the type or allow it to be inferred from the values in the array literal. For more information about how the type is inferred, see "Populating an Array with Initial Values" in [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
@@ -76,5 +58,5 @@ You initialize an array variable by including an array literal in a `New` clause
      [!code-vb[VbVbalrArrays#32](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_6.vb)]  
   
 ## See Also  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

@@ -1,40 +1,21 @@
 ---
 title: "Late bound resolution; runtime errors could occur"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc42017"
   - "BC42017"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42017"
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Late bound resolution; runtime errors could occur
 An object is assigned to a variable declared to be of the [Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md).  
@@ -52,5 +33,5 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
 -   If possible, declare the variable to be of a specific type.  
   
 ## See Also  
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)

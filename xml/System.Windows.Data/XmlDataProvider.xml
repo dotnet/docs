@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.ObjectDataProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -190,6 +191,8 @@
         <value>
           <see langword="true" /> to perform node collection creation in a worker thread; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.IsAsync" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSource">
@@ -401,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.XmlNamespaceMappingCollection" />
+        <altmember cref="P:System.Windows.Data.Binding.XmlNamespaceManager" />
       </Docs>
     </Member>
     <Member MemberName="XmlSerializer">

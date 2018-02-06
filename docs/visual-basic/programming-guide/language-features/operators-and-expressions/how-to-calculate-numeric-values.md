@@ -1,22 +1,19 @@
 ---
 title: "How to: Calculate Numeric Values (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "operator precedence"
   - "operators [Visual Basic]"
   - "expressions [Visual Basic], numeric"
-  - "calculations, numeric expressions"
-  - "precedence, of operators"
+  - "calculations [Visual Basic], numeric expressions"
+  - "precedence [Visual Basic], of operators"
   - "Visual Basic code, operators"
   - "Visual Basic code, expressions"
   - "numeric expressions"
@@ -24,21 +21,6 @@ ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Calculate Numeric Values (Visual Basic)
 You can calculate numeric values through the use of numeric expressions. A *numeric expression* is an expression that contains literals, constants, and variables representing numeric values, and operators that act on those values.  
@@ -85,9 +67,9 @@ You can calculate numeric values through the use of numeric expressions. A *nume
      For more information, see [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md).  
   
 ## See Also  
- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)   
- [Statements](../../../../visual-basic/language-reference/statements/index.md)   
- [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Arithmetic Operators](../../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
+ [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
+ [Statements](../../../../visual-basic/language-reference/statements/index.md)  
+ [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Arithmetic Operators](../../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
  [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)

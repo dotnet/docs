@@ -17,7 +17,7 @@
                if(Textbox1.Text.Length==0 || Textbox2.Text.Length==0)
                {
                   // Raise an Exception if the username or the emailfield field is empty.
-                  throw new HttpException(901,"User name or e-mail ID not provided.",333);
+                  throw new HttpException(901,"User name or email ID not provided.",333);
                }
                else
                {
@@ -49,7 +49,7 @@
          UserName :
          <asp:TextBox ID="Textbox1" Runat="server"></asp:TextBox>
          <br />
-         E-mail ID :
+         Email ID :
          <asp:TextBox ID="Textbox2" Runat="server"></asp:TextBox>
          <asp:Button ID="Button1" Text="Submit" OnClick="SubmitButton_Click" runat="server" />
          <br />

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Poison Message Handling in MSMQ 4.0
 This sample demonstrates how to perform poison message handling in a service. This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding`. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  

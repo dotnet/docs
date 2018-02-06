@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
 caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for schemeSettings (Uri Settings)
 Removes a scheme setting for a scheme name.  
@@ -31,9 +28,9 @@ Removes a scheme setting for a scheme name.
 ## Syntax  
   
 ```xml  
-      <remove   
-   <name = "http|https"/>  
-/>  
+<remove
+  name="http|https"
+/>
 ```  
   
 ## Attributes and Elements  
@@ -86,10 +83,10 @@ Removes a scheme setting for a scheme name.
 ```  
   
 ## See Also  
- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>   
- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>   
- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>   
- <xref:System.Uri?displayProperty=nameWithType>   
+ <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
+ <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
+ <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
+ <xref:System.Uri?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

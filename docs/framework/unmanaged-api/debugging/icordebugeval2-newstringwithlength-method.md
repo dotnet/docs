@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewStringWithLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewStringWithLength method [.NET Framework debugging]"
   - "ICorDebugEval2::NewStringWithLength method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::NewStringWithLength Method
 Creates a string of the specified length, with the specified contents.  

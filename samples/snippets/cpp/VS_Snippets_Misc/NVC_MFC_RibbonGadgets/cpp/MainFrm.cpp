@@ -737,7 +737,7 @@ void CMainFrame::Add_Category6()
 
 	// <snippet1>
 	// CMFCRibbonPanel* pPanel3
-	pPanel3->Add(new CMFCRibbonLinkCtrl(ID_RIBBON_OBTN_2, _T("Send e-mail"), _T("mailto:info@microsoft.com")));
+	pPanel3->Add(new CMFCRibbonLinkCtrl(ID_RIBBON_OBTN_2, _T("Send email"), _T("mailto:info@microsoft.com")));
 	// </snippet1>
 	pPanel3->Add(new CMFCRibbonLinkCtrl(ID_RIBBON_OBTN_3, _T("Visit site"), _T("http://www.microsoft.com")));
 	pPanel3->Add(new CMFCRibbonLinkCtrl(ID_RIBBON_OBTN_4, _T("Launch Notepad"), _T("notepad")));

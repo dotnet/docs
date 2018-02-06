@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "RequestVirtualMemLimit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHostControl::RequestVirtualMemLimit method [.NET Framework hosting]"
   - "RequestVirtualMemLimit method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHostControl::RequestVirtualMemLimit Method
 Requests the host to change the limits of virtual memory.  

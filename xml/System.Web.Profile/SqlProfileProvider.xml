@@ -192,8 +192,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all profiles that have not been accessed since the date specified for considering a profile to be inactive.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -233,8 +233,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example shows an ASP.NET page that manages inactive profiles. A <xref:System.Web.UI.WebControls.GridView> control displays the inactive profiles returned. Each row of the <xref:System.Web.UI.WebControls.GridView> control includes a button that deletes the profile for that row from the data source with a call to the <xref:System.Web.Profile.SqlProfileProvider.DeleteProfiles%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -289,8 +289,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example allows a user to search for profiles using the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> and <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> methods. The user can then delete the returned profiles with a call to the <xref:System.Web.Profile.SqlProfileProvider.DeleteProfiles%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -352,8 +352,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> and retrieves profile information for any matching profiles. The example also allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> method is called.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -417,8 +417,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> and retrieves profile information for any matching profiles. The example also allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> method is called.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -480,8 +480,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all inactive profiles. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -535,8 +535,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example displays profile information for all of the profiles for the configured `applicationName` in pages of data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/ShowProfilescs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/ShowProfilesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/ShowProfilescs.aspx#3)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/ShowProfilesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -584,8 +584,8 @@ aspnet_regsql.exe -A p
 ## Examples  
  The following code example allows a user to view and delete active and inactive profiles information based on search criteria. A count of inactive profiles is displayed using the results of the <xref:System.Web.Profile.SqlProfileProvider.GetNumberOfInactiveProfiles%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/FindProfilesByUserNamecs.aspx#5)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -714,5 +714,14 @@ aspnet_regsql.exe -A p
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteProfiles">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes profile properties and information from the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

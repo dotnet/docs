@@ -3,7 +3,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.FilterLevel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(Syst
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor(System.Run
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -75,7 +75,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TypeFormat
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -91,7 +91,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Binder
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -107,7 +107,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -115,7 +115,7 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -123,5 +123,5 @@ uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.SurrogateSelecto
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sethm"
-manager: "ghogen"
+manager: "wpickett"
 ---

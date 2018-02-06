@@ -91,6 +91,7 @@
         <param name="beginTime">The time at which this <see cref="T:System.Windows.Media.Animation.Timeline" /> should begin. See the <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> property for more information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Timeline" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +188,7 @@
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" /> is less than 0 or greater than 1.</exception>
         <exception cref="T:System.InvalidOperationException">The sum of <see cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" /> and <see cref="P:System.Windows.Media.Animation.Timeline.DecelerationRatio" /> exceeds 1.</exception>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" />
       </Docs>
     </Member>
     <Member MemberName="AccelerationRatioProperty">
@@ -275,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="AutoReverseProperty">
@@ -389,6 +392,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.SpeedRatio" />
       </Docs>
     </Member>
     <Member MemberName="BeginTimeProperty">
@@ -609,6 +613,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.GetCurrentGlobalSpeed(System.Windows.FrameworkElement)" />
+        <altmember cref="T:System.Windows.Media.Animation.Clock" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       </Docs>
     </Member>
     <Member MemberName="CurrentStateInvalidated">
@@ -641,6 +648,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.Clock" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentState" />
+        <altmember cref="E:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated" />
       </Docs>
     </Member>
     <Member MemberName="CurrentTimeInvalidated">
@@ -713,6 +723,7 @@
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Media.Animation.Timeline.DecelerationRatio" /> is less than 0 or greater than 1.</exception>
         <exception cref="T:System.InvalidOperationException">The sum of <see cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" /> and <see cref="P:System.Windows.Media.Animation.Timeline.DecelerationRatio" /> exceeds 1.</exception>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" />
       </Docs>
     </Member>
     <Member MemberName="DecelerationRatioProperty">
@@ -841,6 +852,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Stop" />
       </Docs>
     </Member>
     <Member MemberName="DurationProperty">
@@ -952,6 +965,7 @@
   
  A typical implementation would call base, then call the static <see cref="M:System.Windows.Freezable.Freeze" /> method on all <see cref="T:System.Windows.Freezable" /> typed properties that the class contains, returning <see langword="true" /> only if all properties were frozen (or could have been frozen, in the case of passing through a <see langword="false" /> value for <paramref name="isChecking" />).</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.Freeze" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -1043,6 +1057,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.DesiredFrameRate" />
       </Docs>
     </Member>
     <Member MemberName="GetNaturalDuration">
@@ -1076,6 +1091,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="M:System.Windows.Media.Animation.Timeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
       </Docs>
     </Member>
     <Member MemberName="GetNaturalDurationCore">
@@ -1108,6 +1125,7 @@
         <block subset="none" type="overrides">
           <para>This method should be implemented by timeline classes that need to provide a custom natural <see cref="T:System.Windows.Duration" /> when the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property is set to <see cref="P:System.Windows.Duration.Automatic" />. If the author cannot determine the natural duration, this method should return <see cref="P:System.Windows.Duration.Automatic" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Media.Animation.Timeline.GetNaturalDuration(System.Windows.Media.Animation.Clock)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1177,6 +1195,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.RemoveStoryboard" />
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.Remove(System.Windows.FrameworkElement)" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Remove" />
       </Docs>
     </Member>
     <Member MemberName="RepeatBehavior">
@@ -1214,6 +1235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.AutoReverse" />
       </Docs>
     </Member>
     <Member MemberName="RepeatBehaviorProperty">
@@ -1261,6 +1283,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.DesiredFrameRate" />
       </Docs>
     </Member>
     <Member MemberName="SpeedRatio">
@@ -1329,5 +1352,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Timeline" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateClock">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Windows.Media.Animation.Clock" /> from this <see cref="T:System.Windows.Media.Animation.Timeline" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

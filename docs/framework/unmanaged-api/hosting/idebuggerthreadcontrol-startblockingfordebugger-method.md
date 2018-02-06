@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StartBlockingForDebugger"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]"
   - "StartBlockingForDebugger method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl::StartBlockingForDebugger Method
 Notifies the host that the debugging services are about to start blocking all threads.  

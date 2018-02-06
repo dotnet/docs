@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "WAITORTIMERCALLBACK"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "WAITORTIMERCALLBACK function pointer [.NET Framework hosting]"
 ms.assetid: 1fec4aef-0a06-4df0-bae7-d31a9ef9603d
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WAITORTIMERCALLBACK Function Pointer
 Points to a function that notifies the host that a wait handle (<xref:System.Threading.WaitHandle>) has either been signaled or timed out.  

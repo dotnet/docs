@@ -67,7 +67,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/en-us/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
+        <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/library/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIDispatch">
@@ -97,7 +97,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/en-us/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
+        <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIInspectable">

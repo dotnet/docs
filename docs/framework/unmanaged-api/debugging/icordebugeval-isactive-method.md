@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::IsActive"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsActive method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::IsActive method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::IsActive Method
 Gets a value that indicates whether this ICorDebugEval object is currently executing.  

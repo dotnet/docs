@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:Microsoft.Win32.SystemEvents.PowerModeChanged" />
+    <altmember cref="T:Microsoft.Win32.PowerModes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +49,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.PowerModes" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -72,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.Win32.PowerModes" />
       </Docs>
     </Member>
   </Members>

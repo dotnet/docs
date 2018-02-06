@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "mapping algorithm names"
   - "cryptography, mapping algorithm names"
@@ -24,6 +19,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Mapping Algorithm Names to Cryptography Classes
 There are four ways a developer can create a cryptography object using the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
@@ -79,5 +76,5 @@ There are four ways a developer can create a cryptography object using the [!INC
  For a list of default names and the classes they map to, see <xref:System.Security.Cryptography.CryptoConfig>.  
   
 ## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)   
+ [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
  [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

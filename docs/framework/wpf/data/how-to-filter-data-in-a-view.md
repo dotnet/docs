@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "views, filtering data"
-  - "filtering data in views"
-  - "data binding, filtering data in views"
+  - "views [WPF], filtering data"
+  - "filtering data in views [WPF]"
+  - "data binding [WPF], filtering data in views"
 ms.assetid: c76e8606-4cc4-45a8-9110-e2ec66dc6afd
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Filter Data in a View
 This example shows how to filter data in a view.  
@@ -51,8 +56,8 @@ This example shows how to filter data in a view.
  [!code-vb[DataBindingLab#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
   
 ## See Also  
- <xref:System.Windows.Data.CollectionView.CanFilter%2A>   
- <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)   
+ <xref:System.Windows.Data.CollectionView.CanFilter%2A>  
+ <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::GetOption"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetOption method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenserEx::GetOption Method
 Gets the value of the specified option for the current metadata scope. The option controls how calls to the current metadata scope are handled.  
@@ -76,5 +76,5 @@ HRESULT GetOption (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)   
+ [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
  [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

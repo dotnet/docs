@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorMethodSemanticsAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorMethodSemanticsAttr enumeration [.NET Framework metadata]"
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorMethodSemanticsAttr Enumeration
 Contains values that describe the relationship between a method and an associated property or event.  

@@ -1,37 +1,17 @@
 ---
 title: "Objects (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "objects [Visual Basic]"
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Objects (Visual Basic)
 This topic provides links to other topics that document the Visual Basic run-time objects and contain tables of their member procedures, properties, and events.  
@@ -68,5 +48,5 @@ This topic provides links to other topics that document the Visual Basic run-tim
 |<xref:Microsoft.VisualBasic.FileIO.TextFieldParser>|Provides methods and properties for parsing structured text files.|  
   
 ## See Also  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   
+ [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
  [Visual Basic](../../../visual-basic/index.md)

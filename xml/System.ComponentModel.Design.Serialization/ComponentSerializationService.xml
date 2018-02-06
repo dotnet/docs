@@ -36,6 +36,11 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" /> class, you must override all the methods in this class. Some of these methods were designed to throw exceptions, as documented in their corresponding topics; it is strongly recommended that derived classes follow these guidelines to maintain consistency of operation. For more information, see the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService" /> class.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+    <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +65,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
       </Docs>
     </Member>
     <Member MemberName="CreateStore">
@@ -97,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -139,6 +146,8 @@
           <paramref name="store" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -185,6 +194,9 @@
           <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="DeserializeTo">
@@ -228,6 +240,8 @@
           <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="DeserializeTo">
@@ -274,6 +288,8 @@
           <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="DeserializeTo">
@@ -323,6 +339,8 @@
           <paramref name="store" /> or <paramref name="container" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> does not contain data in a format the serialization container can process.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadStore">
@@ -365,6 +383,8 @@
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="stream" /> does not contain data saved by a previous call to <see cref="M:System.ComponentModel.Design.Serialization.SerializationStore.Save(System.IO.Stream)" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.CreateStore" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -408,6 +428,10 @@
           <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+        <altmember cref="Overload:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize" />
       </Docs>
     </Member>
     <Member MemberName="SerializeAbsolute">
@@ -455,6 +479,11 @@
           <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
       </Docs>
     </Member>
     <Member MemberName="SerializeMember">
@@ -500,6 +529,10 @@
           <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
       </Docs>
     </Member>
     <Member MemberName="SerializeMemberAbsolute">
@@ -547,7 +580,33 @@
           <paramref name="store" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="store" /> is closed, or <paramref name="store" /> is not a supported type of serialization store. Use a store returned by <see cref="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+        <altmember cref="Overload:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the given store to produce a collection of objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeserializeTo">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

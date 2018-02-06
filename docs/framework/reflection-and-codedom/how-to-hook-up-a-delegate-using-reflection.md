@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "events [.NET Framework], adding event handlers with reflection"
   - "reflection, adding event-handler delegates"
@@ -18,6 +22,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Hook Up a Delegate Using Reflection
 When you use reflection to load and run assemblies, you cannot use language features like the C# `+=` operator or the Visual Basic [AddHandler statement](~/docs/visual-basic/language-reference/statements/addhandler-statement.md) to hook up events. The following procedures show how to hook up an existing method to an event by getting all the necessary types through reflection, and how to create a dynamic method using reflection emit and hook it up to an event.  
@@ -114,9 +120,9 @@ When you use reflection to load and run assemblies, you cannot use language feat
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See Also  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Emit.DynamicMethod>   
- <xref:System.Activator.CreateInstance%2A>   
- <xref:System.Delegate.CreateDelegate%2A>   
- [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)   
+ <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Emit.DynamicMethod>  
+ <xref:System.Activator.CreateInstance%2A>  
+ <xref:System.Delegate.CreateDelegate%2A>  
+ [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)  
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)

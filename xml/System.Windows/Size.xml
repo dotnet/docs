@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.SizeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -305,9 +306,9 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The <see cref="T:System.Windows.Size" /> value to be converted.</param>
+        <summary>Explicitly converts an instance of <see cref="T:System.Windows.Size" /> to an instance of <see cref="T:System.Windows.Point" />.</summary>
+        <returns>A <see cref="T:System.Windows.Point" /> equal in value to this instance of <see cref="T:System.Windows.Size" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +328,9 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The <see cref="T:System.Windows.Size" /> value to be converted.</param>
+        <summary>Explicitly converts an instance of <see cref="T:System.Windows.Size" /> to an instance of <see cref="T:System.Windows.Vector" />.</summary>
+        <returns>A <see cref="T:System.Windows.Vector" /> equal in value to this instance of <see cref="T:System.Windows.Size" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,6 +403,7 @@
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Size.ToString(System.IFormatProvider)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -470,5 +472,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> that represents this instance of <see cref="T:System.Windows.Size" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Explicitly converts instances of <see cref="T:System.Windows.Size" /> to other data types.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares instances of <see cref="T:System.Windows.Size" /> and other objects for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -21,10 +21,6 @@
   
  If an operation is posted using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> on its own <xref:System.Windows.Threading.DispatcherPriority.ContextIdle> at a priority of Send, the operation bypasses the queue and is immediately executed.  
   
-<a name="xamlTextUsage_DispatcherPriority"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example is a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> that passes a delegate which accepts an argument.  The priority is set to Normal.  
   

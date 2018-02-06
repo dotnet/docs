@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
+ms.workload: 
+  - dotnetcore
 ---
 
 # Using .NET Core SDK and tools in Continuous Integration (CI)
@@ -75,7 +77,7 @@ Write-Host "Downloading the CLI installer..."
 # Use the Invoke-WebRequest PowerShell cmdlet to obtain the 
 #   installation script and save it into the installation directory.
 Invoke-WebRequest `
-    -Uri "https://raw.githubusercontent.com/dotnet/cli/rel/1.0.1/scripts/obtain/dotnet-install.ps1" `
+    -Uri "https://dot.net/v1/dotnet-install.ps1" `
     -OutFile "$InstallDir/dotnet-install.ps1"
 
 Write-Host "Installing the CLI requested version ($CliVersion) ..."
@@ -98,8 +100,6 @@ You provide the implementation for your build process at the end of the script. 
 
 ```bash
 #!/bin/bash
-# Do not use an INSTALLDIR path containing spaces:
-#   https://github.com/dotnet/cli/issues/5281
 INSTALLDIR="cli-tools"
 CLI_VERSION=1.0.1
 DOWNLOADER=$(which curl)
@@ -109,7 +109,7 @@ then
 fi
 mkdir -p "$INSTALLDIR"
 echo Downloading the CLI installer.
-$DOWNLOADER https://raw.githubusercontent.com/dotnet/cli/rel/1.0.1/scripts/obtain/dotnet-install.sh > "$INSTALLDIR/dotnet-install.sh"
+$DOWNLOADER https://dot.net/v1/dotnet-install.sh > "$INSTALLDIR/dotnet-install.sh"
 chmod +x "$INSTALLDIR/dotnet-install.sh"
 echo Installing the CLI requested version $CLI_VERSION. Please wait, installation may take a few minutes.
 "$INSTALLDIR/dotnet-install.sh" --install-dir "$INSTALLDIR" --version $CLI_VERSION

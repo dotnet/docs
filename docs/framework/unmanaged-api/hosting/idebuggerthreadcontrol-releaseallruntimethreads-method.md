@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ReleaseAllRuntimeThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReleaseAllRuntimeThreads method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ReleaseAllRuntimeThreads method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl::ReleaseAllRuntimeThreads Method
 Notifies the host that the debugging services are about to release all threads that are blocked.  

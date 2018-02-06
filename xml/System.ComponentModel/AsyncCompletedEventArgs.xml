@@ -51,6 +51,9 @@
   
  You may want to communicate to clients more information about the outcome of an asynchronous operation than an <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> accommodates. In this case, you can derive your own class from the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class and provide additional private instance variables and corresponding read-only public properties. Call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method before returning the property value, in case the operation was canceled or an error occurred.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+    <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+    <altmember cref="T:System.ComponentModel.AsyncOperation" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +161,9 @@
         <block subset="none" type="overrides">
           <para>If you provide read-only properties in a derived class, be sure to call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -208,6 +214,9 @@
         <block subset="none" type="overrides">
           <para>If you provide read-only properties in a derived class, be sure to call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method in your property implementation. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="RaiseExceptionIfNecessary">
@@ -252,6 +261,8 @@
         <block subset="none" type="overrides">
           <para>If you have derived your own class from the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class, your read-only properties should call the <see cref="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" /> method before returning the property value. If the component's asynchronous worker code assigns an exception to the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property or sets the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" /> property to <see langword="true" />, the property will raise an exception if a client tries to read its value. This prevents clients from accessing properties that are potentially not valid due to a failure in the asynchronous operation.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -299,7 +310,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
+        <altmember cref="T:System.ComponentModel.AsyncOperation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

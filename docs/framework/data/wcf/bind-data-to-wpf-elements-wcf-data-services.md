@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data binding, WCF Data Services"
   - "WCF Data Services, data binding"
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind Windows Presentation Foundation (WPF) elements such as a <xref:System.Windows.Controls.ListBox>``or <xref:System.Windows.Controls.ComboBox> to an instance of <xref:System.Data.Services.Client.DataServiceCollection%601>, which handles the events raised by the controls to keep the <xref:System.Data.Services.Client.DataServiceContext> synchronized with changes made to data in the controls. For more information, see [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md).  

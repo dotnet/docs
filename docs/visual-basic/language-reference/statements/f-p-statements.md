@@ -1,35 +1,16 @@
 ---
 title: "F-P Statements"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # F-P Statements
 The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
@@ -44,6 +25,6 @@ The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md
 |[Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)|[Property](../../../visual-basic/language-reference/statements/property-statement.md)|||  
   
 ## See Also  
- [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)   
- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)   
+ [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)  
+ [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)  
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)

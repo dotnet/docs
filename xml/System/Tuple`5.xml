@@ -70,6 +70,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Tuple" />
+    <altmember cref="T:System.Tuple`1" />
+    <altmember cref="T:System.Tuple`2" />
+    <altmember cref="T:System.Tuple`3" />
+    <altmember cref="T:System.Tuple`4" />
+    <altmember cref="T:System.Tuple`6" />
+    <altmember cref="T:System.Tuple`7" />
+    <altmember cref="T:System.Tuple`8" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -718,6 +726,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> is not a <see cref="T:System.Tuple`5" /> object.</exception>
+        <altmember cref="M:System.Tuple`5.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Item">
@@ -729,6 +738,10 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -736,10 +749,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the specified <see langword="Tuple" /> element. <c>index</c> can range from 0 to 4.</param>
+        <summary>Gets the value of the specified <see langword="Tuple" /> element.</summary>
+        <value>The value of the <see langword="Tuple" /> element at the specified position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Tuple%605.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.Tuple%605> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than 4.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -751,13 +773,24 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the <see langword="Tuple" />.</summary>
+        <value>5, the number of elements in a <see cref="T:System.Tuple`5" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Tuple%605.System%23Runtime%23CompilerServices%23ITuple%23Length%2A> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.Tuple%605> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">

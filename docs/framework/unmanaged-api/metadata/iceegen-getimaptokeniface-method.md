@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetIMapTokenIface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIMapTokenIface method [.NET Framework metadata]"
   - "ICeeGen::GetIMapTokenIface method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetIMapTokenIface Method
 Gets the interface referenced by the specified token.  

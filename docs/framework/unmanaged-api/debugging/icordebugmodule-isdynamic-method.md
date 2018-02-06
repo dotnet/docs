@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::IsDynamic"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsDynamic method [.NET Framework debugging]"
   - "ICorDebugModule::IsDynamic method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::IsDynamic Method
 Gets a value that indicates whether this module is dynamic.  

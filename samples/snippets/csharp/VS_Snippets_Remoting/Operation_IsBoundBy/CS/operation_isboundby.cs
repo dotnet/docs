@@ -58,7 +58,7 @@ class MyOperationClass
       // Add the 'Binding' to 'BindingCollection' of 'ServiceDescription'.
       myServiceDescription.Bindings.Add(myBinding);
 
-      // Create a a 'PortType' object.
+      // Create a 'PortType' object.
       PortType myPostPortType = new PortType();
       myPostPortType.Name = "OperationServiceHttpPost";
 // <Snippet1>

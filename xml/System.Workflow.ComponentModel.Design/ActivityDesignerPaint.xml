@@ -318,5 +318,14 @@
  <paramref name="radius" /> is less than or equal to 0.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an image on the activity designer surface.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

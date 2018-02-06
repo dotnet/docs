@@ -1,41 +1,22 @@
 ---
 title: "Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc30933"
   - "bc30933"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "overload resolution, with late-bound argument"
+  - "overload resolution [Visual Basic], with late-bound argument"
   - "BC30933"
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type
 The compiler is attempting to resolve a reference to an overloaded property or procedure, but the reference fails because an argument is of type `Object` and the referring object has the data type of an interface. The `Object` argument forces the compiler to resolve the reference as late-bound.  
@@ -87,6 +68,6 @@ refer.s1(CType(o1, Double))
  Each of the preceding lines of code explicitly casts the `Object` variable `o1` to one of the parameter types defined for the overloads.  
   
 ## See Also  
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)   
+ [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
+ [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)  
  [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)

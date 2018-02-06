@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssemblyEnum::Next method"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssemblyEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugAssemblyEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssemblyEnum::Next Method
 Gets the specified number of assemblies from the collection, starting at the current cursor position.  

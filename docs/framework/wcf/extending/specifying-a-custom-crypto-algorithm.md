@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying a Custom Crypto Algorithm
 WCF allows you to specify a custom crypto algorithm to use when encrypting data or computing digital signatures. This is done by the following steps:  
@@ -113,7 +115,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
   
  The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias "SHA256CSP". The <`nameEntry`> element creates the mapping between the "SHA256CSP" alias and the specified URL (http://constoso.com/CustomAlgorithms/CustomHashAlgorithm ).  
   
- To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm%2A> System.String[])?qualifyHint=False&autoUpgrade=True method. This method creates both mappings. The following example shows how to call this method:  
+ To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])> method. This method creates both mappings. The following example shows how to call this method:  
   
 ```  
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the   
@@ -132,7 +134,7 @@ WSHttpBinding binding = new WSHttpBinding();
  For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  
   
 ## See Also  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)

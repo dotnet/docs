@@ -9,14 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;compositeDuplex&gt;
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.  
@@ -63,10 +62,10 @@ Defines the binding element that is used when the client must expose an endpoint
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>   
- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.CompositeDuplexElement>  
+ <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

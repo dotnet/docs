@@ -30,8 +30,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -150,8 +150,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -186,8 +186,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -224,8 +224,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -261,8 +261,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -293,8 +293,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -329,8 +329,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -360,8 +360,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -401,8 +401,8 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -437,12 +437,21 @@
 > [!NOTE]
 >  If there is no logged-on user, the <xref:System.Security.Principal.IPrincipal.Identity%2A> property will be `null` and you will receive a compiler exception when attempting to cast the <xref:System.Security.Principal.IPrincipal.Identity%2A> property as a <xref:System.Web.Security.FormsIdentity> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormsAuthenticationTicketProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/CS/formsauthenticationticketpropertiescs.aspx#1)]
+ [!code-aspx-vb[FormsAuthenticationTicketProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketProperties/VB/formsauthenticationticketpropertiesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

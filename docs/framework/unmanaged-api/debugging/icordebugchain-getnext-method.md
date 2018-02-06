@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetNext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNext method [.NET Framework debugging]"
   - "ICorDebugChain::GetNext method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugChain::GetNext Method
 Gets the next chain of frames for the thread.  

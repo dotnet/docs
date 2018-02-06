@@ -1,16 +1,10 @@
 ---
 title: "Events (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "classes [C#], events"
   - "C# language, events"
@@ -19,22 +13,6 @@ ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Events (C# Programming Guide)
 Events enable a [class](../../../csharp/language-reference/keywords/class.md) or object to notify other classes or objects when something of interest occurs. The class that sends (or *raises*) the event is called the *publisher* and the classes that receive (or *handle*) the event are called *subscribers*.  
@@ -52,7 +30,7 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 -   Events are typically used to signal user actions such as button clicks or menu selections in graphical user interfaces.  
   
--   When an event has multiple subscribers, the event handlers are invoked synchronously when an event is raised. To invoke events asynchronously, see [Calling Synchronous Methods Asynchronously](https://msdn.microsoft.com/library/2e08f6yc).  
+-   When an event has multiple subscribers, the event handlers are invoked synchronously when an event is raised. To invoke events asynchronously, see [Calling Synchronous Methods Asynchronously](../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 -   In the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library, events are based on the <xref:System.EventHandler> delegate and the <xref:System.EventArgs> base class.  
   
@@ -82,8 +60,8 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
  [Delegates and Events](http://go.microsoft.com/fwlink/?LinkId=195418) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
   
 ## See Also  
- <xref:System.EventHandler>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx)   
- [Multithreaded Programming with the Event-based Asynchronous Pattern](https://msdn.microsoft.com/library/hkasytyf)
+ <xref:System.EventHandler>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+ [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
+ [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)

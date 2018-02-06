@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Printing.PrintServer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -210,6 +211,7 @@
  \- or -  
   
  The <see cref="T:System.Printing.LocalPrintServer" /> object was not created with sufficient rights.</exception>
+        <altmember cref="M:System.Printing.LocalPrintServer.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToPrintQueue">
@@ -399,7 +401,35 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintServerException">Some properties did not update.</exception>
+        <altmember cref="M:System.Printing.LocalPrintServer.Commit" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConnectToPrintQueue">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects a print queue to the local print server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DisconnectFromPrintQueue">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disconnects a print queue from the local print server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

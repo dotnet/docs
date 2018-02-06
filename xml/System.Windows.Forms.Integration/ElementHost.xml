@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
+    <altmember cref="T:System.Windows.UIElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -97,6 +100,7 @@
         <value>
           <see langword="true" /> if the control adjusts its size to closely fit its contents; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="BackColorTransparent">
@@ -130,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -162,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -222,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ChildChanged">
@@ -239,6 +246,7 @@
       <Docs>
         <summary>Occurs when the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" /> property is set.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -271,6 +279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ClientSizeChanged">
@@ -303,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ControlAdded">
@@ -335,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ControlRemoved">
@@ -367,6 +378,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -399,6 +411,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -424,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -459,8 +473,9 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -493,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -525,6 +541,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -557,6 +574,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -589,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -621,6 +640,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelessKeyboardInterop">
@@ -650,6 +670,8 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -682,6 +704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -733,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -765,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -787,6 +812,7 @@
         <summary>Overrides the base class implementation <see cref="M:System.Windows.Forms.Control.GetPreferredSize(System.Drawing.Size)" /> to provide correct layout behavior for the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements.</summary>
         <returns>The <see cref="T:System.Drawing.Size" /> computed by the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control, given the constraints specified by <paramref name="proposedSize" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -819,6 +845,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -851,6 +878,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="HostContainer">
@@ -884,6 +912,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -934,6 +963,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="IsInputChar">
@@ -964,6 +994,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -996,6 +1027,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1028,6 +1060,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1060,6 +1093,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1092,6 +1126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -1124,6 +1159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -1156,6 +1192,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseCaptureChanged">
@@ -1188,6 +1225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1220,6 +1258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1252,6 +1291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1284,6 +1324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1316,6 +1357,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1348,6 +1390,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1380,6 +1423,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1412,6 +1456,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1444,6 +1489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -1476,6 +1522,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -1537,6 +1584,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1565,6 +1613,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -1593,6 +1642,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1632,6 +1682,7 @@
         <block subset="none" type="overrides">
           <para>Do not override this implementation of the <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method. The <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control manages the painting of its hosted element, and overriding <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> will cause unpredictable results.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -1670,6 +1721,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPrint">
@@ -1691,6 +1743,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Renders the control using the provided <see cref="T:System.Drawing.Graphics" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -1715,6 +1768,7 @@
         <summary>Notifies the <see cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" /> that a property has changed.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -1743,6 +1797,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -1775,6 +1830,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1807,6 +1863,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
+        <altmember cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDown">
@@ -1839,6 +1897,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -1872,6 +1931,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1903,6 +1963,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PropertyMap">
@@ -1941,6 +2002,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -1973,6 +2035,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -2005,6 +2068,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -2037,6 +2101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ScaleCore">
@@ -2060,6 +2125,7 @@
         <param name="dy">The scaling factor for the y-axis.</param>
         <summary>Scales the parent container and the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2096,6 +2162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -2128,6 +2196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -2160,6 +2229,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">

@@ -9,10 +9,8 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "multiple platforms, resources for"
   - "resources [.NET Framework]"
@@ -24,6 +22,9 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # App Resources for Libraries That Target Multiple Platforms
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] and targets the portable subset of the .NET Framework class library. Using  a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
@@ -107,6 +108,6 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
   
 ## See Also  
- <xref:System.Resources.ResourceManager>   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
+ <xref:System.Resources.ResourceManager>  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

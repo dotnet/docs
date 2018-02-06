@@ -55,13 +55,13 @@
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> element defines the query with a parameter named "@Title" where the value from `DropDownList1` should go. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies that the "@Title" placeholder will be replaced by the value of the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the `DropDownList1` control. The <xref:System.Web.UI.WebControls.ControlParameter> element is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  
   
  The following example is like the previous one, but uses code instead of markup. When the page loads the first time, the <xref:System.Web.UI.WebControls.DropDownList> control has no selected value, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object is used.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx#1)]  
   
  The following code shows the code-behind class for the page in the previous example.  
   
@@ -75,6 +75,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.RouteParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>
@@ -118,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -130,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -286,11 +299,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor to add update parameter objects to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection of an <xref:System.Web.UI.WebControls.AccessDataSource> control before calling the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -327,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertDbTypeToTypeCode">
@@ -486,8 +503,8 @@
   
  To view the example implementation of the `EmployeeLogic` class and the `GetEmployee` method, see the <xref:System.Web.UI.WebControls.ObjectDataSource> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -528,8 +545,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -618,6 +635,10 @@
         <value>
           <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -648,6 +669,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -687,11 +712,12 @@
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName="OnParameterChanged">
@@ -717,7 +743,7 @@
   
  If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=nameWithType> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -734,6 +760,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -764,6 +791,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -789,6 +820,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -819,6 +851,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Type" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -847,6 +880,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -866,6 +900,10 @@
         <value>
           <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -896,6 +934,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -926,6 +968,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -973,11 +1019,12 @@
 ## Examples  
  The following code example demonstrates how to access various properties of a <xref:System.Web.UI.WebControls.Parameter> object, including its <xref:System.Web.UI.WebControls.Parameter.Name%2A> and <xref:System.Web.UI.WebControls.Parameter.Type%2A> properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/CS/parametertostringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/VB/parametertostringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/CS/parametertostringcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/VB/parametertostringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -996,6 +1043,8 @@
       <Docs>
         <summary>Causes the <see cref="T:System.Web.UI.WebControls.Parameter" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.Control.ViewState" /> object and persisted across requests for the same page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1031,12 +1080,13 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameter type is not one of the <see cref="T:System.TypeCode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -1080,7 +1130,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Parameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetLiveRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetLiveRange method [.NET Framework debugging]"
   - "GetLiveRange method, ICorDebugVariableFrame interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IcorDebugVariableHome::GetLiveRange Method
 Gets the native range over which this variable is live.  

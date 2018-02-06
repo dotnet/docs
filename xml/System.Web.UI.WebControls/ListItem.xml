@@ -91,16 +91,21 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListItem Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[ListBoxMultiSelectExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListBoxMultiSelectExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  -->  
+ [!code-aspx-csharp[ListBoxMultiSelectExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#1)]
+ [!code-aspx-vb[ListBoxMultiSelectExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#1)]  
+[!code-aspx-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]
+[!code-aspx-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+    <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+    <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,11 +141,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,11 +189,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem2 Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem2 Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem2 Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem2 Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,11 +239,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem3 Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem3 Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem3 Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem3 Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -270,11 +290,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem4 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem4 Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem4 Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem4 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem4 Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem4 Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -308,6 +333,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -348,11 +379,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.Enabled/CS/listitem.enabledcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.Enabled/VB/listitem.enabledvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.Enabled/CS/listitem.enabledcs.aspx#1)]
+ [!code-aspx-vb[ListItem.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.Enabled/VB/listitem.enabledvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -405,6 +441,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -464,11 +506,17 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListControl.Items Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListControl.Items Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListControl.Items Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListControl.Items Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ListControl.Items Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListControl.Items Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ListControl.Items Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListControl.Items Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -498,6 +546,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -528,6 +582,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IParserAccessor.AddParsedSubObject">
@@ -562,6 +622,12 @@
  \- or -  
   
  <paramref name="obj" /> is not a <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -609,6 +675,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -635,6 +706,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -660,6 +736,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -706,11 +787,17 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -730,6 +817,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -773,12 +861,27 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListItem.Text" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListBox" />
+        <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

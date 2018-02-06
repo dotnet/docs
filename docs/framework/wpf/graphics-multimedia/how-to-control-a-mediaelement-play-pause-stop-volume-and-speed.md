@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "playback of media, controlling"
-  - "controlling playback of media"
-  - "multimedia, controlling playback of media"
-  - "media, controlling playback of"
+  - "playback of media [WPF], controlling"
+  - "controlling playback of media [WPF]"
+  - "multimedia [WPF], controlling playback of media"
+  - "media [WPF], controlling playback of"
 ms.assetid: 6885a730-e054-4c16-8c1e-ffe17b1f7c32
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)
 The following example shows how to control playback of media using a <xref:System.Windows.Controls.MediaElement>. The example creates a simple media player that allows you to play, pause, stop, and skip back and forth in the media as well as adjust the volume and speed ratio.  

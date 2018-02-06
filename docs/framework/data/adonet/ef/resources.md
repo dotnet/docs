@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity Framework Resources
 The following external resources provide information and support for creating Entity Framework applications.  
@@ -38,7 +36,7 @@ The following external resources provide information and support for creating En
  Blog containing frequently asked questions about the Entity Framework.  
   
 ## See Also  
- [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)   
- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)   
- [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)   
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)
+ [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)  
+ [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
+ [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)  
+ [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)

@@ -29,22 +29,26 @@
 > [!NOTE]
 >  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- When you create a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/CS/detailsviewpageeventhandlerdynamiccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/VB/detailsviewpageeventhandlerdynamicvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/CS/detailsviewpageeventhandlerdynamiccs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/VB/detailsviewpageeventhandlerdynamicvb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/CS/detailsviewpageeventhandlerdeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/VB/detailsviewpageeventhandlerdeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/CS/detailsviewpageeventhandlerdeclarativecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/VB/detailsviewpageeventhandlerdeclarativevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewPageEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanging" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging(System.Web.UI.WebControls.DetailsViewPageEventArgs)" />
   </Docs>
 </Type>

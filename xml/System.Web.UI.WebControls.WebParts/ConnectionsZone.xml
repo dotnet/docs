@@ -66,8 +66,8 @@
   
  The first part of this code example is the user control that enables users to switch display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/displaymodemenucs.ascx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/DisplayModeMenuVB.ascx#6)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/displaymodemenucs.ascx#6)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/DisplayModeMenuVB.ascx#6)]  
   
  The second part of the example is the source file with the interface and custom controls. Notice that the `ZipCodeWebPart` control implements the `IZipCode` interface, adding a `ConnectionProvider` attribute so that the control can act as a provider for a connection. The `WeatherWebPart` control has a method marked with a `ConnectionConsumer` attribute, where it consumes the `IZipCode` interface, so it can act as a consumer in a connection.  
   
@@ -78,8 +78,8 @@
   
  The third part of the example code is the Web page. Near the top are `Register` directives for the user control and the custom controls used in the connection. An <`asp:connectionszone>` element is declared in the page as an example of using the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control declaratively. Within the element, a number of properties are set declaratively. Other properties on the connections zone are set programmatically in the `<script>` section of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the Web page in a browser. Use the **Display Mode** drop-down list control to switch the page to connect mode. On the verbs menu of the **ZIP Code Provider** control (the verbs menu is indicated by the downward arrow in the control's title bar), click the connect verb. A <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control appears. Note that in the connection UI, an **End Connection** button appears; the connection has already been declared in the markup of the page, so the controls are already connected. Click **End Connection**, and then use the **Display Mode** control again to return the page to browse mode. Next, return the page to connect mode again, click the connect verb on one of the controls, and note that the connection UI now displays a hyperlink that enables you to form a connection between the controls. Click the link, and use the connection UI to select connection points and establish the connection.  
   
@@ -88,6 +88,10 @@
     <block subset="none" type="overrides">
       <para>The <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> class can be extended, if developers want to change its behavior or the default UI that it provides for working with connections.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,8 +127,8 @@
   
  On the Web page, in the `Page_Init` method, a new <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is created (using the constructor) and added to the page. When a user sets the page to connect mode and clicks the connect verb on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control appears.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/CS/connectionZoneCtorCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/VB/connectionZoneCtorVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/CS/connectionZoneCtorCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/VB/connectionZoneCtorVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. The connection UI appears, and the controls are already connected because the connection was declared in the markup of the page.  
   
@@ -186,13 +190,15 @@
   
  The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<cancelverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the cancel verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Terminate** button, the custom description text appears in a ToolTip.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -218,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="CloseVerb">
@@ -276,13 +283,15 @@
   
  The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<closeverb>` element and sets a property using attributes. Also, in the `Page_PreRender` method, the code sets a property on the close verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Close Zone** button at the bottom of the connection UI, the custom description text appears in a ToolTip. Notice that the header close verb at the top of the connections zone is represented by a hyperlink, and your property assignments on the close verb have no effect on the header close verb.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConfigureConnectionTitle">
@@ -323,8 +332,8 @@
   
  The Web page declares an `<asp:connectionszone>` element, and in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Because the connection already exists, you now see an **End Connection** button, and a **Configure** button, which represents the configure verb. If your connection were configurable (it is not in this code example), the **Configure** button would be enabled; you could click it to open the Configure Connections section, and the title would be the value the code assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property.  
   
@@ -386,13 +395,15 @@
   
  The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<configureverb>` element and sets a property using attributes. Also, in the `Page_PreRender` method, the code sets a property on the configure verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Notice that there is an **End Connection** button to disconnect the controls that are already connected, and a disabled **Configure** button. If your code example used a transformer that included a configuration wizard, the **Configure** button would be enabled, and users could click it to configure the connection. If you position your mouse pointer over the **Configure** button in the connection UI, the custom description text appears in a ToolTip.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerInstructionText">
@@ -435,13 +446,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the **Select a consumer for the provider to connect with** hyperlink. The consumer connection UI appears, and the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property appears just above the area with the control that allows you to select a connection point on the consumer for connecting with the provider.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerText">
@@ -482,13 +495,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then notice that the hyperlink appears with the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToConsumerTitle">
@@ -529,13 +544,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the link to select a consumer. In the view for selecting a consumer, note that the title text of the section is the text that the code assigns to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderInstructionText">
@@ -578,13 +595,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the **Select a provider for the consumer to connect with** hyperlink. The provider connection UI appears, and the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property appears just above the area with the control that allows you to select a connection point on the provider for connecting with the consumer.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderText">
@@ -625,13 +644,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then notice that the hyperlink appears with the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToProviderTitle">
@@ -672,13 +693,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the link to select a provider. In the view for selecting a provider, note that the title text of the section is the text that the code assigns to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       </Docs>
     </Member>
     <Member MemberName="ConnectVerb">
@@ -738,13 +761,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, within the element tags, it declares a `<connectverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the connect verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Connect Controls** button, the custom description text appears in a ToolTip.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConsumersInstructionText">
@@ -785,13 +809,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. In the view that opens for the existing connection, look in the consumers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ConsumersTitle">
@@ -832,13 +857,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. In the view that opens for the existing connection, look in the consumers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -864,6 +890,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectVerb">
@@ -920,13 +947,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, within the element tags, declares a `<disconnectverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the disconnect verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Note the effect of the property values that were set on the disconnect verb. If you position your mouse pointer over the **End Connection** button, the custom description text appears in a ToolTip. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -946,6 +974,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -982,6 +1011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ExistingConnectionErrorMessage">
@@ -1040,13 +1070,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the text that precedes the named provider. This is the text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -1087,13 +1119,15 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the text that precedes the named consumer. This is the text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1136,13 +1170,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the header text at the top of the connections zone is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property in the code example.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -1185,13 +1220,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the instruction text near the top of the connections zone is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property in the code example.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTitle">
@@ -1235,13 +1271,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the instruction title just below the header text, near the top of the connections zone, is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property in the code example.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -1271,6 +1308,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" /> method.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1302,6 +1340,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" /> method.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NewConnectionErrorMessage">
@@ -1360,13 +1399,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, click the **End Connection** button. Note that the instruction text for no existing connections appears near the bottom of the connection UI, just above the close verb in the zone's footer area.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle" />
       </Docs>
     </Member>
     <Member MemberName="NoExistingConnectionTitle">
@@ -1407,13 +1447,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, click the **End Connection** button. Note that the instruction title for no existing connections occurs just below the link that enables users to create a new connection.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -1446,6 +1487,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged(System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1474,6 +1517,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnInit(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -1504,6 +1549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PartChromeType">
@@ -1540,6 +1586,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" />
       </Docs>
     </Member>
     <Member MemberName="ProvidersInstructionText">
@@ -1580,13 +1628,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
       </Docs>
     </Member>
     <Member MemberName="ProvidersTitle">
@@ -1627,13 +1676,14 @@
   
  The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  
   
  Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1662,6 +1712,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1690,6 +1741,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CompositeControl.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -1720,6 +1772,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -1748,6 +1801,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -1774,6 +1829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1802,6 +1858,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SendText">
@@ -1829,6 +1886,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       </Docs>
     </Member>
     <Member MemberName="SendToText">
@@ -1856,6 +1915,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1881,6 +1942,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="WebPartToConnect">
@@ -1909,6 +1971,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
       </Docs>
     </Member>
   </Members>

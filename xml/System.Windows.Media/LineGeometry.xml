@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.LineSegment" />
+    <altmember cref="T:System.Windows.Media.PolyLineSegment" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +59,8 @@
         <param name="endPoint">The end point of the line.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineGeometry" /> class that has the specified start and end points.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.LineGeometry.StartPoint" />
+        <altmember cref="P:System.Windows.Media.LineGeometry.EndPoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,6 +83,9 @@
         <param name="transform">The transformation to apply to the line.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineGeometry" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.LineGeometry.StartPoint" />
+        <altmember cref="P:System.Windows.Media.LineGeometry.EndPoint" />
+        <altmember cref="P:System.Windows.Media.Geometry.Transform" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -343,5 +350,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineGeometry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

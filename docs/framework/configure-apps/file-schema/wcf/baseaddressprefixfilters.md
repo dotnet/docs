@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;baseAddressPrefixFilters&gt;
 Represents a collection of configuration elements that specify pass through filters, which provide a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] application in IIS.  
@@ -87,7 +89,7 @@ http://test2.fabrikam.com/Service.svc
 >  The filter does not support any wildcards. In addition, the baseAddresses supplied by IIS may have addresses bound to other schemes not present in the `baseAddressPrefixFilters` list. These addresses are not filtered out.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>   
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>   
- <xref:System.ServiceModel.ServiceHostingEnvironment>   
+ <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>  
+ <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
+ <xref:System.ServiceModel.ServiceHostingEnvironment>  
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

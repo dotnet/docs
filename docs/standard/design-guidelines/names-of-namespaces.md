@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
   - "names [.NET Framework], namespaces"
@@ -25,6 +20,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Names of Namespaces
 As with other naming guidelines, the goal when naming namespaces is creating sufficient clarity for the programmer using the framework to immediately know what the content of the namespace is likely to be. The following template specifies the general rule for naming namespaces:  
@@ -33,7 +31,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
  The following are examples:  
   
- `Fabrikam.Math`   
+ `Fabrikam.Math`  
  `Litware.Security`  
   
  **✓ DO** prefix namespace names with a company name to prevent namespaces from different companies from having the same name.  
@@ -95,5 +93,5 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

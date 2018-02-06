@@ -42,10 +42,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/monitoring/system/diagnosticts/Process.cs#f8b2e604d6f1fe04). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A <xref:System.Diagnostics.Process> component provides access to a process that is running on a computer. A process, in the simplest terms, is a running app. A thread is the basic unit to which the operating system allocates processor time. A thread can execute any part of the code of the process, including parts currently being executed by another thread.  
   
  The <xref:System.Diagnostics.Process> component is a useful tool for starting, stopping, controlling, and monitoring apps. You can use the <xref:System.Diagnostics.Process> component, to obtain a list of the processes that are running, or you can start a new process. A <xref:System.Diagnostics.Process> component is used to access system processes. After a <xref:System.Diagnostics.Process> component has been initialized, it can be used to obtain information about the running process. Such information includes the set of threads, the loaded modules (.dll and .exe files), and performance information such as the amount of memory the process is using.  
@@ -103,6 +99,11 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="M:System.Diagnostics.Process.Start" />
+    <altmember cref="T:System.Diagnostics.ProcessStartInfo" />
+    <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+    <altmember cref="M:System.Diagnostics.Process.Kill" />
+    <altmember cref="T:System.Diagnostics.ProcessThread" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,6 +220,9 @@
   
  The process has not started, so there is no process ID.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PriorityClass" />
+        <altmember cref="T:System.Diagnostics.ProcessPriorityClass" />
+        <altmember cref="T:System.Diagnostics.ThreadPriorityLevel" />
       </Docs>
     </Member>
     <Member MemberName="BeginErrorReadLine">
@@ -299,6 +303,11 @@
   
  The <see cref="P:System.Diagnostics.Process.StandardError" /> stream has been used by a synchronous read operation.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
+        <altmember cref="E:System.Diagnostics.Process.ErrorDataReceived" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
+        <altmember cref="M:System.Diagnostics.Process.CancelErrorRead" />
       </Docs>
     </Member>
     <Member MemberName="BeginOutputReadLine">
@@ -381,6 +390,11 @@
   
  The <see cref="P:System.Diagnostics.Process.StandardOutput" /> stream has been used by a synchronous read operation.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
+        <altmember cref="E:System.Diagnostics.Process.OutputDataReceived" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
+        <altmember cref="M:System.Diagnostics.Process.CancelOutputRead" />
       </Docs>
     </Member>
     <Member MemberName="CancelErrorRead">
@@ -455,6 +469,11 @@ process.BeginErrorReadLine();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.Process.StandardError" /> stream is not enabled for asynchronous read operations.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.BeginErrorReadLine" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
+        <altmember cref="E:System.Diagnostics.Process.ErrorDataReceived" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CancelOutputRead">
@@ -529,6 +548,11 @@ process.BeginOutputReadLine();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.Process.StandardOutput" /> stream is not enabled for asynchronous read operations.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.BeginOutputReadLine" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
+        <altmember cref="E:System.Diagnostics.Process.OutputDataReceived" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -747,6 +771,13 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" />
+        <altmember cref="E:System.Diagnostics.Process.Exited" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="P:System.Diagnostics.Process.ExitTime" />
+        <altmember cref="P:System.Diagnostics.Process.HasExited" />
       </Docs>
     </Member>
     <Member MemberName="EnterDebugMode">
@@ -783,6 +814,7 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.LeaveDebugMode" />
       </Docs>
     </Member>
     <Member MemberName="ErrorDataReceived">
@@ -826,7 +858,7 @@ The following code example creates a process that prints a file. It sets the <xr
  The event only occurs during asynchronous read operations on <xref:System.Diagnostics.Process.StandardError%2A>. To start asynchronous read operations, you must redirect the <xref:System.Diagnostics.Process.StandardError%2A> stream of a <xref:System.Diagnostics.Process>, add your event handler to the <xref:System.Diagnostics.Process.ErrorDataReceived> event, and call <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>. Thereafter, the <xref:System.Diagnostics.Process.ErrorDataReceived> event signals each time the process writes a line to the redirected <xref:System.Diagnostics.Process.StandardError%2A> stream, until the process exits or calls <xref:System.Diagnostics.Process.CancelErrorRead%2A>.  
   
 > [!NOTE]
->  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit%2A> method to ensure that the output buffer has been flushed.  
+>  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit> method to ensure that the output buffer has been flushed. Note that specifying a timeout by using the <xref:System.Diagnostics.Process.WaitForExit(System.Int32)> overload does *not* ensure the output buffer has been flushed.
   
    
   
@@ -840,6 +872,11 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
+        <altmember cref="M:System.Diagnostics.Process.BeginErrorReadLine" />
+        <altmember cref="M:System.Diagnostics.Process.CancelErrorRead" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ExitCode">
@@ -915,6 +952,11 @@ The following code example creates a process that prints a file. It sets the <xr
  The process <see cref="P:System.Diagnostics.Process.Handle" /> is not valid.</exception>
         <exception cref="T:System.NotSupportedException">You are trying to access the <see cref="P:System.Diagnostics.Process.ExitCode" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.HasExited" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
+        <altmember cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" />
+        <altmember cref="P:System.Diagnostics.Process.EnableRaisingEvents" />
       </Docs>
     </Member>
     <Member MemberName="Exited">
@@ -1032,6 +1074,8 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">You are trying to access the <see cref="P:System.Diagnostics.Process.ExitTime" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="P:System.Diagnostics.Process.ExitCode" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentProcess">
@@ -1080,6 +1124,9 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
       </Docs>
     </Member>
     <Member MemberName="GetProcessById">
@@ -1133,6 +1180,10 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.ArgumentException">The process specified by the <paramref name="processId" /> parameter is not running. The identifier might be expired.</exception>
         <exception cref="T:System.InvalidOperationException">The process was not started by this object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Id" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="GetProcessById">
@@ -1200,6 +1251,11 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.ArgumentNullException">The <paramref name="machineName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The process was not started by this object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Id" />
+        <altmember cref="P:System.Diagnostics.Process.MachineName" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="GetProcesses">
@@ -1251,6 +1307,10 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MachineName" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="GetProcesses">
@@ -1317,6 +1377,10 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.InvalidOperationException">There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">A problem occurred accessing an underlying system API.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MachineName" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="GetProcessesByName">
@@ -1371,6 +1435,10 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.InvalidOperationException">There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.ProcessName" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="GetProcessesByName">
@@ -1441,6 +1509,11 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.ComponentModel.Win32Exception">A problem occurred accessing an underlying system API.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Diagnostics.Process.ProcessName" />
+        <altmember cref="P:System.Diagnostics.Process.MachineName" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
+        <altmember cref="M:System.Diagnostics.Process.GetCurrentProcess" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -1497,6 +1570,12 @@ The following code example creates a process that prints a file. It sets the <xr
  The <see cref="T:System.Diagnostics.Process" /> instance has been attached to a running process but you do not have the necessary permissions to get a handle with full access rights.</exception>
         <exception cref="T:System.NotSupportedException">You are trying to access the <see cref="P:System.Diagnostics.Process.Handle" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Id" />
+        <altmember cref="P:System.Diagnostics.Process.ExitCode" />
+        <altmember cref="P:System.Diagnostics.Process.ExitTime" />
+        <altmember cref="P:System.Diagnostics.Process.HandleCount" />
+        <altmember cref="M:System.Diagnostics.Process.Start" />
+        <altmember cref="M:System.Diagnostics.Process.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="HandleCount">
@@ -1544,6 +1623,10 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set the <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> property to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="M:System.Diagnostics.Process.Start" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
       </Docs>
     </Member>
     <Member MemberName="HasExited">
@@ -1609,6 +1692,11 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.ComponentModel.Win32Exception">The exit code for the process could not be retrieved.</exception>
         <exception cref="T:System.NotSupportedException">You are trying to access the <see cref="P:System.Diagnostics.Process.HasExited" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.ExitCode" />
+        <altmember cref="P:System.Diagnostics.Process.ExitTime" />
+        <altmember cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" />
+        <altmember cref="P:System.Diagnostics.Process.EnableRaisingEvents" />
+        <altmember cref="M:System.Diagnostics.Process.OnExited" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -1673,6 +1761,8 @@ The following code example creates a process that prints a file. It sets the <xr
  There is no process associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set the <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> property to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Kill">
@@ -1734,6 +1824,9 @@ The following code example creates a process that prints a file. It sets the <xr
   
  There is no process associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Environment.Exit(System.Int32)" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Start" />
       </Docs>
     </Member>
     <Member MemberName="LeaveDebugMode">
@@ -1770,6 +1863,7 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.EnterDebugMode" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -1830,6 +1924,9 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no process associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.GetProcesses" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessById(System.Int32,System.String)" />
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MainModule">
@@ -1885,6 +1982,7 @@ The following code example creates a process that prints a file. It sets the <xr
   
  The process has exited.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.Modules" />
       </Docs>
     </Member>
     <Member MemberName="MainWindowHandle">
@@ -1940,6 +2038,8 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.NotSupportedException">You are trying to access the <see cref="P:System.Diagnostics.Process.MainWindowHandle" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MainWindowTitle" />
+        <altmember cref="P:System.Diagnostics.Process.MainModule" />
       </Docs>
     </Member>
     <Member MemberName="MainWindowTitle">
@@ -2067,6 +2167,9 @@ The following code example creates a process that prints a file. It sets the <xr
  The process has exited.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MinWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.WorkingSet64" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
       </Docs>
     </Member>
     <Member MemberName="MinWorkingSet">
@@ -2133,6 +2236,9 @@ The following code example creates a process that prints a file. It sets the <xr
  The process has exited.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MaxWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.WorkingSet64" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
       </Docs>
     </Member>
     <Member MemberName="Modules">
@@ -2188,6 +2294,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">You are attempting to access the <see cref="P:System.Diagnostics.Process.Modules" /> property for either the system process or the idle process. These processes do not have modules.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Diagnostics.ProcessModule" />
       </Docs>
     </Member>
     <Member MemberName="NonpagedSystemMemorySize">
@@ -2231,6 +2338,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.NonpagedSystemMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="NonpagedSystemMemorySize64">
@@ -2293,6 +2401,7 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PagedSystemMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="OnExited">
@@ -2344,6 +2453,7 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="E:System.Diagnostics.Process.Exited" />
       </Docs>
     </Member>
     <Member MemberName="OutputDataReceived">
@@ -2403,6 +2513,11 @@ The following code example creates a process that prints a file. It sets the <xr
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
+        <altmember cref="M:System.Diagnostics.Process.BeginOutputReadLine" />
+        <altmember cref="M:System.Diagnostics.Process.CancelOutputRead" />
+        <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PagedMemorySize">
@@ -2443,6 +2558,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PagedMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PagedMemorySize64">
@@ -2502,6 +2618,8 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PeakPagedMemorySize64" />
+        <altmember cref="P:System.Diagnostics.Process.PagedSystemMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PagedSystemMemorySize">
@@ -2542,6 +2660,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PagedSystemMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PagedSystemMemorySize64">
@@ -2601,6 +2720,8 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PagedSystemMemorySize64" />
+        <altmember cref="P:System.Diagnostics.Process.NonpagedSystemMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PeakPagedMemorySize">
@@ -2644,6 +2765,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PeakPagedMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PeakPagedMemorySize64">
@@ -2706,6 +2828,7 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PagedMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PeakVirtualMemorySize">
@@ -2746,6 +2869,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PeakVirtualMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PeakVirtualMemorySize64">
@@ -2805,6 +2929,7 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.VirtualMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PeakWorkingSet">
@@ -2854,6 +2979,10 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.WorkingSet64" />
+        <altmember cref="P:System.Diagnostics.Process.MinWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.MaxWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
       </Docs>
     </Member>
     <Member MemberName="PeakWorkingSet64">
@@ -2915,6 +3044,9 @@ The following code example creates a process that prints a file. It sets the <xr
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.WorkingSet64" />
+        <altmember cref="P:System.Diagnostics.Process.MinWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.MaxWorkingSet" />
       </Docs>
     </Member>
     <Member MemberName="PriorityBoostEnabled">
@@ -2974,6 +3106,8 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.NotSupportedException">You are attempting to access the <see cref="P:System.Diagnostics.Process.PriorityBoostEnabled" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <exception cref="T:System.InvalidOperationException">The process <see cref="P:System.Diagnostics.Process.Id" /> is not available.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PriorityClass" />
+        <altmember cref="P:System.Diagnostics.Process.BasePriority" />
       </Docs>
     </Member>
     <Member MemberName="PriorityClass">
@@ -3047,6 +3181,8 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.PlatformNotSupportedException">You have set the <see cref="P:System.Diagnostics.Process.PriorityClass" /> to <see langword="AboveNormal" /> or <see langword="BelowNormal" /> when using Windows 98 or Windows Millennium Edition (Windows Me). These platforms do not support those values for the priority class.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Priority class cannot be set because it does not use a valid value, as defined in the <see cref="T:System.Diagnostics.ProcessPriorityClass" /> enumeration.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.BasePriority" />
+        <altmember cref="P:System.Diagnostics.Process.PriorityBoostEnabled" />
       </Docs>
     </Member>
     <Member MemberName="PrivateMemorySize">
@@ -3087,6 +3223,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PrivateMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="PrivateMemorySize64">
@@ -3196,6 +3333,8 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">You are attempting to access the <see cref="P:System.Diagnostics.Process.PrivilegedProcessorTime" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.UserProcessorTime" />
+        <altmember cref="P:System.Diagnostics.Process.PrivilegedProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="ProcessName">
@@ -3252,6 +3391,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <exception cref="T:System.NotSupportedException">The process is not on this computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.GetProcessesByName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessorAffinity">
@@ -3431,6 +3571,7 @@ The following code example creates a process that prints a file. It sets the <xr
         <exception cref="T:System.InvalidOperationException">There is no process associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <exception cref="T:System.NotSupportedException">You are attempting to access the <see cref="P:System.Diagnostics.Process.Responding" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MainWindowHandle" />
       </Docs>
     </Member>
     <Member MemberName="SafeHandle">
@@ -3639,6 +3780,9 @@ p.WaitForExit();
   
  The <see cref="P:System.Diagnostics.Process.StandardError" /> stream has been opened for asynchronous read operations with <see cref="M:System.Diagnostics.Process.BeginErrorReadLine" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.StandardInput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
       </Docs>
     </Member>
     <Member MemberName="StandardInput">
@@ -3699,6 +3843,9 @@ p.WaitForExit();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.Process.StandardInput" /> stream has not been defined because <see cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" /> is set to <see langword="false" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
       </Docs>
     </Member>
     <Member MemberName="StandardOutput">
@@ -3802,6 +3949,9 @@ p.WaitForExit();
   
  The <see cref="P:System.Diagnostics.Process.StandardOutput" /> stream has been opened for asynchronous read operations with <see cref="M:System.Diagnostics.Process.BeginOutputReadLine" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.StandardInput" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -3877,6 +4027,11 @@ p.WaitForExit();
         <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.StartInfo" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.FileName" />
+        <altmember cref="T:System.Diagnostics.ProcessStartInfo" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -3968,6 +4123,11 @@ p.WaitForExit();
  The sum of the length of the arguments and the length of the full path to the process exceeds 2080. The error message associated with this exception can be one of the following: "The data area passed to a system call is too small." or "Access is denied."</exception>
         <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.StartInfo" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.FileName" />
+        <altmember cref="T:System.Diagnostics.ProcessStartInfo" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -4042,6 +4202,10 @@ p.WaitForExit();
         <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The PATH environment variable has a string containing quotes.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.FileName" />
+        <altmember cref="P:System.Diagnostics.Process.StartInfo" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -4119,6 +4283,11 @@ p.WaitForExit();
         <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The PATH environment variable has a string containing quotes.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.FileName" />
+        <altmember cref="P:System.Diagnostics.Process.StartInfo" />
+        <altmember cref="T:System.Diagnostics.ProcessStartInfo" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -4328,6 +4497,8 @@ p.WaitForExit();
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value that specifies the <see cref="P:System.Diagnostics.Process.StartInfo" /> is <see langword="null" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.Start" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.FileName" />
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -4436,6 +4607,7 @@ p.WaitForExit();
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.SynchronizingObject" />
       </Docs>
     </Member>
     <Member MemberName="Threads">
@@ -4491,6 +4663,8 @@ p.WaitForExit();
  The associated process has exited.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me); set <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> to <see langword="false" /> to access this property on Windows 98 and Windows Me.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Diagnostics.ProcessThread" />
+        <altmember cref="P:System.Diagnostics.Process.BasePriority" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -4583,6 +4757,8 @@ p.WaitForExit();
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">You are attempting to access the <see cref="P:System.Diagnostics.Process.TotalProcessorTime" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.UserProcessorTime" />
+        <altmember cref="P:System.Diagnostics.Process.PrivilegedProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="UserProcessorTime">
@@ -4633,6 +4809,8 @@ p.WaitForExit();
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">You are attempting to access the <see cref="P:System.Diagnostics.Process.UserProcessorTime" /> property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.UserProcessorTime" />
+        <altmember cref="P:System.Diagnostics.Process.PrivilegedProcessorTime" />
       </Docs>
     </Member>
     <Member MemberName="VirtualMemorySize">
@@ -4673,6 +4851,8 @@ p.WaitForExit();
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.VirtualMemorySize64" />
+        <altmember cref="P:System.Diagnostics.Process.PeakVirtualMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="VirtualMemorySize64">
@@ -4732,6 +4912,7 @@ p.WaitForExit();
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.PeakVirtualMemorySize64" />
       </Docs>
     </Member>
     <Member MemberName="WaitForExit">
@@ -4794,6 +4975,13 @@ p.WaitForExit();
   
  You are attempting to call <see cref="M:System.Diagnostics.Process.WaitForExit" /> for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="P:System.Diagnostics.Process.ExitTime" />
+        <altmember cref="P:System.Diagnostics.Process.EnableRaisingEvents" />
+        <altmember cref="P:System.Diagnostics.Process.HasExited" />
+        <altmember cref="E:System.Diagnostics.Process.Exited" />
       </Docs>
     </Member>
     <Member MemberName="WaitForExit">
@@ -4832,7 +5020,7 @@ p.WaitForExit();
 ## Remarks  
  <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> makes the current thread wait until the associated process terminates. It should be called after all other methods are called on the process. To avoid blocking the current thread, use the <xref:System.Diagnostics.Process.Exited> event.  
   
- This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify a negative number (<xref:System.Threading.Timeout.Infinite>) for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=nameWithType> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
+ This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=nameWithType> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
   
 > [!NOTE]
 >  In the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions, if `milliseconds` was -1, the <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> overload waited for <xref:System.Int32.MaxValue> milliseconds (approximately 24 days), not indefinitely.  
@@ -4860,7 +5048,16 @@ p.WaitForExit();
  -or-  
   
  You are attempting to call <see cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" /> for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="milliseconds" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
+        <altmember cref="M:System.Diagnostics.Process.Kill" />
+        <altmember cref="P:System.Diagnostics.Process.Handle" />
+        <altmember cref="P:System.Diagnostics.Process.ExitTime" />
+        <altmember cref="P:System.Diagnostics.Process.EnableRaisingEvents" />
+        <altmember cref="P:System.Diagnostics.Process.HasExited" />
+        <altmember cref="E:System.Diagnostics.Process.Exited" />
+        <altmember cref="P:System.Diagnostics.Process.SynchronizingObject" />
       </Docs>
     </Member>
     <Member MemberName="WaitForInputIdle">
@@ -4915,6 +5112,8 @@ p.WaitForExit();
   
  No process is associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.Start" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
       </Docs>
     </Member>
     <Member MemberName="WaitForInputIdle">
@@ -4974,6 +5173,8 @@ p.WaitForExit();
   
  No process is associated with this <see cref="T:System.Diagnostics.Process" /> object.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Diagnostics.Process.Start" />
+        <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
       </Docs>
     </Member>
     <Member MemberName="WorkingSet">
@@ -5032,6 +5233,11 @@ p.WaitForExit();
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MinWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.MaxWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
+        <altmember cref="P:System.Diagnostics.Process.WorkingSet64" />
       </Docs>
     </Member>
     <Member MemberName="WorkingSet64">
@@ -5093,7 +5299,72 @@ p.WaitForExit();
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="P:System.Diagnostics.Process.MinWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.MaxWorkingSet" />
+        <altmember cref="P:System.Diagnostics.Process.PeakWorkingSet64" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a process resource and associates it with a <see cref="T:System.Diagnostics.Process" /> component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForExit">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the period of time to wait for the associated process to exit, and blocks the current thread of execution until the time has elapsed or the process has exited. To avoid blocking the current thread, use the <see cref="E:System.Diagnostics.Process.Exited" /> event.  
+  
+ For code examples, see the <see cref="P:System.Diagnostics.Process.StandardError" /> and the <see cref="P:System.Diagnostics.Process.ExitCode" /> property reference pages.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProcessesByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with the existing process resources that all share the specified process name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProcesses">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an array of new <see cref="T:System.Diagnostics.Process" /> components and associates them with existing process resources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProcessById">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Diagnostics.Process" /> component, and associates it with the existing process resource that you specify.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForInputIdle">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes the <see cref="T:System.Diagnostics.Process" /> component to wait for the associated process to enter an idle state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,6 +17,9 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Building Console Applications in the .NET Framework
 Applications in the .NET Framework can use the <xref:System.Console?displayProperty=nameWithType> class to read characters from and write characters to the console. Data from the console is read from the standard input stream, data to the console is written to the standard output stream, and error data to the console is written to the standard error output stream. These streams are automatically associated with the console when the application starts and are presented as the <xref:System.Console.In%2A>, <xref:System.Console.Out%2A>, and <xref:System.Console.Error%2A> properties, respectively.  
@@ -35,5 +38,5 @@ Applications in the .NET Framework can use the <xref:System.Console?displayPrope
  The **System.Console** class has methods that can read individual characters or entire lines from the console. Other methods convert data and format strings, and then write the formatted strings to the console. For more information on formatting strings, see [Formatting Types](../../docs/standard/base-types/formatting-types.md).  
   
 ## See Also  
- <xref:System.Console?displayProperty=nameWithType>   
+ <xref:System.Console?displayProperty=nameWithType>  
  [Formatting Types](../../docs/standard/base-types/formatting-types.md)

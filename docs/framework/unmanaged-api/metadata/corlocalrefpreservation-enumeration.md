@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorLocalRefPreservation"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorLocalRefPreservation enumeration [.NET Framework metadata]"
 ms.assetid: 44757163-1228-4213-a4c4-d4de503cc75d
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorLocalRefPreservation Enumeration
 Contains flag values for the treatment of local references.  

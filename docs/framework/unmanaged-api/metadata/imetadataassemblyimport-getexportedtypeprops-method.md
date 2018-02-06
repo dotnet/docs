@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetExportedTypeProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetExportedTypeProps Method
 Gets the set of properties of the exported type with the specified metadata signature.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRValidator::Validate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Validate method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::Validate method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRValidator::Validate Method
 Validates the portable executable (PE) or Microsoft intermediate language (MSIL) in the specified file.  

@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
+    <altmember cref="T:System.IServiceProvider" />
   </Docs>
   <Members>
     <Member MemberName="CanReloadWithErrors">
@@ -68,6 +72,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreErrorsDuringReload">
@@ -103,6 +111,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
   </Members>

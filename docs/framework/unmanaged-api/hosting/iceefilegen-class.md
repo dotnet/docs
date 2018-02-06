@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeFileGen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeFileGen class [.NET Framework hosting]"
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeFileGen Class
 Provides functionality for creating a native portable executable (PE) file. The interface will typically be used by compilers to generate their compiled output executable.  

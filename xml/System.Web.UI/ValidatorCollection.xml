@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IValidator" />
+    <altmember cref="P:System.Web.UI.Page.Validators" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +51,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ValidatorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -85,6 +89,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -118,6 +124,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -151,6 +159,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -179,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -213,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -242,6 +255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -276,6 +291,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -308,6 +325,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -339,6 +358,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -367,6 +388,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IValidator" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
       </Docs>
     </Member>
   </Members>

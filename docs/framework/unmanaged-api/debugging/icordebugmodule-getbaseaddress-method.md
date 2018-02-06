@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetBaseAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBaseAddress method [.NET Framework debugging]"
   - "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetBaseAddress Method
 Gets the base address of the module.  

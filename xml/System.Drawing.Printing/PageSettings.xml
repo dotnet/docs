@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +111,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="P:System.Drawing.Printing.PageSettings.Margins" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -166,6 +170,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.SupportsColor" />
       </Docs>
     </Member>
     <Member MemberName="CopyToHdevmode">
@@ -198,6 +203,7 @@
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for printing and access to all printers on the network. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PageSettings.SetHdevmode(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="HardMarginX">
@@ -296,6 +302,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.LandscapeAngle" />
       </Docs>
     </Member>
     <Member MemberName="Margins">
@@ -339,6 +348,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <altmember cref="T:System.Drawing.Printing.Margins" />
       </Docs>
     </Member>
     <Member MemberName="PaperSize">
@@ -387,6 +397,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Height" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Kind" />
+        <altmember cref="P:System.Drawing.Printing.PaperSize.Width" />
       </Docs>
     </Member>
     <Member MemberName="PaperSource">
@@ -433,6 +447,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PaperSource" />
+        <altmember cref="P:System.Drawing.Printing.PaperSource.Kind" />
+        <altmember cref="T:System.Drawing.Printing.PaperSourceKind" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
       </Docs>
     </Member>
     <Member MemberName="PrintableArea">
@@ -497,6 +515,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
+        <altmember cref="P:System.Drawing.Printing.PrinterResolution.Kind" />
+        <altmember cref="T:System.Drawing.Printing.PrinterResolutionKind" />
+        <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -522,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="SetHdevmode">
@@ -555,6 +578,7 @@
         <exception cref="T:System.ArgumentException">The printer handle is not valid.</exception>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist or there is no default printer installed.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for printing and access to all printers on the network. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PageSettings.CopyToHdevmode(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -576,5 +600,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PageSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

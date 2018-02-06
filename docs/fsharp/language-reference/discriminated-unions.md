@@ -109,9 +109,9 @@ type SingleCase = Case of string
 
 [<Struct>]
 type Multicase =
-    | Case1 of string
-    | Case2 of int
-    | Case3 of double
+    | Case1 of Case1 : string
+    | Case2 of Case2 : int
+    | Case3 of Case3 : double
 ```
 
 Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:

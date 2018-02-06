@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "smart clients"
   - "Windows Forms, about Windows Forms"
@@ -19,6 +17,8 @@ caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Windows Forms Overview
 The following overview discusses the advantages of smart client applications, the main features of Windows Forms programming, and how you can use Windows Forms to build smart clients that meet the needs of today's enterprises and end users.  
@@ -101,10 +101,10 @@ The following overview discusses the advantages of smart client applications, th
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)|  
   
 ## See Also  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)   
- [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)   
- [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)   
- [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)   
- [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)   
- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)   
+ [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)  
+ [Creating a New Windows Form](../../../docs/framework/winforms/creating-a-new-windows-form.md)  
+ [ToolStrip Control Overview](../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
+ [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)  
+ [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)  
+ [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

@@ -33,7 +33,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -47,6 +47,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="P:System.Configuration.ApplicationSettingsBase.Providers" />
+    <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,7 +72,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
  ]]></format>
         </remarks>
@@ -285,6 +287,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reset" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reload" />
       </Docs>
     </Member>
     <Member MemberName="ServiceUri">
@@ -385,6 +389,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
+        <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
     <Member MemberName="Upgrade">

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Uri" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -673,6 +674,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The port cannot be set to a value less than -1 or greater than 65,535.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.UriBuilder.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -724,6 +727,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.Uri.Query" />
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -766,12 +771,14 @@
 |gopher|The resource is accessed through the Gopher protocol.|  
 |http|The resource is accessed through HTTP.|  
 |https|The resource is accessed through SSL-encrypted HTTP.|  
-|mailto|The resource is an e-mail address and is accessed through SMTP.|  
+|mailto|The resource is an email address and is accessed through SMTP.|  
 |news|The resource is accessed through NNTP.|  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The scheme cannot be set to an invalid scheme name.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.Uri.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -867,6 +874,7 @@
           </block>  
   
  The URI constructed by the <see cref="T:System.UriBuilder" /> properties is invalid.</exception>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -899,5 +907,17 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

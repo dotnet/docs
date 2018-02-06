@@ -72,11 +72,14 @@
   
  The following example is markup contained in an .ascx file. You can use the `SimpleControl` class defined in the previous example as a code-behind class for the markup in this .ascx file.  
   
- <!-- TODO: review snippet reference [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simpleformcs.ascx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simpleformvb.ascx#3)]  -->  
+ [!code-aspx-csharp[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simpleformcs.ascx#3)]
+ [!code-aspx-vb[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simpleformvb.ascx#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.TemplateControl" />
+    <altmember cref="T:System.Web.UI.IAttributeAccessor" />
+    <altmember cref="T:System.Web.UI.Page" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -137,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpApplicationState" />
+        <altmember cref="P:System.Web.UI.Page.Application" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -173,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
       </Docs>
     </Member>
     <Member MemberName="Cache">
@@ -217,6 +224,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="P:System.Web.UI.Page.Cache" />
       </Docs>
     </Member>
     <Member MemberName="CachePolicy">
@@ -255,11 +264,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.ControlCachePolicy.SupportsCaching%2A> property to determine whether the user control can be cached, and if so, sets the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property to cache the control for 10 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[UserControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControlCachePolicy/CS/usercontrolcachepolicycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[UserControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControlCachePolicy/VB/usercontrolcachepolicyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[UserControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControlCachePolicy/CS/usercontrolcachepolicycs.aspx#1)]
+ [!code-aspx-vb[UserControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControlCachePolicy/VB/usercontrolcachepolicyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.BasePartialCachingControl" />
       </Docs>
     </Member>
     <Member MemberName="DesignerInitialize">
@@ -293,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.DesignerInitialize" />
       </Docs>
     </Member>
     <Member MemberName="InitializeAsUserControl">
@@ -366,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.IsPostBack" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -404,6 +416,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -441,6 +455,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.MapPath(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -507,6 +522,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="P:System.Web.UI.Page.Request" />
       </Docs>
     </Member>
     <Member MemberName="Response">
@@ -543,6 +560,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpResponse" />
+        <altmember cref="P:System.Web.UI.Page.Response" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -577,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -618,6 +639,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpServerUtility" />
+        <altmember cref="P:System.Web.UI.Page.Server" />
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -654,6 +677,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.Session" />
+        <altmember cref="T:System.Web.SessionState.HttpSessionState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -683,6 +708,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.UserControl.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+        <altmember cref="T:System.Web.UI.IAttributeAccessor" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -713,6 +740,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.UserControl.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+        <altmember cref="T:System.Web.UI.IAttributeAccessor" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IUserControlDesignerAccessor.InnerText">
@@ -731,6 +760,7 @@
         <summary>Gets or sets the text that appears between the opening and closing tags of a user control.</summary>
         <value>The text that appears between the opening and closing tabs of a user control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IUserControlDesignerAccessor" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IUserControlDesignerAccessor.TagName">
@@ -749,6 +779,7 @@
         <summary>Gets or sets the full tag name of the user control.</summary>
         <value>The full tag name of the user control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IUserControlDesignerAccessor" />
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -780,10 +811,12 @@
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing for that page.  
   
- By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
+ By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContext" />
+        <altmember cref="P:System.Web.UI.Page.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TryUpdateModel&lt;TModel&gt;">
@@ -926,5 +959,23 @@
         <exception cref="T:System.InvalidOperationException">The model instance was not updated successfully.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryUpdateModel&lt;TModel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to update the model instance by using the values from the data-bound control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UpdateModel&lt;TModel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the model instance by using values from the data-bound control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

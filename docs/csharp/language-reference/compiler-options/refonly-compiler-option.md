@@ -1,29 +1,28 @@
 ---
 title: "-refonly (C# Compiler Options)"
-ms.date: "2017-07-08"
+ms.date: 07/08/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/refonly"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/refonly compiler option [C#]"
   - "-refonly compiler option [C#]"
+  - "refonly compiler option [C#]"
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
 
-# /refonly (C# Compiler Options)
+# -refonly (C# Compiler Options)
 
-The **/refonly** The /refonly option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `/refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
+The **-refonly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `-refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
 
 ## Syntax
 
 ```console
-/refonly
+-refonly
 ```
 
 ## Remarks
@@ -40,8 +39,8 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 - All virtual methods are kept. Explicit interface implementations are kept. Explicitly implemented properties and events are kept, as their accessors are virtual (and are therefore kept).
 - All fields of a struct are kept. (This is a candidate for post-C#-7.1 refinement)
 
-The `/refonly` and [`/refout`](refout-compiler-option.md) options are mutually exclusive.
+The `-refonly` and [`-refout`](refout-compiler-option.md) options are mutually exclusive.
 
 ## See also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::IsTokenMarked"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::IsTokenMarked method [.NET Framework metadata]"
   - "IsTokenMarked method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataFilter::IsTokenMarked Method
 Gets a value indicating whether the specified metadata token has been marked as processed.  

@@ -1,37 +1,16 @@
 ---
 title: "Modules (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Modules (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
@@ -52,5 +31,5 @@ translation.priority.ht:
 |<xref:Microsoft.VisualBasic.VBMath>|Contains members perform mathematical operations.|  
   
 ## See Also  
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)   
+ [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
  [Visual Basic](../../visual-basic/index.md)

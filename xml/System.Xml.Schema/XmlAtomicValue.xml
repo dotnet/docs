@@ -262,6 +262,7 @@
         <exception cref="T:System.FormatException">The validated XML element or attribute's value is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -527,6 +528,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaSimpleType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaComplexType" />
       </Docs>
     </Member>
   </Members>

@@ -626,5 +626,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, writes a message to a specified stream or buffer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

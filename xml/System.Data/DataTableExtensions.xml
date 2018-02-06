@@ -350,5 +350,14 @@
  A <see cref="T:System.Data.DataRow" /> in the source sequence is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyToDataTable&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataTable" /> that contains copies of the <see cref="T:System.Data.DataRow" /> objects, given an input <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

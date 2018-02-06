@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewHitTestType" />
   </Docs>
   <Members>
     <Member MemberName="ColumnIndex">
@@ -56,6 +59,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnX">
@@ -74,6 +79,8 @@
         <summary>Gets the x-coordinate of the beginning of the column that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
         <value>The x-coordinate of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -97,6 +104,8 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> in which the values of the <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />, <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />, and <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" /> properties are the same as the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHitTestType" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -116,6 +125,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Nowhere">
@@ -140,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -168,6 +180,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RowY">
@@ -186,6 +200,8 @@
         <summary>Gets the y-coordinate of the top of the row that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
         <value>The y-coordinate of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -212,6 +228,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHitTestType" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -240,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHitTestType" />
       </Docs>
     </Member>
   </Members>

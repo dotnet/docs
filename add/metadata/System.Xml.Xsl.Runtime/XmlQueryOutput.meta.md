@@ -65,14 +65,14 @@ manager: "wpickett"
 uid: System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttribute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

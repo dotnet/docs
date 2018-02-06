@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.CacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
   
    
   
@@ -114,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="EnableKernelCacheForVaryByStar">
@@ -149,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="EnableOutputCache">
@@ -176,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
   
    
   
@@ -188,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="OmitVaryStar">
@@ -227,6 +234,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCachePolicy.SetOmitVaryStar(System.Boolean)" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -310,6 +320,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
   </Members>

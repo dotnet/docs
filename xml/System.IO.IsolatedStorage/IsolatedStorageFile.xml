@@ -1326,7 +1326,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope?displayProperty=nameWithType> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+>  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Application?displayProperty=nameWithType> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   
  ]]></format>
         </remarks>
@@ -1348,6 +1348,9 @@
  <paramref name="scope" /> contains the value <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />, but the permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1408,6 +1411,9 @@
  <paramref name="scope" /> contains the value <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />, but the permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1475,6 +1481,9 @@
  <paramref name="scope" /> contains the value <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />, but the permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1552,6 +1561,9 @@
  <paramref name="scope" /> contains <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />, but the permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1618,6 +1630,9 @@
  <paramref name="scope" /> contains the value <see cref="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />, but the permissions for the calling assembly cannot be determined.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+        <altmember cref="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForApplication">
@@ -2462,5 +2477,65 @@
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDirectoryNames">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enumerates the directories at the root of an isolated store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyFile">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies an existing file to a new file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the isolated storage scope and all its contents.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenFile">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a file using the specified sharing and access options.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFileNames">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enumerates the file names at the root of an isolated store</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetStore">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains isolated storage corresponding to the given application domain and assembly evidence objects and isolated storage scope.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

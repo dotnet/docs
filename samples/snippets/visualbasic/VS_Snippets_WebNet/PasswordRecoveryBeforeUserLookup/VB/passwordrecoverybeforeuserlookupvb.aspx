@@ -6,13 +6,13 @@
 <script runat="server">
 
     Function IsValidEmail(ByVal strIn As String) As Boolean
-        ' Return true if strIn is in valid e-mail format.
+        ' Return true if strIn is in valid email format.
         Return Regex.IsMatch(strIn, ("^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"))
     End Function
 
     Sub PasswordRecovery1_VerifyingUser(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.LoginCancelEventArgs)
         If Not IsValidEmail(PasswordRecovery1.UserName) Then
-            PasswordRecovery1.UserNameInstructionText = "You must enter a valid e-mail address."
+            PasswordRecovery1.UserNameInstructionText = "You must enter a valid email address."
             e.Cancel = True
         Else
             PasswordRecovery1.UserNameInstructionText = "Enter your User Name to receive your password."

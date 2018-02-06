@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "IALink"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IALink interface"
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
@@ -20,6 +18,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IALink Interface
 Helps in constructing .NET Framework assemblies. Among other things, the interface contains methods that assist in writing assembly manifests for multi-module assemblies, signing assemblies with strong names, and creating netmodules.  
@@ -82,6 +82,6 @@ Helps in constructing .NET Framework assemblies. Among other things, the interfa
  [SetNonAssemblyFlags Method](../../../../docs/framework/unmanaged-api/alink/setnonassemblyflags-method.md)  
   
 ## See Also  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

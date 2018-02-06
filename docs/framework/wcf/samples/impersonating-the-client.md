@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "impersonation, Windows Communication Foundation sample"
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Impersonating the Client
 The Impersonation sample demonstrates how to impersonate the caller application at the service so that the service can access system resources on behalf of the caller.  

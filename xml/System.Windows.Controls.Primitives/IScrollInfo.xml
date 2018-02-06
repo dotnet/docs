@@ -19,6 +19,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ScrollViewer" />
   </Docs>
   <Members>
     <Member MemberName="CanHorizontallyScroll">
@@ -263,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Rect" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelDown">
@@ -543,6 +545,7 @@
         <param name="offset">The degree to which content is horizontally offset from the containing viewport.</param>
         <summary>Sets the amount of horizontal offset.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="SetVerticalOffset">
@@ -564,6 +567,7 @@
         <param name="offset">The degree to which content is vertically offset from the containing viewport.</param>
         <summary>Sets the amount of vertical offset.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffset">

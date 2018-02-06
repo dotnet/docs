@@ -23,14 +23,16 @@
 ## Examples  
  The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> that overrides the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method so that when rows are added to a table, they are always added at the beginning of the table's row collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollection.cs#2)]
  [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollection.vb#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.HtmlControls.HtmlTable.CreateControlCollection" />
+    <altmember cref="T:System.Web.UI.ControlCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,8 +64,8 @@
 ## Examples  
  The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> collection that overrides the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method so that when rows are added to a table, they are always added at the beginning of the table's row collection. Notice how the custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method calls the base class's <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt%2A> method with the `index` parameter equal to 0.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollection.cs#2)]
  [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollection.vb#2)]  
@@ -71,6 +73,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -102,6 +105,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add(System.Web.UI.Control)" />
       </Docs>
     </Member>
   </Members>

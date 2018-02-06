@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewArray method [.NET Framework debugging]"
   - "ICorDebugEval::NewArray method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewArray Method
 Allocates a new array of the specified element type and dimensions.  

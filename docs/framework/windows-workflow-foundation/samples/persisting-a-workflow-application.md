@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: abcff14c-f047-4195-ba26-d27f4a82c24e
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Persisting a Workflow Application
 This sample demonstrates how to run a <xref:System.Activities.WorkflowApplication>, unload it when it goes idle, and then reload it to continue its execution.  

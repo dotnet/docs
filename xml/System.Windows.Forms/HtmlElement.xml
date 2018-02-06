@@ -63,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.Children" />
       </Docs>
     </Member>
     <Member MemberName="AppendChild">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.CreateElement(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -211,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.All" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -300,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetRectangle" />
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -348,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HtmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="DomElement">
@@ -383,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlDocument.DomDocument" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -795,6 +801,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -868,6 +875,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -904,6 +912,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Creating child elements on this element is not allowed.</exception>
+        <altmember cref="M:System.Windows.Forms.HtmlElement.AppendChild(System.Windows.Forms.HtmlElement)" />
+        <altmember cref="M:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)" />
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -940,6 +951,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The specified element cannot contain text (for example, an <c>IMG</c> element).</exception>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="InsertAdjacentElement">
@@ -1632,6 +1644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.OffsetParent" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1768,6 +1781,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="OuterText">
@@ -1796,6 +1810,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You cannot set text outside of this element.</exception>
+        <altmember cref="P:System.Windows.Forms.HtmlElement.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2131,7 +2146,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.GetElementsByTagName(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a method unique to the current element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

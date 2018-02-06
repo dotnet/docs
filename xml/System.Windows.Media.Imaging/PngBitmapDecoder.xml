@@ -13,6 +13,7 @@
   <Docs>
     <summary>Defines a decoder for Portable Network Graphics (PNG) encoded images.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,5 +101,14 @@
         <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> is not a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] encoded image.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.PngBitmapDecoder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

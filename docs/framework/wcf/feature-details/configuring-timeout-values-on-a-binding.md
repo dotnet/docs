@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b5c825a2-b48f-444a-8659-61751ff11d34
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Timeout Values on a Binding
 There are a number of timeout settings available in WCF bindings. Setting these timeout settings correctly can improve not only your service’s performance but also play a role in the usability and security of your service. The following timeouts are available on WCF bindings:  
@@ -30,52 +32,52 @@ There are a number of timeout settings available in WCF bindings. Setting these 
  Each of the settings discussed in this topic are made on the binding itself, either in code or configuration. The following code shows how to programmatically set timeouts on a WCF binding in the context of a self-hosted service.  
   
 ```csharp  
-public static void Main()  
-        {  
-            Uri baseAddress = new Uri("http://localhost/MyServer/MyService");  
-  
-            try  
-            {  
-                ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService));  
-  
-                WSHttpBinding binding = new WSHttpBinding();  
-                binding.OpenTimeout = new TimeSpan(0, 10, 0);  
-                binding.CloseTimeout = new TimeSpan(0, 10, 0);  
-                binding.SendTimeout = new TimeSpan(0, 10, 0);  
-                binding.ReceiveTimeout = new TimeSpan(0, 10, 0);  
-  
-                serviceHost.AddServiceEndpoint("ICalculator", binding, baseAddress);  
-                serviceHost.Open();  
-  
-                // The service can now be accessed.  
-                Console.WriteLine("The service is ready.");  
-                Console.WriteLine("Press <ENTER> to terminate service.");  
-                Console.WriteLine();  
-                Console.ReadLine();  
-  
-            }  
-            catch (CommunicationException ex)  
-            {  
-                // Handle exception ...  
-            }  
-        }  
+public static void Main()
+{
+    Uri baseAddress = new Uri("http://localhost/MyServer/MyService");
+    
+    try
+    {
+        ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService));
+        
+        WSHttpBinding binding = new WSHttpBinding();
+        binding.OpenTimeout = new TimeSpan(0, 10, 0);
+        binding.CloseTimeout = new TimeSpan(0, 10, 0);
+        binding.SendTimeout = new TimeSpan(0, 10, 0);
+        binding.ReceiveTimeout = new TimeSpan(0, 10, 0);
+        
+        serviceHost.AddServiceEndpoint("ICalculator", binding, baseAddress);
+        serviceHost.Open();
+        
+        // The service can now be accessed.
+        Console.WriteLine("The service is ready.");
+        Console.WriteLine("Press <ENTER> to terminate service.");
+        Console.WriteLine();
+        Console.ReadLine();
+    }
+    catch (CommunicationException ex)
+    {
+        // Handle exception ...
+    }
+}
 ```  
   
  The following example shows how to configure timeouts on a binding in a configuration file.  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <bindings>  
-      <wsHttpBinding>  
-        <binding openTimeout="00:10:00"   
-                 closeTimeout="00:10:00"   
-                 sendTimeout="00:10:00"   
-                 receiveTimeout="00:10:00">  
-        </binding>  
-      </wsHttpBinding>  
-    </bindings>  
-  </system.serviceModel>  
+<configuration>
+  <system.serviceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding openTimeout="00:10:00" 
+                 closeTimeout="00:10:00" 
+                 sendTimeout="00:10:00" 
+                 receiveTimeout="00:10:00">
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+  </system.serviceModel>
+</configuration>
 ```  
   
  More information about these settings can be found in the documentation for the <xref:System.ServiceModel.Channels.Binding> class.  

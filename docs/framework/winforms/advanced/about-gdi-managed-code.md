@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "GDI+, about GDI+"
   - "GDI+"
-  - "graphics, GDI+"
+  - "graphics [Windows Forms], GDI+"
 ms.assetid: a98a76ab-e455-49c9-891c-0491ac932f2c
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # About GDI+ Managed Code
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the portion of the Windows operating system that provides two-dimensional vector graphics, imaging, and typography. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] improves on [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] (the Graphics Device Interface included with earlier versions of Windows) by adding new features and by optimizing existing features.  

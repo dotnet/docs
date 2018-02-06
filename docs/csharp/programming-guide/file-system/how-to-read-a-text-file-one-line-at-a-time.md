@@ -1,16 +1,10 @@
 ---
 title: "How to: Read a Text File One Line at a Time (Visual C#)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "ReadLine method [C#]"
   - "reading text files, line by line"
@@ -19,21 +13,6 @@ ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read a Text File One Line at a Time (Visual C#)
 This example reads the contents of a text file, one line at a time, into a string using the `ReadLine` method of the `StreamReader` class. Each text line is stored into the string `line` and displayed on the screen.  
@@ -73,6 +52,6 @@ System.Console.ReadLine();
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `myFile.cs` may not be a C# source file.  
   
 ## See Also  
- <xref:System.IO?displayProperty=nameWithType>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ <xref:System.IO?displayProperty=nameWithType>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

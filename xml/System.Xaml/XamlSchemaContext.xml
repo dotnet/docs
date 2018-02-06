@@ -362,6 +362,7 @@
         <exception cref="T:System.ArgumentException">A component of <paramref name="xamlTypeName" /> (<see cref="P:System.Xaml.Schema.XamlTypeName.Name" /> or <see cref="P:System.Xaml.Schema.XamlTypeName.Namespace" />) is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xamlTypeName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xaml.Schema.XamlTypeName" />
       </Docs>
     </Member>
     <Member MemberName="GetXamlType">
@@ -515,5 +516,23 @@
           <paramref name="xamlNamespace" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetXamlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.XamlType" /> that is based on either a CLR or XAML type identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

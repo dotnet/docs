@@ -35,13 +35,20 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
+ [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
+ [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
+[!code-aspx-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]
+[!code-aspx-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+    <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+    <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
+    <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
+    <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +86,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is not between -32768 and 32767.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,6 +125,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is not between -32768 and 32767.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,6 +176,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified length is not between -32768 and 32767.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a valid CSS-compliant unit expression.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -204,6 +218,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is not between -32768 and 32767.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -255,6 +271,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified length is not between -32768 and 32767.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a valid CSS-compliant unit expression.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -324,6 +342,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -350,6 +369,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -400,10 +420,12 @@
         <Parameter Name="n" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="n">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="n">A 32-bit signed integer that represents the length of the <see cref="T:System.Web.UI.WebControls.Unit" />.</param>
+        <summary>Implicitly creates a <see cref="T:System.Web.UI.WebControls.Unit" /> of type <see cref="F:System.Web.UI.WebControls.UnitType.Pixel" /> from the specified 32-bit unsigned integer.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> of type <see cref="F:System.Web.UI.WebControls.UnitType.Pixel" /> that represents the 32-bit unsigned integer specified by the <paramref name="n" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Pixel%28System.Int32%29?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -469,13 +491,17 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
+ [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
+ [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
+[!code-aspx-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]
+[!code-aspx-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -510,6 +536,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Percentage">
@@ -542,6 +573,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -575,12 +610,16 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Point(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -613,6 +652,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Parse(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Pixel(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.Unit.Percentage(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -661,6 +704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -704,6 +748,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -732,6 +778,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.UnitType" />
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -757,7 +805,35 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Unit.Type" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string to a <see cref="T:System.Web.UI.WebControls.Unit" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Unit" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Web.UI.WebControls.Unit" /> to a string equivalent.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

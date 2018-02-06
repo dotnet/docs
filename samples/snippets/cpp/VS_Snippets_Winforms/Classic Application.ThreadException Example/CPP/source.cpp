@@ -31,7 +31,7 @@ public:
          // Creates an instance of the methods that will handle the exception.
          CustomExceptionHandler ^ eh = gcnew CustomExceptionHandler;
          
-         // Adds the event handler to to the event.
+         // Adds the event handler to the event.
          Application::ThreadException += gcnew ThreadExceptionEventHandler( eh, &Form1::CustomExceptionHandler::OnThreadException );
          
          // Runs the application.

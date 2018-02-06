@@ -58,6 +58,10 @@
     <block subset="none" type="overrides">
       <para>A compiler error occurs if this class is specified as the base class of another class.</para>
     </block>
+    <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+    <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventHandler" />
+    <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Component">

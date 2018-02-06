@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsManageability" />
+    <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SettingsManageability" />
       </Docs>
     </Member>
     <Member MemberName="Manageability">
@@ -89,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.SettingsManageabilityAttribute.#ctor(System.Configuration.SettingsManageability)" />
       </Docs>
     </Member>
   </Members>

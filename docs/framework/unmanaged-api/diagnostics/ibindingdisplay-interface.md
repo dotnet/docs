@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IBindingDisplay"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IBindingDisplay interface [.NET Framework debugging]"
 ms.assetid: 3367166f-31fe-43d0-8107-2e786f984e50
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IBindingDisplay Interface
 Provides methods that display current binding information about the running application.  

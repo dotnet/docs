@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValueEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValueEnum interface [.NET Framework debugging]"
 ms.assetid: 88989482-a09f-4bd0-9adb-16f47b0291fd
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValueEnum Interface1
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugValue" arrays.  

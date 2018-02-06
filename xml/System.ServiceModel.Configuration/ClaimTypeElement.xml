@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a configuration element that contains the type of claim. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.IdentityModel.Claims.Claim.ClaimType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,5 +126,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ClaimTypeElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

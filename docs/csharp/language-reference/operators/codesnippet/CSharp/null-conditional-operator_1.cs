@@ -15,7 +15,7 @@
             int? x = null;
 
             // Set y to the value of x if x is NOT null; otherwise,
-            // if x = null, set y to -1.
+            // if x == null, set y to -1.
             int y = x ?? -1;
 
             // Assign i to return value of the method if the method's result

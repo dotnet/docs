@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "numeric format strings [.NET Framework]"
   - "formatting [.NET Framework], numbers"
@@ -22,6 +26,9 @@ caps.latest.revision: 54
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Custom Numeric Format Strings
 You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that is not a [standard numeric format string](../../../docs/standard/base-types/standard-numeric-format-strings.md).  
@@ -227,8 +234,8 @@ You can create a custom numeric format string, which consists of one or more cus
  [Back to table](#table)  
   
 ## See Also  
- <xref:System.Globalization.NumberFormatInfo>   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)   
- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)   
+ <xref:System.Globalization.NumberFormatInfo>  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+ [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
+ [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
  [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

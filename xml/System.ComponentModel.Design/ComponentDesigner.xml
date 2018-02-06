@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +147,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -207,7 +212,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -235,6 +240,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Design.CheckoutException">An attempt to check out a file that is checked into a source code management program failed.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -260,7 +266,7 @@
   
  Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -366,6 +372,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="InitializeExistingComponent">
@@ -482,6 +490,8 @@
         <summary>Gets the <see cref="T:System.ComponentModel.InheritanceAttribute" /> of the specified <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.</summary>
         <returns>The <see cref="T:System.ComponentModel.InheritanceAttribute" /> of the specified designer.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="OnSetComponentDefaults">
@@ -574,6 +584,8 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="attributes" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation after you perform your own filtering. In addition, you must not remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PostFilterAttributes(System.Collections.IDictionary)" /> method. Instead, change attributes to hide items. You may also remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PreFilterAttributes(System.Collections.IDictionary)" /> method.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="PostFilterEvents">
@@ -607,6 +619,8 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation after you perform your own filtering. In addition, you must not remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents(System.Collections.IDictionary)" /> method. Instead, change attributes to hide items. You may also remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PreFilterEvents(System.Collections.IDictionary)" /> method.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="PostFilterProperties">
@@ -640,6 +654,9 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation after you perform your own filtering. In addition, you must not remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PostFilterProperties(System.Collections.IDictionary)" /> method. Instead, change attributes to hide items. You may also remove items in the <see cref="M:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterAttributes">
@@ -673,6 +690,8 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="attributes" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterEvents">
@@ -706,6 +725,8 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -739,6 +760,8 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you override this method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="RaiseComponentChanged">
@@ -771,6 +794,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="RaiseComponentChanging">
@@ -799,6 +824,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
+        <altmember cref="T:System.ComponentModel.MemberDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="ShadowProperties">
@@ -1065,7 +1092,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

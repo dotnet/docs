@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.HttpMethodAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -238,5 +239,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInitializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns an initializer for the specified method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetInitializers">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns an array of initializer objects corresponding to an input array of method definitions.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

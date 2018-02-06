@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 88d83720-ca38-4b2c-86a6-f149ed1d89ec
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Known Types
 This sample demonstrates how to specify information about derived types in a data contract. Data contracts allow you to pass structured data to and from services. In object-oriented programming, a type that inherits from another type can be used in place of the original type. In service-oriented programming, schemas rather than types are communicated and therefore, the relationship between types is not preserved. The <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute allows information about derived types to be included in the data contract. If this mechanism is not used, a derived type cannot be sent or received where a base type is expected.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugManager interface [.NET Framework hosting]"
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager Interface
 Provides methods that allow a host to associate a set of tasks with an identifier and a friendly name.  

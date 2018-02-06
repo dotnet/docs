@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlFieldHeaderCell" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor uses the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType> element defined by its base class to render the cell. The <xref:System.Web.UI.WebControls.DataControlField> object passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
+ This constructor uses the <xref:System.Web.UI.HtmlTextWriterTag.Td?displayProperty=nameWithType> element defined by its base class to render the cell. The <xref:System.Web.UI.WebControls.DataControlField> object passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
   
  ]]></format>
         </remarks>
@@ -107,6 +109,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ControlStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ShowHeader" />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -128,5 +134,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

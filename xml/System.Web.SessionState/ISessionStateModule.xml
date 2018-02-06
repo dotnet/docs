@@ -32,7 +32,7 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to to release the session state.</param>
+        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to release the session state.</param>
         <summary>Releases the session state for the specified <see cref="T:System.Web.HttpContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -53,7 +53,7 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to to release the session state.</param>
+        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to release the session state.</param>
         <summary>Asynchronously releases the session state for the specified <see cref="T:System.Web.HttpContext" />.</summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> for the asynchronous operation.</returns>
         <remarks>To be added.</remarks>

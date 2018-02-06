@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.IImplicitResourceProvider" />
+    <altmember cref="T:System.Web.Compilation.IResourceProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +58,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.IImplicitResourceProvider" />
+        <altmember cref="T:System.Web.Compilation.IResourceProvider" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.IImplicitResourceProvider" />
+        <altmember cref="T:System.Web.Compilation.IResourceProvider" />
       </Docs>
     </Member>
     <Member MemberName="KeyPrefix">
@@ -146,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.IImplicitResourceProvider" />
+        <altmember cref="T:System.Web.Compilation.IResourceProvider" />
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -182,5 +190,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

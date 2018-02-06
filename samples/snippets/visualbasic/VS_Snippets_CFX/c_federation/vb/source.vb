@@ -283,7 +283,7 @@ Public Class STS_B_AuthorizationManager
         End Function
 
         ' This helper method performs a rudimentary check for whether 
-        'a given e-mail is valid.
+        'a given email is valid.
         Private Shared Function IsValidEmailAddress(ByVal emailAddress As String) As Boolean
             Dim splitEmail() = emailAddress.Split("@"c)
             If splitEmail.Length <> 2 Then

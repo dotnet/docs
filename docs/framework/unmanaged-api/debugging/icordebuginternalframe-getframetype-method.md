@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame::GetFrameType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFrameType method [.NET Framework debugging]"
   - "ICorDebugInternalFrame::GetFrameType method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugInternalFrame::GetFrameType Method
 Gets the type of this internal frame.  

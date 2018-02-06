@@ -58,7 +58,7 @@
     }
     // </Snippet3>
 
-    // The the Submit button is clicked
+    // The Submit button is clicked
     protected void Command1_OnSubmit(object sender, EventArgs e)
     {
         message2.Text = "FORM RESULTS:";

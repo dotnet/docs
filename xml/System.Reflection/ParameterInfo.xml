@@ -143,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ParameterAttributes" />
       </Docs>
     </Member>
     <Member MemberName="AttrsImpl">
@@ -710,13 +711,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
@@ -813,13 +814,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
@@ -877,13 +878,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
@@ -1040,7 +1041,7 @@
 ## Remarks  
  To get the module, use the <xref:System.Reflection.MemberInfo.Module%2A> property of the member that defines this parameter.  
   
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
  ]]></format>
         </remarks>
@@ -1228,6 +1229,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.ParameterInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="PositionImpl">
@@ -1547,5 +1549,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the custom attributes applied to this parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

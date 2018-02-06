@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use a Cached Element as a Brush
 Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached element efficiently. To cache an element, create a new instance of the <xref:System.Windows.Media.BitmapCache> class and assign it to the element's <xref:System.Windows.UIElement.CacheMode%2A> property.  
@@ -29,7 +31,7 @@ Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached ele
  [!code-xaml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushxaml)]  
   
 ## See Also  
- <xref:System.Windows.Media.BitmapCache>   
- <xref:System.Windows.Media.BitmapCacheBrush>   
- <xref:System.Windows.UIElement.CacheMode%2A>   
+ <xref:System.Windows.Media.BitmapCache>  
+ <xref:System.Windows.Media.BitmapCacheBrush>  
+ <xref:System.Windows.UIElement.CacheMode%2A>  
  [How to: Improve Rendering Performance by Caching an Element](../../../../docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md)

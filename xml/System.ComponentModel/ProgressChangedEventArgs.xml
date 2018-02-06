@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.BackgroundWorker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
         <param name="userState">A unique user state.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProgressChangedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="ProgressPercentage">
@@ -109,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -149,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
   </Members>

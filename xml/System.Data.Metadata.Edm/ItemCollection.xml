@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Item Collections (Metadata)](http://msdn.microsoft.com/en-us/3051a40a-ff45-42f8-8f93-7545e427a404).  
+ For more information, see [Item Collections (Metadata)](http://msdn.microsoft.com/library/3051a40a-ff45-42f8-8f93-7545e427a404).  
   
  ]]></format>
     </remarks>
@@ -496,5 +496,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFunctions">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a strongly typed item by using the specified identity from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name in this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item that is specified by the identity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

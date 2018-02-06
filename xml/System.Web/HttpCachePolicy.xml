@@ -57,8 +57,8 @@
 ## Examples  
  The following code example demonstrates how to add a delegate to validate a request based on query string values.  
   
- <!-- TODO: review snippet reference [!code-csharp[Cache Validation Callback#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Cache validation callback/CS/ValidationCallbackcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Cache Validation Callback#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Cache validation callback/VB/ValidationCallbackvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Cache Validation Callback#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Cache validation callback/CS/ValidationCallbackcs.aspx#1)]
+ [!code-aspx-vb[Cache Validation Callback#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Cache validation callback/VB/ValidationCallbackvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -446,7 +446,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the cache has a sliding expiration policy.</summary>
         <returns>
-          <see langword="true" /> if the the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has a sliding expiration policy; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the HTTP cache has been modified.</summary>
         <returns>
-          <see langword="true" /> if the the cache has been modified; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the cache has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
       <Docs>
         <summary>Gets a value which specifies whether the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client that invalidate the cache.</summary>
         <returns>
-          <see langword="true" /> if the the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the ASP.NET cache should ignore HTTP <see langword="Cache-Control" /> headers sent by the client; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,8 +524,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method to direct the client to store the responses in its history in a custom <xref:System.Web.HttpCachePolicy>.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpCachePolicySetAllowResponseInBrowserHistory#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicySetAllowResponseInBrowserHistory/CS/httpcachepolicy_setallowresponseinbrowserhistorycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCachePolicySetAllowResponseInBrowserHistory#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicySetAllowResponseInBrowserHistory/VB/httpcachepolicy_setallowresponseinbrowserhistoryvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpCachePolicySetAllowResponseInBrowserHistory#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicySetAllowResponseInBrowserHistory/CS/httpcachepolicy_setallowresponseinbrowserhistorycs.aspx#1)]
+ [!code-aspx-vb[HttpCachePolicySetAllowResponseInBrowserHistory#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicySetAllowResponseInBrowserHistory/VB/httpcachepolicy_setallowresponseinbrowserhistoryvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -908,8 +908,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.HttpCachePolicy.SetNoStore%2A> method of the <xref:System.Web.HttpCachePolicy> class to direct the client not to store the responses in its history.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpCachePolicySetNoStore#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicySetNoStore/CS/httpcachepolicy_setnostorecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCachePolicySetNoStore#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicySetNoStore/VB/httpcachepolicy_setnostorevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpCachePolicySetNoStore#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicySetNoStore/CS/httpcachepolicy_setnostorecs.aspx#1)]
+ [!code-aspx-vb[HttpCachePolicySetNoStore#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicySetNoStore/VB/httpcachepolicy_setnostorevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1068,6 +1068,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="revalidation" /> is not one of the enumeration values.</exception>
+        <altmember cref="T:System.Web.HttpCacheRevalidation" />
       </Docs>
     </Member>
     <Member MemberName="SetSlidingExpiration">
@@ -1145,8 +1146,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.HttpCachePolicy.SetValidUntilExpires%2A> method to instruct that any cache invalidation headers sent by the client are ignored.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpCachePolicy_SetValidUntilExpires#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicy_SetValidUntilExpires/CS/httpcachepolicy_setvaliduntilexpirescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCachePolicy_SetValidUntilExpires#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicy_SetValidUntilExpires/VB/httpcachepolicy_setvaliduntilexpiresvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpCachePolicy_SetValidUntilExpires#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCachePolicy_SetValidUntilExpires/CS/httpcachepolicy_setvaliduntilexpirescs.aspx#1)]
+ [!code-aspx-vb[HttpCachePolicy_SetValidUntilExpires#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCachePolicy_SetValidUntilExpires/VB/httpcachepolicy_setvaliduntilexpiresvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1251,11 +1252,13 @@
 ## Examples  
  The following example shows how to enable a dynamically compressed response for a page to be served from the output cache. The encoding that is acceptable is "gzip" and is set by using the `VaryByContentEncodings` attribute of the  directive. If the Web server that is hosting the page does not have dynamic compression enabled, the output cache will not have a cached response that is based on the specified content encoding.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/VB/default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.ContentEncoding" />
+        <altmember cref="T:System.Web.HttpCacheVaryByContentEncodings" />
       </Docs>
     </Member>
     <Member MemberName="VaryByHeaders">
@@ -1283,6 +1286,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCachePolicy.SetOmitVaryStar(System.Boolean)" />
+        <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
       </Docs>
     </Member>
     <Member MemberName="VaryByParams">
@@ -1310,7 +1315,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCacheVaryByParams" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCacheability">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see langword="Cache-Control" /> HTTP header. The <see langword="Cache-Control" /> HTTP header controls how documents are to be cached on the network.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

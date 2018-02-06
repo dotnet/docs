@@ -1,7 +1,7 @@
 ---
 title: "Retrieving the Paragraphs and Their Styles (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
 caps.latest.revision: 3
 author: dotnet-bot

@@ -18,7 +18,7 @@
 ## Remarks  
  Handle the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> and <xref:System.Windows.Forms.DataGridView.CellValuePushed> events to implement virtual mode in the <xref:System.Windows.Forms.DataGridView> control. For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +62,9 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than 0.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValueNeeded(System.Windows.Forms.DataGridViewCellValueEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValuePushed(System.Windows.Forms.DataGridViewCellValueEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -91,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Columns" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -125,6 +135,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -159,6 +171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
   </Members>

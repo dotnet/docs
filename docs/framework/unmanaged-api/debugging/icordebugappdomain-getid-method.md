@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetId method, ICorDebugAppDomain interface [.NET Framework debugging]"
   - "ICorDebugAppDomain::GetId method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetId Method
 Gets the unique identifier of the application domain.  

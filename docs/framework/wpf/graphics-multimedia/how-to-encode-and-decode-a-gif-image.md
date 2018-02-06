@@ -9,18 +9,24 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "encoding GIF images"
-  - "encoding image formats"
-  - "decoding GIF images"
-  - "decoding image formats"
-  - "GIF decoding"
-  - "GIF encoding"
+  - "encoding GIF images [WPF]"
+  - "encoding image formats [WPF]"
+  - "decoding GIF images [WPF]"
+  - "decoding image formats [WPF]"
+  - "GIF decoding [WPF]"
+  - "GIF encoding [WPF]"
 ms.assetid: 9cdd9ec7-71eb-444b-b9e3-991958461163
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Encode and Decode a GIF Image
 The following examples show how to decode and encode a [!INCLUDE[TLA#tla_gif](../../../../includes/tlasharptla-gif-md.md)] image using the specific <xref:System.Windows.Media.Imaging.GifBitmapDecoder> and <xref:System.Windows.Media.Imaging.GifBitmapEncoder> objects.  

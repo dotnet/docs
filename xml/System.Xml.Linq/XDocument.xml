@@ -27,10 +27,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml.Linq/XLinq.cs#3354dac0913e417b). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
@@ -39,8 +35,7 @@
  The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
   
 ```csharp  
-  
-                XDocument srcTree = new XDocument(  
+XDocument srcTree = new XDocument(  
     new XComment("This is a comment"),  
     new XElement("Root",  
         new XElement("Child1", "data1"),  
@@ -66,8 +61,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XDocument = _   
+Dim srcTree As XDocument = _   
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <!--This is a comment-->  
         <Root>  
@@ -94,8 +88,7 @@ Console.WriteLine(doc)
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment-->  
+<!--This is a comment-->  
 <Root>  
   <Child1>data1</Child1>  
   <Child2>data2</Child2>  
@@ -106,6 +99,10 @@ Console.WriteLine(doc)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Linq.XNamespace" />
+    <altmember cref="T:System.Xml.Linq.XDeclaration" />
+    <altmember cref="T:System.Xml.Linq.XElement" />
+    <altmember cref="T:System.Xml.Linq.XNode" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -132,8 +129,7 @@ Console.WriteLine(doc)
  The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
   
 ```csharp  
-  
-                XDocument srcTree = new XDocument(  
+XDocument srcTree = new XDocument(  
     new XComment("This is a comment"),  
     new XElement("Root",  
         new XElement("Child1", "data1"),  
@@ -159,8 +155,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XDocument = _   
+Dim srcTree As XDocument = _   
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <!--This is a comment-->  
         <Root>  
@@ -187,8 +182,7 @@ Console.WriteLine(doc)
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment-->  
+<!--This is a comment-->  
 <Root>  
   <Child1>data1</Child1>  
   <Child2>data2</Child2>  
@@ -199,6 +193,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -238,32 +233,29 @@ Console.WriteLine(doc)
  The following example creates a new document, and then adds a comment and an element to it.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument();  
+XDocument doc = new XDocument();  
 doc.Add(new XComment("This is a comment"));  
 doc.Add(new XElement("Root", "content"));  
 Console.WriteLine(doc);  
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = New XDocument()  
+Dim doc As XDocument = New XDocument()  
 doc.Add(<!--This is a comment-->)  
 doc.Add(<Root>content</Root>)  
 Console.WriteLine(doc)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment-->  
+<!--This is a comment-->  
 <Root>content</Root>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -312,8 +304,7 @@ Console.WriteLine(doc)
  The following example creates a document, and then adds a comment and an element to it. It then composes another document using the results of a query.  
   
 ```csharp  
-  
-                XDocument srcTree = new XDocument(  
+XDocument srcTree = new XDocument(  
     new XComment("This is a comment"),  
     new XElement("Root",  
         new XElement("Child1", "data1"),  
@@ -339,8 +330,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XDocument = _  
+Dim srcTree As XDocument = _  
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <!--This is a comment-->  
         <Root>  
@@ -367,8 +357,7 @@ Console.WriteLine(doc)
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment-->  
+<!--This is a comment-->  
 <Root>  
   <Child1>data1</Child1>  
   <Child2>data2</Child2>  
@@ -379,6 +368,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -417,6 +407,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -467,8 +458,7 @@ Console.WriteLine(doc)
  The following example uses this constructor to create a document.  
   
 ```csharp  
-  
-                XDocument srcTree = new XDocument(  
+XDocument srcTree = new XDocument(  
     new XComment("This is a comment"),  
     new XElement("Root",  
         new XElement("Child1", "data1"),  
@@ -496,8 +486,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"));
 ```  
   
 ```vb  
-  
-                Dim srcTree As XDocument = _   
+Dim srcTree As XDocument = _   
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <!--This is a comment-->  
         <Root>  
@@ -525,8 +514,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <!--This is a new comment-->  
 <Root>  
   <Child1>data1</Child1>  
@@ -538,6 +526,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName="Declaration">
@@ -578,8 +567,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
  The following example uses this property to retrieve the XML declaration of a document.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  
     new XComment("This is a comment"),  
     new XElement("Root", "content")  
@@ -589,8 +577,7 @@ Console.WriteLine(doc.Declaration);
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _  
+Dim doc As XDocument = _  
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
         <!--This is a comment-->  
         <Root>content</Root>  
@@ -601,12 +588,12 @@ Console.WriteLine(doc.Declaration)
  This example produces the following output:  
   
 ```  
-  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Linq.XDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -655,8 +642,7 @@ Console.WriteLine(doc.Declaration)
  Visual Basic does not support document types within XML literals. However, it is possible to create a document that contains a document type by first creating the document using XML literals, and then creating and adding an <xref:System.Xml.Linq.XDocumentType> node in the appropriate place in the XML tree.  
   
 ```csharp  
-  
-                string internalSubset = @"<!ELEMENT Pubs (Book+)>  
+string internalSubset = @"<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
 <!ELEMENT Title (#PCDATA)>  
 <!ELEMENT Author (#PCDATA)>";  
@@ -687,8 +673,7 @@ doc.Save("test.xml");
 ```  
   
 ```vb  
-  
-                Dim internalSubset = _  
+Dim internalSubset = _  
         "<!ELEMENT Pubs (Book+)>" & Environment.NewLine & _  
         "<!ELEMENT Book (Title, Author)>" & Environment.NewLine & _  
         "<!ELEMENT Title (#PCDATA)>" & Environment.NewLine & _  
@@ -717,8 +702,7 @@ Console.WriteLine(doc)
  This example produces the following output:  
   
 ```xml  
-  
-                <!--This is a comment.-->  
+<!--This is a comment.-->  
 <?xml-stylesheet href='mystyle.css' title='Compact' type='text/css'?>  
 <!DOCTYPE Pubs [<!ELEMENT Pubs (Book+)>  
 <!ELEMENT Book (Title, Author)>  
@@ -739,6 +723,8 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Linq.XDocumentType" />
+        <altmember cref="P:System.Xml.Linq.XDocument.NodeType" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -759,6 +745,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -851,29 +840,28 @@ Console.WriteLine(doc)
  The following example creates a document from a <xref:System.IO.StringReader>.  
   
 ```csharp  
-  
-                TextReader tr = new StringReader("<Root>Content</Root>");  
+TextReader tr = new StringReader("<Root>Content</Root>");  
 XDocument doc = XDocument.Load(tr);  
 Console.WriteLine(doc);  
 ```  
   
 ```vb  
-  
-                Dim tr As TextReader = New StringReader("<Root>Content</Root>")  
+Dim tr As TextReader = New StringReader("<Root>Content</Root>")  
 Dim doc As XDocument = XDocument.Load(tr)  
 Console.WriteLine(doc)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
 <Root>Content</Root>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -926,22 +914,19 @@ Console.WriteLine(doc)
  [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
   
 ```csharp  
-  
-                XDocument doc = XDocument.Load("PurchaseOrder.xml");  
+XDocument doc = XDocument.Load("PurchaseOrder.xml");  
 Console.WriteLine(doc);  
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = XDocument.Load("PurchaseOrder.xml")  
+Dim doc As XDocument = XDocument.Load("PurchaseOrder.xml")  
 Console.WriteLine(doc)  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">  
+<PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">  
   <Address Type="Shipping">  
     <Name>Ellen Adams</Name>  
     <Street>123 Maple Street</Street>  
@@ -978,6 +963,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1024,8 +1012,7 @@ Console.WriteLine(doc)
  The following example creates a DOM document, creates an <xref:System.Xml.XmlNodeReader> from the DOM document, creates an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.XmlNodeReader>.  
   
 ```csharp  
-  
-                // Create a DOM document with some content.  
+// Create a DOM document with some content.  
 XmlDocument doc = new XmlDocument();  
 XmlElement child = doc.CreateElement("Child");  
 child.InnerText = "child contents";  
@@ -1062,20 +1049,21 @@ Using nodeReader = New XmlNodeReader(doc)
     Dim xRoot As XDocument = XDocument.Load(nodeReader)  
     Console.WriteLine(xRoot)  
 End Using  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>child contents</Child>  
 </Root>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1186,8 +1174,7 @@ End Using
  The following example creates a document from a <xref:System.IO.StringReader>.  
   
 ```csharp  
-  
-                TextReader sr;  
+TextReader sr;  
 int whiteSpaceNodes;  
   
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
@@ -1214,8 +1201,7 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
 ```  
   
 ```vb  
-  
-                Dim sr As TextReader  
+Dim sr As TextReader  
 Dim whiteSpaceNodes As Integer  
   
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
@@ -1244,13 +1230,15 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
  This example produces the following output:  
   
 ```  
-  
-                Count of white space nodes (not preserving whitespace): 0  
+Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1315,8 +1303,7 @@ Count of white space nodes (preserving whitespace): 3
  [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
   
 ```csharp  
-  
-                XDocument doc1 = XDocument.Load("PurchaseOrder.xml", LoadOptions.None);  
+XDocument doc1 = XDocument.Load("PurchaseOrder.xml", LoadOptions.None);  
 Console.WriteLine("nodes if not preserving whitespace: {0}", doc1.DescendantNodes().Count());  
   
 XDocument doc2 = XDocument.Load("PurchaseOrder.xml", LoadOptions.PreserveWhitespace);  
@@ -1324,25 +1311,25 @@ Console.WriteLine("nodes if preserving whitespace: {0}", doc2.DescendantNodes().
 ```  
   
 ```vb  
-  
-                Dim doc1 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.None)  
+Dim doc1 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.None)  
 Console.WriteLine("nodes if not preserving whitespace: {0}", doc1.DescendantNodes().Count())  
   
 Dim doc2 As XDocument = XDocument.Load("PurchaseOrder.xml", LoadOptions.PreserveWhitespace)  
 Console.WriteLine("nodes if preserving whitespace: {0}", doc2.DescendantNodes().Count())  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                nodes if not preserving whitespace: 48  
+nodes if not preserving whitespace: 48  
 nodes if preserving whitespace: 82  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1403,8 +1390,7 @@ nodes if preserving whitespace: 82
  The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
   
 ```csharp  
-  
-                string markup =  
+string markup =  
 @"<Root>  
     <Child>  
         <GrandChild/>  
@@ -1436,8 +1422,7 @@ using (XmlReader nodeReader = XmlReader.Create(new StringReader(markup)))
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" & Environment.NewLine & _  
     "    <Child>" & Environment.NewLine & _  
     "        <GrandChild/>" & Environment.NewLine & _  
@@ -1472,8 +1457,7 @@ End Using
  This example produces the following output:  
   
 ```  
-  
-                Element Name        Line Position  
+Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
   Child             2    6  
@@ -1482,6 +1466,9 @@ Root                1    2
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -1600,8 +1587,7 @@ Root                1    2
  The following example shows the use of this property.  
   
 ```csharp  
-  
-                // Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
+// Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
 XDocument xmlTree = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  
     new XElement("Root", "content")  
@@ -1610,8 +1596,7 @@ Console.WriteLine(xmlTree.NodeType);
 ```  
   
 ```vb  
-  
-                ' Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
+' Note that this property uses XmlNodeType, which is in the System.Xml namespace.  
 Dim xmlTree As XDocument = _  
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>  
         <Root>content</Root>  
@@ -1621,12 +1606,13 @@ Console.WriteLine("{0}", xmlTree.NodeType)
  This example produces the following output:  
   
 ```  
-  
 Document  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
+        <altmember cref="P:System.Xml.Linq.XDocument.DocumentType" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -1649,8 +1635,7 @@ Document
  The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XDocument>.  
   
 ```csharp  
-  
-                string str =  
+string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
@@ -1661,8 +1646,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim str As String = _  
+Dim str As String = _  
     "<?xml version= '1.0'?>" & _  
     "<!-- comment at the root level -->" & _  
     "<Root>" & _  
@@ -1671,14 +1655,12 @@ Console.WriteLine(doc);
   
 Dim doc As XDocument = XDocument.Parse(str)  
 Console.WriteLine(doc)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <!-- comment at the root level -->  
+<!-- comment at the root level -->  
 <Root>  
   <Child>Content</Child>  
 </Root>  
@@ -1686,6 +1668,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -1734,8 +1719,7 @@ Console.WriteLine(doc)
  The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XDocument>.  
   
 ```csharp  
-  
-                string str =  
+string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
@@ -1746,8 +1730,7 @@ Console.WriteLine(doc);
 ```  
   
 ```vb  
-  
-                Dim str As String = _  
+Dim str As String = _  
     "<?xml version= '1.0'?>" & _  
     "<!-- comment at the root level -->" & _  
     "<Root>" & _  
@@ -1756,14 +1739,12 @@ Console.WriteLine(doc);
   
 Dim doc As XDocument = XDocument.Parse(str)  
 Console.WriteLine(doc)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <!-- comment at the root level -->  
+<!-- comment at the root level -->  
 <Root>  
   <Child>Content</Child>  
 </Root>  
@@ -1771,6 +1752,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1831,8 +1815,7 @@ Console.WriteLine(doc)
  The following example parses a string into an <xref:System.Xml.Linq.XDocument>.  
   
 ```csharp  
-  
-                string str =  
+string str =  
 @"<?xml version=""1.0""?>  
 <!-- comment at the root level -->  
 <Root>  
@@ -1845,8 +1828,7 @@ Console.WriteLine("nodes when not preserving whitespace: {0}", doc2.DescendantNo
 ```  
   
 ```vb  
-  
-                Dim str As String = _  
+Dim str As String = _  
 "<?xml version= '1.0'?>" & Environment.NewLine & _  
 "<!-- comment at the root level -->" & Environment.NewLine & _  
 "<Root>" & Environment.NewLine & _  
@@ -1857,19 +1839,20 @@ Dim doc1 As XDocument = XDocument.Parse(str, LoadOptions.PreserveWhitespace)
 Console.WriteLine("nodes when preserving whitespace: {0}", doc1.DescendantNodes().Count())  
 Dim doc2 As XDocument = XDocument.Parse(str, LoadOptions.None)  
 Console.WriteLine("nodes when not preserving whitespace: {0}", doc2.DescendantNodes().Count())  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                nodes when preserving whitespace: 8  
+nodes when preserving whitespace: 8  
 nodes when not preserving whitespace: 4  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -1910,8 +1893,7 @@ nodes when not preserving whitespace: 4
  The following example uses this property to get the root element of a document.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XComment("This is a comment."),  
     new XElement("Pubs",   
         new XElement("Book",  
@@ -1929,8 +1911,7 @@ Console.WriteLine(doc.Root.Name.ToString());
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _  
+Dim doc As XDocument = _  
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
     <!--This is a comment.-->  
     <Pubs>  
@@ -1946,13 +1927,11 @@ Console.WriteLine(doc.Root.Name.ToString());
     </Pubs>  
   
 Console.WriteLine(doc.Root.Name.ToString())  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Pubs  
 ```  
   
@@ -2046,8 +2025,7 @@ Pubs
  The following example creates an <xref:System.Xml.Linq.XDocument>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
   
 XDocument doc = new XDocument(  
     new XElement("Root",  
@@ -2060,8 +2038,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
   
 Dim doc As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
@@ -2070,14 +2047,12 @@ Dim doc As XDocument = _
 Dim tr As TextWriter = New StringWriter(sb)  
 doc.Save(tr)  
 Console.WriteLine(sb.ToString())  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-16"?>  
+<?xml version="1.0" encoding="utf-16"?>  
 <Root>  
   <Child>content</Child>  
 </Root>  
@@ -2085,6 +2060,9 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2128,8 +2106,7 @@ Console.WriteLine(sb.ToString())
  The following example creates an <xref:System.Xml.Linq.XDocument>, saves the document to a file, and then prints the file to the console.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XElement("Root",  
         new XElement("Child", "content")  
     )  
@@ -2139,21 +2116,18 @@ Console.WriteLine(File.ReadAllText("Root.xml"));
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _   
+Dim doc As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
         <Root><Child>content</Child></Root>  
   
 doc.Save("Root.xml")  
 Console.WriteLine(File.ReadAllText("Root.xml"))  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Root>  
   <Child>content</Child>  
 </Root>  
@@ -2161,6 +2135,9 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2199,8 +2176,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
  The following example shows how to save an <xref:System.Xml.Linq.XDocument> to an <xref:System.Xml.XmlWriter>.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
@@ -2218,8 +2194,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
@@ -2231,20 +2206,21 @@ Using xw = XmlWriter.Create(sb, xws)
 End Using  
   
 Console.WriteLine(sb.ToString())  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Child>  
+<Child>  
   <GrandChild>some content</GrandChild>  
 </Child>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2339,8 +2315,7 @@ Console.WriteLine(sb.ToString())
  The following example shows two uses of this method. The first use serializes the <xref:System.Xml.Linq.XDocument> with formatting. The second preserves white space. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XElement("Root",  
         new XElement("Child", "content")  
     )  
@@ -2359,8 +2334,7 @@ using (StringWriter sr2 = new StringWriter(sb2)) {
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _   
+Dim doc As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
         <Root><Child>content</Child></Root>  
   
@@ -2377,14 +2351,12 @@ Using sr2 = New StringWriter(sb2)
     doc.Save(sr2, SaveOptions.DisableFormatting)  
     Console.WriteLine(sb2.ToString())  
 End Using  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <?xml version="1.0" encoding="utf-16"?>  
+<?xml version="1.0" encoding="utf-16"?>  
 <Root>  
   <Child>content</Child>  
 </Root>  
@@ -2393,6 +2365,9 @@ End Using
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2440,8 +2415,7 @@ End Using
  The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XDocument> with indenting.  
   
 ```csharp  
-  
-                XDocument doc = new XDocument(  
+XDocument doc = new XDocument(  
     new XElement("Root",  
         new XElement("Child", "content")  
     )  
@@ -2453,8 +2427,7 @@ Console.WriteLine(File.ReadAllText("Root2.xml"));
 ```  
   
 ```vb  
-  
-                Dim doc As XDocument = _   
+Dim doc As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
         <Root><Child>content</Child></Root>  
   
@@ -2462,14 +2435,12 @@ doc.Save("Root1.xml", SaveOptions.DisableFormatting)
 Console.WriteLine(File.ReadAllText("Root1.xml"))  
 doc.Save("Root2.xml", SaveOptions.None)  
 Console.WriteLine(File.ReadAllText("Root2.xml"))  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <?xml version="1.0" encoding="utf-8"?><Root><Child>content</Child></Root>  
+<?xml version="1.0" encoding="utf-8"?><Root><Child>content</Child></Root>  
 <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
   <Child>content</Child>  
@@ -2478,6 +2449,9 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -2592,8 +2566,7 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
  The following example shows how to write an <xref:System.Xml.Linq.XDocument> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
@@ -2612,8 +2585,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
@@ -2624,20 +2596,21 @@ Using xw = XmlWriter.Create(sb, xws)
 End Using  
   
 Console.WriteLine(sb.ToString())  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Child>  
+<Child>  
   <GrandChild>some content</GrandChild>  
 </Child>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">
@@ -2664,5 +2637,19 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes this <see cref="T:System.Xml.Linq.XDocument" /> to a file, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

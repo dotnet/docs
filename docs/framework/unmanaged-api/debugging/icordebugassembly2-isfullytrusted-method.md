@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly2::IsFullyTrusted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly2::IsFullyTrusted method [.NET Framework debugging]"
   - "IsFullyTrusted method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly2::IsFullyTrusted Method
 Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.  

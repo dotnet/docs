@@ -127,7 +127,7 @@ class Program
       }
 
       // For diagnostic purposes.
-      Console.WriteLine("Processed {0} files in {1} milleseconds", fileCount, sw.ElapsedMilliseconds);
+      Console.WriteLine("Processed {0} files in {1} milliseconds", fileCount, sw.ElapsedMilliseconds);
    }
 }
 // </Snippet08>

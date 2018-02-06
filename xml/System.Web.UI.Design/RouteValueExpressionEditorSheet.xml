@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.RouteValueExpressionEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteValueExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="GetExpression">
@@ -70,6 +74,8 @@
         <summary>Returns a <see langword="RouteValue" /> expression that is formed by the expression editor sheet property values.</summary>
         <returns>The <see langword="RouteValue" /> expression string for the current settings in the sheet.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteValueExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -89,6 +95,8 @@
         <value>
           <see langword="true" /> if the <see langword="RouteValue" /> expression string is valid; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteValueExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="RouteValue">
@@ -112,6 +120,8 @@
         <summary>Gets or sets the name of the URL parameter to be evaluated by the <see langword="RouteValue" /> expression.</summary>
         <value>The name of the URL parameter to be evaluated by the <see langword="RouteValue" /> expression.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteValueExpressionEditor" />
       </Docs>
     </Member>
   </Members>

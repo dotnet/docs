@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetSourceLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSourceLength method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetSourceLength method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetSourceLength Method
 Gets the length, in bytes, of the embedded source.  

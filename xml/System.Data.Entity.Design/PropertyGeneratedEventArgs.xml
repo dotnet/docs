@@ -75,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="AdditionalGetStatements">
@@ -100,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName="AdditionalSetStatements">
@@ -125,6 +129,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName="BackingFieldName">
@@ -186,7 +192,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeReference" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.PropertyGeneratedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

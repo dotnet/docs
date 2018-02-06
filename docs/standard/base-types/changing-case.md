@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "strings [.NET Framework], case"
   - "case sensitivity"
@@ -20,6 +23,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Changing Case in .NET
 If you write an application that accepts input from a user, you can never be sure what case he or she will use to enter the data. Often, you want strings to be cased consistently, particularly if you are displaying them in the user interface. The following table describes three case-changing methods. The first two methods provide an overload that accepts a culture.  
@@ -70,5 +76,5 @@ If you write an application that accepts input from a user, you can never be sur
  Note that although it is culture-sensitive, the <xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType> method does not provide linguistically correct casing rules. For instance, in the previous example, the method converts "a tale of two cities" to "A Tale Of Two Cities". However, the linguistically correct title casing for the en-US culture is "A Tale of Two Cities."  
   
 ## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

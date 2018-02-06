@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedENCUpdate interface [.NET Framework debugging]"
 ms.assetid: 63a9ef45-01a6-46da-b958-5c6dc2dc232c
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedENCUpdate Interface
 Provides functions for the Edit and Continue feature.  

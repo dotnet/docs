@@ -35,6 +35,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+    <altmember cref="T:System.Web.UI.Design.ITemplateEditingService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -242,5 +244,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateFrame">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new template editing frame.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

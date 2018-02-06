@@ -127,6 +127,7 @@
  ]]></format>
     </remarks>
     <threadsafe>By default, all public and protected members of the <see cref="T:System.Lazy`1" /> class are thread safe and may be used concurrently from multiple threads. These thread-safety guarantees may be removed optionally and per instance, using parameters to the type's constructors.</threadsafe>
+    <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -391,6 +392,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="mode" /> contains an invalid value.</exception>
+        <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -619,6 +621,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -711,5 +714,18 @@
         <exception cref="T:System.InvalidOperationException">The initialization function tries to access <see cref="P:System.Lazy`1.Value" /> on this instance.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

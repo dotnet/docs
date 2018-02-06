@@ -635,5 +635,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Substring">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements <see langword="substring" /> XPath function according to [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

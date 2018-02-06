@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.UrlIdentityPermissionAttribute" />
+    <altmember cref="T:System.Security.Policy.Url" />
+    <altmember cref="T:System.Security.Policy.UrlMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -387,5 +390,15 @@
         <exception cref="T:System.NotSupportedException">The URL cannot be retrieved because it has an ambiguous identity.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UrlIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

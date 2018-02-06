@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.IAuthenticationModule" />
+    <altmember cref="T:System.Net.AuthenticationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +48,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -119,7 +125,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

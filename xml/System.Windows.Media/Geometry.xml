@@ -44,6 +44,7 @@
     <block subset="none" type="overrides">
       <para>Although this class is abstract, it is not publicly extensible.</para>
     </block>
+    <altmember cref="T:System.Windows.Shapes.Path" />
   </Docs>
   <Members>
     <Member MemberName="Bounds">
@@ -1140,5 +1141,104 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the geometry and the specified geometry.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetArea">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the area of the filled region of a <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.Windows.Media.Geometry" /> completely contains the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetWidenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is the shape defined by the stroke on the <see cref="T:System.Windows.Media.Geometry" /> produced by the specified <see cref="T:System.Windows.Media.Pen" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the object based on the current culture.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StrokeContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the specified geometry and the current geometry's stroke.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetOutlinedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFlattenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetRenderBounds">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an axis-aligned rectangle that is exactly large enough to contain the geometry and its stroke.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StrokeContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the geometry's stroke contains the specified <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

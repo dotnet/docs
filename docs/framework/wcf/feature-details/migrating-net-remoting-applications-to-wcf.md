@@ -13,9 +13,11 @@ helpviewer_keywords:
   - ",NET remoting [WCF]"
 ms.assetid: 24793465-65ae-4308-8c12-dce4fd12a583
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migrating .NET Remoting Applications to WCF
 **This topic is specific to a legacy technology that is retained for backward compatibility with existing applications and is not recommended for new development. Distributed applications should now be developed using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].**  

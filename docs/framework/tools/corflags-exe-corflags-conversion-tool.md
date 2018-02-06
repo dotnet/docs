@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "CorFlags conversion tool"
   - "CorFlags.exe"
@@ -23,6 +18,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorFlags.exe (CorFlags Conversion Tool)
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  
@@ -62,6 +59,6 @@ CorFlags.exe assembly [options]
  If no options are specified, the CorFlags Conversion tool displays the flags for the specified assembly.  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [64-bit Applications](../../../docs/framework/64-bit-apps.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [64-bit Applications](../../../docs/framework/64-bit-apps.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -59,6 +59,8 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
   
 -   Track changes to the source relationship and assign value changes into the target relationship.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -276,5 +278,15 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes a relationship between a source and target object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

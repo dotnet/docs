@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::SetPESymbolBytes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetPESymbolBytes method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetPESymbolBytes method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::SetPESymbolBytes Method
 `SetPESymbolBytes` is obsolete. Do not call this method.  

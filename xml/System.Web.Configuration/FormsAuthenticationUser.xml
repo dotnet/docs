@@ -29,7 +29,7 @@
  The following code example shows how to obtain the <xref:System.Web.Configuration.FormsAuthenticationUserCollection> to access the <xref:System.Web.Configuration.FormsAuthenticationUser> objects of an existing Web application. The configuration file will contain a setup similar to the following.  
   
 > [!NOTE]
->  If you use the [credentials Element for forms for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e5a001f8-fdbe-4c88-80ca-bfe36df23479) section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended you use an external database to store the users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
+>  If you use the [credentials Element for forms for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e5a001f8-fdbe-4c88-80ca-bfe36df23479) section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended you use an external database to store the users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
   
 ```  
 <authentication mode="Forms">  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FreeWin32ResBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FreeWin32ResBlob method"
 ms.assetid: d941102b-2679-4c49-b15e-c0fc9c53e11f
@@ -28,6 +26,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FreeWin32ResBlob Method
 Releases the Win32 resource blob and associated resources.  
@@ -51,6 +51,6 @@ HRESULT FreeWin32ResBlob(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

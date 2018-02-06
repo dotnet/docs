@@ -353,5 +353,15 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateRuntimeVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

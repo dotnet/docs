@@ -26,7 +26,7 @@ namespace ClaimsBasedAuthorization
 // <Snippet3>
             //
             // Method 2. Programmatic check using the permission class
-            // Follows model found at http://msdn.microsoft.com/en-us/library/system.security.permissions.principalpermission.aspx
+            // Follows model found at http://msdn.microsoft.com/library/system.security.permissions.principalpermission.aspx
             //
             ClaimsPrincipalPermission cpp = new ClaimsPrincipalPermission("resource", "action");
             cpp.Demand();

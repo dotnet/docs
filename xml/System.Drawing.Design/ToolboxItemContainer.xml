@@ -26,6 +26,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.ToolboxService" />
+    <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+    <altmember cref="T:System.Windows.Forms.IDataObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,6 +83,8 @@
         <block subset="none" type="overrides">
           <para>Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />. <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects implement serialization by saving the <see cref="T:System.Windows.Forms.IDataObject" /> returned from the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property. When you override <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> and provide your own custom data, this data is included with the default <see cref="T:System.Runtime.Serialization.ISerializable" /> implementation. Override the default serialization implementation only if you intend to store private details about this <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be exposed through the public data object.</para>
         </block>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,6 +109,10 @@
           <para>
             <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects can be serialized. Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />. <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects implement serialization by saving the <see cref="T:System.Windows.Forms.IDataObject" /> returned from the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property. When you override <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> and provide your own custom data, this data is included with the default <see cref="T:System.Runtime.Serialization.ISerializable" /> implementation. Override the default serialization implementation only if you intend to store private details about this <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be exposed through the public data object.</para>
         </block>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -207,6 +217,9 @@
         <block subset="none" type="overrides">
           <para>Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class. Instead, override the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property and add your own data to the data object. The <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method internally uses the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property to create the serialization info. Override <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> only if you want to save private information about the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be saved as part of the public data object.</para>
         </block>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GetToolboxItem">
@@ -238,6 +251,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="IsCreated">
@@ -339,6 +355,10 @@
         <block subset="none" type="overrides">
           <para>Implementers may override this to provide additional storage information in the data object.</para>
         </block>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="UpdateFilter">
@@ -369,5 +389,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

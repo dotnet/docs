@@ -6,11 +6,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "configuration settings [.NET Framework], custom"
   - "schema configuration settings"
@@ -22,6 +17,8 @@ ms.assetid: 6e4cc793-c526-4007-b4e9-37d56295f2cb
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Configuration sections schema

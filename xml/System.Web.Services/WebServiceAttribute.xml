@@ -39,6 +39,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.WebService" />
+    <altmember cref="T:System.Web.Services.WebMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.WebMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -145,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.WebServiceAttribute.Namespace" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -185,6 +193,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Services.WebServiceAttribute.DefaultNamespace" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
       </Docs>
     </Member>
   </Members>

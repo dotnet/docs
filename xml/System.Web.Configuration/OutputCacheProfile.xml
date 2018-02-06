@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheProfileCollection" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -173,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.OutputCacheLocation" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -258,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -317,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="VaryByContentEncoding">
@@ -349,6 +355,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.OutputCacheParameters.VaryByContentEncoding" />
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -433,6 +440,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -517,6 +525,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCacheVaryByParams" />
+        <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
       </Docs>
     </Member>
   </Members>

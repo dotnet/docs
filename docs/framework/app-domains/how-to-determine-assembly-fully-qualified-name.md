@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "names [.NET Framework], fully qualified type names"
   - "names [.NET Framework], assemblies"
@@ -18,6 +22,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Determine an Assembly&#39;s Fully Qualified Name
 To discover the fully qualified name of an assembly in the global assembly cache, use the Global Assembly Cache Tool ([Gacutil.exe](../../../docs/framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
@@ -43,9 +49,9 @@ To discover the fully qualified name of an assembly in the global assembly cache
  [!code-vb[Assembly.Fullname#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Assembly.FullName/VB/example2.vb#2)]  
   
 ## See Also  
- [Assembly Names](../../../docs/framework/app-domains/assembly-names.md)   
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)   
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)   
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ [Assembly Names](../../../docs/framework/app-domains/assembly-names.md)  
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
+ [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

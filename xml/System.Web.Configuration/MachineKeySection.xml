@@ -43,6 +43,7 @@
     <block subset="none" type="overrides">
       <para>If you to specify keys in this configuration section, as is required in Web-farm scenarios, it is recommended that you encrypt this section by using protected configuration.</para>
     </block>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -230,6 +231,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value is not one of the decryption values.</exception>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="DecryptionKey">
@@ -284,6 +286,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -374,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="ValidationAlgorithm">

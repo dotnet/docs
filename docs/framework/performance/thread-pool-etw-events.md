@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Thread Pool ETW Events
 <a name="top"></a> These events collect information about worker and I/O threads.  

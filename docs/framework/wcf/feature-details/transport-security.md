@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport Security
 Transport security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] depends on the binding selected. The transport that the binding implements determines the actual security mechanism. The topics in this section explain the mechanisms that are implemented and their options.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_NATIVE_LINK"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_NATIVE_LINK structure [.NET Framework metadata]"
 ms.assetid: 6ef78d3c-1c69-4141-b687-dcb065b7a74d
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_NATIVE_LINK Structure
 Contains information that is used to link native code.  
@@ -61,6 +61,6 @@ typedef struct
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)   
- [CorNativeLinkType Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)   
+ [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
+ [CorNativeLinkType Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)  
  [CorNativeLinkFlags Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md)

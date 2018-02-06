@@ -4,7 +4,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -13,7 +13,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -22,7 +22,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -31,7 +31,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -39,7 +39,7 @@ uid: System.Transactions.Transaction.PromoterType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sdanie"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -47,7 +47,7 @@ uid: System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transact
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sdanie"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -56,7 +56,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -65,7 +65,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -74,7 +74,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -83,7 +83,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -92,7 +92,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -101,7 +101,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -110,7 +110,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -119,7 +119,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -128,7 +128,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -137,7 +137,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -146,7 +146,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -155,7 +155,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -164,7 +164,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -172,7 +172,7 @@ uid: System.Transactions.Transaction.EnlistPromotableSinglePhase
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sdanie"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -181,7 +181,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -199,7 +199,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -208,7 +208,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -217,7 +217,7 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -225,7 +225,7 @@ uid: System.Transactions.Transaction.SetDistributedTransactionIdentifier(System.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sdanie"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -233,7 +233,7 @@ uid: System.Transactions.Transaction.GetPromotedToken
 ms.technology: 
   - "dotnet-standard"
 ms.author: "sdanie"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -242,5 +242,5 @@ ms.technology:
   - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
-manager: "ghogen"
+manager: "wpickett"
 ---

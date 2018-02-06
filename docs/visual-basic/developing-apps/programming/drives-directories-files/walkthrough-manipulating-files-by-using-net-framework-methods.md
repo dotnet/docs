@@ -1,48 +1,30 @@
 ---
 title: "Manipulating Files by Using .NET Framework Methods (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "I/O [Visual Basic], walkthroughs"
-  - "text files, writing to"
-  - "reading text files"
+  - "text files [Visual Basic], writing to"
+  - "reading text files [Visual Basic]"
   - "text, writing to files"
-  - "files, searching"
+  - "files [Visual Basic], searching"
   - "StreamReader class, walkthroughs"
-  - "files, accessing"
+  - "files [Visual Basic], accessing"
   - "I/O [Visual Basic], writing text to files"
-  - "writing to files, walkthroughs"
+  - "writing to files [Visual Basic], walkthroughs"
   - "StreamWriter class, walkthroughs"
-  - "text files, reading"
+  - "text files [Visual Basic], reading"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Manipulating Files by Using .NET Framework Methods (Visual Basic)
 This walkthrough demonstrates how to open and read a file using the <xref:System.IO.StreamReader> class, check to see if a file is being accessed, search for a string within a file read with an instance of the <xref:System.IO.StreamReader> class, and write to a file using the <xref:System.IO.StreamWriter> class.  
@@ -170,6 +152,6 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
  To test your code, press F5 to compile the application. Click **Get Entries**, select an entry, and then click **Display**. The entry appears in the `DisplayEntry`<xref:System.Windows.Forms.TextBox>. Click **Edit Entry**. The entry appears in the `Entry`<xref:System.Windows.Forms.TextBox>. Edit the entry in the `Entry`<xref:System.Windows.Forms.TextBox> and click **Submit Edit**. Open the `MyDiary.txt` file to confirm your correction. Now select an entry and click **Delete Entry**. When the <xref:System.Windows.Forms.MessageBox> requests confirmation, click **OK**. Close the application and open `MyDiary.txt` to confirm the deletion.  
   
 ## See Also  
- <xref:System.IO.StreamReader>   
- <xref:System.IO.StreamWriter>   
+ <xref:System.IO.StreamReader>  
+ <xref:System.IO.StreamWriter>  
  [Walkthroughs](../../../../visual-basic/walkthroughs.md)

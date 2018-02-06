@@ -20,7 +20,7 @@ class RSACSPSample
                 //Create another RSACryptoServiceProvider object.
                 using (RSACryptoServiceProvider RSA2 = new RSACryptoServiceProvider())
                 {
-                //Import the the key information from the other 
+                //Import the key information from the other 
                 //RSACryptoServiceProvider object.  
                 RSA2.ImportParameters(RSAParams);
                 }

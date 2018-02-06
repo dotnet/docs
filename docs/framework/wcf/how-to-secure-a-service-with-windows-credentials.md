@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, security"
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
@@ -16,6 +19,8 @@ caps.latest.revision: 26
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Secure a Service with Windows Credentials
 This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. [!INCLUDE[crabout](../../../includes/crabout-md.md)] this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
@@ -151,8 +156,8 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
  [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
 ## See Also  
- <xref:System.ServiceModel.WSHttpBinding>   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)   
- [Securing Services](../../../docs/framework/wcf/securing-services.md)   
+ <xref:System.ServiceModel.WSHttpBinding>  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
+ [Securing Services](../../../docs/framework/wcf/securing-services.md)  
  [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)

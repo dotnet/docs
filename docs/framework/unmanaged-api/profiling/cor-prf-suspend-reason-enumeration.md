@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_SUSPEND_REASON"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_SUSPEND_REASON enumeration [.NET Framework profiling]"
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
@@ -28,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_SUSPEND_REASON Enumeration
 Indicates the reason that the runtime is suspended.  

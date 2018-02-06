@@ -220,7 +220,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -293,7 +293,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -362,7 +362,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -414,7 +414,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -468,7 +468,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -496,6 +496,10 @@
         </remarks>
         <exception cref="T:System.Xml.Xsl.XsltCompileException">The loaded resource is not a valid style sheet.</exception>
         <exception cref="T:System.Security.SecurityException">The style sheet contains embedded script, and the caller does not have <see langword="UnmanagedCode" /> permission.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -548,12 +552,15 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Xsl.XsltCompileException">The current node does not conform to a valid style sheet.</exception>
         <exception cref="T:System.Security.SecurityException">The style sheet contains embedded scripts, and the caller does not have <see langword="UnmanagedCode" /> permission.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -600,12 +607,15 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Xsl.XsltCompileException">The loaded resource is not a valid style sheet.</exception>
         <exception cref="T:System.Security.SecurityException">The style sheet contains embedded scripts, and the caller does not have <see langword="UnmanagedCode" /> permission.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -654,12 +664,15 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29>. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Xsl.XsltCompileException">The current node does not conform to a valid style sheet.</exception>
         <exception cref="T:System.Security.SecurityException">The style sheet contains embedded scripts, and the caller does not have <see langword="UnmanagedCode" /> permission.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -727,6 +740,12 @@
   
  The caller tries to supply evidence and does not have <see langword="ControlEvidence" /> permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Security.SecurityZone" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -779,6 +798,12 @@
   
  The caller tries to supply evidence and does not have <see langword="ControlEvidence" /> permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Security.SecurityZone" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -841,6 +866,12 @@
   
  The caller tries to supply evidence and does not have <see langword="ControlEvidence" /> permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Security.SecurityZone" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Transform">
@@ -1139,6 +1170,9 @@ Root node is book.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1458,6 +1492,7 @@ Root node is book.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1616,6 +1651,7 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1671,6 +1707,7 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1728,6 +1765,7 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1783,6 +1821,7 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1887,14 +1926,16 @@ Root node is book.
 ## Examples  
  The following example performs a transformation within an ASP.NET page.  
   
- <!-- TODO: review snippet reference [!code-csharp[XslTransform.Transform5#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Transform5/CS/transcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XslTransform.Transform5#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XslTransform.Transform5/VB/transvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XslTransform.Transform5#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Transform5/CS/transcs.aspx#1)]
+ [!code-aspx-vb[XslTransform.Transform5#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XslTransform.Transform5/VB/transvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -2013,6 +2054,8 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -2136,6 +2179,8 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -2204,6 +2249,9 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -2260,6 +2308,9 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -2325,6 +2376,9 @@ Root node is book.
         <exception cref="T:System.InvalidOperationException">There was an error processing the XSLT transformation.  
   
  Note: This is a change in behavior from earlier versions. An <see cref="T:System.Xml.Xsl.XsltException" /> is thrown if you are using Microsoft .NET Framework version 1.1 or earlier.</exception>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -2372,6 +2426,9 @@ Root node is book.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
   </Members>

@@ -62,6 +62,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityAction">for full trust. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />.</permission>
+    <altmember cref="T:System.ComponentModel.PropertyTabScope" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +137,7 @@
         <summary>Gets or sets the background color for the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -304,6 +306,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CanShowCommands">
@@ -712,6 +716,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.PropertyTab" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -730,6 +735,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DefaultTabType">
@@ -1460,6 +1466,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.OnFontChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -1547,6 +1554,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -2095,7 +2103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=nameWithType> causes the properties to be displayed in the order they were retrieved.  
+ When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort.NoSort?displayProperty=nameWithType> causes the properties to be displayed in the order they were retrieved.  
   
  Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort.Alphabetical> and <xref:System.Windows.Forms.PropertySort.Categorized> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort.Categorized> alone. The categorized view is always shown as alphabetical.  
   
@@ -2270,6 +2278,7 @@
       <Docs>
         <summary>Forces the control to invalidate its client area and immediately redraw itself and any child controls.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="RefreshTabs">
@@ -2655,6 +2664,7 @@
         <value>
           <see langword="true" /> if the control should display focus rectangles; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ShowFocusCues" />
       </Docs>
     </Member>
     <Member MemberName="ShowPropertyPageImage">
@@ -2702,6 +2712,7 @@
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Site" />
       </Docs>
     </Member>
     <Member MemberName="SortByCategoryImage">
@@ -2949,6 +2960,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -3074,6 +3086,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="ViewBackColor">
@@ -3164,6 +3178,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

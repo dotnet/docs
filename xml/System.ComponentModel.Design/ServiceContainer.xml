@@ -53,6 +53,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IServiceProvider" />
+    <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
+    <altmember cref="T:System.ComponentModel.Design.ServiceCreatorCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +160,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> or <paramref name="callback" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A service of type <paramref name="serviceType" /> already exists in the container.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
     <Member MemberName="AddService">
@@ -203,6 +207,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> or <paramref name="serviceInstance" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A service of type <paramref name="serviceType" /> already exists in the container.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
     <Member MemberName="AddService">
@@ -241,6 +246,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> or <paramref name="callback" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A service of type <paramref name="serviceType" /> already exists in the container.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
     <Member MemberName="AddService">
@@ -279,6 +285,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> or <paramref name="serviceInstance" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A service of type <paramref name="serviceType" /> already exists in the container.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
     <Member MemberName="DefaultServices">
@@ -398,7 +405,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -431,6 +438,7 @@
         <summary>Gets the requested service.</summary>
         <returns>An instance of the service if it could be found, or <see langword="null" /> if it could not be found.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="RemoveService">
@@ -474,6 +482,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
     <Member MemberName="RemoveService">
@@ -509,7 +518,48 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IServiceContainer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified service type from the service container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disposes this service container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified service to the service container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ServiceContainer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

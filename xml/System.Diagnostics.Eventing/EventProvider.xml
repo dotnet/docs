@@ -738,5 +738,23 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteTransferEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Links events together when tracing events in an end-to-end scenario.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsEnabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a session enabled the provider.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

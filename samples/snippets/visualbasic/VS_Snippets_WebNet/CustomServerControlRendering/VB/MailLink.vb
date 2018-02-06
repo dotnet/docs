@@ -25,7 +25,7 @@ Namespace Samples.AspNet.VB.Controls
         Bindable(True), _
         Category("Appearance"), _
         DefaultValue(""), _
-        Description("The e-mail address.") _
+        Description("The email address.") _
         > _
         Public Overridable Property Email() As String
             Get

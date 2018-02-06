@@ -388,5 +388,15 @@
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetLocalSymInfo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the local variable's symbolic information.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

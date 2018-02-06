@@ -32,6 +32,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListViewItem" />
+    <altmember cref="E:System.Windows.Forms.ListView.BeforeLabelEdit" />
+    <altmember cref="E:System.Windows.Forms.ListView.AfterLabelEdit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -180,5 +184,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LabelEditEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

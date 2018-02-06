@@ -2,12 +2,12 @@
 uid: System.Transactions.ITransactionPromoter
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Transactions.ITransactionPromoter.Promote
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

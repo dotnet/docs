@@ -17,7 +17,7 @@ type Shape2D(x0 : float, y0 : float) =
     abstract Name : string with get
 
     // This method is not declared abstract. It cannot be
-    // overriden.
+    // overridden.
     member this.Move dx dy =
        x <- x + dx
        y <- y + dy

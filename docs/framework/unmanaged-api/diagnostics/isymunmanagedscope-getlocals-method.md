@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetLocals"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLocals method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetLocals method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedScope::GetLocals Method
 Gets the local variables defined within this scope.  

@@ -102,6 +102,9 @@
   
 -   The <see cref="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction" /> method creates and returns a new transaction.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerOptionService" />
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -169,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.Deactivated" />
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -243,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="CreateComponent">
@@ -285,6 +290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="CreateTransaction">
@@ -395,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.Activated" />
       </Docs>
     </Member>
     <Member MemberName="DestroyComponent">
@@ -425,6 +432,8 @@
         <param name="component">The component to destroy.</param>
         <summary>Destroys the specified component and removes it from the designer container.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="GetDesigner">
@@ -548,6 +557,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.Design.IDesignerHost.Loading" />
       </Docs>
     </Member>
     <Member MemberName="Loading">
@@ -672,6 +682,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerTransaction" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
       </Docs>
     </Member>
     <Member MemberName="TransactionClosing">
@@ -707,6 +721,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerTransaction" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
       </Docs>
     </Member>
     <Member MemberName="TransactionDescription">
@@ -741,6 +759,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction" />
       </Docs>
     </Member>
     <Member MemberName="TransactionOpened">
@@ -776,6 +795,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerTransaction" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
       </Docs>
     </Member>
     <Member MemberName="TransactionOpening">
@@ -811,7 +834,31 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerTransaction" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" />
+        <altmember cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> that can encapsulate event sequences to improve performance and enable undo and redo support functionality.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateComponent">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a component of the specified type and adds it to the design document.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

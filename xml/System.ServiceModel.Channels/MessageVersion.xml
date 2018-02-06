@@ -608,5 +608,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateVersion">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a message version object with specified versions of the SOAP envelope and WS-Addressing.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

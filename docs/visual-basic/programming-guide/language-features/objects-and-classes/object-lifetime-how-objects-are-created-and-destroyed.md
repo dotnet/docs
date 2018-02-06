@@ -1,55 +1,37 @@
 ---
 title: "Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Constructor"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "destructors, object lifetime"
   - "Sub Finalize destructor"
   - "objects [Visual Basic], destroying"
-  - "lifetime, objects"
+  - "lifetime [Visual Basic], objects"
   - "Sub New constructor, object lifetime"
-  - "Finalize method, object lifetime"
+  - "Finalize method [Visual Basic], object lifetime"
   - "objects [Visual Basic], creating"
   - "Class_Terminate"
-  - "Dispose method, object lifetime"
+  - "Dispose method [Visual Basic], object lifetime"
   - "Class_Initialize"
-  - "object creation, object lifetime"
+  - "object creation [Visual Basic], object lifetime"
   - "parameterized constructors"
   - "objects [Visual Basic], lifetime"
   - "objects [Visual Basic], garbage collection"
   - "constructors [Visual Basic], object lifetime"
   - "Sub Dispose destructor"
-  - "garbage collection, Visual Basic"
+  - "garbage collection [Visual Basic], Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)
 An instance of a class, an object, is created by using the `New` keyword. Initialization tasks often must be performed on new objects before they are used. Common initialization tasks include opening files, connecting to databases, and reading values of registry keys. Visual Basic controls the initialization of new objects using procedures called *constructors* (special methods that allow control over initialization).  
@@ -169,8 +151,8 @@ End Sub
  Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose%2A> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.  
   
 ## See Also  
- <xref:System.IDisposable.Dispose%2A>   
- [Initialization and Termination of Components](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)   
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)   
- [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)   
+ <xref:System.IDisposable.Dispose%2A>  
+ [Initialization and Termination of Components](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
+ [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
+ [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)  
  [Nothing](../../../../visual-basic/language-reference/nothing.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedNamespace::GetNamespaces"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedNamespace::GetNamespaces method [.NET Framework debugging]"
   - "GetNamespaces method, ISymUnmanagedNamespace interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedNamespace::GetNamespaces Method
 Gets the children of this namespace.  

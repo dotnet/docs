@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,8 @@
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+        <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -217,6 +220,8 @@
           <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+        <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -292,6 +297,9 @@
           <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+        <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -370,6 +378,8 @@
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+        <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
       </Docs>
     </Member>
     <Member MemberName="PlaySystemSound">
@@ -436,6 +446,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="systemSound" /> is <see langword="Nothing" />.</exception>
+        <altmember cref="T:System.Media.SystemSound" />
+        <altmember cref="T:System.Media.SystemSounds" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -492,5 +504,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Play">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Plays a .wav sound file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -19,5 +19,8 @@ To build and run the sample, type the following two commands:
 `dotnet restore`
 `dotnet run`
 
-`dotnet restore` restores the dependencies for this sample.
+`dotnet restore` ([see note](#dotnet-restore-note)) restores the dependencies for this sample.
 `dotnet run` builds the sample and runs the output assembly.
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

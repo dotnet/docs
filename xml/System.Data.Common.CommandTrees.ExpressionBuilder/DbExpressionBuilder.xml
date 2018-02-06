@@ -2012,7 +2012,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ If `instanceType` is a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
   
  ]]></format>
         </remarks>
@@ -2053,7 +2053,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `instanceType` is a a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
+ If `instanceType` is a collection type then every expression in `arguments` must have a result type that is promotable to the element type of the `instanceType`. If `instanceType` is a row type,  `arguments` must contain as many expressions as there are columns in the row type, and the result type of each expression must be equal or promotable to the type of the corresponding column. A row type that does not declare any columns is invalid. If `instanceType` is an entity type,  `arguments` must contain as many expressions as there are properties defined by the type, and the result type of each expression must be equal or promotable to the type of the corresponding property.  
   
  ]]></format>
         </remarks>
@@ -3352,7 +3352,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <param name="left">An expression that defines the left set argument.</param>
         <param name="right">An expression that defines the right set argument.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that computes the union of the left and right set arguments with duplicates removed.</summary>
-        <returns>A new DbExpression that computes the union, without duplicates, of the the left and right arguments.</returns>
+        <returns>A new DbExpression that computes the union, without duplicates, of the left and right arguments.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="left" /> or <paramref name="right" /> is null.</exception>
@@ -3379,7 +3379,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <param name="left">An expression that defines the left set argument.</param>
         <param name="right">An expression that defines the right set argument.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" /> that computes the union of the left and right set arguments and does not remove duplicates.</summary>
-        <returns>A new DbUnionAllExpression that union, including duplicates, of the the left and right arguments.</returns>
+        <returns>A new DbUnionAllExpression that union, including duplicates, of the left and right arguments.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="left" /> or <paramref name="right" /> is null.</exception>
@@ -3436,5 +3436,230 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <exception cref="T:System.ArgumentException">The expression produced by <paramref name="predicate" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ThenByDescending">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in descending sort order and  with default collation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSortClauseDescending">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortClause" /> with a descending sort order and default collation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Property">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" /> representing the retrieval of the specified property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Like">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbLikeExpression" /> that compares the specified input string to the given pattern.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Constant">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderBy">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with ascending sort order and default collation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Lambda">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbLambda" /> with the specified inline Lambda function implementation and formal parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NewCollection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" /> that constructs a collection containing the specified elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RefFromKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that encodes a reference to a specific Entity based on key values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LeftOuterJoin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using LeftOuterJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FullOuterJoin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using FullOuterJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="As">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the specified arguments as a key/value pair object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Skip">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSkipExpression" /> that sorts the given input set by the given sort specifications before skipping the specified number of elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThenBy">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in ascending sort order and  with default collation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CrossApply">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateRef">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that encodes a reference to a specific entity of a given type based on key values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSortClause">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortClause" /> with an ascending sort order and default collation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="All">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" /> that determines whether the given predicate holds for all elements of the input set.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" /> representing the navigation of a composition or association relationship.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Any">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that determines whether the specified set argument is non-empty.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OuterApply">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" /> representing the application of the specified Lambda function to the given arguments.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="New">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InnerJoin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using InnerJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderByDescending">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with descending sort order and default collation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -298,9 +298,9 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The value of the argument,</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.OutArgument`1" /> constructed using the specified <see cref="T:System.Activities.Activity`1" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,10 +320,17 @@
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="delegateArgument">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.OutArgument`1" /> constructed using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <returns>The new argument.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an implicit conversion.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -342,9 +349,9 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.OutArgument`1" /> constructed using the specified <see cref="T:System.Activities.Variable" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,5 +378,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initialize a new instance of the <see cref="T:System.Activities.OutArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

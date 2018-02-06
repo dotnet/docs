@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "batching messages [WCF]"
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Batching Messages in a Transaction
 Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] sessions, see [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  
@@ -58,36 +60,36 @@ Queued applications use transactions to ensure correctness and reliable delivery
  The following example shows how to specify the `TransactedBatchingBehavior` in a configuration file.  
   
 ```xml  
-<behaviors>  
-      <endpointBehaviors>  
-        <behavior name="TransactedBatchingBehavior"  
-                  maxBatchSize="100"/>  
-      </endpointBehaviors>  
-    </behaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="TransactedBatchingBehavior"
+              maxBatchSize="100" />
+  </endpointBehaviors>
+</behaviors>
 ```  
   
  The following example shows how to specify the <xref:System.ServiceModel.Description.TransactedBatchingBehavior> in code.  
   
-```  
-using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))  
-{  
-     ServiceEndpoint sep = ServiceHost.AddServiceEndpoint(typeof(IOrderProcessor), new NetMsmqBinding(), "net.msmq://localhost/private/ServiceModelSamplesTransacted");  
-                sep.Behaviors.Add(new TransactedBatchingBehavior(100));  
+```csharp
+using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
+{
+     ServiceEndpoint sep = ServiceHost.AddServiceEndpoint(typeof(IOrderProcessor), new NetMsmqBinding(), "net.msmq://localhost/private/ServiceModelSamplesTransacted");
+     sep.Behaviors.Add(new TransactedBatchingBehavior(100));
+     
+     // Open the ServiceHost to create listeners and start listening for messages.
+    serviceHost.Open();
   
-     // Open the ServiceHost to create listeners and start listening for messages.  
-    serviceHost.Open();  
+    // The service can now be accessed.
+    Console.WriteLine("The service is ready.");
+    Console.WriteLine("Press <ENTER> to terminate service.");
+    Console.WriteLine();
+    Console.ReadLine();
   
-    // The service can now be accessed.  
-    Console.WriteLine("The service is ready.");  
-    Console.WriteLine("Press <ENTER> to terminate service.");  
-    Console.WriteLine();  
-    Console.ReadLine();  
-  
-   // Close the ServiceHostB to shut down the service.  
-    serviceHost.Close();  
+    // Close the ServiceHostB to shut down the service.
+    serviceHost.Close();
 }  
 ```  
   
 ## See Also  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)   
+ [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

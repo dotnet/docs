@@ -1,19 +1,15 @@
 ---
 title: "/netcf"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "/netcf"
   - "netcf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-netcf compiler option [Visual Basic]"
   - "netcf compiler option [Visual Basic]"
@@ -22,21 +18,6 @@ ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /netcf
 Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].  
@@ -111,6 +92,6 @@ vbc /netcf /sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactF
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [/sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)

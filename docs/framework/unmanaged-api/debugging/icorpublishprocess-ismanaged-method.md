@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::IsManaged"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsManaged method, ICorPublishProcess interface [.NET Framework debugging]"
   - "ICorPublishProcess::IsManaged method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishProcess::IsManaged Method
 Gets a value that indicates whether the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) is known to have managed code.  

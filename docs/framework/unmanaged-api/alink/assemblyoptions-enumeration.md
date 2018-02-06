@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyOptions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Alink API, AssemblyOptions enumeration"
   - "AssemblyOptions enumeration"
@@ -29,6 +27,8 @@ caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AssemblyOptions Enumeration
 Enumerates the assembly options.  

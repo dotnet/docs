@@ -146,5 +146,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a security token using the CardSpace system.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,7 +22,7 @@ Public Class Sample
         Dim entityref As XmlEntityReference = doc.CreateEntityReference("h")
         Console.WriteLine(entityref.ChildNodes.Count)
         
-        'After the the node has been added to the document, its parent node
+        'After the node has been added to the document, its parent node
         'is set and the entity reference node is expanded.  It now has a child
         'node containing the entity replacement text. 
         doc.DocumentElement.LastChild.AppendChild(entityref)

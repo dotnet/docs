@@ -56,6 +56,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlArrayAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlElementAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlRoot" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Serialization.XmlRootAttribute.ElementName" />
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -395,7 +402,19 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlRoot" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> class and uses the class name as the name of the XML root element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

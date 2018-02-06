@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineManifestResource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineManifestResource method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineManifestResource Method
 Creates a `ManifestResource` structure containing metadata for the specified manifest resource, and returns the associated metadata token.  

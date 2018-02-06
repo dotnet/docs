@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 1b84b852-3cad-41a7-8077-149a70d50c8b
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Turn Off Deferred Loading
 You can turn off deferred loading by setting <xref:System.Data.Linq.DataContext.DeferredLoadingEnabled%2A> to `false`. For more information, see [Deferred versus Immediate Loading](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md).  
@@ -28,5 +33,5 @@ You can turn off deferred loading by setting <xref:System.Data.Linq.DataContext.
  [!code-vb[DLinqQuerying#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#3)]  
   
 ## See Also  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)   
+ [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
  [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

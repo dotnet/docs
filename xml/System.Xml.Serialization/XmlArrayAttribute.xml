@@ -57,6 +57,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlArray" />
+    <altmember cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,6 +149,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="ElementName">
@@ -189,6 +197,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.Namespace" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.Form" />
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -247,6 +258,10 @@ attributeFormDefault="unqualified"... >
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.ElementName" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.Namespace" />
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -349,6 +364,10 @@ attributeFormDefault="unqualified"... >
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.ElementName" />
+        <altmember cref="P:System.Xml.Serialization.XmlArrayAttribute.Form" />
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -389,5 +408,15 @@ attributeFormDefault="unqualified"... >
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

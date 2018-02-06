@@ -59,7 +59,7 @@ each node in the tree to see the code that makes up the statement:
 This may look complicated, but it is very powerful. Following the same process, you can decompose
 much more complicated expressions. Consider this expression:
 ```csharp
-var finalAnswer = this.SecretSauceFuncion(
+var finalAnswer = this.SecretSauceFunction(
     currentState.createInterimResult(), currentState.createSecondValue(1, 2),
     decisionServer.considerFinalOptions("hello")) +
     MoreSecretSauce('A', DateTime.Now, true);

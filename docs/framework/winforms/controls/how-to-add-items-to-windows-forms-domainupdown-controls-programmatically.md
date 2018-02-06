@@ -10,15 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "spin button control, adding items"
+  - "spin button control [Windows Forms], adding items"
   - "DomainUpDown control [Windows Forms], adding items to"
 ms.assetid: fd31d314-33eb-4181-90f8-d32ed0c4e072
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Items to Windows Forms DomainUpDown Controls Programmatically
 You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> control in code. Call the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> or <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert%2A> method of the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection> class to add items to the control's <xref:System.Windows.Forms.DomainUpDown.Items%2A> property. The <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> method adds an item to the end of a collection, while the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert%2A> method adds an item at a specified position.  
@@ -59,8 +63,8 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.DomainUpDown>   
- <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=nameWithType>   
- <xref:System.Collections.ArrayList.Insert%2A?displayProperty=nameWithType>   
- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)   
+ <xref:System.Windows.Forms.DomainUpDown>  
+ <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=nameWithType>  
+ <xref:System.Collections.ArrayList.Insert%2A?displayProperty=nameWithType>  
+ [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)  
  [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)

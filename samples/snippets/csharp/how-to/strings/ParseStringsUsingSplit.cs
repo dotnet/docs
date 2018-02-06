@@ -1,0 +1,108 @@
+using System;
+using System.Linq;
+
+namespace HowToStrings
+{
+    public static class ParseStringsUsingSplit
+    {
+        public static void Examples()
+        {
+            Console.WriteLine("Example one");
+            Console.WriteLine();
+            SplitWords();
+
+            Console.WriteLine("Example two");
+            Console.WriteLine();
+            SplitWordsWithRepeatedSeparators();
+
+            Console.WriteLine("Example three");
+            Console.WriteLine();
+            SplitOnMultipleChars();
+
+            Console.WriteLine("Example four");
+            Console.WriteLine();
+            SplitOnMultipleCharsWithGaps();
+
+            Console.WriteLine("Example fives");
+            Console.WriteLine();
+            SplitUsingStrings();
+        }
+
+        private static void SplitWords()
+        {
+            // <Snippet1>
+            string phrase = "The quick brown fox jumped over the lazy dog.";
+            string[] words = phrase.Split(' ');
+
+            foreach(var word in words)
+                Console.WriteLine($"<{word}>");
+            // </Snippet1>
+        }
+
+        private static void SplitWordsWithRepeatedSeparators()
+        {
+            // <Snippet2>
+            string phrase = "The quick brown    fox     jumped over the lazy dog.";
+            string[] words = phrase.Split(' ');
+
+            foreach(var word in words)
+                Console.WriteLine($"<{word}>");
+            // </Snippet2>
+        }
+
+        private static void SplitOnMultipleChars()
+        {
+            // <Snippet3>
+            char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+
+            string text = "one\ttwo three:four,five six seven";
+            System.Console.WriteLine($"Original text: '{text}'");
+
+            string[] words = text.Split(delimiterChars);
+            System.Console.WriteLine($"{words.Length} words in text:");
+
+            foreach (string s in words)
+            {
+                System.Console.WriteLine($"<{s}>");
+            }
+            // </Snippet3>
+        }
+        
+        private static void SplitOnMultipleCharsWithGaps()
+        {
+            // <Snippet4>
+            char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+
+            string text = "one\ttwo :,five six seven";
+            System.Console.WriteLine($"Original text: '{text}'");
+
+            string[] words = text.Split(delimiterChars);
+            System.Console.WriteLine($"{words.Length} words in text:");
+
+            foreach (string s in words)
+            {
+                System.Console.WriteLine($"<{s}>");
+            }
+            // </Snippet4>
+        }
+
+        private static void SplitUsingStrings()
+        {
+            // <Snippet5>
+            string[] separatingChars = { "<<", "..." };  
+    
+            string text = "one<<two......three<four";  
+            System.Console.WriteLine("Original text: '{0}'", text);  
+    
+            string[] words = text.Split(separatingChars, System.StringSplitOptions.RemoveEmptyEntries );  
+            System.Console.WriteLine("{0} substrings in text:", words.Length);  
+    
+            foreach (string s in words)  
+            {  
+                System.Console.WriteLine(s);  
+            }  
+            // </Snippet5>
+            
+        }
+    }
+}

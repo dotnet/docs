@@ -9,17 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "resizing Canvas control"
-  - "controls, Thumb"
-  - "controls, Canvas"
-  - "Thumb control"
-  - "Canvas control"
+  - "resizing Canvas control [WPF]"
+  - "controls [WPF], Thumb"
+  - "controls [WPF], Canvas"
+  - "Thumb control [WPF]"
+  - "Canvas control [WPF]"
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Resize a Canvas by Using a Thumb
 This example shows how to use a <xref:System.Windows.Controls.Primitives.Thumb> control to resize a <xref:System.Windows.Controls.Canvas> control.  
@@ -50,7 +55,7 @@ This example shows how to use a <xref:System.Windows.Controls.Primitives.Thumb> 
  For the complete sample, see [Thumb Drag Functionality Sample](http://go.microsoft.com/fwlink/?LinkID=160042).  
   
 ## See Also  
- <xref:System.Windows.Controls.Primitives.Thumb>   
- <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>   
- <xref:System.Windows.Controls.Primitives.Thumb.DragDelta>   
+ <xref:System.Windows.Controls.Primitives.Thumb>  
+ <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>  
+ <xref:System.Windows.Controls.Primitives.Thumb.DragDelta>  
  <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted>

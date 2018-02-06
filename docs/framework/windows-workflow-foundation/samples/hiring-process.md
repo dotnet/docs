@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hiring Process
 This sample demonstrates how to implement a business process using messaging activities and two workflows hosted as workflow services. These workflows are part of the IT infrastructure of a fictional company called Contoso, Inc.  
@@ -237,6 +239,4 @@ This sample demonstrates how to implement a business process using messaging act
   
 1.  Delete the SQL Server instance store by running Cleanup.bat, located in DbSetup folder.  
   
-2.  Delete the source code form your hard drive.  
-  
-## See Also
+2.  Delete the source code form your hard drive.

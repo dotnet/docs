@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IApartmentCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IApartmentCallback interface [.NET Framework hosting]"
 ms.assetid: 57c33c58-bf0b-4533-b569-e6a682d02cba
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IApartmentCallback Interface
 Provides methods for making callbacks within an apartment. An *apartment* is a logical container within a process for objects that share the same thread access requirements.  

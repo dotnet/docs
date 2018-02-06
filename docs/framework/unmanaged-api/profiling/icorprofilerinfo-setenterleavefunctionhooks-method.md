@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetEnterLeaveFunctionHooks"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetEnterLeaveFunctionHooks method [.NET Framework profiling]"
   - "ICorProfilerInfo::SetEnterLeaveFunctionHooks method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::SetEnterLeaveFunctionHooks Method
 Specifies profiler-implemented functions to be called on "enter", "leave", and "tailcall" hooks of managed functions.  

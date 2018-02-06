@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::SetManagedHandler"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::SetManagedHandler method [.NET Framework debugging]"
   - "SetManagedHandler method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::SetManagedHandler Method
 Specifies the event handler object for managed events.  

@@ -114,6 +114,9 @@
   
  You should also provide a default constructor that calls the base constructor with a value that represent an invalid handle value, and a <see cref="T:System.Boolean" /> value indicating whether the native handle is owned by the <see cref="T:System.Runtime.InteropServices.SafeHandle" /> and consequently should be freed when that <see cref="T:System.Runtime.InteropServices.SafeHandle" /> has been disposed.</para>
     </block>
+    <altmember cref="N:Microsoft.Win32.SafeHandles" />
+    <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
+    <altmember cref="T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -287,6 +290,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Runtime.InteropServices.SafeHandle.DangerousRelease" />
       </Docs>
     </Member>
     <Member MemberName="DangerousGetHandle">
@@ -392,6 +396,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -554,6 +559,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Runtime.InteropServices.SafeHandle.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="handle">
@@ -878,5 +884,14 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Runtime.InteropServices.SafeHandle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

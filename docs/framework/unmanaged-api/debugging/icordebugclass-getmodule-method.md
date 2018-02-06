@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModule method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetModule method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugClass::GetModule Method
 Gets the module that defines this class.  

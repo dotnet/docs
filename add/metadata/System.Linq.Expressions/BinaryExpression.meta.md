@@ -75,7 +75,7 @@ uid: System.Linq.Expressions.BinaryExpression.IsLiftedToNull
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -96,6 +96,8 @@
         <summary>Retrieves the cached representation of the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
         <returns>The <see cref="T:System.Windows.Media.CacheMode" /> for <paramref name="reference" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
+        <altmember cref="T:System.Windows.Media.BitmapCacheBrush" />
       </Docs>
     </Member>
     <Member MemberName="GetChild">
@@ -198,6 +200,7 @@
         <summary>Return the clip region of the specified <see cref="T:System.Windows.Media.Visual" /> as a <see cref="T:System.Windows.Media.Geometry" /> value.</summary>
         <returns>The clip region value of the <see cref="T:System.Windows.Media.Visual" /> returned as a <see cref="T:System.Windows.Media.Geometry" /> type.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.ContainerVisual.Clip" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -227,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Visual)" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -264,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Media3D.Visual3D)" />
       </Docs>
     </Member>
     <Member MemberName="GetDescendantBounds">
@@ -440,6 +445,9 @@
         <summary>Gets the bitmap effect for the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
         <returns>The <see cref="T:System.Windows.Media.Effects.Effect" /> applied to <paramref name="reference" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="GetOffset">
@@ -643,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Visual.VisualXSnappingGuidelines" />
       </Docs>
     </Member>
     <Member MemberName="GetYSnappingGuidelines">
@@ -674,6 +683,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Visual.VisualYSnappingGuidelines" />
       </Docs>
     </Member>
     <MemberGroup MemberName="HitTest">
@@ -846,5 +856,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDescendantBounds">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the union of all the content bounding boxes for all the descendants of the visual object, which includes the content bounding box of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetContentBounds">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the cached bounding box rectangle for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

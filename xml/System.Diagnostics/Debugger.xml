@@ -240,6 +240,7 @@ Console.WriteLine("Hello, world.");
         <exception cref="T:System.Security.SecurityException">The <see cref="T:System.Security.Permissions.UIPermission" /> is not set to start the debugger.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to start a debugger. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Security.Permissions.UIPermission" />
       </Docs>
     </Member>
     <Member MemberName="Log">

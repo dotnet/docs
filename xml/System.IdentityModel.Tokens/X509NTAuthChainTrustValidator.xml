@@ -82,5 +82,14 @@
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">Validation of the X.509 certificate failed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

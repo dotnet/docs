@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_GC_REFERENCE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_GC_REFERENCE structure [.NET Framework debugging]"
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_GC_REFERENCE Structure
 Contains information about an object that is to be garbage-collected.  
@@ -79,5 +79,5 @@ typedef struct _COR_GC_REFERENCE {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

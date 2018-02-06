@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue::GetSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSize method, ICorDebugValue interface [.NET Framework debugging]"
   - "ICorDebugValue::GetSize method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue::GetSize Method
 Gets the size, in bytes, of this "ICorDebugValue" object.  

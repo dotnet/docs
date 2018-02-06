@@ -10,36 +10,34 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "events, ContentRendered"
-  - "events, Deactivated"
-  - "events, Unloaded"
-  - "Activated events"
-  - "events, Loaded"
-  - "Application objects, lifetime events"
-  - "events, Activated"
-  - "ContentRendered events"
-  - "NavigationWindow class"
-  - "Deactivated events"
-  - "classes, NavigationWindow"
-  - "Frame class"
-  - "events, Initialized"
-  - "events, Closing"
-  - "Unloaded events"
-  - "exit events"
-  - "objects' lifetime events"
-  - "Loaded events"
-  - "Closing events"
-  - "events, Closed"
-  - "Initialized events"
-  - "Closed events"
-  - "classes, Frame"
-  - "startup events"
-  - "lifetime events of objects"
+  - "events [WPF], ContentRendered"
+  - "events [WPF], Deactivated"
+  - "events [WPF], Unloaded"
+  - "Activated events [WPF]"
+  - "events [WPF], Loaded"
+  - "Application objects [WPF], lifetime events"
+  - "events [WPF], Activated"
+  - "ContentRendered events [WPF]"
+  - "Deactivated events [WPF]"
+  - "events [WPF], Initialized"
+  - "events [WPF], Closing"
+  - "Unloaded events [WPF]"
+  - "exit events [WPF]"
+  - "objects' lifetime events [WPF]"
+  - "Loaded events [WPF]"
+  - "Closing events [WPF]"
+  - "events [WPF], Closed"
+  - "Initialized events [WPF]"
+  - "Closed events [WPF]"
+  - "startup events [WPF]"
+  - "lifetime events of objects [WPF]"
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Object Lifetime Events
 This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events that signify stages in an object lifetime of creation, use, and destruction.  
@@ -85,5 +83,5 @@ This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../incl
 -   <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>: [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).  
   
 ## See Also  
- [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)   
+ [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)

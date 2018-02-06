@@ -24,6 +24,7 @@
   <Docs>
     <summary>A mutable collection of objects derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class.  This class is designed to be used for multi-valued properties that contain Principals.  Manipulating the contents of this collection changes the contents of the corresponding store property, which is made permanent when <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" /> is called on the corresponding principal object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -41,6 +42,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -155,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -193,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -234,10 +240,11 @@
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|The principal matching these parameters already exists in the collection.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string|  
+|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -269,10 +276,11 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
+|<xref:System.InvalidOperationException>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -290,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Contains">
@@ -318,6 +327,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -346,6 +356,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -374,6 +385,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -402,6 +414,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -442,10 +455,11 @@
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|There are multiple principals matching these parameters.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|The `identityType` parameter cannot be empty.|  
+|<xref:System.ArgumentException>|The `identityType` parameter cannot be empty.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -477,6 +491,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -501,6 +516,7 @@
         <summary>Returns the count of Principal objects in this collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -529,10 +545,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -552,6 +569,7 @@
         <summary>Returns false.  This is not a read-only collection.</summary>
         <value>Returns a <see langword="bool" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -571,6 +589,7 @@
         <summary>Returns false.  It is up to the application to serialize access to this collection.</summary>
         <value>Returns a <see langword="bool" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -588,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -623,10 +643,11 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -662,10 +683,11 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -701,10 +723,11 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -740,10 +763,11 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -783,13 +807,14 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.  In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection.  However, it is possible that another API created the duplicate.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string.|  
+|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -809,6 +834,7 @@
         <summary>Returns a synchronization object that can be used to synchronize access to this collection.</summary>
         <value>Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -845,6 +871,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -869,6 +896,7 @@
         <summary>Returns the count of Principal objects in this collection.</summary>
         <value>Returns an <see langword="integer" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -900,6 +928,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -924,6 +953,7 @@
         <summary>Returns a synchronization object that can be used to synchronize access to this collection.  Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</summary>
         <value>The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -952,10 +982,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
   </Members>

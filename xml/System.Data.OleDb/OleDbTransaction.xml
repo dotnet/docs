@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.OleDb.OleDbDataAdapter" />
+    <altmember cref="T:System.Data.OleDb.OleDbConnection" />
   </Docs>
   <Members>
     <Member MemberName="Begin">
@@ -241,5 +243,14 @@
  The connection is broken.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Begin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates a nested database transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,6 +17,8 @@
   <Docs>
     <summary>Abstract class that, when implemented, defines an animation segment with its own target value and interpolation method for a <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.Animation.MatrixKeyFrameCollection" />
+    <altmember cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -246,5 +248,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.MatrixKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

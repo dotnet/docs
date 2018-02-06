@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DrawToolTipEventArgs" />
+    <altmember cref="T:System.Windows.Forms.ToolTip" />
+    <altmember cref="T:System.Windows.Forms.PopupEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.Graphics" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedWindow" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.Bounds" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.Font" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+        <altmember cref="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBackground" />
+        <altmember cref="Overload:System.Windows.Forms.DrawToolTipEventArgs.DrawText" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedControl">
@@ -106,6 +117,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedWindow" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Draw" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedWindow">
@@ -141,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -287,6 +302,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+        <altmember cref="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBackground" />
+        <altmember cref="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBorder" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -315,6 +333,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+        <altmember cref="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBackground" />
+        <altmember cref="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBorder" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -351,6 +372,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+        <altmember cref="Overload:System.Windows.Forms.DrawToolTipEventArgs.DrawText" />
+        <altmember cref="P:System.Windows.Forms.DrawToolTipEventArgs.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -427,7 +451,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.DrawToolTipEventArgs.DrawText" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="E:System.Windows.Forms.ToolTip.Draw" />
+        <altmember cref="M:System.Drawing.Graphics.DrawString(System.String,System.Drawing.Font,System.Drawing.Brush,System.Single,System.Single)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system text color and font, and optionally using specific formatting options.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -476,5 +476,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeSourcesNeedingCompilation">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method computes the sources that need to be compiled based on the output files and the full dependency graph of inputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveDependenciesFromEntryIfMissing">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given sources and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveTlog">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method will re-write the tlogs from the current output table new entries will be tracked.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveEntriesForSource">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the output graph entries for the given sources and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveDependencyFromEntry">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given source and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructor for multiple input source files</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

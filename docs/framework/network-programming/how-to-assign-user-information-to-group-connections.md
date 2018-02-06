@@ -8,15 +8,15 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Assign User Information to Group Connections
 
@@ -115,5 +115,5 @@ MyWebResponse.Close()
 ```  
   
 ## See Also  
- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)   
+ [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)  
  [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)

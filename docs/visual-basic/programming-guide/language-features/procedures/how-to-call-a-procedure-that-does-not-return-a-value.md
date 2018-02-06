@@ -1,39 +1,21 @@
 ---
 title: "How to: Call a Procedure that Does Not Return a Value (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "procedure calls, returning values"
+  - "procedure calls [Visual Basic], returning values"
   - "Visual Basic code, procedures"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call a Procedure that Does Not Return a Value (Visual Basic)
 A `Sub` procedure does not return a value to the calling code. You call it explicitly with a stand-alone calling statement. You cannot call it by simply using its name within an expression.  
@@ -51,12 +33,12 @@ A `Sub` procedure does not return a value to the calling code. You call it expli
      [!code-vb[VbVbalrCatRef#11](./codesnippet/VisualBasic/how-to-call-a-procedure-that-does-not-return-a-value_1.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Interaction.Shell%2A>   
- <xref:System.ArgumentException>   
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [How to: Create a Procedure](./how-to-create-a-procedure.md)   
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)   
+ <xref:Microsoft.VisualBasic.Interaction.Shell%2A>  
+ <xref:System.ArgumentException>  
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [How to: Create a Procedure](./how-to-create-a-procedure.md)  
+ [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)  
  [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)

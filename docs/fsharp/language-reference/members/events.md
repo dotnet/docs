@@ -178,7 +178,7 @@ Application.Run(appForm)
 ## See Also
 [Members](index.md)
 
-[Handling and Raising Events](https://msdn.microsoft.com/library/edzehd2t.aspx)
+[Handling and Raising Events](../../../../docs/standard/events/index.md)
 
 [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md)
 

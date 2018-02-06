@@ -16,6 +16,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Generics in XAML
 The .NET Framework XAML Services as implemented in System.Xaml provides support for using generic CLR types. This support includes specifying the constraints of generics as a type argument and enforcing the constraint by calling the appropriate `Add` method for generic collection cases. This topic describes aspects of using and referencing generic types in XAML.  
@@ -49,6 +51,6 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
  Custom workflows in [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)] for [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] do not support generic XAML usage.  
   
 ## See Also  
- [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md)   
- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
+ [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md)  
+ [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
  [Built-in Types for Common XAML Language Primitives](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md)

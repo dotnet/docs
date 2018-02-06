@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.WebMethodAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlIgnoreAttribute" />
       </Docs>
     </Member>
     <Member MemberName="UseHttpGet">

@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PageSettings" />
+    <altmember cref="T:System.Drawing.Printing.PrintController" />
+    <altmember cref="T:System.Drawing.Printing.MarginsConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,6 +149,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.Margins.Bottom" /> property is set to a value that is less than 0.</exception>
+        <altmember cref="P:System.Drawing.Printing.Margins.Left" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Right" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Top" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -165,6 +171,7 @@
         <summary>Retrieves a duplicate of this object, member by member.</summary>
         <returns>A duplicate of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.Printing.Margins.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -188,6 +195,7 @@
         <returns>
           <see langword="true" /> if the specified object is a <see cref="T:System.Drawing.Printing.Margins" /> and has the same <see cref="P:System.Drawing.Printing.Margins.Top" />, <see cref="P:System.Drawing.Printing.Margins.Bottom" />, <see cref="P:System.Drawing.Printing.Margins.Right" /> and <see cref="P:System.Drawing.Printing.Margins.Left" /> values as this <see cref="T:System.Drawing.Printing.Margins" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.Printing.Margins.Clone" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -244,6 +252,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.Margins.Left" /> property is set to a value that is less than 0.</exception>
+        <altmember cref="P:System.Drawing.Printing.Margins.Right" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Top" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -335,6 +346,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.Margins.Right" /> property is set to a value that is less than 0.</exception>
+        <altmember cref="P:System.Drawing.Printing.Margins.Left" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Top" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -372,6 +386,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.Margins.Top" /> property is set to a value that is less than 0.</exception>
+        <altmember cref="P:System.Drawing.Printing.Margins.Left" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Right" />
+        <altmember cref="P:System.Drawing.Printing.Margins.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -393,5 +410,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.Margins" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

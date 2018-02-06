@@ -19,18 +19,21 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlTitle> class to programmatically specify the HTML `<title>` element of a Web Forms page.  
   
 > [!NOTE]
->  You can also set the page title by using the `title` attribute of the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive, or by setting the <xref:System.Web.UI.Page.Title%2A> property of the <xref:System.Web.UI.Page> class.  
+>  You can also set the page title by using the `title` attribute of the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive, or by setting the <xref:System.Web.UI.Page.Title%2A> property of the <xref:System.Web.UI.Page> class.  
   
    
   
 ## Examples  
  The following code example demonstrates how to display the current date and time in the title bar of the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="P:System.Web.UI.Page.Title" />
+    <altmember cref="P:System.Web.UI.Page.Header" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +63,8 @@
 ## Examples  
  The following code example demonstrates how to display the current date and time in the title bar of the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -93,6 +96,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -140,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -182,8 +188,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.HtmlControls.HtmlTitle.Text%2A> property of an <xref:System.Web.UI.HtmlControls.HtmlTitle> control to dynamically change the title of a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/CS/htmltitlecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlTitleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlTitleClass/VB/htmltitlevb.aspx#1)]  
   
  ]]></format>
         </remarks>

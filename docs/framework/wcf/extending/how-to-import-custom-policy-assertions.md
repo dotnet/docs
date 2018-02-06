@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Import Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint.  Client applications can use policy assertions in service metadata to configure the client binding or to customize the service contract for a service endpoint.  
@@ -67,7 +72,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
 1.  Add the importer to the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> property (for example, if you are using the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>) prior to importing the metadata.  
   
 ## See Also  
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>   
+ <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
  [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

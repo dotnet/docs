@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetScope method"
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetScope Method1
 Gets an import scope.  
@@ -63,6 +63,6 @@ HRESULT GetScope(
  Requires alink.h  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

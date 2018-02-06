@@ -18,6 +18,9 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # EventWaitHandle
 The <xref:System.Threading.EventWaitHandle> class allows threads to communicate with each other by signaling and by waiting for signals. Event wait handles (also referred to simply as events) are wait handles that can be signaled in order to release one or more waiting threads. After it is signaled, an event wait handle is reset either manually or automatically. The <xref:System.Threading.EventWaitHandle> class can represent either a local event wait handle (local event) or a named system event wait handle (named event or system event, visible to all processes).  
@@ -65,8 +68,8 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
 >  Unlike the <xref:System.Threading.EventWaitHandle> class, the derived classes <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> can represent only local wait handles. They cannot represent named system events.  
   
 ## See Also  
- <xref:System.Threading.EventWaitHandle>   
- <xref:System.Threading.WaitHandle>   
- <xref:System.Threading.AutoResetEvent>   
- <xref:System.Threading.ManualResetEvent>   
+ <xref:System.Threading.EventWaitHandle>  
+ <xref:System.Threading.WaitHandle>  
+ <xref:System.Threading.AutoResetEvent>  
+ <xref:System.Threading.ManualResetEvent>  
  [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)

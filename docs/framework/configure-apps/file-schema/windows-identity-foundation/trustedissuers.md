@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;trustedIssuers&gt;
 Configures the list of trusted issuer certificates used by the configuration-based issuer name registry (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>).  
@@ -82,5 +84,5 @@ Configures the list of trusted issuer certificates used by the configuration-bas
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>   
+ <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>  
  <xref:System.IdentityModel.Tokens.IssuerNameRegistry>

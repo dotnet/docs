@@ -22,7 +22,15 @@
   <Interfaces />
   <Docs>
     <summary>Provides the ability to collect statistics for very frequent events through the  <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> class, see the [Introduction Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) topic.
+
+   ]]>
+      </format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,7 +97,14 @@
       <Docs>
         <param name="value">The value to be written.</param>
         <summary>Writes the metric if performance counters are on.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+    ## Remarks  
+
+    For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)> method, see the [Introduction Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) topic.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

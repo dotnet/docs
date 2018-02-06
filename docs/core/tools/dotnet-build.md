@@ -3,7 +3,7 @@ title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
-ms.date: 10/16/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -22,7 +22,7 @@ ms.workload:
 
 # [.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet build [<PROJECT>] [--configfile] [-c|--configuration] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--no-cache]
+dotnet build [<PROJECT>] [-c|--configuration] [--configfile] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--no-cache]
     [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [--packages] [-r|--runtime] [--source] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
@@ -67,13 +67,13 @@ The project file to build. If a project file is not specified, MSBuild searches 
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-`--configfile <FILE>`
-
-The NuGet configuration file (*NuGet.config*) to use for the restore operation.
-
 `-c|--configuration {Debug|Release}`
 
 Defines the build configuration. The default value is `Debug`.
+
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
 
 `--disable-parallel`
 

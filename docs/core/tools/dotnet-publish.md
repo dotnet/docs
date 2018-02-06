@@ -3,7 +3,7 @@ title: dotnet publish command - .NET Core CLI
 description: The dotnet publish command publishes your .NET Core project into a directory.
 author: mairaw
 ms.author: mairaw
-ms.date: 10/16/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -23,7 +23,7 @@ ms.workload:
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet publish [<PROJECT>] [--configfile] [-c|--configuration] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--manifest] [--no-cache]
+dotnet publish [<PROJECT>] [-c|--configuration] [--configfile] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--manifest] [--no-cache]
     [--no-dependencies] [--no-restore] [-o|--output] [--packages] [-r|--runtime] [--self-contained] [--source] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
@@ -58,13 +58,13 @@ The project to publish, which defaults to the current directory if not specified
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-`--configfile <FILE>`
-
-The NuGet configuration file (*NuGet.config*) to use for the restore operation.
-
 `-c|--configuration {Debug|Release}`
 
 Defines the build configuration. The default value is `Debug`.
+
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
 
 `--disable-parallel`
 
@@ -177,11 +177,11 @@ Publish the project in the current directory:
 Publish the application using the specified project file:
 
 `dotnet publish ~/projects/app1/app1.csproj`
-	
+
 Publish the project in the current directory using the `netcoreapp1.1` framework:
 
 `dotnet publish --framework netcoreapp1.1`
-	
+
 Publish the current application using the `netcoreapp1.1` framework and the runtime for `OS X 10.10` (you must list this RID in the project file).
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`

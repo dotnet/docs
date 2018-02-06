@@ -3,7 +3,7 @@ title: dotnet pack command - .NET Core CLI
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
 author: mairaw
 ms.author: mairaw
-ms.date: 12/13/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -23,7 +23,9 @@ ms.workload:
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies] [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
+dotnet pack [<PROJECT>] [-c|--configuration] [--configfile] [--disable-parallel] [--force] [--ignore-failed-sources]
+    [--include-source] [--include-symbols] [--no-build]  [--no-cache] [--no-dependencies] [--no-restore] [-o|--output] [--packages]
+    [--runtime] [-s|--serviceable] [--source] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
 
@@ -58,12 +60,24 @@ The project to pack. It's either a path to a [csproj file](csproj.md) or to a di
 
 Defines the build configuration. The default value is `Debug`.
 
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+
+`--disable-parallel`
+
+Disables restoring multiple projects in parallel.
+
 `--force`
 Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting the *project.assets.json* file.
 
 `-h|--help`
 
 Prints out a short help for the command.
+
+`--ignore-failed-sources`
+
+Only warn about failed sources if there are packages meeting the version requirement.
 
 `--include-source`
 
@@ -77,6 +91,10 @@ Generates the symbols `nupkg`.
 
 Doesn't build the project before packing.
 
+`--no-cache`
+
+Specifies to not cache packages and HTTP requests.
+
 `--no-dependencies`
 
 Ignores project-to-project references and only restores the root project.
@@ -89,6 +107,10 @@ Doesn't perform an implicit restore when running the command.
 
 Places the built packages in the directory specified.
 
+`--packages <PACKAGES_DIRECTORY>`
+
+Specifies the directory for restored packages.
+
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
 Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
@@ -96,6 +118,10 @@ Specifies the target runtime to restore packages for. For a list of Runtime Iden
 `-s|--serviceable`
 
 Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+
+`--source <SOURCE>`
+
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `--version-suffix <VERSION_SUFFIX>`
 
@@ -154,7 +180,7 @@ Pack the project in the current directory:
 Pack the `app1` project:
 
 `dotnet pack ~/projects/app1/project.csproj`
-	
+
 Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
 
 `dotnet pack --output nupkgs`

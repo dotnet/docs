@@ -3,7 +3,7 @@ title: dotnet run command - .NET Core CLI
 description: The dotnet run command provides a convenient option to run your application from the source code.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/24/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -23,7 +23,9 @@ ms.workload:
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project] [--runtime] [[--] [application arguments]]
+dotnet run [-c|--configuration] [--configfile] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources]
+    [--launch-profile] [--no-build] [--no-cache] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project] 
+    [--packages] [--runtime] [--source] [[--] [application arguments]]
 dotnet run [-h|--help]
 ```
 
@@ -66,6 +68,14 @@ Delimits arguments to `dotnet run` from arguments for the application being run.
 
 Defines the build configuration. The default value is `Debug`.
 
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+
+`--disable-parallel`
+
+Disables restoring multiple projects in parallel.
+
 `-f|--framework <FRAMEWORK>`
 
 Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
@@ -78,6 +88,10 @@ Forces all dependencies to be resolved even if the last restore was successful. 
 
 Prints out a short help for the command.
 
+`--ignore-failed-sources`
+
+Only warn about failed sources if there are packages meeting the version requirement.
+
 `--launch-profile <NAME>`
 
 The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
@@ -86,6 +100,10 @@ The name of the launch profile (if any) to use when launching the application. L
 `--no-build`
 
 Doesn't build the project before running.
+
+`--no-cache`
+
+Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
@@ -103,9 +121,17 @@ Doesn't perform an implicit restore when running the command.
 
 Specifies the path of the project file to run (folder name or full path). It defaults to the current directory if not specified.
 
+`--packages <PACKAGES_DIRECTORY>`
+
+Specifies the directory for restored packages.
+
 `--runtime <RUNTIME_IDENTIFIER>`
 
 Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+`--source <SOURCE>`
+
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

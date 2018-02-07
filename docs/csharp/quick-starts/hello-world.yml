@@ -132,17 +132,17 @@ items:
     The `string` type has many useful methods. Let's explore the <xref:System.String.Trim%2A> method, and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A>. These methods remove leading and trailing spaces:
 
     ```csharp
-    string message = "      Hello World!       ";
-    Console.WriteLine($"[{message}]");
+    string greeting = "      Hello World!       ";
+    Console.WriteLine($"[{greeting}]");
 
-    string trimmedMessage = message.TrimStart();
-    Console.WriteLine($"[{trimmedMessage}]");
+    string trimmedGreeting = greeting.TrimStart();
+    Console.WriteLine($"[{trimmedGreeting}]");
 
-    trimmedMessage = message.TrimEnd();
-    Console.WriteLine($"[{trimmedMessage}]");
+    trimmedGreeting = greeting.TrimEnd();
+    Console.WriteLine($"[{trimmedGreeting}]");
 
-    trimmedMessage = message.Trim();
-    Console.WriteLine($"[{trimmedMessage}]");
+    trimmedGreeting = greeting.Trim();
+    Console.WriteLine($"[{trimmedGreeting}]");
     ```
 
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string, but does not change the original message.
@@ -150,19 +150,17 @@ items:
     There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a `string`. It searches for a substring, and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code:
 
     ```csharp
-    string message = "Hello World!";
-    Console.WriteLine(message);
-    message = message.Replace("Hello", "Greetings");
-    Console.WriteLine(message);
+    string sayHello = "Hello World!";
+    Console.WriteLine(sayHello);
+    sayHello = sayHello.Replace("Hello", "Greetings");
+    Console.WriteLine(sayHello);
     ```
 
     Two other useful methods make a string ALL CAPS or all lower case. Try the following code:
 
     ```csharp
-    string message = "Hello World!";
-    Console.WriteLine(message);
-    Console.WriteLine(message.ToUpper());
-    Console.WriteLine(message.ToLower());
+    Console.WriteLine(sayHello.ToUpper());
+    Console.WriteLine(sayHello.ToLower());
     ```
 
     > [!NOTE]
@@ -177,9 +175,9 @@ items:
     code to explore <xref:System.String.Contains%2A>:
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
-    Console.WriteLine(message.Contains("goodbye"));
-    Console.WriteLine(message.Contains("greetings"));
+    string songLyrics = "You say goodbye, and I say hello";
+    Console.WriteLine(songLyrics.Contains("goodbye"));
+    Console.WriteLine(songLyrics.Contains("greetings"));
     ```
 
     The <xref:System.String.Contains%2A> method returns a **boolean** value which tells you if the
@@ -208,12 +206,12 @@ items:
     Did you come up with something like this?
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
-    Console.WriteLine(message.StartsWith("You"));
-    Console.WriteLine(message.StartsWith("goodbye"));
+    string songLyrics = "You say goodbye, and I say hello";
+    Console.WriteLine(songLyrics.StartsWith("You"));
+    Console.WriteLine(songLyrics.StartsWith("goodbye"));
 
-    Console.WriteLine(message.EndsWith("hello"));
-    Console.WriteLine(message.EndsWith("goodbye"));
+    Console.WriteLine(songLyrics.EndsWith("hello"));
+    Console.WriteLine(songLyrics.EndsWith("goodbye"));
     ```
 
     > [!NOTE]

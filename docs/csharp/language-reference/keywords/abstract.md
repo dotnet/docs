@@ -47,7 +47,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
     public abstract void MyMethod();  
     ```  
   
-     The implementation is provided by an overriding method[override](../../../csharp/language-reference/keywords/override.md), which is a member of a non-abstract class.  
+     The implementation is provided by an overriding method [override](../../../csharp/language-reference/keywords/override.md), which is a member of a non-abstract class.  
   
 -   It is an error to use the [static](../../../csharp/language-reference/keywords/static.md) or [virtual](../../../csharp/language-reference/keywords/virtual.md) modifiers in an abstract method declaration.  
   

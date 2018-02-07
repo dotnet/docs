@@ -174,4 +174,4 @@ The next project that you create in this walkthrough accesses a library that is 
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
  [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
- [Implementing Dynamic Interfaces (external blog)](http://go.microsoft.com/fwlink/?LinkId=230895)
+ [Implementing Dynamic Interfaces](https://social.technet.microsoft.com/wiki/contents/articles/24446.mvp-articles-for-c-and-visual-basic.aspx#ImplementingDynamicInterfaces)

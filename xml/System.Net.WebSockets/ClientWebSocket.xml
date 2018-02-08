@@ -90,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the connection and cancels any pending IO operations. The ClientWebSocket cannot be reused once aborted.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Aborts the connection and cancels any pending IO operations.</summary>
+        <remarks>The `ClientWebSocket` cannot be reused once once it is aborted.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseAsync">

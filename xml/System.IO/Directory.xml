@@ -2669,7 +2669,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ The `path` parameter can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
  Trailing spaces are removed from the end of the `path` parameter before getting the directory.  
   
@@ -2696,8 +2696,10 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For more information, see the <see cref="T:System.IO.PathTooLongException" /> topic. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path was not found.</exception>
+        <exception cref="T:System.NotSupportedException"><paramref name="path" /> is in an invalid format. </exception>
+        <exception cref="T:System.Security.SecurityException">.NET Framework only: The caller does not have the required permissions. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>

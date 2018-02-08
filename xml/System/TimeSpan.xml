@@ -2378,7 +2378,9 @@
 |*ss*|Optional seconds, ranging from 0 to 59.|  
 |*.*|A culture-sensitive symbol that separates seconds from fractions of a second. The invariant format uses a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
-  
+
+If the `s` argument is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse%2A> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
+
  The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `s` by using each of the culture-specific formats for the current culture.  
@@ -2467,7 +2469,9 @@
 |*ss*|Optional seconds, ranging from 0 to 59.|  
 |.|A culture-sensitive symbol that separates seconds from fractions of a second. The default value is a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
-  
+
+If the `input` argument is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse%2A> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
+
  The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `input` by using each of the culture-specific formats for the culture specified by `formatProvider`.  

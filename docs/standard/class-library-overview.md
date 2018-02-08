@@ -1,7 +1,7 @@
 ---
 title: ".NET Class Library Overview"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "02/08/2018"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,9 +20,9 @@ helpviewer_keywords:
   - "data types [.NET Framework], C++"
   - "Visual C#, data types"
   - "libraries, .NET Framework class library"
-  - "data types [.NET Framework], JScript"
+  - "data types [.NET Framework], F#"
   - "System namespace"
-  - "JScript, data types"
+  - "F#, data types"
   - ".NET Framework, class library"
   - "type system [.NET Framework]"
   - "data types [.NET Framework]"
@@ -85,27 +85,27 @@ ms.workload:
 ## System Namespace  
  The <xref:System> namespace is the root namespace for fundamental types in .NET. This namespace includes classes that represent the base data types used by all applications: <xref:System.Object> (the root of the inheritance hierarchy), <xref:System.Byte>, <xref:System.Char>, <xref:System.Array>, <xref:System.Int32>, <xref:System.String>, and so on. Many of these types correspond to the primitive data types that your programming language uses. When you write code using .NET Framework types, you can use your language's corresponding keyword when a .NET Framework base data type is expected.  
   
- The following table lists the base types that .NET supplies, briefly describes each type, and indicates the corresponding type in Visual Basic, C#, C++, and JScript.  
+ The following table lists the base types that .NET supplies, briefly describes each type, and indicates the corresponding type in Visual Basic, C#, C++, and F#.  
   
-|Category|Class name|Description|Visual Basic data type|C# data type|C++ data type|JScript data type|  
+|Category|Class name|Description|Visual Basic data type|C# data type|C++/CLI data type|F# data type|  
 |--------------|----------------|-----------------|----------------------------|-------------------|---------------------|-----------------------|  
-|Integer|<xref:System.Byte>|An 8-bit unsigned integer.|**Byte**|**byte**|**unsigned char**|**Byte**|  
-||<xref:System.SByte>|An 8-bit signed integer.<br /><br /> Not CLS-compliant.|**SByte**|**sbyte**|**char**<br /><br /> -or-<br /><br /> **signed** **char**|**SByte**|  
-||<xref:System.Int16>|A 16-bit signed integer.|**Short**|**short**|**short**|**short**|  
+|Integer|<xref:System.Byte>|An 8-bit unsigned integer.|**Byte**|**byte**|**unsigned char**|**byte**|  
+||<xref:System.SByte>|An 8-bit signed integer.<br /><br /> Not CLS-compliant.|**SByte**|**sbyte**|**char**<br /> -or-<br /> **signed** **char**|**sbyte**|  
+||<xref:System.Int16>|A 16-bit signed integer.|**Short**|**short**|**short**|**int16**|  
 ||<xref:System.Int32>|A 32-bit signed integer.|**Integer**|**int**|**int**<br /><br /> -or-<br /><br /> **long**|**int**|  
-||<xref:System.Int64>|A 64-bit signed integer.|**Long**|**long**|**__int64**|**long**|  
-||<xref:System.UInt16>|A 16-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UShort**|**ushort**|**unsigned short**|**UInt16**|  
-||<xref:System.UInt32>|A 32-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UInteger**|**uint**|**unsigned int**<br /><br /> -or-<br /><br /> **unsigned long**|**UInt32**|  
-||<xref:System.UInt64>|A 64-bit unsigned integer.<br /><br /> Not CLS-compliant.|**ULong**|**ulong**|**unsigned __int64**|**UInt64**|  
-|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float**|  
-||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**double**|  
+||<xref:System.Int64>|A 64-bit signed integer.|**Long**|**long**|**__int64**|**int64**|  
+||<xref:System.UInt16>|A 16-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UShort**|**ushort**|**unsigned short**|**uint16**|  
+||<xref:System.UInt32>|A 32-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UInteger**|**uint**|**unsigned int**<br /> -or-<br /> **unsigned long**|**uint32**|  
+||<xref:System.UInt64>|A 64-bit unsigned integer.<br /><br /> Not CLS-compliant.|**ULong**|**ulong**|**unsigned __int64**|**uint64**|  
+|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float32**</br> or</br>**single**|  
+||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**float**</br> or </br> **double**|  
 |Logical|<xref:System.Boolean>|A Boolean value (true or false).|**Boolean**|**bool**|**bool**|**bool**|  
 |Other|<xref:System.Char>|A Unicode (16-bit) character.|**Char**|**char**|**wchar_t**|**char**|  
-||<xref:System.Decimal>|A decimal  (128-bit) value.|**Decimal**|**decimal**|**Decimal**|**Decimal**|  
-||<xref:System.IntPtr>|A signed integer whose size depends on the underlying platform (a 32-bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**IntPtr**|  
-||<xref:System.UIntPtr>|An unsigned integer whose size depends on the underlying platform (a 32- bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).<br /><br /> Not CLS-compliant.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**|  
-ass objects|<xref:System.Object>|The root of the object hierarchy.|**Object**|**object**|**Object\***|**Object**|  
-||<xref:System.String>|An immutable, fixed-length string of Unicode characters.|**String**|**string**|**String\***|**String**|  
+||<xref:System.Decimal>|A decimal  (128-bit) value.|**Decimal**|**decimal**|**Decimal**|**decimal**|  
+||<xref:System.IntPtr>|A signed integer whose size depends on the underlying platform (a 32-bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**unativeint**|  
+||<xref:System.UIntPtr>|An unsigned integer whose size depends on the underlying platform (a 32- bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).<br /><br /> Not CLS-compliant.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**unativeint**|  
+||<xref:System.Object>|The root of the object hierarchy.|**Object**|**object**|**Object^**|**object**|  
+||<xref:System.String>|An immutable, fixed-length string of Unicode characters.|**String**|**string**|**String^**|**string**|  
   
  In addition to the base data types, the <xref:System> namespace contains over 100 classes, ranging from classes that handle exceptions to classes that deal with core runtime concepts, such as application domains and the garbage collector. The <xref:System> namespace also contains many second-level namespaces.  
   

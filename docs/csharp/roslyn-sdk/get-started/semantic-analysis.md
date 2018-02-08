@@ -14,19 +14,19 @@ ms.custom: mvc
 
 This tutorial assumes you're familiar with the Syntax API. The [get started with syntax analysis](syntax-analysis.md) article provides sufficient introduction.
 
-In this tutorial we'll explore the **Symbol** and **Binding APIs**. These APIs provide information about the _semantic meaning_ of a program. They enable you to ask and answer questions about the types represented by any symbol in your program.
+In this tutorial, you explore the **Symbol** and **Binding APIs**. These APIs provide information about the _semantic meaning_ of a program. They enable you to ask and answer questions about the types represented by any symbol in your program.
 
 ## Understanding Compilations and Symbols
 
-As you work more with the .NET Compiler SDK you'll become familiar with the distinctions between Syntax API and the Semantic API. The **Syntax API** allows you to look at the _structure_ of a program. However, often you'll want richer information about the semantics or _meaning_ of a program. While a loose code file or snippet of VB or C# code can be syntactically analyzed in isolation it's not very meaningful to ask questions such as "what's the type of this variable" in a vacuum. The meaning of a type name may be dependent on assembly references, namespace imports, or other code files. Those questions are answered using the **Semantic API**, specifically the <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> class.
+As you work more with the .NET Compiler SDK, you become familiar with the distinctions between Syntax API and the Semantic API. The **Syntax API** allows you to look at the _structure_ of a program. However, often you want richer information about the semantics or _meaning_ of a program. While a loose code file or snippet of VB or C# code can be syntactically analyzed in isolation, it's not meaningful to ask questions such as "what's the type of this variable" in a vacuum. The meaning of a type name may be dependent on assembly references, namespace imports, or other code files. Those questions are answered using the **Semantic API**, specifically the <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> class.
 
-A <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> is analogous to a single project as seen by the compiler and represents everything needed to compile a Visual Basic or C# program. This includes the set of source files to be compiled, assembly references, compiler options. You can reason about the meaning of the code using all the other information in this context. A <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> allows you to find **Symbols** - entities such as types, namespaces, members, and variables which names and other expressions refer to. The process of associating names and expressions with **Symbols** is called **Binding**.
+A <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> is analogous to a single project as seen by the compiler and represents everything needed to compile a Visual Basic or C# program. The **compilation** includes the set of source files to be compiled, assembly references, compiler options. You can reason about the meaning of the code using all the other information in this context. A <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> allows you to find **Symbols** - entities such as types, namespaces, members, and variables which names and other expressions refer to. The process of associating names and expressions with **Symbols** is called **Binding**.
 
-Like <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> is an abstract class with language-specific derivatives. When creating an instance of Compilation you must invoke a factory method on the <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation?displayProperty=nameWithType> (or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicCompilation?displayProperty=nameWithType>) class.
+Like <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, <xref:Microsoft.CodeAnalysis.Compilation?displayProperty=nameWithType> is an abstract class with language-specific derivatives. When creating an instance of Compilation, you must invoke a factory method on the <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation?displayProperty=nameWithType> (or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicCompilation?displayProperty=nameWithType>) class.
 
 ## Querying symbols
 
-In this tutorial, you'll look at the "Hello World" program again. This time, you'll query the symbols in the program to understand what types those symbols represent. You'll query for the types in a namespace, and learn to query for the methods available on a type.
+In this tutorial, you look at the "Hello World" program again. This time, you query the symbols in the program to understand what types those symbols represent. You query for the types in a namespace, and learn to query for the methods available on a type.
 
 > [!IMPORTANT]
 > The following samples require the **.NET Compiler SDK** installed as part of Visual Studio 2017. You can find the .NET Compiler SDK as the last optional component listed under the **Visual Studio extension development** workload. The templates aren't installed without this component.
@@ -51,7 +51,7 @@ Next, add the following code to build the syntax tree for the code text in the `
 
 [!code-csharp[Create the tree](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#2 "Create the syntax tree")]
 
-Next, build a <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation?displayProperty=nameWithType> from the tree you already created. The "Hello World" sample relies on the <xref:System.String> and <xref:System.Console> types. You'll need to reference the assembly that declares those two types in your compilation. Add the following line to your `Main` method to create a compilation of your syntax tree, including the reference to the appropriate assembly:
+Next, build a <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation?displayProperty=nameWithType> from the tree you already created. The "Hello World" sample relies on the <xref:System.String> and <xref:System.Console> types. You need to reference the assembly that declares those two types in your compilation. Add the following line to your `Main` method to create a compilation of your syntax tree, including the reference to the appropriate assembly:
 
 [!code-csharp[Create the compilation](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#3 "Create the compilation for the semantic model")]
 
@@ -69,9 +69,9 @@ The <xref:Microsoft.CodeAnalysis.Compilation> creates the  <xref:Microsoft.CodeA
 
 [!code-csharp[Find the namespace symbol for the first using](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#5 "Find the namespace symbol for the first using")]
 
-The preceding code shows how to obtain a <xref:Microsoft.CodeAnalysis.SemanticModel> object for our HelloWorld <xref:Microsoft.CodeAnalysis.SyntaxTree>. Once the model is obtained, the name in the first `using` directive is bound to retrieve a <xref:Microsoft.CodeAnalysis.SymbolInfo?displayProperty=nameWithType> for the `System` namespace. The preceding code also illustrates how you use the **syntax model** to find the structure of the code and the **semantic model** to understand its meaning. The **syntax model** finds the string `System` in the using statement. The **semantic model** has all the information about the types defined in the `System` namespace.
+The preceding code shows how to obtain a <xref:Microsoft.CodeAnalysis.SemanticModel> object for your HelloWorld <xref:Microsoft.CodeAnalysis.SyntaxTree>. Once the model is obtained, the name in the first `using` directive is bound to retrieve a <xref:Microsoft.CodeAnalysis.SymbolInfo?displayProperty=nameWithType> for the `System` namespace. The preceding code also illustrates that you use the **syntax model** to find the structure of the code; you use the **semantic model** to understand its meaning. The **syntax model** finds the string `System` in the using statement. The **semantic model** has all the information about the types defined in the `System` namespace.
 
-From the <xref:Microsoft.CodeAnalysis.SymbolInfo?displayProperty=nameWithType> object you can obtain the the <xref:Microsoft.CodeAnalysis.ISymbol?displayProperty=nameWithType> using the <xref:Microsoft.CodeAnalysis.SymbolInfo.Symbol?displayProperty=nameWithType> property. This property returns the symbol this expression refers to. For expressions which don't refer to anything (such as numeric literals) this property will be `null`. When the <xref:Microsoft.CodeAnalysis.SymbolInfo.Symbol?displayProperty=nameWithType> is not null, the <xref:Microsoft.CodeAnalysis.ISymbol.Kind?displayProperty=nameWithType> denotes the type of the symbol. In this example, the <xref:Microsoft.CodeAnalysis.ISymbol.Kind?displayProperty=nameWithType> property is a <xref:Microsoft.CodeAnalysis.SymbolKind.Namespace?displayProperty=nameWithType>. Add the following code to your `Main` method to retrieve the symbol for the `System` namespace and then display all the child namespaces that are declared in the `System` namespace:
+From the <xref:Microsoft.CodeAnalysis.SymbolInfo?displayProperty=nameWithType> object you can obtain the <xref:Microsoft.CodeAnalysis.ISymbol?displayProperty=nameWithType> using the <xref:Microsoft.CodeAnalysis.SymbolInfo.Symbol?displayProperty=nameWithType> property. This property returns the symbol this expression refers to. For expressions that don't refer to anything (such as numeric literals) this property is `null`. When the <xref:Microsoft.CodeAnalysis.SymbolInfo.Symbol?displayProperty=nameWithType> is not null, the <xref:Microsoft.CodeAnalysis.ISymbol.Kind?displayProperty=nameWithType> denotes the type of the symbol. In this example, the <xref:Microsoft.CodeAnalysis.ISymbol.Kind?displayProperty=nameWithType> property is a <xref:Microsoft.CodeAnalysis.SymbolKind.Namespace?displayProperty=nameWithType>. Add the following code to your `Main` method. It retrieves the symbol for the `System` namespace and then displays all the child namespaces declared in the `System` namespace:
 
 [!code-csharp[Display all the child namespaces](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#6 "Display all the child namespaces from this compilation")]
 
@@ -95,7 +95,7 @@ Press any key to continue . . .
 ```
 
 > [!NOTE]
-> This does not include every namespace that is a child namespace of the `System` namespace. It displays every namespace that is present in this compilation, which only references the assembly where the `System.String` type is declared. Any namespaces declared in other assemblies are not known to this compilation
+> The output does not include every namespace that is a child namespace of the `System` namespace. It displays every namespace that is present in this compilation, which only references the assembly where `System.String` is declared. Any namespaces declared in other assemblies are not known to this compilation
 
 ### Binding an expression
 
@@ -111,13 +111,13 @@ The <xref:Microsoft.CodeAnalysis.TypeInfo?displayProperty=nameWithType> struct i
 
 [!code-csharp[Find the semantic information about the string type](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#8 "Use the string literal to access the semantic information in the string type.")]
 
-To finish this tutorial, let's build a LINQ query that creates a sequence of all the public methods declared on the `string` type that return a `string`. This query gets somewhat complex, so let's build it line by line, then reconstruct it as a single query. The source for this query is the sequence of all members declarated on the `string` type:
+To finish this tutorial, let's build a LINQ query that creates a sequence of all the public methods declared on the `string` type that return a `string`. This query gets complex, so let's build it line by line, then reconstruct it as a single query. The source for this query is the sequence of all members declared on the `string` type:
 
 [!code-csharp[Access the sequence of members on the string type](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#9 "Access the sequence of members on the string type.")]
 
-That source sequencconatins all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray%601.OfType%2A?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?diplayProperty=nameWithType> objects:
+That source sequence conatins all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray%601.OfType%2A?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?diplayProperty=nameWithType> objects:
 
-[!code-csharp[Filter the sequence to only methods](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#10 "Find the subset of the colelction that is the methods.")]
+[!code-csharp[Filter the sequence to only methods](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#10 "Find the subset of the collection that is the methods.")]
 
 Next, add another filter to return only those methods that are public and return a `string`:
 
@@ -127,7 +127,7 @@ Select only the name property, and only distinct names by removing any overloads
 
 [!code-csharp[find the distinct names.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#12 "Use the string literal to access the semantic information in the string type.")]
 
-You can also build the full query using the LINQ query sytnax, and then display all the method names in  the console:
+You can also build the full query using the LINQ query syntax, and then display all the method names in  the console:
 
 [!code-csharp[build and display the results of this query.](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/SemanticQuickStart/Program.cs#12 "Build and display the results of the query.")]
 

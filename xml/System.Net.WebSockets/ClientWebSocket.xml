@@ -90,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the connection and cancels any pending IO operations.</summary>
+        <summary>Aborts the connection and cancels any pending IO operations. An Aborted connection cannot be used again.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

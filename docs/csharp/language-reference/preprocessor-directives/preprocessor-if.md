@@ -47,7 +47,7 @@ Other predefined symbols include the DEBUG and TRACE constants. You can override
 
 ## Examples
 
-The following example shows you how to define a MYTEST symbol on a file and then test the values of the MYTEST and DEBUG symbols. The output of this example depends on whether you run the project on Debug or Release mode.
+The following example shows you how to define a MYTEST symbol on a file and then test the values of the MYTEST and DEBUG symbols. The output of this example depends on whether you built the project on Debug or Release configuration mode.
 
 ```csharp
 #define MYTEST

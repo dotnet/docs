@@ -18,8 +18,6 @@ ms.author: "wiwagn"
 When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](preprocessor-endif.md) directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you cannot assign a numeric value to a symbol. The #if statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
 
 ```csharp
-#define DEBUG
-// ...
 #if DEBUG
     Console.WriteLine("Debug version");
 #endif
@@ -41,39 +39,32 @@ A symbol that you define with `/define` or with `#define` doesn't conflict with 
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../standard/frameworks.md). They're useful when creating applications that can target more than one .NET implementation or version.
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md). They're useful when creating applications that can target more than one .NET implementation or version.
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
+Other predefined symbols include the DEBUG and TRACE constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
+
 ## Examples
 
-The following example shows you how to define and test two different symbols DEBUG and MYTEST:
+The following example shows you how to define a MYTEST symbol on a file and then test the values of the MYTEST and DEBUG symbols. The output of this example depends on whether you run the project on Debug or Release mode.
 
 ```csharp
-#define DEBUG
 #define MYTEST
 using System;
 public class MyClass
 {
     static void Main()
     {
-#if (DEBUG && !MYTEST)
-        Console.WriteLine("DEBUG is defined");
+#if (DEBUG && MYTEST)
+        Console.WriteLine("DEBUG and MYTEST are defined");
 #elif (!DEBUG && MYTEST)
         Console.WriteLine("MYTEST is defined");
-#elif (DEBUG && MYTEST)
-        Console.WriteLine("DEBUG and MYTEST are defined");
 #else
         Console.WriteLine("DEBUG and MYTEST are not defined");
 #endif
     }
 }
-```
-
-The output is:
-
-```
-DEBUG and MYTEST are defined
 ```
 
 The following example shows you how to test for different target frameworks so you can use newer APIs when possible:
@@ -98,3 +89,4 @@ public class MyClass
 [C# Reference](../../../csharp/language-reference/index.md)  
 [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 [C# Preprocessor Directives](index.md)  
+[How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).

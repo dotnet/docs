@@ -568,7 +568,7 @@
 ## Remarks  
  Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
   
- A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=fullName> constructor.  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>
@@ -638,7 +638,7 @@
 ## Remarks  
  Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
   
- A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=fullName> constructor.  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>

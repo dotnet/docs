@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+ms.custom: "updateeachrelease"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -44,7 +45,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7">
+                <a href="/dotnet/api/?view=netframework-4.7.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

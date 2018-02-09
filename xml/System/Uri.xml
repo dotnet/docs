@@ -630,7 +630,7 @@ http://myUrl/
    
   
 ## Examples  
- The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/showew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
+ The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/shownew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
   
  [!code-cpp[Classic Uri.Uri3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CS/source.cs#1)]

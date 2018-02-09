@@ -187,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `null` is passed to this operator instead of the required array of bytes, a [Implicit Conversion (Byte\<xref:System.ArgumentNullException?displayProperty=fullName> exception is thrown. Do not rely on this behavior because it may change in the future.  
+ When `null` is passed to this operator instead of the required array of bytes, a [Implicit Conversion (Byte\<xref:System.ArgumentNullException?displayProperty=nameWithType> exception is thrown. Do not rely on this behavior because it may change in the future.  
   
  ]]></format>
         </remarks>

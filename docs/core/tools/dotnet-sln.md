@@ -16,7 +16,7 @@ ms.workload:
 
 ## Name
 
-`dotnet-sln` - Modifies a .NET Core solution file.
+`dotnet sln` - Modifies a .NET Core solution file.
 
 ## Synopsis
 

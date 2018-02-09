@@ -530,7 +530,7 @@ public class Class1 {
         <summary>Converts an <see cref="T:System.Data.OracleClient.OracleString" /> to a <see cref="T:System.String" />.</summary>
         <returns>A <see langword="String" />, whose contents are the same as the <see cref="P:System.Data.OracleClient.OracleString.Value" /> property of the <see langword="OracleString" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleString.ToString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleString.ToString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

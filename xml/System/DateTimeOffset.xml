@@ -2619,13 +2619,13 @@
  [!code-csharp[System.DateTimeOffset.Operators#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/cs/Operators.cs#7)]
  [!code-vb[System.DateTimeOffset.Operators#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#7)]  
   
- This method is equivalent to the <xref:System.DateTimeOffset.%23ctor%2A> constructor. The offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` parameter:  
+ This method is equivalent to the <xref:System.DateTimeOffset.%23ctor%2A> constructor. The offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the `dateTime` parameter:  
   
--   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property is <xref:System.DateTimeKind.Utc?displayProperty=fullName>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to 0.  
+-   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to 0.  
   
--   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property is <xref:System.DateTimeKind.Local?displayProperty=fullName> or <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
+-   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.%23ctor%28System.DateTime%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.%23ctor%28System.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The Coordinated Universal Time (UTC) date and time that results from applying the offset is earlier than <see cref="F:System.DateTimeOffset.MinValue" />.  
   

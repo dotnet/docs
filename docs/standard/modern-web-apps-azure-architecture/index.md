@@ -12,6 +12,9 @@ ms.workload:
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
+![cover image](./media/cover.jpg)
+
+
 .NET Core and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET Core for your server applications if some or all of the following are important to your application's success:
 
 -   Cross-platform support

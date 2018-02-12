@@ -12,7 +12,7 @@ help with that. Our style guide contains the following recommendations:
 
 You can see examples of each of these as you read this style guide. We've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
-for .NET core. We also provide contrasting samples so you can see what articles look like
+for .NET. We also provide contrasting samples so you can see what articles look like
 when you don't follow our guidelines.
 
 ## Details on each guideline

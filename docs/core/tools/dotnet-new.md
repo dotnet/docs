@@ -72,7 +72,7 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | Web config                                   | `webconfig`   |               |
 | Solution file                                | `sln`         |               |
 | Razor page                                   | `page`        |               |
-| MVC/ViewImports                              | `viewimports` |               |
+| MVC ViewImports                              | `viewimports` |               |
 | MVC ViewStart                                | `viewstart`   |               |
 
 # [.NET Core 1.x](#tab/netcore1x)

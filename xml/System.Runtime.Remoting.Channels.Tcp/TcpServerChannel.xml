@@ -479,7 +479,7 @@
       </Parameters>
       <Docs>
         <param name="data">Optional initialization information.</param>
-        <summary>Instructs the current channel to start listening on a channel after the <see cref="Overload:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening> method has been called to stop listening on the channel.</summary>
+        <summary>Instructs the current channel to start listening on a channel after the <see cref="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening(System.Object)> method has been called to stop listening on the channel.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

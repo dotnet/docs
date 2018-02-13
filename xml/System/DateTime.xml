@@ -4466,7 +4466,7 @@ An object that is equivalent to the date and time contained in `s`.
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent.</summary>
+        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using the conventions of the current thread culture.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4574,7 +4574,7 @@ An object that is equivalent to the date and time contained in `s`.
         <param name="s">A string that contains a date and time to convert.</param>
         <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
         <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <c>s</c> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and formatting style.</summary>
+        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="provider" /> and <paramref name="styles" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

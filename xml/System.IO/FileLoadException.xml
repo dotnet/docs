@@ -41,7 +41,7 @@
  If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permission, the error message for this exception may only contain file or directory names instead of fully qualified paths.  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.IO.IOException> instead.  
+>  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.IO.IOException> instead.  
   
  **Associated Tips**  
   

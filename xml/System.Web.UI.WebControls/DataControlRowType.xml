@@ -24,11 +24,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to check the type of a row when working with a <xref:System.Web.UI.WebControls.GridView> control. The `AuthorsGridView_RowCreated` method ensures that the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.LinkButton> control is unique for all the data rows in the <xref:System.Web.UI.WebControls.GridView> control, so that when a row's <xref:System.Web.UI.WebControls.LinkButton> control is clicked, it can be identified correctly.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventArgs/CS/gridviewcommandeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventArgs/VB/gridviewcommandeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventArgs/CS/gridviewcommandeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventArgs/VB/gridviewcommandeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
   </Docs>
   <Members>
     <Member MemberName="DataRow">

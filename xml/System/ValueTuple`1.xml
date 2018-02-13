@@ -501,6 +501,10 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -508,10 +512,19 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the <see langword="ValueTuple" /> element. <c>index</c> must be 0.</param>
+        <summary>Gets the value of the <see langword="ValueTuple" /> element.</summary>
+        <value>The value of the <see langword="ValueTuple" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%601.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%601> object to a <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -523,13 +536,24 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the <see langword="ValueTuple" />.</summary>
+        <value>1, the number of elements in a <see cref="T:System.ValueTuple`1" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%601.System%23Runtime%23CompilerServices%23ITuple%23Length%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%601> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -571,5 +595,15 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`1" /> instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

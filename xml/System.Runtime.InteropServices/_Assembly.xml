@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.Assembly" />
   </Docs>
   <Members>
     <Member MemberName="CodeBase">
@@ -65,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.CodeBase" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateInstance">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.CreateInstance" />
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateInstance">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.CreateInstance(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -152,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.CreateInstance(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -199,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.CreateInstance(System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -227,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.EntryPoint" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="EscapedCodeBase">
@@ -288,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.EscapedCodeBase" />
       </Docs>
     </Member>
     <Member MemberName="Evidence">
@@ -315,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -343,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.FullName" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCustomAttributes">
@@ -363,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetCustomAttributes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCustomAttributes">
@@ -395,6 +407,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetCustomAttributes(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -429,6 +442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetCustomAttributes(System.Type,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetExportedTypes">
@@ -458,6 +472,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetExportedTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetFile">
@@ -490,6 +505,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetFile(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFiles">
@@ -510,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetFiles" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetFiles">
@@ -539,6 +556,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetFiles" />
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -572,6 +590,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetFiles(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -601,6 +620,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetLoadedModules">
@@ -621,6 +641,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetLoadedModules" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetLoadedModules">
@@ -650,6 +671,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetLoadedModules" />
       </Docs>
     </Member>
     <Member MemberName="GetLoadedModules">
@@ -683,6 +705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetLoadedModules(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceInfo">
@@ -715,6 +738,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceInfo(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceNames">
@@ -744,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetManifestResourceStream">
@@ -764,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetManifestResourceStream" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetManifestResourceStream">
@@ -796,6 +822,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -830,6 +857,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -862,6 +890,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetModule(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetModules">
@@ -882,6 +911,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetModules" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetModules">
@@ -911,6 +941,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetModules" />
       </Docs>
     </Member>
     <Member MemberName="GetModules">
@@ -944,6 +975,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetModules(System.Boolean)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetName">
@@ -964,6 +996,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetName" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetName">
@@ -993,6 +1026,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetName" />
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -1026,6 +1060,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetName(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1060,6 +1095,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Reflection.Assembly.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetReferencedAssemblies">
@@ -1089,6 +1125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetReferencedAssemblies" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetSatelliteAssembly">
@@ -1109,6 +1146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetSatelliteAssembly" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSatelliteAssembly">
@@ -1141,6 +1179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetSatelliteAssembly(System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="GetSatelliteAssembly">
@@ -1175,6 +1214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetSatelliteAssembly(System.Globalization.CultureInfo,System.Version)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetType">
@@ -1195,6 +1235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.GetType" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetType">
@@ -1224,6 +1265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetType" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -1256,6 +1298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -1291,6 +1334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -1329,6 +1373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypes">
@@ -1358,6 +1403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetTypes" />
       </Docs>
     </Member>
     <Member MemberName="GlobalAssemblyCache">
@@ -1386,6 +1432,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.GlobalAssemblyCache" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -1421,6 +1468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.IsDefined(System.Type,System.Boolean)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="LoadModule">
@@ -1441,6 +1489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Reflection.Assembly.LoadModule" />
       </Docs>
     </MemberGroup>
     <Member MemberName="LoadModule">
@@ -1475,6 +1524,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.LoadModule(System.String,System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="LoadModule">
@@ -1511,6 +1561,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.LoadModule(System.String,System.Byte[],System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -1539,6 +1590,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.Assembly.Location" />
       </Docs>
     </Member>
     <Member MemberName="ModuleResolve">
@@ -1567,6 +1619,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="E:System.Reflection.Assembly.ModuleResolve" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1596,6 +1649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.ToString" />
       </Docs>
     </Member>
   </Members>

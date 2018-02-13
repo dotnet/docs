@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms controls, NumericUpDown control"
-  - "spin button control, up-down controls"
-  - "up-down controls, spin button control"
+  - "spin button control [Windows Forms], up-down controls"
+  - "up-down controls [Windows Forms], spin button control"
   - "up-down controls"
   - "spin button control"
   - "NumericUpDown control [Windows Forms]"
@@ -23,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # NumericUpDown Control (Windows Forms)
 The Windows Forms `NumericUpDown` control looks like a combination of a text box and a pair of arrows that the user can click to adjust a value. The control displays and sets a single numeric value from a list of choices. The user can increase and decrease the number by clicking up and down buttons, by pressing the UP and DOWN ARROW keys, or by typing a number. Clicking the UP ARROW key moves the value toward its maximum; clicking the DOWN ARROW key moves the position toward the minimum. An example where this kind of control might be useful is for a volume control on a music player. Numeric up-down controls are used in some Windows control panel applications.  

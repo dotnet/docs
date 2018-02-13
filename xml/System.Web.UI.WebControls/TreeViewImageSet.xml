@@ -29,11 +29,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeViewImageSet> enumeration to indicate which image set to use in the <xref:System.Web.UI.WebControls.TreeViewImageSet> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewImageSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewImageSet/CS/treeviewimagesetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewImageSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewImageSet/VB/treeviewimagesetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewImageSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewImageSet/CS/treeviewimagesetcs.aspx#1)]
+ [!code-aspx-vb[TreeViewImageSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewImageSet/VB/treeviewimagesetvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
   </Docs>
   <Members>
     <Member MemberName="Arrows">
@@ -193,7 +195,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A predefined set of e-mail–styled images.</summary>
+        <summary>A predefined set of email–styled images.</summary>
       </Docs>
     </Member>
     <Member MemberName="Msdn">

@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Diagnostics.EventLog.EntryWritten" />
+    <altmember cref="T:System.Diagnostics.EntryWrittenEventHandler" />
+    <altmember cref="T:System.Diagnostics.EventLog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,5 +115,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EntryWrittenEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

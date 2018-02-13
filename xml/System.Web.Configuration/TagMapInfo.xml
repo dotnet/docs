@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.PagesSection" />
+    <altmember cref="T:System.Web.Configuration.TagMapCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +83,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
+        <altmember cref="P:System.Web.Configuration.TagMapInfo.TagType" />
+        <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -104,6 +110,7 @@
         <returns>
           <see langword="true" /> if the objects are identical; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -123,6 +130,7 @@
         <summary>Returns a hash value for the current instance.</summary>
         <returns>A hash value for the current instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="MappedTagType">
@@ -166,6 +174,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
+        <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -251,6 +262,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
+        <altmember cref="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
   </Members>

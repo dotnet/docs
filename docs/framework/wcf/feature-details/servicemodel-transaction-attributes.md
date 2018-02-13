@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "transactions [WCF], ServiceModel attributes"
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Transaction Attributes
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides properties on three standard <xref:System.ServiceModel> attributes that enable you to configure the behavior of transactions for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service:  

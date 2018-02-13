@@ -28,6 +28,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Windows.Media.GradientBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
+    <altmember cref="T:System.Windows.Media.GradientStop" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -328,6 +329,9 @@ Gradient spread methods
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="SpreadMethodProperty">
@@ -347,5 +351,14 @@ Gradient spread methods
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

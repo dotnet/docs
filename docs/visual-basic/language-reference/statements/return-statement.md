@@ -1,42 +1,23 @@
 ---
 title: "Return Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Return"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Return statement, syntax"
-  - "control flow, returning control to expressions"
-  - "Return statement"
+  - "Return statement [Visual Basic], syntax"
+  - "control flow [Visual Basic], returning control to expressions"
+  - "Return statement [Visual Basic]"
   - "expressions [Visual Basic], returning control to"
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Return Statement (Visual Basic)
 Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `Operator` procedure.  
@@ -69,11 +50,11 @@ Return expression
  [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
   
 ## See Also  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)   
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
+ [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
+ [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
  [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

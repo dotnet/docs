@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a member of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.Icon" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -187,6 +190,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a member of the <see cref="T:System.Windows.Forms.StatusBarPanelAutoSize" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelAutoSize" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -212,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBarPanel.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -255,6 +260,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a member of the <see cref="T:System.Windows.Forms.StatusBarPanelBorderStyle" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -290,7 +296,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -317,6 +323,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBarPanel.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -353,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="MinWidth">
@@ -390,6 +399,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A value less than 0 is assigned to the property.</exception>
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelAutoSize" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -450,6 +461,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBar" />
+        <altmember cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -490,6 +503,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a member of the <see cref="T:System.Windows.Forms.StatusBarPanelStyle" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanelStyle" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -564,6 +578,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -608,6 +623,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -672,6 +688,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The width specified is less than the value of the <see cref="P:System.Windows.Forms.StatusBarPanel.MinWidth" /> property.</exception>
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.MinWidth" />
+        <altmember cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" />
       </Docs>
     </Member>
   </Members>

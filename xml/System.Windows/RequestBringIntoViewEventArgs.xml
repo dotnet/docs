@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ScrollViewer" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName="InvokeEventHandler">
@@ -54,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="TargetObject">
@@ -79,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.RoutedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="TargetRect">
@@ -104,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.BringIntoView(System.Windows.Rect)" />
       </Docs>
     </Member>
   </Members>

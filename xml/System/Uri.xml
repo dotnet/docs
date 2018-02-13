@@ -69,9 +69,9 @@ var uri = new Uri("http://myUrl/../.."); // http scheme, unescaped
 OR
 var uri = new Uri("http://myUrl/%2E%2E/%2E%2E"); // http scheme, escaped
 OR
-var uri = new Uri("tcp://myUrl/../.."); // ftp scheme, unescaped
+var uri = new Uri("ftp://myUrl/../.."); // ftp scheme, unescaped
 OR
-var uri = new Uri("tcp://myUrl/%2E%2E/%2E%2E"); // ftp scheme, unescaped
+var uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E"); // ftp scheme, escaped
 
 Console.WriteLine(uri.AbsoluteUri);  
 Console.WriteLine(uri.PathAndQuery);  
@@ -147,9 +147,9 @@ http://myUrl/
   
  The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
- The <xref:System.GenericUriParser?displayProperty=nameWithType> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=nameWithType> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration to the <xref:System.GenericUriParser?displayProperty=nameWithType> constructor. The <xref:System.GenericUriParserOptions?displayProperty=nameWithType> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParser?displayProperty=nameWithType> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=nameWithType> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration to the <xref:System.GenericUriParser?displayProperty=nameWithType> constructor. The <xref:System.GenericUriParserOptions.IriParsing?displayProperty=nameWithType> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
   
- The <xref:System.GenericUriParserOptions?displayProperty=nameWithType> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParserOptions.Idn?displayProperty=nameWithType> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
   
 ## Performance Considerations  
  If you use a *Web.config *file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.  
@@ -168,6 +168,13 @@ http://myUrl/
     <block subset="none" type="usage">
       <para>Because of security concerns, your application should use caution when accepting <see cref="T:System.Uri" /> instances from untrusted sources and with <paramref name="dontEscape" /> set to <see langword="true" />.You can check a URI string for validity by calling the <see cref="M:System.Uri.IsWellFormedOriginalString" /> method.</para>
     </block>
+    <altmember cref="T:System.Configuration.IdnElement" />
+    <altmember cref="T:System.Configuration.IriParsingElement" />
+    <altmember cref="T:System.Configuration.UriSection" />
+    <altmember cref="P:System.Uri.DnsSafeHost" />
+    <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />
+    <altmember cref="M:System.Uri.IsWellFormedOriginalString" />
+    <altmember cref="T:System.UriBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -623,7 +630,7 @@ http://myUrl/
    
   
 ## Examples  
- The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/showew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
+ The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/shownew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
   
  [!code-cpp[Classic Uri.Uri3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CS/source.cs#1)]
@@ -3387,7 +3394,7 @@ If you used an escaped string to construct this instance (for example, "http://[
 |http|The resource is accessed through HTTP.|  
 |https|The resource is accessed through SSL-encrypted HTTP.|  
 |ldap|The resource is accessed through the LDAP protocol.|  
-|mailto|The resource is an e-mail address and accessed through the SMTP protocol.|  
+|mailto|The resource is an email address and accessed through the SMTP protocol.|  
 |net.pipe|The resource is accessed through a named pipe.|  
 |net.tcp|The resource is accessed from TCP endpoint.|  
 |news|The resource is accessed through the NNTP protocol.|  
@@ -3585,7 +3592,7 @@ If you used an escaped string to construct this instance (for example, "http://[
  The string returned by this method does not contain port information when the port is the default port for the scheme.  
   
 > [!NOTE]
->  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat?displayProperty=nameWithType> format to remove control characters from the returned string.  
+>  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat.SafeUnescaped?displayProperty=nameWithType> format to remove control characters from the returned string.  
   
    
   
@@ -3830,6 +3837,8 @@ If you used an escaped string to construct this instance (for example, "http://[
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stringToUnescape" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Uri.EscapeDataString(System.String)" />
+        <altmember cref="M:System.Uri.EscapeUriString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UriSchemeFile">
@@ -4044,7 +4053,7 @@ If you used an escaped string to construct this instance (for example, "http://[
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the URI is an e-mail address and is accessed through the Simple Mail Transport Protocol (SMTP). This field is read-only.</summary>
+        <summary>Specifies that the URI is an email address and is accessed through the Simple Mail Transport Protocol (SMTP). This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4285,5 +4294,31 @@ If you used an escaped string to construct this instance (for example, "http://[
         <exception cref="T:System.InvalidOperationException">This instance represents a relative URI, and this property is valid only for absolute URIs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryCreate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Uri" />. Does not throw an exception if the <see cref="T:System.Uri" /> cannot be created.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

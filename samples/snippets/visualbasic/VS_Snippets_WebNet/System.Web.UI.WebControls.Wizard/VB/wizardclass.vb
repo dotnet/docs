@@ -12,12 +12,12 @@ Partial Class WizardClassvb_aspx
         Dim tempLabel As Label = CType(Wizard1.FindControl("CompleteMessageLabel"), Label)
         If Not tempLabel Is Nothing Then
 
-            Dim tempEmailAddress As String = "your e-mail address"
+            Dim tempEmailAddress As String = "your email address"
             If EmailAddress.Text.Length <> 0 Then
                 tempEmailAddress = EmailAddress.Text
             End If
 
-            tempLabel.Text = "Your order has been placed. An e-mail confirmation will be sent to " & _
+            tempLabel.Text = "Your order has been placed. An email confirmation will be sent to " & _
                 tempEmailAddress & "."
 
         End If

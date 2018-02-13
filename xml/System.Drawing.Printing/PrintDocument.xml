@@ -47,6 +47,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Graphics" />
+    <altmember cref="T:System.Drawing.Printing.PageSettings" />
+    <altmember cref="T:System.Drawing.Printing.PrintController" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +110,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPageSettings">
@@ -155,6 +164,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrintController" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="DocumentName">
@@ -196,6 +208,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
       </Docs>
     </Member>
     <Member MemberName="EndPrint">
@@ -224,6 +238,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="OnBeginPrint">
@@ -257,6 +276,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)" /> method so that registered delegates receive the event. This method is a good place for initialization.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnEndPrint">
@@ -290,6 +311,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)" /> method so that registered delegates receive the event. This method is a good place for uninitialization.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPrintPage">
@@ -323,6 +346,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryPageSettings">
@@ -356,6 +381,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Printing.PrintDocument.OnQueryPageSettings(System.Drawing.Printing.QueryPageSettingsEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Drawing.Printing.PrintDocument.OnQueryPageSettings(System.Drawing.Printing.QueryPageSettingsEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Drawing.Printing.QueryPageSettingsEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
       </Docs>
     </Member>
     <Member MemberName="OriginAtMargins">
@@ -485,6 +512,13 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DocumentName" />
+        <altmember cref="T:System.Drawing.Printing.PreviewPrintController" />
+        <altmember cref="T:System.Drawing.Printing.PrintController" />
+        <altmember cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrinterSettings" />
+        <altmember cref="T:System.Drawing.Printing.StandardPrintController" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -529,6 +563,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.DocumentName" />
+        <altmember cref="P:System.Drawing.Printing.PrintDocument.PrintController" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="PrintPage">
@@ -570,6 +608,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="QueryPageSettings">
@@ -594,7 +638,7 @@
   
  To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.QueryPageSettingsEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
-   
+If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set. For more information, see [PrintPreviewDialog control overview](~/docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md).   
   
 ## Examples  
  The following code example prints a document with the first page in color, if the printer supports it. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled. The `currentPageNumber` variable is incremented after every page is printed in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, which is not shown.  
@@ -607,6 +651,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.QueryPageSettingsEventHandler" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

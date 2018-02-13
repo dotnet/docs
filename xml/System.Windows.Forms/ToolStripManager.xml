@@ -36,6 +36,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
+    <altmember cref="T:System.Windows.Forms.MergeAction" />
+    <altmember cref="P:System.Windows.Forms.ToolStripItem.MergeIndex" />
+    <altmember cref="P:System.Windows.Forms.ToolStripItem.MergeAction" />
+    <altmember cref="P:System.Windows.Forms.ToolStrip.AllowMerge" />
   </Docs>
   <Members>
     <Member MemberName="FindToolStrip">
@@ -96,6 +103,7 @@
         <returns>
           <see langword="true" /> if the shortcut key is used by any <see cref="T:System.Windows.Forms.ToolStrip" /> on the form; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.IsValidShortcut(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidShortcut">
@@ -126,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.IsShortcutDefined(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="LoadSettings">
@@ -227,6 +236,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameters refer to the same <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -274,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="Renderer">
@@ -410,6 +421,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="RevertMerge">
@@ -448,6 +460,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RevertMerge">
@@ -562,5 +575,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads settings for a <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RevertMerge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves settings for the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

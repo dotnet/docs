@@ -52,6 +52,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.Comparer`1" />
+    <altmember cref="N:System.Collections" />
+    <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+    <altmember cref="T:System.Globalization.CompareInfo" />
+    <altmember cref="T:System.Globalization.CultureInfo" />
+    <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
   </Docs>
   <Members>
     <Member MemberName="Compare">
@@ -124,6 +130,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+        <altmember cref="T:System.Globalization.CompareInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
   </Members>

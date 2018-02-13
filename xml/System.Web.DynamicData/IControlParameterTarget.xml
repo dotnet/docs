@@ -38,7 +38,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementing this property is optional. A <xref:System.Web.DynamicData.FilterUserControl> object can provide it, but controls such as the <xref:System.Web.UI.WebControls.GridView> control cannot.  
+ Implementing this property is optional. A <xref:System.Web.DynamicData.FilterUserControlBase> object can provide it, but controls such as the <xref:System.Web.UI.WebControls.GridView> control cannot.  
   
  ]]></format>
         </remarks>

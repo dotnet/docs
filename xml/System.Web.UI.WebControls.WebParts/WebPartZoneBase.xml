@@ -53,8 +53,8 @@
   
  The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx#10)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx#10)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx#10)]  
   
  The second part of the code example is a code-beside file that contains the code to handle events for the main Web page. The code in this file shows how to work with some of the key <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> members programmatically.  
   
@@ -63,13 +63,15 @@
   
  The third part of the code example is the Web page that contains the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls that exhibit behavior from the base <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class, and <xref:System.Web.UI.WebControls.WebParts.WebPart> controls contained in the zones.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#1)]  
   
  Load the Web page in a browser. Use the **Display Mode** drop-down list control to switch the page into design mode, click the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and try dragging them between the visible zones. Click some of the buttons on the page to see the effect of using various members of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class. Next, switch the page to edit mode. Make sure a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is positioned in `WebPartZone2`, click the verbs menu on the control's title bar, and click **Edit** to edit the control. Finish editing that control, and then edit one of the controls in the other zone. As you carry out these steps, notice the differences in the UI styles of the controls and the zones, which are the effect of using the various members of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,11 +140,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property is set to `true`, which is the default. If you change the value to `false`, after you load the page into a browser and switch the page into design display mode, you will not be able to drag controls within or into the `WebPartZone2` zone.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -180,8 +183,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor%2A> attribute is set to a specific named color. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -222,11 +225,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle%2A> attribute is set to a specific kind of border. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -264,8 +268,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth%2A> attribute value is set to a specific width in pixels. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -320,18 +324,20 @@
   
  The other part of the code example is the Web page that hosts the custom control and contains the UI. Notice that the declarative `<CloseVerb>` element in the zone sets the specific text that represents the close verb in the verbs menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  Notice also that, because the underlying custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control--named `TextDisplayWebPart`-- used in the code example sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `false` in its constructor, the `<aspSample:TextDisplayPart>` element in the catalog must set the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `true`, so that the control can be closed in the following code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the close verb, and you can click the **Close WebPart** verb in the verbs menu to close the control. After you close the control, if you return the page to catalog display mode, you can click the **Page Catalog**, select the original instance of the `TextDisplayWebPart` control that you closed, and reopen it on the page.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
       </Docs>
     </Member>
     <Member MemberName="CloseWebPart">
@@ -367,6 +373,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="ConnectVerb">
@@ -454,6 +464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -473,6 +484,7 @@
         <summary>Creates a <see cref="T:System.Web.UI.ControlCollection" /> object that contains all the controls in a zone.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains references to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -545,11 +557,12 @@
   
  The third part of the code example is a Web page that hosts the derived zone and <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Near the top of the page is a `Register` directive to reference the derived zone component. If you load the page in a browser, the <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears in the zone. Click the verbs menu, then click the **CopyWebPart** verb, and it creates a copy of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebPartChrome">
@@ -581,6 +594,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="DeleteVerb">
@@ -632,13 +646,14 @@
   
  The other part of the code example is the Web page that hosts the custom control and contains the user interface (UI). Notice that the declarative `<DeleteVerb>` element in the zone sets the specific text that represents the delete verb in the verbs drop-down menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the delete verb on the `TextDisplayWebPart` control, but the verb appears on the menu only while the page is in catalog or design display mode. If you click the **Delete WebPart** verb on the menu, the control is permanently deleted, and the deleted instance cannot be added back to the page. However, you can return the page to catalog display mode, and add a new instance of the `TextDisplayWebPart` control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteWebPart">
@@ -669,6 +684,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -712,6 +729,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="DragDropEnabled">
@@ -737,6 +755,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="DragHighlightColor">
@@ -777,8 +797,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor%2A> property value is set to a specific color. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property when you select and drag the control within its zone, or drag another control into the zone.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -826,8 +846,8 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control. Note that the property is accessed declaratively by using the `<EditVerb>` element with the `WebPartZone1` control. An edit verb would be present on this control in edit mode even if you did not use the `<EditVerb>` element here, but by using it, you can set some of its attributes, such as the text that represents the verb in the user interface (UI). For the full code example, including the code-behind source file and the .aspx page that contains the zone in this code, see the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -861,6 +881,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -893,11 +915,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ExportVerb">
@@ -949,18 +972,19 @@
   
  The other part of the code example is the Web page that hosts the custom control and contains the user interface (UI). Notice that the declarative `<ExportVerb>` element in the zone sets the specific text that represents the export verb in the verbs drop-down menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  Finally, notice that in the following code example, the declarative <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value on the `<asp:TextDisplayWebPart>` element is set to the value `All`, meaning that all exportable property values on the control will be exported.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the export verb on the `TextDisplayWebPart` control. If you click the export verb, you are prompted for a local path to save a definition file for the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
       </Docs>
     </Member>
     <Member MemberName="GetEffectiveChromeType">
@@ -983,6 +1007,7 @@
         <summary>Returns the actual or effective current <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> value of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, given the <see cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" /> property of the zone and the current display mode of the Web Parts page.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> value that contains the kind of border that currently frames Web Parts controls contained by a zone.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
       </Docs>
     </Member>
     <Member MemberName="GetInitialWebParts">
@@ -1014,6 +1039,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetInitialWebParts" /> method is abstract, so it must be implemented by derived classes. The <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" /> method of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> class contains one implementation of the method.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" />
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -1040,6 +1067,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasFooter" />
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -1068,6 +1096,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasHeader" />
       </Docs>
     </Member>
     <Member MemberName="HelpVerb">
@@ -1114,8 +1143,8 @@
   
  This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx#10)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx#10)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx#10)]  
   
  This code example also includes an HTML page that could contain Help content for the `TextDisplayWebPart` control. For this example to work, you must save the following code in a file named Textwebparthelp.htm and place it in the same directory of your site as the .aspx page that hosts the `TextDisplayWebPart` control.  
   
@@ -1140,23 +1169,24 @@
   
  The other part of the code example is the .aspx page that hosts the `TextDisplayWebPart` control and demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb%2A> property. Notice that near the top of the page, an `<@ Register %>` declaration is used to reference the compiled `TextDisplayWebPart` control, which should be placed in a subfolder named Bin.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#1)]  
   
  Also note that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb%2A> property is used declaratively on the `<asp:WebPartZone>` element to set the text for the verb, as shown in the following code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  Finally, note in the following code example that the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property is set on the `<aspSample:TextDisplayPart>` element to provide the URL to the Help file.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
   
  After you load the page in a browser, click the **Catalog Mode** menu item in the **Display Mode** drop-down list control to switch the page into catalog display mode. Add the `TextDisplayWebPart` control to the page, close the catalog, and return the page to normal browse mode. If you click the verbs drop-down menu in the title bar of the `TextDisplayWebPart` control, you can access the help verb to open the Help page.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
       </Docs>
     </Member>
     <Member MemberName="LayoutOrientation">
@@ -1202,8 +1232,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone1`, after you load the page into a browser. The Web Parts controls in the zone are rendered horizontally.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
   
  You can click the **Toggle Layout Orientation** button to change the orientation of the zone. The code to toggle the orientation occurs in the following code example from the partial class.  
   
@@ -1213,6 +1243,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the enumerated <see cref="T:System.Web.UI.WebControls.Orientation" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Orientation" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1244,6 +1276,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageStyle">
@@ -1289,6 +1322,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Checked" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageUrl">
@@ -1318,6 +1353,7 @@
         <summary>Gets or sets the URL to an image used as a check mark in the verbs menu of each <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control in a zone.</summary>
         <value>A string that represents the URL to an image used as a check mark. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelHoverStyle">
@@ -1362,11 +1398,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and position your mouse pointer over the verbs menu of the Web Parts control. Notice that the text of the label turns bold.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelStyle">
@@ -1411,11 +1448,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that the color for the verbs menu label in `WebPartZone2` is the color assigned to it in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
       </Docs>
     </Member>
     <Member MemberName="MenuLabelText">
@@ -1456,11 +1494,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that the text for the verbs menu label in `WebPartZone2` is the value assigned to it in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuPopupImageUrl">
@@ -1502,11 +1541,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that an image placeholder (or an actual image if you assigned the path to one) appears in the verbs menu label for the control in `WebPartZone2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuPopupStyle">
@@ -1548,6 +1588,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="MenuVerbHoverStyle">
@@ -1605,11 +1646,13 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode. Click the verbs menu, and notice that the background color for the verbs menu on the control in `WebPartZone2` is the color assigned to it in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="MenuVerbStyle">
@@ -1656,11 +1699,12 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode. Click the verbs menu, and notice that the font style for the verbs menu on the control in `WebPartZone2` is the style assigned to it in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.VerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="MinimizeVerb">
@@ -1712,13 +1756,14 @@
   
  The other part of the code example is the Web page that hosts the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control and contains the user interface (UI). Notice that the declarative `<MinimizeVerb>` element in the zone sets the value for the `Description` attribute text, which appears as a ToolTip when a user positions the mouse pointer over the verb in the verbs menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page, if it has not been added. You can use the check boxes to enable and disable the minimize verb on the `TextDisplayWebPart` control. When the verb is enabled, you can also click it to minimize the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
       </Docs>
     </Member>
     <Member MemberName="MinimizeWebPart">
@@ -1751,6 +1796,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
+        <altmember cref="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateVerbs">
@@ -1796,11 +1844,12 @@
   
  The third part of the code example is a Web page that hosts the derived zone and <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Near the top of the page is a `Register` directive to reference the derived zone component. If you load the page in a browser, the <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears in the zone. Click the verbs menu, then click the **CopyWebPart** verb, and it creates a copy of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1829,6 +1878,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1850,6 +1900,7 @@
         <param name="eventArgument">The postback argument.</param>
         <summary>Updates the status of the current collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone, based on the changes that have occurred since the most recent postback event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1878,6 +1929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -1908,6 +1960,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderDropCue">
@@ -1964,6 +2017,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RestoreVerb">
@@ -2015,13 +2070,14 @@
   
  The other part of the code example is the Web page that hosts the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control and contains the user interface (UI). Notice that the declarative `<RestoreVerb>` element in the zone sets the value for the `Description` attribute text, which appears as a ToolTip when a user positions the mouse pointer over the verb in the verbs menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page, if it has not been added. Use the minimize verb to minimize the control, and note that the restore verb becomes visible. You can use the check boxes to enable and disable the restore verb.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
       </Docs>
     </Member>
     <Member MemberName="RestoreWebPart">
@@ -2056,6 +2112,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2082,6 +2139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.SaveViewState" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedPartChromeStyle">
@@ -2126,8 +2185,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone1`. After you load the page into a browser, switch the page into edit mode. On the verbs menu for one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, click the verb to edit the control, and note that the background color of the control changes to the color assigned to it in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -2162,6 +2221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -2221,6 +2281,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="TitleBarVerbStyle">
@@ -2262,6 +2324,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2287,6 +2351,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="VerbButtonType">
@@ -2329,6 +2395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
       </Docs>
     </Member>
     <Member MemberName="WebPartChrome">
@@ -2355,6 +2422,7 @@
         <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> object that determines the peripheral rendering for <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the zone.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> that determines rendering for controls in the zone.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -2398,6 +2466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
       </Docs>
     </Member>
     <Member MemberName="WebPartVerbRenderMode">
@@ -2429,6 +2498,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
       </Docs>
     </Member>
   </Members>

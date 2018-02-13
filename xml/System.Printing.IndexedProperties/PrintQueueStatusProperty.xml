@@ -109,9 +109,9 @@
         <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintQueueStatusProperty" />
       </Parameters>
       <Docs>
-        <param name="attributeRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributeRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintQueueStatusProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Printing.PrintQueueStatus" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintQueueStatusProperty" />.</summary>
+        <returns>A <see cref="T:System.Printing.PrintQueueStatus" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,5 +134,23 @@
         <exception cref="T:System.InvalidOperationException">The property cannot be set by using the value that is provided by the calling code.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintQueueStatusProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Printing.PrintQueueStatus" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintQueueStatusProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

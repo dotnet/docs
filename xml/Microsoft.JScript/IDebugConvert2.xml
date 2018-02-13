@@ -19,6 +19,8 @@
     <summary>Defines utility methods that convert data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.DebugConvert" />
+    <altmember cref="T:Microsoft.JScript.IDebugConvert" />
   </Docs>
   <Members>
     <Member MemberName="DecimalToString">
@@ -42,6 +44,8 @@
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DebugConvert" />
+        <altmember cref="T:Microsoft.JScript.IDebugConvert" />
       </Docs>
     </Member>
   </Members>

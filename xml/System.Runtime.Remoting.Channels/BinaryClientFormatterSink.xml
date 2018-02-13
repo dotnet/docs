@@ -27,7 +27,7 @@
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
   
 > [!IMPORTANT]
->  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
     </remarks>
@@ -127,6 +127,8 @@
         <param name="stream">The stream that is coming back from the transport sink.</param>
         <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" />
+        <altmember cref="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">
@@ -244,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
  ]]></format>
         </remarks>

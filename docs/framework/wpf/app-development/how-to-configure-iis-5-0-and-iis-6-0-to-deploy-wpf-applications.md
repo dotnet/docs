@@ -10,21 +10,23 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "MIME types, registering"
-  - "adjusting content expiration setting"
-  - "registering file extensions"
-  - "deploying applications"
-  - "applications, deploying"
-  - "Web servers, configuring to deploy WPF applications"
-  - "configuring Web servers to deploy WPF applications"
-  - "content expiration setting, adjusting"
-  - "file extensions, registering"
-  - "registering MIME types"
+  - "MIME types [WPF], registering"
+  - "adjusting content expiration setting [WPF]"
+  - "registering file extensions [WPF]"
+  - "deploying applications [WPF]"
+  - "applications [WPF], deploying"
+  - "Web servers [WPF], configuring to deploy WPF applications"
+  - "configuring Web servers to deploy WPF applications [WPF]"
+  - "content expiration setting [WPF], adjusting"
+  - "file extensions [WPF], registering"
+  - "registering MIME types [WPF]"
 ms.assetid: c6e8c2cb-9ba2-4e75-a0d5-180ec9639433
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications
 You can deploy a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application from most Web servers, as long as they are configured with the appropriate [!INCLUDE[TLA#tla_mime](../../../../includes/tlasharptla-mime-md.md)] types. By default, [!INCLUDE[TLA#tla_iis70](../../../../includes/tlasharptla-iis70-md.md)] is configured with these [!INCLUDE[TLA2#tla_mime](../../../../includes/tla2sharptla-mime-md.md)] types, but [!INCLUDE[TLA#tla_iis50](../../../../includes/tlasharptla-iis50-md.md)] and [!INCLUDE[TLA#tla_iis60](../../../../includes/tlasharptla-iis60-md.md)] are not.  
@@ -68,7 +70,7 @@ You can deploy a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-w
  The following [!INCLUDE[TLA#tla_visualbscrpt](../../../../includes/tlasharptla-visualbscrpt-md.md)] sample automatically adds the necessary [!INCLUDE[TLA2#tla_mime](../../../../includes/tla2sharptla-mime-md.md)] types to [!INCLUDE[TLA2#tla_iis5](../../../../includes/tla2sharptla-iis5-md.md)]. To use the script, copy the code to a .vbs file on your server. Then, run the script by running the file from the command line or double-clicking the file in [!INCLUDE[TLA#tla_winexpl](../../../../includes/tlasharptla-winexpl-md.md)].  
   
 ```  
-      ' This script adds the necessary Windows Presentation Foundation MIME types   
+' This script adds the necessary Windows Presentation Foundation MIME types   
 ' to an IIS Server.  
 ' To use this script, just double-click or execute it from a command line.  
 ' Running this script multiple times results in multiple entries in the IIS MimeMap.  

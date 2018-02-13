@@ -14,6 +14,8 @@
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientEnumeratorPrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+    <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
   </Docs>
   <Members>
     <Member MemberName="atEnd">
@@ -32,6 +34,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.EnumeratorPrototype.atEnd(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -50,6 +54,8 @@
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorPrototype" />
       </Docs>
     </Member>
     <Member MemberName="item">
@@ -68,6 +74,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.EnumeratorPrototype.item(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="moveFirst">
@@ -86,6 +94,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveFirst(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="moveNext">
@@ -104,6 +114,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveNext(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
   </Members>

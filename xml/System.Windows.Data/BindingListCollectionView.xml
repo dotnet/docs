@@ -81,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="CanAddNew">
@@ -107,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.CanAddNew" />
       </Docs>
     </Member>
     <Member MemberName="CanCancelEdit">
@@ -133,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.CanCancelEdit" />
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -158,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.CancelEdit" />
       </Docs>
     </Member>
     <Member MemberName="CancelNew">
@@ -176,6 +180,7 @@
       <Docs>
         <summary>Ends the add transaction and discards the pending new item.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.CancelNew" />
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveFiltering">
@@ -259,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.Filter" />
       </Docs>
     </Member>
     <Member MemberName="CanFilter">
@@ -328,6 +334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.CanRemove" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -364,6 +371,7 @@
       <Docs>
         <summary>Ends the edit transaction and saves the pending changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.CommitEdit" />
       </Docs>
     </Member>
     <Member MemberName="CommitNew">
@@ -389,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.CommitNew" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -476,6 +485,7 @@
         <summary>Gets the item that is being added during the current add transaction.</summary>
         <value>The item that is being added if <see cref="P:System.Windows.Data.BindingListCollectionView.IsAddingNew" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.CurrentAddItem" />
       </Docs>
     </Member>
     <Member MemberName="CurrentEditItem">
@@ -494,6 +504,7 @@
         <summary>Gets the item in the collection that is being edited.</summary>
         <value>The item in the collection that is being edited if <see cref="P:System.Windows.Data.ListCollectionView.IsEditingItem" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.CurrentEditItem" />
       </Docs>
     </Member>
     <Member MemberName="CustomFilter">
@@ -562,6 +573,7 @@
         <param name="item">The item to edit.</param>
         <summary>Begins an edit transaction of the specified item.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.EditItem(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -634,6 +646,7 @@
         <summary>Gets or sets a delegate to select the <see cref="T:System.ComponentModel.GroupDescription" /> as a function of the parent group and its level.</summary>
         <value>A method that provides the logic for the selection of the <see cref="T:System.ComponentModel.GroupDescription" /> as a function of the parent group and its level. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.BindingListCollectionView.GroupDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="GroupDescriptions">
@@ -671,6 +684,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.BindingListCollectionView.GroupBySelector" />
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -696,6 +710,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.GroupStyle" />
+        <altmember cref="P:System.Windows.Data.BindingListCollectionView.GroupDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -753,6 +769,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.IsAddingNew" />
       </Docs>
     </Member>
     <Member MemberName="IsDataInGroupOrder">
@@ -809,6 +826,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.IEditableCollectionView.IsEditingItem" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -1146,6 +1164,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1176,6 +1195,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of items in the collection view.</exception>
+        <altmember cref="M:System.ComponentModel.IEditableCollectionView.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">

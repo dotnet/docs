@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICoreClrDebugTarget::EnumProcesses"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "EnumProcesses method, ICorClrDebugTarget interface [Silverlight debugging]"
@@ -31,6 +29,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICoreClrDebugTarget::EnumProcesses Method
 Enumerates the processes that are running on a remote computer.  

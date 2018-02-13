@@ -1,7 +1,7 @@
 ---
 title: "Projections and Transformations (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: bb0457ab-1823-47e6-9d2d-c93c958cc913
 caps.latest.revision: 3
 author: "BillWagner"

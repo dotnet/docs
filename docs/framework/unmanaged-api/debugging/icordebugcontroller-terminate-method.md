@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::Terminate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Terminate method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Terminate method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::Terminate Method
 Terminates the process with the specified exit code.  

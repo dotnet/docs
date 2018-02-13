@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Manipulations and Inertia
 The *manipulations* and *inertia* processor classes assist your application in moving user interface (UI) elements on the screen in a natural and intuitive way. Manipulations enable users to move, rotate, and resize components by using manipulators, such as a mouse device, a stylus, or (in a direct touch-enabled scenario) their fingers. *Inertia* emulates real-world behavior for UI elements that are in motion by simulating friction forces on the elements. This enables elements to gradually slow their movement (both linear and angular) before coming to a stop.  

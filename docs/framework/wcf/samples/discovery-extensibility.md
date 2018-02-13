@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6c1bca31-c143-468a-8ddd-32f87998a5ff
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Extensibility
 The sample in this section show how to extend the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] discovery feature.  

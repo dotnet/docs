@@ -9061,5 +9061,375 @@
         <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToDictionary&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Collections.Generic.Dictionary`2" /> from a <see cref="T:System.Linq.ParallelQuery`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderByDescending&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements of a sequence in descending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Average">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes in parallel the average of a sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThenByDescending&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs in parallel a subsequent ordering of the elements in a sequence in descending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Any&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a parallel sequence contains any elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GroupJoin&lt;TOuter,TInner,TKey,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Correlates in parallel the elements of two sequences based on equality of keys and groups the results.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sum">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes in parallel the sum of a sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Aggregate&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies in parallel an accumulator function over a sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Last&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the last element of a parallel sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Except&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set difference of two parallel sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLookup&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Linq.ILookup`2" /> from a <see cref="T:System.Linq.ParallelQuery`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines in parallel whether a sequence contains a specified element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LongCount&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an Int64 that represents the total number of elements in a parallel sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FirstOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the first element of a parallel sequence, or a default value if the sequence contains no elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GroupBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Groups in parallel the elements of a sequence according to a key selector function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Single&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the only element of a parallel sequence, and throws an exception if there is not exactly one element in the sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Join&lt;TOuter,TInner,TKey,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Correlates in parallel the elements of two sequences based on matching keys.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Count&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of elements in a parallel sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SingleOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the only element of a parallel sequence, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SkipWhile&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Bypasses elements in a parallel sequence as long as a specified condition is true and then returns the remaining elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select&lt;TSource,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Projects in parallel each element of a sequence into a new form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectMany&lt;TSource,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Projects in parallel each element of a sequence to an <see cref="T:System.Collections.Generic.IEnumerable`1" /> and flattens the resulting sequences into one sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ThenBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs in parallel a subsequent ordering of the elements in a sequence in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Where&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Filters in parallel a sequence of values based on a predicate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Max">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the maximum value in a parallel sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LastOrDefault&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the last element of a parallel sequence, or a default value if the sequence contains no elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set intersection of two parallel sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Concat&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Concatenates two parallel sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Min">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the minimum value in a parallel sequence of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Zip&lt;TFirst,TSecond,TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges in parallel two sequences by using the specified predicate function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="First&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the first element of a parallel sequence.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Distinct&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns distinct elements from a parallel sequence by using the default equality comparer to compare values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SequenceEqual&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two parallel sequences are equal by comparing the elements by using an equality comparer for their type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefaultIfEmpty&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the elements of the specified parallel sequence or the specified value in a singleton collection if the sequence is empty.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TakeWhile&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns elements from a parallel sequence as long as a specified condition is true.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrderBy&lt;TSource,TKey&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts in parallel the elements of a sequence in ascending order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces the set union of two parallel sequences.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.DateObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.DateConstructor" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -33,6 +34,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getDate">
@@ -61,6 +63,7 @@
         <returns>The date value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getDay">
@@ -89,6 +92,7 @@
         <returns>The day-of-the-week value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getFullYear">
@@ -117,6 +121,7 @@
         <returns>The year value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getHours">
@@ -145,6 +150,7 @@
         <returns>The hour value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getMilliseconds">
@@ -173,6 +179,7 @@
         <returns>The millisecond value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getMinutes">
@@ -201,6 +208,7 @@
         <returns>The minutes value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getMonth">
@@ -229,6 +237,7 @@
         <returns>The month value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getSeconds">
@@ -257,6 +266,7 @@
         <returns>The seconds value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getTime">
@@ -285,6 +295,7 @@
         <returns>The time value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getTimezoneOffset">
@@ -313,6 +324,7 @@
         <returns>The difference between <paramref name="thisob" /> and Coordinated Universal Time (UTC).</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCDate">
@@ -341,6 +353,7 @@
         <returns>The date value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCDay">
@@ -369,6 +382,7 @@
         <returns>The day-of-the-week value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCFullYear">
@@ -397,6 +411,7 @@
         <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCHours">
@@ -425,6 +440,7 @@
         <returns>The hour value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMilliseconds">
@@ -453,6 +469,7 @@
         <returns>The millisecond value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMinutes">
@@ -481,6 +498,7 @@
         <returns>The minutes value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCMonth">
@@ -509,6 +527,7 @@
         <returns>The month value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getUTCSeconds">
@@ -537,6 +556,7 @@
         <returns>The seconds value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="getVarDate">
@@ -565,6 +585,8 @@
         <returns>The value of <paramref name="thisob" />, expressed as a <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="getYear">
@@ -596,6 +618,7 @@
         <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setDate">
@@ -626,6 +649,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setFullYear">
@@ -660,6 +684,7 @@
         <returns>The year value that is set for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setHours">
@@ -696,6 +721,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setMilliseconds">
@@ -726,6 +752,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setMinutes">
@@ -760,6 +787,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setMonth">
@@ -792,6 +820,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setSeconds">
@@ -824,6 +853,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setTime">
@@ -854,6 +884,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCDate">
@@ -884,6 +915,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCFullYear">
@@ -918,6 +950,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCHours">
@@ -954,6 +987,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMilliseconds">
@@ -984,6 +1018,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMinutes">
@@ -1018,6 +1053,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCMonth">
@@ -1050,6 +1086,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setUTCSeconds">
@@ -1082,6 +1119,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="setYear">
@@ -1115,6 +1153,7 @@
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toDateString">
@@ -1143,6 +1182,7 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toGMTString">
@@ -1174,6 +1214,7 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleDateString">
@@ -1202,6 +1243,8 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -1230,6 +1273,8 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleTimeString">
@@ -1258,6 +1303,8 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -1286,6 +1333,7 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toTimeString">
@@ -1314,6 +1362,7 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toUTCString">
@@ -1342,6 +1391,7 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -1370,6 +1420,7 @@
         <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateConstructor" />
       </Docs>
     </Member>
   </Members>

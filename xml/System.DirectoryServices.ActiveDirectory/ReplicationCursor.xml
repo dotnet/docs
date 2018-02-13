@@ -41,6 +41,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This property is not supported on [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)].</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursor" />
       </Docs>
     </Member>
     <Member MemberName="PartitionName">
@@ -60,6 +61,7 @@
         <summary>Gets the name of the partition to which this replication operation was applied.</summary>
         <value>The name of the partition represented by this replication cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursor" />
       </Docs>
     </Member>
     <Member MemberName="SourceInvocationId">
@@ -79,6 +81,7 @@
         <summary>Gets the invocation identifier of the replication source server.</summary>
         <value>The invocation identifier of the replication source server</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursor" />
       </Docs>
     </Member>
     <Member MemberName="SourceServer">
@@ -98,6 +101,7 @@
         <summary>Gets the name of the replication source server.</summary>
         <value>The name of the replication source server.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursor" />
       </Docs>
     </Member>
     <Member MemberName="UpToDatenessUsn">
@@ -117,6 +121,7 @@
         <summary>Gets the maximum update sequence number (USN) for which the destination server has accepted changes from the source server.</summary>
         <value>The maximum update sequence number (USN) for which the destination server has accepted changes from the source server.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursor" />
       </Docs>
     </Member>
   </Members>

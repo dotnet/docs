@@ -102,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -146,6 +147,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
   </Members>

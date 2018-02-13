@@ -23,6 +23,8 @@
     <summary>Supports all JScript classes. This is the ultimate base class of all JScript classes. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ActivationObject" />
+    <altmember cref="T:Microsoft.JScript.JSObject" />
   </Docs>
   <Members>
     <Member MemberName="engine">
@@ -41,6 +43,9 @@
         <summary>Stores a reference to the scripting engine.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -66,6 +71,9 @@
         <returns>A field that has the specified <paramref name="name" />, or null if the script object does not contain the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -89,6 +97,9 @@
         <returns>An array of objects that contains all fields of the current script object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -114,6 +125,9 @@
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -137,6 +151,9 @@
         <returns>An array of objects that contains all members of the current script object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -162,6 +179,9 @@
         <returns>A method that has the specified <paramref name="name" />, or null if the script object does not contain the method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -193,6 +213,9 @@
         <returns>A method that has the specified <paramref name="name" />, or null if the script object does not contain the method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -216,6 +239,9 @@
         <returns>An array of objects that contains all methods of the current script object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -243,6 +269,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -266,6 +295,9 @@
         <returns>An array of objects that contains all properties of the current script object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -291,6 +323,9 @@
         <returns>A property that has the specified <paramref name="name" />, or null if the script object does not contain the property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -324,6 +359,9 @@
         <returns>A property that has the specified <paramref name="name" />, or null if the script object does not contain the property.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -366,6 +404,9 @@
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -389,6 +430,9 @@
         <value>The value of the member that is at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -412,6 +456,9 @@
         <value>The value of the member that is at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -448,6 +495,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -471,6 +521,9 @@
         <value>The value of the member that is named <paramref name="name" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="parent">
@@ -496,6 +549,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -515,6 +571,9 @@
         <value>The type of the script object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -547,6 +606,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -579,6 +641,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -613,7 +678,58 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a property that has a specified name.</summary>
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a method that has a specified name.</summary>
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WrapMembers">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates *wrapped* objects. Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.</summary>
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a member of the script object.</summary>
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:Microsoft.JScript.JSObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

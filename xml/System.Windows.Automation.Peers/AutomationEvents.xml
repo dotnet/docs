@@ -19,6 +19,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.AutomationEventHandler" />
+    <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent(System.Windows.Automation.Peers.AutomationEvents)" />
   </Docs>
   <Members>
     <Member MemberName="AsyncContentLoaded">
@@ -127,6 +129,23 @@
         <summary>
           <see cref="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
         </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LiveRegionChanged">
+      <MemberSignature Language="C#" Value="LiveRegionChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents LiveRegionChanged = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.LiveRegionChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.LiveRegionChangedEvent" />. Available starting with .NET Framework 4.7.1.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuClosed">

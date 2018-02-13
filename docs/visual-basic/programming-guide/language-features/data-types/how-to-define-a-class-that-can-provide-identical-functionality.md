@@ -1,60 +1,41 @@
 ---
 title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "data type arguments, using"
-  - "type parameters, defining"
-  - "data type arguments, defining"
+  - "data type arguments [Visual Basic], using"
+  - "type parameters [Visual Basic], defining"
+  - "data type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], data types"
-  - "Of keyword, using"
+  - "Of keyword [Visual Basic], using"
   - "constraints, Visual Basic generic types"
   - "generic parameters"
   - "data type parameters"
-  - "data type parameters, using"
+  - "data type parameters [Visual Basic], using"
   - "generics [Visual Basic], defining classes with type parameters"
   - "data types [Visual Basic], as parameters"
   - "data types [Visual Basic], as arguments"
-  - "parameters, type"
+  - "parameters [Visual Basic], type"
   - "type arguments"
   - "types [Visual Basic], generic"
-  - "parameters, generic"
+  - "parameters [Visual Basic], generic"
   - "type parameters"
   - "data type arguments"
-  - "parameters, data type"
+  - "parameters [Visual Basic], data type"
   - "generics [Visual Basic], defining generic types"
-  - "data type parameters, defining"
-  - "type arguments, defining"
+  - "data type parameters [Visual Basic], defining"
+  - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)
 You can define a class from which you can create objects that provide identical functionality on different data types. To do this, you specify one or more *type parameters* in the definition. The class can then serve as a template for objects that use various data types. A class defined in this way is called a *generic class*.  
@@ -98,10 +79,10 @@ You can define a class from which you can create objects that provide identical 
      [!code-vb[VbVbalrDataTypes#8](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-define-a-class-that-can-provide-identical-functionality_2.vb)]  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3)   
- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)   
- [Type List](../../../../visual-basic/language-reference/statements/type-list.md)   
- [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)  
+ [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
+ [Type List](../../../../visual-basic/language-reference/statements/type-list.md)  
+ [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)

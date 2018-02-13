@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerModuleEnum::Next method [.NET Framework profiling]"
   - "Next method, ICorProfilerModuleEnum interface [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerModuleEnum::Next Method
 Gets the specified number of contiguous modules from a sequential collection of modules, starting at the enumerator's current position in the sequence.  
@@ -70,5 +70,5 @@ HRESULT Next([in]  ULONG      celt,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)   
+ [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)  
  [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

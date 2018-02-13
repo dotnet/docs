@@ -1,13 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

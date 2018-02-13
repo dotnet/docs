@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EBindPolicyLevels"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EBindPolicyLevels enumeration [.NET Framework hosting]"
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EBindPolicyLevels Enumeration
 Provides flags to specify the level at which to apply or modify assembly policy.  
@@ -73,5 +73,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)   
+ [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
  [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

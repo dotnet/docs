@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Freezable objects, description"
-  - "unfreezing Freezable objects"
-  - "classes, Freezable"
+  - "Freezable objects [WPF], description"
+  - "unfreezing Freezable objects [WPF]"
+  - "classes [WPF], Freezable"
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Freezable Objects Overview
 This topic describes how to effectively use and create <xref:System.Windows.Freezable> objects, which provide special features that can help improve application performance. Examples of freezable objects include brushes, pens, transformations, geometries, and animations.  
@@ -165,7 +170,7 @@ mc:Ignorable="PresentationOptions"
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981).  
   
 ## See Also  
- <xref:System.Windows.Freezable>   
- [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
+ <xref:System.Windows.Freezable>  
+ [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

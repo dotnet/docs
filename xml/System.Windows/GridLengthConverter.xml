@@ -18,10 +18,11 @@
 ## Remarks  
  <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
   
-<a name="XAMLTextUsage_GridLengthConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.GridLength" />
+    <altmember cref="T:System.Windows.GridUnitType" />
+    <altmember cref="T:System.Windows.Controls.Grid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.GridLength" />
+        <altmember cref="T:System.Windows.GridUnitType" />
+        <altmember cref="T:System.Windows.Controls.Grid" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -101,6 +105,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.GridLength" />
+        <altmember cref="T:System.Windows.GridUnitType" />
+        <altmember cref="T:System.Windows.Controls.Grid" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -138,6 +145,9 @@
           <paramref name="source" /> object is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="source" /> object is not <see langword="null" /> and is not a valid type that can be converted to a <see cref="T:System.Windows.GridLength" />.</exception>
+        <altmember cref="T:System.Windows.GridLength" />
+        <altmember cref="T:System.Windows.GridUnitType" />
+        <altmember cref="T:System.Windows.Controls.Grid" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -182,6 +192,9 @@
           <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.GridLength" />
+        <altmember cref="T:System.Windows.GridUnitType" />
+        <altmember cref="T:System.Windows.Controls.Grid" />
       </Docs>
     </Member>
   </Members>

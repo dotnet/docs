@@ -31,7 +31,7 @@
  The security information specified in the <xref:System.Net.WebPermissionAttribute> is stored in the metadata of the attribute target, which is the class to which <xref:System.Net.WebPermissionAttribute> is applied. The system accesses this information at run time. The <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> passed to the constructor determines the allowable <xref:System.Net.WebPermissionAttribute> targets. The system uses the <xref:System.Net.WebPermission> returned by the <xref:System.Net.WebPermissionAttribute.CreatePermission%2A> method to convert the security information of the attribute target to a serializable form stored in metadata.  
   
 > [!NOTE]
->  <xref:System.Net.WebPermissionAttribute> is used only for [Declarative Security](http://msdn.microsoft.com/en-us/97e21efd-6e89-4115-90d5-ad239513dad8). For [Imperative Security](http://msdn.microsoft.com/en-us/15aab1e1-6b7d-41ad-b102-c1ed7bedea27), use the corresponding <xref:System.Net.WebPermission>.  
+>  <xref:System.Net.WebPermissionAttribute> is used only for [Declarative Security](http://msdn.microsoft.com/library/97e21efd-6e89-4115-90d5-ad239513dad8). For [Imperative Security](http://msdn.microsoft.com/library/15aab1e1-6b7d-41ad-b102-c1ed7bedea27), use the corresponding <xref:System.Net.WebPermission>.  
   
    
   

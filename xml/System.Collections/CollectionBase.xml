@@ -58,6 +58,10 @@
     <block subset="none" type="overrides">
       <para>This base class is provided to make it easier for implementers to create a strongly typed custom collection. Implementers are encouraged to extend this base class instead of creating their own.</para>
     </block>
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
+    <altmember cref="N:System.Collections.Generic" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.CollectionBase.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,6 +138,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.CollectionBase.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -182,6 +188,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Collections.CollectionBase.Capacity" /> is set to a value that is less than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory available on the system.</exception>
+        <altmember cref="P:System.Collections.CollectionBase.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -325,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="InnerList">
@@ -456,6 +464,8 @@
   
  For example, implementers can exempt certain elements from deletion by a global Clear.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
+        <altmember cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -500,6 +510,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnClear" /> is invoked before the standard Clear behavior, whereas <see cref="M:System.Collections.CollectionBase.OnClearComplete" /> is invoked after the standard Clear behavior.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnClear" />
+        <altmember cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -564,6 +576,9 @@
   
  <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" /> is called prior to this method.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -619,6 +634,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" /> is invoked before the standard Insert behavior, whereas <see cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" /> is invoked after the standard Insert behavior.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -683,6 +700,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" /> is called prior to this method.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnClear" />
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -738,6 +757,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" /> is invoked before the standard Remove behavior, whereas <see cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" /> is invoked after the standard Remove behavior.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnSet">
@@ -804,6 +825,9 @@
   
  <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" /> is called prior to this method.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnSetComplete">
@@ -861,6 +885,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" /> is invoked before the standard Set behavior, whereas <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" /> is invoked after the standard Set behavior.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -921,6 +947,8 @@
   
  <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" /> is called prior to <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />, <see cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />, and <see cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1071,6 +1099,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1116,6 +1145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -1174,6 +1204,9 @@
         <block subset="none" type="overrides">
           <para>This method calls <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />, <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />, and <see cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />.</para>
         </block>
+        <altmember cref="P:System.Collections.CollectionBase.Count" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1227,6 +1260,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1279,6 +1313,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1348,6 +1383,8 @@
         <block subset="none" type="overrides">
           <para>This method calls <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />, <see cref="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />, and <see cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1487,6 +1524,7 @@
         <block subset="none" type="overrides">
           <para>When this property is set, the methods <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />, <see cref="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />, and <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" /> are called.</para>
         </block>
+        <altmember cref="P:System.Collections.CollectionBase.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1549,7 +1587,20 @@
         <block subset="none" type="overrides">
           <para>This method calls <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />, <see cref="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />, and <see cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Collections.CollectionBase.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CollectionBase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

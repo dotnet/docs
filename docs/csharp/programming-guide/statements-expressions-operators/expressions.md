@@ -1,16 +1,10 @@
 ---
 title: "Expressions (C# Programming Guide)"
-
-ms.date: "2017-05-11"
+ms.date: 05/11/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "expressions [C#]"
   - "C# language, expressions"
@@ -18,21 +12,6 @@ ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Expressions (C# Programming Guide)
 An *expression* is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace. Expressions can consist of a literal value, a method invocation, an operator and its operands, or a *simple name*. Simple names can be the name of a variable, type member, method parameter, namespace or type.  
@@ -61,13 +40,13 @@ System.Convert.ToInt32("35");
 ## Literals and simple names  
  The two simplest types of expressions are literals and simple names. A literal is a constant value that has no name. For example, in the following code example, both `5` and `"Hello World"` are literal values:  
   
- [!code-cs[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_1.cs)]  
+ [!code-csharp[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_1.cs)]  
   
  For more information on literals, see [Types](../../../csharp/language-reference/keywords/types.md).  
   
  In the preceding example, both `i` and `s` are simple names that identify local variables. When those variables are used in an expression, the variable name evaluates to the value that is currently stored in the variable's location in memory. This is shown in the following example:  
   
- [!code-cs[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_2.cs)]  
+ [!code-csharp[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_2.cs)]  
 ## Invocation expressions  
  In the following code example, the call to `DoWork` is an invocation expression.  
   
@@ -94,9 +73,9 @@ C# supports *expression-bodied members*, which allow you to supply a concise exp
  Whenever a variable, object property, or object indexer access is identified from an expression, the value of that item is used as the value of the expression. An expression can be placed anywhere in C# where a value or object is required, as long as the expression ultimately evaluates to the required type.  
 
 ## See also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
- [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)   
- [Types](../../../csharp/programming-guide/types/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+ [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+ [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+ [Types](../../../csharp/programming-guide/types/index.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

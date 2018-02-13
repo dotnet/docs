@@ -11,12 +11,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "raw input [WPF]"
-  - "FilterInputMessage method"
+  - "FilterInputMessage method [WPF]"
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # FilterInputMessage
 Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.  

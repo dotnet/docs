@@ -1,16 +1,12 @@
 ---
 title: "Attribute List (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "attribute list"
   - "attributes [Visual Basic], applying"
@@ -18,21 +14,6 @@ ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Attribute List (Visual Basic)
 Specifies the attributes to be applied to a declared programming element. Multiple attributes are separated by commas. Following is the syntax for one attribute.  
@@ -81,7 +62,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
  <xref:System.Runtime.InteropServices.DllImportAttribute> indicates that the attributed procedure represents an entry point in an unmanaged dynamic-link library (DLL). The attribute supplies the DLL name as a positional argument and the other information as variable initializers.  
   
 ## See Also  
- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
- [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)  
+ [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)  
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

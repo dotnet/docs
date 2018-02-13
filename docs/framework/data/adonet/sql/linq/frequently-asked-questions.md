@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 252ed666-0679-4eea-b71b-2f14117ef443
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Frequently Asked Questions
 The following sections answer some common issues that you might encounter when you implement [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  
@@ -203,6 +208,6 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
  A. Read-only mode turns off the ability of the context to track changes.  
   
 ## See Also  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)   
- [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)   
+ [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
+ [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)  
  [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)

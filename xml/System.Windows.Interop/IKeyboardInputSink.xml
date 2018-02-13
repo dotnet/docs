@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.IKeyboardInputSite" />
+    <altmember cref="T:System.Windows.Interop.HwndSource" />
+    <altmember cref="T:System.Windows.Interop.HwndHost" />
   </Docs>
   <Members>
     <Member MemberName="HasFocusWithin">
@@ -50,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSite" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputSite">
@@ -80,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSite" />
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="OnMnemonic">
@@ -121,6 +128,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
       </Docs>
     </Member>
     <Member MemberName="RegisterKeyboardInputSink">
@@ -228,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateChar">

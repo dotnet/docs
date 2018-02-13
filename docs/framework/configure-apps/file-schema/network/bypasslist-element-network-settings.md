@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#bypasslist"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "bypasslist element"
   - "<bypasslist> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bypasslist&gt; Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  
@@ -37,7 +34,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Syntax  
   
 ```xml  
-      <bypasslist>   
+<bypasslist>   
 </bypasslist>  
 ```  
   
@@ -88,5 +85,5 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

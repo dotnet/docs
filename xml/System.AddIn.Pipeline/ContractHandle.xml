@@ -205,5 +205,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Revokes the lifetime token on a contract.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

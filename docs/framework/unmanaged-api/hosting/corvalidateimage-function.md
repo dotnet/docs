@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "_CorValidateImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_CorValidateImage function [.NET Framework hosting]"
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
@@ -28,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorValidateImage Function
 Validates managed module images, and notifies the operating system loader after they have been loaded.  

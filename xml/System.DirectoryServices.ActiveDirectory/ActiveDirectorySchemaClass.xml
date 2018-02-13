@@ -51,6 +51,9 @@
           <paramref name="context" /> does not refer to a valid <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" />, <paramref name="ldapDisplayName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="ldapDisplayName" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Name" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryClasses">
@@ -72,6 +75,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection" />
       </Docs>
     </Member>
     <Member MemberName="CommonName">
@@ -93,6 +97,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="DefaultObjectSecurityDescriptor">
@@ -114,6 +119,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectorySecurity" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -135,6 +141,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -207,6 +214,7 @@
           <paramref name="context" /> does not refer to a valid <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" />, <paramref name="ldapDisplayName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="ldapDisplayName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetAllProperties">
@@ -236,6 +244,7 @@
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -257,6 +266,7 @@
         <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory entry for the schema class.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object is not a valid instance.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="IsDefunct">
@@ -276,6 +286,7 @@
         <summary>Gets or sets a value indicating whether the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object is defunct.</summary>
         <value>A <see cref="T:System.Boolean" /> value that indicates if the current schema class object is defunct. <see langword="true" /> if the object is defunct; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="MandatoryProperties">
@@ -297,6 +308,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.OptionalProperties" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaPropertyCollection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -316,6 +330,7 @@
         <summary>Gets the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic [LDAP-Display-Name](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com](http://msdn.microsoft.com/).</summary>
         <value>A <see cref="T:System.String" /> that contains the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic [LDAP-Display-Name](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com](http://msdn.microsoft.com/).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="Oid">
@@ -337,6 +352,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="OptionalProperties">
@@ -358,6 +374,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.MandatoryProperties" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaPropertyCollection" />
       </Docs>
     </Member>
     <Member MemberName="PossibleInferiors">
@@ -379,6 +398,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.PossibleSuperiors" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" />
       </Docs>
     </Member>
     <Member MemberName="PossibleSuperiors">
@@ -400,6 +421,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.PossibleInferiors" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -449,6 +473,8 @@
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="SubClassOf">
@@ -470,6 +496,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -490,6 +517,7 @@
         <summary>Gets the LDAP display name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
         <returns>A <see cref="T:System.String" /> that represents the LDAP display name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Name" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -512,7 +540,19 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified type is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" /> value (applies to set only).</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

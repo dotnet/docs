@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "app.config files, assembly locations"
   - "deploying applications [.NET Framework], assembly locations"
@@ -26,6 +21,8 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How the Runtime Locates Assemblies
 To successfully deploy your .NET Framework application, you must understand how the common language runtime locates and binds to the assemblies that make up your application. By default, the runtime attempts to bind with the exact version of an assembly that the application was built with. This default behavior can be overridden by configuration file settings.  
@@ -257,5 +254,5 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
  For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from http://www.code.microsoft.com/utils, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in http://www.code.microsoft.com/utils/Assembly2.dll and http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
   
 ## See Also  
- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)   
+ [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
  [Deployment](../../../docs/framework/deployment/index.md)

@@ -43,11 +43,13 @@
   
  The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. Instances of the `Employee` class are added declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Web.UI.PersistChildrenAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,11 +109,12 @@
   
  The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page. One instance of the `Employee` class is added declaratively and another is added programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,6 +135,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="childControlType" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean,System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,11 +174,13 @@
   
  The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="ChildControlType">
@@ -202,11 +209,12 @@
 ## Examples  
  The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildControlType%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute.%23ctor%2A>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_2/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_2/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="ChildrenAsProperties">
@@ -236,8 +244,8 @@
 ## Examples  
  The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -266,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProperty">
@@ -294,12 +303,13 @@
 ## Examples  
  The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.DefaultProperty%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Web.UI.ParseChildrenAttribute" /> was invoked with <paramref name="childrenAsProperties" /> set to <see langword="false" />.</exception>
+        <altmember cref="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -372,11 +382,12 @@
 ## Examples  
  The following code example demonstrates how to query the <xref:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute%2A> property. For definitions of the `CollectionPropertyControl` and `Employee` classes that are used in this code example, see <xref:System.Web.UI.ParseChildrenAttribute>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  -->  
+ [!code-aspx-csharp[ParseChildrenAttribute_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ParseChildrenAttribute_1/CS/parsechildren.aspx#3)]
+ [!code-aspx-vb[ParseChildrenAttribute_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ParseChildrenAttribute_1/VB/parsechildren.aspx#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="ParseAsChildren">
@@ -401,6 +412,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
+        <altmember cref="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       </Docs>
     </Member>
     <Member MemberName="ParseAsProperties">
@@ -425,7 +438,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.Default" />
+        <altmember cref="F:System.Web.UI.ParseChildrenAttribute.ParseAsChildren" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ParseChildrenAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

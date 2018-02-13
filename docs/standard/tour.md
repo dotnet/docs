@@ -1,6 +1,6 @@
 ---
 title: Tour of .NET
-description: A guided tour through some of the prominent features of .NET.   
+description: A guided tour through some of the prominent features of .NET.
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Tour of .NET
@@ -120,7 +123,7 @@ To learn more and see some samples, see the [LINQ (Language Integrated Query)](u
 
 Every operating system includes an application programming interface (API) that provides system services. .NET provides several ways to call those APIs.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke for short, which is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via "platform invoke" or P/Invoke for short, which is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](/cpp/atl/introduction-to-com) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 

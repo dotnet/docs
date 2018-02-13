@@ -25,6 +25,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.Windows.Forms.Design.ComponentEditorForm" />
+    <altmember cref="T:System.Windows.Forms.Design.ComponentEditorPage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -182,5 +184,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EditComponent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

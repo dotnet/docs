@@ -39,11 +39,13 @@
   
  The following code example demonstrates how to use the `TextBoxSet` control, defined in the previous example, and bind it to an <xref:System.Web.UI.WebControls.AccessDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Samples.AspNet.TextBoxSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxsetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Samples.AspNet.TextBoxSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxsetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Samples.AspNet.TextBoxSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxsetcs.aspx#1)]
+ [!code-aspx-vb[Samples.AspNet.TextBoxSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxsetvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,6 +121,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.SelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
       </Docs>
     </Member>
     <Member MemberName="CreatingModelDataSource">
@@ -266,6 +270,8 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" /> property is set but a <see cref="T:System.Web.UI.DataSourceView" /> object by that name does not exist.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.GetDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="GetDataSource">
@@ -297,6 +303,7 @@
  \- or -  
   
  The control identified by the <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" /> property does not implement the <see cref="T:System.Web.UI.IDataSource" /> interface.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.GetData" />
       </Docs>
     </Member>
     <Member MemberName="IsUsingModelBinders">
@@ -414,6 +421,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnCreatingModelDataSource">
@@ -483,7 +491,7 @@
   
  The <xref:System.Web.UI.WebControls.DataBoundControl> class sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true` when it raises the <xref:System.Web.UI.DataSourceView.DataSourceViewChanged> event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -550,6 +558,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -621,6 +630,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -665,6 +677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -747,6 +760,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The object passed by the <paramref name="dataSource" /> parameter is not <see langword="null" /> or a recognized type.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.ValidateDataSource(System.Object)" />
       </Docs>
     </Member>
   </Members>

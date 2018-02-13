@@ -155,7 +155,7 @@ manager: "wpickett"
 uid: System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "windows, opening"
-  - "opening windows"
+  - "windows [WPF], opening"
+  - "opening windows [WPF]"
 ms.assetid: 6b91b2bb-fda7-491d-a72e-139dd630a5b0
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Open a Window
 This example shows how to open a window.  

@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetCORRequiredVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCORRequiredVersion function [.NET Framework hosting]"
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCORRequiredVersion Function
 Gets the required common language runtime (CLR) version number.  

@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -607,7 +608,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `isPersistent` parameter is `false`, the cookie expiration time is set to <xref:System.DateTime?displayProperty=nameWithType>. If the `isPersistent` parameter is `true`, the cookie expiration time is set to the value of the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property if it is not `null` or, if the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is `null`, the expiration time is set to the value of the `tokenExpirationTime` parameter.  
+ If the `isPersistent` parameter is `false`, the cookie expiration time is set to <xref:System.DateTime.MinValue?displayProperty=nameWithType>. If the `isPersistent` parameter is `true`, the cookie expiration time is set to the value of the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property if it is not `null` or, if the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is `null`, the expiration time is set to the value of the `tokenExpirationTime` parameter.  
   
  The cookie name, domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A>. Whether the cookie should be sent only over SSL is specified by the <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property and whether the cookie should be hidden from client-side scripts is specified by the <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property.  
   
@@ -779,5 +780,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

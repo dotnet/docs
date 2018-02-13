@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For example code using this class, see [How to: Retrieve Information About an Event Publisher](http://msdn.microsoft.com/en-us/2a3e897f-25a9-4dad-8541-171ac49970a3).  
+ For example code using this class, see [How to: Retrieve Information About an Event Publisher](http://msdn.microsoft.com/library/2a3e897f-25a9-4dad-8541-171ac49970a3).  
   
  ]]></format>
     </remarks>
@@ -360,5 +360,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

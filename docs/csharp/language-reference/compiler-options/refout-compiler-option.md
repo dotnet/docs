@@ -1,14 +1,12 @@
 ---
 title: "-refout (C# Compiler Options)"
-ms.date: "2017-08-08"
+ms.date: 08/08/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/refout"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "refout compiler option [C#]"
   - "/refout compiler option [C#]"
@@ -17,14 +15,14 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 
-# /refout (C# Compiler Options)
+# -refout (C# Compiler Options)
 
-The **/refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API.
+The **-refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API.
 
 ## Syntax
 
 ```console
-/refout:filepath
+-refout:filepath
 ```
 
 ## Arguments
@@ -46,8 +44,8 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 - All virtual methods are kept. Explicit interface implementations are kept. Explicitly implemented properties and events are kept, as their accessors are virtual (and are therefore kept).
 - All fields of a struct are kept. (This is a candidate for post-C#-7.1 refinement)
 
-The `/refout` and [`/refonly`](refonly-compiler-option.md) options are mutually exclusive.
+The `-refout` and [`-refonly`](refonly-compiler-option.md) options are mutually exclusive.
 
 ## See Also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

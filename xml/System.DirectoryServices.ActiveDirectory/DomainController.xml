@@ -75,6 +75,7 @@
         <value>A <see cref="T:System.DateTime" /> object that contains the current date and time from this domain controller.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -124,6 +125,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object that represents the domain that this domain controller is a member of.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
       </Docs>
     </Member>
     <Member MemberName="EnableGlobalCatalog">
@@ -153,6 +155,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -172,6 +175,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -199,6 +203,8 @@
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -226,6 +232,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -252,6 +260,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No domain controller was found.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -282,6 +291,8 @@
           <paramref name="context" /> or <paramref name="flag" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -312,6 +323,7 @@
           <paramref name="context" /> or <paramref name="siteName" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -344,6 +356,8 @@
           <paramref name="context" />, <paramref name="siteName" />, or <paramref name="flag" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="Forest">
@@ -364,6 +378,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> object that represents the forest that this domain controller is a member of.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
       </Docs>
     </Member>
     <Member MemberName="GetAllReplicationNeighbors">
@@ -389,6 +404,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectorySearcher">
@@ -439,6 +455,7 @@
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
@@ -464,6 +481,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
@@ -496,6 +514,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
@@ -528,6 +547,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
@@ -560,6 +580,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
@@ -585,6 +606,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
       </Docs>
     </Member>
     <Member MemberName="HighestCommittedUsn">
@@ -626,6 +648,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" />
       </Docs>
     </Member>
     <Member MemberName="IPAddress">
@@ -711,6 +734,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" />
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -731,6 +755,8 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> members that indicate the roles that this domain controller serves.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
       </Docs>
     </Member>
     <Member MemberName="SeizeRoleOwnership">
@@ -763,6 +789,8 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="role" /> is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole)" />
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -806,6 +834,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" />
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromAllServers">
@@ -844,6 +873,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException">An error occurred in the synchronization operation.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
@@ -902,6 +932,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="role" /> is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
       </Docs>
     </Member>
     <Member MemberName="TriggerSyncReplicaFromNeighbors">
@@ -935,5 +966,25 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a set of domain controllers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindOne">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a single domain controller.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

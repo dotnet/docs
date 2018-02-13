@@ -41,6 +41,9 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="T:Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid" />
+    <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
+    <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,7 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">
@@ -112,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.CriticalHandle" />
+        <altmember cref="P:System.Runtime.InteropServices.CriticalHandle.IsInvalid" />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides information for the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.ValidationError" />
   </Docs>
   <Members>
     <Member MemberName="Action">
@@ -72,6 +73,7 @@
         <param name="genericTarget">The object to invoke the handler on.</param>
         <summary>Invokes the specified handler in a type-specific way on the specified object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       </Docs>
     </Member>
   </Members>

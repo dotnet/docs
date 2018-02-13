@@ -22,18 +22,18 @@ where those types or members have not been deployed yet.
 This dependency on standard library functionality has been part of the
 C# language since its first version. In that version, examples included:
 
-* @System.Exception - used for all compiler generated exceptions.
-* @System.String - the C# `string` type is a synonym for @System.String.
-* @System.Int32 - synonym of `int`.
+* <xref:System.Exception> - used for all compiler generated exceptions.
+* <xref:System.String> - the C# `string` type is a synonym for <xref:System.String>.
+* <xref:System.Int32> - synonym of `int`.
 
 That first
 version was simple: the compiler and the standard library shipped together,
 and there was only one version of each.
 
 Subsequent versions of C# have occasionally added new types or members to
-the dependencies. Examples include: @System.Runtime.CompilerServices.INotifyCompletion,
-@System.Runtime.CompilerServices.CallerFilePathAttribute and
-@System.Runtime.CompilerServices.CallerMemberNameAttribute. C# 7.0 continues this by adding a dependency on @System.ValueTuple to
+the dependencies. Examples include: <xref:System.Runtime.CompilerServices.INotifyCompletion>,
+<xref:System.Runtime.CompilerServices.CallerFilePathAttribute> and
+<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>. C# 7.0 continues this by adding a dependency on <xref:System.ValueTuple> to
 implement the [tuples](../tuples.md) language feature.
 
 The language design team works to minimize the surface area of the types
@@ -47,7 +47,7 @@ how to manage those dependencies in your work.
 
 C# compiler tools are now decoupled from the release cycle of the .NET libraries
 on supported platforms. In fact, different .NET libraries have different release
-cycles: the .NET Framework on Windows is relesed as a Windows Update, .NET Core ships on
+cycles: the .NET Framework on Windows is released as a Windows Update, .NET Core ships on
 a separate schedule, and the Xamarin versions of library updates ship with the Xamarin tools
 for each target platform.
 

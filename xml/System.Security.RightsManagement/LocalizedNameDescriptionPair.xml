@@ -46,6 +46,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.LocalizedNameDescriptionPair" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Either the <paramref name="name" /> parameter or <paramref name="description" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Name" />
+        <altmember cref="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Description" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -71,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Name" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -138,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Description" />
       </Docs>
     </Member>
   </Members>

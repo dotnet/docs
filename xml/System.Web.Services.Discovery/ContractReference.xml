@@ -35,6 +35,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryReference" />
+    <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
+    <altmember cref="T:System.Web.Services.Discovery.SchemaReference" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -184,6 +189,7 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.</exception>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents" /> property of <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> does not contain a discovery document with an URL of <see cref="P:System.Web.Services.Discovery.ContractReference.Url" />.</exception>
+        <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
       </Docs>
     </Member>
     <Member MemberName="DefaultFilename">
@@ -262,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Discovery.ContractReference.Ref" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -329,6 +336,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Ref">
@@ -374,6 +385,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Discovery.ContractReference.DocRef" />
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -396,7 +408,7 @@
       <Docs>
         <param name="contentType">The MIME content type of <c>stream</c>.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> containing the referenced document.</param>
-        <summary>Resolves whether the the referenced document is valid.</summary>
+        <summary>Resolves whether the referenced document is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -410,6 +422,10 @@
  -or-  
   
  The service description could not be downloaded and verified successfully.</exception>
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
+        <altmember cref="P:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents" />
+        <altmember cref="P:System.Web.Services.Discovery.DiscoveryClientProtocol.References" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -448,6 +464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Discovery.ContractReference.Ref" />
       </Docs>
     </Member>
     <Member MemberName="WriteDocument">
@@ -481,7 +498,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

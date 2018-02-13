@@ -27,10 +27,8 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you apply this attribute to a data field, you must follow the guidelines for the use of the attributes. For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
-  
-   
-  
+ When you apply this attribute to a data field, you must follow the guidelines for the use of the attributes. For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/library/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
+
 ## Examples  
  See an online example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.ComponentModel.DataAnnotations.DisplayFormatAttribute).  
   
@@ -51,12 +49,12 @@
   
  To compile the example, you need the following:  
   
--   [!INCLUDE[vs_orcas_ext](~/includes/vs-orcas-ext-md.md)] Service Pack 1 or [!INCLUDE[vwd_exp_orcas_long](~/includes/vwd-exp-orcas-long-md.md)] Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running ([!INCLUDE[sqprsqext](~/includes/sqprsqext-md.md)] or [!INCLUDE[ssKatmai_long](~/includes/sskatmai-long-md.md)]).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases) on GitHub. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.
   
 -   A data-driven Web site. This enables you to create a data context for the database and the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -282,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
       </Docs>
     </Member>
   </Members>

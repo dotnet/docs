@@ -19,6 +19,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IServiceProvider" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.Web.UI.ThemeProvider" />
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <altmember cref="T:System.Web.UI.SkinBuilder" />
   </Docs>
   <Members>
     <Member MemberName="GetAllThemeProviders">
@@ -57,6 +62,7 @@
         <summary>Gets a <see cref="T:System.Web.UI.ThemeProvider" /> object that represents the customization theme from a style sheet.</summary>
         <returns>A <see cref="T:System.Web.UI.ThemeProvider" /> that represents the page theme that is applied to a control built by the <see cref="T:System.Web.UI.ControlBuilder" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ThemeProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetThemeProvider">
@@ -76,6 +82,8 @@
         <summary>Gets a <see cref="T:System.Web.UI.ThemeProvider" /> object that represents the customization theme on an ASP.NET page.</summary>
         <returns>A <see cref="T:System.Web.UI.ThemeProvider" /> that represents the page theme that is applied to a control built by the <see cref="T:System.Web.UI.ControlBuilder" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IThemeResolutionService.GetStylesheetThemeProvider" />
+        <altmember cref="T:System.Web.UI.ThemeProvider" />
       </Docs>
     </Member>
   </Members>

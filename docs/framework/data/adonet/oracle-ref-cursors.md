@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Oracle REF CURSORs
 The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** data type. When using the data provider to work with Oracle REF CURSORs, you should consider the following behaviors.  
@@ -49,5 +51,5 @@ The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** d
  Demonstrates how to execute a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.  
   
 ## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)   
+ [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

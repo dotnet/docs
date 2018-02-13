@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::GetObject method [.NET Framework debugging]"
   - "GetObject method, ICorDebugAppDomain interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain::GetObject Method
 Gets an interface pointer to the common language runtime (CLR) application domain.  

@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: aspnet-core
 ms.devlang: dotnet
 ms.assetid: 4172512e-b93d-4169-abdb-bd0b0b2d657e
+ms.workload: 
+  - dotnetcore
 ---
 
 # Getting started with ASP.NET Core    

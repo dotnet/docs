@@ -121,6 +121,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> class with the specified <see cref="T:System.Xml.XmlNameTable" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.XmlNameTable" /> object passed as a parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -753,6 +754,9 @@ schemaSet.CopyTo(schemas, 0);
         <summary>Gets all the global attributes in all the XML Schema definition language (XSD) schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <value>The collection of global attributes.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalElements" />
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalTypes" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaObjectTable" />
       </Docs>
     </Member>
     <Member MemberName="GlobalElements">
@@ -780,6 +784,9 @@ schemaSet.CopyTo(schemas, 0);
         <summary>Gets all the global elements in all the XML Schema definition language (XSD) schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <value>The collection of global elements.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalTypes" />
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalAttributes" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaObjectTable" />
       </Docs>
     </Member>
     <Member MemberName="GlobalTypes">
@@ -814,6 +821,9 @@ schemaSet.CopyTo(schemas, 0);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalElements" />
+        <altmember cref="P:System.Xml.Schema.XmlSchemaSet.GlobalAttributes" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaObjectTable" />
       </Docs>
     </Member>
     <Member MemberName="IsCompiled">
@@ -854,6 +864,8 @@ schemaSet.CopyTo(schemas, 0);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Schema.XmlSchemaSet.Compile" />
+        <altmember cref="M:System.Xml.Schema.XmlSchemaSet.Reprocess(System.Xml.Schema.XmlSchema)" />
       </Docs>
     </Member>
     <Member MemberName="NameTable">
@@ -881,6 +893,7 @@ schemaSet.CopyTo(schemas, 0);
         <summary>Gets the default <see cref="T:System.Xml.XmlNameTable" /> used by the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> when loading new XML Schema definition language (XSD) schemas.</summary>
         <value>A table of atomized string objects.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1364,7 +1377,48 @@ foreach (XmlSchema schema in schemaSet.Schemas("http://www.contoso.com/books"))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlResolver" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the given XML Schema definition language (XSD) schema to the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an XML Schema definition language (XSD) schema is in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Schemas">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of XML Schema definition language (XSD) schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

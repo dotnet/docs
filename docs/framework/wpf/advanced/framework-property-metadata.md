@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "metadata, framework properties"
-  - "framework property metadata"
+  - "metadata [WPF], framework properties"
+  - "framework property metadata [WPF]"
 ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Framework Property Metadata
 Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] architecture. In general the WPF framework-level designation entails that features such as rendering, data binding, and property system refinements are handled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
@@ -79,7 +81,7 @@ Framework property metadata options are reported for the properties of object el
  This behavior is implemented by <xref:System.Windows.FrameworkPropertyMetadata.Merge%2A>, and can be overridden on derived metadata classes.  
   
 ## See Also  
- <xref:System.Windows.DependencyProperty.GetMetadata%2A>   
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
+ <xref:System.Windows.DependencyProperty.GetMetadata%2A>  
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

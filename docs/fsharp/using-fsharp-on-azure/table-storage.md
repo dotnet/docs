@@ -183,8 +183,8 @@ You can delete a table from a storage account. A table that has been deleted wil
 Now that you've learned the basics of Table storage, follow these links
 to learn about more complex storage tasks:
 
-- [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](http://fsprojects.github.io/AzureStorageTypeProvider/)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
+- [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/documentation/samples/storage-table-dotnet-getting-started/)

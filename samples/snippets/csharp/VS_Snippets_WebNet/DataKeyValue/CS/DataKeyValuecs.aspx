@@ -11,7 +11,7 @@
     // Get the DataKey object for the current record.
     DataKey key = CustomerDetailsView.DataKey;
     
-    // Display the the value of the key field.
+    // Display the value of the key field.
     MessageLabel.Text = "The key field value for the displayed record is " + 
       key.Value.ToString() + ".";
   }

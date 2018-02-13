@@ -165,5 +165,15 @@
         <exception cref="T:System.InvalidOperationException">Thrown when the count tag is not found in the response stream.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetContinuation">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Data.Services.Client.DataServiceQueryContinuation" /> object containing the URI that is used to retrieve the next results page.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "registering client-side provider assemblies"
   - "client-side provider assemblies, registering"
@@ -19,6 +22,8 @@ caps.latest.revision: 8
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Register a Client-Side Provider Assembly
 > [!NOTE]

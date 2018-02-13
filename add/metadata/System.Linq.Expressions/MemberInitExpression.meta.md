@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.MemberInitExpression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -56,7 +56,7 @@ uid: System.Linq.Expressions.MemberInitExpression.CanReduce
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

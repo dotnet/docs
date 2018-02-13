@@ -30,6 +30,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.IControlAdapter" />
+    <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Style" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +71,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="CalculateOptimumPageWeight">
@@ -122,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -202,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultLabel">
@@ -269,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HandlePostBackEvent">
@@ -322,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of -1 indicates that the default weight for the element must be used. The inheriting class must override this property. For further information about overriding this property, see [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+ A value of -1 indicates that the default weight for the element must be used. The inheriting class must override this property. For further information about overriding this property, see [Pagination](http://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
   
  ]]></format>
         </remarks>
@@ -350,6 +358,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterState">
@@ -441,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="NextLabel">
@@ -465,6 +476,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OKLabel">
@@ -489,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -545,6 +558,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -618,6 +632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -668,6 +683,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -762,6 +778,7 @@
         <summary>Returns the style object associated with the control to which the device adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The style object associated with the control to which the device adapter is attached.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="VisibleWeight">
@@ -783,7 +800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
+ This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination](http://msdn.microsoft.com/library/b4f4c4bc-226b-46ec-ae46-00497a32f4f2).  
   
  ]]></format>
         </remarks>

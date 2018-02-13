@@ -22,11 +22,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerPosition> enumeration to specify that the pager should be displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Position" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
   </Docs>
   <Members>
     <Member MemberName="Bottom">

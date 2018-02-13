@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "clients [WCF], running"
   - "WCF clients [WCF], running"
 ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
 caps.latest.revision: 64
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Windows Communication Foundation Client
 This is the fourth of six tasks required to create a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
@@ -61,8 +60,8 @@ This is the fourth of six tasks required to create a [!INCLUDE[indigo1](../../..
  You have now created the proxy that the client application will use to call the calculator service. Proceed to the next topic in the series: [How to: Configure a Client](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md)  
   
 ## See Also  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)   
- [How to: Publish Metadata for a Service Using a Configuration File](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)   
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
+ [Self-Host](../../../docs/framework/wcf/samples/self-host.md)  
+ [How to: Publish Metadata for a Service Using a Configuration File](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
  [How to: Use Svcutil.exe to Download Metadata Documents](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)

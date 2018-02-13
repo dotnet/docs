@@ -37,7 +37,7 @@
   
  When you display a form using the <xref:System.Windows.Forms.Form.ShowDialog%2A> method, you can use the <xref:System.Windows.Forms.Button.DialogResult%2A> property of a button to specify the return value of <xref:System.Windows.Forms.Form.ShowDialog%2A>.  
   
- You can change the button's appearance. For example, to make it appear flat for a Web look, set the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>. The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property can also be set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, which appears flat until the mouse pointer passes over the button; then the button takes on the standard Windows button appearance.  
+ You can change the button's appearance. For example, to make it appear flat for a Web look, set the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle.Flat?displayProperty=nameWithType>. The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property can also be set to <xref:System.Windows.Forms.FlatStyle.Popup?displayProperty=nameWithType>, which appears flat until the mouse pointer passes over the button; then the button takes on the standard Windows button appearance.  
   
 > [!NOTE]
 >  If the control that has focus accepts and processes the ENTER key press, the <xref:System.Windows.Forms.Button> does not process it. For example, if a multiline <xref:System.Windows.Forms.TextBox> or another button has focus, that control processes the ENTER key press instead of the accept button.  
@@ -45,7 +45,7 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.Button>, sets its <xref:System.Windows.Forms.Button.DialogResult%2A> property to <xref:System.Windows.Forms.DialogResult?displayProperty=nameWithType>, and adds it to a <xref:System.Windows.Forms.Form>.  
+ The following code example creates a <xref:System.Windows.Forms.Button>, sets its <xref:System.Windows.Forms.Button.DialogResult%2A> property to <xref:System.Windows.Forms.DialogResult.OK?displayProperty=nameWithType>, and adds it to a <xref:System.Windows.Forms.Form>.  
   
  [!code-cpp[Classic Button.Button Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Button.Button Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Button.Button Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Button.Button Example/CS/source.cs#1)]
@@ -53,6 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ButtonBase" />
+    <altmember cref="T:System.Windows.Forms.RadioButton" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
+    <altmember cref="T:System.Windows.Forms.IButtonControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Button" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMode">
@@ -208,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.DoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.DoubleClick> event is not raised.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -252,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.MouseDoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.MouseDoubleClick> event is not raised.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -302,6 +307,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.IButtonControl.NotifyDefault(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -323,6 +329,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -377,6 +384,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -398,6 +406,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -431,6 +440,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Button.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Button.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -498,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -568,6 +579,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.Table" />
+    <altmember cref="T:System.Windows.GridUnitType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +89,7 @@
         <returns>
           <see cref="T:System.Windows.Size" /> that represents the arranged size of this Grid element and its children.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Grid.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnDefinitions">
@@ -133,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.RowDefinitions" />
       </Docs>
     </Member>
     <Member MemberName="ColumnProperty">
@@ -150,6 +154,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.Column" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.Column" />
       </Docs>
     </Member>
     <Member MemberName="ColumnSpanProperty">
@@ -167,6 +172,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.ColumnSpan" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.ColumnSpan" />
       </Docs>
     </Member>
     <Member MemberName="GetColumn">
@@ -243,6 +249,8 @@
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" /> attached property from a given <see cref="T:System.Windows.UIElement" />.</summary>
         <returns>The value of the <see cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" /> attached property.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.Grid" />
+        <altmember cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" />
       </Docs>
     </Member>
     <Member MemberName="GetRow">
@@ -343,6 +351,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -384,6 +393,7 @@
         <returns>
           <see cref="T:System.Windows.Size" /> that represents the required size to arrange child content.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Grid.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnVisualChildrenChanged">
@@ -452,6 +462,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.RowDefinitions" />
       </Docs>
     </Member>
     <Member MemberName="RowProperty">
@@ -469,6 +480,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.Row" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.Row" />
       </Docs>
     </Member>
     <Member MemberName="RowSpanProperty">
@@ -486,6 +498,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.RowSpan" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.RowSpan" />
       </Docs>
     </Member>
     <Member MemberName="SetColumn">
@@ -509,6 +522,7 @@
         <param name="value">The property value to set.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Grid.Column" /> attached property to a given <see cref="T:System.Windows.UIElement" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.Column" />
       </Docs>
     </Member>
     <Member MemberName="SetColumnSpan">
@@ -532,6 +546,7 @@
         <param name="value">The property value to set.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Grid.ColumnSpan" /> attached property to a given <see cref="T:System.Windows.UIElement" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.ColumnSpan" />
       </Docs>
     </Member>
     <Member MemberName="SetIsSharedSizeScope">
@@ -555,6 +570,8 @@
         <param name="value">The property value to set.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" /> attached property to a given <see cref="T:System.Windows.UIElement" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.Grid" />
+        <altmember cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" />
       </Docs>
     </Member>
     <Member MemberName="SetRow">
@@ -578,6 +595,7 @@
         <param name="value">The property value to set.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Grid.Row" /> attached property to a given <see cref="T:System.Windows.UIElement" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.Row" />
       </Docs>
     </Member>
     <Member MemberName="SetRowSpan">
@@ -601,6 +619,7 @@
         <param name="value">The property value to set.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Grid.RowSpan" /> attached property to a given <see cref="T:System.Windows.UIElement" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.RowSpan" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeColumnDefinitions">
@@ -625,6 +644,7 @@
         <summary>Returns true if <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> associated with this instance of <see cref="T:System.Windows.Controls.Grid" /> is not empty.</summary>
         <returns>true if <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> associated with this instance of <see cref="T:System.Windows.Controls.Grid" /> is not empty; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.ColumnDefinitionCollection" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeRowDefinitions">
@@ -649,6 +669,7 @@
         <summary>Returns true if <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> associated with this instance of <see cref="T:System.Windows.Controls.Grid" /> is not empty.</summary>
         <returns>true if <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> associated with this instance of <see cref="T:System.Windows.Controls.Grid" /> is not empty; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.RowDefinitionCollection" />
       </Docs>
     </Member>
     <Member MemberName="ShowGridLines">
@@ -700,6 +721,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Grid.ShowGridLines" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.ShowGridLines" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

@@ -17,6 +17,9 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Memory Management and Garbage Collection in .NET
 This section of the documentation provides information about managing memory in .NET.  

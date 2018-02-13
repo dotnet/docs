@@ -124,6 +124,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.CacheMode" />
+        <altmember cref="P:System.Windows.Media.Visual.VisualCacheMode" />
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
+        <altmember cref="T:System.Windows.Media.BitmapCacheBrush" />
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -170,6 +174,7 @@
         <summary>Gets or sets the clipping region of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
         <value>The <see cref="T:System.Windows.Media.Geometry" /> that defines the clipping region.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.UIElement.Clip" />
       </Docs>
     </Member>
     <Member MemberName="ContentBounds">
@@ -254,6 +259,8 @@
         <summary>Gets or sets the bitmap effect to apply to the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
         <value>An <see cref="T:System.Windows.Media.Effects.Effect" /> that represents the bitmap effect.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -294,6 +301,7 @@
         <block subset="none" type="overrides">
           <para>The visual tree cannot be modified during this call.</para>
         </block>
+        <altmember cref="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -399,6 +407,7 @@
         <summary>Gets or sets the opacity of the <see cref="T:System.Windows.Media.ContainerVisual" />, based on 0=transparent, 1=opaque.</summary>
         <value>A value from 0 through 1 that specifies a range from fully transparent to fully opaque. A value of 0 indicates that the <see cref="T:System.Windows.Media.ContainerVisual" /> is completely transparent, while a value of 1 indicates that the <see cref="T:System.Windows.Media.ContainerVisual" /> is completely opaque. A value 0.5 indicates 50 percent opaque, a value of 0.725 indicates 72.5 percent opaque, and so on. Values less than 0 are treated as 0, while values greater than 1 are treated as 1.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.UIElement.Opacity" />
       </Docs>
     </Member>
     <Member MemberName="OpacityMask">
@@ -514,6 +523,7 @@
   
  The visual tree cannot be modified during this call.</para>
         </block>
+        <altmember cref="M:System.Windows.Media.ContainerVisual.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="XSnappingGuidelines">
@@ -546,6 +556,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.ContainerVisual.YSnappingGuidelines" />
       </Docs>
     </Member>
     <Member MemberName="YSnappingGuidelines">
@@ -578,7 +589,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.ContainerVisual.XSnappingGuidelines" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return top-most visual object of a hit test.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

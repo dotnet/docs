@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data conversion for binding"
-  - "binding data, about data binding"
-  - "data binding, about data binding"
-  - "conversion for data binding"
+  - "data conversion for binding [WPF]"
+  - "binding data [WPF], about data binding"
+  - "data binding [WPF], about data binding"
+  - "conversion for data binding [WPF]"
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 caps.latest.revision: 78
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Binding Overview
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] objects and [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)]. <xref:System.Windows.Controls.ContentControl>s such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.ItemsControl>s such as <xref:System.Windows.Controls.ListBox> and <xref:System.Windows.Controls.ListView> have built-in functionality to enable flexible styling of single data items or collections of data items. Sort, filter, and group views can be generated on top of the data.  
@@ -433,10 +438,10 @@ manager: "wpickett"
  You can set the attached property <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> on a binding-related object to receive information about the status of a specific binding.  
   
 ## See Also  
- <xref:System.Windows.Controls.DataErrorValidationRule>   
- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)   
- [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)   
- [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703)   
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)   
+ <xref:System.Windows.Controls.DataErrorValidationRule>  
+ [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)  
+ [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)  
+ [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
+ [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703)  
+ [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
  [Bind to an ADO.NET Data Source](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IsDebuggerAttached"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerInfo::IsDebuggerAttached method [.NET Framework hosting]"
   - "IsDebuggerAttached method, IDebuggerInfo interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerInfo::IsDebuggerAttached Method
 Gets a value that indicates whether a managed debugger is attached to this process.  

@@ -24,7 +24,7 @@ namespace Microsoft.Samples.Animation
             myCanvas.Height = 400;
 
             //
-            //  Create the the first button.
+            //  Create the first button.
             //
             Button myAnimatedWidthButton = new Button();
             myAnimatedWidthButton.Name = "AnimatedWidthButton";

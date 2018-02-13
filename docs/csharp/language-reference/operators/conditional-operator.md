@@ -9,8 +9,6 @@ f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
   - ":_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
@@ -52,12 +50,12 @@ classify = (input > 0) ? "positive" : "negative";
  The conditional operator cannot be overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-operator_1.cs)]  
+ [!code-csharp[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [if-else](../../../csharp/language-reference/keywords/if-else.md)   
- [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [if-else](../../../csharp/language-reference/keywords/if-else.md)  
+ [?. and ?Operators](../../../csharp/language-reference/operators/null-conditional-operators.md)  
  [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)

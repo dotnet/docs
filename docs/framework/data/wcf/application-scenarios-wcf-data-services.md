@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "WCF Data Services, scenarios"
 ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Application Scenarios (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports a core set of scenarios for exposing and consuming data as [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. This topic points you to the topics relevant to these scenarios.  
@@ -43,11 +45,11 @@ manager: "erikre"
 -   [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
   
  Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a Silverlight-based client application.  
- -   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/en-us/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+ -   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
--   [How to: Bind Data Service Data to Controls (WCF Data Services/Silverlight)](http://msdn.microsoft.com/en-us/bda7d82e-7b1f-4690-8a33-c6297465bdd5)  
+-   [How to: Bind Data Service Data to Controls (WCF Data Services/Silverlight)](http://msdn.microsoft.com/library/bda7d82e-7b1f-4690-8a33-c6297465bdd5)  
   
  Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in an AJAX-based client application.  
  -   [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
@@ -68,7 +70,7 @@ manager: "erikre"
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
--   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/en-us/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+-   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
   
  Expose and consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed with a binary large object that is accessed and changed as a stream.  
  -   [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)  
@@ -93,5 +95,5 @@ manager: "erikre"
 -   [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)  
   
 ## See Also  
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)   
+ [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
  [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

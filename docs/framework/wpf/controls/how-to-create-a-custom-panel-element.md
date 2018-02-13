@@ -9,14 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Panel control"
-  - "custom Panel elements"
+  - "Panel control [WPF]"
+  - "custom Panel elements [WPF]"
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Custom Panel Element
 ## Example  
@@ -31,6 +37,6 @@ manager: "wpickett"
  [!code-vb[PlotPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Panel>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ <xref:System.Windows.Controls.Panel>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979)

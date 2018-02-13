@@ -9,19 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "Graphics.FillRectangle"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "drawing, rectangles"
-  - "rectangles, drawing"
+  - "drawing [Windows Forms], rectangles"
+  - "rectangles [Windows Forms], drawing"
   - "drawing rectangles"
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Filled Rectangle on a Windows Form
 This example draws a filled rectangle on a form.  
@@ -38,9 +42,9 @@ This example draws a filled rectangle on a form.
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Brush> and <xref:System.Drawing.Graphics> objects.  
   
 ## See Also  
- <xref:System.Drawing.Graphics.FillRectangle%2A>   
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)   
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)   
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)   
+ <xref:System.Drawing.Graphics.FillRectangle%2A>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
+ [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
+ [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
  [Brushes and Filled Shapes in GDI+](../../../../docs/framework/winforms/advanced/brushes-and-filled-shapes-in-gdi.md)

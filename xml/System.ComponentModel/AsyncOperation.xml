@@ -53,6 +53,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
     </block>
+    <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
   </Docs>
   <Members>
     <Member MemberName="Finalize">
@@ -182,6 +183,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
     <Member MemberName="PostOperationCompleted">
@@ -244,6 +246,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizationContext">
@@ -319,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
   </Members>

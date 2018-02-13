@@ -45,6 +45,9 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Framework Class Library Overview
 The [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] includes classes, interfaces, and value types that expedite and optimize the development process and provide access to system functionality. To facilitate interoperability between languages, most .NET Framework types are CLS-compliant and can therefore be used from any programming language whose compiler conforms to the common language specification (CLS).  
@@ -108,6 +111,6 @@ ass objects|<xref:System.Object>|The root of the object hierarchy.|**Object**|**
  For more information about namespaces, browse the [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195). The reference documentation provides a brief overview of each namespace as well as a formal description of each type and its members.  
   
 ## See Also  
- [Common Type System](../../docs/standard/base-types/common-type-system.md)   
- [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)   
+ [Common Type System](../../docs/standard/base-types/common-type-system.md)  
+ [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  
  [Overview](../../docs/framework/get-started/overview.md)

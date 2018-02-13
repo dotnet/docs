@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
 ms.assetid: 6ae0204c-6bb2-4bda-b13e-94507203bc68
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo Interface
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.  

@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ScrollableControl" />
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -77,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -116,6 +121,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -138,6 +147,7 @@
         <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" /> object.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -157,6 +167,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -196,6 +207,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -235,6 +250,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -293,6 +312,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

@@ -59,6 +59,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IListSource" />
+    <altmember cref="T:System.ComponentModel.ITypedList" />
+    <altmember cref="T:System.ComponentModel.BindingList`1" />
+    <altmember cref="T:System.ComponentModel.IBindingList" />
+    <altmember cref="T:System.Collections.CollectionBase" />
   </Docs>
   <Members>
     <Member MemberName="ContainsListCollection">
@@ -103,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IListSource" />
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.BindingList`1" />
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="GetList">
@@ -142,6 +151,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IListSource" />
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.BindingList`1" />
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
   </Members>

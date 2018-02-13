@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +44,8 @@
         <param name="content">The text value of the cell being copied.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> structure.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -60,6 +64,8 @@
         <summary>Gets the column that contains the cell being copied.</summary>
         <value>The column that contains the cell being copied.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -78,6 +84,8 @@
         <summary>Gets the text value of the cell being copied.</summary>
         <value>The text value of the cell being copied.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -101,6 +109,8 @@
         <returns>
           <see langword="true" /> if the current and specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances have the same <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Item" />, <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Column" />, and <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Content" /> property values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -127,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -145,6 +157,8 @@
         <summary>Gets the data item for the row that contains the cell being copied.</summary>
         <value>The data item for the row that contains the cell being copied.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -170,6 +184,8 @@
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances have the same <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Item" />, <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Column" />, and <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Content" /> property values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -195,6 +211,8 @@
         <returns>
           <see langword="true" /> if the current and specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances do not have the same <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Item" />, <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Column" />, and <see cref="P:System.Windows.Controls.DataGridClipboardCellContent.Content" /> property values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       </Docs>
     </Member>
   </Members>

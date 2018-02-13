@@ -17,6 +17,7 @@
   <Docs>
     <summary>Manages the path context for the current application. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Configuration.ContextInformation.HostingContext" />
   </Docs>
   <Members>
     <Member MemberName="ExePath">
@@ -61,6 +62,7 @@
         <summary>Gets an object representing the path level of the current application.</summary>
         <value>A <see cref="T:System.Configuration.ConfigurationUserLevel" /> object representing the path level of the current application.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConfigurationUserLevel" />
       </Docs>
     </Member>
   </Members>

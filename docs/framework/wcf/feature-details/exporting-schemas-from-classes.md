@@ -17,9 +17,11 @@ helpviewer_keywords:
   - "XsdDataContractImporter class"
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exporting Schemas from Classes
 To generate XML Schema definition language (XSD) schemas from classes that are used in the data contract model, use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class. This topic describes the process for creating schemas.  
@@ -65,8 +67,8 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
  Export options affect all of these methods.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.XsdDataContractImporter>   
- <xref:System.Runtime.Serialization.XsdDataContractExporter>   
- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.XsdDataContractImporter>  
+ <xref:System.Runtime.Serialization.XsdDataContractExporter>  
+ [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
  [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)

@@ -81,6 +81,10 @@
  ]]></format>
     </remarks>
     <threadsafe>Only the following members are thread safe: <see cref="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate)" />, <see cref="M:System.Windows.Forms.Control.EndInvoke(System.IAsyncResult)" />, <see cref="M:System.Windows.Forms.Control.Invoke(System.Delegate)" />, <see cref="P:System.Windows.Forms.Control.InvokeRequired" />, and <see cref="M:System.Windows.Forms.Control.CreateGraphics" /> if the handle for the control has already been created. Calling <see cref="M:System.Windows.Forms.Control.CreateGraphics" /> before the control's handle has been created on a background thread can cause illegal cross thread calls.</threadsafe>
+    <altmember cref="T:System.Windows.Forms.Form" />
+    <altmember cref="T:System.Windows.Forms.ScrollableControl" />
+    <altmember cref="T:System.Windows.Forms.ContainerControl" />
+    <altmember cref="T:System.ComponentModel.Component" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -283,6 +287,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleEvents" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="AccessibilityNotifyClients">
@@ -356,6 +362,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDefaultActionDescription">
@@ -405,6 +414,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -451,6 +464,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleName">
@@ -495,6 +512,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleRole">
@@ -528,6 +549,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.AccessibleRole" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.Control.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">
@@ -567,6 +593,12 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DragEventArgs" />
+        <altmember cref="E:System.Windows.Forms.Control.DragOver" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
       </Docs>
     </Member>
     <Member MemberName="Anchor">
@@ -620,6 +652,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Anchor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Anchor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Anchor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.AnchorStyles" />
+        <altmember cref="P:System.Windows.Forms.Control.Dock" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollOffset">
@@ -771,6 +806,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.AmbientProperties" />
+        <altmember cref="E:System.Windows.Forms.Control.BackColorChanged" />
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -808,6 +845,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -859,6 +899,12 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageLayoutChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -896,6 +942,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImage" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageLayoutChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -932,6 +984,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified enumeration value does not exist.</exception>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImage" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageLayoutChanged" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -968,6 +1025,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImage" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -1021,6 +1083,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No appropriate window handle can be found.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="M:System.Windows.Forms.Control.EndInvoke(System.IAsyncResult)" />
+        <altmember cref="M:System.Windows.Forms.Control.Invoke(System.Delegate)" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateGraphics" />
+        <altmember cref="P:System.Windows.Forms.Control.InvokeRequired" />
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -1081,6 +1148,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No appropriate window handle can be found.</exception>
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="M:System.Windows.Forms.Control.EndInvoke(System.IAsyncResult)" />
+        <altmember cref="M:System.Windows.Forms.Control.Invoke(System.Delegate)" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateGraphics" />
+        <altmember cref="P:System.Windows.Forms.Control.InvokeRequired" />
       </Docs>
     </Member>
     <Member MemberName="BindingContext">
@@ -1131,6 +1203,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BindingContext" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BindingContextChanged" />
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -1168,6 +1243,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingContext" />
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
+        <altmember cref="M:System.Windows.Forms.Control.OnBindingContextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -1215,6 +1294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Top" />
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -1260,6 +1341,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Top" />
+        <altmember cref="P:System.Windows.Forms.Control.Left" />
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
+        <altmember cref="P:System.Windows.Forms.Control.Width" />
       </Docs>
     </Member>
     <Member MemberName="BringToFront">
@@ -1294,6 +1379,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SendToBack" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateZOrder" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -1366,6 +1453,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Enabled" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="P:System.Windows.Forms.Control.Focused" />
+        <altmember cref="P:System.Windows.Forms.Control.CanSelect" />
       </Docs>
     </Member>
     <Member MemberName="CanRaiseEvents">
@@ -1454,6 +1547,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Select" />
+        <altmember cref="P:System.Windows.Forms.Control.Enabled" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="P:System.Windows.Forms.Control.CanFocus" />
       </Docs>
     </Member>
     <Member MemberName="Capture">
@@ -1505,6 +1603,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -1539,7 +1638,7 @@
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
   
  [!code-cpp[Control.Validating#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#2)]
  [!code-csharp[Control.Validating#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#2)]
@@ -1547,6 +1646,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidationChanged">
@@ -1573,6 +1674,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnCausesValidationChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.CausesValidation" />
       </Docs>
     </Member>
     <Member MemberName="ChangeUICues">
@@ -1607,6 +1710,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.UICues" />
+        <altmember cref="M:System.Windows.Forms.Control.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CheckForIllegalCrossThreadCalls">
@@ -1905,6 +2010,11 @@
   
  ** The <see cref="T:System.Windows.Forms.TabControl" /> must have at least one <see cref="T:System.Windows.Forms.TabPage" /> in its <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" />
+        <altmember cref="F:System.Windows.Forms.ControlStyles.StandardClick" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
+        <altmember cref="E:System.Windows.Forms.Control.DoubleClick" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDoubleClick" />
       </Docs>
     </Member>
     <Member MemberName="ClientRectangle">
@@ -1954,6 +2064,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ClientSize" />
+        <altmember cref="T:System.Windows.Forms.DrawMode" />
       </Docs>
     </Member>
     <Member MemberName="ClientSize">
@@ -1998,7 +2110,7 @@
    
   
 ## Examples  
- The following code example resizes the specified control so the control will accommodate its formatted text. The formatted text is the <xref:System.Windows.Forms.Control.Text%2A> property with the control's assigned <xref:System.Windows.Forms.Control.Font%2A> applied to the text. The `AutoSizeControl` method in this example also has a `textPadding` parameter that represents the padding to apply to all edges of the control. To make the padding appear equal, align the text with the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> value, if your control supports it.  
+ The following code example resizes the specified control so the control will accommodate its formatted text. The formatted text is the <xref:System.Windows.Forms.Control.Text%2A> property with the control's assigned <xref:System.Windows.Forms.Control.Font%2A> applied to the text. The `AutoSizeControl` method in this example also has a `textPadding` parameter that represents the padding to apply to all edges of the control. To make the padding appear equal, align the text with the <xref:System.Drawing.ContentAlignment.MiddleCenter?displayProperty=nameWithType> value, if your control supports it.  
   
  [!code-cpp[Windows.Forms.Control Member5#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CPP/controlmembers5.cpp#1)]
  [!code-csharp[Windows.Forms.Control Member5#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CS/controlmembers5.cs#1)]
@@ -2006,6 +2118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="T:System.Windows.Forms.DrawMode" />
       </Docs>
     </Member>
     <Member MemberName="ClientSizeChanged">
@@ -2095,6 +2209,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.AssemblyCompanyAttribute.Company" />
+        <altmember cref="P:System.Diagnostics.FileVersionInfo.CompanyName" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -2129,6 +2245,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ControlCollection.Contains(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
       </Docs>
     </Member>
     <Member MemberName="ContainsFocus">
@@ -2166,6 +2285,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.CanFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="P:System.Windows.Forms.Control.Focused" />
+        <altmember cref="P:System.Windows.Forms.Control.CanSelect" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -2211,6 +2334,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuChanged">
@@ -2251,6 +2375,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnContextMenuChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.ContextMenu" />
+        <altmember cref="T:System.Windows.Forms.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -2364,6 +2491,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnControlAdded(System.Windows.Forms.ControlEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="ControlRemoved">
@@ -2405,6 +2535,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnControlRemoved(System.Windows.Forms.ControlEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -2453,6 +2586,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateControlsInstance" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -2501,6 +2638,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" /> in a derived class, do not call the base class's <see cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateControl">
@@ -2528,6 +2667,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -2555,6 +2703,8 @@
         <block subset="none" type="overrides">
           <para>The base class version of this method should not be called by a derived class.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -2592,6 +2742,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.OnCreateControl" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="CreateGraphics">
@@ -2633,6 +2786,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see langword="SafeSubWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -2668,6 +2822,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.CreateHandle" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.CreateHandle" /> method to ensure that the handle is created.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -2706,6 +2869,16 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.CreateParams" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.CreateParams" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -2751,6 +2924,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Cursor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Cursor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> methods of the <see cref="P:System.Windows.Forms.Control.Cursor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Cursor" />
+        <altmember cref="T:System.Windows.Forms.Cursors" />
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -2786,6 +2961,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnCursorChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Cursor" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="DataBindings">
@@ -2831,6 +3009,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingContext" />
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
       </Docs>
     </Member>
     <Member MemberName="DefaultBackColor">
@@ -2865,6 +3046,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Drawing.SystemColors" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCursor">
@@ -2935,6 +3119,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The default font or the regional alternative fonts are not installed on the client computer.</exception>
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="DefaultForeColor">
@@ -2969,6 +3155,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ForeColor" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="T:System.Drawing.SystemColors" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -2992,7 +3181,7 @@
 ## Remarks  
  An Input Method Editor (IME) is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value. The <xref:System.Windows.Forms.ImeMode.Inherit> value specifies that the IME mode is inherited from the parent control.  
+ As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode.Inherit?displayProperty=nameWithType> value. The <xref:System.Windows.Forms.ImeMode.Inherit> value specifies that the IME mode is inherited from the parent control.  
   
    
   
@@ -3008,6 +3197,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.DefaultImeMode" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.DefaultImeMode" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -3123,6 +3314,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.DefaultSize" /> property in a derived class, it is preferable to return a <see cref="T:System.Drawing.Size" /> with the desired dimensions rather than to override all the implementation.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="DefWndProc">
@@ -3157,6 +3350,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="DestroyHandle">
@@ -3184,6 +3378,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.DestroyHandle" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.DestroyHandle" /> method to ensure that the handle is destroyed.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="DeviceDpi">
@@ -3252,6 +3455,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.DisplayRectangle" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.DisplayRectangle" /> property to extend the base implementation. Alternatively, you must provide all the implementation.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -3287,7 +3492,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -3326,6 +3531,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
+        <altmember cref="T:System.GC" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -3358,11 +3570,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.Control.Dock%2A> property to define how a control is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.Control.Dock%2A> to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType> causes the control to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
+ Use the <xref:System.Windows.Forms.Control.Dock%2A> property to define how a control is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.Control.Dock%2A> to <xref:System.Windows.Forms.DockStyle.Left?displayProperty=nameWithType> causes the control to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
- Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the the edges of its container.  
+ Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the edges of its container.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties are mutually exclusive. Only one can be set at a time, and the last one set takes precedence.  
@@ -3382,6 +3594,10 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Dock" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Dock" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> methods of the <see cref="P:System.Windows.Forms.Control.Dock" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DockStyle" />
+        <altmember cref="P:System.Windows.Forms.Control.Anchor" />
+        <altmember cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="DockChanged">
@@ -3419,6 +3635,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnDockChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Dock" />
+        <altmember cref="T:System.Windows.Forms.DockStyle" />
       </Docs>
     </Member>
     <Member MemberName="DoDragDrop">
@@ -3515,6 +3734,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AllowDrop" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="DoubleBuffered">
@@ -3544,6 +3765,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
+        <altmember cref="T:System.Drawing.BufferedGraphicsContext" />
+        <altmember cref="T:System.Drawing.BufferedGraphicsManager" />
+        <altmember cref="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -3803,6 +4028,12 @@
   
  ** The <see cref="T:System.Windows.Forms.TabControl" /> must have at least one <see cref="T:System.Windows.Forms.TabPage" /> in its <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnDoubleClick(System.EventArgs)" />
+        <altmember cref="F:System.Windows.Forms.ControlStyles.StandardClick" />
+        <altmember cref="F:System.Windows.Forms.ControlStyles.StandardDoubleClick" />
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDoubleClick" />
       </Docs>
     </Member>
     <Member MemberName="DpiChangedAfterParent">
@@ -3879,6 +4110,11 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.DragOver" />
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -3957,6 +4193,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -4025,6 +4262,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnDragLeave(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -4098,6 +4336,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnDragOver(System.Windows.Forms.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DrawToBitmap">
@@ -4140,6 +4379,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPrint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -4191,6 +4431,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollableControl" />
       </Docs>
     </Member>
     <Member MemberName="EnabledChanged">
@@ -4225,6 +4466,8 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="EndInvoke">
@@ -4264,6 +4507,9 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="asyncResult" /> parameter value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="asyncResult" /> object was not created by a preceding call of the <see cref="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate)" /> method from the same control.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate)" />
+        <altmember cref="P:System.Windows.Forms.Control.InvokeRequired" />
+        <altmember cref="M:System.Windows.Forms.Control.Invoke(System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -4333,6 +4579,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="FindForm">
@@ -4369,6 +4616,8 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.GetTopLevel" />
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -4432,6 +4681,13 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Control.CanFocus" />
+        <altmember cref="P:System.Windows.Forms.Control.ContainsFocus" />
+        <altmember cref="P:System.Windows.Forms.Control.Focused" />
+        <altmember cref="P:System.Windows.Forms.Control.CanSelect" />
+        <altmember cref="M:System.Windows.Forms.Control.Select" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.ActiveControl" />
+        <altmember cref="M:System.Windows.Forms.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -4476,6 +4732,10 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Focused" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Focused" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.CanFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="P:System.Windows.Forms.Control.CanSelect" />
+        <altmember cref="P:System.Windows.Forms.Control.ContainsFocus" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -4540,6 +4800,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Font" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Font" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Font" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.FontChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -4574,6 +4837,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="FontHeight">
@@ -4601,6 +4867,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Font.Height" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -4643,6 +4910,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ForeColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ForeColorChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -4680,6 +4950,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.ForeColor" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="FromChildHandle">
@@ -4715,6 +4988,8 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
       </Docs>
     </Member>
     <Member MemberName="FromHandle">
@@ -4750,6 +5025,8 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessibilityObjectById">
@@ -4772,6 +5049,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <summary>Retrieves the specified <see cref="T:System.Windows.Forms.AccessibleObject" />.</summary>
         <returns>The specified <see cref="T:System.Windows.Forms.AccessibleObject" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="GetAutoSizeMode">
@@ -4821,6 +5099,8 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method if the control returned is not a child of the control. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetChildAtPoint">
@@ -4865,6 +5145,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <returns>An <see cref="T:System.Windows.Forms.IContainerControl" />, that represents the parent of the <see cref="T:System.Windows.Forms.Control" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
+        <altmember cref="T:System.Windows.Forms.ContainerControl" />
+        <altmember cref="T:System.Windows.Forms.IContainerControl" />
       </Docs>
     </Member>
     <Member MemberName="GetNextControl">
@@ -4897,6 +5180,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -4969,6 +5253,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+        <altmember cref="M:System.Windows.Forms.Control.Scale(System.Single)" />
+        <altmember cref="P:System.Windows.Forms.Control.ScaleChildren" />
       </Docs>
     </Member>
     <Member MemberName="GetStyle">
@@ -5008,6 +5295,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.ControlStyles" />
       </Docs>
     </Member>
     <Member MemberName="GetTopLevel">
@@ -5028,6 +5317,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <returns>
           <see langword="true" /> if the control is a top-level control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetTopLevel(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -5096,6 +5386,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -5173,6 +5464,11 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
+        <altmember cref="E:System.Windows.Forms.Form.Activated" />
+        <altmember cref="M:System.Windows.Forms.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -5218,6 +5514,15 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="HandleCreated">
@@ -5262,6 +5567,16 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="HandleDestroyed">
@@ -5306,6 +5621,16 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="HasChildren">
@@ -5352,6 +5677,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Layout.ArrangedElementCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -5400,6 +5726,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
+        <altmember cref="P:System.Windows.Forms.Control.Width" />
+        <altmember cref="P:System.Drawing.Size.Height" />
       </Docs>
     </Member>
     <Member MemberName="HelpRequested">
@@ -5435,6 +5764,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.HelpProvider" />
+        <altmember cref="T:System.Windows.Forms.Help" />
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -5469,6 +5801,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Show" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -5498,18 +5832,20 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An IME is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, using a standard keyboard. The <xref:System.Windows.Forms.Control.ImeMode%2A> property is typically set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> for a <xref:System.Windows.Forms.TextBox> control that is intended to only enter numeric values. The <xref:System.Windows.Forms.Control.ImeMode%2A> property value is set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> for the <xref:System.Windows.Forms.Form> class.  
+ An IME is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, using a standard keyboard. The <xref:System.Windows.Forms.Control.ImeMode%2A> property is typically set to <xref:System.Windows.Forms.ImeMode.Off?displayProperty=nameWithType> for a <xref:System.Windows.Forms.TextBox> control that is intended to only enter numeric values. The <xref:System.Windows.Forms.Control.ImeMode%2A> property value is set to <xref:System.Windows.Forms.ImeMode.NoControl?displayProperty=nameWithType> for the <xref:System.Windows.Forms.Form> class.  
   
  Most classes that do not directly support Input Method Editors, or allow direct input from an IME, will set the value of this property to <xref:System.Windows.Forms.ImeMode.NoControl>.  
   
 > [!IMPORTANT]
->  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType>. In this case, the user will not be able to use the IME.  
+>  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType>. In this case, the user will not be able to use the IME.  
 >   
 >  The <xref:System.Windows.Forms.Control.ImeMode%2A> property is ignored on Windows 8 when the global input mode is in effect. For more info, see[Switch Text Input Changed from Per-Thread to Per-User](http://go.microsoft.com/fwlink/?LinkID=256509).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ImeMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.Control.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -5567,6 +5903,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnImeModeChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="InitLayout">
@@ -5600,6 +5939,12 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.InitLayout" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.InitLayout" /> method so that the control is displayed correctly.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.Anchor" />
+        <altmember cref="P:System.Windows.Forms.Control.Dock" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5634,6 +5979,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5663,6 +6010,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5691,6 +6040,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5719,6 +6070,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5750,6 +6103,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -5781,6 +6136,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Refresh" />
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
       </Docs>
     </Member>
     <Member MemberName="Invalidated">
@@ -5823,6 +6180,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.Invalidate(System.Drawing.Region)" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -5871,6 +6230,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MethodInvoker" />
+        <altmember cref="P:System.Windows.Forms.Control.InvokeRequired" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -5927,6 +6288,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MethodInvoker" />
+        <altmember cref="P:System.Windows.Forms.Control.InvokeRequired" />
       </Docs>
     </Member>
     <Member MemberName="InvokeGotFocus">
@@ -5955,6 +6318,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event for the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokeLostFocus(System.Windows.Forms.Control,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InvokeLostFocus">
@@ -5983,6 +6348,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event for the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokeGotFocus(System.Windows.Forms.Control,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InvokeOnClick">
@@ -6034,6 +6401,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <param name="e">An <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event for the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
       </Docs>
     </Member>
     <Member MemberName="InvokePaintBackground">
@@ -6057,6 +6426,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <param name="e">An <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see langword="PaintBackground" /> event for the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InvokeRequired">
@@ -6114,6 +6484,12 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Invoke(System.Delegate)" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokeGotFocus(System.Windows.Forms.Control,System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokeLostFocus(System.Windows.Forms.Control,System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokeOnClick(System.Windows.Forms.Control,System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokePaint(System.Windows.Forms.Control,System.Windows.Forms.PaintEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.InvokePaintBackground(System.Windows.Forms.Control,System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsAccessible">
@@ -6144,6 +6520,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <value>
           <see langword="true" /> if the control is visible to accessibility applications; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -6181,6 +6558,13 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
+        <altmember cref="T:System.GC" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="IsHandleCreated">
@@ -6218,6 +6602,15 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="IsInputChar">
@@ -6249,6 +6642,7 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -6288,6 +6682,9 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="T:System.Windows.Forms.Keys" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputChar(System.Char)" />
+        <altmember cref="P:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyLocked">
@@ -6361,7 +6758,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A mirrored control displays both layout and text from right to left. For more information, see [How to: Create Mirrored Windows Forms and Controls](http://msdn.microsoft.com/en-us/7c5c4ecc-9bfb-4508-8383-753e306719b1).  
+ A mirrored control displays both layout and text from right to left. For more information, see [How to: Create Mirrored Windows Forms and Controls](http://msdn.microsoft.com/library/7c5c4ecc-9bfb-4508-8383-753e306719b1).  
   
  ]]></format>
         </remarks>
@@ -6407,6 +6804,7 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessMnemonic(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -6450,6 +6848,12 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+        <altmember cref="T:System.Windows.Forms.KeyEventHandler" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+        <altmember cref="E:System.Windows.Forms.Control.PreviewKeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -6497,6 +6901,11 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyPressEventArgs.KeyChar" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputChar(System.Char)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -6540,6 +6949,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -6575,6 +6987,13 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -6608,6 +7027,13 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Layout.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -6677,6 +7103,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -6724,6 +7152,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Point.X" />
+        <altmember cref="P:System.Windows.Forms.Control.Right" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -6765,6 +7195,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.ContainerControl" />
       </Docs>
     </Member>
     <Member MemberName="LocationChanged">
@@ -6799,6 +7231,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLocationChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
       </Docs>
     </Member>
     <Member MemberName="LogicalToDeviceUnits">
@@ -6900,6 +7334,10 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
+        <altmember cref="E:System.Windows.Forms.Form.Deactivate" />
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -6929,7 +7367,7 @@ MyControl.Font = New Font(MyControl.Font, _
  Controls receive default values for <xref:System.Windows.Forms.Control.Margin%2A> that are reasonably close to Windows user interface guidelines. Some adjustments might still be necessary for particular applications.  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the the edges of its container.  
+>  Setting the <xref:System.Windows.Forms.Control.Margin%2A> property on a docked control has no effect on the distance of the control from the edges of its container.  
   
  ]]></format>
         </remarks>
@@ -7045,6 +7483,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Keys" />
       </Docs>
     </Member>
     <Member MemberName="MouseButtons">
@@ -7074,6 +7513,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseCaptureChanged">
@@ -7179,6 +7620,12 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDoubleClick" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
+        <altmember cref="E:System.Windows.Forms.Control.DoubleClick" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -7238,6 +7685,11 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
+        <altmember cref="E:System.Windows.Forms.Control.DoubleClick" />
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDoubleClick" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -7286,6 +7738,10 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -7334,6 +7790,10 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseHover" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -7386,6 +7846,9 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseHover(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MouseHoverTime" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -7434,6 +7897,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -7484,6 +7949,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MousePosition">
@@ -7520,6 +7987,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -7568,6 +8037,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -7625,6 +8096,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -7658,6 +8131,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMove(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -7697,6 +8171,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ISite.Name" />
       </Docs>
     </Member>
     <Member MemberName="NotifyInvalidate">
@@ -7805,6 +8280,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BackColorChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="OnBackgroundImageChanged">
@@ -7854,6 +8331,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnBackgroundImageChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImage" />
       </Docs>
     </Member>
     <Member MemberName="OnBackgroundImageLayoutChanged">
@@ -7892,6 +8371,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnBackgroundImageLayoutChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -7930,6 +8411,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnBindingContextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnBindingContextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BindingContextChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.BindingContext" />
       </Docs>
     </Member>
     <Member MemberName="OnCausesValidationChanged">
@@ -7979,6 +8462,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnCausesValidationChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnCausesValidationChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.CausesValidationChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.CausesValidation" />
       </Docs>
     </Member>
     <Member MemberName="OnChangeUICues">
@@ -8017,6 +8502,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ChangeUICues" />
+        <altmember cref="T:System.Windows.Forms.UICues" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -8070,6 +8557,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
       </Docs>
     </Member>
     <Member MemberName="OnClientSizeChanged">
@@ -8157,6 +8645,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnContextMenuChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnContextMenuChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ContextMenuChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="OnContextMenuStripChanged">
@@ -8244,6 +8734,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnControlAdded(System.Windows.Forms.ControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnControlAdded(System.Windows.Forms.ControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ControlAdded" />
       </Docs>
     </Member>
     <Member MemberName="OnControlRemoved">
@@ -8293,6 +8784,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnControlRemoved(System.Windows.Forms.ControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnControlRemoved(System.Windows.Forms.ControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ControlRemoved" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -8328,6 +8820,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnCreateControl" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnCreateControl" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
       </Docs>
     </Member>
     <Member MemberName="OnCursorChanged">
@@ -8377,6 +8870,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnCursorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnCursorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.CursorChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="OnDockChanged">
@@ -8426,6 +8921,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDockChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDockChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DockChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Dock" />
       </Docs>
     </Member>
     <Member MemberName="OnDoubleClick">
@@ -8473,6 +8970,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDoubleClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDoubleClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DoubleClick" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChangedAfterParent">
@@ -8569,6 +9067,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -8607,6 +9106,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -8645,6 +9145,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDragLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDragLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -8683,6 +9184,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnDragOver(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnDragOver(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -8721,6 +9223,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.EnabledChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -8768,6 +9272,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -8817,6 +9322,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.FontChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnForeColorChanged">
@@ -8866,6 +9372,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ForeColorChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -8904,6 +9411,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -8942,6 +9450,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -8980,6 +9489,16 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.HandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -9018,6 +9537,17 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.HandleDestroyed" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="OnHelpRequested">
@@ -9056,6 +9586,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.HelpRequested" />
       </Docs>
     </Member>
     <Member MemberName="OnImeModeChanged">
@@ -9100,6 +9631,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnImeModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnImeModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ImeModeChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="OnInvalidated">
@@ -9138,6 +9671,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Invalidated" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -9185,6 +9719,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyPress">
@@ -9232,6 +9767,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -9279,6 +9815,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -9317,6 +9854,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> method so that registered delegates receive the event and for typical docking and anchoring functions to work. Derived classes should override this method to do any custom layout logic.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -9364,6 +9902,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnLocationChanged">
@@ -9413,6 +9952,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnLocationChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnLocationChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.LocationChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -9451,6 +9992,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnMarginChanged">
@@ -9636,6 +10178,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -9674,6 +10218,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseEnter" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseHover">
@@ -9721,6 +10267,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseHover(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseHover(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseHover" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -9759,6 +10307,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -9806,6 +10356,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -9844,6 +10396,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseWheel">
@@ -9882,6 +10436,8 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseWheel" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMove">
@@ -9929,6 +10485,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnMove(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMove(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Move" />
       </Docs>
     </Member>
     <Member MemberName="OnNotifyMessage">
@@ -10049,6 +10606,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -10085,6 +10643,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>Inheriting classes should override this method to handle the erase background request from windows. When overriding <see cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" /> in a derived class it is not necessary to call the base class's <see cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.InvokePaintBackground(System.Windows.Forms.Control,System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnParentBackColorChanged">
@@ -10134,6 +10693,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentBackColorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentBackColorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BackColorChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentBackgroundImageChanged">
@@ -10183,6 +10743,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentBackgroundImageChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentBackgroundImageChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BackgroundImageChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentBindingContextChanged">
@@ -10232,6 +10793,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentBindingContextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentBindingContextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.BindingContextChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentChanged">
@@ -10281,6 +10843,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ParentChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentCursorChanged">
@@ -10368,6 +10931,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.EnabledChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentFontChanged">
@@ -10417,6 +10981,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.FontChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentForeColorChanged">
@@ -10466,6 +11031,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentForeColorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentForeColorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ForeColorChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentRightToLeftChanged">
@@ -10515,6 +11081,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentRightToLeftChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentRightToLeftChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.RightToLeftChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnParentVisibleChanged">
@@ -10564,6 +11131,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnParentVisibleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnParentVisibleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.VisibleChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -10636,6 +11204,7 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryContinueDrag">
@@ -10679,6 +11248,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.QueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnRegionChanged">
@@ -10755,6 +11325,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" /> method so that registered delegates receive the event. The <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" /> method can be called during construction, so if you override <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" /> it can be called before the control constructor is called.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -10804,6 +11375,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.RightToLeftChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnSizeChanged">
@@ -10842,6 +11414,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnSizeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnSizeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.SizeChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -10880,6 +11453,10 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.StyleChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.GetStyle(System.Windows.Forms.ControlStyles)" />
+        <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.ControlStyles" />
       </Docs>
     </Member>
     <Member MemberName="OnSystemColorsChanged">
@@ -10918,6 +11495,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnSystemColorsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnSystemColorsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTabIndexChanged">
@@ -10956,6 +11534,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnTabIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnTabIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.TabIndexChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTabStopChanged">
@@ -11005,6 +11584,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnTabStopChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnTabStopChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.TabStopChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -11052,6 +11632,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.TextChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnValidated">
@@ -11090,6 +11671,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnValidated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnValidated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="OnValidating">
@@ -11128,6 +11710,7 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnValidating(System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnValidating(System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -11177,6 +11760,10 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.VisibleChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Show" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -11322,6 +11909,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -11365,6 +11953,8 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="ParentChanged">
@@ -11391,6 +11981,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Parent" />
       </Docs>
     </Member>
     <Member MemberName="PerformLayout">
@@ -11434,6 +12026,13 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="PerformLayout">
@@ -11482,6 +12081,13 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="PointToClient">
@@ -11515,6 +12121,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
+        <altmember cref="M:System.Windows.Forms.Control.PointToScreen(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="PointToScreen">
@@ -11548,6 +12156,8 @@ MyControl.Font = New Font(MyControl.Font, _
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
+        <altmember cref="M:System.Windows.Forms.Control.PointToClient(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="PreferredSize">
@@ -11840,6 +12450,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessKeyMessage(System.Windows.Forms.Message@)" /> method, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of the base class's <see cref="M:System.Windows.Forms.Control.ProcessKeyEventArgs(System.Windows.Forms.Message@)" /> should be returned. Controls will seldom, if ever, need to override this method.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="ProcessKeyPreview">
@@ -11875,6 +12488,9 @@ MyControl.Font = New Font(MyControl.Font, _
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessKeyPreview(System.Windows.Forms.Message@)" /> method in a derived class, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of calling the base class's <see cref="M:System.Windows.Forms.Control.ProcessKeyPreview(System.Windows.Forms.Message@)" /> method should be returned.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -11925,6 +12541,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.IsMnemonic(System.Char,System.String)" />
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ProductName">
@@ -11977,6 +12595,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.AssemblyProductAttribute.Product" />
       </Docs>
     </Member>
     <Member MemberName="ProductVersion">
@@ -12029,6 +12648,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.AssemblyVersionAttribute.Version" />
       </Docs>
     </Member>
     <Member MemberName="PropagatingImeMode">
@@ -12082,6 +12702,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.GetHelpTopic(System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -12152,6 +12773,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaiseDragEvent">
@@ -12180,6 +12802,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="e">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains the event data.</param>
         <summary>Raises the appropriate drag event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.RaiseKeyEvent(System.Object,System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaiseMouseEvent(System.Object,System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaisePaintEvent(System.Object,System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaiseKeyEvent">
@@ -12208,6 +12833,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
         <summary>Raises the appropriate key event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.RaiseDragEvent(System.Object,System.Windows.Forms.DragEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaiseMouseEvent(System.Object,System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaisePaintEvent(System.Object,System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaiseMouseEvent">
@@ -12236,6 +12864,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the appropriate mouse event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.RaiseDragEvent(System.Object,System.Windows.Forms.DragEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaiseKeyEvent(System.Object,System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaisePaintEvent(System.Object,System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePaintEvent">
@@ -12264,6 +12895,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Raises the appropriate paint event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.RaiseDragEvent(System.Object,System.Windows.Forms.DragEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaiseKeyEvent(System.Object,System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RaiseMouseEvent(System.Object,System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RecreateHandle">
@@ -12294,6 +12928,15 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.RecreatingHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="RecreatingHandle">
@@ -12331,6 +12974,15 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControl" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
+        <altmember cref="P:System.Windows.Forms.Control.IsHandleCreated" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateStyles" />
       </Docs>
     </Member>
     <Member MemberName="RectangleToClient">
@@ -12353,6 +13005,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Computes the size and location of the specified screen rectangle in client coordinates.</summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the converted <see cref="T:System.Drawing.Rectangle" />, <paramref name="r" />, in client coordinates.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="M:System.Windows.Forms.Control.RectangleToScreen(System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="RectangleToScreen">
@@ -12386,6 +13040,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="M:System.Windows.Forms.Control.RectangleToClient(System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="ReflectMessage">
@@ -12428,6 +13084,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -12449,6 +13107,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.Refresh" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.Refresh" /> method so the control and its child controls are invalidated and redrawn.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.Update" />
+        <altmember cref="M:System.Windows.Forms.Control.Invalidate(System.Drawing.Region)" />
       </Docs>
     </Member>
     <Member MemberName="Region">
@@ -12498,6 +13158,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="RegionChanged">
@@ -12647,6 +13309,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DataBindings" />
       </Docs>
     </Member>
     <Member MemberName="ResetCursor">
@@ -12845,6 +13508,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -12887,6 +13551,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="ResizeRedraw">
@@ -12909,10 +13576,13 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Control.ResizeRedraw%2A> property value is equivalent to the return value of the <xref:System.Windows.Forms.Control.GetStyle%2A> method when passing in the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> value as a parameter.  
+ The <xref:System.Windows.Forms.Control.ResizeRedraw%2A> property value is equivalent to the return value of the <xref:System.Windows.Forms.Control.GetStyle%2A> method when passing in the <xref:System.Windows.Forms.ControlStyles.ResizeRedraw?displayProperty=nameWithType> value as a parameter.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.GetStyle(System.Windows.Forms.ControlStyles)" />
+        <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+        <altmember cref="F:System.Windows.Forms.ControlStyles.ResizeRedraw" />
       </Docs>
     </Member>
     <Member MemberName="ResumeLayout">
@@ -12951,6 +13621,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
       </Docs>
     </Member>
     <Member MemberName="ResumeLayout">
@@ -12987,6 +13662,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -13038,6 +13718,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Right" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -13069,12 +13750,12 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
 ## Remarks  
  The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is an ambient property. An ambient property is a control property that, if not set, is retrieved from the parent control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.Control.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. For more information about ambient properties, see the <xref:System.Windows.Forms.AmbientProperties> class or the <xref:System.Windows.Forms.Control> class overview.  
   
- The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is used for international applications where the language is written from right to left, such as Hebrew or Arabic. When this property is set to <xref:System.Windows.Forms.RightToLeft?displayProperty=nameWithType>, control elements that include text are displayed from right to left.  
+ The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is used for international applications where the language is written from right to left, such as Hebrew or Arabic. When this property is set to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType>, control elements that include text are displayed from right to left.  
   
 > [!NOTE]
 >  If the value of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property is changed at run time, only raw text without formatting is preserved.  
   
- The following are a few examples of how control elements are affected by the <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft?displayProperty=nameWithType> :  
+ The following are a few examples of how control elements are affected by the <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> :  
   
 -   Vertical scroll bars are displayed on the left side rather than right side of scrollable controls (for example, <xref:System.Windows.Forms.Form>, <xref:System.Windows.Forms.Panel>, multiline <xref:System.Windows.Forms.TextBox>, and <xref:System.Windows.Forms.RichTextBox>).  
   
@@ -13098,6 +13779,12 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.RightToLeft" />
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateAlignment(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -13135,6 +13822,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateAlignment">
@@ -13169,6 +13858,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateAlignment">
@@ -13203,6 +13897,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateAlignment">
@@ -13237,6 +13936,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Windows.Forms.LeftRightAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateContent">
@@ -13271,6 +13975,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateAlignment(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateHorizontal">
@@ -13305,6 +14014,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateAlignment(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateLeftRight(System.Windows.Forms.LeftRightAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="RtlTranslateLeftRight">
@@ -13339,6 +14053,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="T:System.Windows.Forms.LeftRightAlignment" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateContent(System.Drawing.ContentAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateHorizontal(System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.Control.RtlTranslateAlignment(System.Windows.Forms.HorizontalAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -13372,6 +14091,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ScaleChildren" />
+        <altmember cref="M:System.Windows.Forms.Control.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+        <altmember cref="M:System.Windows.Forms.Control.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -13486,6 +14208,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Scale(System.Single)" />
+        <altmember cref="M:System.Windows.Forms.Control.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+        <altmember cref="M:System.Windows.Forms.Control.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -13617,6 +14342,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
+        <altmember cref="M:System.Windows.Forms.Control.SelectNextControl(System.Windows.Forms.Control,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -13667,6 +14394,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ContainerControl" />
+        <altmember cref="M:System.Windows.Forms.Control.Select" />
       </Docs>
     </Member>
     <Member MemberName="SelectNextControl">
@@ -13754,6 +14483,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Select" />
+        <altmember cref="M:System.Windows.Forms.Control.Focus" />
       </Docs>
     </Member>
     <Member MemberName="SendToBack">
@@ -13779,6 +14510,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.BringToFront" />
+        <altmember cref="M:System.Windows.Forms.Control.UpdateZOrder" />
       </Docs>
     </Member>
     <Member MemberName="SetAutoSizeMode">
@@ -13827,6 +14560,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height" /> property value of the control.</param>
         <summary>Sets the bounds of the control to the specified location and size.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="SetBounds">
@@ -13867,6 +14603,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -13925,6 +14664,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> method to force the bounds of the control to change. Derived classes can add size restrictions to the <see cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="SetClientSizeCore">
@@ -13976,6 +14718,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  For more information about drawing on controls, see [Rendering a Windows Forms Control](~/docs/framework/winforms/controls/rendering-a-windows-forms-control.md).</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.ClientSize" />
       </Docs>
     </Member>
     <Member MemberName="SetStyle">
@@ -14024,6 +14767,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.GetStyle(System.Windows.Forms.ControlStyles)" />
+        <altmember cref="T:System.Windows.Forms.ControlStyles" />
       </Docs>
     </Member>
     <Member MemberName="SetTopLevel">
@@ -14056,6 +14801,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <exception cref="T:System.InvalidOperationException">The <paramref name="value" /> parameter is set to <see langword="true" /> and the control is an ActiveX control.</exception>
         <exception cref="T:System.Exception">The <see cref="M:System.Windows.Forms.Control.GetTopLevel" /> return value is not equal to the <paramref name="value" /> parameter and the <see cref="P:System.Windows.Forms.Control.Parent" /> property is not <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to set the control as a top-level control if it is of any type other than <see cref="T:System.Windows.Forms.Form" />. This permission is only demanded if the <paramref name="value" /> parameter is <see langword="true" /> and the control is not an ActiveX control. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.GetTopLevel" />
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -14088,6 +14834,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" /> method to force the visibility of the control to change.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -14122,6 +14869,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
       </Docs>
     </Member>
     <Member MemberName="ShowFocusCues">
@@ -14162,6 +14911,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.ShowFocusCues" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ShowFocusCues" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.UICues" />
+        <altmember cref="E:System.Windows.Forms.Control.ChangeUICues" />
+        <altmember cref="P:System.Windows.Forms.Control.ShowKeyboardCues" />
       </Docs>
     </Member>
     <Member MemberName="ShowKeyboardCues">
@@ -14201,6 +14953,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.UICues" />
+        <altmember cref="P:System.Windows.Forms.Control.ShowFocusCues" />
+        <altmember cref="E:System.Windows.Forms.Control.ChangeUICues" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -14224,6 +14979,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the <see cref="T:System.Windows.Forms.Control" />, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.ISite" />
+        <altmember cref="P:System.ComponentModel.IComponent.Site" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -14269,6 +15026,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -14306,6 +15064,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnSizeChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="SizeFromClientSize">
@@ -14371,6 +15132,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnStyleChanged(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.ControlStyles" />
       </Docs>
     </Member>
     <Member MemberName="SuspendLayout">
@@ -14412,6 +15176,12 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Forms.IDropTarget.OnDragDrop">
@@ -14532,6 +15302,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnSystemColorsChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.SystemColors" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -14576,6 +15348,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.UpdateZOrder" />
+        <altmember cref="P:System.Windows.Forms.Control.TabStop" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -14612,6 +15386,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTabIndexChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -14660,6 +15436,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -14696,6 +15473,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTabStopChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.TabStop" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -14746,6 +15525,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -14794,6 +15574,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.Text" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Text" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Text" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.TextLength" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -14829,6 +15610,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -14876,6 +15659,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Drawing.Point.Y" />
+        <altmember cref="P:System.Windows.Forms.Control.Bottom" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="TopLevelControl">
@@ -14913,6 +15699,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -14948,6 +15735,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="P:System.Windows.Forms.Control.ClientSize" />
+        <altmember cref="M:System.Windows.Forms.Control.Invalidate(System.Drawing.Region)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateBounds">
@@ -14978,6 +15768,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
       </Docs>
     </Member>
     <Member MemberName="UpdateBounds">
@@ -15017,6 +15809,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
       </Docs>
     </Member>
     <Member MemberName="UpdateBounds">
@@ -15060,6 +15854,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Size" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
       </Docs>
     </Member>
     <Member MemberName="UpdateStyles">
@@ -15101,6 +15898,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="UpdateZOrder">
@@ -15131,6 +15929,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="UseWaitCursor">
@@ -15228,7 +16027,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
   
  [!code-cpp[Control.Validating#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#1)]
  [!code-csharp[Control.Validating#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#1)]
@@ -15236,6 +16035,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnValidated(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.CausesValidation" />
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -15296,7 +16098,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
   
  [!code-cpp[Control.Validating#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#1)]
  [!code-csharp[Control.Validating#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#1)]
@@ -15304,6 +16106,9 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnValidating(System.ComponentModel.CancelEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.CausesValidation" />
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -15344,6 +16149,11 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Enabled" />
+        <altmember cref="P:System.Windows.Forms.Control.CanFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
+        <altmember cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" />
+        <altmember cref="E:System.Windows.Forms.Control.VisibleChanged" />
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -15379,6 +16189,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -15424,6 +16236,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
+        <altmember cref="P:System.Drawing.Size.Width" />
+        <altmember cref="M:System.Windows.Forms.Control.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WindowTarget">
@@ -15491,7 +16307,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The[WM_ACTIVATEAPP](http://msdn.microsoft.com/en-us/library/windows/desktop/ms632614\(v=vs.85\).aspx)operating system message is handled in this example to know when another application is becoming active. See the following topics to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the Windows.h header file.  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The[WM_ACTIVATEAPP](http://msdn.microsoft.com/library/windows/desktop/ms632614\(v=vs.85\).aspx)operating system message is handled in this example to know when another application is becoming active. See the following topics to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the Windows.h header file.  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -15503,7 +16319,136 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>Inheriting controls should call the base class's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" /> method to process any messages that they do not handle.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Control" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the bounds of the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResumeLayout">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resumes the usual layout logic.</summary>
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Activates a control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates a specific region of the control and causes a paint message to be sent to the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UpdateBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the bounds of the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AccessibilityNotifyClients">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the accessibility client applications of <see cref="T:System.Windows.Forms.AccessibleEvents" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PerformLayout">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces the control to apply layout logic to child controls.</summary>
+        <altmember cref="M:System.Windows.Forms.Control.ResumeLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.SuspendLayout" />
+        <altmember cref="M:System.Windows.Forms.Control.InitLayout" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChildAtPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the child control at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a delegate on the thread that owns the control's underlying window handle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginInvoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a delegate asynchronously on the thread that the control's underlying handle was created on.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Scale">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scales the control and any child controls.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RtlTranslateAlignment">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the current alignment to the appropriate alignment to support right-to-left text.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

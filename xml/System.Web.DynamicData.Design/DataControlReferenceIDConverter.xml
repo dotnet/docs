@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.StringConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +44,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">

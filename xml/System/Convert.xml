@@ -156,6 +156,22 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IConvertible" />
+    <altmember cref="T:System.Object" />
+    <altmember cref="T:System.SByte" />
+    <altmember cref="T:System.Int16" />
+    <altmember cref="T:System.Int32" />
+    <altmember cref="T:System.Int64" />
+    <altmember cref="T:System.Byte" />
+    <altmember cref="T:System.UInt16" />
+    <altmember cref="T:System.UInt32" />
+    <altmember cref="T:System.UInt64" />
+    <altmember cref="T:System.Single" />
+    <altmember cref="T:System.Double" />
+    <altmember cref="T:System.Decimal" />
+    <altmember cref="T:System.Boolean" />
+    <altmember cref="T:System.Char" />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName="ChangeType">
@@ -530,6 +546,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DBNull" />
+        <altmember cref="F:System.DBNull.Value" />
       </Docs>
     </Member>
     <Member MemberName="FromBase64CharArray">
@@ -617,6 +635,8 @@
  -or-  
   
  The format of <paramref name="inArray" /> is invalid. <paramref name="inArray" /> contains a non-base-64 character, more than two padding characters, or a non-white-space character among the padding characters.</exception>
+        <altmember cref="M:System.Convert.ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.FromBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="FromBase64String">
@@ -690,6 +710,8 @@
  -or-  
   
  The format of <paramref name="s" /> is invalid. <paramref name="s" /> contains a non-base-64 character, more than two padding characters, or a non-white space-character among the padding characters.</exception>
+        <altmember cref="M:System.Convert.ToBase64String(System.Byte[])" />
+        <altmember cref="T:System.Security.Cryptography.FromBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -758,13 +780,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull?displayProperty=nameWithType>. It is equivalent to the following code:  
+ The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull.Value?displayProperty=nameWithType>. It is equivalent to the following code:  
   
  [!code-csharp[System.Convert.IsDBNull#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.IsDBNull/cs/Form1.cs#1)]
  [!code-vb[System.Convert.IsDBNull#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.IsDBNull/vb/Form1.vb#1)]  
   
 > [!NOTE]
->  <xref:System.DBNull?displayProperty=nameWithType> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=nameWithType>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
+>  <xref:System.DBNull.Value?displayProperty=nameWithType> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=nameWithType>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
   
    
   
@@ -776,6 +798,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DBNull" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64CharArray">
@@ -853,6 +876,8 @@
  -or-  
   
  <paramref name="offsetOut" /> plus the number of elements to return is greater than the length of <paramref name="outArray" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64CharArray">
@@ -944,6 +969,8 @@
  <paramref name="offsetOut" /> plus the number of elements to return is greater than the length of <paramref name="outArray" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1007,6 +1034,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inArray" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1061,7 +1090,7 @@
    
   
 ## Examples  
- The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=nameWithType> with a <xref:System.Base64FormattingOptions?displayProperty=nameWithType> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
+ The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=nameWithType> with a <xref:System.Base64FormattingOptions.InsertLineBreaks?displayProperty=nameWithType> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
   
  [!code-csharp[System.Convert.ToBase64String#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String3.cs#3)]
  [!code-vb[System.Convert.ToBase64String#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String3.vb#3)]  
@@ -1074,6 +1103,8 @@
           <paramref name="inArray" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1134,6 +1165,8 @@
  -or-  
   
  <paramref name="offset" /> plus <paramref name="length" /> is greater than the length of <paramref name="inArray" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1217,6 +1250,8 @@
  <paramref name="offset" /> plus <paramref name="length" /> is greater than the length of <paramref name="inArray" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1252,6 +1287,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1298,6 +1334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1330,6 +1367,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1419,6 +1457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1465,6 +1504,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1511,6 +1551,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1557,6 +1598,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1603,6 +1645,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1657,6 +1700,7 @@
  -or-  
   
  The conversion of <paramref name="value" /> to a <see cref="T:System.Boolean" /> is not supported.</exception>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1708,6 +1752,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1754,6 +1799,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1792,7 +1838,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=nameWithType>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=nameWithType>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Boolean?displayProperty=nameWithType>, the method ignores case as well as leading and trailing white space.  
+ For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=nameWithType>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=nameWithType>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean.TrueString?displayProperty=nameWithType> and <xref:System.Boolean.FalseString?displayProperty=nameWithType>, the method ignores case as well as leading and trailing white space.  
   
  If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
@@ -1809,6 +1855,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not equal to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1860,6 +1907,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1911,6 +1959,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1962,6 +2011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -2023,6 +2073,7 @@
  -or-  
   
  The conversion of <paramref name="value" /> to a <see cref="T:System.Boolean" /> is not supported.</exception>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -2069,6 +2120,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not equal to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2624,6 +2676,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" /> or less than <see cref="F:System.Byte.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2679,6 +2732,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2955,6 +3009,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -3886,6 +3941,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -3918,6 +3974,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -3950,6 +4007,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4046,6 +4104,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4078,6 +4137,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4110,6 +4170,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4142,6 +4203,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4238,6 +4300,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4270,6 +4333,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4325,6 +4389,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a properly formatted date and time string.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4362,6 +4427,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4399,6 +4465,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4436,6 +4503,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4598,6 +4666,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4643,6 +4712,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4686,6 +4756,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4808,6 +4879,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4852,6 +4925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4896,6 +4970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4941,6 +5016,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5000,6 +5076,7 @@
  The conversion is not supported.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5049,6 +5126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5103,6 +5181,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5208,6 +5287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5257,6 +5337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5306,6 +5387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5374,6 +5456,7 @@
  The conversion is not supported.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5555,6 +5638,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5667,6 +5751,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5953,6 +6038,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -6489,6 +6575,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6536,6 +6623,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6818,6 +6907,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6874,6 +6965,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -7145,6 +7237,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -7186,7 +7279,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
   
  [!code-csharp[System.Convert.BaseConversion#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#5)]
  [!code-vb[System.Convert.BaseConversion#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.BaseConversion/vb/Conversion.vb#5)]  
@@ -7443,6 +7536,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -7490,6 +7584,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -7770,6 +7866,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -8138,7 +8236,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
   
  [!code-cpp[System.Convert.BaseConversion#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cpp/toint_str_int32.cpp#1)]
  [!code-csharp[System.Convert.BaseConversion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#1)]
@@ -8379,6 +8477,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -8426,6 +8525,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -8704,6 +8805,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -9347,6 +9450,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9399,6 +9503,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9708,6 +9814,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9769,6 +9877,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altmember cref="M:System.SByte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -10060,6 +10169,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altmember cref="M:System.SByte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -10262,6 +10372,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10340,6 +10451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10386,6 +10498,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10661,6 +10775,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -13101,6 +13216,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -13153,6 +13269,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -13473,6 +13591,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -14132,6 +14252,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -14184,6 +14305,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -14504,6 +14627,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -15161,6 +15286,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15213,6 +15339,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15533,6 +15661,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15954,5 +16084,221 @@
  <paramref name="value" /> represents a number that is less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChangeType">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an object of a specified type whose value is equivalent to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 32-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBase64String">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of an array of 8-bit unsigned integers to its equivalent string representation that is encoded with base-64 digits.</summary>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBase64CharArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a subset of an 8-bit unsigned integer array to an equivalent subset of a Unicode character array encoded with base-64 digits.</summary>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 32-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified value to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToChar">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 64-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 64-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 16-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSingle">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a single-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDecimal">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a decimal number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBoolean">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an equivalent Boolean value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 16-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an 8-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDouble">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a double-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an 8-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

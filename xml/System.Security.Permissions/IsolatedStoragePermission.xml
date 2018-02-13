@@ -35,6 +35,10 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the right to control policy. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
+    <altmember cref="T:System.Security.Permissions.IsolatedStorageFilePermission" />
+    <altmember cref="T:System.Security.Permissions.IsolatedStorageFilePermissionAttribute" />
+    <altmember cref="T:System.Security.Permissions.IsolatedStoragePermissionAttribute" />
+    <altmember cref="T:System.Security.Permissions.IsolatedStorageContainment" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

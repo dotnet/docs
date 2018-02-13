@@ -24,6 +24,7 @@
   <Docs>
     <summary>Represents an exception used to communicate an invalid operation by a <see cref="T:System.Threading.Tasks.TaskScheduler" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,6 +95,7 @@
         <param name="innerException">The exception that is the cause of the current exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.TaskSchedulerException" /> class using the default error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -215,7 +219,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.TaskSchedulerException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

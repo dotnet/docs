@@ -1,7 +1,7 @@
 ---
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree1"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 865cf54e-f8ac-4871-863b-a3e6fc61a4b9
 caps.latest.revision: 3
 author: dotnet-bot

@@ -109,9 +109,9 @@
         <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintStreamProperty" />
       </Parameters>
       <Docs>
-        <param name="attributeRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributeRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.IO.Stream" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" />.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> value of a <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,5 +133,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> (or from a pointer to such a property) to a <see cref="T:System.IO.Stream" /> value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

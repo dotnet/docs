@@ -136,6 +136,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Delegate</ReturnType>
@@ -144,7 +145,8 @@
         <Parameter Name="preferInterpretation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferInterpretation"><see langword="true" /> to indicate that the expression should be compiled to an interpreted form, if it's available; otherwise, <see langword="false" />.</param>
+        <param name="preferInterpretation">
+          <see langword="true" /> to indicate that the expression should be compiled to an interpreted form, if it's available; otherwise, <see langword="false" />.</param>
         <summary>Produces an interpreted or compiled delegate that represents the lambda expression.</summary>
         <returns>A delegate that represents the compiled lambda expression described by the <see cref="T:System.Linq.Expressions.LambdaExpression" /> object.</returns>
         <remarks>To be added.</remarks>
@@ -414,5 +416,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompileToMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles the lambda into a method definition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Compile">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces a delegate that represents the lambda expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

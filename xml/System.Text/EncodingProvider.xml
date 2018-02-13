@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -147,6 +148,13 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
 
         ]]></format>
         </remarks>
+        <block subset="none" type="overrides">
+          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.Int32)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method, the method passes the <paramref name="codepage" /> identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method attempts to retrieve a cached encoding whose code page identifier is <paramref name="codepage" />. Because of this, if <paramref name="codepage" /> is not the code page identifier of an encoding that you support, the method should return <see langword="null" />; it should never throw an exception.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method. You should not call it directly from user code.</para>
+        </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -193,6 +201,13 @@ You override the [GetEncoding(String)](<xref:System.Text.EncodingProvider.GetEnc
 This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.Encoding.GetEncoding(System.String)>) method. You should not call it directly from user code.
         ]]></format>
         </remarks>
+        <block subset="none" type="overrides">
+          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.String)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method, the method passes the <paramref name="name" /> argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method attempts to retrieve a cached encoding whose name is <paramref name="name" />. Because of this, if <paramref name="name" /> is not the name of an encoding that you support, the method should return <see langword="null" />. The only case in which the method should throw an exception is if <paramref name="name" /> is <see langword="null" />.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method. You should not call it directly from user code.</para>
+        </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -251,6 +266,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <block subset="none" type="usage">
           <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" /> method. You should not call it directly from user code.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -309,7 +325,17 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <block subset="none" type="usage">
           <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" /> method. You should not call it directly from user code.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEncoding">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an encoding.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.INamingContainer" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+    <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+    <altmember cref="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.Item" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +47,8 @@
         <param name="pager">The pager control that contains the pager field object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerFieldItem" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -100,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
       </Docs>
     </Member>
     <Member MemberName="PagerField">
@@ -118,6 +127,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
         <value>The pager field object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
   </Members>

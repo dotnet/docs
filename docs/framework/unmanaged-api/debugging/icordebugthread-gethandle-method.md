@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHandle method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetHandle method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetHandle Method
 Gets the current handle for the active part of this ICorDebugThread.  

@@ -32,7 +32,7 @@
 ## Remarks  
  A culture-sensitive comparison of two strings depends on each character in the strings having several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key serves as the repository of these weights for a particular string.  
   
- The <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=nameWithType> method returns an instance of the <xref:System.Globalization.SortKey> class that reflects the culture-sensitive mapping of characters in a specified string. The value of a <xref:System.Globalization.SortKey> object is its key data, which is returned by the <xref:System.Globalization.SortKey.KeyData%2A> property. This key data consists of a series of bytes that encode the string, culture-specific sorting rules, and user-specified comparison options. A comparison using sort keys consists of a bitwise comparison of the corresponding key data in each sort key.  For example, if you create a sort key by calling the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29> method with a value of <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>, a string comparison operation that uses the sort key is case-insensitive.  
+ The <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=nameWithType> method returns an instance of the <xref:System.Globalization.SortKey> class that reflects the culture-sensitive mapping of characters in a specified string. The value of a <xref:System.Globalization.SortKey> object is its key data, which is returned by the <xref:System.Globalization.SortKey.KeyData%2A> property. This key data consists of a series of bytes that encode the string, culture-specific sorting rules, and user-specified comparison options. A comparison using sort keys consists of a bitwise comparison of the corresponding key data in each sort key.  For example, if you create a sort key by calling the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29> method with a value of <xref:System.Globalization.CompareOptions.IgnoreCase?displayProperty=nameWithType>, a string comparison operation that uses the sort key is case-insensitive.  
   
  After you create a sort key for a string, you compare sort keys by calling the static <xref:System.Globalization.SortKey.Compare%2A?displayProperty=nameWithType> method. This method performs a simple byte-by-byte comparison, so it is much faster than the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method.  
   
@@ -78,6 +78,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Globalization.CompareInfo.GetSortKey(System.String,System.Globalization.CompareOptions)" />
+    <altmember cref="P:System.Globalization.SortKey.KeyData" />
   </Docs>
   <Members>
     <Member MemberName="Compare">
@@ -200,6 +202,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="P:System.Globalization.SortKey.KeyData" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -237,6 +241,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Globalization.SortKey.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="KeyData">
@@ -361,6 +368,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
   </Members>

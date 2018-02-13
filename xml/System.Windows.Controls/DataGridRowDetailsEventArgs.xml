@@ -13,6 +13,10 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />, <see cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />, and <see cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" /> events.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +37,10 @@
         <param name="detailsElement">The row details section as a framework element.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRowDetailsEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" />
       </Docs>
     </Member>
     <Member MemberName="DetailsElement">
@@ -51,6 +59,10 @@
         <summary>Gets the row details section as a framework element.</summary>
         <value>The row details section as a framework element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -69,6 +81,10 @@
         <summary>Gets the row for which the event occurred.</summary>
         <value>The row for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.LoadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.UnloadingRowDetails" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged" />
       </Docs>
     </Member>
   </Members>

@@ -61,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -116,6 +117,7 @@
         <summary>Returns an enumerator that can iterate through the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" />.</summary>
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> that can iterate through <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -147,6 +149,7 @@
         <summary>Returns the element in the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> specified by qualified name.</summary>
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> of the element in the <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> specified by qualified name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="Names">

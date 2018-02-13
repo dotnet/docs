@@ -32,11 +32,13 @@
 ## Examples  
  The following code example demonstrates how control skins are specified for controls in a declarative ASP.NET page. The example shows three ASP.NET server controls found in the same page, two that use the same named skin and one that uses a different skin.  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlSkin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlSkin/CS/controlskincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlSkin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlSkin/VB/controlskinvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ControlSkin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlSkin/CS/controlskincs.aspx#1)]
+ [!code-aspx-vb[ControlSkin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlSkin/VB/controlskinvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.PageTheme" />
+    <altmember cref="T:System.Web.UI.ControlSkinDelegate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlSkinDelegate" />
       </Docs>
     </Member>
     <Member MemberName="ControlType">

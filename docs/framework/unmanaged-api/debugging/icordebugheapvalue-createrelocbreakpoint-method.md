@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue::CreateRelocBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugHeapValue::CreateRelocBreakpoint method [.NET Framework debugging]"
   - "CreateRelocBreakpoint method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapValue::CreateRelocBreakpoint Method
 This method is not implemented in the current version of the .NET Framework.  

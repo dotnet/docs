@@ -90,6 +90,7 @@
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to add to the tray.</param>
         <summary>Adds a component to the tray.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.RemoveComponent(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="AutoArrange">
@@ -264,7 +265,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -402,6 +403,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.GetLocation(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.SetLocation(System.ComponentModel.IComponent,System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.SetTrayLocation(System.ComponentModel.IComponent,System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="IsTrayComponent">
@@ -728,6 +732,7 @@
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to remove from the tray.</param>
         <summary>Removes the specified component from the tray.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.AddComponent(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="SetLocation">
@@ -781,6 +786,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.GetTrayLocation(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.GetLocation(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Windows.Forms.Design.ComponentTray.SetLocation(System.ComponentModel.IComponent,System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="ShowLargeIcons">

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Simplified Configuration for WCF Services
 This sample demonstrates how to implement and configure a typical service and client using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This sample is the basis for all other basic technology samples.  
@@ -85,5 +87,5 @@ This sample demonstrates how to implement and configure a typical service and cl
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
   
 ## See Also  
- [AppFabric Management Samples](http://go.microsoft.com/fwlink/?LinkId=193960)   
+ [AppFabric Management Samples](http://go.microsoft.com/fwlink/?LinkId=193960)  
  [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)

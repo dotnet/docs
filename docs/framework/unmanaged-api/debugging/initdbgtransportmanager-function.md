@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "InitDbgTransportManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "InitDbgTransportManager function"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # InitDbgTransportManager Function
 Initializes the transport manager to connect to a remote target for process and runtime enumeration.  

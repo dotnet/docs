@@ -29,7 +29,7 @@
 ## Remarks  
  A row version type (also known as a sequence number) is a binary number that is guaranteed to be unique in the database. It does not represent an actual time. Row version data is not visually meaningful. Therefore, when the <xref:System.ComponentModel.DataAnnotations.TimestampAttribute> attribute is used with a Dynamic Data field, the column is not displayed unless the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute of the column is explicitly set to `true`.  
   
- For more information, see [rowversion](http://msdn.microsoft.com/en-us/65c9cf0e-3e8a-45f8-87b3-3460d96afb0b).  
+ For more information, see [rowversion](http://msdn.microsoft.com/library/65c9cf0e-3e8a-45f8-87b3-3460d96afb0b).  
   
  ]]></format>
     </remarks>

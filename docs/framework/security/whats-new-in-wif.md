@@ -14,6 +14,8 @@ caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # What&#39;s New in Windows Identity Foundation 4.5
 The first version of Windows Identity Foundation (WIF) shipped as a standalone download and is known as WIF 3.5 because it was introduced in the .NET 3.5 SP1 timeframe. Starting with .NET 4.5, WIF is part of the .NET framework. Having the WIF classes directly available in the framework allows for a much deeper integration of claims-based identity in .NET, making it easier to use claims. Applications written for WIF 3.5 will need to be modified in order to take advantage of the new model; for information, see [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md).  
@@ -62,7 +64,7 @@ The first version of Windows Identity Foundation (WIF) shipped as a standalone d
      When you use the **Identity and Access Tool for Visual Studio 2012** (see **Changes to the Visual Studio Experience** above), the tool adds a `<serviceCredentials>` element with the `useIdentityConfiguration` attribute set to the configuration file for you. It also adds a corresponding [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) element that contains the WIF configuration settings and adds a binding and other settings necessary to outsource authentication to your chosen STS.  
   
 ## See Also  
- [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)   
- [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)   
- [WIF API Reference](../../../docs/framework/security/wif-api-reference.md)   
+ [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)  
+ [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)  
+ [WIF API Reference](../../../docs/framework/security/wif-api-reference.md)  
  [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md)

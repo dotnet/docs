@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ModuleAttachedToAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ModuleAttachedToAssembly method [.NET Framework profiling]"
   - "ModuleAttachedToAssembly method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ModuleAttachedToAssembly Method
 Notifies the profiler that a module is being attached to its parent assembly.  

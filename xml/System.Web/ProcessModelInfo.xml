@@ -19,15 +19,15 @@
  The <xref:System.Web.ProcessModelInfo> class is not meant to be instantiated in your own code. Use the static <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods to populate <xref:System.Web.ProcessInfo> objects, and then use the properties of the <xref:System.Web.ProcessInfo> objects to obtain information about the processes.  
   
 > [!NOTE]
->  The <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods can be used only with Microsoft Internet Information Services (IIS) version 5.0 on Microsoft Windows 2000 and Windows XP or with IIS 6.0 on Windows Server 2003 and using IIS 5.0 isolation mode. For more information, see [NIB: How to: Configure ASP.NET Applications for an ASP.NET Version](http://msdn.microsoft.com/en-us/3e2037d2-61aa-44f3-b84e-d4dab3572ad3).  
+>  The <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods can be used only with Microsoft Internet Information Services (IIS) version 5.0 on Microsoft Windows 2000 and Windows XP or with IIS 6.0 on Windows Server 2003 and using IIS 5.0 isolation mode. For more information, see [NIB: How to: Configure ASP.NET Applications for an ASP.NET Version](http://msdn.microsoft.com/library/3e2037d2-61aa-44f3-b84e-d4dab3572ad3).  
   
    
   
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> method to display statistics about the currently executing ASP.NET process on a Web page. This example will work with Internet Information Services 5.0 on Windows 2000 and Windows XP or with IIS 6.0 on Windows Server 2003 and using IIS 5.0 isolation mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.ProcessModelInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ProcessModelInfo/CS/processinfo1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.ProcessModelInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ProcessModelInfo/VB/processinfo1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.ProcessModelInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ProcessModelInfo/CS/processinfo1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.ProcessModelInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ProcessModelInfo/VB/processinfo1vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -75,8 +75,8 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> method to display statistics about the currently executing ASP.NET process on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.ProcessModelInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ProcessModelInfo/CS/processinfo1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.ProcessModelInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ProcessModelInfo/VB/processinfo1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.ProcessModelInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ProcessModelInfo/CS/processinfo1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.ProcessModelInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ProcessModelInfo/VB/processinfo1vb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetProcess method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::GetProcess method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::GetProcess Method
 Gets a pointer to the "ICorDebugProcess" instance for the specified process.  

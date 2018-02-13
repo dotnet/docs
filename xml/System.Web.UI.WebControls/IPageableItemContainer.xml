@@ -21,6 +21,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="M:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable(System.Object,System.Web.UI.WebControls.PageEventArgs)" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
   </Docs>
   <Members>
     <Member MemberName="MaximumRows">
@@ -72,6 +75,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
+        <altmember cref="P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -114,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
   </Members>

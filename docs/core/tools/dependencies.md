@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
+ms.workload: 
+  - dotnetcore
 ---
 
 # Managing dependencies with .NET Core SDK 1.0
@@ -49,6 +51,8 @@ In this example we will use the default template that is dropped by `dotnet new 
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
 ```
 After this, we save the project and run the `dotnet restore` command to install the dependency. 
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 The full project looks like this:
 

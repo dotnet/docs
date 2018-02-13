@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" />
+    <altmember cref="T:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo" />
   </Docs>
   <Members>
     <Member MemberName="EncryptedKey">
@@ -57,6 +59,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="KeyEncryptionAlgorithm">
@@ -88,6 +96,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="RecipientIdentifier">
@@ -119,6 +131,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -143,6 +159,11 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" /> property retrieves the type of the recipient. The type of the recipient determines which of two major protocols is used to establish a key between the originator and the recipient of a CMS/PKCS #7 message.</summary>
         <value>A value of the <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfoType" /> enumeration that defines the type of the recipient.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.RecipientInfoType" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -176,6 +197,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
       </Docs>
     </Member>
   </Members>

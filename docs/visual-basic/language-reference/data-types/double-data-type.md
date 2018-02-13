@@ -1,52 +1,32 @@
 ---
 title: "Double Data Type (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Double"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "identifier type characters, #"
+  - "identifier type characters [Visual Basic], #"
   - "trailing zeros"
   - "real numbers"
-  - "trailing 0 characters"
-  - "0 characters, trailing"
-  - "literal type characters, R"
+  - "trailing 0 characters [Visual Basic]"
+  - "0 characters [Visual Basic], trailing"
+  - "literal type characters [Visual Basic], R"
   - "data types [Visual Basic], assigning"
   - "Double data type [Visual Basic]"
   - "# identifier type character"
   - "double-precision numbers"
-  - "floating-point numbers, Double data type"
-  - "R literal type character"
+  - "floating-point numbers [Visual Basic], Double data type"
+  - "R literal type character [Visual Basic]"
   - "zeros, trailing"
   - "Double data type"
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Double Data Type (Visual Basic)
 Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that range in value from -1.79769313486231570E+308 through -4.94065645841246544E-324 for negative values and from 4.94065645841246544E-324 through 1.79769313486231570E+308 for positive values. Double-precision numbers store an approximation of a real number.  
@@ -78,12 +58,12 @@ Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that r
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Double?displayProperty=nameWithType> structure.  
   
 ## See Also  
- <xref:System.Double?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)   
- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)   
- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ <xref:System.Double?displayProperty=nameWithType>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
+ [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
+ [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

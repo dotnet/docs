@@ -9,20 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
 helpviewer_keywords: 
   - "WCF Data Services, client library"
   - "DataServiceQuery class, about DataServiceQuery class"
   - "DataServiceContext class, about DataServiceContext class"
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Data Services Client Library
 Any application can interact with an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]-based data service if it can send an HTTP request and process the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed that a data service returns. This interoperability enables you to access [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based services from a broad range of Web-enabled applications. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes client libraries that provide a richer programming experience when you consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds from .NET Framework or Silverlight-based applications.  
@@ -63,5 +60,5 @@ Any application can interact with an [!INCLUDE[ssODataFull](../../../../includes
  Describes how to access and change binary data returned by the data service as a data stream.  
   
 ## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)   
+ [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)

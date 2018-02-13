@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
+ms.workload: 
+  - dotnetcore
 ---
 # Runtime package store
 
@@ -81,9 +83,9 @@ The following *artifact.xml* file is produced after running the previous example
 
 ```xml
 <StoreArtifacts>
-  <Package Id="newtonsoft.json" Version="10.0.3" />
-  <Package Id="castle.core" Version="4.1.0" />
-  <Package Id="moq" Version="4.7.63" />
+  <Package Id="Newtonsoft.Json" Version="10.0.3" />
+  <Package Id="Castle.Core" Version="4.1.0" />
+  <Package Id="Moq" Version="4.7.63" />
 </StoreArtifacts>
 ```
 
@@ -141,5 +143,5 @@ The version of the dependency indicated in the manifest must match the version o
 When the deployment is *trimmed* on publish, only the specific versions of the manifest packages you indicate are withheld from the published output. The packages at the versions indicated must be present on the host for the app to start.
 
 ## See also
- [dotnet-publish](../tools/dotnet-publish.md)   
- [dotnet-store](../tools/dotnet-store.md)   
+ [dotnet-publish](../tools/dotnet-publish.md)  
+ [dotnet-store](../tools/dotnet-store.md)  

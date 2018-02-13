@@ -19,7 +19,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <%-- <Snippet4> --%>
+        <!-- <Snippet4> -->
         <asp:ScriptManager ID="ScriptManager1" runat="server"
                            EnablePartialRendering="true" /> 
         <table>
@@ -33,7 +33,7 @@
                 </td>
             </tr>
         </table>
-        <%-- </Snippet4> --%>
+        <!-- </Snippet4> -->
     </div>
     </form>
 </body>

@@ -26,22 +26,26 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.RowDeleting> event when a Delete button (a button with its `CommandName` property set to "Delete") is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control deletes the record. This allows you to provide an event-handling method that performs a custom routine, such as canceling the delete operation, whenever this event occurs.  
   
- When you create a <xref:System.Web.UI.WebControls.GridViewDeleteEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.GridViewDeleteEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewDeleteEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDeleting> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeleteEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventHandler/CS/gridviewdeleteeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeleteEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventHandler/VB/gridviewdeleteeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeleteEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteEventHandler/CS/gridviewdeleteeventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewDeleteEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteEventHandler/VB/gridviewdeleteeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewDeleteEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDeleting> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]
+ [!code-aspx-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewDeleteEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
   </Docs>
 </Type>

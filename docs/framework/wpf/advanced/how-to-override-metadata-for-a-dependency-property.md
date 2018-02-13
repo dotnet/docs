@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "metadata, overriding for dependency properties"
-  - "dependency properties, overriding metadata for"
-  - "overriding metadata for dependency properties"
+  - "metadata [WPF], overriding for dependency properties"
+  - "dependency properties [WPF], overriding metadata for"
+  - "overriding metadata for dependency properties [WPF]"
 ms.assetid: f90f026e-60d8-428a-933d-edf0dba4441f
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Override Metadata for a Dependency Property
 This example shows how to override default dependency property metadata that comes from an inherited class, by calling the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method and providing type-specific metadata.  
@@ -35,7 +40,7 @@ This example shows how to override default dependency property metadata that com
 [!code-vb[PropertySystemEsoterics#MyAdvancedStateControl](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/sdksamplelibrary/class1.vb#myadvancedstatecontrol)]  
   
 ## See Also  
- <xref:System.Windows.DependencyProperty>   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
+ <xref:System.Windows.DependencyProperty>  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)

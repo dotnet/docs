@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-<%--<snippet4>--%>
+<!-- <snippet4> -->
     <%
 
         // Create a character array.
@@ -32,7 +32,7 @@
 // </snippet6>
 
     %>
-<%--</snippet4>     --%>
+<!-- </snippet4> -->
     </form>
 </body>
 </html>

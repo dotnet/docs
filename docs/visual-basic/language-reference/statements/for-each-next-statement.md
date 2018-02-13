@@ -1,56 +1,36 @@
 ---
 title: "For Each...Next Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ForEach"
   - "vb.ForEachNext"
   - "vb.Each"
   - "ForEachNext"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "infinite loops"
-  - "Next statement, For Each...Next"
+  - "Next statement [Visual Basic], For Each...Next"
   - "endless loops"
-  - "loop structures, For Each...Next"
+  - "loop structures [Visual Basic], For Each...Next"
   - "loops, endless"
-  - "Each keyword"
+  - "Each keyword [Visual Basic]"
   - "instructions, repeating"
-  - "For Each statement"
+  - "For Each statement [Visual Basic]"
   - "collections, instruction repetition"
   - "loops, infinite"
   - "For Each...Next statements"
   - "For keyword [Visual Basic], For Each...Next statements"
-  - "Exit statement, For Each...Next statements"
+  - "Exit statement [Visual Basic], For Each...Next statements"
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
 caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # For Each...Next Statement (Visual Basic)
 Repeats a group of statements for each element in a collection.  
@@ -89,7 +69,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
- For more examples, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## Nested Loops  
  You can nest `For Each` loops by putting one loop within another.  
@@ -130,7 +110,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#127](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_4.vb)]  
   
- For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
+ For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
   
 ## Technical Implementation  
  When a `For Each`…`Next` statement runs, Visual Basic evaluates the collection only one time, before the loop starts. If your statement block changes `element` or `group`, these changes don't affect the iteration of the loop.  
@@ -196,12 +176,12 @@ End Sub
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
 ## See Also  
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)   
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
+ [Collections](../../../standard/collections/index.md)  
+ [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
+ [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
+ [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
+ [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
+ [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

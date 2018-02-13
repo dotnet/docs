@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5ff139f9-8806-47bc-8f33-47fe6c436b92
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Circular Tracing
 This sample demonstrates the implementation of a circular buffer trace listener. A common scenario for production services is to have services that are available for long periods of time and to have trace logging enabled at a low level. These services consume a lot of disk space. When troubleshooting a service, the most recent data in the trace log is relevant to solving a problem. This sample demonstrates an implementation of a circular buffer trace listener in which only the most recent traces are kept on disk up to a configurable amount of data. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and includes a custom tracing listener.  

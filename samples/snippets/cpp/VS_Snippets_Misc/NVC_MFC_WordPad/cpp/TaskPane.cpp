@@ -57,7 +57,7 @@ int CTaskPane::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	AddTask (nPage1Gr2, _T("Blank Web Page"), 2, ID_DUMMY);
 	AddSeparator (nPage1Gr2);
-	AddTask (nPage1Gr2, _T("Blank E-mail message"), 3, ID_DUMMY);
+	AddTask (nPage1Gr2, _T("Blank Email message"), 3, ID_DUMMY);
 
 	int nPage1Gr3 = AddGroup (_T("New from existing document"));
 

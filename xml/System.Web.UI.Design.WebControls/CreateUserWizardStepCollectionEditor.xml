@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides an editor in a design host such as Visual Studio 2005 to edit the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> object of a <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> Web server control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+    <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+    <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +34,8 @@
         <param name="type">The <see cref="T:System.Type" /> of the items in the collection associated with the collection editor.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor" /> class using the given <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
       </Docs>
     </Member>
     <Member MemberName="CanRemoveInstance">
@@ -54,6 +59,8 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WizardStep" /> can be removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateCollectionForm">
@@ -73,6 +80,8 @@
         <summary>Creates a modal dialog box for editing the contents of a collection of <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> objects.</summary>
         <returns>A <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
       </Docs>
     </Member>
     <Member MemberName="HelpTopic">
@@ -91,6 +100,8 @@
         <summary>Gets the <see langword="Help" /> keyword used to display the Help topic or topic list when users click the **Help** button or press the F1 key in the editor's dialog box.</summary>
         <value>The <see langword="Help" /> keyword to display the Help topic or topic list when Help is requested from the editor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
       </Docs>
     </Member>
   </Members>

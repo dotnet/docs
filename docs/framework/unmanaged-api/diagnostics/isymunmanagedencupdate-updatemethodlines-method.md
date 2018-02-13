@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateMethodLines"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UpdateMethodLines method [.NET Framework debugging]"
   - "ISymUnmanagedENCUpdate::UpdateMethodLines method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedENCUpdate::UpdateMethodLines Method
 Allows updating the line information for a method that has not been recompiled, but whose lines have moved independently. A delta for each statement is allowed.  

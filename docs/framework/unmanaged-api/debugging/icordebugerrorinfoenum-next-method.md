@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugErrorInfoEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Next method, ICorDebugErrorInfoEnum interface [.NET Framework debugging]"
   - "ICorDebugErrorInfoEnum::Next method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugErrorInfoEnum::Next Method
 `ICorDebugErrorInfoEnum::Next` is obsolete. Do not call this method.  

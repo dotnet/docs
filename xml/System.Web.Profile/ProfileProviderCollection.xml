@@ -23,8 +23,8 @@
 ## Examples  
  The following code example lists the providers enabled for an application and their respective types.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/Providerscs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/Providersvb.aspx#9)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.ProfileManager#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/Providerscs.aspx#9)]
+ [!code-aspx-vb[System.Web.Profile.ProfileManager#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/Providersvb.aspx#9)]  
   
  ]]></format>
     </remarks>
@@ -76,7 +76,7 @@
 ## Remarks  
  This method is not intended to be used from your code.  
   
- Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+ Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
   
  ]]></format>
         </remarks>

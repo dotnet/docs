@@ -22,23 +22,27 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DataListItemEventArgs>, see the <xref:System.Web.UI.WebControls.DataListItemEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to define a handler for the <xref:System.Web.UI.WebControls.DataList.ItemDataBound> event. The code in the handler calculates the price of items in a <xref:System.Web.UI.WebControls.DataList> control. This example specifies the event handler declaratively, setting the event handler for the <xref:System.Web.UI.WebControls.DataList.OnItemDataBound%2A> attribute of the <xref:System.Web.UI.WebControls.DataList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  
   
  The following example demonstrates how to specify the event handler and programmatically add it to the <xref:System.Web.UI.WebControls.DataList.ItemDataBound> event in the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataListItemEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.ItemDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,11 +110,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.DataListItemEventArgs.Item%2A> property to display the order in which the items are created in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemDataBound" />
       </Docs>
     </Member>
   </Members>

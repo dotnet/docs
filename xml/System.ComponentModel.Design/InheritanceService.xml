@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.InheritanceAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IInheritanceService" />
       </Docs>
     </Member>
     <Member MemberName="AddInheritedComponents">
@@ -164,7 +166,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -195,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.InheritanceAttribute" />
+        <altmember cref="T:System.ComponentModel.Design.IInheritanceService" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreInheritedMember">
@@ -223,7 +227,27 @@
         <block subset="none" type="overrides">
           <para>By overriding this method, users can modify the set of members that the inheritance service ignores. The default implementation ignores all members that are private, and allows only public or protected members.</para>
         </block>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddInheritedComponents">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the components inherited by the specified component to the <see cref="T:System.ComponentModel.Design.InheritanceService" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.InheritanceService" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

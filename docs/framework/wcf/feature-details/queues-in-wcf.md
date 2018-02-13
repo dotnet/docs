@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "queues [WCF]"
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queues in Windows Communication Foundation
 The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] support for queues. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
@@ -71,4 +73,4 @@ The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indig
  Explains best practices for using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] queued communication.  
   
 ## See Also  
- [Message Queuing](http://msdn.microsoft.com/en-us/ff917e87-05d5-478f-9430-0f560675ece1)
+ [Message Queuing](http://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)

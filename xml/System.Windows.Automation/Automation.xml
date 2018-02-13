@@ -49,6 +49,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddAutomationFocusChangedEventHandler">
@@ -87,6 +91,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddAutomationPropertyChangedEventHandler">
@@ -137,6 +145,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationPropertyChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddStructureChangedEventHandler">
@@ -182,6 +194,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -222,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -256,6 +272,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ContentViewCondition">
@@ -283,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ControlViewCondition" />
+        <altmember cref="F:System.Windows.Automation.Automation.RawViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="ControlViewCondition">
@@ -310,6 +329,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
+        <altmember cref="F:System.Windows.Automation.Automation.RawViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="PatternName">
@@ -401,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
+        <altmember cref="F:System.Windows.Automation.Automation.ControlViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAllEventHandlers">
@@ -419,6 +442,10 @@
       <Docs>
         <summary>Removes all registered [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] event handlers.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationPropertyChangedEventHandler)" />
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationEventHandler">
@@ -454,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationFocusChangedEventHandler">
@@ -485,6 +513,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAutomationPropertyChangedEventHandler">
@@ -518,6 +547,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
       </Docs>
     </Member>
     <Member MemberName="RemoveStructureChangedEventHandler">
@@ -541,7 +571,17 @@
         <param name="eventHandler">A handler method that was passed to <see cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" /> for the specified [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element.</param>
         <summary>Removes the specified structure-changed event handler.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the specified parameters to determine whether they refer to the same user interface (UI) element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

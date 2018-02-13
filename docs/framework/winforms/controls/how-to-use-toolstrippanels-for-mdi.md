@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "MDI, using ToolStripPanels [Windows Forms]"
+  - "MDI [Windows Forms], using ToolStripPanels [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], using for MDI"
   - "toolbars [Windows Forms], using for MDI"
 ms.assetid: d6b884fc-0846-465f-83c3-5dc0fe93b00f
@@ -20,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use ToolStripPanels for MDI
 The <xref:System.Windows.Forms.ToolStripPanel> provides flexibility for multiple-document interface (MDI) applications by using the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> method.  
@@ -38,5 +41,5 @@ The <xref:System.Windows.Forms.ToolStripPanel> provides flexibility for multiple
  For information about building this example from the command line for [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripPanel>   
+ <xref:System.Windows.Forms.ToolStripPanel>  
  [How to: Join ToolStripPanels](../../../../docs/framework/winforms/controls/how-to-join-toolstrippanels.md)

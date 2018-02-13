@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Deriving from WebResponse"
 ms.assetid: f11d4866-a199-4087-9306-a5a4c18b13db
@@ -19,6 +14,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Deriving from WebResponse
 The <xref:System.Net.WebResponse> class is an abstract base class that provides the basic methods and properties for creating a protocol-specific response that fits the .NET Framework pluggable protocol model. Applications that use the <xref:System.Net.WebRequest> class to request data from resources receive the responses in a **WebResponse**. Protocol-specific **WebResponse** descendants must implement the abstract members of the **WebResponse** class.  
@@ -48,8 +45,8 @@ The <xref:System.Net.WebResponse> class is an abstract base class that provides 
  The stream instance returned by the **GetResponseStream** method is owned by the application and can be closed without closing the **WebResponse**. By convention, calling the **WebResponse.Close** method also closes the stream returned by **GetResponse**.  
   
 ## See Also  
- <xref:System.Net.WebResponse>   
- <xref:System.Net.HttpWebResponse>   
- <xref:System.Net.FileWebResponse>   
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)   
+ <xref:System.Net.WebResponse>  
+ <xref:System.Net.HttpWebResponse>  
+ <xref:System.Net.FileWebResponse>  
+ [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
  [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)

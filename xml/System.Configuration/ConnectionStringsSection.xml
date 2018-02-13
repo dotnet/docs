@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
+    <altmember cref="T:System.Configuration.ConnectionStringSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettings" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">

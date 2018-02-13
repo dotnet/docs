@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSetENC"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSetENC enumeration [.NET Framework metadata]"
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorSetENC Enumeration
 Contains values used to influence behavior during the generation of metadata.  

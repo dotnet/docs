@@ -53,7 +53,7 @@ public void Page_Load()
       <td valign="top">
         <table border="0" cellpadding="2" cellspacing="0">
           <tr>
-           <td>E-mail:</td>
+           <td>Email:</td>
            <td><asp:Label runat="server" id="EmailLabel" /></td>
           </tr>
           <tr>

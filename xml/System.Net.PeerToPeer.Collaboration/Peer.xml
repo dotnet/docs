@@ -61,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Runtime" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -79,6 +80,8 @@
       <Docs>
         <summary>Releases all resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.ToString" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -152,6 +157,7 @@
         <param name="context">The destination for this serialization.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the target <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetObjects">
@@ -171,6 +177,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetObjects">
@@ -212,6 +221,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The caller is not subscribed to the endpoint or has not yet called <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The method is unable to complete due to an error in the underlying Peer Collaboration infrastructure.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" />
+        <altmember cref="T:System.Net.Cache.RequestCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="GetObjects">
@@ -256,6 +267,9 @@
         <exception cref="T:System.ArgumentNullException">The object ID is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The caller is not subscribed to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> or has not yet called <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" /> against it.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An error occurred when getting object information from the peer.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="T:System.Guid" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPresenceInfo">
@@ -298,6 +312,9 @@
           <paramref name="peerEndPoint" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been disposed and cannot be used in current peer operations.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An error occurred while retrieving presence information from the peer.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceInfo" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -327,6 +344,8 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   An error occurred during the invitation process.  
   
 -   The currently executing application is not registered with the Peer Collaboration infrastructure.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -399,6 +418,9 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   An error occurred during the invitation process.  
   
 -   The currently executing application is not registered with the collaboration infrastructure.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -441,6 +463,9 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   An error occurred during the invitation process.  
   
 -   The currently executing application is not registered with the collaboration infrastructure.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="InviteAsyncCancel">
@@ -482,6 +507,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="userToken" /> parameter cannot be <see langword="null." /></exception>
         <exception cref="T:System.InvalidOperationException">An asynchronous invitation is not outstanding.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs.InviteResponse" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" />
       </Docs>
     </Member>
     <Member MemberName="InviteCompleted">
@@ -509,6 +538,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="IsOnline">
@@ -530,6 +561,9 @@
  Unless specified, the default value for this property is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInviteCompleted">
@@ -558,6 +592,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoints">
@@ -584,6 +621,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object has been disposed.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.ContactManager.LocalContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -623,6 +663,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -651,6 +692,9 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class instance with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance. A derived type must call the base type <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.GetObjects" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -671,7 +715,39 @@
         <returns>
           <see cref="T:System.String" /> representing the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invite">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an invitation to a <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> to start a specific <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InviteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous invitation operation which sends an invitation to a <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> to start a specific <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</summary>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

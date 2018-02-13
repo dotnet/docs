@@ -18,11 +18,12 @@
 ## Examples  
  The following code example demonstrates how to read cookies using the <xref:System.Web.HttpRequest.Cookies%2A> property of the <xref:System.Web.HttpRequest> object and write cookies using the <xref:System.Web.HttpResponse.Cookies%2A> property of the <xref:System.Web.HttpResponse> object. Both properties return <xref:System.Web.HttpCookieCollection> objects. If either of two cookies named `userName` and `lastVisit` are not in the HTTP request, then they are created in the HTTP response. If the two cookies exist, the properties of the cookies are displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpCookieCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCookieCollection/cs/HttpCookieCollection.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpCookieCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCookieCollection/vb/HttpCookieCollection.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpCookieCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCookieCollection/cs/HttpCookieCollection.cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpCookieCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCookieCollection/vb/HttpCookieCollection.vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpCookie" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +54,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="T:System.Web.HttpResponse" />
+        <altmember cref="T:System.Web.HttpCookie" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -91,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Clear" />
+        <altmember cref="M:System.Web.HttpCookieCollection.Set(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -119,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpCookieCollection.Item" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -147,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Add(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -180,6 +188,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Clear" />
+        <altmember cref="M:System.Web.HttpCookieCollection.Add(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -212,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Set(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -249,6 +260,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Set(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -313,6 +325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpCookieCollection.Get" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -345,6 +358,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpCookieCollection.Get" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -381,6 +395,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCookieCollection.Add(System.Web.HttpCookie)" />
+        <altmember cref="M:System.Web.HttpCookieCollection.Set(System.Web.HttpCookie)" />
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -417,7 +433,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpCookieCollection.Get" />
+        <altmember cref="M:System.Web.HttpCookieCollection.Add(System.Web.HttpCookie)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the cookie with the specified name from the cookie collection. This property is overloaded to allow retrieval of cookies by either name or numerical index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an individual <see cref="T:System.Web.HttpCookie" /> object from the cookie collection. This property is overloaded to allow retrieval of cookies by either name or numerical index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

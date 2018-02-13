@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "IPv6, improvements"
   - "IPv4"
@@ -23,6 +18,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Protocol Version 6
 The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for the network layer of the Internet. IPv6 is designed to solve many of the problems of the current version of the Internet Protocol suite (known as IPv4) with regard to address depletion, security, auto-configuration, extensibility, and so on. IPv6 expands the capabilities of the Internet to enable new kinds of applications, including peer-to-peer and mobile applications. The following are the main issues of the current IPv4 protocol:  
@@ -67,6 +64,6 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
  You can also find IPv6-related information on the [IPv6 area on Technet](http://go.microsoft.com/fwlink/?LinkID=179658).  
   
 ## See Also  
- [IPv6 Sockets Sample](http://go.microsoft.com/fwlink/?LinkID=179568)   
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)   
+ [IPv6 Sockets Sample](http://go.microsoft.com/fwlink/?LinkID=179568)  
+ [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Sockets](../../../docs/framework/network-programming/sockets.md)

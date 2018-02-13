@@ -57,6 +57,9 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.ForeignKeyConstraint" />
+    <altmember cref="T:System.Data.UniqueConstraint" />
+    <altmember cref="T:System.Data.DataRelation" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -105,6 +108,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="constraint" /> argument is null.</exception>
         <exception cref="T:System.ArgumentException">The constraint already belongs to this collection, or belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a constraint with the same name. (The comparison is not case-sensitive.)</exception>
+        <altmember cref="T:System.Data.UniqueConstraint" />
+        <altmember cref="T:System.Data.ForeignKeyConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -161,6 +166,7 @@
   
  The constraint belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a constraint with the specified name. (The comparison is not case-sensitive.)</exception>
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -267,6 +273,7 @@
   
  The constraint belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">The collection already has a constraint with the specified name. (The comparison is not case-sensitive.)</exception>
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -480,7 +487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -539,6 +546,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.ConstraintCollection.Remove(System.Data.Constraint)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -617,6 +625,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.ConstraintCollection.Remove(System.Data.Constraint)" />
+        <altmember cref="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -663,6 +674,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.ConstraintCollection.Remove(System.Data.Constraint)" />
+        <altmember cref="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -710,6 +724,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -830,6 +845,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="constraint" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The constraint does not belong to the collection.</exception>
+        <altmember cref="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.ConstraintCollection.IndexOf(System.Data.Constraint)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -877,6 +895,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.ConstraintCollection.IndexOf(System.Data.Constraint)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -927,7 +948,50 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The collection does not have a constraint at this index.</exception>
+        <altmember cref="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
+        <altmember cref="M:System.Data.ConstraintCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.ConstraintCollection.IndexOf(System.Data.Constraint)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.Constraint" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the index of the specified <see cref="T:System.Data.Constraint" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Data.Constraint" /> from the <see cref="T:System.Data.ConstraintCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Data.Constraint" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

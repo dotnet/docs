@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.List" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -74,6 +76,7 @@
         <summary>Gets the specified data object of the list item that is being bound. This property is available only on a request where the list item is data bound; on subsequent postbacks, it is always <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The specified data object for the list item that is being bound.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -92,6 +95,7 @@
         <summary>Returns the current <see cref="T:System.Web.UI.WebControls.ListItem" /> that is being bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The <see cref="T:System.Web.UI.WebControls.ListItem" /> being bound.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
   </Members>

@@ -30,6 +30,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -59,6 +62,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -82,6 +88,9 @@
         <returns>
           <see langword="true" /> if the given item is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -101,6 +110,9 @@
         <summary>Returns an array of all the items in the <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An array of all the items in the <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -130,6 +142,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+        <altmember cref="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -171,6 +190,9 @@
         <summary>Returns an <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> item at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -236,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -264,6 +289,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -290,6 +318,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -315,6 +346,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItem" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

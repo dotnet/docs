@@ -18,10 +18,11 @@
 ## Remarks  
  The Nullable\<bool> type is used for selection state in certain controls. This converter enables that non-set attribute values do not mean either `true` or `false` but instead mean an unset state.  
   
-<a name="XAMLTextUsage_NullableBoolConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Window.DialogResult" />
+    <altmember cref="P:System.Windows.Controls.Primitives.ToggleButton.IsChecked" />
+    <altmember cref="P:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

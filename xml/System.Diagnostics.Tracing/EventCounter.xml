@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,8 +21,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the ability to collect statistics for very frequent events through the  <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> class, see the [Introduction Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) topic.
+
+   ]]>
+      </format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +41,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -47,10 +57,16 @@
         <Parameter Name="eventSource" Type="System.Diagnostics.Tracing.EventSource" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The event counter name.</param>
+        <param name="eventSource">The event source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.EventCounter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="eventSource" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteMetric">
@@ -61,6 +77,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -78,9 +95,16 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be written.</param>
+        <summary>Writes the metric if performance counters are on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+    ## Remarks  
+
+    For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)> method, see the [Introduction Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) topic.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

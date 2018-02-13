@@ -21,6 +21,9 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Handling and throwing exceptions in .NET
 
@@ -30,7 +33,7 @@ Applications must be able to handle errors that occur during execution in a cons
 
 An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
 
-In .NET, an exception is an object that inherits from the [System.Exception](xref:System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
+In .NET, an exception is an object that inherits from the <xref:System.Exception?displayProperty=nameWithType> class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
 
 ## Exceptions vs. traditional error-handling methods
 
@@ -52,13 +55,13 @@ The following table lists some common exceptions with examples of what can cause
 
 | Exception type | Base type | Description | Example |
 | -------------- | --------- | ----------- | ------- |
-| @System.Exception | @System.Object | Base class for all exceptions. | None (use a derived class of this exception). |
-| @System.IndexOutOfRangeException | @System.Exception | Thrown by the runtime only when an array is indexed improperly. | Indexing an array outside its valid range: `arr[arr.Length+1]` |
-| @System.NullReferenceException | @System.Exception | Thrown by the runtime only when a null object is referenced. | `object o = null; o.ToString();` |
-| @System.InvalidOperationException | @System.Exception | Thrown by methods when in an invalid state. | Calling `Enumerator.GetNext()` after removing an Item from the underlying collection. |
-| @System.ArgumentException | @System.Exception | Base class for all argument exceptions. | None (use a derived class of this exception). |
-| @System.ArgumentNullException | @System.Exception | Thrown by methods that do not allow an argument to be null. | `String s = null; "Calculate".IndexOf (s);` |
-| @System.ArgumentOutOfRangeException | @System.Exception | Thrown by methods that verify that arguments are in a given range. | `String s = "string"; s.Substring(s.Length+1);` |
+| <xref:System.Exception> | <xref:System.Object> | Base class for all exceptions. | None (use a derived class of this exception). |
+| <xref:System.IndexOutOfRangeException> | <xref:System.Exception> | Thrown by the runtime only when an array is indexed improperly. | Indexing an array outside its valid range: `arr[arr.Length+1]` |
+| <xref:System.NullReferenceException> | <xref:System.Exception> | Thrown by the runtime only when a null object is referenced. | `object o = null; o.ToString();` |
+| <xref:System.InvalidOperationException> | <xref:System.Exception> | Thrown by methods when in an invalid state. | Calling `Enumerator.GetNext()` after removing an Item from the underlying collection. |
+| <xref:System.ArgumentException> | <xref:System.Exception> | Base class for all argument exceptions. | None (use a derived class of this exception). |
+| <xref:System.ArgumentNullException> | <xref:System.Exception> | Thrown by methods that do not allow an argument to be null. | `String s = null; "Calculate".IndexOf (s);` |
+| <xref:System.ArgumentOutOfRangeException> | <xref:System.Exception> | Thrown by methods that verify that arguments are in a given range. | `String s = "string"; s.Substring(s.Length+1);` |
 
 ## See Also
 

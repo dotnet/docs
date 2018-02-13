@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostControl::SetAppDomainManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostControl::SetAppDomainManager method [.NET Framework hosting]"
   - "SetAppDomainManager method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostControl::SetAppDomainManager Method
 Notifies the host that an application domain has been created.  
@@ -75,6 +75,6 @@ HRESULT SetAppDomainManager (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.AppDomain>   
- <xref:System.AppDomainManager>   
+ <xref:System.AppDomain>  
+ <xref:System.AppDomainManager>  
  [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

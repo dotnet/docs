@@ -138,9 +138,9 @@
   
 -   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -148,7 +148,7 @@
   
 -   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
   
    
   
@@ -507,9 +507,9 @@
   
 -   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -517,7 +517,7 @@
   
 -   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
   
    
   
@@ -557,9 +557,9 @@
   
 -   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -567,7 +567,7 @@
   
 -   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
   
    
   

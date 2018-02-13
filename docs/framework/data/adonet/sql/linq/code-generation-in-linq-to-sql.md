@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Code Generation in LINQ to SQL
 You can generate code to represent a database by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  
@@ -276,8 +278,8 @@ elementFormDefault="qualified" >
 ```  
   
 ## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)   
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)   
- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)   
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)   
+ [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
+ [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
+ [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)  
+ [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
  [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

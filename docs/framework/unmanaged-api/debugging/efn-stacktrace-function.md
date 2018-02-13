@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "_EFN_StackTrace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_EFN_StackTrace function [.NET Framework debugging]"
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _EFN_StackTrace Function
 Provides a text representation of a managed stack trace and an array of `CONTEXT` records, one for each transition between unmanaged and managed code.  

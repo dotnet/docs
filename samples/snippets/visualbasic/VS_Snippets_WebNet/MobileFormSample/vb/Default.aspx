@@ -62,7 +62,7 @@
     End Sub
     ' </Snippet3>
 
-    ' The the Submit button is clicked
+    ' The Submit button is clicked
     Protected Sub Command1_OnSubmit(ByVal sender As Object, _
         ByVal e As EventArgs)
 

@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ItemsControl" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -91,6 +92,7 @@
         <returns>The zero-based index at which the object is added or -1 if the item cannot be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The collection is in ItemsSource mode.</exception>
+        <altmember cref="T:System.Windows.Controls.ItemsControl" />
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveFiltering">
@@ -255,6 +257,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.ItemCollection" /> is in <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode. (When the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property is set, the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection will be made read-only and fixed-size.)</exception>
+        <altmember cref="T:System.Windows.Controls.ItemsControl" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -342,6 +345,7 @@
   
  By default, the first item of the collection starts as the current item.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPosition">
@@ -360,6 +364,7 @@
         <summary>Gets the ordinal position of the current item within the view.</summary>
         <value>The ordinal position of the current item within the view or -1 if the collection is uninitialized or if there is no collection in the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="DeferRefresh">
@@ -501,6 +506,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.GroupStyle" />
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -519,6 +525,8 @@
         <summary>Gets the top-level groups that are constructed according to the <see cref="P:System.Windows.Controls.ItemCollection.GroupDescriptions" />.</summary>
         <value>The top-level groups that are constructed according to the <see cref="P:System.Windows.Controls.ItemCollection.GroupDescriptions" />. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.PropertyGroupDescription" />
+        <altmember cref="T:System.Windows.Controls.GroupStyle" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -592,6 +600,7 @@
         <value>
           <see langword="true" /> if the current item of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentBeforeFirst">
@@ -611,6 +620,7 @@
         <value>
           <see langword="true" /> if the current item of the view is beyond the beginning of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -788,6 +798,7 @@
         <returns>
           <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToFirst">
@@ -808,6 +819,7 @@
         <returns>
           <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToLast">
@@ -828,6 +840,7 @@
         <returns>
           <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToLast" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToNext">
@@ -848,6 +861,7 @@
         <returns>
           <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToNext" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPosition">
@@ -891,6 +905,7 @@
         <returns>
           <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToPrevious" />
       </Docs>
     </Member>
     <Member MemberName="NeedsRefresh">
@@ -910,6 +925,8 @@
         <value>
           <see langword="true" /> if the collection needs to be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.Refresh" />
+        <altmember cref="M:System.Windows.Controls.ItemCollection.DeferRefresh" />
       </Docs>
     </Member>
     <Member MemberName="PassesFilter">

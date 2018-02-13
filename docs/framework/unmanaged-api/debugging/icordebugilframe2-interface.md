@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame2 interface [.NET Framework debugging]"
 ms.assetid: f94b9d53-d8f8-4424-a95e-53a1bfd26e4a
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame2 Interface1
 A logical extension of the ICorDebugILFrame interface.  

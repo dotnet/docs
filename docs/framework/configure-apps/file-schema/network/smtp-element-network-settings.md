@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#smtp"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<smtp> element"
   - "smtp element"
@@ -25,9 +20,11 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;smtp&gt; Element (Network Settings)
-Configures the delivery format, delivery method, and from address for sending e-mails.  
+Configures the delivery format, delivery method, and from address for sending emails.  
   
  \<configuration>  
 \<system.net>  
@@ -38,12 +35,12 @@ Configures the delivery format, delivery method, and from address for sending e-
   
 ```xml  
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
-  <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
-  <network> … </network>  
-/smtp>  
+        deliveryFormat="format"   
+        deliveryMethod="method"   
+        from="from address">
+          <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
+          <network> … </network>  
+      </smtp>  
 ```  
   
 ## Attributes and Elements  
@@ -53,9 +50,9 @@ Configures the delivery format, delivery method, and from address for sending e-
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`deliveryFormat`|Specifies the delivery format for outgoing e-mails. Acceptable values are SevenBit and International.|  
-|`deliveryMethod`|Specifies the delivery method for e-mails. Acceptable values are network, pickupDirectoryFromIis, and specifiedPickupDirectory.|  
-|`from`|Specifies the from address for outgoing e-mails.|  
+|`deliveryFormat`|Specifies the delivery format for outgoing emails. Acceptable values are SevenBit and International.|  
+|`deliveryMethod`|Specifies the delivery method for emails. Acceptable values are network, pickupDirectoryFromIis, and specifiedPickupDirectory.|  
+|`from`|Specifies the from address for outgoing emails.|  
   
 ### Child Elements  
   
@@ -71,7 +68,7 @@ Configures the delivery format, delivery method, and from address for sending e-
 |[\<mailSettings> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md)|Configures mail sending options.|  
   
 ## Example  
- The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  
 <configuration>  
@@ -90,8 +87,8 @@ Configures the delivery format, delivery method, and from address for sending e-
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>   
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>   
- <xref:System.Net.Mail.SmtpDeliveryFormat>   
- <xref:System.Net.Mail.SmtpDeliveryMethod>   
+ <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+ <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+ <xref:System.Net.Mail.SmtpDeliveryFormat>  
+ <xref:System.Net.Mail.SmtpDeliveryMethod>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

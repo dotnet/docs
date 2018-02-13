@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetSerializedBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IManagedObject::GetSerializedBuffer method [.NET Framework hosting]"
   - "GetSerializedBuffer method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IManagedObject::GetSerializedBuffer Method
 Gets the string representation of this managed object.  

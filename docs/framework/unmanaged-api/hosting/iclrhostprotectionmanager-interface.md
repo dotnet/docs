@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostProtectionManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRHostProtectionManager interface [.NET Framework hosting]"
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRHostProtectionManager Interface
 Enables the host to block specific managed classes, methods, properties, and fields from running in partially trusted code.  
@@ -49,5 +49,5 @@ Enables the host to block specific managed classes, methods, properties, and fie
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [EApiCategories Enumeration](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md)   
+ [EApiCategories Enumeration](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md)  
  [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)

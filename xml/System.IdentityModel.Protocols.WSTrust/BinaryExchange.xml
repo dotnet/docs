@@ -48,7 +48,7 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData%2A>|The specified binary data.|  
-|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|A <xref:System.Uri> based on the <xref:System.IdentityModel.WSSecurity10Constants.EncodingTypes.Base64> constant.|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|A <xref:System.Uri> based on the `System.IdentityModel.WSSecurity10Constants.EncodingTypes.Base64` constant.|  
 |<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType%2A>|The specified value type <xref:System.Uri>.|  
   
  ]]></format>
@@ -189,5 +189,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

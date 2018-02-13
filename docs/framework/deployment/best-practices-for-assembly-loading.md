@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "assemblies,binding"
   - "LoadFrom method"
@@ -29,6 +24,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices for Assembly Loading
 This article discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors. The article discusses the following recommendations:  
@@ -174,8 +171,8 @@ This article discusses ways to avoid problems of type identity that can lead to 
  Note that you can use the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method to load these assemblies. Because they are now in the probing path, they will be loaded into the default load context instead of the load-from context. However, we recommend that you switch to the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method and supply full assembly display names to ensure that correct versions are always used.  
   
 ## See Also  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>   
- <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType>   
- <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>   
+ <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType>  
+ <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>  
  [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

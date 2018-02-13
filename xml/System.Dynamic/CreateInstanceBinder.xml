@@ -234,5 +234,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackCreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the dynamic create operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

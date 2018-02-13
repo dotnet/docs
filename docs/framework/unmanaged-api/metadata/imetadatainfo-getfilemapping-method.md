@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataInfo::GetFileMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataInfo::GetFileMapping method [.NET Framework metadata]"
   - "GetFileMapping method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataInfo::GetFileMapping Method
 Gets the memory region of the mapped file, and the type of mapping.  
@@ -80,5 +80,5 @@ HRESULT GetFileMapping (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [IMetaDataInfo Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-interface.md)   
+ [IMetaDataInfo Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-interface.md)  
  [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

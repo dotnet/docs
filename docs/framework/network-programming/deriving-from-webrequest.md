@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "WebRequest class, pluggable protocols"
   - "protocol-specific request handler"
@@ -25,6 +20,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Deriving from WebRequest
 The <xref:System.Net.WebRequest> class is an abstract base class that provides the basic methods and properties for creating a protocol-specific request handler that fits the .NET Framework pluggable protocol model. Applications that use the **WebRequest** class can request data using any supported protocol without needing to specify the protocol used.  
@@ -98,8 +95,8 @@ The <xref:System.Net.WebRequest> class is an abstract base class that provides t
  The **GetResponse** method is responsible for creating an appropriate **WebResponse** descendant to contain the incoming response.  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
- <xref:System.Net.HttpWebRequest>   
- <xref:System.Net.FileWebRequest>   
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)   
+ <xref:System.Net.WebRequest>  
+ <xref:System.Net.HttpWebRequest>  
+ <xref:System.Net.FileWebRequest>  
+ [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
  [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)

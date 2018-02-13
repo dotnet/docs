@@ -14,6 +14,7 @@
     <summary>Stores references to all globally available types and manages the stack. This class belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
   </Docs>
   <Members>
     <Member MemberName="ConstructArray">
@@ -94,6 +95,7 @@
         <summary>Stores a global reference to the single scripting engine that is running in the current context.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
   </Members>

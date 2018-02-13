@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "Default Service Behavior Sample [Windows Communication Foundation]"
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default Service Behavior
 This sample demonstrates how service behavior settings can be configured. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. This sample explicitly defines service behaviors and operation behaviors using the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes. You can configure behaviors in configuration files or imperatively in code (as this sample demonstrates).  

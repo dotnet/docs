@@ -124,7 +124,7 @@ namespace FilterAndSort
 				new SqlDataAdapter("Select * from Customers", connectionString);
 			DataTable customerTable = new DataTable();
 
-			// Fill the the adapter with the contents of the customer table.
+			// Fill the adapter with the contents of the customer table.
 			customersTableAdapter.Fill(customerTable);
 
 			// Set data source for BindingSource1.
@@ -166,7 +166,7 @@ namespace FilterAndSort
                 new SqlDataAdapter("Select * from Customers", connectionString);
             DataTable customerTable = new DataTable();
 
-            // Fill the the adapter with the contents of the customer table.
+            // Fill the adapter with the contents of the customer table.
             customersTableAdapter.Fill(customerTable);
 
             // Set data source for BindingSource1.

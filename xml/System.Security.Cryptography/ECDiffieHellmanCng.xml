@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters.Curve?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
   
  ]]></format>
         </remarks>
@@ -963,5 +963,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromXmlString">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the key information from an XML string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToXmlString">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes the key information to an XML string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHash">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a hash function .</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeriveKeyFromHmac">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

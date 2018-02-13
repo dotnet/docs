@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "retrieving attributes"
   - "multiple attribute instances"
@@ -17,6 +21,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Retrieving Information Stored in Attributes
 Retrieving a custom attribute is a simple process. First, declare an instance of the attribute you want to retrieve. Then, use the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType> method to initialize the new attribute to the value of the attribute you want to retrieve. Once the new attribute is initialized, you simply use its properties to get the values.  
@@ -83,7 +90,7 @@ The attribute was not found.
  You can use the members of the <xref:System.Type> class to get the individual methods and members in the passed class. This example first queries the **Type** object to get attribute information for the class level. Next, it uses <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> to place instances of all methods into an array of <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> objects to retrieve attribute information for the method level. You can also use the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to check for attributes on the property level or <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> to check for attributes on the constructor level.  
   
 ## See Also  
- <xref:System.Type?displayProperty=nameWithType>   
- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>   
- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>   
+ <xref:System.Type?displayProperty=nameWithType>  
+ <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
+ <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
  [Attributes](../../../docs/standard/attributes/index.md)

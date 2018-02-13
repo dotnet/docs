@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.INameScopeDictionary" />
+    <altmember cref="T:System.Windows.NameScope" />
   </Docs>
   <Members>
     <Member MemberName="GetAllNamesAndValuesInScope">
@@ -180,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Markup.INameScope.FindName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -206,5 +209,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves an object from a name reference.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFixupToken">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an object that can correct for certain markup patterns that produce forward references.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

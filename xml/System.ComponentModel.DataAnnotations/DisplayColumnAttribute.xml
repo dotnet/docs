@@ -37,9 +37,8 @@
   
 -   The attribute can be applied only one time.  
   
-   
-  
-## Examples  
+
+ ## Examples  
  The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute. The example performs the following tasks:  
   
 -   Implements metadata partial classes for the Address and Customer tables, which are parent tables for the CustomerAddress table.  
@@ -59,12 +58,12 @@
   
  To compile the example, you need the following:  
   
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases) on GitHub. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.  
   
 -   A dynamic data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -248,5 +247,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

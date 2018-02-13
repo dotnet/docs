@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_EX_CLAUSE_INFO"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_EX_CLAUSE_INFO structure [.NET Framework profiling]"
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_EX_CLAUSE_INFO Structure
 Stores information about a specific exception clause instance and its associated frame.  

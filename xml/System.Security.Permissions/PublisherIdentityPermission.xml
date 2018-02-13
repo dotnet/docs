@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.PublisherIdentityPermissionAttribute" />
+    <altmember cref="T:System.Security.Policy.Publisher" />
+    <altmember cref="T:System.Security.Policy.PublisherMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -347,5 +350,15 @@
  The two permissions are not equal.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PublisherIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.SessionState.SessionIDManager> class is an HTTP module that manages unique session identifiers for use with ASP.NET session state. The unique identifier for an ASP.NET session is the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> property, which can be accessed from the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or <xref:System.Web.UI.Page>. The ASP.NET session identifier is a randomly generated number encoded into a 24-character string consisting of lowercase characters from a to z and numbers from 0 to 5.  
   
- By default, the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> value is sent in a cookie with each request to the ASP.NET application. The name of the cookie that contains the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> value is ASP.NET_SessionId by default. You can configure a different cookie name by setting the `cookieName` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) to the desired cookie name.  
+ By default, the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> value is sent in a cookie with each request to the ASP.NET application. The name of the cookie that contains the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> value is ASP.NET_SessionId by default. You can configure a different cookie name by setting the `cookieName` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) to the desired cookie name.  
   
  If you want to disable the use of cookies in your ASP.NET application and still make use of session state, you can configure your application to store the session identifier in the URL instead of a cookie by setting the `cookieless` attribute of the `sessionState` element to `true` in the Web.config file for your application. For more information, see the <xref:System.Web.SessionState.HttpSessionStateContainer.IsCookieless%2A> property.  
   
@@ -94,7 +94,7 @@
  [!code-csharp[System.Web.SessionState.ISessionIDModule#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.ISessionIDModule/CS/GuidSessionIDModule.cs#7)]
  [!code-vb[System.Web.SessionState.ISessionIDModule#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SessionState.ISessionIDModule/VB/GuidSessionIDModule.vb#7)]  
   
- To use the custom class demonstrated in this example, configure the sessionIDManagerType attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element, as shown in the following example.  
+ To use the custom class demonstrated in this example, configure the sessionIDManagerType attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element, as shown in the following example.  
   
 ```  
 <sessionState  
@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SessionState.SessionIDManager.Initialize%2A> method reads the session configuration data from the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element of the configuration files.  
+ The <xref:System.Web.SessionState.SessionIDManager.Initialize%2A> method reads the session configuration data from the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element of the configuration files.  
   
  ]]></format>
         </remarks>

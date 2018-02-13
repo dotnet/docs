@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.AspNetHostingPermission" />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +56,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -85,6 +93,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterControlState">
@@ -115,6 +127,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.SaveAdapterControlState" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.WebControls.Label" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -148,6 +166,11 @@
         <block subset="none" type="overrides">
           <para>If the adapter overrides the <see cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.OnInit(System.EventArgs)" /> method, it must call the corresponding method on the base class. Otherwise, the control's own <see cref="E:System.Web.UI.Control.Init" /> event will not be raised.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -183,6 +206,11 @@
         <block subset="none" type="overrides">
           <para>If the adapter overrides the <see cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.OnPreRender(System.EventArgs)" /> method, it must call the corresponding method on the base class. Otherwise, the control's own <see cref="M:System.Web.UI.WebControls.Menu.OnPreRender(System.EventArgs)" /> method will not be raised.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -214,6 +242,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The depth of the current node is more than allowed. This can be caused by an invalid declaration, by a change since the last request, or by a forged (spoofed) request.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -244,6 +276,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderItem(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.MenuItem,System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -279,6 +316,11 @@
  -or-  
   
  The current item is disabled.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderItem(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.MenuItem,System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -309,6 +351,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderItem(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.MenuItem,System.Int32)" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderItem">
@@ -345,6 +392,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterControlState">
@@ -371,6 +422,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.MenuAdapter.SaveAdapterControlState" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -399,6 +455,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
       </Docs>
     </Member>
   </Members>

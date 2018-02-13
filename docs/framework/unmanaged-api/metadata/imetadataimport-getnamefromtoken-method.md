@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetNameFromToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNameFromToken method [.NET Framework metadata]"
   - "IMetaDataImport::GetNameFromToken method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetNameFromToken Method
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  
@@ -62,5 +62,5 @@ HRESULT GetNameFromToken (
  **.NET Framework Versions:** 1.0  
   
 ## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)   
+ [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
  [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

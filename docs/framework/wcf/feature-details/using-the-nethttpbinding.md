@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the NetHttpBinding
 <xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply contracts and WebSockets for duplex contracts. This behavior can be overridden using the <!--zz <xref:System.ServiceModel.NetHttpBinding.WebSocketTransportUsage%2A> --> `WebSocketTransportUsage` setting:  
@@ -65,7 +67,7 @@ ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);
 ```  
   
 ## See Also  
- [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)   
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)   
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)   
+ [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)  
+ [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
+ [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)

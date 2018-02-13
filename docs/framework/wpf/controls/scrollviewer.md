@@ -21,6 +21,8 @@ caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ScrollViewer
 The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable region wherein content can be scrolled horizontally or vertically.  
@@ -35,5 +37,5 @@ The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable reg
  <xref:System.Windows.Controls.ScrollViewer>  
   
 ## See Also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)

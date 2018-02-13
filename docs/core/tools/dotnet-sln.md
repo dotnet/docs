@@ -7,6 +7,8 @@ ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet sln
 
@@ -14,7 +16,7 @@ ms.technology: dotnet-cli
 
 ## Name
 
-`dotnet-sln` - Modifies a .NET Core solution file.
+`dotnet sln` - Modifies a .NET Core solution file.
 
 ## Synopsis
 

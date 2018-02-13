@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewObjectNoConstructor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewObjectNoConstructor method [.NET Framework debugging]"
   - "ICorDebugEval::NewObjectNoConstructor method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewObjectNoConstructor Method
 Allocates a new object instance of the specified type, without attempting to call a constructor method.  

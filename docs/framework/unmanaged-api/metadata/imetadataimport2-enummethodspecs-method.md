@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumMethodSpecs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport2::EnumMethodSpecs method [.NET Framework metadata]"
   - "EnumMethodSpecs method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport2::EnumMethodSpecs Method
 Gets an enumerator for an array of MethodSpec tokens associated with the specified MethodDef or MemberRef token.  
@@ -78,5 +78,5 @@ HRESULT EnumMethodSpecs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)   
+ [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)  
  [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

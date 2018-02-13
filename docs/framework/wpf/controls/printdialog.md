@@ -20,6 +20,8 @@ caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PrintDialog
 The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a standard print dialog box that automatically configures a <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintQueue> according to user input.  
@@ -32,5 +34,5 @@ The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a 
  <xref:System.Printing.PrintQueue>  
   
 ## See Also  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

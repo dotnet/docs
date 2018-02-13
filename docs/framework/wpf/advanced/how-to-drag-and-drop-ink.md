@@ -9,18 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dragging ink"
-  - "ink, dragging"
-  - "ink, drag-and-drop"
-  - "ink, dropping"
+  - "dragging ink [WPF]"
+  - "ink [WPF], dragging"
+  - "ink [WPF], drag-and-drop"
+  - "ink [WPF], dropping"
   - "drag-and-drop ink"
-  - "dropping ink"
+  - "dropping ink [WPF]"
 ms.assetid: 932dc410-2bf3-4486-ab31-13487ba59f60
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Drag and Drop Ink
 ## Example  

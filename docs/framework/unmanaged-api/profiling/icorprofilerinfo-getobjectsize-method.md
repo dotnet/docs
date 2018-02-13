@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetObjectSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectSize method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetObjectSize method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetObjectSize Method
 Gets the size of a specified object.  

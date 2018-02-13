@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::ComputePointer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::ComputePointer method [.NET Framework metadata]"
   - "ComputePointer method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::ComputePointer Method
 Determines the buffer for the specified code section.  

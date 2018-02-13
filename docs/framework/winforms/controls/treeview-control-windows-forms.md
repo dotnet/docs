@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "checked list items, Windows Forms controls"
-  - "list controls, Windows Forms"
-  - "list items, Windows Forms controls that display"
+  - "checked list items [Windows Forms], Windows Forms controls"
+  - "list controls [Windows Forms], Windows Forms"
+  - "list items [Windows Forms], Windows Forms controls that display"
   - "TreeView control [Windows Forms]"
 ms.assetid: 879438b4-4eac-45c6-b345-0229c9b21ab0
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TreeView Control (Windows Forms)
 The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way files and folders are displayed in the left pane of the Windows Explorer feature in Windows operating systems.  

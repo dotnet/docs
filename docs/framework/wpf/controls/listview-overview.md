@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, ListView"
+  - "controls [WPF], ListView"
   - "ListView controls [WPF], about ListView control"
 ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListView Overview
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items in different layouts or views. For example, a user may want to display data items in a table and also to sort its columns.  
@@ -87,10 +92,10 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
  For an example of a custom view mode, see [ListView with Multiple Views Sample](http://go.microsoft.com/fwlink/?LinkID=160013).  
   
 ## See Also  
- <xref:System.Windows.Controls.GridView>   
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.ListViewItem>   
- <xref:System.Windows.Data.Binding>   
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
+ <xref:System.Windows.Controls.GridView>  
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.ListViewItem>  
+ <xref:System.Windows.Data.Binding>  
+ [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
  [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

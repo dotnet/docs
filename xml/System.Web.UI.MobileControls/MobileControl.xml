@@ -54,6 +54,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.MobileControl.MobilePage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -128,6 +129,7 @@
         <param name="index">The index of the control in the <see cref="P:System.Web.UI.Control.Controls" /> collection.</param>
         <summary>Called after a child control is added to the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.AddedControl(System.Web.UI.Control,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddLinkedForms">
@@ -185,6 +187,7 @@
         <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
         <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -225,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleSheetSkin">
@@ -295,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Style" />
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -494,6 +499,7 @@
         <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The DeviceSpecific/Choice construct associated with the control, or <see langword="null" /> if no such construct exists.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -564,6 +570,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="FirstPage">
@@ -643,6 +650,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -683,6 +691,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -722,6 +731,7 @@ public override void EnsureTemplatedUI()
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control is not in a form as required. The only mobile controls not required to be in a <see cref="T:System.Web.UI.MobileControls.Form" /> are a <see cref="T:System.Web.UI.MobileControls.Form" /> and a <see cref="T:System.Web.UI.MobileControls.StyleSheet" />.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -780,6 +790,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -873,7 +884,7 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
+ To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
   
  ]]></format>
         </remarks>
@@ -957,6 +968,7 @@ public override void EnsureTemplatedUI()
         <param name="state">Current view state of the control.</param>
         <summary>Loads private view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.SavePrivateViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -978,6 +990,7 @@ public override void EnsureTemplatedUI()
         <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
         <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.MobileControl.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MobilePage">
@@ -1015,6 +1028,7 @@ public override void EnsureTemplatedUI()
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control is not in a <see cref="T:System.Web.UI.MobileControls.MobilePage" />. (Only occurs at run time.)</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -1036,6 +1050,7 @@ public override void EnsureTemplatedUI()
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1057,6 +1072,7 @@ public override void EnsureTemplatedUI()
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -1088,6 +1104,9 @@ public override void EnsureTemplatedUI()
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the control contains custom attributes and the current page does not allow custom attributes on controls.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.Page" />
+        <altmember cref="P:System.Web.UI.Page.IsPostBack" />
       </Docs>
     </Member>
     <Member MemberName="OnPageChange">
@@ -1139,6 +1158,7 @@ public override void EnsureTemplatedUI()
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -1221,6 +1241,8 @@ public override void EnsureTemplatedUI()
         <param name="pager">The pager.</param>
         <summary>Paginates the control and its children. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
+        <altmember cref="T:System.Web.UI.MobileControls.TextView" />
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -1242,6 +1264,7 @@ public override void EnsureTemplatedUI()
         <param name="control">The <see cref="T:System.Web.UI.Control" /> that has been removed.</param>
         <summary>Called after a child control is removed from the <see cref="P:System.Web.UI.Control.Controls" /> collection of the <see cref="T:System.Web.UI.Control" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.RemovedControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1263,6 +1286,7 @@ public override void EnsureTemplatedUI()
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
         <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -1325,6 +1349,7 @@ public override void EnsureTemplatedUI()
         </remarks>
         <exception cref="T:System.Exception">
           <paramref name="formID" /> does not refer to an existing <see cref="T:System.Web.UI.MobileControls.Form" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ResolveUrl">
@@ -1373,6 +1398,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1392,6 +1418,7 @@ public override void EnsureTemplatedUI()
         <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>Returns the server control's current view state. If there is no view state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SetAttribute">
@@ -1482,6 +1509,7 @@ public override void EnsureTemplatedUI()
         <summary>Gets the style of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The style of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="StyleReference">
@@ -1514,10 +1542,11 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/en-us/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
+ The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/library/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -1547,6 +1576,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -1577,6 +1607,7 @@ public override void EnsureTemplatedUI()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1627,7 +1658,7 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
+ This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/library/78f2786d-0b5b-4760-9616-5027357713c2).  
   
  ]]></format>
         </remarks>

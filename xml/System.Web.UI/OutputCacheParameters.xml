@@ -11,12 +11,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
+    <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to initialize the output cache for a page and its contents at run time.  
+ The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to initialize the output cache for a page and its contents at run time.  
   
  ]]></format>
     </remarks>
@@ -60,6 +60,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+        <altmember cref="P:System.Web.Configuration.OutputCacheProfile.Name" />
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -78,6 +80,7 @@
         <summary>Gets or sets the amount of time that a cache entry is to remain in the output cache.</summary>
         <value>The amount of time, in seconds, that a cache entry is to remain in the output cache. The default is 0, which indicates an infinite duration.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.Duration" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -115,6 +118,7 @@
         <summary>Gets or sets a value that determines the location of the cache entry.</summary>
         <value>One of the <see cref="T:System.Web.UI.OutputCacheLocation" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.OutputCacheLocation" />
       </Docs>
     </Member>
     <Member MemberName="NoStore">
@@ -134,6 +138,7 @@
         <value>
           <see langword="true" /> if the <see langword="Cache-Control: no-store" /> directive is set on <see cref="T:System.Web.HttpResponse" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpCachePolicy.SetNoStore" />
       </Docs>
     </Member>
     <Member MemberName="SqlDependency">
@@ -159,6 +164,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.SqlDependency" />
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="VaryByContentEncoding">
@@ -186,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -204,6 +212,7 @@
         <summary>Gets or sets a semicolon-delimited set of control identifiers contained within the current page or user control used to vary the current cache entry.</summary>
         <value>A semicolon-separated list of strings used to vary an entry's output cache. The <see cref="P:System.Web.UI.OutputCacheParameters.VaryByControl" /> property is set to fully qualified control identifiers, where the identifier is a concatenation of control IDs starting from the top-level parent control and delimited with a dollar sign ($) character.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByControls" />
       </Docs>
     </Member>
     <Member MemberName="VaryByCustom">
@@ -229,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByCustom" />
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -279,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
       </Docs>
     </Member>
   </Members>

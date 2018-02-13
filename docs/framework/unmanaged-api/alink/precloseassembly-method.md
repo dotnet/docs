@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "PreCloseAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "PreCloseAssembly method"
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # PreCloseAssembly Method
 Closes the assembly file. Call this method after closing all other files, but before closing the assembly file. Do not call this method for unbound modules.  
@@ -51,6 +51,6 @@ HRESULT PreCloseAssembly(
  Requires alink.h.  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

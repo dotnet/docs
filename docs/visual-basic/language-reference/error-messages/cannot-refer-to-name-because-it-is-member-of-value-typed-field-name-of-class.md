@@ -1,40 +1,21 @@
 ---
 title: "Cannot refer to &#39;&lt;name&gt;&#39; because it is a member of the value-typed field &#39;&lt;name&gt;&#39; of class &#39;&lt;classname&gt;&#39; which has &#39;System.MarshalByRefObject&#39; as a base class"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc30310"
   - "bc30310"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30310"
 ms.assetid: 2aeb8872-7c87-4f01-98ef-9714ba3eebbe
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Cannot refer to &#39;&lt;name&gt;&#39; because it is a member of the value-typed field &#39;&lt;name&gt;&#39; of class &#39;&lt;classname&gt;&#39; which has &#39;System.MarshalByRefObject&#39; as a base class
 The `System.MarshalByRefObject` class enables applications that support remote access to objects across application domain boundaries. Types must inherit from the `MarshalByRejectObject` class when the type is used across application domain boundaries. The state of the object must not be copied because the members of the object are not usable outside the application domain in which they were created.  
@@ -48,5 +29,5 @@ The `System.MarshalByRefObject` class enables applications that support remote a
 2.  Explicitly qualify the member with the `Me` keyword.  
   
 ## See Also  
- <xref:System.MarshalByRefObject>   
+ <xref:System.MarshalByRefObject>  
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

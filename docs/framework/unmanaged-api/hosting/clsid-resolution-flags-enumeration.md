@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLSID_RESOLUTION_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLSID_RESOLUTION_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: cd8b9879-962a-4811-aa46-2e2b6bae0d84
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLSID_RESOLUTION_FLAGS Enumeration
 Contains values that indicate how the common language runtime (CLR) should resolve a `CLSID`.  

@@ -62,7 +62,7 @@ You can create the School database on any server that's running SQL Server to wh
 3. Open the shortcut menu for the new connection node, and then choose **New Query**.
 <br />
 
-4. Open [Creating the School Sample Database](http://go.microsoft.com/fwlink/?LinkID=237278) on the Microsoft website, and then copy and paste the database script that creates the Student database into the editor window.
+4. Open [Creating the School Sample Database](https://msdn.microsoft.com/library/bb399731(v=vs.100).aspx) on the Microsoft website, and then copy and paste the database script that creates the School database into the editor window.
 <br />
 
 
@@ -122,7 +122,7 @@ In this step, you set up a type provider with a data connection and obtain a dat
 type private EntityConnection = SqlEntityConnection<ConnectionString="Server=SERVER\InstanceName;Initial Catalog=School;Integrated Security=SSPI;MultipleActiveResultSets=true",Pluralize = true>
 ```
 
-  This action sets up a type provider with the database connection that you created earlier. The property `MultipleActiveResultSets` is needed when you use the ADO.NET Entity Framework because this property allows multiple commands to execute asynchronously on the database in one connection, which can occur frequently in ADO.NET Entity Framework code. For more information, see [Multiple Active Result Sets (MARS)](http://go.microsoft.com/fwlink/?LinkId=236929).
+  This action sets up a type provider with the database connection that you created earlier. The property `MultipleActiveResultSets` is needed when you use the ADO.NET Entity Framework because this property allows multiple commands to execute asynchronously on the database in one connection, which can occur frequently in ADO.NET Entity Framework code. For more information, see [Multiple Active Result Sets (MARS)](/sql/relational-databases/native-client/features/using-multiple-active-result-sets-mars).
 <br />
 
 2. Get the data context, which is an object that contains the database tables as properties and the database stored procedures and functions as methods.
@@ -236,14 +236,9 @@ Explore other query options by reviewing the query operators available in [Query
 
 
 ## See Also
-[Type Providers](index.md)
-
-[SqlEntityConnection Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/sqlentityconnection-type-provider-%5bfsharp%5d)
-
-[Walkthrough: Generating F# Types from an EDMX Schema File](generating-fsharp-types-from-edmx.md)
-
-[ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572)
-
-[.edmx File Overview](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)
-
-[EDM Generator &#40;EdmGen.exe&#41;](https://msdn.microsoft.com/library/bb387165)
+[Type Providers](index.md)  
+[SqlEntityConnection Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/sqlentityconnection-type-provider-%5bfsharp%5d)  
+[Walkthrough: Generating F# Types from an EDMX Schema File](generating-fsharp-types-from-edmx.md)  
+[ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572)  
+[.edmx File Overview](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)  
+[EDM Generator &#40;EdmGen.exe&#41;](https://msdn.microsoft.com/library/bb387165)  

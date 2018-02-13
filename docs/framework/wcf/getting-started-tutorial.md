@@ -9,18 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF [WCF], getting started"
   - "Windows Communication Foundation [WCF], getting started"
   - "getting started [WCF]"
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 caps.latest.revision: 47
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started Tutorial
 The topics contained in this section are intended to give you quick exposure to the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] programming experience. They are designed to be completed in the order of the list at the bottom of this topic. Working through this tutorial gives you an introductory understanding of the steps required to create [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service and client applications. A service exposes one or more endpoints, each of which exposes one or more service operations. The *endpoint* of a service specifies an address where the service can be found, a binding that contains the information that describes how a client must communicate with the service, and a contract that defines the functionality provided by the service to its clients.  
@@ -34,7 +33,7 @@ The topics contained in this section are intended to give you quick exposure to 
 > [!NOTE]
 >  If you are running [!INCLUDE[wv](../../../includes/wv-md.md)] or later versions of the Windows operating system, you must start [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] by going to the Start menu and right clicking Visual Studio 2011 and selecting **Run as Administrator**. To always launch Visual Studio 2011 as an administrator you can create a short cut, right click the short cut, select properties, select the **Compatibility** tab, and check the **Run this program as an administrator** checkbox. When you start Visual Studio 2011 with this shortcut, it will always run as administrator.  
   
- For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).  
+ For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
  For more in-depth information about creating services and clients, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).  
   
@@ -63,12 +62,12 @@ The topics contained in this section are intended to give you quick exposure to 
  <xref:System.ServiceModel.OperationContractAttribute>  
   
 ## Related Sections  
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
   
  [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
   
 ## See Also  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)   
- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)   
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)   
+ [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
+ [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)  
+ [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)

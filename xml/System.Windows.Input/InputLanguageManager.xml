@@ -30,6 +30,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.InputLanguageEventArgs" />
+    <altmember cref="T:System.Windows.Input.InputLanguageEventHandler" />
+    <altmember cref="T:System.Windows.Input.InputLanguageChangedEventArgs" />
+    <altmember cref="T:System.Windows.Input.InputLanguageChangingEventArgs" />
+    <altmember cref="T:System.Windows.Input.IInputLanguageSource" />
+    <altmember cref="T:System.Windows.Input.TextComposition" />
+    <altmember cref="T:System.Windows.Input.InputMethod" />
   </Docs>
   <Members>
     <Member MemberName="AvailableInputLanguages">
@@ -167,6 +174,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.SetInputLanguage(System.Windows.DependencyObject,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="GetRestoreInputLanguage">
@@ -195,6 +203,7 @@
         <returns>The current value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanged">
@@ -212,6 +221,7 @@
       <Docs>
         <summary>Occurs when a change of input language is completed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanging">
@@ -229,6 +239,7 @@
       <Docs>
         <summary>Occurs when a change of input language is initiated.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageProperty">
@@ -292,6 +303,8 @@
         <summary>Report the completion of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanging(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ReportInputLanguageChanging">
@@ -317,6 +330,8 @@
         <returns>**true** to indicate that the reported change of input language was accepted; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
+        <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanged(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="RestoreInputLanguageProperty">
@@ -368,6 +383,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.GetInputLanguage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetRestoreInputLanguage">
@@ -392,6 +408,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> dependency property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputLanguageManager.GetRestoreInputLanguage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
   </Members>

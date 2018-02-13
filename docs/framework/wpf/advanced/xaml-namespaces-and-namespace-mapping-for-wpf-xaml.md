@@ -9,20 +9,25 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "custom classes, mapping namespaces to"
-  - "XAML, namespaces"
-  - "namespace mapping"
-  - "assemblies, mapping namespaces to"
-  - "mapping namespaces"
-  - "XAML, namespace mapping"
-  - "classes, mapping namespaces to"
-  - "namespaces"
+  - "custom classes [WPF], mapping namespaces to"
+  - "XAML [WPF], namespaces"
+  - "namespace mapping [WPF]"
+  - "assemblies [WPF], mapping namespaces to"
+  - "mapping namespaces [WPF]"
+  - "XAML [WPF], namespace mapping"
+  - "classes [WPF], mapping namespaces to"
+  - "namespaces [WPF]"
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Namespaces and Namespace Mapping for WPF XAML
 This topic further explains the presence and purpose of the two XAML namespace mappings as often found in the root tag of a WPF XAML file. It also describes how to produce similar mappings for using elements that are defined in your own code, and/or within separate assemblies.  
@@ -140,5 +145,5 @@ End Namespace
  Compiled BAML (generated via PresentationBuildTask) uses all steps, although BAML also should not contain unqualified assembly names.  
   
 ## See Also  
- [Understanding XML Namespaces](http://go.microsoft.com/fwlink/?LinkId=98069)   
+ [Understanding XML Namespaces](http://go.microsoft.com/fwlink/?LinkId=98069)  
  [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

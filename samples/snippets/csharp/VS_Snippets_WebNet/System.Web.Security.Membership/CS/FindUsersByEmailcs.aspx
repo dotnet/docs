@@ -21,7 +21,7 @@ public void GoButton_OnClick(object sender, EventArgs args)
 <form id="form1" runat="server">
   <h3>User List</h3>
 
-  E-mail address to Search for: 
+  Email address to Search for: 
     <asp:TextBox id="EmailTextBox" runat="server" />
     <asp:Button id="GoButton" Text=" Go " OnClick="GoButton_OnClick" runat="server" /><br />
 

@@ -1132,5 +1132,23 @@ public void SetSeriesShadowOffset ()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a sort on a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" />. Note that the <see cref="T:System.Web.UI.DataVisualization.Charting.DataManipulator" /> class provides sort methods that have greater flexibility than these sort methods.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetToken method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetToken method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugClass::GetToken Method
 Gets the `TypeDef` metadata token that references the definition of this class.  

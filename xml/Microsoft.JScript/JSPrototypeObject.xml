@@ -14,6 +14,7 @@
     <summary>Adds a constructor function property to a <see cref="T:Microsoft.JScript.JSObject" /> for early binding purposes. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ScriptFunction" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -32,6 +33,7 @@
         <summary>Stores a constructor function object that defines a prototype-based object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptFunction" />
       </Docs>
     </Member>
   </Members>

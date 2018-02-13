@@ -8,27 +8,28 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 api_name: 
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
 api_location: 
   - "System.Runtime.WindowsRuntime.dll"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method
 [Supported in the .NET Framework 4.5.1 and later versions]  
   
  Converts the specified stream to a random access stream.  
   
- **Namespace:** <xref:System.IO?displayProperty=nameWithType>   
+ **Namespace:** <xref:System.IO?displayProperty=nameWithType>  
  **Assembly:** System.Runtime.WindowsRuntime (in System.Runtime.WindowsRuntime.dll)  
   
 ## Syntax  
@@ -74,5 +75,5 @@ A [!INCLUDE[wrt](../../../includes/wrt-md.md)] random access stream, which repre
  Supported in: Windows 8.1  
   
 ## See Also  
- <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions`   
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions`  
  [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)

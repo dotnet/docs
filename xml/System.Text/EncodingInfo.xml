@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Text.Encoding.GetEncodings" />
   </Docs>
   <Members>
     <Member MemberName="CodePage">
@@ -83,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -126,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -204,6 +207,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="P:System.Text.EncodingInfo.CodePage" />
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -284,6 +290,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.String)" />
+        <altmember cref="P:System.Text.EncodingInfo.DisplayName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
   </Members>

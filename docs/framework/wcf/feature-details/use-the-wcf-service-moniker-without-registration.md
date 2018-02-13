@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "COM [WCF], service monikers without registration"
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use the Windows Communication Foundation Service Moniker without Registration
 To connect to and communicate with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application must have the details of the service address, the binding configuration, and the service contract.  

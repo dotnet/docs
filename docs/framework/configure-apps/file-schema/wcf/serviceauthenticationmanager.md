@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceAuthenticationManager&gt;
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator..  

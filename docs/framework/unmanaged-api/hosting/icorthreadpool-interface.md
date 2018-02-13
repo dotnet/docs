@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorThreadpool"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool interface [.NET Framework hosting]"
 ms.assetid: 18485a27-cae3-4c6a-baa8-f7df601122d5
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorThreadpool Interface
 Provides methods for accessing the thread pool.  

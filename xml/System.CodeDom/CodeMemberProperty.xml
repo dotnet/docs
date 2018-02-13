@@ -91,6 +91,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
+        <altmember cref="T:System.CodeDom.CodeMethodReturnStatement" />
       </Docs>
     </Member>
     <Member MemberName="HasGet">
@@ -123,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.CodeDom.CodeMemberProperty.HasSet" />
       </Docs>
     </Member>
     <Member MemberName="HasSet">
@@ -156,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.CodeDom.CodeMemberProperty.HasGet" />
       </Docs>
     </Member>
     <Member MemberName="ImplementationTypes">
@@ -216,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Docs>
     </Member>
     <Member MemberName="PrivateImplementationType">
@@ -274,6 +279,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
+        <altmember cref="T:System.CodeDom.CodePropertySetValueReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="Type">

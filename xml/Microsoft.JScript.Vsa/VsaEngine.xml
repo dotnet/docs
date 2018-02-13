@@ -942,5 +942,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

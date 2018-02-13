@@ -9,6 +9,8 @@ ms.topic: get-started-article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
+ms.workload: 
+  - dotnetcore
 ---
 
 # Getting started with .NET Core on macOS
@@ -76,7 +78,7 @@ This adds `Newtonsoft.Json` and its dependencies to the library project. Alterna
 </ItemGroup>
 ```
 
-Execute [`dotnet restore`](../tools/dotnet-restore.md), which restores dependencies and creates an *obj* folder inside *library* with three files in it, including a *project.assets.json* file:
+Execute [`dotnet restore`](../tools/dotnet-restore.md), ([see note](#dotnet-restore-note)) which restores dependencies and creates an *obj* folder inside *library* with three files in it, including a *project.assets.json* file:
 
 ```console
 dotnet restore
@@ -156,7 +158,7 @@ Note that you assert the value 42 is not equal to 19+23 (or 42) when you first c
 From the *golden* folder, execute the following commands:
 
 ```console
-dotnet restore
+dotnet restore 
 dotnet test test-library/test-library.csproj
 ```
 
@@ -190,7 +192,7 @@ Create the dependency on the library by running the `dotnet add reference` comma
 dotnet add app/app.csproj reference library/library.csproj
 ```
 
-Run `dotnet restore` to restore the dependencies of the three projects in the solution. Open *Program.cs* and replace the contents of the `Main` method with the following line:
+Run `dotnet restore` ([see note](#dotnet-restore-note)) to restore the dependencies of the three projects in the solution. Open *Program.cs* and replace the contents of the `Main` method with the following line:
 
 ```csharp
 WriteLine($"The answer is {new Thing().Get(19, 23)}");
@@ -218,3 +220,6 @@ Open the debugger tab by selecting the Debug icon in the Visual Studio Code tool
 ![Visual Studio Code Debugger](./media/using-on-macos/vscodedebugger.png)
 
 Press the Play button to start the application under the debugger. The app begins execution and runs to the breakpoint, where it stops. Step into the `Get` method and make sure that you have passed in the correct arguments. Confirm that the answer is 42.
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

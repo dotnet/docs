@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property after an update operation. To keep the <xref:System.Web.UI.WebControls.DetailsView> control in edit mode, set the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.%23ctor%2A> constructor.  
   
@@ -31,11 +31,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdated> event to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -103,11 +117,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows%2A> property to determine the number of rows affected by an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -139,11 +158,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception%2A> property to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -173,11 +197,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="KeepInEditMode">
@@ -210,11 +239,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode%2A> property to keep a <xref:System.Web.UI.WebControls.DetailsView> control in edit mode after an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -248,11 +281,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Keys%2A> property to access the values of the key field for an updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -286,11 +324,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.NewValues%2A> property to access the new values entered by the user for the non-key fields of the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -324,11 +367,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.OldValues%2A> property to access the original values of the non-key fields for the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
       </Docs>
     </Member>
   </Members>

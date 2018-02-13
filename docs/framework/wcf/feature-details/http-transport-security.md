@@ -14,6 +14,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # HTTP Transport Security
 When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
@@ -59,5 +61,5 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See Also  
- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)   
+ [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  
  [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)

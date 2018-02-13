@@ -1826,6 +1826,7 @@
         <summary>Returns a <see cref="T:System.Type" /> object representing a one-dimensional array of the current type, with a lower bound of zero.</summary>
         <returns>A <see cref="T:System.Type" /> object representing a one-dimensional array of the current type, with a lower bound of zero.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Type.MakeArrayType" />
       </Docs>
     </Member>
     <Member MemberName="MakeArrayType">
@@ -1856,6 +1857,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="rank" /> is less than 1.</exception>
+        <altmember cref="M:System.Type.MakeArrayType" />
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -1881,6 +1883,7 @@
         <summary>Returns a <see cref="T:System.Type" /> object that represents the current type when passed as a **ref** parameter (**ByRef** parameter in Visual Basic).</summary>
         <returns>A <see cref="T:System.Type" /> object that represents the current type when passed as a **ref** parameter (**ByRef** parameter in Visual Basic).</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Type.MakeByRefType" />
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
@@ -1934,6 +1937,7 @@
         <summary>Returns a <see cref="T:System.Type" /> object that represents a pointer to the current type.</summary>
         <returns>A <see cref="T:System.Type" /> object that represents a pointer to the current type.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Type.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -2401,5 +2405,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets custom attributes for this constructor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method is not supported on types that have not been completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeArrayType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> object representing an array of the current type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes defined for this constructor.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

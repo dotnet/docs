@@ -1,14 +1,12 @@
 ---
 title: "-langversion (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/langversion"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/langversion compiler option [C#]"
   - "-langversion compiler option [C#]"
@@ -17,28 +15,14 @@ ms.assetid: 3fb00b05-a0ff-4782-b313-13a4c0f62d94
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /langversion (C# Compiler Options)
+# -langversion (C# Compiler Options)
 Causes the compiler to accept only syntax that is included in the chosen C# language specification.  
   
 ## Syntax  
   
 ```console  
-/langversion:option  
+-langversion:option  
 ```  
   
 ## Arguments  
@@ -65,13 +49,13 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 
   
 ## Remarks  
- Metadata referenced by your C# application is not subject to **/langversion** compiler option.  
+ Metadata referenced by your C# application is not subject to **-langversion** compiler option.  
   
- Because each version of the C# compiler contains extensions to the language specification, **/langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
+ Because each version of the C# compiler contains extensions to the language specification, **-langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
  
  Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
   
- Regardless of which **/langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [/moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **/langversion:ISO-1**.  
+ Regardless of which **-langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -86,24 +70,24 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.LanguageVersion%2A>.  
     
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
  
 ### C# Language Specification
- [C# Language Specification Reference](../../../csharp/language-reference/language-specification/index.md) : .NET Foundation   
- C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue   
- C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue   
- C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://go.microsoft.com/fwlink/?LinkId=144406) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards   
- C# 3.0 [CSharp Language Specification.doc](http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc) C# Language Specification Version 3.0 : Microsoft Corporation   
+ [C# Language Specification Reference](../../../csharp/language-reference/language-specification/index.md) : .NET Foundation  
+ C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue  
+ C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue  
+ C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://standards.iso.org/ittf/PubliclyAvailableStandards/c042926_ISO_IEC_23270_2006(E).zip) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards  
+ C# 3.0 [CSharp Language Specification.doc](http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc) C# Language Specification Version 3.0 : Microsoft Corporation  
  C# 4.0 [Ecma-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) Standard ECMA-334 4th Edition    
- C# 5.0 [CSharp Language Specification.docx](https://www.microsoft.com/en-us/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation   
- C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation   
- C# 7.0 (not currently available)   
+ C# 5.0 [CSharp Language Specification.docx](https://www.microsoft.com/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation  
+ C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation  
+ C# 7.0 (not currently available)  
 
 <!--- Uncomment and add to the above when they become officially released
- C# 7.1 (spec is not yet finished)   
- C# 7.2 (spec is not yet finished)   
- C# 8.0 (spec is not yet finished)   
+ C# 7.1 (spec is not yet finished)  
+ C# 7.2 (spec is not yet finished)  
+ C# 8.0 (spec is not yet finished)  
 -->
 
 ### Minimum compiler version needed to support all language features   

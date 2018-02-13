@@ -1,40 +1,21 @@
 ---
 title: "IsTrue Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "IsTrue operator"
+  - "IsTrue operator [Visual Basic]"
   - "OrElse operator [Visual Basic]"
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IsTrue Operator (Visual Basic)
 Determines whether an expression is `True`.  
@@ -67,6 +48,6 @@ Determines whether an expression is `True`.
  [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
   
 ## See Also  
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)   
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
+ [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
  [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)

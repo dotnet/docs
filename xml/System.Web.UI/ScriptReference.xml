@@ -44,8 +44,8 @@
   
  The following example shows a page that uses the custom control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  
   
  The following example shows the custom control class definition.  
   
@@ -160,8 +160,8 @@
   
  The following example shows a page that uses the custom control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  
   
  The following example shows the custom control class definition.  
   
@@ -331,8 +331,8 @@
   
  The following example shows a page that uses the custom control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  
   
  The following example shows the custom control class definition.  
   
@@ -371,5 +371,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[netfx40_long](~/includes/netfx40-long-md.md)] ships with a SQL persistence provider as a constituent of the SQL Workflow Instance Store, which is a concrete implementation of the <xref:System.Runtime.Persistence.InstanceStore> class and is used to persist state information in to the SQL Server database. When the `instanceEncodingOption` attribute is set to GZip for the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> service behavior associated with a service, the SQL persistence provider uses the GZip algorithm to encode instance state information for the instance of the service before saving the state information into the SQL Server persistence database.  
+ [!INCLUDE[netfx40_long](~/includes/netfx40-long-md.md)] ships with a SQL persistence provider as a constituent of the SQL Workflow Instance Store, which is a concrete implementation of the <xref:System.Runtime.DurableInstancing.InstanceStore> class and is used to persist state information in to the SQL Server database. When the `instanceEncodingOption` attribute is set to GZip for the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> service behavior associated with a service, the SQL persistence provider uses the GZip algorithm to encode instance state information for the instance of the service before saving the state information into the SQL Server persistence database.  
   
  ]]></format>
     </remarks>

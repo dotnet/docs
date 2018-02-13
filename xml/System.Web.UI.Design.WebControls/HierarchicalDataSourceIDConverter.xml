@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataSourceIDConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +48,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataSourceIDConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsValidDataSource">
@@ -74,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataSourceIDConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
       </Docs>
     </Member>
   </Members>

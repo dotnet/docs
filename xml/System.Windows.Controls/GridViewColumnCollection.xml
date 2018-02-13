@@ -25,6 +25,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumn" />
+    <altmember cref="T:System.Collections.ObjectModel.ObservableCollection`1" />
+    <altmember cref="T:System.Windows.Controls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +62,10 @@
       <Docs>
         <summary>Removes all of the <see cref="T:System.Windows.Controls.GridViewColumn" /> objects from the <see cref="T:System.Windows.Controls.GridViewColumnCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.RemoveItem(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.InsertItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.MoveItem(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.SetItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -132,6 +140,7 @@
         <param name="e">The event arguments.</param>
         <summary>Raises the <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event when the <see cref="T:System.Windows.Controls.GridViewColumnCollection" /> changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -153,6 +162,9 @@
         <param name="index">The position of the <see cref="T:System.Windows.Controls.GridViewColumn" /> to remove.</param>
         <summary>Removes a <see cref="T:System.Windows.Controls.GridViewColumn" /> from the <see cref="T:System.Windows.Controls.GridViewColumnCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.InsertItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.MoveItem(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.SetItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -183,6 +195,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.InsertItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.MoveItem(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.GridViewColumnCollection.RemoveItem(System.Int32)" />
       </Docs>
     </Member>
   </Members>

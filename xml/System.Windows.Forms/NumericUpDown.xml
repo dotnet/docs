@@ -65,6 +65,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.UpDownBase" />
+    <altmember cref="T:System.ComponentModel.ISupportInitialize" />
+    <altmember cref="T:System.Windows.Forms.DomainUpDown" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.UpDownBase" />
       </Docs>
     </Member>
     <Member MemberName="Accelerations">
@@ -132,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.NumericUpDownAcceleration" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -169,6 +174,7 @@
         <summary>Creates a new accessibility object for the control.</summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="DecimalPlaces">
@@ -215,6 +221,9 @@
  -or-  
   
  The value assigned is greater than 99.</exception>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Hexadecimal" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.ThousandsSeparator" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="DownButton">
@@ -240,6 +249,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpButton" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.ParseEditText" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -300,6 +314,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.DecimalPlaces" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.ThousandsSeparator" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -335,6 +352,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is not greater than or equal to zero.</exception>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -374,6 +393,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Increment" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -413,6 +435,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Increment" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -575,6 +600,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Value" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -669,6 +696,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="P:System.Windows.Forms.UpDownBase.UserEdit" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -779,6 +809,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.DecimalPlaces" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Hexadecimal" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -830,6 +863,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.DownButton" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.ParseEditText" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="UpdateEditText">
@@ -855,6 +893,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.DecimalPlaces" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Hexadecimal" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.ThousandsSeparator" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEditText">
@@ -880,6 +923,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.ParseEditText" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -924,6 +969,9 @@
  -or-  
   
  The assigned value is greater than the <see cref="P:System.Windows.Forms.NumericUpDown.Maximum" /> property value.</exception>
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Maximum" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Minimum" />
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       </Docs>
     </Member>
     <Member MemberName="ValueChanged">
@@ -960,6 +1008,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.NumericUpDown.Value" />
       </Docs>
     </Member>
   </Members>

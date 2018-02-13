@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ESymbolReadingPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ESymbolReadingPolicy enumeration [.NET Framework hosting]"
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ESymbolReadingPolicy Enumeration
 Contains values that set the policy for reading program database (PDB) files.  

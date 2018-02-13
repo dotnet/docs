@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IInstallReferenceEnum interface [.NET Framework fusion]"
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IInstallReferenceEnum Interface
 Represents an enumerator for the referenced assemblies installed in the global assembly cache.  
@@ -58,5 +58,5 @@ interface IInstallReferenceEnum : IUnknown {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
  [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)

@@ -18,7 +18,7 @@
 ## Remarks  
  To cancel the deletion of a row in a <xref:System.Windows.Forms.DataGridView.UserDeletingRow> event handler, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -31,6 +31,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.UserDeletingRow" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowCancelEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +60,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.UserDeletingRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowCancelEventArgs.Row" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -85,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.UserDeletingRow" />
       </Docs>
     </Member>
   </Members>

@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -378,6 +380,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.AllowColumnReorder" />
       </Docs>
     </Member>
     <Member MemberName="ListView">
@@ -542,6 +545,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawColumnHeader" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -608,5 +613,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

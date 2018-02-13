@@ -1,6 +1,6 @@
 ---
 title: Service-oriented architecture
-description: .NET Microservices Architecture for Containerized .NET Applications | Service-oriented architecture 
+description: .NET Microservices Architecture for Containerized .NET Applications | Service-oriented architecture
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
@@ -8,6 +8,9 @@ ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Service-oriented architecture 
 
@@ -17,9 +20,9 @@ Those services can now be deployed as Docker containers, which solves deployment
 
 Docker containers are useful (but not required) for both traditional service-oriented architectures and the more advanced microservices architectures.
 
-Microservices derive from SOA, but SOA is different from microservices architecture. Features like big central brokers, central orchestrators at the organization level, and the [Enterprise Service Bus (ESB)](https://en.wikipedia.org/wiki/Enterprise_service_bus) are typical in SOA. But in most cases these are anti-patterns in the microservice community. In fact, some people argue that “The microservice architecture is SOA done right.”
+Microservices derive from SOA, but SOA is different from microservices architecture. Features like big central brokers, central orchestrators at the organization level, and the [Enterprise Service Bus (ESB)](https://en.wikipedia.org/wiki/Enterprise_service_bus) are typical in SOA. But in most cases, these are anti-patterns in the microservice community. In fact, some people argue that “The microservice architecture is SOA done right.”
 
-This guide focuses on microservices, because an SOA approach is less prescriptive than the requirements and techniques used in a microservice architecture. If you know how to build a microservice-based application, you also know how to build a simpler service-oriented application.
+This guide focuses on microservices, because a SOA approach is less prescriptive than the requirements and techniques used in a microservice architecture. If you know how to build a microservice-based application, you also know how to build a simpler service-oriented application.
 
 
 

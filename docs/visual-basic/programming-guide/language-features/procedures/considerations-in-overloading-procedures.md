@@ -1,58 +1,40 @@
 ---
 title: "Considerations in Overloading Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "signatures, ParamArray arguments"
-  - "ParamArray keyword, parameter arrays"
-  - "ParamArray keyword, arguments and signatures"
-  - "function overloading, implicit overloads for ParamArray"
-  - "ParamArray keyword, signatures"
+  - "signatures [Visual Basic], ParamArray arguments"
+  - "ParamArray keyword [Visual Basic], parameter arrays"
+  - "ParamArray keyword [Visual Basic], arguments and signatures"
+  - "function overloading [Visual Basic], implicit overloads for ParamArray"
+  - "ParamArray keyword [Visual Basic], signatures"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], parameter arrays"
-  - "procedures, overloading"
-  - "parameters, lists"
-  - "function overloading, typeless programming"
+  - "procedures [Visual Basic], overloading"
+  - "parameters [Visual Basic], lists"
+  - "function overloading [Visual Basic], typeless programming"
   - "typeless programming"
-  - "function overloading, restrictions"
+  - "function overloading [Visual Basic], restrictions"
   - "arguments [Visual Basic], optional"
-  - "optional arguments, overloading"
-  - "signatures, procedure"
-  - "parameter lists"
-  - "parameter arrays, overloading arguments"
+  - "optional arguments [Visual Basic], overloading"
+  - "signatures [Visual Basic], procedure"
+  - "parameter lists [Visual Basic]"
+  - "parameter arrays [Visual Basic], overloading arguments"
   - "Visual Basic code, parameter lists"
-  - "procedure overloading, considerations"
-  - "Option Explicit statement"
-  - "restrictions, overloading procedures"
-  - "procedures, parameter lists"
+  - "procedure overloading [Visual Basic], considerations"
+  - "Option Explicit statement [Visual Basic]"
+  - "restrictions [Visual Basic], overloading procedures"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Considerations in Overloading Procedures (Visual Basic)
 When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](./procedure-overloading.md).  
@@ -144,12 +126,12 @@ When you overload a procedure, you must use a different *signature* for each ove
 -   The compiler cannot signal an error if the calling code passes a data type that the procedure does not support.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
- [Overload Resolution](./overload-resolution.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Troubleshooting Procedures](./troubleshooting-procedures.md)  
+ [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)  
+ [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)  
+ [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)  
+ [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)  
+ [Overload Resolution](./overload-resolution.md)  
  [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)

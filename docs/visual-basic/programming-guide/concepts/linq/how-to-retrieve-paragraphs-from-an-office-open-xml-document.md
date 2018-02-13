@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
 caps.latest.revision: 3
 author: dotnet-bot

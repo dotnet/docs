@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Annotations.IAnchorInfo" />
+    <altmember cref="M:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo(System.Windows.Annotations.AnnotationService,System.Windows.Annotations.Annotation)" />
   </Docs>
   <Members>
     <Member MemberName="BoundingEnd">
@@ -57,6 +59,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Annotations.IAnchorInfo" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo(System.Windows.Annotations.AnnotationService,System.Windows.Annotations.Annotation)" />
       </Docs>
     </Member>
     <Member MemberName="BoundingStart">
@@ -92,6 +96,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Annotations.IAnchorInfo" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo(System.Windows.Annotations.AnnotationService,System.Windows.Annotations.Annotation)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">

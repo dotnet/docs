@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetID method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::GetID method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::GetID Method
 Gets the operating system (OS) ID of the process.  

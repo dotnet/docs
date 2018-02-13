@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides access to the name/value pair of a custom (expando) attribute that was previously registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute" />
+    <altmember cref="M:System.Web.UI.ScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
   </Docs>
   <Members>
     <Member MemberName="Control">

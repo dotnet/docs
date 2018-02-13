@@ -36,6 +36,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.IHashCodeProvider" />
+    <altmember cref="T:System.Collections.IComparer" />
+    <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+    <altmember cref="T:System.Collections.IEqualityComparer" />
+    <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
   </Docs>
   <Members>
     <Member MemberName="GetHashCode">
@@ -75,6 +81,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
   </Members>

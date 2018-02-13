@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeTypeDeclarationCollection" />
+    <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -152,6 +154,7 @@ Implements Interface1
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeReferenceCollection" />
       </Docs>
     </Member>
     <Member MemberName="IsClass">
@@ -277,6 +280,7 @@ Implements Interface1
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.CodeDom.Compiler.GeneratorSupport.PartialTypes" />
       </Docs>
     </Member>
     <Member MemberName="IsStruct">
@@ -322,6 +326,7 @@ Implements Interface1
         <summary>Gets the collection of class members for the represented type.</summary>
         <value>A <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> object that indicates the class members.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeMemberCollection" />
       </Docs>
     </Member>
     <Member MemberName="PopulateBaseTypes">
@@ -399,6 +404,7 @@ Implements Interface1
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="TypeParameters">
@@ -435,7 +441,18 @@ Implements Interface1
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeParameterCollection" />
+        <altmember cref="T:System.CodeDom.CodeTypeParameter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

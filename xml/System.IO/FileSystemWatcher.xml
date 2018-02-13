@@ -39,10 +39,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/io/system/io/FileSystemWatcher.cs#a9eb0249dc928b09). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use <xref:System.IO.FileSystemWatcher> to watch for changes in a specified directory. You can watch for changes in files and subdirectories of the specified directory. You can create a component to watch files on a local computer, a network drive, or a remote computer.  
   
  To watch for changes in all files, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to an empty string ("") or use wildcards ("*.\*"). To watch a specific file, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to the file name. For example, to watch for changes in the file MyDoc.txt, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to "MyDoc.txt". You can also watch for changes in a certain type of file. For example, to watch for changes in text files, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to "\*.txt".  
@@ -109,6 +105,17 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.Diagnostics.ProcessStartInfo" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Named Permission Sets: <see langword="FullTrust" />.</permission>
+    <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+    <altmember cref="T:System.IO.NotifyFilters" />
+    <altmember cref="T:System.IO.FileSystemEventArgs" />
+    <altmember cref="T:System.IO.FileSystemEventHandler" />
+    <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+    <altmember cref="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+    <altmember cref="T:System.IO.InternalBufferOverflowException" />
+    <altmember cref="T:System.IO.RenamedEventArgs" />
+    <altmember cref="T:System.IO.RenamedEventHandler" />
+    <altmember cref="T:System.IO.WaitForChangedResult" />
+    <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +174,15 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.IO.NotifyFilters" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
+        <altmember cref="T:System.IO.InternalBufferOverflowException" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
+        <altmember cref="T:System.IO.RenamedEventHandler" />
+        <altmember cref="T:System.IO.WaitForChangedResult" />
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -217,6 +233,16 @@
         <exception cref="T:System.IO.PathTooLongException">
           <paramref name="path" /> is too long.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.IO.NotifyFilters" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="T:System.IO.InternalBufferOverflowException" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
+        <altmember cref="T:System.IO.RenamedEventHandler" />
+        <altmember cref="T:System.IO.WaitForChangedResult" />
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -273,6 +299,16 @@
         <exception cref="T:System.IO.PathTooLongException">
           <paramref name="path" /> is too long.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.IO.NotifyFilters" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="T:System.IO.InternalBufferOverflowException" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
+        <altmember cref="T:System.IO.RenamedEventHandler" />
+        <altmember cref="T:System.IO.WaitForChangedResult" />
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -307,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileSystemWatcher.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="Changed">
@@ -366,6 +403,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)" />
+        <altmember cref="P:System.IO.FileSystemWatcher.SynchronizingObject" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -422,6 +464,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.IO.FileSystemWatcher.Deleted" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" />
+        <altmember cref="P:System.IO.FileSystemWatcher.SynchronizingObject" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -476,6 +524,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.IO.FileSystemWatcher.Created" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" />
+        <altmember cref="P:System.IO.FileSystemWatcher.SynchronizingObject" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -644,6 +698,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileSystemWatcher.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -688,6 +743,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="T:System.IO.ErrorEventArgs" />
+        <altmember cref="T:System.IO.ErrorEventHandler" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -763,6 +824,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+        <altmember cref="P:System.IO.FileSystemWatcher.InternalBufferSize" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -829,6 +893,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="P:System.IO.FileSystemEventArgs.FullPath" />
+        <altmember cref="P:System.IO.RenamedEventArgs.OldFullPath" />
+        <altmember cref="P:System.IO.FileSystemWatcher.InternalBufferSize" />
+        <altmember cref="P:System.IO.FileSystemEventArgs.Name" />
+        <altmember cref="P:System.IO.RenamedEventArgs.OldName" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="InternalBufferSize">
@@ -874,6 +948,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+        <altmember cref="T:System.IO.InternalBufferOverflowException" />
       </Docs>
     </Member>
     <Member MemberName="NotifyFilter">
@@ -932,6 +1011,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The value is not a valid bitwise OR combination of the <see cref="T:System.IO.NotifyFilters" /> values.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value that is being set is not valid.</exception>
+        <altmember cref="T:System.IO.NotifyFilters" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
+        <altmember cref="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
+        <altmember cref="P:System.IO.FileSystemWatcher.InternalBufferSize" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -979,6 +1062,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.IO.FileSystemWatcher.Changed" />
+        <altmember cref="P:System.IO.FileSystemWatcher.NotifyFilter" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnCreated">
@@ -1026,6 +1113,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.IO.FileSystemWatcher.Created" />
+        <altmember cref="E:System.IO.FileSystemWatcher.Deleted" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleted">
@@ -1071,6 +1162,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.IO.FileSystemWatcher.Created" />
+        <altmember cref="E:System.IO.FileSystemWatcher.Deleted" />
+        <altmember cref="T:System.IO.FileSystemEventArgs" />
+        <altmember cref="T:System.IO.FileSystemEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnError">
@@ -1114,6 +1209,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.IO.FileSystemWatcher.Error" />
+        <altmember cref="T:System.IO.ErrorEventArgs" />
+        <altmember cref="T:System.IO.ErrorEventHandler" />
+        <altmember cref="T:System.IO.InternalBufferOverflowException" />
       </Docs>
     </Member>
     <Member MemberName="OnRenamed">
@@ -1148,7 +1247,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.FileSystemWatcher.OnRenamed%2A> is called when a file or directory within the directory being monitored is renamed.  
+ <xref:System.IO.FileSystemWatcher.OnRenamed%2A> is called when a file or directory within the directory being monitored is renamed. Its <xref:System.IO.RenamedEventArgs> argument contains information about the renaming operation, such as the type of change, the old and new path, and the old and new name. Note that its <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system. 
   
  Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1157,6 +1256,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.IO.FileSystemWatcher.Renamed" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
+        <altmember cref="T:System.IO.RenamedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -1236,6 +1338,8 @@
  -or-  
   
  The specified path contains invalid path characters.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Filter" />
       </Docs>
     </Member>
     <Member MemberName="Renamed">
@@ -1271,6 +1375,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ The `Renamed` event is an <xref:System.IO.RenamedEventHandler> delegate that has the following signature:
+
+ ```csharp
+public delegate void Renamed(object sender, RenamedEventArgs e);
+ ```
+ ```vb
+Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
+ ```
+ The <xref:System.IO.RenamedEventArgs> object provides information about the renaming operation, such as the type of the rename (the <xref:System.IO.FileSystemEventArgs.ChangeType> property), the old and new name, and the old and new path. Note that the <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system.
+
  Renaming the directory you are watching will not raise a notification. Notifications are only raised for entries inside the directory you are watching.  
   
    
@@ -1284,6 +1398,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" />
+        <altmember cref="P:System.IO.FileSystemWatcher.SynchronizingObject" />
+        <altmember cref="P:System.IO.FileSystemWatcher.Path" />
+        <altmember cref="T:System.IO.RenamedEventArgs" />
+        <altmember cref="T:System.IO.RenamedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -1372,6 +1491,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ISynchronizeInvoke" />
       </Docs>
     </Member>
     <Member MemberName="WaitForChanged">
@@ -1416,6 +1536,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.WaitForChangedResult" />
       </Docs>
     </Member>
     <Member MemberName="WaitForChanged">
@@ -1462,7 +1583,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.WaitForChangedResult" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForChanged">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A synchronous method that returns a structure that contains specific information on the change that occurred.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemWatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

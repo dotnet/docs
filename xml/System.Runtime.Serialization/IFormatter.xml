@@ -36,6 +36,8 @@
     <block subset="none" type="overrides">
       <para>All formatters must implement this interface. Use <see cref="M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)" /> to serialize an object or graph of objects. Use <see cref="M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)" /> to deserialize a stream and create a clone of the original object or graph of objects.</para>
     </block>
+    <altmember cref="T:System.Runtime.Serialization.Formatter" />
+    <altmember cref="T:System.Runtime.Serialization.ISerializable" />
   </Docs>
   <Members>
     <Member MemberName="Binder">

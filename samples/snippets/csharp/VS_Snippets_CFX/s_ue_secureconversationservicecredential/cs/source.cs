@@ -164,7 +164,7 @@ namespace Example
                 }
             }
 
-            // Use an index to track the next byte to read in the the data buffer.
+            // Use an index to track the next byte to read in the data buffer.
             int index = sizeof(int);
 
             // Retrieve the encrypted symmetric key.

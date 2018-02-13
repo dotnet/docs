@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "security [.NET Framework], partially trusted code"
   - "partially trusted code"
@@ -26,6 +21,8 @@ caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Libraries from Partially Trusted Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

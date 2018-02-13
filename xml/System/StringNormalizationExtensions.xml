@@ -14,6 +14,10 @@
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -26,14 +30,13 @@
   <Docs>
     <summary>Provides extension methods to work with string normalization.</summary>
     <remarks>
-        <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
 The extension methods of the <xref:System.StringNormalizationExtensions> class are designed to work with .NET implementations that do not support the <xref:System.String.IsNormalized%2A?displayProperty=nameWithType> and <xref:System.String.Normalize%2A?displayProperty=nameWithType> methods. However, these methods are included in the <xref:System.String> class in .NET Standard 2.0 and are therefore available on all .NET implementations that support the .NET Standard 2.0. For more information, see [.NET Standard](~/docs/standard/net-standard.md).
   
         ]]></format>
-    
     </remarks>
   </Docs>
   <Members>
@@ -53,6 +56,10 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -88,6 +95,10 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -126,6 +137,10 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -160,6 +175,10 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -179,5 +198,23 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
           <paramref name="value" /> contains invalid Unicode characters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsNormalized">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a string is normalized.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Normalize">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Normalizes a string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

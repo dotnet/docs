@@ -55,6 +55,7 @@
         <param name="index">The position in the collection to start copying from.</param>
         <summary>Copies each <see cref="T:System.Windows.Window" /> object in the collection to an array, starting from the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -180,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.WindowCollection.CopyTo(System.Windows.Window[],System.Int32)" />
       </Docs>
     </Member>
   </Members>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60151f6c-19b7-47af-9cdc-76c2ac95f301
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Correlation
 When workflow service applications communicate with other services, it is important that messages between them are dispatched to the appropriate workflow instance. Correlation provides the mechanism for this. The topics in this section provide an overview of correlation and how to use it in different workflow service scenarios.  
@@ -38,9 +40,9 @@ When workflow service applications communicate with other services, it is import
  Provides methods for troubleshooting correlation.  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.CorrelationHandle>   
- <xref:System.ServiceModel.Activities.Send>   
- <xref:System.ServiceModel.Activities.Receive>   
- <xref:System.ServiceModel.CorrelationQuery>   
- [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)   
+ <xref:System.ServiceModel.Activities.CorrelationHandle>  
+ <xref:System.ServiceModel.Activities.Send>  
+ <xref:System.ServiceModel.Activities.Receive>  
+ <xref:System.ServiceModel.CorrelationQuery>  
+ [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)  
  [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md)

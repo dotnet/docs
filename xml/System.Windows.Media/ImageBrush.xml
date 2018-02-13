@@ -31,6 +31,8 @@ An ImageBrush can paint shapes, controls, text, and more
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.MediaPermission">to display images that you don't have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
+    <altmember cref="P:System.Windows.Media.ImageBrush.ImageSource" />
+    <altmember cref="T:System.Windows.Media.TileBrush" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -234,5 +236,14 @@ An ImageBrush can paint shapes, controls, text, and more
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

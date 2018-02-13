@@ -1,19 +1,22 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Numbers in C#
 metadata:
-  title:  Numbers in C#
-  description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  title:  Numbers in C# interactive tutorial - C# quickstarts
+  description: In this quick start about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
+  ms.topic: get-started-article
+  ms.custom: mvc
   level: Beginner
   nextTutorialHref: branches-and-loops
   nextTutorialTitle: Branches and loops in C#
   displayType: two-column
   interactive: csharp
+  ms.prod: .net
+  ms.technology: devlang-csharp  
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+    This quick start teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 - title: Explore integer math
   durationInMinutes: 4
   content: |
@@ -33,7 +36,7 @@ items:
     - `/` for division
 
     > [!TIP]
-    > Throughout this tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
+    > Throughout this quick start, you can explore on your own by modifying the code you've written in the interactive window. This quick start provides examples that you can try at each step.
 
     Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the **Run** button.
 
@@ -104,8 +107,8 @@ items:
     ```
 
     You may have noticed an interesting behavior for integers. Integer
-    division always produces an integer result, even when the mathematical
-    result would include a decimal or fraction portion.
+    division always produces an integer result, even when you'd expect
+    the result to include a decimal or fractional portion.
 
     If you haven't seen this behavior, try the following:
 
@@ -134,8 +137,8 @@ items:
     int c = 3;
     int d = (a  + b) / c;
     int e = (a + b) % c;
-    Console.WriteLine("quotient: " + d);
-    Console.WriteLine("remainder: " + e);
+    Console.WriteLine($"quotient: {d}");
+    Console.WriteLine($"remainder: {e}");
     ```
 
     The C# integer type differs from mathematical integers in one other
@@ -145,7 +148,7 @@ items:
     ```csharp
     int max = int.MaxValue;
     int min = int.MinValue;
-    Console.WriteLine("The range of integers is " + min + " to " + max);
+    Console.WriteLine($"The range of integers is {min} to {max}");
     ```
 
     If a calculation produces a value that exceeds those limits, you
@@ -155,7 +158,7 @@ items:
 
     ```csharp
     int what = max + 3;
-    Console.WriteLine("An example of overflow: " + what);
+    Console.WriteLine($"An example of overflow: {what}");
     ```
     
     Notice that the answer is very close to the minimum (negative) integer. It's
@@ -175,7 +178,7 @@ items:
   content: |
     The `double` numeric type represents a double-precision floating point
     number. Those terms may be new to you. A **floating point** number is
-    useful to represent non-integral numbers that may be very large, or small
+    useful to represent non-integral numbers that may be very large or small
     in magnitude. **Double-precision** means that these numbers are stored
     using greater precision than **single-precision**. On modern computers,
     it is more common to use double precision than single precision numbers.
@@ -206,15 +209,12 @@ items:
     ```csharp
     double max = double.MaxValue;
     double min = double.MinValue;
-    Console.WriteLine("The range of double is " + min + " to " + max);
+    Console.WriteLine($"The range of double is {min} to {max}");
     ```
 
-    These values are printed out to represent scientific notation. The number to
-    the left of the `E` is the significant. The number to the right is the exponent,
-    as a power of 10. Internally, these numbers are represented similarly, but in 
-    a binary form. One part represents the significant binary digits.
-    Another part represents where to place the binary point (analogous to a decimal point) relative to
-    those significant digits.
+    These values are printed out in scientific notation. The number to
+    the left of the `E` is the significand. The number to the right is the exponent,
+    as a power of 10. 
 
     Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
@@ -238,13 +238,13 @@ items:
   content: |
     You've seen the basic numeric types in C#: integers and doubles.  There is one
     other type to learn: the `decimal` type. The `decimal` type has a smaller
-    range, but greater precision than `double`. The term **fixed point** means
+    range but greater precision than `double`. The term **fixed point** means
     that the decimal point (or binary point) doesn't move. Let's take a look:
 
     ```csharp
     decimal min = decimal.MinValue;
     decimal max = decimal.MaxValue;
-    Console.WriteLine("The range of the decimal type is " + min + " to " + max);
+    Console.WriteLine($"The range of the decimal type is {min} to {max}");
     ```
 
     Notice that the range is smaller than the `double` type. You can see the greater
@@ -270,11 +270,13 @@ items:
 
     Now that you've seen the different numeric types, write code that calculates
     the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
-    is the radius squared multiplied by PI. One hint: C# contains a constant
-    for PI: `Math.PI` that you can use for that value. 
+    is the radius squared multiplied by PI. One hint: .NET contains a constant
+    for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+    You should get an answer between 19 and 20.
 
 - title: Complete challenge
   durationInMinutes: 1
@@ -292,8 +294,12 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
-  content: |
-    You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:
+- content: |
+    You've completed the "Numbers in C#" quick start. 
+    
+    You can continue these quick starts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    
+    You can learn more about numbers in C# in the following topics:
 
     [Integral Types Table](../language-reference/keywords/integral-types-table.md)   
     [Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   

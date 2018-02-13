@@ -37,8 +37,8 @@
 ## Examples  
  The following example shows how to use <xref:System.Web.UI.WebControls.NextPreviousPagerField>, <xref:System.Web.UI.WebControls.NumericPagerField>, and <xref:System.Web.UI.WebControls.TemplatePagerField> objects to display page navigation controls in a <xref:System.Web.UI.WebControls.DataPager> control. The objects are derived from the <xref:System.Web.UI.WebControls.DataPagerField> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/CS/DataPagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/VB/DataPagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/CS/DataPagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/VB/DataPagerFieldVB.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -51,6 +51,11 @@
   
 -   <see cref="M:System.Web.UI.WebControls.DataPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.NextPreviousPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.NumericPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +78,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.NextPreviousPagerField" />
+        <altmember cref="T:System.Web.UI.WebControls.NumericPagerField" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
       </Docs>
     </Member>
     <Member MemberName="CloneField">
@@ -99,6 +107,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.CloneFields(System.Web.UI.WebControls.DataPager)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -127,6 +138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataPagers">
@@ -189,6 +202,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="DataPager">
@@ -214,6 +229,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnInsertComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetQueryStringNavigateUrl">
@@ -243,6 +261,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.QueryStringValue" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName="HandleEvent">
@@ -290,6 +310,10 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is tracking its view-state changes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -320,6 +344,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnFieldChanged">
@@ -376,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.QueryStringValue" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="QueryStringValue">
@@ -403,6 +433,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.QueryStringField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.StartRowIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -431,6 +465,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -457,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -485,6 +524,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -541,6 +581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -566,6 +607,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -595,6 +640,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Visible">

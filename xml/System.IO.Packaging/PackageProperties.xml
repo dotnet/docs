@@ -72,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.ContentType" />
       </Docs>
     </Member>
     <Member MemberName="ContentStatus">
@@ -134,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Category" />
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -157,6 +159,8 @@
         <summary>When overridden in a derived class, gets or sets the date and time the <see cref="T:System.IO.Packaging.Package" /> was created.</summary>
         <value>The date and time the <see cref="T:System.IO.Packaging.Package" /> was initially created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Creator" />
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Modified" />
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -180,6 +184,7 @@
         <summary>When overridden in a derived class, gets or sets a value that identifies the individual or entity that created the <see cref="T:System.IO.Packaging.Package" /> and its content.</summary>
         <value>The individual or entity that created the <see cref="T:System.IO.Packaging.Package" /> and its content.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Created" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -283,7 +288,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -384,6 +389,8 @@
         <summary>When overridden in a derived class, gets or sets a value that identifies the user who last modified the <see cref="T:System.IO.Packaging.Package" /> content.</summary>
         <value>The user who last modified the <see cref="T:System.IO.Packaging.Package" /> content.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Modified" />
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Creator" />
       </Docs>
     </Member>
     <Member MemberName="LastPrinted">
@@ -430,6 +437,8 @@
         <summary>When overridden in a derived class, gets or sets the date and time the <see cref="T:System.IO.Packaging.Package" /> was last changed.</summary>
         <value>The date and time the <see cref="T:System.IO.Packaging.Package" /> was last changed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.LastModifiedBy" />
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Created" />
       </Docs>
     </Member>
     <Member MemberName="Revision">
@@ -462,6 +471,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Version" />
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -485,6 +495,7 @@
         <summary>When overridden in a derived class, gets or sets the topic of the <see cref="T:System.IO.Packaging.Package" /> content.</summary>
         <value>The topic of the <see cref="T:System.IO.Packaging.Package" /> content.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Title" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -508,6 +519,7 @@
         <summary>When overridden in a derived class, gets or sets the name given to the <see cref="T:System.IO.Packaging.Package" /> and its content.</summary>
         <value>The name given to the <see cref="T:System.IO.Packaging.Package" /> and its content.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Subject" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -531,7 +543,18 @@
         <summary>When overridden in a derived class, gets or sets the version number of the <see cref="T:System.IO.Packaging.Package" />.</summary>
         <value>The version number of the <see cref="T:System.IO.Packaging.Package" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageProperties.Revision" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Packaging.PackageProperties" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

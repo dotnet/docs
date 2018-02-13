@@ -58,8 +58,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to copy.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +135,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> objects are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +199,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to assign to the current object.</param>
+        <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to the current object.</summary>
+        <returns>The current object (<c>*this</c>).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +272,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +304,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator%601.Equals%28Microsoft.VisualC.StlClr.Generic.IInputIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -321,8 +321,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> to an <see cref="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1" />.</summary>
+        <returns>The current iterator as an <see cref="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,9 +388,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,9 +415,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IInputIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
@@ -443,9 +442,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,9 +472,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,5 +516,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Equality">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two iterators are the same object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Decrement">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrements the iterator by one element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Increment">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Increments the iterator by one element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Inequality">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two iterators are not the same object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="equal_to">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if two iterators are the same object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

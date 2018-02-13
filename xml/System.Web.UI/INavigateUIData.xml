@@ -19,6 +19,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.DataBindings" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
   </Docs>
   <Members>
     <Member MemberName="Description">
@@ -44,6 +51,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -69,6 +78,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -94,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -119,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
   </Members>

@@ -37,6 +37,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PaperSize" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Windows.Forms.ListControl.DisplayMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +61,7 @@
         <param name="array">An array of type <see cref="T:System.Drawing.Printing.PaperSize" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -164,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -197,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

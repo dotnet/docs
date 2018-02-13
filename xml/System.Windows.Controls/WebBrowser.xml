@@ -170,6 +170,8 @@ private void backButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.WebBrowser.GoBack" />
+        <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForward">
@@ -206,6 +208,8 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.WebBrowser.GoForward" />
+        <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoBack" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -288,6 +292,8 @@ private void backButton_Click(object sender, RoutedEventArgs e)
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Windows.Controls.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to the underlying native <c>WebBrowser</c> could not be retrieved.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">There is no document to navigate back to.</exception>
+        <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoBack" />
+        <altmember cref="M:System.Windows.Controls.WebBrowser.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -337,6 +343,8 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Windows.Controls.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to the underlying native <c>WebBrowser</c> could not be retrieved.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">There is no document to navigate forward to.</exception>
+        <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoForward" />
+        <altmember cref="M:System.Windows.Controls.WebBrowser.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -544,6 +552,8 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.WebBrowser.Navigating" />
+        <altmember cref="E:System.Windows.Controls.WebBrowser.Navigated" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -772,6 +782,8 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.WebBrowser.Navigating" />
+        <altmember cref="E:System.Windows.Controls.WebBrowser.LoadCompleted" />
       </Docs>
     </Member>
     <Member MemberName="NavigateToStream">
@@ -823,6 +835,7 @@ private void goNavigateToStreamButton_Click(object sender, RoutedEventArgs e)
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Windows.Controls.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to the underlying native <c>WebBrowser</c> could not be retrieved.</exception>
+        <altmember cref="M:System.Windows.Controls.WebBrowser.NavigateToString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="NavigateToString">
@@ -876,6 +889,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Windows.Controls.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to the underlying native <c>WebBrowser</c> could not be retrieved.</exception>
+        <altmember cref="M:System.Windows.Controls.WebBrowser.NavigateToStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -902,6 +916,8 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.WebBrowser.Navigated" />
+        <altmember cref="E:System.Windows.Controls.WebBrowser.LoadCompleted" />
       </Docs>
     </Member>
     <Member MemberName="ObjectForScripting">
@@ -1101,5 +1117,32 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reloads the current page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InvokeScript">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a scripting function defined in the currently loaded document.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigate asynchronously to the document at the specified <see cref="T:System.Uri" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

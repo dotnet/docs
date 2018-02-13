@@ -297,9 +297,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.InOutArgument`1" /> constructed using the specified <see cref="T:System.Activities.Activity`1" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +319,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.InOutArgument`1" /> constructed using the specified <see cref="T:System.Activities.Variable`1" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,5 +348,14 @@ WorkflowInvoker.Invoke(activity1);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

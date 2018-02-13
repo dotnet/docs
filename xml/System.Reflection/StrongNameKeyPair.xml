@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.SecurityPermissionAttribute" />
+    <altmember cref="T:System.Security.Permissions.SecurityPermissionFlag" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +78,7 @@
           <paramref name="keyPairArray" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,6 +110,7 @@
           <paramref name="keyPairFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.IO.FileStream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +149,7 @@
           <paramref name="keyPairContainer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -209,6 +214,8 @@
         <summary>Gets the public part of the public key or public key token of the key pair.</summary>
         <value>An array of type <see langword="byte" /> containing the public key or public key token of the key pair.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -276,5 +283,15 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="StrongNameKeyPair" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

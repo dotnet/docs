@@ -21,7 +21,7 @@ Module Example
         Dim tasks As New List(Of Task)
         
         tasks.Add(Task.Run(Function()
-                             ' This should throw an UnauthorizedAccessEXception.
+                             ' This should throw an UnauthorizedAccessException.
                               Return Directory.GetFiles(path, "*.txt",
                                                         SearchOption.AllDirectories)
                            End Function))

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating an Activity at Runtime with DynamicActivity
 <xref:System.Activities.DynamicActivity> is a concrete, sealed class with a public constructor. <xref:System.Activities.DynamicActivity> can be used to assemble activity functionality at runtime using an activity DOM.  
@@ -101,5 +103,5 @@ manager: "erikre"
 8.  Right-click the Workflow1.xaml file in the **Solution Explorer** and select **View Code**. Note that the activity class is created with `x:Class` and the property is created with `x:Property`.  
   
 ## See Also  
- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)   
+ [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)  
  [DynamicActivity Creation](../../../docs/framework/windows-workflow-foundation/samples/dynamicactivity-creation.md)

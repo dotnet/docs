@@ -20,6 +20,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
+    <altmember cref="T:System.Drawing.Design.ToolboxService" />
+    <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+    <altmember cref="T:System.Windows.Forms.IDataObject" />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -51,6 +55,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Drawing.Design.ToolboxItemCreator" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -76,6 +83,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
+        <altmember cref="T:System.Drawing.Design.ToolboxItemCreator" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
   </Members>

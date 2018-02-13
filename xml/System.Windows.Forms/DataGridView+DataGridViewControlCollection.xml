@@ -27,6 +27,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.Control.Controls" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +48,8 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -70,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -104,6 +111,8 @@
   
  The number of elements in the source collection is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source element cannot be cast automatically to the type of <paramref name="array" />.</exception>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -129,6 +138,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than or equal to the current number of controls in the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />.</exception>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -150,6 +161,8 @@
         <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to remove from the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />.</param>
         <summary>Removes the specified control from the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
   </Members>

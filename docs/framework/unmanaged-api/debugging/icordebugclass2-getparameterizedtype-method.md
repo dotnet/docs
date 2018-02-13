@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass2::GetParameterizedType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetParameterizedType method [.NET Framework debugging]"
   - "ICorDebugClass2::GetParameterizedType method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugClass2::GetParameterizedType Method
 Gets the type declaration for this class.  

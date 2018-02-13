@@ -119,7 +119,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that specifies the maximum number of <see cref="T:System.ServiceModel.InstanceContext" /> objects in the service that can execute at one time.</summary>
-        <value>The maximum number of <see cref="T:System.ServiceModel.InstanceContext" /> objects in the service at one time. The default is the sum of the value of <see cref="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions" /> and the value of <see cref="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls" />..</value>
+        <value>The maximum number of <see cref="T:System.ServiceModel.InstanceContext" /> objects in the service at one time. The default is the sum of the value of <see cref="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions" /> and the value of <see cref="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

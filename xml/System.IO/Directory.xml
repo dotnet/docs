@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/directory.cs#b3ad5f0ba800bb28). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.Directory> class for typical operations such as copying, moving, renaming, creating, and deleting directories.  
   
 -   To create a directory, use one of the <xref:System.IO.Directory.CreateDirectory%2A> methods.  
@@ -90,6 +86,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.DriveInfo" />
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="T:System.IO.DirectoryInfo" />
+    <altmember cref="T:System.IO.FileInfo" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
   </Docs>
   <Members>
     <Member MemberName="CreateDirectory">
@@ -191,6 +192,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> contains a colon character (:) that is not part of a drive label ("C:\\").</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files or directories. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -1216,6 +1218,7 @@ Directory::CreateDirectory("Public\\Html");
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessControl">
@@ -1394,6 +1397,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetCreationTimeUtc">
@@ -1455,6 +1459,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentDirectory">
@@ -1575,6 +1580,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a file name.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -1656,6 +1662,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a file name.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
@@ -1738,6 +1745,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a file name.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="M:System.IO.Directory.GetCurrentDirectory" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryRoot">
@@ -2134,6 +2142,8 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a file name.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
+        <altmember cref="T:System.IO.FileSystemInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemEntries">
@@ -2223,6 +2233,8 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a file name.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to path information for the current directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="T:System.IO.FileSystemInfo" />
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetFileSystemEntries">
@@ -2312,6 +2324,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or combined exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTime">
@@ -2380,6 +2393,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="path" /> parameter is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTimeUtc">
@@ -2442,6 +2456,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="path" /> parameter is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -2507,6 +2522,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTimeUtc">
@@ -2568,6 +2584,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLogicalDrives">
@@ -2652,7 +2669,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ The `path` parameter can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
  Trailing spaces are removed from the end of the `path` parameter before getting the directory.  
   
@@ -2679,9 +2696,12 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For more information, see the <see cref="T:System.IO.PathTooLongException" /> topic. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path was not found.</exception>
+        <exception cref="T:System.NotSupportedException"><paramref name="path" /> is in an invalid format. </exception>
+        <exception cref="T:System.Security.SecurityException">.NET Framework only: The caller does not have the required permissions. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -2830,6 +2850,7 @@ Directory::CreateDirectory("Public\\Html");
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to enumerate access control list (ACL) for a directory. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" /> , <see cref="F:System.Security.AccessControl.AccessControlActions.View" />  
   
  Security action: Demand.</permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetCreationTime">
@@ -2892,6 +2913,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="creationTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows NT or later.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetCreationTimeUtc">
@@ -2947,6 +2969,7 @@ Directory::CreateDirectory("Public\\Html");
           <paramref name="creationTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows NT or later.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetCurrentDirectory">
@@ -3013,6 +3036,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified directory was not found.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTime">
@@ -3077,6 +3101,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastAccessTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTimeUtc">
@@ -3141,6 +3166,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastAccessTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTime">
@@ -3205,6 +3231,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastWriteTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTimeUtc">
@@ -3269,7 +3296,98 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastWriteTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnumerateDirectories">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of directory names that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnumerateFileSystemEntries">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of file-system entries that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the names of files that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a specified directory, and optionally any subdirectories.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates all the directories in a specified path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFileSystemEntries">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the names of all files and subdirectories that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnumerateFiles">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable collection of file names that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDirectories">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the names of subdirectories that meet specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the Windows access control list (ACL) for a directory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

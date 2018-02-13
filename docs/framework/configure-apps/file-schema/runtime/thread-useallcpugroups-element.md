@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Thread_UseAllCpuGroups&gt; Element
 Specifies whether the runtime distributes managed threads across all CPU groups.  
@@ -29,7 +26,7 @@ Specifies whether the runtime distributes managed threads across all CPU groups.
   
 ## Syntax  
   
-```vb  
+```xml
 <Thread_UseAllCpuGroups    
    enabled="true|false"/>  
 ```  
@@ -77,6 +74,6 @@ Specifies whether the runtime distributes managed threads across all CPU groups.
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<GCCpuGroup> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md)

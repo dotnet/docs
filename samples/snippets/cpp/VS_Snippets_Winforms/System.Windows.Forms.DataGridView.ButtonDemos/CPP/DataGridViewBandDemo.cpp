@@ -258,7 +258,7 @@ private:
 
    //</snippet10>
    //<snippet11>
-   // Make the the entire DataGridView read only.
+   // Make the entire DataGridView read only.
    void Button8_Click( Object^ /*sender*/, System::EventArgs^ /*e*/ )
    {
       System::Collections::IEnumerator^ myEnum = dataGridView->Columns->GetEnumerator();

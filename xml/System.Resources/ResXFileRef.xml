@@ -160,6 +160,7 @@
         <summary>Gets the text representation of the current <see cref="T:System.Resources.ResXFileRef" /> object.</summary>
         <returns>A string that consists of the concatenated text representations of the parameters specified in the current <see cref="Overload:System.Resources.ResXFileRef.#ctor" /> constructor.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Resources.ResXFileRef.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -180,5 +181,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -65,7 +65,7 @@
 ## Remarks  
  The current method is used by the .NET Framework and the SoapSuds tool to create an XML namespace name for a common language runtime object type.  
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/library/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
   
    
   
@@ -430,6 +430,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetXmlNamespaceForMethodCall">
@@ -540,6 +541,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="IsClrTypeNamespace">
@@ -569,7 +571,7 @@
 ## Remarks  
  The current method is used by the SoapSuds tool to determine whether an XML namespace represents a common language runtime type or a type from a non-common language runtime system.  
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/library/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
   
    
   
@@ -737,6 +739,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterInteropXmlType">
@@ -1003,5 +1006,25 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PreLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Preloads specified types based on values set in the <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> applied to the types.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterSoapActionForMethodBase">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates a SOAPAction value with the provided <see cref="T:System.Reflection.MethodBase" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

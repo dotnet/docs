@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugProcess7.SetWriteableMetadataUpdateMode"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 8589bba7-7304-45ba-9e31-7bf43dfd5c19
 topic_type: 
   - "apiref"
@@ -24,6 +24,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess7::SetWriteableMetadataUpdateMode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -32,7 +34,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT SetWriteableMetadataUpdateMode(  
    WriteableMetadataUpdateMode flags  
 );  
@@ -55,5 +57,5 @@ HRESULT SetWriteableMetadataUpdateMode(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See Also  
- [ICorDebugProcess7 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)   
+ [ICorDebugProcess7 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

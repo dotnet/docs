@@ -71,6 +71,9 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Reflection.MethodInfo" />, you must override <see cref="M:System.Reflection.MethodInfo.GetBaseDefinition" />, <see cref="P:System.Reflection.MethodInfo.ReturnType" />, <see cref="P:System.Reflection.MethodInfo.ReturnTypeCustomAttributes" />, <see cref="M:System.Reflection.MethodBase.GetParameters" />, <see cref="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />, <see cref="P:System.Reflection.MethodBase.MethodHandle" />, <see cref="P:System.Reflection.MethodBase.Attributes" />, <see cref="M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />, <see cref="P:System.Reflection.MemberInfo.Name" />, <see cref="P:System.Reflection.MemberInfo.MemberType" />, <see cref="P:System.Reflection.MemberInfo.DeclaringType" />, <see cref="P:System.Reflection.MemberInfo.ReflectedType" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)" />, and <see cref="M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)" />.</para>
     </block>
+    <altmember cref="Overload:System.Type.GetMethods" />
+    <altmember cref="Overload:System.Type.GetMethod" />
+    <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -347,6 +350,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericMethodDefinition">
@@ -442,6 +449,9 @@ public:
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodInfo.IsGenericMethod" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -597,6 +607,8 @@ public:
   
  An element of <paramref name="typeArguments" /> does not satisfy the constraints specified for the corresponding type parameter of the current generic method definition.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -631,7 +643,7 @@ public:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> only when a given member is a method.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Method?displayProperty=nameWithType> only when a given member is a method.  
   
  To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `MethodInfo`. From the `MethodInfo`, get the `MemberType`.  
   
@@ -755,6 +767,8 @@ public:
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not implemented.</exception>
+        <altmember cref="M:System.Reflection.ParameterInfo.GetOptionalCustomModifiers" />
+        <altmember cref="M:System.Reflection.ParameterInfo.GetRequiredCustomModifiers" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -998,5 +1012,16 @@ public:
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a delegate from this method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

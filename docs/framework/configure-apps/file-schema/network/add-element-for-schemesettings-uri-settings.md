@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  
@@ -31,8 +28,9 @@ Adds a scheme setting for a scheme name.
 ## Syntax  
   
 ```xml  
-      <add   
-   name = "http|https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"  
+<add
+  name="http|https"
+  genericUriParserOptions="DontUnescapePathDotsAndSlashes"
 />  
 ```  
   
@@ -92,10 +90,10 @@ Adds a scheme setting for a scheme name.
 ```  
   
 ## See Also  
- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>   
- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>   
- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>   
- <xref:System.Uri?displayProperty=nameWithType>   
+ <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
+ <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
+ <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
+ <xref:System.Uri?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

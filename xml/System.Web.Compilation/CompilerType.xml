@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+    <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
   </Docs>
   <Members>
     <Member MemberName="CodeDomProviderType">
@@ -61,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
       </Docs>
     </Member>
     <Member MemberName="CompilerParameters">
@@ -86,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -118,6 +124,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -146,6 +154,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Web.Compilation.CompilerType.Equals(System.Object)" />
       </Docs>
     </Member>
   </Members>

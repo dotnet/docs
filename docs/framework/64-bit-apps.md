@@ -18,6 +18,8 @@ caps.latest.revision: 53
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # 64-bit Applications
 When you compile an application, you can specify that it should run on a Windows 64-bit operating system either as a native application or under WOW64 (Windows 32-bit on Windows 64-bit). WOW64 is a compatibility environment that enables a 32-bit application to run on a 64-bit system. WOW64 is included in all 64-bit versions of the Windows operating system.  
@@ -42,7 +44,7 @@ When you compile an application, you can specify that it should run on a Windows
   
 -   Code that casts `IntPtr` to `Int32`.  
   
- For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](http://go.microsoft.com/fwlink/?LinkId=150542) in the MSDN Library.  
+ For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](https://msdn.microsoft.com/library/ms973190.aspx).  
   
 ## General 64-Bit Programming Information  
  For general information about 64-bit programming, see the following documents:  

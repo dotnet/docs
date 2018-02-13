@@ -170,11 +170,24 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The other object to which to compare this instance.</param>
+        <param name="other">The other object to compare with this instance.</param>
         <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified <see cref="T:System.Object" />.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Threading.CancellationToken" /> and if the two instances are equal; otherwise, <see langword="false" />. Two tokens are equal if they are associated with the same <see cref="T:System.Threading.CancellationTokenSource" /> or if they were both constructed from public <see cref="T:System.Threading.CancellationToken" /> constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested" /> values are equal.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Threading.CancellationToken" /> and if the two instances are equal; otherwise, <see langword="false" />. See the Remarks section for more information. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+
+       ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -208,11 +221,24 @@
         <Parameter Name="other" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="other">The other <see cref="T:System.Threading.CancellationToken" /> to which to compare this instance.</param>
+        <param name="other">The other <see cref="T:System.Threading.CancellationToken" /> to compare with this instance.</param>
         <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified token.</summary>
         <returns>
-          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />. Two tokens are equal if they are associated with the same <see cref="T:System.Threading.CancellationTokenSource" /> or if they were both constructed from public <see cref="T:System.Threading.CancellationToken" /> constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested" /> values are equal.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />. See the Remarks section for more information. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -337,7 +363,9 @@
 ## Remarks  
  The cancellation token returned by this property cannot be canceled; that is, its <xref:System.Threading.CancellationToken.CanBeCanceled%2A> property is `false`.  
   
- You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token.  
+ You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token. 
+
+ Two empty cancellation tokens are always equal.
   
  ]]></format>
         </remarks>
@@ -378,8 +406,20 @@
         <param name="right">The second instance.</param>
         <summary>Determines whether two <see cref="T:System.Threading.CancellationToken" /> instances are equal.</summary>
         <returns>
-          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" /> See the Remarks section for more information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Two cancellation tokens are equal if any one of the following conditions is true: 
+
+- They are associated with the same <xref:System.Threading.CancellationTokenSource>.
+
+- They were both constructed from public <xref:System.Threading.CancellationToken> constructors, and their <xref:System.Threading.CancellationToken.IsCancellationRequested?displayProperty=nameWithType> values are equal.
+
+- The value of both cancellation tokens is <xref:System.Threading.CancellationToken.None?displayProperty=nameWithType>.
+       ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -419,7 +459,15 @@
         <summary>Determines whether two <see cref="T:System.Threading.CancellationToken" /> instances are not equal.</summary>
         <returns>
           <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+For the definition of equality, see the <xref:System.Threading.CancellationToken.Equals%2A> method. 
+       ]]></format>
+        
+
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">An associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -462,8 +510,10 @@
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
-  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
@@ -510,9 +560,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- If `useSynchronizationContext` is `true`, the current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -560,9 +612,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -612,9 +666,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -717,5 +773,25 @@ End If
         <exception cref="T:System.ObjectDisposedException">The associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current <see cref="T:System.Threading.CancellationToken" /> instance is equal to the specified token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a delegate that will be called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

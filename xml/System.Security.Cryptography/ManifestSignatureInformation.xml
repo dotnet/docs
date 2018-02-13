@@ -159,5 +159,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">A value specified for the <paramref name="revocationFlag" /> or <paramref name="revocationMode" /> parameter is invalid.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifySignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gathers and verifies information about the signatures of the specified manifests.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

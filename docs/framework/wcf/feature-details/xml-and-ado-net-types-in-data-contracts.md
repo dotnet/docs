@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XML and ADO.NET Types in Data Contracts
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model supports certain types that represent XML directly. When these types are serialized to XML, the serializer writes out the XML contents of these types without any further processing. Supported types are <xref:System.Xml.XmlElement>, arrays of <xref:System.Xml.XmlNode> (but not the `XmlNode` type itself), as well as types that implement <xref:System.Xml.Serialization.IXmlSerializable>. The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> type, as well as typed datasets, are commonly used in database programming. These types implement the `IXmlSerializable` interface and are therefore serializable in the data contract model. Some special considerations for these types are listed at the end of this topic.  
@@ -206,7 +211,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
  Support for typed DataSets in the data contract model is limited. Typed DataSets can be serialized and deserialized and can export their schema. However, the Data Contract schema import is unable to generate new typed DataSet types from the schema, as it can only reuse existing ones. You can point to an existing typed DataSet by using the `/r` switch on Svcutil.exe. If you attempt to use a Svcutil.exe without the `/r` switch on a service that uses a typed dataset, an alternative serializer (XmlSerializer) is automatically selected. If you must use the DataContractSerializer and must generate DataSets from schema, you can use the following procedure: generate the typed DataSet types (by using the Xsd.exe tool with the `/d` switch on the service), compile the types, and then point to them using the `/r` switch on Svcutil.exe.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Xml.Serialization.IXmlSerializable>   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Xml.Serialization.IXmlSerializable>  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

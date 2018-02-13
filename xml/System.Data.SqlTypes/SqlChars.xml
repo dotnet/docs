@@ -470,10 +470,12 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlChars" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Data.SqlTypes.SqlChars" /> structure to be converted.</param>
+        <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlChars" /> structure to a <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.ToString%2A?displayProperty=nameWithType>.]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -505,10 +507,12 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Data.SqlTypes.SqlString" /> structure to be converted.</param>
+        <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> structure to a <see cref="T:System.Data.SqlTypes.SqlChars" /> structure.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlChars" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlChars.%23ctor(System.Data.SqlTypes.SqlString)?displayProperty=nameWithType>.]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -909,5 +913,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to a T:System.Data.SqlTypes.SqlChars structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

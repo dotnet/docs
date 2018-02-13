@@ -835,5 +835,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendSwitchUnquotedIfNotNull">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the command line with a switch, without attempting to encapsulate the switch parameters with quotation marks.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendSwitchIfNotNull">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the command line with a switch.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructor</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendFileNamesIfNotNull">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the command line with a list of file names, inserting quotation marks if necessary.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

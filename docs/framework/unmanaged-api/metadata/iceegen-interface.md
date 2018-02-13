@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen interface [.NET Framework metadata]"
 ms.assetid: 383d20b0-efe9-4e71-8fb8-1186b2e7d0c0
@@ -28,6 +26,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen Interface
 Provides methods for dynamic code compilation.  

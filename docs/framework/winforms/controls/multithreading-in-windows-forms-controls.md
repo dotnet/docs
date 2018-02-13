@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "BackgroundWorker component"
-  - "BeginInvoke method"
   - "threading [Windows Forms], controls"
 ms.assetid: c311d652-0f26-45fa-bdcc-b1615d73ce4e
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Multithreading in Windows Forms Controls
 In many applications, you can make your user interface (UI) more responsive by performing time-consuming operations on another thread. A number of tools are available for multithreading your Windows Forms controls, including the <xref:System.Threading> namespace, the <xref:System.Windows.Forms.Control.BeginInvoke%2A?displayProperty=nameWithType> method, and the `BackgroundWorker` component.  

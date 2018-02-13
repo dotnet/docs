@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyProperty" />
   </Docs>
   <Members>
     <Member MemberName="DependencyProperty">
@@ -75,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
     <Member MemberName="OverrideMetadata">
@@ -119,6 +121,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempted metadata override on a read-write dependency property (cannot be done using this signature).</exception>
         <exception cref="T:System.ArgumentException">Metadata was already established for the property as it exists on the provided type.</exception>
+        <altmember cref="T:System.Windows.DependencyProperty" />
+        <altmember cref="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata,System.Windows.DependencyPropertyKey)" />
       </Docs>
     </Member>
   </Members>

@@ -97,6 +97,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.MediaCommands" />
+    <altmember cref="T:System.Windows.Input.ApplicationCommands" />
+    <altmember cref="T:System.Windows.Input.ComponentCommands" />
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
+    <altmember cref="T:System.Windows.Input.RoutedUICommand" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
+    <altmember cref="T:System.Windows.Input.CommandManager" />
+    <altmember cref="T:System.Windows.Input.NavigationCommands" />
   </Docs>
   <Members>
     <Member MemberName="AlignCenter">
@@ -149,6 +157,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignJustify" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignLeft" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignRight" />
       </Docs>
     </Member>
     <Member MemberName="AlignJustify">
@@ -211,6 +222,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignCenter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignLeft" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignRight" />
       </Docs>
     </Member>
     <Member MemberName="AlignLeft">
@@ -265,6 +279,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignCenter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignJustify" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignRight" />
       </Docs>
     </Member>
     <Member MemberName="AlignRight">
@@ -319,6 +336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignCenter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignJustify" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.AlignRight" />
       </Docs>
     </Member>
     <Member MemberName="Backspace">
@@ -403,6 +423,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.IgnoreSpellingError" />
       </Docs>
     </Member>
     <Member MemberName="DecreaseFontSize">
@@ -453,6 +474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.IncreaseFontSize" />
       </Docs>
     </Member>
     <Member MemberName="DecreaseIndentation">
@@ -504,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.IncreaseIndentation" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -604,6 +627,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.DeletePreviousWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
       </Docs>
     </Member>
     <Member MemberName="DeletePreviousWord">
@@ -654,6 +682,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.DeleteNextWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
       </Docs>
     </Member>
     <Member MemberName="EnterLineBreak">
@@ -704,6 +737,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.EnterParagraphBreak" />
       </Docs>
     </Member>
     <Member MemberName="EnterParagraphBreak">
@@ -757,6 +791,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.EnterLineBreak" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreSpellingError">
@@ -789,6 +824,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.CorrectSpellingError" />
       </Docs>
     </Member>
     <Member MemberName="IncreaseFontSize">
@@ -839,6 +875,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.DecreaseFontSize" />
       </Docs>
     </Member>
     <Member MemberName="IncreaseIndentation">
@@ -890,6 +927,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.DecreaseIndentation" />
       </Docs>
     </Member>
     <Member MemberName="MoveDownByLine">
@@ -938,6 +976,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
       </Docs>
     </Member>
     <Member MemberName="MoveDownByPage">
@@ -986,6 +1028,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
       </Docs>
     </Member>
     <Member MemberName="MoveDownByParagraph">
@@ -1038,6 +1084,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
       </Docs>
     </Member>
     <Member MemberName="MoveLeftByCharacter">
@@ -1086,6 +1136,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
       </Docs>
     </Member>
     <Member MemberName="MoveLeftByWord">
@@ -1136,6 +1189,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
       </Docs>
     </Member>
     <Member MemberName="MoveRightByCharacter">
@@ -1184,6 +1240,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
       </Docs>
     </Member>
     <Member MemberName="MoveRightByWord">
@@ -1234,6 +1293,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
       </Docs>
     </Member>
     <Member MemberName="MoveToDocumentEnd">
@@ -1284,6 +1346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentEnd" />
       </Docs>
     </Member>
     <Member MemberName="MoveToDocumentStart">
@@ -1334,6 +1398,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToDocumentEnd" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
       </Docs>
     </Member>
     <Member MemberName="MoveToLineEnd">
@@ -1382,6 +1448,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToLineStart" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" />
       </Docs>
     </Member>
     <Member MemberName="MoveToLineStart">
@@ -1430,6 +1498,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToLineEnd" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" />
       </Docs>
     </Member>
     <Member MemberName="MoveUpByLine">
@@ -1478,6 +1548,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
       </Docs>
     </Member>
     <Member MemberName="MoveUpByPage">
@@ -1526,6 +1600,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
       </Docs>
     </Member>
     <Member MemberName="MoveUpByParagraph">
@@ -1578,6 +1656,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
       </Docs>
     </Member>
     <Member MemberName="SelectDownByLine">
@@ -1626,6 +1708,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
       </Docs>
     </Member>
     <Member MemberName="SelectDownByPage">
@@ -1674,6 +1760,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
       </Docs>
     </Member>
     <Member MemberName="SelectDownByParagraph">
@@ -1724,6 +1814,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
       </Docs>
     </Member>
     <Member MemberName="SelectLeftByCharacter">
@@ -1772,6 +1866,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
       </Docs>
     </Member>
     <Member MemberName="SelectLeftByWord">
@@ -1824,6 +1921,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
       </Docs>
     </Member>
     <Member MemberName="SelectRightByCharacter">
@@ -1872,6 +1972,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
       </Docs>
     </Member>
     <Member MemberName="SelectRightByWord">
@@ -1924,6 +2027,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
       </Docs>
     </Member>
     <Member MemberName="SelectToDocumentEnd">
@@ -1974,6 +2080,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToDocumentEnd" />
       </Docs>
     </Member>
     <Member MemberName="SelectToDocumentStart">
@@ -2024,6 +2132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentEnd" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToDocumentStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectToLineEnd">
@@ -2072,6 +2182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToLineStart" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToLineEnd" />
       </Docs>
     </Member>
     <Member MemberName="SelectToLineStart">
@@ -2120,6 +2232,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveToLineStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectUpByLine">
@@ -2168,6 +2282,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
       </Docs>
     </Member>
     <Member MemberName="SelectUpByPage">
@@ -2216,6 +2334,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
       </Docs>
     </Member>
     <Member MemberName="SelectUpByParagraph">
@@ -2266,6 +2388,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
       </Docs>
     </Member>
     <Member MemberName="TabBackward">
@@ -2326,6 +2452,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.TabForward" />
       </Docs>
     </Member>
     <Member MemberName="TabForward">
@@ -2386,6 +2513,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.TabBackward" />
       </Docs>
     </Member>
     <Member MemberName="ToggleBold">
@@ -2438,6 +2566,8 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleItalic" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleUnderline" />
       </Docs>
     </Member>
     <Member MemberName="ToggleBullets">
@@ -2488,6 +2618,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleNumbering" />
       </Docs>
     </Member>
     <Member MemberName="ToggleInsert">
@@ -2588,6 +2719,8 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleBold" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleUnderline" />
       </Docs>
     </Member>
     <Member MemberName="ToggleNumbering">
@@ -2638,6 +2771,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleItalic" />
       </Docs>
     </Member>
     <Member MemberName="ToggleSubscript">
@@ -2684,6 +2818,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleSuperscript" />
       </Docs>
     </Member>
     <Member MemberName="ToggleSuperscript">
@@ -2730,6 +2865,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleSubscript" />
       </Docs>
     </Member>
     <Member MemberName="ToggleUnderline">
@@ -2780,6 +2916,8 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleBold" />
+        <altmember cref="P:System.Windows.Documents.EditingCommands.ToggleItalic" />
       </Docs>
     </Member>
   </Members>

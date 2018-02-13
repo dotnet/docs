@@ -16,6 +16,8 @@ caps.latest.revision: 40
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Controlling .NET Framework Logging
 You can use event tracing for Windows (ETW) to record common language runtime (CLR) events. You can create and view traces by using the following tools:  
@@ -113,5 +115,5 @@ Provider                                 GUID
      This command causes XPerf to dump the events as a comma separated value (CSV) file that you can view. Because different events have different fields, this CSV file is contains more than one header line before the data. The first field of every line is the event type, which indicates which header should be used to determine the rest of the fields.  
   
 ## See Also  
- [Windows Performance Toolkit](http://go.microsoft.com/fwlink/?LinkID=161141)   
+ [Windows Performance Toolkit](http://go.microsoft.com/fwlink/?LinkID=161141)  
  [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

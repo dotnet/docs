@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElementAtPosition"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetElementAtPosition method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue::GetElementAtPosition Method
 Gets the element at the given position, treating the array as a zero-based, single-dimensional array.  

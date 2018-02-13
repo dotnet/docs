@@ -8,6 +8,8 @@ caps.latest.revision: 7
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Windows Workflow Foundation (WF) Migration Guidance

@@ -112,6 +112,7 @@
         <exception cref="T:System.InvalidOperationException">An I/O <see cref="T:System.IO.Stream" /> has not been set for the store.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.DeleteAnnotation(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -131,6 +132,7 @@
         <value>
           <see langword="true" /> if data in annotation buffers is to be written immediately to the physical data store for each operation; otherwise, <see langword="false" /> if data in the annotation buffers is to be written when the application explicitly calls <see cref="M:System.Windows.Annotations.Storage.XmlStreamStore.Flush" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.Flush" />
       </Docs>
     </Member>
     <Member MemberName="DeleteAnnotation">
@@ -165,6 +167,9 @@
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
         <exception cref="T:System.InvalidOperationException">An I/O <see cref="T:System.IO.Stream" /> has not been set for the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.AddAnnotation(System.Windows.Annotations.Annotation)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
+        <altmember cref="Overload:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -222,6 +227,7 @@
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
         <exception cref="T:System.InvalidOperationException">An I/O <see cref="T:System.IO.Stream" /> has not been set for the store.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The store I/O <see cref="T:System.IO.Stream" /> is read-only and cannot be accessed for output.</exception>
+        <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.AutoFlush" />
       </Docs>
     </Member>
     <Member MemberName="GetAnnotation">
@@ -246,6 +252,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="Overload:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations" />
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.DeleteAnnotation(System.Guid)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAnnotations">
@@ -265,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAnnotations">
@@ -300,6 +309,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations(System.Windows.Annotations.ContentLocator)" />
       </Docs>
     </Member>
     <Member MemberName="GetAnnotations">
@@ -336,6 +347,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.StartsWith(System.Windows.Annotations.ContentLocator)" />
       </Docs>
     </Member>
     <Member MemberName="GetWellKnownCompatibleNamespaces">
@@ -373,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
+        <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
       </Docs>
     </Member>
     <Member MemberName="IgnoredNamespaces">
@@ -400,6 +415,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="OnStoreContentChanged">
@@ -452,7 +469,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
+        <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Storage.XmlStreamStore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

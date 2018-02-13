@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 82cc43f1-3c8f-4771-ac19-a75ac936e2c3
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Discovery Sample
 This sample demonstrates how to make a workflow service discoverable and how to author a custom code activity that searches for a particular service.  

@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.SocketPermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,6 +132,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the current instance's <see cref="P:System.Net.SocketPermissionAttribute.Access" />, <see cref="P:System.Net.SocketPermissionAttribute.Host" />, <see cref="P:System.Net.SocketPermissionAttribute.Transport" />, or <see cref="P:System.Net.SocketPermissionAttribute.Port" /> properties is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.SocketPermission" />
       </Docs>
     </Member>
     <Member MemberName="Host">

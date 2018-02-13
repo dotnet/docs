@@ -27,8 +27,9 @@
     <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
     <typeparam name="TValue">The type of values in the dictionary.</typeparam>
     <summary>Represents an immutable collection of key/value pairs.  
-  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)
+</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

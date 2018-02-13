@@ -1067,7 +1067,7 @@
         <param name="stringArgument">An expression that specifies the string from which to extract the leftmost substring.</param>
         <param name="length">An expression that specifies the length of the leftmost substring to extract from **stringArgument**.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Left' function with the specified arguments, which must have a string and integer numeric result type. The result type of the expression is string.</summary>
-        <returns>A new DbFunctionExpression that returns the the leftmost substring of length **length** from **stringArgument**.</returns>
+        <returns>A new DbFunctionExpression that returns the leftmost substring of length **length** from **stringArgument**.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">**stringArgument** **length**</exception>
         <exception cref="T:System.ArgumentException">**stringArgument**</exception>
@@ -1358,7 +1358,7 @@
         <param name="stringArgument">An expression that specifies the string from which to extract the rightmost substring.</param>
         <param name="length">An expression that specifies the length of the rightmost substring to extract from **stringArgument**.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Right' function with the specified arguments, which must have a string and integer numeric result type. The result type of the expression is string.</summary>
-        <returns>A new DbFunctionExpression that returns the the rightmost substring of length **length** from **stringArgument**.</returns>
+        <returns>A new DbFunctionExpression that returns the rightmost substring of length **length** from **stringArgument**.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">**stringArgument** **length**</exception>
         <exception cref="T:System.ArgumentException">**stringArgument**</exception>
@@ -1811,5 +1811,14 @@
         <exception cref="T:System.ArgumentException">**dateValue**</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Round">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Round' function.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

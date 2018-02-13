@@ -51,6 +51,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Runtime.Serialization.SerializationBinder" />, you must override the following member: <see cref="M:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)" />.</para>
     </block>
+    <altmember cref="T:System.Security.Policy.StrongName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

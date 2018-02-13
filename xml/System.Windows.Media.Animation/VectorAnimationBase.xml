@@ -16,6 +16,7 @@
     <block subset="none" type="overrides">
       <para>See the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md) for information about extending animation classes.</para>
     </block>
+    <altmember cref="T:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -200,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.AnimationClock" />
       </Docs>
     </Member>
     <Member MemberName="TargetPropertyType">
@@ -220,5 +222,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentValue">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the current value of the animation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

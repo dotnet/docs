@@ -28,6 +28,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
+    <altmember cref="T:System.Windows.Forms.FlowLayoutPanel" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutSettings" />
+    <altmember cref="T:System.Windows.Forms.FlowLayoutSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +72,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.LayoutEngine" />
+        <altmember cref="T:System.Windows.Forms.Layout.LayoutEngine" />
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
   </Members>

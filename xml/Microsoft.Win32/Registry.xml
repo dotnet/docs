@@ -84,6 +84,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.RegistryHive" />
+    <altmember cref="T:Microsoft.Win32.RegistryKey" />
   </Docs>
   <Members>
     <Member MemberName="ClassesRoot">
@@ -291,7 +293,7 @@
   
  Valid root names are HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_CLASSES_ROOT, HKEY_USERS, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA. For example, in Visual Basic the string "HKEY_CURRENT_USER\MyTestKey" accesses key/value pairs for the subkey "MyTestKey" in the HKEY_CURRENT_USER root.  
   
- When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), it expands environment strings using data from the local environment. If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), <xref:Microsoft.Win32.RegistryKey.GetValue%2A> does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A?displayProperty=nameWithType> method.  
+ When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), it expands environment strings using data from the local environment. If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), <xref:Microsoft.Win32.RegistryKey.GetValue%2A> does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  The recommended way to retrieve data from HKEY_PERFORMANCE_DATA is to use the <xref:System.Diagnostics.PerformanceCounter> class rather than the <xref:Microsoft.Win32.RegistryKey.GetValue%2A?displayProperty=nameWithType> method.  
@@ -492,11 +494,11 @@
 > [!NOTE]
 >  The <xref:Microsoft.Win32.Registry.SetValue%2A> method opens a registry key, sets the value, and closes the key each time it is called. If you need to modify a large number of values, the <xref:Microsoft.Win32.RegistryKey.SetValue%2A?displayProperty=nameWithType> method might provide better performance. The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to add an access control list (ACL) to a registry key, to test the data type of a value before retrieving it, and to delete keys.  
   
- This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores 64-bit integers as strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>). To store 64-bit numbers as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> values, use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
+ This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores 64-bit integers as strings (<xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType>). To store 64-bit numbers as <xref:Microsoft.Win32.RegistryValueKind.QWord?displayProperty=nameWithType> values, use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
   
- This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores all string values as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> objects, even if they contain expandable references to environment variables. To save string values as expandable strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>), use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
+ This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores all string values as <xref:Microsoft.Win32.RegistryValueKind.String?displayProperty=nameWithType> objects, even if they contain expandable references to environment variables. To save string values as expandable strings (<xref:Microsoft.Win32.RegistryValueKind.ExpandString?displayProperty=nameWithType>), use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
   
- This overload is equivalent to calling the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload with <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>.  
+ This overload is equivalent to calling the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload with <xref:Microsoft.Win32.RegistryValueKind.Unknown?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  On Windows 98 and Windows Millennium Edition (Windows Me), the registry is not Unicode, and not all Unicode characters are valid for all code pages. A Unicode character that is invalid for the current code page is replaced by the best available match. No exception is thrown.  
@@ -575,10 +577,10 @@
 > [!NOTE]
 >  The <xref:Microsoft.Win32.Registry.SetValue%2A> method opens a registry key, sets the value, and closes the key each time it is called. If you need to modify a large number of values, the <xref:Microsoft.Win32.RegistryKey.SetValue%2A?displayProperty=nameWithType> method might provide better performance. The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to add an access control list (ACL) to a registry key, to test the data type of a value before retrieving it, and to delete keys.  
   
- If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=nameWithType> as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=nameWithType>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>.  
+ If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=nameWithType> as a <xref:Microsoft.Win32.RegistryValueKind.DWord?displayProperty=nameWithType>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=nameWithType>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind.MultiString?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  If boxed values are passed for <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryValueKind?displayProperty=nameWithType>, the conversion is done using the invariant culture.  
+>  If boxed values are passed for <xref:Microsoft.Win32.RegistryValueKind.DWord?displayProperty=nameWithType> or <xref:Microsoft.Win32.RegistryValueKind.QWord?displayProperty=nameWithType>, the conversion is done using the invariant culture.  
   
 > [!NOTE]
 >  On Windows 98 and Windows Millennium Edition (Windows Me), the registry is not Unicode, and not all Unicode characters are valid for all code pages. A Unicode character that is invalid for the current code page is replaced by the best available match. No exception is thrown.  

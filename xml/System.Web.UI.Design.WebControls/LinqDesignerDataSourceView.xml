@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides a design-time view of data for the <see cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +34,8 @@
         <param name="owner">The parent <see cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LinqDesignerDataSourceView" /> class with the provided data source designer and view name.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -50,6 +55,8 @@
         <value>
           <see langword="true" /> if the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -69,6 +76,8 @@
         <value>
           <see langword="true" /> if the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.ExecuteInsert(System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -88,6 +97,8 @@
         <value>
           <see langword="true" /> if paging through the data that is retrieved by the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -107,6 +118,8 @@
         <value>
           <see langword="true" /> if a sorted view of the underlying data source is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -126,6 +139,8 @@
         <value>
           <see langword="true" /> if the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
@@ -151,6 +166,8 @@
         <summary>Gets the design-time data that matches the schema of the associated data source control by using the specified number of rows. Returns a value that indicates whether the data is sample or real data.</summary>
         <returns>The data to display at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="IsDataContext">
@@ -170,6 +187,8 @@
         <value>
           <see langword="true" /> if the object in the <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.ContextType" /> property is derived from <see cref="T:System.Data.Linq.DataContext" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="IsTableTypeTable">
@@ -189,6 +208,8 @@
         <value>
           <see langword="true" /> if the <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.TableName" /> property returns a <see cref="T:System.Data.Linq.Table`1" /> type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -207,6 +228,8 @@
         <summary>Gets the schema that describes the data source view that is represented by the current view object.</summary>
         <value>An object that represents the schema.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" />
       </Docs>
     </Member>
   </Members>

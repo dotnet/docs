@@ -16,6 +16,7 @@
   <Docs>
     <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object. An instance of this type is returned by the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" /> static method.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -47,6 +48,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -78,6 +80,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -97,6 +100,7 @@
         <summary>Returns a string representation of the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />, separated by commas.</summary>
         <returns>Unicode string representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
   </Members>

@@ -1,3 +1,6 @@
+    using System;
+    using System.Collections.Generic;
+    
     public class Shape
     {
         // A few example members
@@ -49,16 +52,18 @@
             // can all be used whereever a Shape is expected. No cast is
             // required because an implicit conversion exists from a derived 
             // class to its base class.
-            System.Collections.Generic.List<Shape> shapes = new System.Collections.Generic.List<Shape>();
-            shapes.Add(new Rectangle());
-            shapes.Add(new Triangle());
-            shapes.Add(new Circle());
+            var shapes = new List<Shape>
+            {
+                new Rectangle(),
+                new Triangle(),
+                new Circle()
+            };
 
             // Polymorphism at work #2: the virtual method Draw is
             // invoked on each of the derived classes, not the base class.
-            foreach (Shape s in shapes)
+            foreach (var shape in shapes)
             {
-                s.Draw();
+                shape.Draw();
             }
 
             // Keep the console open in debug mode.

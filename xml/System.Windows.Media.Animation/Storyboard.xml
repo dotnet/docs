@@ -685,6 +685,7 @@
         <block subset="none" type="overrides">
           <para>Every <see cref="T:System.Windows.Media.Animation.Storyboard" /> subclass must implement this method. Typical implementation is to simply call the class default constructor and return the result.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCurrentGlobalSpeed">
@@ -704,6 +705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCurrentGlobalSpeed">
@@ -754,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentGlobalSpeed">
@@ -785,6 +788,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentIteration">
@@ -815,6 +819,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentIteration" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentIteration">
@@ -848,6 +853,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentIteration" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentIteration">
@@ -883,6 +889,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentIteration" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentProgress">
@@ -1087,6 +1094,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentTime" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentTime">
@@ -1117,6 +1125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentTime" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentTime">
@@ -1147,6 +1156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentTime" />
       </Docs>
     </Member>
     <Member MemberName="GetIsPaused">
@@ -1174,6 +1184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="GetIsPaused">
@@ -1204,6 +1215,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="GetIsPaused">
@@ -1234,6 +1246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="GetTarget">
@@ -1268,6 +1281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="GetTargetName">
@@ -1297,6 +1311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="GetTargetProperty">
@@ -1328,6 +1343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetProperty" />
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -1403,6 +1419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.Resume(System.Windows.FrameworkContentElement)" />
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -1440,6 +1457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.Resume(System.Windows.FrameworkElement)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1594,6 +1612,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.Pause(System.Windows.FrameworkContentElement)" />
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -1628,6 +1647,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.Pause(System.Windows.FrameworkElement)" />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -1787,6 +1807,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.Windows.FrameworkElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       </Docs>
     </Member>
     <Member MemberName="SeekAlignedToLastTick">
@@ -2086,6 +2107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="SetTargetName">
@@ -2116,6 +2138,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="SetTargetProperty">
@@ -2146,6 +2169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetProperty" />
       </Docs>
     </Member>
     <Member MemberName="SkipToFill">
@@ -2361,6 +2385,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="TargetProperty">
@@ -2378,6 +2403,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Storyboard.Target" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="TargetPropertyProperty">
@@ -2395,7 +2421,125 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Storyboard.TargetProperty" /> attached property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Storyboard.TargetProperty" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentProgress">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCurrentTime">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetIsPaused">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a value that indicates whether the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" /> is paused.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCurrentIteration">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentIteration" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSpeedRatio">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the interactive speed ratio for the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Resume">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resumes the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SkipToFill">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Advances the current time of this storyboard's <see cref="T:System.Windows.Media.Animation.Clock" /> to the end of its active period.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SeekAlignedToLastTick">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to a new position immediately (synchronously).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Pause">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pauses the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Stop">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stops the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Seek">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to a new position when the next clock tick occurs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCurrentState">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentState" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the <see cref="T:System.Windows.Media.Animation.Clock" /> objects that were created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />. Animations that belong to this <see cref="T:System.Windows.Media.Animation.Storyboard" /> no longer affect the properties they once animated, regardless of their <see cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" /> setting.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

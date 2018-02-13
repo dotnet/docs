@@ -9,9 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0202d3f1-a50b-427d-a5bb-79208b8f1c22
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Web Services IXmlSerializable Technology Sample
 [Download Sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/IXmlSerializable.zip.exe)  
@@ -47,12 +50,12 @@ manager: "erikre"
 2.  Type **http://localhost/IXmlSerializable/Service.asmx**.  
   
 ## See Also  
- <xref:System.Xml.Serialization.IXmlSerializable>   
- <xref:System.Xml.Serialization>   
- <xref:System.Xml.XmlConvert>   
- <xref:System.Xml.XmlQualifiedName>   
- <xref:System.Xml.XmlReader>   
- <xref:System.Xml.Schema.XmlSchema>   
- <xref:System.Xml.Schema.XmlSchemaSet>   
- <xref:System.Xml.XmlUrlResolver>   
+ <xref:System.Xml.Serialization.IXmlSerializable>  
+ <xref:System.Xml.Serialization>  
+ <xref:System.Xml.XmlConvert>  
+ <xref:System.Xml.XmlQualifiedName>  
+ <xref:System.Xml.XmlReader>  
+ <xref:System.Xml.Schema.XmlSchema>  
+ <xref:System.Xml.Schema.XmlSchemaSet>  
+ <xref:System.Xml.XmlUrlResolver>  
  <xref:System.Xml.XmlWriter>

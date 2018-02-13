@@ -13,6 +13,7 @@
   <Docs>
     <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived control. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WizardStepControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
   </Members>

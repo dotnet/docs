@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "dispatcher extensions [WCF]"
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Dispatchers
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.  
@@ -134,8 +136,8 @@ Dispatchers are responsible for pulling incoming messages out of the underlying 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.  
   
 ## See Also  
- <xref:System.ServiceModel.Dispatcher.DispatchRuntime>   
- <xref:System.ServiceModel.Dispatcher.DispatchOperation>   
- [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)   
- [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)   
+ <xref:System.ServiceModel.Dispatcher.DispatchRuntime>  
+ <xref:System.ServiceModel.Dispatcher.DispatchOperation>  
+ [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)  
+ [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)  
  [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md)

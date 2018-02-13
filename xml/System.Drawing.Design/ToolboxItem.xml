@@ -67,6 +67,12 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
+    <altmember cref="T:System.ComponentModel.ToolboxItemAttribute" />
+    <altmember cref="T:System.Drawing.Design.IToolboxService" />
+    <altmember cref="T:System.Drawing.Design.IToolboxUser" />
+    <altmember cref="T:System.Drawing.Design.ToolboxComponentsCreatedEventArgs" />
+    <altmember cref="T:System.Drawing.Design.ToolboxComponentsCreatedEventHandler" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -169,6 +175,7 @@
         <block subset="none" type="overrides">
           <para>If your derived toolbox item class creates multiple components that are located in different assemblies, you must ensure that references to these assemblies exist in your project. It is advisable to add these references from an overload of the <see cref="M:System.Drawing.Design.ToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" /> method. Even if your <see cref="M:System.Drawing.Design.ToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" /> method does not depend on the value of the <see cref="P:System.Drawing.Design.ToolboxItem.AssemblyName" /> property, you should ensure that this property is set to the assembly that one of the components to create belongs to, because it is displayed in the **Customize Toolbox** dialog box in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].</para>
         </block>
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="Bitmap">
@@ -187,6 +194,7 @@
         <summary>Gets or sets a bitmap to represent the toolbox item in the toolbox.</summary>
         <value>A <see cref="T:System.Drawing.Bitmap" /> that represents the toolbox item in the toolbox.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Bitmap" />
       </Docs>
     </Member>
     <Member MemberName="CheckUnlocked">
@@ -213,6 +221,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Drawing.Design.ToolboxItem" /> is locked.</exception>
+        <altmember cref="T:System.InvalidOperationException" />
       </Docs>
     </Member>
     <Member MemberName="Company">
@@ -257,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxComponentsCreatedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentsCreating">
@@ -283,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ComponentType">
@@ -356,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="CreateComponents">
@@ -419,6 +431,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Drawing.Design.ToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" /> method to return the component or components that a toolbox item creates.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="CreateComponentsCore">
@@ -614,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="FilterPropertyValue">
@@ -723,6 +737,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="typeName" /> is not specified.</exception>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -837,6 +852,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Design.ToolboxItem.CheckUnlocked" />
+        <altmember cref="M:System.Drawing.Design.ToolboxItem.Lock" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentsCreated">
@@ -872,6 +889,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Design.ToolboxItem.OnComponentsCreated(System.Drawing.Design.ToolboxComponentsCreatedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Drawing.Design.ToolboxItem.OnComponentsCreated(System.Drawing.Design.ToolboxComponentsCreatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreated" />
+        <altmember cref="M:System.Drawing.Design.ToolboxItem.OnComponentsCreating(System.Drawing.Design.ToolboxComponentsCreatingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentsCreating">
@@ -907,6 +926,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Drawing.Design.ToolboxItem.OnComponentsCreating(System.Drawing.Design.ToolboxComponentsCreatingEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Drawing.Design.ToolboxItem.OnComponentsCreating(System.Drawing.Design.ToolboxComponentsCreatingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" />
       </Docs>
     </Member>
     <Member MemberName="OriginalBitmap">
@@ -1154,5 +1174,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateComponents">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the components that the toolbox item is configured to create.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateComponentsCore">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a component or an array of components when the toolbox item is invoked.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

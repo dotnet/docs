@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;issuedToken&gt;
 Specifies a custom token used to authenticate a client to a service.  
@@ -71,16 +73,16 @@ endpointBehaviors section
  This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>   
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>   
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.IssuedToken%2A>   
- <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A>   
- <xref:System.ServiceModel.Security.IssuedTokenClientCredential>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)   
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)   
- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)   
- [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)   
+ <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>  
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement.IssuedToken%2A>  
+ <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A>  
+ <xref:System.ServiceModel.Security.IssuedTokenClientCredential>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
+ [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
+ [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
+ [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)  
  [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)

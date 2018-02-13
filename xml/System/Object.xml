@@ -34,10 +34,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/object.cs#d9262ceecc1719ab). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Languages typically do not require a class to declare inheritance from <xref:System.Object> because the inheritance is implicit.  
   
  Because all classes in the .NET Framework are derived from <xref:System.Object>, every method defined in the <xref:System.Object> class is available in all objects in the system. Derived classes can and do override some of these methods, including:  
@@ -281,6 +277,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ReferenceEquals(System.Object,System.Object)" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.ValueType" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -340,6 +342,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="M:System.Object.ReferenceEquals(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -476,6 +480,10 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.GC.SuppressFinalize(System.Object)" />
+        <altmember cref="M:System.GC.ReRegisterForFinalize(System.Object)" />
+        <altmember cref="M:System.GC.WaitForPendingFinalizers" />
+        <altmember cref="T:System.WeakReference" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -616,6 +624,9 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
  Derived classes that override <see cref="M:System.Object.GetHashCode" /> must also override <see cref="M:System.Object.Equals(System.Object)" /> to guarantee that two objects considered equal have the same hash code; otherwise, the <see cref="T:System.Collections.Hashtable" /> type might not work correctly.</para>
         </block>
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="M:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -689,6 +700,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="MemberwiseClone">
@@ -825,6 +837,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1038,5 +1051,18 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two object instances are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

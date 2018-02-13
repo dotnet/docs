@@ -70,6 +70,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,6 +214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -249,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="EventName">
@@ -289,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="MaxLimit">
@@ -335,6 +342,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="MinInstances">
@@ -378,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="MinInterval">
@@ -421,6 +430,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -462,6 +472,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -502,6 +513,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.ProfileSettings" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -558,7 +571,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Configuration.ProviderSettings" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RuleSettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.RuleSettings" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

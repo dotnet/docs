@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ToolTip" />
+    <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+    <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="AddToolTipClosingHandler">
@@ -143,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetBetweenShowDelay(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="GetHasDropShadow">
@@ -180,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHasDropShadow(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       </Docs>
     </Member>
     <Member MemberName="GetHorizontalOffset">
@@ -220,6 +227,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHorizontalOffset(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="GetInitialShowDelay">
@@ -257,6 +266,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetInitialShowDelay(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="GetIsEnabled">
@@ -294,6 +305,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="GetIsOpen">
@@ -331,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsOpen" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacement">
@@ -368,6 +382,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacement(System.Windows.DependencyObject,System.Windows.Controls.Primitives.PlacementMode)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.Placement" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacementRectangle">
@@ -405,6 +421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementRectangle(System.Windows.DependencyObject,System.Windows.Rect)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacementTarget">
@@ -442,6 +460,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementTarget(System.Windows.DependencyObject,System.Windows.UIElement)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetShowDuration">
@@ -479,6 +499,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowDuration(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowDuration" />
       </Docs>
     </Member>
     <Member MemberName="GetShowOnDisabled">
@@ -516,6 +538,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowOnDisabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" />
       </Docs>
     </Member>
     <Member MemberName="GetToolTip">
@@ -553,6 +577,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetToolTip(System.Windows.DependencyObject,System.Object)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="GetVerticalOffset">
@@ -593,6 +619,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetVerticalOffset(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -808,6 +836,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetBetweenShowDelay(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="SetHasDropShadow">
@@ -841,6 +871,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHasDropShadow(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       </Docs>
     </Member>
     <Member MemberName="SetHorizontalOffset">
@@ -874,6 +906,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHorizontalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="SetInitialShowDelay">
@@ -907,6 +941,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetInitialShowDelay(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="SetIsEnabled">
@@ -940,6 +976,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacement">
@@ -973,6 +1011,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacement(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.Placement" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacementRectangle">
@@ -1006,6 +1046,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementRectangle(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacementTarget">
@@ -1039,6 +1081,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementTarget(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" />
       </Docs>
     </Member>
     <Member MemberName="SetShowDuration">
@@ -1072,6 +1116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowDuration(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowDuration" />
       </Docs>
     </Member>
     <Member MemberName="SetShowOnDisabled">
@@ -1105,6 +1151,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowOnDisabled(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" />
       </Docs>
     </Member>
     <Member MemberName="SetToolTip">
@@ -1143,6 +1191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetToolTip(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="SetVerticalOffset">
@@ -1176,6 +1226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetVerticalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="ShowDurationProperty">
@@ -1249,6 +1301,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipClosing" />
+        <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipClosing" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
+        <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpeningEvent">
@@ -1288,6 +1347,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTipService.ToolTipOpening" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipOpening" />
+        <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipOpening" />
+        <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipClosingEvent" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipProperty">

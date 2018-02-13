@@ -180,16 +180,20 @@
 ## Examples  
  The following code example demonstrates how to create a Submit <xref:System.Web.UI.WebControls.Button> control that posts the Web page content back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Button Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Button Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Button Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Button Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Button Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Button Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Button Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Button Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to create a Command <xref:System.Web.UI.WebControls.Button> control that sorts a list.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
+    <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,8 +219,8 @@
 ## Examples  
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Button> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCtor/CS/buttonctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCtor/VB/buttonctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCtor/CS/buttonctorcs.aspx#1)]
+ [!code-aspx-vb[ButtonCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCtor/VB/buttonctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -246,8 +250,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Button.AddAttributesToRender%2A> method in a custom server control, so that the <xref:System.Web.UI.WebControls.Button> text always displays in red.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/CS/custombuttonaddattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/VB/custombuttonaddattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/CS/custombuttonaddattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/VB/custombuttonaddattributestorendervb.aspx#1)]  
 [!code-csharp[CustomButtonAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/CS/custombuttonaddattributestorender.cs#2)]
 [!code-vb[CustomButtonAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonAddAttributesToRender/VB/custombuttonaddattributestorender.vb#2)]  
   
@@ -304,11 +308,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonControlCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonControlCausesValidation/CS/buttoncausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonControlCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonControlCausesValidation/VB/buttoncausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonControlCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonControlCausesValidation/CS/buttoncausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[ButtonControlCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonControlCausesValidation/VB/buttoncausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -338,11 +344,13 @@
 ## Examples  
  The following code example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.Button.Click> event in order to display a message on the Web page when the <xref:System.Web.UI.WebControls.Button> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]
+ [!code-aspx-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -368,23 +376,25 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.Button.Command> event to sort a list when the <xref:System.Web.UI.WebControls.Button> control is clicked. This example specifies the event handler declaratively, using the <xref:System.Web.UI.WebControls.Button.OnClick%2A> property of the <xref:System.Web.UI.WebControls.Button> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  The following code example demonstrates how to specify the event handler and programmatically add it to the event in the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]
+ [!code-aspx-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -431,11 +441,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property to create a <xref:System.Web.UI.WebControls.Button> control that sorts a list in ascending order.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -476,11 +489,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to create a <xref:System.Web.UI.WebControls.Button> control that sorts a list.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackOptions">
@@ -512,6 +528,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Web.UI.WebControls.Button.GetPostBackOptions" /> method in your derived class to modify the postback options for the button control, or to call client-side script when the button is clicked. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.GetPostBackOptions" /> method so that the standard postback options are set.</para>
         </block>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -538,7 +555,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Button.Click> event is raised when the <xref:System.Web.UI.WebControls.Button> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.Button> control (for instance, with a Submit button).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Button.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -547,14 +564,16 @@
 ## Examples  
  The following code example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.Button.Click> event in order to display a simple message on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]
+ [!code-aspx-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnClientClick">
@@ -595,11 +614,12 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.OnClientClick%2A> property to specify additional client-side script that executes when a <xref:System.Web.UI.WebControls.Button> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Button.OnClientClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.OnClientClick/cs/button.onclientclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Button.OnClientClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.OnClientClick/vb/button.onclientclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Button.OnClientClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.OnClientClick/cs/button.onclientclickcs.aspx#1)]
+ [!code-aspx-vb[Button.OnClientClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.OnClientClick/vb/button.onclientclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
       </Docs>
     </Member>
     <Member MemberName="OnCommand">
@@ -629,7 +649,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Button.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -638,19 +658,21 @@
 ## Examples  
  The following code example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.Button.Command> event to sort a list when the <xref:System.Web.UI.WebControls.Button> control is clicked. This example specifies the event handler declaratively, using the <xref:System.Web.UI.WebControls.Button.OnClick%2A> property of the <xref:System.Web.UI.WebControls.Button> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  The following code example demonstrates how to specify the event handler and programmatically add it to the event in the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]
+ [!code-aspx-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -743,19 +765,20 @@ End Sub
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property to perform a cross-page post. When the user clicks the <xref:System.Web.UI.WebControls.Button> control, the page posts the value entered in the text box to the target page specified by the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. To run this sample, you must also create a file for the target page in the same directory as this code example. The code for target page is provided in the next example.  
   
- <!-- TODO: review snippet reference [!code-csharp[Button.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.PostBackUrlProperty/CS/button.postbackurlpropertycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Button.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.PostBackUrlProperty/VB/button.postbackurlpropertyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Button.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.PostBackUrlProperty/CS/button.postbackurlpropertycs.aspx#1)]
+ [!code-aspx-vb[Button.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.PostBackUrlProperty/VB/button.postbackurlpropertyvb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=nameWithType> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross page post occurs.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Button.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.PostBackUrlPage2/CS/button.postbackurlpage2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Button.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.PostBackUrlPage2/VB/button.postbackurlpage2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[Button.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.PostBackUrlPage2/CS/button.postbackurlpage2cs.aspx#1)]
+ [!code-aspx-vb[Button.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.PostBackUrlPage2/VB/button.postbackurlpage2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.PreviousPage" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -784,6 +807,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -810,13 +835,14 @@ End Sub
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Button.RenderContents%2A> method in a custom server control so that it always displays text following a custom <xref:System.Web.UI.WebControls.Button> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomButtonRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonRenderContents/CS/custombuttonrendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomButtonRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonRenderContents/VB/custombuttonrendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomButtonRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonRenderContents/CS/custombuttonrendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomButtonRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonRenderContents/VB/custombuttonrendercontentsvb.aspx#1)]  
 [!code-csharp[CustomButtonRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomButtonRenderContents/CS/custombuttonrendercontents.cs#2)]
 [!code-vb[CustomButtonRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomButtonRenderContents/VB/custombuttonrendercontents.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -853,6 +879,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -894,11 +922,12 @@ End Sub
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.Text%2A> property to specify the caption displayed in the <xref:System.Web.UI.WebControls.Button> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonClickText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonClickText/cs/ButtonClickCS.aspx#1)]
+ [!code-aspx-vb[ButtonClickText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonClickText/vb/ButtonClickVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="UseSubmitBehavior">
@@ -940,11 +969,12 @@ End Sub
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property to specify the submit mechanism that a <xref:System.Web.UI.WebControls.Button> control uses when it posts back to the server. The <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is set to `false`, causing the button to use the ASP.NET postback mechanism. If you view the source code for the rendered page using your browser's View Source command, you will see that client-side script has been added by the ASP.NET page framework to post the form to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[Button.UseSubmitBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.UseSubmitBehavior/CS/button.usesubmitbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Button.UseSubmitBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.UseSubmitBehavior/VB/button.usesubmitbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Button.UseSubmitBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.UseSubmitBehavior/CS/button.usesubmitbehaviorcs.aspx#1)]
+ [!code-aspx-vb[Button.UseSubmitBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.UseSubmitBehavior/VB/button.usesubmitbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -988,11 +1018,13 @@ End Sub
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Button.ValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.ValidationGroup/CS/button.validationgroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Button.ValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.ValidationGroup/VB/button.validationgroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Button.ValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Button.ValidationGroup/CS/button.validationgroupcs.aspx#1)]
+ [!code-aspx-vb[Button.ValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Button.ValidationGroup/VB/button.validationgroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

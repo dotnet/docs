@@ -84,6 +84,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="Overload:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="MapPropertyToStyle">
@@ -119,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -151,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -185,6 +190,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDesignTimeHtml">

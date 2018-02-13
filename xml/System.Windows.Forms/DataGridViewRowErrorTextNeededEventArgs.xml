@@ -26,7 +26,7 @@
   
  Handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -40,6 +40,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ShowRowErrors" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowErrorTextNeededEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName="ErrorText">
@@ -76,6 +85,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -106,6 +118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
       </Docs>
     </Member>
   </Members>

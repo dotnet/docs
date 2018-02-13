@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuration Sample
 This sample demonstrates the use of a configuration file to make a service discoverable.  
@@ -45,7 +47,7 @@ This sample demonstrates the use of a configuration file to make a service disco
   
  The following config snippet shows a service with an application endpoint and a discovery endpoint defined:  
   
-```vb  
+```xml
 <services>  
         <service name="Microsoft.Samples.Discovery.CalculatorService"  
                  behaviorConfiguration="calculatorServiceBehavior">  

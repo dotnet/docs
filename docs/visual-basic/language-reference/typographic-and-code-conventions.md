@@ -1,43 +1,22 @@
 ---
 title: "Typographic and Code Conventions (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "coding conventions, Visual Basic"
-  - "best practices, coding conventions"
-  - "conventions, Visual Basic coding"
-  - "typographic conventions"
-  - "document conventions"
-  - "conventions, documentation"
+  - "coding conventions [Visual Basic], Visual Basic"
+  - "best practices [Visual Basic], coding conventions"
+  - "conventions [Visual Basic], Visual Basic coding"
+  - "typographic conventions [Visual Basic]"
+  - "document conventions [Visual Basic]"
+  - "conventions [Visual Basic], documentation"
   - "Visual Basic code, conventions"
 ms.assetid: 1916cd81-ea9d-4faa-81f7-4a0d864b60f4
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Typographic and Code Conventions (Visual Basic)
 Visual Basic documentation uses the following typographic and code conventions.  
@@ -69,9 +48,9 @@ Visual Basic documentation uses the following typographic and code conventions.
 |`sampleVar = "This is an " _`<br /><br /> `& "example" _`<br /><br /> `& " of how to continue code."`|A space followed by an underscore ( _) at the end of a line indicates that the statement continues on the following line.|  
   
 ## See Also  
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)   
- [Keywords](../../visual-basic/language-reference/keywords/index.md)   
- [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)   
- [Visual Basic Naming Conventions](../../visual-basic/programming-guide/program-structure/naming-conventions.md)   
- [How to: Break and Combine Statements in Code](../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)   
+ [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
+ [Keywords](../../visual-basic/language-reference/keywords/index.md)  
+ [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)  
+ [Visual Basic Naming Conventions](../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
+ [How to: Break and Combine Statements in Code](../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)  
  [Comments in Code](../../visual-basic/programming-guide/program-structure/comments-in-code.md)

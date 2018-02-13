@@ -35,11 +35,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm> class to create a simple form.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,11 +74,12 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlForm> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlFormCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlFormCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlFormCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlFormCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.TagName" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -109,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpContext.RewritePath(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -153,6 +158,7 @@
         <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> collection for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child server controls.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DefaultButton">
@@ -198,12 +204,16 @@
 ## Examples  
  The following example shows how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property to set the default control that causes a postback.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The control referenced as the default button is not of the type <see cref="T:System.Web.UI.WebControls.IButtonControl" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="DefaultFocus">
@@ -239,11 +249,15 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property to display a specified control on a form as the control with input focus when the form loads. When `Form1` renders, notice that the insertion point is positioned in `TextBox1`, indicating that `TextBox1` is the control with focus.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+        <altmember cref="P:System.Web.UI.Control.ID" />
+        <altmember cref="M:System.Web.UI.Control.Focus" />
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Enctype">
@@ -290,11 +304,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Enctype%2A> property to specify the encoding type the browser uses to send data back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -334,11 +349,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property to specify that form data is posted back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -375,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -401,7 +418,7 @@
 ## Remarks  
  When notified by the <xref:System.Web.UI.HtmlControls.HtmlForm.OnInit%2A> method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -412,6 +429,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method so that registered delegates receive the event. Additionally, calling the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" /> method ensures that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control is properly set as the Web page form and the page's view state is persisted.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Page.RegisterViewStateHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -443,6 +461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.SmartNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -477,6 +496,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child controls are correctly rendered.</para>
         </block>
+        <altmember cref="T:System.Web.HttpException" />
+        <altmember cref="P:System.Web.UI.Page.SmartNavigation" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -513,6 +535,11 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's attributes are correctly rendered.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.IsValidFormAttribute(System.String)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <altmember cref="T:System.InvalidOperationException" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -548,6 +575,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control's child controls are correctly rendered.</para>
         </block>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.Control.Focus" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -572,6 +602,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderControl(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control is correctly rendered.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Control.DesignMode" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SubmitDisabledControls">
@@ -606,8 +638,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property on a form to `true` to cause controls disabled by client script to maintain their values after the page posts back to the server. In this example, if you set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property to `false` and then click the **Post back** button, the text in the HTML text box is lost and the HTML check box is no longer selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -663,8 +695,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property to specify a new, unframed window to display the results of the information posted back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlFormTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlFormTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlFormTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx#1)]
+ [!code-aspx-vb[HtmlFormTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -701,11 +733,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.UniqueID%2A> property to retrieve the unique identifier for an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.UniqueID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.UniqueID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.UniqueID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.UniqueID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
       </Docs>
     </Member>
   </Members>

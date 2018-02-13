@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "net.ComponentModel.MaskPropertyEditor"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MaskedTextBox control [Windows Forms]"
 ms.assetid: 779b3a12-cd74-4e58-b46e-04983bda5b2c
@@ -20,6 +18,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Input Mask
 The masked text box control is an enhanced text box control that supports a declarative syntax for accepting or rejecting user input. By setting the Mask property, you can specify the allowable user input without writing any custom validation logic in your application. For more information, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox> class.  

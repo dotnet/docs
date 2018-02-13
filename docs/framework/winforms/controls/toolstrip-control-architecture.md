@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ToolStrip control [Windows Forms], architecture"
 ms.assetid: 71df2d18-862e-4701-9ff9-c1fe606f94f2
@@ -18,6 +16,8 @@ caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolStrip Control Architecture
 The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem> classes provide a flexible, extensible system for displaying toolbar, status, and menu items. These classes are all contained in the <xref:System.Windows.Forms> namespace and they are all typically named with the "ToolStrip" prefix (such as <xref:System.Windows.Forms.ToolStripOverflow>) or with the "Strip" suffix (such as <xref:System.Windows.Forms.MenuStrip>).  
@@ -387,10 +387,10 @@ ToolStripItem object model
 -   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See Also  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)   
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)   
- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)   
- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)   
- [StatusStrip Control](../../../../docs/framework/winforms/controls/statusstrip-control.md)   
- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)   
+ [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
+ [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)  
+ [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
+ [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)  
+ [StatusStrip Control](../../../../docs/framework/winforms/controls/statusstrip-control.md)  
+ [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)  
  [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)

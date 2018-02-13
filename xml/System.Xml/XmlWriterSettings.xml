@@ -40,7 +40,7 @@
 |Property|Specifies|Value|Default|  
 |--------------|---------------|-----------|-------------|  
 |<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|Whether to check that characters are in the legal XML character set, as defined by W3C.|`true` or `false`|`true`|  
-|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|Whether to check that output is a well-formed XML 1.0 document or fragment.|<xref:System.Xml.ConformanceLevel?displayProperty=nameWithType> (document-level), <xref:System.Xml.ConformanceLevel.Fragment> (fragment-level), or <xref:System.Xml.ConformanceLevel.Auto> (auto-detection)|<xref:System.Xml.ConformanceLevel?displayProperty=nameWithType> (document-level conformance)|  
+|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|Whether to check that output is a well-formed XML 1.0 document or fragment.|<xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType> (document-level), <xref:System.Xml.ConformanceLevel.Fragment> (fragment-level), or <xref:System.Xml.ConformanceLevel.Auto> (auto-detection)|<xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType> (document-level conformance)|  
 |<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|Whether to add closing tags to all unclosed elements when the <xref:System.Xml.XmlWriter.Close%2A> method is called.|`true` or `false`|`true`|  
   
  To specify output format, use these properties:  

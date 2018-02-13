@@ -10,19 +10,23 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "ComboBox control [Windows Forms], accessing items"
   - "ListBox control [Windows Forms], returning item information"
-  - "list boxes, accessing items"
+  - "list boxes [Windows Forms], accessing items"
   - "ListBox control [Windows Forms], accessing items"
-  - "combo boxes, accessing items"
+  - "combo boxes [Windows Forms], accessing items"
   - "CheckedListBox control [Windows Forms], accessing items"
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Access Specific Items in a Windows Forms ComboBox, ListBox, or CheckedListBox Control
 Accessing specific items in a Windows Forms combo box, list box, or checked list box is an essential task. It enables you to programmatically determine what is in a list, at any given position.  
@@ -56,7 +60,7 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ComboBox>   
- <xref:System.Windows.Forms.ListBox>   
- <xref:System.Windows.Forms.CheckedListBox>   
+ <xref:System.Windows.Forms.ComboBox>  
+ <xref:System.Windows.Forms.ListBox>  
+ <xref:System.Windows.Forms.CheckedListBox>  
  [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

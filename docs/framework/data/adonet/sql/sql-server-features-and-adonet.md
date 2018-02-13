@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
 caps.latest.revision: 9
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL Server Features and ADO.NET
 The topics in this section discuss features in SQL Server that are targeted at developing database applications using ADO.NET.  
@@ -53,8 +55,8 @@ The topics in this section discuss features in SQL Server that are targeted at d
  Describes SqlClient support for LocalDB databases.  
   
 ## See Also  
- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)   
- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)   
- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)   
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)   
+ [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
+ [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
+ [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
+ [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

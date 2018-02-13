@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;resolver&gt;
 Specifies a peer resolver that is used to resolve a peer mesh ID to a set of peer node addresses that represents several nodes that participate in the mesh.  
@@ -58,10 +60,10 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
  A peer name resolver is a discovery service used by peer channels to find peer nodes that participate in a peer mesh. It is also used to "register" a node with a peer mesh, the mechanism by which the peer node becomes known and available from the peer mesh. For more information on peer resolvers, see [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md).  
   
 ## See Also  
- <xref:System.ServiceModel.PeerResolver>   
- <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>   
- <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>   
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>   
- <xref:System.ServiceModel.Configuration.PeerResolverElement>   
- [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)   
- [Adding a Custom Resolver to a PeerChannel Application](http://msdn.microsoft.com/en-us/12aa3787-2962-439c-ad27-46523c8b0419)
+ <xref:System.ServiceModel.PeerResolver>  
+ <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>  
+ <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>  
+ <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>  
+ <xref:System.ServiceModel.Configuration.PeerResolverElement>  
+ [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)  
+ [Adding a Custom Resolver to a PeerChannel Application](http://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)

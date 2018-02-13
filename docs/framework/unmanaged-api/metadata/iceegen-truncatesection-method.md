@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::TruncateSection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "TruncateSection method [.NET Framework metadata]"
   - "ICeeGen::TruncateSection method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::TruncateSection Method
 Truncates the specified code section by the specified length.  

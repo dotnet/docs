@@ -69,13 +69,10 @@
 -   <xref:System.Collections.ObjectModel.ObservableCollection%601> is in a namespace and assembly that are not initially mapped to the default XML namespace. You must map a prefix for the namespace and assembly, and then use that prefix on the object element tag for <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
  A more straightforward way to use <xref:System.Collections.ObjectModel.ObservableCollection%601> capabilities from XAML in an application is to declare your own non-generic custom collection class that derives from <xref:System.Collections.ObjectModel.ObservableCollection%601>, and constrains it to a specific type. Then map the assembly that contains this class, and reference it as an object element in your XAML.  
-  
-<a name="xamlTextUsage_ObservableCollection"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" />
+    <altmember cref="T:System.Windows.Data.CollectionView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,6 +211,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy" />
       </Docs>
     </Member>
     <Member MemberName="CheckReentrancy">
@@ -244,6 +242,7 @@
         <summary>Checks for reentrant attempts to change this collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">If there was a call to <see cref="M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy" /> of which the <see cref="T:System.IDisposable" /> return value has not yet been disposed of. Typically, this means when there are additional attempts to change this collection during a <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event. However, it depends on when derived classes choose to call <see cref="M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy" />
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -310,6 +309,7 @@
       <Docs>
         <summary>Occurs when an item is added, removed, changed, moved, or the entire list is refreshed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -544,6 +544,7 @@
       <Docs>
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -630,5 +631,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

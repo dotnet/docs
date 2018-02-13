@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.LambdaExpression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -73,7 +73,7 @@ uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -81,7 +81,7 @@ uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerSer
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

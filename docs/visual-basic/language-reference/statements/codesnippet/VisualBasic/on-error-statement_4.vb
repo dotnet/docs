@@ -23,6 +23,6 @@ ErrorHandler:  ' Error-handling routine.
       Case Else
          ' Insert code to handle other situations here...
    End Select
-   Resume Next  ' Resume execution at same line
-                ' that caused the error.
+   Resume Next  ' Resume execution at the statement immediately 
+                ' following the statement where the error occurred.
 End Sub

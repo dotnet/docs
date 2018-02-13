@@ -1,7 +1,7 @@
 ---
 title: "Local Type Inference (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -12,10 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "local type inference"
   - "vb.TypeInfer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Option Infer statement"
+  - "Option Infer statement [Visual Basic]"
   - "local type inference [Visual Basic]"
   - "implicitly-typed local variables [Visual Basic]"
   - "variables [Visual Basic], type inference"
@@ -25,30 +23,18 @@ ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Local Type Inference (Visual Basic)
 The Visual Basic compiler uses *type inference* to determine the data types of local variables declared without an `As` clause. The compiler infers the type of the variable from the type of the initialization expression. This enables you to declare variables without explicitly stating a type, as shown in the following example. As a result of the declarations, both `num1` and `num2` are strongly typed as integers.  
   
  [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_1.vb)]  
-  
+ 
 > [!NOTE]
 >  If you do not want `num2` in the previous example to be typed as an `Integer`, you can specify another type by using a declaration like `Dim num3 As Object = 3` or `Dim num4 As Double = 3`.  
-  
+
+> [!NOTE]
+>  Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.
+ 
  Local type inference applies at procedure level. It cannot be used to declare variables at module level (within a class, structure, module, or interface but not within a procedure or block). If `num2` in the previous example were a field of a class instead of a local variable in a procedure, the declaration would cause an error with `Option Strict` on, and would classify `num2` as an `Object` with `Option Strict` off. Similarly, local type inference does not apply to procedure level variables declared as `Static`.  
   
 ## Type Inference vs. Late Binding  
@@ -90,14 +76,11 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
-## Restrictions  
- Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.  
-  
 ## See Also  
- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
- [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)   
- [/optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
+ [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+ [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
+ [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [/optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

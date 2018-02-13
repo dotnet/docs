@@ -9,21 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "drop-down lists, Windows Forms"
-  - "list controls, Windows Forms"
-  - "combo boxes, Windows Forms controls"
+  - "drop-down lists [Windows Forms], Windows Forms"
+  - "list controls [Windows Forms], Windows Forms"
+  - "combo boxes [Windows Forms], Windows Forms controls"
   - "combo boxes"
-  - "list items, Windows Forms controls that display"
-  - "drop-down lists, ComboBox control"
+  - "list items [Windows Forms], Windows Forms controls that display"
+  - "drop-down lists [Windows Forms], ComboBox control"
   - "ComboBox control [Windows Forms]"
 ms.assetid: 86a1bbc3-0469-4290-91c5-99ff61b739ff
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ComboBox Control (Windows Forms)
 The Windows Forms `ComboBox` control is used to display data in a drop-down combo box. By default, the `ComboBox` control appears in two parts: the top part is a text box that allows the user to type a list item. The second part is a list box that displays a list of items from which the user can select one.  

@@ -1,16 +1,10 @@
 ---
 title: "Developing Applications with Visual Basic"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic, developing applications"
   - "applications [Visual Basic]"
@@ -18,22 +12,6 @@ ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Developing Applications with Visual Basic
 This section covers conceptual documentation for the Visual Basic language.  
@@ -46,7 +24,7 @@ This section covers conceptual documentation for the Visual Basic language.
  Discusses a new feature called `My`, which provides access to information and default object instances that are related to an application and its run-time environment.  
   
  [Accessing Data in Visual Basic Applications](../../visual-basic/developing-apps/accessing-data.md)  
- Contains Help on accessing data in Visual Basic.   
+ Contains Help on accessing data in Visual Basic.  
   
  [Creating and Using Components in Visual Basic](../../visual-basic/developing-apps/creating-and-using-components.md)  
  Defines the term *component* and discusses how and when to create components.  

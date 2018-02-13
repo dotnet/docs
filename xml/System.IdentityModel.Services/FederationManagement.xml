@@ -196,5 +196,14 @@
  <paramref name="metadataSerializer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateIdentityProviderTrustInfo">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

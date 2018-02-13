@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetaHost interface [.NET Framework hosting]"
 ms.assetid: c627fcdd-fc4f-4b1c-8e91-df8536f627d8
@@ -28,6 +26,8 @@ caps.latest.revision: 28
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRMetaHost Interface
 Provides methods that return a specific version of the common language runtime (CLR) based on its version number, list all installed CLRs, list all runtimes that are loaded in a specified process, discover the CLR version used to compile an assembly, exit a process with a clean runtime shutdown, and query legacy API binding.  
@@ -63,5 +63,5 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHost,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
+ [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyGesture" />
+    <altmember cref="T:System.Windows.Input.MouseGesture" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,8 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">the collection is read-only.</exception>
         <exception cref="T:System.ArgumentNullException">the gesture is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -121,6 +125,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <exception cref="T:System.ArgumentNullException">The collection to add is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -140,6 +146,8 @@
         <summary>Removes all elements from the <see cref="T:System.Windows.Input.InputGestureCollection" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The collection is read only.</exception>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -162,6 +170,8 @@
         <summary>Determines whether the specified <see cref="T:System.Windows.Input.InputGesture" /> is in the collection.</summary>
         <returns>**true** if the gesture is in the collection; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -189,6 +199,8 @@
           <paramref name="inputGestures" /> is a <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.</exception>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -341,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputGestureCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -444,6 +457,7 @@
         <summary>Gets an object that can be used to synchronize access to this <see cref="T:System.Windows.Input.InputGestureCollection" />.</summary>
         <value>The object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputGestureCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -474,6 +488,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.CopyTo(System.Windows.Input.InputGesture[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -503,6 +518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.Add(System.Windows.Input.InputGesture)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -533,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.Contains(System.Windows.Input.InputGesture)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -562,6 +579,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.IndexOf(System.Windows.Input.InputGesture)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -592,6 +610,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.Insert(System.Int32,System.Windows.Input.InputGesture)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -621,6 +640,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputGestureCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -649,7 +669,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.InputGestureCollection.Remove(System.Windows.Input.InputGesture)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputGestureCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

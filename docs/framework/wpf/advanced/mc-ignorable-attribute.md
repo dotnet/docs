@@ -10,17 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "mc XML namespace prefix"
+  - "mc XML namespace prefix [WPF]"
   - "mc:Ignorable attribute"
-  - "XML, mc namespace prefix"
-  - "XAML, mc:Ignorable attribute"
+  - "XML [WPF], mc namespace prefix"
+  - "XAML [WPF], mc:Ignorable attribute"
   - "mc:ProcessContent attribute"
-  - "XAML, mc:ProcessContent attribute"
+  - "XAML [WPF], mc:ProcessContent attribute"
 ms.assetid: acd9a6ef-b7ca-4146-abb6-60f3b366e9ec
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # mc:Ignorable Attribute
 Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] namespace prefixes encountered in a markup file may be ignored by a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor. The `mc:Ignorable` attribute supports markup compatibility both for custom namespace mapping and for [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] versioning.  
@@ -72,7 +74,7 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
  The [!INCLUDE[TLA#tla_mcxmlnsv1](../../../../includes/tlasharptla-mcxmlnsv1-md.md)] namespace defines other elements and attributes that are not documented within this area of the [!INCLUDE[TLA#tla_sdk](../../../../includes/tlasharptla-sdk-md.md)]. For more information, see [XML Markup Compatibility Specification](http://go.microsoft.com/fwlink/?LinkId=73824).  
   
 ## See Also  
- <xref:System.Windows.Markup.XamlReader>   
- [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.Markup.XamlReader>  
+ [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

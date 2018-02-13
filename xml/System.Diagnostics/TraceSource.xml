@@ -882,7 +882,7 @@
 ## Remarks  
  The <xref:System.Diagnostics.TraceSource.TraceInformation%2A> method provides an informational message intended to be read by users and not by tools.  
   
- <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%29> calls the <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method, setting `eventType` to <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> and passing the informative message as the message string. The <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method in turn calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method of each trace listener.  
+ <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%29> calls the <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method, setting `eventType` to <xref:System.Diagnostics.TraceEventType.Information?displayProperty=nameWithType> and passing the informative message as the message string. The <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method in turn calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29> method of each trace listener.  
   
  ]]></format>
         </remarks>
@@ -938,7 +938,7 @@
   
  The <xref:System.Diagnostics.TraceSource.TraceInformation%2A> method provides an informational message intended to be read by users and not by tools.  
   
- <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29> calls the <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method, setting `eventType` to <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> and passing the message content as an object array with formatting information. The <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method in turn calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method of each trace listener.  
+ <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29> calls the <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method, setting `eventType` to <xref:System.Diagnostics.TraceEventType.Information?displayProperty=nameWithType> and passing the message content as an object array with formatting information. The <xref:System.Diagnostics.TraceSource.TraceEvent%28System.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method in turn calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D%29> method of each trace listener.  
   
  ]]></format>
         </remarks>
@@ -993,13 +993,56 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method calls the <xref:System.Diagnostics.TraceListener.TraceTransfer%2A> method of each trace listener in the <xref:System.Diagnostics.TraceSource.Listeners%2A> property to write the trace information. The default <xref:System.Diagnostics.TraceListener.TraceTransfer%2A> method in the base <xref:System.Diagnostics.TraceListener> class calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29?displayProperty=nameWithType> method to process the call, setting `eventType` to <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> and appending a string representation of the `relatedActivityId` GUID to `message`.  
+ The <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method calls the <xref:System.Diagnostics.TraceListener.TraceTransfer%2A> method of each trace listener in the <xref:System.Diagnostics.TraceSource.Listeners%2A> property to write the trace information. The default <xref:System.Diagnostics.TraceListener.TraceTransfer%2A> method in the base <xref:System.Diagnostics.TraceListener> class calls the <xref:System.Diagnostics.TraceListener.TraceEvent%28System.Diagnostics.TraceEventCache%2CSystem.String%2CSystem.Diagnostics.TraceEventType%2CSystem.Int32%2CSystem.String%29?displayProperty=nameWithType> method to process the call, setting `eventType` to <xref:System.Diagnostics.TraceEventType.Transfer?displayProperty=nameWithType> and appending a string representation of the `relatedActivityId` GUID to `message`.  
   
  <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> is intended to be used with the logical operations of a <xref:System.Diagnostics.CorrelationManager>. The `relatedActivityId` parameter relates to the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property of a <xref:System.Diagnostics.CorrelationManager> object. If a logical operation begins in one activity and transfers to another, the second activity logs the transfer by calling the <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method. The <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> call relates the new activity identity to the previous identity. The most likely consumer of this functionality is a trace viewer that can report logical operations that span multiple activities.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.XmlWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventSchemaTraceListener" />
+        <altmember cref="T:System.Diagnostics.DelimitedListTraceListener" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a trace event message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TraceSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TraceInformation">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

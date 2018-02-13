@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 15505cd7-0df2-427a-9f86-e0f96f60ee2e
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Filter at the DataContext Level
 You can filter `EntitySets` at the `DataContext` level. Such filters apply to all queries done with that <xref:System.Data.Linq.DataContext> instance.  

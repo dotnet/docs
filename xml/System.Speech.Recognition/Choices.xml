@@ -30,7 +30,7 @@
   
  The <xref:System.Speech.Recognition.Choices> class serves the same function as the `one-of` XML element defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/) and is similar to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> class in the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
   
- For more information about defining a speech recognition grammar, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about defining a speech recognition grammar, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
    
   
@@ -60,6 +60,8 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.Grammar" />
+    <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -162,6 +164,8 @@ public Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,6 +238,8 @@ public Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -304,6 +310,8 @@ public Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -381,6 +389,8 @@ public Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -456,6 +466,8 @@ public Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="ToGrammarBuilder">
@@ -513,7 +525,18 @@ private Grammar CreateColorChoice()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds items to the set of alternatives.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

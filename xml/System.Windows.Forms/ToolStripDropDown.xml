@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownButton" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -471,6 +473,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripDropDownCloseReason" />
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -686,6 +689,7 @@
         <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.ToolStripDropDown" />.</summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -770,6 +774,7 @@
         <summary>Gets the docking location of the <see cref="T:System.Windows.Forms.ToolStrip" />, indicating which borders are docked to the container.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is Top.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.DefaultDock" />
       </Docs>
     </Member>
     <Member MemberName="DefaultDropDownDirection">
@@ -816,6 +821,7 @@
         <summary>Gets the internal spacing, in pixels, of the contents of a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value of <c>(0, 0, 1, 0)</c>.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.DefaultPadding" />
       </Docs>
     </Member>
     <Member MemberName="DefaultShowItemToolTips">
@@ -870,7 +876,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -2210,6 +2216,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Control.IsMnemonic(System.Char,System.String)" />
+        <altmember cref="M:System.Windows.Forms.ToolStripDropDown.ProcessDialogChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="Region">
@@ -2304,6 +2312,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values. The default is <see cref="F:System.Windows.Forms.RightToLeft.Inherit" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -2918,6 +2927,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> is a top-level control; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.GetTopLevel" />
       </Docs>
     </Member>
     <Member MemberName="TopMost">
@@ -3062,7 +3072,26 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Positions the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> relative to the specified coordinates.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Closes the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

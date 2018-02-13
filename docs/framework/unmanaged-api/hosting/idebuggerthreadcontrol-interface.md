@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDebuggerThreadControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerThreadControl interface [.NET Framework hosting]"
 ms.assetid: 0a270c42-a7d1-45f1-a64d-fa3e84d14532
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl Interface
 Provides methods for notifying the host about the blocking and unblocking of threads by the debugging services.  

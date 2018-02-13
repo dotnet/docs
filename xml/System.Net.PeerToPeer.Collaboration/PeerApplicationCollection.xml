@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+    <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerApplication.#ctor" />
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -53,6 +56,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -83,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -102,6 +109,8 @@
         <summary>Returns a <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object, separated by commas.</summary>
         <returns>A <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" />, separated by commas.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerApplication)" />
       </Docs>
     </Member>
   </Members>

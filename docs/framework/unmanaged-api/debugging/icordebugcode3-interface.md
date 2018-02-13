@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugCode3 interface [.NET Framework debugging]"
 ms.assetid: 70f07c9e-0614-4bee-ac34-09fe6c51c5a9
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode3 Interface
 Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide information about a managed return value.  
@@ -56,5 +56,5 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
     
     
     
- [ICorDebugILFrame3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)   
+ [ICorDebugILFrame3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

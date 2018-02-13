@@ -17,6 +17,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Calendar
 A calendar enables a user to select a date by using a visual calendar display.  
@@ -58,5 +60,5 @@ Calendar controls
 |SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode.Year> or <xref:System.Windows.Controls.CalendarMode.Decade>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode.Month> or <xref:System.Windows.Controls.CalendarMode.Year> represented by focused item.|  
   
 ## See Also  
- [Controls](../../../../docs/framework/wpf/controls/index.md)   
+ [Controls](../../../../docs/framework/wpf/controls/index.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

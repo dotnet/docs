@@ -1,19 +1,13 @@
 ---
 title: "&lt;para&gt; (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "<para>"
   - "para"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<para> C# XML tag"
   - "para C# XML tag"
@@ -21,21 +15,6 @@ ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;para&gt; (C# Programming Guide)
 ## Syntax  
@@ -57,5 +36,5 @@ translation.priority.ht:
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<para>.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

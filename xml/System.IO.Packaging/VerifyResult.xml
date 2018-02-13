@@ -24,6 +24,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.IO.Packaging.PackageDigitalSignature.Verify" />
+    <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+    <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+    <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
+    <altmember cref="T:System.IO.Packaging.PackageDigitalSignatureManager" />
+    <altmember cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="CertificateRequired">

@@ -1334,5 +1334,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadataValueEscaped">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the escaped value of the metadatum with the provided name of the provided item definition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Build">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the default targets of the project with loggers of the project collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvaluatedItemIncludeEscaped">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the evaluated, escaped value of the Include attribute of the provided item definition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeepCopy">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an independent, deep clone of this project and everything in it. Useful for compiling a single file or for keeping build results between builds.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item with no metadata to the project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new project instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

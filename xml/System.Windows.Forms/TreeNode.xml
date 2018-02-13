@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -170,6 +176,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -208,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -248,6 +258,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -269,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color?displayProperty=nameWithType>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
+ If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color.Empty?displayProperty=nameWithType>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
   
    
   
@@ -282,6 +294,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="BeginEdit">
@@ -321,6 +334,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.TreeView.LabelEdit" /> is set to <see langword="false" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -395,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.CheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -432,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Remove" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -469,6 +486,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -614,6 +635,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="EnsureVisible">
@@ -651,6 +674,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -688,6 +714,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -725,6 +755,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="FirstNode">
@@ -798,6 +832,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="FromHandle">
@@ -838,6 +873,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.TreeView" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="FullPath">
@@ -878,6 +915,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is not contained in a <see cref="T:System.Windows.Forms.TreeView" />.</exception>
+        <altmember cref="P:System.Windows.Forms.TreeView.PathSeparator" />
       </Docs>
     </Member>
     <Member MemberName="GetNodeCount">
@@ -912,6 +950,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.Nodes" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -1010,6 +1050,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="P:System.Windows.Forms.TreeView.ImageList" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.SelectedImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -1123,6 +1166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsExpanded">
@@ -1158,6 +1203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -1193,6 +1240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1228,6 +1276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="LastNode">
@@ -1267,6 +1317,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevNode" />
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -1361,6 +1414,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.LastNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
       </Docs>
     </Member>
     <Member MemberName="NextVisibleNode">
@@ -1400,6 +1456,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="NodeFont">
@@ -1445,6 +1503,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1487,6 +1547,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
+        <altmember cref="P:System.Windows.Forms.TreeView.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1565,6 +1627,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.LastNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
       </Docs>
     </Member>
     <Member MemberName="PrevVisibleNode">
@@ -1604,6 +1669,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1638,6 +1705,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNodeCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.TreeNodeCollection.Remove(System.Windows.Forms.TreeNode)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedImageIndex">
@@ -1695,6 +1764,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="SelectedImageKey">
@@ -1814,6 +1884,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1 or greater than 14.</exception>
+        <altmember cref="P:System.Windows.Forms.TreeNode.StateImageKey" />
       </Docs>
     </Member>
     <Member MemberName="StateImageKey">
@@ -1863,6 +1934,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.StateImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1938,6 +2010,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1979,6 +2052,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.LabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="Toggle">
@@ -2016,6 +2092,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -2078,6 +2158,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TreeView">
@@ -2112,7 +2193,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Collapse">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

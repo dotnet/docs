@@ -226,5 +226,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves member conflicts by keeping current values and resetting the baseline original values to match the more recent database values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

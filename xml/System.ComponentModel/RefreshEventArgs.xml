@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.RefreshEventHandler" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +70,9 @@
         <param name="componentChanged">The component that changed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RefreshEventArgs" /> class with the component that has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.RefreshEventHandler" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,6 +101,9 @@
         <param name="typeChanged">The <see cref="T:System.Type" /> that changed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RefreshEventArgs" /> class with the type of component that has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.RefreshEventHandler" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ComponentChanged">
@@ -153,5 +162,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RefreshEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

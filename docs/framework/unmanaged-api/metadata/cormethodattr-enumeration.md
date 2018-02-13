@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorMethodAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorMethodAttr enumeration [.NET Framework metadata]"
 ms.assetid: 4e0c3521-e54d-43c1-9857-cc76b49b8ffc
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorMethodAttr Enumeration
 Contains values that describe the features of a method.  

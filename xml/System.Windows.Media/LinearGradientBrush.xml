@@ -37,6 +37,9 @@ A diagonal linear gradient with highlighted gradient stops
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.GradientStop" />
+    <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
+    <altmember cref="T:System.Windows.Media.GradientBrush" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -101,6 +104,7 @@ A diagonal linear gradient with highlighted gradient stops
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,6 +339,7 @@ A diagonal linear gradient
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="EndPointProperty">
@@ -395,6 +400,7 @@ A diagonal linear gradient
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="StartPointProperty">

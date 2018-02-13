@@ -43,6 +43,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
+    <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+    <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+    <altmember cref="P:System.Windows.Forms.ListView.View" />
+    <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+    <altmember cref="T:System.Windows.Forms.View" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +116,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -140,6 +150,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Header" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Item" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemIndex" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="P:System.Windows.Forms.ListView.Columns" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.SubItems" />
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -178,6 +198,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="DrawDefault">
@@ -217,6 +243,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="DrawFocusRectangle">
@@ -249,6 +282,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Bounds" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -277,6 +316,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -318,6 +364,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+        <altmember cref="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
+        <altmember cref="T:System.Drawing.StringFormat" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -353,6 +407,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -383,6 +441,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Item" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemIndex" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -420,6 +485,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemIndex" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -450,6 +524,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.Items" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName="ItemState">
@@ -485,6 +565,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItemStates" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewItemEventArgs.Item" />
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
       </Docs>
     </Member>
     <Member MemberName="SubItem">
@@ -520,7 +606,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Item" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> using its current foreground color and the default formatting.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

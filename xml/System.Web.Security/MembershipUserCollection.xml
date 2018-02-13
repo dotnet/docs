@@ -35,8 +35,8 @@
 ## Examples  
  The following code example returns a list of membership users with a count of the number of users currently online. For an example of an ASP.NET application configured to use membership, see the <xref:System.Web.Security.Membership> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
     </remarks>
@@ -183,8 +183,8 @@
 ## Examples  
  The following code example lists all of the users from the membership user data source, including a count of the total number of users.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/countcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/countvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/countcs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/countvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -279,8 +279,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and shows specific membership information for the selected user name.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>

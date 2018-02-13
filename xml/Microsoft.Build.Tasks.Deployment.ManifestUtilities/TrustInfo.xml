@@ -76,6 +76,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.IO.Stream)" />
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsFullTrust">
@@ -101,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.IO.Stream)" />
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PermissionSet">
@@ -277,6 +281,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.IO.Stream)" />
+        <altmember cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -446,5 +452,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the application trust to an XML file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the application trust from an XML file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteManifest">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the application trust to a new template ClickOnce application manifest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadManifest">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the application trust from a ClickOnce application manifest.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineImportMember"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineImportMember method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportMember method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::DefineImportMember Method
 Creates a reference to the specified member of a type or module that is defined outside the current scope, and defines a token for that reference.  
@@ -94,5 +94,5 @@ HRESULT DefineImportMember (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)   
+ [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
  [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

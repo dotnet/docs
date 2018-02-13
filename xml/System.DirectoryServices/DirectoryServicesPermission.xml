@@ -13,6 +13,9 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class allows you to control code access security permissions for <see cref="N:System.DirectoryServices" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionAttribute" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" />
+    <altmember cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +69,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class with the specified permission state.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="State" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,5 +110,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

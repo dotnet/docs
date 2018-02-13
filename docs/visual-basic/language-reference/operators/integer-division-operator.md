@@ -1,50 +1,31 @@
 ---
 title: "\\ Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.\\"
   - "\\"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "division operator, integer"
-  - "integer division operator"
+  - "division operator [Visual Basic], integer"
+  - "integer division operator [Visual Basic]"
   - "zero, division by zero"
-  - "arithmetic operators, division"
-  - "division, by zero"
+  - "arithmetic operators [Visual Basic], division"
+  - "division [Visual Basic], by zero"
   - "backslash (\\) [Visual Basic]"
   - "\\ operator [Visual Basic]"
   - "integer quotient"
-  - "math operators"
+  - "math operators [Visual Basic]"
   - "quotients, integer"
-  - "truncation, integer division"
+  - "truncation [Visual Basic], integer division"
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # \ Operator (Visual Basic)
 Divides two numbers and returns an integer result.  
@@ -91,10 +72,10 @@ expression1 \ expression2
  The expressions in the preceding example return values of 2, 3, 33, and -22, respectively.  
   
 ## See Also  
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
- [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
+ [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)  
+ [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

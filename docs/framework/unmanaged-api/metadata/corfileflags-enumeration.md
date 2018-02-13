@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorFileFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorFileFlags enumeration [.NET Framework metadata]"
 ms.assetid: d16703fd-518f-412e-92cb-74433d11032e
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorFileFlags Enumeration
 Contains values that describe the type of file defined in a call to [IMetaDataAssemblyEmit::DefineFile](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).  

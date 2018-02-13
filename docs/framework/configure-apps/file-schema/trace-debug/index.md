@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "tracing [.NET Framework], trace and debug settings schema"
   - "configuration schema [.NET Framework], trace and debug settings"
@@ -28,6 +23,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Trace and Debug Settings Schema
 Trace and debug settings specify trace listeners that collect, store, and route messages, and the level where a trace switch is set.  
@@ -59,7 +56,7 @@ Trace and debug settings specify trace listeners that collect, store, and route 
 |[\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md)|Contains listeners that collect, store, and route tracing messages.|  
   
 ## See Also  
- <xref:System.Diagnostics.Trace>   
- <xref:System.Diagnostics.TraceSource>   
- <xref:System.Diagnostics.Debug>   
+ <xref:System.Diagnostics.Trace>  
+ <xref:System.Diagnostics.TraceSource>  
+ <xref:System.Diagnostics.Debug>  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

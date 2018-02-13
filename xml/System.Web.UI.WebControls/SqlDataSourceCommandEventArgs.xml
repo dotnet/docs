@@ -33,11 +33,17 @@
 ## Examples  
  The following code example demonstrates how to display data retrieved from a Microsoft SQL Server database in a <xref:System.Web.UI.WebControls.DropDownList> control, and update the record using a <xref:System.Web.UI.WebControls.TextBox> control. The example shows how you can use a <xref:System.Data.Common.DbTransaction> object to add transaction context when using the <xref:System.Web.UI.WebControls.SqlDataSource> control to update data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +62,9 @@
         <param name="command">An <see cref="T:System.Data.Common.DbCommand" /> object that represents the cancelable <see cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />, <see cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />, or <see cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" /> command.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> class, using the specified database command object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -90,11 +99,15 @@
   
  Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Common.DbCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
   </Members>

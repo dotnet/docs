@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.KeyContainerPermissionAttribute" />
+    <altmember cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -448,5 +450,15 @@
           <paramref name="target" /> is not <see langword="null" /> and does not specify a permission of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.KeyContainerPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

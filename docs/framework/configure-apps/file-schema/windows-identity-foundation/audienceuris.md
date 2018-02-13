@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;audienceUris&gt;
 Specifies the set of URIs that are acceptable identifiers of the relying party (RP). Tokens will not be accepted unless they are scoped for one of the allowed audience URIs.  

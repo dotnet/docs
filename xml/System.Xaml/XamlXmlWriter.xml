@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xaml.XamlServices.Save(System.IO.Stream,System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -494,5 +495,14 @@
           <paramref name="value" /> specifies a value that is not null or a string.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -171,8 +171,8 @@ To delete a queue and all the messages contained in it, call the
 Now that you've learned the basics of Queue storage, follow these links
 to learn about more complex storage tasks.
 
-- [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
-- [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
+- [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)

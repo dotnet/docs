@@ -10,20 +10,22 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "transformations, about transformations"
-  - "classes, 2-D transform"
-  - "transform classes, 2-D"
+  - "transformations [WPF], about transformations"
+  - "classes [WPF], 2-D transform"
+  - "transform classes [WPF], 2-D"
   - "2-D transform classes"
-  - "FrameworkElement objects, rotating"
-  - "FrameworkElement objects, skewing"
-  - "FrameworkElement objects, translating"
-  - "Transforms, about Transforms"
-  - "FrameworkElement objects, scaling"
+  - "FrameworkElement objects [WPF], rotating"
+  - "FrameworkElement objects [WPF], skewing"
+  - "FrameworkElement objects [WPF], translating"
+  - "Transforms [WPF], about Transforms"
+  - "FrameworkElement objects [WPF], scaling"
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Transforms Overview
 This topic describes how to use the [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
@@ -156,7 +158,7 @@ LayoutTransform used to rotate the button
  Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Transform> class  provide several special features: <xref:System.Windows.Media.Transform> objects can be declared as [resources](../../../../docs/framework/wpf/advanced/xaml-resources.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Transform>   
- <xref:System.Windows.Media.Matrix>   
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)   
+ <xref:System.Windows.Media.Transform>  
+ <xref:System.Windows.Media.Matrix>  
+ [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
  [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252)

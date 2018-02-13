@@ -26,6 +26,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildManager" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +49,9 @@
         <param name="appPhysicalSourceDir">The physical path to the application root.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class without a specified target directory or precompilation flags.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,6 +81,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,6 +115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +161,9 @@
       <Docs>
         <summary>Occurs when an application domain is shut down.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainStarted">
@@ -166,6 +181,9 @@
       <Docs>
         <summary>Occurs when an application domain is started.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainUnloaded">
@@ -183,6 +201,9 @@
       <Docs>
         <summary>Occurs when an application domain is unloaded.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="CodeGenDir">
@@ -208,6 +229,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="CompileApplicationDependencies">
@@ -233,6 +257,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="CompileFile">
@@ -254,6 +281,9 @@
         <param name="virtualPath">The path to the file to be compiled.</param>
         <summary>Compiles the file represented by the virtual path.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="CompileFile">
@@ -279,6 +309,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -307,6 +340,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The object already exists in the application domain and <paramref name="failIfExists" /> is <see langword="true" />.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCode">
@@ -335,6 +370,10 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+        <altmember cref="T:System.Web.Compilation.LinePragmaCodeInfo" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeCompileUnit">
@@ -370,6 +409,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+        <altmember cref="T:System.Web.Compilation.LinePragmaCodeInfo" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeCompileUnit">
@@ -409,6 +452,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+        <altmember cref="T:System.Web.Compilation.LinePragmaCodeInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetAppDomainShutdownDirectories">
@@ -435,6 +482,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetBrowserDefinitions">
@@ -461,6 +510,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeDirectoryInformation">
@@ -497,6 +549,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualCodeDir" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledType">
@@ -521,6 +576,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCompilerParameters">
@@ -548,6 +606,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="P:System.Web.Compilation.CompilerType.CompilerParameters" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneratedFileVirtualPath">
@@ -572,6 +633,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filePath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneratedSourceFile">
@@ -596,6 +660,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetTopLevelAssemblyReferences">
@@ -620,6 +686,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetVirtualCodeDirectories">
@@ -639,6 +707,9 @@
         <summary>Returns the virtual paths to the App_Code directory and its subdirectories in an ASP.NET application.</summary>
         <returns>A <see cref="T:System.String" /> array containing all the virtual paths to code directories in an application.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -665,6 +736,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="IsCodeAssembly">
@@ -690,6 +764,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="assemblyName" /> is null.</exception>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="IsHostCreated">
@@ -709,6 +785,9 @@
         <value>
           <see langword="true" /> if the application domain for compiling ASP.NET Web applications has been created; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <MemberGroup MemberName="PrecompileApplication">
@@ -732,6 +811,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.Compilation.ClientBuildManager.#ctor" />
       </Docs>
     </MemberGroup>
     <Member MemberName="PrecompileApplication">
@@ -763,6 +843,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.Compilation.ClientBuildManager.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="PrecompileApplication">
@@ -797,6 +878,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.Compilation.ClientBuildManager.#ctor" />
+        <altmember cref="T:System.Web.Compilation.ClientBuildManagerCallback" />
       </Docs>
     </Member>
     <Member MemberName="PrecompileApplication">
@@ -834,6 +917,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+        <altmember cref="Overload:System.Web.Compilation.ClientBuildManager.#ctor" />
+        <altmember cref="T:System.Web.Compilation.ClientBuildManagerCallback" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -852,6 +940,9 @@
       <Docs>
         <summary>Terminates the current ASP.NET application.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -872,7 +963,43 @@
         <returns>
           <see langword="true" /> if the application domain is unloaded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateCodeCompileUnit">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompileFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles the file represented by the virtual path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class.</summary>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

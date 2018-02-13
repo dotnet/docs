@@ -1,4 +1,4 @@
-<%--<snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Page Language="C#" %>
 <%@ import Namespace="System.Drawing" %>
 <%@ import Namespace="System.Drawing.Imaging" %>
@@ -95,4 +95,4 @@
     </form>
 </body>
 </html>
-<%--</snippet1>--%>
+<!-- </Snippet1> -->

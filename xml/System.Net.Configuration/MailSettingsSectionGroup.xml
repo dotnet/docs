@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Net.Mail" />
+    <altmember cref="N:System.Net.Mime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.MailSettingsSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Net.Mail" />
+        <altmember cref="N:System.Net.Mime" />
       </Docs>
     </Member>
     <Member MemberName="Smtp">
@@ -64,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Net.Mail" />
+        <altmember cref="N:System.Net.Mime" />
       </Docs>
     </Member>
   </Members>

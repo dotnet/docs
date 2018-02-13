@@ -10,20 +10,22 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TreeView control, SelectedValue properties"
-  - "Control class, SelectedItem properties"
-  - "Control class, TreeView properties"
-  - "Control class, SelectedValue properties"
-  - "TreeView control, SelectedItem properties"
-  - "SelectedValue, SelectedValuePath properties"
-  - "TreeView control, SelectedValuePath properties"
-  - "Control class, SelectedValuePath properties"
-  - "SelectedValue, SelectedItem properties"
+  - "TreeView control [WPF], SelectedValue properties"
+  - "Control class [WPF], SelectedItem properties"
+  - "Control class [WPF], TreeView properties"
+  - "Control class [WPF], SelectedValue properties"
+  - "TreeView control [WPF], SelectedItem properties"
+  - "SelectedValue [WPF], SelectedValuePath properties"
+  - "TreeView control [WPF], SelectedValuePath properties"
+  - "Control class [WPF], SelectedValuePath properties"
+  - "SelectedValue [WPF], SelectedItem properties"
 ms.assetid: 2fc92ad4-f02c-4f89-bbe9-d4978a7af0db
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use SelectedValue, SelectedValuePath, and SelectedItem
 This example shows how to use the <xref:System.Windows.Controls.TreeView.SelectedValue%2A> and <xref:System.Windows.Controls.TreeView.SelectedValuePath%2A> properties to specify a value for the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> of a <xref:System.Windows.Controls.TreeView>.  
@@ -44,7 +46,7 @@ This example shows how to use the <xref:System.Windows.Controls.TreeView.Selecte
  [!code-xaml[TreeViewSelectedValue#SelectedValuePath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSelectedValue/CS/Window1.xaml#selectedvaluepath)]  
   
 ## See Also  
- <xref:System.Windows.Controls.TreeView>   
- <xref:System.Windows.Controls.TreeViewItem>   
- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)   
+ <xref:System.Windows.Controls.TreeView>  
+ <xref:System.Windows.Controls.TreeViewItem>  
+ [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)

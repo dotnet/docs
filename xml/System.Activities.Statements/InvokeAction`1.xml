@@ -22,6 +22,11 @@
     <typeparam name="T">The data type of the <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`1" />.</typeparam>
     <summary>Invokes an activity’s <see cref="T:System.Activities.ActivityAction`1" /> handler.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Activities.Statements.InvokeAction" />
+    <altmember cref="T:System.Activities.Statements.InvokeAction`2" />
+    <altmember cref="T:System.Activities.Statements.InvokeAction`3" />
+    <altmember cref="T:System.Activities.Statements.InvokeAction`4" />
+    <altmember cref="T:System.Activities.ActivityAction`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

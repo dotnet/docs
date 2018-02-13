@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
   </Docs>
   <Members>
     <Member MemberName="OnNoMoreTabStops">
@@ -52,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
       </Docs>
     </Member>
     <Member MemberName="Sink">
@@ -77,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.IKeyboardInputSink" />
       </Docs>
     </Member>
     <Member MemberName="Unregister">

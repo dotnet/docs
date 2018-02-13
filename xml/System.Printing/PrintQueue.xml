@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Printing.PrintServer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -497,7 +498,7 @@
 ## Remarks  
  If `fastCopy` is `true`, then the printer must be an [Printing Overview](~/docs/framework/wpf/advanced/printing-overview.md). If it is not, the <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method throws an exception.  
   
- If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState.STA>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState.MTA>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
+ If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState.STA>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState.MTA>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
   
 -   The simplest way is to add the <xref:System.STAThreadAttribute> (that is, "`[System.STAThreadAttribute()]`") just above the first line of the application's `Main` method (usually "`static void Main(string[] args)`").  
   
@@ -518,6 +519,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.ApartmentState" />
+        <altmember cref="T:System.STAThreadAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AddJob">
@@ -673,6 +676,7 @@
  \- or -  
   
  The <see cref="T:System.Printing.PrintQueue" /> object was not created with sufficient rights.</exception>
+        <altmember cref="M:System.Printing.PrintQueue.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -928,6 +932,7 @@
         <summary>Gets an object that contains the configuration settings for the current print job.</summary>
         <value>A <see cref="T:System.Printing.PrintJobSettings" /> value that holds the settings of the currently printing job. These settings include a description of the job and a reference to the job's <see cref="T:System.Printing.PrintTicket" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Printing.PrintTicket" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPrintTicket">
@@ -976,6 +981,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintQueue.UserPrintTicket" />
+        <altmember cref="P:System.Printing.PrintQueue.DefaultPriority" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPriority">
@@ -1099,6 +1106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Get(System.Printing.PrintQueue,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPrintCapabilities">
@@ -2631,6 +2639,7 @@
         <summary>Pauses the print queue. It remains paused until <see cref="M:System.Printing.PrintQueue.Resume" /> is executed.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Printing.PrintSystemException">The printer cannot be paused.</exception>
+        <altmember cref="M:System.Printing.PrintQueue.Resume" />
       </Docs>
     </Member>
     <Member MemberName="PrintingIsCancelled">
@@ -2830,6 +2839,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintSystemException">Some of the properties could not be refreshed.</exception>
+        <altmember cref="M:System.Printing.PrintQueue.Commit" />
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -2860,6 +2870,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintSystemException">The printer cannot resume.</exception>
+        <altmember cref="M:System.Printing.PrintQueue.Pause" />
       </Docs>
     </Member>
     <Member MemberName="ScheduleCompletedJobsFirst">
@@ -2965,6 +2976,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.UntilTimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="UntilTimeOfDay">
@@ -3001,6 +3016,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.StartTimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="UserPrintTicket">
@@ -3044,7 +3063,44 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintQueue.DefaultPrintTicket" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateXpsDocumentWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPrintCapabilities">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Printing.PrintCapabilities" /> object that identifies the capabilities of the printer or device, such as whether it prints in color or is capable of two-sided printing.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MergeAndValidatePrintTicket">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges two <see cref="T:System.Printing.PrintTicket" />s and guarantees that the resulting <see cref="T:System.Printing.PrintTicket" /> is valid and does not ask for any printing functionality that the printer does not support.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

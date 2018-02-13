@@ -138,6 +138,7 @@ Interaction between the text layout client and the TextFormatter object
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class with the specified formatting mode. This is a static method.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -309,5 +310,32 @@ Minimum paragraph width
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FormatMinMaxParagraphWidth">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that represents the smallest and largest possible paragraph width that can fully contain the specified text content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FormatLine">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> that is used for formatting and displaying document content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

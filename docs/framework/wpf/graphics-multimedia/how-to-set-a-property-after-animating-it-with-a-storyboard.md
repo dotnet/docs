@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, changing property values after"
+  - "animation [WPF], changing property values after"
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set a Property After Animating It with a Storyboard
 In some cases, it might appear that you can't change the value of a property after it has been animated.  
@@ -66,8 +71,8 @@ In some cases, it might appear that you can't change the value of a property aft
  This technique also works for non-storyboard animations.  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>   
- <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType>   
- <xref:System.Windows.Media.Animation.RemoveStoryboard>   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
+ <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>  
+ <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Media.Animation.RemoveStoryboard>  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)

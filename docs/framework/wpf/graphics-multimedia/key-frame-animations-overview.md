@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, key-frame"
+  - "animation [WPF], key-frame"
   - "key frames [WPF], about key-frame animations"
-  - "multiple animation target values"
+  - "multiple animation target values [WPF]"
 ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Key-Frame Animations Overview
 This topic introduces you to key-frame animations. Key-frame animations enable you to animate using more than two target values, and control an animation's interpolation method.  
@@ -221,7 +223,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
  [!code-xaml[keyframes_ovw_snippet#TimeSpanKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyTimesExample.xaml#timespankeytimeexample)]  
   
 ### Percentage Values  
- A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.          In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
+ A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
   
 -   The first key frame animates from the base value to 100 over the first 3 seconds, ending at time = 0:0:3.  
   
@@ -290,12 +292,12 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
 8.  Sort key frames in order of resolved time (primary key), and order of declaration (secondary key), i.e., use a stable sort based on the resolved key frame <xref:System.Windows.Media.Animation.KeyTime> values.  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.KeyTime>   
- <xref:System.Windows.Media.Animation.KeySpline>   
- <xref:System.Windows.Media.Animation.Timeline>   
- [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011)   
- [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012)   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)   
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)   
+ <xref:System.Windows.Media.Animation.KeyTime>  
+ <xref:System.Windows.Media.Animation.KeySpline>  
+ <xref:System.Windows.Media.Animation.Timeline>  
+ [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011)  
+ [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012)  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)  
+ [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)  
  [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md)

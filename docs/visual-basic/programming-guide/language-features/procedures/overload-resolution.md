@@ -1,43 +1,25 @@
 ---
 title: "Overload Resolution (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "overload resolution"
-  - "procedures, overloading"
-  - "procedures, calling"
-  - "procedure overloading, overload resolution"
-  - "signatures, procedure"
-  - "overloads, resolution"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], calling"
+  - "procedure overloading [Visual Basic], overload resolution"
+  - "signatures [Visual Basic], procedure"
+  - "overloads [Visual Basic], resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overload Resolution (Visual Basic)
 When the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
@@ -82,14 +64,14 @@ Resolving among overloaded versions
 |An array of any length (including an empty array)|`ParamArray`|  
   
 ## See Also  
- [Optional Parameters](./optional-parameters.md)   
- [Parameter Arrays](./parameter-arrays.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)   
- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)   
+ [Optional Parameters](./optional-parameters.md)  
+ [Parameter Arrays](./parameter-arrays.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Troubleshooting Procedures](./troubleshooting-procedures.md)  
+ [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)  
+ [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)  
+ [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)  
+ [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)  
+ [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)  
+ [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)  
  [Extension Methods](./extension-methods.md)

@@ -49,11 +49,16 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
+    <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
+    <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +90,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -173,13 +180,14 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine whether the item that is being created is a data item. If the item is a data item, the e-mail address is displayed in italic. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewItem> class.  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine whether the item that is being created is a data item. If the item is a data item, the email address is displayed in italic. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewItem> class.  
   
  [!code-csharp[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#2)]
  [!code-vb[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -205,6 +213,7 @@
         <returns>
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
   </Members>

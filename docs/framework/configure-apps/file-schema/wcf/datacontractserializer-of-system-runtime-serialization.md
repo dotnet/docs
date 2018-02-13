@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
@@ -67,6 +69,6 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
  [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

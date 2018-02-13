@@ -103,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Security.NegotiateStream" />
+        <altmember cref="T:System.Net.Security.SslStream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,6 +134,8 @@
         <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.AuthenticationException" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Security.NegotiateStream" />
+        <altmember cref="T:System.Net.Security.SslStream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,7 +173,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Security.NegotiateStream" />
+        <altmember cref="T:System.Net.Security.SslStream" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.AuthenticationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

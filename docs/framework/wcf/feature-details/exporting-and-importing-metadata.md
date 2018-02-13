@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "metadata [WCF], exporting and importing"
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exporting and Importing Metadata
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], exporting metadata is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. Importing service metadata is the process of generating <xref:System.ServiceModel.Description.ServiceEndpoint> instances or parts from service metadata.  
@@ -75,5 +77,5 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], exporting metadata i
  <xref:System.ServiceModel.Description.WsdlImporter>  
   
 ## See Also  
- [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)   
+ [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)  
  [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

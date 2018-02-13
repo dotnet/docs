@@ -52,6 +52,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Open" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -89,6 +90,7 @@
           <paramref name="envelopeStream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="envelopeStream" /> does not provide read/write access.</exception>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -126,6 +128,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="envelopeFileName" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateFromPackage">
@@ -146,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Create" />
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateFromPackage">
@@ -193,6 +197,7 @@
           <paramref name="envelopeStream" /> or <paramref name="packageStream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="envelopeStream" /> does not provide read/write access.</exception>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Create" />
       </Docs>
     </Member>
     <Member MemberName="CreateFromPackage">
@@ -240,6 +245,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="envelopeFileName" /> or <paramref name="packageStream" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Create" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -303,7 +309,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -480,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -513,6 +520,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -546,6 +554,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
       </Docs>
     </Member>
     <Member MemberName="PackageProperties">
@@ -619,5 +628,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsEncryptedPackageEnvelope">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value specifying whether the file is an OLE compound file with an encrypted package stream</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the encrypted package in an OLE compound file.</summary>
+        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

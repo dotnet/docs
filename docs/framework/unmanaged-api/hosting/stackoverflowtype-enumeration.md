@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StackOverflowType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StackOverflowType enumeration [.NET Framework hosting]"
 ms.assetid: dab648ad-972b-479c-b129-b4c1dcbd932e
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StackOverflowType Enumeration
 Contains values that indicate the underlying cause of a stack overflow event.  

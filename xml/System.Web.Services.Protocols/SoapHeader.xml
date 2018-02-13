@@ -46,6 +46,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapUnknownHeader" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapHeaderAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapHeaderDirection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,6 +160,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapHeader.MustUnderstand" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
       </Docs>
     </Member>
     <Member MemberName="EncodedMustUnderstand">
@@ -201,6 +207,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value other than: "0", "1", "true", or "false".</exception>
+        <altmember cref="P:System.Web.Services.Protocols.SoapHeader.MustUnderstand" />
       </Docs>
     </Member>
     <Member MemberName="EncodedMustUnderstand12">
@@ -242,6 +249,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value other than: "0", "1", "true", or "false".</exception>
+        <altmember cref="P:System.Web.Services.Protocols.SoapHeader.MustUnderstand" />
       </Docs>
     </Member>
     <Member MemberName="EncodedRelay">
@@ -317,7 +325,7 @@
   
  Although both the <xref:System.Web.Services.Protocols.SoapHeader.EncodedMustUnderstand%2A> and <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> properties can be used to set the value of the `mustUnderstand` attribute within the SOAP header, the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property allows you to set the attribute using a Boolean value.  
   
- For details on adding SOAP headers to clients, see [&#91;\<topic://cpconusingsoapheaders>&#93;](http://msdn.microsoft.com/en-us/7bd961f2-b492-48d0-bafe-09d5d5fec3ba).  
+ For details on adding SOAP headers to clients, see [&#91;\<topic://cpconusingsoapheaders>&#93;](http://msdn.microsoft.com/library/7bd961f2-b492-48d0-bafe-09d5d5fec3ba).  
   
    
   
@@ -330,6 +338,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapHeader.DidUnderstand" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
       </Docs>
     </Member>
     <Member MemberName="Relay">

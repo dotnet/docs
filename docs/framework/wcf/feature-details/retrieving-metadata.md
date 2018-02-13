@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "metadata [WCF], retrieving"
 ms.assetid: 18d8ba4c-af0f-4827-a50b-4202d767bacc
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Retrieving Metadata
 Metadata retrieval is the process of requesting and retrieving metadata from a metadata endpoint, such as a WS-MetadataExchange (MEX) metadata endpoint or an HTTP/GET metadata endpoint.  

@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "data grids, default functionality in DataGridView control"
+  - "data grids [Windows Forms], default functionality in DataGridView control"
   - "DataGridView control [Windows Forms], default functionality"
 ms.assetid: 4405f697-cad1-4839-9bcd-8ddb09d9f00e
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Default Functionality in the Windows Forms DataGridView Control
 The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides users with a significant amount of default functionality.  
@@ -55,5 +55,5 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
 -   Automatically sorts the rows based on the underlying data when the user clicks a column header.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
+ <xref:System.Windows.Forms.DataGridView>  
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

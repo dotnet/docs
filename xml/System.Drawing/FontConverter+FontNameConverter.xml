@@ -61,6 +61,7 @@
           <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -89,6 +90,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be completed.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">

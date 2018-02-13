@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunction method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetFunction method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrame::GetFunction Method
 Gets the function that contains the code associated with this stack frame.  

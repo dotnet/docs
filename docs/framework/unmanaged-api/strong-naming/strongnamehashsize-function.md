@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameHashSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameHashSize function [.NET Framework strong naming]"
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameHashSize Function
 Gets the buffer size required for a hash, using the specified hash algorithm.  
@@ -66,5 +66,5 @@ BOOLEAN StrongNameHashSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)   
+ [StrongNameHashSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)  
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

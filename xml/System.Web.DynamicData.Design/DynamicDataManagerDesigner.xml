@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.DynamicData.DynamicDataManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.Design.DynamicDataManagerDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.DynamicData.DynamicDataManager" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -72,6 +74,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.DynamicDataManager" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" />
       </Docs>
     </Member>
   </Members>

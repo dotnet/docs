@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 93c6fe33-f341-4b52-911e-adf503891951
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # INTERSECT (Entity SQL)
 Returns a collection of any distinct values that are returned by both the query expressions on the left and right sides of the INTERSECT operand. All expressions must be of the same type or of a common base or derived type as `expression`.  

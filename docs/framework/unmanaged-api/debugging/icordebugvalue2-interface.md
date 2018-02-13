@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue2 interface [.NET Framework debugging]"
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue2 Interface
 Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  
@@ -53,6 +53,6 @@ Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" ob
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
     
  [ICorDebugValue3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)

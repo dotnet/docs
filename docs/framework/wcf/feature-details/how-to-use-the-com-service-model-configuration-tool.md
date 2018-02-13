@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "COM+ [WCF], using service model configuration tool"
 ms.assetid: 7e68cd8d-5fda-4641-b92f-290db874376e
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use the COM+ Service Model Configuration Tool
 Once you have selected an appropriate hosting mode, use the COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) to configure the application interfaces that will be exposed as Web services.  

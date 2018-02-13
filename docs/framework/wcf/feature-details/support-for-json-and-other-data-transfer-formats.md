@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Support for JSON and Other Data Transfer Formats
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX (Asynchronous JavaScript and XML)-enabled Web services.  
@@ -29,5 +31,5 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
  Describes the correspondence between JavaScript Object Notation (JSON) encodings and the XML infoset, which is used internally by [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to represent JSON-encoded data and documents.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>   
+ <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  
  <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>

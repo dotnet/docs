@@ -5,12 +5,12 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <script runat="server">
 // This custom Login control checks the user name 
-// entered by the user is a valid e-mail address
+// entered by the user is a valid email address
 class CustomLogin : Login
 {
     bool IsValidEmail(string strIn)
     {
-        // Return true if strIn is in valid e-mail format.
+        // Return true if strIn is in valid email format.
         return Regex.IsMatch(strIn, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"); 
     }
 
@@ -18,7 +18,7 @@ class CustomLogin : Login
     {
         if (!IsValidEmail(UserName)) 
         {
-            InstructionText = "You must enter a valid e-mail address.";
+            InstructionText = "You must enter a valid email address.";
             e.Cancel = true;
         }
         else 

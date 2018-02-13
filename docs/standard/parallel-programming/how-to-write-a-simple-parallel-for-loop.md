@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Parallel.For, How to Write"
   - "for loop, parallel construction in .NET"
@@ -17,6 +20,9 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Write a Simple Parallel.For Loop
 This topic contains two examples that illustrate the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. The first uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int64%2CSystem.Int64%2CSystem.Action%7BSystem.Int64%7D%29?displayProperty=nameWithType> method overload, and the second uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int32%2CSystem.Int32%2CSystem.Action%7BSystem.Int32%7D%29?displayProperty=nameWithType> overload, the two simplest overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. You can use these two overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method when you do not need to cancel the loop, break out of the loop iterations, or maintain any thread-local state.  
@@ -63,7 +69,7 @@ This topic contains two examples that illustrate the <xref:System.Threading.Task
 -   Copy and paste this code into a Visual Studio 2010 project.  
   
 ## See Also  
- <xref:System.Threading.Tasks.Parallel.For%2A>   
- <xref:System.Threading.Tasks.Parallel.ForEach%2A>   
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)   
+ <xref:System.Threading.Tasks.Parallel.For%2A>  
+ <xref:System.Threading.Tasks.Parallel.ForEach%2A>  
+ [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
  [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

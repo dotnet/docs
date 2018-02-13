@@ -14,7 +14,7 @@
 <body>
 <form id="form1" runat="server">
     <asp:passwordrecovery id="PasswordRecovery1" runat="server" 
-        successtext="Your password has been sent to the e-mail address in our files.">
+        successtext="Your password has been sent to the email address in our files.">
         <successtextstyle font-names="Arial" forecolor="Green"></successtextstyle>
     </asp:passwordrecovery>
 

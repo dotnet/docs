@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.CollectionContainer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -302,6 +303,7 @@
         <returns>
           <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -486,5 +488,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Data.CompositeCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

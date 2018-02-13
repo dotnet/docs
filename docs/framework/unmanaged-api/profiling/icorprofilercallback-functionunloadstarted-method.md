@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::FunctionUnloadStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionUnloadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::FunctionUnloadStarted method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::FunctionUnloadStarted Method
 Notifies the profiler that the runtime has started to unload a function.  

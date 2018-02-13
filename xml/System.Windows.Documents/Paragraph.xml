@@ -157,6 +157,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepWithNext" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinOrphanLines" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinWidowLines" />
       </Docs>
     </Member>
     <Member MemberName="KeepTogetherProperty">
@@ -207,6 +210,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepTogether" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinOrphanLines" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinWidowLines" />
       </Docs>
     </Member>
     <Member MemberName="KeepWithNextProperty">
@@ -258,6 +264,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinWidowLines" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepTogether" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepWithNext" />
       </Docs>
     </Member>
     <Member MemberName="MinOrphanLinesProperty">
@@ -309,6 +318,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.Paragraph.MinOrphanLines" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepTogether" />
+        <altmember cref="P:System.Windows.Documents.Paragraph.KeepWithNext" />
       </Docs>
     </Member>
     <Member MemberName="MinWidowLinesProperty">
@@ -518,5 +530,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Paragraph" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Web Services Protocols Interoperability Guide
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements a number of Web services protocols. Many of these protocols include a number of options and extensibility points left to the discretion of the implementer. This topic provides a list of Web services protocols [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements. Other topics within this section provide implementation details for each protocol supported.  
@@ -107,12 +109,12 @@ manager: "erikre"
 -   [Basic Security Profile 1.0 Working Draft](http://go.microsoft.com/fwlink/?LinkId=96711)  
   
 ## See Also  
- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)   
- [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)   
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)   
- [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)   
- [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md)   
- [Reliable Messaging Protocol version 1.0](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-0.md)   
- [Reliable Messaging Protocol version 1.1](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-1.md)   
- [Transaction Protocols](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)   
+ [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
+ [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)  
+ [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
+ [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)  
+ [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md)  
+ [Reliable Messaging Protocol version 1.0](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-0.md)  
+ [Reliable Messaging Protocol version 1.1](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-1.md)  
+ [Transaction Protocols](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)  
  [Context Exchange Protocol](../../../../docs/framework/wcf/feature-details/context-exchange-protocol.md)

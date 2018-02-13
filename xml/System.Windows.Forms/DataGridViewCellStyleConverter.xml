@@ -13,6 +13,8 @@
   <Docs>
     <summary>Converts <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> objects to and from other data types.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyleConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -53,6 +56,7 @@
         <returns>
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -81,6 +85,7 @@
         <summary>Converts the given value object to the specified type, using the specified context and culture information.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       </Docs>
     </Member>
   </Members>

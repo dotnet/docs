@@ -69,6 +69,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId" />
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="Channel">
@@ -412,6 +414,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId" />
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Tags">

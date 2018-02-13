@@ -39,8 +39,8 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. In this example, as in many real-world scenarios, it might not be possible nor appropriate to use a default instance of the business object with the <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource> cannot successfully call the default constructor because it will throw an exception. In some cases, the default constructor might be protected and in others it might not initialize the business object to a desired state. Whatever the reason, you can create an instance of the business object yourself and set the instance to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object that is passed to the handler. This is the business object instance that the <xref:System.Web.UI.WebControls.ObjectDataSource> will use to perform its work.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  
   
  The following code example demonstrates the example basic business object that the preceding code example uses.  
   
@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +68,7 @@
         <param name="objectInstance">The business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> interacts to perform data operations.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" /> class using the specified object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ObjectInstance">
@@ -92,8 +94,8 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. In this example, as in many real-world scenarios, it might not be possible nor appropriate to use a default instance of the business object with the <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource> cannot successfully call the default constructor because it will throw an exception. In some cases, the default constructor might be protected and in others it might not initialize the business object to a desired state. Whatever the reason, you can create an instance of the business object yourself and set the instance to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object that is passed to the handler. This is the business object instance that the <xref:System.Web.UI.WebControls.ObjectDataSource> will use to perform its work.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  
   
  The following code example demonstrates the example basic business object that the preceding code example uses.  
   
@@ -102,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
       </Docs>
     </Member>
   </Members>

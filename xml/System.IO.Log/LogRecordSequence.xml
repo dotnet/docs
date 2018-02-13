@@ -2557,5 +2557,59 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous append operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes appended records durably</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginWriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous restart area write operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReserveAndAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous reserve and append operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReserveAndAppend">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Automatically makes a single reservation and appends a record to the sequence.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

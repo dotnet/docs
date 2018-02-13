@@ -245,6 +245,7 @@
         <summary>Gets or sets the key value of the item in a dictionary where the exception occurred.</summary>
         <value>The relevant XAML <see langword="x:Key" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.ResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -319,5 +320,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlParseException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

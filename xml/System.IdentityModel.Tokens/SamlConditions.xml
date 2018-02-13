@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlDoNotCacheCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlCondition" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -314,5 +318,14 @@
  <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

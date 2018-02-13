@@ -542,6 +542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement.IsMouseOver" />
+        <altmember cref="P:System.Windows.UIElement.IsMouseDirectlyOver" />
       </Docs>
     </Member>
     <Member MemberName="GetIntermediatePoints">
@@ -614,6 +616,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.MouseEventArgs.GetPosition(System.Windows.IInputElement)" />
       </Docs>
     </Member>
     <Member MemberName="GotMouseCaptureEvent">
@@ -666,6 +669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="LostMouseCaptureEvent">
@@ -718,6 +722,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseDownEvent">
@@ -863,6 +868,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseWheelEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelEvent">
@@ -1098,6 +1104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseDevice" />
       </Docs>
     </Member>
     <Member MemberName="QueryCursorEvent">
@@ -1495,6 +1502,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SetCursor">
@@ -1529,6 +1537,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.Cursors" />
+        <altmember cref="P:System.Windows.Input.Mouse.OverrideCursor" />
       </Docs>
     </Member>
     <Member MemberName="Synchronize">
@@ -1547,6 +1557,8 @@
       <Docs>
         <summary>Forces the mouse to resynchronize.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseDevice" />
+        <altmember cref="M:System.Windows.Input.Mouse.Synchronize" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCursor">
@@ -1593,6 +1605,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="XButton2">
@@ -1621,6 +1634,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
   </Members>

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IRangeValueProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -139,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange" />
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -171,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.RangeValuePattern.MinimumProperty" />
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -203,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.RangeValuePattern.MaximumProperty" />
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -279,6 +283,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than the minimum or greater than the maximum value of the element.</exception>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Value" />
       </Docs>
     </Member>
     <Member MemberName="SmallChangeProperty">
@@ -311,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange" />
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">

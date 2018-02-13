@@ -1255,7 +1255,7 @@
 ## Remarks  
  Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
- If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=nameWithType> flag.  
+ If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions.VarArgs?displayProperty=nameWithType> flag.  
   
  ]]></format>
         </remarks>
@@ -1841,5 +1841,45 @@
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EmitWriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Helper functions to emit a call to <see cref="M:System.Console.WriteLine" /> with different types of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EmitCalli">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeclareLocal">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Declares a local variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Emit">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts an instruction onto the Microsoft Intermediate Language (MSIL) stream for the just-in-time (JIT) compiler.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

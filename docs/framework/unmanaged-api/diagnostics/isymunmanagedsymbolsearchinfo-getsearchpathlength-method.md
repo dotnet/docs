@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSearchPathLength method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetSearchPathLength Method
 Gets the search path length.  

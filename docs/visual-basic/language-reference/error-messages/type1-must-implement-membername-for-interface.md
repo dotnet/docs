@@ -1,40 +1,21 @@
 ---
 title: "&lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;membername&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc30154"
   - "bc30154"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30154"
 ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;membername&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;
 '\<typename>' must implement '\<membername>' for interface '\<interfacename>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  
@@ -58,5 +39,5 @@ translation.priority.ht:
 4.  When implementing a property, declare `Get` and `Set` procedures, as appropriate.  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

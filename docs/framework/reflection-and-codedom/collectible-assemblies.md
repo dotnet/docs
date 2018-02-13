@@ -14,6 +14,8 @@ helpviewer_keywords:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Collectible assemblies for dynamic type generation
 

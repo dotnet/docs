@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides required event data for the <see cref="E:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -49,6 +50,7 @@
         <summary>Gets the key associated with the resource that generated the error condition.</summary>
         <value>The key associated with the resource that generated the error condition.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
       </Docs>
     </Member>
   </Members>

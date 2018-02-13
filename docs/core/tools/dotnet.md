@@ -70,7 +70,7 @@ Prints out detailed information about the CLI tooling and the environment, such 
 
 `-v|--verbosity`
 
-Enables verbose output. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 `--version`
 
@@ -100,7 +100,7 @@ Prints out detailed information about the CLI tooling and the environment, such 
 
 `-v|--verbose`
 
-Enables verbose output. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 `--version`
 

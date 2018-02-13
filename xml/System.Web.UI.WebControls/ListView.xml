@@ -3701,7 +3701,7 @@
 ## Remarks  
  When notified by this method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has not yet been populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent of this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnInit%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3738,7 +3738,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCanceling%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCanceling> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCanceling%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3778,7 +3778,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCommand%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCommand> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCommand%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3817,7 +3817,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCreated%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemCreated> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3854,7 +3854,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.ListView> control can be rendered, each item in the control must be bound to a record in the data source. The <xref:System.Web.UI.WebControls.ListView.ItemDataBound> event is raised when a <xref:System.Web.UI.WebControls.ListViewItem> object is bound to a data item. This enables you to perform a custom routine whenever this event occurs, such as modifying the values of the data item during the binding process.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDataBound%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3893,7 +3893,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event is raised when an item's Delete button is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Delete".) This enables you to perform a custom routine whenever this event occurs, such as checking the results of the delete operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDeleted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3932,7 +3932,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemDeleting> event is raised when an item's Delete button is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Delete".) This enables you to perform a custom routine whenever this event occurs, such as canceling the delete operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemDeleting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3972,7 +3972,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemEditing> event is raised when an item's Edit button is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control enters edit mode. (An Edit button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Edit".) This enables you to perform a custom routine whenever this event occurs, such as canceling the edit operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemEditing%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4015,7 +4015,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserted%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4055,7 +4055,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserting%2A> method is called by the <xref:System.Web.UI.WebControls.ListView> control to raise the <xref:System.Web.UI.WebControls.ListView.ItemInserting> event. It is typically used by control developers when extending the <xref:System.Web.UI.WebControls.ListView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemInserting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4094,7 +4094,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemUpdated> event is raised when an item's Update button is clicked or the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control updates the item. (An Update button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Update".) This enables you to perform a custom routine whenever this event occurs, such as checking the results of the update operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemUpdated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4134,7 +4134,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.ItemUpdating> event is raised when an item's Update button is clicked or the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control updates the item. (An Update button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Update".) This enables you to perform a custom routine whenever this event occurs, such as canceling the update operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnItemUpdating%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4175,7 +4175,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.ListView> control can be rendered, a <xref:System.Web.UI.WebControls.ListViewItem> object must be created to act as the container for the control. The <xref:System.Web.UI.WebControls.ListView.LayoutCreated> event is raised when the layout template is created in the <xref:System.Web.UI.WebControls.ListView> control. This enables you to perform a custom routine whenever this event occurs, such as changing the visibility of a control that is inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnLayoutCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4211,7 +4211,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanged> event is raised when the page properties change, after the <xref:System.Web.UI.WebControls.ListView> control sets the new values by using the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A> method. This enables you to perform a custom routine, such as a custom paging operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4249,7 +4249,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging> event is raised when the page properties change, but before the <xref:System.Web.UI.WebControls.ListView> control sets the new values by using the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A> method. This enables you to perform a custom routine whenever this event occurs, such as clearing the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A> or <xref:System.Web.UI.WebControls.ListView.EditIndex%2A> properties.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4287,7 +4287,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanged> event is raised when an item's Select button is clicked, after the <xref:System.Web.UI.WebControls.ListView> control handles the select operation. (A Select button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Select".) This enables you to perform a custom routine whenever this event occurs, such as updating a status label with the currently selected item.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4325,7 +4325,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging> event is raised when an item's Select button is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control handles the select operation. (A Select button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Select".) This enables you to perform a custom routine whenever this event occurs, such as canceling the selection operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4365,7 +4365,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.Sorted> event is raised when a Sort button is clicked or the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method is called, after the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Sort".) This enables you to perform a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSorted%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4403,7 +4403,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.Sorting> event is raised when a Sort button is clicked or the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button control whose <xref:System.Web.UI.WebControls.Button.CommandName%2A> property is set to "Sort".) This enables you to perform a custom routine whenever this event occurs, such as canceling the sorting operation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnSorting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4443,7 +4443,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListView.System%23Web%23UI%23WebControls%23IPageableItemContainer%23TotalRowCountAvailable> event is raised when data is available for the <xref:System.Web.UI.WebControls.DataPager> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.ListView.OnTotalRowCountAvailable%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

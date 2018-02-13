@@ -1839,7 +1839,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1892,7 +1892,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1945,7 +1945,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to the selected row and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
@@ -1999,7 +1999,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataGrid> control. This event is commonly used to handle buttons controls with a custom CommandName value, such as Add, in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2052,7 +2052,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2106,7 +2106,7 @@
   
  The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataGrid> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is nulled out and no longer available.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2165,7 +2165,7 @@
 > [!NOTE]
 >  The event handler receives a <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs> object as a parameter. You can use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property of this parameter to determine the index of the page selected by the user from the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2218,7 +2218,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event sorts the list, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2274,7 +2274,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.DataGrid.OnUpdateCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

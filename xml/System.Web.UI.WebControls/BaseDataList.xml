@@ -984,7 +984,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Control.DataBinding> event is raised when data is bound to the <xref:System.Web.UI.WebControls.BaseDataList> control. This method notifies the control to perform any data-binding logic that is associated with it.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnDataBinding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1054,7 +1054,7 @@
   
  The <xref:System.Web.UI.WebControls.BaseDataList> class sets the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property to `true` when the <xref:System.Web.UI.DataSourceView.DataSourceViewChanged> event is raised.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1161,7 +1161,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server. The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method allows you to create a custom handler for the event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

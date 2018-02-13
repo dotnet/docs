@@ -201,7 +201,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlButton.OnServerClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

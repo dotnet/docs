@@ -460,7 +460,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent%2A> method notifies a data-bound control that the underlying data source or the data cached in memory has changed, and that the control should rebind and perform any necessary additional work. Typically, the <xref:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent%2A> method is called when a property of the data source control or a parameter value has changed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

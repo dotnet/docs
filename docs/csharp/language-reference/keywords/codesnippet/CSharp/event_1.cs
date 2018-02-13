@@ -14,10 +14,12 @@
 
         // Wrap the event in a protected virtual method
         // to enable derived classes to raise the event.
-        protected virtual void RaiseSampleEvent()
-        {
-            // Raise the event by using the () operator.
-            if (SampleEvent != null)
-                SampleEvent(this, new SampleEventArgs("Hello"));
-        }
+    protected virtual void RaiseSampleEvent()
+    {
+        //Create a temporary reference to guard against a race condition
+        //in case the last subscriber unsubscribes causing SampleEvent to become null
+        SampleEventHandler handler = SampleEvent;
+        // Raise the event by using the () operator.
+        if (handler != null)
+            SampleEvent(this, new SampleEventArgs("Hello"));
     }

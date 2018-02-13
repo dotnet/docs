@@ -58,4 +58,4 @@ This section covers interoperability and integration with [!INCLUDE[indigo1](../
  <xref:System.ServiceModel>  
   
 ## Related Sections  
- [Extending WCF](../../../../docs/framework/wcf/extending/extending-wcf.md)
+ [Extending WCF](../../../../docs/framework/wcf/extending/index.md)

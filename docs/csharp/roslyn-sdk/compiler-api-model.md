@@ -43,7 +43,7 @@ analysis, and the emit phase is an API that produces IL byte codes.
 
 Each compiler combines these components together as a single end-to-end whole.
 
-These APIs are the same used by Visual Studio. For instance, the code
+These APIs are the same ones used by Visual Studio. For instance, the code
 outlining and formatting features use the syntax trees, the Object Browser
 and navigation features use the symbol table, refactorings
 and Go to Definition use the semantic model, and Edit and Continue uses all of

@@ -1,6 +1,6 @@
 ---
 title: "#if preprocessor directive (C# Reference)"
-ms.date: "02/09/2017"
+ms.date: "02/13/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -31,11 +31,11 @@ You can use the operators [==](../operators/equality-comparison-operator.md) (eq
 
 A conditional directive beginning with a `#if` directive must explicitly be terminated with a `#endif` directive.
 
-`#define` lets you define a symbol, such that, by using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
+`#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
 
 You can also define a symbol with the [/define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
 
-A symbol that you define with `/define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.
+A symbol that you define with `/define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 

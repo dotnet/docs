@@ -246,7 +246,7 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Related guides
 
 - [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility on Windows](azure/storage/common/storage-use-azcopy)
+- [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
 - [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)

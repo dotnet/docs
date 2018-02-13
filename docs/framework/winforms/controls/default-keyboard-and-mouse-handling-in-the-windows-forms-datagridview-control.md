@@ -1,16 +1,10 @@
 ---
 title: "Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "02/13/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-winforms"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data grids, mouse handling"
   - "DataGridView control [Windows Forms], navigation keys"
@@ -20,10 +14,9 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], mouse handling"
   - "navigation keys, DataGridView control"
 ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
-caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-manager: "wpickett"
+manager: wpickett
 ---
 # Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control
 The following tables describe how users can interact with the <xref:System.Windows.Forms.DataGridView> control through a keyboard and a mouse.  
@@ -54,7 +47,7 @@ The following tables describe how users can interact with the <xref:System.Windo
 |CTRL+END|Moves the focus to the last cell in the control.|  
 |CTRL+PAGE DOWN/UP|Same as PAGE DOWN or PAGE UP.|  
 |F2|Puts the current cell into cell edit mode if the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is <xref:System.Windows.Forms.DataGridViewEditMode.EditOnF2> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>.|
-|F3|Sorts the current column if the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property value is <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic> (the same as clicking the current column header).|  
+|F3|Sorts the current column if the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property value is <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>. It's the same as clicking the current column header. Available since .NET Framework 4.7.2.|  
 |F4|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |ALT+UP/DOWN ARROW|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |SPACE|If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, <xref:System.Windows.Forms.DataGridViewLinkCell>, or <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, raises the <xref:System.Windows.Forms.DataGridView.CellClick> and <xref:System.Windows.Forms.DataGridView.CellContentClick> events. If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, also presses the button. If the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, also changes the check state.|  

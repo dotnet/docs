@@ -24,7 +24,7 @@ This topic provides an overview of when and how to use async programming and inc
   
 | Application area    | .NET types with async methods     | Windows Runtime types with async methods  |
 |---------------------|-----------------------------------|-------------------------------------------|
-|Web access|<xref:System.Net.Http.HttpClient>|[SyndicationClient](/uwp/api/Windows.Web.Syndication.SyndicationClient)|
+|Web access|<xref:System.Net.Http.HttpClient>|<xref:Windows.Web.Syndication.SyndicationClient>|
 |Working with files|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|[StorageFile](/uwp/api/Windows.Storage.StorageFile)|  
 |Working with images||[MediaCapture](/uwp/api/Windows.Media.Capture.MediaCapture), [BitmapEncoder](/uwp/api/Windows.Graphics.Imaging.BitmapEncoder), [BitmapDecoder](/uwp/api/Windows.Graphics.Imaging.BitmapDecoder)|  
 |WCF programming|[Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)||  

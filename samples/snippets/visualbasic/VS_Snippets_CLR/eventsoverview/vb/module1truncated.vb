@@ -36,5 +36,5 @@ End Class
 '</snippet3>
 
 '<snippet4>
-Public Delegate Sub ThresholdReachedEventHandler(e As ThresholdReachedEventArgs)
+Public Delegate Sub ThresholdReachedEventHandler(sender As Object, e As ThresholdReachedEventArgs)
 '</snippet4>

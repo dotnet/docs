@@ -61,4 +61,4 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application model is de
  To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
   
 ## See Also  
- [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md)
+ [Extending WCF](../../../docs/framework/wcf/extending/index.md)

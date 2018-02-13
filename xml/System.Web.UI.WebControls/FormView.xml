@@ -3423,7 +3423,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnInit%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.Control.Init> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3460,7 +3460,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemCommand%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3497,7 +3497,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemCreated%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3534,7 +3534,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleted%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemDeleted> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3571,7 +3571,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleting%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3609,7 +3609,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserted%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3646,7 +3646,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserting%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3684,7 +3684,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdated%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3721,7 +3721,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdating%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3759,7 +3759,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanged%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ModeChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3796,7 +3796,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanging%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3834,7 +3834,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanged%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3871,7 +3871,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanging%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

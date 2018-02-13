@@ -2877,7 +2877,7 @@ Thank you for creating an account with our Web site.
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick> event is raised when the user clicks the **Continue** button on the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2915,7 +2915,7 @@ Thank you for creating an account with our Web site.
   
  Use the <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method to set Web site values, such as personalization properties, before the user is logged in for the first time.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

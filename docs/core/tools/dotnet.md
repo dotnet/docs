@@ -3,7 +3,7 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -70,7 +70,7 @@ Prints out detailed information about the CLI tooling and the environment, such 
 
 `-v|--verbosity`
 
-Enables verbose output.
+Enables verbose output. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 `--version`
 
@@ -100,7 +100,7 @@ Prints out detailed information about the CLI tooling and the environment, such 
 
 `-v|--verbose`
 
-Enables verbose output.
+Enables verbose output. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 `--version`
 

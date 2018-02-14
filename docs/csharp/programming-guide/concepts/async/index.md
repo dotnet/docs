@@ -25,8 +25,8 @@ This topic provides an overview of when and how to use async programming and inc
 | Application area    | .NET types with async methods     | Windows Runtime types with async methods  |
 |---------------------|-----------------------------------|-------------------------------------------|
 |Web access|<xref:System.Net.Http.HttpClient>|<xref:Windows.Web.Syndication.SyndicationClient>|
-|Working with files|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|[StorageFile](/uwp/api/Windows.Storage.StorageFile)|  
-|Working with images||[MediaCapture](/uwp/api/Windows.Media.Capture.MediaCapture), [BitmapEncoder](/uwp/api/Windows.Graphics.Imaging.BitmapEncoder), [BitmapDecoder](/uwp/api/Windows.Graphics.Imaging.BitmapDecoder)|  
+|Working with files|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|<xref:Windows.Storage.StorageFile>|  
+|Working with images||<xref:Windows.Media.Capture.MediaCapture>, <xref:Windows.Graphics.Imaging.BitmapEncoder>, <xref:Windows.Graphics.Imaging.BitmapDecoder>|  
 |WCF programming|[Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)||  
   
 Asynchrony proves especially valuable for applications that access the UI thread because all UI-related activity usually shares one thread. If any process is blocked in a synchronous application, all are blocked. Your application stops responding, and you might conclude that it has failed when instead it's just waiting.  
@@ -220,13 +220,13 @@ For more information and examples, see [Async Return Types (C#)](../../../../csh
   
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:  
   
--   [IAsyncOperation](/uwp/api/Windows.Foundation.IAsyncOperation_TResult_), which corresponds to <xref:System.Threading.Tasks.Task%601>  
+-   <xref:Windows.Foundation.IAsyncOperation%601>, which corresponds to <xref:System.Threading.Tasks.Task%601>  
   
--   [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction), which corresponds to <xref:System.Threading.Tasks.Task>  
+-   <xref:Windows.Foundation.IAsyncAction>, which corresponds to <xref:System.Threading.Tasks.Task>  
   
--   [IAsyncActionWithProgress](/uwp/api/Windows.Foundation.IAsyncActionWithProgress_TProgress_)  
+-   <xref:Windows.Foundation.IAsyncActionWithProgress%601>  
   
--   [IAsyncOperationWithProgress](/uwp/api/Windows.Foundation.IAsyncOperationWithProgress_TResult_TProgress_)  
+-   <xref:Windows.Foundation.IAsyncOperationWithProgress%602>  
   
  For more information and an example, see [Quickstart: using the await operator for asynchronous programming](/previous-versions/windows/apps/hh452713(v=win.10)).  
   

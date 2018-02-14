@@ -15,7 +15,7 @@ ms.author: "wiwagn"
 # Benefits of Generics (C# Programming Guide)
 Generics provide the solution to a limitation in earlier versions of the common language runtime and the C# language in which generalization is accomplished by casting types to and from the universal base type <xref:System.Object>. By creating a generic class, you can create a collection that is type-safe at compile-time.  
   
- The limitations of using non-generic collection classes can be demonstrated by writing a short program that uses the <xref:System.Collections.ArrayList> collection class from the .NET class library. <xref:System.Collections.ArrayList> is a highly convenient collection class that can be used without modification to store any reference or value type.  
+ The limitations of using non-generic collection classes can be demonstrated by writing a short program that uses the <xref:System.Collections.ArrayList> collection class from the .NET class library. An instance of the <xref:System.Collections.ArrayList> class can store any reference or value type.  
   
  [!code-csharp[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_1.cs)]  
   

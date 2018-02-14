@@ -55,7 +55,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 -   Implementing Start and Cancel Methods  
   
- To copy the code in this topic as a single listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
+ To copy the code in this topic as a single listing, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## Creating the Component  
  The first step is to create the component that will implement the Event-based Asynchronous Pattern.  

@@ -2314,7 +2314,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.OnActiveStepChanged%2A> method raises the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event when the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is changed. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnActiveStepChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2383,7 +2383,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnCancelButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2427,7 +2427,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnFinishButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2492,7 +2492,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnNextButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2536,7 +2536,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button is clicked.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2583,7 +2583,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

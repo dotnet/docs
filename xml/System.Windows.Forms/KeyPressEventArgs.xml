@@ -32,7 +32,7 @@
 > [!NOTE]
 >  Some controls will process certain key strokes on <xref:System.Windows.Forms.Control.KeyDown>. For example, <xref:System.Windows.Forms.RichTextBox> processes the Enter key before <xref:System.Windows.Forms.Control.KeyPress> is called. In such cases, you cannot cancel the <xref:System.Windows.Forms.Control.KeyPress> event, and must cancel the key stroke from <xref:System.Windows.Forms.Control.KeyDown> instead.  
   
- For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For information about the event model, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

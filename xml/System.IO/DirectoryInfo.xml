@@ -1000,7 +1000,7 @@
 ## Remarks  
  The <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A> and <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A> methods differ as follows:  
   
--   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileInfo> objects before the whole collection is returned.  
+-   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileSystemInfo> objects before the whole collection is returned.  
   
 -   When you use <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>, you must wait for the whole array of <xref:System.IO.FileSystemInfo> objects to be returned before you can access the array.  
   
@@ -1075,7 +1075,7 @@
   
  The <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A> and <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A> methods differ as follows:  
   
--   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileInfo> objects before the whole collection is returned.  
+-   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileSystemInfo> objects before the whole collection is returned.  
   
 -   When you use <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>, you must wait for the whole array of <xref:System.IO.FileSystemInfo> objects to be returned before you can access the array.  
   
@@ -1154,7 +1154,7 @@
   
  The <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A> and <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A> methods differ as follows:  
   
--   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileInfo> objects before the whole collection is returned.  
+-   When you use <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>, you can start enumerating the collection of <xref:System.IO.FileSystemInfo> objects before the whole collection is returned.  
   
 -   When you use <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>, you must wait for the whole array of <xref:System.IO.FileSystemInfo> objects to be returned before you can access the array.  
   

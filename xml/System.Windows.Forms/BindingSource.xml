@@ -237,7 +237,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.AddingNew> event occurs before a new object is added to the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property. This event is fired after the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method is called, but before the new item is created and added to the underlying list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.Windows.Forms.BindingSource> class. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs?displayProperty=nameWithType> parameter to the new item. The new object created in the <xref:System.Windows.Forms.BindingSource.AddingNew> event must be of the same type as the type contained in the list or an exception will occur. You cannot set the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property when bound to a <xref:System.Data.DataView> or <xref:System.Data.DataTable> because you cannot add a new <xref:System.Data.DataRowView> to the list.  
   
- For more information about supplying custom new item functionality, see the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method. For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about supplying custom new item functionality, see the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -522,7 +522,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.BindingComplete> event occurs after all the clients, typically controls, have been bound to the current <xref:System.Windows.Forms.BindingSource>. The handler of this event can take the appropriate action based on the success, error, or exceptions in the binding process, by examining the <xref:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteState%2A> property of the <xref:System.Windows.Forms.BindingCompleteEventArgs> parameter.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -820,7 +820,7 @@
   
  <xref:System.Windows.Forms.BindingSource.CurrentChanged> is the default event for the <xref:System.Windows.Forms.BindingSource> class.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -852,7 +852,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.CurrentItemChanged> event is raised in response to all of the circumstances that raise the <xref:System.Windows.Forms.BindingSource.CurrentChanged> event. Additionally, <xref:System.Windows.Forms.BindingSource.CurrentItemChanged> is also fired whenever the value of one of the properties of <xref:System.Windows.Forms.BindingSource.Current%2A> is changed.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -883,7 +883,7 @@
 ## Remarks  
  This event is informational and reports CLS-compliant exceptions only. To determine what type of exception occurred, handle this event and check the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception%2A> property of the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs>.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -950,7 +950,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.DataMemberChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property changes.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1045,7 +1045,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.DataSourceChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property changes.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1698,7 +1698,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.ListChanged> event occurs when there is a change to the membership or metadata of the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property. For example, this event is raised when items are added, removed, or moved, or the <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties change. The values of the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties will persist when this event occurs.  
   
- This event can be completely suppressed by setting the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property to `false`. For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ This event can be completely suppressed by setting the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property to `false`. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1887,7 +1887,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnAddingNew%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1923,7 +1923,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnBindingComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1956,9 +1956,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnCurrentChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1994,7 +1994,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnCurrentItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2030,7 +2030,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnDataError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2063,7 +2063,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnDataMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2101,7 +2101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnDataSourceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2137,7 +2137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnListChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2173,7 +2173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingSource.OnPositionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2258,7 +2258,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.PositionChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.Position%2A> property has changed.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

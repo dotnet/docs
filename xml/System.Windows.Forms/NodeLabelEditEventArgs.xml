@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.TreeView.AfterLabelEdit> event occurs when the user finishes editing the text for a tree node. The <xref:System.Windows.Forms.TreeView.BeforeLabelEdit> event occurs when the user begins editing the text for a tree node. A <xref:System.Windows.Forms.NodeLabelEditEventArgs> object specifies the new text to associate with the tree node, the tree node that contains the label to edit, and whether the edit operation has been canceled.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

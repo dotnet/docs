@@ -491,7 +491,7 @@
   
  The <xref:System.Web.UI.WebControls.DataBoundControl> class sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true` when it raises the <xref:System.Web.UI.DataSourceView.DataSourceViewChanged> event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

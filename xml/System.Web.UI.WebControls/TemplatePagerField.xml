@@ -242,7 +242,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event is raised when a button is clicked in the <xref:System.Web.UI.WebControls.TemplatePagerField> object. This enables you to perform a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

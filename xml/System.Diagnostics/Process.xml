@@ -2440,7 +2440,7 @@ The following code example creates a process that prints a file. It sets the <xr
 > [!NOTE]
 >  If you are using the Visual Studio environment, an event handler delegate (AddOnExited) and an event-handling method (Process1_Exited) are created for you when you drag a <xref:System.Diagnostics.Process> component onto a form and double-click the icon. The code you create to run when the <xref:System.Diagnostics.Process.Exited> event occurs is entered into the Process1_Exited procedure. You do not need to create the <xref:System.Diagnostics.Process.OnExited%2A> member, because it is implemented for you.  
   
- Raising an event invokes the event handler through a delegate. For an overview, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -5155,7 +5155,7 @@ p.WaitForExit();
   
  The <xref:System.Diagnostics.Process.WaitForInputIdle%28System.Int32%29> overload instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to become idle in the message loop. If the associated process has not become idle by the end of the interval because the loop is still processing messages, `false` is returned to the calling procedure.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

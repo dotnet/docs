@@ -41,7 +41,7 @@ This section of the documentation provides information about Windows Communicati
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)  
  Shows topics that let you choose which [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] feature or features you need to employ.  
   
- [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md)  
+ [Extending WCF](../../../docs/framework/wcf/extending/index.md)  
  Describes how to modify and extend WCF runtime components  
   
  [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  

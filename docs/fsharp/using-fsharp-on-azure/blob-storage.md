@@ -240,12 +240,13 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 
 ### Blob storage reference
 
-- [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
-- [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)
 
 ### Related guides
 
 - [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility](/azure/storage/storage-use-azcopy)
-- [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
+- [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
+- [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
+- [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)

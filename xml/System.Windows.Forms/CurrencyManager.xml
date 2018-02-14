@@ -366,7 +366,7 @@
 > [!NOTE]
 >  If you are creating your own control that uses the <xref:System.Windows.Forms.CurrencyManager>, you should use the <xref:System.ComponentModel.IBindingList.ListChanged?displayProperty=nameWithType> instead of the <xref:System.Windows.Forms.CurrencyManager.ItemChanged?displayProperty=nameWithType> event. The <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType%2A> property of the <xref:System.ComponentModel.ListChangedEventArgs> enables you to determine the type of action that has occurred.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -453,7 +453,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
   
  The associated `OnListChanged` method is a private method in this class.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -516,7 +516,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
 ## Remarks  
  The metadata of the <xref:System.Windows.Forms.CurrencyManager.List%2A> consists of the schema of the underlying <xref:System.Windows.Forms.Binding.DataSource%2A?displayProperty=nameWithType>. The <xref:System.Windows.Forms.CurrencyManager.MetaDataChanged> event is raised when that schema has changed. For example, the <xref:System.Windows.Forms.CurrencyManager.MetaDataChanged> event is raised when a <xref:System.Data.DataColumn> is programmatically added to a <xref:System.Data.DataTable>.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -599,7 +599,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.CurrencyManager.OnItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -634,7 +634,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.CurrencyManager.OnMetaDataChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -667,7 +667,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.CurrencyManager.OnPositionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

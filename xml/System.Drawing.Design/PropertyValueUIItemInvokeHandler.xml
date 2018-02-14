@@ -28,7 +28,7 @@
 ## Remarks  
  Double-clicking an icon in the Properties window will raise the <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> event of the <xref:System.Drawing.Design.PropertyValueUIItem> that the icon is associated with. The <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> event typically launches a user interface (UI) to edit the property's value. Add a <xref:System.Drawing.Design.PropertyValueUIItemInvokeHandler> to the <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> property of a <xref:System.Drawing.Design.PropertyValueUIItem> to assign an event handler to perform the appropriate behavior when the icon displayed next to the property name is double-clicked.  
   
- When you create a <xref:System.Drawing.Design.PropertyValueUIItemInvokeHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When you create a <xref:System.Drawing.Design.PropertyValueUIItemInvokeHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

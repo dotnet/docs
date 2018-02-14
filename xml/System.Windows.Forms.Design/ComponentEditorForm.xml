@@ -138,7 +138,7 @@
 ## Remarks  
  The first time the <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method is executed, it shows the first component editor page in the list.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -173,7 +173,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method shows the Help page that is associated with the component editor page, if there is one.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

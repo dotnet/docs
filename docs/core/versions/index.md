@@ -21,7 +21,7 @@ There are lots of moving parts that version independently in .NET Core. However,
 
 > [!IMPORTANT]
 > The versioning details explained on this topic don't apply to the current version of the .NET Core SDK and runtime.
-> The version scheme is changing on future releases and you can see the current proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
+> The version scheme is changing in future releases. You can see the current proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
 
 ## Versioning details
 
@@ -36,7 +36,7 @@ The use of a single version number makes it easier for users to know what versio
 ### Installers
 
 With .NET Core 2.0, downloads for the [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [releases](https://www.microsoft.com/net/download/core) adhere to a new naming scheme that is easier to understand.
-The installer UI in those downloads were also modified to clearly present the names and versions of the components being installed. In particular, titles now show the same version number that is in the download's file name.
+The installer UI in those downloads was also modified to clearly present the names and versions of the components being installed. In particular, titles now show the same version number that is in the download's file name.
 
 #### File name format
 
@@ -118,7 +118,7 @@ A general Docker tag naming convention is to place the version number before the
 
 The SDK tags should be updated to represent the SDK version rather than Runtime.
 
-It's also possible that the .NET Core Tools need to be fixed but reship an existing runtime. In that case, the SDK version is increased (for example, to 2.1.2) and then the Runtime catches up the next time it ships (for example, both the Runtime and SDK ship the following time as 2.1.3).
+It's also possible that the .NET Core CLI tools (included in the SDK) are fixed but reship with an existing runtime. In that case, the SDK version is increased (for example, to 2.1.2), and then the Runtime catches up the next time it ships (for example, both the Runtime and SDK ship the following time as 2.1.3).
 
 ## Semantic Versioning
 
@@ -128,7 +128,7 @@ It's also possible that the .NET Core Tools need to be fixed but reship an exist
 MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 ```
 
-The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported releases, and only exist on nightly builds, locally built from source targets, and unsupported preview releases.
+The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported releases and only exist on nightly builds, local builds from source targets, and unsupported preview releases.
 
 ### How version numbers are incremented?
 
@@ -207,7 +207,7 @@ Versioning for .NET Core metapackages is based on the .NET Core version they are
 
 For instance, the metapackages in .NET Core 2.1.3 should all have 2.1 as their `MAJOR` and `MINOR` version numbers.
 
-The patch version for the metapackage is incremented every time any referenced package is updated. Patch versions don't include an updated framework version. As a result, the metapackages aren't strictly SemVer-compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but primarily the API level.
+The patch version for the metapackage is incremented every time any referenced package is updated. Patch versions don't include an updated framework version. As a result, the metapackages aren't strictly SemVer-compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but primarily of the API level.
 
 There are currently two primary metapackages for .NET Core:
 

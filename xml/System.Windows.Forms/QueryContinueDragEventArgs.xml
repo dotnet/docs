@@ -25,7 +25,7 @@
   
  By default, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event sets <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> to <xref:System.Windows.Forms.DragAction.Cancel?displayProperty=nameWithType> if the ESC key was pressed and sets `Action` to <xref:System.Windows.Forms.DragAction.Drop?displayProperty=nameWithType> if the left, middle, or right mouse button is pressed.  
   
- For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For information about the event model, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

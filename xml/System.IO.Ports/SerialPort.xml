@@ -738,7 +738,7 @@
   
  The <xref:System.IO.Ports.SerialPort.DataReceived> event is raised on a secondary thread when data is received from the <xref:System.IO.Ports.SerialPort> object. Because this event is raised on a secondary thread, and not the main thread, attempting to modify some elements in the main thread, such as UI elements, could raise a threading exception. If it is necessary to modify elements in the main <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.Control>, post change requests back using <xref:System.Windows.Forms.Control.Invoke%2A>, which will do the work on the proper thread.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1081,7 +1081,7 @@
   
  The <xref:System.IO.Ports.SerialPort.ErrorReceived> event is raised on a secondary thread when an error is received from the <xref:System.IO.Ports.SerialPort> object. Because this event is raised on a secondary thread, and not the main thread, attempting to modify some elements in the main thread, such as UI elements, could raise a threading exception. If it is necessary to modify elements in the main <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.Control>, post change requests back using <xref:System.Windows.Forms.Control.Invoke%2A>, which will do the work on the proper thread.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -1494,7 +1494,7 @@
   
  The <xref:System.IO.Ports.SerialPort.PinChanged> event is raised on a secondary thread. Because this event is raised on a secondary thread, and not the main thread, attempting to modify some elements in the main thread, such as UI elements, could raise a threading exception. If it is necessary to modify elements in the main <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.Control>, post change requests back using <xref:System.Windows.Forms.Control.Invoke%2A>, which will do the work on the proper thread.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

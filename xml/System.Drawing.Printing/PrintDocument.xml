@@ -106,7 +106,7 @@
 ## Remarks  
  Typically, you handle the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event to initialize fonts, file streams, and other resources used during the printing process.  
   
- To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -234,7 +234,7 @@
   
  You indicate that there are no more pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=nameWithType> property to `false` in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The <xref:System.Drawing.Printing.PrintDocument.EndPrint> event also occurs if the printing process is canceled or an exception occurs during the printing process.  
   
- To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -269,7 +269,7 @@
 ## Remarks  
  The <xref:System.Drawing.Printing.PrintDocument.OnBeginPrint%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
- When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnBeginPrint%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event by invoking the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnBeginPrint%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event by invoking the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -304,7 +304,7 @@
 ## Remarks  
  The <xref:System.Drawing.Printing.PrintDocument.OnEndPrint%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class. The <xref:System.Drawing.Printing.PrintDocument.OnEndPrint%2A> method is also called if the printing process is canceled or an exception occurs during the printing process.  
   
- When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnEndPrint%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event by invoking the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnEndPrint%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event by invoking the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -339,7 +339,7 @@
 ## Remarks  
  The <xref:System.Drawing.Printing.PrintDocument.OnPrintPage%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
- When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnPrintPage%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event by invoking the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnPrintPage%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event by invoking the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -374,7 +374,7 @@
 ## Remarks  
  The <xref:System.Drawing.Printing.PrintDocument.OnQueryPageSettings%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
- When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnQueryPageSettings%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event by invoking the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When a derived class calls the <xref:System.Drawing.Printing.PrintDocument.OnQueryPageSettings%2A> method, it raises the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event by invoking the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -591,7 +591,7 @@
   
  In addition to specifying the output, you can indicate if there are additional pages to print by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A?displayProperty=nameWithType> property to `true`. The default is `false`, which indicates that there are no more pages to print. Individual page settings can also be modified through the <xref:System.Drawing.Printing.PageSettings> and the print job can be canceled by setting the <xref:System.Drawing.Printing.PrintPageEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true`. To print each page of a document using different page settings, handle the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event.  
   
- To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintPageEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.PrintPageEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -636,7 +636,7 @@
 ## Remarks  
  It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A?displayProperty=nameWithType> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. Changes made to the <xref:System.Drawing.Printing.PageSettings> affect only the current page, not the document's default page settings. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` for the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs>.  
   
- To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.QueryPageSettingsEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ To associate the event with your event handler, add an instance of the <xref:System.Drawing.Printing.QueryPageSettingsEventHandler> delegate to the event. The event handler is called whenever the event occurs. For more information about handling events with delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
 If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set. For more information, see [PrintPreviewDialog control overview](~/docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md).   
   

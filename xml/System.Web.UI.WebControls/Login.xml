@@ -306,7 +306,7 @@
 > [!NOTE]
 >  When a user uses the <xref:System.Web.UI.WebControls.Login> control to log in to a Web site, all data in the view state and all post data is lost. Do not perform actions in the <xref:System.Web.UI.WebControls.Login.Authenticate> event that rely on the view state.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1441,7 +1441,7 @@
 > [!NOTE]
 >  When a user uses the <xref:System.Web.UI.WebControls.Login> control to log in to a Web site, all data in the view state and all post data is lost. Do not perform actions in the <xref:System.Web.UI.WebControls.Login.LoggedIn> event that rely on the view state.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1479,7 +1479,7 @@
   
  After the <xref:System.Web.UI.WebControls.Login.LoggingIn> event is raised, the <xref:System.Web.UI.WebControls.Login> control raises the <xref:System.Web.UI.WebControls.Login.Authenticate> event and then the <xref:System.Web.UI.WebControls.Login.LoggedIn> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1920,7 +1920,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoggedIn%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoggedIn> event. Use the <xref:System.Web.UI.WebControls.Login.LoggedIn> event to provide additional processing, such as accessing per-user data, after the user is authenticated.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoggedIn%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1963,7 +1963,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoggingIn%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoggingIn> event. Use the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to perform any processing that you need before authenticating a user or to perform custom validation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoggingIn%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

@@ -612,7 +612,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
 ## Remarks  
  The <xref:System.Windows.Forms.MonthCalendar.DateChanged> event occurs during any date selection, whether by mouse, keyboard, or code. The <xref:System.Windows.Forms.MonthCalendar.DateSelected> event is similar, but it occurs only at the end of a date selection made using the mouse.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -654,7 +654,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
 ## Remarks  
  This event is similar to the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event, but it occurs at the end of a date selection made using the mouse. The <xref:System.Windows.Forms.MonthCalendar.DateChanged> event occurs during any date selection, whether by mouse, keyboard, or code.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1347,7 +1347,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MonthCalendar.OnDateChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1381,7 +1381,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MonthCalendar.OnDateSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1417,7 +1417,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
 ## Remarks  
  The <xref:System.Windows.Forms.MonthCalendar.OnFontChanged%2A> method resizes the control based on the new font size. This can cause the calendar to overlap other controls on the form if the potential sizing issues have not been taken into account.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MonthCalendar.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1494,7 +1494,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MonthCalendar.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1532,7 +1532,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MonthCalendar.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1909,7 +1909,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

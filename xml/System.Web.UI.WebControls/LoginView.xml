@@ -744,7 +744,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event is only raised if the login status for a user changes during a postback to the page. The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will not be raised if a user logs in using the <xref:System.Web.UI.WebControls.Login> control, or if the user logs out using the <xref:System.Web.UI.WebControls.LoginStatus> control. The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will also not occur if a user is logged in or out followed by a redirect. An example of when the <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will occur is when a user is logged out by calling the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method without being redirected to another page. During the next postback to the page, the <xref:System.Web.UI.WebControls.LoginView> control will detect the change in the login status for the user, and then raise the <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -777,7 +777,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event is only raised if the login status for a user changes during a postback to the page. The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will not be raised if a user logs in using the <xref:System.Web.UI.WebControls.Login> control, or if the user logs out using the <xref:System.Web.UI.WebControls.LoginStatus> control. The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will also not occur if a user is logged in or out followed by a redirect. An example of when the <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will occur is when a user is logged out by calling the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method without being redirected to another page. During the next postback to the page, the <xref:System.Web.UI.WebControls.LoginView> control will detect the change in the login status for the user, and then raise the <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

@@ -572,7 +572,7 @@
 ## Remarks  
  This method is called after the <xref:System.Configuration.Install.Installer.Install%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -623,7 +623,7 @@
 ## Remarks  
  This method is called after the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnAfterRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -665,7 +665,7 @@
 ## Remarks  
  This method is called after the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -706,7 +706,7 @@
 ## Remarks  
  This method is called before the <xref:System.Configuration.Install.Installer.Install%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -757,7 +757,7 @@
 ## Remarks  
  This method is called before the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnBeforeRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -799,7 +799,7 @@
 ## Remarks  
  This method is called before the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are uninstalled.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -841,7 +841,7 @@
 ## Remarks  
  This method is called after the <xref:System.Configuration.Install.Installer.Commit%2A> methods of all the installers contained in this instance's installer collection run.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -892,7 +892,7 @@
 ## Remarks  
  This method is called before the <xref:System.Configuration.Install.Installer.Commit%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

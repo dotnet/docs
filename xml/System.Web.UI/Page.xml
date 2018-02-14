@@ -2897,7 +2897,7 @@
   
  The <xref:System.Web.UI.Page.OnInit%2A> method is called after the <xref:System.Web.UI.Page.OnPreInit%2A> method and before the <xref:System.Web.UI.Page.OnInitComplete%2A> method.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2934,7 +2934,7 @@
   
  The <xref:System.Web.UI.Page.OnInitComplete%2A> method occurs at the end of the <xref:System.Web.UI.Page> initialization stage and before the load stage.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnInitComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3006,7 +3006,7 @@
   
  After the <xref:System.Web.UI.Page.OnPreInit%2A> method is called, personalization information is loaded and the page theme, if any, is initialized. This is also the preferred stage to dynamically define a <xref:System.Web.UI.PageTheme> or <xref:System.Web.UI.MasterPage> for the Page.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnPreInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3043,7 +3043,7 @@
   
  Controls created in the <xref:System.Web.UI.Page.OnPreLoad%2A> method will also be loaded with view-state and postback data.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnPreLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3080,7 +3080,7 @@
   
  This is the last event called before the page's view state is saved.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnPreRenderComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3115,7 +3115,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.OnSaveStateComplete%2A> method is called when the state information for the control has been written to the persistence medium for the page. State information is written to the persistence medium by calling the <xref:System.Web.UI.Page.SavePageStateToPersistenceMedium%2A> method.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.Page.OnSaveStateComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4279,7 +4279,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
  This is the last event raised before the page is rendered to the requesting browser.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>

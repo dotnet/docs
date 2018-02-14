@@ -21,7 +21,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.AxHost.AboutBoxDelegate> provides you the ability to be notified when the ActiveX control's About box is going to be displayed. Code added to the delegate method is executed before the About box is displayed.  
   
- When you create an <xref:System.Windows.Forms.AxHost.AboutBoxDelegate> delegate, you identify the method that will handle the display of an ActiveX control's About dialog box if it has one. To associate the method with your handler, add an instance of the delegate to the method. The handler is called whenever the method is called, unless you remove the delegate. For more information about delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When you create an <xref:System.Windows.Forms.AxHost.AboutBoxDelegate> delegate, you identify the method that will handle the display of an ActiveX control's About dialog box if it has one. To associate the method with your handler, add an instance of the delegate to the method. The handler is called whenever the method is called, unless you remove the delegate. For more information about delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

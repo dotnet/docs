@@ -711,7 +711,7 @@
   
 -   Updates the <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> controls.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.BindingNavigator.OnRefreshItems%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

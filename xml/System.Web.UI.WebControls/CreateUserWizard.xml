@@ -1198,7 +1198,7 @@
   
  Use the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatedUser> event to set Web site values, such as personalization values, before the user is logged on to the site for the first time.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2951,7 +2951,7 @@ Thank you for creating an account with our Web site.
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError%2A> method is called when the membership provider specified in the <xref:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider%2A> property returns an error message from creating the specified user account. The <xref:System.Web.UI.WebControls.CreateUserErrorEventArgs.CreateUserError%2A> property of the <xref:System.Web.UI.WebControls.CreateUserErrorEventArgs> object passed as the `e` parameter contains a <xref:System.Web.Security.MembershipCreateStatus> object that contains the details of the error.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2990,7 +2990,7 @@ Thank you for creating an account with our Web site.
   
  If you need to cancel the request to create the new user account, set the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object passed as the `e` parameter to `true`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3086,7 +3086,7 @@ Thank you for creating an account with our Web site.
   
  Email messages are only created when the <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property of the <xref:System.Web.UI.WebControls.CreateUserWizard.MailDefinition%2A> object specified by the <xref:System.Web.UI.WebControls.CreateUserWizard.MailDefinition%2A> property points to a valid file name.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3149,7 +3149,7 @@ Thank you for creating an account with our Web site.
   
  You must set the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object passed as the `e` parameter to signal that the exception that caused the <xref:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError%2A> method to be called has been taken care of, otherwise the exception is re-thrown.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

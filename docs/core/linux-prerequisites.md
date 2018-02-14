@@ -239,7 +239,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 4. Install .NET Core.
 
    ```bash
-   sudo apt-get install dotnet-sdk-2.1.3
+   sudo apt-get install dotnet-sdk-2.1.4
    ```
 
 4. Run the `dotnet --version` command to prove the installation succeeded.

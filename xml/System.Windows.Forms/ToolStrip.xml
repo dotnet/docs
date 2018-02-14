@@ -525,7 +525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -589,7 +589,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -725,7 +725,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -988,7 +988,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1326,7 +1326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1404,7 +1404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1967,7 +1967,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2001,7 +2001,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2035,7 +2035,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2117,7 +2117,7 @@
   
  Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow.Never>.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2237,7 +2237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2293,7 +2293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnBeginDrag%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2326,7 +2326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnDockChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2359,7 +2359,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2392,7 +2392,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnEndDrag%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2446,7 +2446,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2479,7 +2479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2533,7 +2533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnItemAdded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2566,7 +2566,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnItemClicked%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2599,7 +2599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnItemRemoved%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2632,7 +2632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2665,7 +2665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnLayoutCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2698,7 +2698,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnLayoutStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2731,7 +2731,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2764,7 +2764,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnLostFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2818,7 +2818,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2851,7 +2851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2884,7 +2884,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2917,7 +2917,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2950,7 +2950,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2988,7 +2988,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnPaintBackground%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3023,7 +3023,7 @@
 ## Remarks  
  Use this method when the move handle is painted.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnPaintGrip%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3056,7 +3056,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnRendererChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3094,7 +3094,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3148,7 +3148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnTabStopChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3183,7 +3183,7 @@
 ## Remarks  
  Changing the <xref:System.Windows.Forms.Control.Enabled%2A> property of a <xref:System.Windows.Forms.ToolStrip> does not raise the various *Changed events of a <xref:System.Windows.Forms.ToolStripItem>. Raise those events with specific property settings.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStrip.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3261,7 +3261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -3423,7 +3423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

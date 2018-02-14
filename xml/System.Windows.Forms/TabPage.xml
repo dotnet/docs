@@ -695,7 +695,7 @@
 ## Remarks  
  In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.TabPage.OnEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -731,7 +731,7 @@
 ## Remarks  
  In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.TabPage.OnLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

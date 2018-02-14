@@ -308,7 +308,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -341,7 +341,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -395,7 +395,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

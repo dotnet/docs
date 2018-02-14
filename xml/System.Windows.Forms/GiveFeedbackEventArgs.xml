@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Control.GiveFeedback> event occurs during a drag operation. It allows the source of a drag event to modify the appearance of the mouse pointer in order to give the user visual feedback during a drag-and-drop operation. A <xref:System.Windows.Forms.GiveFeedbackEventArgs> object specifies the type of drag-and-drop operation and whether default cursors are used.  
   
- For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For information about the event model, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

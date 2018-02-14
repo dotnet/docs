@@ -262,7 +262,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxItem.ComponentsCreated> event is raised each time components of this toolbox item are created.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -289,7 +289,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event is raised each time components of the toolbox item are about to be created.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -880,7 +880,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxItem.OnComponentsCreated%2A> method raises the <xref:System.Drawing.Design.ToolboxItem.ComponentsCreated> event. This method is called after a toolbox item is invoked to create components and the <xref:System.Drawing.Design.ToolboxItem.CreateComponentsCore%2A> method has returned.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Drawing.Design.ToolboxItem.OnComponentsCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -917,7 +917,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxItem.OnComponentsCreating%2A> method raises the <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event. This method is called after a toolbox item is invoked to create components, just before the <xref:System.Drawing.Design.ToolboxItem.CreateComponentsCore%2A> method is called.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Drawing.Design.ToolboxItem.OnComponentsCreating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

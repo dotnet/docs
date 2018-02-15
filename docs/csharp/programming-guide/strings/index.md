@@ -121,7 +121,7 @@ string s = String.Empty;
 |[How to: Modify String Contents](../../../csharp/programming-guide/strings/how-to-modify-string-contents.md)|Provides a code example that illustrates how to modify the contents of strings.|  
 |[How to: Concatenate Multiple Strings](../../../csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md)|Illustrates how to use the `+` operator and the `Stringbuilder` class to join strings together at compile time and run time.|  
 |[How to: Compare Strings](../../../csharp/programming-guide/strings/how-to-compare-strings.md)|Shows how to perform ordinal comparisons of strings.|  
-|[How to: Parse Strings Using String.Split ](../../../csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md)|Contains a code example that illustrates how to use the `String.Split` method to parse strings.|  
+|[How to: Parse Strings Using String.Split ](../../how-to/parse-strings-using-split.md)|Contains a code example that illustrates how to use the `String.Split` method to parse strings.|  
 |[How to: Search Strings Using String Methods](../../../csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md)|Explains how to use specific methods to search strings.|  
 |[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  

@@ -4,7 +4,7 @@ description: Containerized Docker Application Lifecycle with Microsoft Platform 
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 95/21/2017
+ms.date: 09/21/2017
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

@@ -1,7 +1,7 @@
 ---
 title: "Language-Integrated Query (LINQ) (C#)"
 ms.custom: ""
-ms.date: 02-02-2017
+ms.date: 02/02/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

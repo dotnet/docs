@@ -104,7 +104,7 @@ ms.workload:
 ||<xref:System.Decimal>|A decimal  (128-bit) value.|**Decimal**|**decimal**|**Decimal**|**decimal**|  
 ||<xref:System.IntPtr>|A signed integer whose size depends on the underlying platform (a 32-bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**IntPtr**<br /><br /> No built-in type.|**unativeint**|  
 ||<xref:System.UIntPtr>|An unsigned integer whose size depends on the underlying platform (a 32- bit value on a 32-bit platform and a 64-bit value on a 64-bit platform).<br /><br /> Not CLS-compliant.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**UIntPtr**<br /><br /> No built-in type.|**unativeint**|  
-||<xref:System.Object>|The root of the object hierarchy.|**Object**|**object**|**Object^**|**object**|  
+||<xref:System.Object>|The root of the object hierarchy.|**Object**|**object**|**Object^**|**obj**|  
 ||<xref:System.String>|An immutable, fixed-length string of Unicode characters.|**String**|**string**|**String^**|**string**|  
   
  In addition to the base data types, the <xref:System> namespace contains over 100 classes, ranging from classes that handle exceptions to classes that deal with core runtime concepts, such as application domains and the garbage collector. The <xref:System> namespace also contains many second-level namespaces.  

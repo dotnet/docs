@@ -150,7 +150,7 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
 - Bug fixes are made.
 - Support for a newer platform is added.
 - A newer `PATCH` version of an existing dependency is adopted.
-- Any other change that doesn't fit one of the previous cases.
+- Any other change doesn't fit one of the previous cases.
 
 When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR` and `PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` is left untouched.
 
@@ -179,7 +179,7 @@ For more information, see [.NET Core Support Lifecycle Fact Sheet](https://www.m
 
 .NET Core is made of the following parts:
 
-- A host (also known as muxer): `dotnet.exe` with `hostfxr` policy libraries.
+- A host: either *dotnet.exe* for framework-dependent applications, or *\<appname>.exe* for self-contained applications.
 - An SDK (the set of tools necessary on a developer's machine, but not in production).
 - A runtime.
 - A shared framework implementation, distributed as packages. Each package is versioned independently, particularly for patch versioning.

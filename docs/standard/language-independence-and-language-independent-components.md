@@ -207,7 +207,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
 -   Typed references, which are special constructs that contain a reference to an object and a reference to a type. Typed references are represented in the .NET Framework by the <xref:System.TypedReference> class.  
   
- If a type is not CLS-compliant, you should apply the <xref:System.CLSCompliantAttribute> attribute with an `isCompliant` value of `false` to it. For more information, see the [The CLSCompliantAttribute attribute](#CLSAttribute) section.  
+ If a type is not CLS-compliant, you should apply the <xref:System.CLSCompliantAttribute> attribute with an `isCompliant` value of `false` to it. For more information, see [The CLSCompliantAttribute attribute](#CLSAttribute) section.  
   
  The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation. It defines an `InvoiceItem` class with a property of type <xref:System.UInt32>, a property of type `Nullable(Of UInt32)`, and a constructor with parameters of type <xref:System.UInt32> and `Nullable(Of UInt32)`. You get four compiler warnings when you try to compile this example.  
   

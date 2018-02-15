@@ -53,12 +53,12 @@ Sub TimerCallback(state As Object)
  The timer delegate is specified when the timer is constructed, and cannot be changed. The method does not execute on the thread that created the timer; it executes on a <xref:System.Threading.ThreadPool> thread supplied by the system.  
   
 > [!TIP]
->  The .NET Framework Class Library includes four classes named `Timer`, each of which offers different functionality:  
->   
-> -   <xref:System.Timers.Timer?displayProperty=nameWithType>, which fires an event and executes the code in one or more event sinks at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Threading.Timer?displayProperty=nameWithType>, which executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Windows.Forms.Timer?displayProperty=nameWithType>, a Windows Forms component that fires an event and executes the code in one or more event sinks at regular intervals. The component has no user interface and is designed for use in a single-threaded environment; it executes on the UI thread.  
-> -   <xref:System.Web.UI.Timer?displayProperty=nameWithType>, an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
+> .NET includes four classes named `Timer`, each of which offers different functionality:  
+>
+> - <xref:System.Timers.Timer?displayProperty=nameWithType>, which fires an event and executes the code in one or more event sinks at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.
+> - <xref:System.Threading.Timer?displayProperty=nameWithType>, which executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.
+> - <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> (.NET Framework only), a Windows Forms component that fires an event and executes the code in one or more event sinks at regular intervals. The component has no user interface and is designed for use in a single-threaded environment; it executes on the UI thread.
+> - <xref:System.Web.UI.Timer?displayProperty=nameWithType> (.NET Framework only), an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.
   
  When you create a timer, you can specify an amount of time to wait before the first execution of the method (due time), and an amount of time to wait between subsequent executions (period). The <xref:System.Threading.Timer> class has the same resolution as the system clock. This means that if the period is less than the resolution of the system clock, the <xref:System.Threading.TimerCallback> delegate will execute at intervals defined by the resolution of the system clock, which is approximately 15 milliseconds on Windows 7 and Windows 8 systems. You can change the due time and period, or disable the timer, by using the <xref:System.Threading.Timer.Change%2A> method.  
   

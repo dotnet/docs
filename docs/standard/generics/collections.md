@@ -1,7 +1,7 @@
 ---
 title: "Generic Collections in .NET"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "02/15/2018"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""

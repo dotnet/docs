@@ -1,5 +1,4 @@
 # [Strings](index.md)
-## [How to: Concatenate Multiple Strings](how-to-concatenate-multiple-strings.md)
 ## [How to: Modify String Contents](how-to-modify-string-contents.md)
 ## [How to: Compare Strings](how-to-compare-strings.md)
 ## [How to: Search Strings Using String Methods](how-to-search-strings-using-string-methods.md)

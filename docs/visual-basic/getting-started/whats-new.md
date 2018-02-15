@@ -58,7 +58,7 @@ The first release of Visual Basic .NET
 
 [Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name#mixing-arguments-by-position-and-by-name)
 
-In Visual Basic 15.3 and earlier versions, when a method call included arguments both by position and by name, positional arguments had to precede named arguments. Starting with Visual Basic 15.5, positional and named arguments can appear in any order as long as the ending positional arguments are in the correct position. This is particularly useful when named arguments are used to make code more readable.
+In Visual Basic 15.3 and earlier versions, when a method call included arguments both by position and by name, positional arguments had to precede named arguments. Starting with Visual Basic 15.5, positional and named arguments can appear in any order as long as all arguments up to the last positional argument are in the correct position. This is particularly useful when named arguments are used to make code more readable.
 
 For example, the following method call has two positional arguments between a named argument. The named argument makes it clear that the value 19 represents an age.
 

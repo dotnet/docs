@@ -1,6 +1,6 @@
 ---
 title: "How to: Set Environment Variables for the Visual Studio Command Line"
-ms.date: "09-29-2017"
+ms.date: "09/29/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

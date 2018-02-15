@@ -28,8 +28,8 @@ ms.workload:
 
 Parsing methods convert the string representation of a date and time to an equivalent <xref:System.DateTime> object. The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.TryParse%2A> methods convert any of several common representations of a date and time. The <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryParseExact%2A> methods convert a string representation that conforms to the pattern specified by a date and time format string. (See the topics on [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).)
   
-Parsing is influenced by the properties of a format provider that supplies information such as the strings used for date and time separators, and the names of months, days, and eras. The format provider is the current <xref:System.Globalization.DateTimeFormatInfo> object, which is provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of a parsing method. For the <xref:System.IFormatProvider> parameter, specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object.
-  
+The format provider controls several factors that affect parsing. It has properties that describe the date and time separators, and the names of months, days, and eras. The format provider is the current <xref:System.Globalization.DateTimeFormatInfo> object. It's provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of a parsing method. For the <xref:System.IFormatProvider> parameter, specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object.
+
 The string representation of a date to be parsed must include the month and at least a day or year. The string representation of a time must include the hour and at least minutes or the AM/PM designator. However, parsing supplies default values for omitted components if possible. A missing date defaults to the current date, a missing year defaults to the current year, a missing day of the month defaults to the first day of the month, and a missing time defaults to midnight.
   
 If the string representation specifies only a time, parsing returns a <xref:System.DateTime> object with its <xref:System.DateTime.Year%2A>, <xref:System.DateTime.Month%2A>, and <xref:System.DateTime.Day%2A> properties set to the corresponding values of the <xref:System.DateTime.Today%2A> property. However, if the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault> constant is specified in the parsing method, the resulting year, month, and day properties are set to the value `1`.
@@ -42,20 +42,26 @@ The format provider is also used to interpret an ambiguous numeric date. For exa
 
 The following code example illustrates the use of the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method to convert a `string` into a <xref:System.DateTime>. This example uses the culture associated with the current thread to perform the parse. If the <xref:System.Globalization.CultureInfo> associated with the current culture cannot parse the input string, a <xref:System.FormatException> is thrown.
 
-[!code-csharp[Parsing.DateAndTime#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Parsing.DateAndTime/cs/Example.cs#1)]
-[!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Parsing.DateAndTime/vb/Example.vb#1)]
+> [!TIP]
+> All the C# samples in this article run in your browser. Press the **Run** button to see the output. You can also edit them to experiment yourself.
+
+> [!NOTE]
+> These examples are availalbe in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions)
+
+[!code-csharp-interactive[Parsing.DateAndTime#1](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#1)]
+[!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#1)]
 
 You can also specify a <xref:System.Globalization.CultureInfo> set to one of the cultures defined by that object, or you can specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following code example uses a format provider to parse a German string into a <xref:System.DateTime> A <xref:System.Globalization.CultureInfo>representing the `de-DE` culture is defined and passed with the string being parsed to ensure successful parsing of this particular string. This precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType> of the <xref:System.Threading.Thread.CurrentThread?displayProperty=nameWithType>.  
   
-[!code-csharp[Parsing.DateAndTime#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Parsing.DateAndTime/cs/Example2.cs#2)]
-[!code-vb[Parsing.DateAndTime#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Parsing.DateAndTime/vb/Example2.vb#2)]  
+[!code-csharp-interactive[Parsing.DateAndTime#2](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#2)]
+[!code-vb[Parsing.DateAndTime#2](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#2)]
 
 However, although you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers, the method does not support the use of non-standard format providers. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.  
 
 The following code example uses the <xref:System.Globalization.DateTimeStyles> enumeration to specify that the current date and time information should not be added to the <xref:System.DateTime> for fields that the string does not define.  
 
-[!code-csharp[Parsing.DateAndTime#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Parsing.DateAndTime/cs/Example3.cs#3)]
-[!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Parsing.DateAndTime/vb/Example3.vb#3)]  
+[!code-csharp-interactive[Parsing.DateAndTime#3](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#3)]
+[!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#3)]
  
 ## ParseExact
 
@@ -63,12 +69,14 @@ The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method con
 
 Each overload of the <xref:System.DateTime.ParseExact%2A> method also has an <xref:System.IFormatProvider> parameter that typically provides culture-specific information about the formatting of the string. Typically, this <xref:System.IFormatProvider> object is a <xref:System.Globalization.CultureInfo> object that represents a standard culture or a <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. However, unlike the other date and time parsing functions, this method also supports an <xref:System.IFormatProvider> that defines a non-standard date and time format.  
 
-In the following code example, the **ParseExact** method is passed a string object to parse, followed by a format specifier, followed by a **CultureInfo** object. This **ParseExact** method can only parse strings that exhibit the long date pattern in the en-US culture.  
+In the following code example, the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method is passed a string object to parse, followed by a format specifier, followed by a <xref:System.Globalization.CultureInfo> object. This <xref:System.DateTime.ParseExact%2A> method can only parse strings that exhibit the long date pattern in the `en-US` culture.  
 
-[!code-csharp[Parsing.DateAndTime#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Parsing.DateAndTime/cs/Example4.cs#4)]
-[!code-vb[Parsing.DateAndTime#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Parsing.DateAndTime/vb/Example4.vb#4)]  
+[!code-csharp-interactive[Parsing.DateAndTime#4](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#4)]
+[!code-vb[Parsing.DateAndTime#4](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#4)]
 
 ## See Also  
  [Parsing Strings](parsing-strings.md)  
  [Formatting Types](formatting-types.md)  
- [Type Conversion in .NET](type-conversion.md)
+ [Type Conversion in .NET](type-conversion.md)  
+ [Standard `DateTime` formats](standard-date-and-time-format-strings.md)  
+ [Custom `DateTime` format strings](custom-date-and-time-format-strings.md)

@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 namespace conversions
 {
@@ -6,58 +7,68 @@ namespace conversions
     {
         public static void Examples()
         {
-            Snippet1();
-            Snippet2();
+            FirstExample();
+            GlobalExample();
+            NoDefaultToCurrentDateTime();
+            ParseExactExample();
         }
 
-        static private void Snippet1()
+        private static void FirstExample()
         {
             // <Snippet1>
-            string dateTime = "01/08/2008 14:50:50.42";  
-            DateTime dt = Convert.ToDateTime(dateTime);  
-            Console.WriteLine("Year: {0}, Month: {1}, Day: {2}, Hour: {3}, Minute: {4}, Second: {5}, Millisecond: {6}",  
-                              dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond);  
-            // Specify exactly how to interpret the string.  
-            IFormatProvider culture = new System.Globalization.CultureInfo("fr-FR", true);  
-  
-            // Alternate choice: If the string has been input by an end user, you might    
-            // want to format it according to the current culture:   
-            // IFormatProvider culture = System.Threading.Thread.CurrentThread.CurrentCulture;  
-            DateTime dt2 = DateTime.Parse(dateTime, culture, System.Globalization.DateTimeStyles.AssumeLocal);  
-            Console.WriteLine("Year: {0}, Month: {1}, Day: {2}, Hour: {3}, Minute: {4}, Second: {5}, Millisecond: {6}",  
-                              dt2.Year, dt2.Month, dt2.Day, dt2.Hour, dt2.Minute, dt2.Second, dt2.Millisecond  
-            /* Output (assuming first culture is en-US and second is fr-FR):  
-                Year: 2008, Month: 1, Day: 8, Hour: 14, Minute: 50, Second: 50, Millisecond: 420  
-            Year: 2008, Month: 8, Day: 1, Hour: 14, Minute: 50, Second: 50, Millisecond: 420  
-            Press any key to continue . . .  
-            */  
+            string MyString = "Jan 1, 2009";
+            DateTime MyDateTime = DateTime.Parse(MyString);
+            Console.WriteLine(MyDateTime);
+            // Displays the following output on a system whose culture is en-US:
+            //       1/1/2009 12:00:00 AM
             // </Snippet1>
         }
-
-        static private void Snippet2()
+        private static void GlobalExample()
         {
             // <Snippet2>
-            // Date strings are interpreted according to the current culture.
-            // If the culture is en-US, this is interpreted as "January 8, 2008",
-            // but if the user's computer is fr-FR, this is interpreted as "August 1, 2008"
-            string date = "01/08/2008";
-            DateTime dt = Convert.ToDateTime(date);            
-            Console.WriteLine("Year: {0}, Month: {1}, Day: {2}", dt.Year, dt.Month, dt.Day);
+            CultureInfo MyCultureInfo = new CultureInfo("de-DE");
+            string MyString = "12 Juni 2008";
+            DateTime MyDateTime = DateTime.Parse(MyString, MyCultureInfo);
+            Console.WriteLine(MyDateTime);
+            // The example displays the following output:
+            //       6/12/2008 12:00:00 AM
+            // </Snippet2>
+        }
 
-            // Specify exactly how to interpret the string.
-            IFormatProvider culture = new System.Globalization.CultureInfo("fr-FR", true);
+        private static void NoDefaultToCurrentDateTime()
+        {
+            // <Snippet3>
+            CultureInfo MyCultureInfo = new CultureInfo("de-DE");
+            string MyString = "12 Juni 2008";
+            DateTime MyDateTime = DateTime.Parse(MyString, MyCultureInfo,
+                                                 DateTimeStyles.NoCurrentDateDefault);
+            Console.WriteLine(MyDateTime);
+            // The example displays the following output if the current culture is en-US:
+            //      6/12/2008 12:00:00 AM
+            // </Snippet3>
+        }
 
-            // Alternate choice: If the string has been input by an end user, you might 
-            // want to format it according to the current culture:
-            // IFormatProvider culture = System.Threading.Thread.CurrentThread.CurrentCulture;
-            DateTime dt2 = DateTime.Parse(date, culture, System.Globalization.DateTimeStyles.AssumeLocal);
-            Console.WriteLine("Year: {0}, Month: {1}, Day {2}", dt2.Year, dt2.Month, dt2.Day);
-
-            /* Output (assuming first culture is en-US and second is fr-FR):
-                Year: 2008, Month: 1, Day: 8
-                Year: 2008, Month: 8, Day 1
-             */            
-             // </Snippet2>
+        static private void ParseExactExample()
+        {
+            // <Snippet4>
+            CultureInfo MyCultureInfo = new CultureInfo("en-US");
+            string[] MyString = { " Friday, April 10, 2009", "Friday, April 10, 2009" };
+            foreach (string dateString in MyString)
+            {
+                try
+                {
+                    DateTime MyDateTime = DateTime.ParseExact(dateString, "D", MyCultureInfo);
+                    Console.WriteLine(MyDateTime);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Unable to parse '{0}'", dateString);
+                }
+            }
+            // The example displays the following output:
+            //       Unable to parse ' Friday, April 10, 2009'
+            //       4/10/2009 12:00:00 AM
+            // </Snippet4>
         }
     }
 }

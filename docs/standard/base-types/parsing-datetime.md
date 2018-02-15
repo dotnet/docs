@@ -49,19 +49,19 @@ The following code example illustrates the use of the <xref:System.DateTime.Pars
 > These examples are availalbe in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions)
 
 [!code-csharp-interactive[Parsing.DateAndTime#1](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#1)]
-[!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#1)]
+[!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#1)]
 
 You can also specify a <xref:System.Globalization.CultureInfo> set to one of the cultures defined by that object, or you can specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following code example uses a format provider to parse a German string into a <xref:System.DateTime> A <xref:System.Globalization.CultureInfo>representing the `de-DE` culture is defined and passed with the string being parsed to ensure successful parsing of this particular string. This precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType> of the <xref:System.Threading.Thread.CurrentThread?displayProperty=nameWithType>.  
   
 [!code-csharp-interactive[Parsing.DateAndTime#2](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#2)]
-[!code-vb[Parsing.DateAndTime#2](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#2)]
+[!code-vb[Parsing.DateAndTime#2](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#2)]
 
 However, although you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers, the method does not support the use of non-standard format providers. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.  
 
 The following code example uses the <xref:System.Globalization.DateTimeStyles> enumeration to specify that the current date and time information should not be added to the <xref:System.DateTime> for fields that the string does not define.  
 
 [!code-csharp-interactive[Parsing.DateAndTime#3](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#3)]
-[!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#3)]
+[!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#3)]
  
 ## ParseExact
 
@@ -72,7 +72,7 @@ Each overload of the <xref:System.DateTime.ParseExact%2A> method also has an <xr
 In the following code example, the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method is passed a string object to parse, followed by a format specifier, followed by a <xref:System.Globalization.CultureInfo> object. This <xref:System.DateTime.ParseExact%2A> method can only parse strings that exhibit the long date pattern in the `en-US` culture.  
 
 [!code-csharp-interactive[Parsing.DateAndTime#4](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#4)]
-[!code-vb[Parsing.DateAndTime#4](../../../samples/snippets/visualbasic/how-two/conversions/Program.vb#4)]
+[!code-vb[Parsing.DateAndTime#4](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#4)]
 
 ## See Also  
  [Parsing Strings](parsing-strings.md)  

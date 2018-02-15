@@ -86,7 +86,7 @@ namespace SDKSample
         MyData myChangedData = new MyData();
         
         // Create a new binding
-	      // TheDate is a property of type DateTime on MyData class
+        // TheDate is a property of type DateTime on MyData class
         Binding myNewBindDef = new Binding("TheDate");
         
         myNewBindDef.Mode = BindingMode.OneWay;

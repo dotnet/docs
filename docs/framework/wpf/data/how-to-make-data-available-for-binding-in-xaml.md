@@ -27,19 +27,17 @@ ms.workload:
 This topic discusses the different ways you can make data available for binding in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], depending on the needs of your application.  
   
 ## Example  
- If you have a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] object you would like to bind to from [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], one way you can make the object available for binding is to define it as a resource and give it an `x:Key`. In the following example, you have a `Person` object with a string property named `PersonName`. The `Person` object, which is shown by the highlighted linethat contains the `<src>` element, is defined in the namespace called `SDKSample`.  
+ If you have a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] object you would like to bind to from [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], one way you can make the object available for binding is to define it as a resource and give it an `x:Key`. In the following example, you have a `Person` object with a string property named `PersonName`. The `Person` object, which is shown by the highlighted line that contains the `<src>` element, is defined in the namespace called `SDKSample`.  
   
  [!code-xaml[SimpleBinding#Instantiation](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=9,37)]  
   
- You can then bind the <xref:System.Windows.Controls.TextBlock> control to the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] as the highlighted line that contains the `<TextBlock>` element shows. 
+ You can then bind the <xref:System.Windows.Controls.TextBlock> control to the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], as the highlighted line that contains the `<TextBlock>` element shows. 
   
- Alternatively, you can use the <xref:System.Windows.Data.ObjectDataProvider> class, as in the following example.  
+ Alternatively, you can use the <xref:System.Windows.Data.ObjectDataProvider> class, as in the following example:  
   
- [!code-xaml[ObjectDataProvider}](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml?highlight=10-14)]  
+ [!code-xaml[ObjectDataProvider}](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml?highlight=10-14,42)]  
   
- You define the binding the same way:  
-  
- [!code-xaml[SimpleBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#L37-L37)]  
+ You define the binding the same way, as the highlighted line that contains the `<TextBlock>` element shows.  
   
  In this particular example, the result is the same: you have a <xref:System.Windows.Controls.TextBlock> with the text content `Joe`. However, the <xref:System.Windows.Data.ObjectDataProvider> class provides functionality such as the ability to bind to the result of a method. You can choose to use the <xref:System.Windows.Data.ObjectDataProvider> class if you need the functionality it provides.  
   

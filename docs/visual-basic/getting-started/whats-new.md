@@ -22,12 +22,12 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current Version
 
-Visual Basic 15.5
+Visual Basic 15.5   
 For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 ## Previous versions
 
-Visual Basic 15.3
+Visual Basic 15.3   
 For new features, see [Visual Basic 15.3](#visual-basic-153)
 
 Visual Basic / Visual Studio .NET 2015   
@@ -56,7 +56,7 @@ The first release of Visual Basic .NET
 
 ## Visual Basic 15.5
 
-[Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name#mixing-arguments-by-position-and-by-name)
+[Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md#mixing-arguments-by-position-and-by-name)
 
 In Visual Basic 15.3 and earlier versions, when a method call included arguments both by position and by name, positional arguments had to precede named arguments. Starting with Visual Basic 15.5, positional and named arguments can appear in any order as long as all arguments up to the last positional argument are in the correct position. This is particularly useful when named arguments are used to make code more readable.
 
@@ -84,7 +84,7 @@ score character as a leading separator, you must add the following element to yo
 
 ## Visual Basic 15.3
 
-[Named tuple inference](../programming-guide/language-features/data-types/tuples.md#interred-tuple-element-names)
+[Named tuple inference](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
 
 When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names; you do not have to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements, `state`, `stateName`, and `capital`.
 

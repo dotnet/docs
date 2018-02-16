@@ -639,8 +639,7 @@ http://myUrl/
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
-          </block>  
-  
+          </block>
  The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
  -or-  
@@ -750,9 +749,8 @@ http://myUrl/
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
-          </block>  
-  
- The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
+          </block>
+          The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
  -or-  
   

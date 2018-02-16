@@ -87,15 +87,15 @@ public static void Main()
   
 1.  SendTimeout – used to initialize the OperationTimeout, which governs the whole process of sending a message, including receiving a reply message for a request/reply service operation. This timeout also applies when sending reply messages from a callback contract method.  
   
-2.  OpenTimeout – used when opening channels when no explicit timeout value is specified  
+2.  OpenTimeout – used when opening channels when no explicit timeout value is specified.  
   
-3.  CloseTimeout – used when closing channels when no explicit timeout value is specified  
+3.  CloseTimeout – used when closing channels when no explicit timeout value is specified.  
   
-4.  ReceiveTimeout – is not used  
+4.  ReceiveTimeout – is not used.  
   
 ### Service-side Timeouts  
  On the service side:  
   
-1.  SendTimeout, OpentTimeout, CloseTimeout are the same as on the client  
+1.  SendTimeout, OpenTimeout, CloseTimeout are the same as on the client.  
   
 2.  ReceiveTimeout – used by the Service Framework Layer to initialize the session-idle timeout which controls how long a session can be idle before timing out.

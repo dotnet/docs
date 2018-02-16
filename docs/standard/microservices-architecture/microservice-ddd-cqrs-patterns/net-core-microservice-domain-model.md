@@ -166,7 +166,7 @@ When you use EF Core 1.0, within the DbContext you need to map the properties th
 
 With the feature in EF Core 1.1 or later to map columns to fields, it is also possible to not use properties. Instead, you can just map columns from a table to fields. A common use case for this is private fields for an internal state that does not need to be accessed from outside the entity.
 
-For example, in the preceding OrderAggregate code example, there are several private fields, like the the  `_paymentMethodId` field, that have no related property for either a setter or getter. That field could also be calculated within the order’s business logic and used from the order’s methods, but it needs to be persisted in the database as well. So in EF Core (since v1.1) there is a way to map a field without a related property to a column in the database. This is also explained in the [Infrastructure layer](#the-infrastructure-layer) section of this guide.
+For example, in the preceding OrderAggregate code example, there are several private fields, like the  `_paymentMethodId` field, that have no related property for either a setter or getter. That field could also be calculated within the order’s business logic and used from the order’s methods, but it needs to be persisted in the database as well. So in EF Core (since v1.1) there is a way to map a field without a related property to a column in the database. This is also explained in the [Infrastructure layer](#the-infrastructure-layer) section of this guide.
 
 ### Additional resources
 

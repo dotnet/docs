@@ -57,11 +57,11 @@ ms.workload:
   
 -   The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit Conversion with the Explicit Operator](#explicit_conversion_with_the_explicit_operator) section.  
   
--   The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see the [The IConvertible Interface](#the_iconvertible_interface) section.  
+-   The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see [The IConvertible Interface](#the_iconvertible_interface) section.  
   
--   The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see the[The Convert Class](#Convert) section.  
+-   The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see [The Convert Class](#Convert) section.  
   
--   The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see the [The TypeConverter Class](#the_typeconverter_class) section.  
+-   The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see [The TypeConverter Class](#the_typeconverter_class) section.  
   
 <a name="implicit_conversion_with_the_implicit_operator"></a>   
 ## Implicit Conversion with the Implicit Operator  

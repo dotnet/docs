@@ -47,7 +47,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can sort the column by clicking the column header unless the column headers are used for selection. A sorting glyph will be displayed automatically.</summary>
+        <summary>The user can sort the column by clicking the column header (or pressing F3 on a cell) unless the column headers are used for selection. A sorting glyph will be displayed automatically.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSortable">

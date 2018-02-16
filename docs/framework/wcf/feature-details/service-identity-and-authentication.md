@@ -46,7 +46,7 @@ A service's *endpoint identity*is a value generated from the service Web Service
 >  The metadata contains the expected identity of the service, so it is recommended that you expose the service metadata through secure means, for example, by creating an HTTPS endpoint for the service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md).  
   
 ## Identity Types  
- A service can provide five types of identities. Each identity type corresponds to an element that can be contained inside the `<identity>` element in configuration. The type used depends on the scenario and the service's security requirements. The following table describes each identity type.  
+ A service can provide six types of identities. Each identity type corresponds to an element that can be contained inside the `<identity>` element in configuration. The type used depends on the scenario and the service's security requirements. The following table describes each identity type.  
   
 |Identity type|Description|Typical scenario|  
 |-------------------|-----------------|----------------------|  

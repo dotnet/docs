@@ -73,7 +73,7 @@ Namespace SDKSample
 		Dim myChangedData As New MyData()
 
 		' Create a new binding
-	' TheDate is a property of type DateTime on MyData class
+    ' TheDate is a property of type DateTime on MyData class
 		Dim myNewBindDef As New Binding("TheDate")
 
 		myNewBindDef.Mode = BindingMode.OneWay
@@ -81,17 +81,15 @@ Namespace SDKSample
 		myNewBindDef.Converter = TheConverter
 		myNewBindDef.ConverterCulture = New CultureInfo("en-US")
 
-	'<SnippetBOSetBinding>
-	' myDatetext is a TextBlock object that is the binding target object
+	 '<SnippetBOSetBinding>
+   ' myDatetext is a TextBlock object that is the binding target object
 		BindingOperations.SetBinding(myDateText, TextBlock.TextProperty, myNewBindDef)
 		BindingOperations.SetBinding(myDateText, TextBlock.ForegroundProperty, myNewBindDef)
 	'</SnippetBOSetBinding>
 
-	'</Snippet1>
 		lbChooseCulture.SelectedIndex = 0
-'<Snippetend1>
 	End Sub
-'</Snippetend1>
+	'</Snippet1>
   End Class
   '</Snippet3>
 End Namespace

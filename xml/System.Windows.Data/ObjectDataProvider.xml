@@ -110,20 +110,18 @@
 <a name="xamlPropertyElementUsage_ConstructorParameters"></a>   
 ## XAML Property Element Usage  
   
-```  
+```xaml  
 <object>  
   <object.ConstructorParameters>  
     parameterValues  
   </object.ConstructorParameters>  
 </object>  
 ```  
-  
-   
-  
+
 ## Examples  
- The following example shows how to use this property:  
+The highlighted lines in the following example use an <xref:System.Windows.Data.ObjectDataProvider> as a wrapper for a `Person` object. The `<ObjectDataProvider.ConstructorParameters>` element shows how to pass a <xref:System.String> argument to its constructor. 
   
- [!code-xaml[SimpleBinding#ODPCP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml#odpcp)]  
+ [!code-xaml[SimpleBinding#ObjectDataProvider.ConstructorParameters](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml?highlight=10-14)]  
   
  ]]></format>
         </remarks>

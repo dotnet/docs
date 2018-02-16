@@ -1,13 +1,9 @@
 ---
-title: "Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control"
-ms.custom: ""
-ms.date: "03/30/2017"
+title: "Default keyboard and mouse handling in the Windows Forms DataGridView control"
+ms.date: "02/13/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-winforms"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "data grids [Windows Forms], mouse handling"
@@ -18,20 +14,20 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], mouse handling"
   - "navigation keys [Windows Forms], DataGridView control"
 ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
-caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
 ms.workload: 
   - dotnet
 ---
-# Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control
+# Default keyboard and mouse handling in the Windows Forms DataGridView control
+
 The following tables describe how users can interact with the <xref:System.Windows.Forms.DataGridView> control through a keyboard and a mouse.  
   
 > [!NOTE]
 >  To customize keyboard behavior, you can handle standard keyboard events such as <xref:System.Windows.Forms.Control.KeyDown>. In edit mode, however, the hosted editing control receives the keyboard input and the keyboard events do not occur for the <xref:System.Windows.Forms.DataGridView> control. To handle editing control events, attach your handlers to the editing control in an <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event handler. Alternatively, you can customize keyboard behavior in a <xref:System.Windows.Forms.DataGridView> subclass by overriding the <xref:System.Windows.Forms.DataGridView.ProcessDialogKey%2A> and <xref:System.Windows.Forms.DataGridView.ProcessDataGridViewKey%2A> methods.  
   
-## Default Keyboard Handling  
+## Default keyboard handling  
   
 ### Basic navigation and entry keys  
   
@@ -53,7 +49,8 @@ The following tables describe how users can interact with the <xref:System.Windo
 |CTRL+HOME|Moves the focus to the first cell in the control.|  
 |CTRL+END|Moves the focus to the last cell in the control.|  
 |CTRL+PAGE DOWN/UP|Same as PAGE DOWN or PAGE UP.|  
-|F2|Puts the current cell into cell edit mode if the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is <xref:System.Windows.Forms.DataGridViewEditMode.EditOnF2> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>.|  
+|F2|Puts the current cell into cell edit mode if the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is <xref:System.Windows.Forms.DataGridViewEditMode.EditOnF2> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>.|
+|F3|Sorts the current column if the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property value is <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>. It's the same as clicking the current column header. Available since .NET Framework 4.7.2. To enable this feature, applications must target .NET Framework 4.7.2 or later versions or explicitly opt into accessibility improvements using AppContext switches.|  
 |F4|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |ALT+UP/DOWN ARROW|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |SPACE|If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, <xref:System.Windows.Forms.DataGridViewLinkCell>, or <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, raises the <xref:System.Windows.Forms.DataGridView.CellClick> and <xref:System.Windows.Forms.DataGridView.CellContentClick> events. If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, also presses the button. If the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, also changes the check state.|  
@@ -64,7 +61,8 @@ The following tables describe how users can interact with the <xref:System.Windo
 |CTRL+ENTER|Commits any changes to the current cell without moving the focus. Also commits any changes to the current row if the control is bound to a data source that supports editing or virtual mode has been implemented with row-level commit scope.|  
 |CTRL+0|Enters a <xref:System.DBNull.Value?displayProperty=nameWithType> value into the current cell if the cell can be edited. By default, the display value for a <xref:System.DBNull> cell value is the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the current cell.|  
   
-### Selection Keys  
+### Selection keys
+
  If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>, changing the current cell by using the navigation keys changes the selection to the new cell. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
   
  If the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, the same behavior occurs but with the following additions.  
@@ -80,9 +78,9 @@ The following tables describe how users can interact with the <xref:System.Windo
   
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, the behavior of the anchor cell and current cell is the same, but only full rows or columns become selected or unselected.  
   
-## Default Mouse Handling  
+## Default mouse handling
   
-### Basic Mouse Handling  
+### Basic mouse handling
   
 > [!NOTE]
 >  Clicking a cell with the left mouse button always changes the current cell. Clicking a cell with the right mouse button opens a shortcut menu, when one is available.  
@@ -94,7 +92,8 @@ The following tables describe how users can interact with the <xref:System.Windo
 |Left mouse button click|Raises the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=nameWithType> events|  
 |Left mouse button down, and drag on a column header cell|If the <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A?displayProperty=nameWithType> property is `true`, moves the column so that it can be dropped into a new position.|  
   
-### Mouse Selection  
+### Mouse selection
+
  No selection behavior is associated with the middle mouse button or the mouse wheel.  
   
  If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>, the following behavior occurs.  
@@ -118,6 +117,7 @@ The following tables describe how users can interact with the <xref:System.Windo
   
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, clicking a cell while pressing SHIFT or CTRL behaves the same way except that only full rows and columns are affected.  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
+## See also
+
+<xref:System.Windows.Forms.DataGridView>  
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

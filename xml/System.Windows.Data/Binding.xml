@@ -913,19 +913,11 @@
    
   
 ## Examples  
- In this example, you have a `Person` object with a string property named `PersonName`. The `Person` object is defined in the namespace called `SDKSample`.  
+ The following example uses a `Person` object with a string property named `PersonName` that is defined in the `SDKSample` namespace, as the first highlighted line shows. In the highlighted line that contains the `<src>` element, it instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
   
- The following example instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
+ [!code-xaml[BindingInstantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=4,9,37)]  
   
- [!code-xaml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#instantiation)]  
-[!code-xaml[SimpleBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#2)]  
-[!code-xaml[SimpleBinding#EndWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#endwindow)]  
-  
- To bind to the `PersonName` property you would do the following:  
-  
- [!code-xaml[SimpleBinding#BDO1](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
-  
- As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
+ The highlighted line that contains the `<TextBlock>` elements shows how to bind to the `PersonName` property. As a result, the <xref:System.Windows.Controls.TextBlock> control appears with the value "Joe".  
   
  In the following example, the <xref:System.Windows.Data.Binding.Source%2A> values of the <xref:System.Windows.Data.Binding> objects are set to the `static` property <xref:System.Windows.Application.Current%2A?displayProperty=nameWithType>:  
   

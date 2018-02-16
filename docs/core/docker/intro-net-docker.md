@@ -33,7 +33,7 @@ The [relationship between Docker containers, images, and registries](../../stand
 
 * [Windows-based containers: Modern app development with enterprise-grade control.](https://www.youtube.com/watch?v=Ryx3o0rD5lY&feature=youtu.be)
 * [Docker overview](https://docs.docker.com/engine/docker-overview/)
-* [Dockerfile on Windows Containers](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile.md)
+* [Dockerfile on Windows Containers](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 * [Building Docker Images for .NET Core applications](../docker/building-net-docker-images.md)
 

@@ -8,6 +8,7 @@ namespace HowToStrings
         {
             ParseStringsUsingSplit.Examples();
             Concatenate.Examples();
+            SearchStrings.Examples();
         }
     }
 }

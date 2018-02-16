@@ -266,6 +266,7 @@
 ### [How to parse strings using `String.Split`](csharp/how-to/parse-strings-using-split.md)
 ### [How to concatenate strings](csharp/how-to/concatenate-multiple-strings.md)
 ### [How to convert a string to a DateTime](standard/base-types/parsing-datetime.md)
+### [How to search strings](csharp/how-to/search-strings.md)
 <!-- End of C# Concepts section -->
 ## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)

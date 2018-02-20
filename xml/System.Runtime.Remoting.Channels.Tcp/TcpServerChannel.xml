@@ -484,9 +484,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The constructor of TcpServerChannel automatically calls StartListening() so one should not call this method unless <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening%2A> was previously called.  
+ The <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> constructor automatically calls `StartListening`, so you shouldn't call this method unless <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening%2A> was previously called.  
   
- Calling StartListening on an already listening channel may lead to unexpected behaviors and should be avoided.  
+ Calling `StartListening` on an already listening channel may lead to unexpected behaviors and should be avoided.  
   
  If your channel uses a dynamically assigned port number, your port number might change when you restart listening.  
   

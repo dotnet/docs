@@ -23,7 +23,7 @@ When used as a declaration modifier, the `new` keyword explicitly hides a member
   
  Name hiding through inheritance takes one of the following forms:  
   
--   Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name.  There are special cases.  For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax.  See the [C# 5.0 language specification](http://go.microsoft.com/fwlink/?LinkId=199552) for details (see section "Member Lookup" in section "Expressions").  
+-   Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name.  There are special cases.  For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax.  See the [C# 5.0 language specification](https://www.microsoft.com/download/details.aspx?id=7029) for details (see section "Member Lookup" in section "Expressions").  
   
 -   A method introduced in a class or struct hides properties, fields, and types that share that name in the base class. It also hides all base class methods that have the same signature.  
   

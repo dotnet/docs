@@ -261,7 +261,7 @@
   
  For example, assume that you add an object to the <xref:System.Web.Caching.Cache> with a dependency on the following file path: c:\stocks\xyz.dat. If that file is not found when the <xref:System.Web.Caching.CacheDependency> object is created, but is created later, the cached object is removed upon the creation of the xyz.dat file.  
   
-   
+ However, the `cachekeys` dependency does not work the same way. If at least one value in the `cachekeys` parameter does not exist at the time of an insert, the insert fails. Note that there is no exception thrown for this scenario.  
   
 ## Examples  
  The following code fragment demonstrates how to insert an item into your application's <xref:System.Web.Caching.Cache> with a dependency on a key to another item placed in the cache. Since this method uses array syntax, you must define the number of keys on which the item you are adding to the <xref:System.Web.Caching.Cache> is dependent.  
@@ -301,6 +301,8 @@
   
  For example, assume that you add an object to the <xref:System.Web.Caching.Cache> with a dependency on the following file path: c:\stocks\xyz.dat. If that file is not found when the <xref:System.Web.Caching.CacheDependency> object is created, but is created later, the cached object is removed upon the creation of the xyz.dat file.  
   
+ However, the `cachekeys` dependency does not work the same way. If at least one value in the `cachekeys` parameter does not exist at the time of an insert, the insert fails. Note that there is no exception thrown for this scenario.
+
 > [!NOTE]
 >  Change tracking begins immediately and is not directly based on the `start` parameter. Use the `start` parameter to pass a date and time in the past against which you want to check the last modified date of any object passed in the `filenames` or `cachekeys` parameters. If the last modified date of any of those objects is later than the date and time set passed in the `start` parameter, the cached item is removed from the <xref:System.Web.Caching.Cache>.  
   
@@ -345,7 +347,7 @@
   
  For example, assume that you add an object to the <xref:System.Web.Caching.Cache> with a dependency on the following file path: c:\stocks\xyz.dat. If that file is not found when the <xref:System.Web.Caching.CacheDependency> object is created, but is created later, the cached object is removed upon the creation of the xyz.dat file.  
   
-   
+ However, the `cachekeys` dependency does not work the same way. If at least one value in the `cachekeys` parameter does not exist at the time of an insert, the insert fails. Note that there is no exception thrown for this scenario.
   
 ## Examples  
  The following code example creates a `CreateDependency` method. When this method is called, it uses the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=nameWithType> property to add an item to the cache with a `key` parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value of `key1` as well. The <xref:System.Web.Caching.CacheDependency.%23ctor%2A?displayProperty=nameWithType> constructor is used to create a <xref:System.Web.Caching.CacheDependency> object, `dep1`, which passes `dependencyKey` as a parameter argument. A second <xref:System.Web.Caching.CacheDependency> object, `dep2`, is created using this constructor, with `dep1` passed as the third parameter argument. This second dependency is dependent on the first. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method is called next, using the second <xref:System.Web.Caching.CacheDependency> object as a parameter. If the first dependency changes in any way, the cached item will be invalidated.  
@@ -385,7 +387,9 @@
  Also, if any of the directories or files specified in the `filenames` parameter is not found in the file system, it is treated as missing. If a directory or file is missing when the object with the dependency is added to the <xref:System.Web.Caching.Cache>, the cached object will be removed from the <xref:System.Web.Caching.Cache> when that directory or file is created.  
   
  For example, assume that you add an object to the <xref:System.Web.Caching.Cache> with a dependency on the following file path: c:\stocks\xyz.dat. If that file is not found when the <xref:System.Web.Caching.CacheDependency> object is created, but is created later, the cached object is removed upon the creation of the xyz.dat file.  
-  
+ 
+ However, the `cachekeys` dependency does not work the same way. If at least one value in the `cachekeys` parameter does not exist at the time of an insert, the insert fails. Note that there is no exception thrown for this scenario.
+
 > [!NOTE]
 >  Change tracking begins immediately and is not directly based on the `start` parameter. Use the `start` parameter to pass a date and time in the past against which you want to check the last modified date of any of the objects passed in the `filenames`, `cachekeys`, or `dependency` parameters. If the last modified date for any of those objects is later than the date and time passed in the `start` parameter, the cached item is removed from the <xref:System.Web.Caching.Cache>.  
   

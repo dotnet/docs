@@ -4318,7 +4318,11 @@ An object that is equivalent to the date and time contained in `s`.
   
 -   A string with a date but no time component. If the time component is absent, the method assumes 12:00 midnight. If the date component has a two-digit year, it is converted to a year based on the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> of the current culture's current calendar or the specified culture's current calendar (if you use an overload with a non-null `provider` argument).  
   
--   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` parameter, in which case the method assumes January 1, 0001.  
+- A string with a date component that includes only the month and the year but no day component. The method assumes the first day of the month.
+
+- A string with a date component that includes only the month and the day but no year component. The method assumes the current year.
+
+-   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` argument, in which case the method assumes January 1, 0001.  
   
 -   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second string designates the time in a time zone that's seven hours earlier than UTC:  
   

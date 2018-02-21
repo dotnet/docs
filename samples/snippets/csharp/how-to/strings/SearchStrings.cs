@@ -19,26 +19,19 @@ namespace HowToStrings
             string factMessage = "Extension methods have all the capabilities of regular static methods.";
 
             // Write the string and include the quotation marks.
-            System.Console.WriteLine($"\"{factMessage}\"");
+            Console.WriteLine($"\"{factMessage}\"");
 
             // Simple comparisons are always case sensitive!
-            bool startsWithSearchResult = factMessage.StartsWith("extension");
-            System.Console.WriteLine($"Starts with \"extension\"? {startsWithSearchResult}");
+            bool containsSearchResult = factMessage.Contains("extension");
+            Console.WriteLine($"Starts with \"extension\"? {containsSearchResult}");
 
             // For user input and strings that will be displayed to the end user, 
             // use the StringComparison parameter on methods that have it to specify how to match strings.
             bool ignoreCaseSearchResult = factMessage.StartsWith("extension", System.StringComparison.CurrentCultureIgnoreCase);
-            System.Console.WriteLine($"Starts with \"extension\"? {ignoreCaseSearchResult} (ignoring case)");
+            Console.WriteLine($"Starts with \"extension\"? {ignoreCaseSearchResult} (ignoring case)");
 
             bool endsWithSearchResult = factMessage.EndsWith(".", System.StringComparison.CurrentCultureIgnoreCase);
-            System.Console.WriteLine($"Ends with '.'? {endsWithSearchResult}");
-
-            // This search returns the substring between two strings, so 
-            // the first index is moved to the character just after the first string.
-            int first = factMessage.IndexOf("methods") + "methods".Length;
-            int last = factMessage.LastIndexOf("methods");
-            string str2 = factMessage.Substring(first, last - first);
-            System.Console.WriteLine($"Substring between \"methods\" and \"methods\": '{str2}'");
+            Console.WriteLine($"Ends with '.'? {endsWithSearchResult}");
 
             /*
                 Output:
@@ -46,15 +39,36 @@ namespace HowToStrings
                 Starts with "extension"? False
                 Starts with "extension"? True (ignoring case)
                 Ends with '.'? True
-                Substring between "methods" and "methods": ' have all the capabilities of regular static '
-                Press any key to exit.     
             */
+
             // </Snippet1>
+        }
+
+        private static void SearchByIndex()
+        {
+            // <Snippet2>
+            string factMessage = "Extension methods have all the capabilities of regular static methods.";
+
+            // Write the string and include the quotation marks.
+            Console.WriteLine($"\"{factMessage}\"");
+
+            // This search returns the substring between two strings, so 
+            // the first index is moved to the character just after the first string.
+            int first = factMessage.IndexOf("methods") + "methods".Length;
+            int last = factMessage.LastIndexOf("methods");
+            string str2 = factMessage.Substring(first, last - first);
+            Console.WriteLine($"Substring between \"methods\" and \"methods\": '{str2}'");
+
+            /*
+                Output:
+                Substring between "methods" and "methods": ' have all the capabilities of regular static '
+            */
+            // </Snippet2>
         }
 
         public static void RegularExpressionsOne()
         {
-            // <Snippet2>
+            // <Snippet3>
             string[] sentences =
             {
                 "C# code",
@@ -67,15 +81,15 @@ namespace HowToStrings
 
             foreach (string s in sentences)
             {
-                System.Console.Write($"{s,24}");
+                Console.Write($"{s,24}");
 
                 if (System.Text.RegularExpressions.Regex.IsMatch(s, sPattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                 {
-                    System.Console.WriteLine($"  (match for '{sPattern}' found)");
+                    Console.WriteLine($"  (match for '{sPattern}' found)");
                 }
                 else
                 {
-                    System.Console.WriteLine();
+                    Console.WriteLine();
                 }
             }
 
@@ -85,12 +99,12 @@ namespace HowToStrings
                Unicode  (match for 'code' found)
                no match here
             */
-            // </Snippet2>
+            // </Snippet3>
         }
 
         public static void RegularExpressionsValidation()
         {
-            // <Snippet3>
+            // <Snippet4>
             string[] numbers =
             {
                 "123-555-0190",
@@ -107,15 +121,15 @@ namespace HowToStrings
 
             foreach (string s in numbers)
             {
-                System.Console.Write($"{s,14}");
+                Console.Write($"{s,14}");
 
                 if (System.Text.RegularExpressions.Regex.IsMatch(s, sPattern))
                 {
-                    System.Console.WriteLine(" - valid");
+                    Console.WriteLine(" - valid");
                 }
                 else
                 {
-                    System.Console.WriteLine(" - invalid");
+                    Console.WriteLine(" - invalid");
                 }
             }
 
@@ -129,7 +143,7 @@ namespace HowToStrings
                   407-555-0111 - valid
                     407-2-5555 - invalid
             */
-            // </Snippet3>
+            // </Snippet4>
         }
     }
 }

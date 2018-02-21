@@ -1,6 +1,6 @@
 ---
 title: "How to: Search Strings (C# Guide)"
-ms.date: 02/16/2018
+ms.date: 02/21/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,38 +14,48 @@ ms.author: "wiwagn"
 
 # How to: Search Strings Using String Methods (C# Programming Guide)
 
-The [string](../language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string.  
-  
-## Example  
+You have two main strategies that you can use to search for text in strings: you can use member methods of the <xref:System.String> class to search for specific text, you can use regular expressions to search for patterns in text.
 
-The following example uses the <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>, <xref:System.String.StartsWith%2A>, and <xref:System.String.EndsWith%2A> methods to search the strings.  
+The [string](../language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you'll learn these techniques and how to choose the best method for your needs.
+
+## Does a string contain text?
+
+The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A>?displayProperty=nameWithType and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods tell you if a string contains the text you are looking for. The following example shows each of these methods, and a variation that uses a case insensitive search:
+
+[!code-csharp-interactive[search strings using methods](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#1)]
+
+The preceding example demonstrates an important point for using these methods. Searches are **case sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase> to specify a case insensitive search. That is true for all these methods.
+
+## Where does the sought text occur in a string?
+
+The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A>methods also search for text in strings. Instead of returning a Boolean value indicating success or failure, these methods return the location of the text being sought. If the text does not occur, they return `-1`. The following example shows a search for the first and last occurence of the word "methods", and displayed the text between.
   
-[!code-csharp-interactive[csProgGuideStrings#1](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#1)]
+[!code-csharp-interactive[search strings for indices]](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#2)]
+
+## Finding specific text using regular expressions
+
+The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class can be used to search strings. These searches can range in complexity from very simple to complicated text patterns.
+
+The following code example searches for the word "code" in a sentence, ignoring case. The static method <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> performs the search given the string to search and a string that contains the search pattern. In this case, a third argument is used to indicate that case should be ignored. For more information, see <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.  
+  
+[!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
+  
+> [!TIP]
+> The `string` methods are generally better choices when you are searching for an exact string. The above example helps illustrate the syntax for working with regular expressions.
+
+## Does a string follow a pattern?
+
+The following code uses regular expressions to validate the format of each string in an array. The validation requires that each string take the form of a telephone number in which three groups of digits are separated by dashes, the first two groups contain three digits, and the third group contains four digits. The search pattern uses the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c).
+  
+[!code-csharp-interactive[csProgGuideStrings#4](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#4)]
+
+Note that this single search pattern matches many valid strings. You should choose regular expressions when you want to search for or validate against a pattern, rather than a single text string.
   
 ## See Also  
+
  [C# Programming Guide](../programming-guide/index.md)  
  [Strings](../programming-guide/strings/index.md)  
- [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)
-
-## Search Strings Using Regular Expressions
-
-The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class can be used to search strings. These searches can range in complexity from very simple to making full use of regular expressions. The following are two examples of string searching by using the <xref:System.Text.RegularExpressions.Regex> class. For more information, see [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312).  
-  
-## Example  
-
-The following code is a console application that performs a simple case-insensitive search of the strings in an array. The static method <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> performs the search given the string to search and a string that contains the search pattern. In this case, a third argument is used to indicate that case should be ignored. For more information, see <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.  
-  
-[!code-csharp-interactive[csProgGuideStrings#2](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#2)]
-  
-## Example  
-
-The following code is a console application that uses regular expressions to validate the format of each string in an array. The validation requires that each string take the form of a telephone number in which three groups of digits are separated by dashes, the first two groups contain three digits, and the third group contains four digits. This is done by using the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c).  
-  
-[!code-csharp-interactive[csProgGuideStrings#3](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]  
-  
-## See Also  
-
- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>  
- [Strings](../programming-guide/strings/index.md)  
- [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)  
- [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c)
+ [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)   
+ <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>     
+ [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)   
+ [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c)   

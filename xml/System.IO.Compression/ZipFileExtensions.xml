@@ -100,6 +100,7 @@
 ## Remarks  
  The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
   
+ When `ZipArchiveMode.Update` is present, the size limit of an entry is limited to <xref:System.Int32.MaxValue?displayProperty=nameWithType>. This limit is because update mode uses a <xref:System.IO.MemoryStream> internally to allow the seeking required when updating an archive, and <xref:System.IO.MemoryStream> has a maximum equal to the size of an int.  
    
   
 ## Examples  
@@ -121,7 +122,7 @@
         <exception cref="T:System.IO.PathTooLongException">In <paramref name="sourceFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="sourceFileName" /> is invalid (for example, it is on an unmapped drive).</exception>
-        <exception cref="T:System.IO.IOException">The file specified by <paramref name="sourceFileName" /> cannot be opened.</exception>
+        <exception cref="T:System.IO.IOException">The file specified by <paramref name="sourceFileName" /> cannot be opened, or is too large to be updated (current limit is [`Int32.MaxValue`](https://docs.microsoft.com/dotnet/api/system.int32.maxvalue)).</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="sourceFileName" /> specifies a directory.  
   
@@ -178,7 +179,7 @@
 ## Remarks  
  The new entry in the archive contains the contents of the file specified by `sourceFileName`. If an entry with the specified name (`entryName`) already exists in the archive, a second entry is created with an identical name. The <xref:System.IO.Compression.ZipArchiveEntry.LastWriteTime%2A> property of the entry is set to the last time the file on the file system was changed.  
   
-   
+ When `ZipArchiveMode.Update` is present, the size limit of an entry is limited to <xref:System.Int32.MaxValue?displayProperty=nameWithType>. This limit is because update mode uses a <xref:System.IO.MemoryStream> internally to allow the seeking required when updating an archive, and <xref:System.IO.MemoryStream> has a maximum equal to the size of an int.  
   
 ## Examples  
  The following example shows how to create a new entry in a zip archive from an existing file, and specify the compression level.  
@@ -199,7 +200,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="sourceFileName" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.PathTooLongException">In <paramref name="sourceFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
-        <exception cref="T:System.IO.IOException">The file specified by <paramref name="sourceFileName" /> cannot be opened.</exception>
+        <exception cref="T:System.IO.IOException">The file specified by <paramref name="sourceFileName" /> cannot be opened, or is too large to be updated (current limit is [`Int32.MaxValue`](https://docs.microsoft.com/dotnet/api/system.int32.maxvalue)).</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="sourceFileName" /> specifies a directory.  
   

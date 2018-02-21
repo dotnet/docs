@@ -19,7 +19,6 @@ namespace layout_information
             // <Snippet3>
             RectangleGeometry myRectangleGeometry = new RectangleGeometry();
             myRectangleGeometry.Rect = LayoutInformation.GetLayoutSlot(txt1);
-            GeometryDrawing myGeometryDrawing = new GeometryDrawing();
             Path myPath = new Path();
             myPath.Data = myRectangleGeometry;
             //</Snippet3>

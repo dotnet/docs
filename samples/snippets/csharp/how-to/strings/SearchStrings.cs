@@ -10,34 +10,35 @@ namespace HowToStrings
         {
             SearchWithMethods();
             RegularExpressionsOne();
+            RegularExpressionsValidation();
         }
 
         public static void SearchWithMethods()
         {
             // <Snippet1>
-            string str = "Extension methods have all the capabilities of regular static methods.";
+            string factMessage = "Extension methods have all the capabilities of regular static methods.";
 
             // Write the string and include the quotation marks.
-            System.Console.WriteLine("\"{0}\"", str);
+            System.Console.WriteLine($"\"{factMessage}\"");
 
             // Simple comparisons are always case sensitive!
-            bool test1 = str.StartsWith("extension");
-            System.Console.WriteLine("Starts with \"extension\"? {0}", test1);
+            bool startsWithSearchResult = factMessage.StartsWith("extension");
+            System.Console.WriteLine($"Starts with \"extension\"? {startsWithSearchResult}");
 
             // For user input and strings that will be displayed to the end user, 
             // use the StringComparison parameter on methods that have it to specify how to match strings.
-            bool test2 = str.StartsWith("extension", System.StringComparison.CurrentCultureIgnoreCase);
-            System.Console.WriteLine("Starts with \"extension\"? {0} (ignoring case)", test2);
+            bool ignoreCaseSearchResult = factMessage.StartsWith("extension", System.StringComparison.CurrentCultureIgnoreCase);
+            System.Console.WriteLine($"Starts with \"extension\"? {ignoreCaseSearchResult} (ignoring case)");
 
-            bool test3 = str.EndsWith(".", System.StringComparison.CurrentCultureIgnoreCase);
-            System.Console.WriteLine("Ends with '.'? {0}", test3);
+            bool endsWithSearchResult = factMessage.EndsWith(".", System.StringComparison.CurrentCultureIgnoreCase);
+            System.Console.WriteLine($"Ends with '.'? {endsWithSearchResult}");
 
             // This search returns the substring between two strings, so 
             // the first index is moved to the character just after the first string.
-            int first = str.IndexOf("methods") + "methods".Length;
-            int last = str.LastIndexOf("methods");
-            string str2 = str.Substring(first, last - first);
-            System.Console.WriteLine("Substring between \"methods\" and \"methods\": '{0}'", str2);
+            int first = factMessage.IndexOf("methods") + "methods".Length;
+            int last = factMessage.LastIndexOf("methods");
+            string str2 = factMessage.Substring(first, last - first);
+            System.Console.WriteLine($"Substring between \"methods\" and \"methods\": '{str2}'");
 
             /*
                 Output:
@@ -66,11 +67,11 @@ namespace HowToStrings
 
             foreach (string s in sentences)
             {
-                System.Console.Write("{0,24}", s);
+                System.Console.Write($"{s,24}");
 
                 if (System.Text.RegularExpressions.Regex.IsMatch(s, sPattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                 {
-                    System.Console.WriteLine("  (match for '{0}' found)", sPattern);
+                    System.Console.WriteLine($"  (match for '{sPattern}' found)");
                 }
                 else
                 {
@@ -106,7 +107,7 @@ namespace HowToStrings
 
             foreach (string s in numbers)
             {
-                System.Console.Write("{0,14}", s);
+                System.Console.Write($"{s,14}");
 
                 if (System.Text.RegularExpressions.Regex.IsMatch(s, sPattern))
                 {

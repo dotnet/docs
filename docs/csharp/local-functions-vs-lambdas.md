@@ -75,7 +75,7 @@ int M()
 }
 ```
 
-The compiler can determine that `Local` definitely assigns `y` when called. Because `Local` is called before the `return` statement, `y` is definitiely
+The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitiely
 assigned at the `return` statement.
 
 The analysis that enables the example analysis enables the fourth difference.

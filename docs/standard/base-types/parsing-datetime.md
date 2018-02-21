@@ -26,7 +26,7 @@ ms.workload:
 
 # Parsing Date and Time Strings in .NET
 
-Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect, and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
+Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
 
 1. You must specify the expected format of the text representing a date and time.
 1. You may specify the culture for the format of a date time.
@@ -60,17 +60,17 @@ The following example illustrates the use of the <xref:System.DateTime.Parse%2A?
 > All the C# samples in this article run in your browser. Press the **Run** button to see the output. You can also edit them to experiment yourself.
 
 > [!NOTE]
-> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions). Or, you can download the project as a zipfile for [C#]((https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions.zip) or [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions.zip).
+> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions) and [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions). Or you can download the project as a zipfile for [C#]((https://github.com/dotnet/docs/samples/tree/master/snippets/csharp/how-to/conversions.zip) or [VB](https://github.com/dotnet/docs/samples/tree/master/snippets/visualbasic/how-to/conversions.zip).
 
 [!code-csharp-interactive[Parsing.DateAndTime#1](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#1)]
 [!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#1)]
 
-You can also request  a <xref:System.Globalization.CultureInfo> when you parse a string. You specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following example uses a format provider to parse a German string into a <xref:System.DateTime>. It creates a <xref:System.Globalization.CultureInfo> representing the `de-DE` culture. That `CultureInfo` object ensures successful parsing of this particular string. This precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture> of the <xref:System.Threading.Thread.CurrentThread>.  
+You can also explicitly define the culture whose formatting conventions are used when you parse a string. You specify one of the standard <xref:System.Globalization.DateTimeFormatInfo> objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. The following example uses a format provider to parse a German string into a <xref:System.DateTime>. It creates a <xref:System.Globalization.CultureInfo> representing the `de-DE` culture. That `CultureInfo` object ensures successful parsing of this particular string. This precludes whatever setting is in the <xref:System.Threading.Thread.CurrentCulture> of the <xref:System.Threading.Thread.CurrentThread>.  
   
 [!code-csharp-interactive[Parsing.DateAndTime#2](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#2)]
 [!code-vb[Parsing.DateAndTime#2](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#2)]
 
-However, although you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers, the method does not support parsing non-standard format. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.  
+However, although you can use overloads of the <xref:System.DateTime.Parse%2A> method to specify custom format providers, the method does not support parsing non-standard formats. To parse a date and time expressed in a non-standard format, use the <xref:System.DateTime.ParseExact%2A> method instead.  
 
 <a name="styles-example"></a>The following example uses the <xref:System.Globalization.DateTimeStyles> enumeration to specify that the current date and time information should not be added to the <xref:System.DateTime> for unspecified fields.  
 
@@ -79,7 +79,7 @@ However, although you can use overloads of the <xref:System.DateTime.Parse%2A> m
  
 ## ParseExact
 
-The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method converts a string to a <xref:System.DateTime> object if it that conforms to one of the specified string patterns. When a string that is not one of the forms specified is passed to this method, a <xref:System.FormatException> is thrown. You can specify one of the standard date and time format specifiers or a combination of the custom format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).  
+The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method converts a string to a <xref:System.DateTime> object if it conforms to one of the specified string patterns. When a string that is not one of the forms specified is passed to this method, a <xref:System.FormatException> is thrown. You can specify one of the standard date and time format specifiers or a combination of the custom format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).  
 
 In the following example, the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method is passed a string object to parse, followed by a format specifier, followed by a <xref:System.Globalization.CultureInfo> object. This <xref:System.DateTime.ParseExact%2A> method can only parse strings that follow the long date pattern in the `en-US` culture.  
 

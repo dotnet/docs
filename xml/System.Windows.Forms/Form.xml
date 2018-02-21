@@ -1144,14 +1144,14 @@
       <Docs>
         <summary>Gets or sets a value indicating whether a control box is displayed in the caption bar of the form.</summary>
         <value>
-          <see langword="true" /> if the form displays a control box in the upper left corner of the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the form displays a control box in the upper-right corner of the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.Form.ControlBox%2A> property is set to `true`, the control box is displayed in the upper-left corner of the caption bar. The control box is where the user can click to access the system menu.  
+ If the <xref:System.Windows.Forms.Form.ControlBox%2A> property is set to `true`, the control box is displayed in the upper-right corner of the caption bar. The control box can include minimize, maximize, and help buttons in addition to a close button. For the `ControlBox` property to have any effect, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
- If you set <xref:System.Windows.Forms.Form.ControlBox%2A> to `false`, and also set the <xref:System.Windows.Forms.Form.Location%2A> property, the <xref:System.Windows.Forms.Form.Size%2A> property of Form will not update to reflect that the non-client area of the form has been hidden. To fix this problem, put the code which alters the <xref:System.Windows.Forms.Form.Location%2A> property to the <xref:System.Windows.Forms.Control.HandleCreated> event.  
+ If you set <xref:System.Windows.Forms.Form.ControlBox%2A> to `false` and also set the <xref:System.Windows.Forms.Form.Location%2A> property, the <xref:System.Windows.Forms.Form.Size%2A> property of the form is not updated to reflect that the non-client area of the form has been hidden. To fix this problem, put the code that alters the <xref:System.Windows.Forms.Form.Location%2A> property in the <xref:System.Windows.Forms.Control.HandleCreated> event handler.  
   
 > [!NOTE]
 >  When set to `false`, the <xref:System.Windows.Forms.Form.ControlBox%2A> property has no effect on a Multiple-document interface (MDI) child form that is displayed maximized at time of creation.  
@@ -1807,8 +1807,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to `true`, a small button with a question mark appears in the caption bar to the left of the **Close** button. You can use this button to display help for your application. You can create an event handler for the <xref:System.Windows.Forms.Control.HelpRequested> event of the <xref:System.Windows.Forms.Control> class to display Help information to the user when the Help button of the form is clicked.  
-  
+ When this property is set to `true`, a small button with a question mark appears in the caption bar to the left of the **Close** button. You can use this button to display help for your application. You can create an event handler for the <xref:System.Windows.Forms.Control.HelpRequested> event to display Help information to the user when the Help button of the form is clicked.  
+
+To display a Help button, the value of the form's <xref:System.Windows.Forms.Form.ControlBox> property must be `true`, its default value. The <xref:System.Windows.Forms.Form.ControlBox> property determines whether the upper-right corner of the caption bar contains controls such as a maximize button, a minimize button, a help button, and a close button. In addition, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
+
+
 > [!IMPORTANT]
 >  The value of the <xref:System.Windows.Forms.Form.HelpButton%2A> property is ignored if the **Maximize** or **Minimize** buttons are shown.  
   
@@ -2386,7 +2389,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A **Maximize** button enables users to enlarge a window to full-screen size. To display a **Maximize** button, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to `FormBorderStyle.FixedSingle`, `FormBorderStyle.Sizable`, `FormBorderStyle.Fixed3D`, or `FormBorderStyle.FixedDialog`.  
+
+ A **Maximize** button enables users to enlarge a window to full-screen size. To display a **Maximize** button, the value of the form's <xref:System.Windows.Forms.Form.ControlBox> property must be `true`, its default value.  The <xref:System.Windows.Forms.Form.ControlBox> property determines whether the upper-right corner of the caption bar contains controls such as a maximize button, a minimize button, a help button, and a close button. In addition, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
  A **Maximize** button automatically becomes a restore button when a window is maximized. Minimizing or restoring a window automatically changes the restore button back to a **Maximize** button.  
   
@@ -2895,7 +2899,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A **Minimize** button enables users to minimize a window to an icon. To display a **Minimize** button, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to `FormBorderStyle.FixedSingle`, `FormBorderStyle.Sizable`, `FormBorderStyle.Fixed3D`, or `FormBorderStyle.FixedDialog`.  
+ A **Minimize** button enables users to minimize a window to an icon. To display a **Minimize** button, the value of the form's <xref:System.Windows.Forms.Form.ControlBox> property must be `true`, its default value.  The <xref:System.Windows.Forms.Form.ControlBox> property determines whether the upper-right corner of the caption bar contains controls such as a maximize button, a minimize button, a help button, and a close button. In addition, you must also set the form's <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to <xref:System.Windows.Forms.FormBorderStyle.FixedSingle?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Sizable?displayProperty=nameWithType>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D?displayProperty=nameWithType>, or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Minimizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.Form.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.Form.WindowState%2A> property to `FormWindowState.Minimized`, the form is minimized independently of whatever settings are in effect for the <xref:System.Windows.Forms.Form.MinimizeBox%2A> and <xref:System.Windows.Forms.Form.FormBorderStyle%2A> properties.  

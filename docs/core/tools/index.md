@@ -7,6 +7,8 @@ ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # .NET Core command-line interface (CLI) tools
 
@@ -97,7 +99,7 @@ The CLI adopts an extensibility model that allows you to specify additional tool
 
 ## Command structure
 
-CLI command structure consists of the [the driver ("dotnet")](#driver), [the command (or "verb")](#command-verb), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command (or "verb")](#command-verb), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
 
 # [.NET Core 2.x](#tab/netcore2x)
 
@@ -141,9 +143,9 @@ The options you pass on the command line are the options to the command invoked.
 
 ## Migration from project.json
 
-If you used Preview 2 tooling to produce *project.json*-based projects, consult the [dotnet migrate](dotnet-migrate.md) topic for information on migrating your project to MSBuild/*.csproj* for use with release tooling. For .NET Core projects created prior to the release of Preview 2 tooling, either manually update the the project following the guidance in [Migrating from DNX to .NET Core CLI (project.json)](../migration/from-dnx.md) and then use `dotnet migrate` or directly upgrade your projects.
+If you used Preview 2 tooling to produce *project.json*-based projects, consult the [dotnet migrate](dotnet-migrate.md) topic for information on migrating your project to MSBuild/*.csproj* for use with release tooling. For .NET Core projects created prior to the release of Preview 2 tooling, either manually update the project following the guidance in [Migrating from DNX to .NET Core CLI (project.json)](../migration/from-dnx.md) and then use `dotnet migrate` or directly upgrade your projects.
 
 ## See also
 
- [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)   
- [.NET Core installation guide](https://aka.ms/dotnetcoregs)   
+ [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)  
+ [.NET Core installation guide](https://aka.ms/dotnetcoregs)  

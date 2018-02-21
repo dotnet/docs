@@ -7,14 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 0da481a9-b414-4230-beb0-e3ceba882fe5
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Override a Global Proxy Selection
 This example sends a **WebRequest** to www.contoso.com that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.  
@@ -37,5 +39,5 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
 -   References to the **System.Net** namespace.  
   
 ## See Also  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)   
+ [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
  [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)

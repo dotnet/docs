@@ -20,6 +20,8 @@ caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Advanced Ink Handling
 The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] ships with the <xref:System.Windows.Controls.InkCanvas>, and is an element you can put in your application to immediately start collecting and displaying ink. However, if the <xref:System.Windows.Controls.InkCanvas> control does not provide a fine enough level of control, you can maintain control at a higher level by customizing your own ink collection and ink rendering classes using <xref:System.Windows.Input.StylusPlugIns>.  

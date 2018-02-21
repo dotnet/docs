@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "port sharing [WCF]"
 ms.assetid: f13692ee-a179-4439-ae72-50db9534eded
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Net.TCP Port Sharing
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a new TCP-based network protocol (net.tcp://) for high-performance communication. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also introduces a new system component, the Net.TCP Port Sharing Service that enables net.tcp ports to be shared across multiple user processes.  
@@ -55,7 +57,7 @@ manager: "erikre"
  Although the Net.TCP Port Sharing Service provides a layer of processing between applications and the network, applications that use port sharing should still be secured as if they were directly listening on the network. Specifically, applications that use port sharing should evaluate the process privileges under which they run. Consider running your application using the built-in Network Service account, which runs with the minimal set of process privileges required for network communication.  
   
 ## See Also  
- [Configuring the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)   
- [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)   
- [How to: Configure a WCF Service to Use Port Sharing](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md)   
+ [Configuring the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)  
+ [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)  
+ [How to: Configure a WCF Service to Use Port Sharing](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md)  
  [How to: Enable the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)

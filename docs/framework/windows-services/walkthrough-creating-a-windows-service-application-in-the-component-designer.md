@@ -5,9 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Service applications, walkthroughs"
   - "Windows Service applications, creating"
@@ -16,6 +16,8 @@ caps.latest.revision: 57
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Creating a Windows Service Application in the Component Designer
 This article demonstrates how to create a simple Windows Service application in Visual Studio that writes messages to an event log. Here are the basic steps that you perform to create and use your service:  
@@ -109,7 +111,16 @@ This article demonstrates how to create a simple Windows Service application in 
     AddHandler timer.Elapsed, AddressOf Me.OnTimer  
     timer.Start()  
     ```  
-  
+     Add a member variable to the class. It will contain the identifier of the next event to write into the event log.
+
+    ```csharp
+    private int eventId = 1;
+    ```
+
+    ```vb
+    Private eventId As Integer = 1
+    ```
+
      Add code to handle the timer event:  
   
     ```csharp  
@@ -183,13 +194,13 @@ This article demonstrates how to create a simple Windows Service application in 
       [StructLayout(LayoutKind.Sequential)]  
       public struct ServiceStatus  
       {  
-          public long dwServiceType;  
+          public int dwServiceType;  
           public ServiceState dwCurrentState;  
-          public long dwControlsAccepted;  
-          public long dwWin32ExitCode;  
-          public long dwServiceSpecificExitCode;  
-          public long dwCheckPoint;  
-          public long dwWaitHint;  
+          public int dwControlsAccepted;  
+          public int dwWin32ExitCode;  
+          public int dwServiceSpecificExitCode;  
+          public int dwCheckPoint;  
+          public int dwWaitHint;  
       };  
     ```  
   
@@ -475,7 +486,7 @@ This code modifies the **ImagePath** registry key, which typically contains the 
  You can use an installer to create an event log when the application is installed instead of creating the event log when the application runs. Additionally, the event log will be deleted by the installer when the application is uninstalled. For more information, see the <xref:System.Diagnostics.EventLogInstaller> reference page.  
   
 ## See Also  
- [Windows Service Applications](../../../docs/framework/windows-services/index.md)   
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)   
- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)   
+ [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
+ [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
+ [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
  [Services (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)

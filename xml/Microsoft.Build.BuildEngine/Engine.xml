@@ -701,7 +701,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Projects use this ToolsVersion if they are not otherwise told which ToolsVersion to use. This value is retrieved from either the .exe.config file or the registry. If neither specify a default ToolsVersion, then the version is hard-coded to version "2.0." For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ Projects use this ToolsVersion if they are not otherwise told which ToolsVersion to use. This value is retrieved from either the .exe.config file or the registry. If neither specify a default ToolsVersion, then the version is hard-coded to version "2.0." For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/library/24a6530c-e837-4774-9da0-6893614524d8).  
   
  ]]></format>
         </remarks>
@@ -922,7 +922,7 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about ToolSets, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ For more information about ToolSets, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/library/24a6530c-e837-4774-9da0-6893614524d8).  
   
  ]]></format>
         </remarks>

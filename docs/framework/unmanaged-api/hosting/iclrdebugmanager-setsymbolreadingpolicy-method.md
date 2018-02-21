@@ -28,6 +28,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager::SetSymbolReadingPolicy Method
 Sets the policy for reading program database (PDB) files. The policy determines whether information about line numbers and files is included in call stacks.  

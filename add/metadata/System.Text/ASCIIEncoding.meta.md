@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.Text.ASCIIEncoding.GetString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

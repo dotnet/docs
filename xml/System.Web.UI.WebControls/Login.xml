@@ -306,7 +306,7 @@
 > [!NOTE]
 >  When a user uses the <xref:System.Web.UI.WebControls.Login> control to log in to a Web site, all data in the view state and all post data is lost. Do not perform actions in the <xref:System.Web.UI.WebControls.Login.Authenticate> event that rely on the view state.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1441,7 +1441,7 @@
 > [!NOTE]
 >  When a user uses the <xref:System.Web.UI.WebControls.Login> control to log in to a Web site, all data in the view state and all post data is lost. Do not perform actions in the <xref:System.Web.UI.WebControls.Login.LoggedIn> event that rely on the view state.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1479,12 +1479,12 @@
   
  After the <xref:System.Web.UI.WebControls.Login.LoggingIn> event is raised, the <xref:System.Web.UI.WebControls.Login> control raises the <xref:System.Web.UI.WebControls.Login.Authenticate> event and then the <xref:System.Web.UI.WebControls.Login.LoggedIn> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginBeforeLogin/CS/loginbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginBeforeLogin/VB/loginbeforeloginvb.aspx#1)]  
@@ -1761,7 +1761,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.LoginError> event is raised when the credentials entered by the user are invalid. You can use the <xref:System.Web.UI.WebControls.Login.LoginError> event to redirect the user to a custom error page, to offer additional help, or to log failed login attempts.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1839,7 +1839,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnAuthenticate%2A> method raises the <xref:System.Web.UI.WebControls.Login.Authenticate> event. Use the <xref:System.Web.UI.WebControls.Login.Authenticate> event to implement a custom authentication scheme.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnAuthenticate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1920,7 +1920,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoggedIn%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoggedIn> event. Use the <xref:System.Web.UI.WebControls.Login.LoggedIn> event to provide additional processing, such as accessing per-user data, after the user is authenticated.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoggedIn%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1963,14 +1963,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoggingIn%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoggingIn> event. Use the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to perform any processing that you need before authenticating a user or to perform custom validation.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoggingIn%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginOnBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginOnBeforeLogin/CS/loginonbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginOnBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginOnBeforeLogin/VB/loginonbeforeloginvb.aspx#1)]  
@@ -2014,7 +2014,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnLoginError%2A> method raises the <xref:System.Web.UI.WebControls.Login.LoginError> event. Use the <xref:System.Web.UI.WebControls.Login.LoginError> event to provide additional processing, such as error logging, when a user's login attempt fails.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnLoginError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2057,7 +2057,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method implements the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method to notify the <xref:System.Web.UI.WebControls.Login> control to perform any necessary prerendering steps before saving view state and rendering content.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

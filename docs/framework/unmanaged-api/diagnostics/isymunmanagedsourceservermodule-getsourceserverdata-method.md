@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedSourceServerModule::GetSourceServerData Method
 Returns the source server data for the module. The caller must free resources by using `CoTaskMemFree`.  

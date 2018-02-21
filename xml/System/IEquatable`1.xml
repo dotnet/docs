@@ -56,7 +56,8 @@
   
  For a value type, you should always implement <see cref="T:System.IEquatable`1" /> and override <see cref="M:System.Object.Equals(System.Object)" /> for better performance. <see cref="M:System.Object.Equals(System.Object)" /> boxes value types and relies on reflection to compare two values for equality. Both your implementation of <see cref="M:System.IEquatable`1.Equals(`0)" /> and your override of <see cref="M:System.Object.Equals(System.Object)" /> should return consistent results.  
   
- If you implement <see cref="T:System.IEquatable`1" />, you should also implement <see cref="T:System.IComparable`1" /> if instances of your type can be ordered or sorted. If your type implements <see cref="T:System.IComparable`1" />, you should also always implement <see cref="T:System.IEquatable`1" />.</para>
+ If you implement <see cref="T:System.IEquatable`1" />, you should also implement <see cref="T:System.IComparable`1" /> if instances of your type can be ordered or sorted. If your type implements <see cref="T:System.IComparable`1" />, you almost always also implement <see cref="T:System.IEquatable`1" />.</para>
+      <para>Note that there are some designs where a type supports an order relation, but equality may be distinct from an ordering relation. Consider a `Person` class where you sort alphabetically. Two people with the same name sort the same, but are not the same person.</para>
     </block>
     <altmember cref="T:System.IComparable`1" />
     <altmember cref="T:System.IComparable" />
@@ -99,9 +100,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The implementation of the <xref:System.IEquatable%601.Equals%2A> method is intended to perform a test for equality with another object of type `T`, the same type as the current object. The <xref:System.IEquatable%601.Equals%2A> method is called in the following circumstances:  
+ The implementation of the <xref:System.IEquatable%601.Equals%2A> method is intended to perform a test for equality with another object of type `T`, the same type as the current object. The <xref:System.IEquatable%601.Equals(%600)> method is called in the following circumstances:  
   
--   When the `Equals` method is called and the `other` parameter represents a strongly-typed object of type `T`. (If `other` is of type <xref:System.Object>, the base <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method is called. Of the two methods, <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> offers slightly better performance.)  
+-   When the `Equals` method is called and the `other` argument is a strongly-typed object of type `T`. (If `other` is not of type `T`, the base <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method is called. Of the two methods, <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> offers slightly better performance.)  
   
 -   When the search methods of a number of generic collection objects are called. Some of these types and their methods include the following:  
   

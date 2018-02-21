@@ -17,6 +17,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # FilterInputMessage
 Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.  

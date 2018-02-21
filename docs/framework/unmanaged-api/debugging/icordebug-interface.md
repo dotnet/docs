@@ -26,6 +26,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug Interface
 Provides methods that allow developers to debug applications in the common language runtime (CLR) environment.  

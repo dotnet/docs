@@ -41,7 +41,7 @@ Enables or disables compiler optimizations.
   
 |To set /optimize in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />     For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the **Enable optimizations** check box.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />     <br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the **Enable optimizations** check box.|  
   
 ## Example  
  The following code compiles `T2.vb` and enables compiler optimizations.  
@@ -51,7 +51,7 @@ vbc t2.vb /optimize
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)

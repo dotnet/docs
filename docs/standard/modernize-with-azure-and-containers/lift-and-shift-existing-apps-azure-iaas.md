@@ -1,11 +1,14 @@
 ---
-title: Lift and shift existing apps azure iaas
-description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | lift and shift existing apps azure iaas
+title: Lift and shift existing apps Azure IaaS
+description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# Lift and shift existing apps azure iaas
+# Lift and shift existing apps Azure IaaS
 
 > Vision: As a first step, to reduce your on-premises investment and total cost of hardware and networking maintenance, simply rehost your existing applications in the cloud.
 
@@ -97,5 +100,6 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
     [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 
-> [Previous](index.md)  
+>[!div class="step-by-step"]
+[Previous](index.md)
 [Next](migrate-your-relational-databases-to-azure.md)

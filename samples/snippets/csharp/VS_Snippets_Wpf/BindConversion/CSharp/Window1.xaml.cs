@@ -86,7 +86,7 @@ namespace SDKSample
         MyData myChangedData = new MyData();
         
         // Create a new binding
-	// TheDate is a property of type DateTime on MyData class
+        // TheDate is a property of type DateTime on MyData class
         Binding myNewBindDef = new Binding("TheDate");
         
         myNewBindDef.Mode = BindingMode.OneWay;
@@ -94,17 +94,16 @@ namespace SDKSample
         myNewBindDef.Converter = TheConverter;
         myNewBindDef.ConverterCulture = new CultureInfo("en-US");
         
-	//<SnippetBOSetBinding>
-	// myDatetext is a TextBlock object that is the binding target object
+	      //<SnippetBOSetBinding>
+	      // myDatetext is a TextBlock object that is the binding target object
         BindingOperations.SetBinding(myDateText, TextBlock.TextProperty, myNewBindDef);
         BindingOperations.SetBinding(myDateText, TextBlock.ForegroundProperty, myNewBindDef);
-	//</SnippetBOSetBinding>
+	      //</SnippetBOSetBinding>
 
-    //</Snippet1>
         lbChooseCulture.SelectedIndex = 0;
-//<Snippetend1>
     }
-//</Snippetend1>
+    //</Snippet1>
+    
   }
   //</Snippet3>
 }

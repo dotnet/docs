@@ -20,6 +20,6 @@ Your application is attempting to combine the `VbStrConv` enumeration members `S
 -   Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.  
   
 ## See Also  
- <xref:System.Globalization>   
- [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
+ <xref:System.Globalization>  
+   
  [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

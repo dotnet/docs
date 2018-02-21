@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
@@ -20,6 +20,8 @@ caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Managed Extensibility Framework (MEF)
 This topic provides an overview of the Managed Extensibility Framework introduced in the .NET Framework 4.  

@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TrackBar Control (Windows Forms)
 The Windows Forms `TrackBar` control (also sometimes called a "slider" control) is used for navigating through a large amount of information or for visually adjusting a numeric setting. The `TrackBar` control has two parts: the thumb, also known as a slider, and the tick marks. The thumb is the part that can be adjusted. Its position corresponds to the <xref:System.Windows.Forms.TrackBar.Value%2A> property. The tick marks are visual indicators that are spaced at regular intervals. The track bar moves in increments that you specify and can be aligned horizontally or vertically. An example use of a track bar would be for setting cursor blink rate or mouse speed.  

@@ -17,9 +17,11 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Creating a New Windows Form
-This topic contains links to topics that describe how to create your first Windows Forms application. Also, the topics in this section introduce some of the basic vocabulary and guidelines that you should understand when you start to create a Windows Forms application. . To learn more about Windows Forms application; the controls you can use on them, events and handling events and how to handle input from the user see the related topic list.  
+This topic contains links to topics that describe how to create your first Windows Forms application. Also, the topics in this section introduce some of the basic vocabulary and guidelines that you should understand when you start to create a Windows Forms application. To learn more about Windows Forms applications, the controls you can use on them, events and handling events, and how to handle input from the user, see the related topic list.  
   
 ## In This Section  
  [Windows Forms Coordinates](../../../docs/framework/winforms/windows-forms-coordinates.md).  

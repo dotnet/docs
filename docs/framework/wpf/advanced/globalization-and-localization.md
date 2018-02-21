@@ -23,6 +23,8 @@ caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Globalization and Localization
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides extensive support for the development of world-ready applications.  

@@ -64,8 +64,8 @@ vbc /bugreport:problem.txt t2.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)   
- [/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/729ab04c-03da-4ee5-86b1-be9d08a09369)
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
+ [/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
+ [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)

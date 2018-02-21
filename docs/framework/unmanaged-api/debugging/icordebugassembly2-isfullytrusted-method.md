@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAssembly2::IsFullyTrusted Method
 Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.  

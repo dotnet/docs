@@ -474,7 +474,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlChars" /> structure to a <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.ToString%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -511,7 +511,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> structure to a <see cref="T:System.Data.SqlTypes.SqlChars" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlChars" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlChars.%23ctor(System.Data.SqlTypes.SqlString)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>

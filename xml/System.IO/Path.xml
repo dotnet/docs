@@ -33,10 +33,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/path.cs#090eca8621a248ee). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
   
  A path is a string that provides the location of a file or directory. A path does not necessarily point to a location on disk; for example, a path might map to a location in memory or on a device. The exact format of a path is determined by the current platform. For example, on some systems, a path can start with a drive or volume letter, while this element is not present in other systems. On some systems, file paths can contain extensions, which indicate the type of information stored in the file. The format of a file name extension is platform-dependent; for example, some systems limit extensions to three characters, and others do not. The current platform also determines the set of characters used to separate the elements of a path, and the set of characters that cannot be used when specifying paths. Because of these differences, the fields of the `Path` class as well as the exact behavior of some members of the `Path` class are platform-dependent.  
@@ -108,9 +104,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. This field can be set to the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and `DirectorySeparatorChar` are both valid for separating directory levels in a path string.  
+ The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. This field can be set to the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and <xref:System.IO.Path.DirectorySeparatorChar> are both valid for separating directory levels in a path string.  
   
- The value of this field is a backslash ('\\') on UNIX, and a slash ('/') on Windows and Macintosh operating systems.  
+ The value of this field is a slash ('/') on Windows, UNIX and Macintosh operating systems.  
   
    
   

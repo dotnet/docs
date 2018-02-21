@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Basic Formatting and Styling in the Windows Forms DataGridView Control
 The `DataGridView` control makes it easy to define the basic appearance of cells and the display formatting of cell values. You can define appearance and formatting styles for individual cells, for cells in specific columns and rows, or for all cells in the control by setting the properties of the `DataGridViewCellStyle` objects accessed through various `DataGridView` control properties. Additionally, you can modify these styles dynamically based on factors such as the cell value by handling the `CellFormatting` event.  

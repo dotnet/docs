@@ -20,6 +20,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Enable Visual Styles in a Hybrid Application
 This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] visual styles on a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control hosted in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application.  
@@ -73,8 +75,8 @@ This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tla
      The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is painted with the default system style.  
   
 ## See Also  
- <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>   
- <xref:System.Windows.Forms.VisualStyles>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Rendering Controls with Visual Styles](../../../../docs/framework/winforms/controls/rendering-controls-with-visual-styles.md)   
+ <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>  
+ <xref:System.Windows.Forms.VisualStyles>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Rendering Controls with Visual Styles](../../../../docs/framework/winforms/controls/rendering-controls-with-visual-styles.md)  
  [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)

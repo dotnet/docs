@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # bindingFailure MDA
 The `bindingFailure` managed debugging assistant (MDA) is activated when an assembly fails to load.  

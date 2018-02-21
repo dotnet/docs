@@ -25,6 +25,8 @@ caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Programming Pluggable Protocols
 The abstract <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes provide the base for pluggable protocols. By deriving protocol-specific classes from <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse>, an application can request data from an Internet resource and read the response without specifying the protocol being used.  
@@ -36,7 +38,7 @@ The abstract <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> clas
  To take advantage of pluggable protocols, your <xref:System.Net.WebRequest> descendants must provide a default request-and-response transaction that does not require protocol-specific properties to be set. For example, the <xref:System.Net.HttpWebRequest> class, which implements the <xref:System.Net.WebRequest> class for HTTP, provides a `GET` request by default and returns an <xref:System.Net.HttpWebResponse> that contains the stream returned from the Web server.  
   
 ## See Also  
- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)   
- [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)   
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
+ [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)  
+ [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)  
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [How to: Typecast a WebRequest to Access Protocol Specific Properties](../../../docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md)

@@ -62,25 +62,25 @@ class Account
 ## Example  
  The following sample shows a simple use of threads without locking in C#.  
   
- [!code-cs[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_1.cs)]  
+ [!code-csharp[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_1.cs)]  
   
 ## Example  
  The following sample uses threads and `lock`. As long as the `lock` statement is present, the statement block is a critical section and `balance` will never become a negative number.  
   
- [!code-cs[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_2.cs)]  
+ [!code-csharp[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Reflection.MethodImplAttributes>   
- <xref:System.Threading.Mutex>   
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Threading](../../programming-guide/concepts/threading/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)   
- <xref:System.Threading.Monitor>   
- [Interlocked Operations](../../../standard/threading/interlocked-operations.md)   
- [AutoResetEvent](../../../standard/threading/autoresetevent.md)   
+ <xref:System.Reflection.MethodImplAttributes>  
+ <xref:System.Threading.Mutex>  
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Threading](../../programming-guide/concepts/threading/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
+ <xref:System.Threading.Monitor>  
+ [Interlocked Operations](../../../standard/threading/interlocked-operations.md)  
+ [AutoResetEvent](../../../standard/threading/autoresetevent.md)  
  [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)

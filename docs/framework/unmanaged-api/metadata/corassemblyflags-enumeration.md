@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorAssemblyFlags Enumeration
 Contains values that describe the metadata applied to an assembly compilation.  

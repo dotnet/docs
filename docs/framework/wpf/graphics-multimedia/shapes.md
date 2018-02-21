@@ -26,6 +26,8 @@ caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Shapes
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides support for drawing basic shapes using the <xref:System.Windows.Shapes.Shape> class. Shape objects derive from <xref:System.Windows.FrameworkElement> and as such, participate in the layout system and can be drawn simply using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
@@ -35,6 +37,6 @@ manager: "wpickett"
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/shapes-how-to-topics.md)  
   
 ## See Also  
- <xref:System.Windows.Shapes.Shape>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
+ <xref:System.Windows.Shapes.Shape>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

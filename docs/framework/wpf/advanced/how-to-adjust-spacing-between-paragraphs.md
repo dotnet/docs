@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Adjust Spacing Between Paragraphs
 This example shows how to adjust or eliminate spacing between paragraphs in flow content.  

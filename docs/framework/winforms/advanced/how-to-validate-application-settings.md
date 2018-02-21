@@ -21,6 +21,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Validate Application Settings
 This topic demonstrates how to validate application settings before they are persisted.  
@@ -167,5 +169,5 @@ This topic demonstrates how to validate application settings before they are per
     ```  
   
 ## See Also  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)   
+ [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
  [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)

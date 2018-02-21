@@ -21,16 +21,16 @@ This topic provides links to information about how to work with the [!INCLUDE[dn
  [Getting Started](../../framework/get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
- [Class Library Overview](https://msdn.microsoft.com/library/hfa3fa08)  
+ [Class Library Overview](../../standard/class-library-overview.md)  
  Introduces the classes, interfaces, and value types that help expedite and optimize the development process and provide access to system functionality.  
   
- [Development Guide](https://msdn.microsoft.com/library/hh156542)  
+ [Development Guide](../../framework/development-guide.md)  
  Provides a guide to all key technology areas and tasks for application development, including creating, configuring, debugging, securing, and deploying your application. This topic also provides information about dynamic programming, interoperability, extensibility, memory management, and threading.  
   
- [Tools](https://msdn.microsoft.com/library/d9kh6s92)  
+ [Tools](../../framework/tools/index.md)  
  Describes the tools that you can use to develop, configure, and deploy applications by using .NET Framework technologies.  
   
- [.NET Framework Samples](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)  
+ [.NET Framework Samples](http://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
  Provides links to sample applications that demonstrate .NET Framework technologies.  
   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  

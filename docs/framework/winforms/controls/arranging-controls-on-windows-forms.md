@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Arranging Controls on Windows Forms
 By placing and manipulating controls on forms in different ways, you can create user interfaces that are both intuitive and functional for users.  

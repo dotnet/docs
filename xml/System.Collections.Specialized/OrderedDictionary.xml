@@ -296,7 +296,7 @@
 ## Remarks  
  A key cannot be `null`, but a value can be.  
   
- You can also use the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.OrderedDictionary> collection; however, if the specified key already exists in the <xref:System.Collections.Specialized.OrderedDictionary>, setting the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Specialized.OrderedDictionary.Add%2A> method does not modify existing elements.  
+ You can also use the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.OrderedDictionary> collection; however, if the specified key already exists in the <xref:System.Collections.Specialized.OrderedDictionary>, setting the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Specialized.OrderedDictionary.Add%2A> method does not modify existing elements but instead throws <xref:System.ArgumentException>.
   
    
   
@@ -310,6 +310,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsReadOnly">

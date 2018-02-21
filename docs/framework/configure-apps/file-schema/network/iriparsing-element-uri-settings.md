@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;iriParsing&gt; Element (Uri Settings)
 Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.  
@@ -28,9 +30,9 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ## Syntax  
   
 ```xml  
-<idn  
+<iriParsing  
   enabled="true|false"  
-/idn>  
+/>  
 ```  
   
 ## Attributes and Elements  
@@ -86,6 +88,6 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ```  
   
 ## See Also  
- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>   
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
+ <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>  
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

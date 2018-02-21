@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Constants (Unmanaged API Reference)
 This topic describes the language type, language vendor, and document type constants that are defined in CorSym.idl.  

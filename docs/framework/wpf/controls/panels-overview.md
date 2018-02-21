@@ -21,6 +21,8 @@ caps.latest.revision: 48
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Panels Overview
 <xref:System.Windows.Controls.Panel> elements are components that control the rendering of elements—their size and dimensions, their position, and the arrangement of their child content. The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a number of predefined <xref:System.Windows.Controls.Panel> elements as well as the ability to construct custom <xref:System.Windows.Controls.Panel> elements.  
@@ -259,12 +261,12 @@ manager: "wpickett"
  For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md).  
   
 ## See Also  
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
- [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)   
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
- [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)   
- [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)   
- [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979)   
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)   
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)   
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)  
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)  
+ [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
+ [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979)  
+ [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
+ [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
  [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)

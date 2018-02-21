@@ -36,6 +36,6 @@ Specifies that Visual Basic should marshal all strings to Unicode values regardl
  This keyword is not supported.  
   
 ## See Also  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)   
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
+ [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
+ [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

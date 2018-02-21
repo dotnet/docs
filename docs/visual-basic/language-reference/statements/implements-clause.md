@@ -48,7 +48,7 @@ The `Implements` keyword can be used in the following contexts:
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)

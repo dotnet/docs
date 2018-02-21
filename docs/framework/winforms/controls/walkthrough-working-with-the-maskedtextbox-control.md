@@ -23,6 +23,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Working with the MaskedTextBox Control
 Tasks illustrated in this walkthrough include:  
@@ -131,5 +133,5 @@ Tasks illustrated in this walkthrough include:
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.MaskedTextBox>   
+ <xref:System.Windows.Forms.MaskedTextBox>  
  [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)

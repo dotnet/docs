@@ -24,6 +24,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Simulate Mouse and Keyboard Events in Code
 Windows Forms provides several options for programmatically simulating mouse and keyboard input. This topic provides an overview of these options.  

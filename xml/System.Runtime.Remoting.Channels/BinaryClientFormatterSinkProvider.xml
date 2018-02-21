@@ -33,7 +33,7 @@
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
   
 > [!IMPORTANT]
->  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
     </remarks>

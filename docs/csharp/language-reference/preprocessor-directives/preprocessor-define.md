@@ -16,8 +16,10 @@ ms.author: "wiwagn"
 ---
 # #define (C# Reference)
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `true`, as the following example shows:  
-  
- `#`  `define`   `DEBUG`  
+ 
+ ```csharp
+ #define DEBUG
+ ```
   
 ## Remarks  
   
@@ -63,10 +65,10 @@ public class TestDefine
  For an example of how to undefine a symbol, see [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)   
- [const](../../../csharp/language-reference/keywords/const.md)   
- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)   
- [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  
+ [const](../../../csharp/language-reference/keywords/const.md)  
+ [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)  
+ [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)  
  [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)

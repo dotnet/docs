@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Vertical Text
 You can use a <xref:System.Drawing.StringFormat> object to specify that text be drawn vertically rather than horizontally.  

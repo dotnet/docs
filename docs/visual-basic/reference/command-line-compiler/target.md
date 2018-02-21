@@ -45,7 +45,7 @@ Specifies the format of compiler output.
   
 ### To set /target in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
 2.  Click the **Application** tab.  
   
@@ -59,11 +59,11 @@ vbc /target:library in.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
- [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
- [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
+ [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
+ [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
+ [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)  
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

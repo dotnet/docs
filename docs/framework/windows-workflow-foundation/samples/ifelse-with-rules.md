@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c4ad9bb2-9037-413a-8b14-59ed7b927a9e
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IfElse With Rules
 This sample shows the use of a rule condition with an <xref:System.Workflow.Activities.IfElseActivity> activity.  
@@ -40,7 +42,7 @@ This sample shows the use of a rule condition with an <xref:System.Workflow.Acti
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Rules\IfElseWithRules`  
   
 ## See Also  
- <xref:System.Workflow.Activities.Rules>   
- <xref:System.Workflow.Activities.IfElseActivity>   
- <xref:System.Workflow.Activities.CodeActivity>   
+ <xref:System.Workflow.Activities.Rules>  
+ <xref:System.Workflow.Activities.IfElseActivity>  
+ <xref:System.Workflow.Activities.CodeActivity>  
  <xref:System.Workflow.Activities.Rules.RuleDefinitions>

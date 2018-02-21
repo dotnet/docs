@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # IEnumRAWINPUTDEVIC:Reset
 Resets the enumeration sequence to the beginning.  

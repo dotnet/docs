@@ -22,6 +22,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a Property Without Using a Storyboard
 This example shows one way to apply an animation to a property without using a <xref:System.Windows.Media.Animation.Storyboard>.  
@@ -43,9 +45,9 @@ This example shows one way to apply an animation to a property without using a <
  There are other ways to animate without using <xref:System.Windows.Media.Animation.Storyboard> objects; for more information, see [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.AnimationTimeline>   
- <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>   
- <xref:System.Windows.Media.Animation>   
- <xref:System.Windows.Media.Animation.Storyboard>   
- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)   
+ <xref:System.Windows.Media.Animation.AnimationTimeline>  
+ <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>  
+ <xref:System.Windows.Media.Animation>  
+ <xref:System.Windows.Media.Animation.Storyboard>  
+ [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

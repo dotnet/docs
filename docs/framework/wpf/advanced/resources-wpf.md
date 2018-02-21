@@ -20,6 +20,8 @@ caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Resources (WPF)
 A resource is an object that can be reused in different places in your application. WPF supports different types of resources. These resources are primarily two types of resources: XAML resources and resource data files. Examples of XAML resources include brushes and styles. Resource data files are non-executable data files that an application needs.  

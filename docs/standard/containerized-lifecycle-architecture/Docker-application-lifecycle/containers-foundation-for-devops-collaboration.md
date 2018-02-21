@@ -1,10 +1,13 @@
 ---
-title: Containers as the foundation for DevOps collaboration | Microsoft Docs 
+title: Containers as the foundation for DevOps collaboration
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Containers as the foundation for DevOps collaboration
 
@@ -16,7 +19,7 @@ Figure 2-1: Main workloads per "personas" in the life cycle for containerized Do
 
 With Docker containers, developers own what's within the container (application and service, and dependencies to frameworks and components) and how the containers and services behave together as an application composed by a collection of services. The interdependencies of the multiple containers are defined in a docker-compose.yml file, or what could be called a *deployment manifest*. Meanwhile, IT operations teams (IT professionals and management) can focus on the management of production environments; infrastructure; scalability; monitoring; and, ultimately, ensuring that the applications are delivering properly for the end users, without having to know the contents of the various containers. Hence, the name "container," recalling the analogy to real-world shipping containers. Thus, the owners of a container's content need not concern themselves with how the container will be shipped, and the shipping company transports a container from its point of origin to its destination without knowing or caring about the contents. In a similar manner, developers can create and own the contents within a Docker container without the need to concern themselves with the "transport" mechanisms.
 
-In the pillar on the left side of Figure 2-1, developers write and run code locally in Docker containers by using Docker for Windows or Mac. They define the operating environment for the code by using a Dockerfile that specifies the base operating system to run as well as the build steps for building their code into a Docker image. The developers define how the one or more images will interoperate using the aforementioned docker-compose.yml file deployment manifest. As they complete their local development, they push their application code plus the Docker configuration files to the code repository of their choice (i.e., Git repository).
+In the pillar on the left side of Figure 2-1, developers write and run code locally in Docker containers by using Docker for Windows or Mac. They define the operating environment for the code by using a Dockerfile that specifies the base operating system to run as well as the build steps for building their code into a Docker image. The developers define how the one or more images will interoperate using the aforementioned *docker-compose.yml* file deployment manifest. As they complete their local development, they push their application code plus the Docker configuration files to the code repository of their choice (that is, Git repository).
 
 The DevOps pillar defines the build–Continuous Integration (CI) pipelines using the Dockerfile provided in the code repository. The CI system pulls the base container images from the selected Docker registry and builds the custom Docker images for the application. The images then are validated and pushed to the Docker registry used for the deployments to multiple environments.
 
@@ -32,7 +35,7 @@ Figure 2-2 presents a more detailed workflow for a Docker application life cycle
 
 Figure 2-2: High-level workflow for the Docker containerized application life cycle
 
-Everything begins with the developer, who starts writing code in the inner-loop workflow. The inner-loop stage is where developers define everything that happens before pushing code into the code repository (e.g., a source control system such as Git). After it is committed, the repository triggers Continuous Integration (CI) and the rest of the workflow.
+Everything begins with the developer, who starts writing code in the inner-loop workflow. The inner-loop stage is where developers define everything that happens before pushing code into the code repository (for example, a source control system such as Git). After it is committed, the repository triggers Continuous Integration (CI) and the rest of the workflow.
 
 The inner loop basically consists of typical steps like "code," "run," "test," and "debug," plus additional steps directly before running the app locally. This is when the developer runs and tests the app as a Docker container. The inner-loop workflow will be explained in the sections that follow.
 

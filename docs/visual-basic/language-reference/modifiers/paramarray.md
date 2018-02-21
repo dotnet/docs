@@ -39,5 +39,5 @@ Specifies that a procedure parameter takes an optional array of elements of the 
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)

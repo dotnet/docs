@@ -81,7 +81,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -115,7 +115,7 @@
  Any object state graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Deserialize%28System.IO.Stream%29> method is used to restore an object state graph stored in a <xref:System.IO.Stream>, such as a <xref:System.IO.FileStream>.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
    
   
@@ -157,7 +157,7 @@
  Any object state graph that is serialized with the <xref:System.Web.UI.ObjectStateFormatter.Serialize%2A> method can be deserialized with the <xref:System.Web.UI.ObjectStateFormatter.Deserialize%2A> method. The <xref:System.Web.UI.ObjectStateFormatter.Deserialize%28System.String%29> method is used to restore an object state graph stored in base64-encoded string form.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
    
   

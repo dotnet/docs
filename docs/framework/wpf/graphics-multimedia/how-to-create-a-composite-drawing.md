@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Composite Drawing
 This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to create complex drawings by combining multiple <xref:System.Windows.Media.Drawing> objects into a single composite drawing.  
@@ -48,10 +50,10 @@ Composite drawing that has multiple DrawingGroup objects
  For more information about <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>   
- <xref:System.Windows.Media.DrawingGroup.Transform%2A>   
- <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>   
- <xref:System.Windows.Media.DrawingGroup.Opacity%2A>   
- <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>   
- <xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>   
+ <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>  
+ <xref:System.Windows.Media.DrawingGroup.Transform%2A>  
+ <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>  
+ <xref:System.Windows.Media.DrawingGroup.Opacity%2A>  
+ <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>  
+ <xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

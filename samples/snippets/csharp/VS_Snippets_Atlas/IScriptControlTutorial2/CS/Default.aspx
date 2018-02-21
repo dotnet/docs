@@ -33,7 +33,7 @@
                 <td><sample:SampleTextBox ID="TextBox2" runat="server" NoHighlightCssClass="LowLight" HighlightCssClass="HighLight" /></td>
               </tr>
               <tr>
-                <td><asp:Label runat="server" ID="Label3" AssociatedControlID="TextBox3">E-mail</asp:Label></td>
+                <td><asp:Label runat="server" ID="Label3" AssociatedControlID="TextBox3">Email</asp:Label></td>
                 <td><sample:SampleTextBox ID="TextBox3" runat="server" NoHighlightCssClass="LowLight" HighlightCssClass="HighLight" /></td>
               </tr>
             </table>

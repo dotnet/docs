@@ -8,6 +8,9 @@ ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # General guidance
 
@@ -37,7 +40,7 @@ Using .NET Framework on Docker can improve your deployment experiences by minimi
 
 ### Additional resources
 
--   **eBook: Modernize existing .NET Framework applications with Azure and Windows Containers**
+-   **e-book: Modernize existing .NET Framework applications with Azure and Windows Containers**
     [*https://aka.ms/liftandshiftwithcontainersebook*](https://aka.ms/liftandshiftwithcontainersebook)
 
 -   **Sample apps: Modernization of legacy ASP.NET web apps by using Windows Containers**

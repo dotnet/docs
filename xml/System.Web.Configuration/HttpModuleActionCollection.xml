@@ -31,7 +31,7 @@
  [!code-csharp[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/CS/httpmoduleactioncollection.cs#1)]
  [!code-vb[System.Web.Configuration.HttpModuleActionCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleActionCollection/VB/httpmoduleactioncollection.vb#1)]  
   
- The following example is an excerpt of the configuration file that enables ASP.NET to use a custom module. For a complete example of how to build and configure an HTTP module, see the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3).  
+ The following example is an excerpt of the configuration file that enables ASP.NET to use a custom module. For a complete example of how to build and configure an HTTP module, see the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/library/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3).  
   
 ```  
 <httpModules>  

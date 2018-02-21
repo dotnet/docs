@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Compositing Mode to Control Alpha Blending
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  
@@ -63,5 +65,5 @@ There may be times when you want to create an off-screen bitmap that has the fol
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- <xref:System.Drawing.Color.FromArgb%2A>   
+ <xref:System.Drawing.Color.FromArgb%2A>  
  [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)

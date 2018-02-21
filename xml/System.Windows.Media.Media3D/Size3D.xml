@@ -29,12 +29,7 @@
   
 ## Remarks  
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_ResourceReferenceExpressionConverter"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  This example shows how to determine if two  <xref:System.Windows.Media.Media3D.Size3D> structures are equal using the <xref:System.Windows.Media.Media3D.Size3D> static <xref:System.Windows.Media.Media3D.Size3D.Equals%2A> method.  
   
@@ -580,12 +575,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_X"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   
@@ -618,12 +608,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_Y"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   
@@ -655,12 +640,7 @@
  The <xref:System.Windows.Media.Media3D.Size3D.X%2A>, <xref:System.Windows.Media.Media3D.Size3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Size3D.Z%2A> values must be non-negative.  
   
  <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
-<a name="xamlTextUsage_Z"></a>   
-## XAML Text Usage  
-  
-   
-  
+    
 ## Examples  
  The following example shows how to check if two <xref:System.Windows.Media.Media3D.Size3D> structures are equal. It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Size3D> structure when the structure is being declared and after the structure has been declared.  
   

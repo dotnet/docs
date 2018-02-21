@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "XmlSerializer [WCF], using"
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the XmlSerializer Class
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.  
@@ -212,10 +214,10 @@ manager: "erikre"
 >  The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
   
 ## See Also  
- <xref:System.ServiceModel.DataContractFormatAttribute>   
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Xml.Serialization.XmlSerializer>   
- <xref:System.ServiceModel.MessageHeaderArrayAttribute>   
- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.ServiceModel.DataContractFormatAttribute>  
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ <xref:System.ServiceModel.MessageHeaderArrayAttribute>  
+ [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

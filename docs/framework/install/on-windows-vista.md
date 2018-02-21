@@ -8,6 +8,8 @@ ms.date: 08/03/2017
 ms.topic: article
 ms.prod: .net-framework
 ms.devlang: dotnet
+ms.workload: 
+  - dotnet
 ---
 
 # Install the .NET Framework on Windows Vista and Windows Server 2008

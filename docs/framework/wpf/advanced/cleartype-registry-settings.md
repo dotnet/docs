@@ -17,6 +17,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ClearType Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)][!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] registry settings that are used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
@@ -121,5 +123,5 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
  ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
 ## See Also  
- [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)   
+ [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
  [ClearType Antialiasing](https://msdn.microsoft.com/library/dd183433(v=vs.85).aspx)

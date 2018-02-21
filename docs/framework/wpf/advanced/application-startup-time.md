@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Startup Time
 The amount of time that is required for a WPF application to start can vary greatly. This topic describes various techniques for reducing the perceived and actual startup time for a Windows Presentation Foundation (WPF) application.  
@@ -129,10 +131,10 @@ The amount of time that is required for a WPF application to start can vary grea
  Instead of using XAML to set the <xref:System.Windows.FrameworkElement.DataContext%2A> declaratively for the main window, consider setting it programmatically in the <xref:System.Windows.Application.OnActivated%2A> method.  
   
 ## See Also  
- <xref:System.Windows.SplashScreen>   
- <xref:System.AppDomain>   
- <xref:System.Resources.NeutralResourcesLanguageAttribute>   
- <xref:System.Resources.ResourceManager>   
- [Add a Splash Screen to a WPF Application](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)   
- [Ngen.exe (Native Image Generator)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md)   
+ <xref:System.Windows.SplashScreen>  
+ <xref:System.AppDomain>  
+ <xref:System.Resources.NeutralResourcesLanguageAttribute>  
+ <xref:System.Resources.ResourceManager>  
+ [Add a Splash Screen to a WPF Application](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)  
+ [Ngen.exe (Native Image Generator)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
  [\<generatePublisherEvidence> Element](../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md)

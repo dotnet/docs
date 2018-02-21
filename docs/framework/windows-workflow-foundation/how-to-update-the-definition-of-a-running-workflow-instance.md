@@ -7,14 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Update the Definition of a Running Workflow Instance
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. The required change can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This step in the tutorial demonstrates how to use dynamic update to modify  persisted instances of the `v1` number guessing workflow to match the new functionality introduced in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
@@ -1416,7 +1418,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 21. Press CTRL+SHIFT+B to build the solution, and then press CTRL+F5 to run the `ApplyDynamicUpdate` application and update the persisted workflow instances. You should see output similar to the following. The version 1.0.0.0 workflows are updated to version 1.5.0.0, while the version 2.0.0.0 workflows are not updated.  
   
- **Inspecting: StateMachineNumberGuessWorkflow; Version=1.0.0.0**   
+ **Inspecting: StateMachineNumberGuessWorkflow; Version=1.0.0.0**  
 **Updated to: StateMachineNumberGuessWorkflow; Version=1.5.0.0**   
 **Inspecting: StateMachineNumberGuessWorkflow; Version=1.0.0.0**   
 **Updated to: StateMachineNumberGuessWorkflow; Version=1.5.0.0**   
@@ -1452,12 +1454,12 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 4.  Select one of the `v1` workflows you started at the beginning of the [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) topic. Note that the version information under the status window indicates that the workflow is a version **1.5.0.0** workflow. Note that there is no information indicated about previous guesses other than whether they were too high or too low.  
   
- **Please enter a number between 1 and 10**   
+ **Please enter a number between 1 and 10**  
 **Your guess is too low.**  
   
 5.  Make a note of the `InstanceId` and then enter guesses until the workflow completes. The status window displays information about the content of the guess because the `WriteLine` activities were updated by the dynamic update.  
   
- **Please enter a number between 1 and 10**   
+ **Please enter a number between 1 and 10**  
 **Your guess is too low.**   
 **Please enter a number between 1 and 10**   
 **5 is too low.**   
@@ -1468,7 +1470,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 6.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings) and open the tracking file using Notepad that corresponds to the completed workflow. If you did not make a note of the `InstanceId` you may be able to identify the correct tracking file by using the **Date modified** information in Windows Explorer. The last line of the tracking information contains the output of the newly added `WriteLine` activity.  
   
- **Please enter a number between 1 and 10**   
+ **Please enter a number between 1 and 10**  
 **Your guess is too low.**   
 **Please enter a number between 1 and 10**   
 **5 is too low.**   

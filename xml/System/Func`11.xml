@@ -116,7 +116,7 @@
     <param name="arg8">The eighth parameter of the method that this delegate encapsulates.</param>
     <param name="arg9">The ninth parameter of the method that this delegate encapsulates.</param>
     <param name="arg10">The tenth parameter of the method that this delegate encapsulates.</param>
-    <summary>Encapsulates a method that has 10 parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <summary>Encapsulates a method that has 10 parameters and returns a value of the type specified by the <typeparamref name="TResult" /> parameter.</summary>
     <returns>The return value of the method that this delegate encapsulates.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  

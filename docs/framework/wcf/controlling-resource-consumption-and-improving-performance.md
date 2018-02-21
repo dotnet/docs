@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Controlling Resource Consumption and Improving Performance
 This topic describes various properties in different areas of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture that work to control resource consumption and affect performance metrics.  
@@ -53,5 +55,5 @@ This topic describes various properties in different areas of the [!INCLUDE[indi
  When a WCF service is hosted under IIS and ASP.NET, the configuration settings of IIS and ASP.NET can affect the throughput and memory footprint of the WCF service.  [!INCLUDE[crabout](../../../includes/crabout-md.md)] ASP.NET performance, see [Improving ASP.NET Performance](http://go.microsoft.com/fwlink/?LinkId=186462).  One setting that might have unintended consequences is <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>, which is a property of the <xref:System.Web.Configuration.ProcessModelSection>. If your application has a fixed or small number of clients, setting <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> to 2 might provide a throughput boost on a multiprocessor machine that has a CPU utilization close to 100%. This increase in performance comes with a cost: it will also cause an increase in memory usage, which could reduce scalability.  
   
 ## See Also  
- [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)   
+ [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)  
  [Large Data and Streaming](../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)

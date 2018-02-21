@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fusion Global Static Functions
 This section describes the unmanaged global static functions that the fusion API uses.  

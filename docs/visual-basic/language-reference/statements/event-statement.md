@@ -118,17 +118,17 @@ End Event
  Press F5 to run the previous example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
+>  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Threading](../../programming-guide/concepts/threading/index.md).  
   
 ## See Also  
- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)   
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [How to: Declare Custom Events To Conserve Memory](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)   
- [How to: Declare Custom Events To Avoid Blocking](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)   
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)   
+ [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
+ [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
+ [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
+ [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
+ [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+ [How to: Declare Custom Events To Conserve Memory](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)  
+ [How to: Declare Custom Events To Avoid Blocking](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)  
+ [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)

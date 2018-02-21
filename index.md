@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+ms.custom: "updateeachrelease"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -44,7 +45,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7">
+                <a href="/dotnet/api/?view=netframework-4.7.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -163,7 +164,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/csharp">C# Guide</a></h3>
-                                                <p><a href="/dotnet/csharp/quick-starts">Quick Starts</a></p>
+                                                <p><a href="/dotnet/csharp/quick-starts">Quickstarts</a></p>
                                                 <p><a href="/dotnet/csharp/getting-started">Get Started</a></p>
                                                 <p><a href="/dotnet/csharp/tour-of-csharp">Tour of C#</a></p>
                                                 <p><a href="/dotnet/csharp/language-reference">C# Language Reference</a></p>
@@ -603,7 +604,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="http://docs.cryengine.com/display/CEPROG/CE%23+Programming">
+                                                <a href="http://docs.cryengine.com/display/CEPROG/C%23+Programming">
                                                 <h3>CRYENGINE</h3>
                                                 <p>Learn how to use CRYENGINE to build games with C#.</p>
                                                 </a>

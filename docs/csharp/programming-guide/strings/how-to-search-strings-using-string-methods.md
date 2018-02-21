@@ -19,10 +19,10 @@ The [string](../../../csharp/language-reference/keywords/string.md) type, which 
 ## Example  
  The following example uses the <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>, <xref:System.String.StartsWith%2A>, and <xref:System.String.EndsWith%2A> methods to search the strings.  
   
- [!code-cs[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-string-methods_1.cs)]  
+ [!code-csharp[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-string-methods_1.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Strings](../../../csharp/programming-guide/strings/index.md)   
- [How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Strings](../../../csharp/programming-guide/strings/index.md)  
+ [How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)  
  [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)

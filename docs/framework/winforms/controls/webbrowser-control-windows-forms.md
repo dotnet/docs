@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WebBrowser Control (Windows Forms)
 The Windows Forms `WebBrowser` control hosts Web pages and provides Web browsing capabilities to your application.  

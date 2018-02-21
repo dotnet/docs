@@ -22,6 +22,8 @@ caps.latest.revision: 22
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:ClassModifier Directive
 Modifies XAML compilation behavior when `x:Class` is also provided. Specifically, instead of creating a partial `class` that has a `Public` access level (the default), the provided `x:Class` is created with a `NotPublic` access level. This behavior affects the access level for the class in the generated assemblies.  
@@ -60,8 +62,8 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
  The access level as declared in `x:ClassModifier` is still subject to interpretation by particular frameworks and their capabilities. WPF includes capabilities to load and instantiate types where `x:ClassModifier` is `internal`, if that class is referenced from a WPF resource through a pack URI reference. As a consequence of this case and potentially others like it implemented by other frameworks, do not rely exclusively on `x:ClassModifier` to block all possible instantiation attempts.  
   
 ## See Also  
- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
- [Code-Behind and XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
- [x:FieldModifier Directive](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)   
- [Security (WPF)](../../../docs/framework/wpf/security-wpf.md)   
+ [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
+ [Code-Behind and XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)  
+ [x:FieldModifier Directive](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)  
+ [Security (WPF)](../../../docs/framework/wpf/security-wpf.md)  
  [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

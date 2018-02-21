@@ -59,7 +59,7 @@
    
   
 ## Examples  
- The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with integer keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
+ The following code example creates an empty <xref:System.Collections.Generic.Dictionary%602> of strings, with string keys, and accesses it through the <xref:System.Collections.Generic.IDictionary%602> interface.  
   
  The code example uses the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.IDictionary%602.Add%2A> method throws <xref:System.ArgumentException> when attempting to add a duplicate key.  
   

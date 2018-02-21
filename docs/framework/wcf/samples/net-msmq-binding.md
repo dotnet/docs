@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe4bb696-f57c-4cb3-9b7e-9d95fe6b8323
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Net MSMQ Binding
 This section contains samples that demonstrate using MSMQ binding attributes of an endpoint element.  

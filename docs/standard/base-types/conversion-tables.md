@@ -22,6 +22,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Type Conversion Tables in .NET
 Widening conversion occurs when a value of one type is converted to another type that is of equal or greater size. A narrowing conversion occurs when a value of one type is converted to a value of another type that is of a smaller size. The tables in this topic illustrate the behaviors exhibited by both types of conversions.  
@@ -74,5 +77,5 @@ Widening conversion occurs when a value of one type is converted to another type
 |<xref:System.Double>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
   
 ## See Also  
- <xref:System.Convert?displayProperty=nameWithType>   
+ <xref:System.Convert?displayProperty=nameWithType>  
  [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

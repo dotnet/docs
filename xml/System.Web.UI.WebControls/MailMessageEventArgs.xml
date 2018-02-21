@@ -11,17 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for e-mail–related events.</summary>
+    <summary>Provides data for email–related events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailMessageEventArgs> class provides access to the <xref:System.Web.Mail.MailMessage> object that contains the e-mail message. Because the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class is derived from the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> class, you can cancel sending an e-mail message in your event handler by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`.  
+ The <xref:System.Web.UI.WebControls.MailMessageEventArgs> class provides access to the <xref:System.Web.Mail.MailMessage> object that contains the email message. Because the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class is derived from the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> class, you can cancel sending an email message in your event handler by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class in an e-mail message event handler to change the contents of the message before it is sent.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class in an email message event handler to change the contents of the message before it is sent.  
   
  [!code-aspx-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]
  [!code-aspx-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  
@@ -74,18 +74,18 @@
         <ReturnType>System.Net.Mail.MailMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the e-mail message contents.</summary>
+        <summary>Gets the email message contents.</summary>
         <value>A <see cref="T:System.Web.Mail.MailMessage" /> containing the message contents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property returns the <xref:System.Web.Mail.MailMessage> object that contains the e-mail message data. The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property is read-only; however, you can use the <xref:System.Web.Mail.MailMessage> object that it returns to modify the properties of the e-mail message.  
+ The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property returns the <xref:System.Web.Mail.MailMessage> object that contains the email message data. The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property is read-only; however, you can use the <xref:System.Web.Mail.MailMessage> object that it returns to modify the properties of the email message.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property in an e-mail message event handler to change the contents of the message before it is sent.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property in an email message event handler to change the contents of the message before it is sent.  
   
  [!code-aspx-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]
  [!code-aspx-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f84d2d5d-1c1b-4f19-be45-65b552d3e9e3
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Persistence Participants
 A persistence participant can participate in a persistence operation (Save or Load) triggered by an application host. The [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] ships with two abstract classes, **PersistenceParticipant** and **PersistenceIOParticipant**, which you can use to create a persistence participant. A persistence participant derives from one of these classes, implements the methods of interest, and then adds an instance of the class to the <xref:System.ServiceModel.Activities.WorkflowServiceHost.WorkflowExtensions%2A> collection on the <xref:System.ServiceModel.Activities.WorkflowServiceHost> . The application host may look for such workflow extensions when persisting a workflow instance and invoke appropriate methods on the persistence participants at appropriate times.  

@@ -24,7 +24,7 @@
 ## Remarks  
  Web Services Description Language (WSDL) defines two styles for how an XML Web service method, which it calls an operation, can be formatted in a SOAP message: `RPC` and `Document`. `Document` refers to formatting the XML Web service method according to an XSD schema. The `Document` style refers to formatting the `Body` element as a series of one or more message parts following the `Body` element. Exactly how the individual message parts is determined by the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use%2A> and <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> properties. The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use%2A> property determines whether parameters are formatted `Encoded` or `Literal`. The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> determines whether the parameters are encapsulated within a single message part following the `Body` element or whether each parameter is an individual message part.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952)  
+ For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952)  
   
  This attribute can be applied to both an XML Web service method on the server and a method of the proxy class on the client.  
   
@@ -367,7 +367,7 @@
 ## Remarks  
  The Web Services Description Language (WSDL) defines two methods for formatting parameters: <xref:System.Web.Services.Description.SoapBindingUse.Encoded> and <xref:System.Web.Services.Description.SoapBindingUse.Literal>. <xref:System.Web.Services.Description.SoapBindingUse.Encoded> refers to formatting parameters using SOAP encoding, as outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse.Literal> refers to formatting the parameters using a pre-defined XSD schema for each parameter.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
   
    
   

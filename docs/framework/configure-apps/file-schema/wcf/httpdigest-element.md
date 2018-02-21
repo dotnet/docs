@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpDigest&gt; Element
 Specifies a digest type credential used when authenticating the client to a service.  
@@ -55,13 +57,13 @@ Specifies a digest type credential used when authenticating the client to a serv
  This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88443).  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>   
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>   
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>   
- <xref:System.ServiceModel.Configuration.HttpDigestClientElement>   
- <xref:System.ServiceModel.Security.HttpDigestClientCredential>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)   
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>  
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>  
+ <xref:System.ServiceModel.Configuration.HttpDigestClientElement>  
+ <xref:System.ServiceModel.Security.HttpDigestClientCredential>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
+ [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

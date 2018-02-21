@@ -195,7 +195,7 @@
  [!code-csharp[XMLProcessingApp#3](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#3)]
  [!code-vb[XMLProcessingApp#3](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#3)]  
   
- The string used in this example is an Xpath query. You can find more examples of them here:   [XPath examples](https://msdn.microsoft.com/en-us/library/ms256086.aspx).  
+ The string used in this example is an Xpath query. You can find more examples of them here:   [XPath examples](https://msdn.microsoft.com/library/ms256086.aspx).  
   
  You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you’ll have to define ID’s in the document type definition declarations of your XML file.  
   

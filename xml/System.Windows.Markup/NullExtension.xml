@@ -35,8 +35,6 @@
 ## WPF Usage Notes  
  For WPF dependency properties, when you set a dependency property value to `null`, you are not necessarily setting the property to its default value, even if it is a reference property. The default value of a dependency property depends on its dependency property registration. An unset value is not necessarily `null` either; see <xref:System.Windows.DependencyProperty.UnsetValue>. For more information, see <xref:System.Windows.DependencyObject.ClearValue%2A> or [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md).  
   
-<a name="xamlTextUsage_NullExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

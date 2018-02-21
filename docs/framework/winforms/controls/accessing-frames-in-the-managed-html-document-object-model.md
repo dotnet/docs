@@ -21,6 +21,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Accessing Frames in the Managed HTML Document Object Model
 Some HTML documents are composed out of *frames*, or windows that can hold their own distinct HTML documents. Using frames makes it easy to create HTML pages in which one or more pieces of the page remain static, such as a navigation bar, while other frames constantly change their content.  
@@ -47,5 +49,5 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
  For more information about cross-site scripting, see[About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).  
   
 ## See Also  
- [FRAME Element &#124; frame Object](http://msdn.microsoft.com/library/ms535250.aspx)   
+ [FRAME Element &#124; frame Object](http://msdn.microsoft.com/library/ms535250.aspx)  
  [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

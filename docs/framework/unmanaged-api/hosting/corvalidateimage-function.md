@@ -26,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _CorValidateImage Function
 Validates managed module images, and notifies the operating system loader after they have been loaded.  

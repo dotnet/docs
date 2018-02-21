@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The description is human-readable text that typically describes the interface vendor, type (for example, Ethernet), brand, and model.  
+ The description is human-readable text that describes the network interface. The information included in the description depends on the capabilities of the operating system.  On Windows, it typically describes the interface vendor, type (for example, Ethernet), brand, and model. On other platforms, it may be as brief as the name of the interface, such as `eth0`.
   
    
   
@@ -561,28 +561,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The interface types are described in detail in the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration documentation.  
-  
- This property only returns a subset of the possible values defined in the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The possible values include the following:  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Fddi>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Loopback>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Ppp>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Slip>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.TokenRing>  
-  
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Unknown>  
-  
-   
-  
+ The interface types are described in detail in the <xref:System.Net.NetworkInformation.NetworkInterfaceType?displayProperty=nameWithType> enumeration documentation.  
+
+ In principle, this property can return any member of the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The specific value that it does return is dependent on the runtime conditions of the underlying network topology. This means that:
+ 
+ - It is not possible to determine in advance which value the property returns for a particular network.
+ 
+ - It is possible that in practice on a particular network, the full range of enumeration values is not available. For example, on a gigabit Ethernet network, it is possible that the property returns <xref:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet?displayProperty=nameWithType> rather than <xref:System.Net.NetworkInformation.NetworkInterfaceType.GigabitEthernet?displayProperty=nameWithType>.
+
 ## Examples  
- The following code example displays type information for all interfaces on the local computer.  
+ The following example displays type information for all interfaces on the local computer.  
   
  [!code-cpp[NCLNetInfo2#51](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#51)]
  [!code-csharp[NCLNetInfo2#51](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#51)]

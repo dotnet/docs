@@ -23,6 +23,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Save Files Using the SaveFileDialog Component
 The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse the file system and select files to be saved. The dialog box returns the path and name of the file the user has selected in the dialog box. However, you must write the code to actually write the files to disk.  
@@ -184,5 +186,5 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
     >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](http://go.microsoft.com/fwlink/?LinkID=102575).  
   
 ## See Also  
- <xref:System.Windows.Forms.SaveFileDialog>   
+ <xref:System.Windows.Forms.SaveFileDialog>  
  [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)

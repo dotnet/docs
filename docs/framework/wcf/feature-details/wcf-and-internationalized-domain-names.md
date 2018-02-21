@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF and Internationalized Domain Names
 Support has been added to allow for WCF services with Internationalized Domain Names (IDN). An internationalized domain name is a domain name that contains non-ASCII characters. This support includes both the ability to host a WCF service with an IDN name and a WCF client to talk to a web service with an IDN name.  

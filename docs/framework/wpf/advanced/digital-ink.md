@@ -19,6 +19,8 @@ caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Digital Ink
 This section discusses the use of digital ink in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Traditionally found only in the Tablet PC SDK, digital ink is now available in the core Windows Presentation Foundation. This means you can now develop full-fledged Tablet PC applications by using the power of Windows Presentation Foundation.  

@@ -27,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule2::SetJITCompilerFlags Method
 Sets the flags that control the just-in-time (JIT) compilation of this ICorDebugModule2.  

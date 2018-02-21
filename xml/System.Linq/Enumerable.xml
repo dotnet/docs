@@ -3484,7 +3484,7 @@ From i As Integer In objects
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)] or `For Each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to hash and compare keys.  
   
  <xref:System.Linq.Enumerable.GroupJoin%2A> produces hierarchical results, which means that elements from `outer` are paired with collections of matching elements from `inner`. `GroupJoin` enables you to base your results on a whole set of matches for each element of `outer`.  
   

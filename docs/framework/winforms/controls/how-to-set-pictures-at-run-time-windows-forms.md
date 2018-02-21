@@ -25,6 +25,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set Pictures at Run Time (Windows Forms)
 You can programmatically set the image displayed by a Windows Forms <xref:System.Windows.Forms.PictureBox> control.  
@@ -104,9 +106,9 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
      This code will clear the image even if a graphic was loaded into the control at design time.  
   
 ## See Also  
- <xref:System.Windows.Forms.PictureBox>   
- <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>   
- [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)   
- [How to: Load a Picture Using the Designer](../../../../docs/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms.md)   
- [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)   
+ <xref:System.Windows.Forms.PictureBox>  
+ <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>  
+ [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)  
+ [How to: Load a Picture Using the Designer](../../../../docs/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms.md)  
+ [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
  [PictureBox Control](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)

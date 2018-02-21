@@ -47,21 +47,21 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetNestedType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetConstructors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -86,7 +86,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetEvent
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -102,7 +102,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -127,7 +127,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.MakeArrayType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -152,21 +152,21 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetEvents
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetProperty
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -191,7 +191,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetNestedTypes
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -207,14 +207,14 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.IsAssignableFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetMembers
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -248,21 +248,21 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetConstructor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetInterface
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -278,12 +278,12 @@ manager: "wpickett"
 uid: System.Reflection.TypeInfo.GetField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

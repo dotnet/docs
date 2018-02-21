@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "searching with regular expressions, backreferences"
   - "Regex class"
@@ -45,6 +45,9 @@ caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
@@ -202,7 +205,7 @@ manager: "wpickett"
   
 -   The `Match.Captures` property returns a <xref:System.Text.RegularExpressions.CaptureCollection> object that is of limited use. The collection is not populated for a <xref:System.Text.RegularExpressions.Match> object whose `Success` property is `false`. Otherwise, it contains a single <xref:System.Text.RegularExpressions.Capture> object that has the same information as the <xref:System.Text.RegularExpressions.Match> object.  
   
- For more information about these objects, see the [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.  
+ For more information about these objects, see [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.  
   
  Two additional properties of the <xref:System.Text.RegularExpressions.Match> class provide information about the match. The `Match.Value` property returns the substring in the input string that matches the regular expression pattern. The `Match.Index` property returns the zero-based starting position of the matched string in the input string.  
   
@@ -354,6 +357,6 @@ manager: "wpickett"
 |`((\w+(\s\w+)*),(\d+);)+`|Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times. This is the first capturing group.|  
   
 ## See Also  
- <xref:System.Text.RegularExpressions>   
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
+ <xref:System.Text.RegularExpressions>  
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
  [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

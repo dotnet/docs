@@ -18,5 +18,5 @@ Directories and files may cause exceptions when an operation is attempted but th
 -   Add the permissions necessary to access all files and folders.  
   
 ## See Also  
- <xref:System.Security.Permissions.FileIOPermission>   
+ <xref:System.Security.Permissions.FileIOPermission>  
  [Troubleshooting: Reading from and Writing to Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

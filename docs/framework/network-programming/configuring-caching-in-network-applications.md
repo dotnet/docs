@@ -14,6 +14,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Caching in Network Applications
 To configure caching, you must specify a cache policy at the application or <xref:System.Net.WebRequest> level. The following topics provide code examples that demonstrate configuring applications and requests to use caching.  
@@ -29,7 +31,7 @@ To configure caching, you must specify a cache policy at the application or <xre
  You can also configure cache policy using application or machine configuration files. For more information, see &#124; [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
 ## See Also  
- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)   
- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)   
- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)   
+ [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
+ [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
+ [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  
  [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)

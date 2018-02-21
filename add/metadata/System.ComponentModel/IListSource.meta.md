@@ -2,8 +2,8 @@
 uid: System.ComponentModel.IListSource
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.ComponentModel.IListSource.GetList
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.ComponentModel.IListSource.ContainsListCollection
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

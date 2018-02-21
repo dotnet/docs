@@ -20,8 +20,6 @@
   
  The <xref:System.Windows.Input.KeyGestureConverter> converts to and from a <xref:System.String> using the "+" character as the delimiter between the modifier keys and the key.  For example, the string `Control+A` would be converted into a <xref:System.Windows.Input.KeyGesture> with a <xref:System.Windows.Input.KeyGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys.Control> and <xref:System.Windows.Input.KeyGesture.Key%2A> property equal to <xref:System.Windows.Input.Key.A>.  
   
-<a name="xamlTextUsage_KeyGestureConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

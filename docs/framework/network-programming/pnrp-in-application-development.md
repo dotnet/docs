@@ -12,6 +12,8 @@ caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # PNRP in Application Development
 In Windows Vista, networking applications can access name publication and resolution functions through a simplified PNRP application programming interface (API).  

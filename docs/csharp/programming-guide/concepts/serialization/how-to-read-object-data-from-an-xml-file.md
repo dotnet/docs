@@ -66,7 +66,7 @@ public void ReadXML()
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See Also  
- <xref:System.IO.StreamWriter>   
- [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)   
- [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)   
+ <xref:System.IO.StreamWriter>  
+ [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
+ [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.web&gt; Element (Web Settings)
 Contains information about how the ASP.NET hosting layer manages process-wide behavior.  

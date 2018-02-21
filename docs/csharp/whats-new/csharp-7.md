@@ -248,7 +248,7 @@ of a number of die rolls:
 [!code-csharp[SumDieRolls](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#14_SumDieRolls "Sum die rolls")]
 
 You might quickly find that you need to find the sum of die rolls where
-some of the rolls are made with more than one die. Part of the input
+some of the rolls are made with multiple dice (dice is the plural of die). Part of the input
 sequence may be multiple results instead of a single number:
 
 [!code-csharp[SumDieRollsWithGroups](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#15_SumDieRollsWithGroups "Sum die rolls with groups")]
@@ -304,9 +304,9 @@ use percentile dice to represent larger ranges of numbers.
 > together and you can get every number from 0 through 99.
 
 To add this kind of die to your collection, first define a type to represent
-the percentile die:
+the percentile dice. The `TensDigit` property stores values `0`, `10`, `20`, up to `90`:
 
-[!code-csharp[18_PercentileDie](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#18_PercentileDie "Percentile Die type")]
+[!code-csharp[18_PercentileDice](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#18_PercentileDice "Percentile Die type")]
 
 Then, add a `case` match expression for the new type:
 

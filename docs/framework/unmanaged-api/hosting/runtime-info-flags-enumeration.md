@@ -26,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # RUNTIME_INFO_FLAGS Enumeration
 Contains values that indicate what information about the common language runtime (CLR) should be returned.  

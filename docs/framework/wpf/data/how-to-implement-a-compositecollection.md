@@ -16,6 +16,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement a CompositeCollection
 ## Example  
@@ -24,9 +26,9 @@ manager: "wpickett"
  [!code-xaml[CompositeCollections#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositeCollections/CS/Window1.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Data.CollectionContainer>   
- <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>   
- <xref:System.Windows.Data.XmlDataProvider>   
- <xref:System.Windows.DataTemplate>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ <xref:System.Windows.Data.CollectionContainer>  
+ <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>  
+ <xref:System.Windows.Data.XmlDataProvider>  
+ <xref:System.Windows.DataTemplate>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -246,7 +246,7 @@
     |<xref:System.Int64>|19 decimal digits|19 decimal digits|  
     |<xref:System.Single>|7 decimal digits|9 decimal digits|  
   
-     The problem of precision most frequently affects <xref:System.Single> values that are converted to <xref:System.Double> values. In the following example, two values produced by identical division operations are unequal because one of the values is a a single-precision floating point value converted to a <xref:System.Double>.  
+     The problem of precision most frequently affects <xref:System.Single> values that are converted to <xref:System.Double> values. In the following example, two values produced by identical division operations are unequal because one of the values is a single-precision floating point value converted to a <xref:System.Double>.  
   
      [!code-csharp[System.Double.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.double.structure/cs/representation1.cs#3)]
      [!code-vb[System.Double.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.double.structure/vb/representation1.vb#3)]  

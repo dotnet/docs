@@ -44,6 +44,6 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler can process documentati
 >  If you want angle brackets to appear in the text of a documentation comment, use `<` and `>`. For example, the string `"<text in angle brackets>"` will appear as `<text in angle``brackets>`.  
   
 ## See Also  
- [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)   
- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)   
+ [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
+ [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)  
  [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

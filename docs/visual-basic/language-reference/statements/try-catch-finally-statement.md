@@ -133,7 +133,7 @@ End Try
 ## Iterators  
  An iterator function or `Get` accessor performs a custom iteration over a collection. An iterator uses a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time. You call an iterator function by using a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
- A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7) for an example.  
+ A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](../../programming-guide/concepts/iterators.md) for an example.  
   
  A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.  
   
@@ -185,10 +185,10 @@ End Try
  [!code-vb[csAsyncExceptions#3](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_8.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.Err%2A>   
- <xref:System.Exception>   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)   
- [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)   
- [Exception Handling](https://msdn.microsoft.com/library/dd997415)   
+ <xref:Microsoft.VisualBasic.Information.Err%2A>  
+ <xref:System.Exception>  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)  
+ [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)  
+ [Exception Handling](../../../standard/parallel-programming/exception-handling-task-parallel-library.md)  
  [Throw Statement](../../../visual-basic/language-reference/statements/throw-statement.md)

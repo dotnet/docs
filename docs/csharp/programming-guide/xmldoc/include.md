@@ -44,7 +44,7 @@ ms.author: "wiwagn"
 ## Example  
  This is a multifile example. The first file, which uses \<include>, is listed below:  
   
- [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
   
  The second file, xml_include_tag.doc, contains the following documentation comments:  
   
@@ -91,5 +91,5 @@ The summary for this other type.
 ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

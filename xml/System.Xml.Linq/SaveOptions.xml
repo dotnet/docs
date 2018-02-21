@@ -41,8 +41,7 @@
  The following example shows two ways to serialize. The first preserves insignificant white space in the XML tree. The second serializes the <xref:System.Xml.Linq.XElement> with formatting.  
   
 ```csharp  
-  
-                string str;  
+string str;  
 XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
   
 root.Save("Root.xml", SaveOptions.DisableFormatting);  
@@ -57,8 +56,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Dim str As String  
+Dim str As String  
 Dim root As XElement = <Root><Child> Text </Child></Root>  
   
 root.Save("Root.xml", SaveOptions.DisableFormatting)  

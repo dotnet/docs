@@ -18,6 +18,8 @@ caps.latest.revision: 90
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Typography How-to Topics
 The topics in this section describe how to use [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] support for rich presentation of text in your applications.  
@@ -34,6 +36,6 @@ The topics in this section describe how to use [!INCLUDE[TLA#tla_winclient](../.
  [Use Special Characters in XAML](../../../../docs/framework/wpf/advanced/how-to-use-special-characters-in-xaml.md)  
   
 ## See Also  
- <xref:System.Windows.Documents.Typography>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Windows.Documents.Typography>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)

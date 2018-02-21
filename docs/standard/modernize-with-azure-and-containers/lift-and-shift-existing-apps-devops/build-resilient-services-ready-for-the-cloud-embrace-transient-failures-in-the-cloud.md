@@ -1,9 +1,12 @@
 ---
-title: Build resilient services ready for the cloud. Embrace transient failures in the cloud 
-description: .NET Microservices Architecture for Containerized .NET Applications | Build resilient services ready for the cloud. Embrace transient failures in the cloud 
+title: Build resilient services ready for the cloud. Embrace transient failures in the cloud
+description: .NET Microservices Architecture for Containerized .NET Applications | Build resilient services ready for the cloud. Embrace transient failures in the cloud
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud 
 
@@ -43,18 +46,18 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 -   **Entity Framework connection resiliency and retry logic (version 6 and later)**
 
-    [https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx](https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx)
+    [https://msdn.microsoft.com/library/dn456835(v=vs.113).aspx](https://msdn.microsoft.com/library/dn456835(v=vs.113).aspx)
 
 -   **The Transient Fault Handling Application Block**
 
 <!-- -->
 
--   [https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx](https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx)
+-   [https://msdn.microsoft.com/library/hh680934(v=pandp.50).aspx](https://msdn.microsoft.com/library/hh680934(v=pandp.50).aspx)
 
 -   **Polly library for resilient HTTP communication**
 
     https://github.com/App-vNext/Polly
 
-
-> [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)  
+>[!div class="step-by-step"]
+[Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
 [Next](modernize-your-apps-with-monitoring-and-telemetry.md)

@@ -139,7 +139,7 @@ window.Modernizr = (function( window, document, undefined ) {
       // <style> elements in IE6-9 are considered 'NoScope' elements and therefore will be removed
       // when injected with innerHTML. To get around this you need to prepend the 'NoScope' element
       // with a 'scoped' element, in our case the soft-hyphen entity as it won't mess with our measurements.
-      // msdn.microsoft.com/en-us/library/ms533897%28VS.85%29.aspx
+      // msdn.microsoft.com/library/ms533897%28VS.85%29.aspx
       // Documents served as xml will throw if using &shy; so use xml friendly encoded version. See issue #277
       style = ['&#173;','<style id="s', mod, '">', rule, '</style>'].join('');
       div.id = mod;
@@ -1045,7 +1045,7 @@ window.Modernizr = (function( window, document, undefined ) {
       /** Name of the expando, to work with multiple documents or to re-shiv one document */
       var expando = '_html5shiv';
 
-      /** The id for the the documents expando */
+      /** The id for the documents expando */
       var expanID = 0;
 
       /** Cached data for each document */

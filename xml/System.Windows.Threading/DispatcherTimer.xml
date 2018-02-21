@@ -24,10 +24,6 @@
   
  A <xref:System.Windows.Threading.DispatcherTimer> will keep an object alive whenever the object's methods are bound to the timer.  
   
-<a name="xamlTextUsage_DispatcherTimer"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example creates a <xref:System.Windows.Threading.DispatcherTimer> that updates the contents of a <xref:System.Windows.Controls.Label> and calls the <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> method on the <xref:System.Windows.Input.CommandManager>.  
   
@@ -188,10 +184,6 @@
 ## Remarks  
  Timers are not guaranteed to execute exactly when the time interval occurs, but they are guaranteed to not execute before the time interval occurs.  This is because <xref:System.Windows.Threading.DispatcherTimer> operations are placed on the <xref:System.Windows.Threading.Dispatcher> queue like other operations.  When the <xref:System.Windows.Threading.DispatcherTimer> operation executes is dependent on the other jobs in the queue and their priorities.  
   
-<a name="XAMLTextUsage_Interval"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example creates a <xref:System.Windows.Threading.DispatcherTimer>.  A new <xref:System.Windows.Threading.DispatcherTimer> object named `dispatcherTimer` is created.  The event handler `dispatcherTimer_Tick` is added to the <xref:System.Windows.Threading.DispatcherTimer.Tick> event.  The <xref:System.Windows.Threading.DispatcherTimer.Interval%2A> is set to 1 second using a <xref:System.TimeSpan> object.  
   
@@ -229,10 +221,6 @@
  Calling <xref:System.Windows.Threading.DispatcherTimer.Start%2A> sets <xref:System.Windows.Threading.DispatcherTimer.IsEnabled%2A> to `true`.  
   
  Calling <xref:System.Windows.Threading.DispatcherTimer.Stop%2A> sets <xref:System.Windows.Threading.DispatcherTimer.IsEnabled%2A> to `false`.  
-  
-<a name="XAMLTextUsage_IsEnabled"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example creates a <xref:System.Windows.Threading.DispatcherTimer>.  A new <xref:System.Windows.Threading.DispatcherTimer> object named `dispatcherTimer` is created.  The event handler `dispatcherTimer_Tick` is added to the <xref:System.Windows.Threading.DispatcherTimer.Tick> event.  The <xref:System.Windows.Threading.DispatcherTimer.Interval%2A> is set to 1 second using a <xref:System.TimeSpan> object.  
@@ -327,15 +315,7 @@
       <Docs>
         <summary>Gets or sets a user-defined data object.</summary>
         <value>The user-defined data.  The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_Tag"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tick">
@@ -354,12 +334,6 @@
         <summary>Occurs when the timer interval has elapsed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Tick"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example creates a <xref:System.Windows.Threading.DispatcherTimer.Tick> event handler.  The event handler updates a <xref:System.Windows.Controls.Label> that displays the current second, and it calls <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> on the <xref:System.Windows.Input.CommandManager>.  

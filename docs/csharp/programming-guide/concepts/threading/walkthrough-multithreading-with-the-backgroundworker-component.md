@@ -279,5 +279,5 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
  This application contains some basic error handling. It detects blank search strings. You can make this program more robust by handling other errors, such as exceeding the maximum number of words or lines that can be counted.  
   
 ## See Also  
- [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
+ [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)  
  [How to: Subscribe to and Unsubscribe from Events](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)

@@ -340,9 +340,7 @@
         <param name="_Right">The number of elements to increment.</param>
         <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -373,9 +371,7 @@
         <param name="_Right">The iterator to increment.</param>
         <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the left side of the addition operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Assign">
@@ -471,9 +467,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Equals%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -501,9 +495,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Equals%28Microsoft.VisualC.StlClr.Generic.IInputIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -531,9 +523,7 @@
         <summary>Determines whether the position of the left-side iterator is greater than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -566,9 +556,7 @@
         <summary>Determines whether the position of the given left-side iterator is greater than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the given left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -591,9 +579,7 @@
         <summary>Determines whether the position of the left-side iterator is greater than or equal to the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -616,9 +602,7 @@
         <summary>Determines whether the position of the left-side iterator is greater than or equal to the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -706,9 +690,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -731,9 +713,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IInputIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -761,9 +741,7 @@
         <summary>Determines whether the position of the left-side iterator is less than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -791,9 +769,7 @@
         <summary>Determines whether the position of the left-side iterator is less than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -816,9 +792,7 @@
         <summary>Determines whether the position of the left-side iterator is less than or equal to the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -848,9 +822,7 @@
         <summary>Determines whether the position of the given left-side iterator is less than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the given left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Compare%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%2CMicrosoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%7CSystem.Runtime.CompilerServices.IsImplicitlyDereferenced%29?displayProperty=fullName>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
@@ -937,9 +909,7 @@
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1" /> to be subtracted from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" /> object.</param>
         <summary>Determines the difference between two iterators.</summary>
         <returns>The difference (number of elements) between the two iterators.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -963,9 +933,7 @@
         <param name="_Right">The number of elements to decrement.</param>
         <summary>Decrements the iterator by the given number of elements. The integer parameter is specified on the right side of the subtraction operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="prev">

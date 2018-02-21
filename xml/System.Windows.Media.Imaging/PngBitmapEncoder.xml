@@ -20,8 +20,6 @@
   
  Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
   
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
@@ -79,10 +77,6 @@
   
 ## Remarks  
  Interlacing refers to the process of displaying a [!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] frame in two fields. One field contains the even lines of the frame, and the other field contains the odd lines of the frame. When the [!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] is viewed, the lines in one field are displayed first, and then the lines in the second field are displayed.  
-  
-<a name="XAMLTextUsage_Interlace"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace%2A> property.  

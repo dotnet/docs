@@ -23,11 +23,11 @@ Square brackets (`[]`) are used for arrays, indexers, and attributes. They can a
 ## Remarks  
  An array type is a type followed by `[]`:  
   
- [!code-cs[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_1.cs)]  
+ [!code-csharp[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_1.cs)]  
   
  To access an element of an array, the index of the desired element is enclosed in brackets:  
   
- [!code-cs[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_2.cs)]  
+ [!code-csharp[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_2.cs)]  
   
  An exception is thrown if an array index is out of range.  
   
@@ -35,15 +35,15 @@ Square brackets (`[]`) are used for arrays, indexers, and attributes. They can a
   
  For example, the .NET Framework defines a `Hashtable` type that associates keys and values of arbitrary type:  
   
- [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_3.cs)]  
+ [!code-csharp[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_3.cs)]  
   
  Square brackets are also used to specify [Attributes](../../../csharp/programming-guide/concepts/attributes/index.md):  
   
- [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_4.cs)]  
+ [!code-csharp[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_4.cs)]  
   
  You can use square brackets to index off a pointer:  
   
- [!code-cs[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_5.cs)]  
+ [!code-csharp[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_5.cs)]  
   
  No bounds checking is performed.  
   
@@ -51,10 +51,10 @@ Square brackets (`[]`) are used for arrays, indexers, and attributes. They can a
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [Arrays](../../../csharp/programming-guide/arrays/index.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+ [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
  [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)

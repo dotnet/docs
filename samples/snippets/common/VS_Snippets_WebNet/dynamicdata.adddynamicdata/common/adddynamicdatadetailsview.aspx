@@ -19,12 +19,12 @@
     
     <div class="ExampleView"> 
      This example shows how to add dynamic behavior to the 
-     <code><a href="http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.detailsview.aspx" 
+     <code><a href="http://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.aspx" 
         target="_blank">System.Web.UI.WebControls.DetailsView</a></code> control by using the following types:
         <ul>
-            <li><code><a href="http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.dynamicfield.aspx" 
+            <li><code><a href="http://msdn.microsoft.com/library/system.web.dynamicdata.dynamicfield.aspx" 
                 target="_blank">System.Web.DynamicData.DynamicField</a></code></li>
-            <li><code><a href="http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.dynamicdatamanager.aspx" 
+            <li><code><a href="http://msdn.microsoft.com/library/system.web.dynamicdata.dynamicdatamanager.aspx" 
                 target="_blank">System.Web.DynamicData.DynamicDataManager</a></code></li>
         </ul>
      </div>

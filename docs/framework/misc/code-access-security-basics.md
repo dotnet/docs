@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [.NET Framework], code access security"
 ms.assetid: 4eaa6535-d9fe-41a1-91d8-b437cfc16921
@@ -19,6 +19,8 @@ caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Code Access Security Basics
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -155,12 +157,12 @@ public class MyClass {
  If you want your application to perform an operation that requires accessing unmanaged code, it should do so through a trusted managed class that wraps the required functionality (if such a class exists). Do not create a wrapper class yourself if one already exists in a secure class library. The wrapper class, which must be granted a high degree of trust to be allowed to make the call into unmanaged code, is responsible for demanding that its callers have the appropriate permissions. If you use the wrapper class, your code only needs to request and be granted the permissions that the wrapper class demands.  
   
 ## See Also  
- <xref:System.Security.PermissionSet>   
- <xref:System.Security.Permissions.FileIOPermission>   
- <xref:System.Security.NamedPermissionSet>   
- <xref:System.Security.Permissions.SecurityAction>   
- [Assert](../../../docs/framework/misc/using-the-assert-method.md)   
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)   
- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)   
- [Attributes](../../../docs/standard/attributes/index.md)   
+ <xref:System.Security.PermissionSet>  
+ <xref:System.Security.Permissions.FileIOPermission>  
+ <xref:System.Security.NamedPermissionSet>  
+ <xref:System.Security.Permissions.SecurityAction>  
+ [Assert](../../../docs/framework/misc/using-the-assert-method.md)  
+ [Code Access Security](../../../docs/framework/misc/code-access-security.md)  
+ [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)  
+ [Attributes](../../../docs/standard/attributes/index.md)  
  [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)

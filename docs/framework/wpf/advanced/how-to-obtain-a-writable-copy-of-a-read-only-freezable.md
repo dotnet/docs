@@ -20,6 +20,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Obtain a Writable Copy of a Read-Only Freezable
 This example shows how to use the <xref:System.Windows.Freezable.Clone%2A> method to create a writable copy of a read-only <xref:System.Windows.Freezable>.  
@@ -35,7 +37,7 @@ This example shows how to use the <xref:System.Windows.Freezable.Clone%2A> metho
  For more information about <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Freezable>   
- <xref:System.Windows.Freezable.CloneCurrentValue%2A>   
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)   
+ <xref:System.Windows.Freezable>  
+ <xref:System.Windows.Freezable.CloneCurrentValue%2A>  
+ [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)

@@ -26,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorElementType Enumeration1
 Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.  

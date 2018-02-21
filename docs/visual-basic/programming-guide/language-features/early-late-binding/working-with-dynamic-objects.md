@@ -23,7 +23,7 @@ Dynamic objects provide another way, other than the `Object` type, to late bind 
  If a late-bound call is made to an object that implements the `IDynamicMetaObjectProvider` interface, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] binds to the dynamic object by using that interface. If a late-bound call is made to an object that does not implement the `IDynamicMetaObjectProvider` interface, or if the call to the `IDynamicMetaObjectProvider` interface fails, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] binds to the object by using the late-binding capabilities of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] runtime.  
   
 ## See Also  
- <xref:System.Dynamic.DynamicObject>   
- <xref:System.Dynamic.ExpandoObject>   
- [Walkthrough: Creating and Using Dynamic Objects](../../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)   
+ <xref:System.Dynamic.DynamicObject>  
+ <xref:System.Dynamic.ExpandoObject>  
+ [Walkthrough: Creating and Using Dynamic Objects](../../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)  
  [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

@@ -48,7 +48,7 @@ AddHandler event, AddressOf eventhandler
  [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
   
 ## See Also  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
+ [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
+ [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
+ [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

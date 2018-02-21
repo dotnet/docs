@@ -17,7 +17,4 @@ An access value is not valid in Append mode.
   
 ## To correct this error  
   
-1.  Change the value to either `OpenAccess.Write` or `OpenAccess.Default`.  
-  
-## See Also  
- [NOTINBUILD OpenAccess Enumeration](http://msdn.microsoft.com/en-us/90e29e92-1535-4754-9951-4579ccc8eda1)
+1.  Change the value to either `OpenAccess.Write` or `OpenAccess.Default`.

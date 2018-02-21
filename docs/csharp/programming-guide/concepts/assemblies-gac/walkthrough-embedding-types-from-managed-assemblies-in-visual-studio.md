@@ -62,7 +62,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  In **Solution Explorer**, right-click the Class1.cs file and click **Rename**. Rename the file to `ISampleInterface.cs` and press ENTER. Renaming the file will also rename the class to `ISampleInterface`. This class will represent the public interface for the class.  
   
-4.  Right-click the TypeEquivalenceInterface project and click **Properties**. Click the the **Build** tab. Set the output path to a valid location on your development computer, such as `C:\TypeEquivalenceSample`. This location will also be used in a later step in this walkthrough.  
+4.  Right-click the TypeEquivalenceInterface project and click **Properties**. Click the **Build** tab. Set the output path to a valid location on your development computer, such as `C:\TypeEquivalenceSample`. This location will also be used in a later step in this walkthrough.  
   
 5.  While still editing the project properties, click the **Signing** tab. Select the **Sign the assembly** option. In the **Choose a strong name key file** list, click **<New...>**. In the **Key file name** box, type `key.snk`. Clear the **Protect my key file with a password** check box. Click **OK**.  
   
@@ -237,7 +237,7 @@ If you embed type information from a strong-named managed assembly, you can loos
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
 ## See Also  
- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
+ [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

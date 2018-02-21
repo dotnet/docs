@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
 caps.latest.revision: 9
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Authentication in SQL Server
 [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] supports two authentication modes, Windows authentication mode and mixed mode.  
@@ -85,8 +87,8 @@ manager: "jhubbard"
 |[Principals](http://msdn.microsoft.com/library/bb543165.aspx) in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online|Describes logins and other security principals in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)].|  
   
 ## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)   
- [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)   
- [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)   
+ [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
+ [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
+ [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

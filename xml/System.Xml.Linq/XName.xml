@@ -45,23 +45,20 @@
  <xref:System.Xml.Linq.XName> does not contain any public constructors. Instead, this class provides an implicit conversion from <xref:System.String> that allows you to create an <xref:System.Xml.Linq.XName>. The most common place you use this conversion is when constructing an element or attribute: The first argument to the <xref:System.Xml.Linq.XElement> constructor is an <xref:System.Xml.Linq.XName>. By passing a string, you take advantage of the implicit conversion. The following code creates an element with a name that is in no namespace:  
   
 ```csharp  
-  
-                XElement root = new XElement("ElementName", "content");  
+XElement root = new XElement("ElementName", "content");  
 Console.WriteLine(root);  
 ```  
   
  In Visual Basic, it is more appropriate to use XML literals:  
   
 ```vb  
-  
-                Dim root As XElement = <ElementName>content</ElementName>  
+Dim root As XElement = <ElementName>content</ElementName>  
 Console.WriteLine(root)  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
 <ElementName>content</ElementName>  
 ```  
   
@@ -79,15 +76,13 @@ Console.WriteLine(root)
  For Visual Basic, the recommended approach is to use XML literals and global namespace declarations to create XML that is in a namespace.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "ElementName", "content");  
 Console.WriteLine(root);  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -100,7 +95,6 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
   
@@ -108,8 +102,7 @@ End Module
  The <xref:System.Xml.Linq.XName.Namespace%2A> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace%2A> property will be set to <xref:System.Xml.Linq.XNamespace.None%2A>. The following code demonstrates this:  
   
 ```csharp  
-  
-                XElement root = new XElement("ElementName", "content");  
+XElement root = new XElement("ElementName", "content");  
 if (root.Name.Namespace == XNamespace.None)  
     Console.WriteLine("The element is in no namespace.");  
 else  
@@ -117,8 +110,7 @@ else
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <ElementName>content</ElementName>  
+Dim root As XElement = <ElementName>content</ElementName>  
 If (root.Name.Namespace Is XNamespace.None) Then  
     Console.WriteLine("The element is in no namespace.")  
 Else  
@@ -136,21 +128,18 @@ The element is in no namespace.
  You can also create an <xref:System.Xml.Linq.XName> from a expanded XML name in the form `{namespace}localname`:  
   
 ```csharp  
-  
-                XElement root = new XElement("{http://www.adventure-works.com}ElementName", "content");  
+XElement root = new XElement("{http://www.adventure-works.com}ElementName", "content");  
 Console.WriteLine(root);  
 ```  
   
 ```vb  
-  
-                Dim root As XElement = New XElement("{http://www.adventure-works.com}ElementName", "content")  
+Dim root As XElement = New XElement("{http://www.adventure-works.com}ElementName", "content")  
 Console.WriteLine(root)  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
   
@@ -280,8 +269,7 @@ Console.WriteLine(root)
  The following example shows the use of this method.  
   
 ```csharp  
-  
-                XName name = XName.Get("{http://www.adventure-works.com}Root");  
+XName name = XName.Get("{http://www.adventure-works.com}Root");  
 XElement el = new XElement(name, "content");  
 Console.WriteLine(el);  
   
@@ -293,8 +281,7 @@ Console.WriteLine(el2);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -369,8 +356,7 @@ End Module
  The following example shows the use of this method.  
   
 ```csharp  
-  
-                XName name = XName.Get("Root", "http://www.adventure-works.com");  
+XName name = XName.Get("Root", "http://www.adventure-works.com");  
 XElement el = new XElement(name, "content");  
 Console.WriteLine(el);  
   
@@ -381,8 +367,7 @@ Console.WriteLine(el2);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -484,8 +469,7 @@ End Module
  The following example shows the use of this property.  
   
 ```csharp  
-  
-                XNamespace ns = "http://www.adventure-works.com";  
+XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  
@@ -493,8 +477,7 @@ Console.WriteLine(root.Name.Namespace);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -557,8 +540,7 @@ http://www.adventure-works.com
  The following example shows the use of this property.  
   
 ```csharp  
-  
-                XNamespace ns = "http://www.adventure-works.com";  
+XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  
@@ -566,8 +548,7 @@ Console.WriteLine(root.Name.Namespace);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -629,15 +610,13 @@ http://www.adventure-works.com
  This example creates an element in a namespace, and then prints the element's namespace.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root.Name.NamespaceName);  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -696,14 +675,11 @@ http://www.adventure-works.com
 ## Remarks  
  The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a `string`, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example shows some comparisons between <xref:System.Xml.Linq.XName> objects and strings.  
   
 ```csharp  
-  
-                XName xn;  
+XName xn;  
 xn = XName.Get("Root");  
 Console.WriteLine(xn == "Root");  
   
@@ -715,8 +691,7 @@ Console.WriteLine(root.Name == "Root");
 ```  
   
 ```vb  
-  
-                Dim xn As XName  
+Dim xn As XName  
 xn = XName.Get("Root")  
 Console.WriteLine(xn = "Root")  
   
@@ -780,14 +755,11 @@ True
 ## Remarks  
  You are using this implicit operator when you create an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> by passing a string to the appropriate constructor.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example creates an <xref:System.Xml.Linq.XName> by assigning a string to it, which invokes this implicit conversion operator.  
   
 ```csharp  
-  
-                XElement el = new XElement("{http://www.adventure-works.com}Root", "content");  
+XElement el = new XElement("{http://www.adventure-works.com}Root", "content");  
 Console.WriteLine(el);  
   
 // The preferred approach is to initialize an XNamespace object  
@@ -798,8 +770,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -864,14 +835,11 @@ End Module
 ## Remarks  
  The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a string, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following C# example compares an <xref:System.Xml.Linq.XName> object to a string, which invokes this operator.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root", "content");  
   
 Console.WriteLine(root.Name != "{http://www.adventure-works.com}Root");  
@@ -881,8 +849,7 @@ Console.WriteLine(root.Name != aw + "Root");
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1013,8 +980,7 @@ False
  The following example calls <xref:System.Console.WriteLine%2A>, passing an <xref:System.Xml.Linq.XName>. This causes the <xref:System.Xml.Linq.XName.ToString%2A> method to be called.  
   
 ```csharp  
-  
-                XNamespace ns = "http://www.adventure-works.com";  
+XNamespace ns = "http://www.adventure-works.com";  
 XElement root = new XElement(ns + "Root", "content");  
 Console.WriteLine(root.Name);  
 Console.WriteLine(root.Name.LocalName);  

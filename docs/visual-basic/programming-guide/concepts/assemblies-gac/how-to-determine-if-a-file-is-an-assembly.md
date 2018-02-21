@@ -15,7 +15,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ---
 # How to: Determine If a File Is an Assembly (Visual Basic)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](https://msdn.microsoft.com/library/1w45z383).  
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../../../../framework/app-domains/assembly-manifest.md).  
   
 ## How to manually determine if a file is an assembly  
   
@@ -58,6 +58,6 @@ End Module
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
 ## See Also  
- <xref:System.Reflection.AssemblyName>   
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
+ <xref:System.Reflection.AssemblyName>  
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
  [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)

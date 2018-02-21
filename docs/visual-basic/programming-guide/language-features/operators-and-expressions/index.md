@@ -69,6 +69,6 @@ An *operator* is a code element that performs an operation on one or more code e
  For more information and examples, see [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703).  
   
 ## See Also  
- [Operators](../../../../visual-basic/language-reference/operators/index.md)   
- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)   
+ [Operators](../../../../visual-basic/language-reference/operators/index.md)  
+ [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)  
  [Statements](../../../../visual-basic/language-reference/statements/index.md)

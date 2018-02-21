@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::GetMemoryLoad Method
 Gets the amount of physical memory that is currently in use, and therefore unavailable, as reported by the host.  
@@ -73,5 +75,5 @@ HRESULT GetMemoryLoad (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.GC?displayProperty=nameWithType>   
+ <xref:System.GC?displayProperty=nameWithType>  
  [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

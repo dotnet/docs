@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Resize Rows with a GridSplitter
 This example shows how to use a horizontal <xref:System.Windows.Controls.GridSplitter> to redistribute the space between two rows in a <xref:System.Windows.Controls.Grid> without changing the dimensions of the <xref:System.Windows.Controls.Grid>.  
@@ -43,5 +45,5 @@ This example shows how to use a horizontal <xref:System.Windows.Controls.GridSpl
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireRowPart2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirerowpart2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.GridSplitter>   
+ <xref:System.Windows.Controls.GridSplitter>  
  [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

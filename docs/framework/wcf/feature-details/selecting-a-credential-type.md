@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Selecting a Credential Type
 *Credentials* are the data [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], and how to select the right credential for your application.  
@@ -59,7 +61,7 @@ manager: "erikre"
 >  When SSL security is used with .NET Framework 3.5 and later, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
   
 #### Out-of-Band Negotiation  
- If automatic negotiation is disabled, the service credential must be provisioned at the client prior to sending any messages to the service. This is also known as an *out-of-band* provisioning. For example, if the specified credential type is a certificate, and automatic negotiation is disabled, the client must contact the service owner to receive and install the certificate on the computer running the client application. This can be done, for example, when you want to strictly control which clients can access a service in a business-to-business scenario. This out-of-band-negotiation can be done in e-mail, and the X.509 certificate is stored in Windows certificate store, using a tool such as the Microsoft Management Console (MMC) Certificates snap-in.  
+ If automatic negotiation is disabled, the service credential must be provisioned at the client prior to sending any messages to the service. This is also known as an *out-of-band* provisioning. For example, if the specified credential type is a certificate, and automatic negotiation is disabled, the client must contact the service owner to receive and install the certificate on the computer running the client application. This can be done, for example, when you want to strictly control which clients can access a service in a business-to-business scenario. This out-of-band-negotiation can be done in email, and the X.509 certificate is stored in Windows certificate store, using a tool such as the Microsoft Management Console (MMC) Certificates snap-in.  
   
 > [!NOTE]
 >  The <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property is used to provide the service with a certificate that was attained through out-of-band negotiation. This is necessary when using the <xref:System.ServiceModel.BasicHttpBinding> class because the binding does not allow automated negotiation. The property is also used in an uncorrelated duplex scenario. This is a scenario where a server sends a message to the client without requiring the client to send a request to the server first. Because the server does not have a request from the client, it must use the client's certificate to encrypt the message to the client.  
@@ -104,19 +106,19 @@ manager: "erikre"
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
   
 ## See Also  
- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>   
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.MessageSecurityOverMsmq.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>   
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>   
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)   
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)   
+ <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.MessageSecurityOverMsmq.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>  
+ [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
+ [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)  
  [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

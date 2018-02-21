@@ -23,6 +23,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Remotely Survey the Status of Printers
 At any given time at medium and large companies there may be multiple printers that are not working due to a paper jam or being out of paper or some other problematic situation. The rich set of printer properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provide a means for performing a rapid survey of the states of printers.  
@@ -80,16 +82,16 @@ At any given time at medium and large companies there may be multiple printers t
  [!code-vb[PrinterStatusSurvey#UsingStartAndUntilTimes](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#usingstartanduntiltimes)]  
   
 ## See Also  
- <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>   
- <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>   
- <xref:System.DateTime>   
- <xref:System.Printing.PrintQueueStatus>   
- <xref:System.FlagsAttribute>   
- <xref:System.Printing.PrintServer.GetPrintQueues%2A>   
- <xref:System.Printing.PrintServer>   
- <xref:System.Printing.LocalPrintServer>   
- <xref:System.Printing.EnumeratedPrintQueueTypes>   
- <xref:System.Printing.PrintQueue>   
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>  
+ <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>  
+ <xref:System.DateTime>  
+ <xref:System.Printing.PrintQueueStatus>  
+ <xref:System.FlagsAttribute>  
+ <xref:System.Printing.PrintServer.GetPrintQueues%2A>  
+ <xref:System.Printing.PrintServer>  
+ <xref:System.Printing.LocalPrintServer>  
+ <xref:System.Printing.EnumeratedPrintQueueTypes>  
+ <xref:System.Printing.PrintQueue>  
+ [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

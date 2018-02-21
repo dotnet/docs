@@ -17,7 +17,7 @@ namespace A
 				ImportedFromTypeLibAttribute imptlb = ( ImportedFromTypeLibAttribute )AsmAttributes[0];
 				string strImportedFrom  = imptlb.Value;
 				    
-				// Print out the the name of the DLL from which the assembly is imported.
+				// Print out the name of the DLL from which the assembly is imported.
 				Console.WriteLine( "Assembly " + a.FullName + " is imported from " + strImportedFrom );
 			
 				return true;

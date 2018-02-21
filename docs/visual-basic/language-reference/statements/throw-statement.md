@@ -57,5 +57,5 @@ Throw [ expression ]
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See Also  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
+ [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
  [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)

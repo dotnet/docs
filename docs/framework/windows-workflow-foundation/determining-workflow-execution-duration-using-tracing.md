@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f04ad0fd-edc7-4cbc-8979-356f2a1131c4
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Determining Workflow Execution Duration Using Tracing
 This topic demonstrates how to determine the time it takes for a successfully completed, self-hosted workflow to execute by using workflow tracing.  
@@ -37,6 +39,6 @@ This topic demonstrates how to determine the time it takes for a successfully co
  **WorkflowInstance Id: '1bbac57b-3322-498e-9e27-8833fda3a5bf' has completed in the Closed state.**  
   
 ## See Also  
- [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)   
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)   
+ [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)  
+ [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
  [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

@@ -42,6 +42,6 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler performs a process call
 >  Late binding can only be used to access type members that are declared as `Public`. Accessing members declared as `Friend` or `Protected Friend` results in a run-time error.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>   
- [Object Lifetime: How Objects Are Created and Destroyed](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)   
+ <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>  
+ [Object Lifetime: How Objects Are Created and Destroyed](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)

@@ -22,26 +22,26 @@ An event is a special kind of multicast delegate that can only be invoked from w
 ## Example  
  The following example shows how to implement custom add and remove event accessors. Although you can substitute any code inside the accessors, we recommend that you lock the event before you add or remove a new event handler method.  
   
-```  
+```csharp
 event EventHandler IDrawingObject.OnDraw  
+{  
+    add  
+    {  
+        lock (PreDrawEvent)  
         {  
-            add  
-            {  
-                lock (PreDrawEvent)  
-                {  
-                    PreDrawEvent += value;  
-                }  
-            }  
-            remove  
-            {  
-                lock (PreDrawEvent)  
-                {  
-                    PreDrawEvent -= value;  
-                }  
-            }  
+            PreDrawEvent += value;  
         }  
+    }  
+    remove  
+    {  
+        lock (PreDrawEvent)  
+        {  
+            PreDrawEvent -= value;  
+        }  
+    }  
+}  
 ```  
   
 ## See Also  
- [Events](../../../csharp/programming-guide/events/index.md)   
+ [Events](../../../csharp/programming-guide/events/index.md)  
  [event](../../../csharp/language-reference/keywords/event.md)

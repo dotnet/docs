@@ -1,5 +1,5 @@
 ---
-title: "Parallel Programming in the .NET Framework"
+title: "Parallel Programming in .NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -15,8 +15,11 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# Parallel Programming in the .NET Framework
+# Parallel Programming in .NET
 Many personal computers and workstations have two or four cores (that is, CPUs) that enable multiple threads to be executed simultaneously. Computers in the near future are expected to have significantly more cores. To take advantage of the hardware of today and tomorrow, you can parallelize your code to distribute work across multiple processors. In the past, parallelization required low-level manipulation of threads and locks. [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] enhance support for parallel programming by providing a new runtime, new class library types, and new diagnostic tools. These features simplify parallel development so that you can write efficient, fine-grained, and scalable parallel code in a natural idiom without having to work directly with threads or the thread pool. The following illustration provides a high-level overview of the parallel programming architecture in the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
  ![.NET Parallel Programming Architecture](../../../docs/standard/parallel-programming/media/tpl-architecture.png "TPL_Architecture")  
@@ -35,5 +38,5 @@ Many personal computers and workstations have two or four cores (that is, CPUs) 
 |[For Further Reading](../../../docs/standard/parallel-programming/for-further-reading-parallel-programming.md)|Provides links to additional documentation and sample resources for parallel programming in the .NET Framework.|  
   
 ## See Also  
- [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)   
+ [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)  
  [Samples for Parallel Programming with the .NET Framework](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

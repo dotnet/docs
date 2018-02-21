@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Clipping with a Region
 One of the properties of the <xref:System.Drawing.Graphics> class is the clip region. All drawing done by a given <xref:System.Drawing.Graphics> object is restricted to the clip region of that <xref:System.Drawing.Graphics> object. You can set the clip region by calling the <xref:System.Drawing.Graphics.SetClip%2A> method.  
@@ -38,5 +40,5 @@ One of the properties of the <xref:System.Drawing.Graphics> class is the clip re
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)   
+ [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)  
  [Using Regions](../../../../docs/framework/winforms/advanced/using-regions.md)

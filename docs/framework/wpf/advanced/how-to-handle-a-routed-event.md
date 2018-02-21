@@ -20,6 +20,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle a Routed Event
 This example shows how bubbling events work and how to write a handler that can process the routed event data.  
@@ -41,8 +43,8 @@ This example shows how bubbling events work and how to write a handler that can 
  [!code-vb[RoutedEventHandle#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
   
 ## See Also  
- <xref:System.Windows.RoutedEvent>   
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)   
+ <xref:System.Windows.RoutedEvent>  
+ [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)  
  [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)

@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectMo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitSwitch(System.Linq.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -37,7 +37,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collect
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -63,7 +63,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitParameter(System.Linq.Expres
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -269,7 +269,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expre
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -304,7 +304,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitConstant(System.Linq.Express
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -312,7 +312,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitMember(System.Linq.Expressio
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -329,7 +329,7 @@ uid: System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(``0,System.Str
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

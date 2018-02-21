@@ -20,6 +20,8 @@ caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Building and Deploying WPF Applications
 The build and deployment model provides the capability to build and deploy applications locally and remotely, including the following:  

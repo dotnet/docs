@@ -17,7 +17,4 @@ An access value is not valid in `Input` mode.
   
 ## To correct this error  
   
--   Change the value to either `OpenAccess.Read` or `OpenAccess.Default`.  
-  
-## See Also  
- [NOTINBUILD OpenAccess Enumeration](http://msdn.microsoft.com/en-us/90e29e92-1535-4754-9951-4579ccc8eda1)
+-   Change the value to either `OpenAccess.Read` or `OpenAccess.Default`.

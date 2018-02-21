@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Paint an Area with a Video
 This example shows how to paint an area with media. One way to paint an area with media is to use a <xref:System.Windows.Controls.MediaElement> together with a <xref:System.Windows.Media.VisualBrush>. Use the <xref:System.Windows.Controls.MediaElement> to load and play the media, and then use it to set the <xref:System.Windows.Media.VisualBrush.Visual%2A> property of the <xref:System.Windows.Media.VisualBrush>. You can then use the <xref:System.Windows.Media.VisualBrush> to paint an area with the loaded media.  
@@ -44,7 +46,7 @@ This example shows how to paint an area with media. One way to paint an area wit
  For information about how to add a content file, such as a media file, to your application, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md). When you add a media file, you must add it as a content file, not as a resource file.  
   
 ## See Also  
- <xref:System.Windows.Media.VisualBrush>   
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)   
- [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)   
+ <xref:System.Windows.Media.VisualBrush>  
+ [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
+ [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)  
  [Multimedia Overview](../../../../docs/framework/wpf/graphics-multimedia/multimedia-overview.md)

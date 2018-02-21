@@ -34,7 +34,7 @@
   
  It is not legal to define an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> that is empty or that contains only white space.  
   
- This class represents the `rule` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `rule` element and details about its support by System.Speech, see [rule Element](http://msdn.microsoft.com/en-us/da67b4aa-0545-426a-a02f-1417b968021e).  
+ This class represents the `rule` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `rule` element and details about its support by System.Speech, see [rule Element](http://msdn.microsoft.com/library/da67b4aa-0545-426a-a02f-1417b968021e).  
   
  ]]></format>
     </remarks>
@@ -257,9 +257,9 @@ public void WorldSoccerWinners ()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typical additions to an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object include <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> objects that specify what speakers can say. A valid rule element must contain at least one piece of recognizable text or one rule reference. See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/en-us/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) for more information.  
+ Typical additions to an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object include <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> objects that specify what speakers can say. A valid rule element must contain at least one piece of recognizable text or one rule reference. See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/library/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) for more information.  
   
- An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object may also contain <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects that add semantic values and semantic keys to the rule. The speech recognition engine will return the semantic information, as well as the recognized phrase, when it recognizes the phrase. See [Semantic Interpretation Markup](http://msdn.microsoft.com/en-us/2e115391-73b3-4666-8fd1-540c529de3b0) for more information.  
+ An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object may also contain <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects that add semantic values and semantic keys to the rule. The speech recognition engine will return the semantic information, as well as the recognized phrase, when it recognizes the phrase. See [Semantic Interpretation Markup](http://msdn.microsoft.com/library/2e115391-73b3-4666-8fd1-540c529de3b0) for more information.  
   
    
   

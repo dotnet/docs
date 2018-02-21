@@ -18,6 +18,8 @@ caps.latest.revision: 86
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Documents
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience. In addition to enhanced capabilities and quality, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also provides simplified management services for document packaging, security, and storage.  
@@ -31,7 +33,7 @@ manager: "wpickett"
  [Printing and Print System Management](../../../../docs/framework/wpf/advanced/printing-and-print-system-management.md)  
   
 ## See Also  
- <xref:System.Windows.Controls.DocumentViewer>   
- <xref:System.Windows.Documents.FlowDocument>   
- <xref:System.Windows.Xps>   
+ <xref:System.Windows.Controls.DocumentViewer>  
+ <xref:System.Windows.Documents.FlowDocument>  
+ <xref:System.Windows.Xps>  
  [isXPS.exe (isXPS Conformance Tool)](http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3)

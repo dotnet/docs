@@ -32,7 +32,7 @@
 ## Remarks  
  <xref:System.UnhandledExceptionEventArgs> provides access to the exception object and a flag indicating whether the common language runtime is terminating. The <xref:System.UnhandledExceptionEventArgs> is one of the parameters passed into <xref:System.UnhandledExceptionEventHandler> for the <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event.  
   
- For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about event handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
     </remarks>

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_EX_CLAUSE_INFO Structure
 Stores information about a specific exception clause instance and its associated frame.  

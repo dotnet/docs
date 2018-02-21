@@ -22,11 +22,13 @@ caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Control Styles and Templates
 Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. You can change the structure and appearance of a control by modifying the <xref:System.Windows.Controls.ControlTemplate> of that control. There is no way to replace only part of the visual tree of a control; to change the visual tree of a control you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.  
   
- The desktop themes determine which resource dictionary is used. The desktop themes determine which resource dictionary is used. To get the resource dictionaries for the desktop themes, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ The desktop themes determine which resource dictionary is used. To get the resource dictionaries for the desktop themes, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
  The following table describes the resource dictionary file names and their corresponding desktop themes.  
   
@@ -46,7 +48,7 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
  [ComboBox Styles and Templates](../../../../docs/framework/wpf/controls/combobox-styles-and-templates.md)  
  [ContextMenu Styles and Templates](../../../../docs/framework/wpf/controls/contextmenu-styles-and-templates.md)  
  [DataGrid Styles and Templates](../../../../docs/framework/wpf/controls/datagrid-styles-and-templates.md)  
- [DatePicker Syles and Templates](../../../../docs/framework/wpf/controls/datepicker-styles-and-templates.md)  
+ [DatePicker Styles and Templates](../../../../docs/framework/wpf/controls/datepicker-styles-and-templates.md)  
  [DocumentViewer Styles and Templates](../../../../docs/framework/wpf/controls/documentviewer-styles-and-templates.md)  
  [Expander Styles and Templates](../../../../docs/framework/wpf/controls/expander-styles-and-templates.md)  
  [Frame Styles and Templates](../../../../docs/framework/wpf/controls/frame-styles-and-templates.md)  
@@ -56,18 +58,18 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
  [ListView Styles and Templates](../../../../docs/framework/wpf/controls/listview-styles-and-templates.md)  
  [Menu Styles and Templates](../../../../docs/framework/wpf/controls/menu-styles-and-templates.md)  
  [NavigationWindow Styles and Templates](../../../../docs/framework/wpf/controls/navigationwindow-styles-and-templates.md)  
- [PasswordBox Syles and Templates](../../../../docs/framework/wpf/controls/passwordbox-syles-and-templates.md)  
+ [PasswordBox Styles and Templates](../../../../docs/framework/wpf/controls/passwordbox-syles-and-templates.md)  
  [ProgressBar Styles and Templates](../../../../docs/framework/wpf/controls/progressbar-styles-and-templates.md)  
  [RadioButton Styles and Templates](../../../../docs/framework/wpf/controls/radiobutton-styles-and-templates.md)  
- [RepeatButton Syles and Templates](../../../../docs/framework/wpf/controls/repeatbutton-syles-and-templates.md)  
+ [RepeatButton Styles and Templates](../../../../docs/framework/wpf/controls/repeatbutton-syles-and-templates.md)  
  [ScrollBar Styles and Templates](../../../../docs/framework/wpf/controls/scrollbar-styles-and-templates.md)  
  [ScrollViewer Styles and Templates](../../../../docs/framework/wpf/controls/scrollviewer-styles-and-templates.md)  
  [Slider Styles and Templates](../../../../docs/framework/wpf/controls/slider-styles-and-templates.md)  
  [StatusBar Styles and Templates](../../../../docs/framework/wpf/controls/statusbar-styles-and-templates.md)  
  [TabControl Styles and Templates](../../../../docs/framework/wpf/controls/tabcontrol-styles-and-templates.md)  
  [TextBox Styles and Templates](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)  
- [Thumb Syles and Templates](../../../../docs/framework/wpf/controls/thumb-syles-and-templates.md)  
- [ToggleButton Syles and Templates](../../../../docs/framework/wpf/controls/togglebutton-syles-and-templates.md)  
+ [Thumb Styles and Templates](../../../../docs/framework/wpf/controls/thumb-syles-and-templates.md)  
+ [ToggleButton Styles and Templates](../../../../docs/framework/wpf/controls/togglebutton-syles-and-templates.md)  
  [ToolBar Styles and Templates](../../../../docs/framework/wpf/controls/toolbar-styles-and-templates.md)  
  [ToolTip Styles and Templates](../../../../docs/framework/wpf/controls/tooltip-styles-and-templates.md)  
  [TreeView Styles and Templates](../../../../docs/framework/wpf/controls/treeview-styles-and-templates.md)  

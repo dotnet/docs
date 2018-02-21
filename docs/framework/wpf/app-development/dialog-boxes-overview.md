@@ -22,6 +22,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Dialog Boxes Overview
 Standalone applications typically have a main window that both displays the main data over which the application operates and exposes the functionality to process that data through [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] mechanisms like menu bars, tool bars, and status bars. A non-trivial application may also display additional windows to do the following:  
@@ -351,6 +353,6 @@ Standalone applications typically have a main window that both displays the main
 [!code-vb[DialogBoxSample#FindDialogCloseCODEBEHIND2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/FindDialogBox.xaml.vb#finddialogclosecodebehind2)]  
   
 ## See Also  
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)   
- [Dialog Box Sample](http://go.microsoft.com/fwlink/?LinkID=159984)   
+ [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)  
+ [Dialog Box Sample](http://go.microsoft.com/fwlink/?LinkID=159984)  
  [ColorPicker Custom Control Sample](http://go.microsoft.com/fwlink/?LinkID=159977)

@@ -19,6 +19,8 @@ caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DockPanel
 The <xref:System.Windows.Controls.DockPanel> element is used to position child content along the edge of a layout container.  

@@ -4,28 +4,12 @@
 using namespace System;
 using namespace System::Collections::Generic;
 
-ref class SameVehicleComparer : public EqualityComparer<String^>
-{
-public:
-    virtual bool Equals(String^ s1, String^ s2) override
-    {
-        return s1->Equals(s2, StringComparison::CurrentCultureIgnoreCase);
-    }
-
-
-    virtual int GetHashCode(String^ s) override
-    {
-        return this->GetHashCode();
-    }
-};
-
 ref class Program
 {
 public:
     static void Main()
     {
-        SameVehicleComparer^ compareVehicles = gcnew SameVehicleComparer();
-        HashSet<String^> ^allVehicles = gcnew HashSet<String^>(compareVehicles);
+        HashSet<String^> ^allVehicles = gcnew HashSet<String^>(StringComparer::OrdinalIgnoreCase);
         List<String^>^ someVehicles = gcnew List<String^>();
 
         someVehicles->Add("Planes");
@@ -61,7 +45,7 @@ public:
             Console::WriteLine("'Some' vechicles list.");
         }
 
-        // Check for Rockets. Here the SameVehicleComparer will compare
+        // Check for Rockets. Here the OrdinalIgnoreCase comparer will compare
         // true for the mixed-case vehicle type.
         if (allVehicles->Contains("roCKeTs"))
         {

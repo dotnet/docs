@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # CheckBox Control (Windows Forms)
 The Windows Forms `CheckBox` control indicates whether a particular condition is on or off. It is commonly used to present a Yes/No or True/False selection to the user. You can use check box controls in groups to display multiple choices from which the user can select one or more. It is similar to the <xref:System.Windows.Forms.RadioButton> control, but any number of grouped `CheckBox` controls may be selected.  

@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "privacy information [WCF]"
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Privacy Information
 Microsoft is committed to protecting end-users' privacy. When you build an application using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
@@ -408,5 +410,5 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The Web Services Description Language (WSDL) contains a definition of the port. Each port has an endpoint address and a binding that represents the services used by the application. Exposing WSDL can be turned off using configuration. No information is retained on the machine.  
   
 ## See Also  
- [Windows Communication Foundation](http://msdn.microsoft.com/en-us/fd327ade-0260-4c40-adbe-b74645ba3277)   
+ [Windows Communication Foundation](http://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)  
  [Security](../../../docs/framework/wcf/feature-details/security.md)

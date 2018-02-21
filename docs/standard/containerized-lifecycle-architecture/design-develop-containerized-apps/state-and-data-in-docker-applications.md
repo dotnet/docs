@@ -1,10 +1,13 @@
 ---
-title: State and data in Docker applications | Microsoft Docs 
+title: State and data in Docker applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # State and data in Docker applications
 
@@ -24,7 +27,7 @@ To manage persistent data in Docker applications, there are common solutions:
 
 -   **Remote data sources** Examples include SQL and NO-SQL databases or cache services like Redis.
 
--   [**Azure Storage**](https://azure.microsoft.com/en-us/documentation/services/storage/) This provides geo distributable platform as a service (PaaS) storage, providing the best of containers as long-term persistence.
+-   [**Azure Storage**](https://docs.microsoft.com/azure/storage/) This provides geo distributable platform as a service (PaaS) storage, providing the best of containers as long-term persistence.
 
 Data volumes are specially designated directories within one or more containers that bypass the [Union File System](https://docs.docker.com/v1.8/reference/glossary#union-file-system). Data volumes are designed to maintain data, independent of the container's life cycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer referenced by a container. The host operating system can browse and edit the data in any volume freely, which is just another reason to use data volumes sparingly.
 

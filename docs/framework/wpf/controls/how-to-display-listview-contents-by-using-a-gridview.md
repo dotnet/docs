@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display ListView Contents by Using a GridView
 This example shows how to define a <xref:System.Windows.Controls.GridView> view mode for a <xref:System.Windows.Controls.ListView> control.  
@@ -31,8 +33,8 @@ This example shows how to define a <xref:System.Windows.Controls.GridView> view 
  ![ListView with GridView output](../../../../docs/framework/wpf/controls/media/listviewgridview.JPG "ListViewGridView")  
   
 ## See Also  
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)   
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
+ [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

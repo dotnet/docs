@@ -18,6 +18,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # GroupBox Control (Windows Forms)
 Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to provide an identifiable grouping for other controls. Typically, you use group boxes to subdivide a form by function. For example, you may have an order form that specifies mailing options such as which overnight carrier to use. Grouping all options in a group box gives the user a logical visual cue. The <xref:System.Windows.Forms.GroupBox> control is similar to the <xref:System.Windows.Forms.Panel> control; however, only the <xref:System.Windows.Forms.GroupBox> control displays a caption, and only the <xref:System.Windows.Forms.Panel> control can have scroll bars.  

@@ -1,11 +1,14 @@
 ---
-title: Developing ASP.NET Core MVC Apps  
+title: Developing ASP.NET Core MVC Apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Develop ASP.NET Core MVC Apps
@@ -23,7 +26,7 @@ At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At 
 
 ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Conventional routes are defined in code, specifying routing *conventions* using syntax like in the example below:
 
-```cs
+```csharp
 app.UseMvc(routes =>;
 {
     routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
@@ -34,7 +37,7 @@ In this example, a route named "default" has been added to the routing table. It
 
 Attribute routes are applied to controllers and actions directly, rather than specified globally. This has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
 
-```cs
+```csharp
 [Route("Home")]
 public class HomeController : Controller
 {
@@ -46,7 +49,7 @@ public class HomeController : Controller
 
 Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
 
-```cs
+```csharp
 [Route("[controller\]")]
 public class ProductsController : Controller
 {
@@ -86,7 +89,7 @@ Many developers understand the risks of static cling and global state, but will 
 
 ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in a Startup class, which itself is configured to support dependency injection at several points. If your Startup class has a constructor, it can request dependencies through the constructor, like so:
 
-```cs
+```csharp
 public class Startup
 {
     public Startup(IHostingEnvironment env)
@@ -103,7 +106,7 @@ The Startup class is interesting in that there are no explicit type requirements
 
 Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn't stop there for the Startup class. You can also request dependencies in the Configure method:
 
-```cs
+```csharp
 public void Configure(IApplicationBuilder app,
     IHostingEnvironment env,
     ILoggerFactory loggerFactory)
@@ -145,7 +148,7 @@ Figure 7-1 Sample Area Organization
 
 When using Areas, you must use attributes to decorate your controllers with the name of the area to which they belong:
 
-```cs
+```csharp
 [Area("Catalog")]
 public class HomeController
 {}
@@ -153,7 +156,7 @@ public class HomeController
 
 You also need to add area support to your routes:
 
-```cs
+```csharp
 app.UseMvc(routes =>
 {
     // Areas support
@@ -170,7 +173,7 @@ In addition to the built-in support for Areas, you can also use your own folder 
 
 ASP.NET Core uses built-in convention types to control its behavior. You can modify or replace these conventions. For example, you can create a convention that will automatically get the feature name for a given controller based on its namespace (which typically correlates to the folder in which the controller is located):
 
-```cs
+```csharp
 FeatureConvention : IControllerModelConvention
 {
     public void Apply(ControllerModel controller)
@@ -196,7 +199,7 @@ FeatureConvention : IControllerModelConvention
 
 You then specify this convention as an option when you add support for MVC to your application in ConfigureServices:
 
-```cs
+```csharp
 services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 ```
 
@@ -212,7 +215,7 @@ Figure 7-2 Request execution through filters and request pipeline.
 
 Filters are usually implemented as attributes, so you can apply them controllers or actions. When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
-```cs
+```csharp
 [Authorize]
 public class AccountController : Controller
 
@@ -227,7 +230,7 @@ The first method, Login, uses the AllowAnonymous filter (attribute) to override 
 
 Filters can be used to eliminate duplication in the form of common error handling policies for APIs. For example, a typical API policy is to return a NotFound response to requests referencing keys that do not exist, and a BadRequest response if model validation fails. The following example demonstrates these two policies in action:
 
-```cs
+```csharp
 [HttpPut("{id}")]
 public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
@@ -247,7 +250,7 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 Don't allow your action methods to become cluttered with conditional code like this. Instead, pull the policies into filters that can be applied on an as-needed basis. In this example, the model validation check, which should occur any time a command is sent to the API, can be replaced by the following attribute:
 
-```cs
+```csharp
 public class ValidateModelAttribute : ActionFilterAttribute
 {
     public override void OnActionExecuting(ActionExecutingContext context)
@@ -262,11 +265,11 @@ public class ValidateModelAttribute : ActionFilterAttribute
 
 Likewise, a filter can be used to check if a record exists and return a 404 before the action is executed, eliminating the need to perform these checks in the action. Once you've pulled out common conventions and organized your solution to separate infrastructure code and business logic from your UI, your MVC action methods should be extremely thin:
 
-```cs
-// PUT api/authors2/5
+```csharp
+// PUT api/authors/2/5
 [HttpPut("{id}")]
-[ValidateAuthorExists\]
-public async Task&lt;IActionResult&gt; Put(int id, [FromBody]Author author)
+[ValidateAuthorExists]
+public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
     await _authorRepository.UpdateAsync(author);
     return Ok();
@@ -301,7 +304,7 @@ Figure 7-3 Select Individual User Accounts to have Identity preconfigured.
 
 Identity support is configured in Startup, both in ConfigureServices and Configure:
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     // Add framework services.
@@ -334,7 +337,7 @@ You can learn more about [configuring two-factor authentication](https://docs.mi
 
 The simplest form of authorization involves restricting access to anonymous users. This can be achieved by simply applying the \[Authorize\] attribute to certain controllers or actions. If roles are being used, the attribute can be further extended to restrict access to users who belong to certain roles, as shown:
 
-```cs
+```csharp
 [Authorize(Roles = "HRManager,Finance")]
 public class SalaryController : Controller
 {
@@ -346,7 +349,7 @@ In this case, users belonging to either the HRManager or Finance roles (or both)
 
 Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. You can configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the \[Authorize\] attribute:
 
-```cs
+```csharp
 [Authorize(Policy = "CanViewPrivateReport")]
 public IActionResult ExecutiveSalaryReport()
 {
@@ -360,7 +363,7 @@ Using policies in this way, you can separate the kinds of actions being restrict
 
 Claims are name value pairs that represent properties of an authenticated user. For example, you might store users' employee number as a claim. Claims can then be used as part of authorization policies. You could create a policy called "EmployeeOnly" that requires the existence of a claim called "EmployeeNumber", as shown in this example:
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc();
@@ -419,7 +422,7 @@ When building client communication into your applications, there are typically t
 
 Clients are not limited to browsers – mobile apps, console apps, and other native apps can also communicate using SignalR/WebSockets. The following simple program echoes all content sent to a chat application to the console, as part of a WebSocketManager sample application:
 
-```cs
+```csharp
 public class Program
 {
     private static Connection _connection;
@@ -458,7 +461,7 @@ Consider ways in which your applications communicate directly with client applic
 
 Domain-Driven Design (DDD) is an agile approach to building software that emphasizes focusing on the *business domain*. It places a heavy emphasis on communication and interaction with business domain expert(s) who can relate to the developers how the real-world system works. For example, if you're building a system that handles stock trades, your domain expert might be an experienced stock broker. DDD is designed to address large, complex business problems, and is often not appropriate for smaller, simpler applications, as the investment in understanding and modeling the domain is not worth it.
 
-When building software following a DDD approach, your team (including non-technical stakeholders and contributors) should develop a *ubiquitous language* for the problem space. That is, the same terminology should be used for the real-world concept being modeled, the software equivalent, and any structures that might exist to persist the concept (e.g. database tables). Thus, the concepts described in the ubiquitous language should form the basis for your *domain model*.
+When building software following a DDD approach, your team (including non-technical stakeholders and contributors) should develop a *ubiquitous language* for the problem space. That is, the same terminology should be used for the real-world concept being modeled, the software equivalent, and any structures that might exist to persist the concept (for example, database tables). Thus, the concepts described in the ubiquitous language should form the basis for your *domain model*.
 
 Your domain model is comprised of objects that interact with one another to represent the behavior of the system. These objects may fall into the following categories:
 

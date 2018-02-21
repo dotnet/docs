@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Winmdexp.exe (Windows Runtime Metadata Export Tool)
 The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.exe) transforms a .NET Framework module into a file that contains [!INCLUDE[wrt](../../../includes/wrt-md.md)] metadata. Although .NET Framework assemblies and [!INCLUDE[wrt](../../../includes/wrt-md.md)] metadata files use the same physical format, there are differences in the content of the metadata tables, which means that .NET Framework assemblies are not automatically usable as [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components. The process of turning a .NET Framework module into a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component is referred to as *exporting*. In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], the resulting Windows metadata (.winmd) file contains both metadata and implementation.  
@@ -55,7 +57,7 @@ winmdexp [options] winmdmodule
  When you write a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component with C# or Visual Basic, the .NET Framework provides support to make programming with the [!INCLUDE[wrt](../../../includes/wrt-md.md)] more natural. This is discussed in the article [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md). In the process, some commonly used [!INCLUDE[wrt](../../../includes/wrt-md.md)] types are mapped to .NET Framework types. Winmdexp.exe reverses this process and produces an API surface that uses the corresponding [!INCLUDE[wrt](../../../includes/wrt-md.md)] types. For example, types that are constructed from the <xref:System.Collections.Generic.IList%601> interface map to types that are constructed from the [!INCLUDE[wrt](../../../includes/wrt-md.md)][IVector\<T>](http://go.microsoft.com/fwlink/p/?LinkId=251132)interface.  
   
 ## See Also  
- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)   
- [Creating Windows Runtime Components in C# and Visual Basic](http://go.microsoft.com/fwlink/p/?LinkID=238313)   
- [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)   
- [Build, Deployment, and Configuration Tools (.NET Framework)](http://msdn.microsoft.com/en-us/b8c921be-6012-4181-b8d4-ab15813fc9a7)
+ [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
+ [Creating Windows Runtime Components in C# and Visual Basic](http://go.microsoft.com/fwlink/p/?LinkID=238313)  
+ [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)  
+ [Build, Deployment, and Configuration Tools (.NET Framework)](http://msdn.microsoft.com/library/b8c921be-6012-4181-b8d4-ab15813fc9a7)

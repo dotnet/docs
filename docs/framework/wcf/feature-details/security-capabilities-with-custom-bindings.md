@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Capabilities with Custom Bindings
 You can perform most common security tasks by using one of the system-provided bindings. If you need more control, however, you can create a custom binding with a <xref:System.ServiceModel.Channels.SecurityBindingElement>, as explained in these topics. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
@@ -57,6 +59,6 @@ You can perform most common security tasks by using one of the system-provided b
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
   
 ## See Also  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)

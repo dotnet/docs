@@ -12,7 +12,7 @@ Public Class Sample
         'Create the XmlDocument.
         Dim doc As New XmlDocument()
         
-        'Load the the document with the last book node.
+        'Load the document with the last book node.
         Dim reader As New XmlTextReader("books.xml")
         reader.WhitespaceHandling = WhitespaceHandling.None
         reader.MoveToContent()

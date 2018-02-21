@@ -1,10 +1,13 @@
 ---
-title: Using Visual Studio Tools for Docker (Visual Studio on Windows) | Microsoft Docs 
+title: Using Visual Studio Tools for Docker (Visual Studio on Windows)
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
@@ -45,7 +48,7 @@ Figure 4-26: Turning on Docker Solution support in a Visual Studio 2017 project
 
 This action not only adds the DockerFile to your project, it also adds the required configuration lines of code to a global docker-compose.yml set at the solution level.
 
-You also can turn on Docker support when creating an ASP&period;NET Core project in Visual Studio 2017, as shown in Figure 4-27.
+You also can turn on Docker support when creating an ASP.NET Core project in Visual Studio 2017, as shown in Figure 4-27.
 
 ![](./media/image33.png)
 
@@ -61,11 +64,9 @@ You could deploy a multicontainer application by using a single docker-compose.y
 
 **More info:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 
-Build, debug, update, and refresh apps in a local Docker container: [https://azure.microsoft.com/\
-documentation/articles/vs-azure-tools-docker-edit-and-refresh/](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-edit-and-refresh/)
+Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
-Deploy an ASP&period;NET container to a remote Docker host: [https://azure.microsoft.com/\
-documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/)
+Deploy an ASP.NET container to a remote Docker host: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 
 >[!div class="step-by-step"]

@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications
 
@@ -61,6 +64,6 @@ All of these benefits ultimately provide key cost reductions for your end-to-end
 
 In the following sections, these benefits are explained in more detail, and are linked to specific technologies.
 
-
-> [Previous](index.md)  
+>[!div class="step-by-step"]
+[Previous](index.md)
 [Next](microsoft-technologies-in-cloud-devops-ready-applications.md)

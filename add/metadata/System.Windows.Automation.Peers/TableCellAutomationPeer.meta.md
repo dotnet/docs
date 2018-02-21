@@ -2,8 +2,8 @@
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.GetClassNameCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,8 +20,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.GetAutomationControlTypeCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -35,8 +35,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -44,8 +44,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.IsControlElementCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -65,8 +65,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.GetLocalizedControlTypeCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -86,6 +86,6 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.TableCellAutomationPeer.#ctor(System.Windows.Documents.TableCell)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---

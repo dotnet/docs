@@ -215,7 +215,7 @@ Public Class ElementItemInfo
     End Property
     Public ReadOnly Property TypeNameUrl() As String
         Get
-            Return "http://msdn.microsoft.com/en-us/library/" _
+            Return "http://msdn.microsoft.com/library/" _
                 & TypeName & ".aspx"
         End Get
     End Property

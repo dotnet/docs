@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
 caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # SecurityBindingElement Authentication Modes
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides several modes by which clients and services authenticate to one another. You can create security binding elements for these authentication modes by using static methods on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class or through configuration. This topic briefly describes the 18 authentication modes.  
@@ -127,5 +129,5 @@ manager: "mbaldwin"
  With this authentication mode, the client authenticates using a Username Token that appears at the SOAP layer as a signed supporting token; that is, a token that is signed by the message signature. The service is authenticated using an X.509 certificate at the transport layer. The security binding element is a `TransportSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameOverTransportBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `UserNameOverTransport`.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>   
+ <xref:System.ServiceModel.Channels.SecurityBindingElement>  
  [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

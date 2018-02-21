@@ -21,6 +21,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Navigation Topologies Overview
 <a name="introduction"></a> This overview provides an introduction to navigation topologies in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Three common navigation topologies, with samples, are subsequently discussed.  
@@ -147,7 +149,7 @@ manager: "wpickett"
 -   When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 ## See Also  
- <xref:System.Windows.Controls.Page>   
- <xref:System.Windows.Navigation.PageFunction%601>   
- <xref:System.Windows.Navigation.NavigationService>   
+ <xref:System.Windows.Controls.Page>  
+ <xref:System.Windows.Navigation.PageFunction%601>  
+ <xref:System.Windows.Navigation.NavigationService>  
  [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)

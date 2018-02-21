@@ -21,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate Color by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> by using key frames.  
@@ -41,8 +43,8 @@ This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush
  For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
- <xref:System.Windows.Media.SolidColorBrush.Color%2A>   
- <xref:System.Windows.Media.SolidColorBrush>   
- <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ <xref:System.Windows.Media.SolidColorBrush.Color%2A>  
+ <xref:System.Windows.Media.SolidColorBrush>  
+ <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

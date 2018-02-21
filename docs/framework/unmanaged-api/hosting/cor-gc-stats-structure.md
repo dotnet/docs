@@ -26,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_GC_STATS Structure
 Provides statistics about the garbage collection mechanism of the common language runtime (CLR).  
@@ -91,6 +93,6 @@ pCLRGCManager->GetStats(&GCStats);
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)   
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)   
+ [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
+ [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
  [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)

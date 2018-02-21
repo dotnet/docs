@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _EFN_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  

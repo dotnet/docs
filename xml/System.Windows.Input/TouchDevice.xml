@@ -23,7 +23,7 @@
  You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=nameWithType> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   

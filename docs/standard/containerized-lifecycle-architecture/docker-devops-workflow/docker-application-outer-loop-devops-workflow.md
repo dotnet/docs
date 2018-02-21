@@ -1,10 +1,13 @@
 ---
-title: Steps in the outer-loop DevOps workflow for a Docker application | Microsoft Docs 
+title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Steps in the outer-loop DevOps workflow for a Docker application
 
@@ -199,7 +202,7 @@ From a CD point of view, and Visual Studio Team Services specifically, you can r
 
 Figure 5-9: Deploying distributed applications to Container Service
 
-Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (i.e., Mesosphere DC/OS or Kubernetes have different deployment mechanisms than Docker and Docker Swarm) instead of the simpler and easy-to-use docker-compose tool based on the docker-compose.yml definition file. However, thanks to the Microsoft Visual Studio Team Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to DC/OS by just using your familiar docker-compose.yml file because Microsoft performs that "translation" for you (from your docker-compose.yml file to other formats needed by DC/OS).
+Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (that is, Mesosphere DC/OS or Kubernetes have different deployment mechanisms than Docker and Docker Swarm) instead of the simpler and easy-to-use docker-compose tool based on the docker-compose.yml definition file. However, thanks to the Microsoft Visual Studio Team Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to DC/OS by just using your familiar docker-compose.yml file because Microsoft performs that "translation" for you (from your docker-compose.yml file to other formats needed by DC/OS).
 
 ![](./media/image10.png)
 

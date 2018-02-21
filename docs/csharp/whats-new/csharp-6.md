@@ -366,7 +366,7 @@ for the decimal separator,
 and the '.' character as the thousands separator.)
 
 ```csharp
-FormattableString str = @"Average grade is {s.Grades.Average()}";
+FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = string.Format(null, 
     System.Globalization.CultureInfo.CreateSpecificCulture("de-de"),
     str.GetFormat(), str.GetArguments());

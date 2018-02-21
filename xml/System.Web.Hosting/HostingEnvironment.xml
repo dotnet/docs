@@ -698,7 +698,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
+ The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
   
  ]]></format>
         </remarks>

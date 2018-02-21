@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorManifestResourceFlags Enumeration
 Indicates the visibility of resources encoded in an assembly manifest.  

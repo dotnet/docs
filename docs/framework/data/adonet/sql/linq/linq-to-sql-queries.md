@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to SQL Queries
 You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries by using the same syntax as you would in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)]. The only difference is that the objects referenced in your queries are mapped to elements in a database. For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
@@ -38,7 +40,7 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 |Streaming versus cached querying|Not applicable in a local memory scenario||  
   
 ## See Also  
- [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)   
- [Basic LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)   
- [Type Relationships in LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)   
+ [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
+ [Basic LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)  
+ [Type Relationships in LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)  
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

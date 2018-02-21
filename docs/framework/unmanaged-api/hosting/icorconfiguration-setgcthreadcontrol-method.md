@@ -27,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorConfiguration::SetGCThreadControl Method
 Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.  

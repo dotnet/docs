@@ -10,10 +10,12 @@ helpviewer_keywords:
   - ".NET Framework, version compatibility"
   - ".NET Framework 4.5, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
-ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f 
+ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Version Compatibility in the .NET Framework
 Backward compatibility means that an app that was developed for a particular version of a platform will run on later versions of that platform. The .NET Framework tries to maximize backward compatibility: Source code written for one version of the .NET Framework should compile on later versions of the .NET Framework, and binaries that run on one version of the .NET Framework should behave identically on later versions of the .NET Framework.  
@@ -65,8 +67,8 @@ Backward compatibility means that an app that was developed for a particular ver
  If you cannot find a suitable workaround for your issue, remember that the .NET Framework 4.5 (or one of its point releases) runs side by side with versions 1.1, 2.0, and 3.5, and is an in-place update that replaces version 4. For apps that target versions 1.1, 2.0, and 3.5, you can install the appropriate version of the .NET Framework on the target machine to run the app in its best environment. For more information about side-by-side execution, see [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md).  
   
 ## See Also  
- [What's New](../../../docs/framework/whats-new/index.md)   
- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
- [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
- [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/p/?LinkId=248212)   
+ [What's New](../../../docs/framework/whats-new/index.md)  
+ [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
+ [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)  
+ [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/p/?LinkId=248212)  
  [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)

@@ -14,6 +14,8 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Bi-Directional Support for Windows Forms Applications
 You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Windows-based applications that support bi-directional (right-to-left) languages such as Arabic and Hebrew. This includes standard forms, dialog boxes, MDI forms, and all the controls you can work with in these forms—that is, all the objects in the <xref:System.Windows.Forms.Control> namespace.  
@@ -117,5 +119,5 @@ You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Wind
  Some controls are sealed. Therefore, you cannot derive a new control from them. These include the <xref:System.Windows.Forms.ImageList> and <xref:System.Windows.Forms.ProgressBar> controls.  
   
 ## See Also  
- [Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Bidirectional Support for ASP.NET Web Applications](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
  [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)

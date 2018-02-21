@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Bind to a Web Service
 This example shows how to bind to objects returned by Web service method calls.  
@@ -52,6 +54,6 @@ This example shows how to bind to objects returned by Web service method calls.
  For information about the structure of **getContentResponse**, see [Content Service documentation](http://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
   
 ## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)   
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
  [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)

@@ -17,11 +17,7 @@
   
 ## Remarks  
  The <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> class is the value component of the key-value pairs found in a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
-  
-<a name="xamlTextUsage_BamlLocalizableResource"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizableResource>.  
   
@@ -91,15 +87,7 @@
       <Docs>
         <summary>Gets or sets the localization category of a resource.</summary>
         <value>The localization category, as a value of the enumeration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Category"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -123,8 +111,6 @@
 ## Remarks  
  Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=nameWithType> attached property For more information on this attached property, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
-<a name="xamlTextUsage_Comments"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -152,8 +138,6 @@
   
  Child elements in the content can also be formatted as XML markup to improve readability. To do so, when <xref:System.Windows.Markup.Localizer.BamlLocalizer> queries the <xref:System.Windows.Markup.Localizer.ElementLocalizability> of a desired element, set the <xref:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag%2A> property to the desired tag name.  
   
-<a name="xamlTextUsage_Content"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -216,15 +200,7 @@
         <summary>Gets or sets a value that indicates whether the localizable resource is modifiable.</summary>
         <value>
           <see langword="true" /> if the resource is modifiable; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Modifiable"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Readable">
@@ -253,8 +229,6 @@
   
  When the string "Red" is used as a predefined color value of a <xref:System.Windows.Media.Brush>, it cannot be translated. Therefore the <xref:System.Windows.Markup.Localizer.BamlLocalizableResource.Readable%2A> property should be set to `false`.  
   
-<a name="xamlTextUsage_Readable"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>

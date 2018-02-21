@@ -26,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain Interface1
 Provides methods for debugging application domains. This interface is a subclass of ICorDebugController.  

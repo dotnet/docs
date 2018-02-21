@@ -39,7 +39,7 @@ uid: System.Linq.Expressions.LabelExpression.NodeType
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

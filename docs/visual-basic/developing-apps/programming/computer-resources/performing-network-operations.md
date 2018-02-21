@@ -42,5 +42,5 @@ The following tables list tasks associated with the `My.Computer.Network` object
  <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A>  
  Describes the `UploadFile` method.  
   
- <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable>  
  Describes the `IsAvailable` property.

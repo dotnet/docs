@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control
 The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <xref:System.Windows.Forms.ToolStrip> control that is intended for navigating and manipulating controls on your form that are bound to data.  
@@ -116,8 +118,8 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
     >  The <xref:System.Windows.Forms.BindingSource.CancelEdit%2A> method is scoped to the row of data. Save any changes you make while viewing that individual record before navigating to the next record.  
   
 ## See Also  
- <xref:System.Windows.Forms.BindingNavigator>   
- <xref:System.Windows.Forms.BindingSource>   
- <xref:System.Windows.Forms.ToolStrip>   
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)   
+ <xref:System.Windows.Forms.BindingNavigator>  
+ <xref:System.Windows.Forms.BindingSource>  
+ <xref:System.Windows.Forms.ToolStrip>  
+ [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
  [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)

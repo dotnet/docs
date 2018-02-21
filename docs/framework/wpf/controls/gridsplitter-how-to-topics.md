@@ -19,6 +19,8 @@ caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # GridSplitter How-to Topics
 The topics in this section describe how to use the <xref:System.Windows.Controls.GridSplitter> control.  

@@ -21,8 +21,8 @@ The `on` contextual keyword is used in the [join clause](../../../csharp/languag
 ## Example  
  The following example shows the use of `on` in a `join` clause.  
   
- [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/on_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/on_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

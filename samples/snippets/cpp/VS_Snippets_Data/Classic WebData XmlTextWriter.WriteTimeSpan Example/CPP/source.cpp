@@ -15,7 +15,7 @@ int main()
       // Write an element.
       writer->WriteStartElement( "address" );
       
-      // Write an e-mail address using entities
+      // Write an email address using entities
       // for the @ and . characters.
       writer->WriteString( "someone" );
       writer->WriteCharEntity( '@' );

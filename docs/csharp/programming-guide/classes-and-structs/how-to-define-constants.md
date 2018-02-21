@@ -24,7 +24,7 @@ Constants are fields whose values are set at compile time and can never be chang
  To define non-integral constants, one approach is to group them in a single static class named `Constants`. This will require that all references to the constants be prefaced with the class name, as shown in the following example.  
   
 ## Example  
- [!code-cs[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-constants_1.cs)]  
+ [!code-csharp[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-constants_1.cs)]  
   
  The use of the class name qualifier helps ensure that you and others who use the constant understand that it is constant and cannot be modified.  
   

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 092ef693-6e5f-41b4-b868-5b9e82928abf
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Literals (Entity SQL)
 This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] support for literals.  

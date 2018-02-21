@@ -8,10 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "event properties [.NET Framework]"
   - "multiple events [.NET Framework]"
@@ -22,6 +22,9 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Handle Multiple Events Using Event Properties
 To use event properties, you define the event properties in the class that raises the events, and then set the delegates for the event properties in classes that handle the events. To implement multiple event properties in a class, the class must internally store and maintain the delegate defined for each event. A typical approach is to implement a delegate collection that is indexed by an event key.  
@@ -53,7 +56,7 @@ To use event properties, you define the event properties in the class that raise
  [!code-vb[Conceptual.Events.Other#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.events.other/vb/example3.vb#31)]  
   
 ## See Also  
- <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>   
- [Events](../../../docs/standard/events/index.md)   
- <xref:System.Web.UI.Control.Events%2A>   
+ <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>  
+ [Events](../../../docs/standard/events/index.md)  
+ <xref:System.Web.UI.Control.Events%2A>  
  [How to: Declare Custom Events To Conserve Memory](~/docs/visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

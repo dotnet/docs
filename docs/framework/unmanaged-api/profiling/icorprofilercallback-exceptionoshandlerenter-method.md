@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerEnter Method
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  

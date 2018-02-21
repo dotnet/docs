@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for webRequestModules (Network Settings)
 Removes a custom Web request module from the application.  
@@ -34,8 +36,8 @@ Removes a custom Web request module from the application.
 ## Syntax  
   
 ```xml  
-      <remove   
-  name = "URI prefix"   
+<remove   
+  prefix="URI prefix"   
 />  
 ```  
   
@@ -46,7 +48,7 @@ Removes a custom Web request module from the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`name`|The URI prefix for requests handled by this Web request module.|  
+|`prefix`|The URI prefix for requests handled by this Web request module.|  
   
 ### Child Elements  
  None.  
@@ -72,7 +74,7 @@ Removes a custom Web request module from the application.
 <configuration>  
   <system.net>  
     <webRequestModules>  
-      <remove prefix = "http">  
+      <remove prefix="http">  
       <add prefix="http"  
            type="System.Net.HttpRequestCreator, System, Version=2.0.3600.0,  
            Culture=neutral, PublicKeyToken=b77a5c561934e089"  
@@ -83,5 +85,5 @@ Removes a custom Web request module from the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
+ <xref:System.Net.WebRequest>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

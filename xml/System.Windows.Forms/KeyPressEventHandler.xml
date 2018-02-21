@@ -26,7 +26,7 @@
 ## Remarks  
  Set <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=nameWithType> to `true` to cancel the `KeyPress` event. This keeps the control from processing the key press.  
   
- When you create a <xref:System.Windows.Forms.KeyPressEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When you create a <xref:System.Windows.Forms.KeyPressEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about handling events with delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

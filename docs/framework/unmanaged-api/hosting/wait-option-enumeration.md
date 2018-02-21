@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WAIT_OPTION Enumeration
 Contains values that indicate the action a host should take if an operation requested by the common language runtime (CLR) blocks.  

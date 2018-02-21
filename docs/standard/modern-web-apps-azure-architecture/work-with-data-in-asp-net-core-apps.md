@@ -1,11 +1,14 @@
 ---
-title: Work with data in ASP.NET Core Apps  
+title: Work with data in ASP.NET Core Apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Working with Data in ASP.NET Core Apps
 
@@ -33,7 +36,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 
 To work with EF Core, you need a subclass of DbContext. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
 
-```cs
+```csharp
 public class CatalogContext : DbContext
 {
     public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
@@ -53,15 +56,15 @@ Your DbContext must have a constructor that accepts DbContextOptions and pass th
 
 ### Configuring EF Core
 
-In your ASP.NET Core application, you'll typically configure EF Core in your ConfigureServices method. EF Core uses a DbContextOptionsBuilder, which supports several helpful extension methods to streamline its configuration. Tp configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code to ConfigureServices:
+In your ASP.NET Core application, you'll typically configure EF Core in your ConfigureServices method. EF Core uses a DbContextOptionsBuilder, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code to ConfigureServices:
 
-```cs
+```csharp
 services.AddDbContext<CatalogContext>(options => options.UseSqlServer (Configuration.GetConnectionString("DefaultConnection")));
 ```
 
 To use the in-memory database:
 
-```cs
+```csharp
 services.AddDbContext<CatalogContext>(options =>
     options.UseInMemoryDatabase());
 ```
@@ -78,7 +81,7 @@ Figure 8-1 Logging EF Core queries to the console
 
 To retrieve data from EF Core, you access the appropriate property and use LINQ to filter the result. You can also use LINQ to perform projection, transforming the result from one type to another. The following example would retrieve CatalogBrands, ordered by name, filtered by their Enabled property, and projected onto a SelectListItem type:
 
-```cs
+```csharp
 var brandItems = await _context.CatalogBrands
     .Where(b => b.Enabled)
     .OrderBy(b => b.Name)
@@ -87,11 +90,11 @@ var brandItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at runtime, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (e.g. List<T>) as the result.
+It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at runtime, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List<T>) as the result.
 
 EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
 
-```cs
+```csharp
 // create
 var newBrand = new CatalogBrand() { Brand = "Acme" };
 _context.Add(newBrand);
@@ -114,7 +117,7 @@ EF Core supports both synchronous and async methods for fetching and saving. In 
 
 When EF Core retrieves entities, it populates all of the properties that are stored directly with that entity in the database. Navigation properties, such as lists of related entities, are not populated and may have their value set to null. This ensures EF Core is not fetching more data than is needed, which is especially important for web applications, which must quickly process requests and return responses in an efficient manner. To include relationships with an entity using *eager loading*, you specify the property using the Include extension method on the query, as shown:
 
-```cs
+```csharp
 // .Include requires using Microsoft.EntityFrameworkCore
 var brandsWithItems = await _context.CatalogBrands
     .Include(b => b.Items)
@@ -135,7 +138,7 @@ For Azure SQL DB, Entity Framework Core already provides internal database conne
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
-```cs
+```csharp
 // Startup.cs from any ASP.NET Core Web API
 public class Startup
 {
@@ -167,7 +170,7 @@ System.InvalidOperationException: The configured execution strategy 'SqlServerRe
 
 The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. The following code shows how to implement this approach:
 
-```cs
+```csharp
 // Use of an EF Core resiliency strategy when using multiple DbContexts
 // within an explicit transaction
 // See:
@@ -208,7 +211,7 @@ EF Core has two significant features it provides which separate it from Dapper b
 
 To see how the syntax for Dapper varies from EF Core, consider these two versions of the same method for retrieving a list of items:
 
-```cs
+```csharp
 // EF Core
 private readonly CatalogContext _context;
 public async Task<IEnumerable<CatalogType>> GetCatalogTypes()
@@ -234,13 +237,13 @@ Order by p.Id
 
 Each returned row includes both User and Post data. Since the User data should be attached to the Post data via its Owner property, the following function is used:
 
-```cs
+```csharp
 (post, user) => { post.Owner = user; return post; }
 ```
 
 The full code listing to return a collection of posts with their Owner property populated with the associated user data would be:
 
-```cs
+```csharp
 var sql = @"select * from #Posts p
 left join #Users u on u.Id = p.OwnerId
 Order by p.Id";
@@ -307,7 +310,7 @@ When implementing caching, it's important to keep in mind separation of concerns
 
 ASP.NET Core supports two levels of response caching. The first level does not cache anything on the server, but adds HTTP headers that instruct clients and proxy servers to cache responses. This is implemented by adding the ResponseCache attribute to individual controllers or actions:
 
-```cs
+```csharp
     [ResponseCache(Duration = 60)]
     public IActionResult Contact()
     { }
@@ -322,7 +325,7 @@ Cache-Control: public,max-age=60
 
 In order to add server-side in-memory caching to the application, you must reference the Microsoft.AspNetCore.ResponseCaching NuGet package, and then add the Response Caching middleware. This middleware is configured in both ConfigureServices and Configure in Startup:
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddResponseCaching();
@@ -342,7 +345,7 @@ Rather than (or in addition to) caching full web responses, you can cache the re
 
 You add support for memory (or distributed) caching in ConfigureServices:
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMemoryCache();
@@ -354,7 +357,7 @@ Be sure to add the Microsoft.Extensions.Caching.Memory NuGet package as well.
 
 Once you've added the service, you request IMemoryCache via dependency injection wherever you need to access the cache. In this example, the CachedCatalogService is using the Proxy (or Decorator) design pattern, by providing an alternative implementation of ICatalogService that controls access to (or adds behavior to) the underlying CatalogService implementation.
 
-```cs
+```csharp
 public class CachedCatalogService : ICatalogService
 {
     private readonly IMemoryCache _cache;
@@ -402,7 +405,7 @@ public class CachedCatalogService : ICatalogService
 
 To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following in ConfigureServices:
 
-```cs
+```csharp
 services.AddMemoryCache();
 services.AddScoped<ICatalogService, CachedCatalogService>();
 services.AddScoped<CatalogService>();
@@ -414,13 +417,13 @@ An issue that arises when caching is implemented is *stale data* – that is, da
 
 Another approach is to proactively remove cache entries when the data they contain is updated. Any individual entry can be removed if its key is known:
 
-```cs
+```csharp
 _cache.Remove(cacheKey);
 ```
 
 If your application exposes functionality for updating entries that it caches, you can remove the corresponding cache entries in your code that performs the updates. Sometimes there may be many different entries that depend on a particular set of data. In that case, it can be useful to create dependencies between cache entries, by using a CancellationChangeToken. With a CancellationChangeToken, you can expire multiple cache entries at once by cancelling the token.
 
-```cs
+```csharp
 // configure CancellationToken and add entry to cache
 var cts = new CancellationTokenSource();
 _cache.Set("cts", cts);

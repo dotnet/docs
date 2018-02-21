@@ -20,6 +20,8 @@ caps.latest.revision: 60
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Typography
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] includes support for rich presentation of text content. Text in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is rendered using [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)], which enhances the clarity and readability of text. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also supports [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts, which provide additional capabilities beyond those defined by the [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] format.  
@@ -35,7 +37,7 @@ manager: "wpickett"
  [How-to Topics](../../../../docs/framework/wpf/advanced/typography-how-to-topics.md)  
   
 ## See Also  
- <xref:System.Windows.Documents.Typography>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)   
+ <xref:System.Windows.Documents.Typography>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
  [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)

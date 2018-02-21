@@ -50,7 +50,7 @@ This example creates an empty text file at the specified path using the <xref:Sy
  An <xref:System.UnauthorizedAccessException> is thrown if the user does not have permission to create the file.  
   
 ## See Also  
- <xref:System.IO>   
- <xref:System.IO.File.Create%2A>   
- [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)   
- [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8)
+ <xref:System.IO>  
+ <xref:System.IO.File.Create%2A>  
+ [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)  
+ [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)

@@ -69,11 +69,6 @@
 -   <xref:System.Collections.ObjectModel.ObservableCollection%601> is in a namespace and assembly that are not initially mapped to the default XML namespace. You must map a prefix for the namespace and assembly, and then use that prefix on the object element tag for <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
  A more straightforward way to use <xref:System.Collections.ObjectModel.ObservableCollection%601> capabilities from XAML in an application is to declare your own non-generic custom collection class that derives from <xref:System.Collections.ObjectModel.ObservableCollection%601>, and constrains it to a specific type. Then map the assembly that contains this class, and reference it as an object element in your XAML.  
-  
-<a name="xamlTextUsage_ObservableCollection"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" />

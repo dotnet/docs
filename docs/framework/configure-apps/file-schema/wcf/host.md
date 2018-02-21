@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;host&gt;
 Specifies settings for a service host.  
@@ -58,6 +60,6 @@ Specifies settings for a service host.
 |[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>   
- <xref:System.ServiceModel.ServiceHost>   
+ <xref:System.ServiceModel.Configuration.HostElement>  
+ <xref:System.ServiceModel.ServiceHost>  
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

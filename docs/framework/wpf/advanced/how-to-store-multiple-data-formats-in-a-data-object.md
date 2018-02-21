@@ -21,6 +21,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Store Multiple Data Formats in a Data Object
 The following example shows how to use the <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%29> method to add data to a data object in multiple formats.  
@@ -34,5 +36,5 @@ The following example shows how to use the <xref:System.Windows.DataObject.SetDa
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_StoreMultipleFormats](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_storemultipleformats)]  
   
 ## See Also  
- <xref:System.Windows.IDataObject>   
+ <xref:System.Windows.IDataObject>  
  [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

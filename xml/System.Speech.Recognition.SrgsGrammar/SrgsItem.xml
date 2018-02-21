@@ -32,7 +32,7 @@
   
  <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects within an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object comprise a list of alternatives from which the user can speak one. You can use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight%2A> property to specify the likelihood that a given item in the list will be spoken.  
   
- The <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> class represents the `item` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `item` element and details about its support by System.Speech, see [item Element](http://msdn.microsoft.com/en-us/10cba7dd-994e-4aa7-907e-0669e5467d60).  
+ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> class represents the `item` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `item` element and details about its support by System.Speech, see [item Element](http://msdn.microsoft.com/library/10cba7dd-994e-4aa7-907e-0669e5467d60).  
   
  ]]></format>
     </remarks>

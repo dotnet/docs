@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to initialize a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example demonstrates how to initialize a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
  [!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
@@ -403,7 +403,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to set the value of the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property to 3 seconds. This code assumes that `delay2` is of type <xref:System.Workflow.Activities.DelayActivity>. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example demonstrates how to set the value of the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property to 3 seconds. This code assumes that `delay2` is of type <xref:System.Workflow.Activities.DelayActivity>. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[wf_samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
  [!code-vb[wf_samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  

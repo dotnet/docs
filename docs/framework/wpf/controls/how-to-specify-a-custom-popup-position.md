@@ -19,6 +19,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify a Custom Popup Position
 This example shows how to specify a custom position for a <xref:System.Windows.Controls.Primitives.Popup> control when the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>.  
@@ -39,6 +41,6 @@ This example shows how to specify a custom position for a <xref:System.Windows.C
  For the complete sample, see [Popup Placement Sample](http://go.microsoft.com/fwlink/?LinkID=160032).  
   
 ## See Also  
- <xref:System.Windows.Controls.Primitives.Popup>   
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)   
+ <xref:System.Windows.Controls.Primitives.Popup>  
+ [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)

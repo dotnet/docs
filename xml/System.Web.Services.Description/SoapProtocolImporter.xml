@@ -187,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter.IsBindingSupported%2A> method determines whether to generate a class for the current binding, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Binding%2A> property. The method checks whether the <xref:System.Web.Services.Description.SoapProtocolImporter.Binding%2A> property's <xref:System.Web.Services.Description.Binding.Extensions%2A> property contains a <xref:System.Web.Services.Description.SoapBinding> instance. In addition, the transport mechanism obtained through the <xref:System.Web.Services.Description.SoapBinding.Transport%2A> property must be supported by the current Web services configuration.  
+ The <xref:System.Web.Services.Description.SoapProtocolImporter.IsBindingSupported%2A> method determines whether to generate a class for the current binding, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Binding%2A> property. The method checks whether the <xref:System.Web.Services.Description.ProtocolImporter.Binding%2A> property's <xref:System.Web.Services.Description.Binding.Extensions%2A> property contains a <xref:System.Web.Services.Description.SoapBinding> instance. In addition, the transport mechanism obtained through the <xref:System.Web.Services.Description.SoapBinding.Transport%2A> property must be supported by the current Web services configuration.  
   
  ]]></format>
         </remarks>

@@ -9,14 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MissingInteropDataException Class (.NET Native)
 **.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
@@ -84,6 +86,6 @@ manager: "wpickett"
  The `MissingInteropDataException` class contains a single unique member, the `MissingType` property, that indicates the type whose metadata is needed for a successful method call. All remaining members are inherited from the base class, <xref:System.Exception?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.Exception?displayProperty=nameWithType>   
- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)   
+ <xref:System.Exception?displayProperty=nameWithType>  
+ [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

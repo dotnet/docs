@@ -454,7 +454,7 @@
   
  While waiting for the value to arrive, the binding reports the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available, or the default value of the binding target property.  
   
- However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/en-us/55825e8f-7e2e-448a-9505-7217cc91b1af).  
+ However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/library/55825e8f-7e2e-448a-9505-7217cc91b1af).  
   
  ]]></format>
         </remarks>
@@ -672,11 +672,7 @@
  The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
   
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
-  
-<a name="xamlTextUsage_RelativeSource"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
@@ -917,19 +913,11 @@
    
   
 ## Examples  
- In this example, you have a `Person` object with a string property named `PersonName`. The `Person` object is defined in the namespace called `SDKSample`.  
+ The following example uses a `Person` object with a string property named `PersonName` that is defined in the `SDKSample` namespace, as the first highlighted line shows. In the highlighted line that contains the `<src>` element, it instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
   
- The following example instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
+ [!code-xaml[BindingInstantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=4,9,37)]  
   
- [!code-xaml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#instantiation)]  
-[!code-xaml[SimpleBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#2)]  
-[!code-xaml[SimpleBinding#EndWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#endwindow)]  
-  
- To bind to the `PersonName` property you would do the following:  
-  
- [!code-xaml[SimpleBinding#BDO1](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
-  
- As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
+ The highlighted line that contains the `<TextBlock>` elements shows how to bind to the `PersonName` property. As a result, the <xref:System.Windows.Controls.TextBlock> control appears with the value "Joe".  
   
  In the following example, the <xref:System.Windows.Data.Binding.Source%2A> values of the <xref:System.Windows.Data.Binding> objects are set to the `static` property <xref:System.Windows.Application.Current%2A?displayProperty=nameWithType>:  
   

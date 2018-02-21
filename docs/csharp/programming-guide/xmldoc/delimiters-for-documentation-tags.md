@@ -21,7 +21,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
  Single-line delimiter. This is the form that is shown in documentation examples and used by the Visual C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.  
   
 > [!NOTE]
->  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting) in your project property pages.  
+>  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).  
   
  `/** */`  
  Multiline delimiters.  
@@ -79,7 +79,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

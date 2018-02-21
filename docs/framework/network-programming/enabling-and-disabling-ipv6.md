@@ -12,6 +12,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Enabling and Disabling IPv6
 To use the IPv6 protocol, ensure that you are running a version of the operating system that supports IPv6 and ensure that the operating system and the networking classes are configured properly.  
@@ -45,7 +47,7 @@ To use the IPv6 protocol, ensure that you are running a version of the operating
  For .NET Framework version 2.0 and later, if Windows supports IPv6, then members of the <xref:System.Net.Dns?displayProperty=nameWithType> class, (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=nameWithType> method), will return IPv6 addresses with one limitation. Obsolete members of the DNS <xref:System.Net.Dns?displayProperty=nameWithType> (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=nameWithType> method) will read and recognize the value in the configuration file for the ipv6 enabled setting.  
   
 ## See Also  
- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)   
- [Sockets](../../../docs/framework/network-programming/sockets.md)   
- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
+ [Sockets](../../../docs/framework/network-programming/sockets.md)  
+ [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)  
  [\<ipv6> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)

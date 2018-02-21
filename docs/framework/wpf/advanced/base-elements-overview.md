@@ -16,6 +16,8 @@ caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Base Elements Overview
 A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] are derived from four classes which are commonly referred to in the [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] documentation as the base element classes. These classes are <xref:System.Windows.UIElement>, <xref:System.Windows.FrameworkElement>, <xref:System.Windows.ContentElement>, and <xref:System.Windows.FrameworkContentElement>. The <xref:System.Windows.DependencyObject> class is also related, because it is a common base class of both <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>  
@@ -104,7 +106,7 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../include
  <xref:System.Windows.Controls.Control> is the intended base class for the type of object that is variously termed a control or component, depending on the technology. In general, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control classes are classes that either directly represent a UI control or participate closely in control composition. The primary functionality that <xref:System.Windows.Controls.Control> enables is control templating.  
   
 ## See Also  
- <xref:System.Windows.Controls.Control>   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)   
+ <xref:System.Windows.Controls.Control>  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
  [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)

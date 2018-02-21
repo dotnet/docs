@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter::DefineParameter Method
 Defines a single parameter in the current method. The parameter type is taken from the parameter's position (sequence) within the method's signature.  

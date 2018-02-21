@@ -26,6 +26,6 @@ Indexers are like properties. Except for the differences shown in the following 
 |Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Does not support shortened syntax.|  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

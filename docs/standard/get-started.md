@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Get Started

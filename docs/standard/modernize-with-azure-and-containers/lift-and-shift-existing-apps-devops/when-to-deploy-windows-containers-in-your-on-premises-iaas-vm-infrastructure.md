@@ -1,9 +1,12 @@
 ---
-title: When to deploy Windows Containers in your on-premises IaaS VM infrastructure 
+title: When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 
@@ -13,5 +16,6 @@ ms.date: 10/26/2017
 
 -   If you start using Windows Containers today, you can make a phased migration to the cloud tomorrow from a much better position. Windows Containers is becoming a unit of deployment for any cloud, with no lock-in.
 
-> [Previous](when-not-to-deploy-to-windows-containers.md)  
+>[!div class="step-by-step"]
+[Previous](when-not-to-deploy-to-windows-containers.md)
 [Next](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)

@@ -39,5 +39,5 @@ ms.author: dotnetcontent
 4.  When implementing a property, declare `Get` and `Set` procedures, as appropriate.  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

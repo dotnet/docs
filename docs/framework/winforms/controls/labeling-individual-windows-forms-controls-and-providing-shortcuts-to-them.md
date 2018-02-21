@@ -19,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Labeling Individual Windows Forms Controls and Providing Shortcuts to Them
 Controls added to Windows Forms have properties and methods that are used to further specialize the user experience. Customizing your user interface to suit the needs of the user is extremely important for well-designed Windows applications.  

@@ -21,6 +21,8 @@ caps.latest.revision: 52
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Changes in the .NET Framework
 The most important change to security in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is in strong naming. See [Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md) for a description of those changes.  

@@ -1,10 +1,13 @@
 ---
-title: Docker terminology | Microsoft Docs 
+title: Docker terminology
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Docker terminology
 
@@ -20,7 +23,7 @@ This section lists terms and definitions with which you should become familiar w
 
 -   **Build** The action of building a container image based on the information and context provided by its Dockerfile as well as additional files in the folder where the image is built. You can build images by using the Docker docker build command.
 
--   **Repository (aka repo)** A collection of related Docker images labeled with a tag that indicates the image version. Some repositories contain multiple variants of a specific image, such as an image containing SDKs (heavier), an image containing only runtimes (lighter), and so on. Those variants can be marked with tags. A single repository can contain platform variants, such as a Linux image and a Windows image.
+-   **Repository (also known as repo)** A collection of related Docker images labeled with a tag that indicates the image version. Some repositories contain multiple variants of a specific image, such as an image containing SDKs (heavier), an image containing only runtimes (lighter), and so on. Those variants can be marked with tags. A single repository can contain platform variants, such as a Linux image and a Windows image.
 
 -   **Registry** A service that provides access to repositories. The default registry for most public images is [Docker Hub](https://hub.docker.com/) (owned by Docker as an organization). A registry usually contains repositories from multiple teams. Companies often have private registries to store and manage images that they've created. *Azure Container Registry* is another example.
 

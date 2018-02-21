@@ -1,9 +1,12 @@
 ---
-title: What about cloud-optimized applications? | Microsoft Docs 
+title: What about cloud-optimized applications?
 description: .NET Microservices Architecture for Containerized .NET Applications | What about Cloud-Optimized applications?
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # What about cloud-optimized applications?
 
@@ -57,7 +60,7 @@ However, microservices are not mandatory for any new or modern application. Micr
 
 The microservices architecture is becoming the preferred approach for distributed and large or complex mission-critical applications that are based on multiple, independent subsystems in the form of autonomous services. In a microservices-based architecture, an application is built as a collection of services that can be independently developed, tested, versioned, deployed, and scaled. This can include any related, autonomous database per microservice.
 
-For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF eBook [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](https://docs.microsoft.com/dotnet/standard/microservices-architecture/).
+For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF e-book [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](https://docs.microsoft.com/dotnet/standard/microservices-architecture/).
 
 But even in scenarios in which microservices offer powerful capabilities-independent deployment, strong subsystem boundaries, and technology diversity-they also raise many new challenges. The challenges are related to distributed application development, such as fragmented and independent data models; achieving resilient communication between microservices; the need for eventual consistency; and operational complexity. Microservices introduce a higher level of complexity compared to traditional monolithic applications.
 
@@ -121,6 +124,6 @@ The primary compute environments in Azure (in general availability, as of mid-20
 
 You also can deploy Windows Containers to other orchestrators, like Kubernetes, Docker Swarm, or DC/OS. Currently (early fall 2017), these platforms are in preview in Azure Container Service for using Windows Containers.
 
-
-> [Previous](microsoft-technologies-in-cloud-devops-ready-applications.md)  
+>[!div class="step-by-step"]
+[Previous](microsoft-technologies-in-cloud-devops-ready-applications.md)
 [Next](how-to-deploy-existing-net-apps-to-azure-app-service.md)

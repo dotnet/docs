@@ -4,10 +4,10 @@ ms.date: "09/10/2017"
 ms.prod: ".net"
 ms.technology: dotnet-standard
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "numeric format strings [.NET Framework]"
   - "formatting [.NET Framework], numbers"
@@ -21,6 +21,9 @@ helpviewer_keywords:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Standard Numeric Format Strings
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
@@ -276,7 +279,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
 
 For <xref:System.Double> and <xref:System.Single> values, the "R" format specifier in some cases fails to successfully round-trip the original value and also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
 
- When a <xref:System.Numerics.BigInteger> value is formatted using this specifier, its string representation contains all the significant digits in the <xref:System.Numerics.BigInteger> value.   
+ When a <xref:System.Numerics.BigInteger> value is formatted using this specifier, its string representation contains all the significant digits in the <xref:System.Numerics.BigInteger> value.  
   
  Although you can include a precision specifier, it is ignored. Round trips are given precedence over precision when using this specifier.    
  The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.  
@@ -347,9 +350,9 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  [!code-vb[system.x.tostring-and-culture#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.X.ToString-and-Culture/vb/xts.vb#1)]  
   
 ## See Also  
- <xref:System.Globalization.NumberFormatInfo>   
- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)   
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)   
+ <xref:System.Globalization.NumberFormatInfo>  
+ [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+ [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
+ [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)  
  [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

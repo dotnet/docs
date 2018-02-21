@@ -33,7 +33,7 @@
   
  Because COM classes use apartments, the common language runtime needs to create and initialize an apartment when calling a COM object in a COM interop situation. A managed thread can create and enter a single-threaded apartment (STA) that allows only one thread, or a multithreaded apartment (MTA) that contains one or more threads. You can control the type of apartment created by setting the <xref:System.Threading.Thread.ApartmentState%2A> property of the thread to one of the values of the <xref:System.Threading.ApartmentState> enumeration. Because a given thread can only initialize a COM apartment once, you cannot change the apartment type after the first call to the unmanaged code.  
   
- For more information, see <xref:System.Threading.Thread>, [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5), and [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb).  
+ For more information, see <xref:System.Threading.Thread>, [Managed and Unmanaged Threading](http://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5), and [Advanced COM Interoperability](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb).  
   
    
   

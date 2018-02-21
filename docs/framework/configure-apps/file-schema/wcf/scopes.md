@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9a0dd3ce-e383-4ac3-b7be-7d604388304a
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;scopes&gt;
 Contains a collection of configuration elements that specify custom scope Uris that can be used to filter service endpoints during query.  

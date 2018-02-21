@@ -19,6 +19,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create an Expander with a ScrollViewer
 This example shows how to create an <xref:System.Windows.Controls.Expander> control that contains complex content, such as an image and text. The example also encloses the content of the <xref:System.Windows.Controls.Expander> in a <xref:System.Windows.Controls.ScrollViewer> control.  
@@ -33,6 +35,6 @@ This example shows how to create an <xref:System.Windows.Controls.Expander> cont
  [!code-csharp[ExpanderRichContent#CreateExpanderCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml.cs#createexpandercode)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Expander>   
- [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)   
+ <xref:System.Windows.Controls.Expander>  
+ [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)

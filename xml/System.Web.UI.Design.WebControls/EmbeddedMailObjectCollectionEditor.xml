@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements of the <xref:System.Web.UI.WebControls.EmbeddedMailObjectsCollection> object of <xref:System.Web.UI.WebControls.MailDefinition> objects.  
   
- The <xref:System.Web.UI.WebControls.MailDefinition> objects define the content and format of the e-mail notification messages that are sent by the <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.PasswordRecovery>, and other controls. The <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements define the embedded objects within these e-mail messages.  
+ The <xref:System.Web.UI.WebControls.MailDefinition> objects define the content and format of the email notification messages that are sent by the <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.PasswordRecovery>, and other controls. The <xref:System.Web.UI.WebControls.EmbeddedMailObject> elements define the embedded objects within these email messages.  
   
  The <xref:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor> is invoked by selecting the ellipsis (**…**) button on the **EmbeddedObjects** property, under **MailDefinition**, in the **Properties** grid of the visual designer.  
   

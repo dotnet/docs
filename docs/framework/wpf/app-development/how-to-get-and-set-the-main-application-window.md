@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get and Set the Main Application Window
 This example shows how to get and set the main application window.  

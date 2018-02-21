@@ -110,7 +110,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
 6.  Run the `Test` procedure by pressing F5. The message "Prop1 was set to 9" is displayed. After you click OK, the message "The X parameter for Method1 is 5" is displayed. Click OK, and the message "The event handler caught the event" is displayed.  
   
 ## See Also  
- [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)   
- [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)   
+ [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)  
+ [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
+ [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)  
  [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change the Cursor Type
 This example shows how to change the <xref:System.Windows.Input.Cursor> of the mouse pointer for a specific element and for the application.  

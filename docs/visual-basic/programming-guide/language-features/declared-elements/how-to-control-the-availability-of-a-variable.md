@@ -91,9 +91,9 @@ Private numberForMeOnly As Integer
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See Also  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Public](../../../../visual-basic/language-reference/modifiers/public.md)   
- [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)   
- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)   
+ [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Public](../../../../visual-basic/language-reference/modifiers/public.md)  
+ [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)  
  [Private](../../../../visual-basic/language-reference/modifiers/private.md)

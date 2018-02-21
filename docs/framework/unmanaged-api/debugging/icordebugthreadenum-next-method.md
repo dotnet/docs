@@ -27,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThreadEnum::Next Method
 Gets the number of specified ICorDebugThread instances from the enumeration, starting at the current position.  

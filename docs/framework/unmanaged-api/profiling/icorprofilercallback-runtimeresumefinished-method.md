@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeResumeFinished Method
 Notifies the profiler that the runtime has resumed all runtime threads and has returned to normal operation.  

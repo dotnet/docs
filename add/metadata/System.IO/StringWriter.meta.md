@@ -155,7 +155,7 @@ manager: "wpickett"
 uid: System.IO.StringWriter.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

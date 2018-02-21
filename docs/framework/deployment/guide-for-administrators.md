@@ -17,6 +17,8 @@ caps.latest.revision: 40
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Framework Deployment Guide for Administrators
 This step-by-step article describes how a system administrator can deploy the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
@@ -28,8 +30,8 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  This topic contains the following sections:  
   
- [The deployment process](#the_deployment_process)   
- [Deploying the .NET Framework](#deploying_in_a_test_environment)   
+ [The deployment process](#the_deployment_process)  
+ [Deploying the .NET Framework](#deploying_in_a_test_environment)  
  [Create a collection](#creating_a_collection)  
  [Create a package and program](#creating_a_package)  
  [Select a distribution point](#select_dist_point)  
@@ -225,7 +227,7 @@ This step-by-step article describes how a system administrator can deploy the [!
 ### Log file locations  
  The following log files are generated during [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup:  
   
- %temp%\Microsoft .NET Framework 4.5*.txt   
+ %temp%\Microsoft .NET Framework 4.5*.txt  
  %temp%\Microsoft .NET Framework 4.5\*.html  
   
  You can use the [log collection tool](http://www.microsoft.com/download/details.aspx?id=12493) to collect the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
@@ -261,5 +263,5 @@ This step-by-step article describes how a system administrator can deploy the [!
 -   [Windows Update Agent result codes](http://technet.microsoft.com/library/cc720442.aspx)  
   
 ## See Also  
- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)   
+ [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
  [System Requirements](../../../docs/framework/get-started/system-requirements.md)

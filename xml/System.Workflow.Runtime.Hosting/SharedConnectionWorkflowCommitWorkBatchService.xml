@@ -114,9 +114,9 @@
 ## Remarks  
  Retries of work batch commits for <xref:System.Workflow.ComponentModel.TransactionScopeActivity> activities must be modeled into the workflow (usually using a while loop and exception handler outside of the <xref:System.Workflow.ComponentModel.TransactionScopeActivity>). The <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService> cannot do retries in this case because it did not start (and therefore does not own) the transaction.  
   
- Besides being set programmatically, this functionality can be enabled through a configuration file. For more information on how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/en-us/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
+ Besides being set programmatically, this functionality can be enabled through a configuration file. For more information on how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/library/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
   
- For general information on retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/en-us/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
+ For general information on retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/library/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
   
  ]]></format>
         </remarks>

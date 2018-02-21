@@ -31,8 +31,6 @@
   
  You typically use static references to obtain static values from types, including from types that cannot be instantiated in XAML because the type is static. Common examples of cases where `{x:Static}` is useful include values that can be thought of as constants, such as fixed math values or unique keys for states. The static members being referenced do not have to come from specific framework assemblies associated with XAML schema context. You can map other assemblies and CLR namespaces for XAML usage and then can refer to static members of types in XAML using the prefix you mapped.  
   
-<a name="xamlTextUsage_StaticExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -111,8 +109,6 @@
   
  Under the normal scenario of use by the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] XAML processor, the XAML processor passes a type resolver for CLR types as part of its service contract, and this resolver is used on the <xref:System.Windows.Markup.StaticExtension.ProvideValue%2A> call.  
   
-<a name="xamlTextUsage_Member"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Attempted to set <see cref="P:System.Windows.Markup.StaticExtension.Member" /> to <see langword="null" />.</exception>
@@ -148,8 +144,6 @@
   
  For XAML usage information, see [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
   
-<a name="xamlTextUsage_MemberType"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Attempted to set <see cref="P:System.Windows.Markup.StaticExtension.MemberType" /> to <see langword="null" />.</exception>

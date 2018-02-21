@@ -26,7 +26,7 @@ Provides access to information about the current user.
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See Also  
- <xref:System.Security.Principal.IPrincipal>   
- <xref:System.Threading.Thread.CurrentPrincipal%2A>   
- <xref:System.Web.HttpContext.User%2A>   
+ <xref:System.Security.Principal.IPrincipal>  
+ <xref:System.Threading.Thread.CurrentPrincipal%2A>  
+ <xref:System.Web.HttpContext.User%2A>  
  <xref:System.Web.HttpContext.Current%2A>

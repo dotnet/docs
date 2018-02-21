@@ -439,9 +439,7 @@
         <summary>Converts a <see cref="T:System.Windows.Input.StylusPointCollection" /> into a point array.</summary>
         <returns>A point array that contains points that correspond to each <see cref="T:System.Windows.Input.StylusPoint" /> in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example demonstrates how to erase the strokes that are surrounded by a lasso. The example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
   
  [!code-csharp[StrokeCollectionMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#2)]

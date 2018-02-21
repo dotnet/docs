@@ -75,9 +75,9 @@ End Sub
  `Quantity was changed to 100`  
   
 ## See Also  
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)   
- [Code Generation in LINQ to SQL](https://msdn.microsoft.com/library/bb399400)   
- [Adding Business Logic By Using Partial Methods](https://msdn.microsoft.com/library/bb546176)
+ [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Optional Parameters](./optional-parameters.md)  
+ [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)  
+ [Code Generation in LINQ to SQL](../../../../framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
+ [Adding Business Logic By Using Partial Methods](../../../../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)

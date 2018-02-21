@@ -27,6 +27,6 @@ Statements are program instructions. Except as described in the topics reference
 |[lock Statement](../../../csharp/language-reference/keywords/lock-statement.md)|[lock](../../../csharp/language-reference/keywords/lock-statement.md)|  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

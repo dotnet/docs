@@ -30,7 +30,7 @@ uid: System.Linq.Expressions.NewArrayExpression.Expressions
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

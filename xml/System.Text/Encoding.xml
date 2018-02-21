@@ -39,10 +39,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/encoding.cs#3b6090c501893c25). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
  Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
@@ -549,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you need an encoding for a body name, you should call <xref:System.Text.Encoding.GetEncoding%2A> with the <xref:System.Text.Encoding.BodyName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only e-mail applications need to retrieve such an encoding; most other applications that need to describe an encoding should use its <xref:System.Text.Encoding.WebName%2A>.  
+ If you need an encoding for a body name, you should call <xref:System.Text.Encoding.GetEncoding%2A> with the <xref:System.Text.Encoding.BodyName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only email applications need to retrieve such an encoding; most other applications that need to describe an encoding should use its <xref:System.Text.Encoding.WebName%2A>.  
   
  In some cases, the value of the <xref:System.Text.Encoding.BodyName%2A> property corresponds to the international standard that defines that encoding. This doesn't mean that the implementation complies in full with that standard.  
   
@@ -3613,11 +3609,11 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you need an encoding for a header name, you should call the <xref:System.Text.Encoding.GetEncoding%2A> method with the <xref:System.Text.Encoding.HeaderName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only e-mail applications need to retrieve such an encoding.  
+ If you need an encoding for a header name, you should call the <xref:System.Text.Encoding.GetEncoding%2A> method with the <xref:System.Text.Encoding.HeaderName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only email applications need to retrieve such an encoding.  
   
  In some cases, the value of the <xref:System.Text.Encoding.BodyName%2A> property corresponds to the international standard that defines that encoding. This doesn't mean that the implementation complies in full with that standard.  
   
- Note that <xref:System.Text.Encoding.WebName%2A> returns the name to use to describe an encoding. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for an e-mail application, for example. However, use of the property to define the encoding is not recommended.  
+ Note that <xref:System.Text.Encoding.WebName%2A> returns the name to use to describe an encoding. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for an email application, for example. However, use of the property to define the encoding is not recommended.  
   
    
   
@@ -4304,7 +4300,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
 ## Remarks  
  The <xref:System.Text.Encoding.WebName%2A> property is the same as the <xref:System.Text.EncodingInfo.Name%2A> property.  
   
- Note that <xref:System.Text.Encoding.WebName%2A> returns an IANA-registered name for the encoding. When its value is the name of a standard, the implementation of the encoding might not conform in full to that standard. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for e-mail headers. However, most apps should use <xref:System.Text.Encoding.WebName%2A> instead.  
+ Note that <xref:System.Text.Encoding.WebName%2A> returns an IANA-registered name for the encoding. When its value is the name of a standard, the implementation of the encoding might not conform in full to that standard. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for email headers. However, most apps should use <xref:System.Text.Encoding.WebName%2A> instead.  
   
  For more information on the IANA, go to [www.iana.org](http://www.iana.org/).  
   

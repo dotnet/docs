@@ -21,7 +21,7 @@ Public Class Form1
     Private customersBindingSource As New BindingSource()
 
     ' This is the TextBox control that displays the CompanyName
-    ' field from the the DataSet.
+    ' field from the DataSet.
     Private companyNameTextBox As New TextBox()
 
 

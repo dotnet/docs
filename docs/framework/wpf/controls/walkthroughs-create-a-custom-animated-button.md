@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthroughs: Create a Custom Animated Button
 As its name suggests, [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is great for making rich presentation experiences for customers. These walkthroughs show you how to customize the look and behavior of a button (including animations). This customization is done using a style and template so that you can apply this custom button easily to any buttons in your application. The following illustration shows the customized button that you will create.  

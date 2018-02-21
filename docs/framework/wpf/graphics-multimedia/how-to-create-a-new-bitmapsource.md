@@ -20,6 +20,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a new BitmapSource
 This example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapSource.Create%2A> method of <xref:System.Windows.Media.Imaging.BitmapSource> to create a new <xref:System.Windows.Media.Imaging.BitmapSource> object.  

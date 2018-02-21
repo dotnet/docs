@@ -22,6 +22,8 @@ caps.latest.revision: 44
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Sn.exe (Strong Name Tool)
 The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../../docs/framework/app-domains/strong-named-assemblies.md). Sn.exe provides options for key management, signature generation, and signature verification.  
@@ -124,7 +126,7 @@ sn -d MyContainer
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
+ [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

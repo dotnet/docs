@@ -22,6 +22,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Hook Up a Command to a Control with Command Support
 The following example shows how to hook up a <xref:System.Windows.Input.RoutedCommand> to a <xref:System.Windows.Controls.Control> which has built in support for the command.  For a complete sample which hooks up commands to multiple sources, see the [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980) sample.  
@@ -43,5 +45,5 @@ The following example shows how to hook up a <xref:System.Windows.Input.RoutedCo
  [!code-vb[MenuItemCommandTask#MenuItemCommandingCodeBehind](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandTask/VisualBasic/Window1.xaml.vb#menuitemcommandingcodebehind)]  
   
 ## See Also  
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)   
+ [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
  [Hook Up a Command to a Control with No Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-no-command-support.md)

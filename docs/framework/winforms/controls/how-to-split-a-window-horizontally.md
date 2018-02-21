@@ -22,6 +22,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Split a Window Horizontally
 The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  
@@ -62,5 +64,5 @@ The following code example makes the splitter that divides the <xref:System.Wind
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.SplitContainer>   
+ <xref:System.Windows.Forms.SplitContainer>  
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

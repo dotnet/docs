@@ -51,6 +51,6 @@ Specifies that a property can be written but not read.
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See Also  
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)   
- [Private](../../../visual-basic/language-reference/modifiers/private.md)   
+ [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
+ [Private](../../../visual-basic/language-reference/modifiers/private.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

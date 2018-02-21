@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;namedPipeTransport&gt;
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  

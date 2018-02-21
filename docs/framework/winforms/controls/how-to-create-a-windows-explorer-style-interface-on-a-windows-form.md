@@ -18,6 +18,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.  
@@ -27,11 +29,11 @@ Windows Explorer is a common user-interface choice for applications because of i
  The following steps show how to arrange controls in a Windows Explorer-like form. They do not show how to add the file-browsing functionality of the Windows Explorer application.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### To create a Windows Explorer-style Windows Form  
   
-1.  Create a new Windows Application project. For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a new Windows Application project. For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
 2.  From the **Toolbox**:  
   
@@ -56,8 +58,8 @@ Windows Explorer is a common user-interface choice for applications because of i
     >  When you drag the splitter, the panels resize themselves.  
   
 ## See Also  
- <xref:System.Windows.Forms.SplitContainer>   
- [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)   
- [How to: Define Resize and Positioning Behavior in a Split Window](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)   
- [How to: Split a Window Horizontally](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)   
+ <xref:System.Windows.Forms.SplitContainer>  
+ [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
+ [How to: Define Resize and Positioning Behavior in a Split Window](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)  
+ [How to: Split a Window Horizontally](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)  
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

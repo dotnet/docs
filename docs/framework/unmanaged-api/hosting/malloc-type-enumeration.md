@@ -26,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MALLOC_TYPE Enumeration
 Contains values that specify the characteristics of the memory that is being allocated.  

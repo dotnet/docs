@@ -16,7 +16,11 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # internal (C# Reference)
-The `internal` keyword is an [access modifier](../../../csharp/language-reference/keywords/access-modifiers.md) for types and type members. Internal types or members are accessible only within files in the same assembly, as in this example:  
+The `internal` keyword is an [access modifier](../../../csharp/language-reference/keywords/access-modifiers.md) for types and type members. 
+  
+ > This page covers `internal` access. The `internal` keyword is also part of the [`protected internal`](./protected-internal.md) access modifier.
+  
+Internal types or members are accessible only within files in the same assembly, as in this example:  
   
 ```  
 public class BaseClass   
@@ -25,9 +29,7 @@ public class BaseClass
     internal static int x = 0;  
 }  
 ```  
-  
- Types or members that have access modifier `protected internal` can be accessed from the current assembly or from types that are derived from the containing class.  
-  
+
  For a comparison of `internal` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md) and [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   
  For more information about assemblies, see [Assemblies and the Global Assembly Cache](../../../csharp/programming-guide/concepts/assemblies-gac/index.md).  
@@ -89,12 +91,12 @@ public class TestAccess
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)   
- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [public](../../../csharp/language-reference/keywords/public.md)   
- [private](../../../csharp/language-reference/keywords/private.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+ [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [public](../../../csharp/language-reference/keywords/public.md)  
+ [private](../../../csharp/language-reference/keywords/private.md)  
  [protected](../../../csharp/language-reference/keywords/protected.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control
 This section provides topics that demonstrate various programming tasks involving cell, row, and column objects.  
@@ -61,5 +63,5 @@ This section provides topics that demonstrate various programming tasks involvin
  Provides topics that describe commonly used cell, row, and column properties.  
   
 ## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

@@ -8,6 +8,8 @@ keywords: .NET Framework, Install
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: .net-framework
+ms.workload: 
+  - dotnet
 ---
 
 # Install the .NET Framework on Windows 7 SP1 and Windows Server 2008 R2

@@ -26,6 +26,6 @@ If a parameter is declared for a method without [ref](../../../csharp/language-r
 -   [out](../../../csharp/language-reference/keywords/out.md)  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
+ms.workload: 
+  - dotnetcore
 ---
 
 # How to Manage Package Dependency Versions for .NET Core 1.0

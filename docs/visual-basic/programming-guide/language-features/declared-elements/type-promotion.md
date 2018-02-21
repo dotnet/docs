@@ -63,9 +63,9 @@ When you declare a programming element in a module, [!INCLUDE[vbprvb](~/includes
 -   **Full Qualification.** When you are working with modules and other elements in the same namespace, the safest approach is to always use full qualification for all programming elements. If type promotion is defeated for a module member and you do not fully qualify that member, you could inadvertently access a different programming element.  
   
 ## See Also  
- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)   
- [Namespace Statement](../../../../visual-basic/language-reference/statements/namespace-statement.md)   
- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)   
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
- [How to: Control the Scope of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)   
+ [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Namespace Statement](../../../../visual-basic/language-reference/statements/namespace-statement.md)  
+ [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)  
+ [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
+ [How to: Control the Scope of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)  
  [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # SoundPlayer Class Overview
 The <xref:System.Media.SoundPlayer> class enables you to easily include sounds in your applications.  
@@ -41,5 +43,5 @@ The <xref:System.Media.SoundPlayer> class enables you to easily include sounds i
 |<xref:System.Media.SoundPlayer.LoadCompleted> event|Raised after the load of a sound is attempted.|  
   
 ## See Also  
- <xref:System.Media.SoundPlayer>   
+ <xref:System.Media.SoundPlayer>  
  <xref:System.Media.SystemSounds>

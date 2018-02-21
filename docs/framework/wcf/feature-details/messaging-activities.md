@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Messaging Activities
 Messaging activities allow workflows to send and receive WCF messages. By adding messaging activities to a workflow you can model any arbitrarily complex message exchange patterns (MEP).  
@@ -110,5 +112,5 @@ Request = rcv
  When a call is made to a workflow service you may want to flow a transaction to the service operation. To do this place the <xref:System.ServiceModel.Activities.Receive> activity within a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity contains a `Receive` activity and a body. The transaction flowed to the service remains ambient throughout the execution of the body of the <xref:System.ServiceModel.Activities.TransactedReceiveScope>. The transaction is completed when the body finishes executing. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] workflows and transactions see [Workflow Transactions](../../../../docs/framework/windows-workflow-foundation/workflow-transactions.md).  
   
 ## See Also  
- [How to Send and Receive Faults in Workflow Services](http://go.microsoft.com/fwlink/?LinkId=189151)   
+ [How to Send and Receive Faults in Workflow Services](http://go.microsoft.com/fwlink/?LinkId=189151)  
  [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)

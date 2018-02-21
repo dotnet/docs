@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get the Return Value of a Page Function
 This example shows how to get the result that is returned by a page function.  

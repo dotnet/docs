@@ -23,6 +23,8 @@ caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Markup Compatibility (mc:) Language Features
 ## In This Section  

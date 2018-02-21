@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting
 This topic describes the format of trace data, how to view it, and approaches that use the Service Trace Viewer to troubleshoot your application.  
@@ -205,6 +207,6 @@ Expanding activities to track the root cause of a problem
 To start troubleshooting, you can also pick a red or yellow message trace and double click it to track the root cause  
   
 ## See Also  
- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)   
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)   
+ [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
+ [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

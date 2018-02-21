@@ -22,6 +22,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
 [Supported in the [!INCLUDE[net_v461](../../../../includes/net-v461-md.md)] and later versions]  

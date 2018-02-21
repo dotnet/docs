@@ -22,6 +22,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Apply Multiple Transforms to an Object
 This example shows how to use a <xref:System.Windows.Media.TransformGroup> to group two or more <xref:System.Windows.Media.Transform> objects into a single composite <xref:System.Windows.Media.Transform>.  
@@ -35,7 +37,7 @@ This example shows how to use a <xref:System.Windows.Media.TransformGroup> to gr
  [!code-vb[Transforms_Procedural_snip#MultipleTransformsCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Transforms_Procedural_snip/VisualBasic/MultipleTransformsExample.vb#multipletransformscodeexamplewholepage)]  
   
 ## See Also  
- <xref:System.Windows.UIElement.RenderTransform%2A>   
- <xref:System.Windows.Media.TransformGroup>   
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)   
+ <xref:System.Windows.UIElement.RenderTransform%2A>  
+ <xref:System.Windows.Media.TransformGroup>  
+ [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
  [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252)

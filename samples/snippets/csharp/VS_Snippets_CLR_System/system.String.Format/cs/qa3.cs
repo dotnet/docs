@@ -29,25 +29,25 @@ public class Example
    
    public static void WontThrow()
    {
-      String result;
+      // <Snippet24>
+      string result;
       int nOpen = 1;
       int nClose = 2;
-      // <Snippet24>
       result = String.Format("The text has {0} '{{' characters and {1} '}}' characters.",
                              nOpen, nClose);
-      // </Snippet24>
       Console.WriteLine(result);
+      // </Snippet24>
    }
    
    public static void Recommended()
    {
-      String result;
+      // <Snippet25>
+      string result;
       int nOpen = 1;
       int nClose = 2;
-      // <Snippet25>
       result = String.Format("The text has {0} '{1}' characters and {2} '{3}' characters.",
                              nOpen, "{", nClose, "}");
-      // </Snippet25>
       Console.WriteLine(result);
+      // </Snippet25>
    }
 }

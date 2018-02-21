@@ -26,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # SetManifestFile Method
 Enables you to specify or reset the manifest file that the linker uses when it creates the assembly.  
@@ -53,7 +55,7 @@ HRESULT SetManifestFile(
  Requires aLink.h  
   
 ## See Also  
- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)   
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)  
+ [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

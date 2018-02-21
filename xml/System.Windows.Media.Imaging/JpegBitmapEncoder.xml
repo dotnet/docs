@@ -20,8 +20,6 @@
   
  Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
   
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
@@ -125,10 +123,6 @@
 ## Remarks  
  The vertical flip represents a lossless transformation of the source image and replaces any previous lossless transformation.  
   
-<a name="XAMLTextUsage_FlipVertical"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example demonstrates how to set the value of the <xref:System.Windows.Media.Imaging.JpegBitmapEncoder.FlipVertical%2A> property.  
   
@@ -160,12 +154,6 @@
         <value>The quality level of the [!INCLUDE[TLA2#tla_jpegorg](~/includes/tla2sharptla-jpegorg-md.md)] image. The value range is 1 (lowest quality) to 100 (highest quality) inclusive.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_QualityLevel"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example demonstrates how to set the value of the <xref:System.Windows.Media.Imaging.JpegBitmapEncoder.QualityLevel%2A> property.  
@@ -203,10 +191,6 @@
  Rotation is supported only in 90-degree increments.  
   
  The rotation represents a lossless transformation of the source image and replaces any previous lossless transformation.  
-  
-<a name="XAMLTextUsage_Rotation"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example demonstrates how to set the value of the <xref:System.Windows.Media.Imaging.JpegBitmapEncoder.Rotation%2A> property.  

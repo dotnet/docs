@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 28b4deac-c7e4-4f09-b428-4d352ef2dc94
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SET (Entity SQL)
 The SET expression is used to convert a collection of objects into a set by yielding a new collection with all duplicate elements removed.  

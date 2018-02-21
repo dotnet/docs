@@ -357,7 +357,7 @@
 ## Remarks  
  When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events instead.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -393,7 +393,7 @@
 ## Remarks  
  When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events instead.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -431,7 +431,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MenuStrip.OnMenuActivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -464,7 +464,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.MenuStrip.OnMenuDeactivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

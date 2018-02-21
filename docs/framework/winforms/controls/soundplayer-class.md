@@ -18,6 +18,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # SoundPlayer Class
 The `SoundPlayer` class enables you to easily include sounds in your applications.  

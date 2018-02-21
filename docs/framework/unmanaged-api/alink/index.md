@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ALink API (Unmanaged API Reference)
 Supports creating .NET Framework assemblies and unbound modules.  

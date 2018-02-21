@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0d925119-01a1-45c2-9ea0-23061323ad33
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interoperability and Integration
 This section covers interoperability and integration with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
@@ -56,4 +58,4 @@ This section covers interoperability and integration with [!INCLUDE[indigo1](../
  <xref:System.ServiceModel>  
   
 ## Related Sections  
- [Extending WCF](../../../../docs/framework/wcf/extending/extending-wcf.md)
+ [Extending WCF](../../../../docs/framework/wcf/extending/index.md)

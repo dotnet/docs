@@ -27,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetScopeFromOffset Method
 Gets the most enclosing lexical scope within this method that encloses the given offset. This can be used to start local variable searches.  

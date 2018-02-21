@@ -318,7 +318,7 @@ work with the results.
 ## Deconstruction
 
 You can unpackage all the items in a tuple by *deconstructing* the tuple
-returned by a method. There are two different approaches to deconstructing
+returned by a method. There are three different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the elements in the tuple:
 
@@ -339,6 +339,21 @@ declarations inside the parentheses.
 Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
+
+You can deconstruct tuples with existing declarations as well:
+
+```csharp
+public class Point
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+}
+```
+
+> [!WARNING]
+>  You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
 
 ### Deconstructing user defined types
 

@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # When to deploy Windows Containers to Service Fabric
 
@@ -29,5 +32,6 @@ When comparing Service Fabric to other orchestrators, it's important to highligh
 
 The ultimate goal of Service Fabric is to reduce the complexities of building applications by using a microservices approach. This is where you eventually want to be for certain types of applications, to avoid costly redesigns. You can start small, scale when needed, deprecate services, add new services, and evolve your application with customer use. We know that there are many other problems that are yet to be solved to make microservices more approachable for most developers. If you currently are just lifting and shifting an application with Windows Containers, but you are thinking about adding microservices based on containers in the future, that is the Service Fabric sweet spot.
 
-> [Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)  
+>[!div class="step-by-step"]
+[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
 [Next](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

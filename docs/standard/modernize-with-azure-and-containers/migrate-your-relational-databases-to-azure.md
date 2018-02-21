@@ -4,6 +4,9 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Migrate your relational databases to azure
 
@@ -120,6 +123,6 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
     [https://azure.microsoft.com/services/virtual-machines/sql-server/](https://azure.microsoft.com/services/virtual-machines/sql-server/)
 
-
-> [Previous](lift-and-shift-existing-apps-azure-iaas.md)  
+>[!div class="step-by-step"]
+[Previous](lift-and-shift-existing-apps-azure-iaas.md)
 [Next](lift-and-shift-existing-apps-devops/index.md)

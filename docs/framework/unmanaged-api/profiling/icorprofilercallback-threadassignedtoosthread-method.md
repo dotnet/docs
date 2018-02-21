@@ -27,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ThreadAssignedToOSThread Method
 Notifies the profiler that a managed thread is being implemented using a particular operating system thread.  

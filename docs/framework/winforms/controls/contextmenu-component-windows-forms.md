@@ -22,6 +22,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ContextMenu Component (Windows Forms)
 > [!NOTE]
@@ -45,5 +47,5 @@ manager: "wpickett"
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
+ <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

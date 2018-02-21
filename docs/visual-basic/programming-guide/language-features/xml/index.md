@@ -26,7 +26,7 @@ ms.assetid: 954b6e40-1246-4185-a018-4061724fcae9
 |[Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)|Describes the XML axis properties and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] methods for accessing XML elements and attributes.|  
   
 ## See also  
- <xref:System.Xml.Linq>   
- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)   
- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
+ <xref:System.Xml.Linq>  
+ [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
+ [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
  [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)

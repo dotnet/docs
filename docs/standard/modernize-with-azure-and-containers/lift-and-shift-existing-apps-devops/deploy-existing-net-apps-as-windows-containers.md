@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Deploy existing .NET apps as Windows containers
 
@@ -129,6 +132,6 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
     [https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf](https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf)
 
-
-> [Previous](how-to-deploy-existing-net-apps-to-azure-app-service.md)  
+>[!div class="step-by-step"]
+[Previous](how-to-deploy-existing-net-apps-to-azure-app-service.md)
 [Next](when-not-to-deploy-to-windows-containers.md)

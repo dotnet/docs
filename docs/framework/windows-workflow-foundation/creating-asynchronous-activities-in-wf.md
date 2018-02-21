@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Asynchronous Activities in WF
 <xref:System.Activities.AsyncCodeActivity> provides activity authors a base class to use that enables derived activities to implement asynchronous execution logic. This is useful for custom activities that must perform asynchronous work without holding the workflow scheduler thread and blocking any activities that may be able to run in parallel. This topic provides an overview of how to create custom asynchronous activities using <xref:System.Activities.AsyncCodeActivity>.  
@@ -51,6 +53,6 @@ manager: "erikre"
  <xref:System.Activities.AsyncCodeActivity> derived custom activities  provide a method for performing work asynchronously with regard to the workflow thread, but do not provide the ability to schedule child activities or actions. However, asynchronous behavior can be incorporated with scheduling of child activities through composition. An asynchronous activity can be created, and then composed with an <xref:System.Activities.Activity> or <xref:System.Activities.NativeActivity> derived activity to provide asynchronous behavior and scheduling of child activities or actions. For example, an activity could be created that derives from <xref:System.Activities.Activity>, and has as its implementation a <xref:System.Activities.Statements.Sequence> containing the asynchronous activity as well the other activities that implement the logic of the activity. For more examples of composing activities using <xref:System.Activities.Activity> and <xref:System.Activities.NativeActivity>, see [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md), [Activity Authoring Options](../../../docs/framework/windows-workflow-foundation/activity-authoring-options-in-wf.md), and the [Composite](../../../docs/framework/windows-workflow-foundation/samples/composite.md) activity samples.  
   
 ## See Also  
- <xref:System.Action>   
- <xref:System.Func%602>   
+ <xref:System.Action>  
+ <xref:System.Func%602>  
  [Using AsyncOperationContext in an Activity](../../../docs/framework/windows-workflow-foundation/samples/using-asyncoperationcontext-in-an-activity-sample.md)

@@ -23,6 +23,8 @@ caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Ilasm.exe (IL Assembler)
 

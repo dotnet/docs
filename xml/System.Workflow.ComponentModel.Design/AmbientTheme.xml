@@ -671,7 +671,7 @@
 ## Examples  
  The following code example demonstrates a common way you can access the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GlyphSize%2A> property from a class that derives from the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> class.  
   
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#133](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#133)]
  [!code-vb[WF_Samples#133](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#133)]  
@@ -1221,7 +1221,7 @@
 ## Examples  
  The following code example demonstrates how you can set <xref:System.Workflow.ComponentModel.Design.AmbientTheme.ShowConfigErrors%2A> to false. Doing this for a workflow design surface means that none of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> objects displayed on the design surface will display their associated <xref:System.Workflow.ComponentModel.Design.DesignerAction> objects.  
   
- This code example is part of the Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ This code example is part of the Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/library/a280199c-3000-4148-ac63-cb5aaeac07c8).  
   
  [!code-csharp[WF_Samples#125](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#125)]
  [!code-vb[WF_Samples#125](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#125)]  

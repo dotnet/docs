@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "implementing service contracts [WCF]"
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing Service Contracts
 A service is a class that exposes functionality available to clients at one or more endpoints. To create a service, write a class that implements a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] contract. You can do this in one of two ways. You can define the contract separately as an interface and then create a class that implements that interface. Alternatively, you can create the class and contract directly by placing the <xref:System.ServiceModel.ServiceContractAttribute> attribute on the class itself and the <xref:System.ServiceModel.OperationContractAttribute> attribute on the methods available to the clients of the service.  
@@ -64,7 +66,7 @@ class MathService
  After implementing a service contract, you must create one or more endpoints for the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to run a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ## See Also  
- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)   
- [How to: Create a Service with a Contract Class](../../../docs/framework/wcf/feature-details/how-to-create-a-wcf-contract-with-a-class.md)   
- [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md)   
+ [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
+ [How to: Create a Service with a Contract Class](../../../docs/framework/wcf/feature-details/how-to-create-a-wcf-contract-with-a-class.md)  
+ [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md)  
  [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)

@@ -18,11 +18,11 @@ In C# 2.0 and later, single-dimensional arrays that have a lower bound of zero a
   
  The following code example demonstrates how a single generic method that takes an <xref:System.Collections.Generic.IList%601> input parameter can iterate through both a list and an array, in this case an array of integers.  
   
- [!code-cs[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-arrays_1.cs)]  
+ [!code-csharp[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-arrays_1.cs)]  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Generics](../../../csharp/programming-guide/generics/index.md)   
- [Arrays](../../../csharp/programming-guide/arrays/index.md)   
+ <xref:System.Collections.Generic>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Generics](../../../csharp/programming-guide/generics/index.md)  
+ [Arrays](../../../csharp/programming-guide/arrays/index.md)  
  [Generics](~/docs/standard/generics/index.md)

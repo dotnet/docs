@@ -6,6 +6,8 @@ ms.author: johalex
 ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
+ms.workload: 
+  - dotnetcore
 ---
 # Prerequisites for .NET Core on Windows
 

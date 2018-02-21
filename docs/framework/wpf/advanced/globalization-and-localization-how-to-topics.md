@@ -19,6 +19,8 @@ caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Globalization and Localization How-to Topics
 The topics in this section describe how to develop world-ready applications.  

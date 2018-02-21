@@ -21,7 +21,7 @@ A quotation mark has been supplied as the delimiter for the `TextFieldParser`, b
 -   Set `EscapeQuotes` to `False`.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>   
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>   
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>   
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>  
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>  
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>  
  [How to: Read From Comma-Delimited Text Files](../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)

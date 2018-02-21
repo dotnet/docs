@@ -33,8 +33,8 @@ ms.author: dotnetcontent
 2.  In your project properties, add a reference to the project that contains the assembly that defines the type you are using.  
   
 ## See Also  
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
+ [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
+   
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
  [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

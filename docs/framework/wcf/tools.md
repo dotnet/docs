@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation, tools"
 ms.assetid: 399a47b4-bfea-434b-8e83-f76b5063d79d
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Communication Foundation Tools
 Microsoft [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] tools are designed to make it easier for you to create, deploy, and manage [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications. This section contains detailed information about the tools. Please note that the tools are not supported.  

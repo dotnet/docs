@@ -39,5 +39,5 @@ Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer
 -   Adjust either the delegate definition or the assigned lambda expression so that the signatures are compatible.  
   
 ## See Also  
- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)   
+ [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)  
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)

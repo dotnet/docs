@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # IEnumRAWINPUTDEVIC:Clone
 Creates another raw input device enumerator with the same state as the current enumerator to iterate over the same list.  

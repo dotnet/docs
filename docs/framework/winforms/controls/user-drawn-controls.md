@@ -21,6 +21,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # User-Drawn Controls
 The .NET Framework provides you with the ability to easily develop your own controls. You can create a user control, which is a set of standard controls bound together by code, or you can design your own control from the ground up. You can even use inheritance to create a control that inherits from an existing control and add to its inherent functionality. Whatever approach you use, the .NET Framework provides the functionality to draw a custom graphical interface for any control you create.  
@@ -82,11 +84,11 @@ SetStyle(ControlStyles.ResizeRedraw, true);
 >  Use the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=nameWithType> property to implement a non-rectangular control.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.Region%2A>   
- <xref:System.Windows.Forms.ControlStyles>   
- <xref:System.Drawing.Graphics>   
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- <xref:System.Windows.Forms.PaintEventArgs>   
- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)   
- [Constituent Controls](../../../../docs/framework/winforms/controls/constituent-controls.md)   
+ <xref:System.Windows.Forms.Control.Region%2A>  
+ <xref:System.Windows.Forms.ControlStyles>  
+ <xref:System.Drawing.Graphics>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ <xref:System.Windows.Forms.PaintEventArgs>  
+ [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
+ [Constituent Controls](../../../../docs/framework/winforms/controls/constituent-controls.md)  
  [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

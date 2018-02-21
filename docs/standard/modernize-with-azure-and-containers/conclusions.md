@@ -4,6 +4,9 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Conclusions
 
@@ -23,4 +26,5 @@ ms.date: 10/26/2017
 
 -   Microsoft Azure provides the most comprehensive and complete environment to modernize your existing .NET Framework applications with Windows Containers, cloud infrastructure and PaaS services.
 
-> [Previous](walkthroughs-technical-get-started-overview.md)  
+>[!div class="step-by-step"]
+[Previous](walkthroughs-technical-get-started-overview.md)

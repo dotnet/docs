@@ -20,6 +20,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Handle the ScrollChanged Event
 ## Example  
@@ -34,7 +36,7 @@ manager: "wpickett"
  [!code-vb[scrollchangedeventargsLayout#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
   
 ## See Also  
- <xref:System.Windows.Controls.ScrollViewer>   
- <xref:System.Windows.Controls.ScrollViewer.ScrollChanged>   
- <xref:System.Windows.Controls.ScrollChangedEventHandler>   
+ <xref:System.Windows.Controls.ScrollViewer>  
+ <xref:System.Windows.Controls.ScrollViewer.ScrollChanged>  
+ <xref:System.Windows.Controls.ScrollChangedEventHandler>  
  <xref:System.Windows.Controls.ScrollChangedEventArgs>

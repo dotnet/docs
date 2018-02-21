@@ -33,5 +33,5 @@ Provides methods for manipulating the Clipboard.
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>   
+ <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

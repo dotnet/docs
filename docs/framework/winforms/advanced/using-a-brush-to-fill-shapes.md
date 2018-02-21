@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using a Brush to Fill Shapes
 A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Brush> object is used to fill the interior of a closed shape. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several fill styles: solid color, hatch pattern, image texture, and color gradient.  

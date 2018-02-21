@@ -17,6 +17,8 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MenuStrip Control (Windows Forms)
 This control groups application commands and makes them easily accessible.  

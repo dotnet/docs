@@ -20,6 +20,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Help Systems in Windows Forms Applications
 One of the most important courtesies you, as a developer of applications, can furnish your users with is a competent Help system. This is where they will turn when they become confused or disoriented. Providing a Help system in a Windows-based application is easily done by using the [HelpProvider Component](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md).  
@@ -30,8 +32,8 @@ One of the most important courtesies you, as a developer of applications, can fu
  You can generate HTML Help 1.x files with the HTML Help Workshop. For more information on HTML Help, see the "HTML Help Workshop" or the other "HTML Help" topics in MSDN.  
   
 ## See Also  
- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)   
- [HelpProvider Component](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md)   
- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)   
- [Windows Forms Overview](../../../../docs/framework/winforms/windows-forms-overview.md)   
+ [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)  
+ [HelpProvider Component](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md)  
+ [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)  
+ [Windows Forms Overview](../../../../docs/framework/winforms/windows-forms-overview.md)  
  [Windows Forms](../../../../docs/framework/winforms/index.md)

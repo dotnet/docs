@@ -21,6 +21,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Print Graphics in Windows Forms
 Frequently, you will want to print graphics in your Windows-based application. The <xref:System.Drawing.Graphics> class provides methods for drawing objects to a device, such as a screen or printer.  
@@ -73,6 +75,6 @@ Frequently, you will want to print graphics in your Windows-based application. T
     ```  
   
 ## See Also  
- <xref:System.Drawing.Graphics>   
- <xref:System.Drawing.Brush>   
+ <xref:System.Drawing.Graphics>  
+ <xref:System.Drawing.Brush>  
  [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

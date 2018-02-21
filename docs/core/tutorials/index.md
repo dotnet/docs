@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
+ms.workload: 
+  - dotnetcore
 ---
 
 # .NET Core Tutorials

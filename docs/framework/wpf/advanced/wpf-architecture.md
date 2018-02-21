@@ -28,6 +28,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Architecture
 This topic provides a guided tour of the [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] class hierarchy. It covers most of the major subsystems of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], and describes how they interact. It also details some of the choices made by the architects of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  
@@ -148,13 +150,13 @@ This topic provides a guided tour of the [!INCLUDE[TLA#tla_wpf](../../../../incl
  When you begin developing [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] based applications, it should feel very familiar. You can set properties, use objects, and data bind in much the same way that you can using [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] or [!INCLUDE[TLA#tla_aspnet](../../../../includes/tlasharptla-aspnet-md.md)]. With a deeper investigation into the architecture of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you'll find that the possibility exists for creating much richer applications that fundamentally treat data as the core driver of the application.  
   
 ## See Also  
- <xref:System.Windows.Media.Visual>   
- <xref:System.Windows.UIElement>   
- <xref:System.Windows.Input.ICommand>   
- <xref:System.Windows.FrameworkElement>   
- <xref:System.Windows.Threading.DispatcherObject>   
- <xref:System.Windows.Input.CommandBinding>   
- <xref:System.Windows.Controls.Control>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
+ <xref:System.Windows.Media.Visual>  
+ <xref:System.Windows.UIElement>  
+ <xref:System.Windows.Input.ICommand>  
+ <xref:System.Windows.FrameworkElement>  
+ <xref:System.Windows.Threading.DispatcherObject>  
+ <xref:System.Windows.Input.CommandBinding>  
+ <xref:System.Windows.Controls.Control>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

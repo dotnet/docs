@@ -20,6 +20,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Height Properties of an Element
 ## Example  
@@ -40,12 +42,12 @@ manager: "wpickett"
  For the complete sample, see [Height Properties Sample](http://go.microsoft.com/fwlink/?LinkID=159993).  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement>   
- <xref:System.Windows.Controls.ListBox>   
- <xref:System.Windows.FrameworkElement.ActualHeight%2A>   
- <xref:System.Windows.FrameworkElement.MaxHeight%2A>   
- <xref:System.Windows.FrameworkElement.MinHeight%2A>   
- <xref:System.Windows.FrameworkElement.Height%2A>   
- [Set the Width Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ <xref:System.Windows.FrameworkElement>  
+ <xref:System.Windows.Controls.ListBox>  
+ <xref:System.Windows.FrameworkElement.ActualHeight%2A>  
+ <xref:System.Windows.FrameworkElement.MaxHeight%2A>  
+ <xref:System.Windows.FrameworkElement.MinHeight%2A>  
+ <xref:System.Windows.FrameworkElement.Height%2A>  
+ [Set the Width Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Height Properties Sample](http://go.microsoft.com/fwlink/?LinkID=159993)

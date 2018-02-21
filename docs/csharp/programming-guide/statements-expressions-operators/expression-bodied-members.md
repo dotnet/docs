@@ -37,7 +37,7 @@ An expression-bodied method consists of a single expression that returns a value
 
 The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
 
-[!code-cs[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
+[!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
 
 For more information, see [Methods (C# Programming Guide)](../classes-and-structs/methods.md).
  
@@ -47,7 +47,7 @@ An expression body definition for a constructor typically consists of a single a
 
 The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
 
-[!code-cs[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
+[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
 
 For more information, see [Constructors (C# Programming Guide)](../classes-and-structs/constructors.md).
 
@@ -57,7 +57,7 @@ An expression body definition for a finalizer typically contains cleanup stateme
 
 The following example defines a finalizer that uses an expression body definition to indicate that the finalizer has been called.
 
-[!code-cs[expression-bodied-finalizer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
+[!code-csharp[expression-bodied-finalizer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
 
 For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/destructors.md).
 
@@ -67,7 +67,7 @@ If you choose to implement a property get accessor yourself, you can use an expr
 
 The following example defines a `Location.Name` property whose property get accessor returns the value of the private `locationName` field that backs the property. 
 
-[!code-cs[expression-bodied-property-getter](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
+[!code-csharp[expression-bodied-property-getter](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
 
 Read-only properties that use an expression body definition can be implemented without an explicit `set` statement. The syntax is:
 
@@ -77,7 +77,7 @@ PropertyName => returnValue;
 
 The following example defines a `Location` class whose read-only `Name` property is implemented as an expression body definition that returns the value of the private `locationName` field.
 
-[!code-cs[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]  
+[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]  
 
 For more information, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
@@ -87,7 +87,7 @@ If you choose to implement a property set accessor yourself, you can use an expr
 
 The following example defines a `Location.Name` property whose property set statement assigns its input argument to the private `locationName` field that backs the property.
 
-[!code-cs[expression-bodied-property-setter](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
+[!code-csharp[expression-bodied-property-setter](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
 
 For more information, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
@@ -97,7 +97,7 @@ Like properties, an indexer's get and set accessors consist of expression body d
 
 The following example defines a class named `Sports` that includes an internal <xref:System.String> array that contains the names of a number of sports. Both the indexer's get and set accessors are implemented as expression body definitions.
 
-[!code-cs[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)] 
+[!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)] 
 
 For more information, see [Indexers (C# Programming Guide)](../indexers/index.md).
 

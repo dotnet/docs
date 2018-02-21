@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 37685b32-24e3-4d72-88d8-45d5fcc49ec2
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Serializing Workflows and Activities to and from XAML
 In addition to being compiled into types that are contained in assemblies, workflow definitions can also be serialized to XAML. These serialized definitions can be reloaded for editing or inspection, passed to a build system for compilation, or loaded and invoked. This topic provides an overview of serializing workflow definitions and working with XAML workflow definitions.  
@@ -74,7 +76,7 @@ sw.Close();
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **25 + 15**   
+ **25 + 15**  
 **40**    
 > [!NOTE]
 >  [!INCLUDE[crabout](../../../includes/crabout-md.md)] invoking workflows with input and output arguments, see [Using WorkflowInvoker and WorkflowApplication](../../../docs/framework/windows-workflow-foundation/using-workflowinvoker-and-workflowapplication.md) and <xref:System.Activities.WorkflowInvoker.Invoke%2A>.  

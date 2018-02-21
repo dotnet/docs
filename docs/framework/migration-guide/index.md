@@ -9,10 +9,12 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
-ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b 
+ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Migration Guide to the .NET Framework 4.7, 4.6, and 4.5 
 If you created your app using an earlier version of the .NET Framework, you can generally upgrade it to the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2), or the .NET Framework 4.7 and its point release, the .NET Framework 4.7.1, easily. Open your project in Visual Studio. If your project was created in an earlier version of Visual Studio, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2017 Platform Targeting and Compatibility](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs).  
@@ -31,13 +33,13 @@ If you created your app using an earlier version of the .NET Framework, you can 
 -   See [What's New](../../../docs/framework/whats-new/index.md) for descriptions of new features that you may want to add to your app.  
   
 ## See Also  
- [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
- [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)   
- [Version Compatibility](../../../docs/framework/migration-guide/version-compatibility.md)   
- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
- [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)   
- [What's New](../../../docs/framework/whats-new/index.md)   
- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
- [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)   
+ [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)  
+ [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)  
+ [Version Compatibility](../../../docs/framework/migration-guide/version-compatibility.md)  
+ [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)  
+ [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)  
+ [What's New](../../../docs/framework/whats-new/index.md)  
+ [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
+ [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)  
  [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/?LinkId=196607)
  [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

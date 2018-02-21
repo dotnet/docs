@@ -4,6 +4,9 @@ description: Learn to lift and shift existing applications to the Azure cloud an
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (v1.0)  
 
@@ -19,7 +22,7 @@ Copyright © 2017 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
-This book is available for free in the form of an electronic book (eBook) available through multiple channels at Microsoft such as <http://dot.net/architecture>
+This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as <http://dot.net/architecture>
 
 If you have questions related to this book, email at [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)
 
@@ -89,7 +92,7 @@ Table 1-1 describes the main benefits of and reasons for choosing each migration
 > | **Cloud Infrastructure-Ready** <br /> *Lift and shift* | **Cloud DevOps-Ready** <br /> *Lift and shift* | **Cloud-Optimized** *Modernize/refactor/rewrite* |
 > |---|---|---|
 > | **Application's compute target** |
-> | Applications deployed to VMs in Azure | Containerized monolithic or N-Tier apps deployed to VMs, Azure Service Fabric, or Azure Container Service (i.e. Kubernetes) | Containerized microservices or regular applications based on PaaS on Azure App Service, Azure Service Fabric, Azure Container Service (i.e. Kubernetes) |
+> | Applications deployed to VMs in Azure | Containerized monolithic or N-Tier apps deployed to VMs, Azure Service Fabric, or Azure Container Service (that is, Kubernetes) | Containerized microservices or regular applications based on PaaS on Azure App Service, Azure Service Fabric, Azure Container Service (that is, Kubernetes) |
 > | **Data target** |
 > | SQL or any relational database on a VM | Azure SQL Database Managed Instance | Azure SQL Database, Azure Cosmos DB, or other NoSQL |
 > | **Advantages**|
@@ -159,15 +162,15 @@ This guide covers a specific subset of the example scenarios, as shown in Figure
 
 The focus of this guide is specific. We show you the path you can take to achieve a lift and shift of your existing .NET applications, without re-architecting, and with no code changes. Ultimately, we show you how to make your application Cloud DevOps-Ready.
 
-This guide doesn't show you how to work with cloud-native applications, such as how to evolve to a microservices architectures. To re-architect your applications or to create brand-new applications that are based on microservices, see the eBook [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
+This guide doesn't show you how to work with cloud-native applications, such as how to evolve to a microservices architectures. To re-architect your applications or to create brand-new applications that are based on microservices, see the e-book [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
 ### Additional resources
 
--   **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable eBook): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+-   **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
 
--   **.NET Microservices: Architecture for containerized .NET applications** (downloadable eBook): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
+-   **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
 
--   **Architecting modern web applications with ASP.NET Core and Azure** (downloadable eBook): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
+-   **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
 
 ## Who should use this guide
 
@@ -191,4 +194,5 @@ Both sample apps have a second version, with modernized code, and which are fair
 
 We wrote this guide to help you understand your options for improving and modernizing existing .NET web applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, please send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book).
 
+>[!div class="step-by-step"]
 [Next](lift-and-shift-existing-apps-azure-iaas.md)

@@ -39,5 +39,5 @@ uid: System.Linq.Expressions.SwitchCase.ToString
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

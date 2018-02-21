@@ -21,6 +21,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;gcConcurrent&gt; Element
 Specifies whether the common language runtime runs garbage collection on a separate thread.  
@@ -94,6 +96,6 @@ Specifies whether the common language runtime runs garbage collection on a separ
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [Fundamentals of Garbage Collection](../../../../../docs/standard/garbage-collection/fundamentals.md)

@@ -28,7 +28,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to set the value of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults> class, and assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>, which is created earlier in the file. The code also creates new instances of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> and <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> classes and sets some values. This code example is part of the Outlook Workflow Wizard SDK Sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ The following code example demonstrates how to set the value of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults> class, and assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>, which is created earlier in the file. The code also creates new instances of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> and <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> classes and sets some values. This code example is part of the Outlook Workflow Wizard SDK Sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
  [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  

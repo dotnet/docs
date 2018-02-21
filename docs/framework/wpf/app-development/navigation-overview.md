@@ -36,6 +36,8 @@ caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Navigation Overview
 [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] supports browser-style navigation that can be used in two types of applications: standalone applications and [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]. To package content for navigation, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides the <xref:System.Windows.Controls.Page> class. You can navigate from one <xref:System.Windows.Controls.Page> to another declaratively, by using a <xref:System.Windows.Documents.Hyperlink>, or programmatically, by using the <xref:System.Windows.Navigation.NavigationService>. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] uses the journal to remember pages that have been navigated from and to navigate back to them.  
@@ -736,11 +738,11 @@ manager: "wpickett"
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] navigation support allows [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to be navigated to across the Internet, and it allows applications to host third-party content. To protect both applications and users from harmful behavior, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides a variety of security features that are discussed in [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
 ## See Also  
- <xref:System.Windows.Application.SetCookie%2A>   
- <xref:System.Windows.Application.GetCookie%2A>   
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)   
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
- [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)   
- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/app-development/navigation-how-to-topics.md)   
+ <xref:System.Windows.Application.SetCookie%2A>  
+ <xref:System.Windows.Application.GetCookie%2A>  
+ [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
+ [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
+ [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)  
+ [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/app-development/navigation-how-to-topics.md)  
  [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)

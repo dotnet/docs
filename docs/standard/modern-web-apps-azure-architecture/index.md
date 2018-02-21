@@ -1,13 +1,19 @@
 ---
-title: Architect modern web applications with ASP.NET Core and Azure  
+title: Architect modern web applications with ASP.NET Core and Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
+
+![cover image](./media/cover.jpg)
+
 
 .NET Core and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET Core for your server applications if some or all of the following are important to your application's success:
 
@@ -44,7 +50,7 @@ This guide provides end-to-end guidance on building monolithic web applications 
 This guide is complementary to the "*Architecting and Developing Containerized and Microservice-based Applications with .NET*" which focuses more on Docker, Microservices, and Deployment of Containers to host enterprise applications.
 
 > ### Architecting and Developing Containerized Microservice Based Apps in .NET
-> - **eBook**  
+> - **e-book**  
 > <http://aka.ms/MicroservicesEbook>
 > - **Sample Application**  
 > <http://aka.ms/microservicesarchitecture>

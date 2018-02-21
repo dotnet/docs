@@ -20,6 +20,8 @@ caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Graphics How-to Topics
 The following topics demonstrate how to use the graphic capabilities of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
@@ -33,12 +35,12 @@ The following topics demonstrate how to use the graphic capabilities of the [!IN
  [How to: Use a Cached Element as a Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md)  
   
 ## See Also  
- <xref:System.Windows.Shapes.Shape>   
- <xref:System.Windows.Media.Transform>   
- <xref:System.Windows.Media.Imaging.BitmapImage>   
- <xref:System.Windows.Media.Geometry>   
- <xref:System.Windows.Media.Drawing>   
- <xref:System.Windows.Media.Brush>   
- <xref:System.Windows.Media.Effects.BitmapEffect>   
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)   
+ <xref:System.Windows.Shapes.Shape>  
+ <xref:System.Windows.Media.Transform>  
+ <xref:System.Windows.Media.Imaging.BitmapImage>  
+ <xref:System.Windows.Media.Geometry>  
+ <xref:System.Windows.Media.Drawing>  
+ <xref:System.Windows.Media.Brush>  
+ <xref:System.Windows.Media.Effects.BitmapEffect>  
+ [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
  [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

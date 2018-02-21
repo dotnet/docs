@@ -44,7 +44,7 @@
     <typeparam name="T">The type of elements in the set.</typeparam>
     <summary>Represents an immutable sorted set implementation.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -170,7 +170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -252,7 +252,7 @@
 > [!CAUTION]
 >  When you  use this enumerator as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption and exceptions.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -283,7 +283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -342,7 +342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -376,7 +376,7 @@
 ## Remarks  
  An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the current set is empty, unless the `other` collection is also empty.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -410,7 +410,7 @@
 ## Remarks  
  An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, unless the current set is also empty.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -444,7 +444,7 @@
 ## Remarks  
  An empty set is a subset of any other set, including another empty set. Therefore, this method returns `true` if the current set is empty, even if the `other` collection is also empty.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -478,7 +478,7 @@
 ## Remarks  
  All collections, including empty sets, are supersets of an empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current sorted set is empty.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -536,7 +536,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -563,7 +563,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -622,7 +622,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -653,7 +653,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -681,7 +681,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -713,7 +713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -744,7 +744,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -776,7 +776,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -805,7 +805,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -839,7 +839,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -893,7 +893,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -923,7 +923,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -957,7 +957,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1013,7 +1013,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1047,7 +1047,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1079,7 +1079,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1111,7 +1111,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1143,7 +1143,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1175,7 +1175,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1209,7 +1209,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1279,7 +1279,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1312,7 +1312,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1342,7 +1342,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1376,7 +1376,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1409,7 +1409,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1443,7 +1443,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1541,7 +1541,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1574,7 +1574,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1608,7 +1608,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1638,7 +1638,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1671,7 +1671,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1704,7 +1704,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1737,7 +1737,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1770,7 +1770,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1803,7 +1803,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1835,7 +1835,7 @@
   
  This is an O(1) operation and results in only a single (small) memory allocation. The mutable collection that is returned is not thread safe.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1870,7 +1870,7 @@
 ## Remarks  
  This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1901,7 +1901,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>
@@ -1932,7 +1932,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)  
   
  ]]></format>
         </remarks>

@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Determine If a Page is Browser Hosted
 This example demonstrates how to determine if a <xref:System.Windows.Controls.Page> is hosted in a browser.  
@@ -33,5 +35,5 @@ This example demonstrates how to determine if a <xref:System.Windows.Controls.Pa
  [!code-vb[HOWTOBrowserInteropHelperSnippets#IsBrowserHostedCODE](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOBrowserInteropHelperSnippets/visualbasic/page1.xaml.vb#isbrowserhostedcode)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Frame>   
+ <xref:System.Windows.Controls.Frame>  
  <xref:System.Windows.Controls.Page>

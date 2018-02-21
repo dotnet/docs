@@ -1,11 +1,14 @@
 ---
-title: Characteristics of modern web applications  
+title: Characteristics of modern web applications
 description: Architect Modern Web Applications with ASP.NET Core and Azure | characteristics of modern web applications
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Characteristics of Modern Web Applications
 
@@ -36,7 +39,7 @@ ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud)
 
 ## Cross Platform
 
-ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of containers and microservices (link to microservices and containers ebook).
+ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices-architecture/index.md).
 
 ## Modular and Loosely Coupled
 
@@ -68,7 +71,7 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 > - **Introduction to ASP.NET Core**  
 > <https://docs.microsoft.com/aspnet/core/>
 > - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
-> <http://www.trigent.com/blog/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
+> <https://blog.trigent.com/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
 > - **Testing in ASP.NET Core**  
 > <https://docs.microsoft.com/aspnet/core/testing/>
 

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe156790-3260-4d50-a4a6-e6bc80575af0
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Rules Samples
 This section contains samples that demonstrate using the workflow rules engine from [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)].  

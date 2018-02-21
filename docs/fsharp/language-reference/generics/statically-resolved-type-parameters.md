@@ -49,8 +49,8 @@ The resolved type of `(+@)` is based on the use of both `(+)` and `(*)`, both of
 
 ```fsharp
 ^a -> ^c -> ^d
-when (^a or ^b) : (static member (+) : ^a * ^b -> ^d) and
-(^a or ^c) : (static member (+) : ^a * ^c -> ^b)
+when (^a or ^b) : (static member ( + ) : ^a * ^b -> ^d) and
+(^a or ^c) : (static member ( * ) : ^a * ^c -> ^b)
 ```
 
 The output is as follows.

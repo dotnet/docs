@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectEnum::Next Method
 Gets the relative virtual addresses (RVAs) of the specified number of objects from the enumeration, starting at the current position.  

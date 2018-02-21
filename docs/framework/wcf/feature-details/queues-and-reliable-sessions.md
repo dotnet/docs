@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7e794d03-141c-45ed-b6b1-6c0e104c1464
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Queues and Reliable Sessions
 Queues and reliable sessions are the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features that implement reliable messaging. The topics contained in this section discuss the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] reliable messaging features.  
@@ -45,7 +47,7 @@ Queues and reliable sessions are the [!INCLUDE[indigo1](../../../../includes/ind
  The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when there is a mismatch between the rate of message production by the source and the rate of the message consumption by the destination. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] queues, see [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See Also  
- [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)   
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)   
- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)   
+ [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
+ [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
+ [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)  
  [Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)

@@ -236,7 +236,7 @@ End Function
   
  The return type of an iterator function can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Example  
  The following example uses the `Function` statement to declare the name, parameters, and code that form the body of a `Function` procedure. The `ParamArray` modifier enables the function to accept a variable number of arguments.  
@@ -256,14 +256,14 @@ End Function
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
   
 ## See Also  
- [Sub Statement](sub-statement.md)   
- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
- [Parameter List](parameter-list.md)   
- [Dim Statement](dim-statement.md)   
- [Call Statement](call-statement.md)   
- [Of](of-clause.md)   
- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
+ [Sub Statement](sub-statement.md)  
+ [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
+ [Parameter List](parameter-list.md)  
+ [Dim Statement](dim-statement.md)  
+ [Call Statement](call-statement.md)  
+ [Of](of-clause.md)  
+ [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
+ [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
+ [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
  [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md)

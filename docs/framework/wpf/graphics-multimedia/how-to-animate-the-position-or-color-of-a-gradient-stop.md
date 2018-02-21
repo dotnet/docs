@@ -24,6 +24,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate the Position or Color of a Gradient Stop
 This example shows how to animate the <xref:System.Windows.Media.GradientStop.Color%2A> and <xref:System.Windows.Media.GradientStop.Offset%2A> of <xref:System.Windows.Media.GradientStop> objects.  
@@ -46,6 +48,6 @@ This example shows how to animate the <xref:System.Windows.Media.GradientStop.Co
  For additional examples, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973).  
   
 ## See Also  
- <xref:System.Windows.Media.GradientStop>   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
+ <xref:System.Windows.Media.GradientStop>  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

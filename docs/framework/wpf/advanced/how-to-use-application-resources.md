@@ -17,6 +17,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Application Resources
 This example shows how to use application resources.  
@@ -32,6 +34,6 @@ This example shows how to use application resources.
  [!code-xaml[ResourcesApplication#ConsumingPage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ResourcesApplication/CS/page1.xaml#consumingpage)]  
   
 ## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)   
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)

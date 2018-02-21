@@ -25,6 +25,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Collecting Ink
 The [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md) platform collects digital ink as a core part of its functionality. This topic discusses methods for collection of ink in [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)].  
@@ -83,6 +85,6 @@ The [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md) p
  Notice how the <xref:System.Windows.Controls.StackPanel> places the buttons on top of the <xref:System.Windows.Controls.InkCanvas>. If you try to ink over the top of the buttons, the <xref:System.Windows.Controls.InkCanvas> collects and renders the ink behind the buttons. This is because the buttons are siblings of the <xref:System.Windows.Controls.InkCanvas> as opposed to children. Also, the buttons are higher in the z-order, so the ink is rendered behind them.  
   
 ## See Also  
- <xref:System.Windows.Ink.DrawingAttributes>   
- <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>   
+ <xref:System.Windows.Ink.DrawingAttributes>  
+ <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>  
  <xref:System.Windows.Ink>

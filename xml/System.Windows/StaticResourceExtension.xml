@@ -29,11 +29,7 @@
  `{StaticResource}` is a markup extension that is specific to the WPF implementation of XAML. You can use `{StaticResource}` when referencing the default XAML namespace for WPF, without using a prefix. In contrast, markup extensions that are defined for XAML language support (such as `{x:Type}`) require the prefix for the XAML language XAML namespace in the usage. For more information, see [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
  Static resource references are generally used in XAML whenever a [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) is not explicitly necessary.  
-  
-<a name="xamlTextUsage_StaticResourceExtension"></a>   
-## XAML Text Usage  
- See Remarks  
-  
+    
  ]]></format>
     </remarks>
   </Docs>
@@ -142,8 +138,6 @@
 ## Remarks  
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, see [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
   
-<a name="xamlTextUsage_ResourceKey"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Specified value as <see langword="null" />, either through markup extension usage or explicit construction.</exception>

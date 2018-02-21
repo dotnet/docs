@@ -22,6 +22,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Implement the ITypedList Interface
 Implement the <xref:System.ComponentModel.ITypedList> interface to enable discovery of the schema for a bindable list.  
@@ -44,7 +46,7 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
 -   References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See Also  
- <xref:System.ComponentModel.ITypedList>   
- <xref:System.ComponentModel.BindingList%601>   
- <xref:System.ComponentModel.IBindingList>   
+ <xref:System.ComponentModel.ITypedList>  
+ <xref:System.ComponentModel.BindingList%601>  
+ <xref:System.ComponentModel.IBindingList>  
  [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

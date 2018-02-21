@@ -20,6 +20,8 @@ caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF XAML Extensions
 ## In This Section  

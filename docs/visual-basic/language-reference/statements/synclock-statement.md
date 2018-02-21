@@ -95,7 +95,7 @@ End SyncLock
 ### Comments  
   
 ## See Also  
- <xref:System.Threading>   
- <xref:System.Threading.Monitor>   
- [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)   
- [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)
+ <xref:System.Threading>  
+ <xref:System.Threading.Monitor>  
+ [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)  
+ [Threading](../../programming-guide/concepts/threading/index.md)

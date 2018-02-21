@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 31fe2a4f-5c47-4e5d-8ee1-84c524609d41
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # System.Web.Routing Integration
 When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service in Internet Information Service (IIS) you place a .svc file in the virtual directory. This .svc file specifies the service host factory to use as well as the class that implements the service. When making requests to the service you specify the .svc file in the URI, for example: http://contoso.com/EmployeeServce.svc. For programmers writing REST services this type of URI is not optimal. URIs for REST services specify a specific resource and normally do not have any extensions. The <xref:System.Web.Routing> integration feature allows you to host a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] REST service that responds to URIs without an extension. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] routing see [ASP.NET Routing](http://go.microsoft.com/fwlink/?LinkId=184660) and the [AspNetRouteIntegration](../../../../docs/framework/wcf/samples/aspnetrouteintegration.md) sample.  
@@ -76,5 +78,5 @@ When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service i
 ```  
   
 ## See Also  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)   
+ [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [ASP.NET Routing](http://go.microsoft.com/fwlink/?LinkId=184660)

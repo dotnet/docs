@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use SystemParameters
 This example shows how to access and use the properties of <xref:System.Windows.SystemParameters> in order to style or customize a button.  
@@ -38,8 +40,8 @@ This example shows how to access and use the properties of <xref:System.Windows.
  [!code-vb[SystemRes_snip#ParameterResourcesCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SystemRes_snip/VisualBasic/Pane1.xaml.vb#parameterresourcescode)]  
   
 ## See Also  
- <xref:System.Windows.SystemParameters>   
- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)   
- [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)   
- [Use System Parameters Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-parameters-keys.md)   
+ <xref:System.Windows.SystemParameters>  
+ [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)  
+ [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)  
+ [Use System Parameters Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-parameters-keys.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)

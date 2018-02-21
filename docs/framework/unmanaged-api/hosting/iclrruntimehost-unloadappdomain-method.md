@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeHost::UnloadAppDomain Method
 Unloads the managed <xref:System.AppDomain> that corresponds to the specified numeric identifier.  

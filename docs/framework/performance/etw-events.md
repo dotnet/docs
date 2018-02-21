@@ -17,6 +17,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ETW Events in the .NET Framework
 Event tracing for Windows (ETW) is a high-performance, low-overhead, scalable tracing system provided by Windows operating systems. It supplements the profiling and debugging support provided by the .NET Framework and can be used to troubleshoot a variety of scenarios.  
@@ -31,6 +33,6 @@ Event tracing for Windows (ETW) is a high-performance, low-overhead, scalable tr
  Describes how CLR ETW events supplement the profiling and debugging support provided by the common language runtime.  
   
 ## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)   
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)   
+ [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)  
+ [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
  [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

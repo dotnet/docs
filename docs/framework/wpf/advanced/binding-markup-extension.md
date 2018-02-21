@@ -19,6 +19,8 @@ caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Binding Markup Extension
 Defers a property value to be a data-bound value, creating an intermediate expression object and interpreting the data context that applies to the element and its binding at run time.  
@@ -129,7 +131,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
  `Binding` is an atypical markup extension in that the <xref:System.Windows.Data.Binding> class that implements the extension functionality for WPF's XAML implementation also implements several other methods and properties that are not related to XAML. The other members are intended to make <xref:System.Windows.Data.Binding> a more versatile and self-contained class that can address many data binding scenarios in addition to functioning as a XAML markup extension.  
   
 ## See Also  
- <xref:System.Windows.Data.Binding>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.Data.Binding>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

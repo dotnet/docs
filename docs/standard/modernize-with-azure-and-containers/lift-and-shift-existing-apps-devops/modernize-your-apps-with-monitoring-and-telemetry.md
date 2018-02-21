@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Modernize your apps with monitoring and telemetry
 
@@ -89,6 +92,6 @@ You can use the Log Analytics Container Monitoring solution to:
 
 [https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver](https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver)
 
-
-> [Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)  
+>[!div class="step-by-step"]
+[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
 [Next](modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md)

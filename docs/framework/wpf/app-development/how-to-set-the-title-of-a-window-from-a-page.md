@@ -18,6 +18,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Title of a Window from a Page
 This example shows how to set the title of the window in which a <xref:System.Windows.Controls.Page> is hosted.  

@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Upload Files with FTP
 This sample shows how to upload a file to an FTP server.  

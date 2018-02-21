@@ -31,12 +31,12 @@
   
  Parameters must be unique in the <xref:System.Data.Objects.ObjectParameterCollection>. There cannot be two parameters in the collection with the same name.  
   
- When using composition methods, such as <xref:System.Data.Objects.ObjectQuery%601.Union%2A>, <xref:System.Data.Objects.ObjectQuery%601.UnionAll%2A>, <xref:System.Data.Objects.ObjectQuery%601.Intersect%2A> and <xref:System.Data.Objects.ObjectQuery%601.Except%2A>, the parameters are merged. An exception is thrown when the sets of parameters are incompatible or incomplete. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+ When using composition methods, such as <xref:System.Data.Objects.ObjectQuery%601.Union%2A>, <xref:System.Data.Objects.ObjectQuery%601.UnionAll%2A>, <xref:System.Data.Objects.ObjectQuery%601.Intersect%2A> and <xref:System.Data.Objects.ObjectQuery%601.Except%2A>, the parameters are merged. An exception is thrown when the sets of parameters are incompatible or incomplete. For more information, see [Query Builder Methods](http://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0).  
   
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and gets the count of the parameters in the collection. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and gets the count of the parameters in the collection. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_count_add_indexer)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_count_add_indexer)]  
@@ -69,12 +69,12 @@
 ## Remarks  
  After parameters have been added, they can be removed from the collection and the collection can be cleared, as long as the query has not been compiled or executed. Parameter names cannot be changed, but values can be changed at any time.  
   
- Parameters must be unique in the <xref:System.Data.Objects.ObjectParameterCollection>. There cannot be two parameters in the collection with the same name. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+ Parameters must be unique in the <xref:System.Data.Objects.ObjectParameterCollection>. There cannot be two parameters in the collection with the same name. For more information, see [Query Builder Methods](http://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0).  
   
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection. It iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection. It iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_count_add_indexer)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_count_add_indexer)]  
@@ -161,7 +161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example uses the <xref:System.Data.Objects.ObjectParameterCollection.Contains%2A> method to determine whether the specified parameter is in the collection.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example uses the <xref:System.Data.Objects.ObjectParameterCollection.Contains%2A> method to determine whether the specified parameter is in the collection.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_StringArg](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_stringarg)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_StringArg](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_stringarg)]  
@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example copies the parameters into the specified array.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example copies the parameters into the specified array.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_CopyTo](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_copyto)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_CopyTo](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_copyto)]  
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and gets the count of the parameters in the collection. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and gets the count of the parameters in the collection. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_count_add_indexer)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_Count_Add_Indexer](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_count_add_indexer)]  
@@ -283,7 +283,7 @@
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds two parameters to the collection and then removes the parameters.  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds two parameters to the collection and then removes the parameters.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectParameterCollection_Remove](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectparametercollection_remove)]
  [!code-vb[DP ObjectServices Concepts#ObjectParameterCollection_Remove](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectparametercollection_remove)]  

@@ -14,6 +14,8 @@ helpviewer_keywords:
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;source&gt; Element
 Specifies a trace source that initiates tracing messages.  
@@ -84,5 +86,5 @@ Specifies a trace source that initiates tracing messages.
 ```  
   
 ## See Also  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)

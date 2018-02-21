@@ -27,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl::ReleaseAllRuntimeThreads Method
 Notifies the host that the debugging services are about to release all threads that are blocked.  

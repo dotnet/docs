@@ -4,6 +4,9 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 
@@ -29,6 +32,6 @@ Figure 4-12 shows a continuous deployment pipeline that deploys to a Kubernetes 
 
 > **Figure 4-12.** Visual Studio Team Services continuous deployment pipeline, deploying to a Kubernetes cluster
 
-
-> [Previous](modernize-your-apps-with-monitoring-and-telemetry.md)  
+>[!div class="step-by-step"]
+[Previous](modernize-your-apps-with-monitoring-and-telemetry.md)
 [Next](migrate-to-hybrid-cloud-scenarios.md)

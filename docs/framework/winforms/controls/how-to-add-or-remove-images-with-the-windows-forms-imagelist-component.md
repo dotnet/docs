@@ -25,6 +25,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add or Remove Images with the Windows Forms ImageList Component
 The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically populated with images before it is associated with a control. However, you can add and remove images after associating the image list with a control.  
@@ -150,6 +152,6 @@ imageList1.Images.RemoveByKey("myPhoto");
 ```  
   
 ## See Also  
- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)   
- [ImageList Component Overview](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)   
+ [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)  
+ [ImageList Component Overview](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)  
  [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)

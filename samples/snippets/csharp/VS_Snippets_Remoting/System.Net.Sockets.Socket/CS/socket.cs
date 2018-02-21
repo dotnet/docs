@@ -69,7 +69,7 @@ public class GetSocket
         int bytes = 0;
         string page = "Default HTML page on " + server + ":\r\n";
 
-        // The following will block until te page is transmitted.
+        // The following will block until the page is transmitted.
         do {
             bytes = s.Receive(bytesReceived, bytesReceived.Length, 0);
             page = page + Encoding.ASCII.GetString(bytesReceived, 0, bytes);

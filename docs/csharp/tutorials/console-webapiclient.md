@@ -141,13 +141,31 @@ public static void Main(string[] args)
 }
 ```
 
-Now, you have a program that does nothing, but does it asynchronously. Let's go back to the
-`ProcessRepositories` method and fill in a first version of it:
+Now, you have a program that does nothing, but does it asynchronously. Let's improve it.
+
+First you need an object that is capable to retrieve data from the web; you can use
+ a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the Program.cs file.
+
+```csharp
+namespace WebAPIClient
+{
+    class Program
+    {
+        private static readonly HttpClient client = new HttpClient();
+
+        static void Main(string[] args)
+        {
+            //...
+        }
+    }
+}
+```
+
+ Let's go back to the `ProcessRepositories` method and fill in a first version of it:
 
 ```csharp
 private static async Task ProcessRepositories()
 {
-    var client = new HttpClient();
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(
         new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
@@ -168,8 +186,7 @@ using System.Net.Http.Headers;
 ```
 
 This first version makes a web request to read the list of all repositories under the dotnet
-foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). First, you create
-a new <xref:System.Net.Http.HttpClient>. This object handles the request and the responses. The next few lines set up
+foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). The first few lines set up
 the <xref:System.Net.Http.HttpClient> for this request. First, it is configured to accept the GitHub JSON responses.
 This format is simply JSON. The next line adds a User Agent header to all requests from this
 object. These two headers are checked by the GitHub server code, and are necessary to retrieve

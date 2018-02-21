@@ -229,7 +229,8 @@ Container.Nested nestedInstance = new Container.Nested()
 |[private](../../../csharp/language-reference/keywords/private.md)|The type or member can only be accessed by code in the same class.|  
 |[protected](../../../csharp/language-reference/keywords/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|  
 |[internal](../../../csharp/language-reference/keywords/internal.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|  
-|`protected internal`|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|  
+|[protected internal](../../../csharp/language-reference/keywords/protected-internal.md)|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|  
+|[private protected](../../../csharp/language-reference/keywords/private-protected.md)|The type or member can be accessed by code in the same class or in a derived class within the base class assembly.|  
   
  For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   

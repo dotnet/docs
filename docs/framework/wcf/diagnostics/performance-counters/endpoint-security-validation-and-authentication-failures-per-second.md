@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second  

@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorErrorIfEmitOutOfOrder Enumeration
 Contains flag values that indicate the conditions under which an error message should be generated when metadata is emitted out of order.  

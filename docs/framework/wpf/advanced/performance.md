@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Performance
 Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application development. The topics in this section provide additional information on building high performance [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
@@ -35,5 +37,5 @@ Achieving optimal application performance requires forethought in application de
  <xref:System.Diagnostics.PresentationTraceSources>  
   
 ## See Also  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
  [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

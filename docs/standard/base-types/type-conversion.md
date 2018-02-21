@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "widening conversions"
   - "explicit conversions"
@@ -34,6 +34,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Type Conversion in the .NET Framework
 <a name="top"></a> Every value has an associated type, which defines attributes such as the amount of space allocated to the value, the range of possible values it can have, and the members that it makes available. Many values can be expressed as more than one type. For example, the value 4 can be expressed as an integer or a floating-point value. Type conversion creates a value in a new type that is equivalent to the value of an old type, but does not necessarily preserve the identity (or exact value) of the original object.  
@@ -54,11 +57,11 @@ manager: "wpickett"
   
 -   The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit Conversion with the Explicit Operator](#explicit_conversion_with_the_explicit_operator) section.  
   
--   The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see the [The IConvertible Interface](#the_iconvertible_interface) section.  
+-   The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see [The IConvertible Interface](#the_iconvertible_interface) section.  
   
--   The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see the[The Convert Class](#Convert) section.  
+-   The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see [The Convert Class](#Convert) section.  
   
--   The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see the [The TypeConverter Class](#the_typeconverter_class) section.  
+-   The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see [The TypeConverter Class](#the_typeconverter_class) section.  
   
 <a name="implicit_conversion_with_the_implicit_operator"></a>   
 ## Implicit Conversion with the Implicit Operator  
@@ -209,6 +212,6 @@ manager: "wpickett"
  For more information about using type converters to perform conversions, see <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.Convert?displayProperty=nameWithType>   
- <xref:System.IConvertible>   
+ <xref:System.Convert?displayProperty=nameWithType>  
+ <xref:System.IConvertible>  
  [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md)

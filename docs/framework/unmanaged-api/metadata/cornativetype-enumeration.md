@@ -26,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorNativeType Enumeration
 Contains values that describe native unmanaged types.  
@@ -151,5 +153,5 @@ typedef enum CorNativeType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.UnmanagedType>   
+ <xref:System.Runtime.InteropServices.UnmanagedType>  
  [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -218,7 +218,7 @@
  The <xref:System.Net.HttpWebRequest.Abort%2A> method will synchronously execute the callback specified to the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods if the <xref:System.Net.HttpWebRequest.Abort%2A> method is called while either of these operations are outstanding. This can lead to potential deadlock issues.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   
@@ -1200,13 +1200,13 @@
   
  The <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method requires some synchronous setup tasks to complete (DNS resolution, proxy detection, and TCP socket connection, for example) before this method becomes asynchronous. As a result, this method should never be called on a user interface (UI) thread because it might take considerable time (up to several minutes depending on network settings) to complete the initial synchronous setup tasks before an exception for an error is thrown or the method succeeds.  
   
- To learn more about the thread pool, see [&#91;\<topic://cpconthreadpooling>&#93;](http://msdn.microsoft.com/en-us/2be05b06-a42e-4c9d-a739-96c21d673927).  
+ To learn more about the thread pool, see [&#91;\<topic://cpconthreadpooling>&#93;](http://msdn.microsoft.com/library/2be05b06-a42e-4c9d-a739-96c21d673927).  
   
 > [!NOTE]
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method to retrieve the response.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   

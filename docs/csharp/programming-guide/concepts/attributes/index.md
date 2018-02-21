@@ -176,6 +176,6 @@ int Method3() { return 0; }
 -   [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md)  
   
 ## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+ [Attributes](../../../../../docs/standard/attributes/index.md)

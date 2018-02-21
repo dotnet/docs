@@ -29,9 +29,9 @@ Some exceptions are thrown automatically by the .NET Framework's common language
 |<xref:System.TypeInitializationException>|Thrown when a static constructor throws an exception and no compatible `catch` clause exists to catch it.|  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)   
- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)   
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
+ [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)  
+ [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+ [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
  [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)

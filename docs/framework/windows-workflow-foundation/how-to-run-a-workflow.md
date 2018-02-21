@@ -7,14 +7,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
 caps.latest.revision: 33
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Run a Workflow
 This topic is a continuation of the Windows Workflow Foundation Getting Started tutorial and discusses how to create a workflow host and run the workflow defined in the previous [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md) topic.  
@@ -164,11 +166,11 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
  [!code-vb[CFX_WF_GettingStarted#12](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#12)]  
   
 ## See Also  
- <xref:System.Activities.WorkflowApplication>   
- <xref:System.Activities.Bookmark>   
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)   
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)   
- [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)   
- [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md)   
- [Waiting for Input in a Workflow](../../../docs/framework/windows-workflow-foundation/waiting-for-input-in-a-workflow.md)   
+ <xref:System.Activities.WorkflowApplication>  
+ <xref:System.Activities.Bookmark>  
+ [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
+ [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)  
+ [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)  
+ [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md)  
+ [Waiting for Input in a Workflow](../../../docs/framework/windows-workflow-foundation/waiting-for-input-in-a-workflow.md)  
  [Hosting Workflows](../../../docs/framework/windows-workflow-foundation/hosting-workflows.md)

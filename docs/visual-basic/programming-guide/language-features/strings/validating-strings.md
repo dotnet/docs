@@ -36,5 +36,5 @@ This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/v
  How to determine whether a string has the characteristics of a strong password.  
   
 ## See Also  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
+ [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)  
  [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

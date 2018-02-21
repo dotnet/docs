@@ -17,6 +17,8 @@ caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Guidelines for Designing Stylable Controls
 This document summarizes a set of best practices to consider when designing a control which you intend to be easily stylable and templatable. We came to this set of best practices through a lot of trial and error while working on the theme control styles for the built-in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control set. We learned that successful styling is as much a function of a well-designed object model as it is of the style itself. The intended audience for this document is the control author, not the style author.  
@@ -125,5 +127,5 @@ This document summarizes a set of best practices to consider when designing a co
 -   **Theme styles do not need to have consistent "layout" semantics across all themes**. For example, the default style does not need to guarantee that a control will occupy the same amount of size in all themes or guarantee that a control will have the same content margins / padding across all themes.  
   
 ## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)

@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
+ms.workload: 
+  - dotnetcore
 ---
 # Runtime package store
 
@@ -141,5 +143,5 @@ The version of the dependency indicated in the manifest must match the version o
 When the deployment is *trimmed* on publish, only the specific versions of the manifest packages you indicate are withheld from the published output. The packages at the versions indicated must be present on the host for the app to start.
 
 ## See also
- [dotnet-publish](../tools/dotnet-publish.md)   
- [dotnet-store](../tools/dotnet-store.md)   
+ [dotnet-publish](../tools/dotnet-publish.md)  
+ [dotnet-store](../tools/dotnet-store.md)  

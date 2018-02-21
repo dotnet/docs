@@ -29,6 +29,6 @@ Line statements are no longer supported. File I/O functionality is available as 
 2.  If performing graphics, use `System.Drawing.Graphics.Drawline`.  
   
 ## See Also  
- <xref:System.IO>   
- <xref:System.Drawing>   
+ <xref:System.IO>  
+ <xref:System.Drawing>  
  [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

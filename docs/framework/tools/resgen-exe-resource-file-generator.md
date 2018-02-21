@@ -27,6 +27,8 @@ caps.latest.revision: 46
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Resgen.exe (Resource File Generator)
 The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files and XML-based resource format (.resx) files to common language runtime binary (.resources) files that can be embedded in a runtime binary executable or satellite assembly. (See [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).)  
@@ -334,8 +336,8 @@ resgen StringResources.txt /str:vb,,StringResources
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)   
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
+ [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
+ [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

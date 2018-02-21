@@ -13,6 +13,9 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Style Sheet Directives Embedded in a Document
 Occasionally, existing XML contains the style sheet directive of `<?xml:stylesheet?>`. Microsoft Internet Explorer accepts this as an alternative to the `<?xml-stylesheet?>` syntax. When the XML data contains an `<?xml:stylesheet?>` directive, as shown in the following data, attempting to load this data into the XML Document Object Model (DOM) throws an exception.  

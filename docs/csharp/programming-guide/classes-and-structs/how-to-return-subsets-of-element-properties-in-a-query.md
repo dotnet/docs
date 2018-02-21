@@ -28,7 +28,7 @@ select student.ID;
 ## Example  
  The following example shows how to use an anonymous type to return only a subset of the properties of each source element that matches the specified condition.  
   
- [!code-cs[csProgGuideLINQ#31](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-return-subsets-of-element-properties-in-a-query_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#31](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-return-subsets-of-element-properties-in-a-query_1.cs)]  
   
  Note that the anonymous type uses the source element's names for its properties if no names are specified. To give new names to the properties in the anonymous type, write the `select` statement as follows:  
   
@@ -47,6 +47,6 @@ Console.WriteLine(student.First + " " + student.Last);
 -   To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

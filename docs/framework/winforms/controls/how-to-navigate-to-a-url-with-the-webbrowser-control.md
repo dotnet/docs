@@ -24,6 +24,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate to a URL with the WebBrowser Control
 The following code example demonstrates how to navigate the <xref:System.Windows.Forms.WebBrowser> control to a specific URL.  
@@ -48,9 +50,9 @@ this.webBrowser1.Navigate("http://www.microsoft.com");
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.WebBrowser>   
- <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>   
- <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>   
- [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)   
+ <xref:System.Windows.Forms.WebBrowser>  
+ <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>  
+ [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
  [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)

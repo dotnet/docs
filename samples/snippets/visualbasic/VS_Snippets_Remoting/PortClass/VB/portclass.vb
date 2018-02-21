@@ -100,7 +100,7 @@ Class PortClass
 ' </Snippet5>
 ' </Snippet1>
 
-         ' Create a a 'PortType' object.
+         ' Create a 'PortType' object.
          Dim postPortType As New PortType()
          postPortType.Name = "PortServiceHttpPost"
          Dim postOperation As New Operation()

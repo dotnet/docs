@@ -23,6 +23,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Play a Sound from a Windows Form
 This example plays a sound at a given path at run time.  
@@ -71,6 +73,6 @@ private void playSimpleSound()
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See Also  
- <xref:System.Media.SoundPlayer>   
- [How to: Load a Sound Asynchronously within a Windows Form](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)   
+ <xref:System.Media.SoundPlayer>  
+ [How to: Load a Sound Asynchronously within a Windows Form](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)  
  

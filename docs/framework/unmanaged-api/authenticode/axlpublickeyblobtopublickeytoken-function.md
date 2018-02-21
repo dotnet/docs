@@ -20,6 +20,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # _AxlPublicKeyBlobToPublicKeyToken Function
 Computes the strong name public key token from a CSP PUBLICKEYBLOB format.  

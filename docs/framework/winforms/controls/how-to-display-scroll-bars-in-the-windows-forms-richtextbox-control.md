@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Scroll Bars in the Windows Forms RichTextBox Control
 By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control displays horizontal and vertical scroll bars as necessary. There are seven possible values for the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property of the <xref:System.Windows.Forms.RichTextBox> control, which are described in the table below.  
@@ -46,7 +48,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
     |`true` (default)|Text in the control is automatically adjusted to fit the width of the control. The horizontal scrollbar will not appear. Use this value if you chose vertical scroll bars or none, above, to display one or more paragraphs.|  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBoxScrollBars>   
- <xref:System.Windows.Forms.RichTextBox>   
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.RichTextBoxScrollBars>  
+ <xref:System.Windows.Forms.RichTextBox>  
+ [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

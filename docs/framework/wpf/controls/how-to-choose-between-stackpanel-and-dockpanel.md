@@ -23,6 +23,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Choose Between StackPanel and DockPanel
 This example shows how to choose between using a <xref:System.Windows.Controls.StackPanel> or a <xref:System.Windows.Controls.DockPanel> when you stack content in a <xref:System.Windows.Controls.Panel>.  
@@ -38,6 +40,6 @@ This example shows how to choose between using a <xref:System.Windows.Controls.S
  [!code-xaml[StackPanelOvw4#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/StackPanelOvw4/XAML/default.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.StackPanel>   
- <xref:System.Windows.Controls.DockPanel>   
+ <xref:System.Windows.Controls.StackPanel>  
+ <xref:System.Windows.Controls.DockPanel>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

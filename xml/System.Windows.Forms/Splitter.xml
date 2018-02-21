@@ -1022,7 +1022,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Splitter.OnSplitterMoved%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1058,7 +1058,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.Splitter.OnSplitterMoving%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1157,7 +1157,7 @@
 ## Remarks  
  You can create an event handler for the <xref:System.Windows.Forms.Splitter.SplitterMoved> event to perform resize validation in your application. For example, if a <xref:System.Windows.Forms.Splitter> control is docked to the edges of a <xref:System.Windows.Forms.TreeView> control and a <xref:System.Windows.Forms.ListView> control, you can write code in the <xref:System.Windows.Forms.Splitter.SplitterMoved> event to determine if the minimum and/or maximum size for the <xref:System.Windows.Forms.TreeView> and <xref:System.Windows.Forms.ListView> controls has been exceeded and resize the controls to their minimum or maximum size.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1197,7 +1197,7 @@
 ## Remarks  
  You can create an event handler for the <xref:System.Windows.Forms.Splitter.SplitterMoving> event to perform resize validation in your application. For example, if a <xref:System.Windows.Forms.Splitter> control is docked to the edges of a <xref:System.Windows.Forms.TreeView> control and a <xref:System.Windows.Forms.ListView> control, you can write code in the <xref:System.Windows.Forms.Splitter.SplitterMoved> event to determine if the minimum and/or maximum size for the <xref:System.Windows.Forms.TreeView> and <xref:System.Windows.Forms.ListView> controls has been exceeded and restrict the resizing of the controls to their minimum or maximum size.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

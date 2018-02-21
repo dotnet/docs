@@ -19,6 +19,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control
 Many basic behaviors of `DataGridView` cells, rows, and columns can be modified by setting single properties. The topics in this section describe several of the most commonly used of these features.  
@@ -60,5 +62,5 @@ Many basic behaviors of `DataGridView` cells, rows, and columns can be modified 
  Provides topics that describe how to program with cell, row, and column objects.  
   
 ## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

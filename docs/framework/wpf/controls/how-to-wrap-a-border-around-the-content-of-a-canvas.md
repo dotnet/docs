@@ -19,6 +19,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Wrap a Border Around the Content of a Canvas
 This example shows how to wrap a <xref:System.Windows.Controls.Canvas> element with a <xref:System.Windows.Controls.Border>.  
@@ -29,6 +31,6 @@ This example shows how to wrap a <xref:System.Windows.Controls.Canvas> element w
  [!code-xaml[CanvasHelloWorldBorder#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasHelloWorldBorder/CS/default.xaml#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Canvas>   
- <xref:System.Windows.Controls.Border>   
+ <xref:System.Windows.Controls.Canvas>  
+ <xref:System.Windows.Controls.Border>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

@@ -234,9 +234,9 @@ class SampleClass
  For more information about the Caller Info attributes, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).  
   
 ## See Also  
- <xref:System.Reflection>   
- <xref:System.Attribute>   
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
+ <xref:System.Reflection>  
+ <xref:System.Attribute>  
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Attributes](../../../../../docs/standard/attributes/index.md)  
+ [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

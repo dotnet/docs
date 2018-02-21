@@ -19,6 +19,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ListView Overviews
 The topics in this section show you how to use a <xref:System.Windows.Controls.ListView> control.  

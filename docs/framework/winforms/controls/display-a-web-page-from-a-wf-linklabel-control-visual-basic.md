@@ -24,6 +24,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)
 This example displays a Web page in the default browser when a user clicks a Windows Forms <xref:System.Windows.Forms.LinkLabel> control.  
@@ -56,5 +58,5 @@ End Sub
  The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  
   
 ## See Also  
- <xref:System.Windows.Forms.LinkLabel>   
+ <xref:System.Windows.Forms.LinkLabel>  
  [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)

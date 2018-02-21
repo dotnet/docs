@@ -22,6 +22,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Apply Stretch Properties to the Contents of a Viewbox
 ## Example  
@@ -37,6 +39,6 @@ manager: "wpickett"
  [!code-vb[viewboxStretchLayoutSamp#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/viewboxStretchLayoutSamp/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Viewbox>   
- <xref:System.Windows.Media.Stretch>   
+ <xref:System.Windows.Controls.Viewbox>  
+ <xref:System.Windows.Media.Stretch>  
  <xref:System.Windows.Controls.StretchDirection>

@@ -349,7 +349,7 @@
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the status code returned by an SMTP server when an e-mail message is transmitted.</summary>
+        <summary>Gets the status code returned by an SMTP server when an email message is transmitted.</summary>
         <value>An <see cref="T:System.Net.Mail.SmtpStatusCode" /> value that indicates the error that occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 57beaf1a-fb4d-441a-ab1d-bc0c14ce7899
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Optimization using Single Phase Commit and Promotable Single Phase Notification
 This topic describes the mechanisms provided by the <xref:System.Transactions> infrastructure to optimize performance.  
@@ -65,5 +67,5 @@ This topic describes the mechanisms provided by the <xref:System.Transactions> i
  If there is only one volatile enlistment and no durable enlistment, the volatile enlistment receives SPC notification.  If there are any volatile enlistments and only one durable enlistment, the volatile enlistments receive 2PC. When it is completed, the durable enlistment receives SPC.  
   
 ## See Also  
- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)   
+ [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)  
  [Committing a Transaction in Single-Phase and Multi-Phase](../../../../docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md)

@@ -17,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings for Custom Controls
 You must complete certain tasks to give your custom controls the ability to persist application settings when the controls are hosted in third-party applications.  
@@ -52,6 +54,6 @@ You must complete certain tasks to give your custom controls the ability to pers
  Any instances of a control that do not supply a value for <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> will share the same settings.  
   
 ## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>   
- <xref:System.Configuration.IPersistComponentSettings>   
+ <xref:System.Configuration.ApplicationSettingsBase>  
+ <xref:System.Configuration.IPersistComponentSettings>  
  [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)

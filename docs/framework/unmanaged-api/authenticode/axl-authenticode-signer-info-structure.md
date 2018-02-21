@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AXL_AUTHENTICODE_SIGNER_INFO Structure
 Defines the Authenticode signer information.  

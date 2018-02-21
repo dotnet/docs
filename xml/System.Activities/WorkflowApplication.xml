@@ -1275,7 +1275,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method referenced in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
@@ -1312,7 +1312,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. By default, the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
@@ -1351,7 +1351,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the `callback` method. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown. This or any other exceptions that occur during the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> process is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
@@ -1390,7 +1390,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  To determine whether the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation was successful, call <xref:System.Activities.WorkflowApplication.EndTerminate%2A>. <xref:System.Activities.WorkflowApplication.EndTerminate%2A> can be called from inside or outside of the method reference in the `callback` parameter. If <xref:System.Activities.WorkflowApplication.EndTerminate%2A> is called before the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes, it blocks until the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation completes. If the <xref:System.Activities.WorkflowApplication.BeginTerminate%2A> operation does not complete within the specified time-out interval a <xref:System.TimeoutException> is thrown from <xref:System.Activities.WorkflowApplication.EndTerminate%2A>.  
   
@@ -1502,7 +1502,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
   
@@ -1529,7 +1529,7 @@ The reason for aborting the workflow.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+ This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handler.  
   
  By default, the cancel operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
   
@@ -1574,7 +1574,7 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handler.  
+ This method schedules the cancellation of the workflow instance. To be notified when the cancellation has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handler.  
   
    
   
@@ -3243,7 +3243,7 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
   
@@ -3289,7 +3289,7 @@ Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
  By default, the <xref:System.Activities.WorkflowApplication.Terminate%2A> operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown.  
   
@@ -3337,7 +3337,7 @@ Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
    
   
@@ -3383,7 +3383,7 @@ Workflow de28efe5-9057-472b-8d95-899c249893c5 unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.OnCompleted%2A> handle.  
+ This method schedules the termination of the workflow instance. To be notified when the termination has completed, use the <xref:System.Activities.WorkflowApplication.Completed%2A> handle.  
   
    
   

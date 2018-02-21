@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Master-Detail Pattern with Hierarchical XML Data
 This example shows how to implement the master-detail scenario with [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data.  
@@ -28,5 +30,5 @@ This example shows how to implement the master-detail scenario with [!INCLUDE[TL
 [!code-xaml[MasterDetailXml#HowTo2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MasterDetailXml/CS/Window1.xaml#howto2)]  
   
 ## See Also  
- <xref:System.Windows.HierarchicalDataTemplate>   
+ <xref:System.Windows.HierarchicalDataTemplate>  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Date and Time Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes date and time canonical functions.  

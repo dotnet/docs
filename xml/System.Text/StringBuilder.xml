@@ -38,10 +38,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/stringbuilder.cs#adf60ee46ebd299f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  This class represents a string-like object whose value is a mutable sequence of characters.  
   
  In this section:  
@@ -174,6 +170,8 @@
   
  [!code-csharp[System.Text.StringBuilder.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/chars1.cs#7)]
  [!code-vb[System.Text.StringBuilder.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/chars1.vb#7)]  
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
   
 <a name="Adding"></a>   
 ### Adding text to a StringBuilder object  
@@ -216,7 +214,7 @@
 |---------------|----------|----------|  
 |Search string values before adding them to the <xref:System.Text.StringBuilder> object.|Useful for determining whether a substring exists.|Cannot be used when the index position of a substring is important.|  
 |Call <xref:System.Text.StringBuilder.ToString%2A> and search the returned <xref:System.String> object.|Easy to use if you assign all the text to a <xref:System.Text.StringBuilder> object, and then begin to modify it.|Cumbersome to repeatedly call <xref:System.Text.StringBuilder.ToString%2A> if you must make modifications before all text is added to the <xref:System.Text.StringBuilder> object.<br /><br /> You must remember to work from the end of the <xref:System.Text.StringBuilder> object's text if you're making changes.|  
-|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.|  
+|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.<br /><br />Results in very poor performance for objects that have grown very large through repeated method calls.  |  
 |Convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform modifications on the <xref:System.String> object.|Useful if the number of modifications is small.|Negates the performance benefit of the <xref:System.Text.StringBuilder> class if the number of modifications is large.|  
   
  Let's examine these techniques in greater detail.  
@@ -236,7 +234,7 @@
      [!code-csharp[System.Text.StringBuilder.Class#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern2.cs#13)]
      [!code-vb[System.Text.StringBuilder.Class#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern2.vb#13)]  
   
--   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex.  
+-   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property. 
   
      The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.  
   
@@ -2902,7 +2900,11 @@
   
  [!code-csharp[System.Text.StringBuilder.Chars#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.chars/cs/chars1.cs#1)]
  [!code-vb[System.Text.StringBuilder.Chars#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.chars/vb/chars1.vb#1)]  
-  
+
+### Performance and character-based indexing
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

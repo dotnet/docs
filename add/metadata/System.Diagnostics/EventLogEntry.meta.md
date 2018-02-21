@@ -74,7 +74,7 @@ manager: "wpickett"
 uid: System.Diagnostics.EventLogEntry.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

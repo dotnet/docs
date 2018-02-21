@@ -22,6 +22,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Extract the Text Content from a RichTextBox
 This example shows how to extract the contents of a <xref:System.Windows.Controls.RichTextBox> as plain text.  
@@ -40,5 +42,5 @@ This example shows how to extract the contents of a <xref:System.Windows.Control
  [!code-vb[RichTextBoxSnippets#_RTB_StringFrom](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_stringfrom)]  
   
 ## See Also  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)   
+ [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

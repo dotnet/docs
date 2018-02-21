@@ -18,6 +18,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Text with a Shadow
 The examples in this section show how to create a shadow effect for displayed text.  

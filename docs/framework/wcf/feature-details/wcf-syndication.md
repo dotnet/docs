@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "syndication [WCF]"
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Syndication
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
@@ -47,5 +49,5 @@ manager: "erikre"
 ## Related Sections  
   
 ## See Also  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)   
+ [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)

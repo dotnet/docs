@@ -21,11 +21,7 @@
  The <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> value must be added to the source [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] file either by using the `updateuid` [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] target (for example, `msbuild /t:updateuid myproj.proj`), or manually in the markup. [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] without a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> cannot be localized. The class name is the type name of the element that contains the localizable property. The property name refers to the property that has the localizable value. A special property called "`$Content`" is used to represent values that are the initialization text or content property of an element. For example the `$Content` property name would apply to the initialization text `Click` in the following XAML:  
   
  `<TextBlock x:Uid="myBlock">Click </TextBlock>`  
-  
-<a name="xamlTextUsage_BamlLocalizableResourceKey"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey>.  
   

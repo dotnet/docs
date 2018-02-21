@@ -35,6 +35,6 @@ Variable '\<variablename>' is used before it has been assigned a value. A null r
 -   One way to guarantee that the variable always has a valid value is to initialize it as part of its declaration. See "Initialization" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
 ## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
  [Troubleshooting Variables](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

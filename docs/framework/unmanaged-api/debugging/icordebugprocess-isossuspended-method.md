@@ -27,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess::IsOSSuspended Method
 Gets a value that indicates whether the specified thread has been suspended as a result of the debugger stopping this process.  

@@ -20,6 +20,8 @@ caps.latest.revision: 42
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Hit Testing in the Visual Layer
 This topic provides an overview of hit testing functionality provided by the visual layer. Hit testing support allows you to determine whether a geometry or point value falls within the rendered content of a <xref:System.Windows.Media.Visual>, allowing you to implement user interface behavior such as a selection rectangle to select multiple objects.  
@@ -145,12 +147,12 @@ Pruning a visual tree
  [!code-vb[HitTestingOverview#108](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#108)]  
   
 ## See Also  
- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>   
- <xref:System.Windows.Media.HitTestResult>   
- <xref:System.Windows.Media.HitTestResultCallback>   
- <xref:System.Windows.Media.HitTestFilterCallback>   
- <xref:System.Windows.UIElement.IsHitTestVisible%2A>   
- [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994)   
- [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995)   
- [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)   
+ <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>  
+ <xref:System.Windows.Media.HitTestResult>  
+ <xref:System.Windows.Media.HitTestResultCallback>  
+ <xref:System.Windows.Media.HitTestFilterCallback>  
+ <xref:System.Windows.UIElement.IsHitTestVisible%2A>  
+ [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994)  
+ [Hit Test with Win32 Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=159995)  
+ [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)  
  [Hit Test Using a Win32 Host Container](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)

@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "extending bindings [WCF]"
 ms.assetid: 5e40d306-b3c1-4429-80c4-fbb1d956856c
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Bindings
 Bindings specify the transport, encoding, and protocol required to connect to an endpoint. Binding extensions and custom bindings implement custom communication functionality required to support application features.  

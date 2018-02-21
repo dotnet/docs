@@ -27,6 +27,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  

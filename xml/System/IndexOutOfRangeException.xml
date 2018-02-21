@@ -49,7 +49,7 @@
      [!code-csharp[System.IndexOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/length2.cs#4)]
      [!code-vb[System.IndexOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/length2.vb#4)]  
   
-     Alternately, instead of iterating all the elements in the array by their index, you can use the  (in C#) or the  (in Visual Basic).  
+     Alternately, instead of iterating all the elements in the array by their index, you can use the `foreach` statement (in C#) or the `For Each` statement (in Visual Basic).  
   
 -   Attempting to assign an array element to another array that has not been adequately dimensioned and that has fewer elements than the original array. The following example attempts to assign the last element in the `value1` array to the same element in the `value2` array. However, the `value2` array has been incorrectly dimensioned to have six instead of seven elements. As a result, the assignment throws an <xref:System.IndexOutOfRangeException> exception.  
   

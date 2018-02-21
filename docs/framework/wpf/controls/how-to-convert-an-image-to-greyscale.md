@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Convert an Image to Greyscale
 This example shows how to convert an image to grayscale using <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>.  
@@ -32,6 +34,6 @@ This example shows how to convert an image to grayscale using <xref:System.Windo
  [!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]  
   
 ## See Also  
- [Use the Image Element](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md)   
- [Crop an Image](../../../../docs/framework/wpf/controls/how-to-crop-an-image.md)   
+ [Use the Image Element](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md)  
+ [Crop an Image](../../../../docs/framework/wpf/controls/how-to-crop-an-image.md)  
  [Rotate an Image](../../../../docs/framework/wpf/controls/how-to-rotate-an-image.md)

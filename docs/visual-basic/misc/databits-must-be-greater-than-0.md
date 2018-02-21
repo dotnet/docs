@@ -18,4 +18,4 @@ The `DataBits` argument specified for the `My.Computer.Ports.OpenSerialPort` met
 -   Change the value of the `DataBits` argument to a positive number.  
   
 ## See Also  
- [My.Computer.Ports.OpenSerialPort Method](http://msdn.microsoft.com/en-us/ed1e75f0-635a-4229-8fe6-becea5d036c3)
+ [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A)

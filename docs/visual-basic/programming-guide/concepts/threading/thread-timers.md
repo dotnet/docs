@@ -67,5 +67,5 @@ End Sub
  Thread timers are particularly useful when the <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> object is unavailable, such as when you are developing console applications.  
   
 ## See Also  
- <xref:System.Threading>   
+ <xref:System.Threading>  
  [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)

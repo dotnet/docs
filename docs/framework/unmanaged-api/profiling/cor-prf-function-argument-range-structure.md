@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_RANGE Structure
 Represents a block of function arguments stored contiguously in left-to-right order in memory.  

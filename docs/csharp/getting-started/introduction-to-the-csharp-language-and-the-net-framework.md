@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.topic: "article"
+ms.topic: "get-started-article"
 helpviewer_keywords: 
   - "C# language, about C# language"
   - "Visual C#, about"

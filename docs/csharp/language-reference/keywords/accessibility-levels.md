@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Levels (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 12/06/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -9,22 +9,23 @@ helpviewer_keywords:
   - "access modifiers [C#], accessibility levels"
   - "accessibility levels"
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
-caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # Accessibility Levels (C# Reference)
-Use the access modifiers, [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or [private](../../../csharp/language-reference/keywords/private.md), to specify one of the following declared accessibility levels for members.  
+
+Use the access modifiers, `public`, `protected`, `internal`, or `private`, to specify one of the following declared accessibility levels for members.  
   
 |Declared accessibility|Meaning|  
 |----------------------------|-------------|  
-|`public`|Access is not restricted.|  
-|`protected`|Access is limited to the containing class or types derived from the containing class.|  
-|`internal`|Access is limited to the current assembly.|  
-|`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
-|`private`|Access is limited to the containing type.|  
+|[`public`](public.md)|Access is not restricted.|  
+|[`protected`](protected.md)|Access is limited to the containing class or types derived from the containing class.|  
+|[`internal`](internal.md)|Access is limited to the current assembly.|  
+|[`protected internal`](protected-internal.md)|Access is limited to the current assembly or types derived from the containing class.|  
+|[`private`](private.md)|Access is limited to the containing type.|  
+|[`private protected`](private-protected.md)|Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2. |  
   
- Only one access modifier is allowed for a member or type, except when you use the `protected internal` combination.  
+ Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   
  Access modifiers are not allowed on namespaces. Namespaces have no access restrictions.  
   
@@ -37,7 +38,7 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |Members of|Default member accessibility|Allowed declared accessibility of the member|  
 |----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|None|  
-|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal`|  
+|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal` <br /><br />`private protected`|  
 |`interface`|`public`|None|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   
@@ -47,14 +48,14 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)   
- [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md)   
- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)   
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [public](../../../csharp/language-reference/keywords/public.md)   
- [private](../../../csharp/language-reference/keywords/private.md)   
- [protected](../../../csharp/language-reference/keywords/protected.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+ [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md)  
+ [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
+ [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+ [public](../../../csharp/language-reference/keywords/public.md)  
+ [private](../../../csharp/language-reference/keywords/private.md)  
+ [protected](../../../csharp/language-reference/keywords/protected.md)  
  [internal](../../../csharp/language-reference/keywords/internal.md)

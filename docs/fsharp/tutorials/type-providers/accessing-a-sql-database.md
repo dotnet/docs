@@ -454,6 +454,6 @@ INSERT INTO Table3 (Id, Name, Data)
 
 [Query Expressions](../../language-reference/query-expressions.md)
 
-[LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
+[LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)
 
 [SqlMetal.exe &#40;Code Generation Tool&#41;](https://msdn.microsoft.com/library/bb386987)

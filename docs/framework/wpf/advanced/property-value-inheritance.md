@@ -18,6 +18,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Property Value Inheritance
 Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system. Property value inheritance enables child elements in a tree of elements to obtain the value of a particular property from parent elements, inheriting that value as it was set anywhere in the nearest parent element. The parent element might also have obtained its value through property value inheritance, so the system potentially recurses all the way to the page root. Property value inheritance is not the default property system behavior; a property must be established with a particular metadata setting in order to cause that property to initiate property value inheritance on child elements.  
@@ -48,6 +50,6 @@ Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../.
  Property inheritance works by traversing a tree of elements. This tree is often parallel to the logical tree. However, whenever you include a WPF core-level object in the markup that defines an element tree, such as a <xref:System.Windows.Media.Brush>, you have created a discontinuous logical tree. A true logical tree does not conceptually extend through the <xref:System.Windows.Media.Brush>, because the logical tree is a WPF framework-level concept. You can see this reflected in the results when using the methods of <xref:System.Windows.LogicalTreeHelper>. However, property value inheritance can bridge this gap in the logical tree and can still pass inherited values through, so long as the inheritable property was registered as an attached property and no deliberate inheritance-blocking boundary (such as a <xref:System.Windows.Controls.Frame>) is encountered.  
   
 ## See Also  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)   
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)   
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
+ [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
  [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Message Encoder
 This topic discusses criteria for choosing among the message encoders that are included in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]: binary, text, and Message Transmission Optimization Mechanism (MTOM).  

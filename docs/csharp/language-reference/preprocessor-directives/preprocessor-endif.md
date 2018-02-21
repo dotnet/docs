@@ -29,6 +29,6 @@ ms.author: "wiwagn"
  A conditional directive, beginning with a `#if` directive, must explicitly be terminated with a `#endif` directive. See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#endif`.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

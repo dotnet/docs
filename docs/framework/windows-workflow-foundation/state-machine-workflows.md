@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 344caacd-bf3b-4716-bd5a-eca74fc5a61d
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # State Machine Workflows
 A state machine is a well-known paradigm for developing programs. The <xref:System.Activities.Statements.StateMachine> activity, along with <xref:System.Activities.Statements.State>, <xref:System.Activities.Statements.Transition>, and other activities can be used to build state machine workflow programs. This topic provides an overview of creating state machine workflows.  
@@ -105,8 +107,8 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  A state which represents the completion of the state machine.  
   
 ## See Also  
- [How to: Create a State Machine Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-state-machine-workflow.md)   
- [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer)   
- [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer)   
- [FinalState Activity Designer](/visualstudio/workflow-designer/finalstate-activity-designer)   
+ [How to: Create a State Machine Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-state-machine-workflow.md)  
+ [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer)  
+ [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer)  
+ [FinalState Activity Designer](/visualstudio/workflow-designer/finalstate-activity-designer)  
  [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer)

@@ -11,9 +11,11 @@ helpviewer_keywords:
   - "programming [WF], bookmarks"
 ms.assetid: 50a007c5-8ab7-4b9a-a7ec-1b7e2f4930fe
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Waiting for Input in a Workflow
 The topics in this section discuss how to use bookmarks and messaging activities.  

@@ -88,8 +88,7 @@
  This example demonstrates that creating a deep copy of an XML tree creates a copy, not a clone, of an attribute in the tree.  
   
 ```csharp  
-  
-                XElement root1 = XElement.Parse("<Root Att1='abc' />");  
+XElement root1 = XElement.Parse("<Root Att1='abc' />");  
 // Make a deep copy.  
 XElement root2 = new XElement(root1);  
 if (root1.Attribute("Att1") == root2.Attribute("Att1"))  
@@ -99,8 +98,7 @@ else
 ```  
   
 ```vb  
-  
-                Dim root1 As XElement = <Root Att1='abc'/>  
+Dim root1 As XElement = <Root Att1='abc'/>  
 ' Make a deep copy.  
 Dim root2 As XElement = New XElement(root1)  
 If root1.Attribute("Att1") Is root2.Attribute("Att1") Then  
@@ -160,8 +158,7 @@ Creating a deep copy created a new attribute from the original.
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the first parameter instead of creating a new <xref:System.Xml.Linq.XName>, as follows:  
   
 ```csharp  
-  
-            XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("AnAttributeName", "Content")  
 );  
 ```  
@@ -169,8 +166,7 @@ Creating a deep copy created a new attribute from the original.
  You can also use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>, as follows:  
   
 ```csharp  
-  
-            XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute(aw + "AnAttributeName", "Content")  
 );  
@@ -188,8 +184,7 @@ XElement root = new XElement(aw + "Root",
  The following example uses this constructor to create attributes. It passes strings as the first argument to the <xref:System.Xml.Linq.XAttribute> constructor, which are then implicitly converted to <xref:System.Xml.Linq.XName> objects. The attributes are added to an element.  
   
 ```csharp  
-  
-                XElement root;  
+XElement root;  
   
 double dbl = 12.345;  
 XAttribute[] attArray = {  
@@ -217,8 +212,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim dbl As Double = 12.345  
+Dim dbl As Double = 12.345  
 Dim attArray As XAttribute() = { _  
     New XAttribute("Att4", 1), _  
     New XAttribute("Att5", 2), _  
@@ -325,8 +319,7 @@ Console.WriteLine(root)
  The following example creates an attribute that is a namespace declaration and an attribute that is not. It then uses this property to display whether each attribute is a namespace declaration or not.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute(aw + "Att", "content")  
@@ -341,8 +334,7 @@ foreach (XAttribute att in root.Attributes()) {
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <aw:Root xmlns:aw='http://www.adventure-works.com'  
+Dim root As XElement = <aw:Root xmlns:aw='http://www.adventure-works.com'  
                            aw:Att='content'/>  
   
 For Each att As XAttribute In root.Attributes()  
@@ -357,8 +349,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                {http://www.w3.org/2000/xmlns/}aw is a namespace declaration  
+{http://www.w3.org/2000/xmlns/}aw is a namespace declaration  
 {http://www.adventure-works.com}Att is not a namespace declaration  
 ```  
   
@@ -405,8 +396,7 @@ Next
  The following example creates an element with three attributes. It then uses this property to print out the name of each attribute. The example also shows creation of a new attribute using the name of an existing attribute.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute(aw + "Att", "content"),  
@@ -426,8 +416,7 @@ foreach (XAttribute att in newRoot.Attributes())
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <aw:Root xmlns:aw='http://www.adventure-works.com'  
         aw:Att='content'  
         Att2='different content'/>  
@@ -454,8 +443,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                {http://www.w3.org/2000/xmlns/}aw=http://www.adventure-works.com  
+{http://www.w3.org/2000/xmlns/}aw=http://www.adventure-works.com  
 {http://www.adventure-works.com}Att=content  
 Att2=different content  
   
@@ -509,8 +497,7 @@ Att2=new content
  The following example shows how to iterate through the attributes of an element using this property.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3),  
@@ -525,8 +512,7 @@ while((att = att.NextAttribute) != null);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
 Dim att As XAttribute = root.FirstAttribute  
 Dim val As Boolean = True  
 Do  
@@ -538,8 +524,7 @@ Loop While (Not (att Is Nothing))
  This example produces the following output:  
   
 ```  
-  
-                Att1="1"  
+Att1="1"  
 Att2="2"  
 Att3="3"  
 Att4="4"  
@@ -588,8 +573,7 @@ Att4="4"
  The following example creates an attribute, and then displays the node type using this property.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "content")  
 );  
   
@@ -598,8 +582,7 @@ Console.WriteLine(att.NodeType);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="content"/>  
+Dim root As XElement = <Root Att="content"/>  
 Dim att As XAttribute = root.FirstAttribute  
 Console.WriteLine(att.NodeType.ToString)  
 ```  
@@ -657,15 +640,12 @@ Attribute
   
 ## Remarks  
  When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ 
 ## Examples  
  The following example creates an attribute with a <xref:System.Boolean> value, then casts it to <xref:System.Boolean>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("BoolValue", true)  
 );  
 bool bv = (bool)root.Attribute("BoolValue");  
@@ -673,8 +653,7 @@ Console.WriteLine("(bool)BoolValue={0}", bv);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <root BoolValue="true"/>  
+Dim root As XElement = <root BoolValue="true"/>  
 Dim bv As Boolean = CBool(root.Attribute("BoolValue"))  
 Console.WriteLine("(bool)BoolValue={0}", bv)  
 ```  
@@ -682,7 +661,6 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
  This example produces the following output:  
   
 ```  
-  
 (bool)BoolValue=True  
 ```  
   
@@ -736,16 +714,13 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
   
  Behavior is lax when casting to a <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.DateTime>.  
   
- This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to convert from a <xref:System.DateTime>.  
+ 
 ## Examples  
  The following example creates an attribute with date and time content. It then casts it to <xref:System.DateTime> to retrieve the value.  
   
 ```csharp  
-  
-                // Behavior is strict when formatting an XML element or attribute from a DateTime,  
+// Behavior is strict when formatting an XML element or attribute from a DateTime,  
 // but behavior is lax when casting to a DateTime from an element or attribute.  
   
 XElement root = new XElement("Root",  
@@ -768,8 +743,7 @@ Console.WriteLine("OrderDate={0:d}", orderDate);
 ```  
   
 ```vb  
-  
-                ' Behavior is strict when formatting an XML element or attribute from a DateTime,  
+' Behavior is strict when formatting an XML element or attribute from a DateTime,  
 ' but behavior is lax when casting to a DateTime from an element or attribute.  
 Dim root As XElement = <Root Att=<%= New DateTime(2006, 10, 6, 12, 30, 0) %>/>  
   
@@ -791,8 +765,7 @@ Console.WriteLine("OrderDate={0:d}", orderDate)
  This example produces the following output:  
   
 ```  
-  
-                <Root Att="2006-10-06T12:30:00" />  
+<Root Att="2006-10-06T12:30:00" />  
 dt=10/6/2006 12:30:00 PM  
 -----  
 OrderDate="October 6, 2006"  
@@ -846,15 +819,12 @@ OrderDate=10/6/2006
   
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with date and time content. It then casts it to <xref:System.DateTimeOffset> to retrieve the value.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new DateTimeOffset(new DateTime(2006, 10, 6, 12, 30, 0)))  
 );  
 Console.WriteLine(root);  
@@ -865,8 +835,7 @@ Console.WriteLine("dt={0}", dt);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _  
+Dim root As XElement = _  
     <Root  
         Att=<%= New DateTimeOffset(New DateTime(2006, 10, 6, 12, 30, 0)) %>/>  
 Console.WriteLine(root)  
@@ -879,8 +848,7 @@ Console.WriteLine("dt={0}", dt)
  This example produces the following output:  
   
 ```  
-  
-                <Root Att="2006-10-06T12:30:00-07:00" />  
+<Root Att="2006-10-06T12:30:00-07:00" />  
 dt=10/6/2006 12:30:00 PM -07:00  
 ```  
   
@@ -927,14 +895,11 @@ dt=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a decimal value. It then retrieves the value of the attribute by casting to <xref:System.Decimal>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "79228162514264337593543950335")  
 );  
 decimal value = (decimal)root.Attribute("Att");  
@@ -942,8 +907,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="79228162514264337593543950335"/>  
+Dim root As XElement = <Root Att="79228162514264337593543950335"/>  
 Dim value As Decimal = CDec(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -951,7 +915,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=79228162514264337593543950335  
 ```  
   
@@ -998,14 +961,11 @@ value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with <xref:System.Double> content. It then retrieves the value by casting to <xref:System.Double>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 1.79769313486231e308)  
 );  
 double value = (double)root.Attribute("Att");  
@@ -1013,8 +973,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="1.79769313486231E+308"/>  
+Dim root As XElement = <Root Att="1.79769313486231E+308"/>  
 Dim value As Double = CDbl(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -1022,7 +981,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=1.79769313486231E+308  
 ```  
   
@@ -1069,14 +1027,11 @@ value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a GUID as content. It then retrieves the value by casting to <xref:System.Guid>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730"))  
 );  
 Guid value = (Guid)root.Attribute("Att");  
@@ -1084,8 +1039,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att=<%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %>/>  
+Dim root As XElement = <Root Att=<%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %>/>  
 Dim value As Guid = CType(root.Attribute("Att"), Guid)  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -1093,7 +1047,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=3c1cc55b-baff-4b7a-9d17-077af3aa5730  
 ```  
   
@@ -1140,14 +1093,11 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to an <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with an integer as content. It then retrieves the value by casting to <xref:System.Int32>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 2147483647)  
 );  
 int value = (int)root.Attribute("Att");  
@@ -1155,8 +1105,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="2147483647"/>  
+Dim root As XElement = <Root Att="2147483647"/>  
 Dim value As Integer = CInt(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -1164,7 +1113,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=2147483647  
 ```  
   
@@ -1211,14 +1159,11 @@ value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to an <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with a long integer as content. It then retrieves the value of the attribute by casting to <xref:System.Int64>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 9223372036854775807)  
 );  
 long value = (long)root.Attribute("Att");  
@@ -1226,8 +1171,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="9223372036854775807"/>  
+Dim root As XElement = <Root Att="9223372036854775807"/>  
 Dim value As Long = CLng(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -1235,7 +1179,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=9223372036854775807  
 ```  
   
@@ -1286,15 +1229,12 @@ value=9223372036854775807
   
 ## Remarks  
  When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with Boolean content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Boolean>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("BoolValue1", true),  
     new XAttribute("BoolValue2", false)  
 );  
@@ -1305,8 +1245,7 @@ Console.WriteLine("Nullable boolean: BoolValue2={0}", bool2);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root BoolValue1="true" BoolValue2="false"/>  
+Dim root As XElement = <Root BoolValue1="true" BoolValue2="false"/>  
 Dim bool1 As Nullable(Of Boolean) = CType(root.Attribute("BoolValue1"), Nullable(Of Boolean))  
 Dim bool2 As Nullable(Of Boolean) = CType(root.Attribute("BoolValue2"), Nullable(Of Boolean))  
 Console.WriteLine("Nullable boolean: BoolValue1={0}", bool1)  
@@ -1369,16 +1308,13 @@ Nullable boolean: BoolValue2=False
   
  Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.DateTime>.  
   
- This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to convert from a <xref:System.DateTime>.  
   
 ## Examples  
  The following example creates an attribute with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTime>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new DateTime(2006, 10, 6, 12, 30, 0))  
 );  
 DateTime? value = (DateTime?)root.Attribute("Att");  
@@ -1386,8 +1322,7 @@ Console.WriteLine("Nullable DateTime: value={0}", value == null ? "null" : value
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att=<%= New DateTime(2006, 10, 6, 12, 30, 0) %>/>  
+Dim root As XElement = <Root Att=<%= New DateTime(2006, 10, 6, 12, 30, 0) %>/>  
 Dim value As Nullable(Of DateTime) = CType(root.Attribute("Att"), Nullable(Of DateTime))  
 Console.WriteLine("Nullable DateTime: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1395,7 +1330,6 @@ Console.WriteLine("Nullable DateTime: value={0}", IIf(value.HasValue, value.ToSt
  This example produces the following output:  
   
 ```  
-  
 Nullable DateTime: value=10/6/2006 12:30:00 PM  
 ```  
   
@@ -1445,15 +1379,12 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
   
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+ 
 ## Examples  
  The following example creates an attribute with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTimeOffset>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new DateTimeOffset(new DateTime(2006, 10, 6, 12, 30, 0)))  
 );  
 DateTimeOffset? value = (DateTimeOffset?)root.Attribute("Att");  
@@ -1461,8 +1392,7 @@ Console.WriteLine("Nullable DateTimeOffset: value={0}", value == null ? "null" :
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _  
+Dim root As XElement = _  
     <Root  
         Att=<%= New DateTimeOffset(New DateTime(2006, 10, 6, 12, 30, 0)) %>/>  
 Dim value As Nullable(Of DateTimeOffset) = CType(root.Attribute("Att"), Nullable(Of DateTimeOffset))  
@@ -1472,7 +1402,6 @@ Console.WriteLine("Nullable DateTimeOffset: value={0}", IIf(value.HasValue, valu
  This example produces the following output:  
   
 ```  
-  
 Nullable DateTimeOffset: value=10/6/2006 12:30:00 PM -07:00  
 ```  
   
@@ -1517,14 +1446,11 @@ Nullable DateTimeOffset: value=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with decimal content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Decimal>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "79228162514264337593543950335")  
 );  
 decimal? value = (decimal?)root.Attribute("Att");  
@@ -1532,8 +1458,7 @@ Console.WriteLine("Nullable decimal: value={0}", value == null ? "null" : value.
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="79228162514264337593543950335"/>  
+Dim root As XElement = <Root Att="79228162514264337593543950335"/>  
 Dim value As Nullable(Of Decimal) = CType(root.Attribute("Att"), Nullable(Of Decimal))  
 Console.WriteLine("Nullable decimal: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1586,14 +1511,11 @@ Nullable decimal: value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with double precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Double>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 1.79769313486231e308)  
 );  
 double? value = (double?)root.Attribute("Att");  
@@ -1601,8 +1523,7 @@ Console.WriteLine("Nullable double: value={0}", value == null ? "null" : value.T
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="1.79769313486231E+308"/>  
+Dim root As XElement = <Root Att="1.79769313486231E+308"/>  
 Dim value As Nullable(Of Double) = CType(root.Attribute("Att"), Nullable(Of Double))  
 Console.WriteLine("Nullable double: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1655,14 +1576,11 @@ Nullable double: value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with guid content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Guid>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730"))  
 );  
 Guid? value = (Guid?)root.Attribute("Att");  
@@ -1670,8 +1588,7 @@ Console.WriteLine("Nullable Guid: value={0}", value == null ? "null" : value.ToS
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att=<%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %>/>  
+Dim root As XElement = <Root Att=<%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %>/>  
 Dim value As Nullable(Of Guid) = CType(root.Attribute("Att"), Nullable(Of Guid))  
 Console.WriteLine("Nullable Guid: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1724,14 +1641,11 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int32>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 2147483647)  
 );  
 int? value = (int?)root.Attribute("Att");  
@@ -1739,8 +1653,7 @@ Console.WriteLine("Nullable int: value={0}", value == null ? "null" : value.ToSt
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="2147483647"/>  
+Dim root As XElement = <Root Att="2147483647"/>  
 Dim value As Nullable(Of Integer) = CType(root.Attribute("Att"), Nullable(Of Integer))  
 Console.WriteLine("Nullable int: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1792,14 +1705,11 @@ Nullable int: value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int64>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 9223372036854775807)  
 );  
 long? value = (long?)root.Attribute("Att");  
@@ -1807,8 +1717,7 @@ Console.WriteLine("Nullable long: value={0}", value == null ? "null" : value.ToS
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="9223372036854775807"/>  
+Dim root As XElement = <Root Att="9223372036854775807"/>  
 Dim value As Nullable(Of Long) = CType(root.Attribute("Att"), Nullable(Of Long))  
 Console.WriteLine("Nullable long: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1861,14 +1770,11 @@ Nullable long: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with single precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Single>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 3.402823e38)  
 );  
 float? value = (float?)root.Attribute("Att");  
@@ -1876,8 +1782,7 @@ Console.WriteLine("Nullable Single: value={0}", value == null ? "null" : value.T
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="3.402823E+38"/>  
+Dim root As XElement = <Root Att="3.402823E+38"/>  
 Dim value As Nullable(Of Single) = CType(root.Attribute("Att"), Nullable(Of Single))  
 Console.WriteLine("Nullable Single: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -1936,15 +1841,12 @@ Nullable Single: value=3.402823E+38
  The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
   
  Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with time span content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new TimeSpan(1, 5, 30))  
 );  
 TimeSpan? value = (TimeSpan?)root.Attribute("Att");  
@@ -1952,8 +1854,7 @@ Console.WriteLine("Nullable TimeSpan: value={0}", value == null ? "null" : value
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att=<%= New TimeSpan(1, 5, 30) %>/>  
+Dim root As XElement = <Root Att=<%= New TimeSpan(1, 5, 30) %>/>  
 Dim value As Nullable(Of TimeSpan) = CType(root.Attribute("Att"), Nullable(Of TimeSpan))  
 Console.WriteLine("Nullable TimeSpan: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -2006,14 +1907,11 @@ Nullable TimeSpan: value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt32>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 4294967295)  
 );  
 uint? value = (uint?)root.Attribute("Att");  
@@ -2021,8 +1919,7 @@ Console.WriteLine("Nullable uint: value={0}", value == null ? "null" : value.ToS
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="4294967295"/>  
+Dim root As XElement = <Root Att="4294967295"/>  
 Dim value As Nullable(Of UInteger) = CType(root.Attribute("Att"), Nullable(Of UInteger))  
 Console.WriteLine("Nullable uint: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -2075,14 +1972,11 @@ Nullable uint: value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt64>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 9223372036854775807)  
 );  
 ulong? value = (ulong?)root.Attribute("Att");  
@@ -2090,8 +1984,7 @@ Console.WriteLine("Nullable ulong: value={0}", value == null ? "null" : value.To
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="9223372036854775807"/>  
+Dim root As XElement = <Root Att="9223372036854775807"/>  
 Dim value As Nullable(Of ULong) = CType(root.Attribute("Att"), Nullable(Of ULong))  
 Console.WriteLine("Nullable ulong: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
 ```  
@@ -2144,14 +2037,11 @@ Nullable ulong: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with single precision floating point content. It then retrieves the value by casting to <xref:System.Single>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 3.402823e38)  
 );  
 float value = (float)root.Attribute("Att");  
@@ -2159,8 +2049,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="3.402823E+38"/>  
+Dim root As XElement = <Root Att="3.402823E+38"/>  
 Dim value As Single = CSng(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -2168,7 +2057,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=3.402823E+38  
 ```  
   
@@ -2215,14 +2103,11 @@ value=3.402823E+38
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with string content. It then retrieves the value by casting to <xref:System.String>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "attribute content")  
 );  
 XAttribute att = root.Attribute("Att");  
@@ -2231,8 +2116,7 @@ Console.WriteLine("(string)att={0}", str);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="attribute content"/>  
+Dim root As XElement = <Root Att="attribute content"/>  
 Dim att As XAttribute = root.Attribute("Att")  
 Dim str As String = CStr(att)  
 Console.WriteLine("(string)att={0}", str)  
@@ -2241,7 +2125,6 @@ Console.WriteLine("(string)att={0}", str)
  This example produces the following output:  
   
 ```  
-  
 (string)att=attribute content  
 ```  
   
@@ -2292,15 +2175,12 @@ Console.WriteLine("(string)att={0}", str)
  The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
   
  Behavior is lax when casting to a <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.TimeSpan>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
+
 ## Examples  
  The following example creates an attribute with time span content. It then retrieves the value by casting to <xref:System.TimeSpan>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", new TimeSpan(1, 5, 30))  
 );  
 TimeSpan value = (TimeSpan)root.Attribute("Att");  
@@ -2308,8 +2188,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att=<%= New TimeSpan(1, 5, 30) %>/>  
+Dim root As XElement = <Root Att=<%= New TimeSpan(1, 5, 30) %>/>  
 Dim value As TimeSpan = CType(root.Attribute("Att"), TimeSpan)  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -2317,7 +2196,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=01:05:30  
 ```  
   
@@ -2364,14 +2242,11 @@ value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned integer content. It then retrieves the value by casting to <xref:System.UInt32>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",   
+XElement root = new XElement("Root",   
     new XAttribute("Att", 4294967295)  
 );  
 uint value = (uint)root.Attribute("Att");  
@@ -2379,8 +2254,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="4294967295"/>  
+Dim root As XElement = <Root Att="4294967295"/>  
 Dim value As UInteger = CUInt(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -2388,7 +2262,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=4294967295  
 ```  
   
@@ -2435,14 +2308,11 @@ value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [Explicit Conversion (XAttribute to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
-  
-## Examples  
+          <format type="text/markdown"><![CDATA[## Examples  
  The following example creates an attribute with unsigned long integer content. It then retrieves the value by casting to <xref:System.UInt64>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", 1844674407370955161)  
 );  
 ulong value = (ulong)root.Attribute("Att");  
@@ -2450,8 +2320,7 @@ Console.WriteLine("value={0}", value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="1844674407370955161"/>  
+Dim root As XElement = <Root Att="1844674407370955161"/>  
 Dim value As ULong = CULng(root.Attribute("Att"))  
 Console.WriteLine("value={0}", value)  
 ```  
@@ -2459,7 +2328,6 @@ Console.WriteLine("value={0}", value)
  This example produces the following output:  
   
 ```  
-  
 value=1844674407370955161  
 ```  
   
@@ -2512,8 +2380,7 @@ value=1844674407370955161
  The following example shows how to iterate through the attributes of an element using this property.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3),  
@@ -2527,8 +2394,7 @@ while((att = att.PreviousAttribute) != null);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4"/>  
 Dim att As XAttribute = root.LastAttribute  
 Dim val As Boolean = True  
 Do  
@@ -2540,8 +2406,7 @@ Loop While (Not (att Is Nothing))
  This example produces the following output:  
   
 ```  
-  
-                Att4="4"  
+Att4="4"  
 Att3="3"  
 Att2="2"  
 Att1="1"  
@@ -2594,8 +2459,7 @@ Att1="1"
  The following example creates an element with three attributes. It then removes one of the attributes.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2"),  
     new XAttribute("Att3", "content3")  
@@ -2606,8 +2470,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 att.Remove()  
 Console.WriteLine(root)  
@@ -2616,7 +2479,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```  
-  
 <Root Att1="content1" Att3="content3" />  
 ```  
   
@@ -2670,8 +2532,7 @@ Console.WriteLine(root)
  The following example creates an element with several attributes. It then changes the contents of one of the attributes.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2"),  
     new XAttribute("Att3", "content3")  
@@ -2682,8 +2543,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 att.SetValue("new content")  
 Console.WriteLine(root)  
@@ -2692,7 +2552,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```  
-  
 <Root Att1="content1" Att2="new content" Att3="content3" />  
 ```  
   
@@ -2748,8 +2607,7 @@ Console.WriteLine(root)
  The following example creates an element with several attributes. It then gets an attribute and displays it and its content by calling this method.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2"),  
     new XAttribute("Att3", "content3")  
@@ -2759,8 +2617,7 @@ Console.WriteLine(att.ToString());
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
+Dim root As XElement = <Root Att1="content1" Att2="content2" Att3="content3"/>  
 Dim att As XAttribute = root.Attribute("Att2")  
 Console.WriteLine(att.ToString())  
 ```  
@@ -2768,7 +2625,6 @@ Console.WriteLine(att.ToString())
  This example produces the following output:  
   
 ```  
-  
 Att2="content2"  
 ```  
   
@@ -2823,8 +2679,7 @@ Att2="content2"
  Note that the Visual Basic example uses the XML attribute property.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att", "content")  
 );  
 XAttribute att = root.FirstAttribute;  
@@ -2834,27 +2689,23 @@ Console.WriteLine(att.Value);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att="content"/>  
+Dim root As XElement = <Root Att="content"/>  
 Console.WriteLine(root.@Att)  
 root.@Att = "new text"  
 Console.WriteLine(root.@Att)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                content  
+content  
 new text  
 ```  
   
  The following example shows the benefit of using the explicit conversion operators to get the value of an attribute that might not exist:  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", "attribute 1 content"),  
     new XAttribute("Att2", "2")  
 );  
@@ -2913,8 +2764,7 @@ Console.WriteLine("v4:{0}", v4 == null ? "attribute does not exist" : v4.ToStrin
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="attribute 1 content" Att2="2"/>  
+Dim root As XElement = <Root Att1="attribute 1 content" Att2="2"/>  
   
 ' The following assignments demonstrate why it is easier to use  
 ' casting when the attribute might or might not exist.  
@@ -2980,8 +2830,7 @@ Console.WriteLine("v4:{0}", IIf(v4.HasValue, v4, "attribute does not exist"))
  This example produces the following output:  
   
 ```  
-  
-                c1:attribute 1 content  
+c1:attribute 1 content  
 c2:2  
 c3:attribute does not exist  
 c4:attribute does not exist  

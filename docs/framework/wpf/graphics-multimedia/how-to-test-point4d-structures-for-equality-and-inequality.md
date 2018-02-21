@@ -21,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Test Point4D structures for equality and inequality
 This example shows how to test <xref:System.Windows.Media.Media3D.Point4D> structures for equality and inequality.  
@@ -31,6 +33,6 @@ This example shows how to test <xref:System.Windows.Media.Media3D.Point4D> struc
  [!code-csharp[3DGallery_procedural_snip#Point4DEqualityExample_csharp](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#point4dequalityexample_csharp)]  
   
 ## See Also  
- <xref:System.Windows.Media.Media3D.Point4D.op_Equality%2A>   
- <xref:System.Windows.Media.Media3D.Point4D.op_Inequality%2A>   
+ <xref:System.Windows.Media.Media3D.Point4D.op_Equality%2A>  
+ <xref:System.Windows.Media.Media3D.Point4D.op_Inequality%2A>  
  <xref:System.Windows.Media.Media3D.Point4D.Equals%2A>

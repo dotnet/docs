@@ -26,6 +26,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Override the Panel OnRender Method
 This example shows how to override the <xref:System.Windows.Controls.Panel.OnRender%2A> method of <xref:System.Windows.Controls.Panel> in order to add custom graphical effects to a layout element.  
@@ -37,7 +39,7 @@ This example shows how to override the <xref:System.Windows.Controls.Panel.OnRen
  [!code-vb[LightWeightCustomPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Panel>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Custom Radial Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159982)   
+ <xref:System.Windows.Controls.Panel>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Custom Radial Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159982)  
  [How-to Topics](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)

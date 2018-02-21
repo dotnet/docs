@@ -21,6 +21,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use the Attached Properties of Canvas to Position Child Elements
 This example shows how to use the attached properties of <xref:System.Windows.Controls.Canvas> to position child elements.  
@@ -33,12 +35,12 @@ This example shows how to use the attached properties of <xref:System.Windows.Co
  [!code-vb[CanvasAttachedProperties#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasAttachedProperties/VisualBasic/CanvasAttachedProps.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Canvas>   
- <xref:System.Windows.Controls.Canvas.Bottom%2A>   
- <xref:System.Windows.Controls.Canvas.Left%2A>   
- <xref:System.Windows.Controls.Canvas.Right%2A>   
- <xref:System.Windows.Controls.Canvas.Top%2A>   
- <xref:System.Windows.Controls.Button>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)   
+ <xref:System.Windows.Controls.Canvas>  
+ <xref:System.Windows.Controls.Canvas.Bottom%2A>  
+ <xref:System.Windows.Controls.Canvas.Left%2A>  
+ <xref:System.Windows.Controls.Canvas.Right%2A>  
+ <xref:System.Windows.Controls.Canvas.Top%2A>  
+ <xref:System.Windows.Controls.Button>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)  
  [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)

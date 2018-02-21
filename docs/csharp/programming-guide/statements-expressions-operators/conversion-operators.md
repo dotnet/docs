@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 # Conversion Operators (C# Programming Guide)
 C# enables programmers to declare conversions on classes or structs so that classes or structs can be converted to and/or from other classes or structs, or basic types. Conversions are defined like operators and are named for the type to which they convert. Either the type of the argument to be converted, or the type of the result of the conversion, but not both, must be the containing type.  
   
- [!code-cs[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/conversion-operators_1.cs)]  
+ [!code-csharp[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/conversion-operators_1.cs)]  
   
 ## Conversion Operators Overview  
  Conversion operators have the following properties:  
@@ -45,6 +45,6 @@ C# enables programmers to declare conversions on classes or structs so that clas
 -   [static](../../../csharp/language-reference/keywords/static.md)  
   
 ## See Also  
- <xref:System.Convert>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Chained user-defined explicit conversions in C#](http://go.microsoft.com/fwlink/?LinkId=112384)
+ <xref:System.Convert>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

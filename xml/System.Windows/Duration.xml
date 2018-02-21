@@ -467,7 +467,7 @@
         <summary>Implicitly creates a <see cref="T:System.Windows.Duration" /> from a given <see cref="T:System.TimeSpan" />.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Duration" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.%23ctor%28System.TimeSpan%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.%23ctor%28System.TimeSpan%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <see cref="T:System.TimeSpan" /> is negative.</exception>
       </Docs>

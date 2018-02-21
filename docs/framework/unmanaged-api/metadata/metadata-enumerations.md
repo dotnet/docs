@@ -18,6 +18,8 @@ caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Enumerations
 This section describes the unmanaged enumerations that the metadata API uses.  

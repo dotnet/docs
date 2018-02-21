@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a DockPanel
 ## Example  
@@ -29,6 +31,6 @@ manager: "wpickett"
  [!code-vb[DockPanelCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelCode/VisualBasic/dockpanel_vb.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Controls.DockPanel>   
- <xref:System.Windows.Controls.Dock>   
+ <xref:System.Windows.Controls.DockPanel>  
+ <xref:System.Windows.Controls.Dock>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

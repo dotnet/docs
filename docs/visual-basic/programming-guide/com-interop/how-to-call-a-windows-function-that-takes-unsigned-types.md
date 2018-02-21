@@ -73,17 +73,17 @@ If you are consuming a class, module, or structure that has members of unsigned 
     ```  
   
     > [!CAUTION]
-    >  The `UInteger`, `ULong`, `UShort`, and `SByte` data types are not part of the [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3) (CLS), so CLS-compliant code cannot consume a component that uses them.  
+    >  The `UInteger`, `ULong`, `UShort`, and `SByte` data types are not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot consume a component that uses them.  
   
     > [!IMPORTANT]
     >  Making a call to unmanaged code, such as the Windows application programming interface (API), exposes your code to potential security risks.  
   
     > [!IMPORTANT]
-    >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+    >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
 ## See Also  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
+ [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

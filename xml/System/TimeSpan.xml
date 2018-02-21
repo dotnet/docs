@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/timespan.cs#865ef7b89f41b632). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A <xref:System.TimeSpan> object represents a time interval (duration of time or elapsed time) that is measured as a positive or negative number of days, hours, minutes, seconds, and fractions of a second. The <xref:System.TimeSpan> structure can also be used to represent the time of day, but only if the time is unrelated to a particular date. Otherwise, the <xref:System.DateTime> or <xref:System.DateTimeOffset> structure should be used instead. (For more information about using the <xref:System.TimeSpan> structure to reflect the time of day, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md).)  
   
 > [!NOTE]
@@ -129,6 +125,7 @@
   
  [!code-csharp[System.TimeSpan.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.class/cs/structure1.cs#1)]
  [!code-vb[System.TimeSpan.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.class/vb/structure1.vb#1)]  
+ [!code-powershell[System.TimeSpan.Class#1](~/samples/snippets/powershell/VS_Snippets_CLR_System/system.timespan.class/ps/structure1.ps1)]  
   
  ]]></format>
     </remarks>
@@ -2381,7 +2378,9 @@
 |*ss*|Optional seconds, ranging from 0 to 59.|  
 |*.*|A culture-sensitive symbol that separates seconds from fractions of a second. The invariant format uses a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
-  
+
+If the `s` argument is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse%2A> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
+
  The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `s` by using each of the culture-specific formats for the current culture.  
@@ -2470,7 +2469,9 @@
 |*ss*|Optional seconds, ranging from 0 to 59.|  
 |.|A culture-sensitive symbol that separates seconds from fractions of a second. The default value is a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
-  
+
+If the `input` argument is not a day value only, it must include an hours and a minutes component; other components are optional. If they are present, the values of each time component must fall within a specified range. For example, the value of *hh*, the hours component, must be between 0 and 23. Because of this, passing "23:00:00" to the <xref:System.TimeSpan.Parse%2A> method returns a time interval of 23 hours. On the other hand, passing "24:00:00" returns a time interval of 24 days. Because "24" is outside the range of the hours component, it is interpreted as the days component.
+
  The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `input` by using each of the culture-specific formats for the culture specified by `formatProvider`.  

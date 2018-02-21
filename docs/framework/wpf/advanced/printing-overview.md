@@ -27,6 +27,8 @@ caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing Overview
 With [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)], application developers using [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] have a rich new set of printing and print system management [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]. With [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] file format and the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path.  
@@ -141,15 +143,15 @@ For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../inclu
 -   **ZIP compression**. All [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents use ZIP compression.  
   
 ## See Also  
- <xref:System.Windows.Controls.PrintDialog>   
- <xref:System.Windows.Xps.XpsDocumentWriter>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- <xref:System.Printing.PrintTicket>   
- <xref:System.Printing.PrintCapabilities>   
- <xref:System.Printing.PrintServer>   
- <xref:System.Printing.PrintQueue>   
- [How-to Topics](../../../../docs/framework/wpf/advanced/printing-how-to-topics.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [XPS](http://www.microsoft.com/xps)   
- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)   
+ <xref:System.Windows.Controls.PrintDialog>  
+ <xref:System.Windows.Xps.XpsDocumentWriter>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ <xref:System.Printing.PrintTicket>  
+ <xref:System.Printing.PrintCapabilities>  
+ <xref:System.Printing.PrintServer>  
+ <xref:System.Printing.PrintQueue>  
+ [How-to Topics](../../../../docs/framework/wpf/advanced/printing-how-to-topics.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [XPS](http://www.microsoft.com/xps)  
+ [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)  
  [Microsoft XPS Document Converter (MXDC)](https://msdn.microsoft.com/library/windows/desktop/ff686803.aspx)

@@ -21,6 +21,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Toggle Buttons in ToolStrip Controls
 When a user clicks a toggle button, it appears sunken and retains the sunken appearance until the user clicks the button again.  
@@ -42,5 +44,5 @@ When a user clicks a toggle button, it appears sunken and retains the sunken app
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripButton>   
+ <xref:System.Windows.Forms.ToolStripButton>  
  [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

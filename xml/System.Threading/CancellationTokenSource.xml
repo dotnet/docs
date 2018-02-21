@@ -218,12 +218,9 @@
   
  Any callbacks or cancelable operations registered with the <xref:System.Threading.CancellationToken> will be executed.  
   
- Cancelable operations and callbacks registered with the token should not throw exceptions.  
-  
- However, this overload of Cancel will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed.  
-  
- The <xref:System.Threading.ExecutionContext> that was captured when each callback was registered will be reestablished when the callback is invoked.  
-  
+ We recommend that cancelable operations and callbacks registered with <xref:System.Threading.CancellationToken> not throw exceptions. 
+ 
+ This overload of Cancel will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed. 
    
   
 ## Examples  
@@ -269,22 +266,20 @@
       <Docs>
         <param name="throwOnFirstException">
           <see langword="true" /> if exceptions should immediately propagate; otherwise, <see langword="false" />.</param>
-        <summary>Communicates a request for cancellation, and specifies whether remaining callbacks and cancelable operations should be processed.</summary>
+        <summary>Communicates a request for cancellation, and specifies whether remaining callbacks and cancelable operations should be processed if an exception occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The associated <xref:System.Threading.CancellationToken> will be notified of the cancellation and will transition to a state where <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> returns `true`.  
   
- Any callbacks or cancelable operations registered with the <xref:System.Threading.CancellationToken> will be executed.  
+ Any callbacks or cancelable operations registered with the <xref:System.Threading.CancellationToken> will be executed. Callbacks will be executed synchronously in LIFO order. 
   
- Cancelable operations and callbacks registered with the token should not throw exceptions.  
+ We recommend that cancelable operations and callbacks registered with <xref:System.Threading.CancellationToken> not throw exceptions. 
   
  If `throwOnFirstException` is `true`, an exception will immediately propagate out of the call to <xref:System.Threading.CancellationTokenSource.Cancel%2A>, preventing the remaining callbacks and cancelable operations from being processed.  
   
  If `throwOnFirstException` is `false`, this overload will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed.  
-  
- The <xref:System.Threading.ExecutionContext> that was captured when each callback was registered will be reestablished when the callback is invoked.  
   
  ]]></format>
         </remarks>

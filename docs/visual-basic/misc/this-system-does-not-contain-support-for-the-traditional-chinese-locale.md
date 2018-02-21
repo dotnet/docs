@@ -20,6 +20,6 @@ You attempted to use the `VbStrConv.TraditionalChinese` enumeration member, but 
 1.  Upgrade the machine to support the Traditional Chinese locale, or run the application on a machine that supports the locale.  
   
 ## See Also  
- <xref:System.Globalization>   
- [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
+ <xref:System.Globalization>  
+   
  [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

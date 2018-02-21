@@ -24,6 +24,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Persist and Restore Application-Scope Properties Across Application Sessions
 This example shows how to persist application-scope properties when an application shuts down, and how to restore application-scope properties when an application is next launch.  

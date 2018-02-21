@@ -83,7 +83,7 @@ manager: "wpickett"
 uid: System.IO.Compression.GZipStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -171,7 +171,7 @@ manager: "wpickett"
 uid: System.IO.Compression.GZipStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -196,7 +196,7 @@ manager: "wpickett"
 uid: System.IO.Compression.GZipStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -26,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # PFN_CLRDataCreateInstance Function Pointer
 Points to a function that creates an interface object for the specified target item.  

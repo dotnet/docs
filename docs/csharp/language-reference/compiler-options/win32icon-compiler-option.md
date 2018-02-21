@@ -16,13 +16,13 @@ caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /win32icon (C# Compiler Options)
-The **/win32icon** option inserts an .ico file in the output file, which gives the output file the desired appearance in the File Explorer.  
+# -win32icon (C# Compiler Options)
+The **-win32icon** option inserts an .ico file in the output file, which gives the output file the desired appearance in the File Explorer.  
   
 ## Syntax  
   
 ```console  
-/win32icon:filename  
+-win32icon:filename  
 ```  
   
 ## Arguments  
@@ -30,9 +30,9 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
  The .ico file that you want to add to your output file.  
   
 ## Remarks  
- An .ico file can be created with the [Resource Compiler](http://go.microsoft.com/fwlink/?LinkId=148370). The Resource Compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file.  
+ An .ico file can be created with the [Resource Compiler](https://msdn.microsoft.com/library/aa381042.aspx). The Resource Compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file.  
   
- See [/linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [/resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file. See [/win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) to import a .res file.  
+ See [-linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file. See [-win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) to import a .res file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -48,9 +48,9 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
  Compile `in.cs` and attach an .ico file `rf.ico` to produce `in.exe`:  
   
 ```console  
-csc /win32icon:rf.ico in.cs  
+csc -win32icon:rf.ico in.cs  
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

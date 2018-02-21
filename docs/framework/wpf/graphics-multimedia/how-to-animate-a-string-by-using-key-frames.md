@@ -18,6 +18,8 @@ caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate a String by Using Key Frames
 This example shows how to animate a string, which in this example is the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.Button> control, by using key frames.  
@@ -32,9 +34,9 @@ This example shows how to animate a string, which in this example is the <xref:S
  For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>   
- <xref:System.Windows.Controls.ContentControl.Content%2A>   
- <xref:System.Windows.Controls.Button>   
- <xref:System.Windows.Media.Animation.DiscreteStringKeyFrame>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>  
+ <xref:System.Windows.Controls.ContentControl.Content%2A>  
+ <xref:System.Windows.Controls.Button>  
+ <xref:System.Windows.Media.Animation.DiscreteStringKeyFrame>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

@@ -20,6 +20,8 @@ caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Navigate to a Page
 This example illustrates several ways in which a page can be navigated to from a <xref:System.Windows.Navigation.NavigationWindow>.  
@@ -38,6 +40,6 @@ This example illustrates several ways in which a page can be navigated to from a
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](../../../../includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
 ## See Also  
- <xref:System.Windows.Controls.Frame>   
- <xref:System.Windows.Controls.Page>   
+ <xref:System.Windows.Controls.Frame>  
+ <xref:System.Windows.Controls.Page>  
  <xref:System.Windows.Navigation.NavigationService>

@@ -836,7 +836,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataControlField.OnFieldChanged%2A> method raises an event signaling that the <xref:System.Web.UI.WebControls.DataControlField> object's state has changed. Changes to the following properties cause this event to be raised: <xref:System.Web.UI.WebControls.DataControlField.FooterText%2A>, <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A>, <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A>, <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A>, <xref:System.Web.UI.WebControls.DataControlField.SortExpression%2A>, and <xref:System.Web.UI.WebControls.DataControlField.Visible%2A>. Derived type properties also raise this event when state changes occur. Web server controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> typically call the `DataBind` method in response to a field change event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.DataControlField.OnFieldChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1224,7 +1224,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to show or hide <xref:System.Web.UI.WebControls.DataControlField> objects in a data-bound control.  
   
- If the the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
+ If the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
   
    
   

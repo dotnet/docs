@@ -25,8 +25,6 @@
   
  Alternative techniques that do not require including WPF assemblies include referencing the XAML schema context (available in a service provider context from <xref:System.Xaml.IXamlSchemaContextProvider>, or from <xref:System.Xaml.XamlObjectWriter.SchemaContext%2A?displayProperty=nameWithType> from a XAML node loop or general XAML writer frame of reference.) The XAML schema context includes API for returning its assemblies, preferred prefix mappings, and XAML namespace information.  
   
-<a name="xamlTextUsage_NamespaceMapEntry"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Markup.XamlTypeMapper" />
@@ -110,8 +108,6 @@
 ## Remarks  
  Use the "simple name" form for <xref:System.Windows.Markup.NamespaceMapEntry.AssemblyName%2A>. In particular, do not specify the full path, and do not include the file extension. This is analogous to the form that might be reported by <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType>.  
   
-<a name="xamlTextUsage_AssemblyName"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value <see cref="P:System.Windows.Markup.NamespaceMapEntry.AssemblyName" /> is being set to is <see langword="null" />.</exception>
@@ -133,15 +129,7 @@
       <Docs>
         <summary>Gets or sets the CLR namespace that contains the types being mapped.</summary>
         <value>The CLR namespace.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ClrNamespace"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The value <see cref="P:System.Windows.Markup.NamespaceMapEntry.ClrNamespace" /> is being set to is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Markup.XamlTypeMapper" />
       </Docs>
@@ -161,15 +149,7 @@
       <Docs>
         <summary>Gets or sets the mapping prefix for the XML namespace being mapped to.</summary>
         <value>The mapping prefix for the XML namespace.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_XmlNamespace"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The value <see cref="P:System.Windows.Markup.NamespaceMapEntry.XmlNamespace" /> is being set to is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Markup.XamlTypeMapper" />
       </Docs>

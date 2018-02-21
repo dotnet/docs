@@ -19,6 +19,8 @@ caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Canvas How-to Topics
 The topics in this section describe how to use the <xref:System.Windows.Controls.Canvas> element to absolutely position child elements.  

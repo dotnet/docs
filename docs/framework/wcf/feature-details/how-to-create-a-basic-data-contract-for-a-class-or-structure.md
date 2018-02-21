@@ -9,18 +9,20 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataMemberAttribute"
   - "DataContractAttribute class"
   - "data contracts [WCF], creating for a class or structure"
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Basic Data Contract for a Class or Structure
 This topic shows the basic steps to create a data contract using a class or structure. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts and how they are used, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
@@ -43,8 +45,8 @@ This topic shows the basic steps to create a data contract using a class or stru
  [!code-vb[DataContractAttribute#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/datacontractattribute/vb/overview.vb#2)]  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)   
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)  
  [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)

@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Common Client Technologies in the .NET Framework
 This section describes different technologies that you can use in your client applications.  

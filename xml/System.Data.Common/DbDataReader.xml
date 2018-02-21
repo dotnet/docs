@@ -1066,7 +1066,7 @@ private static void GetCredits(String connectiongString) {
          using (DbDataReader reader = command.ExecuteReader()) {  
             while (reader.Read()) {  
                // Credits column is the integer column, and you can use the GetInt32 method                        
-               // to return a a 32-bit signed integer.                       
+               // to return a 32-bit signed integer.                       
                Console.WriteLine("Course:{0,-15} Credits:{1}",reader[1],reader.GetInt32(2));   
             }  
          }  

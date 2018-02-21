@@ -44,9 +44,9 @@ Visual Basic provides new features for rapid application development that improv
  Gives details on which `My` features are available in different project types.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>   
- <xref:Microsoft.VisualBasic.Devices.Computer>   
- <xref:Microsoft.VisualBasic.ApplicationServices.User>   
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)   
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)   
+ <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
+ <xref:Microsoft.VisualBasic.Devices.Computer>  
+ <xref:Microsoft.VisualBasic.ApplicationServices.User>  
+ [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
+ [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)  
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)

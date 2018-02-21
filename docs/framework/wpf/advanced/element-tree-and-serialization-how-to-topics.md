@@ -19,6 +19,8 @@ caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Element Tree and Serialization How-to Topics
 The topics in this section describe how to use the WPF element tree.  

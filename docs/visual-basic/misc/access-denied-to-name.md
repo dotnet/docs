@@ -17,5 +17,4 @@ A device, file, or disk is not accessible because your computer's security permi
   
 1.  Ensure that you have the necessary permissions.  
   
-## See Also  
- [Security Permissions](http://msdn.microsoft.com/en-us/b03757b4-e926-4196-b738-3733ced2bda0)
+

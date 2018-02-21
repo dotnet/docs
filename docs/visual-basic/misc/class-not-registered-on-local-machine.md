@@ -21,5 +21,5 @@ This error is usually encountered as a result of a corrupted file. You may need 
 -   Reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)   
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)
+ [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+

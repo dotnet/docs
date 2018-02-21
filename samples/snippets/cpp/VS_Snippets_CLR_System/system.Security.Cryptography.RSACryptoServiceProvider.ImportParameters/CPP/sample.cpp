@@ -19,7 +19,7 @@ int main()
       //Create another RSACryptoServiceProvider object.
       RSACryptoServiceProvider^ RSA2 = gcnew RSACryptoServiceProvider;
       
-      //Import the the key information from the other 
+      //Import the key information from the other 
       //RSACryptoServiceProvider object.  
       RSA2->ImportParameters( RSAParams );
    }

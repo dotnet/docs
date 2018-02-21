@@ -472,6 +472,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
@@ -595,6 +599,15 @@
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
         },
+        {
+            "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
+            "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/extending/extending-wcf.md",
+            "redirect_url": "/dotnet/framework/wcf/extending/index",
+            "redirect_document_id": true
+        },        
         {
             "source_path": "docs/framework/wcf/windows-communication-foundation.md",
             "redirect_url": "/dotnet/framework/wcf/index"
@@ -905,6 +918,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
             "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
             "redirect_document_id": true
@@ -1050,23 +1068,35 @@
         },
         {
             "source_path": "docs/csharp/roslyn/index.md",
-            "redirect_url": "/dotnet/csharp/" /* temporary: roslyn conceptual is coming soon */
-        },
+            "redirect_url": "/dotnet/csharp/roslyn-sdk/" 
+        },        
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc165448(v=vs.120).aspx"
+            "redirect_url": "https://msdn.microsoft.com/library/cc165448(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc488002(v=vs.120).aspx"
+            "redirect_url": "https://msdn.microsoft.com/library/cc488002(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/parallel.md",
-            "redirect_url": "/dotnet/standard/parallel-programming/index.md"
+            "redirect_url": "/dotnet/standard/parallel-programming/index"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md"
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
+            "redirect_url": "/dotnet/csharp/how-to/parse-strings-using-split"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/parsing-datetime"
         }    
     ]
 }

@@ -21,6 +21,8 @@ caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Advanced (Windows Presentation Foundation)
 This section describes some of the advanced areas in WPF.  

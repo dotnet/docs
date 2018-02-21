@@ -39,7 +39,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  <xref:Microsoft.VisualBasic.Devices.Ports>  
  Describes the `My.Computer.Ports` object and its members.  
   
- <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames%2A>  
+ <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames>  
  Describes the `SerialPortNames` property, which gets a collection of the names of the serial ports on the computer.  
   
  <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>  

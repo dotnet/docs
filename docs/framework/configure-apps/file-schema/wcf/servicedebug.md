@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceDebug&gt;
 Specifies debugging and help information features for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.  
@@ -75,8 +77,8 @@ Specifies debugging and help information features for a [!INCLUDE[indigo1](../..
  The optional `httpHelpPageBinding` and `httpHelpPageBinding` attributes allow you to configure the bindings used to access the service web page. If they are not specified, the default bindings (`HttpTransportBindingElement`, in the case of HTTP and `HttpsTransportBindingElement`, in the case of HTTPS) are used for service help page access as appropriate. Notice that you cannot use these attributes with the built-in WCF bindings. Only bindings with inner binding elements that support xref:System.ServiceModel.Channels.IReplyChannel> will be supported. Additionally, the <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceDebugElement>   
- <xref:System.ServiceModel.Description.ServiceDebugBehavior>   
- [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)   
- [Handling Exceptions and Faults](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)   
+ <xref:System.ServiceModel.Configuration.ServiceDebugElement>  
+ <xref:System.ServiceModel.Description.ServiceDebugBehavior>  
+ [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
+ [Handling Exceptions and Faults](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)  
  [Service Debug Behavior](../../../../../docs/framework/wcf/samples/service-debug-behavior.md)

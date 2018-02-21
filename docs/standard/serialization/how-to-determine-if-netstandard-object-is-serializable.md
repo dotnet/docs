@@ -5,15 +5,18 @@ ms.custom: ""
 ms.date: "10/20/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serializing objects"
   - "objects, serializing steps"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Determine if a .NET Standard object is serializable
 
@@ -34,5 +37,5 @@ You can then pass any object to the method to determine whether it can be serial
 # See also
 
 [Binary serialization](binary-serialization.md)   
-<xref:System.SerializableAttribute?displayProperty=fullName>    
+<xref:System.SerializableAttribute?displayProperty=nameWithType>    
 <xref:System.Type.IsSerializable?displayProperty=nameWithType>   

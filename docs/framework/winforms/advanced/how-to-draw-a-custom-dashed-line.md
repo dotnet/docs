@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw a Custom Dashed Line
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides several dash styles that are listed in the <xref:System.Drawing.Drawing2D.DashStyle> enumeration. If those standard dash styles do not suit your needs, you can create a custom dash pattern.  

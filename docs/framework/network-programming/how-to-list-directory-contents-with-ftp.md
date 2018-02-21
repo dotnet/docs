@@ -12,6 +12,8 @@ caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: List Directory Contents with FTP
 This sample shows how to list the directory contents of an FTP server.  

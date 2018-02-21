@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
@@ -20,6 +20,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;UseRandomizedStringHashAlgorithm&gt; Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
@@ -100,6 +102,6 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ```  
   
 ## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>   
- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>   
+ <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
+ <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>  
  <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

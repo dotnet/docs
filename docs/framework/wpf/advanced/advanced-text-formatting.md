@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Advanced Text Formatting
 The [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] provides a robust set of [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] for including text in your application. Layout and [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)][!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Controls.TextBlock>, provide the most common and general use elements for text presentation. Drawing [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Media.GlyphRunDrawing> and <xref:System.Windows.Media.FormattedText>, provide a means for including formatted text in drawings. At the most advanced level, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides an extensible text formatting engine to control every aspect of text presentation, such as text store management, text run formatting management, and embedded object management.  
@@ -101,5 +103,5 @@ Interaction between application and TextFormatter
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   
 ## See Also  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)   
+ [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

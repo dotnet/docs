@@ -2934,7 +2934,7 @@ Dim aString As String = Replace(TestString, "o", "i")
 |`VbStrConv.UpperCase`|Converts the string to uppercase characters.|  
 |`VbStrConv.LowerCase`|Converts the string to lowercase characters.|  
 |`VbStrConv.ProperCase`|Converts the first letter of every word in string to uppercase.|  
-|`VbStrConv.Wide` <sup>*</sup>|Converts narrow (half-width) characters in the string to wide (full-width) characters.|  
+|`VbStrConv.Wide` <sup>*</sup>|Converts narrow (half-width) characters in the string to wide (full-width) characters. [!INCLUDE[vbstrconv-wide](~/includes/vbstrconv-wide-md.md)]|  
 |`VbStrConv.Narrow` <sup>*</sup>|Converts wide (full-width) characters in the string to narrow (half-width) characters.|  
 |`VbStrConv.Katakana` <sup>**</sup>|Converts Hiragana characters in the string to Katakana characters.|  
 |`VbStrConv.Hiragana` <sup>**</sup>|Converts Katakana characters in the string to Hiragana characters.|  

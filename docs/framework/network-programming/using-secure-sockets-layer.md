@@ -7,9 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Networking"
   - "SSL"
@@ -25,13 +25,15 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Secure Sockets Layer
 The <xref:System.Net> classes use the Secure Sockets Layer (SSL) to encrypt the connection for several network protocols.  
   
  For http connections, the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes use SSL to communicate with web hosts that support SSL. The decision to use SSL is made by the <xref:System.Net.WebRequest> class, based on the URI it is given. If the URI begins with "https:", SSL is used; if the URI begins with "http:", an unencrypted connection is used.  
   
- To use SSL with File Transfer Protocol (FTP), set the <xref:System.Net.FtpWebRequest.EnableSsl> property to true prior to calling <xref:System.Net.FtpWebRequest.GetResponse>. Similarly, to use SSL with Simple Mail Transport Protocol (SMTP), set the <xref:System.Net.Mail.SmtpClient.EnableSsl> property to true prior to sending the e-mail.  
+ To use SSL with File Transfer Protocol (FTP), set the <xref:System.Net.FtpWebRequest.EnableSsl> property to true prior to calling <xref:System.Net.FtpWebRequest.GetResponse>. Similarly, to use SSL with Simple Mail Transport Protocol (SMTP), set the <xref:System.Net.Mail.SmtpClient.EnableSsl> property to true prior to sending the email.  
   
  The <xref:System.Net.Security.SslStream> class provides a stream-based abstraction for SSL, and offers many ways to configure the SSL handshake.  
   
@@ -67,6 +69,6 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 -   References to the **System.Net** namespace.  
   
 ## See Also  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)   
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
+ [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)

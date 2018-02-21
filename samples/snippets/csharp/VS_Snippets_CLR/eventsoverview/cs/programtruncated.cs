@@ -47,6 +47,6 @@ namespace ConsoleApplication1
     // </snippet3>
 
     //<snippet4>
-    public delegate void ThresholdReachedEventHandler(ThresholdReachedEventArgs e);
+    public delegate void ThresholdReachedEventHandler(object sender, ThresholdReachedEventArgs e);
     //</snippet4>
 }

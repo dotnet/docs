@@ -68,13 +68,13 @@ public class DataRetriever : MarshalByRefObject
 //     Executing a task asynchronously in a single appdomain:
 //     Current culture is fr-FR
 //     Thread 3 is running in app domain 'AsyncCulture4.exe'
-//     93,48 €
+//     93,48 â‚¬
 //     
 //     Executing a task synchronously in two appdomains:
 //     Thread 4 is running in app domain 'AsyncCulture4.exe'
 //     Current culture is fr-FR
 //     Thread 4 is running in app domain 'Domain2'
-//     288,66 €
+//     288,66 â‚¬
 // </Snippet4>
 
 

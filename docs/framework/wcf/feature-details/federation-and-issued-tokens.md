@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "federation [WCF], issued tokens"
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Federation and Issued Tokens
 With [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you can create clients that communicate securely with services that implement the WS-Federation and WS-Trust specifications. The specifications use XML, SOAP, and Web Services Description Language (WSDL) to provide mechanisms that enable authentication and authorization across different trust realms.  
@@ -68,6 +70,6 @@ With [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], you can create cli
  <xref:System.ServiceModel.WSFederationHttpBinding>  
   
 ## See Also  
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)   
- [Custom Tokens](../../../../docs/framework/wcf/extending/custom-tokens.md)   
+ [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
+ [Custom Tokens](../../../../docs/framework/wcf/extending/custom-tokens.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

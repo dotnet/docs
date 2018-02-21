@@ -200,11 +200,11 @@
 ## Remarks  
  If there is exactly one match of the object specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A>, this method returns that object. If there are multiple matches of the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> object, this method arbitrarily returns one of the matching principals.  
   
- The <xref:System.DirectoryServices.AccountManagement.Principal> object returned from this method matches the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+ The <xref:System.DirectoryServices.AccountManagement.Principal> object returned from this method matches the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the [Query by Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
@@ -243,7 +243,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.  
   
- The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
@@ -304,7 +304,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The principal object contained in this property can be any type of object derived from the principal class; computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the Query by Example overview topic. For more information on the extended classes, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ The principal object contained in this property can be any type of object derived from the principal class; computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the Query by Example overview topic. For more information on the extended classes, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>

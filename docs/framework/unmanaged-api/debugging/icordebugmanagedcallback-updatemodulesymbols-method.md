@@ -27,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::UpdateModuleSymbols Method
 Notifies the debugger that the symbols for a common language runtime module have changed.  

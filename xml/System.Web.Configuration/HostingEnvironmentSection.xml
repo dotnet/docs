@@ -21,9 +21,9 @@
    
   
 ## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the [hostingEnvironment Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/043a75c8-231a-4f8d-9633-501530bd7d40) section, which can also be accessed as members of the <xref:System.Web.Configuration.HostingEnvironmentSection> class.  
+ This example demonstrates how to specify values declaratively for several attributes of the [hostingEnvironment Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/043a75c8-231a-4f8d-9633-501530bd7d40) section, which can also be accessed as members of the <xref:System.Web.Configuration.HostingEnvironmentSection> class.  
   
- The following configuration file example shows how to specify values declaratively for the [hostingEnvironment Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/043a75c8-231a-4f8d-9633-501530bd7d40) section.  
+ The following configuration file example shows how to specify values declaratively for the [hostingEnvironment Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/043a75c8-231a-4f8d-9633-501530bd7d40) section.  
   
 ```  
 <system.web>  

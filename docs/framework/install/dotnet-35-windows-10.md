@@ -3,13 +3,11 @@ title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 description: Learn how to install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8.
 author: rlander
 ms.author: mairaw
-keywords: .NET Framework, Install
-ms.date: 05/26/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: .net-framework
-ms.technology: vs-ide-deployment
-ms.devlang: dotnet
-ms.assetid: 67cda1d5-c6g4-4eb5-93e6-4f478de07ff7
+ms.workload: 
+  - dotnet
 ---
 
 # Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
@@ -33,3 +31,9 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
    ![Installing .NET with the control panel](./media/dotnet-control-panel.png)
 
    You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP Activation** and **Windows Communication Foundation (WCF) Non-HTTP Activation** unless you're a developer or server administrator who requires this functionality.
+
+## Troubleshoot the installation of the .NET Framework 3.5
+
+During installation, you may encounter error 0x800f0906, 0x800f0907, 0x800f081f, or 0x800F0922, in which case refer to [.NET Framework 3.5 installation error: 0x800f0906, 0x800f0907, or 0x800f081f](https://support.microsoft.com/help/2734782/net-framework-3-5-installation-error-0x800f0906--0x800f081f--0x800f09) to see how to resolve these issues.
+
+If any of the methods discussed in the previous article fail or if you don't have an Internet connection, it's necessary to use your Windows installation media. For more information, see [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism). If you don't have the installation media, see [Create installation media for Windows](https://support.microsoft.com/help/15088/windows-create-installation-media).

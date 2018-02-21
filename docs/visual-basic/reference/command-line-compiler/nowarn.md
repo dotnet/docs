@@ -40,7 +40,7 @@ Suppresses the compiler's ability to generate warnings.
   
 |To set /nowarn in the Visual Studio integrated development environment|  
 |---|  
-|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Select the **Disable all warnings** check box to disable all warnings.<br />     - or -<br />     To disable a particular warning, click **None** from the drop-down list adjacent to the warning.|  
+|1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Select the **Disable all warnings** check box to disable all warnings.<br />     - or -<br />     To disable a particular warning, click **None** from the drop-down list adjacent to the warning.|  
   
 ## Example  
  The following code compiles `T2.vb` and does not display any warnings.  
@@ -57,6 +57,6 @@ vbc /nowarn:42024 t2.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

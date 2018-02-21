@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ErrorProvider Component (Windows Forms)
 The Windows Forms `ErrorProvider` component is used to show the user in a non-intrusive way that something is wrong. It is typically used in conjunction with validating user input on a form, or displaying errors within a dataset.  

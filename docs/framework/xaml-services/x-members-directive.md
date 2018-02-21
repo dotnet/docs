@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Members Directive
 Holds a set of members that are defined in markup, which apply to the x:Class of the parent element.  

@@ -1,10 +1,13 @@
 ---
-title: Run composed and microservices-based applications in production environments | Microsoft Docs 
+title: Run composed and microservices-based applications in production environments
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Run composed and microservices-based applications in production environments
 
@@ -12,7 +15,7 @@ Applications composed by multiple microservices do need to be deployed into orch
 
 ## Introduction to orchestrators, schedulers, and container clusters
 
-Earlier in this ebook, we introduced *clusters* and *schedulers* as part of the discussion on software architecture and development. Examples of Docker clusters are Docker Swarm and Mesosphere Datacenter Operating System (DC/OS). Both of these can run as a part of the infrastructure provided by Microsoft Azure Container Service.
+Earlier in this e-book, we introduced *clusters* and *schedulers* as part of the discussion on software architecture and development. Examples of Docker clusters are Docker Swarm and Mesosphere Datacenter Operating System (DC/OS). Both of these can run as a part of the infrastructure provided by Microsoft Azure Container Service.
 
 When applications are scaled-out across multiple host systems, the ability to manage each host system and abstract away the complexity of the underlying platform becomes attractive. That is precisely what orchestrators and schedulers provide. Let's take a brief look at them here:
 

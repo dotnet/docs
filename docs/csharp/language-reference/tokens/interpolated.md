@@ -21,11 +21,11 @@ Identifies a string literal as an [interpolated string](../keywords/interpolated
 
 The following example uses the `$` character to define an interpolated string.
 
-[!CODE-cs[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
+[!code-csharp[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
 
 For more information on interpolated strings, see the [Interpolated Strings](../keywords/interpolated-strings.md) topic.
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Special Characters](../../../csharp/language-reference/tokens/index.md)

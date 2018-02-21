@@ -22,6 +22,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugRecordFormat Enumeration
 Describes the format of the data in a byte array that contains information about a native exception debug event.  

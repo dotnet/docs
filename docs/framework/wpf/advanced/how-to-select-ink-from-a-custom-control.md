@@ -21,6 +21,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Select Ink from a Custom Control
 By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom control, you can enable your control so that a user can select ink with a lasso tool, similar to the way the <xref:System.Windows.Controls.InkCanvas> selects ink with a lasso.  
@@ -93,7 +95,7 @@ By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom 
  [!code-vb[HowToSelectInk#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HowToSelectInk/VisualBasic/InkSelector.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Ink.IncrementalLassoHitTester>   
- <xref:System.Windows.Ink.StrokeCollection>   
- <xref:System.Windows.Input.StylusPointCollection>   
+ <xref:System.Windows.Ink.IncrementalLassoHitTester>  
+ <xref:System.Windows.Ink.StrokeCollection>  
+ <xref:System.Windows.Input.StylusPointCollection>  
  [Creating an Ink Input Control](../../../../docs/framework/wpf/advanced/creating-an-ink-input-control.md)

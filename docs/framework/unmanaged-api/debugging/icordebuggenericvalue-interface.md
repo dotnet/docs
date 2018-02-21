@@ -26,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugGenericValue Interface1
 A subclass of "ICorDebugValue" that applies to all values. This interface provides Get and Set methods for the value.  

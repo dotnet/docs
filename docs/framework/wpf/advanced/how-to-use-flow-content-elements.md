@@ -17,6 +17,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Use Flow Content Elements
 The following example demonstrates declarative usage for various flow content elements and associated attributes.  Elements and attributes demonstrated include:  

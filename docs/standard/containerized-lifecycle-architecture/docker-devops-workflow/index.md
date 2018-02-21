@@ -1,10 +1,13 @@
 ---
-title: Docker application devops workflow with microsoft tools | Microsoft Docs 
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Toolsdevops workflow with microsoft tools
+title: Docker application devops workflow with Microsoft tools
+description: Containerized Docker Application Lifecycle with Microsoft Platform and Toolsdevops workflow with Microsoft tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Docker application DevOps workflow with Microsoft tools

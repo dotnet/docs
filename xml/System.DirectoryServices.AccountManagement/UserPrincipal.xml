@@ -52,7 +52,7 @@
 ## Examples  
  The following code example connects to the LDAP domain "fabrikam.com" with the username and password initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor to "administrator" and "securelyStoredPassword."  
   
- The properties set in the example, such as user name and e-mail address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
+ The properties set in the example, such as user name and email address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
   
 ```  
   
@@ -171,8 +171,8 @@ ctx.Dispose();
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the e-mail address for this account.</summary>
-        <value>The e-mail address of the user principal.</value>
+        <summary>Gets or sets the email address for this account.</summary>
+        <value>The email address of the user principal.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />

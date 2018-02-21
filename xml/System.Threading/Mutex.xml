@@ -32,10 +32,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/mutex.cs#29b92e0e2832a8d6). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  When two or more threads need to access a shared resource at the same time, the system needs a synchronization mechanism to ensure that only one thread at a time uses the resource. <xref:System.Threading.Mutex> is a synchronization primitive that grants exclusive access to the shared resource to only one thread. If a thread acquires a mutex, the second thread that wants to acquire that mutex is suspended until the first thread releases the mutex.  
   
 > [!IMPORTANT]
@@ -67,7 +63,8 @@
 > [!NOTE]
 >  On a server that is running Terminal Services, a named system mutex can have two levels of visibility. If its name begins with the prefix "Global\\", the mutex is visible in all terminal server sessions. If its name begins with the prefix "Local\\", the mutex is visible only in the terminal server session where it was created. In that case, a separate mutex with the same name can exist in each of the other terminal server sessions on the server. If you do not specify a prefix when you create a named mutex, it takes the prefix "Local\\". Within a terminal server session, two mutexes whose names differ only by their prefixes are separate mutexes, and both are visible to all processes in the terminal server session. That is, the prefix names "Global\\" and "Local\\" describe the scope of the mutex name relative to terminal server sessions, not relative to processes.  
   
-   
+[!INCLUDE[backslash-mutex-note](~/includes/backslash-mutex.md)]
+
   
 ## Examples  
  This example shows how a local <xref:System.Threading.Mutex> object is used to synchronize access to a protected resource. Because each calling thread is blocked until it acquires ownership of the mutex, it must call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method to release ownership of the thread.  
@@ -231,8 +228,8 @@
 > [!NOTE]
 >  On a server that is running Terminal Services, a named system mutex can have two levels of visibility. If its name begins with the prefix "Global\\", the mutex is visible in all terminal server sessions. If its name begins with the prefix "Local\\", the mutex is visible only in the terminal server session where it was created. In that case, a separate mutex with the same name can exist in each of the other terminal server sessions on the server. If you do not specify a prefix when you create a named mutex, it takes the prefix "Local\\". Within a terminal server session, two mutexes whose names differ only by their prefixes are separate mutexes, and both are visible to all processes in the terminal server session. That is, the prefix names "Global\\" and "Local\\" describe the scope of the mutex name relative to terminal server sessions, not relative to processes.  
   
-   
-  
+[!INCLUDE[backslash-mutex-note](~/includes/backslash-mutex.md)]
+
 ## Examples  
  The following example shows how a named mutex is used to signal between threads running in two separate processes.  
   
@@ -306,8 +303,8 @@
   
 > [!NOTE]
 >  On a server that is running Terminal Services, a named system mutex can have two levels of visibility. If its name begins with the prefix "Global\\", the mutex is visible in all terminal server sessions. If its name begins with the prefix "Local\\", the mutex is visible only in the terminal server session where it was created. In that case, a separate mutex with the same name can exist in each of the other terminal server sessions on the server. If you do not specify a prefix when you create a named mutex, it takes the prefix "Local\\". Within a terminal server session, two mutexes whose names differ only by their prefixes are separate mutexes, and both are visible to all processes in the terminal server session. That is, the prefix names "Global\\" and "Local\\" describe the scope of the mutex name relative to terminal server sessions, not relative to processes.  
-  
-   
+
+[!INCLUDE[backslash-mutex-note](~/includes/backslash-mutex.md)]   
   
 ## Examples  
  The following code example shows how a named mutex is used to signal between processes or threads. Run this program from two or more command windows. Each process creates a <xref:System.Threading.Mutex> object that represents the named mutex "MyMutex". The named mutex is a system object. In this example, its lifetime is bounded by the lifetimes of the <xref:System.Threading.Mutex> objects that represent it. The named mutex is created when the first process creates its local <xref:System.Threading.Mutex> object, and destroyed when all the <xref:System.Threading.Mutex> objects that represent it have been released. The named mutex is initially owned by the first process. The second process and any subsequent processes wait for earlier processes to release the named mutex.  
@@ -377,7 +374,8 @@
   
 > [!NOTE]
 >  On a server that is running Terminal Services, a named system mutex can have two levels of visibility. If its name begins with the prefix "Global\\", the mutex is visible in all terminal server sessions. If its name begins with the prefix "Local\\", the mutex is visible only in the terminal server session where it was created. In that case, a separate mutex with the same name can exist in each of the other terminal server sessions on the server. If you do not specify a prefix when you create a named mutex, it takes the prefix "Local\\". Within a terminal server session, two mutexes whose names differ only by their prefixes are separate mutexes, and both are visible to all processes in the terminal server session. That is, the prefix names "Global\\" and "Local\\" describe the scope of the mutex name relative to terminal server sessions, not relative to processes.  
-  
+
+[!INCLUDE[backslash-mutex-note](~/includes/backslash-mutex.md)]  
    
   
 ## Examples  

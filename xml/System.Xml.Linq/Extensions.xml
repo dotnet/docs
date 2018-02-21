@@ -116,8 +116,7 @@
  The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors of all elements in the collection.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1",  
         new XElement("GrandChild1",  
             new XElement("GreatGrandChild1", "content")  
@@ -151,8 +150,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Child1>  
             <GrandChild1>  
@@ -209,8 +207,7 @@ Child2
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XElement(aw + "Child1",  
         new XElement(aw + "GrandChild1",  
@@ -245,8 +242,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -369,8 +365,7 @@ Ancestors
  The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors of all elements in the collection that match a specified <xref:System.Xml.Linq.XName>.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1",  
         new XElement("GrandChild1",  
             new XElement("GreatGrandChild1", "content")  
@@ -404,8 +399,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Child1>  
             <GrandChild1>  
@@ -459,8 +453,7 @@ Child1
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XElement(aw + "Child1",  
         new XElement(aw + "GrandChild1",  
@@ -495,8 +488,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -631,8 +623,7 @@ Ancestors
  The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all ancestors and self of all elements in the collection.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1",  
         new XElement("GrandChild1",  
             new XElement("GreatGrandChild1", "content")  
@@ -666,8 +657,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
     <Root>  
         <Child1>  
             <GrandChild1>  
@@ -727,8 +717,7 @@ Child2
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XElement(aw + "Child1",  
         new XElement(aw + "GrandChild1",  
@@ -763,8 +752,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -882,8 +870,7 @@ Ancestors and Self
  The following example retrieves a collection of the great grandchildren elements. It then uses this axis method to retrieve all self and ancestors of all elements in the collection that match a specified <xref:System.Xml.Linq.XName>.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1",  
         new XElement("GrandChild1",  
             new XElement("GreatGrandChild1", "content")  
@@ -917,8 +904,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Child1>  
             <GrandChild1>  
@@ -1007,8 +993,7 @@ foreach (XElement de in allAncestors)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1144,8 +1129,7 @@ Ancestors and Self
  Note that the namespace attribute is returned by this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2"),  
@@ -1170,8 +1154,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root xmlns:aw="http://www.adventure-works.com" Att1="content1" Att2="content2">  
         <Child1 Att1="content3" Att2="content4"/>  
         <Child2 Att1="content5" Att2="content6"/>  
@@ -1209,8 +1192,7 @@ Att2="content6"
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430). Note that the namespace attribute is included in the returned collection.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute(aw + "Att1", "content1"),  
@@ -1236,8 +1218,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1330,8 +1311,7 @@ aw:Att2="content6"
  The following example retrieves a collection of elements, which in this case includes the `Child1` and `Child2` elements. It then retrieves all attributes of that child collection with a name of `Att1`.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2"),  
     new XElement("Child1",  
@@ -1352,8 +1332,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root Att1="content1" Att2="content2">  
         <Child1 Att1="content3" Att2="content4">  
         </Child1>  
@@ -1437,8 +1416,7 @@ Att1="content5"
  The following example retrieves a collection of two elements, and then retrieves a collection of all descendant nodes for every element in the source collection. Note that the attribute of the `GrandChild` element is not surfaced as a node.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse(  
+XElement xmlTree = XElement.Parse(  
 @"<Root>  
     <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
         <!--a comment-->  
@@ -1471,8 +1449,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
 <Root>  
     <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
         <!--a comment-->  
@@ -1516,8 +1493,7 @@ Text: ddd
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>aaa<GrandChild anAttribute='xyz'>Text</GrandChild>  
@@ -1551,8 +1527,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1739,8 +1714,7 @@ Text: ddd
  The following example retrieves a collection of elements, and then uses this axis method to retrieve all descendent elements of every item in the collection of elements.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse(  
+XElement xmlTree = XElement.Parse(  
 @"<Root>  
     <Para>  
         <t>This is some text </t>  
@@ -1763,8 +1737,7 @@ foreach (XElement el in elList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Para>  
             <t>This is some text </t>  
@@ -1785,7 +1758,6 @@ Dim elList = From el In xmlTree.<Para>.Descendants _
 For Each el As XElement In elList  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  This example produces the following output:  
@@ -1803,8 +1775,7 @@ Next
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Para>  
@@ -1828,8 +1799,7 @@ foreach (XElement el in elList)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1936,8 +1906,7 @@ End Module
  The following example retrieves a collection of two elements, and then retrieves a collection of all descendants of the two elements that have the specified element name.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse(  
+XElement xmlTree = XElement.Parse(  
 @"<Root>  
     <Para>  
         <t>This is some text </t>  
@@ -1962,8 +1931,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Para>  
             <t>This is some text </t>  
@@ -1998,8 +1966,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Para>  
@@ -2025,8 +1992,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2276,8 +2242,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
  The following example retrieves a collection of elements with the element name of `Child`. It then uses this axis method to retrieve all child elements of the collection.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child",  
         new XElement("GrandChild1", 1),  
         new XElement("GrandChild2", 2)  
@@ -2301,8 +2266,7 @@ foreach (XElement el in allGrandChildren)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
      <Root>  
           <Child>  
               <GrandChild1>1</GrandChild1>  
@@ -2343,8 +2307,7 @@ Next
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XElement(aw + "Child",  
         new XElement(aw + "GrandChild1", 1),  
@@ -2369,8 +2332,7 @@ foreach (XElement el in allGrandChildren)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2477,8 +2439,7 @@ End Module
  This extension method is useful when you want to retrieve all elements with a specified name at a particular depth. This is easy if the document is very regular, but if the document is irregular, it can be a bit more difficult. In the following example, we want to retrieve all `aaa` elements that are children of `Item` elements. A given `Item` element may or may not contain an `aaa` element. This is easily accomplished using this extension method, as follows:  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Item",  
         new XElement("aaa", 1),  
         new XElement("bbb", 2)  
@@ -2502,8 +2463,7 @@ foreach (XElement el in allGrandChildren)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Item>  
             <aaa>1</aaa>  
@@ -2565,8 +2525,7 @@ foreach (XElement el in allGrandChildren)
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2665,8 +2624,7 @@ End Module
  The following example creates a collection of nodes that are not in document order, and then uses this axis to create a new collection where the nodes are in document order.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Item",  
         new XElement("aaa", 1),  
         new XElement("bbb", 2)  
@@ -2694,8 +2652,7 @@ foreach (XElement el in inDocOrder)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Item>  
             <aaa>1</aaa>  
@@ -2791,8 +2748,7 @@ Next
  The following example retrieves all of the child nodes for every node in a collection of elements with the name of `Child`.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse(  
+XElement xmlTree = XElement.Parse(  
     @"<Root><Child>aaa<GrandChild>Text</GrandChild>bbb</Child>" +  
     @"<Child>ccc<GrandChild>Text</GrandChild>ddd</Child></Root>");  
 IEnumerable<XNode> nodes = xmlTree.Elements("Child").Nodes();  
@@ -2812,8 +2768,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Child>aaa<GrandChild>Text</GrandChild>bbb</Child>  
         <Child>ccc<GrandChild>Text</GrandChild>ddd</Child>  
@@ -2892,8 +2847,7 @@ Text: ddd
  The following example retrieves a collection of attributes, and then calls this method to remove them from their parent elements.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3),  
@@ -2912,8 +2866,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4" Att5="5"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3" Att4="4" Att5="5"/>  
   
 Dim atList = From at In root.Attributes _  
              Where at.Value >= 3 _  
@@ -2988,8 +2941,7 @@ Console.WriteLine(root)
  The following example retrieves a collection of elements. It then calls this method to remove the elements from their parent element.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Data", 1),  
     new XElement("Data", 2),  
     new XElement("Data", 3),  
@@ -3008,8 +2960,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _  
+Dim root As XElement = _  
     <Root>  
         <Data>1</Data>  
         <Data>2</Data>  

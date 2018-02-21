@@ -10,7 +10,15 @@
       "Pdf",
       "Intellisense"
     ],
+    "ai-ebook": [
+      "Publish",
+      "Pdf"
+    ],    
     "master": [
+      "Publish",
+      "Pdf"
+    ],
+    "CITest": [
       "Publish",
       "Pdf"
     ]
@@ -26,6 +34,7 @@
       "build_source_folder": ".",
       "build_output_subfolder": ".",
       "locale": "en-us",
+      "xref_query_tags": ["/uwp/api"],
       "monikers": [
         "netframework-4.5.1",
         "netframework-4.5.2",
@@ -65,13 +74,26 @@
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/splitToc/tools/run.ps1"
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ],
         "docset_postbuild": [
           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
       },
-      "pdf_build_exclude_tocs": []
+      "pdf_build_exclude_tocs": [],
+      "ECMA2Yaml": {
+        "SourceXmlFolder": "xml",
+        "SourceMetadataFolder": "add\\metadata",
+        "OutputYamlFolder": "api",
+        "Flatten": true
+      },
+      "SplitTOC": [
+        "api/toc.yml"
+      ],
+      "DiffFolder": [
+        "api"
+      ]
     }
   ],
   "notification_subscribers": [],
@@ -115,18 +137,11 @@
       "version": "latest"
     },
     {
-      "id": "SplitToc",
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
-      "path_to_root": "_dependentPackages/splitToc",
+      "path_to_root": "_dependentPackages/CommonPlugins",
       "target_framework": "net45",
       "version": "latest"
     }
-  ],
-  "ECMA2Yaml": {
-    "SourceXmlFolder": "xml",
-    "SourceMetadataFolder": "add\\metadata",
-    "OutputYamlFolder": "api",
-    "Flatten": true
-  },
-  "toc_path_need_to_split": "api/toc.yml"
+  ]
 }

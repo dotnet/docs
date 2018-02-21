@@ -28,13 +28,6 @@
     <summary>Defines the possible versions of <see cref="T:System.Security.Authentication.SslProtocols" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
-  
- [!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
- [!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -61,7 +54,7 @@
         <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that either Secure Sockets Layer (SSL) 3.0 or Transport Layer Security (TLS) 1.0 are acceptable for secure communications</summary>
+        <summary>Use `None` instead of `Default`. `Default` permits only the Secure Sockets Layer (SSL) 3.0 or Transport Layer Security (TLS) 1.0 protocols to be negotiated, and those options are now considered obsolete. Consequently, `Default` is not allowed in many organizations. Despite the name of this field, <see cref="T:System.Net.Security.SslStream"/> does not use it as a default except under special circumstances.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -87,7 +80,7 @@
         <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No SSL protocol is specified.</summary>
+        <summary>Allows the operating system to choose the best protocol to use, and to block protocols that are not secure. Unless your app has a specific reason not to, you should use this field.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl2">

@@ -11,14 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base functionality for creating event providers that send e-mail.</summary>
+    <summary>Provides the base functionality for creating event providers that send email.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
- The <xref:System.Web.Management.MailWebEventProvider> class is a base class for building providers that monitor Web events and send e-mail for selected events. This class supports the .NET Framework infrastructure and is not intended to be inherited from or used directly from your code.  
+ The <xref:System.Web.Management.MailWebEventProvider> class is a base class for building providers that monitor Web events and send email for selected events. This class supports the .NET Framework infrastructure and is not intended to be inherited from or used directly from your code.  
   
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  

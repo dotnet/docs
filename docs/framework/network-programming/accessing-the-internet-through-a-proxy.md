@@ -22,6 +22,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Accessing the Internet Through a Proxy
 If your site uses a proxy to provide access to the Internet, you must configure a proxy instance to enable your application to communicate with the Web proxy.  
@@ -37,5 +39,5 @@ If your site uses a proxy to provide access to the Internet, you must configure 
 -   [How to: Override a Global Proxy Selection](../../../docs/framework/network-programming/how-to-override-a-global-proxy-selection.md)  
   
 ## See Also  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)   
+ [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

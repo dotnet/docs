@@ -1,7 +1,7 @@
 ---
 title: "Language-Integrated Query (LINQ) (C#)"
 ms.custom: ""
-ms.date: 02-02-2017
+ms.date: 02/02/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ For a developer who writes queries, the most visible "language-integrated" part 
 
 The following example shows the complete query operation. The complete operation includes creating a data source, defining the query expression, and executing the query in a `foreach` statement.
 
-[!code-cs[csProgGuideLINQ#11](../../../../../samples/snippets/csharp/concepts/linq/index_1.cs)]
+[!code-csharp[csProgGuideLINQ#11](../../../../../samples/snippets/csharp/concepts/linq/index_1.cs)]
 
 ## Query expression overview
 

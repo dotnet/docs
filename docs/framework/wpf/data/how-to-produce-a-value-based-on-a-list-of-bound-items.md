@@ -20,6 +20,8 @@ caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Produce a Value Based on a List of Bound Items
 <xref:System.Windows.Data.MultiBinding> allows you to bind a binding target property to a list of source properties and then apply logic to produce a value with the given inputs. This example demonstrates how to use <xref:System.Windows.Data.MultiBinding>.  
@@ -40,6 +42,6 @@ manager: "wpickett"
  `NameConverter` implements the <xref:System.Windows.Data.IMultiValueConverter> interface. `NameConverter` takes the values from the individual bindings and stores them in the values object array. The order in which the <xref:System.Windows.Data.Binding> elements appear under the <xref:System.Windows.Data.MultiBinding> element is the order in which those values are stored in the array. The value of the <xref:System.Windows.Data.MultiBinding.ConverterParameter%2A> attribute is referenced by the parameter argument of the <xref:System.Windows.Data.MultiBinding.Converter%2A> method, which performs a switch on the parameter to determine how to format the name.  
   
 ## See Also  
- [Convert Bound Data](../../../../docs/framework/wpf/data/how-to-convert-bound-data.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
+ [Convert Bound Data](../../../../docs/framework/wpf/data/how-to-convert-bound-data.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

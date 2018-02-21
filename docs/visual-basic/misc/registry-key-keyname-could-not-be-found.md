@@ -20,5 +20,5 @@ A registry key cannot be found.
 2.  Make sure that you have sufficient security permissions to access the key.  
   
 ## See Also  
- [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)   
- [Registry Access Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/b58f7687-f4db-448a-a865-07f62fd16fb2)
+ [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)  
+ [Registry Access Changes in Visual Basic .NET](http://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)

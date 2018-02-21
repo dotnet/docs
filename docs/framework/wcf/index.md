@@ -10,9 +10,11 @@ helpviewer_keywords:
   - "WCF [WCF]"
 ms.assetid: 149348a6-bf82-4ccc-9604-fa7cc88c0749
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Developing Service-Oriented Applications with WCF
 This section of the documentation provides information about Windows Communication Foundation (WCF), which is a unified programming model for building service-oriented applications. It enables developers to build secure, reliable, transacted solutions that integrate across platforms and interoperate with existing investments.
@@ -39,7 +41,7 @@ This section of the documentation provides information about Windows Communicati
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)  
  Shows topics that let you choose which [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] feature or features you need to employ.  
   
- [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md)  
+ [Extending WCF](../../../docs/framework/wcf/extending/index.md)  
  Describes how to modify and extend WCF runtime components  
   
  [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  

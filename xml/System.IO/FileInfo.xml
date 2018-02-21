@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/fileinfo.cs#4ee673c1a4ecad41). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.FileInfo> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to files.  
   
  If you are performing multiple operations on the same file, it can be more efficient to use <xref:System.IO.FileInfo> instance methods instead of the corresponding static methods of the <xref:System.IO.File> class, because a security check will not always be necessary.  

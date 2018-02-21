@@ -20,6 +20,8 @@ caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TreeView
 The <xref:System.Windows.Controls.TreeView> control displays information in a hierarchical structure by using collapsible nodes.  

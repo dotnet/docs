@@ -247,7 +247,7 @@
         <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Transforms <see langword="[out, retval]" /> parameters of methods on dispatch-only interfaces ([dispinterface](http://msdn.microsoft.com/en-us/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf)) into return values.</summary>
+        <summary>Transforms <see langword="[out, retval]" /> parameters of methods on dispatch-only interfaces ([dispinterface](http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf)) into return values.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsafeInterfaces">

@@ -40,6 +40,8 @@ caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Windows Overview
 Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] standalone applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. Standalone [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications provide their own windows by using the <xref:System.Windows.Window> class. This topic introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in standalone applications.  
@@ -188,7 +190,7 @@ Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-
   
 <a name="Preventing"></a>   
 #### Preventing Window Activation  
- There are scenarios where windows should not be activated when shown, such as conversation windows of an Internet messenger-style application or notification windows of an e-mail application.  
+ There are scenarios where windows should not be activated when shown, such as conversation windows of an Internet messenger-style application or notification windows of an email application.  
   
  If your application has a window that shouldn't be activated when shown, you can set its <xref:System.Windows.Window.ShowActivated%2A> property to `false` before calling the <xref:System.Windows.Window.Show%2A> method for the first time. As a consequence:  
   
@@ -498,9 +500,9 @@ Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-
  Dialog boxes are windows that are often used to gather information from a user to complete a function. For example, when a user wants to open a file, the **Open File** dialog box is usually displayed by an application to get the file name from the user. For more information, see [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Window>   
- <xref:System.Windows.MessageBox>   
- <xref:System.Windows.Navigation.NavigationWindow>   
- <xref:System.Windows.Application>   
- [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md)   
+ <xref:System.Windows.Window>  
+ <xref:System.Windows.MessageBox>  
+ <xref:System.Windows.Navigation.NavigationWindow>  
+ <xref:System.Windows.Application>  
+ [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md)  
  [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)

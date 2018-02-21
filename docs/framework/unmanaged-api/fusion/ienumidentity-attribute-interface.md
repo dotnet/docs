@@ -26,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IEnumIDENTITY_ATTRIBUTE Interface
 Serves as an enumerator for the attributes of the code object in the current scope.  

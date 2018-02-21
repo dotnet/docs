@@ -19,7 +19,7 @@ The arguments of an interpolated string are easier to understand than a [composi
 ```csharp  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}");
 ```  
-contains two interpolated expressions, '{name}' and '{hour:hh}'. The equivalent composite format string is:
+contains two interpolated expressions, '{name}' and '{hours:hh}'. The equivalent composite format string is:
 
 ```csharp
 Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours); 

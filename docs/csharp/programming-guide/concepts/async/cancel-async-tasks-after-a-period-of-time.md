@@ -22,7 +22,7 @@ You can cancel an asynchronous operation after a period of time by using the  <x
 >  To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
 ## Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -94,7 +94,7 @@ Downloads canceled.
   
  Notice that you must add a reference for <xref:System.Net.Http>.  
   
- You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
+ You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ```csharp  
 using System;  
@@ -222,4 +222,4 @@ namespace CancelAfterTime
  [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
  [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)  
  [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
+ [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

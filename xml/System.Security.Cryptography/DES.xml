@@ -39,9 +39,10 @@
   
 ## Examples  
  The following code example uses <xref:System.Security.Cryptography.DESCryptoServiceProvider> (an implementation of <xref:System.Security.Cryptography.DES>) to encrypt a string to an in-memory buffer. It then decrypts and displays the round-tripped string.  
-  
- [!code-csharp[TripleDESCryptoServiceProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR/tripledescryptoserviceprovider/cs/program.cs#1)]
- [!code-vb[TripleDESCryptoServiceProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/tripledescryptoserviceprovider/vb/program.vb#1)]  
+
+ [!code-csharp[classic DES Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic DES Example/CS/source.cs#1)]
+ [!code-vb[classic DES Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic DES Example/VB/source.vb#1)]
+ [!code-cpp[classic DES Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic DES Example/CPP/source.cpp#1)]
   
  Decryption can be handled in the same way; use <xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateDecryptor%2A> instead of <xref:System.Security.Cryptography.DESCryptoServiceProvider.CreateEncryptor%2A>. The same key (<xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A>) and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) used to encrypt the file must be used to decrypt it.  
   

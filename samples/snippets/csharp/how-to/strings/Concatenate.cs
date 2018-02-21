@@ -13,6 +13,7 @@ namespace HowToStrings
             UsingAddWithVariables();
             UsingInterpolationWithVariables();
             UsingStringBuilder();
+            UsingConcatAndJoin();
             UsingAggregate();
         }
 
@@ -31,7 +32,7 @@ namespace HowToStrings
             "IntelliSense support in the IDE. Transferring data from SQL tables or XML trees to " +
             "objects in memory is often tedious and error-prone.";
 
-            Console.WriteLine(text);
+            System.Console.WriteLine(text);
             // </Snippet1>
         }
 
@@ -55,7 +56,7 @@ namespace HowToStrings
             string userName = "<Type your name here>";
             string date = DateTime.Today.ToShortDateString();
 
-            // Use the + and += operators for one-time concatenations.
+            // Use string interpolation to concatenate strings.
             string str = $"Hello {userName}. Today is {date}.";
             System.Console.WriteLine(str);
 
@@ -68,7 +69,7 @@ namespace HowToStrings
         {
             // <Snippet4>
             // Use StringBuilder for concatenation in tight loops.
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            var sb = new System.Text.StringBuilder();
             for (int i = 0; i < 20; i++)
             {
                 sb.AppendLine(i.ToString());
@@ -77,14 +78,27 @@ namespace HowToStrings
             // </Snippet4>
         }
 
-        private static void UsingAggregate()
+        private static void UsingConcatAndJoin()
         {
             // <Snippet5>
             string[] words = { "The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog." };
 
-            var phrase = words.Aggregate((partialPhrase, word) =>$"{partialPhrase} {word}");
-            Console.WriteLine(phrase);
+            var unreadablePhrase = string.Concat(words);
+            System.Console.WriteLine(unreadablePhrase);
+
+            var readablePhrase = string.Join(" ", words);
+            System.Console.WriteLine(readablePhrase);
             // </Snippet5>
+        }
+
+        private static void UsingAggregate()
+        {
+            // <Snippet6>
+            string[] words = { "The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog." };
+
+            var phrase = words.Aggregate((partialPhrase, word) =>$"{partialPhrase} {word}");
+            System.Console.WriteLine(phrase);
+            // </Snippet6>
         }
     }
 }

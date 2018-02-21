@@ -67,7 +67,7 @@ You may need to convert an object to a different type.
 
 - [Determine if a string represents a number](../programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md).
 - [Convert between strings that represent hexadecimal numbers and the number](../programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md).
-- [Convert a string to a <xref:System.DateTime>](../programming-guide/strings/how-to-convert-a-string-to-a-datetime.md).
+- [Convert a string to a `DateTime`](../../standard/base-types/parsing-datetime.md).
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
 - [Use `as` and `is` to safely cast to a different type](../programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).

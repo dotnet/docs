@@ -9,11 +9,12 @@ namespace HowToStrings
         public static void Examples()
         {
             SearchWithMethods();
+            SearchByIndex();
             RegularExpressionsOne();
             RegularExpressionsValidation();
         }
 
-        public static void SearchWithMethods()
+        private static void SearchWithMethods()
         {
             // <Snippet1>
             string factMessage = "Extension methods have all the capabilities of regular static methods.";
@@ -66,7 +67,7 @@ namespace HowToStrings
             // </Snippet2>
         }
 
-        public static void RegularExpressionsOne()
+        private static void RegularExpressionsOne()
         {
             // <Snippet3>
             string[] sentences =
@@ -102,7 +103,7 @@ namespace HowToStrings
             // </Snippet3>
         }
 
-        public static void RegularExpressionsValidation()
+        private static void RegularExpressionsValidation()
         {
             // <Snippet4>
             string[] numbers =

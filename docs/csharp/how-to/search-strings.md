@@ -1,5 +1,5 @@
 ---
-title: "How to: Search Strings (C# Guide)"
+title: "How to: search strings (C# Guide)"
 ms.date: 02/21/2018
 ms.prod: .net
 ms.technology: 
@@ -12,7 +12,7 @@ ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
 ms.author: "wiwagn"
 ---
 
-# How to: Search Strings Using String Methods (C# Programming Guide)
+# How to: search strings
 
 You have two main strategies that you can use to search for text in strings. Member methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 
@@ -24,11 +24,11 @@ The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.
 
 [!code-csharp-interactive[search strings using methods](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#1)]
 
-The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase> enum value to specify a case insensitive search. All these methods default to case-sensitive search.
+The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase> enum value to specify a case insensitive search.
 
 ## Where does the sought text occur in a string?
 
-The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> methods also search for text in strings. These methods return the location of the text being sought. If the text isn't found, they return `-1`. The following example shows a search for the first and last occurrence of the word "methods", and displayed the text between.
+The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> methods also search for text in strings. These methods return the location of the text being sought. If the text isn't found, they return `-1`. The following example shows a search for the first and last occurrence of the word "methods", and displays the text in between.
   
 [!code-csharp-interactive[search strings for indices](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#2)]
 

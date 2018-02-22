@@ -87,7 +87,7 @@ If you want all the code in a file to be in a single outer module and you want i
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/modules/snippet6612.fs)]
 
-## Module `rec`: allowing mutual recursive code at the module level
+## Recursive modules
 
 F# 4.1 introduces the notion of modules which allow for all contained code to be mutually recursive.  This is done via `module rec`.  Use of `module rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
 

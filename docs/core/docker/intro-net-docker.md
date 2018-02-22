@@ -191,7 +191,7 @@ Now that you have learned about the Docker platform and different Docker images,
 * [Learn how to use Azure Service Fabric](/azure/service-fabric/index)
 * [Service Fabric Getting Started Sample](https://azure.microsoft.com/resources/samples/service-fabric-dotnet-getting-started/)
 * [Benefits of Windows Containers](/virtualization/windowscontainers/about/index#video-overview)
-* [Working with Visual Studio Docker Tools](/aspnet/core/publishing/visual-studio-tools-for-docker/index)
+* [Working with Visual Studio Docker Tools](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)
 * [Debugging with Visual Studio Code](https://code.visualstudio.com/docs/nodejs/debugging-recipes#_nodejs-typescript-docker-container)
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)

@@ -39,16 +39,16 @@ Namespaces are heavily used in C# programming in two ways. First, the .NET Frame
   
 -   The `using directive` obviates the requirement to specify the name of the namespace for every class.  
   
--   The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET Framework namespace `System`.  
+-   The `global` prefix specifies that a namespace is fully qualified, and it begins at the "root" namespace: `global::System` will always refer to the .NET Framework namespace `System`.  
   
 ## Related Sections  
  See the following topics for more information about namespaces:  
   
--   [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)  
+-   [Using Namespaces](using-namespaces.md)  
   
--   [How to: Use the Global Namespace Alias](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md)  
+-   [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)  
   
--   [How to: Use the My Namespace](../../../csharp/programming-guide/namespaces/how-to-use-the-my-namespace.md)  
+-   [How to: Use the My Namespace](how-to-use-the-my-namespace.md)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

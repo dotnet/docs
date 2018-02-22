@@ -85,7 +85,7 @@ ms.workload:
   
 -   `AllowPartiallyTrustedCallers` (level 2 only): All code defaults to transparent. However, individual types and members can have other attributes.  
   
- The following table compares the assembly level behavior for Level 2 with Level 1 .  
+ The following table compares the assembly level behavior for Level 2 with Level 1.  
   
 |Assembly attribute|Level 2|Level 1|  
 |------------------------|-------------|-------------|  

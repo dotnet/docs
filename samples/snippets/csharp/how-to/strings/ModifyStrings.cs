@@ -1,12 +1,16 @@
-    class ReplaceSubstrings
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace HowToStrings
+{
+    public static class ModifyStrings
     {
-        string searchFor;
-        string replaceWith;
+        private static string replaceWith;
 
-        static void Main(string[] args)
+        public static void Examples()
         {
-
-            ReplaceSubstrings app = new ReplaceSubstrings();
             string s = "The mountains are behind the clouds today.";
 
             // Replace one substring with another with String.Replace.
@@ -18,9 +22,8 @@
             // Use Regex.Replace for more flexibility. 
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
-            app.searchFor = "the"; // A very simple regular expression.
-            app.replaceWith = "many";
-            s = Regex.Replace(s, app.searchFor, app.ReplaceMatchCase, RegexOptions.IgnoreCase);
+            replaceWith = "many";
+            s = Regex.Replace(s, "the", ReplaceMatchCase, RegexOptions.IgnoreCase);
             Console.WriteLine(s);
             // Output: Many peaks are behind many clouds today.
 
@@ -47,14 +50,53 @@
             Console.WriteLine(temp);
             // Output: I'm wider than I need to be.
 
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
+            // Start of existing example 2
+            // ==============================================
+            string str = "The quick brown fox jumped over the fence";
+            Console.WriteLine(str);
+
+            char[] chars = str.ToCharArray();
+            int animalIndex = str.IndexOf("fox");
+            if (animalIndex != -1)
+            {
+                chars[animalIndex++] = 'c';
+                chars[animalIndex++] = 'a';
+                chars[animalIndex] = 't';
+            }
+
+            string str2 = new string(chars);
+            Console.WriteLine(str2);
+
+            // Start of existing example 3:
+            // ===========================================
+            UnsafeSample();
         }
 
+        private static void UnsafeSample()
+        {
+            unsafe
+            {
+                // Compiler will store (intern) 
+                // these strings in same location.
+                string s1 = "Hello";
+                string s2 = "Hello";
+
+                // Change one string using unsafe code.
+                fixed (char* p = s1)
+                {
+                    p[0] = 'C';
+                }
+
+                //  Both strings have changed.
+                Console.WriteLine(s1);
+                Console.WriteLine(s2);
+            }
+        }
+
+        // I see dead code:
         // Custom match method called by Regex.Replace
         // using System.Text.RegularExpressions
-        string ReplaceMatchCase(Match m)
+        static string ReplaceMatchCase(Match m)
         {
             // Test whether the match is capitalized
             if (Char.IsUpper(m.Value[0]) == true)
@@ -70,4 +112,6 @@
                 return replaceWith;
             }
         }
+
     }
+}

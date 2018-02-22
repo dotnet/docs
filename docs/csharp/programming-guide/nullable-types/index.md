@@ -63,4 +63,4 @@ For more examples, see [Using Nullable Types](../../../csharp/programming-guide/
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C#](../../../csharp/index.md)  
  [C# Reference](../../../csharp/language-reference/index.md)  
- [What exactly does 'lifted' mean?](http://go.microsoft.com/fwlink/?LinkId=112382)
+ [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)

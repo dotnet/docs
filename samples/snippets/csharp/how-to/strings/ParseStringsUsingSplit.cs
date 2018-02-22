@@ -23,7 +23,7 @@ namespace HowToStrings
             Console.WriteLine();
             SplitOnMultipleCharsWithGaps();
 
-            Console.WriteLine("Example fives");
+            Console.WriteLine("Example five");
             Console.WriteLine();
             SplitUsingStrings();
         }
@@ -34,8 +34,10 @@ namespace HowToStrings
             string phrase = "The quick brown fox jumped over the lazy dog.";
             string[] words = phrase.Split(' ');
 
-            foreach(var word in words)
-                Console.WriteLine($"<{word}>");
+            foreach (var word in words)
+            {
+                System.Console.WriteLine($"<{word}>");
+            }
             // </Snippet1>
         }
 
@@ -45,8 +47,10 @@ namespace HowToStrings
             string phrase = "The quick brown    fox     jumped over the lazy dog.";
             string[] words = phrase.Split(' ');
 
-            foreach(var word in words)
-                Console.WriteLine($"<{word}>");
+            foreach (var word in words)
+            {
+                System.Console.WriteLine($"<{word}>");
+            }
             // </Snippet2>
         }
 
@@ -61,9 +65,9 @@ namespace HowToStrings
             string[] words = text.Split(delimiterChars);
             System.Console.WriteLine($"{words.Length} words in text:");
 
-            foreach (string s in words)
+            foreach (var word in words)
             {
-                System.Console.WriteLine($"<{s}>");
+                System.Console.WriteLine($"<{word}>");
             }
             // </Snippet3>
         }
@@ -79,9 +83,9 @@ namespace HowToStrings
             string[] words = text.Split(delimiterChars);
             System.Console.WriteLine($"{words.Length} words in text:");
 
-            foreach (string s in words)
+            foreach (var word in words)
             {
-                System.Console.WriteLine($"<{s}>");
+                System.Console.WriteLine($"<{word}>");
             }
             // </Snippet4>
         }
@@ -97,10 +101,10 @@ namespace HowToStrings
             string[] words = text.Split(separatingChars, System.StringSplitOptions.RemoveEmptyEntries );  
             System.Console.WriteLine("{0} substrings in text:", words.Length);  
     
-            foreach (string s in words)  
-            {  
-                System.Console.WriteLine(s);  
-            }  
+            foreach (var word in words)
+            {
+                System.Console.WriteLine(word);
+            }
             // </Snippet5>
             
         }

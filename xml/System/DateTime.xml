@@ -4245,54 +4245,9 @@ juillet 2009
  [DateTime.Parse(String)](#Parse1_Example)  
  [DateTime.Parse(String, IFormatProvider)](#Parse2_Example)  
  [DateTime.Parse(String, IFormatProvider, DateTimeStyles)](#Parse3_Example)  
-[Version information](#Versions)  
-
-<!--  
-<a name="Params"></a>   
-## Parameters  
- This is a complete list of parameters for the <xref:System.DateTime.Parse%2A> method. For the parameters used by each overload, see the overload syntax above.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`s`|<xref:System.String>|A string that contains the date and time to convert. See [The string to parse](#StringToParse).<br /><br /> Default value: None (parameter is used by all overloads)|  
-|`provider`|<xref:System.IFormatProvider>|An object that supplies culture-specific formatting information about `s`. See [Parsing and cultural conventions](#Culture).<br /><br /> Default value: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>|  
-|`styles`|<xref:System.Globalization.DateTimeStyles>|A bitwise combination of the enumeration values that indicates the style elements that can be present in `s` for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>. See [Parsing and style elements](#Styles).<br /><br /> Default value: <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType>|  
-  
-<a name="Returns"></a>   
-## Return value  
- Type: <xref:System.DateTime>  
-An object that is equivalent to the date and time contained in `s`.  
-  
- Generally, the <xref:System.DateTime.Parse%2A> method returns a <xref:System.DateTime> object whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. However, the <xref:System.DateTime.Parse%2A> method may also perform time zone conversion and set the value of the <xref:System.DateTime.Kind%2A> property differently, depending on the values of the `s` and `styles` parameters:  
-  
-|If|Time zone conversion|Kind property|  
-|--------|--------------------------|-------------------|  
-|`s` contains time zone information.|The date and time is converted to the time in the local time zone.|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|  
-|`s` contains time zone information, and `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag.|The date and time is converted to Coordinated Universal Time (UTC).|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
-|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag.|The date and time are interpreted as UTC.|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
-  
- The following example converts date strings that contain time zone information to the time in the local time zone:  
-  
- [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
- [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
-  
- You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
-  
- [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
- [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
-  
-<a name="Exceptions"></a>   
-## Exceptions  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.ArgumentNullException>|`s` is `null`.|All overloads|  
-|<xref:System.FormatException>|`s` does not contain a valid string representation of a date and time.|All overloads|  
-|<xref:System.ArgumentException>|`styles` contains an invalid combination of <xref:System.Globalization.DateTimeStyles> values (for example, it includes both <xref:System.Globalization.DateTimeStyles.AssumeLocal> and <xref:System.Globalization.DateTimeStyles.AssumeUniversal>).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|  
--->
 
 <a name="Tasks"></a>   
-## Which method do I call?  
+### Which method do I call?  
   
 |To|Call|  
 |--------|----------|  
@@ -4306,7 +4261,7 @@ An object that is equivalent to the date and time contained in `s`.
 |Parse a date and time string in a fixed format across machine (and possibly cultural) boundaries.|<xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> or <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method|  
   
 <a name="StringToParse"></a>   
-## The string to parse  
+### The string to parse  
  The <xref:System.DateTime.Parse%2A> method tries to convert the string representation of a date and time value to its <xref:System.DateTime> equivalent. It tries to parse `s` completely without throwing a <xref:System.FormatException> exception.  
   
 > [!IMPORTANT]
@@ -4342,7 +4297,7 @@ An object that is equivalent to the date and time contained in `s`.
  Because the <xref:System.DateTime.Parse%2A> method tries to parse the string representation of a date and time by using the formatting rules of the current or a specified culture, trying to parse a string across different cultures can fail. To parse a specific date and time format across different locales, use one of the overloads of the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method and provide a format specifier.  
   
 <a name="Culture"></a>   
-## Parsing and cultural conventions  
+### Parsing and cultural conventions  
  All overloads of the <xref:System.DateTime.Parse%2A> method are culture-sensitive unless the string to be parsed conforms to the ISO 8601 pattern. The parsing operation uses the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is derived as follows:  
   
 |If you call|And `provider` is|Formatting information is derived from|  
@@ -4369,7 +4324,7 @@ An object that is equivalent to the date and time contained in `s`.
 >  For more information see the "Dynamic culture data" section in the <xref:System.Globalization.CultureInfo> topic and the "Persisting DateTime values" section in the <xref:System.DateTime> topic.  
   
 <a name="Styles"></a>   
-## Parsing and style elements  
+### Parsing and style elements  
  All <xref:System.DateTime.Parse%2A> overloads ignore leading, inner, or trailing white-space characters in `s`. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ("#", U+0023), and can be trailed with one or more NULL characters (U+0000).  
   
  In addition, the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload has a `styles` parameter that consists of one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration. This parameter defines how `s` should be interpreted and how the parse operation should convert `s` to a date and time. The following table describes the effect of each <xref:System.Globalization.DateTimeStyles> member on the parse operation.  
@@ -4387,7 +4342,7 @@ An object that is equivalent to the date and time contained in `s`.
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value that represents a local time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method and by using the "o", "r", or "u" standard format specifier.|  
 
 <a name="kind"></a>   
-## The return value and DateTime.Kind
+### The return value and DateTime.Kind
 
 The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref:System.DateTime.Kind> property includes time zone information. It can indicate that the time is:
 
@@ -4405,15 +4360,17 @@ The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref
   
  The following example converts date strings that contain time zone information to the time in the local time zone:  
   
- [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
+ [!code-csharp-interactive[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
  [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
+
+ The following example converts date strings that contain time zone information to the time in the local time zone:  
   
- You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
+  You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
   
- [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
+ [!code-csharp-interactive[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
  [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
   
-## Examples
+### Examples
 
 Numerous examples that call the `DateTime.Parse` method are interspersed throughout the [Remarks](#remarks) section of this article and in the documentation for the individual `DateTime.Parse` overloads.
 
@@ -4426,36 +4383,22 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
 ## DateTime.Parse(String) example  
  The following example parses the string representation of several date and time values by using default provider and style values: the formatting conventions of the en-US culture, which is the current thread culture of the computer used to produce the example output, and the <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces> style flag. It handles the <xref:System.FormatException> exception that is thrown when the method tries to parse the string representation of a date and time by using some other culture's formatting conventions. It also shows how to successfully parse a date and time value that does not use the formatting conventions of the current thread culture.  
   
- [!code-csharp[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
+ [!code-csharp-interactive[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
  [!code-vb[System.DateTime.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse1.vb#1)]  
   
 <a name="Parse2_Example"></a>   
 ## DateTime.Parse(String, IFormatProvider) example  
  The following example parses an array of date strings by using the conventions of the en-US, fr-FR, and de-DE cultures. It demonstrates that the string representations of a single date can be interpreted differently across different cultures.  
   
- [!code-csharp[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
+ [!code-csharp-interactive[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
  [!code-vb[System.DateTime.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse3.vb#3)]  
   
 <a name="Parse3_Example"></a>   
 ## DateTime.Parse(String, IFormatProvider, DateTimeStyles) example  
  The following example demonstrates the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method and displays the value of the <xref:System.DateTime.Kind%2A> property of the resulting <xref:System.DateTime> values.  
   
- [!code-csharp[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
+ [!code-csharp-interactive[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
  [!code-vb[System.DateTime.Parse#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse4.vb#4)]  
-  
-<a name="Versions"></a>   
-## Version information  
- .NET Framework  
- All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- All overloads are supported  
-  
- .NET for Windows Store apps  
- All overloads are supported in: Windows 8  
   
  ]]></format>
         </remarks>
@@ -4492,7 +4435,7 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">A string that contains a date and time to convert.</param>
+        <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using the conventions of the current thread culture.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />.</returns>
         <remarks>
@@ -4500,9 +4443,12 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
   
 ## Remarks  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Parse` method, see the <xref:System.DateTime.Parse%2A> overload summary.  
-  
+If `s` contains time zone information, this method returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> and converts the date and time in `s` to local time. Otherwise, it performs no time zone conversion and returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.
+
+This overload attempts to parse `s` by using the formatting conventions of the current culture. The current culture is indicated by the <xref:System.Globalization.CultureInfo.CurrentCulture> property. To parse a string using the formatting conventions of a specific culture, call the <xref:System.DateTime.Parse(System.String,System.IFormatProvider)> or the <xref:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)> overloads.
+
+This overload attempts to parse `s` by using <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> style.
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -4544,8 +4490,8 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="s">A string that contains a date and time to convert.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
+        <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
+        <param name="provider">An object that supplies culture-specific format information about <c>s<c>.  See [Parsing and cultural conventions](#Culture)</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" /> as specified by <paramref name="provider" />.</returns>
         <remarks>
@@ -4553,9 +4499,10 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
   
 ## Remarks  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Parse` method, see the <xref:System.DateTime.Parse%2A> overload summary.  
-  
+If `s` contains time zone information, this method returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> and converts the date and time in `s` to local time. Otherwise, it performs no time zone conversion and returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.
+
+This overload attempts to parse `s` by using <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWithType> style.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -4598,8 +4545,8 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
         <Parameter Name="styles" Type="System.Globalization.DateTimeStyles" />
       </Parameters>
       <Docs>
-        <param name="s">A string that contains a date and time to convert.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
+        <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <c>s<c>.  See [Parsing and cultural conventions](#Culture)</param>
         <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <c>s</c> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="provider" /> and <paramref name="styles" />.</returns>
@@ -4607,10 +4554,16 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Parse` method, see the <xref:System.DateTime.Parse%2A> overload summary.  
-  
+
+This method overload converts the date and time in `s` and sets the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value as follows:
+
+|If |Time zone conversion|Kind property|   
+|---------------------------|--------------------------|  
+|`s` contains no time zone information.|None.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|
+|`s` contains time zone information.|To the time in the local time zone|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|
+|`s` contains time zone information, and `styles includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag.|To Coordinated Univeral Time (UTC)|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|
+|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>.|None.|<xref:System.DateTimeKind.Utc>| 
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

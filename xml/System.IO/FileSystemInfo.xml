@@ -181,17 +181,17 @@
 ## Remarks  
  The value of the <xref:System.IO.FileSystemInfo.Attributes%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  The value may be cached when either the value itself or other <xref:System.IO.FileSystemInfo> properties are accessed. To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.
 
@@ -257,31 +257,31 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
+
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
+    
  The value of the <xref:System.IO.FileSystemInfo.CreationTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
+ If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+
+On Unix platforms that do not support creation or birth time, this property returns the older of the time of the last status change and the time of the last modification. On other platforms, it returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.
+
  NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
-  
-   
   
 ## Examples  
  The following example demonstrates the <xref:System.IO.FileSystemInfo.CreationTime%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemInfo> class.  
@@ -338,29 +338,31 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
   
  The value of the <xref:System.IO.FileSystemInfo.CreationTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
+ If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+
+On Unix platforms that do not support creation or birth time, this property returns the older of the time of the last status change and the time of the last modification. On other platforms, it returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.
+
  NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. This process is known as file tunneling. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- This property value is `null` if the file system containing the <xref:System.IO.FileSystemInfo> object does not support this information.  
   
  ]]></format>
         </remarks>
@@ -662,23 +664,25 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+ If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
   
  The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
@@ -737,25 +741,27 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
   
  The value of the <xref:System.IO.FileSystemInfo.LastAccessTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -798,29 +804,27 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
   
  The value of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- This property value is `null` if the file system containing the file does not support this information.  
-  
-   
+ If the file or directory described in the <xref:System.IO.FileSystemInfo> object does not exist, or if the file system that contains this file or directory does not support this information, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
   
 ## Examples  
  The following code example demonstrates the updating of the <xref:System.IO.FileSystemInfo.LastWriteTime%2A> property through a "touch" operation. In this example, the file is "touched", updating the <xref:System.IO.FileSystemInfo.CreationTime%2A>, <xref:System.IO.FileSystemInfo.LastAccessTime%2A> and <xref:System.IO.FileSystemInfo.LastWriteTime%2A> properties to the current date and time.  
@@ -875,28 +879,28 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
+
+> [!NOTE]
+>  This method may return an inaccurate value because it uses native functions whose values may not be continuously updated by the operating system.  
+    
  The value of the <xref:System.IO.FileSystemInfo.LastWriteTimeUtc%2A> property is pre-cached if the current instance of the <xref:System.IO.FileSystemInfo> object was returned from any of the following <xref:System.IO.DirectoryInfo> methods:  
   
--   <xref:System.IO.DirectoryInfo.GetDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
+-   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=nameWithType>  
   
  To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
   
- If the file described in the <xref:System.IO.FileSystemInfo> object does not exist, this property will return 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- This property value is `null` if the file system containing the file does not support this information.  
-  
+ If the file or directory described in the <xref:System.IO.FileSystemInfo> object does not exist, or if the file system that contains this file or directory does not support this information, this property returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">

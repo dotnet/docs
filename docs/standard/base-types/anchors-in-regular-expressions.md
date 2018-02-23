@@ -66,9 +66,9 @@ ms.workload:
 |`(\w+\s\w+)`|Match one or more word characters followed by a space, followed by one or more word characters. This is the fourth capturing group.|  
 |`,`|Match a comma.|  
 |`\s\d{4}`|Match a space followed by four decimal digits.|  
-|(-`(\d{4}&#124;present))?`|Match zero or one occurrence of a hyphen followed by four decimal digits or the string "present". This is the sixth capturing group. It also includes a seventh capturing group.|  
+|<code>(-(\d{4}&#124;present))?</code>|Match zero or one occurrence of a hyphen followed by four decimal digits or the string "present". This is the sixth capturing group. It also includes a seventh capturing group.|  
 |`,?`|Match zero or one occurrence of a comma.|  
-|`(\s\d{4}(-(\d{4}&#124;present))?,?)+`|Match one or more occurrences of the following: a space, four decimal digits, zero or one occurrence of a hyphen followed by four decimal digits or the string "present", and zero or one comma. This is the fifth capturing group.|  
+|<code>(\s\d{4}(-(\d{4}&#124;present))?,?)+</code>|Match one or more occurrences of the following: a space, four decimal digits, zero or one occurrence of a hyphen followed by four decimal digits or the string "present", and zero or one comma. This is the fifth capturing group.|  
   
  [Back to top](#top)  
   

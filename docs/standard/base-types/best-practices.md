@@ -145,8 +145,8 @@ ms.workload:
 |-------------|-----------------|  
 |`\b`|Begin the match at a word boundary.|  
 |`\w+`|Match one or more word characters.|  
-|`(\r?\n)&#124;,?\s)`|Match either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.|  
-|`(\w+((\r?\n)&#124;,?\s))*`|Match zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.|  
+|<code>(\r?\n)&#124;,?\s)</code>|Match either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.|  
+|<code>(\w+((\r?\n)&#124;,?\s))*</code>|Match zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.|  
 |`\w+`|Match one or more word characters.|  
 |`[.?:;!]`|Match a period, question mark, colon, semicolon, or exclamation point.|  
   

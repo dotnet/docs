@@ -347,7 +347,7 @@ of the decimal point.
 ***Challenge***
 
 Now that you've seen the different numeric types, write code that calculates
-the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
+the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle
 is the radius squared multiplied by PI. One hint: .NET contains a constant
 for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 

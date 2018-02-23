@@ -416,7 +416,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\w+`|Match one or more word characters followed by a white-space character.|  
 |`\d{1,2},`|Match either one or two decimal digits followed by a white-space character and a comma.|  
 |`\d{4}\b`|Match four decimal digits, and end the match at a word boundary.|  
-|`(?<!(Saturday&#124;Sunday) )`|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
+|<code>(?<!(Saturday&#124;Sunday) )</code>|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
   
 <a name="nonbacktracking_subexpression"></a>   
 ## Nonbacktracking Subexpressions  

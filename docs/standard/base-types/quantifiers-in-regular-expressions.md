@@ -268,7 +268,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(a\1`|Either match "a" along with the value of the first captured group …|  
-|`&#124;(?(1)`|… or test whether the first captured group has been defined. (Note that the `(?(1)` construct does not define a capturing group.)|  
+|<code>&#124;(?(1)</code>|… or test whether the first captured group has been defined. (Note that the `(?(1)` construct does not define a capturing group.)|  
 |`\1))`|If the first captured group exists, match its value. If the group does not exist, the group will match <xref:System.String.Empty?displayProperty=nameWithType>.|  
   
  The first regular expression tries to match this pattern between zero and two times; the second, exactly two times. Because the first pattern reaches its minimum number of captures with its first capture of <xref:System.String.Empty?displayProperty=nameWithType>, it never repeats to try to match `a\1`; the `{0,2}` quantifier allows only empty matches in the last iteration. In contrast, the second regular expression does match "a" because it evaluates `a\1` a second time; the minimum number of iterations, 2, forces the engine to repeat after an empty match.  

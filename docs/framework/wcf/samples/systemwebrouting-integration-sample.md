@@ -18,32 +18,35 @@ ms.workload:
   - "dotnet"
 ---
 # SystemWebRouting Integration Sample
-This sample demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace. The classes in the <xref:System.Web.Routing> namespace allow an application to use URLs that do not directly correspond to a physical resource. Using Web routing allows the developer to create virtual addresses for HTTP that are then mapped back to actual [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services. This is useful when a WCF service must be hosted without requiring a physical file or resource, or when services must be accessed with URLs that do not contain files such as .html or .aspx. This sample demonstrates how to utilize the <xref:System.Web.Routing.RouteTable> class to create virtual URIs that map to running services defined in global.asax. For this example, there are two RSS feeds created using WCF: a `movies` feed and a `channels` feed. The URLs to activate the services do not contain an extension and are registered in the `Application_Start` method of the `Global` class derived from the <xref:System.Web.HttpApplication.Application_Start> class.  
-  
+This sample demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace. The classes in the <xref:System.Web.Routing> namespace allow an application to use URLs that do not directly correspond to a physical resource. Using Web routing allows the developer to create virtual addresses for HTTP that are then mapped back to actual [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services. This is useful when a WCF service must be hosted without requiring a physical file or resource, or when services must be accessed with URLs that do not contain files such as .html or .aspx. This sample demonstrates how to utilize the <xref:System.Web.Routing.RouteTable> class to create virtual URIs that map to running services defined in global.asax. 
+
 > [!NOTE]
 >  The classes in the <xref:System.Web.Routing> namespace only work for services hosted over HTTP.  
   
-> [!NOTE]
->  This sample only works in [!INCLUDE[iisver](../../../../includes/iisver-md.md)], as [!INCLUDE[iis60](../../../../includes/iis60-md.md)] uses a different method for supporting extension-less URLs.  
+This example uses WCF to create two RSS feeds: a `movies` feed and a `channels` feed. The URLs to activate the services do not contain an extension and are registered in the `Application_Start` method of the `Global` class derived from the <xref:System.Web.HttpApplication> class.  
   
-> [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebRoutingIntegration`  
+> [!NOTE]
+>  This sample only works in Internet Information Services (IIS) 7.0 and later, as IIS 6.0 uses a different method for supporting extension-less URLs.  
+
+#### To download this sample
+  
+This sample may already be installed on your computer. Check for the following (default) directory before continuing.  
+   
+`<InstallDrive>:\WF_WCF_Samples`  
+   
+ If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+   
+`<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebRoutingIntegration`  
   
 #### To use this sample  
   
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the WebRoutingIntegration.sln file.  
+1.  Using Visual Studio, open the WebRoutingIntegration.sln file.  
   
 2.  To run the solution and start the Web development server, press F5.  
   
      A directory listing for the sample appears. Note that there are no files with an .svc file extension.  
   
-3.  In the address bar, add `movies` to the URL, so that is reads http://localhost:[port]/movies and press ENTER.  
+3.  In the address bar, add `movies` to the URL, so that it reads http://localhost:[port]/movies and press ENTER.  
   
      The movies feed appears in the browser.  
   
@@ -57,7 +60,7 @@ This sample demonstrates the hosting layer’s integration with the classes in t
   
 #### To use this sample when hosted in IIS  
   
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the WebRoutingIntegration.sln file.  
+1.  Using Visual Studio, open the WebRoutingIntegration.sln file.  
   
 2.  Build the project, by pressing CTRL+SHIFT+B.  
   
@@ -86,7 +89,7 @@ This sample demonstrates the hosting layer’s integration with the classes in t
  This sample demonstrates that the hosting layer is capable of composing with the classes in the <xref:System.Web.Routing> namespace for routing the requests of services hosted over HTTP.  
   
 > [!NOTE]
->  Please update the default application pool version to [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] if it’s set to version 2.  
+>  You must update the default application pool version to [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] if it’s set to version 2.  
   
 ## See Also  
  [AppFabric Hosting and Persistence Samples](http://go.microsoft.com/fwlink/?LinkId=193961)

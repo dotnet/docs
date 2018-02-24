@@ -618,7 +618,11 @@ http://myUrl/
   
 ## Remarks  
  This constructor creates a <xref:System.Uri> instance by combining the `baseUri` and the `relativeUri`. If `relativeUri` is an absolute URI (containing a scheme, host name, and optionally a port number), the <xref:System.Uri> instance is created using only `relativeUri`.  
-  
+ 
+ If the `baseUri` has relative parts (like `/api`), then the relative part must be terminated with a slash, (like `/api/`), if the relative part of `baseUri` is to be preserved in the constructed <xref:System.Uri>. 
+
+ Additionally, if the `relativeUri` begins with a slash, then it will replace any relative part of the `baseUri`
+
  This constructor does not ensure that the <xref:System.Uri> refers to an accessible resource.  
   
    
@@ -726,7 +730,11 @@ http://myUrl/
   
 ## Remarks  
  This constructor creates a new <xref:System.Uri> instance by combining an absolute <xref:System.Uri> instance, `baseUri`, with a relative <xref:System.Uri> instance, `relativeUri`. If `relativeUri` is an absolute <xref:System.Uri> instance (containing a scheme, host name, and optionally a port number), the <xref:System.Uri> instance is created using only `relativeUri`.  
-  
+ 
+ If the `baseUri` has relative parts (like `/api`), then the relative part must be terminated with a slash, (like `/api/`), if the relative part of `baseUri` is to be preserved in the constructed <xref:System.Uri>. 
+
+ Additionally, if the `relativeUri` begins with a slash, then it will replace any relative part of the `baseUri`
+ 
  This constructor does not ensure that the <xref:System.Uri> refers to an accessible resource.  
   
    

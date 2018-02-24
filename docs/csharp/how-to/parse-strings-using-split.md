@@ -62,4 +62,4 @@ You can try these samples by looking at the code in our [GitHub repository](http
 ## See Also  
  [C# Programming Guide](../programming-guide/index.md)  
  [Strings](../programming-guide/strings/index.md)  
- [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)
+ [.NET Regular Expressions](../../standard/base-types/regular-expressions.md)

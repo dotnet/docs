@@ -81,7 +81,7 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax is translated into `String.Format` by the compiler. So, you can do the [same type of stuff you've done before with `String.Format`](../..//standard/base-types/formatting-types.md).
+Behind the scenes, this string interpolation syntax is translated into `String.Format` by the compiler. So, you can do the [same type of stuff you've done before with `String.Format`](../../standard/base-types/formatting-types.md).
 
 For instance, you can add padding and numeric formatting:
 

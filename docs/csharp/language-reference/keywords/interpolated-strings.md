@@ -38,11 +38,11 @@ where:
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a standard date and time format string such as "D" or "d".
 
 > [!IMPORTANT]
-> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compile time error.
+> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compile-time error.
 
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
- To include a curly brace ("{" or "}") in an interpolated string, use two curly braces, "{{" or "}}".  See the Implicit Conversions section for more details.  
+ To include a curly brace ("{" or "}") in an interpolated string, use two curly braces, "{{" or "}}".  See the [Implicit Conversions](#implicit-conversions) section for more details.  
 
 If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements included in an interpolated expression. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
 
@@ -68,7 +68,7 @@ There are three implicit type conversions from an interpolated string:
 
    This is the final result of a string interpretation. All occurrences of double curly braces ("{{" and "}}") are converted to a single curly brace. 
 
-2. Conversion of an interpolated string to an <xref:System.IFormattable> variable that allows you create multiple result strings with culture-specific content from a single <xref:System.IFormattable> instance. This is useful for including such things as the correct numeric and date formats for individual cultures.  All occurrences of double curly braces ("{{" and "}}") remain as double curly braces until you format the string by explicitly or implicitly calling the <xref:System.Object.ToString> method.  All contained interpolation expressions are converted to {0}, {1}, and so on.  
+2. Conversion of an interpolated string to an <xref:System.IFormattable> variable that allows you to create multiple result strings with culture-specific content from a single <xref:System.IFormattable> instance. This is useful for including such things as the correct numeric and date formats for individual cultures.  All occurrences of double curly braces ("{{" and "}}") remain as double curly braces until you format the string by explicitly or implicitly calling the <xref:System.Object.ToString> method.  All contained interpolation expressions are converted to {0}, {1}, and so on.  
 
    The following example uses reflection to display the members as well as the field and property values of an <xref:System.IFormattable> variable that is created from an interpolated string. It also passes the <xref:System.IFormattable> variable to the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method.
 
@@ -83,8 +83,11 @@ There are three implicit type conversions from an interpolated string:
 ## Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
+## See also  
  <xref:System.IFormattable?displayProperty=nameWithType>  
  <xref:System.FormattableString?displayProperty=nameWithType>  
+ <xref:System.String.Format%2A?displayProperty=nameWithType>  
+ [String Interpolation in C#](../../../csharp/tutorials/string-interpolation.md)  
+ [Interpolated strings in C#](../../../csharp/quick-starts/interpolated-strings.yml)  
  [C# Reference](../../../csharp/language-reference/index.md)  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

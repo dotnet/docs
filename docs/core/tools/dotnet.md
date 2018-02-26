@@ -72,7 +72,7 @@ Prints out detailed information about the CLI tooling and the environment, such 
 
  Rolls forward on no candidate shared framework.
 
-`-v|--verbosity`
+`-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
 
@@ -102,7 +102,7 @@ Prints out a short help for the command. If using with `dotnet`, it also prints 
 
 Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
 
-`-v|--verbose`
+`-v|--verbose <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
 

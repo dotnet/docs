@@ -7,6 +7,5 @@
 |Scope|Minor|
 |Version|4.5.2|
 |Type|Runtime|
-|Affected APIs|<ul><li>[System.Web.Http.RouteAttribute.#ctor(System.String)](https://msdn.microsoft.com/library/system.web.http.routeattribute(v=vs.118).aspx)</li></ul>|
-|Analyzers|<ul><li>CD0125</li></ul>|
+|Affected APIs|<ul><li><xref:System.Web.Mvc.RouteAttribute.%23ctor(System.String)?displayProperty=nameWithType></li></ul>|
 

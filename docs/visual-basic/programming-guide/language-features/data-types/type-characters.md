@@ -118,7 +118,7 @@ The compiler normally interprets an integer literal to be in the decimal (base 1
 |Number base|Prefix|Valid digit values|Example|
 |-----------------|------------|------------------------|-------------|
 |Hexadecimal (base 16)|`&H`|0-9 and A-F|`&HFFFF`|
-|Binary (base 2)|`0B`|0-1|`&B01111100`|
+|Binary (base 2)|`&B`|0-1|`&B01111100`|
 |Octal (base 8)|`&O`|0-7|`&O77`|
 
 Starting in Visual Basic 2017, you can use the underscore character (`_`) as a group separator to enhance the readability of an integral literal. The following example uses the `_` character to group a binary literal into 8-bit groups:

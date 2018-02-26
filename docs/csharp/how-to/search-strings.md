@@ -8,6 +8,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "searching strings [C#]"
   - "strings [C#], searching with String methods"
+  - "strings [C#], searching with regular expressions"
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
 ms.author: "wiwagn"
 ---
@@ -15,6 +16,8 @@ ms.author: "wiwagn"
 # How to: search strings
 
 You have two main strategies that you can use to search for text in strings. Member methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 The [string](../language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
 
@@ -50,7 +53,9 @@ The following code uses regular expressions to validate the format of each strin
 [!code-csharp-interactive[csProgGuideStrings#4](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#4)]
 
 This single search pattern matches many valid strings. Regular expressions are better to search for or validate against a pattern, rather than a single text string.
-  
+
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or, you can cownload the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip)
+
 ## See Also  
 
  [C# Programming Guide](../programming-guide/index.md)  

@@ -33,15 +33,6 @@ namespace HowToStrings
 
             bool endsWithSearchResult = factMessage.EndsWith(".", System.StringComparison.CurrentCultureIgnoreCase);
             Console.WriteLine($"Ends with '.'? {endsWithSearchResult}");
-
-            /*
-                Output:
-                "Extension methods have all the capabilities of regular static methods."
-                Starts with "extension"? False
-                Starts with "extension"? True (ignoring case)
-                Ends with '.'? True
-            */
-
             // </Snippet1>
         }
 
@@ -59,11 +50,6 @@ namespace HowToStrings
             int last = factMessage.LastIndexOf("methods");
             string str2 = factMessage.Substring(first, last - first);
             Console.WriteLine($"Substring between \"methods\" and \"methods\": '{str2}'");
-
-            /*
-                Output:
-                Substring between "methods" and "methods": ' have all the capabilities of regular static '
-            */
             // </Snippet2>
         }
 
@@ -93,13 +79,6 @@ namespace HowToStrings
                     Console.WriteLine();
                 }
             }
-
-            /* Output:
-               C# code  (match for 'code' found)
-               Chapter 2: Writing Code  (match for 'code' found)
-               Unicode  (match for 'code' found)
-               no match here
-            */
             // </Snippet3>
         }
 
@@ -137,21 +116,6 @@ namespace HowToStrings
                     Console.WriteLine(" - invalid");
                 }
             }
-
-            /* Output:
-                123-555-0190 - valid
-                444-234-22450 - invalid
-                690-555-0178 - valid
-                146-893-232 - invalid
-                146-555-0122 - valid
-                4007-555-0111 - invalid
-                407-555-0111 - valid
-                    407-2-5555 - invalid
-                407-555-8974 - valid
-                407-2ab-5555 - invalid
-                690-555-8148 - valid
-                146-893-232- - invalid
-            */
             // </Snippet4>
         }
     }

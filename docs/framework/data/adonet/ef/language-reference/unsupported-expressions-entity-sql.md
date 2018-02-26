@@ -12,7 +12,7 @@ manager: "craigg"
 ms.workload: 
   - "dotnet"
 dev_langs: 
-  - "TSQL"
+  - "sql"
 ---
 # Unsupported expressions
 

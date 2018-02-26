@@ -15,7 +15,7 @@ ms.author: "wiwagn"
 
 # How to: search strings
 
-You have two main strategies that you can use to search for text in strings. Member methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
+You can use two main strategies to search for text in strings. Methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -31,7 +31,7 @@ The preceding example demonstrates an important point for using these methods. S
 
 ## Where does the sought text occur in a string?
 
-The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> methods also search for text in strings. These methods return the location of the text being sought. If the text isn't found, they return `-1`. The following example shows a search for the first and last occurrence of the word "methods", and displays the text in between.
+The <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A> methods also search for text in strings. These methods return the location of the text being sought. If the text isn't found, they return `-1`. The following example shows a search for the first and last occurrence of the word "methods" and displays the text in between.
   
 [!code-csharp-interactive[search strings for indices](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#2)]
 
@@ -54,13 +54,14 @@ The following code uses regular expressions to validate the format of each strin
 
 This single search pattern matches many valid strings. Regular expressions are better to search for or validate against a pattern, rather than a single text string.
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or, you can cownload the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip)
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip).
 
 ## See Also  
 
  [C# Programming Guide](../programming-guide/index.md)  
  [Strings](../programming-guide/strings/index.md)  
- [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)   
+ [LINQ and Strings](../programming-guide/concepts/linq/linq-and-strings)   
  <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>     
- [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)   
- [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c)   
+ [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions)   
+ [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference)   
+ [Best practices for using strings in .NET](../../standard/base-types/best-practices-strings)  

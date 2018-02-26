@@ -55,7 +55,7 @@ To execute the program, use `dotnet run`. You should see "Hello, World" output t
 
 ## Intro to String Interpolation
 
-With <xref:System.String.Format%2A?displayProperty=nameWithType>, you specify "placeholders" in a string that are replaced by the parameters following the string. For instance:
+With <xref:System.String.Format%2A?displayProperty=nameWithType>, you specify "placeholders" in a string that are replaced by the arguments following the string. For instance:
 
 [!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
 
@@ -119,10 +119,10 @@ If you compile this, you get errors:
 
 An interpolated string supports <xref:System.IFormattable?displayProperty=nameWithType> and <xref:System.FormattableString?displayProperty=nameWithType>, which can be useful for internationalization.
 
-By default, an interpolated string uses the current culture. To use a different culture, you could cast it as `IFormattable`. For instance:
+By default, an interpolated string uses the current culture. To use a different culture, cast an interpolated string as `IFormattable`. For instance:
 
 [!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
 
 ## Conclusion 
 
-In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses of it. For more information, see the [Interpolated Strings](../../csharp//language-reference/keywords/interpolated-strings.md) topic.
+In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses. For more information, see the [Interpolated Strings](../../csharp//language-reference/keywords/interpolated-strings.md) topic.

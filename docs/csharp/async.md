@@ -265,4 +265,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 ## Other Resources
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
+* [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

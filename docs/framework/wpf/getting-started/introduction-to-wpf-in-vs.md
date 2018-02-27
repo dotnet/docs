@@ -34,11 +34,11 @@ ms.workload:
 Windows Presentation Foundation (WPF) in Visual Studio provides developers with a unified programming model for building line-of-business desktop applications on Windows.  
   
  [Create Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
-  
+
  [Designing XAML in Visual Studio and Blend for Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
   
  [Introduction to WPF](/visualstudio/designers/introduction-to-wpf)  
   
  [WPF in the .NET Framework](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)  
   
- [Get Visual Studio](https://www.visualstudio.com/features/wpf-vs)
+ [Get Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)

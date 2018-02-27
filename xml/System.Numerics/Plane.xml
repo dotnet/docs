@@ -26,8 +26,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a three-dimensional plane.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a plane in three-dimensional space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ 
+ [!INCLUDE[vectors-are-rows-paragraph](~/includes/system-numerics-vectors-are-rows.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

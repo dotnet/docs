@@ -6,6 +6,9 @@
 
 ## Quick starts
 ### [Syntax analysis](get-started/syntax-analysis.md)
+### [Semantic Analysis](get-started/semantic-analysis.md)
+
+<!-- Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs -->
 <!--
 ### Get started with semantic analysis
 ### Get started with Syntax transformation
@@ -39,3 +42,4 @@
 -->
 <!-- Look at the samples, and determinine which 
     are "How To" vs. Samples. -->
+    

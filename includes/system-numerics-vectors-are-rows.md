@@ -1,1 +1,1 @@
-The `System.Numerics` namespace represents vectors as rows for vector-matrix multiplication. For this reason, the matrix of the transformation that is composition of transformations *f* and *g* defined by matrices `Mf` and `Mg` respectively is `Mf * Mg` as `(v * Mf) * Mg = v * (Mf * Mg)` for any vector `v`.
+The `System.Numerics` namespace represents vectors as rows for vector-matrix multiplication, so the product of a vector *v* and a matrix *M* is *vM*.

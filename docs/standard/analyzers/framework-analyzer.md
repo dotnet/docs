@@ -38,7 +38,7 @@ The FxCopAnalyzers aggregate package contains all the framework analyzers includ
 Framework.Analyzers package as well as the following analyzers:
 - [Microsoft.CodeQuality.Analyzers](https://www.nuget.org/packages/Microsoft.CodeQuality.Analyzers): Provides general guidance and guidance for .NET Standard APIs
 - [Microsoft.NetCore.Analyzers](https://www.nuget.org/packages/Microsoft.NetCore.Analyzers): Provides analyzers specific to .NET Core APIs.
-- [Text.Analyzers](https://www.nuget.org/packages/Text.Analyzers): Provides guidance for text included as code including comments.
+- [Text.Analyzers](https://www.nuget.org/packages/Text.Analyzers): Provides guidance for text included as code, including comments.
 
 To install it, right-click on the project, and select "Manage Dependencies".
 From the NuGet explorer, search for "NetFramework Analyzer", or if you prefer,

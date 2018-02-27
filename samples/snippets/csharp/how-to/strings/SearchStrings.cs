@@ -58,13 +58,12 @@ namespace HowToStrings
             // <Snippet3>
             string[] sentences =
             {
-                "C# code",
-                "Chapter 2: Writing Code",
-                "Unicode",
-                "no match here"
+                "Put the water over there.",
+                "They're quite thirsty.",
+                "Their water bottles broke."
             };
 
-            string sPattern = "code";
+            string sPattern = "the(ir)?\\s";
 
             foreach (string s in sentences)
             {

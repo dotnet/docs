@@ -24,9 +24,10 @@
 ### [Class Library Overview](standard/class-library-overview.md)
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
-## Analyzers
+## [Analyzers](standard/analyzers/index.md)
 ### [API Analyzer](standard/analyzers/api-analyzer.md) 
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
+### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [.NET Assembly File Format](standard/assembly-format.md)
 ## [Garbage Collection](standard/garbage-collection/)

@@ -15,7 +15,7 @@ ms.assetid: 81adb2eb-625f-4ad8-aeaa-8f672a6d79a2
 # Walkthrough: Generating F# Types from an EDMX Schema File
 
 > [!NOTE]
-This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](https://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 > [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.
@@ -218,7 +218,7 @@ You should complete this procedure only if you want to know how to generate a fu
 1. On the menu bar, choose **SQL**, **Transact-SQL Editor**, **New Query** to create a database. If prompted, specify your database server and instance.
 <br />
 
-2. Copy and paste the contents of the database script that creates the Student database, as described in the [Entity Framework documentation](http://msdn.microsoft.com/data/JJ614587.aspx) in the Data Developer Center.
+2. Copy and paste the contents of the database script that creates the Student database, as described in the [Entity Framework documentation](https://msdn.microsoft.com/data/JJ614587.aspx) in the Data Developer Center.
 <br />
 
 3. Run the SQL script by choosing the toolbar button with the triangle symbol or choosing the Ctrl+Q keys.
@@ -271,7 +271,7 @@ Explore other queries by looking at the available query operators as listed in [
 
 [Walkthrough: Accessing a SQL Database by Using Type Providers and Entities](accessing-a-sql-database-entities.md)
 
-[Entity Framework](http://msdn.microsoft.com/data/ef)
+[Entity Framework](https://msdn.microsoft.com/data/ef)
 
 [.edmx File Overview](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)
 

@@ -173,6 +173,6 @@ to learn about more complex storage tasks.
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
-- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)

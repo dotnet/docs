@@ -22,7 +22,7 @@ If you're using [Paket](https://fsprojects.github.io/Paket/) as your dependency 
 
     > paket add nuget WindowsAzure.Storage
 
-Or, if you're using [Mono](http://www.mono-project.com/) for cross-platform .NET development:
+Or, if you're using [Mono](https://www.mono-project.com/) for cross-platform .NET development:
 
     > mono paket.exe add nuget WindowsAzure.Storage
 

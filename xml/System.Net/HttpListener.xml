@@ -30,10 +30,7 @@
   
 ## Remarks  
  Using the <xref:System.Net.HttpListener> class, you can create a simple HTTP protocol listener that responds to HTTP requests. The listener is active for the lifetime of the <xref:System.Net.HttpListener> object and runs within your application with its permissions.
-  
-> [!NOTE]
-> This class is available only on computers running the Windows XP SP2 or Windows Server 2003 operating systems. If you attempt to create an <xref:System.Net.HttpListener> object on a computer that is running an earlier operating system, the constructor throws a <xref:System.PlatformNotSupportedException> exception.
-  
+   
  To use <xref:System.Net.HttpListener>, create a new instance of the class using the <xref:System.Net.HttpListener> constructor and use the <xref:System.Net.HttpListener.Prefixes%2A> property to gain access to the collection that holds the strings that specify which Uniform Resource Identifier (URI) prefixes the <xref:System.Net.HttpListener> should process.
   
  A URI prefix string is composed of a scheme (http or https), a host, an optional port, and an optional path. An example of a complete prefix string is *http://www.contoso.com:8080/customerData/*. Prefixes must end in a forward slash ("/"). The <xref:System.Net.HttpListener> object with the prefix that most closely matches a requested URI responds to the request. Multiple <xref:System.Net.HttpListener> objects cannot add the same prefix; a <xref:System.ComponentModel.Win32Exception> exception is thrown if a <xref:System.Net.HttpListener> adds a prefix that is already in use.

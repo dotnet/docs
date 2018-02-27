@@ -7,6 +7,5 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task%5B%5D%2CSystem.Int32)?displayProperty=nameWithType></li><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task%5B%5D%2CSystem.Int32%2CSystem.Threading.CancellationToken)?displayProperty=nameWithType></li><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task%5B%5D%2CSystem.TimeSpan)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0026</li></ul>|
+|Affected APIs|<ul><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task[],System.Int32)?displayProperty=nameWithType></li><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task[],System.Int32,System.Threading.CancellationToken)?displayProperty=nameWithType></li><li><xref:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task[],System.TimeSpan)?displayProperty=nameWithType></li></ul>|
 

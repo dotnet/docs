@@ -7,6 +7,5 @@
 |Scope|Major|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600%40)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0095</li></ul>|
+|Affected APIs|<ul><li><xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType></li></ul>|
 

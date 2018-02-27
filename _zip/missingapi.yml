@@ -102,13 +102,13 @@ references:
   name: DataRepeaterLayoutStyles.Horizontal
   name.vb: DataRepeaterLayoutStyles.Horizontal
   fullName: DataRepeaterLayoutStyles.Horizontal
-  fullName.vb: DataRepeaterLayoutStyles.Horizontal 
+  fullName.vb: DataRepeaterLayoutStyles.Horizontal
 - uid: Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
   href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.backstyle.aspx
   name: BackStyle.Opaque
   name.vb: BackStyle.Opaque
   fullName: BackStyle.Opaque
-  fullName.vb: BackStyle.Opaque 
+  fullName.vb: BackStyle.Opaque
 - uid: Microsoft.VisualBasic.PowerPacks.FillStyle.Horizontal
   href: https://msdn.microsoft.com/library/microsoft.visualbasic.powerpacks.fillstyle.aspx
   name: FillStyle.Horizontal
@@ -151,3 +151,9 @@ references:
   name.vb: IPageableItemContainer.TotalRowCountAvailable
   fullName: ListView.IPageableItemContainer.TotalRowCountAvailable
   fullName.vb: ListView.IPageableItemContainer.TotalRowCountAvailable
+- uid: System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)
+  href: https://msdn.microsoft.com/library/system.windows.controls.virtualizingstackpanel.isvirtualizing
+  name: VirtualizingStackPanel.IsVirtualizing
+  name.vb: VirtualizingStackPanel.IsVirtualizing
+  fullName: VirtualizingStackPanel.IsVirtualizing
+  fullName.vb: VirtualizingStackPanel.IsVirtualizing

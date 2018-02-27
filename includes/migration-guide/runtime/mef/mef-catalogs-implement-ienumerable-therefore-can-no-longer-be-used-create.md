@@ -7,5 +7,4 @@
 |Scope|Major|
 |Version|4.5|
 |Type|Runtime|
-|Analyzers|<ul><li>CD0012</li></ul>|
 

@@ -7,6 +7,5 @@
 |Scope|Major|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li>[System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)](https://msdn.microsoft.com/library/system.windows.controls.virtualizingstackpanel.setisvirtualizing(v=vs.110).aspx)</li></ul>|
-|Analyzers|<ul><li>CD0086</li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)?displayProperty=nameWithType></li></ul>|
 

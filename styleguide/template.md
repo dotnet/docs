@@ -421,7 +421,7 @@ You can embed the Markdown of one file into another using an include.
 
 ### Checked lists
 
-A custom style is available for bulleted lists. You can render lists with check marks.
+A custom style is available for checked lists. You can render lists with check marks.
 
 > [!div class="checklist"]
 > * How to create a .NET Core app

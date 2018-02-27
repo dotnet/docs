@@ -7,6 +7,5 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Net.WebUtility.HtmlEncode(System.String)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.HtmlEncode(System.String%2CSystem.IO.TextWriter)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0062</li></ul>|
+|Affected APIs|<ul><li><xref:System.Net.WebUtility.HtmlEncode(System.String)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)?displayProperty=nameWithType></li></ul>|
 

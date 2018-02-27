@@ -23,11 +23,11 @@ The [string](../language-reference/keywords/string.md) type, which is an alias f
 
 ## Does a string contain text?
 
-The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods search a string for specific text. The following example shows each of these methods, and a variation that uses a case insensitive search:
+The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods search a string for specific text. The following example shows each of these methods and a variation that uses a case insensitive search:
 
 [!code-csharp-interactive[search strings using methods](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#1)]
 
-The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase> enum value to specify a case insensitive search.
+The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType> enum value to specify a case insensitive search.
 
 ## Where does the sought text occur in a string?
 

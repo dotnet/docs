@@ -9,7 +9,6 @@
 ### [What's new in the .NET Standard](standard/whats-new/whats-new-in-dotnet-standard.md)
 ## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
-## [Building documentation with mdoc](standard/mdoc/index.md)
 ## [Architecture Guidance](standard/guidance-architecture.md)
 ### [Architect Modern web applications with ASP.NET Core and Microsoft Azure](standard/modern-web-apps-azure-architecture/)
 ### [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/)

@@ -14,7 +14,7 @@ ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 
 # Getting Started with F# in Visual Studio Code with Ionide
 
-You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
+You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](https://ionide.io) to learn more about the plugin suite.
 
 ## Prerequisites
 
@@ -35,9 +35,9 @@ If you prefer not to install Visual Studio, use the following instructions:
 2. Install the Windows SDK for your OS:
 
     * [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
-    * [Windows 8.1 SDK](http://msdn.microsoft.com/windows/desktop/bg162891)
-    * [Windows 8 SDK](http://msdn.microsoft.com/windows/hardware/hh852363.aspx)
-    * [Windows 7 SDK](http://www.microsoft.com/download/details.aspx?id=8279)
+    * [Windows 8.1 SDK](https://developer.microsoft.com/windows/downloads/sdk-archive)
+    * [Windows 8 SDK](https://developer.microsoft.com/windows/downloads/sdk-archive)
+    * [Windows 7 SDK](https://www.microsoft.com/download/details.aspx?id=8279)
 
 3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159).  You may also need to install [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760).
 
@@ -63,7 +63,7 @@ Ionide automatically detects the compiler and tools, but if it doesn't for some 
 
 ### macOS
 
-On macOS, Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
+On macOS, Ionide uses [Mono](https://www.mono-project.com).  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
 
 ```
 brew install mono
@@ -71,7 +71,7 @@ brew install mono
 
 ### Linux
 
-On Linux, Ionide also uses [Mono](http://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
+On Linux, Ionide also uses [Mono](https://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
 
 ```
 sudo apt-get update
@@ -92,7 +92,7 @@ You can install Visual Studio Code from the [code.visualstudio.com](https://code
 
     ![](media/getting-started-vscode/vscode-ext.png)
 
-The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](http://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
+The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](https://fake.build/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
 ## Creating your first project with Ionide
 
@@ -117,7 +117,7 @@ Select "F#: New Project" by hitting **Enter**, which will take you to this step:
 
 ![](media/getting-started-vscode/vscode-proj-type.png)
 
-This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](http://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
+This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](https://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
 
 ![](media/getting-started-vscode/vscode-new-dir.png)
 
@@ -134,8 +134,8 @@ If you followed the previous step steps, you should get the Visual Studio Code W
 This template generates a few things you'll find useful:
 
 1. The F# project itself, underneath the `ClassLibraryDemo` folder.
-2. The correct directory structure for adding packages via [`Paket`](http://fsprojects.github.io/Paket/).
-3. A cross-platform build script with [`FAKE`](http://fsharp.github.io/FAKE/).
+2. The correct directory structure for adding packages via [`Paket`](https://fsprojects.github.io/Paket/).
+3. A cross-platform build script with [`FAKE`](https://fake.build/).
 4. The `paket.exe` executable which can fetch packages and resolve dependencies for you.
 5. A `.gitignore` file if you wish to add this project to Git-based source control.
 

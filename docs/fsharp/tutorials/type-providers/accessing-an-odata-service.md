@@ -15,7 +15,7 @@ ms.assetid: 0adae84c-b0fa-455f-994b-274ecdc6df30
 # Walkthrough: Accessing an OData Service by Using Type Providers
 
 > [!NOTE]
-This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](https://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 > [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.
@@ -65,7 +65,7 @@ In this step, you create a type provider that provides access to the types and d
 open Microsoft.FSharp.Data.TypeProviders
 
 
-type Northwind = ODataService<"http://services.odata.org/Northwind/Northwind.svc/">
+type Northwind = ODataService<"https://services.odata.org/Northwind/Northwind.svc/">
 
 let db = Northwind.GetDataContext()
 let fullContext = Northwind.ServiceTypes.NorthwindEntities()
@@ -238,7 +238,7 @@ db.DataContext.SendingRequest.Add (fun eventArgs -> printfn "Requesting %A" even
 ```
 
 The output of the previous code is:
-<br />`requesting http://services.odata.org/Northwind/Northwind.svc/Orders()?$orderby=ShippedDate&amp;$select=OrderID,ShippedDate`
+<br />`requesting https://services.odata.org/Northwind/Northwind.svc/Orders()?$orderby=ShippedDate&amp;$select=OrderID,ShippedDate`
 
 
 ## See Also

@@ -78,7 +78,7 @@ A reference return value is defined by using the `ref` keyword:
    ```csharp
    public ref decimal GetCurrentValue()
    ``` 
-- After each `return` statement in the method. For example:
+- Between the `return` token and the variable returned in a `return` statement in the method. For example:
  
    ```csharp
    return ref DecimalArray[0];

@@ -40,7 +40,7 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
 [Build a class library with Visual Basic and .NET Core in Visual Studio 2017](../../core/tutorials/vb-library-with-visual-studio.md) 
 
 ## See also
- [Get Visual Basic](https://www.visualstudio.com/downloads/)  
+ [Get Visual Basic](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)  
  Provides download links for Visual Studio versions that include Visual basic support, including free versions.  
 
  [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)  

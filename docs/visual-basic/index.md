@@ -17,7 +17,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
   
  This generation of Visual Basic continues the tradition of giving you a fast and easy way to create .NET Framework-based applications.  
   
- If you don't already have Visual Basic, you can acquire a version of Visual Studio that includes Visual Basic for free from the [Visual Studio](https://www.visualstudio.com/products/downloads) site.  
+ If you don't already have Visual Basic, you can acquire a version of Visual Studio that includes Visual Basic for free from the [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) site.  
   
 ## In This Section  
  [Getting Started](../visual-basic/getting-started/index.md)  

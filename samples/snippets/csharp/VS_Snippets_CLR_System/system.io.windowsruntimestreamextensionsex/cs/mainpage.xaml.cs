@@ -70,7 +70,7 @@ namespace TextFile
 
             // Create an HttpClient and access an image as a stream.
             var client = new HttpClient();
-            Stream stream = await client.GetStreamAsync("http://www.visualstudio.com/IC691934.png");
+            Stream stream = await client.GetStreamAsync("https://docs.microsoft.com/en-us/dotnet/images/hub/featured-1.png");
             // Create a .NET memory stream.
             var memStream = new MemoryStream();
 

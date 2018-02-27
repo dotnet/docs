@@ -2,8 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|In some cases, a <xref:System.Windows.Documents.FlowDocument> element will display an extra line of text when running on the .NET Framework 4.5 compared to how it displayed when run on the .NET Framework 4.0. There are no known cases of the change causing any text to be displayed poorly or illegibly, but it could cause text to appear that previously was omitted from a <xref:System.Windows.Documents.FlowDocument>&#39;s view.|
-|Suggestion|In some cases, decreasing the display element&#39;s PageHeight property by one can restore the previous number of displayed lines.|
+|Details|In some cases, a <xref:System.Windows.Documents.FlowDocument> element will display an extra line of text when running on the .NET Framework 4.5 compared to how it displayed when run on the .NET Framework 4.0. There are no known cases of the change causing any text to be displayed poorly or illegibly, but it could cause text to appear that previously was omitted from a <xref:System.Windows.Documents.FlowDocument>'s view.|
+|Suggestion|In some cases, decreasing the display element's PageHeight property by one can restore the previous number of displayed lines.|
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|

@@ -8,5 +8,4 @@
 |Version|4.5|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Activities.Presentation.WorkflowDesigner.Load?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0082</li></ul>|
 

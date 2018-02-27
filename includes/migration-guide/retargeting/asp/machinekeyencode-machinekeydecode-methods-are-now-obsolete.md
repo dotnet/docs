@@ -7,6 +7,5 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Web.Security.MachineKey.Encode(System.Byte%5B%5D%2CSystem.Web.Security.MachineKeyProtection)?displayProperty=nameWithType></li><li><xref:System.Web.Security.MachineKey.Decode(System.String%2CSystem.Web.Security.MachineKeyProtection)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0028</li></ul>|
+|Affected APIs|<ul><li><xref:System.Web.Security.MachineKey.Encode(System.Byte[],System.Web.Security.MachineKeyProtection)?displayProperty=nameWithType></li><li><xref:System.Web.Security.MachineKey.Decode(System.String,System.Web.Security.MachineKeyProtection)?displayProperty=nameWithType></li></ul>|
 

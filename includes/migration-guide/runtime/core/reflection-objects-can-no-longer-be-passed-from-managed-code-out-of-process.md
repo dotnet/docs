@@ -7,5 +7,4 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Runtime|
-|Analyzers|<ul><li>CD0077</li></ul>|
 

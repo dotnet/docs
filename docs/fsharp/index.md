@@ -4,7 +4,7 @@ description: Learn F#, a functional programming language that runs on .NET.
 keywords: F#, .NET, .NET Core
 author: jackfoxy
 ms.author: phcart
-ms.date: 02/21/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp

@@ -4,7 +4,7 @@ description: Examine some of the key features of the F# programming language in 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
 ms.author: phcart
-ms.date: 01/24/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp

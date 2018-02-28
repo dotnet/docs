@@ -4,7 +4,7 @@ description: Learn how to use F# with Visual Studio Code and the Ionide plugin s
 keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
 author: cartermp
 ms.author: phcart
-ms.date: 02/21/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -12,7 +12,7 @@ ms.devlang: fsharp
 ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 ---
 
-# Geting Started with F# in Visual Studio Code
+# Get Started with F# in Visual Studio Code
 
 You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
 

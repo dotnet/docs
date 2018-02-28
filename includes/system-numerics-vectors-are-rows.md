@@ -1,1 +1,1 @@
-The `System.Numerics` namespace represents vectors as rows for vector-matrix multiplication, so the product of a vector *v* and a matrix *M* is *vM*.
+The `System.Numerics` namespace represents vectors as rows. A vector *v* is transformed by a matrix *M* with *vM* multiplication.

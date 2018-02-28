@@ -12,87 +12,13 @@ namespace HowToStrings
         public static void Examples()
         {
             ReplaceCreatesNewString();
-
+            ReplaceChars();
+            TrimWhitespace();
+            RemoveText();
             ReplaceWithRegEx();
+            ReplaceCharArray();
 
-            string s = "The mountains are behind the clouds today.";
-
-            // Replace all occurrences of one char with another.
-            s = s.Replace(' ', '_');
-            Console.WriteLine(s);
-            // Output: Many_peaks_are_behind_many_clouds_today.
-
-            // Remove a substring from the middle of the string.
-            string temp = "many_";
-            int i = s.IndexOf(temp);
-            if (i >= 0)
-            {
-                s = s.Remove(i, temp.Length);
-            }
-            Console.WriteLine(s);
-            // Output: Many_peaks_are_behind_clouds_today.
-
-            // Remove trailing and leading whitespace.
-            // See also the TrimStart and TrimEnd methods.
-            string s2 = "    I'm wider than I need to be.      ";
-            // Store the results in a new string variable.
-            temp = s2.Trim();
-            Console.WriteLine(temp);
-            // Output: I'm wider than I need to be.
-
-            // Start of existing example 2
-            // ==============================================
-            string str = "The quick brown fox jumped over the fence";
-            Console.WriteLine(str);
-
-            char[] chars = str.ToCharArray();
-            int animalIndex = str.IndexOf("fox");
-            if (animalIndex != -1)
-            {
-                chars[animalIndex++] = 'c';
-                chars[animalIndex++] = 'a';
-                chars[animalIndex] = 't';
-            }
-
-            string str2 = new string(chars);
-            Console.WriteLine(str2);
-
-            // Start of existing example 3:
-            // ===========================================
             UnsafeSample();
-        }
-
-        private static string ReplaceWithRegEx()
-        {
-            // <Snippet2>
-            string s = "The mountains are behind the clouds today.";
-
-            // Use Regex.Replace for more flexibility. 
-            // Replace "the" or "The" with "many" or "Many".
-            // using System.Text.RegularExpressions
-            replaceWith = "many";
-            s = Regex.Replace(s, "the", ReplaceMatchCase, RegexOptions.IgnoreCase);
-            Console.WriteLine(s);
-            return s;
-
-            string ReplaceMatchCase(Match m)
-            {
-                // Test whether the match is capitalized
-                if (Char.IsUpper(m.Value[0]) == true)
-                {
-                    // Capitalize the replacement string
-                    // using System.Text;
-                    StringBuilder sb = new StringBuilder(replaceWith);
-                    sb[0] = (Char.ToUpper(sb[0]));
-                    return sb.ToString();
-                }
-                else
-                {
-                    return replaceWith;
-                }
-            }
-            // </Snippet2>
-
         }
 
         private static void ReplaceCreatesNewString()
@@ -109,29 +35,122 @@ namespace HowToStrings
 
         }
 
+        private static void ReplaceChars()
+        {
+            // <Snippet2>
+            string source = "The mountains are behind the clouds today.";
+
+            // Replace all occurrences of one char with another.
+            var replacement = source.Replace(' ', '_');
+            Console.WriteLine(source);
+            Console.WriteLine(replacement);
+            // </Snippet2>
+        }
+
+        private static void TrimWhitespace()
+        {
+            // <Snippet3>
+            // Remove trailing and leading whitespace.
+            string source = "    I'm wider than I need to be.      ";
+            // Store the results in a new string variable.
+            var trimmedResult = source.Trim();
+            var trimLeading = source.TrimStart();
+            var trimTrailing = source.TrimEnd();
+            Console.WriteLine($"<{source}>");
+            Console.WriteLine($"<{trimmedResult}>");
+            Console.WriteLine($"<{trimLeading}>");
+            Console.WriteLine($"<{trimTrailing}>");
+            // </Snippet3>
+        }
+
+        private static void RemoveText()
+        {
+            // <Snippet4>
+            string source = "Many mountains are behind many clouds today.";
+            // Remove a substring from the middle of the string.
+            string toRemove = "many_";
+            string result = string.Empty;
+            int i = source.IndexOf(toRemove);
+            if (i >= 0)
+            {
+                result= source.Remove(i, toRemove.Length);
+            }
+            Console.WriteLine(source);
+            Console.WriteLine(result);
+            // </Snippet4>
+        }
+
+        private static void ReplaceWithRegEx()
+        {
+            // <Snippet5>
+            string source = "The mountains are still there behind the clouds today.";
+
+            // Use Regex.Replace for more flexibility. 
+            // Replace "the" or "The" with "many" or "Many".
+            // using System.Text.RegularExpressions
+            replaceWith = "many ";
+            source = Regex.Replace(source, "the\\s", localReplaceMatchCase, RegexOptions.IgnoreCase);
+            Console.WriteLine(source);
+
+            string localReplaceMatchCase(Match matchExpression)
+            {
+                // Test whether the match is capitalized
+                if (Char.IsUpper(matchExpression.Value[0]))
+                {
+                    // Capitalize the replacement string
+                    StringBuilder replacementBuilder = new StringBuilder(replaceWith);
+                    replacementBuilder[0] = Char.ToUpper(replacementBuilder[0]);
+                    return replacementBuilder.ToString();
+                }
+                else
+                {
+                    return replaceWith;
+                }
+            }
+            // </Snippet5>
+        }
+
+        private static void ReplaceCharArray()
+        {
+            // <Snippet6>
+            string phrase = "The quick brown fox jumped over the fence";
+            Console.WriteLine(phrase);
+
+            char[] phraseAsChars = phrase.ToCharArray();
+            int animalIndex = phrase.IndexOf("fox");
+            if (animalIndex != -1)
+            {
+                phraseAsChars[animalIndex++] = 'c';
+                phraseAsChars[animalIndex++] = 'a';
+                phraseAsChars[animalIndex] = 't';
+            }
+
+            string updatedPhrase = new string(phraseAsChars);
+            Console.WriteLine(updatedPhrase);
+            // </Snippet6>
+        }
+
         private static void UnsafeSample()
         {
+            // <Snippet7>
             unsafe
             {
                 // Compiler will store (intern) 
                 // these strings in same location.
-                string s1 = "Hello";
-                string s2 = "Hello";
+                string helloOne = "Hello";
+                string helloTwo = "Hello";
 
                 // Change one string using unsafe code.
-                fixed (char* p = s1)
+                fixed (char* p = helloOne)
                 {
                     p[0] = 'C';
                 }
 
                 //  Both strings have changed.
-                Console.WriteLine(s1);
-                Console.WriteLine(s2);
+                Console.WriteLine(helloOne);
+                Console.WriteLine(helloTwo);
             }
+            // </Snippet7>
         }
-
-        // Custom match method called by Regex.Replace
-        // using System.Text.RegularExpressions
-
     }
 }

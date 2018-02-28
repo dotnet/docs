@@ -13,6 +13,33 @@ ms.author: "wiwagn"
 
 # How to: Modify String Contents (C# Programming Guide)
 
+You can't modify the contents of a string after it has been created. The <xref:System.String?displayProperty=nameWithType> class is *immutable*. The examples in this topic show how to create a new string object that represents the result of some change to an existing string. 
+
+The following code demonstrates this *immutable* property of strings. It creates a new string by replacing existing text with a substitute.
+
+[!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#1)]  
+
+You can see in the preceding example that the original string, `source`, is not modified. The <xref:System.String.Replace%2A?displayProperty=nameWithType> creates a new `string` that replaces sought text with other text.
+
+Checkin and Open a WIP PR to see if this works with a local function:
+
+
+[!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#2)]  
+
+
+
+. Example: replace pattern with regex
+
+. Example: remove
+
+. Example: trim
+
+. Example: treat as char array
+
+. Example (maybe): Unsafe or span
+
+. Summary and resources
+
 Because strings are *immutable*, it is not possible (without using unsafe code) to modify the value of a string object after it has been created. However, there are many ways to modify the value of a string and store the result in a new string object. The <xref:System.String?displayProperty=nameWithType> class provides methods that operate on an input string and return a new string object. In many cases, you can assign the new object to the variable that held the original string. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides additional methods that work in a similar manner. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class provides a character buffer that you can modify "in-place." You call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to create a new string object that contains the current contents of the buffer.  
   
 ## Example  

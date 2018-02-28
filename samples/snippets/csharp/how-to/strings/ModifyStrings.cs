@@ -11,21 +11,11 @@ namespace HowToStrings
 
         public static void Examples()
         {
+            ReplaceCreatesNewString();
+
+            ReplaceWithRegEx();
+
             string s = "The mountains are behind the clouds today.";
-
-            // Replace one substring with another with String.Replace.
-            // Only exact matches are supported.
-            s = s.Replace("mountains", "peaks");
-            Console.WriteLine(s);
-            // Output: The peaks are behind the clouds today.
-
-            // Use Regex.Replace for more flexibility. 
-            // Replace "the" or "The" with "many" or "Many".
-            // using System.Text.RegularExpressions
-            replaceWith = "many";
-            s = Regex.Replace(s, "the", ReplaceMatchCase, RegexOptions.IgnoreCase);
-            Console.WriteLine(s);
-            // Output: Many peaks are behind many clouds today.
 
             // Replace all occurrences of one char with another.
             s = s.Replace(' ', '_');
@@ -72,6 +62,53 @@ namespace HowToStrings
             UnsafeSample();
         }
 
+        private static string ReplaceWithRegEx()
+        {
+            // <Snippet2>
+            string s = "The mountains are behind the clouds today.";
+
+            // Use Regex.Replace for more flexibility. 
+            // Replace "the" or "The" with "many" or "Many".
+            // using System.Text.RegularExpressions
+            replaceWith = "many";
+            s = Regex.Replace(s, "the", ReplaceMatchCase, RegexOptions.IgnoreCase);
+            Console.WriteLine(s);
+            return s;
+
+            string ReplaceMatchCase(Match m)
+            {
+                // Test whether the match is capitalized
+                if (Char.IsUpper(m.Value[0]) == true)
+                {
+                    // Capitalize the replacement string
+                    // using System.Text;
+                    StringBuilder sb = new StringBuilder(replaceWith);
+                    sb[0] = (Char.ToUpper(sb[0]));
+                    return sb.ToString();
+                }
+                else
+                {
+                    return replaceWith;
+                }
+            }
+            // </Snippet2>
+
+        }
+
+        private static void ReplaceCreatesNewString()
+        {
+            // <Snippet1>
+            string source = "The mountains are behind the clouds today.";
+
+            // Replace one substring with another with String.Replace.
+            // Only exact matches are supported.
+            var replacement = source.Replace("mountains", "peaks");
+            Console.WriteLine($"The source string is {source}");
+            Console.WriteLine($"The updated string is {replacement}");
+            // </Snippet1>
+
+        }
+
         private static void UnsafeSample()
         {
             unsafe
@@ -93,25 +130,8 @@ namespace HowToStrings
             }
         }
 
-        // I see dead code:
         // Custom match method called by Regex.Replace
         // using System.Text.RegularExpressions
-        static string ReplaceMatchCase(Match m)
-        {
-            // Test whether the match is capitalized
-            if (Char.IsUpper(m.Value[0]) == true)
-            {
-                // Capitalize the replacement string
-                // using System.Text;
-                StringBuilder sb = new StringBuilder(replaceWith);
-                sb[0] = (Char.ToUpper(sb[0]));
-                return sb.ToString();
-            }
-            else
-            {
-                return replaceWith;
-            }
-        }
 
     }
 }

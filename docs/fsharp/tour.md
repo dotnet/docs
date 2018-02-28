@@ -18,13 +18,6 @@ The best way to learn about F# is to read and write F# code.  This article will 
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
 
-## How to Run the Code Samples
-
->[!NOTE]
-Two options for running the code samples are [Try F#](http://www.tryfsharp.org/Create) (requires Silverlight) and [F# for Azure Notebooks](https://notebooks.azure.com/Microsoft/libraries/fsharp/html/FSharp%20for%20Azure%20Notebooks.ipynb) on Microsoft Azure.
-
-The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application.  See the [Get Started](./get-started/index.md) section to learn more.
-
 ## Functions and Modules
 
 The most fundamental pieces of any F# program are ***functions*** organized into ***modules***.  [Functions](language-reference/functions/index.md) perform work on inputs to produce outputs, and they are organized under [Modules](language-reference/modules.md), which are the primary way you group things in F#.  They are defined using the [`let` binding](language-reference/functions/let-bindings.md), which give the function a name and define its arguments.

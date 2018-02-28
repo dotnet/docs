@@ -71,7 +71,7 @@ To achieve the goals above, we provide image variants under [`microsoft/dotnet`]
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](https://docs.microsoft.com/dotnet/core/deploying/index).
+* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](../deploying/index.md).
 
 Latest versions of each variant:
 

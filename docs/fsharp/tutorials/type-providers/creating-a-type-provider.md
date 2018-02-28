@@ -18,18 +18,19 @@ The type provider mechanism in F# is a significant part of its support for infor
 
 The F# ecosystem contains a range of type providers for commonly used Internet and enterprise data services. For example:
 
-- [FSharp.Data](http://fsharp.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats
+- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats
 
-- [SQLProvider](http://fsprojects.github.io/SQLProvider/) provides strongly-typed access to SQL databases through a object mapping and F# LINQ queries against these data sources.
+- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly-typed access to SQL databases through a object mapping and F# LINQ queries against these data sources.
 
-- [FSharp.Data.SqlClient](http://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for com,pile-time checked embedding of T-SQL in F#
+- [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for com,pile-time checked embedding of T-SQL in F#
 
-- [FSharp.Data.TypeProviders](http://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
+- [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
 
 Where necessary, you can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
 
 
 ## Before You Start
+
 The type provider mechanism is primarily designed for injecting stable data and service information spaces into the F# programming experience.
 
 This mechanism isn’t designed for injecting information spaces whose schema changes during program execution in ways that are relevant to program logic. Also, the mechanism isn't designed for intra-language meta-programming, even though that domain contains some valid uses. You should use this mechanism only where necessary and where the development of a type provider yields very high value.
@@ -57,7 +58,7 @@ Type providers are best suited to situations where the schema is stable at runti
 
 ## A Simple Type Provider
 
-This sample is Samples.HelloWorldTypeProvider similar to the samples in the `examples` directory of the [F# Type Provider SDK](https://https://github.com/fsprojects/FSharp.TypeProviders.SDK/). The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
+This sample is Samples.HelloWorldTypeProvider similar to the samples in the `examples` directory of the [F# Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK/). The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
 
 ```fsharp
 namespace Samples.HelloWorldTypeProvider
@@ -174,6 +175,7 @@ You can disable Just My Code debugging to better identify errors in generated co
 
 
 ### Implementation of the Type Provider
+
 This section walks you through the principal sections of the type provider implementation. First, you define the type for the custom type provider itself:
 
 ```fsharp
@@ -222,6 +224,7 @@ do()
 ```
 
 ### Providing One Type And Its Members
+
 The `makeOneProvidedType` function does the real work of providing one of the types.
 
 ```fsharp
@@ -366,6 +369,7 @@ t.AddMembersDelayed(fun () ->
 ```
 
 ### Details about Erased Provided Types
+
 The example in this section provides only *erased provided types*, which are particularly useful in the following situations:
 
 - When you are writing a provider for an information space that contains only data and methods.
@@ -378,6 +382,7 @@ In this example, each provided type is erased to type `obj`, and all uses of the
 
 
 ### Choosing Representations for Erased Provided Types
+
 For some uses of erased provided types, no representation is required. For example, the erased provided type might contain only static properties and members and no constructors, and no methods or properties would return an instance of the type. If you can reach instances of an erased provided type, you must consider the following questions:
 
 **What is the erasure of a provided type?**
@@ -436,10 +441,12 @@ The previous section explained how to create a simple erasing type provider that
 
 
 ## A Type Provider That Uses Static Parameters
+
 The ability to parameterize type providers by static data enables many interesting scenarios, even in cases when the provider doesn't need to access any local or remote data. In this section, you’ll learn some basic techniques for putting together such a provider.
 
 
 ### Type Checked Regex Provider
+
 Imagine that you want to implement a type provider for regular expressions that wraps the .NET `System.Text.RegularExpressions.Regex` libraries in an interface that provides the following compile-time guarantees:
 
 - Verifying whether a regular expression is valid.
@@ -530,7 +537,6 @@ do ()
 ```
 
 Note the following points:
-
 
 - The type provider takes two static parameters: the `pattern`, which is mandatory, and the `options`, which are optional (because a default value is provided).
 
@@ -737,10 +743,12 @@ This section explained how to create a type provider that operates on its static
 
 
 ## A Type Provider That Is Backed By Local Data
+
 Frequently you might want type providers to present APIs based on not only static parameters but also information from local or remote systems. This section discusses type providers that are based on local data, such as local data files.
 
 
 ### Simple CSV File Provider
+
 As a simple example, consider a type provider for accessing scientific data in Comma Separated Value (CSV) format. This section assumes that the CSV files contain a header row followed by floating point data, as the following table illustrates:
 
 
@@ -893,6 +901,7 @@ This section explained how to create a type provider for a local data source wit
 
 
 ## Going Further
+
 The following sections include suggestions for further study.
 
 
@@ -997,6 +1006,7 @@ let data = connection.Astronomy.Asteroids
 ```
 
 #### Type Providers Backed By Remote Data and Services
+
 Before you create a type provider that's backed by remote data and services, you must consider a range of issues that are inherent in connected programming. These issues include the following considerations:
 
 - schema mapping
@@ -1013,12 +1023,11 @@ Before you create a type provider that's backed by remote data and services, you
 
 This topic doesn't explore these issues further.
 
-
 ### Additional Authoring Techniques
+
 When you write your own type providers, you might want to use the following additional techniques.
 
-
-**Creating Types and Members On-Demand**
+### Creating Types and Members On-Demand
 
 The ProvidedType API has delayed versions of AddMember.
 
@@ -1030,7 +1039,7 @@ The ProvidedType API has delayed versions of AddMember.
 
 These versions are used to create on-demand spaces of types.
 
-### Providing Array, ByRef, and Pointer types
+### Providing Array types and Generic Type Instantiations
 
 You make provided members (whose signatures include array types, byref types, and instantiations of generic types) by using the normal `MakeArrayType`, `MakePointerType`, and `MakeGenericType` on any instance of System.Type, including `ProvidedTypeDefinitions`.
 
@@ -1069,7 +1078,7 @@ Providers must often cache access to schema information. The cached data should 
 
 ### Backing Assembly
 
-When you compile a .dll or .exe file, the backing .dll file for generated types is statically linked into the resulting assembly. This link is created by copying the Intermediate Language (IL) type definitions and any managed resources from the backing assembly into the final assembly. When you use F# Interactive, the backing .dll file isn't copied and is instead loaded directly into the F# Interactive process.
+When you compile a `.dll` or `.exe` file, the backing .dll file for generated types is statically linked into the resulting assembly. This link is created by copying the Intermediate Language (IL) type definitions and any managed resources from the backing assembly into the final assembly. When you use F# Interactive, the backing .dll file isn't copied and is instead loaded directly into the F# Interactive process.
 
 ### Exceptions and Diagnostics from Type Providers
 
@@ -1079,7 +1088,7 @@ All uses of all members from provided types may throw exceptions. In all cases, 
 
 - Type providers can't report warnings.
 
-- When a type provider is hosted in the F# compiler, an F# development environment, or F# Interactive, all exceptions from that provider are caught. The Message property is always the error text, and no stack trace appears. If you’re going to throw an exception, you can throw the following examples: `System.NotSupportedException`, `System.IO.IOException`,  `System.Exception`
+- When a type provider is hosted in the F# compiler, an F# development environment, or F# Interactive, all exceptions from that provider are caught. The Message property is always the error text, and no stack trace appears. If you’re going to throw an exception, you can throw the following examples: `System.NotSupportedException`, `System.IO.IOException`, `System.Exception`.
 
 #### Providing Generated Types
 
@@ -1101,10 +1110,11 @@ The ProvidedTypes-0.2 helper code that is part of the F# 3.0 release has only li
 
 
 ## Rules and Limitations
+
 When you write type providers, keep the following rules and limitations in mind.
 
 
-### Provided types must be reachable.
+### Provided types must be reachable
 
 All provided types should be reachable from the non-nested types. The non-nested types are given in the call to the `TypeProviderForNamespaces` constructor or a call to `AddNamespace`. For example, if the provider provides a type `StaticClass.P : T`, you must ensure that T is either a non-nested type or nested under one.
 
@@ -1119,13 +1129,14 @@ The type provider mechanism in F# has the following limitations:
 - The mechanism doesn't support nested types with static parameters.
 
 ## Development Tips
+
 You might find the following tips helpful during the development process.
 
-### Run Two Instances of Visual Studio.
+### Run Two Instances of Visual Studio
 
 You can develop the type provider in one instance and test the provider in the other because the test IDE will take a lock on the .dll file that prevents the type provider from being rebuilt. Thus, you must close the second instance of Visual Studio while the provider is built in the first instance, and then you must reopen the second instance after the provider is built.
 
-### Debug type providers by using invocations of fsc.exe.
+### Debug type providers by using invocations of fsc.exe
 
 You can invoke type providers by using the following tools:
 
@@ -1145,5 +1156,8 @@ You can often debug type providers most easily by using fsc.exe on a test script
 
 
 ## See Also
-[Type Providers](index.md)
-[The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)
+
+* [Type Providers](index.md)
+
+* [The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)
+

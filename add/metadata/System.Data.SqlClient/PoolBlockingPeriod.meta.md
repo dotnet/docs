@@ -1,6 +1,6 @@
 ---
 uid: System.Data.SqlClient.PoolBlockingPeriod
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ---

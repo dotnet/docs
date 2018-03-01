@@ -41,7 +41,7 @@ ms.workload:
  Describes security considerations for [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Express.  
   
 ## Related Sections  
-[Security Center for SQL Server Database Engine and Azure SQL Database](https://docs.microsoft.com/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)  
+[Security Center for SQL Server Database Engine and Azure SQL Database](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)  
 Describes security considerations for SQL Server and Azure SQL Database.
 
 ## See Also  

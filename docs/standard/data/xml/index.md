@@ -91,5 +91,3 @@ The .NET Framework provides a comprehensive and integrated set of classes that e
  [Security](../../../../docs/standard/security/index.md)  
  Provides an overview of the .NET Framework security system.  
   
- [XML Developer Center](http://go.microsoft.com/fwlink/?linkid=42458)  
- Provides additional technical information, downloads, newsgroups, and other resources for XML developers.

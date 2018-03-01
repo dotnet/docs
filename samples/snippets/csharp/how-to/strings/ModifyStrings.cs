@@ -7,8 +7,6 @@ namespace HowToStrings
 {
     public static class ModifyStrings
     {
-        private static string replaceWith;
-
         public static void Examples()
         {
             ReplaceCreatesNewString();
@@ -88,17 +86,18 @@ namespace HowToStrings
             // Use Regex.Replace for more flexibility. 
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
-            replaceWith = "many ";
-            source = Regex.Replace(source, "the\\s", localReplaceMatchCase, RegexOptions.IgnoreCase);
+            string replaceWith = "many ";
+            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", localReplaceMatchCase, 
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             Console.WriteLine(source);
 
-            string localReplaceMatchCase(Match matchExpression)
+            string localReplaceMatchCase(System.Text.RegularExpressions.Match matchExpression)
             {
                 // Test whether the match is capitalized
                 if (Char.IsUpper(matchExpression.Value[0]))
                 {
                     // Capitalize the replacement string
-                    StringBuilder replacementBuilder = new StringBuilder(replaceWith);
+                    System.Text.StringBuilder replacementBuilder = new System.Text.StringBuilder(replaceWith);
                     replacementBuilder[0] = Char.ToUpper(replacementBuilder[0]);
                     return replacementBuilder.ToString();
                 }

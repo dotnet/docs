@@ -59,15 +59,13 @@ The following example shows the steps to replace a set of characters in a string
 
 [!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#6)]  
 
-## Working with span
+## Unsafe modifications to string
 
 The following example is provided for those very rare situations in which you may want to modify a string in-place by using unsafe code in a manner similar to C-style char arrays. The example shows how to access the individual characters "in-place" by using the fixed keyword. It also demonstrates one possible side effect of unsafe operations on strings that results from the way that the C# compiler stores (interns) strings internally. In general, you should not use this technique unless it is absolutely necessary.  
   
 [!code-csharp-interactive[unsafe ways to create a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#7)]  
  
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Strings](../../../csharp/programming-guide/strings/index.md)  
  [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)   
  [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)   
   

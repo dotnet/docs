@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <typeparam name="TResult">The result.</typeparam>
-    <summary>Provides a value type that wraps a <see cref="T:Task{TResult}" /> and a <typeparamref name="TResult" />, only one of which is used.</summary>
+    <summary>Provides a value type that wraps a <see cref="T:System.Threading.Tasks.Task`1" /> and a <typeparamref name="TResult" />, only one of which is used.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[ 
 
@@ -40,7 +40,7 @@ For uses other than consuming the result of an asynchronous operation using awai
 As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
 
 > [!NOTE]
->  The use of the <see cref="ValueTask{TResult}"/> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
+>  The use of the <xref:System.Threading.Tasks.ValueTask%601> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
  ]]></format>
     </remarks>
   </Docs>
@@ -61,7 +61,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </Parameters>
       <Docs>
         <param name="task">The task.</param>
-        <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied task that represents the operation.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied task that represents the operation.</summary>
         <remarks>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
@@ -83,7 +83,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </Parameters>
       <Docs>
         <param name="result">The result.</param>
-        <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied result of a successful operation.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied result of a successful operation.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -104,8 +104,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:Task{TResult}" /> object that represents this <see cref="T:ValueTask{TResult}" />.</summary>
-        <returns>The <see cref="T:Task{TResult}" /> object that is wrapped in this <see cref="T:ValueTask{TResult}" /> if one exists, or a new <see cref="T:Task{TResult}" /> object that represents the result.</returns>
+        <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task`1" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
+        <returns>The <see cref="T:System.Threading.Tasks.Task`1" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask`1" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task`1" /> object that represents the result.</returns>
         <remarks>
         </remarks>
       </Docs>
@@ -207,7 +207,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current object.</param>
-        <summary>Determines whether the specified <see cref="T:ValueTask{TResult}" /> object is equal to the current <see cref="T:ValueTask{TResult}" /> object.</summary>
+        <summary>Determines whether the specified <see cref="T:System.Threading.Tasks.ValueTask`1" /> object is equal to the current <see cref="T:System.Threading.Tasks.ValueTask`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -369,7 +369,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <param name="right">The second value to compare.</param>
         <summary>Compares two values for equality.</summary>
         <returns>
-          <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
         </remarks>
       </Docs>
@@ -395,9 +395,9 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="left">The first value to compare.</param>
         <param name="right">The seconed value to compare.</param>
-        <summary>Determines whether two <see cref="T:ValueTask{TResult}" /> values are unequal.</summary>
+        <summary>Determines whether two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are unequal.</summary>
         <returns>
-          <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are not equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
         </remarks>
       </Docs>

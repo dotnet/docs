@@ -41,12 +41,9 @@ ms.workload:
  Describes security considerations for [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Express.  
   
 ## Related Sections  
- [Security and Protection (Database Engine)](http://msdn2.microsoft.com/library/bb510589\(SQL.100\).aspx.)  
- [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online security topics.  
-  
- [Security Considerations for SQL Server](http://go.microsoft.com/fwlink/?LinkId=98587)  
- [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online security topics.  
-  
+[Security Center for SQL Server Database Engine and Azure SQL Database](https://docs.microsoft.com/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)  
+Describes security considerations for SQL Server and Azure SQL Database.
+
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  

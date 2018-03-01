@@ -57,7 +57,7 @@ SQL Server 2008 introduces new data types for handling date and time information
  For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](http://go.microsoft.com/fwlink/?LinkID=98361) in SQL Server 2008 Books Online.  
   
 ## Date/Time Data Types and Parameters  
- You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by using one of the <xref:System.Data.SqlDbType> enumerations. The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
+ The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
   
 -   `SqlDbType.Date`  
   
@@ -66,7 +66,12 @@ SQL Server 2008 introduces new data types for handling date and time information
 -   `SqlDbType.DateTime2`  
   
 -   `SqlDbType.DateTimeOffSet`  
-  
+
+You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by using one of the preceding <xref:System.Data.SqlDbType> enumerations. 
+
+> [!NOTE]
+> You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.
+
  You can also specify the type of a <xref:System.Data.SqlClient.SqlParameter> generically by setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> property of a `SqlParameter` object to a particular <xref:System.Data.DbType> enumeration value. The following enumeration values have been added to <xref:System.Data.DbType> to support the `datetime2` and `datetimeoffset` data types:  
   
 -   DbType.DateTime2  

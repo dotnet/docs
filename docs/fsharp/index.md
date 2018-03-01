@@ -55,7 +55,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 ## Additional guides
 
-[F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) is a comprehensive and very detailed book on learning F#. Its contents and author are beloved by the F# community, so check it out!
+[F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) is a comprehensive and very detailed book on learning F#. Its contents and author are beloved by the F# community.
 
 [F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wonderful wikibook on learning F#. It is also a product of the F# community.
 
@@ -71,9 +71,9 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 The [F# Snippets Website](http://www.fssnip.net) contains a massive set of code snippets showing how to do just about anything in F#, ranging from absolute beginner to highly advanced snippets.
 
-The [F# Software Foundation Slack]()
+The [F# Software Foundation Slack](http://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
 
-* [F# Software Foundation](http://fsharp.org)
+* [The F# Software Foundation](http://fsharp.org) has a mission to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers. It's free to join, so we recommend it.
 
 ## The F# Software Foundation
 

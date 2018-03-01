@@ -65,20 +65,20 @@ Third, the compiler can perform static analysis that enables local functions to
 definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
-bool M()
+int M()
 {
     int y;
-    Local();
+    LocalFunction();
     return y;
 
-    void Local() => y = 0;
+    void LocalFunction() => y = 0;
 }
 ```
 
-The compiler can determine that `Local` definitely assigns `y` when called. Because `Local` is called before the `return` statement, `y` is definitiely
+The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitiely
 assigned at the `return` statement.
 
-The analysis that enables that analysis enables the fourth difference.
+The analysis that enables the example analysis enables the fourth difference.
 Depending on their use, local functions can avoid heap allocations that
 are always necessary for lambda expressions. If a local function is never
 converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 

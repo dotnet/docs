@@ -7,6 +7,5 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource%2CSystem.Diagnostics.Tracing.EventLevel)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0105</li></ul>|
+|Affected APIs|<ul><li><xref:System.Diagnostics.Tracing.EventListener.EnableEvents(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventLevel)?displayProperty=nameWithType></li></ul>|
 

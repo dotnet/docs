@@ -479,14 +479,14 @@
       </Parameters>
       <Docs>
         <param name="data">Optional initialization information.</param>
-        <summary>Instructs the current channel to start listening for requests.</summary>
+        <summary>Instructs the current channel to start listening on a channel after the <see cref="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening(System.Object)" /> method has been called to stop listening on the channel.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is not necessary to call this method to begin listening on a newly initialized channel.  
+ The <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> constructor automatically calls `StartListening`, so you shouldn't call this method unless <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening%2A> was previously called.  
   
- Use this method to restart listening on a channel after the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening%2A> method has been called to stop listening on the channel.  
+ Calling `StartListening` on an already listening channel may lead to unexpected behaviors and should be avoided.  
   
  If your channel uses a dynamically assigned port number, your port number might change when you restart listening.  
   

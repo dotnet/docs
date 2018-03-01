@@ -18,7 +18,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # ?: Operator (C# Reference)
-The conditional operator (`?:`) returns one of two values depending on the value of a Boolean expression. Following is the syntax for the conditional operator.  
+The conditional operator (`?:`), commonly known as the ternary conditional operator, returns one of two values depending on the value of a Boolean expression. Following is the syntax for the conditional operator.  
   
 ```  
 condition ? first_expression : second_expression;  

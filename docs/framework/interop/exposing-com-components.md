@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Exposing COM Components to the .NET Framework
-This section summarizes the process needed to expose an existing COM component to managed code. For details about writing COM servers that tightly integrate with the .NET Framework, see [Design Considerations for Interoperation](http://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689).  
+This section summarizes the process needed to expose an existing COM component to managed code. For details about writing COM servers that tightly integrate with the .NET Framework, see [Design Considerations for Interoperation](https://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689(v=vs.100)).
   
  Existing COM components are valuable resources in managed code as middle-tier business applications or as isolated functionality. An ideal component has a primary interop assembly and conforms tightly to the programming standards imposed by COM.  
   

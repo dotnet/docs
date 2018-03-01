@@ -179,7 +179,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Microsoft Azure Cosmos DB Emulator images on DockerHub](https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator) 
 
-* [Use the Azure Cosmos DB Emulator for local development and testing](/azure/cosmos-db/local-emulator.md#developing-with-the-emulator)
+* [Use the Azure Cosmos DB Emulator for local development and testing](/azure/cosmos-db/local-emulator#developing-with-the-emulator)
 
 ## Exploring the rich Docker development ecosystem
 
@@ -188,10 +188,10 @@ Now that you have learned about the Docker platform and different Docker images,
 * [Using .NET and Docker together](https://blogs.msdn.microsoft.com/dotnet/2017/05/25/using-net-and-docker-together/)
 * [Designing and Developing Multi-Container and Microservice-Based .NET Applications](../../standard/microservices-architecture/multi-container-microservice-net-applications/index.md)
 * [Visual Studio Code Docker extension](https://code.visualstudio.com/docs/languages/dockerfile)
-* [Learn how to use Azure Service Fabric](/azure/service-fabric/index.md)
+* [Learn how to use Azure Service Fabric](/azure/service-fabric/index)
 * [Service Fabric Getting Started Sample](https://azure.microsoft.com/resources/samples/service-fabric-dotnet-getting-started/)
-* [Benefits of Windows Containers](/virtualization/windowscontainers/about/index.md#video-overview)
-* [Working with Visual Studio Docker Tools](/aspnet/core/publishing/visual-studio-tools-for-docker/index.md)
+* [Benefits of Windows Containers](/virtualization/windowscontainers/about/index#video-overview)
+* [Working with Visual Studio Docker Tools](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)
 * [Debugging with Visual Studio Code](https://code.visualstudio.com/docs/nodejs/debugging-recipes#_nodejs-typescript-docker-container)
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)

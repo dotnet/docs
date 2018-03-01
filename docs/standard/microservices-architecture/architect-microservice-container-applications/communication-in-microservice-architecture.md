@@ -42,7 +42,7 @@ The second axis is defining if the communication has a single receiver or multip
 
 A microservice-based application will often use a combination of these communication styles. The most common type is single-receiver communication with a synchronous protocol like HTTP/HTTPS when invoking a regular Web API HTTP service. Microservices also typically use messaging protocols for asynchronous communication between microservices.
 
-These axes are good to know so you have clarity on the possible communication mechanisms, but they are not the important concerns when building microservices. The asynchronous nature of client thread execution not even the asynchronous nature of the selected protocol are the important points when integrating microservices. What *is* important is being able to integrate your microservices asynchronously while maintaining the independence of microservices, as explained in the following section.
+These axes are good to know so you have clarity on the possible communication mechanisms, but they are not the important concerns when building microservices. Neither the asynchronous nature of client thread execution nor the asynchronous nature of the selected protocol are the important points when integrating microservices. What *is* important is being able to integrate your microservices asynchronously while maintaining the independence of microservices, as explained in the following section.
 
 ## Asynchronous microservice integration enforces microservice’s autonomy
 

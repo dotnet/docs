@@ -52,7 +52,7 @@ A method that performs a single asynchronous task and returns the result is call
 
 Several primitives for asynchronous I/O operations are included in the [`Microsoft.FSharp.Control.CommonExtensions`](https://msdn.microsoft.com/library/2edb67cb-6814-4a30-849f-b6dbdd042396) module. These extension methods of the `System.IO.Stream` class are [`Stream.AsyncRead`](https://msdn.microsoft.com/library/85698aaa-bdda-47e6-abed-3730f59fda5e) and [`Stream.AsyncWrite`](https://msdn.microsoft.com/library/1b0a2751-e42a-47e1-bd27-020224adc618).
 
-Additional asynchronous primitives are available in the [F# PowerTools](http://fsprojects.github.io/VisualFSharpPowerTools/). You can also write your own asynchronous primitives by defining a function whose complete body is enclosed in an async block.
+Additional asynchronous primitives are available in the [F# PowerTools](https://fsprojects.github.io/VisualFSharpPowerTools/). You can also write your own asynchronous primitives by defining a function whose complete body is enclosed in an async block.
 
 To use asynchronous methods in the .NET Framework that are designed for other asynchronous models with the F# asynchronous programming model, you create a function that returns an F# `Async` object. The F# library has functions that make this easy to do.
 

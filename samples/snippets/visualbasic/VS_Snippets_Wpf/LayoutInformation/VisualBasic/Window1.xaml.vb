@@ -19,7 +19,6 @@ Namespace SDKSample
             '<Snippet3>
             Dim myRectangleGeometry As New RectangleGeometry
             myRectangleGeometry.Rect = LayoutInformation.GetLayoutSlot(txt1)
-            Dim myGeometryDrawing As New GeometryDrawing
             Dim myPath As New Path
             myPath.Data = myRectangleGeometry
             '</Snippet3>

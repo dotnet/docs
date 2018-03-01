@@ -78,10 +78,10 @@ A reference return value is defined by using the `ref` keyword:
    ```csharp
    public ref decimal GetCurrentValue()
    ``` 
-- Before each `return` statement in the method. For example:
+- Between the `return` token and the variable returned in a `return` statement in the method. For example:
  
    ```csharp
-   ref return Decimal.Zero;
+   return ref DecimalArray[0];
    ``` 
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals). 
@@ -90,7 +90,7 @@ For an example, see [A ref returns and ref locals example](#a-ref-returns-and-re
 
 ## Ref locals
 
-A ref local variable is used to refer to values returned using `ref return`.  A ref local variable must be initialized and assigned to a ref return value. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
+A ref local variable is used to refer to values returned using `return ref`.  A ref local variable must be initialized and assigned to a ref return value. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
 
 You define a ref local by using the `ref` keyword before the variable declaration, as well as immediately before the call to the method that returns the value by reference. 
 

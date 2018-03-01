@@ -9,8 +9,8 @@ Module Program
     Private Sub CallExplicitlyNamed()
         ' <Snippet1>
         Dim state = "MI"
-	    Dim stateName = "Michigan"
-	    Dim capital = "Lansing"
+        Dim stateName = "Michigan"
+        Dim capital = "Lansing"
         Dim stateInfo = ( state:=state, stateName:=stateName, capital:=capital )
         Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.State}, Capital {stateInfo.capital}")   
         ' The example displays the following output:
@@ -21,8 +21,8 @@ Module Program
     Private Sub CallImplicitlyNamed()
         ' <Snippet2>
         Dim state = "MI"
-	    Dim stateName = "Michigan"
-	    Dim capital = "Lansing"
+        Dim stateName = "Michigan"
+        Dim capital = "Lansing"
         Dim stateInfo = ( state, stateName, capital )
         Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.State}, Capital {stateInfo.capital}")   
         ' The example displays the following output:

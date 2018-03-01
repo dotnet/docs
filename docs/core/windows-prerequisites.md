@@ -14,7 +14,7 @@ ms.workload:
 This article shows the dependencies needed to develop .NET Core applications on Windows. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on Windows:
 
 * [Command line](tutorials/using-with-xplat-cli.md)
-* [Visual Studio 2017](https://www.visualstudio.com/downloads/)
+* [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## .NET Core supported Windows versions
@@ -50,7 +50,7 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK.  [Visual Studio 2017](#visual-studio-2017) provides an integrated development environment for .NET Core apps on Windows.
 
-You can read more about the changes in Visual Studio 2017 in the [release notes](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
 # [.NET Core 2.x](#tab/netcore2x)
 
 To develop .NET Core 2.x apps in Visual Studio 2017:

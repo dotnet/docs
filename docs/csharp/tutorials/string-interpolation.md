@@ -14,7 +14,7 @@ ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
 
 # String Interpolation in C# #
 
-String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with `System.String.Format`. This works okay, but since it uses numbered placeholders, it can be harder to read and more verbose.
+String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with <xref:System.String.Format%2A?displayProperty=nameWithType>. This works okay, but since it uses numbered placeholders, it can be harder to read and more verbose.
 
 Other programming languages have had string interpolation built into the language for a while. For instance, in PHP:
 
@@ -45,7 +45,7 @@ application. To use the command line generator, create a directory for your proj
 dotnet new console
 ```
 
-This command will create a barebones .NET core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+This command creates a barebones .NET Core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
@@ -55,7 +55,7 @@ To execute the program, use `dotnet run`. You should see "Hello, World" output t
 
 ## Intro to String Interpolation
 
-With `System.String.Format`, you specify "placeholders" in a string that are replaced by the parameters following the string. For instance:
+With <xref:System.String.Format%2A?displayProperty=nameWithType>, you specify "placeholders" in a string that are replaced by the arguments following the string. For instance:
 
 [!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
 
@@ -81,7 +81,7 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx).
+Behind the scenes, this string interpolation syntax is translated into `String.Format` by the compiler. So, you can do the [same type of stuff you've done before with `String.Format`](../../standard/base-types/formatting-types.md).
 
 For instance, you can add padding and numeric formatting:
 
@@ -99,7 +99,7 @@ The above would output something like:
 1004       6,227.77
 ```
 
-If a variable name is not found, then a compile time error will be generated.
+If a variable name is not found, then a compile-time error is generated.
 
 For instance:
 
@@ -110,21 +110,19 @@ var adj = "quick";
 Console.WriteLine(localizeMe);
 ```
 
-If you compile this, you'll get errors:
+If you compile this, you get errors:
  
 * `Cannot use local variable 'adj' before it is declared` - the `adj` variable wasn't declared until *after* the interpolated string.
 * `The name 'otheranimal' does not exist in the current context` - a variable called `otheranimal` was never even declared
 
 ## Localization and Internationalization
 
-An interpolated string supports `IFormattable` and `FormattableString`, which can be useful for internationalization.
+An interpolated string supports <xref:System.IFormattable?displayProperty=nameWithType> and <xref:System.FormattableString?displayProperty=nameWithType>, which can be useful for internationalization.
 
-By default, an interpolated string uses the current culture. To use a different culture, you could cast it as `IFormattable`
-
-For instance:
+By default, an interpolated string uses the current culture. To use a different culture, cast an interpolated string as `IFormattable`. For instance:
 
 [!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
 
 ## Conclusion 
 
-In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses of it.
+In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses. For more information, see the [Interpolated Strings](../../csharp//language-reference/keywords/interpolated-strings.md) topic.

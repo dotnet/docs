@@ -15,7 +15,7 @@ public class Example
    }
 }
 // Compilation displays a warning like the following:
-//    Example1.vb(10) : warning BC42104: Variable //names// is used before it 
+//    Example1.cs(10) : warning BC42104: Variable //names// is used before it 
 //    has been assigned a value. A null reference exception could result 
 //    at runtime.
 //    

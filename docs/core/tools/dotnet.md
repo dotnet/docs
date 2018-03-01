@@ -3,7 +3,7 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -195,6 +195,8 @@ Run a framework-dependent app named `myapp.dll`:
 
 ## Environment variables
 
+# [.NET Core 2.x](#tab/netcore2x)
+
 `DOTNET_PACKAGES`
 
 The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
@@ -206,3 +208,23 @@ Specifies the location of the servicing index to use by the shared host when loa
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted); otherwise, set to `false` to opt-in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the defaults is `false`, and the telemetry feature is active.
+
+`DOTNET_MULTILEVEL_LOOKUP`
+
+Specifies whether .NET Core runtime, shared framework or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+`DOTNET_PACKAGES`
+
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+
+`DOTNET_SERVICING`
+
+Specifies the location of the servicing index to use by the shared host when loading the runtime.
+
+`DOTNET_CLI_TELEMETRY_OPTOUT`
+
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted); otherwise, set to `false` to opt-in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the defaults is `false`, and the telemetry feature is active.
+
+---

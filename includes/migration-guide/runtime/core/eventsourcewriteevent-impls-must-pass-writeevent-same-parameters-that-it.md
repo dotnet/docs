@@ -7,5 +7,4 @@
 |Scope|Minor|
 |Version|4.5.1|
 |Type|Runtime|
-|Analyzers|<ul><li>CD0031</li></ul>|
 

@@ -15,7 +15,7 @@ ms.assetid: 63374fa9-8fb8-43ac-bcb9-ef2290d9f851
 # Walkthrough: Accessing a Web Service by Using Type Providers
 
 > [!NOTE]
-This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](https://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 > [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.
@@ -76,7 +76,7 @@ open Microsoft.FSharp.Data.TypeProviders
 <br />
 
 ```fsharp
-type TerraService = WsdlService<" HYPERLINK "http://terraserver-usa.com/TerraService2.asmx?WSDL" http://msrmaps.com/TerraService2.asmx?WSDL">
+type TerraService = WsdlService<" HYPERLINK "https://terraserver-usa.com/TerraService2.asmx?WSDL" https://msrmaps.com/TerraService2.asmx?WSDL">
 ```
 
   A red squiggle appears under this line of code if the service URI is misspelled or if the service itself is down or isn’t performing. If you point to the code, an error message describes the problem. You can find the same information in the **Error List** window or in the **Output Window** after you build.

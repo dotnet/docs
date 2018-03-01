@@ -184,7 +184,7 @@ Now that you've learned the basics of Table storage, follow these links
 to learn about more complex storage tasks:
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
-- [Azure Storage Type Provider](http://fsprojects.github.io/AzureStorageTypeProvider/)
-- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
+- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/b/windowsazurestorage/)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/documentation/samples/storage-table-dotnet-getting-started/)

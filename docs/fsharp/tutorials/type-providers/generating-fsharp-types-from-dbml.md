@@ -15,7 +15,7 @@ ms.assetid: 6fbb6ccc-248f-4226-95e9-f6f99541dbe4
 # Walkthrough: Generating F# Types from a DBML File
 
 > [!NOTE]
-This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](https://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 > [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.

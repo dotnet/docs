@@ -44,7 +44,7 @@ ms.workload:
 [Security Center for SQL Server Database Engine and Azure SQL Database](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)  
 Describes security considerations for SQL Server and Azure SQL Database.
 
-[Security Considerations for a SQL Server Installation](/sql/sql-server/install/security-considerations-for-a-sql-server-installation)
+[Security Considerations for a SQL Server Installation](/sql/sql-server/install/security-considerations-for-a-sql-server-installation)  
 Describes security concerns to consider before installing SQL Server.
 
 ## See Also  

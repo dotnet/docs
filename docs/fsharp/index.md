@@ -1,7 +1,6 @@
 ---
 title: F# Guide
 description: Learn F#, a functional programming language that runs on .NET.
-keywords: F#, .NET, .NET Core
 author: jackfoxy
 ms.author: phcart
 ms.date: 02/28/2018
@@ -33,19 +32,19 @@ let main args =
     0 // 0 return code
 ```
 
-F# is about productivity at its heart. The tooling support for F# is ubiquitous and full of advanced features. See below to learn more.
+F# is about productivity at its heart. The tooling support for F# is ubiquitous and full of advanced features.
 
 ## Learning F# #
 
-[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. Go here if you're interested in language concepts.
+[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. Go here if you're interested in getting an overview of the language.
 
-[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want a the full Visual Studio IDE experience.
+[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE experience.
 
-[Get started with F# in Visual Studio for Mac](get-started/get-started-visual-studio-for-mac.md) if you're on macOS.
+[Get started with F# in Visual Studio for Mac](get-started/get-started-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
 
-[Get Started with F# in Visual Studio Code](get-started/get-started-vscode.md) if you want a lightweight and feature-packed IDE experience.
+[Get Started with F# in Visual Studio Code](get-started/get-started-vscode.md) if you want a lightweight, cross-platform, and feature-packed IDE experience.
 
-[Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you just want a great set of command line tools.
+[Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you just want a great set of command-line tools.
 
 ## References
 
@@ -57,7 +56,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) is a comprehensive and very detailed book on learning F#. Its contents and author are beloved by the F# community.
 
-[F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wonderful wikibook on learning F#. It is also a product of the F# community.
+[F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wikibook about learning F#. It is also a product of the F# community.
 
 ## Learn F# by video
 
@@ -72,8 +71,6 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 The [F# Snippets Website](http://www.fssnip.net) contains a massive set of code snippets showing how to do just about anything in F#, ranging from absolute beginner to highly advanced snippets.
 
 The [F# Software Foundation Slack](http://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
-
-* [The F# Software Foundation](http://fsharp.org) has a mission to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers. It's free to join, so we recommend it.
 
 ## The F# Software Foundation
 

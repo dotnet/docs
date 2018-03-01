@@ -1,6 +1,6 @@
 ---
 title: F# Guide
-description: Learn F#, a functional programming language that runs on .NET.
+description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
 author: jackfoxy
 ms.author: phcart
 ms.date: 02/28/2018
@@ -36,7 +36,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 ## Learning F# #
 
-[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. Go here if you're interested in getting an overview of the language.
+[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. This is recommended if you are new to F# and want to get a feel for how the language works.
 
 [Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE experience.
 
@@ -58,13 +58,13 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wikibook about learning F#. It is also a product of the F# community.
 
-## Learn F# by video
+## Learn F# through videos
 
 [F# tutorial on YouTube](https://www.youtube.com/watch?v=c7eNDJN758U) is a great introduction to F# using Visual Studio, showing lots of great examples over the course of 1.5 hours.
 
-[Introduction to Programming with F#](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) is a great video series which uses Visual Studio Code as the main editor. The video series starts from nothing and ends with building a text-based RPG video game.
+[Introduction to Programming with F#](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) is a great video series that uses Visual Studio Code as the main editor. The video series starts from nothing and ends with building a text-based RPG video game.
 
-[What's New in Visual Studio 2017 for F# For Developers](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers) is a video course which shows some of the newer features for F# in Visual Studio 2017.
+[What's New in Visual Studio 2017 for F# For Developers](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers) is a video course that shows some of the newer features for F# in Visual Studio 2017.
 
 ## Other useful resources
 
@@ -78,4 +78,4 @@ Although Microsoft is the primary developer of the F# language and its tools in 
 
 The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
 
-To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's 100% free to join, and the network of F# developers in the foundation is something you won't want to miss out on!
+To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's 100% free to join, and the network of F# developers in the foundation is something you don't want to miss out on!

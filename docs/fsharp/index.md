@@ -40,7 +40,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE experience.
 
-[Get started with F# in Visual Studio for Mac](get-started/get-started-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
+[Get started with F# in Visual Studio for Mac](get-started/get-started-with-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
 
 [Get Started with F# in Visual Studio Code](get-started/get-started-vscode.md) if you want a lightweight, cross-platform, and feature-packed IDE experience.
 

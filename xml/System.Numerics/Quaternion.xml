@@ -238,11 +238,18 @@ w = cos(theta/2)
         <Parameter Name="angle" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="axis">The vector to rotate around.</param>
+        <param name="axis">The unit vector to rotate around.</param>
         <param name="angle">The angle, in radians, to rotate around the vector.</param>
-        <summary>Creates a quaternion from a vector and an angle to rotate about the vector.</summary>
+        <summary>Creates a quaternion from a unit vector and an angle to rotate around the vector.</summary>
         <returns>The newly created quaternion.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `axis` vector must be normalized before calling this method or the resulting <xref:System.Numerics.Quaternion> will be incorrect.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromRotationMatrix">

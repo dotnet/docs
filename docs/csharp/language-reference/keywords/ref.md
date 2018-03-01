@@ -39,7 +39,7 @@ To use a `ref` parameter, both the method definition and the calling method must
 
 An argument that is passed to a `ref` parameter must be initialized before it is passed. This differs from [out](out.md) parameters, whose arguments do not have to be explicitly initialized before they are passed.
 
-Members of a class can't have signatures that differ only by `ref` and `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out` parameter. The following code, for example, doesn't compile.  
+Members of a class can't have signatures that differ only by `ref` and `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out` parameter. The following code, for example, doesn't compile.  
   
  [!code-csharp[csrefKeywordsMethodParams#2](../../../../samples/snippets/csharp/language-reference/keywords/ref/ref-2.cs)]
   
@@ -53,7 +53,7 @@ Members of a class can't have signatures that differ only by `ref` and `out`. A 
   
  For information about how to pass arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
   
- You can't use the `ref` and `out` keywords for the following kinds of methods:  
+ You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
 -   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
   

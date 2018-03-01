@@ -23,7 +23,7 @@ The `out` keyword causes arguments to be passed by reference. It is like the [re
   
  Variables passed as `out` arguments do not have to be initialized before being passed in a method call. However, the called method is required to assign a value before the method returns.  
   
- Although the `ref` and `out` keywords cause different run-time behavior, they are not considered part of the method signature at compile time. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` argument and the other takes an `out` argument. The following code, for example, will not compile:  
+ Although the `in`, `ref` and `out` keywords cause different run-time behavior, they are not considered part of the method signature at compile time. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
 class CS0663_Example
@@ -35,7 +35,7 @@ class CS0663_Example
 }
 ```
   
-Overloading is legal, however, if one method takes a `ref` or `out` argument and the other uses neither, like this:  
+Overloading is legal, however, if one method takes a `ref`, or `out` argument and the other uses neither, like this:  
   
  [!code-csharp[csrefKeywordsMethodParams#3](../../../../samples/snippets/csharp/language-reference/keywords/out/out-3.cs)]  
   
@@ -43,7 +43,7 @@ Overloading is legal, however, if one method takes a `ref` or `out` argument and
   
  For information about passing arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
   
- You can't use the `ref` and `out` keywords for the following kinds of methods:  
+ You can't use the `in`, `ref` and `out` keywords for the following kinds of methods:  
   
 -   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
   

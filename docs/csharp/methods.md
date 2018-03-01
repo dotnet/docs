@@ -113,7 +113,7 @@ The following example defines a class (which is a reference type) named `SampleR
 <a name="byref"></a>
 ### Passing parameters by reference ###
 
-You pass a parameter by reference when you want to change the value of an argument in a method and want to refect that change when control returns to the calling method. To pass a parameter by reference, you use the `ref` or `out` keyword.
+You pass a parameter by reference when you want to change the value of an argument in a method and want to refect that change when control returns to the calling method. To pass a parameter by reference, you use the `in`, `ref` or `out` keyword.
 
 The following example is identical to the previous one, except the value is passed by reference to the `ModifyValue` method. When the value of the parameter is modified in the `ModifyValue` method, the change in value is reflected when control returns to the caller.
 
@@ -264,7 +264,7 @@ In the following example, `DelayAsync` is an async method that has a return stat
 
 [!code-csharp[csSnippets.Methods#102](../../samples/snippets/csharp/concepts/methods/async1.cs#102)]
 
-An async method can't declare any [ref](language-reference/keywords/ref.md) or [out](language-reference/keywords/out.md) parameters, but it can call methods that have such parameters.
+An async method can't declare any [in](language-reference/keywords/in.md), [ref](language-reference/keywords/ref.md) or [out](language-reference/keywords/out.md) parameters, but it can call methods that have such parameters.
 
  For more information about async methods, see [Asynchronous Programming with Async and Await](async.md), [Control Flow in Async Programs](programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](programming-guide/concepts/async/async-return-types.md).
 
@@ -302,4 +302,5 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 [params](language-reference/keywords/params.md)   
 [out](language-reference/keywords/out.md)   
 [ref](language-reference/keywords/ref.md)   
+[in](language-reference/keywords/in.md)   
 [Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)

@@ -1,6 +1,6 @@
 ---
 title: "WPF community feedback"
-ms.date: "02/28/2018"
+ms.date: "03/01/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
@@ -40,7 +40,7 @@ Another option for you to ask questions to the community about WPF is [Stack Ove
 
 Using the following best practices help to address issues posted to the WPF forum in the quickest possible time. These practices are applicable to all forums.
 
-#### Search Existing Posts
+#### Search existing posts
 
 Some issues occur widely enough that others have faced them before you. Consequently, you can solve your problem quickly, or you can add your input to an existing discussion.
 

@@ -1,0 +1,1 @@
+For matrix transformations, the <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> instances are represented as rows: a vector *v* is transformed by a matrix *M* with *vM* multiplication.

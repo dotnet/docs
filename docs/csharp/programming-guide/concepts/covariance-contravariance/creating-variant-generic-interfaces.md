@@ -23,7 +23,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
  You can declare variant generic interfaces by using the `in` and `out` keywords for generic type parameters.  
   
 > [!IMPORTANT]
->  `ref` and `out` parameters in C# cannot be variant. Value types also do not support variance.  
+>  `ref`, `in`, and `out` parameters in C# cannot be variant. Value types also do not support variance.  
   
  You can declare a generic type parameter covariant by using the `out` keyword. The covariant type must satisfy the following conditions:  
   

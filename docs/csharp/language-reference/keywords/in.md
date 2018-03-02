@@ -16,13 +16,15 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # in (C# Reference)
-The `in` contextual keyword is used in three contexts:  
+The `in` contextual keyword is used in four contexts:  
   
 -   [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statements  
   
 -   [join clauses](../../../csharp/language-reference/keywords/join-clause.md) in query expressions  
   
 -   [generic type parameters](../../../csharp/language-reference/keywords/in-generic-modifier.md) in generic interfaces and delegates.  
+  
+- As a [parameter modifier](in-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)

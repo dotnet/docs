@@ -1,21 +1,23 @@
 ---
-title: "out parameter modifier (C# Reference)"
-ms.date: 07/20/2015
+title: "in parameter modifier (C# Reference)"
+ms.date: 03/02/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "parameters [C#], out"
-  - "out parameters [C#]"
-ms.assetid: 3fce0dc5-03f4-4faa-bd61-36c41bc6baf1
-caps.latest.revision: 9
+  - "parameters [C#], in"
+  - "in parameters [C#]"
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# out parameter modifier (C# Reference)
-The `out` keyword causes arguments to be passed by reference. It is like the [ref](../../../csharp/language-reference/keywords/ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword. For example:  
+# in parameter modifier (C# Reference)
+The `in` keyword causes arguments to be passed by reference. It is like the [ref](../../../csharp/language-reference/keywords/ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. To use an `in` parameter, both the method definition and the calling method must explicitly use the `in` keyword. For example:  
   
+  TODO:
+
+  <!-- 
+
  [!code-csharp[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/out/out-1.cs)]  
 
 > [!NOTE] 
@@ -70,6 +72,8 @@ Starting with C# 7, you can declare the `out` variable in the argument list of t
 In the previous example, the `number` variable is strongly typed as an `int`. You can also declare an implicitly typed local variable, as the following example does.
 
  [!code-csharp[csrefKeywordsMethodParams#7](../../../../samples/snippets/csharp/language-reference/keywords/out/out-7.cs)]  
+
+  -->
    
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

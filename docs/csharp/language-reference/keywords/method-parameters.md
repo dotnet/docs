@@ -15,17 +15,17 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # Method Parameters (C# Reference)
-If a parameter is declared for a method without [in](../../../csharp/language-reference/keywords/in.md), [ref](../../../csharp/language-reference/keywords/ref.md) or [out](../../../csharp/language-reference/keywords/out.md), the parameter can have a value associated with it. That value can be changed in the method, but the changed value will not be retained when control passes back to the calling procedure. By using a method parameter keyword, you can change this behavior.  
+If a parameter is declared for a method without [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md), [ref](../../../csharp/language-reference/keywords/ref-parameter-modifier.md) or [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md), the parameter can have a value associated with it. That value can be changed in the method, but the changed value will not be retained when control passes back to the calling procedure. By using a method parameter keyword, you can change this behavior.  
   
  This section describes the keywords you can use when declaring method parameters:  
   
 -   [params](../../../csharp/language-reference/keywords/params.md)  
   
--   [in](../../../csharp/language-reference/keywords/in.md)  
+-   [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md)  
   
--   [ref](../../../csharp/language-reference/keywords/ref.md)  
+-   [ref](../../../csharp/language-reference/keywords/ref-parameter-modifier.md)  
   
--   [out](../../../csharp/language-reference/keywords/out.md)  
+-   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md)  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)  

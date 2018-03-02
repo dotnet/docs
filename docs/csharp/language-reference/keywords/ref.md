@@ -37,17 +37,17 @@ To use a `ref` parameter, both the method definition and the calling method must
 
 [!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/ref/ref-1.cs)]
 
-An argument that is passed to a `ref` parameter must be initialized before it is passed. This differs from [out](out.md) parameters, whose arguments do not have to be explicitly initialized before they are passed.
+An argument that is passed to a `ref` parameter must be initialized before it is passed. This differs from [out](out-parameter-modifier.md) parameters, whose arguments do not have to be explicitly initialized before they are passed.
 
-Members of a class can't have signatures that differ only by `ref` and `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out` parameter. The following code, for example, doesn't compile.  
+Members of a class can't have signatures that differ only by `ref`, `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out`, or `in` parameter. The following code, for example, doesn't compile.  
   
  [!code-csharp[csrefKeywordsMethodParams#2](../../../../samples/snippets/csharp/language-reference/keywords/ref/ref-2.cs)]
   
- However, methods can be overloaded when one method has a `ref` or `out` parameter and the other has a value parameter, as shown in the following example.
+ However, methods can be overloaded when one method has a `ref`, `in`, or `out` parameter and the other has a value parameter, as shown in the following example.
   
  [!code-csharp[ref-and-overloads](../../../../samples/snippets/csharp/language-reference/keywords/ref/ref-3.cs)]
   
- In other situations that require signature matching, such as hiding or overriding, `ref` and `out` are part of the signature and don't match each other.  
+ In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, and `out` are part of the signature and don't match each other.  
   
  Properties are not variables. They are methods, and cannot be passed to `ref` parameters.  
   

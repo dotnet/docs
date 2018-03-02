@@ -123,7 +123,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 -   **Building Docker Images for .NET Core Applications**
-    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images)
+    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 -   **Build your own image**. In the official Docker documentation.
     [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)

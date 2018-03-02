@@ -39,7 +39,7 @@ sudo apt-get install mono-complete fsharp
 
 ### [Windows](#tab/windows)
 
-If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
+If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f).  This installs all the necessary components to write, compile, and execute F# code.
 
 ## Installing Visual Studio Code and the Ionide plugin
 

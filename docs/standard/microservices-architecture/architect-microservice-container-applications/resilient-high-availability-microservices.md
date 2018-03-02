@@ -74,7 +74,7 @@ Different orchestrators might sound similar, but the diagnostics and health chec
     [*http://www.splunk.com*](http://www.splunk.com)
 
 -   **EventSource Class**. API for events tracing for Windows (ETW)
-    [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource)
+    [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](xref:System.Diagnostics.Tracing.EventSource)
 
 
 

@@ -27,8 +27,8 @@ namespace HowToStrings
             // Replace one substring with another with String.Replace.
             // Only exact matches are supported.
             var replacement = source.Replace("mountains", "peaks");
-            Console.WriteLine($"The source string is {source}");
-            Console.WriteLine($"The updated string is {replacement}");
+            Console.WriteLine($"The source string is <{source}>");
+            Console.WriteLine($"The updated string is <{replacement}>");
             // </Snippet1>
 
         }
@@ -66,7 +66,7 @@ namespace HowToStrings
             // <Snippet4>
             string source = "Many mountains are behind many clouds today.";
             // Remove a substring from the middle of the string.
-            string toRemove = "many_";
+            string toRemove = "many ";
             string result = string.Empty;
             int i = source.IndexOf(toRemove);
             if (i >= 0)

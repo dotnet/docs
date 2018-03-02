@@ -128,7 +128,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 2. Check the value of the `Release` keyword to determine the installed version. To be forward-compatible, you can check for a value greater than or equal to the values listed in the table. Here are the .NET Framework versions and associated `Release` keywords.
 
-    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+    [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
     |Version|Value of the Release DWORD|
     |-------------|--------------------------------|

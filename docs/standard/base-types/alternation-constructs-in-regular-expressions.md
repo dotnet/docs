@@ -121,18 +121,18 @@ ms.workload:
  [!code-csharp[RegularExpressions.Language.Alternation#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation4.cs#4)]
  [!code-vb[RegularExpressions.Language.Alternation#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation4.vb#4)]  
   
- The regular expression pattern `\b(?<n2>\d{2}-)*(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as shown in the following table.  
+ The regular expression pattern `\b(?<n2>\d{2}-)?(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\b`|Start at a word boundary.|  
-|`(?<n2>\d{2}-)*`|Match zero or one occurrence of two digits followed by a hyphen. Name this capturing group `n2`.|  
+|`(?<n2>\d{2}-)?`|Match zero or one occurrence of two digits followed by a hyphen. Name this capturing group `n2`.|  
 |`(?(n2)`|Test whether `n2` was matched in the input string.|  
 |`)\d{7}`|If `n2` was matched, match seven decimal digits.|  
 |<code>&#124;\d{3}-\d{2}-\d{4}</code>|If `n2` was not matched, match three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits.|  
 |`\b`|Match a word boundary.|  
   
- A variation of this example that uses a numbered group instead of a named group is shown in the following example. Its regular expression pattern is `\b(\d{2}-)*(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b`.  
+ A variation of this example that uses a numbered group instead of a named group is shown in the following example. Its regular expression pattern is `\b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b`.  
   
  [!code-csharp[RegularExpressions.Language.Alternation#5](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation5.cs#5)]
  [!code-vb[RegularExpressions.Language.Alternation#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation5.vb#5)]  

@@ -97,5 +97,5 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 > * On the **Help** menu, choose **About Microsoft Visual Studio**.
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.
 >   * For .NET Core 2.1 Preview 1 apps, Visual Studio 2017 version 15.6 Preview 6 or higher.
->   * For .NET Core 2.x apps, Visual Studio 2017 version 15.3 or higher.
+>   * For .NET Core 2.0 apps, Visual Studio 2017 version 15.3 or higher.
 >   * For .NET Core 1.x apps, Visual Studio 2017 version 15.0 or higher.

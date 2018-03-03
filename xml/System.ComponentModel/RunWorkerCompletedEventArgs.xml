@@ -26,6 +26,8 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ This property is the object provided in the DoWorkEventArgs.Result member of the DoWork event.
+
  If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class provides a *MethodName*`Completed` event. *MethodName* is a placeholder for the first part of the method's name. <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A?displayProperty=nameWithType> is an example of the name of such a method. If you add an instance of the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> parameter of the corresponding event handler.  
   
 > [!NOTE]

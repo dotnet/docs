@@ -13,7 +13,7 @@ ms.author: "wiwagn"
 
 # How to: Modify String Contents (C# Programming Guide)
 
-You can't modify the contents of a string after it has been created. The <xref:System.String?displayProperty=nameWithType> class is *immutable*. The examples in this article show how to create a new string object that represents the result of some change to an existing string.
+You can't easily modify the contents of a string after it has been created. The <xref:System.String?displayProperty=nameWithType> class is *immutable*. The examples in this article show how to create a new string object that represents the result of some change to an existing string.
 
 ## Replace text
 
@@ -31,7 +31,7 @@ The source string is unchanged, and a new string is returned with the replacemen
 
 ## Trim whitespace
 
-You can use the <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType>, and <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> methods removes any leading or trailing whitespace.  The following code shows an example of each. The source string does not change; these methods return a new string with the modified contents.
+You can use the <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType>, and <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> methods to remove any leading or trailing whitespace.  The following code shows an example of each. The source string does not change; these methods return a new string with the modified contents.
 
 [!code-csharp-interactive[trim whitespace](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#3)]  
 
@@ -61,9 +61,12 @@ The following example shows how to replace a set of characters in a string. Firs
 
 ## Unsafe modifications to string
 
-The following example is provided for those rare situations where you want to modify a string in-place by using unsafe code. The example shows how to access the individual characters "in-place" by using the fixed keyword. It also demonstrates one possible side effect of unsafe operations on strings that results from the way that the C# compiler stores (interns) strings internally. In general, you shouldn't use this technique unless it is absolutely necessary.
+Using **unsafe** code, you can modify a string "in place" after it has been created. Unsafe code bypasses many of the features of .NET designed to minimize certain types of bugs in code. 
+The following example is provided for those rare situations where you want to modify a string in-place using unsafe code. The example shows how to access the individual characters "in-place" by using the fixed keyword. It also demonstrates one possible side effect of unsafe operations on strings that results from the way that the C# compiler stores (interns) strings internally. In general, you shouldn't use this technique unless it is absolutely necessary.
   
 [!code-csharp-interactive[unsafe ways to create a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#7)]  
+
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip).
  
 ## See Also  
  [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)   

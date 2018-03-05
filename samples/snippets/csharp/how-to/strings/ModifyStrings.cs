@@ -87,11 +87,11 @@ namespace HowToStrings
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
             string replaceWith = "many ";
-            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", localReplaceMatchCase, 
+            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", LocalReplaceMatchCase, 
                 System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             Console.WriteLine(source);
 
-            string localReplaceMatchCase(System.Text.RegularExpressions.Match matchExpression)
+            string LocalReplaceMatchCase(System.Text.RegularExpressions.Match matchExpression)
             {
                 // Test whether the match is capitalized
                 if (Char.IsUpper(matchExpression.Value[0]))

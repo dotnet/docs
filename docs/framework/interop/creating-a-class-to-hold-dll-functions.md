@@ -30,7 +30,7 @@ Wrapping a frequently used DLL function in a managed class is an effective appro
   
  Within a class, you define a static method for each DLL function you want to call. The definition can include additional information, such as the character set or the calling convention used in passing method arguments; by omitting this information, you select the default settings. For a complete list of declaration options and their default settings, see [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md).  
   
- Once wrapped, you can call methods on the function as you call methods on any other static function. Platform invoke handles the underlying exported function automatically.  
+ Once wrapped, you can call the methods on the class as you call static methods on any other class. Platform invoke handles the underlying exported function automatically.  
   
  When designing a managed class for platform invoke, consider the relationships between classes and DLL functions. For example, you can:  
   

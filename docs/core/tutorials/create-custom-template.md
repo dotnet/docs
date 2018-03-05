@@ -99,7 +99,7 @@ The template is finished. At this point, you have two options for template distr
    </package>
    ```
 
-1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder that holds the NuGet assets is at *C:\Users\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp\*. But wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
+1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder that holds the NuGet assets is at *C:\Users\\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp\*. But wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
 
    ```console
    nuget pack C:\Users\<USER>\Documents\NuGetTemplates\GarciaSoftware.ConsoleTemplate.CSharp\GarciaSoftware.ConsoleTemplate.CSharp.nuspec
@@ -191,7 +191,7 @@ dotnet new -i C:\Users\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate
 
 After the template is installed from the file system, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory). For more information, see [`dotnet new` Options](~/docs/core/tools/dotnet-new.md#options). Supply the template's short name directly to the `dotnet new` command.
 
-From a new project folder created at *C:\Users\\<USER>\Documents\Projects\MyConsoleApp*, create a project from the `garciaconsole` template:
+From a new project folder created at *C:\Users\\\<USER>\Documents\Projects\MyConsoleApp*, create a project from the `garciaconsole` template:
 
 ```console
 dotnet new garciaconsole
@@ -199,14 +199,14 @@ dotnet new garciaconsole
 
 ### Uninstall the template
 
-If you created the template on your local file system at *C:\Users\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp*, uninstall it with the `-u|--uninstall` switch and the path to the template folder:
+If you created the template on your local file system at *C:\Users\\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp*, uninstall it with the `-u|--uninstall` switch and the path to the template folder:
 
 ```console
 dotnet new -u C:\Users\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp
 ```
 
 > [!NOTE]
-> To uninstall the template from your local file system, you need to fully qualify the path. For example, *C:\Users\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
+> To uninstall the template from your local file system, you need to fully qualify the path. For example, *C:\Users\\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
 > Additionally, do not include a final terminating directory slash on your template path.
 
 ## See also

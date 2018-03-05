@@ -388,7 +388,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\d{2}`|Match two decimal digits.|  
-|`{?<=\b20)`|Continue the match if the two decimal digits are preceded by the decimal digits "20" on a word boundary.|  
+|`(?<=\b20)`|Continue the match if the two decimal digits are preceded by the decimal digits "20" on a word boundary.|  
 |`\b`|End the match at a word boundary.|  
   
  Zero-width positive lookbehind assertions are also used to limit backtracking when the last character or characters in a captured group must be a subset of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character be alphabetical.  

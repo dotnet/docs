@@ -34,8 +34,9 @@ The following example illustrates how to use the `if...then...else` expression.
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4501.fs)]
 
 ```
-John
-910 is less than 20
+10 is less than 20
+What is your name? John
+How old are you? 9
 You are only 9 years old and already learning F#? Wow!
 ```
 

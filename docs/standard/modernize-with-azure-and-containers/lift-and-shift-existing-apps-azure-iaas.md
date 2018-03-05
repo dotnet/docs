@@ -4,6 +4,7 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
@@ -22,7 +23,7 @@ Figure 2-1 positions Cloud Infrastructure-Ready applications in the modernizatio
 
 > **Figure 2-1.** Positioning Cloud Infrastructure-Ready applications
 
-## Why migrate existing .NET web applications to Azure IaaS 
+## Why migrate existing .NET web applications to Azure IaaS
 
 The main reason to migrate to the cloud, even at an initial IaaS level, is to achieve cost reductions. By using more managed infrastructure services, your organization can lower its investment in hardware maintenance, server or VM provisioning and deployment, and infrastructure management.
 
@@ -34,7 +35,7 @@ It also has become evident that applications are easier to modernize and re-arch
 
 ## When to migrate to IaaS instead of to PaaS
 
-In the next sections, we discuss Cloud DevOps-Ready applications that are mostly based on PaaS platforms and services. These apps give you the most benefits from migrating to the cloud.
+The next sections discuss Cloud DevOps-Ready applications that are mostly based on PaaS platforms and services. These apps give you the most benefits from migrating to the cloud.
 
 If your goal is simply to move existing applications to the cloud, first, identify existing applications that will require substantial modification to run in Azure App Service. These apps should be the first candidates.
 
@@ -48,15 +49,15 @@ Migrating to the cloud doesn't have to be difficult. But many organizations stru
 
 [Azure Migrate](https://aka.ms/azuremigrate) is a new service that provides the guidance, insights, and mechanisms needed to assist you in migrating to Azure. Azure Migrate provides:
 
--   Discovery and assessment for on-premises virtual machines
+- Discovery and assessment for on-premises virtual machines
 
--   Inbuilt dependency mapping for high-confidence discovery of multi-tier applications
+- Inbuilt dependency mapping for high-confidence discovery of multi-tier applications
 
--   Intelligent rightsizing to Azure virtual machines
+- Intelligent rightsizing to Azure virtual machines
 
--   Compatibility reporting with guidelines for remediating potential issues
+- Compatibility reporting with guidelines for remediating potential issues
 
--   Integration with Azure Database Management Service for database discovery and migration
+- Integration with Azure Database Management Service for database discovery and migration
 
 Azure Migrate gives you confidence that your workloads can migrate with minimal impact to the business and run as expected in Azure. With the right tools and guidance, you can achieve maximum return on investment while assuring that critical performance and reliability needs are met.
 
@@ -80,23 +81,23 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 ### Additional resources
 
--   **Azure Migrate Datasheet**
+- **Azure Migrate Datasheet**
 
     [https://aka.ms/azuremigration\_datasheet](https://aka.ms/azuremigration\_datasheet)
 
--   **Azure Migrate**
+- **Azure Migrate**
 
     [http://azuremigrationcenter.com/](http://azuremigrationcenter.com/)
 
--   **Migrate to Azure with Site Recovery**
+- **Migrate to Azure with Site Recovery**
 
     [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure)
 
--   **Azure Site Recovery service overview**
+- **Azure Site Recovery service overview**
 
     [https://docs.microsoft.com/azure/site-recovery/site-recovery-overview](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
--   **Migrating VMs in AWS to Azure VMs**
+- **Migrating VMs in AWS to Azure VMs**
 
     [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 

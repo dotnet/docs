@@ -4,6 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
@@ -12,7 +13,7 @@ ms.workload:
 
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications, cloud-native applications, and Cloud DevOps-Ready applications.
 
-In this guide, and in the following sections, we focus on using Windows Containers for *Cloud DevOps-Ready* applications, when you lift and shift existing .NET applications.
+The focus in this guide and in the following sections is on using Windows Containers for *Cloud DevOps-Ready* applications, when you lift and shift existing .NET applications.
 
 ## What are containers? (Linux or Windows)
 
@@ -36,7 +37,7 @@ In Windows Containers, the process of packaging applications is fully automated.
 
 A large number of organizations are containerizing existing monolithic applications for the following reasons:
 
--   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can simply say, "It runs as a container, so it'll run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
+-   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can simply say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
 
 -   **Cost reductions**. Containers lead to lower costs, either by the consolidation and removal of existing hardware, or from running applications at a higher density per unit of hardware.
 

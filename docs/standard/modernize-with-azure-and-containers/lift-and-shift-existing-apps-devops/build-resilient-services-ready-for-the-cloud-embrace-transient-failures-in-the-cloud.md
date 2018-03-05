@@ -4,11 +4,12 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
 ---
-# Build resilient services ready for the cloud: Embrace transient failures in the cloud 
+# Build resilient services ready for the cloud: Embrace transient failures in the cloud
 
 Resiliency is the ability to recover from failures and continue to function. Resiliency is not about avoiding failures, but accepting the fact that failures will occur, and then responding to them in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure.
 

@@ -4,11 +4,13 @@ description: Modernize existing .NET applications with Azure Cloud and Windows c
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
 ---
 # Lift and shift existing apps DevOps
+
 > Vision: Lift and shift your existing .NET Framework applications to Cloud DevOps-Ready applications to drastically improve your deployment agility, so you can ship faster and lower app delivery costs.
 
 To take advantage of the benefits of the cloud and new technologies like containers, you should at least partially modernize your existing .NET applications. Ultimately, modernizing your enterprise applications will lower your total cost of ownership.

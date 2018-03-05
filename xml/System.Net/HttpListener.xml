@@ -53,7 +53,7 @@
 > If you create an <xref:System.Net.HttpListener> using https, you must select a Server Certificate for that listener. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection.
   
 > [!NOTE]
-> You can configure Server Certificates and other listener options by using Network Shell (netsh.exe). See [Network Shell (Netsh)](/windows-server/networking/technologies/netsh/netsh) for more details. The executable ships with Windows Server 2016 and Windows 10.
+> You can configure Server Certificates and other listener options by using Network Shell (netsh.exe). See [Network Shell (Netsh)](/windows-server/networking/technologies/netsh/netsh) for more details. The executable began shipping with Windows Server 2016 and Windows 10.
   
 > [!NOTE]
 > If you specify multiple authentication schemes for the <xref:System.Net.HttpListener>, the listener will challenge clients in the following order: `Negotiate`, `NTLM`, `Digest`, and then `Basic`.

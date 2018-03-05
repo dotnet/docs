@@ -4,6 +4,7 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
@@ -30,27 +31,27 @@ An organization that operates in a highly regulated industry, and which needs to
 
 Managed Instance in Azure SQL Database has the following characteristics:
 
--   Security isolation through Azure Virtual Network
+- Security isolation through Azure Virtual Network
 
--   Application surface compatibility, with these features:
+- Application surface compatibility, with these features:
 
-    -   SQL Server Agent and SQL Server Profiler
+  - SQL Server Agent and SQL Server Profiler
 
-    -   Cross-database references and queries, SQL CLR, replication, change data capture (CDC), and Service Broker
+  - Cross-database references and queries, SQL CLR, replication, change data capture (CDC), and Service Broker
 
--   Database sizes up to 35 TB
+- Database sizes up to 35 TB
 
--   Minimum-downtime migration, with these features:
+- Minimum-downtime migration, with these features:
 
-    -   Azure Database Migration Service
+  - Azure Database Migration Service
 
-    -   Native backup and restore, and log shipping
+  - Native backup and restore, and log shipping
 
 With these capabilities, when you migrate existing application databases to Azure SQL Database, the Managed Instance model offers nearly 100% of the benefits of Paas for SQL Server. Managed Instance is a SQL Server environment where you continue using instance-level capabilities without changing your application design.
 
 Managed Instance is probably the best fit for enterprises that currently are using SQL Server, and which require flexibility in their network security in the cloud. It's like having a private virtual network for your SQL databases.
 
-## When to migrate to Azure SQL Database 
+## When to migrate to Azure SQL Database
 
 As mentioned, the standard Azure SQL Database is a fully managed, relational DBaaS. SQL Database currently manages millions of production databases, across 38 datacenters, around the world. It supports a broad range of applications and workloads, from managing straightforward transactional data, to driving the most data-intensive, mission-critical applications that require advanced data processing at a global scale.
 
@@ -60,19 +61,19 @@ Azure SQL Database is the only intelligent cloud database service that's built f
 
 Azure SQL Database offers the following benefits:
 
--   Built-in intelligence (machine learning) that learns and adapts to your app
+- Built-in intelligence (machine learning) that learns and adapts to your app
 
--   On-demand database provisioning
+- On-demand database provisioning
 
--   A range of offers, for all workloads
+- A range of offers, for all workloads
 
--   99.99% availability SLA, zero maintenance
+- 99.99% availability SLA, zero maintenance
 
--   Geo-replication and restore services for data protection
+- Geo-replication and restore services for data protection
 
--   Azure SQL Database Point in Time Restore feature
+- Azure SQL Database Point in Time Restore feature
 
--   Compatibility with SQL Server 2016, including hybrid and migration
+- Compatibility with SQL Server 2016, including hybrid and migration
 
 The standard Azure SQL Database is closer to PaaS than Azure SQL Database Managed Instance. You should try to use it, if possible, because you'll get more benefits from a managed cloud. However, Azure SQL Database has some key differences from regular and on-premises SQL Server instances. Depending on your existing application's database requirements, and your enterprise requirements and policies, it might not be the best choice when you are planning your migration to the cloud.
 
@@ -103,23 +104,23 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 ## Additional resources
 
--   **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
+- **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
 
     [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
 
--   **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
+- **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
 
     [https://channel9.msdn.com/Events/Build/2017/P4008](https://channel9.msdn.com/Events/Build/2017/P4008)
 
--   **SQL Server database migration to SQL Database in the cloud**
+- **SQL Server database migration to SQL Database in the cloud**
 
     [https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate](https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate)
 
--   **Azure SQL Database**
+- **Azure SQL Database**
 
     [https://azure.microsoft.com/services/sql-database/?v=16.50](https://azure.microsoft.com/services/sql-database/?v=16.50)
 
--   **SQL Server on virtual machines**
+- **SQL Server on virtual machines**
 
     [https://azure.microsoft.com/services/virtual-machines/sql-server/](https://azure.microsoft.com/services/virtual-machines/sql-server/)
 

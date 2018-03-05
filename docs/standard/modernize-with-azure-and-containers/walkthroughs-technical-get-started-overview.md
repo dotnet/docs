@@ -4,31 +4,32 @@ description: Modernize Existing .NET Applications With Azure Cloud and Windows C
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
+ms.prod: .net
 ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+- "dotnet"
+- "dotnetcore"
 ---
-# Walkthroughs and technical get started overview 
+# Walkthroughs and technical get started overview
 
-To limit the size of this e-book, we've made additional technical documentation and the full walkthroughs available in a GitHub repo. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
+To limit the size of this e-book, additional technical documentation and the full walkthroughs were made available in a GitHub repository. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
 
-The following sections explain what each walkthrough is about-its objectives, its high-level vision-and provides a diagram of the tasks that are involved. You can get the walkthroughs themselves in the *eShopModernizing* apps GitHub repo wiki at [https://github.com/dotnet-architecture/eShopModernizing/wiki](https://github.com/dotnet-architecture/eShopModernizing/wiki).
+The following sections explain what each walkthrough is about, its objectives and high-level vision, and provides a diagram of the tasks that are involved. You can get the walkthroughs themselves in the *eShopModernizing* apps GitHub repo wiki at [https://github.com/dotnet-architecture/eShopModernizing/wiki](https://github.com/dotnet-architecture/eShopModernizing/wiki).
 
-# Technical walkthrough list
+## Technical walkthrough list
 
 The following get-started walkthroughs provide consistent and comprehensive technical guidance for sample apps that you can lift and shift by using containers, and then move by using multiple deployment choices in Azure.
 
 Each of the following walkthroughs uses the new sample eShopLegacy and eShopModernizing apps, which are available on GitHub at [https://github.com/dotnet-architecture/eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing).
 
--   **Tour of eShop legacy apps**
+- **Tour of eShop legacy apps**
 
--   **Containerize your existing .NET applications with Windows Containers**
+- **Containerize your existing .NET applications with Windows Containers**
 
--   **Deploy your Windows Containers-based app to Azure VMs**
+- **Deploy your Windows Containers-based app to Azure VMs**
 
--   **Deploy your Windows Containers-based apps to Kubernetes in Azure Container Service**
+- **Deploy your Windows Containers-based apps to Kubernetes in Azure Container Service**
 
--   **Deploy your Windows Containers-based apps to Azure Service Fabric**
+- **Deploy your Windows Containers-based apps to Azure Service Fabric**
 
 ## Walkthrough 1: Tour of eShop legacy apps
 
@@ -92,13 +93,13 @@ Use Windows Containers to improve deployment of existing .NET applications, like
 
 The goal of this walkthrough is to show you several options for containerizing an existing .NET Framework application. You can:
 
--   Containerize your application by using [Visual Studio 2017 Tools for Docker](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker) (Visual Studio 2017 or later versions).
+- Containerize your application by using [Visual Studio 2017 Tools for Docker](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker) (Visual Studio 2017 or later versions).
 
--   Containerize your application by manually adding a [Dockerfile](https://docs.docker.com/engine/reference/builder/), and then using the [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/).
+- Containerize your application by manually adding a [Dockerfile](https://docs.docker.com/engine/reference/builder/), and then using the [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/).
 
--   Containerize your application by using the [Img2Docker](https://github.com/docker/communitytools-image2docker-win) tool (an open-source tool from Docker).
+- Containerize your application by using the [Img2Docker](https://github.com/docker/communitytools-image2docker-win) tool (an open-source tool from Docker).
 
-This walkthrough focuses on the Visual Studio 2017 Tools for Docker approach, but the other two approaches are fairly similar in regards to using Dockerfiles.
+This walkthrough focuses on the Visual Studio 2017 Tools for Docker approach, but the other two approaches are fairly similar in regard to using Dockerfiles.
 
 ### Scenario
 
@@ -133,7 +134,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-Deploying to a Docker host on a Windows Server 2016 VM in Azure lets you quickly set up dev/test/staging environments. It also gives you a common place for testers or business users to validate the app. VMs also can be valid IaaS production environments.
+Deploying to a Docker host on a Windows Server 2016 Virtual Machine (VM) in Azure lets you quickly set up development/test/staging environments. It also gives you a common place for testers or business users to validate the app. VMs also can be valid Infrastucture as a Service (IaaS) production environments.
 
 ### Goals
 
@@ -163,13 +164,13 @@ Several scenarios are covered in this walkthrough.
 
 ### Azure VMs for Windows Containers
 
-Azure VMs for Windows Containers are simply VMs that are based on Windows Server 2016, Windows 10, or later versions, both with Docker Engine set up. In most cases, you will use Windows Server 2016 in the Azure VMs.
+Azure VMs for Windows Containers are VMs based on Windows Server 2016, Windows 10, or later versions, both with Docker Engine set up. In most cases, Windows Server 2016 is used in the Azure VMs.
 
 Azure currently provides a VM named **Windows Server 2016 with Containers**. You can use this VM to try the new Windows Server Container feature, with either Windows Server Core or Windows Nano Server. Container OS images are installed, and then the VM is ready to use with Docker.
 
 ### Benefits
 
-Although Windows Containers can be deployed to on-premises Windows Server 2016 VMs, when you deploy to Azure, you get an easier way to get started, with ready-to-use Windows Server Container VMs. You also get a common online location that’s accessible to testers, and automatic scalability through Azure VM scale sets.
+Although Windows Containers can be deployed to on-premises Windows Server 2016 VMs, when you deploy to Azure, you get an easier way to get started, with ready-to-use Windows Server Container VMs. You also get a common online location that’s accessible to testers, and automatic scalability through Azure virtual machine scale sets.
 
 ### Next steps
 
@@ -213,25 +214,25 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 ### Benefits
 
-There are many benefits to deploying to a cluster in Kubernetes. The biggest benefit is that you get a production-ready environment in which you can scale-out the application based on the number of container instances you want to use (inner-scalability in the existing nodes), and based on the number of nodes or VMs in the cluster (global scalability of the cluster).
+There are many benefits to deploying to a cluster in Kubernetes. The biggest benefit is that you get a production-ready environment in which you can scale out the application based on the number of container instances you want to use (inner-scalability in the existing nodes), and based on the number of nodes or VMs in the cluster (global scalability of the cluster).
 
 Azure Container Service optimizes popular open-source tools and technologies specifically for Azure. You get an open solution that offers portability, both for your containers and for your application configuration. You select the size, the number of hosts, and the orchestrator tools-Container Service handles everything else.
 
 With Kubernetes, developers can progress from thinking about physical and virtual machines, to planning a container-centric infrastructure that facilitates the following capabilities, among others:
 
--   Applications based on multiple containers
+- Applications based on multiple containers
 
--   Replicating container instances and horizontal autoscaling
+- Replicating container instances and horizontal autoscaling
 
--   Naming and discovering (for example, internal DNS)
+- Naming and discovering (for example, internal DNS)
 
--   Balancing loads
+- Balancing loads
 
--   Rolling updates
+- Rolling updates
 
--   Distributing secrets
+- Distributing secrets
 
--   Application health checks
+- Application health checks
 
 ## Next steps
 
@@ -247,7 +248,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-An application that's based on Windows Containers will quickly need to use platforms, moving even further away from IaaS VMs. This is needed to easily achieve high scalability and better automated scalability, and for a significant improvement in automated deployments and versioning. You can achieve these goals by using the orchestrator Azure Service Fabric, which is available in the Azure cloud, but also available to use on-premises, or even in a different public cloud.
+An application based on Windows Containers quickly needs to use platforms, moving even further away from IaaS VMs. This is needed to easily achieve high scalability and better automated scalability, and for a significant improvement in automated deployments and versioning. You can achieve these goals by using the orchestrator Azure Service Fabric, which is available in the Azure cloud, but also available to use on-premises, or even in a different public cloud.
 
 ### Goals
 
@@ -273,37 +274,37 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 ## Benefits
 
-The benefits of deploying to a cluster in Service Fabric are similar to the benefits of using Kubernetes. One difference, though, is that Service Fabric is a very mature production environment for Windows applications compared to Kubernetes, which was in preview for Windows Containers until early fall of 2017. (Kubernetes is a more mature environment for Linux). 
+The benefits of deploying to a cluster in Service Fabric are similar to the benefits of using Kubernetes. One difference, though, is that Service Fabric is a more mature production environment for Windows applications compared to Kubernetes, which is in a beta phase for Windows Containers in Kubernetes version 1.9 (December 2017). Kubernetes is a more mature environment for Linux.
 
-The main benefit of using Azure Service Fabric is that you get a production-ready environment in which you can scale-out the application based on the number of container instances you want to use (inner-scalability in the existing nodes), and based on the number of nodes or VMs in the cluster (global scalability of the cluster).
+The main benefit of using Azure Service Fabric is that you get a production-ready environment in which you can scale out the application based on the number of container instances you want to use (inner-scalability in the existing nodes), and based on the number of nodes or VMs in the cluster (global scalability of the cluster).
 
 Azure Service Fabric offers portability both for your containers and for your application configuration. You can have a Service Fabric cluster in Azure, or install it on-premises in your own datacenter. You can even install a Service Fabric cluster in a different cloud, like [Amazon AWS](https://blogs.msdn.microsoft.com/azureservicefabric/2017/05/18/tutorial-how-to-create-a-service-fabric-standalone-cluster-with-aws-ec2-instances/).
 
 With Service Fabric, developers can progress from thinking about physical and virtual machines to planning a container-centric infrastructure that facilitates the following capabilities, among others:
 
--   Applications based on multiple containers.
+- Applications based on multiple containers.
 
--   Replicating container instances and horizontal autoscaling.
+- Replicating container instances and horizontal autoscaling.
 
--   Naming and discovering (for example, internal DNS).
+- Naming and discovering (for example, internal DNS).
 
--   Balancing loads.
+- Balancing loads.
 
--   Rolling updates.
+- Rolling updates.
 
--   Distributing secrets.
+- Distributing secrets.
 
--   Application health checks.
+- Application health checks.
 
 The following capabilities are exclusive in Service Fabric (compared to other orchestrators):
 
--   Stateful services capability, through the Reliable Services application model.
+- Stateful services capability, through the Reliable Services application model.
 
--   Actors pattern, through the Reliable Actors application model.
+- Actors pattern, through the Reliable Actors application model.
 
--   Deploy bare-bone processes, in addition to Windows or Linux containers.
+- Deploy bare-bone processes, in addition to Windows or Linux containers.
 
--   Advanced rolling updates and health checks.
+- Advanced rolling updates and health checks.
 
 ### Next steps
 

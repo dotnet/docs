@@ -25,5 +25,5 @@ public class Example
 //       4 at position 11
 //       5 at position 14
 //    Input string:  aa1bb2cc3dd4ee5
-//    Output string: aaaabbaa1bbccaa1bb2ccddaa1bb2cc3ddeeaa1bb2cc3dd4ee
+//    Output string: aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5ddee5ee
 // </Snippet5>

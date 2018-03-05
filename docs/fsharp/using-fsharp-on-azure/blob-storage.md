@@ -234,18 +234,19 @@ For details on encrypting blob data, see [the .NET guide for blob storage sectio
 Now that you've learned the basics of Blob storage, follow these links to learn more.
 
 ### Tools
-- [F# AzureStorageTypeProvider](http://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
+- [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
 - [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) An F# API for using Microsoft Azure Table Storage service
 - [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
 
 ### Blob storage reference
 
-- [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
-- [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)
 
 ### Related guides
 
 - [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility](/azure/storage/storage-use-azcopy)
-- [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
-- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
+- [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
+- [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
+- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)

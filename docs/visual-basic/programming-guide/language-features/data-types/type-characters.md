@@ -1,7 +1,7 @@
 ---
 title: "Type Characters (Visual Basic)"
 ms.custom: ""
-ms.date: 07/20/2015
+ms.date: 01/31/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -43,9 +43,9 @@ helpviewer_keywords:
   - "UL literal type characters [Visual Basic]"
   - "literal types [Visual Basic], default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
+ms.manager: wpickett
 ---
 # Type characters (Visual Basic)
 
@@ -118,7 +118,7 @@ The compiler normally interprets an integer literal to be in the decimal (base 1
 |Number base|Prefix|Valid digit values|Example|
 |-----------------|------------|------------------------|-------------|
 |Hexadecimal (base 16)|`&H`|0-9 and A-F|`&HFFFF`|
-|Binary (base 2)|`0B`|0-1|`&B01111100`|
+|Binary (base 2)|`&B`|0-1|`&B01111100`|
 |Octal (base 8)|`&O`|0-7|`&O77`|
 
 Starting in Visual Basic 2017, you can use the underscore character (`_`) as a group separator to enhance the readability of an integral literal. The following example uses the `_` character to group a binary literal into 8-bit groups:
@@ -135,6 +135,14 @@ Dim flags As UShort = &H8000US
 ```
 
 In the previous example, `counter` has the decimal value of -32768, and `flags` has the decimal value of +32768.
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Integer = &H_C305_F860
+```
+
+[!INCLUDE [supporting-underscores](../../../../../includes/vb-separator-langversion.md)]
 
 ## See Also
 

@@ -87,7 +87,7 @@ ms.workload:
   
 -   **Extensibility**  
   
-     The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md).  
+     The [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. [!INCLUDE[crabout](../../../includes/crabout-md.md)] available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/index.md).  
   
 ## WCF Integration with Other Microsoft Technologies  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is a flexible platform. Because of this extreme flexibility, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] is also used in several other Microsoft products. By understanding the basics of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], you have an immediate advantage if you also use any of these products.  

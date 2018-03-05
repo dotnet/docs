@@ -11,7 +11,7 @@ ms.workload:
 ---
 # Inner-loop development workflow for Docker apps
 
-Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using his preferred languages or platforms, and testing it locally (Figure 4-14). But in every case, you will have a very important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you are always developing and testing Docker containers, but locally.
+Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-14). But in every case, you will have a very important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you are always developing and testing Docker containers, but locally.
 
 ![](./media/image18.png)
 
@@ -118,7 +118,7 @@ In the DockerFile, you also need to instruct Docker to listen to the TCP port th
 
 There are other lines of configuration that you can add in the DockerFile depending on the language/framework you are using, so Docker knows how to run the app. For instance, you need the ENTRYPOINT line with \["dotnet", "MyCustomMicroservice.dll"\] to run a .NET Core app, although you can have multiple variants depending on the approach to build and run your service. If you're using the SDK and dotnet CLI to build and run the .NET app, it would be slightly different. The bottom line is that the ENTRYPOINT line plus additional lines will be different depending on the language/platform you choose for your application.
 
-**More info** For information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/articles/core/docker/building-net-docker-images>.
+**More info** For information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
 
 To learn more about building your own images, go to [https://docs.docker.com/engine/\
 tutorials/dockerimages/](https://docs.docker.com/engine/tutorials/dockerimages/).

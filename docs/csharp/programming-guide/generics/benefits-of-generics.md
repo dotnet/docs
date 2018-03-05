@@ -15,7 +15,7 @@ ms.author: "wiwagn"
 # Benefits of Generics (C# Programming Guide)
 Generics provide the solution to a limitation in earlier versions of the common language runtime and the C# language in which generalization is accomplished by casting types to and from the universal base type <xref:System.Object>. By creating a generic class, you can create a collection that is type-safe at compile-time.  
   
- The limitations of using non-generic collection classes can be demonstrated by writing a short program that uses the <xref:System.Collections.ArrayList> collection class from the .NET Framework class library. <xref:System.Collections.ArrayList> is a highly convenient collection class that can be used without modification to store any reference or value type.  
+ The limitations of using non-generic collection classes can be demonstrated by writing a short program that uses the <xref:System.Collections.ArrayList> collection class from the .NET class library. An instance of the <xref:System.Collections.ArrayList> class can store any reference or value type.  
   
  [!code-csharp[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_1.cs)]  
   
@@ -29,7 +29,7 @@ Generics provide the solution to a limitation in earlier versions of the common 
   
  In versions 1.0 and 1.1 of the C# language, you could avoid the dangers of generalized code in the .NET Framework base class library collection classes only by writing your own type specific collections. Of course, because such a class is not reusable for more than one data type, you lose the benefits of generalization, and you have to rewrite the class for each type that will be stored.  
   
- What <xref:System.Collections.ArrayList> and other similar classes really need is a way for client code to specify, on a per-instance basis, the particular data type that they intend to use. That would eliminate the need for the upcast to `T:System.Object` and would also make it possible for the compiler to do type checking. In other words, <xref:System.Collections.ArrayList> needs a type parameter. That is exactly what generics provide. In the generic <xref:System.Collections.Generic.List%601> collection, in the `N:System.Collections.Generic` namespace, the same operation of adding items to the collection resembles this:  
+ What <xref:System.Collections.ArrayList> and other similar classes really need is a way for client code to specify, on a per-instance basis, the particular data type that they intend to use. That would eliminate the need for the upcast to <xref:System.Object> and would also make it possible for the compiler to do type checking. In other words, <xref:System.Collections.ArrayList> needs a type parameter. That is exactly what generics provide. In the generic <xref:System.Collections.Generic.List%601> collection, in the <xref:System.Collections.Generic> namespace, the same operation of adding items to the collection resembles this:  
   
  [!code-csharp[csProgGuideGenerics#6](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_3.cs)]  
   
@@ -40,4 +40,5 @@ Generics provide the solution to a limitation in earlier versions of the common 
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
  [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)  
- [Collections Best Practices](http://go.microsoft.com/fwlink/?LinkId=112403)
+ [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)  
+ [Guidelines for Collections](../../../standard/design-guidelines/guidelines-for-collections.md)   

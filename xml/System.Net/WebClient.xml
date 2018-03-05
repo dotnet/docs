@@ -2207,7 +2207,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadDataCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2)  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md)  
   
  The <xref:System.Net.WebClient.OnDownloadDataCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2262,7 +2262,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadFileCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnDownloadFileCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2317,7 +2317,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadProgressChanged> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnDownloadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2372,7 +2372,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.DownloadStringCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnDownloadStringCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2427,7 +2427,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.OpenReadCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnOpenReadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2482,7 +2482,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.OpenWriteCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnOpenWriteCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2537,7 +2537,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadDataCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnUploadDataCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2592,7 +2592,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadFileCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnUploadFileCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2647,7 +2647,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadProgressChanged> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnUploadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2702,7 +2702,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadStringCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnUploadStringCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2757,7 +2757,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.WebClient.UploadValuesCompleted> event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Net.WebClient.OnUploadValuesCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

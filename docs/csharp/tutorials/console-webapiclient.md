@@ -135,7 +135,7 @@ program before that task finishes. Therefore, you must use the `Wait`
 method to block and wait for the task to finish:
 
 ```csharp
-public static void Main(string[] args)
+static void Main(string[] args)
 {
     ProcessRepositories().Wait();
 }

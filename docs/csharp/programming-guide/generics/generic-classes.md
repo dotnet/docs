@@ -16,7 +16,7 @@ ms.author: "wiwagn"
 # Generic Classes (C# Programming Guide)
 Generic classes encapsulate operations that are not specific to a particular data type. The most common use for generic classes is with collections like linked lists, hash tables, stacks, queues, trees, and so on. Operations such as adding and removing items from the collection are performed in basically the same way regardless of the type of data being stored.  
   
- For most scenarios that require collection classes, the recommended approach is to use the ones provided in the .NET Framework class library. For more information about using these classes, see [Generics in the .NET Framework Class Library](../../../csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md).  
+ For most scenarios that require collection classes, the recommended approach is to use the ones provided in the .NET class library. For more information about using these classes, see [Generic Collections in .NET](../../../standard/generics/collections.md).  
   
  Typically, you create generic classes by starting with an existing concrete class, and changing types into type parameters one at a time until you reach the optimal balance of generalization and usability. When creating your own generic classes, important considerations include the following:  
   
@@ -70,5 +70,5 @@ Generic classes encapsulate operations that are not specific to a particular dat
  <xref:System.Collections.Generic>  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Generics](../../../csharp/programming-guide/generics/index.md)  
- [Saving the State of Enumerators](http://go.microsoft.com/fwlink/?LinkId=112390)  
- [An Inheritance Puzzle, Part One](http://go.microsoft.com/fwlink/?LinkId=112380)
+ [Saving the State of Enumerators](https://blogs.msdn.microsoft.com/wesdyer/2006/01/13/saving-the-state-of-enumerators/)  
+ [An Inheritance Puzzle, Part One](https://blogs.msdn.microsoft.com/ericlippert/2007/07/27/an-inheritance-puzzle-part-one/)

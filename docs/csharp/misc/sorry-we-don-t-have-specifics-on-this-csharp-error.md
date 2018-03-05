@@ -893,13 +893,13 @@ ms.author: "wiwagn"
 # Sorry, we don&#39;t have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  
   
- [Visual C# Language](http://go.microsoft.com/fwlink/?LinkId=146921)  
+ [Visual C# Language](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharplanguage)  
  Provides a forum for questions about and general discussions of the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] language syntax and compiler.  
   
- [Visual C# IDE](http://go.microsoft.com/fwlink/?LinkId=146922)  
+ [Visual C# IDE](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharpide)  
  Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] environment.  
   
- [Visual C# General](http://go.microsoft.com/fwlink/?LinkId=146920)  
+ [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=csharpgeneral)  
  Provides a forum for questions about and issues with [!INCLUDE[csprcs](~/includes/csprcs-md.md)] that are not discussed in other forums.  
   
  [StackOverflow](http://stackoverflow.com/questions/tagged/c%23)  
@@ -912,4 +912,3 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [C# Programming Guide](../../csharp/programming-guide/index.md)  
  [C# Reference](../../csharp/language-reference/index.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)  
- [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -3,7 +3,7 @@ title: .NET Core versioning
 description: Understand how .NET Core versioning works.
 author: bleroy
 ms.author: mairaw
-ms.date: 08/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -19,9 +19,13 @@ This article aims at clarifying how the .NET Core SDK and runtime are versioned.
 
 There are lots of moving parts that version independently in .NET Core. However, starting with .NET Core 2.0, there is an easy to understand top-level version number that everybody understands to be *the* version of ".NET Core" as a whole. The rest of this document goes into the details of the versioning of all those parts. These details can be important if you're a package manager, for example.
 
+> [!IMPORTANT]
+> The versioning details explained on this topic don't apply to the current version of the .NET Core SDK and runtime.
+> The version scheme is changing in future releases. You can see the current proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
+
 ## Versioning details
 
-Starting with .NET Core 2.0, downloads show a single version number in their file name. The following version numbers were unified:
+With .NET Core 2.0, downloads show a single version number in their file name. The following version numbers were unified:
 
 * The shared framework and associated runtime.
 * The .NET Core SDK and associated .NET Core CLI.
@@ -31,8 +35,8 @@ The use of a single version number makes it easier for users to know what versio
 
 ### Installers
 
-Starting with .NET Core 2.0, downloads for our [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [our releases](https://www.microsoft.com/net/download/core) adhere to a new naming scheme that is easier to understand.
-The installer UI in those downloads were also modified to clearly present the names and versions of the components being installed. In particular, titles now show the same version number that is in the download's file name.
+With .NET Core 2.0, downloads for the [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [releases](https://www.microsoft.com/net/download/core) adhere to a new naming scheme that is easier to understand.
+The installer UI in those downloads was also modified to clearly present the names and versions of the components being installed. In particular, titles now show the same version number that is in the download's file name.
 
 #### File name format
 
@@ -84,7 +88,7 @@ It's also possible that .NET Core Tools need to be updated, without runtime chan
 #### Minimum package set
 
 * `dotnet-runtime-[major].[minor]`: a runtime with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). New patch versions update the package, but new minor or major versions are separate packages.
- 
+
   **Dependencies**: `dotnet-host`
 
 * `dotnet-sdk`: the latest SDK. `update` rolls forward major, minor, and patch versions.
@@ -114,7 +118,7 @@ A general Docker tag naming convention is to place the version number before the
 
 The SDK tags should be updated to represent the SDK version rather than Runtime.
 
-It's also possible that we need to fix the .NET Core Tools but reship an existing runtime. In that case, the SDK version is increased (for example, to 2.1.2) and then the Runtime catches up the next time it ships (for example, both the Runtime and SDK ship the following time as 2.1.3).
+It's also possible that the .NET Core CLI tools (included in the SDK) are fixed but reship with an existing runtime. In that case, the SDK version is increased (for example, to 2.1.2), and then the Runtime catches up the next time it ships (for example, both the Runtime and SDK ship the following time as 2.1.3).
 
 ## Semantic Versioning
 
@@ -124,26 +128,29 @@ It's also possible that we need to fix the .NET Core Tools but reship an existin
 MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 ```
 
-The optional `PRERELEASE` and `BUILDNUMBER` parts will never be part of supported releases, and only exist on nightly builds, locally built from source targets, and unsupported preview releases.
+The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported releases and only exist on nightly builds, local builds from source targets, and unsupported preview releases.
 
 ### How version numbers are incremented?
 
 `MAJOR` is incremented when:
-  - An old version is no longer supported.
-  - A newer `MAJOR` version of an existing dependency is adopted.
-  - The default setting of a compatibility quirk is changed to "off."
+
+- An old version is no longer supported.
+- A newer `MAJOR` version of an existing dependency is adopted.
+- The default setting of a compatibility quirk is changed to "off."
 
 `MINOR` is incremented when:
-  - Public API surface area is added.
-  - A new behavior is added.
-  - A newer `MINOR` version of an existing dependency is adopted.
-  - A new dependency is introduced.
-  
+
+- Public API surface area is added.
+- A new behavior is added.
+- A newer `MINOR` version of an existing dependency is adopted.
+- A new dependency is introduced.
+
 `PATCH` is incremented when:
-  - Bug fixes are made.
-  - Support for a newer platform is added.
-  - A newer `PATCH` version of an existing dependency is adopted.
-  - Any other change that doesn't fit one of the previous cases.
+
+- Bug fixes are made.
+- Support for a newer platform is added.
+- A newer `PATCH` version of an existing dependency is adopted.
+- Any other change doesn't fit one of the previous cases.
 
 When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR` and `PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` is left untouched.
 
@@ -172,7 +179,7 @@ For more information, see [.NET Core Support Lifecycle Fact Sheet](https://www.m
 
 .NET Core is made of the following parts:
 
-- A host (also known as muxer): `dotnet.exe` with `hostfxr` policy libraries.
+- A host: either *dotnet.exe* for framework-dependent applications, or *\<appname>.exe* for self-contained applications.
 - An SDK (the set of tools necessary on a developer's machine, but not in production).
 - A runtime.
 - A shared framework implementation, distributed as packages. Each package is versioned independently, particularly for patch versioning.
@@ -200,7 +207,7 @@ Versioning for .NET Core metapackages is based on the .NET Core version they are
 
 For instance, the metapackages in .NET Core 2.1.3 should all have 2.1 as their `MAJOR` and `MINOR` version numbers.
 
-The patch version for the metapackage is incremented every time any referenced package is updated. Patch versions don't include an updated framework version. As a result, the metapackages aren't strictly SemVer-compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but primarily the API level. 
+The patch version for the metapackage is incremented every time any referenced package is updated. Patch versions don't include an updated framework version. As a result, the metapackages aren't strictly SemVer-compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but primarily of the API level.
 
 There are currently two primary metapackages for .NET Core:
 
@@ -222,7 +229,7 @@ Target framework versions are updated when new APIs are added. They have no conc
 
 ## Versioning in practice
 
-When you download .NET Core, the name of the file you download carries the version, for example, `dotnet-sdk-2.0.4-win10-x64.exe`.
+When you download .NET Core, the name of the downloaded file carries the version, for example, `dotnet-sdk-2.0.4-win10-x64.exe`.
 
 There are commits and pull requests on .NET Core repos on GitHub on a daily basis, resulting in new builds of many libraries. It isn't practical to create new public versions of .NET Core for every change. Instead, changes are aggregated over an undetermined period of time (for example, weeks or months) before making a new public stable .NET Core version.
 
@@ -247,7 +254,8 @@ Every time a new major version of .NET Core ships, the `MAJOR` version number ge
 The various metapackages are updated to reference the updated .NET Core library packages. The [`Microsoft.NETCore.App`](https://www.nuget.org/packages/Microsoft.NETCore.App) metapackage and the `netcore` target framework are versioned as a major update matching the `MAJOR` version number of the new release.
 
 ## See also
-[Target frameworks](../../standard/frameworks.md)   
-[.NET Core distribution packaging](../build/distribution-packaging.md)   
-[.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)   
-[.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)   
+
+[Target frameworks](../../standard/frameworks.md)  
+[.NET Core distribution packaging](../build/distribution-packaging.md)  
+[.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)  
+[.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)  

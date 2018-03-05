@@ -249,10 +249,7 @@ http://myUrl/
           <paramref name="uriString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
           </block>
           <paramref name="uriString" /> is empty.  
   
@@ -551,10 +548,7 @@ http://myUrl/
           <paramref name="uriString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
           </block>
           <paramref name="uriString" /> contains a relative URI and <paramref name="uriKind" /> is <see cref="F:System.UriKind.Absolute" />.  
   
@@ -653,13 +647,17 @@ http://myUrl/
   
 ## Remarks  
  This constructor creates a <xref:System.Uri> instance by combining the `baseUri` and the `relativeUri`. If `relativeUri` is an absolute URI (containing a scheme, host name, and optionally a port number), the <xref:System.Uri> instance is created using only `relativeUri`.  
-  
+ 
+ If the `baseUri` has relative parts (like `/api`), then the relative part must be terminated with a slash, (like `/api/`), if the relative part of `baseUri` is to be preserved in the constructed <xref:System.Uri>. 
+
+ Additionally, if the `relativeUri` begins with a slash, then it will replace any relative part of the `baseUri`
+
  This constructor does not ensure that the <xref:System.Uri> refers to an accessible resource.  
   
    
   
 ## Examples  
- The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/showew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
+ The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/shownew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
   
  [!code-cpp[Classic Uri.Uri3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CS/source.cs#1)]
@@ -673,12 +671,8 @@ http://myUrl/
           <paramref name="baseUri" /> is not an absolute <see cref="T:System.Uri" /> instance.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
-          </block>  
-  
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
+          </block>
  The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
  -or-  
@@ -768,7 +762,11 @@ http://myUrl/
   
 ## Remarks  
  This constructor creates a new <xref:System.Uri> instance by combining an absolute <xref:System.Uri> instance, `baseUri`, with a relative <xref:System.Uri> instance, `relativeUri`. If `relativeUri` is an absolute <xref:System.Uri> instance (containing a scheme, host name, and optionally a port number), the <xref:System.Uri> instance is created using only `relativeUri`.  
-  
+ 
+ If the `baseUri` has relative parts (like `/api`), then the relative part must be terminated with a slash, (like `/api/`), if the relative part of `baseUri` is to be preserved in the constructed <xref:System.Uri>. 
+
+ Additionally, if the `relativeUri` begins with a slash, then it will replace any relative part of the `baseUri`
+ 
  This constructor does not ensure that the <xref:System.Uri> refers to an accessible resource.  
   
    
@@ -790,13 +788,9 @@ http://myUrl/
           <paramref name="baseUri" /> is not an absolute <see cref="T:System.Uri" /> instance.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
-          </block>  
-  
- The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
+          </block>
+          The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
  -or-  
   
@@ -1632,10 +1626,7 @@ If you used an escaped string to construct this instance (for example, "http://[
           <paramref name="stringToEscape" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
           </block>  
   
  The length of <paramref name="stringToEscape" /> exceeds 32766 characters.</exception>
@@ -1746,10 +1737,7 @@ If you used an escaped string to construct this instance (for example, "http://[
           <paramref name="stringToEscape" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
-            <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
-  
-</para>
+            <para>In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.</para>
           </block>  
   
  The length of <paramref name="stringToEscape" /> exceeds 32766 characters.</exception>

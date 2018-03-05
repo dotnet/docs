@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 04/27/2017
+ms.date: 02/15/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
@@ -22,10 +22,13 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current Version
 
-Visual Basic / Visual Studio .NET 2017   
-For new features, see [Visual Basic 2017](#visual-basic-2017)
+Visual Basic 15.5   
+For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 ## Previous versions
+
+Visual Basic 15.3   
+For new features, see [Visual Basic 15.3](#visual-basic-153)
 
 Visual Basic / Visual Studio .NET 2015   
 For new features, see [Visual Basic 14](#visual-basic-14)
@@ -50,6 +53,42 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
+
+## Visual Basic 15.5
+
+[Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md#mixing-arguments-by-position-and-by-name)
+
+In Visual Basic 15.3 and earlier versions, when a method call included arguments both by position and by name, positional arguments had to precede named arguments. Starting with Visual Basic 15.5, positional and named arguments can appear in any order as long as all arguments up to the last positional argument are in the correct position. This is particularly useful when named arguments are used to make code more readable.
+
+For example, the following method call has two positional arguments between a named argument. The named argument makes it clear that the value 19 represents an age.
+
+```vb
+StudentInfo.Display("Mary", age:=19, #9/21/1998#)
+```
+
+**Leading hex/binary/octal separator**
+
+Visual Basic 2017 added support for the underscore character (`_`) as a digit separator. Starting with Visual Basic 15.5, you can use the underscore character as a leading separator between the prefix and hexadecimal, binary, or octal digits. The following example uses a leading digit separator to define 3,271,948,384 as a hexadecimal number:
+
+```vb
+Dim number As Integer = &H_C305_F860
+``` 
+To use the under
+score character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
+
+## Visual Basic 15.3
+
+[Named tuple inference](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
+
+When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names; you do not have to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements, `state`, `stateName`, and `capital`.
+
+[!code-vb[Inferred tuple names](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
 
 ## Visual Basic 2017
 

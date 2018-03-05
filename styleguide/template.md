@@ -23,9 +23,9 @@ helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]
 
 This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
-When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
+When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content.
 
-## Metadata 
+## Metadata
 
 The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
 
@@ -33,8 +33,8 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - If an optional metadata element doesn't have a value, comment out the element with a # or remove it (don't leave it blank or use "na"). If you're adding a value to an element that was commented out, be sure to remove the #.
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
-- **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.  
-- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases. 
+- **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.
+- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases.
 - **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
 - **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb, powershell and xml.
 - **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
@@ -56,26 +56,26 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 ## File name
 
 File names use the following rules:
+
 * Contain only lowercase letters, numbers, and hyphens.
 * No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
 * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
 * No small words - don't include a, and, the, in, or, etc.
 * Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.  
-
-
+* Keep file names reasonably short. They are part of the URL for your articles.
 
 ## Headings
 
 Use sentence-style capitalization. Always capitalize:
-- The first word of a heading. 
-- The word following a colon in a title or heading (for example, "How to: Sort an array"). 
 
-Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
+- The first word of a heading.
+- The word following a colon in a title or heading (for example, "How to: Sort an array").
+
+Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.     
+If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -83,7 +83,7 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 #### Fourth-level heading
 ##### Fifth level heading
 ###### Sixth-level heading
- 
+
 ## Text styling
 
 *Italics*
@@ -125,8 +125,8 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-The build system has some extensions that allow us to link to .NET APIs without having to use external links.  
-When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code. 
+The build system has some extensions that allow us to link to .NET APIs without having to use external links.
+When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 The UID equates to the fully qualified class and member name. If you add a \* after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_).
 
@@ -135,12 +135,13 @@ You can use one of the following syntax:
 1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=nameWithType>`
 
  The `displayProperty` query parameter produces a fully qualified link text. By default, link text shows only the member or type name.
- 
+
 2. Markdown link: `[link text](xref:UID)`
 
- Use when you want to customize the link text displayed. 
+ Use when you want to customize the link text displayed.
 
 Examples:
+
 - `<xref:System.String>` renders as [String](https://docs.microsoft.com/dotnet/api/system.string)
 - `<xref:System.String?displayProperty=nameWithType>` renders as [System.String](https://docs.microsoft.com/dotnet/api/system.string)
 - `[String class](xref:System.String)` renders as [String class](https://docs.microsoft.com/dotnet/api/system.string)
@@ -152,6 +153,7 @@ For more information about using this notation, see [Using cross reference](http
 When the UID contains the special characters \`, \# or \*, the UID value needs to be HTML encoded as `%60`, `%23` and `%2A` respectively. You'll sometimes see parentheses encoded but it's not a requirement.
 
 Examples:
+
 - System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`
 - System.Exception.\#ctor becomes `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
@@ -161,12 +163,11 @@ Examples:
 
 ### Ordered lists
 
-1. This 
+1. This
 1. Is
 1. An
 1. Ordered
-1. List  
-
+1. List
 
 #### Ordered list with an embedded list
 
@@ -179,7 +180,6 @@ Examples:
 1. ordered
 1. list
 
-
 ### Unordered Lists
 
 - This
@@ -188,20 +188,18 @@ Examples:
 - bulleted
 - list
 
+#### Unordered list with an embedded list
 
-##### Unordered list with an embedded list
-
-- This 
-- bulleted 
+- This
+- bulleted
 - list
-    - Mrs. Peacock
-    - Mr. Green
-- contains  
+  - Mrs. Peacock
+  - Mr. Green
+- contains
 - other
-    1. Colonel Mustard
-    1. Mrs. White
+  1. Colonel Mustard
+  1. Mrs. White
 - lists
-
 
 ## Horizontal rule
 
@@ -215,7 +213,7 @@ Examples:
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
+You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
 
 ## Code
 
@@ -223,6 +221,7 @@ The best way to include code is to include snippets from a working sample. Creat
 sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
 
 You can include the code using the following syntax:
+
 ```markdown
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
@@ -230,24 +229,26 @@ You can include the code using the following syntax:
 * `-<language>` (*optional* but *recommended*)
   * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
 
-* `<name>` (*optional*) 
-  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source. 
+* `<name>` (*optional*)
+  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
 
-* `<pathToFile>` (*mandatory*) 
+* `<pathToFile>` (*mandatory*)
   * Relative path in the file system that indicates the code snippet file to reference.
-  
+
 * `<queryoption>` and `<queryoptionvalue>` (*optional*)
- * Used together to specify how the code should be retrieved from the file:
-  * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
-   We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
-  * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
-  * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
-  * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+  * Used together to specify how the code should be retrieved from the file:
+    * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+    We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
+    * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+    * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+    * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
 
 We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
+
 ```
 [!code-csharp[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]
 ```
+
 And you can see how the snippet tags are structured in [this source file](https://github.com/dotnet/docs/blob/master/samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs). For details about tag name representation in code snippet source files by language, see the [DocFX guidelines](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
@@ -256,9 +257,10 @@ runtime errors, you can use inline code blocks.
 
 ### Inline code blocks with language identifier
 
-Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID. 
+Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID.
 
 #### Supported languages
+
 |Name|Markdown label|
 |-----|-------|
 |ASP.NET with C#|aspx-csharp|
@@ -281,7 +283,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Swift|swift|
 |VB|vb|
 |XAML|xaml|
-|XML|xml| 
+|XML|xml|
 
 The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
@@ -291,9 +293,9 @@ The following are examples of code blocks using the language IDs for C# (\`\`\`c
 using System;
 namespace HelloWorld
 {
-    class Hello 
+    class Hello
     {
-        static void Main() 
+        static void Main()
         {
             Console.WriteLine("Hello World!");
 
@@ -304,6 +306,7 @@ namespace HelloWorld
     }
 }
 ```
+
 #### Python
 
 ```python
@@ -311,6 +314,7 @@ friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print "iteration {iteration} is {name}".format(iteration=i, name=name)
 ```
+
 #### PowerShell
 
 ```powershell
@@ -322,7 +326,7 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 
 ### Generic code block
 
-Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
+Use three backticks (&#96;&#96;&#96;) for generic code block coding.
 
 > The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in the documentation site. Use generic code blocks only when necessary.
 
@@ -346,7 +350,7 @@ function fancyAlert(arg) {
 
 ### Linked Image
 
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
+[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
 
 ## Videos
 
@@ -380,11 +384,11 @@ For example:
 
 ## docs.microsoft extensions
 
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
+docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
+It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.
 
 #### Note
 
@@ -409,18 +413,31 @@ It's important to use the following alert styles so they render with the proper 
 And they'll render like this:
 ![Alert styles](../images/alerts.png)
 
-###  Includes
+### Includes
 
 You can embed the Markdown of one file into another using an include.
 
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
+
+### Checked lists
+
+A custom style is available for lists. You can render lists with green check marks.
+
+> [!div class="checklist"]
+> * How to create a .NET Core app
+> * How to add a reference to the Microsoft.XmlSerializer.Generator package
+> * How to edit your MyApp.csproj to add dependencies
+> * How to add a class and an XmlSerializer
+> * How to build and run the application
+
+You can see an example of checked lists in action in the [.NET Core docs](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
 ### Buttons
 
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio). 
+You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
 ### Selectors
 

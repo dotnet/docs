@@ -95,7 +95,7 @@ You specify a format string by following the interpolated expression with a colo
 
 A number of types in the .NET Standard libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../standard/base-types/formatting-types.md#stringRef) in the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) article. Any type can support a set of format strings, and you can also develop custom formatting extensions that provide custom formatting for existing types. For information on custom formatting by providing an <xref:System.ICustomFormatter> implementation, see [Custom Formatting with ICustomFormatter](../../standard/base-types/formatting-types.md#custom-formatting-with-icustomformatter) in the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) article.
 
-Try modifying the the format strings in your text editor and, each time you make a change, rerun the program to see how the changes affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
+Try modifying the format strings in your text editor and, each time you make a change, rerun the program to see how the changes affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
 
 In addition to controlling formatting, you can also control the field width and alignment of the strings returned by an interpolated expression. In the next section, you'll learn how to do this.
 
@@ -139,9 +139,9 @@ If the field width is a negative number, the field is left-aligned:
 Try removing the negative signs from the `{"Author",-25}` and `{title.Key,-25}` interpolated expressions and run the example again, as the following code does:
 
 ```csharp
-Console.WriteLine($"\n{"Author",-25}    {"Title",30}\n");
+Console.WriteLine($"\n{"Author",25}    {"Title",30}\n");
 foreach (var title in titles)
-   Console.WriteLine($"{title.Key,-25}     {title.Value,30}");
+   Console.WriteLine($"{title.Key,25}     {title.Value,30}");
 ```
 
 This time, the author information is right-aligned.

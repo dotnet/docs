@@ -15,7 +15,7 @@ ms.assetid: 1c413eb0-16a5-4c1a-9a4e-ad6877e645d6
 # Walkthrough: Accessing a SQL Database by Using Type Providers
 
 > [!NOTE]
-This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](https://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 > [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.

@@ -38,7 +38,7 @@ which uses space as a separator:
 This behavior makes it easier for formats like comma separated values (CSV)
 files representing tabular data. Consecutive commas represent a blank column.
 
-You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=fullName> parameter to
+You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to
 exclude any empty strings in the returned array. For more complicated processing of the returned
 collection, you can use [LINQ](../programming-guide/concepts/linq/index.md) to manipulate
 the result sequence.    
@@ -57,9 +57,9 @@ Consecutive instances of any separator produce the empty string in the output ar
   
 [!code-csharp-interactive[split strings using strings as separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#5)]
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings)
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings.zip).
 
 ## See Also  
  [C# Programming Guide](../programming-guide/index.md)  
  [Strings](../programming-guide/strings/index.md)  
- [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)
+ [.NET Regular Expressions](../../standard/base-types/regular-expressions.md)

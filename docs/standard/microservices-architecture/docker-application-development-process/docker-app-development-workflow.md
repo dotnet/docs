@@ -68,7 +68,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
     [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
 
 -   **Visual Studio 2017**
-    [*https://www.visualstudio.com/vs/visual-studio-2017/*](https://www.visualstudio.com/vs/visual-studio-2017/)
+    [*https://www.visualstudio.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![](./media/image4.png)
 
@@ -123,7 +123,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 -   **Building Docker Images for .NET Core Applications**
-    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images)
+    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 -   **Build your own image**. In the official Docker documentation.
     [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)

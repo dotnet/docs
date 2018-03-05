@@ -20,7 +20,7 @@ ms.workload:
 # XSLT Compiler (xsltc.exe)
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  
   
- The xsltc.exe tool is included with Visual Studio 2008. For more information, see the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=89463).  
+ The xsltc.exe tool is included with Visual Studio. For more information, see the [Visual Studio Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).  
   
 ## Syntax  
   

@@ -140,13 +140,9 @@ Namespace WindowsApplication1
                 e As System.EventArgs) Handles button3.Click
             ' Insert code to save a file.
             listBox1.Items.Clear()
-            Dim myEnumerator As IEnumerator
-            myEnumerator = checkedListBox1.CheckedIndices.GetEnumerator()
-            Dim y As Integer
-            While myEnumerator.MoveNext() <> False
-                y = CInt(myEnumerator.Current)
-                checkedListBox1.SetItemChecked(y, False)
-            End While
+            For Each index in checkedListBox1.CheckedIndices.Cast(Of Integer).ToArray()
+                checkedListBox1.SetItemChecked(index, False)
+            Next
             button3.Enabled = False
         End Sub 'button3_Click
     End Class 'Form1

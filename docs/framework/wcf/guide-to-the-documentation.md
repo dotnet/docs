@@ -41,7 +41,7 @@ Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1
   
 -   If you are looking for guidance about a particular feature or capability of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], see the topics under [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md).  
   
--   If you would like to extend or customize [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to suit your requirements, see [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md).  
+-   If you would like to extend or customize [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] to suit your requirements, see [Extending WCF](../../../docs/framework/wcf/extending/index.md).  
   
 -   For information about the tools that help to create and debug [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications, see [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md).  
   

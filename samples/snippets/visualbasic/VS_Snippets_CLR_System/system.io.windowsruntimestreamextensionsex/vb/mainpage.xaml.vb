@@ -57,7 +57,7 @@ Partial Public NotInheritable Class MainPage
 
         ' Create an HttpClient and access an image as a stream.
         Dim client = New HttpClient()
-        Dim stream As Stream = Await client.GetStreamAsync("http://www.visualstudio.com/IC691934.png")
+        Dim stream As Stream = Await client.GetStreamAsync("https://docs.microsoft.com/en-us/dotnet/images/hub/featured-1.png")
         ' Create a .NET memory stream.
         Dim memStream = New MemoryStream()
 

@@ -15,6 +15,6 @@ Module modMain
    End Sub
 End Module
 ' The example displays the following output:
-'       This this (duplicates 'This)' at position 0
-'       a a (duplicates 'a)' at position 66
+'       This this (duplicates 'This') at position 0
+'       a a (duplicates 'a') at position 66
 ' </Snippet3>

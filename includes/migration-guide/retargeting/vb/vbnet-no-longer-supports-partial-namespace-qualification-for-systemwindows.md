@@ -7,5 +7,4 @@
 |Scope|Minor|
 |Version|4.5.2|
 |Type|Retargeting|
-|Analyzers|<ul><li>CD0127</li></ul>|
 

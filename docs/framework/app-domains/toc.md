@@ -10,7 +10,7 @@
 ### [Assemblies and Side-by-Side Execution](assemblies-and-side-by-side-execution.md)
 ## [Application Domains](application-domains.md)
 ## [Application Domains and Assemblies How-to Topics](application-domains-and-assemblies-how-to-topics.md)
-## [Using Application Domains](application-domains.md)
+## [Using Application Domains](use.md)
 ### [How to: Create an Application Domain](how-to-create-an-application-domain.md)
 ### [How to: Unload an Application Domain](how-to-unload-an-application-domain.md)
 ### [How to: Configure an Application Domain](how-to-configure-an-application-domain.md)

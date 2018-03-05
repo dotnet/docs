@@ -541,7 +541,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about event-handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -578,7 +578,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -706,7 +706,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1237,7 +1237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1273,7 +1273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1309,7 +1309,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1345,7 +1345,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1383,7 +1383,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> is raised only when the user changes the combo box selection. Do not use <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> or <xref:System.Windows.Forms.ListControl.SelectedValueChanged> to capture user changes, because those events are also raised when the selection changes programmatically. This event is also raised when you set <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectionChangeCommitted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1422,7 +1422,7 @@
   
  If you override and hook up events here, unhook them by using the <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1458,7 +1458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnTextUpdate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1495,7 +1495,7 @@
 ## Remarks  
  Override the <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method to unsubscribe events subscribed in <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1624,7 +1624,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1850,7 +1850,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

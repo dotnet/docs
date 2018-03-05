@@ -604,6 +604,11 @@
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
         },
         {
+            "source_path": "docs/framework/wcf/extending/extending-wcf.md",
+            "redirect_url": "/dotnet/framework/wcf/extending/index",
+            "redirect_document_id": true
+        },        
+        {
             "source_path": "docs/framework/wcf/windows-communication-foundation.md",
             "redirect_url": "/dotnet/framework/wcf/index"
         },
@@ -1075,19 +1080,31 @@
         },
         {
             "source_path": "docs/csharp/parallel.md",
-            "redirect_url": "/dotnet/standard/parallel-programming/index.md"
+            "redirect_url": "/dotnet/standard/parallel-programming/index"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md"
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
-            "redirect_url": "docs/csharp/how-to/parse-strings-using-string-split.md"
+            "redirect_url": "/dotnet/csharp/how-to/parse-strings-using-split"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
-            "redirect_url": "/dotnet/csharp/how-to/how-to-concatenate-multiple-strings.md"
+            "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/parsing-datetime"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
         }    
     ]
 }

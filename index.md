@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+ms.custom: "updateeachrelease"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -18,7 +19,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Get Started with C#</h3>
+                                    <h3>Get started with C#</h3>
                                 </div>
                             </div>
                         </div>
@@ -36,7 +37,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>.NET Core API Reference</h3>
+                                    <h3>.NET Core API reference</h3>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +45,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7">
+                <a href="/dotnet/api/?view=netframework-4.7.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -54,7 +55,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>.NET Framework API Reference</h3>
+                                    <h3>.NET Framework API reference</h3>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +233,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://www.asp.net/get-started">
-                                                    <h3>Build Your First Web App</h3>
+                                                    <h3>Build Your first web app</h3>
                                                     <p>Learn how to build your first ASP.NET Core web app.</p>
                                                 </a>
                                             </div>
@@ -250,9 +251,9 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/aspnet/core/">
-                                                    <h3>Using ASP.NET Core</h3>
-                                                    <p>Learn how to build modern web apps with ASP.NET Core.</p>
+                                                <a href="/aspnet/core/tutorials/">
+                                                    <h3>ASP.NET Core tutorials</h3>
+                                                    <p>Discover the different step-by-step guides available for you to learn how to develop ASP.NET Core applications.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -269,7 +270,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://www.asp.net/learn">
+                                                <a href="/aspnet/overview">
                                                     <h3>What is ASP.NET?</h3>
                                                     <p>Learn how to build ASP.NET web applications.</p>
                                                 </a>
@@ -291,7 +292,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 <a href="/aspnet/core/tutorials/first-mvc-app/start-mvc">
                                                     <h3>ASP.NET Core in Visual Studio</h3>
                                                     <p>Learn the basics of building an ASP.NET Core MVC web app using Visual
-                                                        Studio 2015.</p>
+                                                        Studio.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -308,9 +309,9 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/framework/docker/aspnetmvc">
-                                                    <h3>ASP.NET Apps in Containers</h3>
-                                                    <p>Learn how to deploy ASP.NET apps with Docker.</p>
+                                                <a href="/aspnet/mvc/overview/deployment/docker-aspnetmvc">
+                                                    <h3>ASP.NET MVC apps in Windows containers</h3>
+                                                    <p>Learn how to deploy ASP.NET MVC apps with Docker.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -327,10 +328,9 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/aspnet/core/tutorials/your-first-mac-aspnet">
-                                                    <h3>ASP.NET on macOS and Visual Studio Code</h3>
-                                                    <p>Learn how to set up, build, and deploy ASP.NET Core apps on macOS with
-                                                        Visual Studio Code.</p>
+                                                <a href="/aspnet/core/tutorials/xplat">
+                                                    <h3>ASP.NET Core cross-platform tutorials</h3>
+                                                    <p>Learn how to build web apps or Web APIs with ASP.NET Core.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -352,8 +352,8 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://azure.microsoft.com/develop/net">
-                                                    <h3>.NET Azure Documentation</h3>
+                                                <a href="/dotnet/azure/">
+                                                    <h3>Azure for .NET documentation</h3>
                                                     <p>Learn about Azure services such as Web Apps, WebJobs, Cloud Services,
                                                         and VMs.</p>
                                                 </a>
@@ -411,7 +411,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://docs.microsoft.com/azure/storage/">
+                                                <a href="/azure/storage/">
                                                     <h3>Azure Storage</h3>
                                                     <p>Learn about Azure Storage, and how to create applications using Azure
                                                         blobs, tables, queues, and files.</p>
@@ -519,7 +519,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://msdn.microsoft.com/library/ms754130.aspx">
+                                                <a href="/dotnet/framework/wpf/index">
                                                     <h3>Windows Presentation Foundation (WPF)</h3>
                                                     <p>WPF provides developers with a XAML-based model for building desktop
                                                         applications on Windows.</p>
@@ -539,7 +539,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://msdn.microsoft.com/library/dd30h2yb.aspx">
+                                                <a href="/dotnet/framework/winforms/index">
                                                     <h3>Windows Forms</h3>
                                                     <p>Rapidly develop Line of Business apps for the Windows desktop.</p>
                                                 </a>

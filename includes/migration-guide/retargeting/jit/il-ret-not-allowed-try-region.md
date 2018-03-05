@@ -7,5 +7,4 @@
 |Scope|Edge|
 |Version|4.6|
 |Type|Retargeting|
-|Analyzers|<ul><li>CD0080</li></ul>|
 

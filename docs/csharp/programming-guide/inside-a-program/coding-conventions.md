@@ -15,8 +15,6 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # C# Coding Conventions (C# Programming Guide)
-The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) does not define a coding standard. However, the guidelines in this topic are used by Microsoft to develop samples and documentation.  
-  
  Coding conventions serve the following purposes:  
   
 -   They create a consistent look to the code, so that readers can focus on content, not layout.  
@@ -26,6 +24,8 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
 -   They facilitate copying, changing, and maintaining the code.  
   
 -   They demonstrate C# best practices.  
+
+ The guidelines in this topic are used by Microsoft to develop samples and documentation.  
   
 ## Naming Conventions  
   

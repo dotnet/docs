@@ -1,5 +1,6 @@
 ---
 layout: HubPage
+ms.topic: hub-page
 hide_bc: true
 title: .NET Documentation
 ---

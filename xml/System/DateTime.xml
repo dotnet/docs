@@ -4273,20 +4273,27 @@ juillet 2009
 
 - A string with a date component that includes only the month and the day but no year component. The method assumes the current year.
 
--   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` argument, in which case the method assumes January 1, 0001.  
+-   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` argument, in which case the method assumes a date of January 1, 0001.  
+
+- A string with a time component that includes only the hour and an AM/PM designator, with no date component. The method assumes the current date and a time with no minutes and no seconds. You can change this behavior by calling the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> in the `styles` argument, in which case the method assumes a date of January 1, 0001.
+
+-   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second designates the time in a time zone that's seven hours earlier than UTC:  
   
--   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second string designates the time in a time zone that's seven hours earlier than UTC:  
-  
-    2008-11-01T19:35:00.0000000Z   
-    2008-11-01T19:35:00.0000000-07:00  
+    "2008-11-01T19:35:00.0000000Z"   
+    "2008-11-01T19:35:00.0000000-07:00"  
   
 -   A string that includes the GMT designator and conforms to the RFC 1123 time format; for example:  
   
-     Sat, 01 Nov 2008 19:35:00 GMT  
+     "Sat, 01 Nov 2008 19:35:00 GMT"  
   
 -   A string that includes the date and time along with time zone offset information; for example:  
   
-     03/01/2009 05:42:00 -5:00  
+     "03/01/2009 05:42:00 -5:00"  
+
+The following example parses strings in each of these formats by using the formatting conventions of the current culture, which in this case is the en-US culture:
+
+[!code-csharp-interactive[Default parsing](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse6.cs)]
+[!code-vb[Default parsing](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse6.vb)]  
   
  If `s` is the string representation of a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses `s` successfully. If `s` is the string representation of a leap day in a non-leap year, the method throws a <xref:System.FormatException>.  
   
@@ -4359,8 +4366,6 @@ The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref
  [!code-csharp-interactive[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
  [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
 
- The following example converts date strings that contain time zone information to the time in the local time zone:  
-  
   You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
   
  [!code-csharp-interactive[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
@@ -4373,7 +4378,7 @@ Numerous examples that call the `DateTime.Parse` method are interspersed through
 > [!NOTE]
 >  The C# examples in this article run in the [Try.NET](https://try.dot.net) inline code runner and playground. You can run an example in an interactive window by pressing the **Run** button. Once you execute the code, you can modify it and run the modified code by pressing **Run** again. The modified code either runs in the interactive window or, if compilation fails, the interactive window displays all C# compiler error messages.  
 
-You can also download a complete set of `DateTime.Parse` examples, which are included in a [.NET Core 2.0 project for C#]() and a [.NET Core 2.0 project for Visual Basic](), from the [dotnet/docs GitHub repository](https://github.com/dotnet/docs).
+You can also download a complete set of `DateTime.Parse` examples, which are included in a [.NET Core 2.0 project for C#](~/samples/snippets/csharp/downloads/api/System/DateTime.Parse.zip) and a [.NET Core 2.0 project for Visual Basic](~/samples/snippets/visualbasic/downloads/api/System.DateTime.Parse.zip), from the [dotnet/docs GitHub repository](https://github.com/dotnet/docs).
 
  ]]></format>
         </remarks>

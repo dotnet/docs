@@ -15,7 +15,7 @@ Module ParseDate
                                      "10.01.2009 19:34", _
                                      "10-1-2009 19:34" }
       ' Parse dates using each culture.
-      For Each culture As CultureInfo In cultures
+      For Each culture In cultures
          Dim dateValue As Date
          Console.WriteLine("Attempted conversions using {0} culture.", culture.Name)
          For Each dateString As String In dateStrings

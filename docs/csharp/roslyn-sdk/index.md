@@ -130,10 +130,16 @@ found in the quickstarts, samples and tutorials sections.
 
 You can learn more about the concepts in the .NET Compiler Platform SDK in these four topics:
 
+ - [Explore code with the syntax visualizer](syntax-visualizer.md)
  - [Understand the compiler API model](compiler-api-model.md)
  - [Work with syntax](work-with-syntax.md)
  - [Work with semantics](work-with-semantics.md)
  - [Work with a workspace](work-with-workspace.md)
+ - [Explore code with the syntax visualizer](syntax-visualizer.md)
+
+To get started, you'll need to install the **.NET Compiler Platform SDK**:
+
+[!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]
 
 <!--
 

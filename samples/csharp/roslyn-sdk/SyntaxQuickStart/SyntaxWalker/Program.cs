@@ -44,7 +44,7 @@ namespace TopLevel
         {
             // <Snippet2>
             SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);
-            var root = (CompilationUnitSyntax)tree.GetRoot();
+            CompilationUnitSyntax root = tree.GetCompilationUnitRoot();
             // </Snippet2>
 
             // <Snippet6>

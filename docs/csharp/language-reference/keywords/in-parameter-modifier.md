@@ -16,7 +16,7 @@ ms.author: "wiwagn"
 
 The `in` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) or [out](out-parameter-modifier.md) keywords, except that `in` arguments cannot be modified by the called method, whereas `ref` arguments may be modified, and `out` arguments must be modified by the caller and those modifications are observable in the calling context.
 
-[!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-out-modifier/InParameterModifier.cs#1)]  
+[!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/InParameterModifier.cs#1)]  
 
 The preceding example demonstrates that the `in` modifier is unnecessary at the call site. It is only required at the method declaration.
 

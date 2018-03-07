@@ -32,41 +32,41 @@ namespace HelloWorld
         {
             // <Snippet2>
             SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);
-            var root = tree.GetRoot() as CompilationUnitSyntax;
+            CompilationUnitSyntax root = tree.GetCompilationUnitRoot();
             // </Snippet2>
 
             // <Snippet3>
-            WriteLine($"The tree is a {root.Kind().ToString()} node.");
+            WriteLine($"The tree is a {root.Kind()} node.");
             WriteLine($"The tree has {root.Members.Count} elements in it.");
             WriteLine($"The tree has {root.Usings.Count} using statements. They are:");
             foreach (UsingDirectiveSyntax element in root.Usings)
-                WriteLine($"\t{element.Name.ToString()}");
+                WriteLine($"\t{element.Name}");
             // </Snippet3>
 
             // <Snippet4>
             MemberDeclarationSyntax firstMember = root.Members[0];
-            WriteLine($"The first member is a {firstMember.Kind()}");
-            NamespaceDeclarationSyntax helloWorldDeclaration = firstMember as NamespaceDeclarationSyntax;
+            WriteLine($"The first member is a {firstMember.Kind()}.");
+            var helloWorldDeclaration = (NamespaceDeclarationSyntax)firstMember;
             // </Snippet4>
 
             // <Snippet5>
-            WriteLine($"There is {helloWorldDeclaration.Members.Count} member declared in this namespace.");
-            WriteLine($"The first member is a {helloWorldDeclaration.Members[0].Kind()}");
+            WriteLine($"There are {helloWorldDeclaration.Members.Count} members declared in this namespace.");
+            WriteLine($"The first member is a {helloWorldDeclaration.Members[0].Kind()}.");
             // </Snippet5>
 
             // <Snippet6>
             var programDeclaration = (ClassDeclarationSyntax)helloWorldDeclaration.Members[0];
-            WriteLine($"There are {programDeclaration.Members.Count} members declared in the {programDeclaration.Identifier.ValueText} class");
-            WriteLine($"The first member is a {programDeclaration.Members[0].Kind()}");
+            WriteLine($"There are {programDeclaration.Members.Count} members declared in the {programDeclaration.Identifier} class.");
+            WriteLine($"The first member is a {programDeclaration.Members[0].Kind()}.");
             var mainDeclaration = (MethodDeclarationSyntax)programDeclaration.Members[0];
             // </Snippet6>
 
             // <Snippet7>
-            WriteLine($"The return type of the {mainDeclaration.Identifier.ValueText} method is {mainDeclaration.ReturnType.ToString()}");
-            WriteLine($"The method has {mainDeclaration.ParameterList.Parameters.Count} parameters");
+            WriteLine($"The return type of the {mainDeclaration.Identifier} method is {mainDeclaration.ReturnType}.");
+            WriteLine($"The method has {mainDeclaration.ParameterList.Parameters.Count} parameters.");
             foreach (ParameterSyntax item in mainDeclaration.ParameterList.Parameters)
-                WriteLine($"The type of the {item.Identifier.ValueText} parameter is {item.Type.ToString()}");
-            WriteLine($"The body text of the {mainDeclaration.Identifier.ValueText} method follows:");
+                WriteLine($"The type of the {item.Identifier} parameter is {item.Type}.");
+            WriteLine($"The body text of the {mainDeclaration.Identifier} method follows:");
             WriteLine(mainDeclaration.Body.ToFullString());
 
             var argsParameter = mainDeclaration.ParameterList.Parameters[0];

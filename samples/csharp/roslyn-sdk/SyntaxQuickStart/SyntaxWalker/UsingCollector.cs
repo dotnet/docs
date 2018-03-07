@@ -16,11 +16,11 @@ namespace SyntaxWalker
         // <SNippet5>
         public override void VisitUsingDirective(UsingDirectiveSyntax node)
         {
-            WriteLine($"\tVisitUsingDirective called with {node.Name.ToFullString()}");
+            WriteLine($"\tVisitUsingDirective called with {node.Name}.");
             if (node.Name.ToString() != "System" &&
                 !node.Name.ToString().StartsWith("System."))
             {
-                WriteLine($"\t\tSuccess. Adding {node.Name.ToFullString()}");
+                WriteLine($"\t\tSuccess. Adding {node.Name}.");
                 this.Usings.Add(node);
             }
         }

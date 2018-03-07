@@ -68,7 +68,7 @@ Specifies settings that enable auditing of security events during service operat
   
  Message authentication audit events cover whether the message was tampered with, whether the message has expired and whether the client can authenticate to the service. They provide information about whether the authentication succeeded or failed along with the identity of the client and the endpoint the message was sent to along with the action associated with the message.  
   
- Service authorization audit events cover the authorization decision made by a service authorization manager. They provide information about whether authorization succeeded of failed along with the identity of the client, the endpoint the message was sent to, the action associated with the message, the identifier of the authorization context that was generated from the incoming message and the type of the authorization manager that made the access decision.  
+ Service authorization audit events cover the authorization decision made by a service authorization manager. They provide information about whether authorization succeeded or failed along with the identity of the client, the endpoint the message was sent to, the action associated with the message, the identifier of the authorization context that was generated from the incoming message and the type of the authorization manager that made the access decision.  
   
 ## Example  
   

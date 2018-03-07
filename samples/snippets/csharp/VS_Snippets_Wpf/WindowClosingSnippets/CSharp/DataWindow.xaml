@@ -5,10 +5,8 @@
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   Closing="DataWindow_Closing"  
     >
-  <!--</SnippetWindowClosingXAML1>-->
   <Grid>
     <TextBox Name="documentTextBox" AcceptsReturn="True" AcceptsTab="True" TextChanged="documentTextBox_TextChanged"></TextBox>
   </Grid>
-  <!--<SnippetWindowClosingXAML2>-->
 </Window>
-<!--</SnippetWindowClosingXAML2>-->
+<!--</SnippetWindowClosingXAML1>-->

@@ -11,157 +11,118 @@ ms.custom: mvc
 ---
 # Explore code with the syntax visualizer
 
-This article is an overview of the Syntax Visualizer tool that ships as part of the .NET Compiler Platform (“Roslyn”) SDK Preview. The Syntax Visualizer is a Visual Studio Extension that facilitates inspection and exploration of Roslyn syntax trees and can be used as a debugging aid when you develop your own applications atop the .NET Compiler Platform (“Roslyn”) APIs.
+This article provides an overview of the Syntax Visualizer tool that ships as part of the .NET Compiler Platform ("Roslyn") SDK. The Syntax Visualizer is a tool window that helps you inspect and explore syntax trees. It is an essential tool to understand the models for code you want to analyze. It is also a debugging aid when you develop your own applications using the .NET Compiler Platform (“Roslyn”) SDK. You should keep this tool open as you create your first analyzers. It will help you understand the models used by the APIs.
 
-## Getting Started
+[!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]
 
-Let’s begin by getting a box set up with [Visual Studio 2015](https://github.com/dotnet/roslyn/wiki/Getting-Started-on-Visual-Studio-2015).
-
-The Syntax Visualizer is installed as part of the [.NET Compiler Platform SDK](https://visualstudiogallery.msdn.microsoft.com/2ddb7240-5249-4c8c-969e-5d05823bcb89).
-
-To understand the concepts presented in this document better, I would strongly recommend reading the [.NET Compiler Platform (“Roslyn”) Overview document](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview). This document provides a very good overview of the .NET Compiler Platform (“Roslyn”) APIs including syntax trees, nodes, tokens, and trivia.
+You should familiarize yourself with the concepts used in the .NET Compiler Platform SDK by reading the [overview](compiler-api-model.md) article. It provides an introduction to syntax trees, nodes, tokens, and trivia.
 
 ## Syntax Visualizer
-Once installed, the Syntax Visualizer enables inspection of the syntax tree for any C# or VB code file that is open inside the Visual Studio IDE. The visualizer can be launched by clicking on View –> Other Windows –> Roslyn Syntax Visualizer.
 
-*Figure 1 Launching the Syntax Visualizer*
+The **Syntax Visualizer** enables inspection of the syntax tree for the C# or VB code file in the current active editor window inside the Visual Studio IDE. The visualizer can be launched by clicking on **View** –> **Other Windows** –> **Syntax Visualizer**.  You can also use the **Quick Launch** toolbar in the upper right corner. Type "syntax" and the command to open the **Syntax Visualizer** should appear.
 
-![fig1.png](images/fig1.png)
+![Launching the Syntax Visualizer](media/fig1.png)
 
-This should bring up a tool window that looks like below. Let’s dock this tool window at a convenient location inside Visual Studio. I usually dock this window on the left side.
+This command opens the Syntax Visualizer as a floating tool window, shown in the following figure. Dock this tool window at a convenient location inside Visual Studio, such as the left side.
 
-*Figure 2 The Syntax Visualizer tool window*
+![The Syntax Visualizer tool window](media/fig2.png)
 
-![fig2.png](images/fig2.png)
+Now, let’s create a new project using the **File** –> **New Project** commnd. You can create either a VB or C# project. As soon as Visual Studio opens the main code file for this project, you see the syntax tree for this file in the visualizer tool window as shown in the following images. You can open any existing C# / VB file in this Visual Studio instance, and the syntax tree for the opened file will be displayed in the visualizer tool window. If you have multiple code files open inside Visual Studio, the visualizer will always display the syntax tree for the currently active code file (i.e., the code file that has keyboard focus).
 
-Now, let’s create a new project by clicking on File –> New Project. You can create either a VB or C# project. As soon as Visual Studio opens the main code file for this project, you should see the syntax tree for this file in the visualizer tool window as shown in the below image. You can open any existing C# / VB file in this Visual Studio instance, and the syntax tree for the opened file will be displayed in the visualizer tool window. If you have multiple code files open inside Visual Studio, the visualizer will always display the syntax tree for the currently active code file (i.e., the code file that has keyboard focus).
+![Visualizing a C# syntax tree](media/fig3.png)
 
-*Figure 3 Visualizing a C# syntax tree*
+![Visualizing a VB syntax tree](media/fig4.png)
 
-![fig3.png](images/fig3.png)
+As shown in the preceding images, the visualizer tool window displays the syntax tree at the top and a property grid at the bottom. The property grid displays the properties of the item that is currently selected in the tree, including the .NET *Type* and the *Kind* (SyntaxKind) of the item.
 
-*Figure 4 Visualizing a VB syntax tree*
+Syntax trees comprise three types of items – *nodes*, *tokens*, and *trivia*. You can read more about these types in the [.NET Compiler Platform SDK Overview document](compiler-api-model.md). Items of each type are represented using a different color. Click on the button titled ‘Legend’ for an overview of the colors used.
 
-![fig4.png](images/fig4.png)
+![Legend](media/fig5.png)
 
-As you can see in the above image, the visualizer tool window displays the syntax tree at the top and a property grid at the bottom. The property grid displays the properties of the item that is currently selected in the tree, including the .NET ‘Type’ and the ‘Kind’ (SyntaxKind) of the item.
+Each item in the tree also displays its own **span**. The **span** is the indices of that node in the text file.  In the preceding C# example the selected “UsingKeyword [0..5)” token has a **Span** that is 5 characters wide, [0..5). The "[..)" notation means that the starting index is part of the span, but the ending index is not.
 
-Syntax trees comprise three types of items – nodes, tokens, and trivia. You can read more about these types in the [.NET Compiler Platform (“Roslyn”) Overview document](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overvi). Items of each type are represented using a different color. Click on the button titled ‘Legend’ for an overview of the colors used.
+There are two ways two navigate the tree:
+* Expand or click on items in the tree. The visualizer automatically selects the text corresponding to this item’s Span in the code editor.
+* Clicking or Select text in the code editor. In the preceding VB example, if you select the line containing "Module Module1" in the code editor, the visualizer automatically navigates to the corresponding ModuleStatement node in the tree. 
 
-*Figure 5 Legend*
+The visualizer highlights the item in the tree whose span best matches the span of the text selected in the editor.
 
-![fig5.png](images/fig5.png)
+The visualizer refreshes the tree to match modifications in the active code file. Add a call to `Console.WriteLine()` inside `Main()`. As you type, the visualizer refreshes the tree.
 
-Each item in the tree also displays its own ‘Span’. In the C# example above for instance, the selected “UsingKeyword [0..5)” token has a Span that is 5 characters wide i.e. [0..5).
-
-There are a couple of different ways in which you can navigate the tree:
-* You can navigate the tree by expanding / clicking on items in the tree. If you click on an item in the tree, the visualizer automatically selects the text corresponding to this item’s Span in the code editor.
-* You can also navigate the tree by clicking on / selecting text in the code editor. In the VB example above for instance, if you select the line containing "Module Module1" in the code editor, the visualizer will automatically navigate to the corresponding ModuleStatement node in the tree. In essence, the visualizer will try to find and highlight the item in the tree whose span best matches the span of the text that you select.
-
-Next, let’s see what happens when we modify the code in the active code file. In the above example, lets type a call to Console.WriteLine() inside Main(). As you type, notice that the visualizer refreshes the tree to match the new code.
-
-Pause typing once you have typed `Console.`. Notice that the tree has some items colored in pink. This is because at this point, there are errors (also referred to as ‘Diagnostics’) in the typed code. These errors are attached to nodes, tokens and trivia in the syntax tree and the visualizer shows you which items have errors attached to them by coloring them specially. You can inspect the errors that are present on any item colored pink by hovering over the item with your mouse. Note that the visualizer will only display syntactic errors (i.e. errors related to the syntax of the typed code) – it will not display any semantic errors.
+Pause typing once you have typed `Console.`. The tree has some items colored in pink. At this point, there are errors (also referred to as ‘Diagnostics’) in the typed code. These errors are attached to nodes, tokens and trivia in the syntax tree. The visualizer shows you which items have errors attached to them highlighting the background in pink. You can inspect the errors on any item colored pink by hovering over the item. The visualizer will only display syntactic errors (i.e. errors related to the syntax of the typed code) – it will not display any semantic errors.
  
-# Syntax Graphs
+## Syntax Graphs
 
-Right clicking on any item in the tree and clicking on View Directed Syntax Graph will display a graphical representation of the sub-tree rooted at the selected item. Let’s try this for the MethodDeclaration node corresponding to the Main() method in the C# example above. This should display a syntax graph that looks as follows:
+Right click on any item in the tree and click on **View Directed Syntax Grap**. The visualizer displays a graphical representation of the sub-tree rooted at the selected item. Try this for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. This displays a syntax graph that looks as follows:
 
-*Figure 6 Viewing a C# syntax graph*
+![Viewing a C# syntax graph](media/fig6.png)
 
-![fig6.png](images/fig6.png)
+Try the same for the **SubBlock** node corresponding to the `Main()` method in the preceding VB example. This displays a syntax graph that looks as follows:
 
-*Figure 7 A C# syntax graph*
+![Viewing a VB syntax graph](media/fig7.png)
 
-![fig7.png](images/fig7.png)
+The syntax graph viewer has an option to display a legend its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
 
-Let’s try the same for the SubBlock node corresponding to the Main() method in the VB example above. This should display a syntax graph that looks as follows:
+You can view syntax graphs for different items in the tree repeatedly and the graphs will always be displayed in the same window inside Visual Studio. You can dock this window at a convenient location inside Visual Studio so that you don’t have to switch between tabs to view a new syntax graph. The bottom, below code editor windows, is often convenient.
 
-*Figure 8 Viewing a VB syntax graph*
+Here is the docking layout to use with the visualizer tool window and the syntax graph window:
 
-![fig8.png](images/fig8.png)
+![One docking layout for the visualizer and syntax graph window](media/fig8.png)
 
-*Figure 9 A VB syntax graph*
+Another option is to put the syntax graph window on a second monitor, in a dual monitor setup.
 
-![fig9.png](images/fig9.png)
+# Inspecting semantics
 
-As you can see in the above screenshots, the syntax graph viewer has an option to display a legend for the coloring scheme it uses. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
+The Syntax Visualizer enables rudimentary inspection of symbols and semantic information. Type `double x = 1 + 1;` inside Main() in the C# example. Then, select the expression `1 + 1` in the code editor window. This highlights the **AddExpression** node in the visualizer. Right click on this **AddExpression** and click on **View Symbol (if any)**. Notice that most of the menu items have the "if any" qualifier. The Syntax Visualizer inspects properties of a Node, including those that may not be present for all nodes. 
 
-You can view syntax graphs for different items in the tree repeatedly and the graphs will always be displayed in the same window inside Visual Studio. Dock this window at a convenient location inside Visual Studio so that you don’t have to switch between tabs to view a new syntax graph. I usually dock this window at the bottom (below my code editor windows).
+The property grid in the visualizer should now be updated as shown in the following figure. You can see that the symbol for the expression is a **SynthesizedIntrinsicOperatorSymbol** with **Kind = Method**.
 
-Here is the docking layout that I normally use for the visualizer tool window and the syntax graph window:
+![Symbol properties](media/fig9.png)
 
-*Figure 10 My preferred docking layout*
+Try View **TypeSymbol (if any)** for the same **AddExpression** node. The property grid in the visualizer updates as shown in the following figure indicating that the type of the selected expression is `Int32`.
 
-![fig10.png](images/fig10.png)
+![TypeSymbol properties](media/fig10.png)
 
-# Inspecting Semantics
-The Syntax Visualizer also allows you to do some rudimentary inspection of symbols and semantic information. Let’s look at some examples. You can read more about APIs for performing semantic analysis in the [.NET Compiler Platform (“Roslyn”) Overview document](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overvi).
+Next let’s try View **Converted TypeSymbol (if any)** for the same **AddExpression** node. The property grid is updated indicating that although the type of the expression is `Int32`, the converted type of the expression is `Double` as shown in the following figure. The converted type symbol information is present because the `Int32` expression is used in a context where it has to be converted to a `Double`. This conversion satisfies the `Double` type specified for the variable `x` on the left hand side of the assignment operator.
 
-In the C# file above, type `double x = 1 + 1;` inside Main().
+![Converted TypeSymbol properties](media/fig11.png)
 
-Now select the expression `1 + 1` in the code editor window. This should highlight the corresponding AddExpression node in the visualizer. Right click on this AddExpression and click on View Symbol (if any).
+Finally, try **View Constant Value (if any)** for the same **AddExpression** node. The property grid tells you that the value of the expression is a compile time constant with value `2`.
 
-*Figure 11 Viewing symbol for an expression*
+![A constant value](media/fig12.png)
 
-![fig11.png](images/fig11.png)
+The preceding example can also be replicated in VB. Type `Dim x As Double = 1 + 1` in a VB file. Select the expression `1 + 1` in the code editor window. This highlights the corresponding **AddExpression** node in the visualizer. Repeat the preceding steps for this **AddExpression** and you should see identical results.
 
-The property grid in the visualizer should now be updated as follows indicating that the symbol for the expression is a SynthesizedIntrinsicOperatorSymbol with Kind = Method.
+Next, you can examine more code in VB. Update your main VB file to match the following:
 
-*Figure 12 Symbol properties*
+```vb
+Imports C = System.Console
 
-![fig12.png](images/fig12.png)
+Module Program
+    Sub Main(args As String())
+        C.WriteLine()
+    End Sub
+End Module
+```
 
-Next let’s try View **TypeSymbol (if any)** for the same AddExpression node. This time the property grid in the visualizer is updated as follows indicating that the type of the selected expression is Int32.
+This code introduces an alias named `C` that maps to the type `System.Console` at the top of the file and uses this alias inside `Main()`. Select the use of this alias, the `C` in `C.WriteLine()`, inside the method. This should select the corresponding **IdentifierName** node in the visualizer. Right click this node and click on **View Symbol (if any)**. The property grid tells us that this identifier is bound to the type `System.Console` as shown in the following figure.
 
-*Figure 13 TypeSymbol properties*
+![Symbol properties](media/fig13.png)
 
-![fig13.png](images/fig13.png)
+Try **View AliasSymbol (if any)** for the same **IdentifierName** node. The property grid tells you the identifier is an alias with name `C` that is bound to the `System.Console` target. In other words, the property grid provides information regarding the **AliasSymbol** corresponding to the identifier `C`.
 
-Next let’s try View **Converted TypeSymbol (if any)** for the same AddExpression node. This time, the property grid is updated as follows indicating that although the type of the expression is Int32, the converted type of the expression is Double (because the Int32 expression is used in a context where it has to be converted to a Double in order to satisfy the type specified for the variable x on the left hand side of the assignment operator).
+![AliasSymbol properties](media/fig14.png)
 
-*Figure 14 Converted TypeSymbol properties*
+You can also inspect the symbol corresponding to any declared type, method, property and more by selecting the corresponding node in the visualizer and clicking on **View Symbol (if any)**. Select the method `Sub Main()`, including the body of the method, in the example and click on **View Symbol (if any)** for the corresponding **SubBlock** node in the visualizer, the property grid will tell us that the **MethodSymbol** for this **SubBlock** has name `Main` with return type `Void`.
 
-![fig14.png](images/fig14.png)
+![Viewing symbol for a method declaration](media/fig15.png)
 
-Finally, let’s try **View Constant Value (if any)** for the same AddExpression node above. The property grid tells us that the value of the expression is a compile time constant with value `2`.
+The above VB examples can be easily replicated in C#. Type `using C = System.Console;` in place of `Imports C = System.Console` for the alias. The preceding steps in C# should yield identical results in the visualizer window.
 
-*Figure 15 A constant value*
+The semantic inspection operations described above are only available on nodes and not on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a ode doesn't have interesting semantic information, clicking on **View * Symbol (if any)** shows a blank property grid.
 
-![fig15.png](images/fig15.png)
+You can read more about APIs for performing semantic analysis in the [Work with semantics](work-with-semantics.md) overview documents.
 
-The above inspection example can also be replicated in VB. Type `Dim x As Double = 1 + 1` in a VB file. Now select the expression `1 + 1` in the code editor window. This should highlight the corresponding AddExpression node in the visualizer. Repeat the above steps for this AddExpression and you should see identical results.
+## Closing and disabling syntax visualizer
 
-Let’s try another example, this time in VB. Update the code in the VB file to match what’s in the below image. This code introduces an alias named C (that maps to the type System.Console) at the top of the file and uses this alias inside Main(). Let’s select the use of this alias inside the method (see below screenshot). This should select the corresponding IdentifierName node in the visualizer. Right click this node and click on **View Symbol (if any)**.
-
-*Figure 16 Viewing symbol for an identifier*
-
-![fig16.png](images/fig16.png)
-
-The property grid tells us that this identifier is bound to the type `System.Console`.
-
-*Figure 17 Symbol properties*
-
-![fig17.png](images/fig17.png)
-
-Now let’s try **View AliasSymbol (if any)** for the same IdentifierName node. This time, the property grid tells us that the identifier is an alias with name C that is bound to the System.Console target. In other words, the property grid gives us information regarding the AliasSymbol corresponding to the identifier C.
-
-*Figure 18 AliasSymbol properties*
-
-![fig18.png](images/fig18.png)
-
-Note that you can also inspect the symbol corresponding to any declared type, method, property etc. by selecting the corresponding node in the visualizer and clicking on View Symbol (if any). For example, select the method `Sub Main()` in the above example and click on View Symbol (if any) for the corresponding SubBlock node in the visualizer, the property grid will tell us that the MethodSymbol for this SubBlock has name Main with return type Void.
-
-*Figure 19 Viewing symbol for a method declaration*
-
-![fig19.png](images/fig19.png)
-
-Note that the above VB examples can be easily replicated in C# (for the alias, type `using C = System.Console;` in place of `Imports C = System.Console`). Repeating the above steps in C# should yield identical results.
-
- Note that the semantic inspection operations described above are only available on nodes and not on tokens or trivia. Also note that not all nodes will have interesting semantic information to inspect. For nodes that don’t have interesting semantic information, clicking on **View * Symbol (if any)** will be a no-op (i.e., will return no useful information). In such cases, the visualizer property grid will be empty indicating that there is no useful semantic information to display.
-
-*Figure 20 An empty property grid is displayed when no semantic information is available for the selected node*
-
-![fig20.png](images/fig20.png)
-
-## Closing and Disabling Syntax Visualizer
-The visualizer tool window can be closed at any time and once closed it should cease to have any impact. You can also disable / uninstall the visualizer extension completely using Tools –> Extensions and Updates in Visual Studio.
+You can close the visualizer window when you are not using it to examine source code.

@@ -32,7 +32,7 @@ This section summarizes the process needed to expose an existing COM component t
   
      The common language runtime requires metadata for all types, including COM types. There are several ways to obtain an assembly containing COM types imported as metadata.  
   
-2.  [Create COM types in managed Code](http://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66).  
+2.  [Create COM types in managed Code](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100)).  
   
      You can inspect COM types, activate instances, and invoke methods on the COM object the same way you do for any managed type.  
   

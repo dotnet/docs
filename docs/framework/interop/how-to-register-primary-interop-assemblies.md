@@ -50,11 +50,11 @@ Classes can be marshaled only by COM interop and are always marshaled as interfa
 ## Example  
  The following example registers the `CompanyA.UtilLib.dll` primary interop assembly.  
   
-```  
+```console  
 regasm CompanyA.UtilLib.dll  
 ```  
   
 ## See Also  
- [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/library/306fa1d6-0703-4004-9e93-d0a57f1be81e)  
- [Locating Primary Interop Assemblies](http://msdn.microsoft.com/library/d6768e4b-cd80-414d-a4f8-05d979eb393b)  
- [Redistributing Primary Interop Assemblies](http://msdn.microsoft.com/library/e76384f0-d631-474c-bdbd-13884cba0265)
+ [Programming with Primary Interop Assemblies](https://msdn.microsoft.com/library/306fa1d6-0703-4004-9e93-d0a57f1be81e(v=vs.100))  
+ [Locating Primary Interop Assemblies](https://msdn.microsoft.com/library/d6768e4b-cd80-414d-a4f8-05d979eb393b(v=vs.100))  
+ [Redistributing Primary Interop Assemblies](https://msdn.microsoft.com/library/e76384f0-d631-474c-bdbd-13884cba0265(v=vs.100))

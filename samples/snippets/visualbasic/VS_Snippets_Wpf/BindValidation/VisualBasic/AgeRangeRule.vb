@@ -18,7 +18,7 @@ Imports System.Windows.Controls
             If ((num1 < Me.Min) OrElse (num1 > Me.Max)) Then
                 Return New ValidationResult(False, String.Concat(New Object() {"Please enter an age in the range: ", Me.Min, " - ", Me.Max, "."}))
             End If
-            Return New ValidationResult(True, Nothing)
+            Return ValidationResult.ValidResult
         End Function
 
 

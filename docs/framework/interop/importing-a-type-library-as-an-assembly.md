@@ -37,7 +37,7 @@ COM type definitions usually reside in a type library. In contrast, CLS-complian
   
 -   Using design-time-only interop assemblies: Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can instruct the compiler to embed type information from the interop assembly into your executable. The compiler embeds only the type information that your application uses. You do not have to deploy the interop assembly with your application. This is the recommended technique.  
   
--   Deploying interop assemblies: You can create a standard reference to the interop assembly. In this case, the interop assembly must be deployed with your application. If you employ this technique, and you are not using a private COM component, always reference the primary interop assembly (PIA) published by the author of the COM component you intend to incorporate in your managed code. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](http://msdn.microsoft.com/library/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+-   Deploying interop assemblies: You can create a standard reference to the interop assembly. In this case, the interop assembly must be deployed with your application. If you employ this technique, and you are not using a private COM component, always reference the primary interop assembly (PIA) published by the author of the COM component you intend to incorporate in your managed code. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](https://msdn.microsoft.com/library/b977a8be-59a0-40a0-a806-b11ffba5c080(v=vs.100)).  
   
  When you use design-time-only interop assemblies, you can embed type information from the primary interop assembly published by the author of the COM component. However, you do not have to deploy the primary interop assembly with your application.  
   
@@ -72,17 +72,17 @@ COM type definitions usually reside in a type library. In contrast, CLS-complian
   
     -   Knowledge of the type library-to-assembly conversion rules.  
   
-     Writing a custom wrapper is an advanced technique. For additional information about how to generate a custom wrapper, see [Customizing Standard Wrappers](http://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d).  
+     Writing a custom wrapper is an advanced technique. For additional information about how to generate a custom wrapper, see [Customizing Standard Wrappers](https://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d(v=vs.100)).  
   
- For more information about the COM interop import process, see [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958).  
+ For more information about the COM interop import process, see [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100)).  
   
 ## See Also  
  <xref:System.Runtime.InteropServices.TypeLibConverter>  
  [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)  
- [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958)  
+ [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
  [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
- [Customizing Standard Wrappers](http://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d)  
- [Using COM Types in Managed Code](http://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66)  
+ [Customizing Standard Wrappers](https://msdn.microsoft.com/library/c40d089b-6a3c-41b5-a20d-d760c215e49d(v=vs.100))  
+ [Using COM Types in Managed Code](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))  
  [Compiling an Interop Project](../../../docs/framework/interop/compiling-an-interop-project.md)  
  [Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)  
  [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md)  

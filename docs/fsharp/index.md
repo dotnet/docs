@@ -16,20 +16,20 @@ ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 F# is a functional programming language that runs on .NET. It also has full support for objects, letting you blend functional and object programming for pragmatic solutions to any problem.
 
 ```fsharp
-open System // Get access to functionality in System namespace
+open System // Get access to functionality in System namespace.
 
-// Function: takes a name and produces a greeting
+// Function: takes a name and produces a greeting.
 let getGreeting name =
     sprintf "Hello, %s! Isn't F# great?" name
 
-// Use the EntryPoint attribute to run the program
+// Use the EntryPoint attribute to run the program.
 [<EntryPoint>]
 let main args =
-    args // Use F# pipe operators because they're awesome!
-    |> Array.map getGreeting // Turn each name into a friendly greeting!
-    |> Array.iter printfn // Print them!
+    args                     // Use F# pipe operators to send the args into some functions.
+    |> Array.map getGreeting // Turn each name into a friendly greeting.
+    |> Array.iter printfn    // Print them!
 
-    0 // 0 return code
+    0
 ```
 
 F# is about productivity at its heart. The tooling support for F# is ubiquitous and full of advanced features.

@@ -49,7 +49,7 @@ namespace SDKSample
             }
             else
             {
-                return new ValidationResult(true, null);
+                return ValidationResult.ValidResult;
             }
         }
     }

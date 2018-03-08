@@ -1,14 +1,8 @@
 using System;
-using static System.Console;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Symbols;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.MSBuild;
-using Microsoft.CodeAnalysis.Text;
 
 namespace SemanticQuickStart
 {
@@ -37,14 +31,14 @@ namespace HelloWorld
             // <Snippet2>
             SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);
 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
+            CompilationUnitSyntax root = tree.GetCompilationUnitRoot();
             // </Snippet2>
 
             // <Snippet3>
             var compilation = CSharpCompilation.Create("HelloWorld")
                 .AddReferences(MetadataReference.CreateFromFile(
                     typeof(string).Assembly.Location))
-                    .AddSyntaxTrees(tree);
+                .AddSyntaxTrees(tree);
             // </Snippet3>
 
             // <Snippet4>
@@ -52,7 +46,7 @@ namespace HelloWorld
             // </Snippet4>
 
             // <Snippet5>
-            // Use the syntax tree to find "using System"
+            // Use the syntax tree to find "using System;"
             UsingDirectiveSyntax usingSystem = root.Usings[0];
             NameSyntax systemName = usingSystem.Name;
 
@@ -64,7 +58,7 @@ namespace HelloWorld
             var systemSymbol = (INamespaceSymbol)nameInfo.Symbol;
             foreach (INamespaceSymbol ns in systemSymbol.GetNamespaceMembers())
             {
-                Console.WriteLine(ns.Name);
+                Console.WriteLine(ns);
             }
             // </Snippet6>
 

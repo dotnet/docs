@@ -6,7 +6,7 @@
 
 ## Quick starts
 ### [Syntax analysis](get-started/syntax-analysis.md)
-### [Semantic Analysis](get-started/semantic-analysis.md)
+### [Semantic analysis](get-started/semantic-analysis.md)
 
 <!-- Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs -->
 <!--

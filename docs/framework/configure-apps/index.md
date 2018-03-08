@@ -84,7 +84,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
 -   ASP.NET-hosted app.  
   
-     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](http://msdn.microsoft.com/library/116608f3-c03d-4413-9fc7-978703e18b0f)  
+     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://msdn.microsoft.com/library/116608f3-c03d-4413-9fc7-978703e18b0f(v=vs.100))  
   
 -   Internet Explorer-hosted app.  
   

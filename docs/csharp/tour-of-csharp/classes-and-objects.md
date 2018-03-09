@@ -69,7 +69,7 @@ Each member of a class has an associated accessibility, which controls the regio
 * `private`
 	- Access limited to this class
 * `private protected`
-    - Access limited to the containing class or classes derived from the containing type withing the same assembly
+    - Access limited to the containing class or classes derived from the containing type within the same assembly
 
 ## Type parameters
 

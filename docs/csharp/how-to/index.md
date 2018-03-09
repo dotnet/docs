@@ -54,7 +54,7 @@ These articles help you work with collections of data.
 Strings are the fundamental data type used to display or manipulate text. These articles demonstrate common practices with strings.
 
 - [Compare strings](../programming-guide/strings/how-to-compare-strings.md).
-- [Modify the contents of a string](../programming-guide/strings/how-to-modify-string-contents.md).
+- [Modify the contents of a string](modify-string-contents.md).
 - [Determine if a string represents a number](../programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md).
 - [Use `String.Split` to separate strings](parse-strings-using-split.md).
 - [Combine multiple strings into one](concatenate-multiple-strings.md).

@@ -15,6 +15,9 @@ namespace HowToStrings
             Console.WriteLine("============================  String Searching examples =================================================");
             Console.WriteLine();
             SearchStrings.Examples();
+            Console.WriteLine("============================  Modify string examples =================================================");
+            Console.WriteLine();
+            ModifyStrings.Examples();
         }
     }
 }

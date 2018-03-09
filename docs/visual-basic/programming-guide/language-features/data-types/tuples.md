@@ -59,6 +59,7 @@ To enable interred tuple element names, you must define the version of the Visua
 <PropertyGroup> 
   <LangVersion>15.3</LangVersion> 
 </PropertyGroup> 
+```
 
 The version number can be any version of the Visual Basic compiler starting with 15.3. Rather than hard-coding a specific compiler version, you can also specify "Latest" as the value of `LangVersion` to compile with the most recent version of the Visual Basic compiler installed on your system.
 

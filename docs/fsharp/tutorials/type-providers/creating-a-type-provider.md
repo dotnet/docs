@@ -131,8 +131,8 @@ type SampleTypeProvider(config: TypeProviderConfig) as this =
   // And add them to the namespace
   do this.AddNamespace(namespaceName, types)
 
-  [<assembly:TypeProviderAssembly>] 
-  do()
+[<assembly:TypeProviderAssembly>] 
+do()
 ```
 
 To use this provider, open a separate instance of Visual Studio, create an F# script, and then add a reference to the provider from your script by using #r as the following code shows:

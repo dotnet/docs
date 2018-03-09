@@ -1,6 +1,7 @@
 ---
-title: "How to: Compare strings (C# Programming Guide)"
-ms.date: 07/20/2015
+title: "How to: Compare strings - C# Guide"
+description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
+ms.date: 03/09/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,12 +9,10 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "strings [C#], comparison"
   - "comparing strings [C#]"
-ms.assetid: e1268e28-ee98-4695-98e9-92280f1c33c0
-caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# How to: Compare strings (C# Programming Guide)
+# How to compare strings in C# #
 
 When you compare strings, you are producing a result that says one string is greater than or less than the other, or that the two strings are equal. The rules by which the result is determined are different depending on whether you are performing *ordinal comparison* or *culture-sensitive comparison*. It is important to use the correct kind of comparison for the specific task.
 
@@ -28,21 +27,38 @@ When you compare strings, you are producing a result that says one string is gre
 
 The following example shows how to correctly compare strings whose values will not change based on the locale of the user's computer. In addition, it also demonstrates the *string interning* feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning, as shown in the example.
 
-[!code-csharp[csProgGuideStrings#11](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#11)]
 
-## Example
+<!-- Now snippets 1 thru 4 -->
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
-The following example shows how to compare strings the preferred way by using the <xref:System.String?displayProperty=nameWithType> methods that take a <xref:System.StringComparison> enumeration. Note that the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods are not used here, because none of the overloads takes a <xref:System.StringComparison>.
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
 
-[!code-csharp[csProgGuideStrings#31](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#31)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
+
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
 
 ## Example
 
 The following example shows how to sort and search for strings in an array in a culture-sensitive manner by using the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
 
-[!code-csharp[csProgGuideStrings#32](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#32)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
+
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#6)]
+
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#7)]
+
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
+
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either `Ordinal` or `OrdinalIgnoreCase`.
+
+## Example
+
+The following example shows how to compare strings the preferred way by using the <xref:System.String?displayProperty=nameWithType> methods that take a <xref:System.StringComparison> enumeration. Note that the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods are not used here, because none of the overloads takes a <xref:System.StringComparison>.
+
+[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
+
+
 
 ## See also
  <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  

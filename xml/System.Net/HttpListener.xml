@@ -29,41 +29,38 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Net.HttpListener> class, you can create a simple HTTP protocol listener that responds to HTTP requests. The listener is active for the lifetime of the <xref:System.Net.HttpListener> object and runs within your application with its permissions.  
+ Using the <xref:System.Net.HttpListener> class, you can create a simple HTTP protocol listener that responds to HTTP requests. The listener is active for the lifetime of the <xref:System.Net.HttpListener> object and runs within your application with its permissions.
+   
+ To use <xref:System.Net.HttpListener>, create a new instance of the class using the <xref:System.Net.HttpListener> constructor and use the <xref:System.Net.HttpListener.Prefixes%2A> property to gain access to the collection that holds the strings that specify which Uniform Resource Identifier (URI) prefixes the <xref:System.Net.HttpListener> should process.
+  
+ A URI prefix string is composed of a scheme (http or https), a host, an optional port, and an optional path. An example of a complete prefix string is *http://www.contoso.com:8080/customerData/*. Prefixes must end in a forward slash ("/"). The <xref:System.Net.HttpListener> object with the prefix that most closely matches a requested URI responds to the request. Multiple <xref:System.Net.HttpListener> objects cannot add the same prefix; a <xref:System.ComponentModel.Win32Exception> exception is thrown if a <xref:System.Net.HttpListener> adds a prefix that is already in use.
+  
+ When a port is specified, the host element can be replaced with "\*" to indicate that the <xref:System.Net.HttpListener> accepts requests sent to the port if the requested URI does not match any other prefix. For example, to receive all requests sent to port 8080 when the requested URI is not handled by any <xref:System.Net.HttpListener>, the prefix is *http://\*:8080/*. Similarly, to specify that the <xref:System.Net.HttpListener> accepts all requests sent to a port, replace the host element with the "+" character. For example, *https://+:8080*. The "\*" and "+" characters can be present in prefixes that include paths.
+  
+ Starting with .NET Core 2.0 or .NET Framework 4.6 on Windows 10, wildcard subdomains are supported in URI prefixes that are managed by an <xref:System.Net.HttpListener> object. To specify a wildcard subdomain, use the "\*" character as part of the hostname in a URI prefix. For example, *http://\*.foo.com/*. Pass this as the argument to the <xref:System.Net.HttpListenerPrefixCollection.Add%2A> method. This works as of .NET Core 2.0 or .NET Framework 4.6 on Windows 10; in earlier versions, this generates an <xref:System.Net.HttpListenerException>.
+  
+ To begin listening for requests from clients, add the URI prefixes to the collection and call the <xref:System.Net.HttpListener.Start%2A> method. <xref:System.Net.HttpListener> offers both synchronous and asynchronous models for processing client requests. Requests and their associated responses are accessed using the <xref:System.Net.HttpListenerContext> object returned by the <xref:System.Net.HttpListener.GetContext%2A> method or its asynchronous counterparts, the <xref:System.Net.HttpListener.BeginGetContext%2A> and <xref:System.Net.HttpListener.EndGetContext%2A> methods.
+  
+ The synchronous model is appropriate if your application should block while waiting for a client request and if you want to process only one request at a time. Using the synchronous model, call the <xref:System.Net.HttpListener.GetContext%2A> method, which waits for a client to send a request. The method returns an <xref:System.Net.HttpListenerContext> object to you for processing when one occurs.
+  
+ In the more complex asynchronous model, your application does not block while waiting for requests and each request is processed in its own execution thread. Use the <xref:System.Net.HttpListener.BeginGetContext%2A> method to specify an application-defined method to be called for each incoming request. Within that method, call the <xref:System.Net.HttpListener.EndGetContext%2A> method to obtain the request, process it, and respond.
+  
+ In either model, incoming requests are accessed using the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerRequest> objects. Similarly, responses are accessed using the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerResponse> objects. These objects share some functionality with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> objects, but the latter objects cannot be used in conjunction with <xref:System.Net.HttpListener> because they implement client, not server, behaviors.
+  
+ An <xref:System.Net.HttpListener> can require client authentication. You can either specify a particular scheme to use for authentication, or you can specify a delegate that determines the scheme to use. You must require some form of authentication to obtain information about the client's identity. For additional information, see the <xref:System.Net.HttpListenerContext.User%2A>, <xref:System.Net.HttpListener.AuthenticationSchemes%2A>, and <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> properties.
   
 > [!NOTE]
->  This class is available only on computers running the Windows XP SP2 or Windows Server 2003 operating systems. If you attempt to create an <xref:System.Net.HttpListener> object on a computer that is running an earlier operating system, the constructor throws a <xref:System.PlatformNotSupportedException> exception.  
-  
- To use <xref:System.Net.HttpListener>, create a new instance of the class using the <xref:System.Net.HttpListener> constructor and use the <xref:System.Net.HttpListener.Prefixes%2A> property to gain access to the collection that holds the strings that specify which Uniform Resource Identifier (URI) prefixes the <xref:System.Net.HttpListener> should process.  
-  
- A URI prefix string is composed of a scheme (http or https), a host, an optional port, and an optional path. An example of a complete prefix string is "`http://www.contoso.com:8080/customerData``/`". Prefixes must end in a forward slash ("/"). The <xref:System.Net.HttpListener> object with the prefix that most closely matches a requested URI responds to the request. Multiple <xref:System.Net.HttpListener> objects cannot add the same prefix; a <xref:System.ComponentModel.Win32Exception> exception is thrown if a <xref:System.Net.HttpListener> adds a prefix that is already in use.  
-  
- When a port is specified, the host element can be replaced with "*" to indicate that the <xref:System.Net.HttpListener> accepts requests sent to the port if the requested URI does not match any other prefix. For example, to receive all requests sent to port 8080 when the requested URI is not handled by any <xref:System.Net.HttpListener>, the prefix is "`http://*:8080``/`". Similarly, to specify that the <xref:System.Net.HttpListener> accepts all requests sent to a port, replace the host element with the "+" character, "`https://+:8080`". The "\*" and "+" characters can be present in prefixes that include paths.  
-  
- Starting with .NET 4.5.3 and Windows 10, wildcard subdomains are supported in URI prefixes that are managed by an <xref:System.Net.HttpListener> object. To specify a wildcard subdomain, use the "*" character as part of the hostname in a URI prefix: for example, `http://*.foo.com/`, and pass this as the argument to the HttpListenerPrefixCollection.Add method. This will work on .NET 4.5.3 and Windows 10; in earlier versions, this would generate an <xref:System.Net.HttpListenerException>  
-  
- To begin listening for requests from clients, add the URI prefixes to the collection and call the <xref:System.Net.HttpListener.Start%2A> method. <xref:System.Net.HttpListener> offers both synchronous and asynchronous models for processing client requests. Requests and their associated responses are accessed using the <xref:System.Net.HttpListenerContext> object returned by the <xref:System.Net.HttpListener.GetContext%2A> method or its asynchronous counterparts, the <xref:System.Net.HttpListener.BeginGetContext%2A> and <xref:System.Net.HttpListener.EndGetContext%2A> methods.  
-  
- The synchronous model is appropriate if your application should block while waiting for a client request and if you want to process only one request at a time. Using the synchronous model, call the <xref:System.Net.HttpListener.GetContext%2A> method, which waits for a client to send a request. The method returns an <xref:System.Net.HttpListenerContext> object to you for processing when one occurs.  
-  
- In the more complex asynchronous model, your application does not block while waiting for requests and each request is processed in its own execution thread. Use the <xref:System.Net.HttpListener.BeginGetContext%2A> method to specify an application-defined method to be called for each incoming request. Within that method, call the <xref:System.Net.HttpListener.EndGetContext%2A> method to obtain the request, process it, and respond.  
-  
- In either model, incoming requests are accessed using the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerRequest> objects. Similarly, responses are accessed using the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=nameWithType> property and are represented by <xref:System.Net.HttpListenerResponse> objects. These objects share some functionality with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> objects, but the latter objects cannot be used in conjunction with <xref:System.Net.HttpListener> because they implement client, not server, behaviors.  
-  
- An <xref:System.Net.HttpListener> can require client authentication. You can either specify a particular scheme to use for authentication, or you can specify a delegate that determines the scheme to use. You must require some form of authentication to obtain information about the client's identity. For additional information, see the <xref:System.Net.HttpListenerContext.User%2A>, <xref:System.Net.HttpListener.AuthenticationSchemes%2A>, and <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> properties.  
+> If you create an <xref:System.Net.HttpListener> using https, you must select a Server Certificate for that listener. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection.
   
 > [!NOTE]
->  If you create an <xref:System.Net.HttpListener> using https, you must select a Server Certificate for that listener. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection.  
+> You can configure Server Certificates and other listener options by using Network Shell (netsh.exe). See [Network Shell (Netsh)](/windows-server/networking/technologies/netsh/netsh) for more details. The executable began shipping with Windows Server 2008 and Windows Vista.
   
 > [!NOTE]
->  You can configure Server Certificates and other listener options by using HttpCfg.exe. See [http://msdn.microsoft.com/library/default.asp?url=/library/en-us/http/http/httpcfg_exe.asp](http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp) for more details. The executable is shipped with Windows Server 2003, or can be built from source code available in the Platform SDK.  
-  
-> [!NOTE]
->  If you specify multiple authentication schemes for the <xref:System.Net.HttpListener>, the listener will challenge clients in the following order: `Negotiate`, `NTLM`, `Digest`, and then `Basic`.  
+> If you specify multiple authentication schemes for the <xref:System.Net.HttpListener>, the listener will challenge clients in the following order: `Negotiate`, `NTLM`, `Digest`, and then `Basic`.
   
    
   
-## Examples  
+## Examples
  The following code example demonstrates using a <xref:System.Net.HttpListener>.  
   
  [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  

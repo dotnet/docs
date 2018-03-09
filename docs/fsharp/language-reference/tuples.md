@@ -85,7 +85,7 @@ int * float * string
 
 ## Interoperation with C# Tuples
 
-C# 7 introduced tuples to the language.  Tuples in C# and are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# uses tuples, you must use struct tuples.
+C# 7 introduced tuples to the language.  Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.
 
 This is easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 

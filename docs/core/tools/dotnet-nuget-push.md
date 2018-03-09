@@ -30,7 +30,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 `ROOT`
 
-Specify the path to the package and your API key to push the package to the server.
+Specifies the file path to the package to be pushed.
 
 ## Options
 

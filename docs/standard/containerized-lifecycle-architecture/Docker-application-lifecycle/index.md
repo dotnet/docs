@@ -1,5 +1,5 @@
 ---
-title: introduction to
+title: Introduction to the Docker application life cycle
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -9,11 +9,9 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
-
 # Introduction to the Docker application life cycle
  
 The life cycle of containerized applications is a journey that begins with the developer. The developer chooses to implement containers and Docker because it eliminates frictions in deployments and IT operations, which ultimately helps everyone to be more agile, more productive end-to-end, and faster.
-
 
 >[!div class="step-by-step"]
 [Previous] (../docker-containers-images-and-registries.md)

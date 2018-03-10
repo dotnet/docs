@@ -284,7 +284,7 @@ namespace HowToStrings
                     Binary search for c:\public\TEXTFILE.TXT
                     Found at index 2.
                  */
-                //</snippet6>
+                //</snippet8>
             }
         }
 

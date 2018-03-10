@@ -19,7 +19,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
 ## Syntax  
   
-```  
+``` 
 -keyfile:file  
 ```  
   
@@ -48,7 +48,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
 ## Example  
  The following code compiles source file `Input.vb` and specifies a key file.  
   
-```  
+```console  
 vbc -keyfile:myfile.sn input.vb  
 ```  
   

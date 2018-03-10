@@ -9,57 +9,64 @@
 # by a more local rule.
 
 # Order is important. The last matching pattern has the most precedence.
-# So if a pull request only touches javascript files, only these owners
-# will be requested to review.
+# The folders are ordered as follows:
+# . Guides are first.
+# . .NET Core sections are next
+# . .NET Framework sections
+# . .NET Standard 
+# . samples
 
+# In each subsection folders are order first by depth, then alphabetically.
+# This should make it easy to add new rules without breaking existing ones.
+
+
+############  GUIDES  ################
+# .NET Core
+/docs/core/** @mairaw
 
 # The C# Guide:
+/docs/csharp/** @BillWagner
 
-/docs/csharp/** BillWagner
-
-# C# samples:
-/samples/csharp/**  BillWagner
-
-# C# Snippets:
-/samples/snippets/** BillWagner
-
-# Analyzers:
-/docs/standard/analyzers/** BillWagner
+# The F# Guide:
+/docs/fsharp/** @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/** rpetrusha
+/docs/visual-basic/** @rpetrusha
 
-# Visual Basic snippets:
-/samples/snippets/visualbasic/** rpetrusha
-
-# C++ snippets
-/samples/snippets/cpp/** rpetrusha
-
-# .NET Framework migration guide
-/docs/framework/migration-guide/** rpetrusha
-
-# .NET base types
-/docs/standard/base-types/formatting-types/** rpetrusha
-
-# .NET Framework unmanaged API
-/docs/framework/unmanaged-api/** rpetrusha
-
-# What's New
-/docs/core/whats-new/** rpetrusha
-/docs/framework/whats-new/** rpetrusha
-/docs/standard/whats-new/** rpetrusha
-
-# .NET Core
-/docs/core/** mairaw
-
-# .NET Framework Security
-/docs/framework/security/** mairaw
-
-# .NET I/O
-/docs/standard/io/** mairaw
-
+############### .NET Core ########################
 # Docker
-/docs/core/docker/** JRAlexander
+/docs/core/docker/** @JRAlexander
+# What's New
+/docs/core/whats-new/** @rpetrusha
 
+################### .NET FRAMEWORK ##################
+# .NET Framework migration guide
+/docs/framework/migration-guide/** @rpetrusha
+# .NET Framework Security
+/docs/framework/security/** @mairaw
+# .NET Framework unmanaged API
+/docs/framework/unmanaged-api/** @rpetrusha
+# What's New
+/docs/framework/whats-new/** @rpetrusha
 
+################## .NET STANDARD ##################
+# Analyzers:
+/docs/standard/analyzers/** @BillWagner
+# What's New
+/docs/standard/whats-new/** @rpetrusha
+# .NET I/O
+/docs/standard/io/** @mairaw
+# .NET base types - Formatting
+/docs/standard/base-types/formatting-types/** @rpetrusha
 
+###########  SAMPLES ################
+# C# samples:
+/samples/csharp/**  @BillWagner
+
+#### Snippets (under samples)
+# C++ snippets
+/samples/snippets/cpp/** @rpetrusha
+# C# Snippets:
+/samples/snippets/csharp/** @BillWagner
+# Visual Basic snippets:
+/samples/snippets/visualbasic/** @rpetrusha

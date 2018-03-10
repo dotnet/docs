@@ -3,7 +3,7 @@ title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies.
 author: mairaw
 ms.author: mairaw
-ms.date: 02/06/2018
+ms.date: 03/10/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -22,13 +22,14 @@ ms.workload:
 
 # [.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [--configfile] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--no-cache]
-    [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [--packages] [-r|--runtime] [--source] [-v|--verbosity] [--version-suffix]
+dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
+    [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
+dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output]
+    [-r|--runtime] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 ---
@@ -41,7 +42,7 @@ If the project has third-party dependencies, such as libraries from NuGet, they'
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitily run the `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitily when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 `dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information.
 
@@ -71,14 +72,6 @@ The project file to build. If a project file is not specified, MSBuild searches 
 
 Defines the build configuration. The default value is `Debug`.
 
-`--configfile <FILE>`
-
-The NuGet configuration file (*NuGet.config*) to use for the restore operation.
-
-`--disable-parallel`
-
-Disables restoring multiple projects in parallel.
-
 `-f|--framework <FRAMEWORK>`
 
 Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](csproj.md).
@@ -90,14 +83,6 @@ Compiles for a specific [framework](../../standard/frameworks.md). The framework
 `-h|--help`
 
 Prints out a short help for the command.
-
-`--ignore-failed-sources`
-
-Only warn about failed sources if there are packages meeting the version requirement.
-
-`--no-cache`
-
-Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
@@ -115,17 +100,9 @@ Doesn't perform an implicit restore during build.
 
 Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
 
-`--packages <PACKAGES_DIRECTORY>`
-
-Specifies the directory for restored packages.
-
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
 Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
-
-`--source <SOURCE>`
-
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `-v|--verbosity <LEVEL>`
 
@@ -188,3 +165,7 @@ Build a project and its dependencies using Release configuration:
 Build a project and its dependencies for a specific runtime (in this example, Ubuntu 16.04):
 
 `dotnet build --runtime ubuntu.16.04-x64`
+
+Build the project and use the specified NuGet package source during the restore operation (.NET Core SDK 2.0 and later versions):
+
+`dotnet build --source c:\packages\mypackages`

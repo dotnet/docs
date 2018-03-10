@@ -29,25 +29,25 @@ The following example shows how to correctly compare strings whose values will n
 
 
 <!-- Now snippets 1 thru 4 -->
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
 
 ## Example
 
 The following example shows how to sort and search for strings in an array in a culture-sensitive manner by using the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#6)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#6)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#7)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#7)]
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
 
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either `Ordinal` or `OrdinalIgnoreCase`.
@@ -56,8 +56,7 @@ Collection classes such as <xref:System.Collections.Hashtable?displayProperty=na
 
 The following example shows how to compare strings the preferred way by using the <xref:System.String?displayProperty=nameWithType> methods that take a <xref:System.StringComparison> enumeration. Note that the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods are not used here, because none of the overloads takes a <xref:System.StringComparison>.
 
-[!code-csharp-interactive[csProgGuideStrings#11](../../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
-
+[!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
 
 
 ## See also

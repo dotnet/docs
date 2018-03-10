@@ -27,4 +27,4 @@ sufficient to describe that PR.
 
 ## Suggested Reviewers
 
-If you know who should review this, use '@' to request a review.
+If you know who should review this, tag them as a suggested reviewer in the list of reviewers.

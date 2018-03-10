@@ -1,0 +1,65 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+# More details are here: https://help.github.com/articles/about-codeowners/
+
+# The '*' pattern is global owners.
+# Not adding in this PR, but I'd like to try adding a global owner set with the entire team.
+# One interpretation of their docs is that global owners are added only if not removed
+# by a more local rule.
+
+# Order is important. The last matching pattern has the most precedence.
+# So if a pull request only touches javascript files, only these owners
+# will be requested to review.
+
+
+# The C# Guide:
+
+/docs/csharp/** BillWagner
+
+# C# samples:
+/samples/csharp/**  BillWagner
+
+# C# Snippets:
+/samples/snippets/** BillWagner
+
+# Analyzers:
+/docs/standard/analyzers/** BillWagner
+
+# The Visual Basic Guide:
+/docs/visual-basic/** rpetrusha
+
+# Visual Basic snippets:
+/samples/snippets/visualbasic/** rpetrusha
+
+# C++ snippets
+/samples/snippets/cpp/** rpetrusha
+
+# .NET Framework migration guide
+/docs/framework/migration-guide/** rpetrusha
+
+# .NET base types
+/docs/standard/base-types/formatting-types/** rpetrusha
+
+# .NET Framework unmanaged API
+/docs/framework/unmanaged-api/** rpetrusha
+
+# What's New
+/docs/core/whats-new/** rpetrusha
+/docs/framework/whats-new/** rpetrusha
+/docs/standard/whats-new/** rpetrusha
+
+# .NET Core
+/docs/core/** mairaw
+
+# .NET Framework Security
+/docs/framework/security/** mairaw
+
+# .NET I/O
+/docs/standard/io/** mairaw
+
+# Docker
+/docs/core/docker/** JRAlexander
+
+
+

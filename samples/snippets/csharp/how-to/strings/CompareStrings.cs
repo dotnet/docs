@@ -66,7 +66,7 @@ namespace HowToStrings
             Console.WriteLine($"Ordinal static: {root} and {root2} are {(areEqual ? "equal." : "not equal.")}");
             areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
             Console.WriteLine($"Ordinal staticignore case: {root} and {root2} are {(areEqual ? "equal." : "not equal.")}");
-            // <Snippet3>
+            // </Snippet3>
         }
         private static void ReferenceEqualAndInterning()
         {
@@ -91,7 +91,7 @@ namespace HowToStrings
                 Console.WriteLine("a and c are not interned.");
             // a and b are interned.
             // a and c are not interned.
-            // <Snippet4>
+            // </Snippet4>
         }
 
         private static void SortArrayOfStrings()
@@ -287,9 +287,6 @@ namespace HowToStrings
                 //</snippet6>
             }
         }
-
-        // Expand this sample to show a List, and a comparer.
-        // Expand to show LINQ.
 
         private static void CompareAcrossCultures()
         {

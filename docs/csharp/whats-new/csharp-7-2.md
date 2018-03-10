@@ -28,7 +28,7 @@ The new language features in this release are:
   - Named arguments can be followed by positional arguments.
 * [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
   - Numeric literals can now have leading underscores before any printed digits.
-* [`private protected` access modifier](#private-protected)
+* [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
 
 ## Reference semantics with value types

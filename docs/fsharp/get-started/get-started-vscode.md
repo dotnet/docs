@@ -28,6 +28,8 @@ Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mon
 brew install mono
 ```
 
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/macos).
+
 ### [Linux](#tab/linux)
 
 On Linux, Ionide also uses [Mono](http://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
@@ -37,9 +39,13 @@ sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/linux).
+
 ### [Windows](#tab/windows)
 
 If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f).  This installs all the necessary components to write, compile, and execute F# code.
+
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/windows/).
 
 ---
 
@@ -82,7 +88,7 @@ Select "F#: New Project" by hitting **Enter**, which will take you to this step:
 
 ![](media/getting-started-vscode/vscode-proj-type.png)
 
-This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](http://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
+This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](https://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
 
 ![](media/getting-started-vscode/vscode-new-dir.png)
 

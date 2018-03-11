@@ -88,4 +88,4 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
 ## See Also  
  [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
  [Potential Pitfalls with PLINQ](../../../docs/standard/parallel-programming/potential-pitfalls-with-plinq.md)  
- [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)
+ [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222)

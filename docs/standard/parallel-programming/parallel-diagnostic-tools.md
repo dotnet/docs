@@ -20,7 +20,7 @@ ms.workload:
   - "dotnetcore"
 ---
 # Parallel Diagnostic Tools
-[!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] provides extensive support for debugging and profiling multi-threaded applications.  
+Visual Studio provides extensive support for debugging and profiling multi-threaded applications.  
   
 ## Debugging  
  The Visual Studio debugger adds new windows for debugging parallel applications. For more information, see the following topics:  

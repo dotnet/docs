@@ -330,7 +330,7 @@ ms.workload:
 |\w+|Match one or more word characters.|  
 |(e)?|Match an "e" either zero or one time.|  
 |s|Match an "s".|  
-|(\s&#124;$)|Match either a whitespace character or the end of the input string.|  
+|(\s&#124;$)|Match either a white-space character or the end of the input string.|  
   
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/whitespace1.cs#10)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/whitespace1.vb#10)]  

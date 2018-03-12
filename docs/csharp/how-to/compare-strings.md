@@ -62,6 +62,6 @@ The following example shows how to compare strings the preferred way by using th
 ## See also
  <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
  <xref:System.StringComparer?displayProperty=nameWithType>  
- [Strings](../../../csharp/programming-guide/strings/index.md)  
- [Comparing Strings](../../../standard/base-types/comparing.md)  
+ [Strings](../../programming-guide/strings/index.md)  
+ [Comparing Strings](../../standard/base-types/comparing.md)  
  [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)

@@ -55,7 +55,15 @@ Pause typing once you have typed `Console.`. The tree has some items colored in 
  
 ## Syntax Graphs
 
-Right click on any item in the tree and click on **View Directed Syntax Graph**. The visualizer displays a graphical representation of the subtree rooted at the selected item. Try these steps for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. The visualizer displays a syntax graph that looks as follows:
+Right click on any item in the tree and click on **View Directed Syntax Graph**. 
+
+> [!NOTE]
+> The directed syntax graph requires the **DGML Editor** component. If this option is not displayed, run the **Visual Studio Installer**. Select the **Individual components** tab and add it, as shown in the following figure:
+> 
+> ![Installing the DGML Editor](media/AddDGMLEditor.png)
+
+
+The visualizer displays a graphical representation of the subtree rooted at the selected item. Try these steps for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. The visualizer displays a syntax graph that looks as follows:
 
 ![Viewing a C# syntax graph](media/fig6.png)
 

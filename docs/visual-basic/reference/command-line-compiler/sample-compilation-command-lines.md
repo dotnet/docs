@@ -1,6 +1,6 @@
 ---
 title: "Sample Compilation Command Lines (Visual Basic)"
-ms.date: 03/09/2018
+ms.date: 03/13/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ ms.author: ronpet
 # Sample compilation command lines (Visual Basic)
 As an alternative to compiling [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programs from within [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can compile from the command line to produce executable (.exe) files or dynamic-link library (.dll) files.  
   
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler supports a complete set of options that control input and output files, assemblies, and debug and preprocessor options. Each option is available in two interchangeable forms: `-``option` and `/``option`. This documentation shows only the `-``option` form.  
+ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler supports a complete set of options that control input and output files, assemblies, and debug and preprocessor options. Each option is available in two interchangeable forms: `-option` and `/option`. This documentation shows only the `-option` form.  
   
  The following table lists some sample command lines you can modify for your own use.  
   

@@ -37,6 +37,7 @@ Overloading is legal, however, if one method takes a `ref`, `in`, or `out` argum
   
 [!code-csharp[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#2)]  
 
+The compiler chooses the best overload by matching the parameter modifiers at the call site to the parameter modifiers used in the method call.
  
 Properties are not variables and therefore cannot be passed as `out` parameters.
   

@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 # readonly (C# Reference)
 The `readonly` keyword is a modifier that you can use on fields. When a field declaration includes a `readonly` modifier, assignments to the fields introduced by the declaration can only occur as part of the declaration or in a constructor in the same class.  
   
-## Example  
+## Readonly field example  
  In this example, the value of the field `year` cannot be changed in the method `ChangeYear`, even though it is assigned a value in the class constructor:  
   
  [!code-csharp[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
@@ -40,7 +40,7 @@ The `readonly` keyword is a modifier that you can use on fields. When a field de
 public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;  
 ```  
   
-## Example  
+## Comparing readonly and non-readonly instance fields  
  [!code-csharp[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
   
  In the preceding example, if you use a statement like this:  

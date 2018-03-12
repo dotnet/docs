@@ -26,7 +26,7 @@ Constraint type 'type' is not CLS-compliant.
 ## Example  
  The following example generates CS3024 in several locations:  
   
-```  
+```csharp  
 // cs3024.cs  
 // Compile with: /target:library  
  [assembly: System.CLSCompliant(true)]  

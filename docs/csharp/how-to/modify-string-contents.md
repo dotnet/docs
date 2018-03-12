@@ -14,6 +14,8 @@ ms.author: "wiwagn"
 
 This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To clearly demonstrate this, the examples all store the result in a new variable. You can then examine both the original `string` and the `string` resulting from the modification when you run each example.
 
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
 There are several techniques demonstrated in this article. You can replace existing text. You can search for patterns and replace matching text with other text. You can treat a string as a sequence of characters. You can also use convenience methods that remove white space. You should choose the techniques that most closely match your scenario.
 
 ## Replace text

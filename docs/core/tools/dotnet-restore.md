@@ -114,7 +114,7 @@ Specifies a runtime for the package restore. This is used to restore packages fo
 
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* file(s). Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `--verbosity <LEVEL>`
 
@@ -156,7 +156,7 @@ Specifies a runtime for the package restore. This is used to restore packages fo
 
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* file(s). Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `--verbosity <LEVEL>`
 

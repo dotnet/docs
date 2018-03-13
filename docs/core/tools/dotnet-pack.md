@@ -3,7 +3,7 @@ title: dotnet pack command - .NET Core CLI
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
 author: mairaw
 ms.author: mairaw
-ms.date: 12/13/2017
+ms.date: 03/10/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -23,7 +23,8 @@ ms.workload:
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies] [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
+dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
+    [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
 
@@ -43,6 +44,8 @@ NuGet dependencies of the packed project are added to the *.nuspec* file, so the
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild /p switch for a couple of different scenarios.
+
+[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 ## Arguments
 
@@ -154,7 +157,7 @@ Pack the project in the current directory:
 Pack the `app1` project:
 
 `dotnet pack ~/projects/app1/project.csproj`
-	
+
 Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
 
 `dotnet pack --output nupkgs`
@@ -174,3 +177,7 @@ Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
 Pack the project for a specific [target framework](../../standard/frameworks.md):
 
 `dotnet pack /p:TargetFrameworks=net45`
+
+Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
+
+`dotnet pack --runtime win10-x64`

@@ -74,15 +74,15 @@ TimeHeader=Текущее время —
   
 ```  
 resgen strings.txt  
-csc GetString.cs /resource:strings.resources  
+csc GetString.cs -resource:strings.resources  
   
 resgen strings.fr-FR.txt  
 md fr-FR  
-al /embed:strings.fr-FR.resources /culture:fr-FR /out:fr-FR\GetString.resources.dll  
+al -embed:strings.fr-FR.resources -culture:fr-FR -out:fr-FR\GetString.resources.dll  
   
 resgen strings.ru-RU.txt  
 md ru-RU  
-al /embed:strings.ru-RU.resources /culture:ru-RU /out:ru-RU\GetString.resources.dll  
+al -embed:strings.ru-RU.resources -culture:ru-RU -out:ru-RU\GetString.resources.dll  
 ```  
   
  When the current UI culture is Spanish (Spain), note that the example displays English language resources, because Spanish language resources are unavailable, and English is the example's default culture.  

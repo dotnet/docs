@@ -127,11 +127,15 @@ greeting=Hello, {0}!
   
  If you are using Visual Basic, and the source code file is named Greeting.vb, the following command creates an executable file that includes the embedded .resources file:  
   
- **vbc greeting.vb /resource:GreetingResources.resources**  
+```console 
+vbc greeting.vb -resource:GreetingResources.resources
+```
   
  If you are using C#, and the source code file is named Greeting.cs, the following command creates an executable file that includes the embedded .resources file:  
   
- **csc greeting.cs /resource:GreetingResources.resources**  
+ ```console
+csc greeting.cs -resource:GreetingResources.resources
+```
   
 <a name="ResxFiles"></a>   
 ## Resources in .resx Files  

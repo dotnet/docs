@@ -60,7 +60,7 @@
 ## Remarks  
  Appends a custom legend item with the specified text and symbol color to the end of the collection.  
   
- To add a custom legend item that uses an image for its symbol, call the [LegendItemsCollection.Add(String, String)](<xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.String,System.String)>) method.  
+ To add a custom legend item that uses an image for its symbol, call the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.String,System.String)> method.  
   
  To insert a custom <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> into the collection, use one of the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> methods of this class.  
   
@@ -95,7 +95,7 @@
 ## Remarks  
  Appends a custom legend item to the collection with the specified text and image to be used as the symbol for the legend item.  
   
- To add a custom legend item that uses a color for its symbol, call the [Add(Color, String)](<xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.Drawing.Color,System.String)) method.  
+ To add a custom legend item that uses a color for its symbol, call the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.Drawing.Color,System.String)> method.  
   
  To insert a <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object into the collection use one of the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Insert%2A> methods of this class.  
   

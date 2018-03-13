@@ -296,7 +296,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The group options construct is not a capturing group. That is, although any portion of a string that is captured by *subexpression* is included in the match, it is not included in a captured group nor used to populate the <xref:System.Text.RegularExpressions.GroupCollection> object.  
   
- For example, the regular expression `\b(?ix: d \w+)\s` in the following example uses inline options in a grouping construct to enable case-insensitive matching and ignore pattern whitespace in identifying all words that begin with the letter "d". The regular expression is defined as shown in the following table.  
+ For example, the regular expression `\b(?ix: d \w+)\s` in the following example uses inline options in a grouping construct to enable case-insensitive matching and ignore pattern white space in identifying all words that begin with the letter "d". The regular expression is defined as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  

@@ -37,7 +37,7 @@ ms.workload:
 |<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore White Space](#Whitespace).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
@@ -276,7 +276,7 @@ ms.workload:
   
 -   The number sign (#) is interpreted as the beginning of a comment, rather than as a literal character. All text in the regular expression pattern from the # character to the end of the string is interpreted as a comment.  
   
- However, in the following cases, white space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option:  
+ However, in the following cases, white-space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option:  
   
 -   White space within a character class is always interpreted literally. For example, the regular expression pattern `[ .,;:]` matches any single white-space character, period, comma, semicolon, or colon.  
   

@@ -720,7 +720,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns the smallest integer greater than or equal to the specified number.</summary>
+        <summary>Returns the smallest integral value greater than or equal to the specified number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1478,7 +1478,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns the largest integer less than or equal to the specified number.</summary>
+        <summary>Returns the largest integral value less than or equal to the specified number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1518,8 +1518,8 @@
       </Parameters>
       <Docs>
         <param name="d">A decimal number.</param>
-        <summary>Returns the largest integer less than or equal to the specified decimal number.</summary>
-        <returns>The largest integer less than or equal to <paramref name="d" />.  Note that the method returns an integral value of type <see cref="T:System.Math" />.</returns>
+        <summary>Returns the largest integral value less than or equal to the specified decimal number.</summary>
+        <returns>The largest integral value less than or equal to <paramref name="d" />.  Note that the method returns an integral value of type <see cref="T:System.Decimal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1575,8 +1575,8 @@
       </Parameters>
       <Docs>
         <param name="d">A double-precision floating-point number.</param>
-        <summary>Returns the largest integer less than or equal to the specified double-precision floating-point number.</summary>
-        <returns>The largest integer less than or equal to <paramref name="d" />. If <paramref name="d" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, that value is returned.</returns>
+        <summary>Returns the largest integral value less than or equal to the specified double-precision floating-point number.</summary>
+        <returns>The largest integral value less than or equal to <paramref name="d" />. If <paramref name="d" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, that value is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

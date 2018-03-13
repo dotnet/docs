@@ -4526,11 +4526,11 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
 
 String interpolation is:
 
-- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text StringBuilder AppendFormat%2A?displayProperty=nameWithType>. 
+- More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>. 
 
 - More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are far easier to code and to read. Because of their greater readability, interpolated strings can replace not only calls to composite format methods, but they can also be used in string concatenation operations to produce more concise, clearer code. 
 
-A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of mutiple string concatenation operations in the following example produces verbose and hard-to-read code.
+A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of multiple string concatenation operations in the following example produces verbose and hard-to-read code.
 
 [!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs)]
 [!code-vb[non-interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb)]  

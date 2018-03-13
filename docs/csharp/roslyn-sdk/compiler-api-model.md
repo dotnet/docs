@@ -26,9 +26,9 @@ pipeline.
 
 Each phase of this pipeline is a separate component. First, the
 parse phase tokenizes and parses source text into syntax that follows
-the language grammar. Second the declaration phase analyzes source and
-imported metadata to form named symbols. Next the bind phase matches identifiers
-in the code to symbols. Finally, the emit phase, emits an assembly with
+the language grammar. Second, the declaration phase analyzes source and
+imported metadata to form named symbols. Next, the bind phase matches identifiers
+in the code to symbols. Finally, the emit phase emits an assembly with
 all the information built up by the compiler.
 
 ![compiler pipeline api provides access to each step that is part of the compiler pipelien](media/compiler-pipeline-api.png)
@@ -71,7 +71,7 @@ layer has no dependencies on Visual Studio components.
 
 As part of its analysis the compiler may produce a set of diagnostics
 covering everything from syntax, semantic, and definite assignment errors
-to various warnings and informational diagnostics. TThe Compiler API layer
+to various warnings and informational diagnostics. The Compiler API layer
 exposes diagnostics through an extensible API that allows user-defined
 analyzers to be plugged into the compilation process. It allows user-defined
 diagnostics, such as those produced by tools like StyleCop or FxCop, to be

@@ -108,7 +108,7 @@ CreateResources
   
 resgen AppResources.resx  
   
-csc GetStream.cs /resource:AppResources.resources  
+csc GetStream.cs -resource:AppResources.resources  
 ```  
   
  The following example uses the <xref:System.Resources.ResourceManager.GetObject%28System.String%29?displayProperty=nameWithType> method to deserialize a custom object. The example includes a source code file named UIElements.cs (UIElements.vb for Visual Basic) that defines the following structure named `PersonTable`. This structure is intended to be used by a general table display routine that displays the localized names of table columns. Note that the `PersonTable` structure is marked with the <xref:System.SerializableAttribute> attribute.  
@@ -129,12 +129,12 @@ csc GetStream.cs /resource:AppResources.resources
  You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.  
   
 ```  
-vbc /t:library UIElements.vb  
-vbc CreateResources.vb /r:UIElements.dll  
+vbc -t:library UIElements.vb  
+vbc CreateResources.vb -r:UIElements.dll  
 CreateResources  
   
-resgen UIResources.resx  /r:UIElements.dll  
-vbc GetObject.vb /r:UIElements.dll /resource:UIResources.resources  
+resgen UIResources.resx  -r:UIElements.dll  
+vbc GetObject.vb -r:UIElements.dll -resource:UIResources.resources  
   
 GetObject.exe  
 ```  

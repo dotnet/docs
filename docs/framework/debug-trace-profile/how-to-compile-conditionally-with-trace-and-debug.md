@@ -56,9 +56,9 @@ While you are debugging an application during development, both your tracing and
   
      For example, the following compiler instruction entered on the command line would include your tracing code in a compiled executable:  
   
-     For Visual Basic: **vbc /r:System.dll /d:TRACE=TRUE /d:DEBUG=FALSE MyApplication.vb**  
+     For Visual Basic: **vbc -r:System.dll -d:TRACE=TRUE -d:DEBUG=FALSE MyApplication.vb**  
   
-     For C#: **csc /r:System.dll /d:TRACE /d:DEBUG=FALSE MyApplication.cs**  
+     For C#: **csc -r:System.dll -d:TRACE -d:DEBUG=FALSE MyApplication.cs**  
   
     > [!TIP]
     >  To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
@@ -69,8 +69,8 @@ While you are debugging an application during development, both your tracing and
     |---------------|-------------|  
     |`vbc`|Visual Basic compiler|  
     |`csc`|C# compiler|  
-    |`/r:`|References an external assembly (EXE or DLL)|  
-    |`/d:`|Defines a conditional compilation symbol|  
+    |`-r:`|References an external assembly (EXE or DLL)|  
+    |`-d:`|Defines a conditional compilation symbol|  
   
     > [!NOTE]
     >  You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
@@ -92,14 +92,14 @@ While you are debugging an application during development, both your tracing and
   
 ### To disable tracing or debugging  
   
-1.  Delete the compiler directive from your source code.  
+Delete the compiler directive from your source code.  
   
-     \- or -  
+\- or -  
   
-2.  Comment out the compiler directive.  
+Comment out the compiler directive.  
   
-    > [!NOTE]
-    >  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
+> [!NOTE]
+>  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
 ## See Also  
  [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  

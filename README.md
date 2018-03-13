@@ -11,7 +11,7 @@ For more information, see the [.NET Foundation Code of Conduct](https://dotnetfo
 Samples Build Status
 ===
 
-| Samples | Ubuntu 16.04<br/>_.NET Core 1.1.0_ | Ubuntu 16.04<br/>_.NET Core 2.0.0-preview_  |
+| Samples | Ubuntu 16.04<br/>_.NET Core 1.1.0_ | Ubuntu 16.04<br/>_.NET Core 2.0.0_  |
 | ------------- |------------| -----|
 | `/samples/core` | ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/56/badge)| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/57/badge) |
 |`/samples/csharp`| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/54/badge)| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/55/badge) |

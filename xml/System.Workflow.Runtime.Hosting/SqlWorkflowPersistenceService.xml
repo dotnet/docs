@@ -519,7 +519,7 @@
         <param name="items">An <see cref="T:System.Collections.ICollection" /> of serialized state objects to be written to the database.</param>
         <summary>Returns a value that indicates whether the collection of serialized state objects should be written to the database.</summary>
         <returns>
-          <see langword="true" /> indicates that the batch should be committed; <see cref="M:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System.Workflow.Runtime.IPendingWork.MustCommit(System.Collections.ICollection)" /> always returns <see langword="true" />.</returns>
+          <see langword="true" /> indicates that the batch should be committed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

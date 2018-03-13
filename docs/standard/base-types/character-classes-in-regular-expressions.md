@@ -79,7 +79,7 @@ ms.workload:
 |-------------|-----------------|  
 |`[aeiou]`|Match all vowels.|  
 |`[\p{P}\d]`|Match all punctuation and decimal digit characters.|  
-|`[\s\p{P}]`|Match all white-space and punctuation.|  
+|`[\s\p{P}]`|Match all white space and punctuation.|  
   
  The following example defines a positive character group that contains the characters "a" and "e" so that the input string must contain the words "grey" or "gray" followed by another word for a match to occur.  
   

@@ -340,7 +340,7 @@ public class Stack<T> : IEnumerable<T>
   
  An implicit conversion must exist from the expression type in the `yield return` statement to the return type of the iterator.  
   
- In C#, an iterator method cannot have any `ref` or `out` parameters.  
+ In C#, an iterator method cannot have any `in`, `ref`, or `out` parameters.  
   
  In C#, "yield" is not a reserved word and has special meaning only when it is used before a `return` or `break` keyword.  
   

@@ -144,7 +144,7 @@ public delegate void DContravariant<in A>(A a);
 ```  
   
 > [!IMPORTANT]
->  `ref` and `out` parameters in C# can't be marked as variant.  
+>  `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   

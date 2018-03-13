@@ -70,7 +70,7 @@ values.
  
 The `in` modifier complements `out` and `ref` in other ways as well. You
 cannot create overloads of a method that differ only in the presence of
-`in`, `out` or `ref`. These new rules extend the same behavior that had always been
+`in`, `out`, or `ref`. These new rules extend the same behavior that had always been
 defined for `out` and `ref` parameters.
 
 The `in` modifier may be applied to any member that takes parameters:

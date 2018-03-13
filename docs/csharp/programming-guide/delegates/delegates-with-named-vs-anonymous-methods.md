@@ -25,7 +25,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can be ass
   
  A delegate instance may encapsulate either static or instance method.  
   
- Although the delegate can use an [out](../../../csharp/language-reference/keywords/out.md) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.  
+ Although the delegate can use an [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.  
   
 ## Example 1  
  The following is a simple example of declaring and using a delegate. Notice that both the delegate, `Del`, and the associated method, `MultiplyNumbers`, have the same signature  

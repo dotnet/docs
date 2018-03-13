@@ -1,7 +1,6 @@
 
 Imports System.Globalization
 
-<assembly: CLSCompliant(True)>
 Public Module Class1
    Public Sub Main()
       ' <Snippet5>
@@ -13,13 +12,10 @@ Public Module Class1
       For Each formattedDate In formattedDates
          Console.WriteLine(formattedDate)
          Dim roundtripDate = DateTime.Parse(formattedDate, Nothing,  
-                                                 DateTimeStyles.RoundtripKind)                        
-         Console.WriteLine("   With RoundtripKind flag: {0} {1} time.", 
-                           roundtripDate, roundtripDate.Kind)                                          
-         Dim noRoundtripDate = DateTime.Parse(formattedDate, Nothing, 
-                                                   DateTimeStyles.None)
-         Console.WriteLine("   Without RoundtripKind flag: {0} {1} time.", 
-                           noRoundtripDate, noRoundtripDate.Kind)                                          
+                                            DateTimeStyles.RoundtripKind)                        
+         Console.WriteLine($"   With RoundtripKind flag: {roundtripDate} {roundtripDate.Kind} time.")                                          
+         Dim noRoundtripDate = DateTime.Parse(formattedDate, Nothing,                                                                                                  DateTimeStyles.None)
+         Console.WriteLine($"   Without RoundtripKind flag: {noRoundtripDate} {noRoundtripDate.Kind} time.")
       Next         
       ' The example displays the following output:
       '       2008-09-15T09:30:41.7752486-07:00

@@ -8,12 +8,9 @@ Module Example
                                      "2008-05-01 7:34:42Z", 
                                      "Thu, 01 May 2008 07:34:42 GMT"}
       
-      For Each dateString In dateStrings
-         Dim convertedDate As Date = Date.Parse(dateString)
-         Console.WriteLine("Converted {0} to {1} time {2}", 
-                           dateString, 
-                           convertedDate.Kind.ToString(), 
-                           convertedDate)
+      For Each dateStr In dateStrings
+         Dim convertedDate As Date = Date.Parse(dateStr)
+         Console.WriteLine($"Converted {dateStr} to {convertedDate.Kind} time {convertedDate}")
       Next 
    End Sub
 End Module

@@ -4258,11 +4258,11 @@ juillet 2009
   
 <a name="StringToParse"></a>   
 ### The string to parse  
- The <xref:System.DateTime.Parse%2A> method tries to convert the string representation of a date and time value to its <xref:System.DateTime> equivalent. It tries to parse `s` completely without throwing a <xref:System.FormatException> exception.  
+ The <xref:System.DateTime.Parse%2A> method tries to convert the string representation of a date and time value to its <xref:System.DateTime> equivalent. It tries to parse the input string completely without throwing a <xref:System.FormatException> exception.  
   
 > [!IMPORTANT]
->  Because the string representation of a date and time must conform to a recognized pattern, you should always use exception handling when calling the <xref:System.DateTime.Parse%2A> method to parse user input. If you don't want to handle exceptions, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType> method to parse the date and time string; this method returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded.  
-  
+>  If the parsing operation fails because of an unrecognized string format, the <xref:System.DateTime.Parse%2A> method throws a <xref:System.FormatException>, whereas the <xref:System.DateTime.TryParse%2A> method returns `false`. Because exception handling can be expensive, you should use <xref:System.DateTime.Parse%2A> when the parsing operation is expected to succeed because the input source is trusted. <xref:System.DateTime.TryParse%2A> is preferable when parsing failures are likely, particularly because an input source is not trusted, or you have reasonable default values to substitute for strings that do not parse successfully.   
+
  The string to be parsed can take any of the following forms:  
   
 -   A string with a date and a time component.  
@@ -4295,13 +4295,13 @@ The following example parses strings in each of these formats by using the forma
 [!code-csharp-interactive[Default parsing](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse6.cs)]
 [!code-vb[Default parsing](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse6.vb)]  
   
- If `s` is the string representation of a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses `s` successfully. If `s` is the string representation of a leap day in a non-leap year, the method throws a <xref:System.FormatException>.  
+ If the input string represents a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses the string successfully. If the input string represents a leap day in a non-leap year, the method throws a <xref:System.FormatException>.  
   
  Because the <xref:System.DateTime.Parse%2A> method tries to parse the string representation of a date and time by using the formatting rules of the current or a specified culture, trying to parse a string across different cultures can fail. To parse a specific date and time format across different locales, use one of the overloads of the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method and provide a format specifier.  
   
 <a name="Culture"></a>   
 ### Parsing and cultural conventions  
- All overloads of the <xref:System.DateTime.Parse%2A> method are culture-sensitive unless the string to be parsed conforms to the ISO 8601 pattern. The parsing operation uses the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is derived as follows:  
+ All overloads of the <xref:System.DateTime.Parse%2A> method are culture-sensitive unless the string to be parsed (which is represented by `s` in the following table) conforms to the ISO 8601 pattern. The parsing operation uses the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is derived as follows:  
   
 |If you call|And `provider` is|Formatting information is derived from|  
 |-----------------|-----------------------|--------------------------------------------|  
@@ -4328,7 +4328,7 @@ The following example parses strings in each of these formats by using the forma
   
 <a name="Styles"></a>   
 ### Parsing and style elements  
- All <xref:System.DateTime.Parse%2A> overloads ignore leading, inner, or trailing white-space characters in `s`. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ("#", U+0023), and can be trailed with one or more NULL characters (U+0000).  
+ All <xref:System.DateTime.Parse%2A> overloads ignore leading, inner, or trailing white-space characters in the input string (which is represented by `s` in the following table). The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ("#", U+0023), and can be trailed with one or more NULL characters (U+0000).  
   
  In addition, the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload has a `styles` parameter that consists of one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration. This parameter defines how `s` should be interpreted and how the parse operation should convert `s` to a date and time. The following table describes the effect of each <xref:System.Globalization.DateTimeStyles> member on the parse operation.  
   
@@ -4375,8 +4375,7 @@ The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref
 
 Numerous examples that call the `DateTime.Parse` method are interspersed throughout the [Remarks](#remarks) section of this article and in the documentation for the individual `DateTime.Parse` overloads.
 
-> [!NOTE]
->  The C# examples in this article run in the [Try.NET](https://try.dot.net) inline code runner and playground. You can run an example in an interactive window by pressing the **Run** button. Once you execute the code, you can modify it and run the modified code by pressing **Run** again. The modified code either runs in the interactive window or, if compilation fails, the interactive window displays all C# compiler error messages.  
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 You can also download a complete set of `DateTime.Parse` examples, which are included in a [.NET Core 2.0 project for C#](~/samples/snippets/csharp/downloads/api/System/DateTime.Parse.zip) and a [.NET Core 2.0 project for Visual Basic](~/samples/snippets/visualbasic/downloads/api/System.DateTime.Parse.zip), from the [dotnet/docs GitHub repository](https://github.com/dotnet/docs).
 
@@ -4558,7 +4557,7 @@ The following example parses an array of date strings by using the conventions o
 This method overload converts the date and time in `s` and sets the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value as follows:
 
 |If |Time zone conversion|Kind property|   
-|---------------------------|--------------------------|  
+|-----|-----|-----|  
 |`s` contains no time zone information.|None.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|
 |`s` contains time zone information.|To the time in the local time zone|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|
 |`s` contains time zone information, and `styles includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> flag.|To Coordinated Univeral Time (UTC)|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|

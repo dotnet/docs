@@ -11,10 +11,7 @@ public class Example
       foreach (string dateString in dateStrings)
       {
          DateTime convertedDate = DateTime.Parse(dateString);
-         Console.WriteLine("Converted {0} to {1} time {2}", 
-                           dateString, 
-                           convertedDate.Kind.ToString(), 
-                           convertedDate);
+         Console.WriteLine($"Converted {dateString} to {convertedDate.Kind} time {convertedDate}");
       }                              
    }
 }

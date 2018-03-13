@@ -61,7 +61,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A 64-bit AMD processor only.</summary>
+        <summary>A 64-bit processor based on the [x64 architecture](/windows-hardware/drivers/debugger/x64-architecture). </summary>
       </Docs>
     </Member>
     <Member MemberName="Arm">
@@ -115,7 +115,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A 64-bit Intel processor only.</summary>
+        <summary>A 64-bit Intel Itanium processor only.</summary>
       </Docs>
     </Member>
     <Member MemberName="MSIL">

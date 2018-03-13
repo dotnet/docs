@@ -208,7 +208,7 @@ Discards are supported in the following scenarios:
 
 * When deconstructing tuples or user-defined types.
 
-* When calling methods with [out](../language-reference/keywords/out.md) parameters.
+* When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
 
 * In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 

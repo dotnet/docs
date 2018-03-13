@@ -3,7 +3,7 @@ title: dotnet publish command - .NET Core CLI
 description: The dotnet publish command publishes your .NET Core project into a directory.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/01/2017
+ms.date: 03/10/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -46,6 +46,8 @@ dotnet publish [-h|--help]
 * The application's dependencies. These are copied from the NuGet cache into the output folder.
 
 The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution and is the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core Application Deployment](../deploying/index.md). For the directory structure of a published application, see [Directory structure](/aspnet/core/hosting/directory-structure).
+
+[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 ## Arguments
 
@@ -152,14 +154,18 @@ Publish the project in the current directory:
 Publish the application using the specified project file:
 
 `dotnet publish ~/projects/app1/app1.csproj`
-	
+
 Publish the project in the current directory using the `netcoreapp1.1` framework:
 
 `dotnet publish --framework netcoreapp1.1`
-	
+
 Publish the current application using the `netcoreapp1.1` framework and the runtime for `OS X 10.10` (you must list this RID in the project file).
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
+
+Publish the current application but don't restore project-to-project (P2P) references, just the root project during the restore operation (.NET Core SDK 2.0 and later versions):
+
+`dotnet publish --no-dependencies`
 
 ## See also
 

@@ -18,11 +18,11 @@ The type provider mechanism in F# is a significant part of its support for infor
 
 The F# ecosystem contains a range of type providers for commonly used Internet and enterprise data services. For example:
 
-- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats
+- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats.
 
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly-typed access to SQL databases through a object mapping and F# LINQ queries against these data sources.
 
-- [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for com,pile-time checked embedding of T-SQL in F#
+- [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 
 - [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
 
@@ -58,7 +58,7 @@ Type providers are best suited to situations where the schema is stable at runti
 
 ## A Simple Type Provider
 
-This sample is Samples.HelloWorldTypeProvider similar to the samples in the `examples` directory of the [F# Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK/). The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
+This sample is Samples.HelloWorldTypeProvider, similar to the samples in the `examples` directory of the [F# Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK/). The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
 
 ```fsharp
 namespace Samples.HelloWorldTypeProvider
@@ -131,11 +131,11 @@ type SampleTypeProvider(config: TypeProviderConfig) as this =
   // And add them to the namespace
   do this.AddNamespace(namespaceName, types)
 
-  [<assembly:TypeProviderAssembly>] 
-  do()
+[<assembly:TypeProviderAssembly>] 
+do()
 ```
 
-To use this provider, open a separate instance of Visual Studio 2012, create an F# script, and then add a reference to the provider from your script by using #r as the following code shows:
+To use this provider, open a separate instance of Visual Studio, create an F# script, and then add a reference to the provider from your script by using #r as the following code shows:
 
 ```fsharp
 #r @".\bin\Debug\Samples.HelloWorldTypeProvider.dll"
@@ -447,13 +447,13 @@ The ability to parameterize type providers by static data enables many interesti
 
 ### Type Checked Regex Provider
 
-Imagine that you want to implement a type provider for regular expressions that wraps the .NET `System.Text.RegularExpressions.Regex` libraries in an interface that provides the following compile-time guarantees:
+Imagine that you want to implement a type provider for regular expressions that wraps the .NET <xref:System.Text.RegularExpressions.Regex> libraries in an interface that provides the following compile-time guarantees:
 
 - Verifying whether a regular expression is valid.
 
 - Providing named properties on matches that are based on any group names in the regular expression.
 
-This section shows you how to use type providers to create a `RegExProviderType` type that the regular expression pattern parameterizes to provide these benefits. The compiler will report an error if the supplied pattern isn't valid, and the type provider can extract the groups from the pattern so that you can access them by using named properties on matches. When you design a type provider, you should consider how its exposed API should look to end users and how this design will translate to .NET code. The following example shows how to use such an API to get the components of the area code:
+This section shows you how to use type providers to create a `RegexTyped` type that the regular expression pattern parameterizes to provide these benefits. The compiler will report an error if the supplied pattern isn't valid, and the type provider can extract the groups from the pattern so that you can access them by using named properties on matches. When you design a type provider, you should consider how its exposed API should look to end users and how this design will translate to .NET code. The following example shows how to use such an API to get the components of the area code:
 
 ```fsharp
 type T = RegexTyped< @"(?<AreaCode>^\d{3})-(?<PhoneNumber>\d{3}-\d{4}$)">
@@ -476,7 +476,7 @@ Note the following points:
 
 - The `RegexTyped` constructor results in a call to the Regex constructor, passing in the static type argument for the pattern.
 
-- The results of the `Match` method are represented by the standard `System.Text.RegularExpressions.Match` type.
+- The results of the `Match` method are represented by the standard <xref:System.Text.RegularExpressions.Match> type.
 
 - Each named group results in a provided property, and accessing the property results in a use of an indexer on a match’s `Groups` collection.
 
@@ -548,7 +548,7 @@ Note the following points:
 
 - You use `obj` as the base type of the method, but you’ll use a `Regex` object as the runtime representation of this type, as the next example shows.
 
-- The call to the `Regex` constructor throws a `System.ArgumentException` when a regular expression isn’t valid. The compiler catches this exception and reports an error message to the user at compile time or in the Visual Studio editor. This exception enables regular expressions to be validated without running an application.
+- The call to the `Regex` constructor throws a <xref:System.ArgumentException> when a regular expression isn’t valid. The compiler catches this exception and reports an error message to the user at compile time or in the Visual Studio editor. This exception enables regular expressions to be validated without running an application.
 
 The type defined above isn't useful yet because it doesn’t contain any meaningful methods or properties. First, add a static `IsMatch` method:
 
@@ -579,7 +579,7 @@ let matchTy =
 ty.AddMember matchTy
 ```
 
-You then add one property to the Match type for each group. At runtime, a match is represented as a `System.Text.RegularExpressions.Match` value, so the quotation that defines the property must use the `System.Text.RegularExpressions.Match.Groups` indexed property to get the relevant group.
+You then add one property to the Match type for each group. At runtime, a match is represented as a <xref:System.Text.RegularExpressions.Match> value, so the quotation that defines the property must use the <xref:System.Text.RegularExpressions.Match.Groups> indexed property to get the relevant group.
 
 ```fsharp
 for group in r.GetGroupNames() do
@@ -752,13 +752,11 @@ Frequently you might want type providers to present APIs based on not only stati
 As a simple example, consider a type provider for accessing scientific data in Comma Separated Value (CSV) format. This section assumes that the CSV files contain a header row followed by floating point data, as the following table illustrates:
 
 
-```
 |Distance (meter)|Time (second)|
 |----------------|-------------|
 |50.0|3.7|
 |100.0|5.2|
 |150.0|6.4|
-```
 
 This section shows how to provide a type that you can use to get rows with a `Distance` property of type `float<meter>` and a `Time` property of type `float<second>`. For simplicity, the following assumptions are made:
 
@@ -784,7 +782,7 @@ printfn "%f" (float time)
 In this case, the compiler should convert these calls into something like the following example:
 
 ```fsharp
-let info = new MiniCsvFile("info.csv")
+let info = new CsvFile("info.csv")
 for row in info.Data do
 let (time:float) = row.[1]
 printfn "%f" (float time)
@@ -1041,9 +1039,10 @@ These versions are used to create on-demand spaces of types.
 
 ### Providing Array types and Generic Type Instantiations
 
-You make provided members (whose signatures include array types, byref types, and instantiations of generic types) by using the normal `MakeArrayType`, `MakePointerType`, and `MakeGenericType` on any instance of System.Type, including `ProvidedTypeDefinitions`.
+You make provided members (whose signatures include array types, byref types, and instantiations of generic types) by using the normal `MakeArrayType`, `MakePointerType`, and `MakeGenericType` on any instance of <xref:System.Type>, including `ProvidedTypeDefinitions`.
 
-NOTE: In some cases you may have to use the helper in `ProvidedTypeBuilder.MakeGenericType`.  See the Type Provider SDK documentation for more details.
+> [!NOTE]
+> In some cases you may have to use the helper in `ProvidedTypeBuilder.MakeGenericType`.  See the [Type Provider SDK documentation](https://github.com/fsprojects/FSharp.TypeProviders.SDK/blob/master/README.md#explicit-construction-of-code-makegenerictype-makegenericmethod-and-uncheckedquotations) for more details.
 
 ### Providing Unit of Measure Annotations
 
@@ -1092,12 +1091,12 @@ All uses of all members from provided types may throw exceptions. In all cases, 
 
 #### Providing Generated Types
 
-So far, this document has explained how provide erased types. You can also use the type provider mechanism in F# to provide generated types, which are added as real .NET type definitions into the users' program. You must refer to generated provided types by using a type definition.
+So far, this document has explained how to provide erased types. You can also use the type provider mechanism in F# to provide generated types, which are added as real .NET type definitions into the users' program. You must refer to generated provided types by using a type definition.
 
 ```fsharp
 open Microsoft.FSharp.TypeProviders 
 
-type Service = ODataService<" https://services.odata.org/Northwind/Northwind.svc/">
+type Service = ODataService<"http://services.odata.org/Northwind/Northwind.svc/">
 ```
 
 The ProvidedTypes-0.2 helper code that is part of the F# 3.0 release has only limited support for providing generated types. The following statements must be true for a generated type definition:

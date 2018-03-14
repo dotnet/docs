@@ -2163,7 +2163,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) brightness value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <summary>Gets the hue-saturation-lightness (HSL) brightness value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
         <returns>The brightness of this <see cref="T:System.Drawing.Color" />. The brightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2238,8 +2238,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) hue value, in degrees, for this <see cref="T:System.Drawing.Color" /> structure.</summary>
-        <returns>The hue, in degrees, of this <see cref="T:System.Drawing.Color" />. The hue is measured in degrees, ranging from 0.0 through 360.0, in HSB color space.</returns>
+        <summary>Gets the hue-saturation-lightness (HSL) hue value, in degrees, for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The hue, in degrees, of this <see cref="T:System.Drawing.Color" />. The hue is measured in degrees, ranging from 0.0 through 360.0, in HSL color space.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2286,7 +2286,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) saturation value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <summary>Gets the hue-saturation-lightness (HSL) saturation value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
         <returns>The saturation of this <see cref="T:System.Drawing.Color" />. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

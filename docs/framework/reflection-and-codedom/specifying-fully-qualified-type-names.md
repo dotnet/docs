@@ -1,7 +1,7 @@
 ---
 title: "Specifying Fully Qualified Type Names"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "03/14/2018"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,7 @@ helpviewer_keywords:
   - "tokens"
   - "BNF"
   - "assemblies [.NET Framework], names"
-  - "Backus-Naur form"
-  - "languages, BNF grammar"
+  - "languages, grammar"
   - "fully qualified type names"
   - "type names"
   - "special characters"
@@ -33,27 +32,87 @@ ms.workload:
 # Specifying Fully Qualified Type Names
 You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
-## Backus-Naur Form Grammar for Type Names  
- The Backus-Naur form (BNF) defines the syntax of formal languages. The following table lists BNF lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.  
-  
-|BNF grammar of fully qualified type names|  
-|-----------------------------------------------|  
-|TypeSpec                          :=   ReferenceTypeSpec<br /><br /> &#124;     SimpleTypeSpec|  
-|ReferenceTypeSpec            :=   SimpleTypeSpec '&'|  
-|SimpleTypeSpec                :=   PointerTypeSpec<br /><br /> &#124;     ArrayTypeSpec<br /><br /> &#124;     TypeName|  
-|PointerTypeSpec                :=   SimpleTypeSpec '*'|  
-|ArrayTypeSpec                  :=   SimpleTypeSpec '[ReflectionDimension]'<br /><br /> &#124;     SimpleTypeSpec '[ReflectionEmitDimension]'|  
-|ReflectionDimension           :=   '*'<br /><br /> &#124;     ReflectionDimension ',' ReflectionDimension<br /><br /> &#124;     NOTOKEN|  
-|ReflectionEmitDimension    :=   '*'<br /><br /> &#124;     Number '..' Number<br /><br /> &#124;     Number '…'<br /><br /> &#124;     ReflectionDimension ',' ReflectionDimension<br /><br /> &#124;     NOTOKEN|  
-|Number                            :=   [0-9]+|  
-|TypeName                         :=   NamespaceTypeName<br /><br /> &#124;     NamespaceTypeName ',' AssemblyNameSpec|  
-|NamespaceTypeName        :=   NestedTypeName<br /><br /> &#124;     NamespaceSpec '.' NestedTypeName|  
-|NestedTypeName               :=   IDENTIFIER<br /><br /> &#124;     NestedTypeName '+' IDENTIFIER|  
-|NamespaceSpec                 :=   IDENTIFIER<br /><br /> &#124;     NamespaceSpec '.' IDENTIFIER|  
-|AssemblyNameSpec           :=   IDENTIFIER<br /><br /> &#124;     IDENTIFIER ',' AssemblyProperties|  
-|AssemblyProperties            :=   AssemblyProperty<br /><br /> &#124;     AssemblyProperties ',' AssemblyProperty|  
-|AssemblyProperty              :=   AssemblyPropertyName '=' AssemblyPropertyValue|  
-  
+## Grammar for Type Names  
+ The grammar defines the syntax of formal languages. The following table lists lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.  
+
+```antlr
+TypeSpec
+	: ReferenceTypeSpec
+	| SimpleTypeSpec
+	;
+
+ReferenceTypeSpec
+	: SimpleTypeSpec '&'
+	;
+
+SimpleTypeSpec
+	: PointerTypeSpec
+	| ArrayTypeSpec
+	| TypeName
+	;
+
+PointerTypeSpec
+	: SimpleTypeSpec '*'
+	;
+
+ArrayTypeSpec
+	: SimpleTypeSpec '[ReflectionDimension]'
+	| SimpleTypeSpec '[ReflectionEmitDimension]'
+	;
+
+ReflectionDimension
+	: '*'
+	| ReflectionDimension ',' ReflectionDimension
+	| NOTOKEN
+	;
+
+ReflectionEmitDimension
+	: '*'
+	| Number '..' Number
+	| Number '…'
+	| ReflectionDimension ',' ReflectionDimension
+	| NOTOKEN
+	;
+
+Number
+	: [0-9]+
+	;
+
+TypeName
+	: NamespaceTypeName
+	| NamespaceTypeName ',' AssemblyNameSpec
+	;
+
+NamespaceTypeName
+	: NestedTypeName
+	| NamespaceSpec '.' NestedTypeName
+	;
+
+NestedTypeName
+	: IDENTIFIER
+	| NestedTypeName '+' IDENTIFIER
+	;
+
+NamespaceSpec
+	: IDENTIFIER
+	| NamespaceSpec '.' IDENTIFIER
+	;
+
+AssemblyNameSpec
+	: IDENTIFIER
+	| IDENTIFIER ',' AssemblyProperties
+	;
+
+AssemblyProperties
+	: AssemblyProperty
+	| AssemblyProperties ',' AssemblyProperty
+	;
+
+AssemblyProperty
+	: AssemblyPropertyName '=' AssemblyPropertyValue
+	;
+```
+
 ## Specifying Special Characters  
  In a type name, IDENTIFIER is any valid name determined by the rules of a language.  
   

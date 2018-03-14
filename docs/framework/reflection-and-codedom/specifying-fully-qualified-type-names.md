@@ -1,7 +1,7 @@
 ---
 title: "Specifying Fully Qualified Type Names"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "03/14/2018"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,8 +16,7 @@ helpviewer_keywords:
   - "tokens"
   - "BNF"
   - "assemblies [.NET Framework], names"
-  - "Backus-Naur form"
-  - "languages, BNF grammar"
+  - "languages, grammar"
   - "fully qualified type names"
   - "type names"
   - "special characters"
@@ -69,7 +68,7 @@ ReflectionDimension
 
 ReflectionEmitDimension
 	: '*'
-	| Number '..' Numero
+	| Number '..' Number
 	| Number '…'
 	| ReflectionDimension ',' ReflectionDimension
 	| NOTOKEN

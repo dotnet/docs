@@ -30,7 +30,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
  This section identifies the default behavioral characteristics of the interop marshaling service. It presents detailed information on marshaling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
 > [!NOTE]
->  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](http://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58).  
+>  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](https://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58(v=vs.100)).  
   
 ## Memory management with the interop marshaler  
  The interop marshaler always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  

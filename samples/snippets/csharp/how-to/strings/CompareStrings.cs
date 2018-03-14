@@ -41,7 +41,7 @@ namespace HowToStrings
             string root2 = @"C:\Users";
 
             bool result = root.Equals(root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal ignore case: {root} and {root2} are {(result ? "equal." : "not equal.")}");
+            Console.WriteLine($"Ordinal ignore case: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
             // </Snippet2>
         }
 
@@ -52,9 +52,9 @@ namespace HowToStrings
             string root2 = @"C:\Users";
 
             bool areEqual = String.Equals(root, root2, StringComparison.Ordinal);
-            Console.WriteLine($"Ordinal static: {root} and {root2} are {(areEqual ? "equal." : "not equal.")}");
+            Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
             areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal staticignore case: {root} and {root2} are {(areEqual ? "equal." : "not equal.")}");
+            Console.WriteLine($"Ordinal staticignore case: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
             // </Snippet3>
         }
         private static void ReferenceEqualAndInterning()
@@ -147,8 +147,8 @@ namespace HowToStrings
                 {
                     Console.WriteLine($"Found at index {index}.");
                 }
-                //</snippet6>
             }
+            //</snippet6>
         }
 
         private static void SortListOfStrings()
@@ -219,8 +219,8 @@ namespace HowToStrings
                 {
                     Console.WriteLine($"Found at index {index}.");
                 }
-                //</snippet8>
             }
+            //</snippet8>
         }
 
         private static void CompareAcrossCultures()
@@ -240,7 +240,7 @@ namespace HowToStrings
             // For culture-sensitive comparisons, use the String.Compare 
             // overload that takes a StringComparison value.
             int i = String.Compare(first, second, StringComparison.CurrentCulture);
-            Console.WriteLine($"Comparing in {originalCulture.Name} returns {i}.");
+            Console.WriteLine($"Comparing in {originalCulture.EnglishName} returns {i}.");
 
             thread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
             i = String.Compare(first, second, StringComparison.CurrentCulture);

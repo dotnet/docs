@@ -17,12 +17,11 @@ public class Class1
             Console.WriteLine(formattedDate);
             DateTime roundtripDate = DateTime.Parse(formattedDate, null, 
                                                     DateTimeStyles.RoundtripKind);                        
-            Console.WriteLine("   With RoundtripKind flag: {0} {1} time.", 
-                              roundtripDate, roundtripDate.Kind);                                          
+            Console.WriteLine($"   With RoundtripKind flag: {roundtripDate} {roundtripDate.Kind} time.");
+         
             DateTime noRoundtripDate = DateTime.Parse(formattedDate, null, 
                                                       DateTimeStyles.None);
-            Console.WriteLine("   Without RoundtripKind flag: {0} {1} time.", 
-                               noRoundtripDate, noRoundtripDate.Kind);                                          
+            Console.WriteLine($"   Without RoundtripKind flag: {noRoundtripDate} {noRoundtripDate.Kind} time.");
          }         
       // The example displays the following output:
       //       2008-09-15T09:30:41.7752486-07:00

@@ -4,16 +4,13 @@ Option Strict On
 ' <Snippet2>
 Module Example
    Public Sub Main()
-      Dim dateStrings() As String = {"2008-05-01T07:34:42-5:00", _
-                                     "2008-05-01 7:34:42Z", _
+      Dim dateStrings() As String = {"2008-05-01T07:34:42-5:00", 
+                                     "2008-05-01 7:34:42Z", 
                                      "Thu, 01 May 2008 07:34:42 GMT"}
       
-      For Each dateString As String In dateStrings
-         Dim convertedDate As Date = Date.Parse(dateString)
-         Console.WriteLine("Converted {0} to {1} time {2}", _
-                           dateString, _
-                           convertedDate.Kind.ToString(), _
-                           convertedDate)
+      For Each dateStr In dateStrings
+         Dim convertedDate As Date = Date.Parse(dateStr)
+         Console.WriteLine($"Converted {dateStr} to {convertedDate.Kind} time {convertedDate}")
       Next 
    End Sub
 End Module

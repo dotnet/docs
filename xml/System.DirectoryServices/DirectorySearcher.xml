@@ -1067,7 +1067,7 @@ SearchResultCollection res = src.FindAll();
         <summary>Gets or sets a value indicating the scope of the search that is observed by the server.</summary>
         <value>One of the <see cref="T:System.DirectoryServices.SearchScope" /> values. The default is <see cref="F:System.DirectoryServices.SearchScope.Subtree" />.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.ReferralChasingOption" /> values.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.SearchScope" /> values.</exception>
         <altmember cref="T:System.DirectoryServices.SearchScope" />
       </Docs>
     </Member>

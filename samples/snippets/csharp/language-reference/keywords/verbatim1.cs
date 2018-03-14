@@ -26,6 +26,9 @@ public class Example
       
       Console.WriteLine(filename1);
       Console.WriteLine(filename2);
+      // The example displays the following output:
+      //     c:\documents\files\u0066.txt
+      //     c:\documents\files\u0066.txt
       // </Snippet2>
       
       Console.WriteLine();

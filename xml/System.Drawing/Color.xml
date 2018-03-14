@@ -1967,13 +1967,13 @@
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
--   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have the same brightness as `redShade`. The iterations are terminated when 15 matches are found or the value of the loop counter is greater than the last <xref:System.Drawing.KnownColor> element.  
+-   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have the same lightness as `redShade`. The iterations are terminated when 15 matches are found or the value of the loop counter is greater than the last <xref:System.Drawing.KnownColor> element.  
   
 -   During each iteration, saves the <xref:System.Drawing.KnownColor> element—if it matches the criteria—in an array.  
   
 -   Uses a brush to paint rectangles.  
   
- The first rectangle is painted the color represented by `redShade`. Each of the other rectangles is painted a <xref:System.Drawing.KnownColor> that matches the brightness of the `redShade`.  
+ The first rectangle is painted the color represented by `redShade`. Each of the other rectangles is painted a <xref:System.Drawing.KnownColor> that matches the lightness of the `redShade`.  
   
  [!code-cpp[System.Drawing.ClassicColorExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorExamples/CPP/form1.cpp#5)]
  [!code-csharp[System.Drawing.ClassicColorExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorExamples/CS/form1.cs#5)]
@@ -2163,8 +2163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) brightness value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
-        <returns>The brightness of this <see cref="T:System.Drawing.Color" />. The brightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.</returns>
+        <summary>Gets the hue-saturation-lightness (HSL) lightness value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The lightness of this <see cref="T:System.Drawing.Color" />. The lightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2173,13 +2173,13 @@
   
 -   Creates an instance of a <xref:System.Drawing.Color> structure, `redShade`, to be used for comparisons.  
   
--   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have the same brightness as `redShade`. The iterations are terminated when 15 matches are found or the value of the loop counter is greater than the last <xref:System.Drawing.KnownColor> element.  
+-   Iterates through the <xref:System.Drawing.KnownColor> enumeration elements to find all known colors that have the same lightness as `redShade`. The iterations are terminated when 15 matches are found or the value of the loop counter is greater than the last <xref:System.Drawing.KnownColor> element.  
   
 -   During each iteration, saves the <xref:System.Drawing.KnownColor> element—if it matches the criteria—in an array.  
   
 -   Uses a brush to paint rectangles.  
   
- The first rectangle is painted the color represented by `redShade`. Each of the other rectangles is painted a <xref:System.Drawing.KnownColor> that matches the brightness of the `redShade`.  
+ The first rectangle is painted the color represented by `redShade`. Each of the other rectangles is painted a <xref:System.Drawing.KnownColor> that matches the lightness of the `redShade`.  
   
  [!code-cpp[System.Drawing.ClassicColorExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorExamples/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.ClassicColorExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorExamples/CS/form1.cs#6)]
@@ -2238,8 +2238,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) hue value, in degrees, for this <see cref="T:System.Drawing.Color" /> structure.</summary>
-        <returns>The hue, in degrees, of this <see cref="T:System.Drawing.Color" />. The hue is measured in degrees, ranging from 0.0 through 360.0, in HSB color space.</returns>
+        <summary>Gets the hue-saturation-lightness (HSL) hue value, in degrees, for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The hue, in degrees, of this <see cref="T:System.Drawing.Color" />. The hue is measured in degrees, ranging from 0.0 through 360.0, in HSL color space.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2286,7 +2286,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hue-saturation-brightness (HSB) saturation value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <summary>Gets the hue-saturation-lightness (HSL) saturation value for this <see cref="T:System.Drawing.Color" /> structure.</summary>
         <returns>The saturation of this <see cref="T:System.Drawing.Color" />. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
